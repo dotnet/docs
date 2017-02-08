@@ -4,6 +4,10 @@ This repo contains work-in-progress documentation for .NET. To contribute, see t
 
 We welcome contributions to help us improve and complete the .NET docs. Feel free to copy/paste documentation from [.NET Framework docs](https://msdn.microsoft.com/library/w0x726c2.aspx) as a starting point for .NET docs. We anticipate that [Xamarin](http://developer.xamarin.com/api/root/classlib/), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](http://docs.unity3d.com/Manual/index.html) will also use this documentation.
 
+This project has adopted the code of conduct defined by the Contributor Covenant
+to clarify expected behavior in our community.
+For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+
 Samples Build Status
 ===
 

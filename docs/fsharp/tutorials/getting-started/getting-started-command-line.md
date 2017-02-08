@@ -27,7 +27,14 @@ This article assumes that you know how to use a command line and have a preferre
 Open a command prompt/terminal and use the `dotnet new` command to create new solution file called `FSNetCore`:
 
 ```bash
-dotnet new sln -o FSNetCore`
+dotnet new sln -o FSNetCore
+```
+
+The folowing directory structure is produced as a result of the command completing:
+
+```
+FSNEtCore
+    ├── FSNEtCore.sln
 ```
 
 Change directories to `FSNetCore` and start adding projects to the solution folder.
@@ -38,6 +45,17 @@ Use the `dotnet new` command, create a Class Library project in the **src** fold
 
 ```bash
 dotnet new classlib -lang F# -o src/Library 
+```
+
+The folowing directory structure is produced as a result of the command completing:
+
+```
+└── FSNEtCore
+    ├── FSNEtCore.sln
+    └── src
+        └── Library
+            ├── Library.fs
+            └── Library.fsproj
 ```
 
 Replace the contents of `Library.fs` with the following:
@@ -71,6 +89,20 @@ Use the `dotnet new` command, create a Console app in the **src** folder named A
 
 ```bash
 dotnet new console -lang F# -o src/App 
+```
+
+The folowing directory structure is produced as a result of the command completing:
+
+```
+└── FSNEtCore
+    ├── FSNEtCore.sln
+    └── src
+        ├── App
+        │   ├── App.fsproj
+        │   ├── Program.fs
+        └── Library
+            ├── Library.fs
+            └── Library.fsproj
 ```
 
 Change `Program.fs` to:

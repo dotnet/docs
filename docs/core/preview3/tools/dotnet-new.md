@@ -67,7 +67,7 @@ Each project template may have additional options available. The core templates,
 
 **console, xunit, mstest**
 
-`-f|--framework` - Specifies which framework to target. Values: netcoreapp1.0 - 1.6 (Default: netcoreapp1.0) depending on template. Use `--help` for the template to determine supported framework. 
+`-f|--framework` - Specifies which framework to target. Values: netcoreapp1.0 or netcoreapp1.1 (Default: netcoreapp1.0)
 
 **web, webapi**
 

@@ -15,15 +15,13 @@ Build and Run
 -------------
 
 To build and run the sample, change to the `src/NewTypes` directory and
-type the following three commands:
+type the following two commands:
 
 `dotnet restore`
-`dotnet build`
 `dotnet run`
 
-`dotnet restore` installs all the dependencies for this sample into the current directory.
-`dotnet build` creates the output assembly (or assemblies).
-`dotnet run` runs the output executable. 
+`dotnet restore` restores the dependencies for this sample.
+`dotnet run` builds the sample and runs the output assembly.
 
 To run the tests, change to the `tests/NewTypesTests` directory and
 type the following three commands:

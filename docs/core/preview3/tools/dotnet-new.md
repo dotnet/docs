@@ -25,14 +25,14 @@ dotnet-new - Creates a new .NET Core project in the current directory
 `dotnet new [arguments] [options]`
 
 ## Description
-The `dotnet new` command provides a convenient way to initialize a valid .NET Core project and sample source code to try out the Command Line Interface (CLI) toolset. 
+The `dotnet new` command provides a convenient way to initialize a valid .NET Core project and sample source code to try out the Command-line interface (CLI) toolset. 
 
 This command is invoked in the context of a directory. When invoked, the command will scaffold out the resources and files according to the template and options passed into the command. 
 
 After this, the project is ready to be compiled and/or edited further. 
 
 ## Arguments
-template - The template to instansiate when the command is ivoked.
+template - The template to instansiate when the command is invoked.
 
 The command contains a default list of templates; use `dotnet new --help`. 
 
@@ -53,10 +53,6 @@ The name for the output being created. If no name is specified, the name of the 
 `-o|--output`       
 
 Location to place the generated output.
-
-`-h|--help`         
-
-Displays help for this command.
 
 `-all|--show-all`   
 
@@ -90,11 +86,11 @@ Each project template may have additional options available. The core templates,
 
 Create a F# console application project in the current directory:
 
-`dotnet new console --lang f#` 
+`dotnet new console -lang f#` 
    
 Create a new ASP.NET Core C# MVC application project in the current directory with no authentication targeting .NET Core 1.0:  
 
-`dotnet new mvc --auth None --framework netcoreapp1.0`
+`dotnet new mvc -au None -f netcoreapp1.0`
  
 Create a new XUnit application targeting .NET Core 1.1
 

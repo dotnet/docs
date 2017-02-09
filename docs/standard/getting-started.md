@@ -26,7 +26,7 @@ There are a number of ways to get started with .NET.  Because .NET is a massive 
 
 ## Getting started using .NET core
 
-* [Getting Started with .NET Core](../core/getting-started.md) provides an overview of articles which show how to get started with .NET Core on different operating systems and using different tools.
+* [Getting Started with .NET Core](../core/getting-started/index.md) provides an overview of articles which show how to get started with .NET Core on different operating systems and using different tools.
 
 * The [.NET Core Tutorials](../core/tutorials/index.md) detail a number of ways you can get started with .NET Core using your operating system and tooling of choice.
 

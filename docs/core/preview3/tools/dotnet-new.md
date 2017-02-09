@@ -81,6 +81,9 @@ Each project template may have additional options available. The core templates,
 
 `-uld|--use-local-db` - Whether or not to use LocalDB instead of SQLite. Values: true or false (Default: false)
 
+**classlib**
+
+`-f|--framework` - Specifies which framework to target. Values: netcoreapp1.0 - 1.6 (Default: netcoreapp1.4).
 
 ## Examples
 

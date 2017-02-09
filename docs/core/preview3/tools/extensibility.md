@@ -4,7 +4,7 @@ description: .NET Core CLI extensibility model
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 11/13/2016
+ms.date: 02/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 ---
 
-# .NET Core CLI extensibility model (Tooling Preview 4)
+# .NET Core CLI extensibility model (Tooling RC3)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
 > see the [.NET Core CLI extensibility model](../../tools/dotnet-test.md) topic.
 
 ## Overview
@@ -23,7 +23,7 @@ This document will cover the main ways how to extend the CLI tools and explain t
 It will the outline how to consume the tools as well as provide short notes on how to build both types of tools. 
 
 ## How to extend CLI tools
-The Preview 4 CLI tools can be extended in three main ways:
+The RC3 CLI tools can be extended in three main ways:
 
 1. Via NuGet packages on a per-project basis
 2. Via NuGet packages with custom targets  
@@ -50,7 +50,7 @@ category.
 Consuming these tools requires you to add a `<DotNetCliToolReference>` element for each tool you want to use to your project file. Inside the `<DotNetCliToolReference>` element, you reference the package in which the tool resides and you specify the version you need. After running `dotnet restore`, the tool and its dependencies are restored. 
 
 For tools that need to load the build output of the project for execution, there is usually another dependency which is 
-listed under the regular dependencies in the project file. Since the Preview 4 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in Preview 4 becomes a set of MSBuild properties that can be read from any target. We will see how to add a custom target using NuGet later in this document. 
+listed under the regular dependencies in the project file. Since the RC3 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in RC3 becomes a set of MSBuild properties that can be read from any target. We will see how to add a custom target using NuGet later in this document. 
 
 Let's review an example of adding a simple tools-only tool to a simple project. Given an example command called 
 `dotnet-api-search` that allows you to search through the NuGet packages for the specified 
@@ -58,35 +58,16 @@ API, here is a console application's project file that uses that tool:
 
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1/TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.1.0</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161102-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
 
   <!-- The tools reference -->
   <ItemGroup>
-    <DotNetCliToolReference Include="dotnet-api-search">
-      <Version></Version>
-    </DotNetCliToolReference>
+    <DotNetCliToolReference Include="dotnet-api-search" Version="1.0.0" />
   </ItemGroup>
-
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
@@ -99,23 +80,8 @@ your code, information about its dependencies and so on. The package name can be
 application inside, the actual tool binary, has to conform to the convention of `dotnet-<command>` in order for `dotnet` 
 to be able to invoke it. 
 
-In Preview 4 bits, the `dotnet pack` command will not pack the `runtimeconfig.json` file that is needed to run the tool. In order to package this file, you have two options:
-
-1. Create a `nuspec` file and use `dotnet nuget pack` command newly available to Preview 4 CLI to include the file
-2. Use the new `<Content>` element in an `<ItemGroup>` in your project file to include the file manually
-
-Working with nuspec files is beyond the scope of this article, however you can find a lot of good information in the [official NuGet docs](https://docs.microsoft.com/nuget/create-packages/creating-a-package#the-role-and-structure-of-the-nuspec-file). If you decide on the second approach, you can see the example `csproj` file and how it is configured below:
-
-```xml
-  <ItemGroup>
-    <Content Include="$(OutputPath)\*.runtimeconfig.json">
-      <Pack>true</Pack>
-      <PackagePath>lib\$(TargetFramework)</PackagePath>
-    </Content>
-  </ItemGroup>
-```
-
-This `<ItemGroup>` instructs the `dotnet pack` command to pack any `runtimeconfig.json` files in the build output directory (designated by the `$(OutputPath)` variable) and place it into the `lib` folder for the built target framework. The built target framework is designated similarly to the output path by using a MSBuild property. After this is set, the resulting tool nupkg file will contain all that is needed for running the tool.
+> [!NOTE]
+> In pre-RC3 versions of the .NET Core command line tools, the `dotnet pack` command had a bug that caused the `runtime.config.json` to not be packed with the tool. Lacking that file results in errors at runtime. If you encounter this behavior, be sure to update to the latest tooling and try the `dotnet pack` again. 
 
 Since tools are portable applications, the user consuming the tool has to have the version of the .NET Core libraries 
 that the tool was built against in order to run the tool. Any other dependency that the tool uses and that is not 
@@ -135,8 +101,7 @@ NuGet has had the capability to package custom MSBuild target and props files fo
 The sample target's project file is included below for reference. It shows how to use the new `csproj` syntax for instructing `dotnet pack` command what to package to place the targets files as well as assemblies into the `build` folder inside the package. Take note of the `<ItemGroup>` below that has the `Label` property set to "dotnet pack instructions". 
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Sample Packer</Description>
     <VersionPrefix>0.1.0-preview</VersionPrefix>
@@ -145,50 +110,31 @@ The sample target's project file is included below for reference. It shows how t
     <AssemblyName>SampleTargets.PackerTarget</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
-    <EmbeddedResource Include="**\*.resx" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
     <EmbeddedResource Include="Resources\Pkg\dist-template.xml;compiler\resources\**\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="build\SampleTargets.PackerTarget.targets" />
   </ItemGroup>
-  <ItemGroup Label="dotent pack instructions">
+  <ItemGroup Label="dotnet pack instructions">
     <Content Include="build\*.targets;$(OutputPath)\*.dll;$(OutputPath)\*.json">
       <Pack>true</Pack>
       <PackagePath>build\</PackagePath>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161029-1</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.DependencyModel">
-      <Version>1.0.1-beta-000933</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Build.Framework">
-      <Version>0.1.0-preview-00028-160627</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Build.Utilities.Core">
-      <Version>0.1.0-preview-00028-160627</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>9.0.1</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
-    <PackageReference Include="NETStandard.Library">
-      <Version>1.6.0</Version>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.0.1-beta-000933"/>
+    <PackageReference Include="Microsoft.Build.Framework" Version="0.1.0-preview-00028-160627" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="0.1.0-preview-00028-160627" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>463c66f0-921d-4d34-8bde-7c9d0bffaf7b</ProjectGuid>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
     <DefineConstants>$(DefineConstants);NETSTANDARD1_3</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
   </PropertyGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 

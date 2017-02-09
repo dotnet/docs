@@ -113,7 +113,7 @@ open Library
 
 [<EntryPoint>]
 let main argv = 
-    printfn "Nice command line arguments!  Here's what JSON.NET has to say about them:"
+    printfn "Nice command-line arguments!  Here's what JSON.NET has to say about them:"
 
     argv
     |> Array.map getJsonNetJson
@@ -144,7 +144,7 @@ dotnet run Hello World
 You should see the following results:
 
 ```
-Nice command line arguments!  Here's what JSON.NET has to say about them:
+Nice command-line arguments!  Here's what JSON.NET has to say about them:
 
 I used to be Hello but now I'm ""Hello""!
 I used to be World but now I'm ""World""!

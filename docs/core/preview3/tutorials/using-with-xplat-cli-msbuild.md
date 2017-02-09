@@ -1,10 +1,10 @@
 ---
 title: Getting started with .NET Core using the CLI | Microsoft Docs
-description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI).
+description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
 keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
-ms.date: 02/04/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,19 +12,19 @@ ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 ---
 
-# Getting started with .NET Core on Windows/Linux/macOS using the command line (Tooling RC4)
+# Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [Getting started with .NET Core on Windows/Linux/macOS using the CLI](../../tutorials/using-with-xplat-cli.md) topic.
 
-This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
+This topic will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
 
-If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK overview](../tools/dotnet.md).
+If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK overview](../tools/index.md).
 
 ## Prerequisites
 
-- [.NET Core CLI tooling RC4](https://github.com/dotnet/core/blob/master/release-notes/rc3-download.md). <!-- todo: change link to RC4 when available -->
+- [.NET Core CLI tooling RC4](https://github.com/dotnet/core/blob/master/release-notes/rc4-download.md).
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -156,8 +156,10 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 377
 ```
 
-And that's it! Now, you can start using the basic concepts learn here to create your own programs.
+And that's it! Now, you can start using the basic concepts learned here to create your own programs.
+
+Note that the commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
 
 ## See also
 
-[Organizing and testing projects with the .NET Core command line](using-with-xplat-cli-msbuild-folders.md)
+[Organizing and testing projects with the .NET Core CLI tools](using-with-xplat-cli-msbuild-folders.md)

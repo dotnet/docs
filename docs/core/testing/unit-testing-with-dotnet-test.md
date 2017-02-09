@@ -17,9 +17,6 @@ By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWa
 
 [View or download sample code](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)
 
-> [!NOTE]
-> This topic applies to .NET Core 1.0.
-
 ## Creating the Projects
 
 [Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)

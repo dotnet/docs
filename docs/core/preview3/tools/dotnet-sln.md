@@ -35,11 +35,13 @@ The `dotnet sln` command provides a convenient way to add, remove and list proje
 ## Commands
 
 `add <project>`
+
 `add **/*`
 
 Adds a project or multiple projects to the solution file. Glob pattern is supported on Unix/Linux based terminals.
 
 `remove <project>`
+
 `remove **/*`
 
 Remove a project or multiple projects from the solution file. Glob pattern is supported on Unix/Linux based terminals.

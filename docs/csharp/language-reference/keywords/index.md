@@ -36,7 +36,7 @@ translation.priority.ht:
 # C# Keywords
 Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier but `if` is not because `if` is a keyword.  
   
- The first table in this topic lists keywords that are reserved identifiers in any part of a C# program. The second table in this topic lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they are added as contextual keywords in order to avoid breaking programs written in earlier versions. Finally, the third table lists single-character contextual keywords, such as `@` and `$`, which are symbols that have a special meaning to the C# compiler. 
+ The first table in this topic lists keywords that are reserved identifiers in any part of a C# program. The second table in this topic lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they are added as contextual keywords in order to avoid breaking programs written in earlier versions. Finally, the third section lists single-character contextual keywords, such as `@` and `$`, which are symbols that have a special meaning to the C# compiler. 
   
 |||||  
 |---|---|---|---|  
@@ -78,11 +78,12 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
   
 ## Single-character keywords
 
-Single-character keywords are symbols that have a special meaning to the compiler. The `@` symbol is the verbatim identifier character; it can be used to distinguish an identifier (such as a variable named `@for`) from a C# keyword, as well as to indicate that the characters in a string are interpreted literally. The `$` symbol is the interpolated string character; it identifies the literal string that follows as an interpolated string.
+Single-character keywords are contextual symbols that have a special meaning to the compiler. C# supports the following single-character keywords: 
 
-|||  
-|---|---|---|  
-|[@](../../../csharp/language-reference/keywords/verbatim.md)|[$](../../../csharp/language-reference/keywords/interpolated.md)||
+
+- The [@](../../../csharp/language-reference/keywords/verbatim.md) symbol is the verbatim identifier character. It can be used to distinguish an identifier (such as a variable named `@for`) from a C# keyword, or to indicate that the characters in a string are interpreted literally. 
+
+- The [$](../../../csharp/language-reference/keywords/interpolated.md)` symbol is the interpolated string character. It identifies literal string that follows as an interpolated string.
 
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

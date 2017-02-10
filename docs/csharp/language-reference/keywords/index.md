@@ -81,9 +81,9 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 Single-character keywords are contextual symbols that have a special meaning to the compiler. C# supports the following single-character keywords: 
 
 
-- The [@](../../../csharp/language-reference/keywords/verbatim.md) symbol is the verbatim identifier character. It can be used to distinguish an identifier (such as a variable named `@for`) from a C# keyword, or to indicate that the characters in a string are interpreted literally. 
+- [@](../../../csharp/language-reference/keywords/verbatim.md), the verbatim identifier character. 
 
-- The [$](../../../csharp/language-reference/keywords/interpolated.md)` symbol is the interpolated string character. It identifies literal string that follows as an interpolated string.
+- [$](../../../csharp/language-reference/keywords/interpolated.md)`, the interpolated string character.
 
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

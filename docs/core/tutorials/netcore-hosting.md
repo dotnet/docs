@@ -39,7 +39,7 @@ The primary .NET Core hosting interface (`ICLRRuntimeHost2`) is defined in [MSCO
 ### Step 1 - Identify the managed entry point
 After referencing necessary headers ([mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h) and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using. In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose main method will be executed.
 
-[!hosting-cpp [NetCoreHost#1](../../../samples/core/hosting/host.cpp#1)]
+[!code-cpp[NetCoreHost#1](../../../samples/core/hosting/host.cpp#1)]
 
 ### Step 2 - Find and load CoreCLR.dll
 The .NET Core runtime APIs are in *CoreCLR.dll* (on Windows). To get our hosting interface (`ICLRRuntimeHost2`), it's necessary to find and load *CoreCLR.dll*. It is up to the host to define a convention for how it will locate *CoreCLR.dll*. Some hosts expect the file to be present in a well-known machine-wide location (such as %programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0). Others expect that *CoreCLR.dll* will be loaded from a location next to either the host itself or the app to be hosted. Still others might consult an environment variable to find the library.
@@ -48,17 +48,17 @@ On Linux or Mac, the core runtime library is *libcoreclr.so* or *libcoreclr.dyli
 
 Our sample host probes a few common locations for *CoreCLR.dll*. Once found, it must be loaded via `LoadLibrary` (or `dlopen` on Linux/Mac).
 
-[!hosting-cpp [NetCoreHost#2](../../../samples/core/hosting/host.cpp#2)]
+[!code-cpp[NetCoreHost#2](../../../samples/core/hosting/host.cpp#2)]
 
 ### Step 3 - Get an ICLRRuntimeHost2 Instance
 The `ICLRRuntimeHost2` hosting interface is retrieved by calling `GetProcAddress` (or `dlsym` on Linux/Mac) on `GetCLRRuntimeHost`, and then invoking that function. 
 
-[!hosting-cpp [NetCoreHost#3](../../../samples/core/hosting/host.cpp#3)]
+[!code-cpp[NetCoreHost#3](../../../samples/core/hosting/host.cpp#3)]
 
 ### Step 4 - Setting startup flags and starting the runtime
 With an `ICLRRuntimeHost2` in-hand, we can now specify runtime-wide startup flags and start the runtime. Startup flags will determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).
 
-[!hosting-cpp [NetCoreHost#4](../../../samples/core/hosting/host.cpp#4)]
+[!code-cpp[NetCoreHost#4](../../../samples/core/hosting/host.cpp#4)]
 
 The runtime is started with a call to the `Start` function.
 
@@ -71,7 +71,7 @@ Once the runtime is started, we will want to setup an AppDomain. There are a num
 
 AppDomain flags specify AppDomain behaviors related to security and interop. Older Silverlight hosts used these settings to sandbox user code, but most modern .NET Core hosts run user code as full trust and enable interop.
 
-[!hosting-cpp [NetCoreHost#5](../../../samples/core/hosting/host.cpp#5)]
+[!code-cpp[NetCoreHost#5](../../../samples/core/hosting/host.cpp#5)]
 
 After deciding which AppDomain flags to use, AppDomain properties must be defined. The properties are key/value pairs of strings. Many of the properties relate to how the AppDomain will load assemblies.
 
@@ -86,17 +86,17 @@ Common AppDomain properties include:
 
 In our [simple sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting), these properties are set up as follows:
 
-[!hosting-cpp [NetCoreHost#6](../../../samples/core/hosting/host.cpp#6)]
+[!code-cpp[NetCoreHost#6](../../../samples/core/hosting/host.cpp#6)]
 
 ### Step 6 - Create the AppDomain
 Once all AppDomain flags and properties are prepared, `ICLRRuntimeHost2::CreateAppDomainWithManager` can be used to setup the AppDomain. This function optionally takes a fully-qualified assembly name and type name to use as the domain's AppDomain manager. An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.   
 
-[!hosting-cpp [NetCoreHost#7](../../../samples/core/hosting/host.cpp#7)]
+[!code-cpp[NetCoreHost#7](../../../samples/core/hosting/host.cpp#7)]
 
 ### Step 7 - Run managed code!
 With an AppDomain up and running, the host can now start executing managed code. The easiest way to do this is to use `ICLRRuntimeHost2::ExecuteAssembly` to invoke a managed assembly's entry point method. Note that this function only works in single-domain scenarios.
 
-[!hosting-cpp [NetCoreHost#8](../../../samples/core/hosting/host.cpp#8)]
+[!code-cpp[NetCoreHost#8](../../../samples/core/hosting/host.cpp#8)]
 
 Another option, if `ExecuteAssembly` doesn't meet your host's needs, is to use `CreateDelegate` to create a function pointer to a static managed method. This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point.
 
@@ -115,7 +115,7 @@ hr = runtimeHost->CreateDelegate(
 ### Step 8 - Clean up
 Finally, the host should clean up after itself by unloading AppDomains, stopping the runtime, and releasing the `ICLRRuntimeHost2` reference.
 
-[!hosting-cpp [NetCoreHost#9](../../../samples/core/hosting/host.cpp#9)]
+[!code-cpp[NetCoreHost#9](../../../samples/core/hosting/host.cpp#9)]
 
 ## About Hosting .NET Core on Unix
 .NET Core is a cross-platform product, running on Windows, Linux, and Mac operating systems. As native applications, though, hosts for different platforms will have some differences between them. The process described above of using `ICLRRuntimeHost2` to start the runtime, create an AppDomain, and execute managed code, should work on any supported operating system. However, the interfaces defined in mscoree.h can be cumbersome to work with on Unix platforms since mscoree makes many Win32 assumptions.

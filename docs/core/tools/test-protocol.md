@@ -15,8 +15,8 @@ ms.assetid: 88cba792-3640-41de-b55d-00f575e9d5e2
 #.NET Core CLI test communication protocol
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 documentation,
-> see the [.NET Core command-line interface tools (Tooling RC3)](../preview3/tools/index.md) section.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 documentation,
+> see the [.NET Core command-line interface tools (.NET Core Tools RC4)](../preview3/tools/index.md) section.
 
 ## Introduction
 Anytime you pass a port to dotnet test, the command will run in design time. That means that `dotnet test` will connect to that port

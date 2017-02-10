@@ -11,10 +11,10 @@ ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 ---
 
-# .NET Core Application Deployment (.NET Core Tools RC3)
+# .NET Core Application Deployment (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 documentation,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 documentation,
 > see the [.NET Core Application Deployment](../../deploying/index.md) topic.
 
 You can create two types of deployments for .NET Core applications: 

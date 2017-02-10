@@ -4,7 +4,7 @@ description: How to use MSTest with .NET Core
 keywords: MSTest, .NET, .NET Core
 author: ncarandini
 ms.author: wiwagn
-ms.date: 02/09/2017
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -32,12 +32,12 @@ final project structure will be something like this:
 
 ### Creating the source project
 
-Start in the `unit-testing-using-mstest` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new classib` to create the source
+Open a shell window. 
+Start in the *unit-testing-using-mstest* directory, create the *PrimeService* directory.
+Make *PrimeService* the current directory, and run `dotnet new classlib` to create the source
 project.
 
-
-Rename `Class1.cs` as `PrimeService.cs`. To use test-driven development (TDD), you'll create a failing implementation of the
+Rename *Class1.cs* as *PrimeService.cs*. To use test-driven development (TDD), you'll create a failing implementation of the
 `PrimeService` class:
 
 ```cs
@@ -57,10 +57,10 @@ namespace Prime.Services
 
 ### Creating the test project
 
-Next, cd back into the 'unit-testing-using-mstest' directory, and create the `PrimeServices.Tests` directory.
-CD into the `PrimeService.Tests` directory and create a new project using
+Next, cd back into the 'unit-testing-using-mstest' directory, and create the *PrimeServices.Tests* directory.
+Make the *PrimeService.Tests* directory the current directory and create a new project using
 `dotnet new mstest`. This creates a test project
-that uses mstest as the test library. 
+that uses MSstest as the test library. 
 
 The generated template configured the test runner
 in the PrimeServiceTests.csproj:
@@ -82,7 +82,7 @@ CLI:
 dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
-Or, you can directly edit the `PrimeService.Tests.csproj` file.
+Or, you can manually edit the *PrimeService.Tests.csproj* file.
 Directly under the first
 `<ItemGroup>` node, add another `<ItemGroup>` node with a reference to 
 the library project:
@@ -147,7 +147,7 @@ build system will detect that and build it because it is a
 dependency of the test project.
 
 Now, execute `dotnet test` to run the tests from the console.
-The xunit test runner has the program entry point to run your
+The MSTest test runner has the program entry point to run your
 tests from the Console. `dotnet test` starts the
 test runner, and provides a command line argument to the
 testrunner indicating the assembly that contains your tests.
@@ -171,7 +171,6 @@ In the `PrimeService.Tests` directory, run `dotnet test` again. The
 project, and then for PrimeService.Tests project. After building both
 projects, it will run this single test. It passes.
 
-//////////////////////////////////////
 ### Adding More Features
 
 Now, that you've made one test pass, it's time to write more.
@@ -211,5 +210,3 @@ You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests
 will be seamless, and you can concentrate on the problem at hand. The 
 tools will run automatically.
-   
-   

@@ -15,8 +15,8 @@ ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 # .NET Core command-line interface tools
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [.NET Core command-line interface tools (Tooling RC3)](../preview3/tools/index.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [.NET Core command-line interface tools (.NET Core Tools RC4)](../preview3/tools/index.md) topic.
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 

@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
 
-#dotnet-test (Tooling RC3)
+#dotnet-test (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-test](../../tools/dotnet-test.md) topic.
 
 ## Name

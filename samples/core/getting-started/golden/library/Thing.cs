@@ -8,3 +8,4 @@ namespace Library
             DeserializeObject<int>($"{left + right}");
     }
 }
+

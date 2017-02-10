@@ -65,7 +65,7 @@ namespace Prime.Services
 Next, cd back into the 'unit-testing-using-dotnet-test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeService.Tests` directory and create a new project using
 `dotnet new xunit`. `dotnet xunit` creates a test project
-that uses xunit as the test library. 
+that uses xUnit as the test library. 
 
 The generated template configured the test runner
 in the PrimeServiceTests.csproj:
@@ -79,7 +79,7 @@ in the PrimeServiceTests.csproj:
 ```
 
 The test project requires other packages to create and run unit tests.
-`dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
+`dotnet new` added xUnit, and the xUnit runner. You need to add the PrimeService
 package as another dependency to the project. You can do that using the `dotnet`
 CLI:
 
@@ -147,7 +147,7 @@ build system will detect that and build it because it is a
 dependency of the test project.
 
 Now, execute `dotnet test` to run the tests from the console.
-The xunit test runner has the program entry point to run your
+The xUnit test runner has the program entry point to run your
 tests from the Console. `dotnet test` starts the
 test runner, and provides a command line argument to the
 testrunner indicating the assembly that contains your tests.
@@ -171,7 +171,7 @@ public bool IsPrime(int candidate)
 Now, that you've made one test pass, it's time to write more.
 There are a few other simple cases for prime numbers: 0, -1. You
 could add those as new tests, with the `[Fact]` attribute, but that
-quickly becomes tedious. There are other xunit attributes that enable
+quickly becomes tedious. There are other xUnit attributes that enable
 you to write a suite of similar tests.  A `Theory` represents a suite
 of tests that execute the same code, but have different input arguments.
 You can use the `[InlineData]` attribute to specify values for those

@@ -15,7 +15,7 @@ ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 #dotnet command (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to.NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet command](../../tools/dotnet.md) topic.
 
 ## Name

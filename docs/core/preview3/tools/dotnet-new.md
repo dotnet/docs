@@ -15,7 +15,7 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 #dotnet-new (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to.NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-new](../../tools/dotnet-new.md) topic.
 
 ## Name

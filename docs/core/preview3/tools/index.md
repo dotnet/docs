@@ -15,7 +15,7 @@ ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 # .NET Core command-line interface tools (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to.NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [.NET Core command-line interface tools](../../tools/index.md) topic.
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 

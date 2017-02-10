@@ -15,7 +15,7 @@ ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 # Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to.NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [Getting started with .NET Core on Windows/Linux/macOS using the command line](../../tutorials/using-with-xplat-cli.md) topic.
 
 This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)](./using-with-xplat-cli-msbuild.md) to show how to go beyond simple "hello world" scenarios and pave the way for more advanced and well-organized applications.

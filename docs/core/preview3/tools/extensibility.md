@@ -15,7 +15,7 @@ ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 # .NET Core CLI extensibility model (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to.NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [.NET Core CLI extensibility model](../../tools/dotnet-test.md) topic.
 
 ## Overview

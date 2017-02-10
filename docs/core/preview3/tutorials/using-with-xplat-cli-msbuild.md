@@ -15,7 +15,7 @@ ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 # Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to.NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [Getting started with .NET Core on Windows/Linux/macOS using the command line](../../tutorials/using-with-xplat-cli.md) topic.
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.

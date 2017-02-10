@@ -149,8 +149,8 @@ dependency of the test project.
 Now, execute `dotnet test` to run the tests from the console.
 The MSTest test runner has the program entry point to run your
 tests from the Console. `dotnet test` starts the
-test runner, and provides a command line argument to the
-testrunner indicating the assembly that contains your tests.
+test runner, and provides a command-line argument to the
+test runner indicating the assembly that contains your tests.
 
 Your test fails. You haven't created the implementation yet.
 Write the simplest code to make this one test pass:
@@ -171,7 +171,7 @@ In the `PrimeService.Tests` directory, run `dotnet test` again. The
 project, and then for PrimeService.Tests project. After building both
 projects, it will run this single test. It passes.
 
-### Adding More Features
+## Adding More Features
 
 Now, that you've made one test pass, it's time to write more.
 There are a few other simple cases for prime numbers: 0, -1. You
@@ -187,7 +187,6 @@ inputs.
  which is the lowest prime number:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs#Sample_TestCode "First tests")]
-```
 
 Run `dotnet test` and you'll see that two of these tests fail.
 You can make them pass by changing the service. You need to change

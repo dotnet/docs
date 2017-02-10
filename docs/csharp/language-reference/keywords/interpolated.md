@@ -36,7 +36,7 @@ Identifies a string literal as an [interpolated string](interpolated-strings.md)
 
 The following example uses the `$` character to define an interpolated string.
 
-[!code-csharp[interpolated string symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
+[!code-cs[interpolated-string-symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
 
 For more information on interpolated strings, see the [Interpolated Strings](interpolated-strings.md) topic.
 

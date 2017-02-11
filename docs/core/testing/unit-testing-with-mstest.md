@@ -1,5 +1,5 @@
 ---
-title: Use MSTest with .NET Core
+title: Use MSTest with .NET Core | Microsoft Docs
 description: How to use MSTest with .NET Core
 keywords: MSTest, .NET, .NET Core
 author: ncarandini
@@ -13,7 +13,9 @@ ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
 
 # Unit testing with MSTest and .NET Core
 
-## Creating the Projects
+[!INCLUDE[preview-warning](../../includes/warning.md)]
+
+## Creating the projects
 
 [Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)
 has information on organizing multi-project solutions for both the
@@ -57,7 +59,7 @@ namespace Prime.Services
 
 ### Creating the test project
 
-Next, cd back into the 'unit-testing-using-mstest' directory, and create the *PrimeServices.Tests* directory.
+Next, change directory back into the *unit-testing-using-mstest* directory, and create the *PrimeServices.Tests* directory.
 Make the *PrimeService.Tests* directory the current directory and create a new project using
 `dotnet new mstest`. This creates a test project
 that uses MSstest as the test library. 
@@ -171,7 +173,7 @@ In the `PrimeService.Tests` directory, run `dotnet test` again. The
 project, and then for PrimeService.Tests project. After building both
 projects, it will run this single test. It passes.
 
-## Adding More Features
+## Adding more features
 
 Now, that you've made one test pass, it's time to write more.
 There are a few other simple cases for prime numbers: 0, -1. You

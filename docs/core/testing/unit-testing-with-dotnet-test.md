@@ -1,5 +1,5 @@
 ---
-title: Unit Testing in .NET Core using dotnet test
+title: Unit Testing in .NET Core using dotnet test | Microsoft Docs
 description: Unit Testing in .NET Core using dotnet test
 keywords: .NET, .NET Core
 author: ardalis

@@ -144,7 +144,7 @@
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
 ## [Unit Testing](core/testing/index.md)
-### [Unit Testing with dotnet test and XUnit](core/testing/unit-testing-with-dotnet-test.md)
+### [Unit testing with dotnet test and xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with dotnet test and MSTest](core/testing/unit-testing-with-mstest.md)
 ## [Versioning](core/versions/index.md)
 ### [.NET Core Support](core/versions/lts-current.md)

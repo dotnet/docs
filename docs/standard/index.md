@@ -4,7 +4,7 @@ description: Learn about the .NET Platform.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: ronpet
-ms.date: 10/31/2016
+ms.date: 2/10/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -31,6 +31,14 @@ If you're new to .NET Core, check out [Getting Started with .NET Core](../core/g
 
 If you're new to .NET Standard, check out [.NET Standard Library](library.md).
 
+## Porting .NET Framework Code to .NET Core
+
+If you're looking to port an application, service, or some component of a system to .NET Core, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
+
+## Porting a NuGet package from .NET Framework to .NET Standard
+
+If you're looking to port a NuGet package to .NET Standard, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
+
 ## Interested in .NET Fundamentals
 
 If you're interested in some of the fundamental concepts of .NET, check out:
@@ -46,14 +54,6 @@ If you're interested in some of the fundamental concepts of .NET, check out:
 * [Collections](collections/index.md)
 * [Dates, times, and time zones](datetime/index.md)
 * [Asynchronous Programming](async.md)
-
-## Porting .NET Framework Code to .NET Core
-
-If you're looking to port an application, service, or some component of a system to .NET Core, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
-
-## Porting a NuGet package from .NET Framework to .NET Standard
-
-If you're looking to port a NuGet package to .NET Standard, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
 
 ## API Reference
 

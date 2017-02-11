@@ -4,7 +4,7 @@ description: A guided tour through some of the prominent features of the .NET pl
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
-ms.date: 11/16/2016
+ms.date: 02/09/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -51,7 +51,7 @@ There is no analogous keyword to de-allocate memory, as de-allocation happens au
 
 One of the less obvious but quite far-reaching features that a garbage collector enables is memory safety. The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed). Dangling pointers are always bugs, and tracking them down is often quite difficult.
 
-The .NET runtime provides additional services, to complete the promise of memory safety, not naturally offered by a GC. It ensures that programs do not index off the end of an array or accessing a phantom field off the end of an object.
+The .NET runtime provides additional services, to complete the promise of memory safety, not naturally offered by a GC. It ensures that programs do not index off the end of an array or access a phantom field off the end of an object.
 
 The following example will throw an exception as a result of memory safety.
 

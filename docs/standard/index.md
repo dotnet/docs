@@ -13,7 +13,8 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 
 # .NET Platform Guide
-The .NET Platform Guide provides a large amount of information about the .NET Platform.  Depending on your familiarity with .NET, you may wish to explore different sections of this guide.
+
+The .NET Platform Guide provides a large amount of information about the .NET Platform.  Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other sections of the .NET documentation.
 
 ## New to .NET
 
@@ -35,7 +36,7 @@ If you're new to .NET Standard, check out [.NET Standard Library](library.md).
 
 If you're looking to port an application, service, or some component of a system to .NET Core, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
 
-## Porting a NuGet package from .NET Framework to .NET Standard
+## Porting a NuGet package from to .NET Standard
 
 If you're looking to port a NuGet package to .NET Standard, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
 
@@ -57,4 +58,4 @@ If you're interested in some of the fundamental concepts of .NET, check out:
 
 ## API Reference
 
-Check out the [.NET API Reference](https://docs.microsoft.com/dotnet/core/api/) to see the breadth of APIs avaialable.
+Check out the [.NET API Reference](../../api/index.md) to see the breadth of APIs avaialable.

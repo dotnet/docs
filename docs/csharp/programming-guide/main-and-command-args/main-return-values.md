@@ -85,6 +85,6 @@ MainReturnValTest
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Reference](../../../csharp/language-reference/index.md)   
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)   
+ [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
  [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)   
  [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)

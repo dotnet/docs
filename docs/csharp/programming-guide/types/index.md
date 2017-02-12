@@ -131,7 +131,7 @@ char c = 'Z';
  For more information about structs, see [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md). For more information about value types in the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], see [Common Type System](http://msdn.microsoft.com/library/53c57c96-83e1-4ee3-9543-9ac832671a89).  
   
  The other category of value types is [enum](../../../csharp/language-reference/keywords/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=fullName> enumeration in the .NET Framework class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:  
-  
+ 
  [!code-cs[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_5.cs)]  
   
  The `System.IO.FileMode.Create` constant has a value of 2. However, the name is much more meaningful for humans reading the source code, and for that reason it is better to use enumerations instead of constant literal numbers. For more information, see <xref:System.IO.FileMode?displayProperty=fullName>.  
@@ -145,8 +145,7 @@ char c = 'Z';
 MyClass mc = new MyClass();  
 MyClass mc2 = mc;  
 ```  
-  
- An interface must be initialized together with a class object that implements it. If `MyClass` implements `IMyInterface`, you create an instance of `IMyInterface` as shown in the following example:  
+   An interface must be initialized together with a class object that implements it. If `MyClass` implements `IMyInterface`, you create an instance of `IMyInterface` as shown in the following example:  
   
 ```cs  
 IMyInterface iface = new MyClass();  
@@ -169,8 +168,13 @@ IMyInterface iface = new MyClass();
   
 ## Generic Types  
  A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET Framework type <xref:System.Collections.Generic.List%601?displayProperty=fullName> has one type parameter that by convention is given the name *T*. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, string:  
-  
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
+ 
+```cs
+List<string> stringList = new List<string>();
+stringList.Add("String example");
+// compile time error adding a type other than a string:
+stringList.Add(4);
+```
  The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../../csharp/language-reference/keywords/object.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](../../../csharp/programming-guide/generics/index.md).  
   
 ## Implicit Types, Anonymous Types, and Nullable Types  

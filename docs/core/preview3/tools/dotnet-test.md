@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
 
-#dotnet-test (Tooling Preview 4)
+#dotnet-test (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-test](../../tools/dotnet-test.md) topic.
 
 ## Name
@@ -28,7 +28,7 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
     [--settings] [--listTests] [--testCaseFilter] 
     [--testAdapterPath] [--logger] 
     [--configuration] [--output] [--framework] [--diag]
-    [--noBuild]`  
+    [--no-build]`  
 
 ## Description
 
@@ -123,7 +123,7 @@ Looks for test binaries for a specific framework.
 
 Look for test binaries for a for the specified runtime.
 
-`--noBuild` 
+`--no-build` 
 
 Does not build the test project prior to running it. 
 

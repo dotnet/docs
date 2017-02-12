@@ -51,7 +51,7 @@ Some exceptions are thrown automatically by the .NET Framework's common language
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)   
+ [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)   
  [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)   
  [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   

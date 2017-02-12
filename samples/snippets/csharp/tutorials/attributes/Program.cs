@@ -119,4 +119,22 @@ namespace ConsoleApplication
         }
     }
     // </CallerMemberName1>
+
+    // <AttributeGothca1>
+    public class GotchaAttribute : Attribute
+    {
+        public GotchaAttribute(Foo myClass, string str) {
+            
+        }
+    }
+    // </AttributeGothca1>
+
+    // <AttributeGotcha2>
+    [Gotcha(new Foo(), "test")] // does not compile
+    public class AttributeFail
+    {
+
+    }
+    // </AttributeGotcha2>
+    
 }

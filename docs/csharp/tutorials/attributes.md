@@ -14,8 +14,12 @@ ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
 
 # Using Attributes in C# #
 
-Attributes provide a way of associating information with code in a declarative way. In this tutorial,
-you'll be introduced to how to add attributes to your code, how to create and use your own attributes, and how to use some
+Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to a variety of targets.
+
+Consider the `[Obsolete]` attribute. It can be applied to classes, structs, methods, constructors, and more. It _declares_ that the element is obsolete. It's then up to the C#
+compiler to look for this attribute, and do some action in response.
+
+In this tutorial, you'll be introduced to how to add attributes to your code, how to create and use your own attributes, and how to use some
 attributes that are built into .NET Core.
 
 ## Prerequisites
@@ -35,7 +39,7 @@ application. To use the command line generator, execute the following command in
 
 `dotnet new`
 
-This command will create a barebones .NET core project with `project.json` and `Program.cs` files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+This command will create barebones .NET core project files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 
@@ -55,11 +59,10 @@ parameter to the Obsolete attribute.
 
 [!code-csharp[Obsolete attribute example with parameters](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ObsoleteExample2)]
 
-The string is being passed as an argument to an `ObsoleteAttributes` constructor, just as if you were writing `var attr = new ObsoleteAttribute("some string")`.
+The string is being passed as an argument to an `ObsoleteAttribute` constructor, just as if you were writing `var attr = new ObsoleteAttribute("some string")`.
 
 Parameters to an attribute constructor are limited to simple types/literals: `bool, int, double, string, Type, enums, etc` and arrays of those types.
 You can not use an expression or a variable. You are free to use positional or named parameters.
-_There is a 'gotcha' here to watch out for: the C# compiler won't stop you from creating those parameters, it will only stop you from using them_.
 
 ## How to create your own attribute
 
@@ -74,6 +77,17 @@ With the above, I can now use `[MySpecial]` (or `[MySpecialAttribute]`) as an at
 Attributes in the .NET base class library like `ObsoleteAttribute` trigger certain behaviors within the compiler. However, any attribute you create acts
 only as metadata, and doesn't result in any code within the attribute class being executed. It's up to you to act
 on that metadata elsewhere in your code (more on that later in the tutorial).
+
+There is a 'gotcha' here to watch out for. As mentioned above, only certain types are allowed to be passed as arguments when using attributes. However, when creating an attribute type,
+the C# compiler won't stop you from creating those parameters. In the below example, I've created an attribute with a constructor that compiles just fine.
+
+[!code-csharp[Valid constructor used in an attribute](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#AttributeGothca1)]
+
+However, you will be unable to use this constructor with attribute syntax.
+
+[!code-csharp[Invalid attempt to use the attribute constructor](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#AttributeGotcha2)]
+
+The above will cause a compiler error like `Attribute constructor parameter 'myClass' has type 'Foo', which is not a valid attribute parameter type`
 
 ## How to restrict attribute usage
 
@@ -100,7 +114,7 @@ to certain targets, you can do so by using the `AttributeUsageAttribute` on your
 
 [!code-csharp[Using your own attribute](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#AttributeUsageExample1)]
 
-If you attempt to put that attribute on something that's not a class or a struct, you will get a compiler error
+If you attempt to put the above attribute on something that's not a class or a struct, you will get a compiler error
 like `Attribute 'MyAttributeForClassAndStructOnly' is not valid on this declaration type. It is only valid on 'class, struct' declarations`
 
 [!code-csharp[Using your own attribute](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#AttributeUsageExample2)]
@@ -109,7 +123,7 @@ like `Attribute 'MyAttributeForClassAndStructOnly' is not valid on this declarat
 
 Attributes act as metadata. Without some outward force, they won't actually do anything.
 
-To find and act on attributes, Reflection is generally needed. I won't cover Reflection in-depth in this tutorial, but the basic
+To find and act on attributes, [Reflection](../programming-guide/concepts/reflection.md) is generally needed. I won't cover Reflection in-depth in this tutorial, but the basic
 idea is that Reflection allows you to write code in C# that examines other code.
 
 For instance, you can use Reflection to get information about a class: 
@@ -125,18 +139,10 @@ Here's an example of using `GetCustomAttributes` on a `MemberInfo` instance for 
 
 [!code-csharp[Getting type information with Reflection](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ReflectionExample2)]
 
-That will print to console: `Attribute on MyClass: ObsoleteAttribute`. Try adding other attribute to `MyClass`.
+That will print to console: `Attribute on MyClass: ObsoleteAttribute`. Try adding other attributes to `MyClass`.
 
-It's important to note that these `Attribute` objects are instantiated lazily. That is, they won't be instantiated until you use `GetCustomAttribute` or `GetCustomeAttributes`.
+It's important to note that these `Attribute` objects are instantiated lazily. That is, they won't be instantiated until you use `GetCustomAttribute` or `GetCustomAttributes`.
 They are also instantiated each time. Calling `GetCustomAttributes` twice in a row will return two different instances of `ObsoleteAttribute`.
-
-## What is the point of attributes?
-
-Since attributes aren't instantiated or executed unless you use reflection, what is the point? As stated early on, the use of attributes can provide a declarative way
-to write code. It can also provide a reusable element that can be applied to a variety of targets.
-
-Consider the `[Obsolete]` attribute. It can be applied to classes, structs, methods, constructors, and more. It _declares_ that the element is obsolete. It's then up to the C#
-compiler to look for this attribute, and do some action in response.
 
 ## Common attributes in the base class library (BCL)
 
@@ -157,7 +163,7 @@ example:
 
 [!code-csharp[Using CallerMemberName when implementing INotifyPropertyChanged](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ReflectionExample1)]
 
-In the above code, you don't have to have a literal "Name" string. This can help prevent typo-related bugs and also makes for smoother refactoring/renaming.
+In the above code, you don't have to have a literal `"Name"` string. This can help prevent typo-related bugs and also makes for smoother refactoring/renaming.
 
 ## Summary
 

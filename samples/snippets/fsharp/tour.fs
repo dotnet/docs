@@ -329,7 +329,7 @@ module Lists =
     let daysList = 
         [ for month in 1 .. 12 do
               for day in 1 .. System.DateTime.DaysInMonth(2017, month) do 
-                  yield System.DateTime(2012, month, day) ]
+                  yield System.DateTime(2017, month, day) ]
 
     // Print the first 5 elements of 'daysList' using 'List.take'.
     printfn "The first 5 days of 2017 are: %A" (daysList |> List.take 5)

@@ -423,7 +423,7 @@ module Sequences =
     /// This a sequence of values.
     let seq2 = seq { yield "hello"; yield "world"; yield "and"; yield "hello"; yield "world"; yield "again" }
 
-    /// This is an on-demand sequence from 1 to 100.
+    /// This is an on-demand sequence from 1 to 1000.
     let numbersSeq = seq { 1 .. 1000 }
 
     /// This is a sequence producing the words "hello" and "world"

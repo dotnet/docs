@@ -72,12 +72,11 @@ namespace PatternMatching
                     return c.Radius * c.Radius * Math.PI;
                 case Rectangle r:
                     return r.Height * r.Length;
-                //default:
-                  //  throw new ArgumentException(
-                    //    message: "shape is not a recognized shape",
-                      //  paramName: nameof(shape));
+                default:
+                    throw new ArgumentException(
+                        message: "shape is not a recognized shape",
+                        paramName: nameof(shape));
             }
-            return 0;
         }
         #endregion
 

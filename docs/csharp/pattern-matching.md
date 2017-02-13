@@ -39,7 +39,7 @@ hierarchy. When data and methods are separate, you need other tools. The new
 *pattern matching* constructs enable cleaner syntax to examine data
 and manipulate control flow based on any condition of that data. You already
 write `if` statements and `switch` that test a variable's value. You write `is`
-statements that test a variable's type. *Pattern matching* adds new capabilites
+statements that test a variable's type. *Pattern matching* adds new capabilities
 to those statements.
 
 In this topic, you'll build a method  that computes the area of
@@ -52,7 +52,7 @@ base type, so inheritance is not a possible design.
 As you go through this sample, contrast this code with how it would
 be structured as an object hierarchy. When the data you must
 query and manipulate is not a class hierarchy, pattern matching enables
-very elegent designs.
+very elegant designs.
 
 Rather than starting with an abstract shape definition and adding different
 specific shape classes, let's start instead with simple data only definitions
@@ -178,7 +178,7 @@ using a `when` clause on the `case` label:
 
 This change demonstrates a few important points about the new syntax. First,
 multiple `case` labels can be applied to one `switch` section. The statement
-block is executed when any of those labels is true. In this instance,
+block is executed when any of those labels is `true`. In this instance,
 if the `switch` expression is either a circle or a square with 0 area, the
 method returns the constant 0.
 
@@ -213,11 +213,11 @@ type.
 
 *Pattern Matching constructs* enable you to easily manage control flow
 among different variables and types that are not related by an inheritance
-hierarchy. You can also the control logic to use any condition you test on
+hierarchy. You can also control logic to use any condition you test on
 the variable. It enables patterns and idioms that you'll need more often
 as you build more distributed applications, where data and the methods that
 manipulate that data are separate. You'll notice that the shape structs
-used in this sample do not contain any methods, just read only properties.
+used in this sample do not contain any methods, just read-only properties.
 Pattern Matching works with any data type. You write expressions that examine
 the object, and make control flow decisions based on those conditions.
 

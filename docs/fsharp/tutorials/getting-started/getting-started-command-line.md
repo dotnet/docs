@@ -14,7 +14,7 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 
 # Getting started with F# with command-line tools
 
-This article covers how you can get started with using F# on .NET Core 1.0 with the .NET Core SDK 1.0.0 - Preview 2 (build 003131).  It will go through building a multi-project solution with a Class Library that is called by a Console Application.
+This article covers how you can get started with using F# on .NET Core.  It will go through building a multi-project solution with a Class Library that is called by a Console Application.
 
 ## Prerequisites
 
@@ -26,18 +26,18 @@ This article assumes that you know how to use a command line and have a preferre
 
 Open a command prompt/terminal and use the `dotnet new` command to create new solution file called `FSNetCore`:
 
-```bash
+```
 dotnet new sln -o FSNetCore
 ```
 
 The folowing directory structure is produced as a result of the command completing:
 
 ```
-FSNEtCore
-    ├── FSNEtCore.sln
+FSNetCore
+    ├── FSNetCore.sln
 ```
 
-Change directories to `FSNetCore` and start adding projects to the solution folder.
+Change directories to *FSNetCore* and start adding projects to the solution folder.
  
 ### Writing a Class library
 
@@ -50,8 +50,8 @@ dotnet new classlib -lang F# -o src/Library
 The folowing directory structure is produced as a result of the command completing:
 
 ```
-└── FSNEtCore
-    ├── FSNEtCore.sln
+└── FSNetCore
+    ├── FSNetCore.sln
     └── src
         └── Library
             ├── Library.fs
@@ -81,7 +81,7 @@ Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add`
 dotnet sln add src/Library/Library.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.
+Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
 
 ### Writing a Console Application which Consumes the Class Library
 
@@ -94,8 +94,8 @@ dotnet new console -lang F# -o src/App
 The folowing directory structure is produced as a result of the command completing:
 
 ```
-└── FSNEtCore
-    ├── FSNEtCore.sln
+└── FSNetCore
+    ├── FSNetCore.sln
     └── src
         ├── App
         │   ├── App.fsproj
@@ -122,7 +122,7 @@ let main argv =
     0 // return an integer exit code
 ```
 
-Change directories to the `App` console project and add a reference to the `Library` project using `dotnet add reference`.
+Change directories to the *App* console project and add a reference to the `Library` project using `dotnet add reference`.
 
 ```bash
 dotnet add reference ../Library/Library.fsproj
@@ -133,7 +133,7 @@ Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add`
 dotnet sln add src/App/App.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to Build the project.
+Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
 
 Run the project passing `Hello World` as arguments.
 
@@ -146,6 +146,6 @@ You should see the following results:
 ```
 Nice command-line arguments!  Here's what JSON.NET has to say about them:
 
-I used to be Hello but now I'm ""Hello""!
-I used to be World but now I'm ""World""!
+I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
+I used to be World but now I'm ""World"" thanks to JSON.NET!
 ```

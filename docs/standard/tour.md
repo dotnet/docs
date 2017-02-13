@@ -55,15 +55,15 @@ In the following example, the runtime will throw an `InvalidIndexException` exce
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
-## Handling unmanaged resources
+## Working with unmanaged resources
 
-Some objects work with *unmanaged resources*: resources that are not automatically handled by the .NET runtime.  For example, @System.IO.FileStream objects operate on file handles provided by the operating system.  You will need to let the FileStream know when you are done using it, so that the FileStream can release the file handle back to the operating system.
+Some objects reference *unmanaged resources*. Unmanaged resources are resources that are not automatically maintained by the .NET runtime.  For example, a file handle is an unmanaged resource.  A @System.IO.FileStream object is a managed object, but it references a file handle, which is unmanaged.  When you are done using the FileStream, you need to release the file handle.
 
-In .NET, objects that work with unmanaged resources implement the @System.IDisposable interface.  When you are done using the object, you call the object's @System.IDisposable.Dispose method.  .NET languages provide a convenient `using` syntax for such objects, as in the following example:
+In .NET, objects that reference unmanaged resources implement the @System.IDisposable interface.  When you are done using the object, you call the object's @System.IDisposable.Dispose method, which is responsible for releasing any unmanaged resources.  .NET languages provide a convenient `using` syntax for such objects, as in the following example:
 
 [!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
-Once the `using` block completes, the .NET runtime will automatically call the `stream` object's @System.IDisposable.Dispose method.  The runtime will also do this if an exception causes control to leave the block.
+Once the `using` block completes, the .NET runtime will automatically call the `stream` object's @System.IDisposable.Dispose method, which releases the file handle.  The runtime will also do this if an exception causes control to leave the block.
 
 For more details, check out the following pages:
 

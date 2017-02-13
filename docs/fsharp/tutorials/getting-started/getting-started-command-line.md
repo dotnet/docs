@@ -4,7 +4,7 @@ description: Learn how to use F# with the cross-platform .NET CLI.
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
 ms.author: phcart
-ms.date: 07/01/2016
+ms.date: 02/13/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp

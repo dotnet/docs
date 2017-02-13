@@ -49,11 +49,9 @@ The following two lines both allocate memory:
 
 There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
-One of the less obvious but quite far-reaching features that a garbage collector enables is memory safety. The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed). Dangling pointers are always bugs, and tracking them down is often quite difficult.
+The garbage collector is just one of the services that help ensure *memory safety*.  The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed).  For instance, the runtime ensures that programs do not index off the end of an array or access a phantom field off the end of an object.
 
-The .NET runtime provides additional services, to complete the promise of memory safety, not naturally offered by a GC. It ensures that programs do not index off the end of an array or access a phantom field off the end of an object.
-
-The following example will throw an exception as a result of memory safety.
+In the following example, the runtime will throw an `InvalidIndexException` exception, to enforce memory safety.
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 

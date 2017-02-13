@@ -11,15 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ---
-# Name
+# dotnet-sln
 
-## dotnet-sln (Tooling RC4)
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 dotnet-sln -- Modifies a .NET Core solution file.
 
 ## Synopsis
 
-```bash
+```
 dotnet sln [<SLN_NAME>] add <project> <project>
 dotnet sln [<SLN_NAME>] add **/**
 dotnet sln [<SLN_NAME>] remove <project> <project>
@@ -51,6 +51,8 @@ Remove a project or multiple projects from the solution file. Glob pattern is su
 List all projects in a solution file.
 
 ## Arguments
+
+`SLN_NAME`
 
 Solution file to use. If not specified, the command will search the current directory for one. If there are multiple solution files in the directory; one must be specified.
 

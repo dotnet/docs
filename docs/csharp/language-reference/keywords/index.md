@@ -34,9 +34,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C# Keywords
-Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier but `if` is not because `if` is a keyword.  
+Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier, but `if` is not because `if` is a keyword.  
   
- The first table in this topic lists keywords that are reserved identifiers in any part of a C# program. The second table in this topic lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they are added as contextual keywords in order to avoid breaking programs written in earlier versions. Finally, the third section lists single-character contextual keywords, such as `@` and `$`, which are symbols that have a special meaning to the C# compiler. 
+ The first table in this topic lists keywords that are reserved identifiers in any part of a C# program. The second table in this topic lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they are added as contextual keywords in order to avoid breaking programs written in earlier versions.  
   
 |||||  
 |---|---|---|---|  
@@ -76,15 +76,6 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[var](../../../csharp/language-reference/keywords/var.md)|[where (generic type constraint)](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|[where (query clause)](../../../csharp/language-reference/keywords/where-clause.md)|  
 |[yield](../../../csharp/language-reference/keywords/yield.md)||  
   
-## Single-character keywords
-
-Single-character keywords are contextual symbols that have a special meaning to the compiler. C# supports the following single-character keywords: 
-
-
-- [@](../../../csharp/language-reference/keywords/verbatim.md), the verbatim identifier character. 
-
-- [$](../../../csharp/language-reference/keywords/interpolated.md)`, the interpolated string character.
-
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

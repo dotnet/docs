@@ -11,7 +11,8 @@ f1_keywords:
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 
-  - "$ keyword [C#]"
+  - "$ token [C#]"
+  - "$ language element [C#]
 ms.assetid: 7d9e21b5-eac3-4878-9530-50e4da578acd
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,7 +35,7 @@ translation.priority.ht:
 
 Identifies a string literal as an [interpolated string](interpolated-strings.md). An interpolated string is a template-like string that contains literal text along with *interpolated expressions*. When the interpolated string is resolved, for example in an assignment statement or a method call, its interpolated expressions are replaced by their string representations in the result string. Interpolated strings are replacements for the [composite format strings](../../../standard/base-types/composite-format.md) supported by the .NET Framework.
 
-The following example uses the `$` character to define an interpolated string.
+The following example uses the `$` token to define an interpolated string.
 
 [!CODE-cs[interpolated-string-symbol](../../../../samples/snippets/csharp/language-reference/keywords/dollar-sign1.cs#1)]
 
@@ -43,4 +44,4 @@ For more information on interpolated strings, see the [Interpolated Strings](int
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+ [C# Tokens](../../../csharp/language-reference/tokens/index.md)

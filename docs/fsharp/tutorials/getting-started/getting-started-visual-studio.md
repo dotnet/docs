@@ -24,12 +24,12 @@ You'll next see a list of Workloads.  You can install F# through any of the foll
 
 |Workload|Action|
 |--------|------|
-|.NET desktop development|Select **F# Tools** from right-hand side|
-|ASP.NET and web Development|Select **F# Tools** from right-hand side|
-|Data storage and processing|Select **F# Tools** from right-hand side|
+|.NET desktop development|Select **F# Tools** from the right-hand side|
+|ASP.NET and web Development|Select **F# Tools** from the right-hand side|
+|Data storage and processing|Select **F# Tools** from the right-hand side|
 |Mobile development with .NET|No action - F# is installed by default|
 
-Alernatively, you can click on **Individual Components** and install **F# Tools** from there.  Feel free to select as many Workloads or Individual Components as you like.
+Alternatively, you can select **Individual Components** and install **F# Tools** from there.  Feel free to select as many Workloads or Individual Components as you like.
 
 Finally, click **Modify** in the lower right-hand side.  This will install everything you have selected.
 

@@ -1,5 +1,5 @@
 ---
-title: Documenting your code
+title: Documenting your code with XML comments
 description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
 
-# Documenting your code
+# Documenting your code with XML comments
 
 XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member. 
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
@@ -20,7 +20,7 @@ The compiler generated XML file can be distributed alongside your .NET assembly 
 
 XML documentation comments, like all other comments, are ignored by the compiler.
 
-You can generate the XML file at compile type by doing one of the following:
+You can generate the XML file at compile time by doing one of the following:
 
 - If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](http://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the project:
 
@@ -34,9 +34,9 @@ You can generate the XML file at compile type by doing one of the following:
    <DocumentationFile>bin\Debug\netcoreapp1.0\App.xml</DocumentationFile>
    ```
 
--- If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file:**. You can also change the location to which the compiler writes the file. 
+- If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file. 
 
--- If you are compiling a .NET Framework application from the command line, add the [/doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
+- If you are compiling a .NET Framework application from the command line, add the [/doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
 
 XML documentation comments use triple forward slashes (`///`) and an XML formatted comment body. For example:
 
@@ -94,7 +94,7 @@ public class Math
         return a - b;
     }
 
-    // Multiplies two intergers and returns the result
+    // Multiplies two integers and returns the result
     public static int Multiply(int a, int b)
     {
         return a * b;
@@ -161,7 +161,7 @@ The `<summary>` tag is very important, and we recommend that you include it beca
 
 ### &lt;remarks&gt;
 
-The `<remarks>` tag to supplements the information about types or members that the `<summary>` tag provides. In this example you'll just add it to the class.
+The `<remarks>` tag supplements the information about types or members that the `<summary>` tag provides. In this example, you'll just add it to the class.
 
 ```csharp
 /*
@@ -184,7 +184,7 @@ public class Math
 ### &lt;returns&gt;
 
 The `<returns>` tag describes the return value of a method declaration.
-Like before this will be illustrated on the first `Add` method go ahead an implement it on other methods.
+As before, the following example illustrates the `<returns>` tag on the first `Add` method. You can do the same on other methods.
 
 ```csharp
 // Adds two integers and returns the result
@@ -292,7 +292,7 @@ public class Math
 ### &lt;c&gt;
 
 Still on the topic of formatting, you use the `<c>` tag for marking part of text as code.
-It's like the `<code>` tag but inline, and it's great when you want to show a quick code example as part of a tag's content.
+It's like the `<code>` tag but inline. It's useful when you want to show a quick code example as part of a tag's content.
 Let's update the documentation for the `Math` class.
 
 ```csharp
@@ -313,8 +313,8 @@ public class Math
 ### &lt;exception&gt;
 
 By using the `<exception>` tag, you let your developers know that a method can throw specific exceptions.
-Looking at your Math library you can see that both `Add` methods throw an exception if a certain condition is met, not so obvious though
-is that both `Divide` methods will throw as well if the parameter `b` is zero. Now go ahead to add exception documentation to these methods.
+Looking at your `Math` library, you can see that both `Add` methods throw an exception if a certain condition is met. Not so obvious, though,
+is that integer `Divide` method throws as well if the `b` parameter is zero. Now add exception documentation to this method.
 
 ```csharp
 /*
@@ -386,7 +386,6 @@ public class Math
     /// <returns>
     /// The division of two doubles.
     /// </returns>
-    /// <exception cref="System.DivideByZeroException">Thrown when a division by zero occurs.</exception>
     public static double Divide(double a, double b)
     {
         return a / b;
@@ -399,7 +398,7 @@ This can be any type defined in the project or a referenced assembly, the compil
 
 ### &lt;see&gt;
 
-The `<see>` tag lets you create a clickable link to a documentation page for another code element. In our next example we'll create a clickable link between the two `Add` methods.
+The `<see>` tag lets you create a clickable link to a documentation page for another code element. In our next example, we'll create a clickable link between the two `Add` methods.
 
 ```csharp
 /*
@@ -837,7 +836,7 @@ public class Math
         return a - b;
     }
 
-    // Multiplies two intergers and returns the result
+    // Multiplies two integers and returns the result
     /// <summary>
     /// Multiplies two integers <paramref name="a"/> and <paramref name="b"/> and returns the result.
     /// </summary>
@@ -935,7 +934,6 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.DivideByZeroException">Thrown when <paramref name="b"/> is equal to 0.</exception>
     /// See <see cref="Math.Divide(int, int)"/> to divide integers.
     /// <seealso cref="Math.Add(double, double)"/>
     /// <seealso cref="Math.Subtract(double, double)"/>
@@ -957,7 +955,7 @@ Thankfully there's an XML tag that can help you deal with this:
 
 The `<include>` tag lets you refer to comments in a separate XML file that describe the types and members in your source code as opposed to placing documentation comments directly in your source code file.
 
-Now you're going to move all your XML tags into a separate XML file named `docs.xml`, feel free to name the file whatever you want.
+Now you're going to move all your XML tags into a separate XML file named `docs.xml`. Feel free to name the file whatever you want.
 
 ```xml
 <docs>
@@ -1154,7 +1152,6 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
             }
             </code>
             </example>
-            <exception cref="System.DivideByZeroException">Thrown when <paramref name="b"/> is equal to 0.</exception>
             See <see cref="Math.Divide(int, int)"/> to divide integers.
             <seealso cref="Math.Add(double, double)"/>
             <seealso cref="Math.Subtract(double, double)"/>
@@ -1166,8 +1163,8 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
 </docs>
 ```
 
-In the above XML each member's documentation comments appears directly inside a tag named after what they do; you can choose your own strategy. 
-Now that you have your XML comments in a separate file let's see how your code can be made more readable using the `<include>` tag:
+In the above XML, each member's documentation comments appear directly inside a tag named after what they do. You can choose your own strategy. 
+Now that you have your XML comments in a separate file, let's see how your code can be made more readable by using the `<include>` tag:
 
 ```csharp
 /*
@@ -1215,7 +1212,7 @@ public class Math
         return a - b;
     }
 
-    // Multiplies two intergers and returns the result
+    // Multiplies two integers and returns the result
     /// <include file='docs.xml' path='docs/members[@name="math"]/MultiplyInt/*'/>
     public static int Multiply(int a, int b)
     {
@@ -1245,7 +1242,7 @@ public class Math
 }
 ```
 
-An there you have it, our code is back to being readable and no documentation information has been lost. 
+And there you have it: our code is back to being readable, and no documentation information has been lost. 
 
 The `filename` attribute represents the name of the XML file containing the documentation.
 
@@ -1264,18 +1261,17 @@ Custom or in-house documentation generation tools can also be used with the stan
 
 ## Recommendations
 
-Documenting code is definitely a recommended practice for lots of reasons. However, there are some best practices and general use case scenarios
-that need to be taken into consideration when using XML documentation tags in your C# code.
+Documenting code is recommended for many reasons. What follows are some best practices, general use case scenarios, and things that you should know when using XML documentation tags in your C# code.
 
-* For the sake of consistency all publicly visible types and their members should be documented. If you must do it, do it all.
-* Private members can also be documented using XML comments, however this exposes the inner (potentially confidential) workings of your library.
-* In addition to other tags, types and their members should have at the very least a `<summary>` tag because its content is needed for IntelliSense.
+* For the sake of consistency, all publicly visible types and their members should be documented. If you must do it, do it all.
+* Private members can also be documented using XML comments. However, this exposes the inner (potentially confidential) workings of your library.
+* At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
 * Documentation text should be written using complete sentences ending with full stops.
-* Partial classes are fully supported and documentation information will be concatenated into one.
-* The compiler verifies the syntax of `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
-It validates the parameters that contain file paths and references to other parts of the code.
+* Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
+* The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
+- The compiler validates the parameters that contain file paths and references to other parts of the code.
 
 ## See also
 [XML Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/xml-documentation-comments.md)
 
-[Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments)
+[Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

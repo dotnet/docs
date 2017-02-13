@@ -4,7 +4,7 @@ description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin
 ms.author: wiwagn
-ms.date: 09/06/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -14,15 +14,31 @@ ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 
 # Documenting your code
 
-XML documentation comments are a special kind of comment, added above the definition of any user defined type or member. 
+XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member. 
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
-The compiler generated XML file can be distributed alongside your .NET assembly so that Visual Studio and other IDEs can show quick information about types or members when performing intellisense.
-Additionally the XML file can be run through tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to generate full on API reference websites.
+The compiler generated XML file can be distributed alongside your .NET assembly so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, the XML file can be run through tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to generate API reference websites.
 
-XML documentation comments like all other comments are ignored by the compiler, to enable generation of the XML file add `"xmlDoc":true` under `buildOptions` in your `project.json` when using .NET Core or use the `/doc` compiler option for the .NET framework.
-See the [/doc](https://msdn.microsoft.com/library/3260k4x7.aspx) article on MSDN to learn how to enable XML documentation generation in Visual Studio.
+XML documentation comments, like all other comments, are ignored by the compiler.
 
-XML documentation comments are characterized by triple forward slashes (`///`) and an XML formatted comment body.
+You can generate the XML file at compile type by doing one of the following:
+
+- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](http://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the project:
+
+   ```xml
+   <DocumentationFile>$(MSBuildProjectName).xml</DocumentationFile>
+   ```
+
+   You can also specify the exact absolute or relative path and name of the XML file. The following example generates the XML file in the same directory as the debug version of an application:
+
+    ```xml
+   <DocumentationFile>bin\Debug\netcoreapp1.0\App.xml</DocumentationFile>
+   ```
+
+-- If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file:**. You can also change the location to which the compiler writes the file. 
+
+-- If you are compiling a .NET Framework application from the command line, add the [/doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
+
+XML documentation comments use triple forward slashes (`///`) and an XML formatted comment body. For example:
 
 ```csharp
 /// <summary>
@@ -30,7 +46,6 @@ XML documentation comments are characterized by triple forward slashes (`///`) a
 /// </summary>
 public class SomeClass
 {
-
 }
 ```
 
@@ -105,14 +120,14 @@ public class Math
 }
 ```
 
-The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` datatypes.
+The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` data types.
 
 Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
 As mentioned earlier XML documentation tags can be used to achieve this, You will now be introduced to the standard XML tags the C# compiler supports.
 
 ### &lt;summary&gt;
 
-First off is the `<summary>` tag and as the name suggests you use it to add brief information about a type or member.
+The `<summary>` tag adds brief information about a type or member.
 I'll demonstrate its use by adding it to the `Math` class definition and the first `Add` method, feel free to apply it to the rest of your code.
 
 ```csharp
@@ -142,12 +157,11 @@ public class Math
 }
 ```
 
-The `<summary>` tag is super important and you are strongly advised to include it because its content is the primary source of type or member description in intellisense and the resulting API reference document.
+The `<summary>` tag is very important, and we recommend that you include it because its content is the primary source of type or member information in IntelliSense or an API reference document.
 
 ### &lt;remarks&gt;
 
-You use the `<remarks>` tag to add information about types or members, supplementing the information specified with `<summary>`.
-In this example you'll just add it to the class.
+The `<remarks>` tag to supplements the information about types or members that the `<summary>` tag provides. In this example you'll just add it to the class.
 
 ```csharp
 /*
@@ -169,7 +183,7 @@ public class Math
 
 ### &lt;returns&gt;
 
-As the name suggests you use the `<returns>` tag in the comment for a method declaration to describe its return value.
+The `<returns>` tag describes the return value of a method declaration.
 Like before this will be illustrated on the first `Add` method go ahead an implement it on other methods.
 
 ```csharp
@@ -193,8 +207,8 @@ public static int Add(int a, int b)
 
 ### &lt;value&gt;
 
-The `<value>` works similarly to the `<returns>` tag except that you use it for properties.
-Assuming your `Math` library had a static property called `PI` here's how you'll use this tag:
+The `<value>` tag is similar to the `<returns>` tag, except that you use it for properties.
+Assuming your `Math` library had a static property called `PI`, here's how you'd use this tag:
 
 ```csharp
 /*
@@ -253,8 +267,7 @@ The `code` tag preserves line breaks and indentation for longer examples.
 
 ### &lt;para&gt;
 
-You may find you need to format the content of certain tags and that's where the `<para>` tag comes in.
-You usually use it inside a tag, such as `<remarks>`, or `<returns>`, and lets you divide text into paragraphs.
+You use the `<para>` tag to format the content within its parent tag. `<para>` is usually used inside a tag, such as `<remarks>`, or `<returns>`, to divide text into paragraphs.
 You can go ahead and format the contents of the `<remarks>` tag for your class definition.
 
 ```csharp
@@ -279,7 +292,7 @@ public class Math
 ### &lt;c&gt;
 
 Still on the topic of formatting, you use the `<c>` tag for marking part of text as code.
-It's like the `<code>` tag but inline and is great when you want to show a quick code example as part of a tag's content.
+It's like the `<code>` tag but inline, and it's great when you want to show a quick code example as part of a tag's content.
 Let's update the documentation for the `Math` class.
 
 ```csharp
@@ -299,9 +312,8 @@ public class Math
 
 ### &lt;exception&gt;
 
-There's no getting rid of exceptions, there will always be exceptional situations your code is not built to handle.
-Good news is there's a way to let your developers know that certain methods can throw certain exceptions and that's by using the `<exception>` tag.
-Looking at your little Math library you can see that both `Add` methods throw an exception if a certain condition is met, not so obvious though
+By using the `<exception>` tag, you let your developers know that a method can throw specific exceptions.
+Looking at your Math library you can see that both `Add` methods throw an exception if a certain condition is met, not so obvious though
 is that both `Divide` methods will throw as well if the parameter `b` is zero. Now go ahead to add exception documentation to these methods.
 
 ```csharp
@@ -387,8 +399,7 @@ This can be any type defined in the project or a referenced assembly, the compil
 
 ### &lt;see&gt;
 
-While documenting your code with XML tags you might reach a point where you need to add some sort of reference to another part of the code to make your reader understand it better.
-The `<see>` tag is one that let's you create clickable links to documentation pages for other code elements. In our next example we'll create a clickable link between the two `Add` methods.
+The `<see>` tag lets you create a clickable link to a documentation page for another code element. In our next example we'll create a clickable link between the two `Add` methods.
 
 ```csharp
 /*
@@ -451,8 +462,7 @@ This can be any type defined in the project or a referenced assembly.
 
 ### &lt;seealso&gt;
 
-You use the `<seealso>` tag in the same way you do the `<see>` tag, the only difference is that it's content is typically broken into a "See Also" section not that different from
-the one you sometimes see on the MSDN documentation pages. Here we'll add a `seealso` tag on the integer `Add` method to reference other methods in the class that accept interger parameters:
+You use the `<seealso>` tag in the same way you do the `<see>` tag. The only difference is that its content is typically placed in a "See Also" section. Here we'll add a `seealso` tag on the integer `Add` method to reference other methods in the class that accept integer parameters:
 
 ```csharp
 /*
@@ -501,7 +511,7 @@ This can be any type defined in the project or a referenced assembly.
 
 ### &lt;param&gt;
 
-You use the `<param>` tag for describing the parameters a method takes. Here's an example on the double `Add` method:
+You use the `<param>` tag to describe a method's parameters. Here's an example on the double `Add` method:
 The parameter the tag describes is specified in the **required** `name` attribute.
 
 ```csharp
@@ -1259,8 +1269,13 @@ that need to be taken into consideration when using XML documentation tags in yo
 
 * For the sake of consistency all publicly visible types and their members should be documented. If you must do it, do it all.
 * Private members can also be documented using XML comments, however this exposes the inner (potentially confidential) workings of your library.
-* In addition to other tags, types and their members should have at the very least a `<summary>` tag because its content is needed for intellisense.
+* In addition to other tags, types and their members should have at the very least a `<summary>` tag because its content is needed for IntelliSense.
 * Documentation text should be written using complete sentences ending with full stops.
 * Partial classes are fully supported and documentation information will be concatenated into one.
 * The compiler verifies the syntax of `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
 It validates the parameters that contain file paths and references to other parts of the code.
+
+## See also
+[XML Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/xml-documentation-comments.md)
+
+[Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments)

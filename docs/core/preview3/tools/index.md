@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 ---
 
-# .NET Core command-line interface tools (Tooling RC3)
+# .NET Core command-line interface tools (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [.NET Core command-line interface tools](../../tools/index.md) topic.
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
@@ -115,7 +115,7 @@ CLI enables applications to be portable in two main ways:
 
 You can learn more about both of these in the [.NET Core application deployment](../deploying/index.md) topic. 
 
-## Migration from RC3/project.json
+## Migration from RC4/project.json
 If you used Preview 2 tooling and project.json projects, you can consult the [dotnet migrate](dotnet-migrate.md) command docs
 to get acquainted with the command and how to migrate your project. 
 

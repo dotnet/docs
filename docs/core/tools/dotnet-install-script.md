@@ -15,8 +15,8 @@ ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
 #dotnet-install scripts reference
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-install scripts reference (Tooling RC3)](../preview3/tools/dotnet-install-script.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-install scripts reference (.NET Core Tools RC4)](../preview3/tools/dotnet-install-script.md) topic.
 
 ## Name
 `dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the Command Line Interface (CLI) tools and the shared runtime.

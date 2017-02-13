@@ -15,8 +15,8 @@ ms.assetid: e1ac9659-425f-4486-a376-c12ca942ead8
 # global.json reference
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [global.json reference (Tooling RC3)](../preview3/tools/global-json.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [global.json reference (.NET Core Tools RC4)](../preview3/tools/global-json.md) topic.
 
 The global.json file is used on .NET Core projects to define the solution metadata. This file is used when the [dotnet-restore](dotnet-restore.md) command is invoked to restore the dependencies of a .NET Core project.
 In this reference topic, you'll see the list of the properties you can define in your global.json file.

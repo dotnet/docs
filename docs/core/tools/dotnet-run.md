@@ -15,8 +15,8 @@ ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
 #dotnet-run
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-run (Tooling RC3)](../preview3/tools/dotnet-run.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-run (.NET Core Tools RC4)](../preview3/tools/dotnet-run.md) topic.
 
 ## Name 
 

@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
 
-#dotnet-test (NET Core Tools RC4)
+#dotnet-test (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-test](../../tools/dotnet-test.md) topic.
 
 ## Name
@@ -92,7 +92,7 @@ Enables diagnostic mode for the test platform and write diagnostic messages to t
 
 Does not build the test project prior to running it.
 
-`-v|--verbosity [Quiet|Minimal|Normal|Diagnostic]`
+`-v|--verbosity [quiet|minimal|normal|diagnostic]`
 
 Set the verbosity level of the command. You can specify the following verbosity levels: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. 
 

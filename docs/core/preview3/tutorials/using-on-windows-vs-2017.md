@@ -11,10 +11,10 @@ ms.devlang: dotnet
 ms.assetid: 613c65d0-f773-41b8-ba0e-83f6a82a0b30
 ---
 
-# Getting started with .NET Core on Windows, using Visual Studio 2017 (Tooling RC3)
+# Getting started with .NET Core on Windows, using Visual Studio 2017 (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the Visual Studio 2015 - .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the Visual Studio 2015 - .NET Core Tools Preview 2 version,
 > see the [Getting started with .NET Core on Windows, using Visual Studio 2015](../../tutorials/using-on-windows.md) topic.
 
 Visual Studio 2017 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a very simple console application, using Visual Studio and .NET Core.

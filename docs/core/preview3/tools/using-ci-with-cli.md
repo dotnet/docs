@@ -14,9 +14,7 @@ ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 
 # Using .NET Core SDK and tools in Continuous Integration (CI) (.NET Core Tools RC4)
 
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [Using .NET Core SDK and tools in Continuous Integration (CI)](../../tools/using-ci-with-cli.md) topic.
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Overview
 This document outlines the usage of .NET Core SDK and its tools on the build server. When we started building the .NET Core SDK and its command-line tools, we have envisioned the toolset being able to be used both interactivelly, by a human being sitting at a command line, as well as automatically, that is by a CI server. The commands, options, inputs and outputs would be the same and the only thing you would add on top is a way to acquire the tooling as well as choosng how to do your build.
@@ -53,7 +51,7 @@ The installation script reference can be found in the [dotnet-install](dotnet-in
 > in the [CLI repo](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). 
 
 ## CI setup examples
-This section will cover step-by-step guides for manual setup of a CI server as well as several SaaS CI solutions. The SaaS CI solutions that are covered are [TravisCI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/) and [Visual Studio Team Services Build](https://visualstudio.com/). 
+This section will cover step-by-step guides for manual setup of a CI server as well as several SaaS CI solutions. The SaaS CI solutions that are covered are [TravisCI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/) and [Visual Studio Team Services Build](https://www.visualstudio.com/en-us/docs/build/overview). 
 
 ### Manual setup 
 Each of the below different services has its own way how to create and configure a build process. However, if you use a different CI build software or have a need to do something different than what the pre-packaged support on each of the services allow you to do, you will need to do something manual. 
@@ -142,17 +140,45 @@ install:
 ### Visual Studio Team Services
 There are two ways of configuring the Visual Studio Team Services (VSTS) build to build .NET Core projects:
 
-1. Using the script from the manual step above and letting that 
-2. Creating 
+1. Using the script from the manual step above and running it on your code 
+2. Creating a build out of several build steps that are configured to use .NET Core tools and are available out-of-box on VSTS 
 
-Both solutions are perfectly valid and there is no inherent flaw or advantage to any of them. That said, with the manual step you can completely control 
+Both solutions are perfectly valid and there is no inherent flaw or advantage to any of them. That said, with the manual step you can completely control the version of the tools that you need since you download it as part of the build. On the other hand, the build is run from a script that you have to author, so that script has to take care of running the build. In this document, we will cover only the manual option, as the other one is very well documented in the overall VSTS build documentation.  
+
+> [!NOTE]
+> This document is not an exhaustive introduction into VSTS builds and assumes familiarity with how they work. 
+> If you need to brush up on basics, please visit the [VSTS build documentation](https://www.visualstudio.com/en-us/docs/build/overview). 
 
 #### Using a manual script
-Taking the script we have started above and using it in VSTS is very simple. You create a new 
+Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify
+
+First, start by creating a new build definition. Once you get the screen that gives you an option to define what kind of a build you wish to create, click on the "Empty" option as the 
+
+![Selecting an empty build definition](media/vsts-screens/screen_2.png)
+
+After this, you will be given an option to configure the repository that you wish to build as well as what queue to use for this build. After you select the needed options, you will be directed to the actual build definition. Here, you will be able to add a build step, as shown in the screenshot below: 
+
+![Adding a build step](media/vsts-screens/screen_4.png)
+
+After you click on the "Add build step" option, you will be presented with the task catalog. The catalog contains many different tasks that you can use in the build. Since we have already a script, we can go down to the 
+
+![Adding a PowerShell script step](media/vsts-screens/screen_6.png)
+
+After we've added the PowerShell script build step, you will be presented with the interface to configure the build step, as shown in the image below:
+
+![Specifying the PowerShell script to run](media/vsts-screens/screen_6_ps.png)
+
+Here, you can select the script you've created and committed to source control. After this is done, you can save the build definition and try it out by enquining it. From that moment on, you are good to go. 
+
 
 ## Orchestrating the build script 
-TBD
+Most of this document has been about how to acquire the .NET Core tools and configure various CI services while there was no deep delving into how to orchestrate, that is, how to **actually build** your code with .NET Core. This is by design. The choice of how to structure the build process depends on many factors that are mostly tailored to the person/team working on a given set of projects. 
+`
+In general, however, there are two main ways you can structure the build process for .NET Core code using the .NET Core tools:
 
-When would you use a full MSBuild-solution instead of rolling a script? That largely depends on the following:
+1. Use MSBuild directly
+2. Use the .NET Core command-line commands
 
-* Are you comfortable using MSBuild and know it really well? If so, then you should use that 
+Which to use should be decided mostly based on how familar and comfortable you are with each of the mentioned ways. For example, MSBuild can give you access to expressing your build(s) as tasks and targets, but it comes with an added complexity of learning MSBuild project-file syntax. On the other hand, using just the .NET Core command-line tools could be simpler but it would require you to write orchestration logic (for example, change into directory with project 1 and run `dotnet build`, then change to directory with project 2 and again run `dotnet build` etc.) in some scripting language like `bash` or PowerShell. 
+
+The choice here is dependent on familiarity; some people are more comfortable using more familiar languages like shell scripts while others are well-versed in MSBuild projects and have no problems using them. 

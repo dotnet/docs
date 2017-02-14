@@ -1,6 +1,6 @@
 # .NET Core Library Samples
 
-These samples are buildable projects whose source is used for code snippets in [the guide for writing cross-platform libraries](../../../docs/core/tutorials/libraries.md).  They can be built and run using the .NET Core toolchain, and are intended to simply demonstrate how to target and build NuGet packages for different targets.  They aren't examples of how you'd build a real, feature-complete library.
+These samples are buildable projects whose source is used for code snippets in [the guide for writing cross-platform libraries](https://github.com/dotnet/docs/blob/master/docs/core/tutorials/libraries.md).  They can be built and run using the .NET Core toolchain, and are intended to simply demonstrate how to target and build NuGet packages for different targets.  They aren't examples of how you'd build a real, feature-complete library.
 
 To build/use any of these (using `new-library` as an example):
 
@@ -46,7 +46,7 @@ The sample showcases two libraries.  The first, `DependencyLibrary`, contains fu
 
 **IMPORTANT:** This project requires Windows and the .NET Framework installed on your machine.
 
-The project under `/frameworks-library` demonstrates how to use the CLI tools to build a library that targets the .NET Framework.  It does so with a simple project targeting the .NET Framework 4.0.  You could extend this to target additional versions of the .NET Framework by adding new build targets in the `library.csproj` project file.  Check out the [section on cross-compiling](../../../docs/core/tutorials/libraries.md#how-to-multitarget) in the CLI libraries article for more information.
+The project under `/frameworks-library` demonstrates how to use the CLI tools to build a library that targets the .NET Framework.  It does so with a simple project targeting the .NET Framework 4.0.  You could extend this to target additional versions of the .NET Framework by adding new build targets in the `library.csproj` project file.  Check out the [section on cross-compiling](https://github.com/dotnet/docs/blob/master/docs/core/tutorials/libraries.md#how-to-multitarget) in the CLI libraries article for more information.
 
 ## net45-compat-library
 
@@ -60,16 +60,16 @@ The project under `/net45-compat-library` targets any of the following:
 * Xamarin
 * Mono
 
-It uses the `netstandard1.2` Target Framework Moniker introduced with the [.NET Standard Library](../../../docs/standard/library.md).
+It uses the `netstandard1.2` Target Framework Moniker introduced with the [.NET Standard Library](https://github.com/dotnet/docs/blob/master/docs/standard/library.md).
 
 ## net40-library
 
 **IMPORTANT:** This project requires Windows and the the .NET Framework installed on your machine.
 
-The project under `/net40-library` targets the .NET Framework 4.0 and above.  It also demonstrates how to use [#if](../../../docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) directives to multi-target for a .NET 4.0 target.
+The project under `/net40-library` targets the .NET Framework 4.0 and above.  It also demonstrates how to use [#if](https://github.com/dotnet/docs/blob/master/docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) directives to multi-target for a .NET 4.0 target.
 
 ## pcl-library
 
 **IMPORTANT:** This project requires Windows and the .NET Framework installed on your machine.
 
-The project under `/pcl-library` shows how to target a supported PCL Profile (for example, 344).  It shows how to structure the `Library.csproj` file to allow for targeting a PCL.  It also demonstrates how to use [#if](../../../docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) directives and how to define a preprocessor constant, `PORTABLE259` in the `Library.csproj` file.
+The project under `/pcl-library` shows how to target a supported PCL Profile (for example, 344).  It shows how to structure the `Library.csproj` file to allow for targeting a PCL.  It also demonstrates how to use [#if](https://github.com/dotnet/docs/blob/master/docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) directives and how to define a preprocessor constant, `PORTABLE259` in the `Library.csproj` file.

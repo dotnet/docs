@@ -127,11 +127,13 @@ The [travis-ci](https://travis-ci.org/) can be configured to install the .NET Co
 Just use:
 
 ```yaml
-dotnet: 1.0.0-preview2-003121
+dotnet: 1.0.0-rc4-0044771
 ```
 
 Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
 for more information.
+
+The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x) in the package, so by installing the SDK you will get everything you need to build. 
 
 ### AppVeyor
 

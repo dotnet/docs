@@ -1,3 +1,3 @@
 # [C# Special Characters](index.md)
-## [$](interpolated.md)
-## [@](verbatim.md)
+## [$ -- string interpolation](interpolated.md)
+## [@ -- verbatim identifier](verbatim.md)

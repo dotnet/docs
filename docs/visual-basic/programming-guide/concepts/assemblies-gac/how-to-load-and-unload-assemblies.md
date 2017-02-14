@@ -38,6 +38,6 @@ The assemblies referenced by your program will automatically be loaded at build 
 1.  There is no way to unload an individual assembly without unloading all of the application domains that contain it. Use the `Unload` method from <xref:System.AppDomain> to unload the application domains. For more information, see [How to: Unload an Application Domain](http://msdn.microsoft.com/library/f356116d-e415-4f7c-a332-6e6a60227192).  
   
 ## See Also  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [How to: Load Assemblies into an Application Domain](http://msdn.microsoft.com/library/1432aa2d-bd83-4346-bf3b-a1b7920e2aa9)

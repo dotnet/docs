@@ -83,4 +83,4 @@ proceduredeclaration Handles eventlist
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

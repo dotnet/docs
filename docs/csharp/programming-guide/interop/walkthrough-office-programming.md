@@ -213,7 +213,7 @@ translation.priority.ht:
  [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
  [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   
  [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   

@@ -52,4 +52,4 @@ translation.priority.ht:
 ## See Also  
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
  [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

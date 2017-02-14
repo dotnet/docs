@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Implementing IEnumerable(Of T) in Visual Basic | Microsoft Docs"
+title: "Implementing IEnumerable in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

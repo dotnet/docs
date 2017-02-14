@@ -456,7 +456,7 @@ End Class
   
  For more information, see:  
   
--   [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  
+-   [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
   
 -   [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating Custom Log Listeners (Visual Basic) | Microsoft Docs"
+title: "Creating Custom Log Listeners (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

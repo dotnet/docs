@@ -105,4 +105,4 @@ This example shows how to use friend assemblies with assemblies that have strong
  [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)   
  [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)   
  [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617)   
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

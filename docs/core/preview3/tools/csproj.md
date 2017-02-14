@@ -21,17 +21,25 @@ see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/m
 
 ## Additions
 
-* PackageReference
+### Sdk property 
+As part of this work, we've added a new property to the `<Project>` element of the `csproj` file that is called SDK. The SDK property lists out what SDK will be used in this project. The SDK, as the [layering document](layering.md) describes, is a set of MSBuild [tasks]() and [targets]() that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+
+1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
+2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
+
+You need to have this attribute on the `<Project>` element in order to use the .NET Core tools and build your code. 
+
+### PackageReference
 Item that specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
-## Version
+#### Version
 `Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
 
-## IncludeAssets
+#### IncludeAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
@@ -49,7 +57,7 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-## ExcludeAssets
+#### ExcludeAssets
 `ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
@@ -67,7 +75,7 @@ Alternatively, the element can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-## PrivateAssets
+#### PrivateAssets
 `PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed but that they should not flow to the next project. 
 
@@ -96,7 +104,7 @@ a replacement for the `tools` node in `project.json`.
 <DotnetCliToolReference Include="<package-id>" Version="" />
 ```
 
-## Version
+#### Version
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
 * RuntimeIdentifiers
@@ -108,7 +116,7 @@ RIDs enable publishing a self-contained deployments.
 ```
 
 
-* RuntimeIdentifier
+### RuntimeIdentifier
 The `<RuntieIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
 
 ```xml
@@ -116,7 +124,7 @@ The `<RuntieIdentifier>` element allows you to specify only one [Runtime Identif
 ```
 
 
-* PackageTargetFallback 
+### PackageTargetFallback 
 The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It is designed to allow packages that use the dotnet TxM to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM then all the packages you depend on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non dotnet platforms to be compatible with dotnet. 
 
 The following example provides the fallbacks for all targets in your project: 
@@ -192,7 +200,7 @@ This boolean value indicates whether thye package should include symbols when it
 ```
 
 ### IncludeSource
-TBD
+This boolean value indicates whether the packing process should include source code in the resulting NuGet package. 
 
 ### PackageTypes
 TBD

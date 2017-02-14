@@ -249,7 +249,7 @@
 ### [Language Integrated Query (LINQ)](csharp/linq/)
 ### [Asynchronous programming](csharp/async.md)
 ### [🔧 Parallel programming](csharp/parallel.md)
-### [🔧 Pattern Matching](csharp/pattern-matching.md)
+### [Pattern Matching](csharp/pattern-matching.md)
 ### [Expression Trees](csharp/expression-trees.md)
 #### [Expression Trees Explained](csharp/expression-trees-explained.md)
 #### [Framework Types Supporting Expression Trees](csharp/expression-classes.md)

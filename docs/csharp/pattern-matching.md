@@ -60,7 +60,7 @@ for each of the geometric shapes:
 
 [!code-csharp[ShapeDefinitions](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#01_ShapeDefinitions "Shape definitions")]
 
-From these structures, let' write a method that computes the area
+From these structures, let's write a method that computes the area
 of some shape.
 
 ## The `is` type pattern expression
@@ -86,7 +86,7 @@ value types as well as reference types.
 Language rules for pattern matching expressions help you avoid misusing
 the results of a match expression. In the example above, the variables `s`,
  `c`, and `r` are only in scope and definitely assigned when the respective
-pattern match expressions have `true` results. If you try and use either
+pattern match expressions have `true` results. If you try to use either
 variable in another location, your code generates compiler errors.
 
 Let's examine both of those rules in detail, beginning with scope. The variable

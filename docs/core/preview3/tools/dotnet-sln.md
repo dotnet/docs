@@ -15,7 +15,9 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
-dotnet-sln -- Modifies a .NET Core solution file.
+## Name
+
+`dotnet-sln` - Modifies a .NET Core solution file.
 
 ## Synopsis
 

@@ -62,10 +62,10 @@ namespace Prime.Services
 Next, change directory back into the *unit-testing-using-mstest* directory, and create the *PrimeServices.Tests* directory.
 Make the *PrimeService.Tests* directory the current directory and create a new project using
 `dotnet new mstest`. This creates a test project
-that uses MSstest as the test library. 
+that uses MStest as the test library. 
 
 The generated template configured the test runner
-in the PrimeServiceTests.csproj:
+in the *PrimeServiceTests.csproj* file:
 
 ```xml
 <ItemGroup>
@@ -106,13 +106,13 @@ as you add features and tests.
 ## Creating the first test
 
 Before building the library or the tests, you need to run `dotnet restore`
-in both the `PrimeService` and `PrimeService.Tests` directories. This
+in both the *PrimeService* and *PrimeService.Tests* directories. This
 command restores all the necessary NuGet packages for each project.
 
 The TDD approach calls for writing one failing test, then making it pass,
 then repeating the process. So, let's write that one failing test. Remove
-`UnitTest1.cs` from the `PrimeService.Tests` directory, and create a new
-C# file named `PrimeService_IsPrimeShould.cs` with the following content:
+*UnitTest1.cs* from the *PrimeService.Tests* directory, and create a new
+C# file named *PrimeService_IsPrimeShould.cs* with the following content:
 
 ```cs
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -168,7 +168,7 @@ public bool IsPrime(int candidate)
 } 
 ```
 
-In the `PrimeService.Tests` directory, run `dotnet test` again. The 
+In the *PrimeService.Tests* directory, run `dotnet test` again. The 
 `dotnet test` command will first run a build for the Prime.Services
 project, and then for PrimeService.Tests project. After building both
 projects, it will run this single test. It passes.

@@ -3,11 +3,11 @@ title: Selecting a Collection Class
 description: Selecting a Collection Class
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0a60fca7-e082-48d4-9dda-30b0d3e67ec7
 ---
@@ -66,7 +66,7 @@ Consider the following questions:
     
 ## LINQ to Objects
 
-LINQ to Objects enables developers to use LINQ queries to access in-memory objects as long as the object type implements [System.Collections.IEnumerable](https://docs.microsoft.com/dotnet/core/api/System.Collections.IEnumerable) or [System.Collections.Generic.IEnumerable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEnumerable-1). LINQ queries provide a common pattern for accessing data, are typically more concise and readable than standard foreach loops, and provide filtering, ordering, and grouping capabilities. For more information, see [Language Integrated Query (LINQ)](../../csharp/linq.md).
+LINQ to Objects enables developers to use LINQ queries to access in-memory objects as long as the object type implements [System.Collections.IEnumerable](https://docs.microsoft.com/dotnet/core/api/System.Collections.IEnumerable) or [System.Collections.Generic.IEnumerable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEnumerable-1). LINQ queries provide a common pattern for accessing data, are typically more concise and readable than standard foreach loops, and provide filtering, ordering, and grouping capabilities. For more information, see [Language Integrated Query (LINQ)](../../csharp/linq/index.md).
 
 ## See Also
 

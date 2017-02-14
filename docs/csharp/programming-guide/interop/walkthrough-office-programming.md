@@ -1,13 +1,13 @@
 ---
 title: "Walkthrough: Office Programming (C# and Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -213,7 +213,7 @@ translation.priority.ht:
  [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)   
  [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   
  [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
@@ -223,4 +223,4 @@ translation.priority.ht:
  [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
  [Walkthrough: Creating Your First VSTO Add-in for Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Interoperability](../../../csharp/programming-guide/interop/interoperability.md)
+ [Interoperability](../../../csharp/programming-guide/interop/index.md)

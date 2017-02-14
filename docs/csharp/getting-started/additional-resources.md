@@ -1,13 +1,9 @@
 ---
 title: "Additional Resources for Visual C# Programmers | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -22,7 +18,6 @@ ms.assetid: cdec0df0-89ef-4ff1-8ccf-26fef47e61cb
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -87,7 +82,7 @@ The following sites can help you find answers to common problems.
 ## See Also  
  [C#](../../csharp/csharp.md)   
  [Getting Started with C#](../../csharp/getting-started/getting-started-with-csharp.md)   
- [Customizing the Editor](/visualstudio/ide/customizing-the-editor)   
+ [Customizing the Editor](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor)   
  [How to: Get Involved in the Developer Community](http://msdn.microsoft.com/library/f1503d98-7a64-41b6-a6c7-0e42a533e9c5)   
  [How to: Send Feedback](http://msdn.microsoft.com/library/c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209)   
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

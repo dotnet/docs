@@ -2,12 +2,12 @@
 title: "How to: Access a Variable Hidden by a Derived Class (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,7 +22,7 @@ ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
 caps.latest.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

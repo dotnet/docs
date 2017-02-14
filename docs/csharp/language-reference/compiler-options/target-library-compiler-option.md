@@ -1,13 +1,9 @@
 ---
 title: "-target:library (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/dll"
@@ -21,7 +17,6 @@ ms.assetid: c5670e88-2126-47c1-8d1c-217923837d17
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -53,7 +48,7 @@ The **/target:library** option causes the compiler to create a dynamic-link libr
   
  When specified at the command line, all files up to the next **/out** or **/target:module** option are used to create the .dll file.  
   
- When building a .dll file, a [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method is not required.  
+ When building a .dll file, a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method is not required.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

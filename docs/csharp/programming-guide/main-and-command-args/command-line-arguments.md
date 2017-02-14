@@ -1,13 +1,13 @@
 ---
 title: "Command-Line Arguments (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -91,14 +91,14 @@ long num = Convert.ToInt64(s);
 5.  The command produces this output: `The factorial of 3 is 6.`  
   
 > [!NOTE]
->  When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
+>  When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer).  
   
  For more examples about how to use command-line arguments, see [How to: Create and Use Assemblies Using the Command Line](http://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4).  
   
 ## See Also  
  <xref:System.Environment?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)   
+ [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
  [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)   
  [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)   
  [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)   

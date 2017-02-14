@@ -124,7 +124,7 @@ namespace new_in_7
         }
 
         #region 08_TupleReturningMethod
-        private static (int max, int min) Range(IEnumerable<int> numbers)
+        private static (int Max, int Min) Range(IEnumerable<int> numbers)
         {
             int min = int.MaxValue;
             int max = int.MinValue;
@@ -145,15 +145,15 @@ namespace new_in_7
             #endregion
 
             #region 05_NamedTuple
-            (string alpha, string beta) namedLetters = ("a", "b");
+            (string Alpha, string Beta) namedLetters = ("a", "b");
             #endregion
 
             #region 06_ImplicitNamedTuple
-            var alphabetStart = (alpha: "a", beta: "b");
+            var alphabetStart = (Alpha: "a", Beta: "b");
             #endregion
 
             #region 07_NamedTupleConflict
-            (string first, string second) firstLetters = (alpha: "a", beta: "b");
+            (string First, string Second) firstLetters = (Alpha: "a", Beta: "b");
             #endregion
         }
 

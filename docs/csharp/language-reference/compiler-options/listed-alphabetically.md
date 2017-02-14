@@ -1,16 +1,11 @@
 ---
 title: "C# Compiler Options Listed Alphabetically | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "CSharp"
   - "CSharp"
 helpviewer_keywords: 
   - "compiler options [C#], listed alpabetically"
@@ -21,7 +16,6 @@ ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

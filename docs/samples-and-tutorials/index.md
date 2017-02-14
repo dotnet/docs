@@ -3,11 +3,10 @@ title: Samples and Tutorials
 description: Samples and Tutorials
 keywords: .NET
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/25/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-technologies
 ms.devlang: dotnet
 ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 ---
@@ -22,7 +21,7 @@ You can find great resources to learn the F# programming language
 on the [F# Foundation's site](http://fsharp.org/learn.html). 
 
 You can find great resources for learning ASP.NET Core on the
-[ASP.NET site](https://docs.asp.net/en/latest/tutorials/index.html).
+[ASP.NET site](https://docs.microsoft.com/aspnet/core/tutorials/).
 
 In addition, if you are interested in exploring C# using an
 online playground, try these [interactive tutorials](http://go.microsoft.com/fwlink/?LinkId=817234).

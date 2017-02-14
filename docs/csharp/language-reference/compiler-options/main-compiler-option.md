@@ -1,13 +1,9 @@
 ---
 title: "-main (C# Compiler Options) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/main"
@@ -21,7 +17,6 @@ ms.assetid: 975cf4d5-36ac-4530-826c-4aad0c7f2049
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -51,7 +46,7 @@ This option specifies the class that contains the entry point to the program, if
  The type that contains the **Main** method.  
   
 ## Remarks  
- If your compilation includes more than one type with a [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.  
+ If your compilation includes more than one type with a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method, you can specify which type contains the **Main** method that you want to use as the entry point into the program.  
   
  This option is for use when compiling an .exe file.  
   

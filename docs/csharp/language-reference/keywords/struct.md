@@ -1,13 +1,9 @@
 ---
 title: "struct (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "struct_CSharpKeyword"
@@ -20,7 +16,6 @@ ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

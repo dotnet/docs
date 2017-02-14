@@ -2,12 +2,12 @@
 title: "How to: Pass Procedures to Another Procedure in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -68,7 +68,7 @@ This example shows how to use delegates to pass a procedure to another procedure
      When `Test` is called, it first displays the result of `AddNumbers` acting on `5` and `3`, which is 8. Then the result of `SubtractNumbers` acting on `9` and `3` is displayed, which is 6.  
   
 ## See Also  
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [How to: Invoke a Delegate Method](../../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)

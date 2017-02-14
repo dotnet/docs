@@ -2,7 +2,7 @@
 title: "Tutorial: Deferred Execution (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: c80d53a8-1a30-4115-b232-52f0d089fec5
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # Tutorial: Deferred Execution (Visual Basic)
 This tutorial illustrates the processing model when you chain queries together. Chaining queries together is a key part of writing functional transformations. It is important to understand exactly how chained queries work.  

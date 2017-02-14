@@ -1,13 +1,13 @@
 ---
 title: "Unable to embed resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc30143"
@@ -20,7 +20,7 @@ ms.assetid: 319e95b5-5176-4fe1-bc04-90075594b397
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -50,4 +50,4 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
 ## See Also  
  [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   
  [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

@@ -1,16 +1,11 @@
 ---
 title: "Command-line Building With csc.exe | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "CSharp"
   - "CSharp"
 helpviewer_keywords: 
   - "builds [C#]"
@@ -19,7 +14,6 @@ ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -44,7 +38,7 @@ You can invoke the C# compiler by typing the name of its executable file (csc.ex
   
  If you're working on a computer that has only the [!INCLUDE[winsdklong](../../../csharp/language-reference/compiler-options/includes/winsdklong_md.md)], you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.  
   
- You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](/visualstudio/msbuild/msbuild1).  
+ You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild1).  
   
  The csc.exe executable file usually is located in the Microsoft.NET\Framework\\*Version* folder under the Windows directory. Its location might vary depending on the exact configuration of a particular computer. If more than one version of the .NET Framework is installed on your computer, you'll find multiple versions of this file. For more information about such installations, see [Determining Which Version of the .NET Framework Is Installed](http://msdn.microsoft.com/en-us/1a87cc6a-1c4b-4c38-b878-faa9b3beae3c).  
   
@@ -121,7 +115,7 @@ You can invoke the C# compiler by typing the name of its executable file (csc.ex
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)   
  [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)   
+ [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
  [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)   
  [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)   
  [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)   

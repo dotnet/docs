@@ -1,13 +1,13 @@
 ---
-title: "Walkthrough: Declaring and Raising Events (Visual Basic) | Microsoft Docs"
+title: "Declaring and Raising Events (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,7 +22,7 @@ ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -99,4 +99,4 @@ This walkthrough demonstrates how to declare and raise events for a class named 
  <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>   
  <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>   
  [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

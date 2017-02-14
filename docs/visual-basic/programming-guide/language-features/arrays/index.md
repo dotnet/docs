@@ -2,12 +2,12 @@
 title: "Arrays in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Array"
@@ -20,7 +20,7 @@ ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
 caps.latest.revision: 47
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -38,7 +38,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Arrays in Visual Basic
-An array is a set of values that are logically related to each other, such as the number of students in each grade in a grammar school.  If you are looking for help on arrays in Visual Basic for Applications (VBA), see the [language reference](https://msdn.microsoft.com/en-us/library/office/gg264383\(v=office.14\).aspx).  
+An array is a set of values that are logically related to each other, such as the number of students in each grade in a grammar school.  If you are looking for help on arrays in Visual Basic for Applications (VBA), see the [language reference](https://msdn.microsoft.com/library/office/gg264383\(v=office.14\).aspx).  
   
  By using an array, you can refer to these related values by the same name, and use a number that’s called an index or subscript to tell them apart. The individual values are called the elements of the array. They’re contiguous from index 0 through the highest index value.  
   

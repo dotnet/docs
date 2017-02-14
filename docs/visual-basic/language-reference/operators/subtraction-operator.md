@@ -1,13 +1,13 @@
 ---
 title: "- Operator (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Negate"
@@ -30,7 +30,7 @@ ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -91,7 +91,7 @@ Returns the difference between two numeric expressions or the negative value of 
  Following the execution of these statements, `binaryResult` contains 124.45 and `unaryResult` contains –334.90.  
   
 ## See Also  
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
+ [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
  [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   

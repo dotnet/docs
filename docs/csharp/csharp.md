@@ -1,13 +1,13 @@
 ---
 title: "C# | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -20,7 +20,7 @@ ms.assetid: 7f4f8103-7068-4f1d-92c7-3c4519b6edbc
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -46,7 +46,7 @@ C# (pronounced "C sharp") is a programming language that is designed for buildin
  [Getting Started with C#](../csharp/getting-started/getting-started-with-csharp.md)  
  Introduces the features of C# for programmers who are new to the language or are new to [!INCLUDE[vsprvs](../csharp/includes/vsprvs_md.md)], and provides a roadmap for finding Help about [!INCLUDE[vsprvs](../csharp/includes/vsprvs_md.md)].  
   
- [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+ [Using the Visual Studio Development Environment for C#](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
  Introduces the [!INCLUDE[csprcs](../csharp/includes/csprcs_md.md)] development environment.  
   
  [C# Programming Guide](../csharp/programming-guide/index.md)  
@@ -66,5 +66,5 @@ C# (pronounced "C sharp") is a programming language that is designed for buildin
  Links to the latest version of the C# Specifications in Microsoft Word format.  
   
 ## See Also  
- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)   
+ [Getting Started with Visual C# and Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)   
  [.NET Development](https://msdn.microsoft.com/library/ff361664)

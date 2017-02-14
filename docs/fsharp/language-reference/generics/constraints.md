@@ -2,12 +2,13 @@
 title: Constraints (F#)
 description: Constraints (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 2f232a3a-9486-48fb-9759-f23404ed4b52 
 ---
 
@@ -29,7 +30,7 @@ There are several different constraints you can apply to limit the types that ca
 |----------|------|-----------|
 |Type Constraint|*type-parameter* :&gt; *type*|The provided type must be equal to or derived from the type specified, or, if the type is an interface, the provided type must implement the interface.|
 |Null Constraint|*type-parameter* : null|The provided type must support the null literal. This includes all .NET object types but not F# list, tuple, function, class, record, or union types.|
-|Explicit Member Constraint|[(]*type-parameter* [or ... or *type-parameter*)] : (*member-signature *)|At least one of the type arguments provided must have a member that has the specified signature; not intended for common use.|
+|Explicit Member Constraint|[(]*type-parameter* [or ... or *type-parameter*)] : (*member-signature *)|At least one of the type arguments provided must have a member that has the specified signature; not intended for common use. Members must be either explicitly defined on the type or part of an implicit type extension to be valid targets for an Explicit Member Constraint.|
 |Constructor Constraint|*type-parameter* : ( new : unit -&gt; 'a )|The provided type must have a default constructor.|
 |Value Type Constraint|: struct|The provided type must be a .NET value type.|
 |Reference Type Constraint|: not struct|The provided type must be a .NET reference type.|

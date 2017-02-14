@@ -1,13 +1,13 @@
 ---
 title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -77,4 +77,4 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

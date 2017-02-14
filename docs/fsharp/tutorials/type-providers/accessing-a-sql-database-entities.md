@@ -2,12 +2,13 @@
 title: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
 description: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: dc82a932-5401-4d19-9fb3-92c50d8db514 
 ---
 
@@ -237,7 +238,7 @@ Explore other query options by reviewing the query operators available in [Query
 ## See Also
 [Type Providers](index.md)
 
-[SqlEntityConnection Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/sqlentityconnection-type-provider-%5bfsharp%5d)
+[SqlEntityConnection Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/sqlentityconnection-type-provider-%5bfsharp%5d)
 
 [Walkthrough: Generating F# Types from an EDMX Schema File](generating-fsharp-types-from-edmx.md)
 

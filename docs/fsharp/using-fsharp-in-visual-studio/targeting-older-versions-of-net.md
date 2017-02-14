@@ -2,12 +2,13 @@
 title: Targeting .NET Framework 2.0 on Windows 8
 description: Targeting .NET Framework 2.0 on Windows 8
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 63989543-95c3-4ab7-81f3-3834a8b15010 
 ---
 

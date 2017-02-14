@@ -1,14 +1,13 @@
 ---
-title: dotnet-nuget-delete command | .NET Core SDK
+title: dotnet-nuget-delete command | Microsoft Docs
 description: The dotnet-nuget-delete command deletes or unlists a package from the server. 
 keywords: dotnet-nuget-delete, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-manager: wpickett
 ms.date: 11/11/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 ---
@@ -61,7 +60,7 @@ Displays this amount of details in the output. Level can be `normal`, `quiet`, o
 
 A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
 The path can be absolute or relative.
-For more information on config files, see [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior). 
+For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
 ## Examples
 
@@ -71,7 +70,7 @@ Deletes version 1.0 of package MyPackage:
 
 Deletes version 1.0 of package MyPackage, not prompting user for credentials or other input:
 
-`dotnet nuget delete MyPackage 1.0 --non-ìnteractive`
+`dotnet nuget delete MyPackage 1.0 --non-interactive`
 
 Deletes version 1.0 of package MyPackage, specifying a custom config file *./config/My.Config*:
 

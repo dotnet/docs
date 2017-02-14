@@ -2,12 +2,13 @@
 title: Exception Handling (F#)
 description: Exception Handling (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: ad475c4a-d94e-47d9-b27b-3ff000b65f8e 
 ---
 

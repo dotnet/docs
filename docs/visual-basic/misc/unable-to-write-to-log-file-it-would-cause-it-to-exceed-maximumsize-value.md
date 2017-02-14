@@ -1,13 +1,13 @@
 ---
 title: "Unable to write to log file because writing to it would cause it to exceed MaximumSize value | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_FileExceedsMaximumSize"
@@ -15,7 +15,7 @@ ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

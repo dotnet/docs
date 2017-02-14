@@ -2,12 +2,12 @@
 title: "Documenting Your Code with XML (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,7 +19,7 @@ ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
 caps.latest.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -66,7 +66,7 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
   
 -   [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
   
--   [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
+-   [XML Tools in Visual Studio](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
 ## See Also  
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)   

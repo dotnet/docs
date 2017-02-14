@@ -1,22 +1,26 @@
 ---
-title: dotnet-publish command | .NET Core SDK
+title: dotnet-publish command | Microsoft Docs
 description: The dotnet-publish command publishes your .NET Core project into a directory. 
 keywords: dotnet-publish, CLI, CLI command, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 8a7e1c52-5c57-4bf5-abad-727450ebeefd
+ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
 
-#dotnet-publish
+#dotnet-publish (.NET Core Tools RC4)
+
+> [!WARNING]
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-publish](../../tools/dotnet-publish.md) topic.
 
 ## Name
 
-`dotnet-publish` - Packs the application and all of its dependencies into a folder getting it ready for publishing
+`dotnet-publish` - Packs the application and all of its dependencies into a folder getting it ready for publishing.
 
 ## Synopsis
 

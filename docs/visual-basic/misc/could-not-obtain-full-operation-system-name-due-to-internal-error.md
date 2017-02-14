@@ -1,13 +1,13 @@
 ---
 title: "Could not obtain full operation system name due to internal error | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrDiagnosticInfo_FullOSName"
@@ -15,7 +15,7 @@ ms.assetid: f69da02b-eb9a-4284-bb9e-3025517ae6c1
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

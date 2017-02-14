@@ -1,13 +1,13 @@
 ---
 title: "Attribute List (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -58,8 +58,8 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## Remarks  
  You can apply one or more attributes to nearly any programming element (types, procedures, properties, and so forth). Attributes appear in your assembly's metadata, and they can help you annotate your code or specify how to use a particular programming element. You can apply attributes defined by Visual Basic and the .NET Framework, and you can define your own attributes.  
-  
- For more information on when to use attributes, see [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+
+ For more information on when to use attributes, see [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
 ## Rules  
   
@@ -83,5 +83,5 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## See Also  
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

@@ -2,12 +2,13 @@
 title: "Walkthrough: Generating F# Types from a DBML File (F#)"
 description: "Walkthrough: Generating F# Types from a DBML File (F#)"
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 6fbb6ccc-248f-4226-95e9-f6f99541dbe4 
 ---
 
@@ -150,7 +151,7 @@ You can proceed to use other query expressions, or get a database connection fro
 
 
 ## See Also
-[DbmlFile Type Provider](https://msdn.microsoft.com/en-us/visualfsharpdocs/conceptual/dbmlfile-type-provider-%5bfsharp%5d)
+[DbmlFile Type Provider](https://msdn.microsoft.com/visualfsharpdocs/conceptual/dbmlfile-type-provider-%5bfsharp%5d)
 
 [Type Providers](index.md)
 

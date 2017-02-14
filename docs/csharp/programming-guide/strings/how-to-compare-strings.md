@@ -1,13 +1,13 @@
 ---
 title: "How to: Compare Strings (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,7 +18,7 @@ ms.assetid: e1268e28-ee98-4695-98e9-92280f1c33c0
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -66,4 +66,4 @@ When you compare strings, you are producing a result that says one string is gre
  <xref:System.StringComparer?displayProperty=fullName>   
  [Strings](../../../csharp/programming-guide/strings/index.md)   
  [Comparing Strings](http://msdn.microsoft.com/library/977dc094-fe19-4955-98ec-d2294d04a4ba)   
- [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)
+ [Globalizing and Localizing Applications](https://docs.microsoft.com/visualstudio/ide/globalizing-and-localizing-applications)

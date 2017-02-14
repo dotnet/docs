@@ -1,13 +1,13 @@
 ---
 title: "Unable to write temporary file because temporary path is not available | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc30698"
@@ -20,7 +20,7 @@ ms.assetid: 3b77b7e3-8b17-40de-b4e1-05e4b9b325ad
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -48,4 +48,4 @@ translation.priority.ht:
 2.  If the problem persists, reinstall [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
   
 ## See Also  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

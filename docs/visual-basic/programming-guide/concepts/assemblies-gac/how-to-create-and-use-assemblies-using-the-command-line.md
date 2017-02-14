@@ -2,7 +2,7 @@
 title: "How to: Create and Use Assemblies Using the Command Line (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 229ff9fb-1bd1-403b-946b-526104864c60
 caps.latest.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -131,6 +131,6 @@ vbc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.vb
  For more information about building from the command line, see  and [Building from the Command Line](../../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
 ## See Also  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Creating a Class to Hold DLL Functions](http://msdn.microsoft.com/library/e08e4c34-0223-45f7-aa55-a3d8dd979b0f)

@@ -2,7 +2,7 @@
 title: "Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 5cf21919-4360-4b49-b29d-58ea3164ac72
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)
 You can modify an XML tree, removing elements, attributes, and other types of nodes.  
@@ -28,8 +28,8 @@ You can modify an XML tree, removing elements, attributes, and other types of no
   
 |Method|Description|  
 |------------|-----------------|  
-|[XAttribute.Remove](https://msdn.microsoft.com/en-us/library/system.xml.linq.xattribute.remove\(v=vs.110\).aspx)|Removes an <xref:System.Xml.Linq.XAttribute> from its parent.|  
-|[XContainer.RemoveNodes](https://msdn.microsoft.com/en-US/library/system.xml.linq.xcontainer.removenodes\(v=vs.110\).aspx)|Removes the child nodes from an <xref:System.Xml.Linq.XContainer>.|  
+|[XAttribute.Remove](https://msdn.microsoft.com/library/system.xml.linq.xattribute.remove\(v=vs.110\).aspx)|Removes an <xref:System.Xml.Linq.XAttribute> from its parent.|  
+|[XContainer.RemoveNodes](https://msdn.microsoft.com/library/system.xml.linq.xcontainer.removenodes\(v=vs.110\).aspx)|Removes the child nodes from an <xref:System.Xml.Linq.XContainer>.|  
 |<xref:System.Xml.Linq.XElement.RemoveAll%2A?displayProperty=fullName>|Removes content and attributes from an <xref:System.Xml.Linq.XElement>.|  
 |<xref:System.Xml.Linq.XElement.RemoveAttributes%2A?displayProperty=fullName>|Removes the attributes of an <xref:System.Xml.Linq.XElement>.|  
 |<xref:System.Xml.Linq.XElement.SetAttributeValue%2A?displayProperty=fullName>|If you pass `null` for value, then removes the attribute.|  

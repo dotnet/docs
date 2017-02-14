@@ -3,13 +3,12 @@ title: Debugging Your C# Hello World Application with Visual Studio 2017
 description: Learn how to debug a Hello World app written in C# with Visual Studio 2017
 keywords: .NET Core, .NET Core console application, .NET Core debugging
 author: stevehoag
-manager: wpickett
 ms.author: shoag
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: cb213625-cc60-438b-9b9e-49aed0e4a974
 ---
 
@@ -29,7 +28,7 @@ You should always start out by testing your program in Debug mode. Debug mode tu
 
 Let's run our program in Debug mode and try a few debugging features:
 
-1. Set a breakpoint by positioning the cursor on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` and clicking in the left margin of the code window or by choosing the **Debug**, **Toggle Breakpoint** menu item. (A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.) As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its right margin.
+1. Set a breakpoint by positioning the cursor on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` and clicking in the left margin of the code window or by choosing the **Debug**, **Toggle Breakpoint** menu item. (A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.) As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Image](./media/setbreakpoint_2017.jpg)
 
@@ -103,7 +102,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window, or by choosing the **Debug**, **Toggle Breakpoint** menu item.
 
-## Stepping through a progam ##
+## Stepping through a program ##
 
 Visual Studio also allows us to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since our program is small, though, let's step through the entire program by doing the following:
 

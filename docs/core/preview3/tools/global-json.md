@@ -1,21 +1,24 @@
 ---
-title: global.json reference | .NET Core
+title: global.json reference | Microsoft Docs
 description: global.json reference
 keywords: .NET, .NET Core
-author: aL3891
+author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 11/02/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: e1ac9659-425f-4486-a376-c12ca942ead8
+ms.assetid: 96102f96-d403-4385-8ef6-5d80e406eb0c
 ---
 
-# global.json reference
+# global.json reference (.NET Core Tools RC4)
 
-The global.json file is still present in the .NET Core Command Line Preview 3. However, its main purpose is not to define 
+> [!WARNING]
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [global.json reference](../../tools/global-json.md) topic.
+
+The global.json file is still present in the .NET Core Command Line RC4. However, its main purpose is not to define 
 solution metadata as in previous releases, but to allow selection of the CLI version being used through the `sdk` property. 
 
 This reference reflects the above fact. 

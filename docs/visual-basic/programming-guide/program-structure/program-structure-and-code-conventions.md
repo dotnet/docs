@@ -2,12 +2,12 @@
 title: "Program Structure and Code Conventions (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -26,7 +26,7 @@ ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
 caps.latest.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -104,5 +104,5 @@ This section introduces the typical [!INCLUDE[vbprvb](../../../csharp/programmin
  [Typographic and Code Conventions](../../../visual-basic/language-reference/typographic-and-code-conventions.md)  
  Provides standard coding conventions for [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
- [Writing Code](/visualstudio/ide/writing-code-in-the-code-and-text-editor)  
+ [Writing Code](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)  
  Describes features that make it easier for you to write and manage your code.

@@ -2,12 +2,12 @@
 title: "Visual Basic Language Features | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -60,16 +60,16 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
  Provides an introduction to delegates and how they are used in Visual Basic.  
   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)  
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  Describes binding, which is performed by the compiler when an object is assigned to an object variable, and the differences between early-bound and late-bound objects.  
   
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  Provides an overview of syntax errors, run-time errors, and logic errors.  
   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)  
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
  Shows how to declare and use events.  
   
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  

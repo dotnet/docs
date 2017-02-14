@@ -1,13 +1,13 @@
 ---
 title: "&#39;Extension&#39; attribute can be applied only to &#39;Module&#39;, &#39;Sub&#39;, or &#39;Function&#39; declarations | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "bc36550"
@@ -20,7 +20,7 @@ ms.assetid: 4387a51f-733c-45d7-abdb-eb64d4f51078
 caps.latest.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -66,6 +66,6 @@ End Namespace
 ```  
   
 ## See Also  
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

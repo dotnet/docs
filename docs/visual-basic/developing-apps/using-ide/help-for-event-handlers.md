@@ -1,13 +1,13 @@
 ---
 title: "Help for Event Handlers in Visual Basic Code | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "CheckedListBox1_SelectedIndexChanged"
@@ -49,7 +49,7 @@ ms.assetid: 2c92decf-844e-4ba4-82c7-f2fc0adc3002
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

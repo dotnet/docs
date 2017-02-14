@@ -2,12 +2,13 @@
 title: do Bindings in Classes (F#)
 description: do Bindings in Classes (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 78987cb8-bdba-46e2-b5b2-994c83fe42c4 
 ---
 

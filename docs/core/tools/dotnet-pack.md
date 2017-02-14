@@ -1,18 +1,22 @@
 ---
-title: dotnet-pack command | .NET Core SDK
+title: dotnet-pack command | Microsoft Docs
 description: The dotnet-pack command creates NuGet packages for your .NET Core project.
 keywords: dotnet-pack, CLI, CLI command, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 ---
 
 #dotnet-pack
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-pack (.NET Core Tools RC4)](../preview3/tools/dotnet-pack.md) topic.
 
 ## Name
 

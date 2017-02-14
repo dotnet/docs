@@ -1,13 +1,13 @@
 ---
 title: "Handles Clause (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "Handles"
@@ -20,7 +20,7 @@ ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -83,4 +83,4 @@ proceduredeclaration Handles eventlist
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

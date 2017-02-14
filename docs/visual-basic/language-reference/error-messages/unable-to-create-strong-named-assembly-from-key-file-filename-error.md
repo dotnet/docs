@@ -1,13 +1,13 @@
 ---
 title: "Unable to create strong-named assembly from key file &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbc31026"
@@ -20,7 +20,7 @@ ms.assetid: 5dd09785-bc10-4ae7-ba24-b795057aca31
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

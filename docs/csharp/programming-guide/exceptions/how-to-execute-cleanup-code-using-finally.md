@@ -1,13 +1,13 @@
 ---
 title: "How to: Execute Cleanup Code Using finally (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 1b1e5aef-3f32-4a88-9d39-b5fffb33bdaf
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -51,7 +51,7 @@ The purpose of a `finally` statement is to ensure that the necessary cleanup of 
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)   
+ [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)   
  [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)   
  [using Statement](../../../csharp/language-reference/keywords/using-statement.md)   
  [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   

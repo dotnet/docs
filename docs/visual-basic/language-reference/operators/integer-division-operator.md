@@ -1,17 +1,17 @@
 ---
-title: "- Operator (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+title: "\\ Operator (Visual Basic) | Microsoft Docs"
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
-  - "vb.\"
-  - "\"
+  - "vb.\\"
+  - "\\"
 dev_langs: 
   - "VB"
 helpviewer_keywords: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "zero, division by zero"
   - "arithmetic operators, division"
   - "division, by zero"
-  - "backslash (\) [Visual Basic]"
-  - "\ operator [Visual Basic]"
+  - "backslash (\\) [Visual Basic]"
+  - "\\ operator [Visual Basic]"
   - "integer quotient"
   - "math operators"
   - "quotients, integer"
@@ -30,7 +30,7 @@ ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
 caps.latest.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -92,7 +92,7 @@ expression1 \ expression2
  The expressions in the preceding example return values of 2, 3, 33, and -22, respectively.  
   
 ## See Also  
- [\\= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
  [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   

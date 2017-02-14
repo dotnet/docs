@@ -1,13 +1,13 @@
 ---
 title: "AddressOf Operator (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "AddressOf"
@@ -21,7 +21,7 @@ ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -70,4 +70,4 @@ AddressOf procedurename
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

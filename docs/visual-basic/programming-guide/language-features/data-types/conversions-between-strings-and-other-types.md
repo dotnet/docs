@@ -2,12 +2,12 @@
 title: "Conversions Between Strings and Other Types (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,7 +22,7 @@ ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -70,4 +70,4 @@ Str = "The total count is " & count
  [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](https://docs.microsoft.com/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

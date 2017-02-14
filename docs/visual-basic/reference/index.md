@@ -1,13 +1,13 @@
 ---
 title: "Reference (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
 caps.latest.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -58,10 +58,10 @@ This section provides links to reference information about various aspects of [!
  This namespace provides a component that enables you to print a facsimile of the form as it appears on screen.  
   
 ## Related Sections  
- [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
+ [General User Interface Elements (Visual Studio)](https://docs.microsoft.com/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Contains topics for dialog boxes and windows used in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
- [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
+ [XML Tools in Visual Studio](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
  [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  

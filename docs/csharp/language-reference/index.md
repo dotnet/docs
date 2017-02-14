@@ -1,13 +1,9 @@
 ---
 title: "C# Reference | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -21,7 +17,6 @@ ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -70,7 +65,7 @@ This section provides reference material about C# keywords, operators, compiler 
  [C#](../../csharp/csharp.md)  
  Provides a portal to Visual C# documentation.  
   
- [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+ [Using the Visual Studio Development Environment for C#](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  
   
  [C# Programming Guide](../../csharp/programming-guide/index.md)  

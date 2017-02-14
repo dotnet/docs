@@ -1,13 +1,13 @@
 ---
 title: "Cannot create ActiveX Component | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrID429"
@@ -17,7 +17,7 @@ ms.assetid: 7fc5a271-8195-40a2-89f9-e05fd71bb8e0
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -42,4 +42,4 @@ You tried to place an ActiveX control on a form at design time or add a form to 
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](/visualstudio/ide/talk-to-us)
+ [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

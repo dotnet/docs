@@ -1,13 +1,13 @@
 ---
 title: "Programming in Visual Basic | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -37,8 +37,8 @@ translation.priority.ht:
 # Programming in Visual Basic
 This section discusses programming tasks that you may want to learn more about as you create your Visual Basic application.  
   
-## In This Section  
- [Accessing Computer Resources](../../../visual-basic/developing-apps/programming/computer-resources/index.md)  
+## In this section  
+ [Accessing Computer Resources](../../../visual-basic/developing-apps/programming/computer-resources/computer-resources.md)  
  Contains documentation on how to use the `My.Computer` object to access information about the computer on which an application runs and how to control the computer.  
   
  [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)  
@@ -56,11 +56,11 @@ This section discusses programming tasks that you may want to learn more about a
  [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)  
  Contains documentation on accessing an application's settings using the `My.Settings` object.  
   
- [Processing Drives, Directories, and Files](../../../visual-basic/developing-apps/programming/drives-directories-files/index.md)  
+ [Processing Drives, Directories, and Files](../../../visual-basic/developing-apps/programming/drives-directories-files/processing.md)  
  Contains documentation on how to access the file system using the `My.Computer.FileSystem` object.  
   
 ## See Also  
  [Visual Basic Language Features](../../../visual-basic/programming-guide/language-features/index.md)   
- [Programming Concepts](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)   
+ [Programming Concepts](../../../visual-basic/programming-guide/concepts/index.md)   
+ [Collections](../../../visual-basic/programming-guide/concepts/collections.md)   
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

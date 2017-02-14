@@ -1,13 +1,13 @@
 ---
 title: "How to: Read From a Text File (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "StreamReader.ReadToEnd"
@@ -22,7 +22,7 @@ ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -65,4 +65,4 @@ This example reads the contents of a text file by using the static methods <xref
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)
+ [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

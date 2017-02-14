@@ -3,11 +3,11 @@ title: Generic Types (Generics) Overview
 description: Generic Types (Generics) Overview
 keywords: .NET, .NET Core
 author: kuhlenh
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a315b111-8e48-446c-ab19-acb6405894a7
 ---

@@ -2,12 +2,13 @@
 title: Automatic Generalization (F#)
 description: Automatic Generalization (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 14a3554c-3fad-4eba-a93d-8ba07d1245b4 
 ---
 

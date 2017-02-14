@@ -2,7 +2,7 @@
 title: "How to: Create Signed Friend Assemblies (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: f2afd83d-b044-484b-a56d-56d0a8a40647
 caps.latest.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -105,4 +105,4 @@ This example shows how to use friend assemblies with assemblies that have strong
  [/keyfile](../../../../visual-basic/reference/command-line-compiler/keyfile.md)   
  [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)   
  [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617)   
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

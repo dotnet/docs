@@ -2,12 +2,12 @@
 title: "How to: Invoke a Delegate Method (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -15,7 +15,7 @@ ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -66,6 +66,6 @@ This example shows how to associate a method with a delegate and then invoke tha
   
 ## See Also  
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)   
  [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6)

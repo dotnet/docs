@@ -2,12 +2,12 @@
 title: "Extension Methods (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.ExtensionMethods"
@@ -20,7 +20,7 @@ ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 caps.latest.revision: 41
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -205,5 +205,5 @@ End Module
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
  [Optional Parameters](./optional-parameters.md)   
  [Parameter Arrays](./parameter-arrays.md)   
- [Attributes](../../../../visual-basic/programming-guide/concepts/attributes/index.md)   
+ [Attributes overview](../../../../visual-basic/programming-guide/concepts/attributes/index.md)   
  [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

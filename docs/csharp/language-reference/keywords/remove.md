@@ -1,13 +1,9 @@
 ---
 title: "remove (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "remove_CSharpKeyword"
@@ -19,7 +15,6 @@ ms.assetid: c8223426-c17b-4fe2-8406-01564cf1dd2b
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

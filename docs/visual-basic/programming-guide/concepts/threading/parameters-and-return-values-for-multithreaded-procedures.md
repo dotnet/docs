@@ -2,7 +2,7 @@
 title: "Parameters and Return Values for Multithreaded Procedures (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: cbdce172-7ff6-41a9-bb21-53a7c6f538a5
 caps.latest.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -118,7 +118,7 @@ End Sub
  [Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)   
  [Thread Pooling (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)   
  [Thread Synchronization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)   
- [Events](../../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)   
  [Multithreaded Applications (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)

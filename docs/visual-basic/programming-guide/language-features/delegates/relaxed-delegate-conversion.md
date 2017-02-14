@@ -2,12 +2,12 @@
 title: "Relaxed Delegate Conversion (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,7 +19,7 @@ ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -107,7 +107,7 @@ End Sub
 ## See Also  
  [Lambda Expressions](../../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)   
  [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)   
  [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
  [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)

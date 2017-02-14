@@ -2,7 +2,7 @@
 title: "Type Relationships in Query Operations (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,7 +24,7 @@ ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
 caps.latest.revision: 34
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

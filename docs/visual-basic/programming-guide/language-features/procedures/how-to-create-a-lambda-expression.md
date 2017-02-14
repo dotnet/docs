@@ -2,12 +2,12 @@
 title: "How to: Create a Lambda Expression (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
 caps.latest.revision: 27
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -131,7 +131,7 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
  [Lambda Expressions](./lambda-expressions.md)   
  [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)   
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

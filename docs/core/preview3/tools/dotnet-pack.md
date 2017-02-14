@@ -1,22 +1,26 @@
 ---
-title: dotnet-pack command | .NET Core SDK
+title: dotnet-pack command | Microsoft Docs
 description: The dotnet-pack command creates NuGet packages for your .NET Core project.
 keywords: dotnet-pack, CLI, CLI command, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
+ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
 
-#dotnet-pack
+#dotnet-pack (.NET Core Tools RC4)
+
+> [!WARNING]
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-pack](../../tools/dotnet-pack.md) topic.
 
 ## Name
 
-`dotnet-pack` - Packs the code into a NuGet package
+`dotnet-pack` - Packs the code into a NuGet package.
 
 ## Synopsis
 
@@ -28,10 +32,10 @@ ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a nuget package. If the `--include-symbols` 
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package. If the `--include-symbols` 
 option is present, another package containing the debug symbols will be created. 
 
-NuGet dependencies of the project being packed are added to the nuspec file, so they are able to be resolved when the package is installed. 
+NuGet dependencies of the project being packed are added to the `nuspec` file, so they are able to be resolved when the package is installed. 
 Project-to-project references are not packaged inside the project. Currently, you need to have a package per project if you have project-to-project dependencies.
 
 `dotnet pack` by default first builds the project. If you wish to avoid this, pass the `--no-build` option. This can be useful in Continuous Integration (CI) build scenarios in which you know the code was just previously built, for example. 
@@ -57,7 +61,7 @@ Does not build the project before packing.
 
 `--include-source`
 
-Includes the source files into the nuget package. The sources files are included in the `src` folder within the nupkg. 
+Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`. 
 
 `--include-symbols`
 

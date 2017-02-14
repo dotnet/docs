@@ -1,13 +1,13 @@
 ---
 title: "How to: Copy, Delete, and Move Files and Folders (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -17,7 +17,7 @@ ms.assetid: 62e52cd7-9597-4e4a-acf9-1315f5cdbf05
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -56,7 +56,7 @@ The following examples show how to copy, move, and delete files and folders in a
 ## See Also  
  <xref:System.IO?displayProperty=fullName>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [File System and the Registry (C# Programming Guide)](file-system-and-the-registry.md)   
+ [File System and the Registry (C# Programming Guide)](index.md)   
  [How to: Provide a Progress Dialog Box for File Operations](how-to-provide-a-progress-dialog-box-for-file-operations.md)   
  [File and Stream I/O](https://msdn.microsoft.com/library/k3352a4t)   
  [Common I/O Tasks](https://msdn.microsoft.com/library/ms404278)

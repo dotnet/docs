@@ -1,13 +1,13 @@
 ---
 title: "How to: Display Bound Data in a DataRepeater Control (Visual Studio) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +18,7 @@ ms.assetid: 56a15326-1334-4275-af4e-075cad79e6f7
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -56,7 +56,7 @@ The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 
 3.  On the **Data** menu, click **Show Data Sources**.  
   
     > [!NOTE]
-    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
+    >  If the **Data Sources** window is empty, add a data source to it. For more information, see [Add new data sources](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources).  
   
 4.  In the **Data Sources** window, select the top-level node for the table that contains the data that you want to bind.  
   
@@ -64,7 +64,7 @@ The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 
   
 6.  Select the table node and drag it onto the item template region of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control.  
   
-     You can specify which types of controls are displayed for each field. For more information, see [Set the control to be created when dragging from the Data Sources window](/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
+     You can specify which types of controls are displayed for each field. For more information, see [Set the control to be created when dragging from the Data Sources window](https://docs.microsoft.com/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>   

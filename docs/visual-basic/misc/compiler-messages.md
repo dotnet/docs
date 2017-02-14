@@ -1,13 +1,13 @@
 ---
 title: "Visual Basic Compiler Messages | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 helpviewer_keywords: 
   - "compiler errors"
@@ -16,7 +16,7 @@ ms.assetid: d50addfb-0683-45e5-8c3c-69a2eb510a19
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

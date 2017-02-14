@@ -1,13 +1,12 @@
 ---
 title: "Classes and Structs (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+description: Describes the use of classes and structures (structs) in C#.
+keywords: classes (C#), structs (C#), structures (structs) (C#), reference types (C#), value types (C#)
+ms.date: "2016-01-17"
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -22,7 +21,7 @@ ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
 caps.latest.revision: 48
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -52,9 +51,9 @@ Classes and structs are two of the basic constructs of the common type system in
  For more information, see [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md), [Objects](../../../csharp/programming-guide/classes-and-structs/objects.md), and [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md).  
   
 ## Example  
- In the following example, `MyCustomClass` is defined with three members at the top level of the `ProgrammingGuide` namespace. An instance (object) of `MyCustomClass` is created in the `Main` method in the `Program` class, and the object’s methods and properties are accessed by using dot notation.  
+ In the following example, `CustomClass` in the `ProgrammingGuide` namespace has three members: an instance constructor, a property named `Number`, and a method named `Multiply`. The `Main` method in the `Program` class creates an instance (object) of `CustomClass`, and the object’s method and property are accessed by using dot notation.
   
- [!code-cs[csProgGuideObjects#88](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
+ [!code-cs[csProgGuideObjects#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/class1.cs#1)]  
   
 ## Encapsulation  
  *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. According to the principle of encapsulation, a class or struct can specify how accessible each of its members is to code outside of the class or struct. Methods and variables that are not intended to be used from outside of the class or assembly can be hidden to limit the potential for coding errors or malicious exploits.  

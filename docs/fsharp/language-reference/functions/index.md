@@ -2,12 +2,13 @@
 title: Functions (F#)
 description: Functions (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 6dea2c3e-2f9d-4c9d-97a2-d8f9a72b6f4c 
 ---
 
@@ -22,9 +23,9 @@ You define functions by using the `let` keyword, or, if the function is recursiv
 
 ```fsharp
 // Non-recursive function definition.
-let [inline] function-nameparameter-list [ : return-type ] = function-body
+let [inline] function-name parameter-list [ : return-type ] = function-body
 // Recursive function definition.
-let rec function-nameparameter-list = recursive-function-body
+let rec function-name parameter-list = recursive-function-body
 ```
 
 ## Remarks

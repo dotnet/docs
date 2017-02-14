@@ -1,13 +1,9 @@
 ---
 title: "for (C# Reference) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "for"
@@ -20,7 +16,6 @@ ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -133,5 +128,5 @@ for (initializer; condition; iterator)
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [for Statement (C++)](/cpp/cpp/for-statement-cpp)   
+ [for Statement (C++)](https://docs.microsoft.com/cpp/cpp/for-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

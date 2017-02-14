@@ -1,13 +1,13 @@
 ---
 title: "Assembly (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Assembly"
@@ -23,7 +23,7 @@ ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
 caps.latest.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -51,4 +51,5 @@ Specifies that an attribute at the beginning of a source file applies to the ent
   
 ## See Also  
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributes](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+ [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+

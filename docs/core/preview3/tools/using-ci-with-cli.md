@@ -1,18 +1,22 @@
 ---
-title: Using .NET Core SDK and tools in Continuous Integration (CI)
+title: Using .NET Core SDK and tools in Continuous Integration (CI) | Microsoft Docs
 description: Using .NET Core SDK and tools in Continuous Integration (CI)
 keywords: .NET, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
+ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 ---
 
-# Using .NET Core SDK and tools in Continuous Integration (CI)
+# Using .NET Core SDK and tools in Continuous Integration (CI) (.NET Core Tools RC4)
+
+> [!WARNING]
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [Using .NET Core SDK and tools in Continuous Integration (CI)](../../tools/using-ci-with-cli.md) topic.
 
 ## Overview
 This document outlines the usage of .NET Core SDK and its tools on the build server. In general, on a CI build server, 
@@ -78,8 +82,7 @@ for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed 
-in the build worker image `Visual Studio 2015`.
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed in the build worker image `Visual Studio 2015`.
 
 Just use:
 
@@ -106,4 +109,3 @@ install:
   - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
   # follow normal installation from binaries
 ```
-

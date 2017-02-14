@@ -3,10 +3,10 @@ title: Migrating ASP.NET MVC Applications to Windows Containers
 description: Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container
 keywords: Windows Containers, Docker, ASP.NET MVC
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: .net-framework-4.6
+ms.prod: .net-framework
 ms.technology: dotnet-mvc
 ms.devlang: dotnet
 ms.assetid: c9f1d52c-b4bd-4b5d-b7f9-8f9ceaf778c4
@@ -60,7 +60,7 @@ in the Beta channel at this time.
 
 > [!IMPORTANT]
 > If you are using Windows Server 2016, you need to follow the
-> instructions for [Container Host Deployment - Windows Server](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)
+> instructions for [Container Host Deployment - Windows Server](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)
 > before you can run Docker containers.
 
 After installing and starting Docker, you'll need to right-click on the

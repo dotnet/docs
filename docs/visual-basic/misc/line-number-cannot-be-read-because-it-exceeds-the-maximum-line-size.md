@@ -1,13 +1,13 @@
 ---
 title: "Line &lt;number&gt; cannot be read because it exceeds the maximum line size. | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MaxLineSizeExceeded"
@@ -15,7 +15,7 @@ ms.assetid: c59116d9-9856-47af-b32d-616d8f2d10d3
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"

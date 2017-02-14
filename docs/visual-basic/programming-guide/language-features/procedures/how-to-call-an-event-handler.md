@@ -2,12 +2,12 @@
 title: "How to: Call an Event Handler in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -21,7 +21,7 @@ ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -44,7 +44,7 @@ An *event* is an action or occurrence — such as a mouse click or a credit limi
   
  When the event occurs, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] automatically calls the event handler procedure. Any code that has access to the event can cause it to occur by executing a [RaiseEvent Statement](../../../../visual-basic/language-reference/statements/raiseevent-statement.md).  
   
- You can associate more than one event handler with the same event. In some cases you can dissociate a handler from an event. For more information, see [Events](../../../../visual-basic/programming-guide/language-features/events/events.md).  
+ You can associate more than one event handler with the same event. In some cases you can dissociate a handler from an event. For more information, see [Events](../../../../visual-basic/programming-guide/language-features/events/index.md).  
   
 ### To call an event handler using Handles and WithEvents  
   

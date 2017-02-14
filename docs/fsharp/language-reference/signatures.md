@@ -2,12 +2,13 @@
 title: Signatures (F#)
 description: Signatures (F#)
 keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
+author: cartermp
+ms.author: phcart
 ms.date: 05/16/2016
 ms.topic: language-reference
-ms.prod: visual-studio-dev14
+ms.prod: .net
 ms.technology: devlang-fsharp
+ms.devlang: fsharp
 ms.assetid: 76c84a62-b2f6-44ec-8238-e687e2f7d18e 
 ---
 

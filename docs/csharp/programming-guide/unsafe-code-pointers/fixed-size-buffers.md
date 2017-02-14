@@ -1,13 +1,13 @@
 ---
 title: "Fixed Size Buffers (C# Programming Guide) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 6220d454-947c-4977-ac9d-9308c6ed5051
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -76,4 +76,4 @@ private fixed char name[30];
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
  [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)   
- [Interoperability](../../../csharp/programming-guide/interop/interoperability.md)
+ [Interoperability](../../../csharp/programming-guide/interop/index.md)

@@ -3,10 +3,10 @@ title: C# Guide
 description: C# Guide
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+
 ms.date: 08/03/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
@@ -41,7 +41,7 @@ There are seven sections in the C# Guide. You can read them in order, or jump di
 * [Latest Features](whats-new.md):
     - Learn about new features in the language. Learn about new tools like C# Interactive (C#'s REPL), and the .NET Compiler Platform SDK. You'll learn how the language is evolving. You'll see how the new tools can make you more productive in exploring the language, and automating tasks. 
 
-* [C# Interactive](interactive.md):
+* [C# Interactive](interactive/index.md):
     - C# Interactive is a Read-Eval-Print Loop (REPL) that you can use to interactively explore the language. It can also be used to explore different libraries and frameworks by trying different actions using an interactive approach. In this section you'll learn how to install and start C# interactive, and how to explore APIs with it. You'll also learn how to use C# interactive to export tested classes for later use.  
 
 * [C# Concepts](concepts.md):

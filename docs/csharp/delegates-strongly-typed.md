@@ -3,12 +3,12 @@ title: Strongly Typed Delegates
 description: Strongly Typed Delegates
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 ---
 
@@ -31,7 +31,7 @@ after a time. Every new feature requires new delegate types.
 
 Thankfully, this isn't necessary. The .NET Core framework contains several
 types that you can reuse whenever you need delegate types. These are
-[generic](generics.md) definitions so you can declare customizations
+[generic](programming-guide/generics/index.md) definitions so you can declare customizations
 when you need new method declarations. 
 
 The first of these types is the @System.Action type, and several variations:

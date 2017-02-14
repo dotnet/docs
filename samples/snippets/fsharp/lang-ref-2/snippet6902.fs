@@ -10,8 +10,8 @@ let degreesCelsius temp = temp * 1.0<degC>
 
 printfn "Enter a temperature in degrees Fahrenheit."
 let input = System.Console.ReadLine()
-let mutable floatValue = 0.
-if System.Double.TryParse(input, &floatValue)
+let parsedOk, floatValue = System.Double.TryParse(input)
+if parsedOk
    then
       printfn "That temperature in Celsius is %8.2f degrees C." ((convertFtoC (degreesFahrenheit floatValue))/(1.0<degC>))
    else

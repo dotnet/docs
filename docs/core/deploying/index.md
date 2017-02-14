@@ -3,16 +3,19 @@ title: .NET Core Application Deployment
 description: .NET Core Application Deployment 
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 ---
 
 # .NET Core Application Deployment #
+
+> [!WARNING]
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [.NET Core Application Deployment (.NET Core Tools RC4)](../preview3/deploying/index.md) topic.
 
 You can create two types of deployments for .NET Core applications: 
 

@@ -1,13 +1,13 @@
 ---
 title: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
+ms.prod: .net
+
+
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -19,7 +19,7 @@ ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -40,7 +40,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
   
  Dynamic objects also provide convenient access to dynamic languages such as IronPython and IronRuby. You can use a dynamic object to refer to a dynamic script that is interpreted at run time.  
   
- You reference a dynamic object by using late binding. In C#, you specify the type of a late-bound object as `dynamic`. In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], you specify the type of a late-bound object as `Object`. For more information, see [dynamic](../../../csharp/language-reference/keywords/dynamic.md) and [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md).  
+ You reference a dynamic object by using late binding. In C#, you specify the type of a late-bound object as `dynamic`. In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], you specify the type of a late-bound object as `Object`. For more information, see [dynamic](../../../csharp/language-reference/keywords/dynamic.md) and [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md).  
   
  You can create custom dynamic objects by using the classes in the <xref:System.Dynamic?displayProperty=fullName> namespace. For example, you can create an <xref:System.Dynamic.ExpandoObject> and specify the members of that object at run time. You can also create your own type that inherits the <xref:System.Dynamic.DynamicObject> class. You can then override the members of the <xref:System.Dynamic.DynamicObject> class to provide run-time dynamic functionality.  
   
@@ -177,6 +177,6 @@ Dynamic objects expose members such as properties and methods at run time, inste
  <xref:System.Dynamic?displayProperty=fullName>   
  <xref:System.Dynamic.DynamicObject?displayProperty=fullName>   
  [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
  [Implementing Dynamic Interfaces (external blog)](http://go.microsoft.com/fwlink/?LinkId=230895)

@@ -1,13 +1,13 @@
 ---
 title: "Keywords (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
+ms.prod: .net
+
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -23,7 +23,7 @@ ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
 caps.latest.revision: 43
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -95,8 +95,8 @@ The following tables list all [!INCLUDE[vbprvb](../../../csharp/programming-guid
 |[#Const](../../../visual-basic/language-reference/directives/const-directive.md)|[#Else](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|[#ElseIf](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|[#End](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|  
 |[#If](../../../visual-basic/language-reference/directives/if-then-else-directives.md)|[=](../../../visual-basic/language-reference/operators/assignment-operator.md)|[&](../../../visual-basic/language-reference/operators/concatenation-operator.md)|[&=](../../../visual-basic/language-reference/operators/and-assignment-operator.md)|  
 |[*](../../../visual-basic/language-reference/operators/multiplication-operator.md)|[*=](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)|[/](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)|[/=](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)|  
-|[\\](../../../visual-basic/language-reference/operators/integer-division-operator.md)|[\\=](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)|[^](../../../visual-basic/language-reference/operators/exponentiation-operator.md)|[^=](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)|  
-|[+](../../../visual-basic/language-reference/operators/addition-operator.md)|[+=](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)|[-](../../../visual-basic/language-reference/operators/subtraction-operator.md)|[-=](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)|  
+|[\\](../../../visual-basic/language-reference/operators/integer-division-operator.md)|[\\=](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)|[^](../../../visual-basic/language-reference/operators/exponentiation-operator.md)|[^=](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)|  
+|[+](../../../visual-basic/language-reference/operators/addition-operator.md)|[+=](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)|[-](../../../visual-basic/language-reference/operators/subtraction-operator.md)|[-=](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)|  
 |[>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)|[>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)|[<<](../../../visual-basic/language-reference/operators/left-shift-operator.md)|[<\<=](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)|  
   
 > [!NOTE]

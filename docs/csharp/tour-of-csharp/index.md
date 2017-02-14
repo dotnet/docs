@@ -3,10 +3,10 @@ title: A Tour of C# | C# Guide
 description: New to C#? Learn the basics of the language.
 keywords: .NET, .NET Core, C#, C# Primer, C# Guide
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: visual-studio-dev-14
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
@@ -32,13 +32,13 @@ The “Hello, World” program is traditionally used to introduce a programming 
 
 C# source files typically have the file extension `.cs`. Assuming that the “Hello, World” program is stored in the file `hello.cs`, the program might be compiled using the command line:
 
-```
+```console
 csc hello.cs
 ```
 
 which produces an executable assembly named hello.exe. The output produced by this application when it is run is:
 
-```
+```console
 Hello, World
 ```
 

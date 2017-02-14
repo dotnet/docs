@@ -2,12 +2,12 @@
 title: "Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +15,7 @@ ms.assetid: 3320e866-01f1-4b7f-8932-049a7b2d2a9b
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-manager: "wpickett"
+
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -25,7 +25,7 @@ translation.priority.mt:
 # Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)
 If you embed type information in an application that references COM objects, you can eliminate the need for a primary interop assembly (PIA). Additionally, the embedded type information enables you to achieve version independence for your application. That is, your program can be written to use types from multiple versions of a COM library without requiring a specific PIA for each version. This is a common scenario for applications that use objects from Microsoft Office libraries. Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers without the need to redeploy either the program or the PIA for each version of Microsoft Office.  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ## Prerequisites  
  This walkthrough requires the following:  
@@ -129,7 +129,7 @@ If you embed type information in an application that references COM objects, you
   
 1.  Open the project created by this walkthrough in Visual Studio.  
   
-2.  On the **Build** menu, choose **Publish CreateExcelWorkbook**. Follow the steps of the Publish Wizard to create an installable version of the application. For more information, see [Publish Wizard (Office Development in Visual Studio)](/office-dev/office-dev/publish-wizard-office-development-in-visual-studio).  
+2.  On the **Build** menu, choose **Publish CreateExcelWorkbook**. Follow the steps of the Publish Wizard to create an installable version of the application. For more information, see [Publish Wizard (Office Development in Visual Studio)](https://msdn.microsoft.com/library/bb625071).  
   
 3.  Install the application on a computer on which the .NET Framework 4 or higher and a different version of Excel are installed.  
   

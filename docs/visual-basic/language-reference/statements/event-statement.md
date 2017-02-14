@@ -1,13 +1,13 @@
 ---
 title: "Event Statement | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 f1_keywords: 
   - "vb.Event"
@@ -31,7 +31,7 @@ ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
 caps.latest.revision: 33
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -142,7 +142,7 @@ End Event
 ## See Also  
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)   
  [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)   
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)   
  [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)   
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   

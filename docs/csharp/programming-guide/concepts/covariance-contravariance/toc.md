@@ -1,0 +1,7 @@
+# [Covariance and Contravariance](index.md)
+## [Variance in Generic Interfaces](variance-in-generic-interfaces.md)
+### [Creating Variant Generic Interfaces](creating-variant-generic-interfaces.md)
+### [Using Variance in Interfaces for Generic Collections](using-variance-in-interfaces-for-generic-collections.md)
+## [Variance in Delegates](variance-in-delegates.md)
+### [Using Variance in Delegates](using-variance-in-delegates.md)
+### [Using Variance for Func and Action Generic Delegates](using-variance-for-func-and-action-generic-delegates.md)

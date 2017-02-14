@@ -3,12 +3,12 @@ title: Properties
 description: Properties
 keywords: .NET, .NET Core
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
+ms.devlang: csharp
 ms.assetid: 6950d25a-bba1-4744-b7c7-a3cc90438c55
 ---
 
@@ -188,7 +188,7 @@ public class Person
 The example above uses the *String Interpolation* syntax to create
 the formatted string for the full name.
 
-You can also use *Expression Bodied Members*, which provides a more
+You can also use *Expression-bodied Members*, which provides a more
 succinct way to create the computed `FullName` property:
 
 ```cs
@@ -210,7 +210,7 @@ public class Person
 }
 ```
  
-*Expression Bodied Members* use the *lambda expression* syntax to
+*Expression-bodied Members* use the *lambda expression* syntax to
 define a method that contain a single expression. Here, that
 expression returns the full name for the person object.
 

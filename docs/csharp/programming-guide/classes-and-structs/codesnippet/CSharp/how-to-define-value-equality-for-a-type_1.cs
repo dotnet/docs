@@ -13,7 +13,9 @@
             public TwoDPoint(int x, int y)
             {
                 if ((x < 1) || (x > 2000) || (y < 1) || (y > 2000))
+                {
                     throw new System.ArgumentException("Point must be in range 1 - 2000");
+                }
                 this.X = x;
                 this.Y = y;
             }
@@ -39,7 +41,9 @@
 
                 // If run-time types are not exactly the same, return false.
                 if (this.GetType() != p.GetType())
+                {
                     return false;
+                }
 
                 // Return true if the fields match.
                 // Note that the base class is not invoked because it is
@@ -85,7 +89,9 @@
                 : base(x, y)
             {
                 if ((z < 1) || (z > 2000))
+                {
                     throw new System.ArgumentException("Point must be in range 1 - 2000");
+                }    
                 this.Z = z;
             }
 
@@ -116,7 +122,9 @@
                     return base.Equals((TwoDPoint)p);
                 }
                 else
+                {
                     return false;
+                }    
             }
 
             public override int GetHashCode()

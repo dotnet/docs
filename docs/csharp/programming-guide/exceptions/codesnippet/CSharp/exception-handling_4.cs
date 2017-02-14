@@ -7,6 +7,6 @@
             catch(System.IndexOutOfRangeException e)
             {
                 throw new System.ArgumentOutOfRangeException(
-                    "Parameter index is out of range.");
+                    "Parameter index is out of range.", e);
             }
         }

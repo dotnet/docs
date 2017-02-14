@@ -1,13 +1,13 @@
 ---
 title: "Assignment Operators (Visual Basic) | Microsoft Docs"
-ms.custom: ""
+
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
+
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -20,7 +20,7 @@ ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -47,11 +47,11 @@ The following are the assignment operators defined in Visual Basic.
   
  [/= Operator](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
   
- [\\= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
+ [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
   
  [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
   
- [-= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
+ [-= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
   
  [<\<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)  
   

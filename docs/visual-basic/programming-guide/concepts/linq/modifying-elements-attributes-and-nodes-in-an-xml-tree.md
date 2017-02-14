@@ -2,7 +2,7 @@
 title: "Modifying Elements, Attributes, and Nodes in an XML Tree1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: "visual-studio-dev14"
+ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +15,7 @@ ms.assetid: 865cf54e-f8ac-4871-863b-a3e6fc61a4b9
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-manager: "wpickett"
+
 ---
 # Modifying Elements, Attributes, and Nodes in an XML Tree
 The following table summarizes the methods and properties that you can use to modify an element, its child elements, or its attributes.  

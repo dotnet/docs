@@ -81,7 +81,7 @@
 ### [Additions to the csproj format](core/preview3/tools/csproj.md)
 ### [Telemetry](core/preview3/tools/telemetry.md)
 ### [Extensibility Model](core/preview3/tools/extensibility.md)
-### [Continuous Integration](core/preview/tools/using-ci-with-cli.md)
+### [Continuous Integration](core/preview3/tools/using-ci-with-cli.md)
 ### [dotnet](core/preview3/tools/dotnet.md)
 ### [dotnet-new](core/preview3/tools/dotnet-new.md)
 ### [dotnet-migrate](core/preview3/tools/dotnet-migrate.md)

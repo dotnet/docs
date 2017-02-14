@@ -95,7 +95,7 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
 ## See Also  
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)   
- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
  [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)   
  [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)   

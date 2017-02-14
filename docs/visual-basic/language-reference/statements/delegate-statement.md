@@ -79,7 +79,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
   
  The signature of the function must match that of the delegate type. For more information about lambda expressions, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- For more information about delegates, see [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md).  
+ For more information about delegates, see [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md).  
   
 ## Example  
  The following example uses the `Delegate` statement to declare a delegate for operating on two numbers and returning a number. The `DelegateTest` method takes an instance of a delegate of this type and uses it to operate on pairs of numbers.  
@@ -89,7 +89,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
 ## See Also  
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
  [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   

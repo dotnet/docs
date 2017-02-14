@@ -52,5 +52,5 @@ An object is assigned to a variable declared to be of the [Object Data Type](../
 -   If possible, declare the variable to be of a specific type.  
   
 ## See Also  
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)   
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)   
  [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)

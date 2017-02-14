@@ -1,20 +1,20 @@
 ---
-title: "C# Tokens (C# Reference) | Microsoft Docs"
+title: "Special Characters (C# Reference) | Microsoft Docs"
 ms.date: "2017-02-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
-  - "cs.tokens"
+  - "cs.special characters"
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 
-  - "tokens [C#]"
-  - "C# language, tokens"
-  - "Visual C#, tokens"
-  - "@ token (C#)"
-  - "@ token (C#)"
+  - "special characters [C#]"
+  - "C# language, special characters"
+  - "Visual C#, special characters"
+  - "@ character (C#)"
+  - "@ character (C#)"
 ms.assetid: 4c5c0539-2e37-40b7-91ce-75af5aabd3f9
 caps.latest.revision: 22
 author: "rpetrusha"
@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 
-# C# Tokens
+# C# Special Characters
 
-Tokens are predefined, contextual, single-character symbols, such as `@` and `$`, that have a special meaning to the C# compiler. C# supports the following tokens: 
+Special characters are predefined, contextual characters that modifies the program element (a literal string, an identifier, or an attribute name) to which they are prepended. C# supports the following special characters: 
 
 - [@](../../../csharp/language-reference/tokens/verbatim.md), the verbatim identifier character. 
 

@@ -11,7 +11,7 @@ f1_keywords:
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 
-  - "@ token [C#]"
+  - "@ special character [C#]"
   - "@ language element [C#]"
 ms.assetid: 89bc7e53-85f5-478a-866d-1cca003c4e8c
 author: "rpetrusha"
@@ -33,13 +33,13 @@ translation.priority.ht:
 ---
 # @ (C# Reference)
 
-The `@` token serves as a verbatim identifier. It can be used in the following ways:
+The `@` special character serves as a verbatim identifier. It can be used in the following ways:
 
-1. To enable C# keywords to be used as identifiers. The `@` token prefixes a code element that the compiler is to interpret as an identifier rather than a C# keyword. The following example uses the `@` token to define an identifier named `for` that it uses in a `for` loop.
+1. To enable C# keywords to be used as identifiers. The `@` character prefixes a code element that the compiler is to interpret as an identifier rather than a C# keyword. The following example uses the `@` character to define an identifier named `for` that it uses in a `for` loop.
 
    [!code-cs[verbatim1](../../../../samples/snippets/csharp/language-reference/keywords/verbatim1.cs#1)]
 
-1. To indicate that a string literal is to be interpreted verbatim. The `@` token in this instance defines a *verbatim string literal*. Simple escape sequences (such as `"\\"` for a backslash), hexadecimal escape sequences (such as `"\x0041"` for an uppercase A, and Unicode escape sequences, such as `"\u0041"` for an uppercase A, are interpreted literally. Only a quote escape sequence (`""`) is not interpreted literally; it produces a single quotation mark. The following example defines two identical file paths, one by using a regular string literal and the other by using a verbatim string literal. This is one of the more common uses of verbatim string literals.
+1. To indicate that a string literal is to be interpreted verbatim. The `@` character in this instance defines a *verbatim string literal*. Simple escape sequences (such as `"\\"` for a backslash), hexadecimal escape sequences (such as `"\x0041"` for an uppercase A, and Unicode escape sequences, such as `"\u0041"` for an uppercase A, are interpreted literally. Only a quote escape sequence (`""`) is not interpreted literally; it produces a single quotation mark. The following example defines two identical file paths, one by using a regular string literal and the other by using a verbatim string literal. This is one of the more common uses of verbatim string literals.
 
    [!code-cs[verbatim2](../../../../samples/snippets/csharp/language-reference/keywords/verbatim1.cs#2)]
 
@@ -47,7 +47,7 @@ The `@` token serves as a verbatim identifier. It can be used in the following w
 
    [!code-cs[verbatim3](../../../../samples/snippets/csharp/language-reference/keywords/verbatim1.cs#3)]
 
-1. To enable the compiler to distinguish between attributes in cases of a naming conflict. An attribute is a type that derives from @System.Attribute. Its type name typically includes the suffix **Attribute**, although the compiler does not enforce this convention. The attribute can then be referenced in code either by its full type name (for example, `[InfoAttribute]` or its shortened name (for example, `[Info]`). However, a naming conflict occurs if two shortened attribute type names are identical, and one name includes the **Attribute** suffix but the other does not. For example, the following code fails to compile because the compiler cannot determine whether the `Info` or `InfoAttribute` attribute is applied to the `Main` method.
+1. To enable the compiler to distinguish between attributes in cases of a naming conflict. An attribute is a type that derives from @System.Attribute. Its type name typically includes the suffix **Attribute**, although the compiler does not enforce this convention. The attribute can then be referenced in code either by its full type name (for example, `[InfoAttribute]` or its shortened name (for example, `[Info]`). However, a naming conflict occurs if two shortened attribute type names are identical, and one type name includes the **Attribute** suffix but the other does not. For example, the following code fails to compile because the compiler cannot determine whether the `Info` or `InfoAttribute` attribute is applied to the `Main` method.
 
    ```cs
    using System;
@@ -91,4 +91,4 @@ The `@` token serves as a verbatim identifier. It can be used in the following w
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Tokens](../../../csharp/language-reference/tokens/index.md)
+ [C# Special Characters](../../../csharp/language-reference/tokens/index.md)

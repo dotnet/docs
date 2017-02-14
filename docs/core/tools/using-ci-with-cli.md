@@ -4,11 +4,7 @@ description: Using .NET Core SDK and tools in Continuous Integration (CI)
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-<<<<<<< HEAD
 ms.date: 02/13/2017
-=======
-ms.date: 06/20/2016
->>>>>>> Reverting the Preview 2 back to its original form
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli

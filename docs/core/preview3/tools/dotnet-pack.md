@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
 
-#dotnet-pack (Tooling RC3)
+#dotnet-pack (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-pack](../../tools/dotnet-pack.md) topic.
 
 ## Name

@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 ---
 
-#dotnet-install scripts reference (Tooling RC3)
+#dotnet-install scripts reference (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-install scripts reference](../../tools/dotnet-install-script.md) topic.
 
 ## Name

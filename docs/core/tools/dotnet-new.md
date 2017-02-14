@@ -15,8 +15,8 @@ ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 #dotnet-new
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-new (Tooling RC3)](../preview3/tools/dotnet-new.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-new (.NET Core Tools RC4)](../preview3/tools/dotnet-new.md) topic.
 
 ## Name
 `dotnet-new` - Creates a new .NET Core project in the current directory.

@@ -15,8 +15,8 @@ ms.assetid: 8a7e1c52-5c57-4bf5-abad-727450ebeefd
 #dotnet-publish
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-publish (Tooling RC3)](../preview3/tools/dotnet-publish.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-publish (.NET Core Tools RC4)](../preview3/tools/dotnet-publish.md) topic.
 
 ## Name
 

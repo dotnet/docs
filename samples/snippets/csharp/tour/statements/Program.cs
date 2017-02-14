@@ -241,7 +241,7 @@ namespace Statements
 
            try {
                CheckedUnchecked(args);
-           } catch (OverflowException e)
+           } catch (OverflowException)
            {
                Console.WriteLine("Caught Expected Exception");
            }

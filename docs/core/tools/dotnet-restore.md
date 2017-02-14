@@ -15,8 +15,8 @@ ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
 #dotnet-restore
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-restore (Tooling RC3)](../preview3/tools/dotnet-restore.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-restore (.NET Core Tools RC4)](../preview3/tools/dotnet-restore.md) topic.
 
 ## Name
 

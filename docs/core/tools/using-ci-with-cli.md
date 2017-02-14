@@ -87,12 +87,12 @@ $LocalDotnet = "./$InstallDir/dotnet"
 Let's dig into details of the above:
 
 * Lines 3 to 5 set up some variables to hold data that we will need. The `$LocalDotnet` variable will hold the path to the locally installed SDK since we want to be sure that we are executing that version and not any other that could be, potentially, installed on the machine. The `$InstallDir` and `$CliVersion` variables could also come from options to the script, for example; here, for simplicity sakes, we have 
-* On line 7 we test whether the local path that the `$InstallDir` variable points to exists and if it does we remove it. This is not strictly needed, but I find that it is a good way to "reset" the environment. 
-* We use the `Invoke-WebRequest` cmd-let of PowerShell on line 14 to get the installation script and put it into our installation directory. 
+* On line 7 we test whether the local path that the `$InstallDir` variable points to exists and if it does we remove it. This is not strictly needed, but it is a good way to "reset" the environment. 
+* We use the `Invoke-WebRequest` cmdlet of PowerShell on line 14 to get the installation script and put it into our installation directory. 
 * Line 16 shows an invocation to install the SDK of a given version (specified in `$CliVersion`) and to install it into the specified location. 
 * We then put in the final path into the `$LocalDotnet` variable for further use. 
 
-After all of this, we are ready to run our build process. For brevity, I have left out that portion of the script, but the [orchestration section](#orchestrating-the-build) goes into more details. 
+After all of this, we are ready to run our build process. For brevity, that part of script has been left out, but the [orchestration section](#orchestrating-the-build) goes into more details. 
 
 A bash script that does this on UNIX machines is similarly straightforward and is given below. 
 
@@ -133,7 +133,7 @@ dotnet: 1.0.0-rc4-0044771
 Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
 for more information.
 
-The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x) in the package, so by installing the SDK you will get everything you need to build. 
+The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x respectively) in the package, so by installing the SDK you will get everything you need to build. 
 
 ### AppVeyor
 
@@ -178,25 +178,23 @@ Both solutions are perfectly valid and there is no inherent flaw or advantage to
 > If you need to brush up on basics, please visit the [VSTS build documentation](https://www.visualstudio.com/en-us/docs/build/overview). 
 
 #### Using a manual script
-Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify
+Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify the same script to run as the step. 
 
-First, start by creating a new build definition. Once you get the screen that gives you an option to define what kind of a build you wish to create, click on the "Empty" option as the 
+1. Start by creating a new build definition. Once you get the screen that gives you an option to define what kind of a build you wish to create, click on the **Empty** option as the 
 
 ![Selecting an empty build definition](media/vsts-screens/screen_2.png)
 
-After this, you will be given an option to configure the repository that you wish to build as well as what queue to use for this build. After you select the needed options, you will be directed to the actual build definition. Here, you will be able to add a build step, as shown in the screen shot below: 
+2. After configuring the repository to build, you will be directed to the actual build definition. Add a build step as in shown below: 
 
 ![Adding a build step](media/vsts-screens/screen_4.png)
 
-After you click on the "Add build step" option, you will be presented with the task catalog. The catalog contains many different tasks that you can use in the build. Since we have already a script, we can go down to the 
+3. Click on the "Add build step" option, you will be presented with the task catalog. The catalog contains many different tasks that you can use in the build. Since we have already a script, we can go down to the 
 
 ![Adding a PowerShell script step](media/vsts-screens/screen_6.png)
 
-After we've added the PowerShell script build step, you will be presented with the interface to configure the build step, as shown in the image below:
+4. You can now condigure the added build step as shown below. Add the script from the repository that you are building, as shown below. 
 
 ![Specifying the PowerShell script to run](media/vsts-screens/screen_6_ps.png)
-
-Here, you can select the script you've created and committed to source control. After this is done, you can save the build definition and try it out by enqueueing it. From that moment on, you are good to go. 
 
 ## Orchestrating the build script 
 Most of this document has been about how to acquire the .NET Core tools and configure various CI services while there was no deep delving into how to orchestrate, that is, how to **actually build** your code with .NET Core. This is by design. The choice of how to structure the build process depends on many factors that are mostly tailored to the person/team working on a given set of projects. 
@@ -206,6 +204,4 @@ In general, however, there are two main ways you can structure the build process
 1. Use MSBuild directly
 2. Use the .NET Core command-line commands
 
-Which to use should be decided mostly based on how familar and comfortable you are with each of the mentioned ways. For example, MSBuild can give you access to expressing your build(s) as tasks and targets, but it comes with an added complexity of learning MSBuild project-file syntax. On the other hand, using just the .NET Core command-line tools could be simpler but it would require you to write orchestration logic (for example, change into directory with project 1 and run `dotnet build`, then change to directory with project 2 and again run `dotnet build` etc.) in some scripting language like `bash` or PowerShell. 
-
-The choice here is dependent on familiarity; some people are more comfortable using more familiar languages like shell scripts while others are well-versed in MSBuild projects and have no problems using them.
+Which to use should be decided mostly based on how familar and comfortable you are with each of the mentioned ways. For example, MSBuild can give you access to expressing your build process as tasks and targets, but it comes with an added complexity of learning MSBuild project-file syntax. On the other hand, using just the .NET Core command-line tools could be simpler but it would require you to write orchestration logic (for example, change into directory with project 1 and run `dotnet build`, then change to directory with project 2 and again run `dotnet build` etc.) in some scripting language like `bash` or PowerShell. 

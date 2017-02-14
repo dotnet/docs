@@ -1,7 +1,7 @@
 # [Language Reference](index.md)
 ## [C# Keywords](keywords/)
 ## [C# Operators](operators/)
-## [C$ Tokens](tokens.md)
+## [C$ Special Characters](tokens.md)
 
 ## [C# Preprocessor Directives](preprocessor-directives/)
 ## [C# Compiler Options](compiler-options/)

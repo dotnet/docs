@@ -4,7 +4,7 @@ description: Using .NET Core SDK and tools in Continuous Integration (CI)
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 2/10/2017
+ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -28,9 +28,6 @@ For SaaS CI solutions, there are several options. This document will cover two v
 usage mechanisms should be similar.
 
 ## Installation options for CI build servers
-
-**TODO: change this topic to be better**
-**TODO:this topic should probably go away and just be replaced with all the things below**
 
 ## Using the native installers
 If using installers that require administrative privileges is not something that presents a problem, native installers for 
@@ -113,16 +110,4 @@ install:
   - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
   # follow normal installation from binaries
 ```
-
-### Visual Studio Team System
-There are two ways to configure Visual Studio Team System builds for use with the .NET Core build tools. One is to use the support that is given out-of-the-box and the second one is to use 
-
-#### Starting the build definition
-TBD
-
-#### Using the manual script
-A simple script is given below. Since we will be using the [hosted agent]() pool on VSTS, we will use PowerShell to fully orchestrate our build(s). 
-
-#### Using the pre-existing tooling support
-TBD
 

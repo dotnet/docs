@@ -102,6 +102,32 @@ Let's dig into details of the above:
 
 After all of this, we are ready to run our build process. For brevity, I have left out that portion of the script, but the [orchestration section](#orchestrating-the-build) goes into more details. 
 
+A bash script that does this on UNIX machines is similarly straightforward and is given below. 
+
+```bash
+#!/bin/bash
+
+# Parameters
+INSTALLDIR="cli-tools"
+CLI_VERSION="1.0.0-rc4-004771"
+DOWNLOADER=$(which curl)
+LOCALDOTNET=""
+
+if [ -d $INSTALLDIR ]; then rm -rf $INSTALLDIR; fi
+mkdir -p $INSTALLDIR
+
+echo "Downloading CLI installer"
+$DOWNLOADER -sSL -o "./$INSTALLDIR/dotnet-install.sh" https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh
+chmod +x "./$INSTALLDIR/dotnet-install.sh"
+
+say "Installing the CLI requested version ($CLI_VERSION)"
+"./$INSTALLDIR/dotnet-install.sh" --install-dir $INSTALLDIR --version $CLI_VERSION
+if [ $? -ne 0 ]; then die "Download of $CLI_VERSION version of the CLI failed; exiting..."; fi
+$LOCALDOTNET="./$INSTALLDIR/dotnet"
+
+# Run the build process now
+```
+
 ### TravisCI
 
 The [travis-ci](https://travis-ci.org/) can be configured to install the .NET Core SDK using the `csharp` language and the `dotnet` key.

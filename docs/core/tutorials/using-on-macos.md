@@ -47,32 +47,33 @@ tests for that library project, and a console application that makes
 use of the library. 
 
 Let's start by creating those folders. In the terminal, create a 'golden'
-directory. 
-Create *app* and *library* directories for the application and the class
-library, respectively. Create a *test-library* directory. You can do this either using the terminal
-in VS code, or by clicking on the parent folder in VS Code and selecting the
-"New Folder" icon.
-
-In VS Code, open the *golden* directory. This directory is the root of your solution.
-
-At this point, your directory tree should look like this:
+directory. In VS Code, open the *golden* directory. This directory is the root of your solution. Run the `dotnet new` command to create a new solution:
 
 ```
-/golden
-|__/app
-|__/library
-|__/test-library
+dotnet new sln
 ```
 
-### Writing the library
+This command creates a *golden.sln* file for the entire solution.
 
 Your next task is to create the library. In the terminal window
 (either the embedded terminal in VS code, or another terminal),
-cd to *golden/library* and type the command `dotnet new classlib`.
-This creates a library project, with two files: *library.csproj* and
-*Class1.cs*.
+cd to *golden/* and type the command:
 
-*library.csproj* contains the following information:
+```
+dotnet new classlib library
+```
+
+This creates a library project, with two files: *library.csproj* and
+*Class1.cs* in the *library* directory. You want that library project
+included in your solution. Run the `dotnet sln` command to add the newly
+created `library.csproj` project to the solution:
+
+```
+dotnet sln add library/library.csproj
+```
+
+Let's examine the project that you've created. The *library.csproj* file 
+contains the following information:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -87,10 +88,10 @@ This creates a library project, with two files: *library.csproj* and
 This library project will make use of JSON representation of objects, so you'll want to
 add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command
 adds new items to a project. To add a reference to a NuGet package, you use the 
-`package` command and specify the name of the package:
+`package` command and specify the name of the package. 
 
 ```
-dotnet add package Newtonsoft.Json
+dotnet add library package Newtonsoft.Json
 ```
 
 This adds `Newtonsoft.Json` and its dependencies to the Library
@@ -143,14 +144,16 @@ You now have a built *library.dll* file under *golden/library/bin/Debug/netstand
 
 ### Writing the test project
 
-Let's build a test project for this library that you've build. Change to the *test-library*
-directory. Run `dotnet new xunit` to create a new test project. 
+Let's build a test project for this library that you've build. Change to the *golden*
+directory. Run `dotnet new xunit -o test-library` to create a new test project. 
+You'll want to add this project to the solution as well by running
+`dotnet sln add test-library/test-library.csproj`.
 
 You'll need to add a dependency node for the library you wrote in the steps
 above. The `dotnet add reference` command does that:
 
 ```
-dotnet add ../library/library.csproj
+dotnet add test-library/test-library.csproj reference library/library.csproj
 ```
 
 Or, you can manually edit the test-library.csproj file and add the
@@ -186,21 +189,26 @@ namespace TestApp
 }
 ```
 
-Now, run `dotnet restore`, `dotnet build` and `dotnet test`.
+Now, run `dotnet restore` and `dotnet build`. These commands will
+recursively find all projects to restore dependencies and build them.
+Finally, run `dotnet test test-library/test-library.csproj` to
+run the tests.
 The xUnit console test runner will run the one test, and report
 that it is passing. 
 
 ### Writing the console app
 
-In your terminal, cd to the *golden/app* directory. Run `dotnet new console`
-to create a new console application.
+In your terminal run `dotnet new console -o app`
+to create a new console application. This proejct is also
+part of the solution, so run `dotnet sln add app/app.csproj`
+to add the project to the solution.
 
 Your console application depends on the library you built and tested
 in the previous steps. You need to indicate that by running `dotnet add reference`
 again:
 
 ```
-dotnet add reference ../library/library.csproj
+dotnet add app/app.csproj reference library/library.csproj
 ```
 
 Run `dotnet restore` to restore all dependencies. Open `program.cs`
@@ -218,7 +226,9 @@ using Library;
 ```
 
 Then, run `dotnet build`. That creates the assemblies, and you
-can type `dotnet run` to run the executable.
+can type `dotnet run -p app/app.csproj` to run the executable.
+The `-p` argument to `dotnet run` specifies the project for the
+main application.
 
 ### Debugging your application
 
@@ -234,46 +244,6 @@ to load the new extension. Once the extension is installed, you can open the
 debugger tab (see figure).
 
 ![VS Code Debugger](./media/using-on-macos/vscodedebugger.png)
-
-
-When you start the debugger, VS Code will instruct you to configure
-the debugger. When you do, it creates a `.vscode` directory
-with two files: `tasks.json` and `launch.json`. These two files control the debugger
-configuration. In most projects, this directory is not included in source control.
-It is included in the sample associated with this walk through so you can see
-the edits you need to make.
-
-Your solution contains multiple projects, so you'll want to modify each of these files
-to perform the correct commands. First, open `tasks.json`. The default build task
-runs `dotnet build` in the workspace source directory. Instead, you want to run it in
-the `src/app` directory. You need to add a `options` node to set the current
-working directory to that:
-
-```json
-"options": {
-    "cwd": "${workspaceRoot}/app"
-}
-```
-
-Next, you'll need to open `launch.json` and update the program path. You'll see a
-node under "configurations" that describes the program. You'll see:
-
-```json
-"program": "${workspaceRoot}/bin/Debug/<target-framework>/<project-name.dll>",
-```
-
-You'll change this to:
-
-```json
-"program": "${workspaceRoot}/app/bin/Debug/netcoreapp1.0/app.dll",
-```
-
-You'll also see another `cwd` option with the value `${workspaceRoot}`. Change
-that to:
-
-```json
-"cwd": "${workspaceRoot}/app"
-```
 
 Set a breakpoint at the `WriteLine` statement in `Main`. You do this
 by pressing the `F9` key, or by clicking the mouse in the left margin

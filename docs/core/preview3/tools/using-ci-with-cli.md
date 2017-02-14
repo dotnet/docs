@@ -17,19 +17,19 @@ ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Overview
-This document outlines the usage of .NET Core SDK and its tools on the build server. When we started building the .NET Core SDK and its command-line tools, we have envisioned the toolset being able to be used both interactivelly, by a human being sitting at a command line, as well as automatically, that is by a CI server. The commands, options, inputs and outputs would be the same and the only thing you would add on top is a way to acquire the tooling as well as choosng how to do your build.
+This document outlines the usage of .NET Core SDK and its tools on the build server. When we started building the .NET Core SDK and its command-line tools, we have envisioned the toolset being able to be used both interactively, by a human being sitting at a command line, as well as automatically, that is by a CI server. The commands, options, inputs and outputs would be the same and the only thing you would add on top is a way to acquire the tooling as well as choosing how to do your build.
 
-The document will focus on various scenarios of acqusition of the tools and show the tools that we built to help with that. We will then delve into some reccomendations on how to design and structure your build scripts themselves. 
+The document will focus on various scenarios of acquisition of the tools and show the tools that we built to help with that. We will then delve into some recommendations on how to design and structure your build scripts themselves. 
 
 ## Installation options for CI build servers
 
 ### Using the native installers
-Native installers are available for MacOS, Windows and Ubuntu (in the form of DEB files and a dedicated apt-get feed). They have the following characteristics:
+Native installers are available for macOS, Windows and Ubuntu (in the form of DEB files and a dedicated apt-get feed). They have the following characteristics:
 
 * They require admin (sudo) access to the build server.
-* For Ubuntu, the apt-get feed allows native depencenies to be acquired at the same time the tools are acquired.
+* For Ubuntu, the apt-get feed allows native dependencies to be acquired at the same time the tools are acquired.
 
-Using these is straightforward, provided that your CI server or service allows you administrative access. In the case of Windows and macOS, you can download the MSI or PKG installers respectivelly. For Ubuntu, you can use the apt-get feed as detailed on [Ubuntu acqusition steps](https://www.microsoft.com/net/core#linuxubuntu). 
+Using these is straightforward, provided that your CI server or service allows you administrative access. In the case of Windows and macOS, you can download the MSI or PKG installers respectively. For Ubuntu, you can use the apt-get feed as detailed on [Ubuntu acquisition steps](https://www.microsoft.com/net/core#linuxubuntu). 
 
 All of the binaries can be found on the [.NET Core getting started page](https://aka.ms/dotnetcoregs) which points to the 
 latest stable releases. If you wish to use newer (and potentially unstable) releases or the latest, you can use the 
@@ -56,7 +56,7 @@ This section will cover step-by-step guides for manual setup of a CI server as w
 ### Manual setup 
 Each of the below different services has its own way how to create and configure a build process. However, if you use a different CI build software or have a need to do something different than what the pre-packaged support on each of the services allow you to do, you will need to do something manual. 
 
-In general, as desrcibed in the acqusition section above, the main thing in manual setup is to acquire the needed version of the tools (or the latest) and then run the build script that you have. The build script can either be a PowerShell/bash script that orchestrates the .NET Core commands or it can be a `proj` file that outlines the build process. The [orchestration section](#orchestrating-the-build) goes into more details about these two options. 
+In general, as described in the acquisition section above, the main thing in manual setup is to acquire the needed version of the tools (or the latest) and then run the build script that you have. The build script can either be a PowerShell/bash script that orchestrates the .NET Core commands or it can be a `proj` file that outlines the build process. The [orchestration section](#orchestrating-the-build) goes into more details about these two options. 
 
 Once you create a script that does this manual setup, a good thing is that you can also use it on your dev machine to build your code, for example. 
 
@@ -122,7 +122,7 @@ $LOCALDOTNET="./$INSTALLDIR/dotnet"
 
 ### TravisCI
 
-The [travis-ci](https://travis-ci.org/) can be configured to install the .NET Core SDK using the `csharp` language and the `dotnet` key.
+The [Travis-CI](https://travis-ci.org/) can be configured to install the .NET Core SDK using the `csharp` language and the `dotnet` key.
 
 Just use:
 
@@ -137,7 +137,7 @@ The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed in the build worker image `Visual Studio 2015`.
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK Preview2 already installed in the build worker image `Visual Studio 2015`.
 
 Just use:
 
@@ -148,7 +148,7 @@ os: Visual Studio 2015
 It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 
 for more info. 
 
-In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` env var.
+In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` environment variable.
 
 A build matrix can be added to run integration tests with multiple version of 
 the .NET Core SDK.
@@ -184,7 +184,7 @@ First, start by creating a new build definition. Once you get the screen that gi
 
 ![Selecting an empty build definition](media/vsts-screens/screen_2.png)
 
-After this, you will be given an option to configure the repository that you wish to build as well as what queue to use for this build. After you select the needed options, you will be directed to the actual build definition. Here, you will be able to add a build step, as shown in the screenshot below: 
+After this, you will be given an option to configure the repository that you wish to build as well as what queue to use for this build. After you select the needed options, you will be directed to the actual build definition. Here, you will be able to add a build step, as shown in the screen shot below: 
 
 ![Adding a build step](media/vsts-screens/screen_4.png)
 
@@ -196,7 +196,7 @@ After we've added the PowerShell script build step, you will be presented with t
 
 ![Specifying the PowerShell script to run](media/vsts-screens/screen_6_ps.png)
 
-Here, you can select the script you've created and committed to source control. After this is done, you can save the build definition and try it out by enquining it. From that moment on, you are good to go. 
+Here, you can select the script you've created and committed to source control. After this is done, you can save the build definition and try it out by enqueueing it. From that moment on, you are good to go. 
 
 
 ## Orchestrating the build script 

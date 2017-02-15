@@ -11,18 +11,20 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
-
 #dotnet-new (.NET Core Tools RC4)
 
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-new](../../tools/dotnet-new.md) topic.
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Name
 dotnet-new - Creates a new .NET Core project in the current directory
 
 ## Synopsis
-`dotnet new [arguments] [options]`
+```
+dotnet new [template] [-lang|--language] [-n|--name] [-o|--output]
+dotnet new [template] [-l|--list]
+dotnet new [-all|--show-all]
+dotnet new [-h|--help]
+```
 
 ## Description
 The `dotnet new` command provides a convenient way to initialize a valid .NET Core project and sample source code to try out the Command-line interface (CLI) toolset. 
@@ -95,6 +97,10 @@ Create a new ASP.NET Core C# MVC application project in the current directory wi
 
 `dotnet new mvc -au None -f netcoreapp1.0`
  
-Create a new XUnit application targeting .NET Core 1.1
+Create a new XUnit application targeting .NET Core 1.1:
 
 `dotnet new xunit --Framework netcoreapp1.1`
+
+List all templates available for MVC:
+
+`dotnet new mvc -l`

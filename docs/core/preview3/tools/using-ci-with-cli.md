@@ -175,7 +175,7 @@ Both solutions are perfectly valid and there is no inherent flaw or advantage to
 
 > [!NOTE]
 > This document is not an exhaustive introduction into VSTS builds and assumes familiarity with how they work. 
-> If you need to brush up on basics, please visit the [VSTS build documentation](https://www.visualstudio.com/en-us/docs/build/overview). 
+> For more information, please visit the [VSTS build documentation](https://www.visualstudio.com/en-us/docs/build/overview). 
 
 #### Using a manual script
 Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify the same script to run as the step. 

@@ -200,10 +200,10 @@ The following example specifies the fallbacks only for the `netcoreapp1.0` targe
 With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from project.json to csproj files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
 
 ### IsPackable
-TBD
+Determiones if the project can be packed or not. The default value is `true`. 
 
 ### PackageVersion
-Specified a version that the resulting package will have. Accepts all forms of NuGet version string. 
+Specified a version that the resulting package will have. Accepts all forms of NuGet version string. Default is the value of `$(Version)`, that is, of the property `Version` in the project. 
 
 ### PackageId
 Specify a name for the resulting package. If not specified, the `pack` operation will default to using the AssemblyName or directory name as the name of the package. 
@@ -212,7 +212,7 @@ Specify a name for the resulting package. If not specified, the `pack` operation
 A human-friendly title of the package, typically used in UI displays as on nuget.org and the Package Manager in Visual Studio. If not specified, the package ID is used instead.
 
 ### Authors
-A comma-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
+A semicolon-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
 
 ### Description
 A long description of the package for UI display.
@@ -236,19 +236,19 @@ A URL for a 64x64 image with transparenty background to use as the icon for the 
 Release notes for the package.
 
 ### PackageTags
-A list of tags that designates the package. The list is represented as a list of tags that are comma-delimited. 
+A list of tags that designates the package. The list is represented as a list of tags that are semicolon-separated. 
 
 ### PackageOutputPath
-TBD
+Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`. 
 
 ### IncludeSymbols
-This boolean value indicates whether the package should include symbols when it is packed. The default value is "false". 
+This boolean value indicates whether the package should create an additional, debug package when it packs. This package will have have a `.symbols.nupkg` extension and will put the PDB files next to the DLL files.
 
 ### IncludeSource
-This boolean value indicates whether the packing process should include source code in the resulting NuGet package. 
+This value indicates whether the pack process should create a source package. The source package contains the library's source code as well as PDB files. Source files are put under the `src/ProjectName` directory in the resulting package file. 
 
 ### PackageTypes
-TBD
+
 
 ### IsTool
 Specifies whether all output files, as specified in the Output Assemblies scenario, are copied to the tools folder instead of the lib folder. Note that this is different from a DotNetCliTool which is specified by setting the PackageType in csproj file.
@@ -260,7 +260,7 @@ Specifies the URL for the repository where the source code for the package resid
 Specifies the type of the repository. Default is "git". 
 
 ### NoPackageAnalysis
-TBD
+Specifies that pack should not run package analysis after building the package.
 
 ### MinClientVersion
 Specifies the minimum version of the NuGet client that can install this package, enforced by nuget.exe and the Visual Studio Package Manager.
@@ -269,16 +269,19 @@ Specifies the minimum version of the NuGet client that can install this package,
 This is a boolean, which decided whether the build output assemblies should be packed into the nupkg or not.
 
 ### IncludeContentInPack
-TBD
+This property specifies whether any items that have a type of `Content` will be included in the resulting package automatically. Default is `true`. 
 
 ### BuildOutputTargetFolder
 Specify the folder in which the output assemblies should go to. The output assemblies (and other output files) are copied into their respective framework folders.
 
 ### ContentTargetFolders
-TBD
+This property specifies the default location of where all the content files should go if `PackagePath` is not specified for them. By default, the value is "content;contentFiles".
 
 ### NuspecFile
-Relative or absolute path to the nuspec file being used for packing.
+Relative or absolute path to the nuspec file being used for packing. 
+
+> [!NOTE]
+> If the nuspec file is specified, it is used **exclusively** for packaging information and any information in the projects is not used. 
 
 ### NuspecBasePath
 `BasePath` for the nuspec file.

@@ -13,14 +13,16 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
 #dotnet-new (.NET Core Tools RC4)
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
+> [!WARNING]
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-new](../../tools/dotnet-new.md) topic.
 
 ## Name
 dotnet-new - Creates a new .NET Core project in the current directory
 
 ## Synopsis
 ```
-dotnet new [template] [-lang|--language] [-n|--name] [-o|--output]
+dotnet new [template] [-lang|--language] [-n|--name] [-o|--output] [-h|--help]
 dotnet new [template] [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
@@ -85,7 +87,7 @@ Each project template may have additional options available. The core templates,
 
 **classlib**
 
-`-f|--framework` - Specifies which framework to target. Values: netcoreapp1.0 - 1.6 (Default: netcoreapp1.4).
+`-f|--framework` - Specifies which framework to target. Values: netcoreapp1.0, netcoreapp1.1 and netstandard1.0 - 1.6 (Default: netstandard1.4).
 
 ## Examples
 

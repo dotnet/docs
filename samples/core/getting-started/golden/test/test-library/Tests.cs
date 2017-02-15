@@ -1,4 +1,4 @@
-using Library;
+﻿using Library;
 using Xunit;
 
 namespace TestApp
@@ -6,9 +6,9 @@ namespace TestApp
     public class LibraryTests
     {
         [Fact]
-        public void TestThing() {
+        public void TestThing()
+        {
             Assert.Equal(42, new Thing().Get(19, 23));
         }
     }
 }
-

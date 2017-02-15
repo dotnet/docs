@@ -1,6 +1,6 @@
 ---
-title: .NET Core Tutorials (Tooling RC3) | Microsoft Docs
-description: .NET Core Tutorials (Tooling RC3)
+title: .NET Core Tutorials (.NET Core Tools RC4) | Microsoft Docs
+description: .NET Core Tutorials (.NET Core Tools RC4)
 keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw
@@ -12,16 +12,16 @@ ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 ---
 
-# .NET Core Tutorials (Tooling RC3)
+# .NET Core Tutorials (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [.NET Core Tutorials](../../tutorials/index.md) topic.
 
-The following tutorials are available for learning about .NET Core using RC3 of the tooling.
+The following tutorials are available for learning about .NET Core using RC4 of the tooling.
 
-- [Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK RC3)](using-with-xplat-cli-msbuild.md)
-- [Organizing and testing projects with the .NET Core command line (SDK RC3)](using-with-xplat-cli-msbuild-folders.md)
+- [Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)](using-with-xplat-cli-msbuild.md)
+- [Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4)](using-with-xplat-cli-msbuild-folders.md)
 - [Getting started with .NET Core on Windows, using Visual Studio 2017](using-on-windows-vs-2017.md)
 - [Building a complete .NET Core solution on Windows, using Visual Studio 2017](using-on-windows-vs-2017-full-solution.md)
 

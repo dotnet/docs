@@ -15,8 +15,8 @@ ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 # .NET Core CLI extensibility model 
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [.NET Core CLI extensibility model (Tooling RC3)](../preview3/tools/extensibility.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [.NET Core CLI extensibility model (.NET Core Tools RC4)](../preview3/tools/extensibility.md) topic.
 
 ## Overview
 This document will cover the main ways how to extend the CLI tools and explain the scenarios that drive each of them. 

@@ -40,7 +40,7 @@ The `Async` modifier indicates that the method or [lambda expression](../../../v
  An async method provides a convenient way to do potentially long-running work without blocking the caller's thread. The caller of an async method can resume its work without waiting for the async method to finish.  
   
 > [!NOTE]
->  The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
+>  The `Async` and `Await` keywords were introduced in Visual Studio 2012. For an introduction to async programming, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md).  
   
  The following example shows the structure of an async method. By convention, async method names end in "Async."  
   
@@ -129,5 +129,5 @@ End Function
 ## See Also  
  <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>   
  [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)   
- [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
+ [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md)   
  [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)

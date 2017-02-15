@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 ---
 
-# Using .NET Core SDK and tools in Continuous Integration (CI) (Tooling RC3)
+# Using .NET Core SDK and tools in Continuous Integration (CI) (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [Using .NET Core SDK and tools in Continuous Integration (CI)](../../tools/using-ci-with-cli.md) topic.
 
 ## Overview

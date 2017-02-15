@@ -15,8 +15,8 @@ ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
 #dotnet command
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet command (Tooling RC3)](../preview3/tools/dotnet.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet command (.NET Core Tools RC4)](../preview3/tools/dotnet.md) topic.
 
 ## Name
 

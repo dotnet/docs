@@ -35,12 +35,12 @@ See the [Prerequisites for Windows development](windows-prerequisites.md) topic 
 
 Install .NET Core on your distribution/version:
 
-* [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#redhat)
-* [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#ubuntu)
-* [Debian 8.2](https://www.microsoft.com/net/core#debian)
-* [Fedora 23](https://www.microsoft.com/net/core#fedora)
-* [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#centos)
-* [openSUSE 13.2](https://www.microsoft.com/net/core#opensuse)
+* [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#linuxredhat)
+* [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#linuxubuntu)
+* [Debian 8.2](https://www.microsoft.com/net/core#linuxdebian)
+* [Fedora 23](https://www.microsoft.com/net/core#linuxfedora)
+* [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#linuxcentos)
+* [openSUSE 13.2](https://www.microsoft.com/net/core#linuxopensuse)
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 

@@ -116,7 +116,7 @@ Without pattern matching, this code might be written as follows. The use of type
 
 ### <a name="constant" /> Constant pattern ###
 
-When performing pattern matching with the constant pattern, `is` tests whether an expression equals a specified constant. In C# 6 and earlier versions, the constant pattern is supported by the [switch](switch,md) statement. Starting with C# 7, it is supported by the `is` statement as well. Its syntax is:
+When performing pattern matching with the constant pattern, `is` tests whether an expression equals a specified constant. In C# 6 and earlier versions, the constant pattern is supported by the [switch](switch.md) statement. Starting with C# 7, it is supported by the `is` statement as well. Its syntax is:
 
 ```cs
    expr is constant
@@ -134,7 +134,7 @@ The constant expression is evaluated as follows:
 
 - If *expr* and *constant* are integral types, the C# equality operator determines whether the expression returns `true` (that is, whether `expr == constant`).
 
-- Otherwise, the value of the expression is determined by a call to the static [Object.Equals(expr, constant)](xref:System.Object.Equals(System.Object, System.Object)) method.  
+- Otherwise, the value of the expression is determined by a call to the static [Object.Equals(expr, constant)](xref:System.Object.Equals(System.Object,System.Object)) method.  
 
 The following example combines the type and constant patterns to test whether an object is a `Dice` instance and, if it is, to determine whether the value of a dice roll is 6.
 

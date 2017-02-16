@@ -23,12 +23,12 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 
 ```
 dotnet add [<PROJECT>] reference [-f|--framework] [args] [-h|--help]
-dotnet add package [-h|--help]
+dotnet add reference [-h|--help]
 ```
 
 ## Description
 
-The `dotnet add package` command provides a convenient option to add a NuGet package reference to a project.
+The `dotnet add reference` command provides a convenient option to add project references to a project.
 
 ## Arguments
 
@@ -40,7 +40,7 @@ Project name to use. If not specified, the command will search the current direc
 
 `<project>`
 
-Project to project references to add. A project or multiple projects to the solution file. Glob pattern is supported on Unix/Linux based terminals.
+Project to project references to add. A project or multiple projects to the project file. Glob pattern is supported on Unix/Linux based terminals.
 
 ## Options
 

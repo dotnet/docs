@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
 
-#dotnet-publish (Tooling RC3)
+#dotnet-publish (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-publish](../../tools/dotnet-publish.md) topic.
 
 ## Name

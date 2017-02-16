@@ -1,5 +1,5 @@
 ---
-title: Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK RC3) | Microsoft Docs
+title: Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4) | Microsoft Docs
 description: Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)
 keywords: .NET, .NET Core
 author: cartermp
@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 ---
 
-# Getting started with .NET Core on Windows/Linux/macOS using the command line (Tooling RC3)
+# Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [Getting started with .NET Core on Windows/Linux/macOS using the command line](../../tutorials/using-with-xplat-cli.md) topic.
 
 This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
@@ -24,7 +24,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK ove
 
 ## Prerequisites
 
-Before you begin, ensure you have [.NET Core CLI tooling RC3 or later](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).  You'll also need a text editor.
+Before you begin, ensure you have [.NET Core CLI tooling RC4 or later](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).  You'll also need a text editor.
 
 ## Hello, Console App!
 
@@ -314,4 +314,4 @@ And that's it!
  
 Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
  
-If a more advanced example of a console app interests you, check out the next tutorial: [Organizing and testing projects with the .NET Core command line (SDK RC3)](using-with-xplat-cli-msbuild-folders.md).
+If a more advanced example of a console app interests you, check out the next tutorial: [Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4)](using-with-xplat-cli-msbuild-folders.md).

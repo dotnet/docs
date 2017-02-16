@@ -17,7 +17,7 @@ ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Name 
-dotnet-migrate -- Migrates a Preview 2 .NET Core project to RC3 .NET Core project
+dotnet-migrate -- Migrates a Preview 2 .NET Core project to RC4 .NET Core project
 
 ## Synopsis
 
@@ -28,7 +28,7 @@ dotnet-migrate -- Migrates a Preview 2 .NET Core project to RC3 .NET Core projec
     [<arguments>]`
 
 ## Description
-The `dotnet migrate` command will migrate a valid Preview 2 `project.json` based project to a valid RC3 `csproj` project. 
+The `dotnet migrate` command will migrate a valid Preview 2 `project.json` based project to a valid RC4 `csproj` project. 
 By default, the command will migrate the root project and any project references that the root project contains. This behavior 
 can be disabled using the `--skip-project-references` option at runtime. 
 
@@ -44,7 +44,7 @@ exist. This can be overriden using the `--skip-backup` option.
 By default, the migration operation will output the state of the migration process to standard output (STDOUT). If you use the 
 `--report-file` option, that output will also be saved to a file that you specify. 
 
-As of RC3, the `dotnet migrate` command only supports valid Preview 2 `project.json` files. This means that you cannot 
+As of RC4, the `dotnet migrate` command only supports valid Preview 2 `project.json` files. This means that you cannot 
 use it to migrate old DNX or Preview 1 `project.json` files directly to csproj; you first need to migrate them to Preview 2 project.json files and then 
 to csproj files. In the future, we will add support for Preview 1 projects. 
 

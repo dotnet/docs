@@ -15,8 +15,8 @@ ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 #dotnet-pack
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-pack (Tooling RC3)](../preview3/tools/dotnet-pack.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-pack (.NET Core Tools RC4)](../preview3/tools/dotnet-pack.md) topic.
 
 ## Name
 

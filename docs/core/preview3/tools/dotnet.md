@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
 
-#dotnet command (Tooling RC3)
+#dotnet command (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet command](../../tools/dotnet.md) topic.
 
 ## Name
@@ -70,7 +70,7 @@ The following commands exist for dotnet:
 * [dotnet-pack](dotnet-pack.md)
    * Creates a NuGet package of your code.
 * [dotnet-migrate](dotnet-migrate.md)
-   * Migrates a valid Preview 2 project to a RC3 project.
+   * Migrates a valid Preview 2 project to a RC4 project.
 * [dotnet-msbuild](dotnet-msbuild.md)
    * Provides access to the MSBuild command line.
 

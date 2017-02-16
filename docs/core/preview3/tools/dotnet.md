@@ -86,7 +86,7 @@ The following commands exist for dotnet:
 
 Initialize a sample .NET Core console application that can be compiled and run:
 
-`dotnet new`
+`dotnet new console`
 
 Restore dependencies for a given application:
 

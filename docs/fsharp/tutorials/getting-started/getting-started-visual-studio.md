@@ -18,20 +18,20 @@ F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, 
 
 ## Installing F# #
 
-If you're downloading Visual Studio for the first time, it will install the installer.  Install any version of Visual Studio 2017 from the installer.  If you already have it installed, click **Modify**.
+If you're downloading Visual Studio for the first time, it will first install the Visual Studio installer.  Install any version of Visual Studio 2017 from the installer.  If you already have it installed, click **Modify**.
 
 You'll next see a list of Workloads.  You can install F# through any of the following workloads:
 
 |Workload|Action|
 |--------|------|
-|.NET desktop development|Select **F# Tools** from the right-hand side|
-|ASP.NET and web Development|Select **F# Tools** from the right-hand side|
-|Data storage and processing|Select **F# Tools** from the right-hand side|
+|.NET desktop development|Select **F# language support** from the right-hand side|
+|ASP.NET and web development|Select **F# language support** from the right-hand side|
+|Data storage and processing|Select **F# language support** from the right-hand side|
 |Mobile development with .NET|No action - F# is installed by default|
 
-Alternatively, you can select **Individual Components** and install **F# Tools** from there.  Feel free to select as many Workloads or Individual Components as you like.
+Alternatively, you can select **Individual components** and install **F# language support** from there.  Feel free to select as many Workloads or Individual Components as you like.
 
-Finally, click **Modify** in the lower right-hand side.  This will install everything you have selected.
+Finally, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
 
 ## Creating a console application
 

@@ -17,18 +17,18 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 
 ## Name
 
-`dotnet-add package` - Add package references to a project file.
+`dotnet-add package` - Add package reference to a project file.
 
 ## Synopsis
 
 ```
 dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version] [-f|--framework] [-s|--source] [--package-directory] [-h|--help]
-dotnet add [-h|--help]
+dotnet add package [-h|--help]
 ```
 
 ## Description
 
-The `dotnet add package` command provides a convenient option to add NuGet package reference to a project.
+The `dotnet add package` command provides a convenient option to add a NuGet package reference to a project.
 
 ## Arguments
 

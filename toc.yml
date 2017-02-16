@@ -1,14 +1,40 @@
 - name: Docs
-  href: /
-  homepage: /
+  tocHref: /
+  topicHref: /
   items:
   - name: .NET
-    href: /dotnet/
-    homepage: /dotnet/index
-    items:
-    - name: Documentation
-      href: /dotnet/articles/
-      homepage: /dotnet/articles/welcome
+    tocHref: /dotnet/
+    topicHref: /dotnet/index
+    items:     
     - name: API reference
-      href: /dotnet/core/api/
-      homepage: /dotnet/core/api/index
+      tocHref: /dotnet/core/api/
+      topicHref: /dotnet/core/api/index
+    - name: Documentation
+      tocHref: /dotnet/articles/
+      topicHref: /dotnet/articles/welcome
+      items:
+      - name: .NET Platform Guide
+        tocHref: /dotnet/articles/standard/
+        topicHref: /dotnet/articles/standard/index
+      - name: .NET Core Guide
+        tocHref: /dotnet/articles/core/
+        topicHref: /dotnet/articles/core/index
+      - name: .NET Framework
+        tocHref: /dotnet/articles/framework/
+        topicHref: /dotnet/articles/framework/index
+      - name: C# Guide
+        tocHref: /dotnet/articles/csharp/
+        topicHref: /dotnet/articles/csharp/index
+        items:
+        - name: Getting Started
+          tocHref: /dotnet/articles/csharp/getting-started/
+          topicHref: /dotnet/articles/csharp/getting-started/index
+        - name: Interactive
+          tocHref: /dotnet/articles/csharp/interactive/
+          topicHref: /dotnet/articles/csharp/interactive/index          
+      - name: F# Guide
+        tocHref: /dotnet/articles/fsharp/
+        topicHref: /dotnet/articles/fsharp/index
+      - name: Visual Basic Guide
+        tocHref: /dotnet/articles/visual-basic/
+        topicHref: /dotnet/articles/visual-basic/index

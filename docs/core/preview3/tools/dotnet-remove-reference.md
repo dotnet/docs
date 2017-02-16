@@ -28,7 +28,7 @@ dotnet remove reference [-h|--help]
 
 ## Description
 
-The `dotnet remove reference` command provides a convenient option to remove a project reference from a project.
+The `dotnet remove reference` command provides a convenient option to remove a project references from a project.
 
 ## Arguments
 

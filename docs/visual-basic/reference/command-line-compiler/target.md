@@ -1,5 +1,5 @@
 ---
-title: "-target (Visual Basic) | Microsoft Docs"
+title: "/target (Visual Basic) | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -84,5 +84,5 @@ vbc /target:library in.vb
  [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
  [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
  [/moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/toc.md)   
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

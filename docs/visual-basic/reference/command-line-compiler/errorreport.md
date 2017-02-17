@@ -1,5 +1,5 @@
 ---
-title: "-errorreport | Microsoft Docs"
+title: "/errorreport | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net

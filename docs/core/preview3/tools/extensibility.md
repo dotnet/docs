@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 ---
 
-# .NET Core CLI extensibility model (Tooling RC3)
+# .NET Core CLI extensibility model (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [.NET Core CLI extensibility model](../../tools/dotnet-test.md) topic.
 
 ## Overview
@@ -23,7 +23,7 @@ This document will cover the main ways how to extend the CLI tools and explain t
 It will the outline how to consume the tools as well as provide short notes on how to build both types of tools. 
 
 ## How to extend CLI tools
-The RC3 CLI tools can be extended in three main ways:
+The RC4 CLI tools can be extended in three main ways:
 
 1. Via NuGet packages on a per-project basis
 2. Via NuGet packages with custom targets  
@@ -50,7 +50,7 @@ category.
 Consuming these tools requires you to add a `<DotNetCliToolReference>` element for each tool you want to use to your project file. Inside the `<DotNetCliToolReference>` element, you reference the package in which the tool resides and you specify the version you need. After running `dotnet restore`, the tool and its dependencies are restored. 
 
 For tools that need to load the build output of the project for execution, there is usually another dependency which is 
-listed under the regular dependencies in the project file. Since the RC3 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in RC3 becomes a set of MSBuild properties that can be read from any target. We will see how to add a custom target using NuGet later in this document. 
+listed under the regular dependencies in the project file. Since the RC4 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in RC4 becomes a set of MSBuild properties that can be read from any target. We will see how to add a custom target using NuGet later in this document. 
 
 Let's review an example of adding a simple tools-only tool to a simple project. Given an example command called 
 `dotnet-api-search` that allows you to search through the NuGet packages for the specified 
@@ -81,7 +81,7 @@ application inside, the actual tool binary, has to conform to the convention of 
 to be able to invoke it. 
 
 > [!NOTE]
-> In pre-RC3 versions of the .NET Core command line tools, the `dotnet pack` command had a bug that caused the `runtime.config.json` to not be packed with the tool. Lacking that file results in errors at runtime. If you encounter this behavior, be sure to update to the latest tooling and try the `dotnet pack` again. 
+> In pre-RC3 versions of the .NET Core command-line tools, the `dotnet pack` command had a bug that caused the `runtime.config.json` to not be packed with the tool. Lacking that file results in errors at runtime. If you encounter this behavior, be sure to update to the latest tooling and try the `dotnet pack` again. 
 
 Since tools are portable applications, the user consuming the tool has to have the version of the .NET Core libraries 
 that the tool was built against in order to run the tool. Any other dependency that the tool uses and that is not 
@@ -142,7 +142,7 @@ Consuming custom targets is done by providing a `<PackageReference>` that points
 
 Using the custom target depends solely on how you configure it. Since it is the usual MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the `dotnet msbuild /t:<target-name>` command. 
 
-However, if you wish to provide a better user experience to your users, you can combine per-project tools and custom targets. In this scenario, the per-project tool would essentially just accept whatever needed parameters and would translate that into the required `dotnet msbuild` invocation that would execute the target. You can see a sample of this kind of sinergy on the [MVP Summit 2016 Hackathon samples](https://github.com/dotnet/MVPSummitHackathon2016) repo in the [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) project. 
+However, if you wish to provide a better user experience to your users, you can combine per-project tools and custom targets. In this scenario, the per-project tool would essentially just accept whatever needed parameters and would translate that into the required `dotnet msbuild` invocation that would execute the target. You can see a sample of this kind of synergy on the [MVP Summit 2016 Hackathon samples](https://github.com/dotnet/MVPSummitHackathon2016) repo in the [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) project. 
 
 ### PATH-based extensibility
 PATH-based extensibility is usually used for development machines where you need a tool that conceptually covers more 

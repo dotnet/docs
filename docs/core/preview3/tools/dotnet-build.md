@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
 
-#dotnet-build (Tooling RC3)
+#dotnet-build (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to Visual Studio 2017 RC - .NET Core Tools RC3. For the .NET Core Tools Preview 2 version,
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
 > see the [dotnet-build](../../tools/dotnet-build.md) topic.
 
 ## Name 

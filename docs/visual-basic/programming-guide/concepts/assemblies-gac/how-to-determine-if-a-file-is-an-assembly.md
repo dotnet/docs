@@ -67,5 +67,5 @@ End Module
   
 ## See Also  
  <xref:System.Reflection.AssemblyName>   
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)   
+ [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)

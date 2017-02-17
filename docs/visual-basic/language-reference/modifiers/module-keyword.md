@@ -51,3 +51,4 @@ Specifies that an attribute at the beginning of a source file applies to the cur
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
  [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+

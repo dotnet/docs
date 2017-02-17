@@ -58,4 +58,4 @@ translation.priority.ht:
  [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)   
  [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)
+ [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)

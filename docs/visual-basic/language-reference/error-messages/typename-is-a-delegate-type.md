@@ -54,5 +54,5 @@ translation.priority.ht:
 ## See Also  
  [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Invoke a Delegate Method](../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)

@@ -15,8 +15,8 @@ ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
 #dotnet-test
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the  Visual Studio 2017 RC - .NET Core Tools RC3 version,
-> see the [dotnet-test (Tooling RC3)](../preview3/tools/dotnet-test.md) topic.
+> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
+> see the [dotnet-test (.NET Core Tools RC4)](../preview3/tools/dotnet-test.md) topic.
 
 ## Name
 

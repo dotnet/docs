@@ -14,7 +14,7 @@ ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 # Getting started with .NET Core on Windows, using Visual Studio 2015
 
 > [!WARNING]
-> This topic applies to Visual Studio 2015 - .NET Core Tools Preview 2. For the Visual Studio 2017 RC - .NET Core Tools RC3 version,
+> This topic applies to Visual Studio 2015 - .NET Core Tools Preview 2. For the.NET Core Tools RC4 version,
 > see the [Getting started with .NET Core on Windows, using Visual Studio 2017](../preview3/tutorials/using-on-windows-vs-2017.md) topic.
 
 Visual Studio 2015 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a number of typical .NET Core solutions, or solutions that include .NET Core components, using Visual Studio. The scenarios include testing and using third-party libraries that have not been explicitly built for the most recent version of .NET Core. 

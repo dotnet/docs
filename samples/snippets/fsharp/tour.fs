@@ -329,7 +329,7 @@ module Lists =
     let daysList = 
         [ for month in 1 .. 12 do
               for day in 1 .. System.DateTime.DaysInMonth(2017, month) do 
-                  yield System.DateTime(2012, month, day) ]
+                  yield System.DateTime(2017, month, day) ]
 
     // Print the first 5 elements of 'daysList' using 'List.take'.
     printfn "The first 5 days of 2017 are: %A" (daysList |> List.take 5)
@@ -423,7 +423,7 @@ module Sequences =
     /// This a sequence of values.
     let seq2 = seq { yield "hello"; yield "world"; yield "and"; yield "hello"; yield "world"; yield "again" }
 
-    /// This is an on-demand sequence from 1 to 100.
+    /// This is an on-demand sequence from 1 to 1000.
     let numbersSeq = seq { 1 .. 1000 }
 
     /// This is a sequence producing the words "hello" and "world"

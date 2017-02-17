@@ -17,7 +17,32 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 
 ## Name
 
-`dotnet-add package` - Add package reference to a project file.
+`dotnet-add package` - Adds a package reference to a project file. After running the command, there is a compatibility check to ensure the package attempting to be added is compatible with all of the frameworks in the project. If the check passes, a restore is run and the `<PackageReference>` fragment is added to the project file.
+
+For example, adding Newtonsoft.Json to ToDo.csproj produces the following output:
+
+```
+Microsoft (R) Build Engine version 15.1.545.13942
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Writing /var/folders/gj/1mgg_4jx7mbdqbhw1kgcpcjr0000gn/T/tmpm0kTMD.tmp
+info : Adding PackageReference for package 'Newtonsoft.Json' into project 'ToDo.csproj'.
+log  : Restoring packages for ToDo.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json 119ms
+info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg 27ms
+info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks in project 'ToDo.csproj'.
+info : PackageReference for package 'Newtonsoft.Json' version '9.0.1' added to file 'ToDo.csproj'.
+```
+
+The ToDo.csproj file now contains `<PackageReference>` fragment for the referenced package.
+
+```xml
+<PackageReference Include="Newtonsoft.Json">
+    <Version>9.0.1</Version>
+</PackageReference>
+```
 
 ## Synopsis
 
@@ -34,29 +59,29 @@ The `dotnet add package` command provides a convenient option to add a NuGet pac
 
 `PROJECT`
 
-Project name to use. If not specified, the command will search the current directory for one.
+Project file to be modified. If not specified, the command searches the current directory for one.
 
 `PACKAGE_NAME`
 
-Package reference to add.
+The package reference to add.
 
 ## Options
 
 `-h|--help`
 
-Show help information for the command and/or argument
+Prints out a short help for the command or argument.
 
-`-v|--version`
+`-v|--version <VERSION>`
 
-Version for the package to be added.
+Version of the package.
 
-`-f|--framework`
+`-f|--framework <FRAMEWORK>`
 
-Add reference only when targetting a specific framework
+Add a package reference only when targetting a specific framework.
 
 `-n|--no-restore`
 
-Add reference without performing restore preview and compatibility check.
+Add a package reference without performing restore preview and compatibility check.
 
 `-s|--source`
 
@@ -64,7 +89,7 @@ Use specific NuGet package sources to use during the restore.
 
 `--package-directory`
 
-Restore the packages to this Directory .
+Restore the packages to this directory.
 
 ## Examples
 

@@ -28,7 +28,15 @@ dotnet add reference [-h|--help]
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project.
+The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` fragments are added to the project file.
+
+```xml
+<ItemGroup>
+    <ProjectReference Include="app.csproj" />
+    <ProjectReference Include="..\lib2\lib2.csproj" />
+    <ProjectReference Include="..\lib1\lib1.csproj" />
+</ItemGroup>
+```
 
 ## Arguments
 
@@ -44,13 +52,13 @@ Project to project references to add. A project or multiple projects to the proj
 
 ## Options
 
-`-f|--framework`
+`-f|--framework <FRAMEWORK>`
 
-Add reference only when targetting a specific framework
+Add project references only when targeting a specific framework.
 
 `-h|--help`
 
-Show help information for the command and/or argument
+Prints out a short help for the command or argument.
 
 ## Examples
 

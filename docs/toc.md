@@ -189,6 +189,7 @@
 ### [dotnet-nuget-delete](core/preview3/tools/dotnet-nuget-delete.md)
 ### [dotnet-nuget-push](core/preview3/tools/dotnet-nuget-push.md)
 ### [dotnet-nuget-locals](core/preview3/tools/dotnet-nuget-locals.md)
+### [dotnet-sln](core/preview3/tools/dotnet-sln.md)
 ### Project modification commands
 #### References
 ##### [dotnet-add-reference.md](core/preview3/tools/dotnet-add-reference.md)

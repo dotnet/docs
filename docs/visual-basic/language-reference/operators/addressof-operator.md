@@ -70,4 +70,4 @@ AddressOf procedurename
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

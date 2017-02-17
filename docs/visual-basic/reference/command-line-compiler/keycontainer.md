@@ -1,13 +1,11 @@
 ---
-title: "-keycontainer | Microsoft Docs"
-
+title: "/keycontainer | Microsoft Docs"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,7 +17,6 @@ ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

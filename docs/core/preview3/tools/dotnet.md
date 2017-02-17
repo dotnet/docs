@@ -56,7 +56,7 @@ Prints out a short help for the command. If using with `dotnet` only, it also pr
 The following commands exist for dotnet:
 
 * [dotnet-new](dotnet-new.md)
-  * Initializes a C# or F# console application project.
+  * Initializes a C# or F# project for a given template.
 * [dotnet-restore](dotnet-restore.md)
   * Restores the dependencies for a given application.
 * [dotnet-build](dotnet-build.md)
@@ -73,6 +73,8 @@ The following commands exist for dotnet:
   * Migrates a valid Preview 2 project to a RC4 project.
 * [dotnet-msbuild](dotnet-msbuild.md)
   * Provides access to the MSBuild command line.
+* [dotnet-sln](dotnet-sln.md)
+  * Options to add, remove, and list projects in a solution file.
 * Project modification commands
   * References - add, remove, and list project to project references.
     * [dotnet-add reference](dotnet-add-reference.md)

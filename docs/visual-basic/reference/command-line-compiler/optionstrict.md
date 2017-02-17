@@ -1,5 +1,5 @@
 ---
-title: "-optionstrict | Microsoft Docs"
+title: "/optionstrict | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net

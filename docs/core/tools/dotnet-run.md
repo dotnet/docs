@@ -26,25 +26,20 @@ dotnet run [-h|--help]
 ```
 
 ## Description
-The `dotnet run` command provides a convenient option to run your application from the source code with one command. 
-It compiles source code, generates an output program and then runs that program. 
-This command is useful for fast iterative development and can also be used to run a source-distributed program (for example, a website).
 
-This command relies on [dotnet build](dotnet-build.md) to build source inputs to a .NET assembly, before launching the program. 
-The requirements for this command and the handling of source inputs are all inherited from the build command. 
-The documentation for the build command provides more information on those requirements.
+The `dotnet run` command provides a convenient option to run your application from the source code with one command. It is useful for fast iterative development in the command line. The command depends on [`dotnet build`](dotnet-build.md) command to build the code, so any requirements for the build, such as that the project has to be restored first, apply to `dotnet run` as well. 
 
-Output files are written to the child *bin* folder, which will be created if it doesn't exist. 
-Files will be overwritten as needed. 
-Temporary files are written to the child *obj* folder.  
+Output files are written out into the default location which is `bin/<configuration>/<target>`. For example, if you have a `netcoreapp1.0` application and you run `dotnet run`, the output will be placed in `bin/Debug/netcoreapp1.0`. Files are owverwritten as needed. Temporary files are placed in the `obj` directory. 
 
-In case of a project with multiple specified frameworks, `dotnet run` will first select the .NET Core frameworks. If those do not exist, it will error out. To specify other frameworks, use the `--framework` argument.
+In case of a project with multiple specified frameworks, `dotnet run` will show an error unless `--framework` option is used to specify for which framework to run the application.
 
 The `dotnet run` command must be used in the context of projects, not built assemblies. If you're trying to run a portable application DLL instead, you should use [dotnet](dotnet.md) without any command like in the following example:
  
 `dotnet myapp.dll`
 
 For more information about the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
+
+In order to run the application, the `dotnet run` command resolved the dependencies of the application that are outside of the shared runtime from the NuGet cache. Given this, it is not reccomended to use this command to run applications in production. Instead, you should [create a deployment](../deploying/index.md) using [`dotnet publish`](dotnet-publish.md) command and use that in production. 
 
 ## Options
 

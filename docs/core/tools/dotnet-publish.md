@@ -27,14 +27,14 @@ dotnet publish [-h|--help]
 
 ## Description
 
-`dotnet publish` compiles the application, reads through its dependencies specified in the project file, and publishes the resulting set of files to a directory. 
+`dotnet publish` compiles the application, reads through its dependencies specified in the project file and publishes the resulting set of files to a directory. The output will contain the following:
 
-Depending on the type of portable app, the resulting directory will contain the following:
+1. Intermidiate Language (IL) code in an assembly with a `*.dll` extension.
+2. Deps JSON file that contains all of the dependencies of the project. 
+3. `Runtime.config.json` file that specifies the shared runtime that the application expects, as well as other configuration options for the runtime (for example, garbage collection type).
+4. All of the application's dependencies. These are copied out of the NuGet cache and into the output folder. 
 
-1. *Framework-dependent deployment* - application's intermediate language (IL) code and all of application's managed dependencies.
-2. *Self-contained deployment* - same as above plus the entire runtime for the targeted platform.
-
-For more information, see the [.NET Core Application Deployment](../deploying/index.md) topic.
+The `dotnet publish` command's output is ready to be transferred to a remote machine for execution and is the only officially supported way to prepare the application to be transferred to another machine (for example, a server) for execution. Dependening on the type of deployment that the project specifies, the remote machine will have to have .NET Core shared runtime installed on it. For more information, see the [.NET Core Application Deployment](../deploying/index.md) topic.
 
 ## Arguments
 

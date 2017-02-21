@@ -12,7 +12,7 @@ dev_langs:
   - "CSharp"
 helpviewer_keywords: 
   - "$ special character [C#]"
-  - "$ language element [C#]
+  - "$ language element [C#]"
 ms.assetid: 7d9e21b5-eac3-4878-9530-50e4da578acd
 author: "rpetrusha"
 ms.author: "ronpet"

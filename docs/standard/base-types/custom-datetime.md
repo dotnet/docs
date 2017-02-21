@@ -1,4 +1,4 @@
- ---
+---
 title: Custom date and time format strings
 description: Custom date and time format strings
 keywords: .NET, .NET Core

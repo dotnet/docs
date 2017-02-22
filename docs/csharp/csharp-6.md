@@ -125,7 +125,7 @@ auto-property in the auto-property declaration:
 
 [!code-csharp[Initialization](../../samples/snippets/csharp/new-in-6/newcode.cs#Initialization)]
 
-The `grades` member is initialized where it is declared. That makes it
+The `Grades` member is initialized where it is declared. That makes it
 easier to perform the initialization exactly once. The initialization
 is part of the property declaration, making it easier to equate the
 storage allocation with public interface for `Student` objects.

@@ -1,5 +1,5 @@
 ---
-title: "-moduleassemblyname | Microsoft Docs"
+title: "/moduleassemblyname | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -71,6 +71,6 @@ Specifies the name of the assembly that this module will be a part of.
  [/main](../../../visual-basic/reference/command-line-compiler/main.md)   
  [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
  [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/toc.md)   
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)

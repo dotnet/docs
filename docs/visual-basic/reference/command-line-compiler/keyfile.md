@@ -1,5 +1,5 @@
 ---
-title: "-keyfile | Microsoft Docs"
+title: "/keyfile | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -74,7 +74,7 @@ vbc /keyfile:myfile.sn input.vb
 ```  
   
 ## See Also  
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/toc.md)   
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

@@ -161,7 +161,7 @@ If that string matches a `#define` directive, then any calls to that method (but
 of the method that is calling another method. This is typically used as a way to eliminate 'magic strings' when implementing INotifyPropertyChanged in various UI frameworks. As an
 example:
 
-[!code-csharp[Using CallerMemberName when implementing INotifyPropertyChanged](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ReflectionExample1)]
+[!code-csharp[Using CallerMemberName when implementing INotifyPropertyChanged](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#CallerMemberName1)]
 
 In the above code, you don't have to have a literal `"Name"` string. This can help prevent typo-related bugs and also makes for smoother refactoring/renaming.
 

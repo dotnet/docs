@@ -48,7 +48,7 @@ where *expr* is an expression that evaluates to an instance of some type, and *t
 
 For example, the following code determines if `obj` can be cast to an instance of the `Person` type:
 
-[!code-cs[is#1](../../../../samples/snippets/csharp/language-reference/keywords/is/is1.cs)]
+[!code-cs[is#1](../../../../samples/snippets/csharp/language-reference/keywords/is/is1.cs#1)]
 
 The `is` statement is true if:
 
@@ -56,20 +56,20 @@ The `is` statement is true if:
 
 - *expr* is an instance of a type that derives from *type*. In other words, the result of *expr* can be upcast to an instance of *type*.
 
-- *expr* is an instance of a type that is a base class of *type*, and *expr* is the result of a downcast from *type* or one of its derived types.
+- *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its type declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
 
 - *expr* is an instance of a type that implements the *type* interface.
 
 The following example shows that the `is` expression evaluates to `true` for each of these conversions.
 
-[!code-cs[is#3](../../../../samples/snippets/csharp/language-reference/keywords/is/is3.cs)]
+[!code-cs[is#3](../../../../samples/snippets/csharp/language-reference/keywords/is/is3.cs#3)]
 
 The `is` keyword generates a compile-time warning if the expression is known to always be either `true` or `false`. It only considers reference conversions, boxing conversions, and unboxing conversions; it does not consider user-defined conversions or conversions defined by a type's [implicit](implicit.md) and [explicit](explicit.md) operators. The following example generates warnings because the result of the conversion is known at compile-time. Note that the `is` expression for conversions from `int` to `long` and `double` return false, since these conversions are handled by the [implicit](implicit.md) operator.
 
-[!code-cs[is#2](../../../../samples/snippets/csharp/language-reference/keywords/is/is2.cs)]
+[!code-cs[is#2](../../../../samples/snippets/csharp/language-reference/keywords/is/is2.cs#2)]
 
 `expr` can be any expression that returns a value, with the exception of anonymous methods and lambda expressions. The following example uses  `is` to evaluate the return value of a method call.   
-[!code-cs[is#4](../../../../samples/snippets/csharp/language-reference/keywords/is/is4.cs)]
+[!code-cs[is#4](../../../../samples/snippets/csharp/language-reference/keywords/is/is4.cs#4)]
 
 Starting with C# 7, you can use pattern matching with the [type pattern](#type) to write more concise code that uses the `is` statement.
 
@@ -82,7 +82,6 @@ Starting with C# 7, the `is` and [switch](../../../csharp/language-reference/key
 - [Constant pattern](#constant), which tests whether an expression evaluates to a specified constant value.
 
 - [var pattern](#var), a match that always succeeds and binds the value of an expression to a new local variable. 
-
 
 ### <a name="type" /> Type pattern </a>
 
@@ -100,7 +99,7 @@ The `is` expression is `true` if any of the following is true:
 
 - *expr* is an instance of a type that derives from *type*. In other words, the result of *expr* can be upcast to an instance of *type*.
 
-- *expr* is an instance of a type that is a base class of *type*, and *expr* is the result of a downcast from *type* or one of its derived types.
+- *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its type declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
 
 - *expr* is an instance of a type that implements the *type* interface.
 
@@ -108,11 +107,19 @@ If *exp* is `true` and `is` is used with an `if` statement, *varname* is assigne
 
 The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=fullName> method.
 
-[!code-cs[is#5](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern5.cs)]
+[!code-cs[is#5](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern5.cs#5)]
 
 Without pattern matching, this code might be written as follows. The use of type pattern matching produces more compact, readable code by eliminating the need to test whether the result of a conversion is a `null`.  
 
-[!code-cs[is#6](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern6.cs)]
+[!code-cs[is#6](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern6.cs#6)]
+
+The `is` type pattern also produces more compact code when determining the type of a value type. The following example uses the `is` type pattern to determine whether an object is a `Person` or a `Dog` instance before displaying the value of an appropriate property. 
+
+[!code-cs[is#9](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern9.cs#9)]
+
+The equivalent code without pattern matching requires a separate assignment that includes an explicit cast.
+
+[!code-cs[is#10](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern9.cs#10)]
 
 ### <a name="constant" /> Constant pattern ###
 
@@ -138,7 +145,7 @@ The constant expression is evaluated as follows:
 
 The following example combines the type and constant patterns to test whether an object is a `Dice` instance and, if it is, to determine whether the value of a dice roll is 6.
 
-[!code-cs[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs)]
+[!code-cs[is#7](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern7.cs#7)]
  
 ### <a name="var" /> var pattern </a>
 
@@ -150,7 +157,7 @@ A pattern match with the var pattern always succeeds. Its syntax is
 
 where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a static variable of the same type as *expr*. The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
 
-[!code-cs[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs)]
+[!code-cs[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
 
 Note that if *expr* is `null`, the `is` expression still is true and assigns `null` to *varname*. 
 

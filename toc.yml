@@ -1,14 +1,14 @@
-- name: .NET
-  tocHref: /dotnet/
-  topicHref: /dotnet/index
-  items:     
-  - name: API reference
-    tocHref: /dotnet/core/api/
-    topicHref: /dotnet/core/api/index
-  - name: Documentation
-    tocHref: /dotnet/articles/
-    topicHref: /dotnet/articles/welcome
-    items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: .NET
+    tocHref: /dotnet/
+    topicHref: /dotnet/index
+    items:     
+    - name: API reference
+      tocHref: /dotnet/core/api/
+      topicHref: /dotnet/core/api/index
     - name: .NET Platform Guide
       tocHref: /dotnet/articles/standard/
       topicHref: /dotnet/articles/standard/index
@@ -40,10 +40,10 @@
         topicHref: /dotnet/articles/csharp/whats-new/index
       - name: Interactive
         tocHref: /dotnet/articles/csharp/interactive/
-        topicHref: /dotnet/articles/csharp/interactive/index`
+        topicHref: /dotnet/articles/csharp/interactive/index
       - name: Concepts
         tocHref: /dotnet/articles/csharp/concepts/
-        topicHref: /dotnet/articles/csharp/concepts/index`
+        topicHref: /dotnet/articles/csharp/concepts/index
       - name: Programming guide
         tocHref: /dotnet/articles/csharp/programming-guide/
         topicHref: /dotnet/articles/csharp/programming-guide/index

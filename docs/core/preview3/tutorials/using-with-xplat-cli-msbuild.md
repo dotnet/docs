@@ -1,10 +1,10 @@
 ---
-title: Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4) | Microsoft Docs
-description: Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)
-keywords: .NET, .NET Core
+title: Getting started with .NET Core using the CLI | Microsoft Docs
+description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
+keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
-ms.date: 06/20/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -16,175 +16,92 @@ ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 
 > [!WARNING]
 > This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [Getting started with .NET Core on Windows/Linux/macOS using the command line](../../tutorials/using-with-xplat-cli.md) topic.
+> see the [Getting started with .NET Core on Windows/Linux/macOS using the CLI](../../tutorials/using-with-xplat-cli.md) topic.
 
-This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.  It will start with the most basic console app and eventually span multiple projects, including testing. You'll add these features step-by-step, building on what you've already seen and built.
+This topic will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
 
-If you're unfamiliar with the .NET Core CLI toolset, read [the .NET Core SDK overview](../tools/dotnet.md).
+If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK overview](../tools/index.md).
 
 ## Prerequisites
 
-Before you begin, ensure you have [.NET Core CLI tooling RC4 or later](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).  You'll also need a text editor.
+- [.NET Core CLI tooling RC4](https://github.com/dotnet/core/blob/master/release-notes/rc4-download.md).
+- A text editor or code editor of your choice.
 
 ## Hello, Console App!
 
-First, navigate to or create a new folder with a name you like.  "Hello" is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild).
+First, navigate to or create a new folder with a name you like. *Hello* is the name chosen for the sample code, which can be found [here](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild).
 
 Open up a command prompt and type the following:
 
 ```
-$ dotnet new
+$ dotnet new console
 $ dotnet restore
 $ dotnet run
 ```
 
 Let's do a quick walkthrough:
 
-1. `$ dotnet new`
+1. `$ dotnet new console`
 
-   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
+[`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
    
-   `Hello.csproj`:
-   ```xml
-    <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-        <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
-        
-        <PropertyGroup>
-            <OutputType>Exe</OutputType>
-            <TargetFramework>netcoreapp1.0</TargetFramework>
-        </PropertyGroup>
+`Hello.csproj`:
 
-        <ItemGroup>
-            <Compile Include="**\*.cs" />
-            <EmbeddedResource Include="**\*.resx" />
-        </ItemGroup>
-
-        <ItemGroup>
-            <PackageReference Include="Microsoft.NETCore.App">
-                <Version>1.0.1</Version>
-            </PackageReference>
-            <PackageReference Include="Microsoft.NET.Sdk">
-                <Version>1.0.0-alpha-20161104-2</Version>
-                <PrivateAssets>All</PrivateAssets>
-            </PackageReference>
-        </ItemGroup>
-        
-        <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-    </Project>
-   ```
+[!code[Hello.csproj](../../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]   
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
-   * The `Import` tag brings in some properties that are common to all .NET Core projects.
    * The `OutputType` tag specifies that we're building an executable, in other words a console application.
    * The `TargetFramework` tag specifies what .NET runtime we're targeting. In an advance scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 1.0.
-   * The `Compile` tag tells the compiler to build all the files in the current directory and all its subdirectories that have the `.cs` file extension, in other words all the C# files in the project. In advanced scenarios, it is possible to exclude files, but in this tutorial, and in most simple scenarios, this line can be left unchanged.
-   * The `EmbeddedResource` tag instructs the build system to embed localization files with the extension `.resx` into the compiled executable. We won't use that feature in this tutorial.
-   * The `PackageReference` tags specify what dependency packages must be restored and included when building the application. Each package reference specifies the name of the package under the `Include` attribute, and a version number. In most advanced scenarios, you'll add more package references. It is also possible to reference other projects on disk.
 
    `Program.cs`:
-   ```csharp
-   using System;
 
-   namespace ConsoleApplication
-   {
-       public class Program
-       {
-           public static void Main(string[] args)
-           {
-               Console.WriteLine("Hello World!");
-           }
-       }
-   }
-   ```
+[!code-csharp[Program.cs](../../../../samples/core/console-apps/HelloMsBuild/Program.cs)]   
 
    The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes basic constructs such as `string`, or numeric types.
 
-   We then define a namespace called "ConsoleApplication". You can change this to anything you want. A class named "Program" is defined within that namespace, with a `Main` method that takes an array of strings as its argument. This array will contain the list of arguments passed in when the compiled program will be called. As it is, this array is not used: all the program is doing is to write "Hello World!" to the console. We can make things a little more interesting by changing the `Console.WriteLine` into the following code.
-
-   ```csharp
-   if (args.Length > 0)
-   {
-       Console.WriteLine($"Hello {args[0]}!");
-   }
-   else
-   {
-       Console.WriteLine("Hello World!");
-   }
-   ```
+   We then define a namespace called `Hello`. You can change this to anything you want. A class named `Program` is defined within that namespace, with a `Main` method that takes an array of strings as its argument. This array contains the list of arguments passed in when the compiled program is called. As it is, this array is not used: all the program is doing is to write "Hello World!" to the console. Later, we'll make changes to the code that will make use of this argument.
 
 2. `$ dotnet restore`
 
-   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](http://nuget.org) (.NET's package manager) to restore the tree of dependencies. NuGet analyzes the `Hello.csproj` file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the `obj/project.assets.json` file.  The `project.assets.json` file is necessary to be able to compile and run.
+   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](http://nuget.org) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file.  The *project.assets.json* file is necessary to be able to compile and run.
    
-   The `project.assets.json` file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as `dotnet build` and `dotnet run`, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
+   The *project.assets.json* file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as [`dotnet build`](../tools/dotnet-build.md) and [`dotnet run`](../tools/dotnet-run.md), enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
 3. `$ dotnet run`
 
-   [`dotnet run`](../tools/dotnet-run.md) calls `dotnet build` to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
+   [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
    
     ```
     $ dotnet run
     Hello World!
     ```
 
-    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a `bin/Debug/netcoreapp1.0/Hello.dll` compiled application that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows, and `dotnet bin/Debug/netcoreapp1.0/Hello.dll` on other systems. You may specify an additional parameter on the command-line (assuming you are on Windows):
+    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may specify also specify arguments to the application as you'll see later on the topic.
 
     ```
-    $ dotnet bin\Debug\netcoreapp1.0\Hello.dll .NET
-    Hello .NET!
+    $ dotnet bin\Debug\netcoreapp1.0\Hello.dll
+    Hello World!
     ```
 
     As an advanced scenario, it's possible to build the application as a self-contained set of platform-specific files that can be deployed and run to a machine that doesn't necessarily have .NET Core installed. See [.NET Core Application Deployment](../deploying/index.md) for details.
 
 ### Augmenting the program
 
-Let's change the file just a little bit.  Fibonacci numbers are fun, so let's try that out:
+Let's change the program a bit. Fibonacci numbers are fun, so let's add that in addition to use the argument to greet the person running the app.
 
-`Program.cs`:
+1. Replace the contents of your *Program.cs*  file with the following code:
 
-```csharp
-using static System.Console;
+[!code-csharp[Fibonacci](../../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]   
 
-namespace ConsoleApplication
-{
-    public class Program
-    {
-        public static int FibonacciNumber(int n)
-        {
-            int a = 0;
-            int b = 1;
-            int tmp;
-            
-            for (int i = 0; i < n; i++)
-            {
-                tmp = a;
-                a = b;
-                b += tmp;
-            }
-            
-            return a;   
-        }
-        
-        public static void Main(string[] args)
-        {
-            WriteLine("Hello World!");
-            WriteLine("Fibonacci Numbers 1-15:");
-            
-            for (int i = 0; i < 15; i++)
-            {
-                WriteLine($"{i+1}: {FibonacciNumber(i)}");
-            }
-        }
-    }
-}
-```
+2. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
-And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):
+3. Run the program passing a parameter to the app:
 
 ```
-$ dotnet build
-$ dotnet bin\Debug\netcoreapp1.0\win10-x64\Fibonacci.exe
+$ dotnet run -- John
+Hello John!
+Fibonacci Numbers 1-15:
 1: 0
 2: 1
 3: 1
@@ -204,93 +121,24 @@ $ dotnet bin\Debug\netcoreapp1.0\win10-x64\Fibonacci.exe
 
 And that's it!  You can augment `Program.cs` any way you like.
 
-## Adding some new files
+## Working with multiple files
 
-Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.  Multiple files are a way to do that.
+Single files are fine for simple one-off programs, but if you're building a more complex app, you're probably going to have multiple source files on your project
+Let's build off of the previous Fibonacci example by caching some Fibonacci values and add some recursive features. 
 
-Create a new file and give it a unique namespace:
+1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
 
-```csharp
-using System;
+[!code-csharp[Fibonacci Generator](../../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
 
-namespace NumberFun
-{
-    // code can go here
-} 
-```
+2. Change the `Main` method in your *Program.cs* file to instantiate the new class and call its method as in the following example:
 
-Next, include it in your `Program.cs` file:
+[!code-csharp[New Program.cs](../../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
 
-```csharp
-using NumberFun;
-```
+3. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
-And finally, you can build it:
-
-`$ dotnet build`
-
-Now the fun part: making the new file do something!
-
-### Example: A Fibonacci Sequence Generator
-
-Let's say you want to build off of the previous Fibonacci example by caching some Fibonacci values and add some recursive flair.  Your code for a [better Fibonacci example](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetterMsBuild) might use a new `FibonacciGenerator.cs` file with the following code.
-
-```csharp
-using System;
-using System.Collections.Generic;
-
-namespace NumberFun
-{
-	public class FibonacciGenerator
-	{
-		private Dictionary<int, int> _cache = new Dictionary<int, int>();
-		
-		private int Fib(int n) => n < 2 ? n : FibValue(n - 1) + FibValue(n - 2);
-		
-		private int FibValue(int n)
-		{
-			if (!_cache.ContainsKey(n))
-			{
-				_cache.Add(n, Fib(n));
-			}
-			
-			return _cache[n];
-		}
-		
-		public IEnumerable<int> Generate(int n)
-		{
-			for (int i = 0; i < n; i++)
-			{
-				yield return FibValue(i);
-			}
-		}
-	}
-}
-```
-
-Now adjust the `Main()` method in your `Program.cs` file as shown below.
-
-```csharp
-using System;
-using NumberFun;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        var generator = new FibonacciGenerator();
-        foreach (var digit in generator.Generate(15))
-        {
-            Console.WriteLine(digit);
-        }
-    }
-}
-```
-
-Finally, run it!
+4. Run your app by executing [`dotnet run`](../tools/dotnet-run.md). The following shows the program output:
 
 ```
-$ dotnet run
 0
 1
 1
@@ -308,10 +156,10 @@ $ dotnet run
 377
 ```
 
-And that's it!
+And that's it! Now, you can start using the basic concepts learned here to create your own programs.
 
-## Conclusion
- 
-Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.  The next step is to create awesome console apps of your own!
- 
-If a more advanced example of a console app interests you, check out the next tutorial: [Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4)](using-with-xplat-cli-msbuild-folders.md).
+Note that the commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
+
+## See also
+
+[Organizing and testing projects with the .NET Core CLI tools](using-with-xplat-cli-msbuild-folders.md)

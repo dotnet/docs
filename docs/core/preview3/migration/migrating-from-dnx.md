@@ -40,7 +40,7 @@ would put it on the $PATH for the given session. This would allow you to use the
 
 DNVM was discontinued because its feature set was made redundant by changes coming in the .NET Core CLI tools.
 
-The CLI tools come packaged in two main ways, as was explained in the [overview document](tools/index.md#installation):
+The CLI tools come packaged in two main ways:
 
 1. Native installers for a given platform
 2. Install script for other situations (like CI servers)
@@ -83,7 +83,7 @@ packages with a shell script that would invoke the DNX you specified to run the 
 
 The CLI does not support this concept. It does, however, support the concept of adding per-project commands that can be 
 invoked using the familiar `dotnet <command>` syntax. More about this can be found in the 
-[extensibility overview](tools/index.md#extensibility). 
+[extensibility overview](../tools/index.md#extensibility). 
 
 ### Installing dependencies
 As of v1, the .NET Core CLI tools don't have an `install` command for installing dependencies. In order to install a 
@@ -151,7 +151,7 @@ a fully *portable* application or you may want to have a *self-contained* applic
 like .NET Framework applications work: it needs a shared component to execute it on the target machine 
 (.NET Core). The self-contained application doesn't require .NET Core to be installed on the target, but you have to 
 produce one application for each OS you wish to support. These portability types and more are discussed in the
- [application portability type](deploying/index.md) document. 
+ [application portability type](../deploying/index.md) document. 
 
 Once you make a call on what type of portability you want, you need to change your targeted framework(s). If you were 
 writing applications for .NET Core, you were most likely using `dnxcore50` as  your targeted framework. With the CLI 
@@ -167,7 +167,7 @@ for more information.
 
 Your `project.json` is now mostly ready. You need to go through your dependencies list and update the dependencies to 
 their newer versions, especially if you are using ASP.NET Core dependencies. If you were using separate packages for BCL APIs, 
-you can use the runtime package as explained in the [application portability type](deploying/index.md) document. 
+you can use the runtime package as explained in the [application portability type](../deploying/index.md) document. 
 
 Once you are ready, you can try restoring with `dotnet restore`. Depending on the version of your dependencies, you 
 may encounter errors if NuGet cannot resolve the dependencies for one of the 

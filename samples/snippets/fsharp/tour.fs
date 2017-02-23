@@ -118,7 +118,7 @@ module BasicFunctions =
     let result2 = sampleFunction2 (7 + 4)
     printfn "The result of applying the 1st sample function to (7 + 4) is %d" result2
 
-    /// Conditionals use if/then/elid/elif/else.
+    /// Conditionals use if/then/elif/else.
     ///
     /// Note that F# uses whitespace indentation-aware syntax, similar to languages like Python.
     let sampleFunction3 x = 

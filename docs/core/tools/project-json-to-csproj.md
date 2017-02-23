@@ -27,7 +27,8 @@ upgrading your project to the latest version of the tooling.
 ## The csproj format
 
 The new format, \*.csproj, is an XML-based format. The following example shows the root node of a 
-.NET Core project using the new `Microsoft.NET.Sdk` metapackage.
+.NET Core project using the new `Microsoft.NET.Sdk` metapackage. For web projects, the metapackage used is 
+`Microsoft.NET.Sdk.Web`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -121,6 +122,22 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
 > [!IMPORTANT]
 > If the dependency is a **project** and not a package, the format is different. 
 > For more information, see the [dependency type](#dependency-type) section.
+
+### .NET Standard metapackage
+
+```json
+{
+  "dependencies": {
+    "NETStandard.Library": "1.6.0"
+  }
+}
+```
+
+```xml
+<PropertyGroup>
+  <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+</PropertyGroup>
+```
 
 ### Top-level dependencies
 ```json
@@ -269,7 +286,7 @@ For more information, see [Implicit package references](../preview3/tools/csproj
 ```
 
 ### Standalone apps (self-contained deployment)
-In project.json, defining a `runtimes` section mean the app was standalone during
+In project.json, defining a `runtimes` section means the app was standalone during
 build and publish.
 In MSBuild, all projects are *portable* during build, but can be published as
 standalone.
@@ -389,37 +406,37 @@ The `keyFile` element expands to three properties in MSBuild:
 See also [Files](#files).
 
 ### Common pack options
+
 ```json
 {
   "packOptions": {
-    "summary": "A bundle of cats",
-    "tags": ["hyperscale", "cats"],
-    "owners": [ "Nate", "Jenna" ],
-    "releaseNotes": "Version 1.0",
-    "iconUrl": "https://icons.com/awesomeness.png",
-    "projectUrl": "https://github.com/natemcmaster",
-    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
+    "tags": ["machine learning", "framework"],
+    "releaseNotes": "Version 0.9.12-beta",
+    "iconUrl": "http://numl.net/images/ico.png",
+    "projectUrl": "http://numl.net",
+    "licenseUrl": "https://raw.githubusercontent.com/sethjuarez/numl/master/LICENSE.md",
     "requireLicenseAcceptance": false,
     "repository": {
       "type": "git",
-      "url": "https://github.com/natemcmaster/natemcmaster.github.io"
+      "url": "https://raw.githubusercontent.com/sethjuarez/numl"
     },
-    "owners": ["Fabrikam", "Microsoft"]
+    "owners": ["Seth Juarez"]
   }
 }
 ```
 
 ```xml
 <PropertyGroup>
-  <Summary>A bundle of cats</Summary>
-  <PackageTags>hyperscale;cats</PackageTags>
-  <PackageReleaseNotes>Version 1.0</PackageReleaseNotes>
-  <PackageIconUrl>https://icons.com/awesomeness.png</PackageIconUrl>
-  <PackageProjectUrl>https://github.com/natemcmaster</PackageProjectUrl>
-  <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+  <Title>numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.</Title>
+  <PackageTags>machine learning;framework</PackageTags>
+  <PackageReleaseNotes>Version 0.9.12-beta</PackageReleaseNotes>
+  <PackageIconUrl>http://numl.net/images/ico.png</PackageIconUrl>
+  <PackageProjectUrl>http://numl.net</PackageProjectUrl>
+  <PackageLicenseUrl>https://raw.githubusercontent.com/sethjuarez/numl/master/LICENSE.md</PackageLicenseUrl>
   <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   <RepositoryType>git</RepositoryType>
-  <RepositoryUrl>https://github.com/natemcmaster/natemcmaster.github.io</RepositoryUrl>
+  <RepositoryUrl>https://raw.githubusercontent.com/sethjuarez/numl</RepositoryUrl>
   <!-- owners is not supported in MSBuild -->
 </PropertyGroup>
 ```
@@ -457,7 +474,11 @@ Their equivalent in MSBuild are targets:
 {
   "runtimeOptions": {
     "configProperties": {
-      "System.GC.Server": true
+      "System.GC.Server": true,
+      "System.GC.Concurrent": true,
+      "System.GC.RetainVM": true,
+      "System.Threading.ThreadPool.MinThreads": 4,
+      "System.Threading.ThreadPool.MaxThreads": 25
     }
   }
 }
@@ -542,7 +563,7 @@ All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.
 Package layout inside the .nupkg can be modified with `PackagePath="path"`.
 
 Except for `Content`, most item groups require explicitly adding `Pack="true"` to 
-be included in the package. By default, this will be but in the 'content' folder
+be included in the package. By default, this will be put in the *content* folder
 in a package. `PackagePath="%(Identity)"` is a short way of setting package path
 to the project-relative file path.
 
@@ -581,7 +602,7 @@ to the project-relative file path.
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-*" />
-  <PackageReference Include="MSTest.TestAdapter" Version="1.0.0-*" />
+  <PackageReference Include="MSTest.TestAdapter" Version="1.1.12" />
   <PackageReference Include="MSTest.TestFramework" Version="1.0.0-*" />
 </ItemGroup>
 ```

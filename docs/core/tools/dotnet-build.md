@@ -25,15 +25,15 @@ dotnet build [--help]
 ```
 
 ## Description
-The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries are the symbol files used for debugging (having a `*.pdb` extension) as well as the project's code in Intermediate Language (IL) with an `*.dll` extension. Additionally, a JSON file that lists out the dependencies of the application with the `*.deps` extension will be produced. Finally, a `runtime.config.json` file will be produced as well. This file specifies which shared runtime and version the built code will run against. 
+The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries are the symbol files used for debugging (having a `*.pdb` extension) as well as the project's code in Intermediate Language (IL) with a `*.dll` extension. Additionally, a JSON file that lists out the dependencies of the application with the `*.deps` extension will be produced. Finally, a `runtime.config.json` file will be produced as well. This file specifies which shared runtime and version the built code will run against. 
 
 If the project has third-party dependencies, such as libraries from NuGet, these will be resolved from the NuGet cache and will not be available with the project's built output. With that in mind, the product of `dotnet build` is not ready to be transferred to another machine to run. This is in contrast to the behavior of .NET Framework in which building an executable project (an application) will produce an output that is possible to run on any machine that has .NET Framework installed. In order to get a similar experience in .NET Core, you have to use the [dotnet publish](dotnet-publish.md) command. More information about this can be found in the [.NET Core Application Deployment](../deploying/index.md) document. 
 
-Building requires the existence of an asset file (a file that lists all of the dependencies of your application), which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building the project. Lack of the assets file manifests as the inability of the tooling to resolve reference assemblies. 
+Building requires the existence of an asset file (a file that lists all of the dependencies of your application), which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building the project. Lack of the assets file manifests as the inability of the tooling to resolve reference assemblies which will result in errors. 
 
-`dotnet build` uses MSBuild to build the project, thus it support both parallel builds and incremental builds. Please refer to [MSBuild documentation]() to get more information on those topics. 
+`dotnet build` uses MSBuild to build the project, thus it supports both parallel builds and incremental builds. Please refer to [MSBuild documentation](https://github.com/dotnet/docs/pull/1592) to get more information on those topics. 
 
-In addition to its options, the `dotnet build` command will accept MSBuild options as well, such as `/p` for setting properties or `/l` to define a logger. You can find out more about these properties in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. 
+In addition to its options, the `dotnet build` command will accept MSBuild options as well, such as `/p` for setting properties or `/l` to define a logger. You can find out more about these properties in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. If you wish to know when 
 
 Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that will produce executable code: 
 

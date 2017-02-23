@@ -83,7 +83,7 @@ Lists, Arrays, and Sequences are three primary collection types in the F# core l
 
 [!code-fsharp[Arrays](../../samples/snippets/fsharp/tour.fs#L368-L407)]
 
-[Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays, capable of being your "view" into any logical series of elements.  They also stand out because can be ***lazy***, which means that elements can be computed only when they are needed.
+[Sequences](language-reference/sequences.md) are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays, capable of being your "view" into any logical series of elements.  They also stand out because they can be ***lazy***, which means that elements can be computed only when they are needed.
 
 [!code-fsharp[Sequences](../../samples/snippets/fsharp/tour.fs#L418-L452)]
 

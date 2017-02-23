@@ -128,6 +128,7 @@ The build system has some extensions that allow us to link to .NET Core APIs wit
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
+
 1. Markdown link: `[link_text](xref:UID)`
 2. Auto link: `<xref:UID>`
 3. Shorthand form: `@UID`

@@ -119,7 +119,7 @@ The `is` type pattern also produces more compact code when determining the type 
 
 The equivalent code without pattern matching requires a separate assignment that includes an explicit cast.
 
-[!code-cs[is#10](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern9.cs#10)]
+[!code-cs[is#10](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern10.cs#10)]
 
 ### <a name="constant" /> Constant pattern ###
 

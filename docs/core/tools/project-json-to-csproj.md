@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 02/17/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -45,7 +45,19 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 }
 ```
 
-No longer supported. In csproj, this is determined by the project filename. For example, `MyProjectName.csproj`.
+No longer supported. In csproj, this is determined by the project filename, which is defined by the directory name. For example, `MyProjectName.csproj`.
+
+By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties. 
+
+```xml
+<PropertyGroup>
+  <AssemblyName>MyProjectName</AssemblyName>
+  <PackageId>MyProjectName</PackageId>
+</PropertyGroup>
+```
+
+The `<AssemblyName>` will have a different value then `<PackageId>` if `buildOptions\outputName` property was defined in project.json. 
+For more information, see [Other common build options](#other-common-build-options).
 
 ### version
 
@@ -409,8 +421,7 @@ See also [Files](#files).
 
 ```json
 {
-  "packOptions": {
-    "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
+  "packOptions": {    
     "tags": ["machine learning", "framework"],
     "releaseNotes": "Version 0.9.12-beta",
     "iconUrl": "http://numl.net/images/ico.png",
@@ -421,6 +432,7 @@ See also [Files](#files).
       "type": "git",
       "url": "https://raw.githubusercontent.com/sethjuarez/numl"
     },
+    "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
     "owners": ["Seth Juarez"]
   }
 }
@@ -437,11 +449,11 @@ See also [Files](#files).
   <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   <RepositoryType>git</RepositoryType>
   <RepositoryUrl>https://raw.githubusercontent.com/sethjuarez/numl</RepositoryUrl>
-  <!-- owners is not supported in MSBuild -->
+  <!-- summary and owners is not supported in MSBuild -->
 </PropertyGroup>
 ```
 
-There is no equivalent for the `owners` element in MSBuild.
+There is no equivalent for the `owners` and `summary` element in MSBuild. For `summary`, you can use the `<Description>` property.
 
 ## scripts
 
@@ -484,16 +496,36 @@ Their equivalent in MSBuild are targets:
 }
 ```
 
-All settings in this group should be placed in the project folder into a file called
-*runtimeconfig.template.json*, with options lifted to the root object, 
-like in the following example:
+All settings in this group, except for the "System.GC.Server" property, are placed into a file called
+*runtimeconfig.template.json* in the project folder, with options lifted to the root object during the migration process:
 
 ```json
 {
   "configProperties": {
-    "System.GC.Server": true
+    "System.GC.Concurrent": true,
+    "System.GC.RetainVM": true,
+    "System.Threading.ThreadPool.MinThreads": 4,
+    "System.Threading.ThreadPool.MaxThreads": 25
   }
 }
+```
+
+The "System.GC.Server" property is migrated into the csproj file:
+```xml
+<PropertyGroup>
+  <ServerGarbageCollection>true</ServerGarbageCollection>
+</PropertyGroup>
+```
+
+However, you can set all those values in the csproj as well as MSBuild properties:
+```xml
+<PropertyGroup>
+  <ServerGarbageCollection>true</ServerGarbageCollection>
+  <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+  <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
+  <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
+  <ThreadPoolMaxThreads>25</ThreadPoolMaxThreads>
+</PropertyGroup>
 ```
 
 ## shared
@@ -509,7 +541,7 @@ For more information, see [Including content files](https://docs.microsoft.com/n
 ## files
 
 In *project.json*, build and pack could be extended to compile and embed from different folders.
-In MSBuild, this is done using items. The following example is a common conversion:
+In MSBuild, this is done using [items](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items). The following example is a common conversion:
 
 ```json
 {
@@ -563,8 +595,11 @@ All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.
 Package layout inside the .nupkg can be modified with `PackagePath="path"`.
 
 Except for `Content`, most item groups require explicitly adding `Pack="true"` to 
-be included in the package. By default, this will be put in the *content* folder
-in a package. `PackagePath="%(Identity)"` is a short way of setting package path
+be included in the package. `Content` will be put in the *content* folder
+in a package since the MSBuild `<IncludeContentInPack>` property is set to `true` by default. 
+For more information, see [Including content in a package](https://docs.microsoft.com/nuget/schema/msbuild-targets#including-content-in-a-package).
+
+`PackagePath="%(Identity)"` is a short way of setting package path
 to the project-relative file path.
 
 ## testRunner
@@ -602,8 +637,8 @@ to the project-relative file path.
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-*" />
-  <PackageReference Include="MSTest.TestAdapter" Version="1.1.12" />
-  <PackageReference Include="MSTest.TestFramework" Version="1.0.0-*" />
+  <PackageReference Include="MSTest.TestAdapter" Version="1.1.12-*" />
+  <PackageReference Include="MSTest.TestFramework" Version="1.1.11-*" />
 </ItemGroup>
 ```
 

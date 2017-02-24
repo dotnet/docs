@@ -83,7 +83,7 @@ packages with a shell script that would invoke the DNX you specified to run the 
 
 The CLI does not support this concept. It does, however, support the concept of adding per-project commands that can be 
 invoked using the familiar `dotnet <command>` syntax. More about this can be found in the 
-[extensibility overview](../tools/index.md#extensibility). 
+[extensibility overview](../preview3/tools/index.md#extensibility). 
 
 ### Installing dependencies
 As of v1, the .NET Core CLI tools don't have an `install` command for installing dependencies. In order to install a 
@@ -123,7 +123,7 @@ tools that you wish to use, in this case **1.0.0-preview2-003121**:
 The CLI and DNX both use the same basic project system based on `project.json` file. The syntax and the semantics of the 
 project file are pretty much the same, with small differences based on the scenarios. There are also some changes to 
 the schema which you can see in the [schema file](http://json.schemastore.org/project) or in a more friendly 
-[project.json reference](tools/project-json.md). 
+[project.json reference](../tools/project-json.md). 
 
 If you are building a console application, you need to add the following snippet to your project file:
 
@@ -143,7 +143,7 @@ DNU commands, such as Entity Framework CLI commands, are being ported to be
 per-project extensions to the CLI. If you built your own commands that you are using in your projects, you need to 
 replace them with CLI extensions. In this case, the `commands` node in `project.json` needs to be replaced by the 
 `tools` node and it needs to list the tools dependencies as explained in the 
-[CLI extensibility section](tools/index.md#extensibility). 
+[CLI extensibility section](../preview3/tools/index.md#extensibility). 
 
 After these things are done, you need to decide which type of portability you wish for you app. With .NET Core, we have 
 invested into providing a spectrum of portability options that you can choose from. For instance, you may want to have 
@@ -151,7 +151,7 @@ a fully *portable* application or you may want to have a *self-contained* applic
 like .NET Framework applications work: it needs a shared component to execute it on the target machine 
 (.NET Core). The self-contained application doesn't require .NET Core to be installed on the target, but you have to 
 produce one application for each OS you wish to support. These portability types and more are discussed in the
- [application portability type](../deploying/index.md) document. 
+ [application portability type](../preview3/deploying/index.md) document. 
 
 Once you make a call on what type of portability you want, you need to change your targeted framework(s). If you were 
 writing applications for .NET Core, you were most likely using `dnxcore50` as  your targeted framework. With the CLI 
@@ -167,7 +167,7 @@ for more information.
 
 Your `project.json` is now mostly ready. You need to go through your dependencies list and update the dependencies to 
 their newer versions, especially if you are using ASP.NET Core dependencies. If you were using separate packages for BCL APIs, 
-you can use the runtime package as explained in the [application portability type](../deploying/index.md) document. 
+you can use the runtime package as explained in the [application portability type](../preview3/deploying/index.md) document. 
 
 Once you are ready, you can try restoring with `dotnet restore`. Depending on the version of your dependencies, you 
 may encounter errors if NuGet cannot resolve the dependencies for one of the 

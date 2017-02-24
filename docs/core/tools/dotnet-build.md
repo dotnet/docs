@@ -31,9 +31,9 @@ If the project has third-party dependencies, such as libraries from NuGet, these
 
 Building requires the existence of an asset file (a file that lists all of the dependencies of your application), which means that you have to run [`dotnet restore`](dotnet-restore.md) prior to building the project. Lack of the assets file manifests as the inability of the tooling to resolve reference assemblies which will result in errors. 
 
-`dotnet build` uses MSBuild to build the project, thus it supports both parallel builds and incremental builds. Please refer to [MSBuild documentation](https://github.com/dotnet/docs/pull/1592) to get more information on those topics. 
+`dotnet build` uses MSBuild to build the project, thus it supports both parallel builds and incremental builds. Please refer to [MSBuild documentation](https://docs.microsoft.com/visualstudio/msbuild/msbuild) to get more information on those topics. 
 
-In addition to its options, the `dotnet build` command will accept MSBuild options as well, such as `/p` for setting properties or `/l` to define a logger. You can find out more about these properties in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. If you wish to know when 
+In addition to its options, the `dotnet build` command will accept MSBuild options as well, such as `/p` for setting properties or `/l` to define a logger. You can find out more about these options in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. If you wish to know when 
 
 Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that will produce executable code: 
 

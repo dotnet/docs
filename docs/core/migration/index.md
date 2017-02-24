@@ -22,7 +22,7 @@ This document will cover migration scenarios for .NET Core projects and will go 
 3. Migration from RC3 and previous .NET Core csproj projects to the final format .
 
 ## Migration from project.json to csproj
-Migration from project.json to csproj can be done via the [`dotnet migrate`](../tools/dotnet-migrate.md) command-line tool or through Visual Studio 2017. The command-line tool and Visual Studio 2017 use the same underlying engine to migrate projects, so the results will be the same for both. In most cases, using one of these two ways to migrate the project.json to csproj is the only thing that is needed and no further manual editing of the csproj is necessary. The resulting csproj file will be named per the `name` property in project.json or, lacking that, per containing directory name. 
+Migration from project.json to csproj can be done via the [`dotnet migrate`](../preview3/tools/dotnet-migrate.md) command-line tool or through Visual Studio 2017. The command-line tool and Visual Studio 2017 use the same underlying engine to migrate projects, so the results will be the same for both. In most cases, using one of these two ways to migrate the project.json to csproj is the only thing that is needed and no further manual editing of the csproj is necessary. The resulting csproj file will be named per the `name` property in project.json or, lacking that, per containing directory name. 
 
 Visual Studio 2017 will migrate the project automatically when you open either the `xproj` file or the solution file which references `xproj` files. If a solution file is opened, Visual Studio 2017 will automatically migrate all of the projects that are specified in the solution. 
 
@@ -54,7 +54,7 @@ The .NET Core csproj format has been changing and evolving with each new pre-rel
 * If it doesn't exist, add the `Sdk` attribute to the `<Project>` element and set it to the value of `Microsoft.NET.Sdk`. This attribute specifies that the project uses the Core SDK. 
 **TODO: add other SDKs here**
 * Remove the `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` and `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` statements from the top and bottom of the project. These import statements are implied by the SDK, so there is no need for them to be in the project. 
-* If you have `Microsoft.NETCore.App` or `NETStandard.Library` `<PackageReference>` items in your project, you should remove them. The SDK has these references implied. 
+* If you have `Microsoft.NETCore.App` or `NETStandard.Library` `<PackageReference>` items in your project, you should remove them. These package references are [implied by the SDK](https://aka.ms/sdkimplicitrefs). 
 * Remove the `Microsoft.NET.Sdk` `<PackageReference>` element, if it exists. The SDK reference comes through the `Sdk` attribute on the `<Project>` element. 
 * Remove the globs that are [implied by the SDK](https://aka.ms/sdkimplicititems). Leaving these globs in your project will cause an error on build because compile items will be duplicated. 
 

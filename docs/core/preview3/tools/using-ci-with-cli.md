@@ -138,9 +138,6 @@ for more information.
 
 The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x respectively) in the package, so by installing the SDK you will get everything you need to build. 
 
-A build matrix can be added to run integration tests with multiple version of 
-the .NET Core SDK.
-
 ### AppVeyor
 
 The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK Preview2 already installed in the build worker image `Visual Studio 2015`.

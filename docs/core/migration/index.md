@@ -13,7 +13,7 @@ ms.assetid: 1feadf3d-3cfc-41dd-abb5-a4fc303a7b53
 
 # Migrating .NET Core projects
 
-[!INCLUDE[preview-warning](../../sincludes/warning.md)]
+[!INCLUDE[preview-warning](../../includes/warning.md)]
 
 This document will cover migration scenarios for .NET Core projects and will go over the following three migration scenarios:
 

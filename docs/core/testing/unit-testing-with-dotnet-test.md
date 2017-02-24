@@ -1,5 +1,5 @@
 ---
-title: Unit Testing in .NET Core using dotnet test
+title: Unit Testing in .NET Core using dotnet test | Microsoft Docs
 description: Unit Testing in .NET Core using dotnet test
 keywords: .NET, .NET Core
 author: ardalis
@@ -248,6 +248,3 @@ You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests
 will be seamless, and you can concentrate on the problem at hand. The 
 tools will run automatically.
-   
-   > [!TIP]
-   > On Windows platform you can use MSTest. Find out more in the [Using MSTest on Windows document](./using-mstest-on-windows.md).

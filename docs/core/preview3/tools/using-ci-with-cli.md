@@ -123,6 +123,9 @@ $LOCALDOTNET="./$INSTALLDIR/dotnet"
 ### TravisCI
 
 The [Travis-CI](https://travis-ci.org/) can be configured to install the .NET Core SDK using the `csharp` language and the `dotnet` key.
+See official travis docs about [Building a C#, F#, or Visual Basic Project](https://docs.travis-ci.com/user/languages/csharp/) for more info.
+
+As a note, the `language: csharp` (community maintained) works for all .NET languages (for F# projects too) and support mono.
 
 Just use:
 
@@ -130,7 +133,7 @@ Just use:
 dotnet: 1.0.0-rc4-0044771
 ```
 
-Travis can run both `osx` (OS X 10.11) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
+Travis can run both `osx` (OS X 10.11, OS X 10.12) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
 for more information.
 
 The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x respectively) in the package, so by installing the SDK you will get everything you need to build. 
@@ -148,7 +151,7 @@ os: Visual Studio 2015
 It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 
 for more info. 
 
-In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to `PATH` environment variable.
+In the example, the .NET Core SDK binaries are downloaded and unzipped in a subdirectory, using the install script, and added to `PATH` environment variable.
 
 A build matrix can be added to run integration tests with multiple version of 
 the .NET Core SDK.
@@ -157,12 +160,11 @@ the .NET Core SDK.
 environment:
   matrix:
     - CLI_VERSION: 1.0.0-preview2-003121
+    - CLI_VERSION: 1.0.0-rc4-004771
     - CLI_VERSION: Latest
 
 install:
-  # .NET Core SDK binaries
-  - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
-  # follow normal installation from binaries
+  # see example appveyor.yml for install script
 ```
 
 ### Visual Studio Team Services

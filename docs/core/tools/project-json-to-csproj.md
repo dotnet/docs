@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 02/23/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -470,7 +470,7 @@ property is mapped to the [`description`](#-other-common-root-level-options) ele
 }
 ```
 
-Their equivalent in MSBuild are targets:
+Their equivalent in MSBuild are [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets):
 
 ```xml
 <Target Name="MyPreCompileTarget" BeforeTargets="Build">

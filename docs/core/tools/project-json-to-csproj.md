@@ -278,7 +278,9 @@ dependency version of a project reference.
 ```
 
 There is no equivalent in csproj. The `Microsoft.NETCore.App` metapackage is implicitly referenced based on the target framework of your app.
+<!-- todo: add this when changes to csproj.md are merged
 For more information, see [Implicit package references](../preview3/tools/csproj.md#implicit-package-references).
+-->
 
 ## runtimes
 ```json
@@ -647,4 +649,4 @@ to the project-relative file path.
 ## See Also
 [project.json reference](project-json.md)
 
-[High-level overview of changes in CLI](../preview3/layering.md)
+[High-level overview of changes in CLI](../preview3/tools/layering.md)

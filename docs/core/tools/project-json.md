@@ -1660,3 +1660,6 @@ For example:
     "userSecretsId": "aspnet-WebApp1-c23d27a4-eb88-4b18-9b77-2a93f3b15119"
 }
 ```
+
+## See Also
+[A mapping between project.json and csproj properties](project-json-to-csproj.md)

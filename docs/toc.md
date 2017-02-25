@@ -171,6 +171,7 @@
 ### [Dependency management](core/preview3/tools/dependencies.md)
 ### [Deploying applications](core/preview3/deploying/index.md)
 ### [Additions to the csproj format](core/preview3/tools/csproj.md)
+### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Telemetry](core/preview3/tools/telemetry.md)
 ### [Extensibility Model](core/preview3/tools/extensibility.md)
 ### [Continuous Integration](core/preview3/tools/using-ci-with-cli.md)

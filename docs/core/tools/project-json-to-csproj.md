@@ -422,6 +422,7 @@ See also [Files](#files).
 ```json
 {
   "packOptions": {    
+    "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
     "tags": ["machine learning", "framework"],
     "releaseNotes": "Version 0.9.12-beta",
     "iconUrl": "http://numl.net/images/ico.png",
@@ -432,7 +433,6 @@ See also [Files](#files).
       "type": "git",
       "url": "https://raw.githubusercontent.com/sethjuarez/numl"
     },
-    "summary": "numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.",
     "owners": ["Seth Juarez"]
   }
 }
@@ -440,7 +440,7 @@ See also [Files](#files).
 
 ```xml
 <PropertyGroup>
-  <Title>numl is a machine learning library intended to ease the use of using standard modeling techniques for both prediction and clustering.</Title>
+  <!-- summary is not migrated from project.json, but you can use the <Description> property for that if needed. -->
   <PackageTags>machine learning;framework</PackageTags>
   <PackageReleaseNotes>Version 0.9.12-beta</PackageReleaseNotes>
   <PackageIconUrl>http://numl.net/images/ico.png</PackageIconUrl>
@@ -449,11 +449,13 @@ See also [Files](#files).
   <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   <RepositoryType>git</RepositoryType>
   <RepositoryUrl>https://raw.githubusercontent.com/sethjuarez/numl</RepositoryUrl>
-  <!-- summary and owners is not supported in MSBuild -->
+  <!-- owners is not supported in MSBuild -->
 </PropertyGroup>
 ```
 
-There is no equivalent for the `owners` and `summary` element in MSBuild. For `summary`, you can use the `<Description>` property.
+There is no equivalent for the `owners` element in MSBuild. 
+For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that 
+property is mapped to the [`description`](#-other-common-root-level-options) element.
 
 ## scripts
 
@@ -604,7 +606,7 @@ to the project-relative file path.
 
 ## testRunner
 
-### xunit
+### xUnit
 
 ```json
 {
@@ -623,7 +625,7 @@ to the project-relative file path.
 </ItemGroup>
 ```
 
-### mstest
+### MSTest
 
 ```json
 {

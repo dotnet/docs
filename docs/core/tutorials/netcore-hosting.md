@@ -21,7 +21,7 @@ This article gives an overview of the steps necessary to start the .NET Core run
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio 2015](https://www.visualstudio.com/downloads/)).
+Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://www.visualstudio.com/downloads/)).
 
 You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://www.microsoft.com/net/core) and [build a small .NET Core test app](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
@@ -29,15 +29,15 @@ This tutorial and its [associated sample](https://github.com/dotnet/docs/tree/ma
 
 ## Creating the host
 
-A sample host demonstrating the steps outlined in this article is available in our [.NET Core samples](https://github.com/dotnet/docs/tree/master/samples/core/hosting). Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.
+A sample host demonstrating the steps outlined in this article is available in our [.NET Core samples](https://github.com/dotnet/docs/tree/master/samples/core/hosting) repository. Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.
 
-Keep in mind that the sample host is meant to be used for learning purposes so it is light on error checking and bears a design that emphasizes readability over efficiency. More real-world host samples are available in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository. The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun), in particular, is a good general-purpose host to study after reading through the simpler sample.
+Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency. More real-world host samples are available in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository. The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun), in particular, is a good general-purpose host to study after reading through the simpler sample.
 
 ### A note about mscoree.h
 The primary .NET Core hosting interface (`ICLRRuntimeHost2`) is defined in [MSCOREE.IDL](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL). A header version of this file (mscoree.h), which your host will need to reference, is produced via MIDL when the [.NET Core runtime](https://github.com/dotnet/coreclr/) is built. If you do not want to build the .NET Core runtime, mscoree.h is also available as a [pre-built header](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc) in the dotnet/coreclr repository. [Instructions on building the .NET Core runtime](https://github.com/dotnet/coreclr#building-the-repository) can be found in its GitHub repository. 
 
 ### Step 1 - Identify the managed entry point
-After referencing necessary headers ([mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h) and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using. In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose main method will be executed.
+After referencing necessary headers ([mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h) and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using. In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose `main` method will be executed.
 
 [!code-cpp[NetCoreHost#1](../../../samples/core/hosting/host.cpp#1)]
 
@@ -67,7 +67,7 @@ hr = runtimeHost->Start();
 ```
 
 ### Step 5 - Preparing AppDomain settings
-Once the runtime is started, we will want to setup an AppDomain. There are a number of options that must be specified when creating a .NET AppDomain, however, so it's necessary to prepare those first.
+Once the runtime is started, we will want to set up an AppDomain. There are a number of options that must be specified when creating a .NET AppDomain, however, so it's necessary to prepare those first.
 
 AppDomain flags specify AppDomain behaviors related to security and interop. Older Silverlight hosts used these settings to sandbox user code, but most modern .NET Core hosts run user code as full trust and enable interop.
 
@@ -80,7 +80,7 @@ Common AppDomain properties include:
 * `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Unix) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
 * `APP_PATHS` This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. These paths are meant to be the locations where users' assemblies can be found. In a sandboxed AppDomain, assemblies loaded from these paths will only be granted partial trust. Common APP_PATH paths include the path the target app was loaded from or other locations where user assets are known to live.
 *  `APP_NI_PATHS` This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
-*  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe in when looking for native DLLs called via p/invoke.
+*  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
 *  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 *  `AppDomainCompatSwitch` This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against). Typically, this should be set to `"UseLatestBehaviorWhenTFMNotSpecified"` but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.
 
@@ -89,7 +89,7 @@ In our [simple sample host](https://github.com/dotnet/docs/tree/master/samples/c
 [!code-cpp[NetCoreHost#6](../../../samples/core/hosting/host.cpp#6)]
 
 ### Step 6 - Create the AppDomain
-Once all AppDomain flags and properties are prepared, `ICLRRuntimeHost2::CreateAppDomainWithManager` can be used to setup the AppDomain. This function optionally takes a fully-qualified assembly name and type name to use as the domain's AppDomain manager. An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.   
+Once all AppDomain flags and properties are prepared, `ICLRRuntimeHost2::CreateAppDomainWithManager` can be used to set up the AppDomain. This function optionally takes a fully qualified assembly name and type name to use as the domain's AppDomain manager. An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.   
 
 [!code-cpp[NetCoreHost#7](../../../samples/core/hosting/host.cpp#7)]
 
@@ -136,7 +136,7 @@ An example of using coreclrhost.h (instead of mscoree.h directly) can be seen in
 7. Use `coreclr_shutdown` to unload the AppDomain and shut down the runtime. 
 
 ## Conclusion
-Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects. When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables produced by `dotnet publish` for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user's code is compiled into a dll of the same name. 
+Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects. When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables produced by `dotnet publish` for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name. 
 
 If things don't work initially, double-check that *coreclr.dll* is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32- or 64-bit) matches how the host was built.
 

@@ -56,7 +56,7 @@ The `is` statement is true if:
 
 - *expr* is an instance of a type that derives from *type*. In other words, the result of *expr* can be upcast to an instance of *type*.
 
-- *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its type declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
+- *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
 
 - *expr* is an instance of a type that implements the *type* interface.
 
@@ -99,7 +99,7 @@ The `is` expression is `true` if any of the following is true:
 
 - *expr* is an instance of a type that derives from *type*. In other words, the result of *expr* can be upcast to an instance of *type*.
 
-- *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its type declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
+- *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
 
 - *expr* is an instance of a type that implements the *type* interface.
 

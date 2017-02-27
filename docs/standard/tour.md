@@ -49,21 +49,29 @@ The following two lines both allocate memory:
 
 There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
-Types within a given scope normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the `using` statement:
-
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L6-L9)]
-
-Once the `using` block completes, the GC will know that the `stream` object in the previous example is free to be collected and its memory reclaimed.
-
-Rules for this have slightly different semantics in F#.  To learn more about resource management in F#, check out [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
-
 One of the less obvious but quite far-reaching features that a garbage collector enables is memory safety. The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed). Dangling pointers are always bugs, and tracking them down is often quite difficult.
 
 The .NET runtime provides additional services, to complete the promise of memory safety, not naturally offered by a GC. It ensures that programs do not index off the end of an array or accessing a phantom field off the end of an object.
 
 The following example will throw an exception as a result of memory safety.
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L11-L12)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
+
+## Handling unmanaged resources
+
+Some objects work with *unmanaged resources*: resources that are not automatically handled by the .NET runtime.  For example, @System.IO.FileStream objects operate on file handles provided by the operating system.  You will need to let the FileStream know when you are done using it, so that the FileStream can release the file handle back to the operating system.
+
+In .NET, objects that work with unmanaged resources implement the @System.IDisposable interface.  When you are done using the object, you call the object's @System.IDisposable.Dispose method.  .NET languages provide a convenient `using` syntax for such objects, as in the following example:
+
+[!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
+
+Once the `using` block completes, the .NET runtime will automatically call the `stream` object's @System.IDisposable.Dispose method.  The runtime will also do this if an exception causes control to leave the block.
+
+For more details, check out the following pages:
+
+* For C#, [using Statement](../csharp/language-reference/keywords/using-statement.md)
+* For F#, [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
+* For Visual Basic, [Using Statement](../visual-basic/language-reference/statements/using-statement.md)
 
 ## Type safety
 

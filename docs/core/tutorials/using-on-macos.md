@@ -165,7 +165,7 @@ You now have a built `library.dll` file under `golden/src/library/bin/Debug/nets
 
 ### Writing the test project
 
-Let's build a test project for this library that you've build. Cd into the `test/test-library`
+Let's build a test project for this library that you've built. Cd into the `test/test-library`
 directory. Run `dotnet new -t xunittest` to create a new test project. 
 
 You'll need to add a dependency node for the library you wrote in the steps

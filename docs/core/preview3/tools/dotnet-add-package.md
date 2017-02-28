@@ -17,7 +17,18 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 
 ## Name
 
-`dotnet-add package` - Adds a package reference to a project file. After running the command, there is a compatibility check to ensure the package attempting to be added is compatible with all of the frameworks in the project. If the check passes, a restore is run and the `<PackageReference>` fragment is added to the project file.
+`dotnet-add package`
+
+## Synopsis
+
+```
+dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version] [-f|--framework] [-s|--source] [--package-directory] [-h|--help]
+dotnet add package [-h|--help]
+```
+
+## Description
+
+The `dotnet add package` - Adds a package reference to a project file. After running the command, there is a compatibility check to ensure the package attempting to be added is compatible with all of the frameworks in the project. If the check passes, a restore is run and the `<PackageReference>` fragment is added to the project file.
 
 For example, adding Newtonsoft.Json to ToDo.csproj produces the following output:
 
@@ -36,24 +47,13 @@ info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks
 info : PackageReference for package 'Newtonsoft.Json' version '9.0.1' added to file 'ToDo.csproj'.
 ```
 
-The ToDo.csproj file now contains `<PackageReference>` fragment for the referenced package.
+The ToDo.csproj file now contains [`<PackageReference>`](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) fragment for the referenced package.
 
 ```xml
 <PackageReference Include="Newtonsoft.Json">
     <Version>9.0.1</Version>
 </PackageReference>
 ```
-
-## Synopsis
-
-```
-dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version] [-f|--framework] [-s|--source] [--package-directory] [-h|--help]
-dotnet add package [-h|--help]
-```
-
-## Description
-
-The `dotnet add package` command provides a convenient option to add a NuGet package reference to a project.
 
 ## Arguments
 

@@ -28,7 +28,7 @@ dotnet add reference [-h|--help]
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` fragments are added to the project file.
+The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items) fragments are added to the project file.
 
 ```xml
 <ItemGroup>
@@ -70,7 +70,7 @@ Add multiple project references:
 
 `dotnet add reference lib1/lib1.csproj lib2/lib2.csproj`
 
-Add multiple project references using globbing pattern:
+Add multiple project references using globbing pattern on Linux/Unix:
 
 `dotnet add app/app.csproj reference **/*.csproj`
 

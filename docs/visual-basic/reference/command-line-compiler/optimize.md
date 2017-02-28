@@ -1,5 +1,5 @@
 ---
-title: "-optimize | Microsoft Docs"
+title: "/optimize | Microsoft Docs"
 
 ms.date: "2015-07-20"
 ms.prod: .net

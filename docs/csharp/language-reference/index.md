@@ -1,6 +1,6 @@
 ---
 title: "C# Reference | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-02-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # C# Reference
-This section provides reference material about C# keywords, operators, compiler errors, and warnings.  
+This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
   
 ## In This Section  
  [C# Keywords](../../csharp/language-reference/keywords/index.md)  
@@ -42,7 +42,10 @@ This section provides reference material about C# keywords, operators, compiler 
   
  [C# Operators](../../csharp/language-reference/operators/index.md)  
  Provides links to information about C# operators and syntax.  
-  
+
+ [C# Special Characters](../../csharp/language-reference/tokens/index.md)  
+ Provides links to information about special contextual characters in C# and their usage.  
+
  [C# Preprocessor Directives](../../csharp/language-reference/preprocessor-directives/index.md)  
  Provides links to information about compiler commands for embedding in C# source code.  
   

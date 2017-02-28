@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 02/24/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -27,7 +27,7 @@ upgrading your project to the latest version of the tooling.
 ## The csproj format
 
 The new format, \*.csproj, is an XML-based format. The following example shows the root node of a 
-.NET Core project using the new `Microsoft.NET.Sdk` metapackage. For web projects, the metapackage used is 
+.NET Core project using the `Microsoft.NET.Sdk`. For web projects, the SDK used is 
 `Microsoft.NET.Sdk.Web`.
 
 ```xml

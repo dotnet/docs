@@ -418,13 +418,13 @@
 
 ## [Developing Applications](visual-basic/developing-apps/index.md)
 
-### [Using the Visual Basic Development Environment](visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)
-#### [Visual Basic Settings](visual-basic/developing-apps/using-ide/settings.md)
-#### [Visual Basic IntelliSense Code Snippets](visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)
+### [Using the Visual Basic Development Environment](https://docs.microsoft.com/visualstudio/ide/visual-studio-ide)
+#### [Visual Basic Settings](https://docs.microsoft.com/visualstudio/ide/reference/general-user-interface-elements-visual-studio)
+#### [Visual Basic IntelliSense Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets)
 #### [Refactoring](https://docs.microsoft.com/en-us/visualstudio/vb-ide/refactoring-vb)
 #### [Code Generation](https://docs.microsoft.com/en-us/visualstudio/vb-ide/code-generation-vb)
-#### [Help for Event Handlers in Visual Basic Code](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
-#### [How to: Compile and Run a Project in Visual Basic](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
+#### [Help for Event Handlers in Visual Basic Code](https://docs.microsoft.com/visualstudio/ide/using-intellisense)
+#### [How to: Compile and Run a Project in Visual Basic](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio)
 
 ### [Programming in Visual Basic](visual-basic/developing-apps/programming/index.md)
 #### [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
@@ -444,7 +444,7 @@
 #### [How My Depends on Project Type](visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
 
 ### [Accessing Data](visual-basic/developing-apps/accessing-data.md)
-### [Debugging](visual-basic/developing-apps/debugging.md)
+### [Debugging](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)
 ### [Creating and Using Components](visual-basic/developing-apps/creating-and-using-components.md)
 
 ### [Printing and Reporting](visual-basic/developing-apps/printing/printing-and-reporting.md)

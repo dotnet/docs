@@ -4,7 +4,7 @@ description: The dotnet-remove reference command provides a convenient option to
 keywords: dotnet-remove , CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 02/16/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -17,52 +17,49 @@ ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 
 ## Name
 
-`dotnet-remove reference` - Remove project to project references.
+`dotnet-remove reference` - Removes project to project references.
 
 ## Synopsis
 
 ```
-dotnet remove [<PROJECT>] reference [-f|--framework] [args] [-h|--help]
+dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES>
 dotnet remove reference [-h|--help]
 ```
 
 ## Description
 
-The `dotnet remove reference` command provides a convenient option to remove a project references from a project.
+The `dotnet remove reference` command provides a convenient option to remove project references from a project.
 
 ## Arguments
 
 `PROJECT`
 
-Project name to use. If not specified, the command will search the current directory for one.
+Project file to operate on. If not specified, the command will search the current directory for one.
 
-## Additional arguments
+`PROJECT_REFERENCES`
 
-`<project>`
-
-Project to project references to remove. A project or multiple projects to the project file. Glob pattern is supported on Unix/Linux based terminals.
+Project to project references to remove. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux based terminals.
 
 ## Options
 
-`-f|--framework`
-
-Remove reference only when targetting a specific framework
-
 `-h|--help`
 
-Show help information for the command and/or argument
+Prints out a short help for the command.
+
+`-f|--framework <FRAMEWORK>`
+
+Removes reference only when targeting a specific framework.
 
 ## Examples
 
-Remove a project reference:
+Remove a project reference from the specified project:
 
 `dotnet remove app/app.csproj reference lib/lib.csproj`
 
-Remove multiple project references:
+Remove multiple project references from the project in the current directory:
 
 `dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj`
 
 Remove multiple project references using globbing pattern:
 
 `dotnet remove app/app.csproj reference **/*.csproj`
-

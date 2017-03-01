@@ -4,7 +4,7 @@ description: The dotnet-add reference command provides a convenient option to ad
 keywords: dotnet-add , CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 02/16/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -17,12 +17,12 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 
 ## Name
 
-`dotnet-add reference` - Add project to project references.
+`dotnet-add reference` - Adds project to project references.
 
 ## Synopsis
 
 ```
-dotnet add [<PROJECT>] reference [-f|--framework] [args] [-h|--help]
+dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES>
 dotnet add reference [-h|--help]
 ```
 
@@ -42,23 +42,21 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 `PROJECT`
 
-Project name to use. If not specified, the command will search the current directory for one.
+Project file to operate on. If not specified, the command will search the current directory for one.
 
-## Additional arguments
+`PROJECT_REFERENCES`
 
-`<project>`
-
-Project to project references to add. A project or multiple projects to the project file. Glob pattern is supported on Unix/Linux based terminals.
+Project to project references to add. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux-based terminals.
 
 ## Options
 
-`-f|--framework <FRAMEWORK>`
-
-Add project references only when targeting a specific framework.
-
 `-h|--help`
 
-Prints out a short help for the command or argument.
+Prints out a short help for the command.
+
+`-f|--framework <FRAMEWORK>`
+
+Adds project references only when targeting a specific framework.
 
 ## Examples
 
@@ -73,4 +71,3 @@ Add multiple project references:
 Add multiple project references using globbing pattern on Linux/Unix:
 
 `dotnet add app/app.csproj reference **/*.csproj`
-

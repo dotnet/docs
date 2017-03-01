@@ -184,20 +184,20 @@
 ### [dotnet-nuget-delete](core/preview3/tools/dotnet-nuget-delete.md)
 ### [dotnet-nuget-locals](core/preview3/tools/dotnet-nuget-locals.md)
 ### [dotnet-nuget-push](core/preview3/tools/dotnet-nuget-push.md)
-### Project modification commands
-#### References
-##### [dotnet-add-reference.md](core/preview3/tools/dotnet-add-reference.md)
-##### [dotnet-remove-reference.md](core/preview3/tools/dotnet-remove-reference.md)
-##### [dotnet-list-reference.md](core/preview3/tools/dotnet-list-reference.md)
-#### Pacakages
-##### [dotnet-add-package.md](core/preview3/tools/dotnet-add-package.md)
-##### [dotnet-remove-package.md](core/preview3/tools/dotnet-remove-package.md)
 ### [dotnet-pack](core/preview3/tools/dotnet-pack.md)
 ### [dotnet-publish](core/preview3/tools/dotnet-publish.md)
 ### [dotnet-restore](core/preview3/tools/dotnet-restore.md)
 ### [dotnet-run](core/preview3/tools/dotnet-run.md)
 ### [dotnet-sln](core/preview3/tools/dotnet-sln.md)
 ### [dotnet-test](core/preview3/tools/dotnet-test.md)
+### Project modification commands
+#### References
+##### [dotnet-add-reference](core/preview3/tools/dotnet-add-reference.md)
+##### [dotnet-list-reference](core/preview3/tools/dotnet-list-reference.md)
+##### [dotnet-remove-reference](core/preview3/tools/dotnet-remove-reference.md)
+#### Packages
+##### [dotnet-add-package](core/preview3/tools/dotnet-add-package.md)
+##### [dotnet-remove-package](core/preview3/tools/dotnet-remove-package.md)
 ### [global.json](core/preview3/tools/global-json.md)
 ### [Tutorials](core/preview3/tutorials/index.md)
 #### [Getting started with .NET Core on Windows/Linux/macOS using the command line](core/preview3/tutorials/using-with-xplat-cli-msbuild.md)

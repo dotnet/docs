@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 03/01/2017
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -184,7 +184,7 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
 </PropertyGroup>
 ```
 
-Note that the `<RuntimeFrameworkVersion>` changed to the latest patch version installed in the machine for version 1.0.x.
+Note that the `<RuntimeFrameworkVersion>` value in the migrated project is determined by the version of the SDK you have installed.
 
 ### Top-level dependencies
 ```json
@@ -299,6 +299,20 @@ dependency version of a project reference.
   <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.0" PrivateAssets="All" />
 </ItemGroup>
 ```
+
+#### type: platform
+```json
+{
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "version": "1.1.0",
+      "type": "platform"
+    }
+  }
+}
+```
+
+There is no equivalent in csproj. 
 
 ## runtimes
 ```json

@@ -213,18 +213,18 @@ As you keep extending these scenarios, you may find that you build more
 `if` and `else if` statements. Once that becomes unwieldy, you'll likely
 want to switch to `switch` pattern expressions.
 
-### `switch` expressions
+### `switch` statement updates
 
-The `switch` pattern expression has a familiar syntax, based on the `switch`
+The *match expression* has a familiar syntax, based on the `switch`
 statement already part of the C# language. Let's translate the existing code
-to use a `switch` expression before adding new cases: 
+to use a match expression before adding new cases: 
 
 [!code-csharp[SumUsingSwitch](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#16_SumUsingSwitch "Sum using switch")]
 
-The `switch` expressions have a slightly different syntax than the `is` expressions, where
+The match expressions have a slightly different syntax than the `is` expressions, where
 you declare the type and variable at the beginning of the `case` expression.
 
-The `switch` expressions also support constants. This can save time by
+The match expressions also support constants. This can save time by
 factoring out simple cases:
 
 [!code-csharp[SwitchWithConstants](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#17_SwitchWithConstants "Switch with constants")]
@@ -234,7 +234,9 @@ as a special case when there is no input. This demonstrates one important
 new feature in switch pattern expressions: the order of the `case`
 expressions now matters. The `0` case must appear before the general `int`
 case. Otherwise, the first pattern to match would be the `int` case,
-even when the value is `0`.
+even when the value is `0`. If you acccidentally order match expressions such
+that a later case has already been handled, the compiler will flag that
+and generate an error.
 
 This same behavior enables the special case for an empty input sequence.
 You can see that the case for an `IEnumerable` item that has elements
@@ -258,7 +260,7 @@ the percentile die:
 
 [!code-csharp[18_PercentileDie](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#18_PercentileDie "Percentile Die type")]
 
-Then, add a `case` expression for the new type:
+Then, add a `case` match expression for the new type:
 
 [!code-csharp[SwitchWithNewTypes](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#19_SwitchWithNewTypes "Include Percentile Die type")]
 

@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 02/24/2017
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -27,7 +27,7 @@ upgrading your project to the latest version of the tooling.
 ## The csproj format
 
 The new format, \*.csproj, is an XML-based format. The following example shows the root node of a 
-.NET Core project using the new `Microsoft.NET.Sdk` metapackage. For web projects, the metapackage used is 
+.NET Core project using the `Microsoft.NET.Sdk`. For web projects, the SDK used is 
 `Microsoft.NET.Sdk.Web`.
 
 ```xml
@@ -112,6 +112,23 @@ And it's really great!</Description>
 
 ## frameworks
 
+### One target framework
+```json
+{
+  "frameworks": {
+    "netcoreapp1.0": {}
+  }
+}
+```
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netcoreapp1.0</TargetFramework>
+</PropertyGroup>
+```
+
+### Multiple target frameworks
+
 ```json
 {
   "frameworks": {
@@ -135,7 +152,7 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
 > If the dependency is a **project** and not a package, the format is different. 
 > For more information, see the [dependency type](#dependency-type) section.
 
-### .NET Standard metapackage
+### NETStandard.Library metapackage
 
 ```json
 {
@@ -150,6 +167,24 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
   <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
 </PropertyGroup>
 ```
+
+### Microsoft.NETCore.App metapackage
+
+```json
+{
+  "dependencies": {
+    "Microsoft.NETCore.App": "1.0.0"
+  }
+}
+```
+
+```xml
+<PropertyGroup>
+  <RuntimeFrameworkVersion>1.0.3</RuntimeFrameworkVersion>
+</PropertyGroup>
+```
+
+Note that the `<RuntimeFrameworkVersion>` value in the migrated project is determined by the version of the SDK you have installed.
 
 ### Top-level dependencies
 ```json
@@ -277,10 +312,7 @@ dependency version of a project reference.
 }
 ```
 
-There is no equivalent in csproj. The `Microsoft.NETCore.App` metapackage is implicitly referenced based on the target framework of your app.
-<!-- todo: add this when changes to csproj.md are merged
-For more information, see [Implicit package references](../preview3/tools/csproj.md#implicit-package-references).
--->
+There is no equivalent in csproj. 
 
 ## runtimes
 ```json

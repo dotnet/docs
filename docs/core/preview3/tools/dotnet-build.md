@@ -54,7 +54,7 @@ In order to build an executable application instead of a library, you need to se
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -70,11 +70,11 @@ Defines a configuration under which to build.  If omitted, it defaults to `Debug
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
 
-Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md). 
+Target runtime to build for. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md).
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Defines what `*` should be replaced with in the version field in the project file. The format follows NuGet's version guidelines. 
+Defines what `*` should be replaced with in the version field in the project file. The format follows NuGet's version guidelines.
 
 `--build-profile`
 

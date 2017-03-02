@@ -61,7 +61,7 @@ As of F# 4.1, you can also create `struct` tuples.  These also interoperate full
 
 [!code-fsharp[Tuples](../../samples/snippets/fsharp/tour.fs#L205-L218)]
 
-It's important to note that because `struct` tuples are value types, they are cannot be implicitly converted to reference tuples, or vice versa.  You must explicitly convert between a reference and struct tuple.
+It's important to note that because `struct` tuples are value types, they cannot be implicitly converted to reference tuples, or vice versa.  You must explicitly convert between a reference and struct tuple.
 
 ## Pipelines and Composition
 
@@ -165,7 +165,7 @@ One special case of Discriminated Union types is the Option Type, which is so us
 
 One unique feature of F#'s type system is the ability to provide context for numeric literals through Units of Measure.
 
-[Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, and eliminate runtime errors associated with that kind of work.
+[Units of Measure](language-reference/units-of-measure.md) allow you to associate a numeric type to a unit, such as Meters, and have functions perform work on units rather than numeric literals.  This enables the compiler to verify that the types of numeric literals passed in make sense under a certain context, thus eliminating runtime errors associated with that kind of work.
 
 [!code-fsharp[UnitsOfMeasure](../../samples/snippets/fsharp/tour.fs#L818-L839)]
 

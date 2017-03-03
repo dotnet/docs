@@ -97,7 +97,7 @@ a replacement for the `tools` node in `project.json`.
 ### Version
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
-* RuntimeIdentifiers
+## RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../../rid-catalog.md) for the project. 
 RIDs enable publishing a self-contained deployments. 
 

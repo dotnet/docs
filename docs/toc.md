@@ -243,7 +243,7 @@
 ### [Interfaces](csharp/programming-guide/interfaces/index.md)
 ### [Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)
 #### [Methods](csharp/methods.md)
-#### [🔧 Lambda Expressions](csharp/lambda-expressions.md)
+#### [Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
 ### [Generics](csharp/programming-guide/generics/index.md)

@@ -1,10 +1,13 @@
 ---
 title: "nameof (C# and Visual Basic Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-03"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
+f1_keywords: 
+  - "nameof_CSharpKeyword"
+  - "nameof"
 dev_langs: 
   - "CSharp"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
@@ -27,7 +30,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # nameof (C# and Visual Basic Reference)
-Used to obtain the simple (unqualified) string name of a variable, type, or member.  When reporting errors in code, hooking up model-view-controller (MVC) links, firing property changed events, etc., you often want to capture the string name of a method.  Using `nameof` helps keep your code valid when renaming definitions.  Before you had to use string literals to refer to definitions, which is brittle when renaming code elements because tools do not know to check these string literals.  
+
+Used to obtain the simple (unqualified) string name of a variable, type, or member.  
+
+When reporting errors in code, hooking up model-view-controller (MVC) links, firing property changed events, etc., you often want to capture the string name of a method.  Using `nameof` helps keep your code valid when renaming definitions.  Before, you had to use string literals to refer to definitions, which is brittle when renaming code elements because tools do not know to check these string literals.  
   
  A `nameof` expression has this form:  
   

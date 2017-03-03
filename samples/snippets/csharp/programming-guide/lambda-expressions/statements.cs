@@ -4,7 +4,7 @@ public class Example
 {
    // <Snippet1>
    delegate void TestDelegate(string s);
-   // <Snippet1>
+   // </Snippet1>
    
    public static void Main()
    {

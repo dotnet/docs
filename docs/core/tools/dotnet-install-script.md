@@ -67,7 +67,7 @@ Path to install to. The directory is created if it doesn't exist. The default va
 
 `-Architecture [ARCH]`
 
-Architecture of the .NET Core binaries to be installed. Possible values are <auto>, x64 and x86. The default value is <auto>, which represents currently running OS architecture.
+Architecture of the .NET Core binaries to be installed. Possible values are &lt;auto&gt;, x64 and x86. The default value is &lt;auto&gt;, which represents currently running OS architecture.
 
 `-SharedRuntime`
 
@@ -119,7 +119,7 @@ Path to where to install. The directory is created if it doesn't exist. The defa
 
 `--architecture [ARCH]`
 
-Architecture of the .NET binaries to be installed. Possible values are <auto>, x64 and amd64. The default value is <auto>, which represents currently running OS architecture.
+Architecture of the .NET binaries to be installed. Possible values are &lt;auto&gt;, x64 and amd64. The default value is &lt;auto&gt;, which represents currently running OS architecture.
 
 `--shared-runtime`
 

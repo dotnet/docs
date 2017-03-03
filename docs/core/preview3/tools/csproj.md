@@ -4,7 +4,7 @@ description: Learn about the differences between existing and .NET Core csproj f
 keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 02/28/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -20,23 +20,16 @@ This document outlines the changes that were added to the project files as part 
 see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
 
 ## Implicit package references
-Metapackages are now implicitly referenced based on the target framework specified in the `<TargetFramework>` property of your project file. 
+Metapackages are now implicitly referenced based on the target framework specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. 
 If the target framework is `netcoreap1.x`, the proper version of the `Microsoft.NETCore.App` metapackage is referenced. 
 Otherwise, if the target framework is `netstandard1.x`, the proper version of the `NetStandard.Library` metapackage is referenced.
 
 As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, `dotnet restore`). 
 
-### Migrating a project
-If you have an existing reference to the metapackage in your *project.json*, the migration (both in `dotnet migrate` as well as Visual Studio 2017) will keep that reference in your new *csproj* project. This will cause the tools to issue the following warning when you try to build your project:
-
-> A PackageReference for [metapackage ID] was included in your project. This package is implicitly referenced by the .NET SDK and you do not typically need to reference it from your project. For more information, see https://aka.ms/sdkimplicitrefs.
-
-Since the metapackage version is now implicitly referenced, we recommend that you remove that package reference from your project file. Otherwise, the specified version of the metapackage will be used.
-
 ### Recommendations
 Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now implicitly referenced, the following are our recommended best practices:
 
-* Never have an explicit reference to any metapackage via the `<PackageReference>` property in your project file.
+* Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
 * If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
     * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
 * If you need a specific version of the `NetStandard.Library` metapackage, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need. 
@@ -93,54 +86,24 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 #### Version
 `Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
 
-#### IncludeAssets
+#### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
-The attribute can contain one or more of the following values:
-
-* `Compile` – the contents of the lib folder are available to compile against.
-* `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the contentfiles folder are used.
-* `Build` – the props/targets in the build folder are used.
-* `Native` – the contents from native assets are copied to the output folder for runtime.
-* `Analyzers` – the analyzers are used.
-
-Alternatively, the attribute can contain:
-
-* `None` – none of the assets are used.
-* `All` – all assets are used.
-
-#### ExcludeAssets
 `ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
-The attribute can contain one or more of the following values:
-
-* `Compile` – the contents of the lib folder are available to compile against.
-* `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the contentfiles folder are used.
-* `Build` – the props/targets in the build folder are used.
-* `Native` – the contents from native assets are copied to the output folder for runtime.
-* `Analyzers` – the analyzers are used.
-
-Alternatively, the element can contain:
-
-* `None` – none of the assets are used.
-* `All` – all assets are used.
-
-#### PrivateAssets
 `PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed but that they should not flow to the next project. 
 
 > [!NOTE]
-> This is a new term for *project.json*/*xproj* `SuppressParent` element. 
+> `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
 
-The attribute can contain one or more of the following values:
+These attributes can contain one or more of the following items:
 
 * `Compile` – the contents of the lib folder are available to compile against.
 * `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the contentfiles folder are used.
+* `ContentFiles` – the contents of the *contentfiles* folder are used.
 * `Build` – the props/targets in the build folder are used.
 * `Native` – the contents from native assets are copied to the output folder for runtime.
 * `Analyzers` – the analyzers are used.
@@ -150,7 +113,7 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-* DotnetCliToolReference
+### DotnetCliToolReference
 `<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's 
 a replacement for the `tools` node in *project.json*. 
 
@@ -161,7 +124,7 @@ a replacement for the `tools` node in *project.json*.
 #### Version
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
-* RuntimeIdentifiers
+### RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../../rid-catalog.md) for the project. 
 RIDs enable publishing a self-contained deployments. 
 

@@ -200,7 +200,7 @@ A URL for a 64x64 image with transparent background to use as the icon for the p
 Release notes for the package.
 
 ### PackageTags
-A list of tags that designates the package. The list is represented as a list of tags that are semicolon-separated. 
+A semicolon-delimited list of tags that designates the package.
 
 ### PackageOutputPath
 Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`. 
@@ -210,9 +210,6 @@ This Boolean value indicates whether the package should create an additional sym
 
 ### IncludeSource
 This Boolean value indicates whether the pack process should create a source package. The source package contains the library's source code as well as PDB files. Source files are put under the `src/ProjectName` directory in the resulting package file. 
-
-### PackageTypes
-
 
 ### IsTool
 Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. Note that this is different from a `DotNetCliTool` which is specified by setting the `PackageType` in the *.csproj* file.

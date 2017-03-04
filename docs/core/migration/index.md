@@ -1,41 +1,65 @@
 ---
-title: .NET Core project.json to csproj migration | Microsoft Docs
+title: .NET Core migration to the csproj format | Microsoft Docs
 description: .NET Core project.json to csproj migration
 keywords: .NET, .NET Core, .NET Core migration
 author: blackdwarf
 ms.author: mairaw
-ms.date: 02/17/2017
+ms.date: 03/04/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 1feadf3d-3cfc-41dd-abb5-a4fc303a7b53
 ---
 
-# Migrating .NET Core projects
+# Migrating .NET Core projects to the .csproj format
 
 [!INCLUDE[preview-warning](../../includes/warning.md)]
 
 This document will cover migration scenarios for .NET Core projects and will go over the following three migration scenarios:
 
-1. Migration from a valid latest schema of *project.json* to *csproj*.
-2. Migration from DNX to a valid Preview 2 project.json.
-3. Migration from RC3 and previous .NET Core csproj projects to the final format .
+1. [Migration from a valid latest schema of *project.json* to *csproj*](#migration-from-projectjson-to-csproj)
+2. [Migration from DNX to csproj](#migration-from-dnx-to-csproj)
+3. [Migration from RC3 and previous .NET Core csproj projects to the final format](#migration-from-earlier-net-core-csproj-formats-to-rtm-csproj)
 
 ## Migration from project.json to csproj
-Migration from project.json to csproj can be done via the [`dotnet migrate`](../preview3/tools/dotnet-migrate.md) command-line tool or through Visual Studio 2017. The command-line tool and Visual Studio 2017 use the same underlying engine to migrate projects, so the results will be the same for both. In most cases, using one of these two ways to migrate the project.json to csproj is the only thing that is needed and no further manual editing of the csproj is necessary. The resulting csproj file will be named per the `name` property in project.json or, lacking that, per containing directory name. 
+Migration from *project.json* to *.csproj* can be done using one of the following methods:
 
-Visual Studio 2017 will migrate the project automatically when you open either the `xproj` file or the solution file which references `xproj` files. If a solution file is opened, Visual Studio 2017 will automatically migrate all of the projects that are specified in the solution. 
+- [Visual Studio 2017](#visual-studio-2017)
+- [`dotnet migrate` command-line tool](#dotnet-migrate)
+ 
+Both methods use the same underlying engine to migrate the projects, so the results will be the same for both. In most cases, using one of these two ways to migrate the *project.json* to *csproj* is the only thing that is needed and no further manual editing of the project file is necessary. The resulting *.csproj* file will be named the same as the containing directory name.
 
-In the command line scenario, you can use the `dotnet migrate` command. It will migrate a project, a solution or a set of folders in that order, depending on which ones were found. 
+### Visual Studio 2017
 
-In both migration modalities files that were migrated (project.json, global.json and xproj) will be moved to a `backup` folder (on Windows, the folder will be named `Backup`). The solution file that is migrated will be upgraded to Visual Studio 2017 and you won't be able to open that solution file in previous versions of Visual Studio. 
+When you open a *.xproj* file or a solution file which references *.xproj* files, the **One-way upgrade** dialog appears. The dialog displays the projects to be migrated. 
+If you open a solution file, all the projects specified in the solution file will be listed. Review the list of projects to be migrated and select **OK**.
+
+![One-way upgrade dialog showing the list of projects to be migrated](media/one-way-upgrade.jpg)
+
+Visual Studio will migrate the projects chosen automatically. When migrating a solution, if you don't choose all projects, the same dialog will appear asking you to upgrade the remaining projects from that solution.
+
+Files that were migrated (*project.json*, *global.json*, *.xproj* and solution file) will be moved to a `Backup` folder. The solution file that is migrated will be upgraded to Visual Studio 2017 and you won't be able to open that solution file in previous versions of Visual Studio. 
+A file named *UpgradeLog.htm* is also saved and automatically opened that contains a migration report.
+
+> [!IMPORTANT]
+> The new tooling is not available in Visual Studio 2015, so you cannot migrate your projects using that version of Visual Studio.
+
+### dotnet migrate
+
+In the command-line scenario, you can use the [`dotnet migrate`](..\preview3\tools\dotnet-migrate.md) command. It will migrate a project, a solution or a set of folders in that order, depending on which ones were found. 
+
+Files that were migrated (*project.json*, *global.json* and *.xproj*) will be moved to a `backup` folder.
 
 > [!NOTE]
 > If you are using VS Code, the `dotnet migrate` command will modify VS Code-specific files such as `tasks.json`. These files need to be changed manually. 
 > This is also true if you are using Project Ryder or any editor or Integrated Development Environment (IDE) other than Visual Studio. 
 
-> [!IMPORTANT]
-> Migration is not available in Visual Studio 2015. 
+### Common issues
+
+- If you get an error: “No executable found matching command dotnet-migrate":
+
+Run `dotnet --version` to see which version you are using. [`dotnet migrate`](..\preview3\tools\dotnet-migrate.md) requires .NET Core CLI RC3 or higher.
+You’ll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to an older version.
 
 ## Migration from DNX to csproj
 If you are still using DNX for .NET Core development, your migration process should be done in two stages:

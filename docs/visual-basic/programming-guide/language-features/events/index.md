@@ -128,4 +128,4 @@ While you might visualize a [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs
 |[Troubleshooting Inherited Event Handlers in Visual Basic](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|Lists common issues that arise with event handlers in inherited components.|  
 |[Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f)|Provides an overview of the event model in the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)].|  
 |[Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4.aspx)|Describes how to work with events associated with Windows Forms objects.|  
-|[Delegates](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)|Provides an overview of delegates in Visual Basic.|
+|[Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)|Provides an overview of delegates in Visual Basic.|

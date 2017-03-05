@@ -41,14 +41,19 @@ In addition to the core user interface features that Visual Studio provides, the
  [Visual Basic IntelliSense Code Snippets](../../../visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)  
  Introduces a library of code that you can access from within the development environment.  
   
- [Refactoring and Rename Dialog Box](../../../visual-basic/developing-apps/using-ide/refactoring-and-rename-dialog-box.md)  
- Describes the mechanism for renaming identifiers in your code.  
-  
  [Help for Event Handlers in Visual Basic Code](../../../visual-basic/developing-apps/using-ide/help-for-event-handlers.md)  
  Demonstrates how to get F1 Help on an event handler.  
   
  [How to: Compile and Run a Project](../../../visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)  
- Describes your options for compiling and running from within the development environment.  
+ Describes your options for compiling and running from within the development environment.
+
+## Related Topics
+
+ [Refactoring](https://docs.microsoft.com/visualstudio/vb-ide/refactoring-vb)  
+ Describes the the process of improving your code after it has been written by changing the internal structure of the code without changing the external behavior of the code.
+
+ [Code Generation](https://docs.microsoft.com/visualstudio/vb-ide/code-generation-vb)
+ Describes how Visual Studio can help generate portions of source code for you.
   
 ## Reference  
  [Default Keyboard Shortcuts](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  

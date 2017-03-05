@@ -4,7 +4,7 @@ description: Learn about the differences between existing and .NET Core csproj f
 keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 07/02/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -15,70 +15,95 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
-This document outlines the changes that were added to the csproj files as part of the move from `project.json` to `csproj` and 
+This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and 
 [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, 
 see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
 
+## Implicit package references
+Metapackages are now implicitly referenced based on the target framework specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. 
+If the target framework is `netcoreap1.x`, the proper version of the `Microsoft.NETCore.App` metapackage is referenced. 
+Otherwise, if the target framework is `netstandard1.x`, the proper version of the `NetStandard.Library` metapackage is referenced.
+
+As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, `dotnet restore`). 
+
+### Recommendations
+Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now implicitly referenced, the following are our recommended best practices:
+
+* Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
+* If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
+    * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
+* If you need a specific version of the `NetStandard.Library` metapackage, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need. 
+
+## Default compilation includes in .NET Core projects
+With the move to the *csproj* format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files. This means that you no longer need to specify these items in your project file. 
+
+The main reason for doing this is to reduce the clutter on your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed. 
+
+The following table shows which element and which globs are both included and excluded in the SDK: 
+
+| Element          	| Include glob                           	| Exclude glob                                     	            | Remove glob             	 |
+|-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
+| Compile          	| \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc 	| N/A                     	 |
+| EmbeddedResource 	| \*\*/\*.resx                             	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/A                     	 |
+| None             	| \*\*/\*                                  	| \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | - \*\*/\*.cs; \*\*/\*.resx |
+
+If you have globs in your project and you try to build it using the newest SDK, you'll get the following error:
+
+> Duplicate Compile items were included. The .NET SDK includes Compile items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file. 
+
+In order to get around this error, you can either remove the explicit `Compile` items that match the ones listed on the previous table, or you can set the `<EnableDefaultCompileItems>` property to `false`, like this:
+
+```xml
+<PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+</PropertyGroup>
+```
+Setting this property to `false` will override implicit inclusion and the behavior will revert back to the previous SDKs where you had to specify the default globs in your project. 
+
+This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
+
+### Recommendation
+With csproj, we recommend that you remove the default globs from your project and only add globs file paths for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
+
+
 ## Additions
 
-* PackageReference
+### Sdk attribute 
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](layering.md) describes, is a set of MSBuild [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks) and [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+
+1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
+2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
+
+You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code. 
+
+### PackageReference
 Item that specifies a NuGet dependency in the project. The `Include` attribute specifies the package ID. 
 
 ```xml
 <PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
-## Version
+#### Version
 `Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
 
-## IncludeAssets
+#### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
-The attribute can contain one or more of the following values:
-
-* `Compile` – the contents of the lib folder are available to compile against.
-* `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the contentfiles folder are used.
-* `Build` – the props/targets in the build folder are used.
-* `Native` – the contents from native assets are copied to the output folder for runtime.
-* `Analyzers` – the analyzers are used.
-
-Alternatively, the attribute can contain:
-
-* `None` – none of the assets are used.
-* `All` – all assets are used.
-
-## ExcludeAssets
 `ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
-The attribute can contain one or more of the following values:
-
-* `Compile` – the contents of the lib folder are available to compile against.
-* `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the contentfiles folder are used.
-* `Build` – the props/targets in the build folder are used.
-* `Native` – the contents from native assets are copied to the output folder for runtime.
-* `Analyzers` – the analyzers are used.
-
-Alternatively, the element can contain:
-
-* `None` – none of the assets are used.
-* `All` – all assets are used.
-
-## PrivateAssets
 `PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
 consumed but that they should not flow to the next project. 
 
 > [!NOTE]
-> This is a new term for project.json/xproj `SuppressParent` element. 
+> `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
 
-The attribute can contain one or more of the following values:
+These attributes can contain one or more of the following items:
 
 * `Compile` – the contents of the lib folder are available to compile against.
 * `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the contentfiles folder are used.
+* `ContentFiles` – the contents of the *contentfiles* folder are used.
 * `Build` – the props/targets in the build folder are used.
 * `Native` – the contents from native assets are copied to the output folder for runtime.
 * `Analyzers` – the analyzers are used.
@@ -88,18 +113,18 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-* DotnetCliToolReference
-`<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It is 
-a replacement for the `tools` node in `project.json`. 
+### DotnetCliToolReference
+`<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's 
+a replacement for the `tools` node in *project.json*. 
 
 ```xml
 <DotnetCliToolReference Include="<package-id>" Version="" />
 ```
 
-## Version
+#### Version
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
-* RuntimeIdentifiers
+### RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../../rid-catalog.md) for the project. 
 RIDs enable publishing a self-contained deployments. 
 
@@ -108,16 +133,16 @@ RIDs enable publishing a self-contained deployments.
 ```
 
 
-* RuntimeIdentifier
-The `<RuntieIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
+### RuntimeIdentifier
+The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
 
 ```xml
 <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
 ```
 
 
-* PackageTargetFallback 
-The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It is designed to allow packages that use the dotnet TxM to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM then all the packages you depend on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non dotnet platforms to be compatible with dotnet. 
+### PackageTargetFallback 
+The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](https://docs.microsoft.com/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet. 
 
 The following example provides the fallbacks for all targets in your project: 
 
@@ -136,34 +161,91 @@ The following example specifies the fallbacks only for the `netcoreapp1.0` targe
 ```
 
 ## NuGet metadata properties
-With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from project.json to csproj files. The inputs are MSBuild properties. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
+With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
 
-* IsPackable
-* PackageVersion
-* PackageId
-* Title
-* Authors
-* Description
-* Copyright
-* PackageRequireLicenseAcceptance
-* PackageLicenseUrl
-* PackageProjectUrl
-* PackageIconUrl
-* PackageReleaseNotes
-* PackageTags
-* PackageOutputPath
-* IncludeSymbols
-* IncludeSource
-* PackageTypes
-* IsTool
-* RepositoryUrl
-* RepositoryType
-* NoPackageAnalysis
-* MinClientVersion
-* IncludeBuildOutput
-* IncludeContentInPack
-* BuildOutputTargetFolder
-* ContentTargetFolders
-* NuspecFile
-* NuspecBasePath
-* NuspecProperties
+### IsPackable
+A Boolean value that specifies whether the project can be packed. The default value is `true`. 
+
+### PackageVersion
+Specifies the version that the resulting package will have. Accepts all forms of NuGet version string. Default is the value of `$(Version)`, that is, of the property `Version` in the project. 
+
+### PackageId
+Specifies the name for the resulting package. If not specified, the `pack` operation will default to using the `AssemblyName` or directory name as the name of the package. 
+
+### Title
+A human-friendly title of the package, typically used in UI displays as on nuget.org and the Package Manager in Visual Studio. If not specified, the package ID is used instead.
+
+### Authors
+A semicolon-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
+
+### Description
+A long description of the package for UI display.
+
+### Copyright
+Copyright details for the package.
+
+### PackageRequireLicenseAcceptance
+A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
+
+### PackageLicenseUrl
+An URL to the license that is applicable to the package.
+
+### PackageProjectUrl
+A URL for the package's home page, often shown in UI displays as well as nuget.org.
+
+### PackageIconUrl
+A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.
+
+### PackageReleaseNotes
+Release notes for the package.
+
+### PackageTags
+A semicolon-delimited list of tags that designates the package.
+
+### PackageOutputPath
+Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`. 
+
+### IncludeSymbols
+This Boolean value indicates whether the package should create an additional symbols package when the project is packed. This package will have a *.symbols.nupkg* extension and will copy the PDB files along with the DLL and other output files.
+
+### IncludeSource
+This Boolean value indicates whether the pack process should create a source package. The source package contains the library's source code as well as PDB files. Source files are put under the `src/ProjectName` directory in the resulting package file. 
+
+### IsTool
+Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. Note that this is different from a `DotNetCliTool` which is specified by setting the `PackageType` in the *.csproj* file.
+
+### RepositoryUrl
+Specifies the URL for the repository where the source code for the package resides and/or from which it's being built. 
+
+### RepositoryType
+Specifies the type of the repository. Default is "git". 
+
+### NoPackageAnalysis
+Specifies that pack should not run package analysis after building the package.
+
+### MinClientVersion
+Specifies the minimum version of the NuGet client that can install this package, enforced by nuget.exe and the Visual Studio Package Manager.
+
+### IncludeBuildOutput
+This Boolean values specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
+
+### IncludeContentInPack
+This Boolean value specifies whether any items that have a type of `Content` will be included in the resulting package automatically. The default is `true`. 
+
+### BuildOutputTargetFolder
+Specifies the folder where to place the output assemblies.. The output assemblies (and other output files) are copied into their respective framework folders.
+
+### ContentTargetFolders
+This property specifies the default location of where all the content files should go if `PackagePath` is not specified for them. The default value is "content;contentFiles".
+
+### NuspecFile
+Relative or absolute path to the *.nuspec* file being used for packing. 
+
+> [!NOTE]
+> If the *.nuspec* file is specified, it's used **exclusively** for packaging information and any information in the projects is not used. 
+
+### NuspecBasePath
+Base path for the *.nuspec* file.
+
+### NuspecProperties
+Semicolon separated list of key=value pairs.

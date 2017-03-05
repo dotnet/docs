@@ -69,7 +69,7 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
      When [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) is `Off` and [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) is `On`, you must declare a constant explicitly by specifying a data type (`Boolean`, `Byte`, `Char`, `DateTime`, `Decimal`, `Double`, `Integer`, `Long`, `Short`, `Single`, or `String`).  
   
-     When `Option Infer` is `On` or `Option Strict` is `Off`, you can declare a constant without specifying a data type with an `As` clause. The compiler determines the type of the constant from the type of the expression. For more information, see [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md).  
+     When `Option Infer` is `On` or `Option Strict` is `Off`, you can declare a constant without specifying a data type with an `As` clause. The compiler determines the type of the constant from the type of the expression. For more information, see [Constant and Literal Data Types](constant-and-literal-data-types.md).  
   
 ### To declare a constant that has an explicitly stated data type  
   
@@ -89,11 +89,23 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 ## See Also  
  [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)   
- [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)   
- [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)   
- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)   
- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)   
- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)   
- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)   
+ [Constant and Literal Data Types](constant-and-literal-data-types.md)   
+ [Constants Overview](constants-overview.md)
+ [How to: Declare A Constant](how-to-declare-a-constant.md)
+ [User-Defined Constants](user-defined-constants.md)
+ [Constant and Literal Data Types](constant-and-literal-data-types.md)
+ [How to: Group Related Constant Values Together](how-to-group-related-constant-values-together.md)
+ [Enumerations Overview](enumerations-overview.md)
+ [How to: Declare Enumerations](how-to-declare-enumerations.md)
+ [How to: Refer to an Enumeration Member](how-to-refer-to-an-enumeration-member.md)
+ [Enumerations and Name Qualification](enumerations-and-name-qualification.md)
+ [How to: Iterate Through An Enumeration](how-to-iterate-through-an-enumeration.md)
+ [How to: Determine the String Associated with an Enumeration Value](how-to-determine-the-string-associated-with-an-enumeration-value.md)
+ [When to Use an Enumeration](when-to-use-an-enumeration.md)
+
+ [Enumerations Overview](enumerations-overview.md)   
+ [Constants Overview](constants-overview.md)   
+ [How to: Declare an Enumeration](how-to-declare-enumerations.md)   
+ [Enumerations and Name Qualification](enumerations-and-name-qualification.md)   
  [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)

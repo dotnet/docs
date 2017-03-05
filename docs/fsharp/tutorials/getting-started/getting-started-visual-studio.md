@@ -4,7 +4,7 @@ description: Learn how to use F# with Visual Studio.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
-ms.date: 09/08/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -14,19 +14,24 @@ ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1
 
 # Getting started with F# in Visual Studio
 
-F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs), if you haven't already.  This article uses the Visual Studio 2015 Community Edition, but you can use F# with the version of your choice.
+F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs), if you haven't already.  This article uses the Visual Studio 2017 Community Edition, but you can use F# with the version of your choice.
 
-## Installing the Visual F# tools
+## Installing F# #
 
-Visual Studio will first initialize the installer.  After it is intilized, select **Custom** as shown here:
+If you're downloading Visual Studio for the first time, it will first install the Visual Studio installer.  Install any version of Visual Studio 2017 from the installer.  If you already have it installed, click **Modify**.
 
-![Select Custom install](./media/getting-started-vs/vs2015-install-1.png)
+You'll next see a list of Workloads.  You can install F# through any of the following workloads:
 
-Select the Visual F# Tools under Programming Languages here:
+|Workload|Action|
+|--------|------|
+|.NET desktop development|Select **F# language support** from the right-hand side|
+|ASP.NET and web development|Select **F# language support** from the right-hand side|
+|Data storage and processing|Select **F# language support** from the right-hand side|
+|Mobile development with .NET|No action - F# is installed by default|
 
-![Visual F#](./media/getting-started-vs/vs2015-install-2.png)
+Alternatively, you can select **Individual components** and install **F# language support** from there.  Feel free to select as many Workloads or Individual Components as you like.
 
-Feel free to customize your installation further, and then continue with the installation.  After a while, Visual Studio will complete installation and you can create an F# project!
+Finally, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
 
 ## Creating a console application
 
@@ -34,15 +39,9 @@ One of the most basic projects in Visual Studio is the Console Application.  Her
 
 1. On the **File** menu, point to **New**, and then choose **Project**.
 
-![File New Project](./media/getting-started-vs/vs2015-install-3.png)
-
 2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
 
-![Visual F# templates](./media/getting-started-vs/vs2015-install-4.png)
-
-3. Choose the **Okay** button to create the F# project!  You should see something like this under **Solution Explorer**:
-
-![F# Project in Solution Explorer](./media/getting-started-vs/vs2015-install-5.png)
+3. Choose the **Okay** button to create the F# project!  You should now see an F# project in the Solution Explorer.
 
 ## Writing your code
 

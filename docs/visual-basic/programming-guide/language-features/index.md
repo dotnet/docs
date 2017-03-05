@@ -60,16 +60,16 @@ The following topics introduce and discuss the essential components of [!INCLUDE
  [Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
  Covers programming elements you can declare, their names and characteristics, and how the compiler resolves references to them.  
   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)  
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
  Provides an introduction to delegates and how they are used in Visual Basic.  
   
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding.md)  
+ [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  Describes binding, which is performed by the compiler when an object is assigned to an object variable, and the differences between early-bound and late-bound objects.  
   
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  Provides an overview of syntax errors, run-time errors, and logic errors.  
   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)  
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
  Shows how to declare and use events.  
   
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  

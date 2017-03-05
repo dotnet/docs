@@ -53,4 +53,4 @@ The `AddressOf` operator creates a procedure delegate instance that references a
   
 ## See Also  
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)
+ [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

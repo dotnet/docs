@@ -75,6 +75,14 @@ Values that are intended to be constants can be marked with the [Literal](https:
 
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
+## Integers In Other Bases
+
+Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
+
+```
+let numbers = (0x9F, 0o77, 0b1010)
+// Result: numbers : int * int * int = (159, 63, 10)
+```
 
 ## See Also
 

@@ -46,4 +46,4 @@ A delegate was specified for a function procedure.
 -   Specify a delegate for a `Sub` procedure.  
   
 ## See Also  
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

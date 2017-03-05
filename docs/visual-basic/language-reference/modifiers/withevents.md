@@ -57,4 +57,4 @@ Specifies that one or more declared member variables refer to an instance of a c
 ## See Also  
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

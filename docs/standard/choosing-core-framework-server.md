@@ -49,7 +49,7 @@ The infrastructure platforms you could use are many. For large and complex micro
 
 ### Containers
 
-Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.  When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.  Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
+Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern. You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers. When creating and deploying a container, the size of its image is far smaller with .NET Core than with .NET Framework. Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.
 
 You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as [Azure Container Service](https://azure.microsoft.com/services/container-service/) which can manage, orchestrate and scale your container-based application in the cloud.
 

@@ -30,3 +30,5 @@ features in the C# language.
 * [Inheritance](inheritance.md): demonstrates how class and interface inheritance provide code reuse in C#.
 
 * [String Interpolation](string-interpolation.md): demonstrates many of the uses for the `$` string interpolation in C#.
+
+* [Using Attributes](attributes.md): how to create and use attributes in C#.

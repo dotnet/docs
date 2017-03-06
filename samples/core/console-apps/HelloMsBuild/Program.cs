@@ -1,14 +1,10 @@
 using System;
 
-class Program
+namespace Hello
 {
-    static void Main(string[] args)
+    class Program
     {
-        if (args.Length > 0)
-        {
-            Console.WriteLine($"Hello {args[0]}");
-        }
-        else
+        static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }

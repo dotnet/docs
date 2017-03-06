@@ -1,14 +1,259 @@
 - name: Docs
-  href: /
-  homepage: /
+  tocHref: /
+  topicHref: /
   items:
   - name: .NET
-    href: /dotnet/
-    homepage: /dotnet/index
-    items:
-    - name: Documentation
-      href: /dotnet/articles/
-      homepage: /dotnet/articles/welcome
+    tocHref: /dotnet/
+    topicHref: /dotnet/index
+    items:     
     - name: API reference
-      href: /dotnet/core/api/
-      homepage: /dotnet/core/api/index
+      tocHref: /dotnet/core/api/
+      topicHref: /dotnet/core/api/index
+    - name: .NET Platform Guide
+      tocHref: /dotnet/articles/standard/
+      topicHref: /dotnet/articles/standard/index
+    - name: .NET Core Guide
+      tocHref: /dotnet/articles/core/
+      topicHref: /dotnet/articles/core/index
+      items:
+      - name: Tools
+        tocHref: /dotnet/articles/core/tools/
+        topicHref: /dotnet/articles/core/tools/index
+    - name: .NET Framework
+      tocHref: /dotnet/articles/framework/
+      topicHref: /dotnet/articles/framework/index
+    - name: C# Guide
+      tocHref: /dotnet/articles/csharp/
+      topicHref: /dotnet/articles/csharp/index
+      items:
+      - name: Getting started
+        tocHref: /dotnet/articles/csharp/getting-started/
+        topicHref: /dotnet/articles/csharp/getting-started/index
+      - name: Tutorials
+        tocHref: /dotnet/articles/csharp/tutorials/
+        topicHref: /dotnet/articles/csharp/tutorials/index
+      - name: Tour
+        tocHref: /dotnet/articles/csharp/tour/
+        topicHref: /dotnet/articles/csharp/tour/index
+      - name: What's new
+        tocHref: /dotnet/articles/csharp/whats-new/
+        topicHref: /dotnet/articles/csharp/whats-new/index
+      - name: Interactive
+        tocHref: /dotnet/articles/csharp/interactive/
+        topicHref: /dotnet/articles/csharp/interactive/index
+      - name: Concepts
+        tocHref: /dotnet/articles/csharp/concepts/
+        topicHref: /dotnet/articles/csharp/concepts/index
+      - name: Programming guide
+        tocHref: /dotnet/articles/csharp/programming-guide/
+        topicHref: /dotnet/articles/csharp/programming-guide/index
+        items:
+        - name: Inside a C# program
+          tocHref: /dotnet/articles/csharp/programming-guide/inside-a-program/
+          topicHref: /dotnet/articles/csharp/programming-guide/inside-a-program/index
+        - name: Arrays
+          tocHref: /dotnet/articles/csharp/programming-guide/arrays/
+          topicHref: /dotnet/articles/csharp/programming-guide/arrays/index
+        - name: Classes and structs
+          tocHref: /dotnet/articles/csharp/programming-guide/classes-and-structs/
+          topicHref: /dotnet/articles/csharp/programming-guide/classes-and-structs/index
+        - name: Delegates
+          tocHref: /dotnet/articles/csharp/programming-guide/delegates/
+          topicHref: /dotnet/articles/csharp/programming-guide/delegates/index
+        - name: Events
+          tocHref: /dotnet/articles/csharp/programming-guide/events/
+          topicHref: /dotnet/articles/csharp/programming-guide/events/index
+        - name: Exceptions and exception handling
+          tocHref: /dotnet/articles/csharp/programming-guide/exceptions/
+          topicHref: /dotnet/articles/csharp/programming-guide/èxceptions/index
+        - name: File system and the registry
+          tocHref: /dotnet/articles/csharp/programming-guide/file-system/
+          topicHref: /dotnet/articles/csharp/programming-guide/file-system/index
+        - name: Generics
+          tocHref: /dotnet/articles/csharp/programming-guide/generics/
+          topicHref: /dotnet/articles/csharp/programming-guide/generics/index
+        - name: Indexers
+          tocHref: /dotnet/articles/csharp/programming-guide/indexers/
+          topicHref: /dotnet/articles/csharp/programming-guide/indexers/index
+        - name: Interfaces
+          tocHref: /dotnet/articles/csharp/programming-guide/interfaces/
+          topicHref: /dotnet/articles/csharp/programming-guide/interfaces/index
+        - name: Interoperability
+          tocHref: /dotnet/articles/csharp/programming-guide/interop/
+          topicHref: /dotnet/articles/csharp/programming-guide/ìnterop/index
+        - name: LINQ
+          tocHref: /dotnet/articles/csharp/programming-guide/linq/
+          topicHref: /dotnet/articles/csharp/programming-guide/linq/index
+        - name: Main() and command-line arguments
+          tocHref: /dotnet/articles/csharp/programming-guide/main-and-command-args/
+          topicHref: /dotnet/articles/csharp/programming-guide/main-and-command-args/index
+        - name: Namespaces
+          tocHref: /dotnet/articles/csharp/programming-guide/namespaces/
+          topicHref: /dotnet/articles/csharp/programming-guide/namespaces/index
+        - name: Nullable types
+          tocHref: /dotnet/articles/csharp/programming-guide/nullable-types/
+          topicHref: /dotnet/articles/csharp/programming-guide/nullable-types/index
+        - name: Programming concepts
+          tocHref: /dotnet/articles/csharp/programming-guide/concepts/
+          topicHref: /dotnet/articles/csharp/programming-guide/concepts/index
+          items:
+          - name: Assemblies and the GAC
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/assemblies-gac/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/assemblies-gac/index
+          - name: Asynchronous programming
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/async/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/async/index
+          - name: Attributes
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/attributes/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/attributes/index
+          - name: Covariance and contravariance
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/covariance-contravariance/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/covariance-contravariance/index
+          - name: Expression trees
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/expression-trees/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/èxpression-trees/index
+          - name: LINQ
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/linq/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/linq/index
+          - name: Serialization
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/serialization/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/serialization/index
+          - name: Threading
+            tocHref: /dotnet/articles/csharp/programming-guide/concepts/threading/
+            topicHref: /dotnet/articles/csharp/programming-guide/concepts/threading/index
+        - name: Statements, expressions, and operators
+          tocHref: /dotnet/articles/csharp/programming-guide/statements-expressions-operators/
+          topicHref: /dotnet/articles/csharp/programming-guide/statements-expressions-operators/index
+        - name: Strings
+          tocHref: /dotnet/articles/csharp/programming-guide/strings/
+          topicHref: /dotnet/articles/csharp/programming-guide/strings/index
+        - name: Types
+          tocHref: /dotnet/articles/csharp/programming-guide/types/
+          topicHref: /dotnet/articles/csharp/programming-guide/types/index
+        - name: Unsafe code and pointers
+          tocHref: /dotnet/articles/csharp/programming-guide/unsafe-code-pointers/
+          topicHref: /dotnet/articles/csharp/programming-guide/unsafe-code-pointers/index
+        - name: XML documentation
+          tocHref: /dotnet/articles/csharp/programming-guide/xmldoc/
+          topicHref: /dotnet/articles/csharp/programming-guide/xmldoc/xml-documentation-comments
+      - name: Language reference
+        tocHref: /dotnet/articles/csharp/language-reference/
+        topicHref: /dotnet/articles/csharp/language-reference/index
+        items:
+        - name: Keywords
+          tocHref: /dotnet/articles/csharp/language-reference/keywords/
+          topicHref: /dotnet/articles/csharp/language-reference/keywords/index
+        - name: Operators
+          tocHref: /dotnet/articles/csharp/language-reference/operators/
+          topicHref: /dotnet/articles/csharp/language-reference/operators/index
+        - name: Preprocessor directives
+          tocHref: /dotnet/articles/csharp/language-reference/preprocessor-directives/
+          topicHref: /dotnet/articles/csharp/language-reference/preprocessor-directives/index
+        - name: Compiler options
+          tocHref: /dotnet/articles/csharp/language-reference/compiler-options/
+          topicHref: /dotnet/articles/csharp/language-reference/compiler-options/index
+        - name: Compiler errors
+          tocHref: /dotnet/articles/csharp/language-reference/compiler-messages/
+          topicHref: /dotnet/articles/csharp/language-reference/compiler-messages/index
+    - name: F# Guide
+      tocHref: /dotnet/articles/fsharp/
+      topicHref: /dotnet/articles/fsharp/index
+    - name: Visual Basic Guide
+      tocHref: /dotnet/articles/visual-basic/
+      topicHref: /dotnet/articles/visual-basic/index
+      items:
+      - name: Get started
+        tocHref: /dotnet/articles/visual-basic/getting-started/
+        topicHref: /dotnet/articles/visual-basic/getting-started/index
+      - name: Developing applications
+        tocHref: /dotnet/articles/visual-basic/developing-apps/
+        topicHref: /dotnet/articles/visual-basic/developing-apps/index
+      - name: Programming concepts
+        tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/
+        topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/index
+        items:
+        - name: Assemblies and the GAC
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/assemblies-gac/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/assemblies-gac/index
+        - name: Asynchronous programming
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/async/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/async/index
+        - name: Attributes
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/attributes/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/attributes/index
+        - name: Expression trees
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/expression-trees/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/èxpression-trees/index
+        - name: LINQ
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/linq/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/linq/index
+        - name: Serialization
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/serialization/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/serialization/index
+        - name: Threading
+          tocHref: /dotnet/articles/visual-basic/programming-guide/concepts/threading/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/concepts/threading/index
+      - name: Program structure and code conventions
+        tocHref: /dotnet/articles/visual-basic/programming-guide/program-structure/
+        topicHref: /dotnet/articles/visual-basic/programming-guide/program-structure/program-structure-and-code-conventions
+      - name: Language features
+        tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/
+        topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/index
+        items:
+        - name: Arrays
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/arrays/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/arrays/index
+        - name: Collection initializers
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/collection-initializers/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/collection-initializers/index
+        - name: Constants and Enumerations
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/constants-enums/index
+        - name: Control Flow
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/control-flow/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/control-flow/index
+        - name: Data Types
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/data-types/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/data-types/index
+        - name: Declared elements
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/declared-elements/index
+        - name: Delegates
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/delegates/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/delegates/index
+        - name: Early and late binding
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/early-late-binding/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/early-late-binding/index
+        - name: Events
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/events/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/events/index
+        - name: LINQ
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/linq/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/linq/index
+        - name: Objects and classes
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/objects-and-classes/index
+        - name: Operators and expressions
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/operators-and-expressions/index
+        - name: Procedures
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/procedures/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/procedures/index
+        - name: Strings
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/`strings/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/strings/index
+        - name: Variables
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/variables/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/variables/index
+        - name: XML
+          tocHref: /dotnet/articles/visual-basic/programming-guide/language-features/xml/
+          topicHref: /dotnet/articles/visual-basic/programming-guide/language-features/xml/index
+      - name: COM Interop
+        tocHref: /dotnet/articles/visual-basic/programming-guide/com-interop/
+        topicHref: /dotnet/articles/visual-basic/programming-guide/com-interop/index
+      - name: Language reference
+        tocHref: /dotnet/articles/visual-basic/language-reference/
+        topicHref: /dotnet/articles/visual-basic/language-reference/index
+      - name: Reference
+        tocHref: /dotnet/articles/visual-basic/reference/
+        topicHref: /dotnet/articles/visual-basic/reference/index

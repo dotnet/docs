@@ -1,6 +1,6 @@
 ---
 title: "C# Keywords | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-02-09"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C# Keywords
-Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier but `if` is not because `if` is a keyword.  
+Keywords are predefined, reserved identifiers that have special meanings to the compiler. They cannot be used as identifiers in your program unless they include `@` as a prefix. For example, `@if` is a valid identifier, but `if` is not because `if` is a keyword.  
   
  The first table in this topic lists keywords that are reserved identifiers in any part of a C# program. The second table in this topic lists the contextual keywords in C#. Contextual keywords have special meaning only in a limited program context and can be used as identifiers outside that context. Generally, as new keywords are added to the C# language, they are added as contextual keywords in order to avoid breaking programs written in earlier versions.  
   

@@ -115,7 +115,6 @@ A [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbp
  The most common variety of this procedure is `Sub Main()`. For more information, see [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
   
 ## See Also  
- [NIB: Visual Basic Version of Hello, World](http://msdn.microsoft.com/en-us/9d030b60-e148-4366-a462-69532f02294c)   
  [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)   
  [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)   
  [Visual Basic Limitations](../../../visual-basic/programming-guide/program-structure/limitations.md)

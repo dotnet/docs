@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NumberFun
+namespace Hello
 {
 	public class FibonacciGenerator
 	{

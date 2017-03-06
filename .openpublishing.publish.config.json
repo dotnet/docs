@@ -5,6 +5,7 @@
     "need_generate_pdf_url_template": true,
     "git_repository_branch_open_to_public_contributors": "master",
     "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/core-docs",
+    "enable_incremental_build": false,
     "branch_target_mapping": {
         "live": [
             "Publish",

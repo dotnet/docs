@@ -4,7 +4,7 @@ description: Learn how to use F# with the cross-platform .NET CLI.
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
 ms.author: phcart
-ms.date: 02/13/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -14,13 +14,13 @@ ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 
 # Getting started with F# with command-line tools
 
-This article covers how you can get started with using F# on .NET Core.  It will go through building a multi-project solution with a Class Library that is called by a Console Application.
+This article covers how you can get started with using F# on .NET Core. It will go through building a multi-project solution with a Class Library that is called by a Console Application.
 
 ## Prerequisites
 
-To begin, you must install the [.NET Core SDK 1.0.3 - (build 004769 or later)](https://dot.net/core).  There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
+To begin, you must install the [.NET Core SDK 1.0.3 - (build 004769 or later)](https://dot.net/core). There is no need to uninstall a previous version of the .NET Core SDK, as it supports side-by-side installations.
 
-This article assumes that you know how to use a command line and have a preferred text editor.  If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#.  To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
+This article assumes that you know how to use a command line and have a preferred text editor. If you don't already use it, [Visual Studio Code](https://code.visualstudio.com) is a great option as a text editor for F#. To get awesome features like IntelliSense, better syntax highlighting, and more, you can download the [Ionide Extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
 
 ## Building a Simple Multi-project Solution
 
@@ -113,7 +113,7 @@ open Library
 
 [<EntryPoint>]
 let main argv = 
-    printfn "Nice command-line arguments!  Here's what JSON.NET has to say about them:"
+    printfn "Nice command-line arguments! Here's what JSON.NET has to say about them:"
 
     argv
     |> Array.map getJsonNetJson
@@ -144,7 +144,7 @@ dotnet run Hello World
 You should see the following results:
 
 ```
-Nice command-line arguments!  Here's what JSON.NET has to say about them:
+Nice command-line arguments! Here's what JSON.NET has to say about them:
 
 I used to be Hello but now I'm ""Hello"" thanks to JSON.NET!
 I used to be World but now I'm ""World"" thanks to JSON.NET!

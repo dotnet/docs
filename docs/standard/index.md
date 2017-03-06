@@ -36,25 +36,28 @@ If you're new to .NET Standard, check out [.NET Standard Library](library.md).
 
 If you're looking to port an application, service, or some component of a system to .NET Core, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
 
-## Porting a NuGet package from to .NET Standard
+## Porting a NuGet package from .NET Framework to .NET Standard or .NET Core
 
-If you're looking to port a NuGet package to .NET Standard, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).
+If you're looking to port a NuGet package to .NET Standard, check out [Porting to .NET Core from .NET Framework](../core/porting/index.md).  Tooling for .NET Standard and .NET Core are shared, so the content will be relevant for porting to .NET Standard as well as .NET Core.
 
-## Interested in .NET Fundamentals
+## Interested in Major .NET Concepts
 
-If you're interested in some of the fundamental concepts of .NET, check out:
+If you're interested in some of the major concepts of .NET, check out:
 
 * [.NET Architectural Components](components.md)
 * [.NET Standard Library](library.md)
-* [C# Guide](../csharp/index.md)
-* [F# Guide](../fsharp/index.md)
-* [Visual Basic Guide](../visual-basic/index.md)
 * [Native Interoperability](native-interop.md)
 * [Garbage Collection](garbagecollection/index.md)
 * [Base Types in .NET](base-types/index.md)
 * [Collections](collections/index.md)
 * [Dates, times, and time zones](datetime/index.md)
 * [Asynchronous Programming](async.md)
+
+Additionally, check out each language guide to learn about the three major .NET languages:
+
+* [C# Guide](../csharp/index.md)
+* [F# Guide](../fsharp/index.md)
+* [Visual Basic Guide](../visual-basic/index.md)
 
 ## API Reference
 

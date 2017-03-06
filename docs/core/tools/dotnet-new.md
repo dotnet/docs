@@ -74,16 +74,16 @@ The name for the output being created. If no name is specified, the name of the 
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
-Location to place the generated output.
+Location to place the generated output. The default is the current directory.
 
 `-all|--show-all`
 
 Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. 
 When running in the context of a specific template, such as, `dotnet new web -all`, `-all` is interpreted as a force creation flag. 
-That might happen when the current directory already contains a project.
+That might happen when the output directory already contains a project.
 
 ## Template options
-Each project template may have additional options available. The core templates, for example, have the following.
+Each project template may have additional options available. The core templates have the following options:
 
 **console, xunit, mstest, web, webapi **
 

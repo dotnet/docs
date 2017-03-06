@@ -40,15 +40,15 @@ translation.priority.mt:
 # switch (C# Reference)
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *switch expression*. 
   
- [!code-cs[switch#1](../../../samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]  
+ [!code-cs[switch#1](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]  
 
 The `switch` statement is often used as an alternative to an [if-else](if-else.md) construct if a single expression is tested against three or more conditions. For example, the following `switch` statement determines whether a variable of type `Color` has one of three values: 
 
-[!code-cs[switch#3](../../../samples/snippets/csharp/language-reference/keywords/switch/switch3.cs#1)] 
+[!code-cs[switch#3](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3.cs#1)] 
 
 It is equivalent to the following example that uses an `if`-`else` construct. 
 
-[!code-cs[switch#3a](../../../samples/snippets/csharp/language-reference/keywords/switch/switch3a.cs#1)] 
+[!code-cs[switch#3a](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch3a.cs#1)] 
 
 ## The switch expression
 
@@ -74,7 +74,7 @@ Starting with C# 7, the switch expression can be any non-null expression.
  
   A `switch` statement can include any number of switch sections, and each section can have one or more case labels, as shown in the following example. However, no two case labels may contain the same expression.  
 
- [!code-cs[switch#2](../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]  
+ [!code-cs[switch#2](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]  
 
  Only one switch section in a switch statement can execute. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."   
 
@@ -92,7 +92,7 @@ switch (caseSwitch)
 ```  
 This requirement is usually met by explicitly exiting the switch section by using a [break](break.md), [goto](goto.md), or [return](return.md) statement. However, the following code is also valid, because it ensures that program control cannot fall through to the `default` switch section.
   
- [!code-cs[switch#4](../../../samples/snippets/csharp/language-reference/keywords/switch/switch4.cs#1)]    
+ [!code-cs[switch#4](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch4.cs#1)]    
   
  Execution of the statement list in the switch section that with a case label that matches the switch expression begins with the first statement and proceeds through the statement list, typically until a jump statement, such as a `break`, `goto case`, `return`, or `throw`, is reached. At that point, control is transferred outside the `switch` statement or to another case label.  
 
@@ -108,7 +108,7 @@ This requirement is usually met by explicitly exiting the switch section by usin
 
  The following example illustrates a `switch` statement that uses a variety of non-mutually exclusive patterns. If you move the `case 0:` switch section so that it is no longer the first section in the `switch` statement, C# generates a compiler error because an integer whose value is zero is a subset of all integers, which is the pattern defined by the `case int val` statement.
 
- [!code-cs[switch#5](../../../samples/snippets/csharp/language-reference/keywords/switch/switch5.cs#1)]    
+ [!code-cs[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch5.cs#1)]    
 
 You can correct this issue and eliminate the compiler warning in one of two ways:
 
@@ -199,11 +199,11 @@ Starting with C# 7, because case statements need not be mutually exclusive, you 
   
 ## See Also  
 
-[C# Reference](../index.md)   
-[C# Programming Guide](../../programming-guide/index.md)   
-[C# Keywords](index.md)   
-[if-else](if-else.md) 
-[Pattern Matching](..\..\pattern-matching.md) 
-
+ [C# Reference](../index.md)   
+ [C# Programming Guide](../../programming-guide/index.md)   
+ [C# Keywords](index.md)   
+ [if-else](if-else.md)   
+ [Pattern Matching](../../pattern-matching.md)   
+ 
 
  

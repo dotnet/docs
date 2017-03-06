@@ -58,7 +58,7 @@ Rather than starting with an abstract shape definition and adding different
 specific shape classes, let's start instead with simple data only definitions
 for each of the geometric shapes:
 
-[!code-csharp[ShapeDefinitions](../../samples/csharp/PatternMatching/PatternMatching/Shapes.cs#01_ShapeDefinitions "Shape definitions")]
+[!code-csharp[ShapeDefinitions](../../samples/csharp/PatternMatching/Shapes.cs#01_ShapeDefinitions "Shape definitions")]
 
 From these structures, let's write a method that computes the area
 of some shape.
@@ -68,7 +68,7 @@ of some shape.
 Before C# 7, you'd need to test each type in a series of `if` and `is`
 statements:
 
-[!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
+[!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
 
 That code above is a classic expression of the *type pattern*: You're testing a variable
 to determine its type and taking a different action based on that type.
@@ -76,7 +76,7 @@ to determine its type and taking a different action based on that type.
 This code becomes simpler using extensions to the `is` expression to assign
 a variable if the test succeeds:
 
-[!code-csharp[IsPatternExpression](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#03_IsPatternExpression "is pattern expression")]
+[!code-csharp[IsPatternExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#03_IsPatternExpression "is pattern expression")]
 
 In this updated version, the `is` expression both tests the variable and assigns
 it to a new variable of the proper type. Also, notice that this version includes
@@ -126,14 +126,14 @@ The traditional `switch`
 statement was a pattern expression: it supported the constant pattern.
 You could compare a variable to any constant used in a `case` statement:
 
-[!code-csharp[ClassicSwitch](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#04_ClassicSwitch "Classic switch statement")]
+[!code-csharp[ClassicSwitch](../../samples/csharp/PatternMatching/GeometricUtilities.cs#04_ClassicSwitch "Classic switch statement")]
 
 The only pattern supported by the `switch` statement was the constant
 pattern. It was further limited to numeric types and the `string` type.
 Those restrictions have been removed, and you can now write a `switch`
 statement using the type pattern:
 
-[!code-csharp[Switch Type Pattern](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#05_SwitchTypePattern "Compute with `switch` expression")]
+[!code-csharp[Switch Type Pattern](../../samples/csharp/PatternMatching/GeometricUtilities.cs#05_SwitchTypePattern "Compute with `switch` expression")]
 
 The pattern matching `switch` statement uses familiar syntax to developers
 who have used the traditional C-style `switch` statement. Each `case` is evaluated
@@ -174,7 +174,7 @@ a `when` clause on the `case` label. A square with a side length of 0, or
 a circle with a radius of 0 has a 0 area. You specify that condition
 using a `when` clause on the `case` label:  
 
-[!code-csharp[ComputeDegenerateShapes](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#07_ComputeDegenerateShapes "Compute shapes with 0 area")]
+[!code-csharp[ComputeDegenerateShapes](../../samples/csharp/PatternMatching/GeometricUtilities.cs#07_ComputeDegenerateShapes "Compute shapes with 0 area")]
 
 This change demonstrates a few important points about the new syntax. First,
 multiple `case` labels can be applied to one `switch` section. The statement
@@ -196,14 +196,14 @@ variable in the `when` clause.
 Having added those shapes with 0 area, let's add a couple more shape types:
 a rectangle and a triangle:
 
-[!code-csharp[AddRectangleAndTriangle](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]
+[!code-csharp[AddRectangleAndTriangle](../../samples/csharp/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]
 
  This set of changes adds `case` labels for the degenerate case, and labels
  and blocks for each of the new shapes. 
 
 Finally, you can add a `null` case to ensure the argument is not `null`:
 
-[!code-csharp[NullCase](../../samples/csharp/PatternMatching/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
+[!code-csharp[NullCase](../../samples/csharp/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
 
 The special case for the `null` pattern is interesting because the constant `null` does
 not have a type, but can be converted to any reference type or nullable

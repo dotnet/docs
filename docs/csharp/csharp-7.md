@@ -47,18 +47,18 @@ in this version.
 Previously, you would need to separate the declaration of the out variable
 and its initialization into two different statements:
 
-[!code-csharp[OutVariableOldStyle](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#03_OutVariableOldStyle "classic out variable declaration")]
+[!code-csharp[OutVariableOldStyle](../../samples/snippets/csharp/new-in-7/program.cs#03_OutVariableOldStyle "classic out variable declaration")]
 
 You can now declare `out` variables in the argument list of a method call,
 rather than writing a separate declaration statement:
 
-[!code-csharp[OutVariableDeclarations](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#01_OutVariableDeclarations "Out variable declarations")]
+[!code-csharp[OutVariableDeclarations](../../samples/snippets/csharp/new-in-7/program.cs#01_OutVariableDeclarations "Out variable declarations")]
 
 You may want to specify the type of the `out` variable for clarity,
 as shown above. However, the language does support using an implicitly
 typed local variable:
 
-[!code-csharp[OutVarVariableDeclarations](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
+[!code-csharp[OutVarVariableDeclarations](../../samples/snippets/csharp/new-in-7/program.cs#02_OutVarVariableDeclarations "Implicitly typed Out variable")]
 
 * The code is easier to read. 
     - You declare the out variable where you use it, not on another line above.
@@ -87,14 +87,14 @@ The fields are not validated, and you cannot define your own methods
 
 You can create a tuple by assigning each member to a value:
 
-[!code-csharp[UnnamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
+[!code-csharp[UnnamedTuple](../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
 That assignment creates a tuple whose members are `Item1` and `Item2`,
 following the existing @System.Tuple syntax.
 You can modify that assignment to create a tuple that provides semantic
 names to each of the members of the tuple:
 
-[!code-csharp[NamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#05_NamedTuple "Named tuple")]
+[!code-csharp[NamedTuple](../../samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
 > The new tuples features require the `System.ValueTuple` type. For Visual Studio 15
@@ -105,12 +105,12 @@ The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
 
-[!code-csharp[ImplicitNamedTuple](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
+[!code-csharp[ImplicitNamedTuple](../../samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
 The language allows you to specify names for the fields on both the
 left and right-hand side of the assignment:
 
-[!code-csharp[NamedTupleConflict](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
+[!code-csharp[NamedTupleConflict](../../samples/snippets/csharp/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
 
 The line above generates a warning, `CS8123`, telling you that the names on the right
 side of the assignment, `Alpha` and `Beta` are ignored because they conflict
@@ -127,7 +127,7 @@ It is a simpler, lightweight syntax to define a data structure that carries
 more than one value. The example method below returns the minimum and maximum
 values found in a sequence of integers:
 
-[!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
+[!code-csharp[TupleReturningMethod](../../samples/snippets/csharp/new-in-7/program.cs#08_TupleReturningMethod "Tuple returning method")]
 
 Using tuples in this way offers several advantages:
 
@@ -139,13 +139,13 @@ The declaration for the method provides the names for the fields of the
 tuple that is returned. When you call the method, the return value is a 
 tuple whose fields are `Max` and `Min`:
 
-[!code-csharp[CallingTupleMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
+[!code-csharp[CallingTupleMethod](../../samples/snippets/csharp/new-in-7/program.cs#09_CallingTupleMethod "Calling a tuple returning method")]
 
 There may be times when you want to unpackage the members of a tuple that
 were returned from a method.  You can do that by declaring separate variables
 for each of the values in the tuple. This is called *deconstructing* the tuple:
 
-[!code-csharp[CallingWithDeconstructor](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
+[!code-csharp[CallingWithDeconstructor](../../samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
 
 <!-- Add wildcards here, if they are in C# 7
 -->
@@ -157,16 +157,16 @@ properties you want to extract. Consider
 this `Point` class that provides a deconstructor method that extracts
 the `X` and `Y` coordinates:
 
-[!code-csharp[PointWithDeconstruction](../../samples/snippets/csharp/new-in-7/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
+[!code-csharp[PointWithDeconstruction](../../samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
  
 You can extract the individual fields by assigning a tuple to a `Point`:
 
-[!code-csharp[DeconstructPoint](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
+[!code-csharp[DeconstructPoint](../../samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
 
 You are not bound by the names defined in the `Deconstruct` method. You
 can rename the extract variables as part of the assignment:  
 
-[!code-csharp[DeconstructNames](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#13_DeconstructNames "Deconstruct with new names")]
+[!code-csharp[DeconstructNames](../../samples/snippets/csharp/new-in-7/program.cs#13_DeconstructNames "Deconstruct with new names")]
 
 You can learn more in depth about tuples in the
 [tuples topic](tuples.md).
@@ -197,13 +197,13 @@ that demonstrate how pattern matching expressions make algorithms that work
 with unrelated types easy. We'll start with a method that computes the sum
 of a number of die rolls:
 
-[!code-csharp[SumDieRolls](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#14_SumDieRolls "Sum die rolls")]
+[!code-csharp[SumDieRolls](../../samples/snippets/csharp/new-in-7/patternmatch.cs#14_SumDieRolls "Sum die rolls")]
 
 You might quickly find that you need to find the sum of die rolls where
 some of the rolls are made with more than one die. Part of the input
 sequence may be multiple results instead of a single number:
 
-[!code-csharp[SumDieRollsWithGroups](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#15_SumDieRollsWithGroups "Sum die rolls with groups")]
+[!code-csharp[SumDieRollsWithGroups](../../samples/snippets/csharp/new-in-7/patternmatch.cs#15_SumDieRollsWithGroups "Sum die rolls with groups")]
 
 The `is` pattern expression works quite well in this scenario. As part of
 checking the type, you write a variable initialization. This creates
@@ -213,28 +213,30 @@ As you keep extending these scenarios, you may find that you build more
 `if` and `else if` statements. Once that becomes unwieldy, you'll likely
 want to switch to `switch` pattern expressions.
 
-### `switch` expressions
+### `switch` statement updates
 
-The `switch` pattern expression has a familiar syntax, based on the `switch`
+The *match expression* has a familiar syntax, based on the `switch`
 statement already part of the C# language. Let's translate the existing code
-to use a `switch` expression before adding new cases: 
+to use a match expression before adding new cases: 
 
-[!code-csharp[SumUsingSwitch](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#16_SumUsingSwitch "Sum using switch")]
+[!code-csharp[SumUsingSwitch](../../samples/snippets/csharp/new-in-7/patternmatch.cs#16_SumUsingSwitch "Sum using switch")]
 
-The `switch` expressions have a slightly different syntax than the `is` expressions, where
+The match expressions have a slightly different syntax than the `is` expressions, where
 you declare the type and variable at the beginning of the `case` expression.
 
-The `switch` expressions also support constants. This can save time by
+The match expressions also support constants. This can save time by
 factoring out simple cases:
 
-[!code-csharp[SwitchWithConstants](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#17_SwitchWithConstants "Switch with constants")]
+[!code-csharp[SwitchWithConstants](../../samples/snippets/csharp/new-in-7/patternmatch.cs#17_SwitchWithConstants "Switch with constants")]
 
 The code above adds cases for `0` as a special case of `int`, and `null`
 as a special case when there is no input. This demonstrates one important
 new feature in switch pattern expressions: the order of the `case`
 expressions now matters. The `0` case must appear before the general `int`
 case. Otherwise, the first pattern to match would be the `int` case,
-even when the value is `0`.
+even when the value is `0`. If you acccidentally order match expressions such
+that a later case has already been handled, the compiler will flag that
+and generate an error.
 
 This same behavior enables the special case for an empty input sequence.
 You can see that the case for an `IEnumerable` item that has elements
@@ -256,11 +258,11 @@ use percentile dice to represent larger ranges of numbers.
 To add this kind of die to your collection, first define a type to represent
 the percentile die:
 
-[!code-csharp[18_PercentileDie](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#18_PercentileDie "Percentile Die type")]
+[!code-csharp[18_PercentileDie](../../samples/snippets/csharp/new-in-7/patternmatch.cs#18_PercentileDie "Percentile Die type")]
 
-Then, add a `case` expression for the new type:
+Then, add a `case` match expression for the new type:
 
-[!code-csharp[SwitchWithNewTypes](../../samples/snippets/csharp/new-in-7/new-in-7/patternmatch.cs#19_SwitchWithNewTypes "Include Percentile Die type")]
+[!code-csharp[SwitchWithNewTypes](../../samples/snippets/csharp/new-in-7/patternmatch.cs#19_SwitchWithNewTypes "Include Percentile Die type")]
 
 The new syntax for pattern matching expressions makes it easier to create
 dispatch algorithms based on an object's type, or other properties, using
@@ -278,7 +280,7 @@ large matrices, and finding a single location with certain
 characteristics. One method would return the two indices for
 a single location in the matrix:
 
-[!code-csharp[FindReturningIndices](../../samples/snippets/csharp/new-in-7/new-in-7/MatrixSearch.cs#20_FindReturningIndices "Find returning indices")]
+[!code-csharp[FindReturningIndices](../../samples/snippets/csharp/new-in-7/MatrixSearch.cs#20_FindReturningIndices "Find returning indices")]
 
 There are many issues with this code. First of all, it's a public
 method that's returning a tuple. The language supports this, but
@@ -289,7 +291,7 @@ Second, this method is returning the indices to the item in the matrix.
 That leads callers to write code that uses those indices to dereference
 the matrix and modify a single element:
 
-[!code-csharp[UpdateItemFromIndices](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#21_UpdateItemFromIndices "Update Item From Indices")]
+[!code-csharp[UpdateItemFromIndices](../../samples/snippets/csharp/new-in-7/program.cs#21_UpdateItemFromIndices "Update Item From Indices")]
 
 You'd rather write a method that returns a *reference*
 to the element of the matrix that you want to change. You could only accomplish
@@ -323,13 +325,13 @@ add the `ref` keyword to each return statement. That indicates return
 by reference, and helps developers reading the code later remember that
 the method returns by reference:
 
-[!code-csharp[FindReturningRef](../../samples/snippets/csharp/new-in-7/new-in-7/MatrixSearch.cs#22_FindReturningRef "Find returning by reference")]
+[!code-csharp[FindReturningRef](../../samples/snippets/csharp/new-in-7/MatrixSearch.cs#22_FindReturningRef "Find returning by reference")]
 
 Now that the method returns a reference to the integer value in the
 matrix, you need to modify where it's called.  The `var` declaration
 means that `valItem` is now an `int` rather than a tuple:
 
-[!code-csharp[AssignRefReturnToValue](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#23_AssignRefReturnToValue "Assign ref return to value")]
+[!code-csharp[AssignRefReturnToValue](../../samples/snippets/csharp/new-in-7/program.cs#23_AssignRefReturnToValue "Assign ref return to value")]
 
 The second `WriteLine` statement in the example above prints out the value `42`,
 not `24`. The variable `valItem` is an `int`, not a `ref int`. The `var`
@@ -342,7 +344,7 @@ In order to get the result you want, you need to add the `ref` modifier
 to the local variable declaration to make the variable a reference when
 the return value is a reference:
 
-[!code-csharp[AssignRefReturn](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#24_AssignRefReturn "Assign ref return")]
+[!code-csharp[AssignRefReturn](../../samples/snippets/csharp/new-in-7/program.cs#24_AssignRefReturn "Assign ref return")]
 
 Now, the second `WriteLine` statement in the example above will print 
 out the value `24`, indicating that the storage in the matrix has been
@@ -389,11 +391,11 @@ of async methods, any exceptions are only observed when the returned
 
 Let's start with an iterator method:
 
-[!code-csharp[IteratorMethod](../../samples/snippets/csharp/new-in-7/new-in-7/Iterator.cs#25_IteratorMethod "Iterator method")]
+[!code-csharp[IteratorMethod](../../samples/snippets/csharp/new-in-7/Iterator.cs#25_IteratorMethod "Iterator method")]
 
 Examine the code below that calls the iterator method incorrectly:
 
-[!code-csharp[CallIteratorMethod](../../samples/snippets/csharp/new-in-7/new-in-7/program.cs#26_CallIteratorMethod "Call iterator method")]
+[!code-csharp[CallIteratorMethod](../../samples/snippets/csharp/new-in-7/program.cs#26_CallIteratorMethod "Call iterator method")]
 
 The exception is thrown when `resultSet` is iterated, not when `resultSet` is created.
 In this contained example, most developers could quickly diagnose the
@@ -402,7 +404,7 @@ often isn't as close to the code that enumerates the result. You can
 refactor the code so that the public method validates all arguments,
 and a private method generates the enumeration:
 
-[!code-csharp[IteratorMethodRefactored](../../samples/snippets/csharp/new-in-7/new-in-7/Iterator.cs#27_IteratorMethodRefactored "Iterator method refactored")]
+[!code-csharp[IteratorMethodRefactored](../../samples/snippets/csharp/new-in-7/Iterator.cs#27_IteratorMethodRefactored "Iterator method refactored")]
 
 This refactored version will throw exceptions immediately because the public
 method is not an iterator method; only the private method uses the
@@ -417,7 +419,7 @@ You can make that design intent more clear by declaring the
 `alphabetSubsetImplementation` as a local function inside the public
 API method:
 
-[!code-csharp[22_IteratorMethodLocal](../../samples/snippets/csharp/new-in-7/new-in-7/Iterator.cs#28_IteratorMethodLocal "Iterator method with local function")]
+[!code-csharp[22_IteratorMethodLocal](../../samples/snippets/csharp/new-in-7/Iterator.cs#28_IteratorMethodLocal "Iterator method with local function")]
 
 The version above makes it clear that the local method is referenced
 only in the context of the outer method. The rules for local functions
@@ -428,7 +430,7 @@ The same technique can be employed with `async` methods to ensure that
 exceptions arising from argument validation are thrown before the asynchronous
 work begins:
 
-[!code-csharp[TaskExample](../../samples/snippets/csharp/new-in-7/new-in-7/AsyncWork.cs#29_TaskExample "Task returning method with local function")]
+[!code-csharp[TaskExample](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#29_TaskExample "Task returning method with local function")]
 
 > [!NOTE]
 > Some of the designs that are supported by local functions
@@ -443,7 +445,7 @@ members that can be implemented as expressions. In C# 7, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
 and *indexers*. The following code shows examples of each:
 
-[!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
+[!code-csharp[ExpressionBodiedMembers](../../samples/snippets/csharp/new-in-7/expressionmembers.cs#36_ExpressionBodiedEverything "new expression-bodied members")]
 
 > [!NOTE]
 > This example does not need a finalizer, but it is shown
@@ -470,17 +472,17 @@ constructs, C# 7 introduces *throw expressions*.
 The syntax is the same as you've always used for `throw` statements. The only difference
 is that now you can place them in new locations, such as in a conditional expression:
 
-[!code-csharp[Throw_ExpressionExample](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#37_Throw_ExpressionExample "conditional throw expressions")]
+[!code-csharp[Throw_ExpressionExample](../../samples/snippets/csharp/new-in-7/throwexpressions.cs#37_Throw_ExpressionExample "conditional throw expressions")]
 
 This features enables using throw expressions in initialization expressions:
 
-[!code-csharp[ThrowInInitialization](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#38_ThrowInInitialization "conditional throw expressions")]
+[!code-csharp[ThrowInInitialization](../../samples/snippets/csharp/new-in-7/throwexpressions.cs#38_ThrowInInitialization "conditional throw expressions")]
 
 Previously, those initializations would need to be in a constructor, with the
 throw statements in the body of the constructor:
 
 
-[!code-csharp[ThrowInConstructor](../../samples/snippets/csharp/new-in-7/new-in-7/throwexpressions.cs#39_ThrowInConstructor "throw statements")]
+[!code-csharp[ThrowInConstructor](../../samples/snippets/csharp/new-in-7/throwexpressions.cs#39_ThrowInConstructor "throw statements")]
 
 > [!NOTE]
 > Both of the preceding constructs will cause exceptions to be thrown during
@@ -505,7 +507,7 @@ must be accessible. As one concrete example, the `ValueTask` type
 has been added to the .NET framework to make use of this new language
 feature: 
 
-[!code-csharp[UsingValueTask](../../samples/snippets/csharp/new-in-7/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
+[!code-csharp[UsingValueTask](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
 > You need to add the pre-release NuGet package `System.Threading.Tasks.Extensions`
@@ -518,7 +520,7 @@ reuse the result in subsequent calls. The `ValueTask` struct has a constructor
 with a `Task` parameter so that you can construct a `ValueTask` from the
 return value of any existing async method:
 
-[!code-csharp[AsyncOptimizedValueTask](../../samples/snippets/csharp/new-in-7/new-in-7/AsyncWork.cs#31_AsyncOptimizedValueTask "Return async result or cached value")]
+[!code-csharp[AsyncOptimizedValueTask](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#31_AsyncOptimizedValueTask "Return async result or cached value")]
  
 As with all performance recommendations, you should benchmark
 both versions before making large scale changes to your code.
@@ -536,7 +538,7 @@ For those times when you are creating bit masks, or whenever a
 binary representation of a number makes the most readable code,
 write that number in binary:
 
-[!code-csharp[BinaryConstants](../../samples/snippets/csharp/new-in-7/new-in-7/Program.cs#32_BinaryConstants "Binary constants")]
+[!code-csharp[BinaryConstants](../../samples/snippets/csharp/new-in-7/Program.cs#32_BinaryConstants "Binary constants")]
 
 The `0b` at the beginning of the constant indicates that the
 number is written as a binary number.
@@ -544,17 +546,17 @@ number is written as a binary number.
 Binary numbers can get very long, so it's often easier to see
 the bit patterns by introducing the `_` as a digit separator:
 
-[!code-csharp[ThousandSeparators](../../samples/snippets/csharp/new-in-7/new-in-7/Program.cs#33_ThousandSeparators "Thousands separators")]
+[!code-csharp[ThousandSeparators](../../samples/snippets/csharp/new-in-7/Program.cs#33_ThousandSeparators "Thousands separators")]
 
 The digit separator can appear anywhere in the constant. For base 10
 numbers, it would be common to use it as a thousands separator:
 
-[!code-csharp[LargeIntegers](../../samples/snippets/csharp/new-in-7/new-in-7/Program.cs#34_LargeIntegers "Large integer")]
+[!code-csharp[LargeIntegers](../../samples/snippets/csharp/new-in-7/Program.cs#34_LargeIntegers "Large integer")]
 
 The digit separator can be used with `decimal`, `float` and `double`
 types as well:
 
-[!code-csharp[OtherConstants](../../samples/snippets/csharp/new-in-7/new-in-7/Program.cs#35_OtherConstants "non-integral constants")]
+[!code-csharp[OtherConstants](../../samples/snippets/csharp/new-in-7/Program.cs#35_OtherConstants "non-integral constants")]
 
 Taken together, you can declare numeric constants with much more
 readability.

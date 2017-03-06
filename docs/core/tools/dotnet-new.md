@@ -14,7 +14,7 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 #dotnet-new
 
 ## Name
-`dotnet-new` - Creates a new project, configuration file or solution in the current directory based on the specified template.
+`dotnet-new` - Creates a new project, configuration file or solution based on the specified template.
 
 ## Synopsis
 ```

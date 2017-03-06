@@ -31,8 +31,6 @@ You'll also need to install [Visual Studio Code](http://code.visualstudio.com).
 During the course of this article, you'll also install extensions
 that will improve the .NET Core development experience.
 
-You can find the links to all of these at the [.NET home page](http://dot.net).
-
 ## Getting Started
 
 The source for this tutorial is available on
@@ -47,7 +45,7 @@ tests for that library project, and a console application that makes
 use of the library. 
 
 Let's start by creating those folders. In the terminal, create a 'golden'
-directory. In VS Code, open the *golden* directory. This directory is the root of your solution. Run the `dotnet new` command to create a new solution:
+directory. In VS Code, open the *golden* directory. This directory is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution:
 
 ```
 dotnet new sln
@@ -65,8 +63,8 @@ dotnet new classlib library
 
 This creates a library project, with two files: *library.csproj* and
 *Class1.cs* in the *library* directory. You want that library project
-included in your solution. Run the `dotnet sln` command to add the newly
-created `library.csproj` project to the solution:
+included in your solution. Run the [`dotnet sln`](../tools/dotnet-sln.md) command to add the newly
+created *library.csproj* project to the solution:
 
 ```
 dotnet sln add library/library.csproj
@@ -156,7 +154,7 @@ above. The `dotnet add reference` command does that:
 dotnet add test-library/test-library.csproj reference library/library.csproj
 ```
 
-Or, you can manually edit the test-library.csproj file and add the
+Or, you can manually edit the *test-library.csproj* file and add the
 following node:
 
 ```xml
@@ -170,7 +168,7 @@ in the current workspace. Without explicitly specifying this, it's possible
 that the test project would build against a NuGet package of the same name.
 
 Now that the dependencies have been properly configured, let's create
-the tests for your library. Open `UnitTest1.cs` and
+the tests for your library. Open *UnitTest1.cs* and
 replace its contents with the following code:
 
 ```csharp
@@ -199,7 +197,7 @@ that it is passing.
 ### Writing the console app
 
 In your terminal run `dotnet new console -o app`
-to create a new console application. This proejct is also
+to create a new console application. This project is also
 part of the solution, so run `dotnet sln add app/app.csproj`
 to add the project to the solution.
 
@@ -211,7 +209,7 @@ again:
 dotnet add app/app.csproj reference library/library.csproj
 ```
 
-Run `dotnet restore` to restore all dependencies. Open `program.cs`
+Run `dotnet restore` to restore all dependencies. Open *program.cs*
 and replace the contents of the `Main` method with this line:
 
 ```csharp

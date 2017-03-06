@@ -21,12 +21,10 @@ Install .NET Core on [Windows](https://www.microsoft.com/net/core#windows).
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
-* [Building a C# Hello World Application with .NET Core in Visual Studio 2017 RC](../csharp/getting-started/with-visual-studio-2017.md) - Learn to to build, debug, and publish a simple .NET Core console application using Visual Studio 2017 RC.
-* [Building a class library with C# and .NET Core in Visual Studio 2017 RC](../csharp/getting-started/library-with-visual-studio-2017.md) - Learn how to build a class library written in C# using Visual Studio 2017 RC
-* [Getting started with .NET Core on Windows, using Visual Studio 2015](tutorials/using-on-windows.md) - Learn how to use [Visual Studio](https://www.visualstudio.com/), the full-featured integrated development environment (IDE) for Windows, for different .NET Core scenarios.
+* [Building a C# Hello World Application with .NET Core in Visual Studio 2017](../csharp/getting-started/with-visual-studio-2017.md) - Learn to to build, debug, and publish a simple .NET Core console application using Visual Studio 2017.
+* [Building a class library with C# and .NET Core in Visual Studio 2017](../csharp/getting-started/library-with-visual-studio-2017.md) - Learn how to build a class library written in C# using Visual Studio 2017
 * [Get started with Visual Studio Code using C# and .NET Core on Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core) - This [Channel9](https://channel9.msdn.com) video shows you how to install and use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor, to create your first console application in .NET Core.
 * [Getting started with .NET Core using the command-line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
-
 
 See the [Prerequisites for Windows development](windows-prerequisites.md) topic for a list of the supported Windows versions. 
 

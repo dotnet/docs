@@ -12,9 +12,9 @@ ms.devlang: csharp
 ms.assetid: cb213625-cc60-438b-9b9e-49aed0e4a974
 ---
 
-# Debugging your C# Hello World application with Visual Studio 2017 RC #
+# Debugging your C# Hello World application with Visual Studio 2017 #
 
-So far, you've followed the steps in [Building a c# Hello World Application with .NET Core in Visual Studio 2017 RC](.\with-visual-studio-2017.md) to create and run a simple console application. Once you've written and compiled an application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application. Let's look at a few of them as we debug our application.
+So far, you've followed the steps in [Building a c# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio-2017.md) to create and run a simple console application. Once you've written and compiled an application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application. Let's look at a few of them as we debug our application.
 
 ## Debugging in Debug mode ##
 

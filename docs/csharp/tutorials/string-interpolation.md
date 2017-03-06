@@ -4,7 +4,7 @@ description: Learn how string interpolation works in C# 6
 keywords: .NET, .NET Core, C#, string
 author: mgroves
 ms.author: wiwagn
-ms.date: 12/09/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -41,9 +41,11 @@ comfortable with.
 Now that you've installed all the tools, create a new .NET Core
 application. To use the command line generator, create a directory for your project, such as `interpolated`, and execute the following command in your favorite shell:
 
-`dotnet new`
+```
+dotnet new console
+```
 
-This command will create a barebones .NET core project with a project file, `interpolated.csproj`, and a source code file, `Program.cs`. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+This command will create a barebones .NET core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 

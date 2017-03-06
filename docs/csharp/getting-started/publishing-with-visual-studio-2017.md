@@ -14,7 +14,7 @@ ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
 
 # Publishing your Hello World application with Visual Studio 2017
 
-In [Building a C# Hello World application with .NET Core in Visual Studio 2017 RC](with-visual-studio-2017.md), you built your Hello World console application, and in [Debugging your C# Hello World application with Visual Studio 2017 RC](debugging-with-visual-studio-2017.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application; you can deploy them by copying them to a target machine.
+In [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio-2017.md), you built your Hello World console application, and in [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio-2017.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application; you can deploy them by copying them to a target machine.
 
 To publish and run your application: 
 

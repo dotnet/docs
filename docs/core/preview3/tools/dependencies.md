@@ -4,7 +4,7 @@ description: Explains how to manage your dependencies with the .NET Core tools.
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli

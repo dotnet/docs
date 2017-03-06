@@ -1,5 +1,6 @@
 ---
 redirect_url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
+redirect_document_id: TRUE
 ---
 
 # Migrating ASP.NET MVC Applications to Windows Containers

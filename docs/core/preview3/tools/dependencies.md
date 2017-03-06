@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 ---
 
-# Managing dependencies in .NET Core RC4 tooling
+# Managing dependencies with .NET Core SDK 1.0.0 tooling
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 

@@ -9,18 +9,18 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
+ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
 
-#dotnet-run
+#dotnet-run (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [dotnet-run (.NET Core Tools RC4)](../preview3/tools/dotnet-run.md) topic.
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet-run](../../tools/dotnet-run.md) topic.
 
 ## Name 
 
-`dotnet-run` - Runs source code 'in-place' without any explicit compile or launch commands.
+dotnet-run -- Runs source code 'in-place' without any explicit compile or launch commands.
 
 ## Synopsis
 
@@ -70,7 +70,7 @@ Configuration to use when publishing. The default value is `Debug`.
 `-p`, `--project [PATH]`
 
 Specifies which project to run. 
-It can be a path to a [project.json](project-json.md) file or to a directory containing a [project.json](project-json.md) file. It defaults to
+It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to
 current directory if not specified. 
 
 ## Examples
@@ -80,7 +80,7 @@ Run the project in the current directory:
 
 Run the specified project:
 
-`dotnet run --project /projects/proj1/project.json`
+`dotnet run --project /projects/proj1/proj1.csproj`
 
 Run the project in the current directory (the `--help` argument in this example is passed to the application being run, since the `--` argument was used):
 

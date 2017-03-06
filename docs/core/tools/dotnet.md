@@ -4,19 +4,18 @@ description: Learn about the dotnet command (the generic driver for the .NET Cor
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
+ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
-
-#dotnet command
+# dotnet command (.NET Core Tools RC4)
 
 > [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [dotnet command (.NET Core Tools RC4)](../preview3/tools/dotnet.md) topic.
+> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
+> see the [dotnet command](../../tools/dotnet.md) topic.
 
 ## Name
 
@@ -27,11 +26,12 @@ dotnet -- General driver for running the command-line commands
 `dotnet [--version] [--verbose] [--info] [command] [arguments] [--help]`
 
 ## Description
-`dotnet` is a generic driver for the Command Line Interface (CLI) toolchain. Invoked on its own, it will give out brief usage instructions. 
 
-Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments. 
+`dotnet` is a generic driver for the Command Line Interface (CLI) toolchain. Invoked on its own, it will give out brief usage instructions.
 
-The only time `dotnet` is used as a command on its own is to run portable apps. Just specify a portable application DLL after the `dotnet` verb to execute the application.    
+Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
+
+The only time `dotnet` is used as a command on its own is to run portable apps. Just specify a portable application DLL after the `dotnet` verb to execute the application.
 
 ## Options
 
@@ -45,50 +45,63 @@ Prints out the version of the CLI tooling.
 
 `--info`
 
-Prints out more detailed information about the CLI tooling, such as the current operating system, commit SHA for the version, etc. 
+Prints out more detailed information about the CLI tooling, such as the current operating system, commit SHA for the version, etc.
 
 `-h|--help`
 
-Prints out a short help for the command. If using with `dotnet` only, it also prints a list of the available commands.  
+Prints out a short help for the command. If using with `dotnet` only, it also prints a list of the available commands.
 
 ## dotnet commands
 
 The following commands exist for dotnet:
 
 * [dotnet-new](dotnet-new.md)
-   * Initializes a C# or F# console application project.
+  * Initializes a C# or F# project for a given template.
 * [dotnet-restore](dotnet-restore.md)
-  * Restores the dependencies for a given application. 
+  * Restores the dependencies for a given application.
 * [dotnet-build](dotnet-build.md)
   * Builds a .NET Core application.
 * [dotnet-publish](dotnet-publish.md)
-   * Publishes a .NET portable or self-contained application.
+  * Publishes a .NET portable or self-contained application.
 * [dotnet-run](dotnet-run.md)
-   * Runs the application from source.
+  * Runs the application from source.
 * [dotnet-test](dotnet-test.md)
-   * Runs tests using a test runner specified in the project.json.
+  * Runs tests using a test runner specified in the project.json.
 * [dotnet-pack](dotnet-pack.md)
-   * Creates a NuGet package of your code.
+  * Creates a NuGet package of your code.
+* [dotnet-migrate](dotnet-migrate.md)
+  * Migrates a valid Preview 2 project to a RC4 project.
+* [dotnet-msbuild](dotnet-msbuild.md)
+  * Provides access to the MSBuild command line.
+* [dotnet-sln](dotnet-sln.md)
+  * Options to add, remove, and list projects in a solution file.
+* Project modification commands
+  * References - add, remove, and list project to project references.
+    * [dotnet-add reference](dotnet-add-reference.md)
+    * [dotnet-remove reference](dotnet-remove-reference.md)
+    * [dotnet-list reference](dotnet-list-reference.md)
+  * Packages - add and remove NuGet packages on a project.
+    * [dotnet-add package](dotnet-add-package.md)
+    * [dotnet-remove package](dotnet-remove-package.md)
 
 ## Examples
 
 Initialize a sample .NET Core console application that can be compiled and run:
 
-`dotnet new`
+`dotnet new console`
 
 Restore dependencies for a given application:
 
 `dotnet restore`
 
-Build a project and its dependencies in a given directory: 
+Build a project and its dependencies in a given directory:
 
 `dotnet build`
 
 Run a portable app named `myapp.dll`:
-
 `dotnet myapp.dll`
 
-## Environment 
+## Environment
 
 `DOTNET_PACKAGES`
 

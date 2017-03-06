@@ -21,10 +21,168 @@
         "redirect_url": "/dotnet/articles/csharp/getting-started/library-with-visual-studio-2017"
     },
     {
-        "source_path": "docs/core/preview3/tools/dotnet-new.md", 
-        "redirect_url": "/dotnet/articles/core/tools/dotnet-new",
+        "source_path": "docs/core/preview3/windows-prerequisites.md",
+        "redirect_url": "/dotnet/articles/core/windows-prerequisites"
+    },
+    {
+        "source_path": "docs/core/preview3/deploying/index.md", 
+        "redirect_url": "/dotnet/articles/core/deploying"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/csproj.md", 
+        "redirect_url": "/dotnet/articles/core/tools/csproj",
         "redirect_document_id": true
-    },    
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dependencies.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dependencies",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-add-package.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-add-package",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-add-reference.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-add-reference",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-build.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-build"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-clean.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-clean",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-install-script.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-install-script"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-list-reference.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-list-reference",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-migrate.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-migrate",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-msbuild.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-msbuild",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-new.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-new"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-nuget-delete.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-nuget-delete",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-nuget-locals.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-nuget-locals",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-nuget-push.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-nuget-push",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-pack.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-pack"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-publish.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-publish"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-remove-package.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-remove-package",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-remove-referece.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-remove-reference",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-restore.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-restore"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-run.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-run"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet-test.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-test"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/dotnet.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/extensibilty.md", 
+        "redirect_url": "/dotnet/articles/core/tools/extensibilty"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/global.json.md", 
+        "redirect_url": "/dotnet/articles/core/tools/global.json"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/index.md", 
+        "redirect_url": "/dotnet/articles/core/tools/index",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/layering.md", 
+        "redirect_url": "/dotnet/articles/core/tools/cli-msbuild-architecture",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tools/telemetry.md",
+        "redirect_url": "/dotnet/articles/core/tools/telemetry"
+    },
+    {
+        "source_path": "docs/core/preview3/tools/using-ci-with-cli.md", 
+        "redirect_url": "/dotnet/articles/core/tools/using-ci-with-cli"
+    },
+    {
+        "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md", 
+        "redirect_url": "/dotnet/articles/core/tutorials/using-on-windows-full-solution",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md", 
+        "redirect_url": "/dotnet/articles/core/tutorials/using-on-windows",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild-folders.md", 
+        "redirect_url": "/dotnet/articles/core/tutorials/testing-with-cli",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md", 
+        "redirect_url": "/dotnet/articles/core/tutorials/using-with-xplat-cli",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/core/tools/project-json.md", 
+        "redirect_url": "/dotnet/articles/core/tools/project-json-to-csproj"
+    },
+    {
+        "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md", 
+        "redirect_url": "/dotnet/articles/core/tools/cli-msbuild-architecture"
+    },
     {
         "source_path": "docs/fsharp/async.md", 
         "redirect_url": "/dotnet/articles/fsharp/tutorials/asynchronous-and-concurrent-programming/async"

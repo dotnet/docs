@@ -31,13 +31,13 @@ With the move away from the existing project system as well as with building eng
 
 Let's start with a quick refresher on Preview 2 layering as shown in the following picture:
 
-![Preview 2 tools high-level architecture](media/p2-arch.png)
+![Preview 2 tools high-level architecture](media/cli-msbuild-architecture/p2-arch.png)
 
 The layering of the tools is quite simple. At the bottom we have the .NET Core Command Line tools as a foundation. All other, higher-level tools such as Visual Studio or VS Code, depend and rely on the CLI to build projects, restore dependencies and so on. This meant that, for example, if Visual Studio wanted to perform a restore operation, it would call into `dotnet restore` command in the CLI. 
 
 With the move to the new project system, the previous diagram changes: 
 
-![RC4 tools high-level architecture](media/p3-arch.png)
+![RC4 tools high-level architecture](media/cli-msbuild-architecture/p3-arch.png)
 
 The main difference is that the CLI is not the foundational layer anymore; this role is now filled by the "shared SDK component". This shared SDK component is a set of targets and associated tasks that are responsible for compiling your code, publishing it, packing NuGet packages etc. The SDK itself is open-source and is available on GitHub on the [SDK repo](https://github.com/dotnet/sdk). 
 

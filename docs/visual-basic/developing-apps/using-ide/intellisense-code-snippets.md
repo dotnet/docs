@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "IntelliSense Code Snippets, about IntelliSense Code Snippets"
   - "snippets"
 ms.assetid: ffdde4c9-8141-4906-b09b-15181357a643
+redirect_url: https://docs.microsoft.com/visualstudio/ide/code-snippets.md
 caps.latest.revision: 21
 author: "stevehoag"
 ms.author: "shoag"

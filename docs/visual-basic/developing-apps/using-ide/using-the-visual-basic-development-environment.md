@@ -12,6 +12,7 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 1509c90a-0b5a-4394-b54b-94677614bd75
+redirect_url: https://docs.microsoft.com/visualstudio/ide/visual-studio-ide.md
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"

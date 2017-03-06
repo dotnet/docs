@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "names, changing symbol"
   - "Rename dialog box"
 ms.assetid: 001d2d81-9bb6-4e8e-ae3a-20c0daaa3959
-redirect_url: https://msdn.microsoft.com/library/ckfya594(v=vs.140).aspx
+redirect_url: https://docs.microsoft.com/visualstudio/ide/refactoring-vb.md
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"

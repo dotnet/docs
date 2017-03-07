@@ -51,7 +51,7 @@ The installation script reference can be found in the [dotnet-install](dotnet-in
 > in the [CLI repo](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). 
 
 ## CI setup examples
-This section will cover step-by-step guides for manual setup of a CI server as well as several SaaS CI solutions. The SaaS CI solutions that are covered are [TravisCI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/) and [Visual Studio Team Services Build](https://www.visualstudio.com/en-us/docs/build/overview). 
+This section will cover step-by-step guides for manual setup of a CI server as well as several SaaS CI solutions. The SaaS CI solutions that are covered are [TravisCI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/) and [Visual Studio Team Services Build](https://www.visualstudio.com/docs/build/overview). 
 
 ### Manual setup 
 Each of the below different services has its own way how to create and configure a build process. However, if you use a different CI build software or have a need to do something different than what the pre-packaged support on each of the services allow you to do, you will need to do something manual. 
@@ -86,8 +86,8 @@ $LocalDotnet = "./$InstallDir/dotnet"
 
 Let's dig into details of the above:
 
-* Lines 3 to 5 set up some variables to hold data that we will need. The `$LocalDotnet` variable will hold the path to the locally installed SDK since we want to be sure that we are executing that version and not any other that could be, potentially, installed on the machine. The `$InstallDir` and `$CliVersion` variables could also come from options to the script, for example; here, for simplicity sakes, we have 
-* On line 7 we test whether the local path that the `$InstallDir` variable points to exists and if it does we remove it. This is not strictly needed, but it is a good way to "reset" the environment. 
+* Lines 3 to 5 set up some variables to hold data that we'll need. The `$LocalDotnet` variable will hold the path to the locally installed SDK since we want to be sure that we are executing that version and not any other that could be, potentially, installed on the machine. The `$InstallDir` and `$CliVersion` variables could also come from options to the script, for example; here, for simplicity sakes, we have 
+* On line 7, we test whether the local path that the `$InstallDir` variable points to exists and if it does, we remove it. This is not strictly needed, but it's a good way to "reset" the environment.
 * We use the `Invoke-WebRequest` cmdlet of PowerShell on line 14 to get the installation script and put it into our installation directory. 
 * Line 16 shows an invocation to install the SDK of a given version (specified in `$CliVersion`) and to install it into the specified location. 
 * We then put in the final path into the `$LocalDotnet` variable for further use. 
@@ -133,10 +133,10 @@ Just use:
 dotnet: 1.0.0-rc4-0044771
 ```
 
-Travis can run both `osx` (OS X 10.11, OS X 10.12) and `linux` ( Ubuntu 14.04 ) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
+Travis can run both `osx` (OS X 10.11 and OS X 10.12) and `linux` (Ubuntu 14.04) job in a build matrix, see [example .travis.yml](https://github.com/dotnet/docs/blob/master/.travis.yml) 
 for more information.
 
-The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x respectively) in the package, so by installing the SDK you will get everything you need to build. 
+The MSBuild-based tools bring both the LTS and Current runtimes (1.0.x and 1.1.x, respectively) in the package, so by installing the SDK you will get everything you need to build. 
 
 ### AppVeyor
 
@@ -149,7 +149,7 @@ os: Visual Studio 2015
 ```
 
 It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 
-for more info. 
+for more information.
 
 In the example, the .NET Core SDK binaries are downloaded and unzipped in a subdirectory, using the install script, and added to `PATH` environment variable.
 
@@ -170,33 +170,33 @@ install:
 ### Visual Studio Team Services
 There are two ways of configuring the Visual Studio Team Services (VSTS) build to build .NET Core projects:
 
-1. Using the script from the manual step above and running it on your code 
-2. Creating a build out of several build steps that are configured to use .NET Core tools and are available out-of-box on VSTS 
+1. Using the script from the manual step above and running it on your code.
+2. Creating a build out of several build steps that are configured to use .NET Core tools and are available out-of-box on VSTS.
 
 Both solutions are perfectly valid and there is no inherent flaw or advantage to any of them. That said, with the manual step you can completely control the version of the tools that you need since you download it as part of the build. On the other hand, the build is run from a script that you have to author, so that script has to take care of running the build. In this document, we will cover only the manual option, as the other one is very well documented in the overall VSTS build documentation.  
 
 > [!NOTE]
 > This document is not an exhaustive introduction into VSTS builds and assumes familiarity with how they work. 
-> For more information, please visit the [VSTS build documentation](https://www.visualstudio.com/en-us/docs/build/overview). 
+> For more information, please visit the [VSTS build documentation](https://www.visualstudio.com/docs/build/overview). 
 
 #### Using a manual script
-Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify the same script to run as the step. 
+Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify the same script to run as the step.
 
-1. Start by creating a new build definition. Once you get the screen that gives you an option to define what kind of a build you wish to create, click on the **Empty** option as the 
+1. Start by creating a new build definition. On the **Create new build definition** dialog, select **Empty** to start a definition with no steps.
 
-![Selecting an empty build definition](media/vsts-screens/screen_2.png)
+![Screenshot showing the Create new build definition dialog with the Empty option selected](media/using-ci-with-cli/new-build-definition.png)
 
-2. After configuring the repository to build, you will be directed to the actual build definition. Add a build step as in shown below: 
+2. After configuring the repository to build, you will be directed to the **Build Definitions** page. Select **Add build step**: 
 
-![Adding a build step](media/vsts-screens/screen_4.png)
+![Screenshot showing the Build Definitions page](media/using-ci-with-cli/add-build-step.png)
 
-3. Click on the "Add build step" option, you will be presented with the task catalog. The catalog contains many different tasks that you can use in the build. Since we have already a script, we can go down to the 
+3. The **Task catalog** dialog is displayed. The catalog contains many different tasks that you can use in the build. Since we have already a script, scroll through the list and select the **Add** button right next to PowerShell. 
 
-![Adding a PowerShell script step](media/vsts-screens/screen_6.png)
+![Screenshot showing the Task catalog dialog with PowerShell on the tasks list](media/using-ci-with-cli/task-catalog.png)
 
-4. You can now condigure the added build step as shown below. Add the script from the repository that you are building, as shown below. 
+4. The **PowerShell Script** dialog is displayed and you can now configure the PowerShell build step. Add the script from the repository that you are building. 
 
-![Specifying the PowerShell script to run](media/vsts-screens/screen_6_ps.png)
+![Screenshot showing the **PowerShell Script** dialog](media/using-ci-with-cli/powershell-script.png)
 
 ## Orchestrating the build script 
 Most of this document has been about how to acquire the .NET Core tools and configure various CI services while there was no deep delving into how to orchestrate, that is, how to **actually build** your code with .NET Core. This is by design. The choice of how to structure the build process depends on many factors that are mostly tailored to the person/team working on a given set of projects. 
@@ -206,4 +206,4 @@ In general, however, there are two main ways you can structure the build process
 1. Use MSBuild directly
 2. Use the .NET Core command-line commands
 
-Which to use should be decided mostly based on how familar and comfortable you are with each of the mentioned ways. For example, MSBuild can give you access to expressing your build process as tasks and targets, but it comes with an added complexity of learning MSBuild project-file syntax. On the other hand, using just the .NET Core command-line tools could be simpler but it would require you to write orchestration logic (for example, change into directory with project 1 and run `dotnet build`, then change to directory with project 2 and again run `dotnet build` etc.) in some scripting language like `bash` or PowerShell. 
+Which to use should be decided mostly based on how familar and comfortable you are with each of the mentioned ways. For example, MSBuild can give you access to expressing your build process as tasks and targets, but it comes with an added complexity of learning MSBuild project-file syntax. On the other hand, using just the .NET Core command-line tools could be simpler but it would require you to write orchestration logic (for example, change into directory with project 1 and run `dotnet build`, then change to directory with project 2 and again run `dotnet build` etc.) in some scripting language like `bash` or PowerShell.

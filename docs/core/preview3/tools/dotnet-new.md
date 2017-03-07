@@ -11,7 +11,7 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
-#dotnet-new (.NET Core SDK 1.0.0 Tools)
+#dotnet-new
 
 ## Name
 dotnet-new - Creates a new .NET Core project in the current directory

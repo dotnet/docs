@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
-
 #dotnet-publish
 
 ## Name
@@ -54,7 +53,7 @@ Publishes the application for specified target framework. The target framework h
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md). Default is to publish a [framework-dependented app](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependented app](../deploying/index.md#framework-dependent-deployments-fdd).
 
 `-o|--output <OUTPUT_PATH>`
 

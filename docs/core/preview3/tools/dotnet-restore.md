@@ -94,13 +94,13 @@ Restore dependencies and tools for the `app1` project found in the given path:
 
 `dotnet restore ~/projects/app1/app1.csproj`
 	
-Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:
+Restore the dependencies and tools for the project in the current directory using the file path provided as a source:
 
-`dotnet restore -f c:\packages\mypackages` 
+`dotnet restore -s c:\packages\mypackages` 
 
-Restore the dependencies and tools for the project in the current directory using the two file paths provided as the fallback sources:
+Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
-`dotnet restore -f c:\packages\mypackages -f c:\packages\myotherpackages` 
+`dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages` 
 
 Restore dependencies and tools for the project in the current directory and shows only errors in the output:
 

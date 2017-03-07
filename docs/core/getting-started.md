@@ -4,7 +4,7 @@ description: Find resources to learn how to build .NET Core applications on Wind
 keywords: .NET, .NET Core
 author: mairaw
 ms.author: mairaw
-ms.date: 03/02/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -22,7 +22,7 @@ Install .NET Core on [Windows](https://www.microsoft.com/net/core#windows).
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
 * [Building a C# Hello World Application with .NET Core in Visual Studio 2017](../csharp/getting-started/with-visual-studio-2017.md) - Learn to to build, debug, and publish a simple .NET Core console application using Visual Studio 2017.
-* [Building a class library with C# and .NET Core in Visual Studio 2017](../csharp/getting-started/library-with-visual-studio-2017.md) - Learn how to build a class library written in C# using Visual Studio 2017
+* [Building a class library with C# and .NET Core in Visual Studio 2017](../csharp/getting-started/library-with-visual-studio.md) - Learn how to build a class library written in C# using Visual Studio 2017
 * [Get started with Visual Studio Code using C# and .NET Core on Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core) - This [Channel9](https://channel9.msdn.com) video shows you how to install and use [Visual Studio Code](https://www.visualstudio.com/products/code-vs), Microsoft's lightweight cross-platform code editor, to create your first console application in .NET Core.
 * [Getting started with .NET Core using the command-line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
 

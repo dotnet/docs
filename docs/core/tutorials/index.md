@@ -4,7 +4,7 @@ description: .NET Core Tutorials
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -18,11 +18,11 @@ The following tutorials are available for learning about .NET Core.
 ## Building applications with Visual Studio 2017
 
 - [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio-2017.md)
-- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio-2017.md)
-- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio-2017.md)
-- [Building a C# class library](../../csharp/getting-started/library-with-visual-studio-2017.md)
+- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio.md)
+- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio.md)
+- [Building a C# class library](../../csharp/getting-started/library-with-visual-studio.md)
 - [Testing a C# class library](../../csharp/getting-started/testing-library-with-visual-studio.md)
-- [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio-2017.md)
+- [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
 - [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
 
 ## Building applications with Visual Studio Code

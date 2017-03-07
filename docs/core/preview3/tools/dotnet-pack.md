@@ -4,19 +4,14 @@ description: The dotnet-pack command creates NuGet packages for your .NET Core p
 keywords: dotnet-pack, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
-
-#dotnet-pack (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-pack](../../tools/dotnet-pack.md) topic.
+#dotnet-pack
 
 ## Name
 
@@ -24,11 +19,10 @@ ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 
 ## Synopsis
 
-`dotnet pack [--help] [--output]  
-    [--no-build] [--include-symbols]
-    [--include-source] [--servicable]
-    [--configuration]  [--version-suffix]
-    [project]`  
+```
+dotnet pack [<PROJECT>] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix] [-s|--serviceable] [-v|--verbosity]
+dotnet pack [-h|--help]
+```
 
 ## Description
 
@@ -40,16 +34,18 @@ Project-to-project references are not packaged inside the project. Currently, yo
 
 `dotnet pack` by default first builds the project. If you wish to avoid this, pass the `--no-build` option. This can be useful in Continuous Integration (CI) build scenarios in which you know the code was just previously built, for example. 
 
+## Arguments
+
+`PROJECT` 
+    
+The project to pack. It can be either a path to a [csproj file](csproj.md) or to a directory. If omitted, it will
+default to the current directory. 
+
 ## Options
 
 `-h|--help`
 
 Prints out a short help for the command.  
-
-`[project]` 
-    
-The project to pack. It can be either a path to a [csproj file](csproj.md) or to a directory. If omitted, it will
-default to the current directory. 
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -59,21 +55,29 @@ Places the built packages in the directory specified.
 
 Does not build the project before packing. 
 
+`--include-symbols`
+
+Generates the symbols nupkg. 
+
 `--include-source`
 
 Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`. 
-
-`--include-symbols`
-
-Generate the symbols nupkg. 
 
 `-c|--configuration <Debug|Release>`
 
 Configuration to use when building the project. If not specified, will default to `Debug`.
 
-`--version-suffix`
+`--version-suffix <VERSION_SUFFIX>`
 
-Updates the star in `-*` package version suffix with a specified string.
+Defines the value for the $(VersionSuffix) MSBuild property in the project.
+
+`-s|--serviceable`
+
+Sets the serviceable flag in the package. For more information, see https://aka.ms/nupkgservicing.
+
+`--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
 ## Examples
 
@@ -93,6 +97,6 @@ Pack the project in the current directory into the specified folder and skip the
 
 `dotnet pack --no-build --output nupkgs`
 
-Pack the current project and updates the resulting packages version with the given suffix. For example, version `1.0.0-*` will be updated to `1.0.0-ci-1234`.
+Pack the current project and updates the resulting package version with the given suffix. The project's version suffix is configured as `<VersionSuffix>$(VersionSuffix)</VersionSuffix>` in the *.csproj*  file.
 
 `dotnet pack --version-suffix "ci-1234"`

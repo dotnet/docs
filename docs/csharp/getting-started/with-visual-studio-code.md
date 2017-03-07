@@ -4,7 +4,7 @@ description: Learn how to create and debug your first .NET Core application in C
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: mairaw
-ms.date: 01/03/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -14,7 +14,7 @@ ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 
 # Getting Started with Visual Studio Code
 
-.NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
+.NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
 ## Prerequisites
 
@@ -37,8 +37,8 @@ Let's get started with a simple "Hello World" program on .NET Core:
     * Alternatively, you can select **File** > **Open Folder** from the main menu to open your project folder.
 
 2. Initialize a C# project:
-    * Open the Integrated Terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>`</kbd> (backtick).
-    * In the terminal window, type `dotnet new`.
+    * Open the Integrated Terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick).
+    * In the terminal window, type `dotnet new console`.
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written, along with a C# project file named `HelloWorld.csproj`.
 
   ![The dotnet new command](media/with-visual-studio-code/dotnetnew.png)
@@ -58,11 +58,11 @@ Let's get started with a simple "Hello World" program on .NET Core:
 You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
 ## Debug
-1. Open Program.cs by clicking on it. The first time you open a C# file in VS Code, [OmniSharp](http://www.omnisharp.net/) will load in the editor.
+1. Open *Program.cs* by clicking on it. The first time you open a C# file in VS Code, [OmniSharp](http://www.omnisharp.net/) will load in the editor.
 
   ![Open the Program.cs file](media/with-visual-studio-code/opencs.png)
 
-2. VS Code will prompt you to add the missing assets to build and debug your app. Click **Yes**. 
+2. VS Code will prompt you to add the missing assets to build and debug your app. Select **Yes**. 
 
   ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
 

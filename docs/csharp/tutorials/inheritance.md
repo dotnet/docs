@@ -5,7 +5,7 @@ keywords: inheritance (C#), base classes, derived classes, abstract base classes
 author: rpetrusha
 manager: wpickett
 ms.author: ronpet
-ms.date: 12/13/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: .net-core-technologies
@@ -28,7 +28,7 @@ To create and run the examples in this tutorial, you use the [dotnet](../../core
 
 1. Create a directory to store the example.
 
-1. Enter the [dotnet new](../../core/tools/dotnet-new.md) command from the command line to create a new .NET Core project.
+1. Enter the [dotnet new console](../../core/tools/dotnet-new.md) command at a command prompt to create a new .NET Core project.
 
 1. Copy and paste the code from the example into your code editor.
 

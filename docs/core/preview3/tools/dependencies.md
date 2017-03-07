@@ -4,7 +4,7 @@ description: Explains how to manage your dependencies with the .NET Core tools.
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 11/12/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 ---
 
-# Managing dependencies in .NET Core RC4 tooling
+# Managing dependencies with .NET Core SDK
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
@@ -45,7 +45,7 @@ Adding a dependency to your project is straightforward. Here is an example of ho
 
 When you open your project file, you will see two or more `<ItemGroup>` nodes. You will notice that one of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node, or create a new one; it is completely up to you as the result will be the same. 
 
-In this example we will use the default template that is dropped by `dotnet new`. This is a simple console application. When we open up the project, we first find the `<ItemGroup>` with already existing `<PackageReference>` in it. We then add the following to it:
+In this example we will use the default template that is dropped by `dotnet new console`. This is a simple console application. When we open up the project, we first find the `<ItemGroup>` with already existing `<PackageReference>` in it. We then add the following to it:
 
 ```xml
 <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />

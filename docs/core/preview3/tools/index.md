@@ -4,7 +4,7 @@ description: An overview of what the Command-Line Interface (CLI) is and its mai
 keywords: CLI, CLI tools, .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/06/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,11 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 ---
 
-# .NET Core command-line interface tools (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [.NET Core command-line interface tools](../../tools/index.md) topic.
+# .NET Core command-line interface tools (.NET Core SDK 1.0.0 Tools)
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 
@@ -69,7 +65,7 @@ The following example utilizes several commands from the CLI standard install to
 restore the dependencies, build the application and then run it. 
 
 ```console
-dotnet new
+dotnet new console
 dotnet restore
 dotnet build --output /stuff
 dotnet /stuff/new.dll
@@ -115,12 +111,12 @@ CLI enables applications to be portable in two main ways:
 
 You can learn more about both of these in the [.NET Core application deployment](../deploying/index.md) topic. 
 
-## Migration from RC4/project.json
-If you used Preview 2 tooling and project.json projects, you can consult the [dotnet migrate](dotnet-migrate.md) command docs
+## Migration from project.json
+If you used Preview 2 tooling and *project.json* projects, you can consult the [dotnet migrate](dotnet-migrate.md) command docs
 to get acquainted with the command and how to migrate your project. 
 
 > [!NOTE]
-> The `dotnet migrate` command currently does not migrate pre-preview 2 project.json files. 
+> The `dotnet migrate` command currently does not migrate pre-preview 2 *project.json* files. 
 
 ## Extensibility
 Of course, not every tool that you could use in your workflow will be part of the core CLI tools. However, .NET Core 

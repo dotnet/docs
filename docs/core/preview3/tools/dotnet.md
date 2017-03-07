@@ -4,26 +4,25 @@ description: Learn about the dotnet command (the generic driver for the .NET Cor
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 02/16/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
-# dotnet command (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet command](../../tools/dotnet.md) topic.
+# dotnet command
 
 ## Name
 
-dotnet -- General driver for running the command-line commands
+`dotnet` - General driver for running the command-line commands
 
 ## Synopsis
 
-`dotnet [--version] [--verbose] [--info] [command] [arguments] [--help]`
+```
+dotnet [command] [arguments] [--version] [--info] [-d|--diagnostics] [-v|--verbose]
+dotnet [-h|--help]
+```
 
 ## Description
 
@@ -38,6 +37,10 @@ The only time `dotnet` is used as a command on its own is to run portable apps. 
 `-v|--verbose`
 
 Enables verbose output.
+
+`-d|--diagnostics`
+
+Enables diagnostic output.
 
 `--version`
 
@@ -70,9 +73,11 @@ The following commands exist for dotnet:
 * [dotnet-pack](dotnet-pack.md)
   * Creates a NuGet package of your code.
 * [dotnet-migrate](dotnet-migrate.md)
-  * Migrates a valid Preview 2 project to a RC4 project.
+  * Migrates a valid Preview 2 project to a .NET Core SDK 1.0.0 project.
 * [dotnet-msbuild](dotnet-msbuild.md)
   * Provides access to the MSBuild command line.
+* [dotnet-clean](dotnet-clean.md)
+  * Clean build output(s).
 * [dotnet-sln](dotnet-sln.md)
   * Options to add, remove, and list projects in a solution file.
 * Project modification commands

@@ -13,8 +13,6 @@ ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
 
 # Unit testing with MSTest and .NET Core
 
-[!INCLUDE[preview-warning](../../includes/warning.md)]
-
 ## Creating the projects
 
 [Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)
@@ -203,9 +201,9 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
 and the
-[complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/src/PrimeService/PrimeService.cs).
+[complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService/PrimeService.cs).
 
 You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests

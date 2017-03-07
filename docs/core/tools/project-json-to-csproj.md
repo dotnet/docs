@@ -339,7 +339,7 @@ standalone.
 
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 
-For more information, see [Self-contained deployments (SCD)](../preview3/deploying/index.md#self-contained-deployments-scd).
+For more information, see [Self-contained deployments (SCD)](../deploying/index.md#self-contained-deployments-scd).
 
 ## tools
 ```json
@@ -681,4 +681,4 @@ to the project-relative file path.
 ## See Also
 [project.json reference](project-json.md)
 
-[High-level overview of changes in CLI](../preview3/tools/layering.md)
+[High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

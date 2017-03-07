@@ -13,9 +13,8 @@ ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 ---
 #dotnet-migrate
 
-## Name
-
-`dotnet-migrate` - Migrates a Preview 2 .NET Core project to .NET Core SDK 1.0.0 project
+## Name 
+dotnet-migrate - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 project.
 
 ## Synopsis
 
@@ -26,23 +25,26 @@ dotnet migrate [-h|--help]
 
 ## Description
 
-The `dotnet migrate` command will migrate a valid Preview 2 `project.json` based project to a valid SDK 1.0.0 `csproj` project. 
+The `dotnet migrate` command will migrate a valid Preview 2 *project.json* based project to a valid .NET Core SDK 1.0 *csproj* project. 
+
 By default, the command will migrate the root project and any project references that the root project contains. This behavior 
 can be disabled using the `--skip-project-references` option at runtime. 
 
 Migration can be done on either:
 
-* A single project by specifying the `project.json` file to migrate
-* All of the directories specified in the `global.json` file by passing in a path to the `global.json` file
+* A single project by specifying the *project.json* file to migrate
+* All of the directories specified in the *global.json* file by passing in a path to the *global.json* file
 * On all sub-directories of the given directory recursively 
 
-The migrate command will keep the migrated `project.json` file inside a `backup` directory which it will create if it doesn't 
+The migrate command will keep the migrated *project.json* file inside a `backup` directory which it will create if it doesn't 
 exist. This can be overriden using the `--skip-backup` option. 
 
 By default, the migration operation will output the state of the migration process to standard output (STDOUT). If you use the 
 `--report-file` option, that output will also be saved to a file that you specify. 
 
-As of the release of .NET Core SDK 1.0.0, the `dotnet migrate` command only supports valid Preview 2 `project.json` files. This means that you cannot use it to migrate old DNX or Preview 1 `project.json` files directly to csproj; you first need to migrate them to Preview 2 project.json files and then to csproj files. In the future, we will add support for Preview 1 projects. 
+The `dotnet migrate` command only supports valid Preview 2 *project.json* files. This means that you cannot 
+use it to migrate old DNX or Preview 1 *project.json* files directly to csproj; you first need to migrate them to Preview 2 project.json files and then 
+to csproj files. In the future, we will add support for Preview 1 projects. 
 
 ## Options
 
@@ -84,7 +86,7 @@ Migrate a project in the current directory and all of its project to project dep
 
 `dotnet migrate`
 
-Migrate all projects that `global.json` file points to:
+Migrate all projects that *global.json* file points to:
 
 `dotnet migrate path/to/global.json`
 

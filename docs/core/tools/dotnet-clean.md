@@ -20,7 +20,7 @@ ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ## Synopsis
 
 ```
-dotnet clean [<project>] [-o|--output] [-f|--framework] [-c|--configuration] [-v|--verbosity]
+dotnet clean [project] [-o|--output] [-f|--framework] [-c|--configuration] [-v|--verbosity]
 dotnet clean [--help] 
 ```
 

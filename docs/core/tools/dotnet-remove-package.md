@@ -20,7 +20,7 @@ ms.assetid: 2fcc8d37-16b3-4581-8038-832160e72d36
 ## Synopsis
 
 ```
-dotnet remove [<project>] package <package_name>
+dotnet remove [project] package <package_name>
 dotnet remove package [-h|--help]
 ```
 

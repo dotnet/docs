@@ -21,7 +21,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ## Synopsis
 
 ```
-dotnet publish [<PROJECT>] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
+dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
 dotnet publish [-h|--help]
 ```
 
@@ -38,7 +38,7 @@ For more information, see the [.NET Core Application Deployment](../deploying/in
 
 ## Arguments
 
-`<PROJECT>` 
+`project` 
 
 The project to publish, which defaults to the current directory if `<PROJECT>` is not specified. 
 

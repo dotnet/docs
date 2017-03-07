@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
-
 #dotnet-build
 
 ## Name
@@ -21,7 +20,7 @@ ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ## Synopsis
 
 ```
-dotnet build [<project>] [-o|--output] [-f|--framework] [-c|--configuration] [-r|--runtime] [--version-suffix] [--no-incremental] [--no-dependencies] [-v|--verbosity]
+dotnet build [project] [-o|--output] [-f|--framework] [-c|--configuration] [-r|--runtime] [--version-suffix] [--no-incremental] [--no-dependencies] [-v|--verbosity]
 dotnet build [--help]
 ```
 
@@ -46,6 +45,13 @@ In order to build an executable application instead of a library, you need to se
   <OutputType>Exe</OutputType>
 </PropertyGroup>
 ```
+
+## Arguments
+
+`project`
+
+The project file to build.
+If a project file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in `proj` and uses that file.
 
 ## Options
 

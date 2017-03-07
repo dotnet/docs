@@ -21,7 +21,7 @@ ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ## Synopsis
 
 ```
-dotnet pack [<PROJECT>] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix] [-s|--serviceable] [-v|--verbosity]
+dotnet pack [project] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix] [-s|--serviceable] [-v|--verbosity]
 dotnet pack [-h|--help]
 ```
 
@@ -37,7 +37,7 @@ Project-to-project references are not packaged inside the project. Currently, yo
 
 ## Arguments
 
-`PROJECT` 
+`project` 
     
 The project to pack. It can be either a path to a [csproj file](csproj.md) or to a directory. If omitted, it will
 default to the current directory. 

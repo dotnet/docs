@@ -4,7 +4,7 @@ description: The dotnet-clean command cleans the current directory.
 keywords: dotnet-clean, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ---
 
 #dotnet-clean
-
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Name 
 `dotnet-clean` -- Cleans the output of a project. 
@@ -49,7 +47,6 @@ Defines a configuration under which the build was running.  If omitted, it defau
 `-v|--verbosity [Quiet|Minimal|Normal|Diag]`
 
 Defines verbosity to use for the invocation of the `dotnet clean` command. The verbosity levels are standard [MSBuild verbosity levels](https://msdn.microsoft.com/en-us/library/ms164311.aspx). 
-
 
 ## Examples
 

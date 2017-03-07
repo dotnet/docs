@@ -54,7 +54,7 @@ Just as we included unit tests in the same solution as our class library, we can
 
 1. Compile and run the program by clicking the green arrow on the **ShowCase** button.
 
-The application that uses this library can then be debugged and eventually published by following the steps listed in [Debugging your C# Hello World Application with Visual Studio 2017](debugging-with-visual-studio-2017.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio.md).
+The application that uses this library can then be debugged and eventually published by following the steps listed in [Debugging your C# Hello World Application with Visual Studio 2017](debugging-with-visual-studio-2017.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio-2017.md).
 
 ## Distributing the library in a NuGet package ##
 

@@ -1,4 +1,5 @@
-﻿using System;
+// <Snippet1>
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -81,4 +82,4 @@ public static class DiceLibrary
          return new List<object>();
    }
 }
-
+// </Snippet1>

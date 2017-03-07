@@ -30,9 +30,9 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ```xml
 <ItemGroup>
-    <ProjectReference Include="app.csproj" />
-    <ProjectReference Include="..\lib2\lib2.csproj" />
-    <ProjectReference Include="..\lib1\lib1.csproj" />
+  <ProjectReference Include="app.csproj" />
+  <ProjectReference Include="..\lib2\lib2.csproj" />
+  <ProjectReference Include="..\lib1\lib1.csproj" />
 </ItemGroup>
 ```
 

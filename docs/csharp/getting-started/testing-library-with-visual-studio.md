@@ -4,7 +4,7 @@ description: Learn how to test a class library written in C# using Visual Studio
 keywords: .NET Core, .NET Standard class library, Visual Studio 2017, unit testing 
 author: stevehoag
 ms.author: shoag
-ms.date: 11/16/2016
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -14,7 +14,7 @@ ms.assetid: 069ad711-3eaa-45c6-94d7-b40249cc8b99
 
 # Testing a class library with .NET Core in Visual Studio 2017 #
 
-In [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio-2017.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
+In [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md), we created a simple class library that adds an extension method to the @System.String class. Now, we'll create a unit test to make sure that it works as expected. We'll add our unit test project to the solution we created in the previous topic.
 
 ## Creating a unit test project ##
 
@@ -125,4 +125,4 @@ To test the Release build:
 
 1. Re-run the unit tests by choosing **Test**, **Run**, **All Tests** from the Visual Studio menu. The tests should all pass.
 
-Now that you've finished testing your library, the next step is to make it available to callers. You can bundle it with one or more applications, or you can distribute it as a NuGet package. For information about how to do this, see [Consuming a .NET Standard Class Library](./consuming-library-with-visual-studio-2017.md).
+Now that you've finished testing your library, the next step is to make it available to callers. You can bundle it with one or more applications, or you can distribute it as a NuGet package. For information about how to do this, see [Consuming a .NET Standard Class Library](./consuming-library-with-visual-studio.md).

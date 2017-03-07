@@ -11,15 +11,18 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
-# dotnet command (.NET Core SDK 1.0.0 Tools)
+# dotnet command
 
 ## Name
 
-dotnet -- General driver for running the command-line commands
+`dotnet` - General driver for running the command-line commands
 
 ## Synopsis
 
-`dotnet [--version] [--verbose] [--info] [command] [arguments] [--help]`
+```
+dotnet [command] [arguments] [--version] [--info] [-d|--diagnostics] [-v|--verbose]
+dotnet [-h|--help]
+```
 
 ## Description
 
@@ -34,6 +37,10 @@ The only time `dotnet` is used as a command on its own is to run portable apps. 
 `-v|--verbose`
 
 Enables verbose output.
+
+`-d|--diagnostics`
+
+Enables diagnostic output.
 
 `--version`
 
@@ -69,6 +76,8 @@ The following commands exist for dotnet:
   * Migrates a valid Preview 2 project to a .NET Core SDK 1.0.0 project.
 * [dotnet-msbuild](dotnet-msbuild.md)
   * Provides access to the MSBuild command line.
+* [dotnet-clean](dotnet-clean.md)
+  * Clean build output(s).
 * [dotnet-sln](dotnet-sln.md)
   * Options to add, remove, and list projects in a solution file.
 * Project modification commands

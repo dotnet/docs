@@ -11,15 +11,18 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 ---
-
 #dotnet-nuget-locals
 
-## Name 
+## Name
+
 `dotnet-nuget-locals` - Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
 
 ## Synopsis
 
-`dotnet nuget locals <cache_location> [--clear|--list] [--help] [--force-english-output]`
+```
+dotnet nuget locals <cache_location> [(-c|--clear)|(-l|--list)] [--force-english-output]
+dotnet nuget locals [-h|--help]
+```
 
 where `<cache_location>` is one of the following values: `all`, `http-cache`, `packages-cache`, `global-packages`, or `temp`.
 

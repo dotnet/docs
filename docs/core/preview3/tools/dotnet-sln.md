@@ -4,7 +4,7 @@ description: The dotnet-sln command provides a convenient option to add, remove,
 keywords: dotnet-sln, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 02/06/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ---
 # dotnet-sln
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
-
 ## Name
 
 `dotnet-sln` - Modifies a .NET Core solution file.
@@ -22,11 +20,11 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ## Synopsis
 
 ```
-dotnet sln [<SLN_NAME>] add <project> <project>
-dotnet sln [<SLN_NAME>] add **/**
-dotnet sln [<SLN_NAME>] remove <project> <project>
-dotnet sln [<SLN_NAME>] remove **/**
-dotnet sln [<SLN_NAME>] list
+dotnet sln [<solution_name>] add <project> <project>
+dotnet sln [<solution_name>] add **/**
+dotnet sln [<solution_name>] remove <project> <project>
+dotnet sln [<solution_name>] remove **/**
+dotnet sln [<solution_name>] list
 dotnet sln [-h|--help]
 ```
 
@@ -54,9 +52,9 @@ List all projects in a solution file.
 
 ## Arguments
 
-`SLN_NAME`
+`solution_name`
 
-Solution file to use. If not specified, the command will search the current directory for one. If there are multiple solution files in the directory; one must be specified.
+Solution file to use. If not specified, the command will search the current directory for one. If there are multiple solution files in the directory, one must be specified.
 
 ## Options
 

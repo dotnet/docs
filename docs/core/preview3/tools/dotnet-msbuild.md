@@ -11,17 +11,21 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 ---
-
 #dotnet-msbuild
 
-## Name 
-dotnet-msbuild - Builds a project and all of its dependencies.
+## Name
+
+`dotnet-msbuild` - Builds a project and all of its dependencies.
 
 ## Synopsis
 
-`dotnet msbuild <msbuild_arguments>`
+```
+dotnet msbuild <msbuild_arguments>
+dotnet msbuild [-h]
+```
 
 ## Description
+
 The `dotnet msbuild` command allows access to a fully functional MSBuild 
 
 The command has the exact same capabilities as existing MSBuild command-line client. The options are all the same. You can 

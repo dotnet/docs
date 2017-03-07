@@ -4,19 +4,14 @@ description: The `dotnet test` command is used to execute unit tests in a given 
 keywords: dotnet-test, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
-
-#dotnet-test (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-test](../../tools/dotnet-test.md) topic.
+#dotnet-test
 
 ## Name
 
@@ -24,18 +19,14 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 
 ## Synopsis
 
-`dotnet test [project] [--help] 
-    [--settings] [--list-tests] [--filter] 
-    [--test-adapter-path] [--logger] 
-    [--configuration] [--framework] [--output] [--diag]
-    [--no-build] [--verbosity]`
+```
+dotnet test [project] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity]
+dotnet test [-h|--help]
+```
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given project. Unit tests are class library 
-projects that have dependencies on the unit test framework (for example, NUnit or xUnit) and the 
-dotnet test runner for that unit testing framework. 
-These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
+The `dotnet test` command is used to execute unit tests in a given project. Unit tests are class library projects that have dependencies on the unit test framework (for example, NUnit or xUnit) and the dotnet test runner for that unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
 
 Test projects also need to specify the test runner. This is specified using an ordinary `<PackageReference>` element, as 
 seen in the following sample project file:
@@ -44,7 +35,7 @@ seen in the following sample project file:
 
 ## Options
 
-`[project]`
+`project`
     
 Specifies a path to the test project. If omitted, it defaults to current directory.
 
@@ -92,7 +83,7 @@ Enables diagnostic mode for the test platform and write diagnostic messages to t
 
 Does not build the test project prior to running it.
 
-`-v|--verbosity [quiet|minimal|normal|diagnostic]`
+`-v|--verbosity <LEVEL>`
 
 Set the verbosity level of the command. You can specify the following verbosity levels: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. 
 

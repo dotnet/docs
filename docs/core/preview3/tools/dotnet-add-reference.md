@@ -20,7 +20,7 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ## Synopsis
 
 ```
-dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES>
+dotnet add [<project>] reference [-f|--framework] <project_references>
 dotnet add reference [-h|--help]
 ```
 
@@ -38,11 +38,11 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ## Arguments
 
-`PROJECT`
+`project`
 
 Project file to operate on. If not specified, the command will search the current directory for one.
 
-`PROJECT_REFERENCES`
+`project_references`
 
 Project to project references to add. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux-based terminals.
 

@@ -20,7 +20,7 @@ ms.assetid: 8f954a0c-03f8-4fbc-a529-b313ab12c623
 ## Synopsis
 
 ```
-dotnet list [<PROJECT>] reference
+dotnet list [<project>] reference
 dotnet list reference [-h|--help]
 ```
 
@@ -30,7 +30,7 @@ The `dotnet list reference` command provides a convenient option to list project
 
 ## Arguments
 
-`PROJECT`
+`project`
 
 The project file to list the references for. If not specified, the command will search the current directory for one.
 

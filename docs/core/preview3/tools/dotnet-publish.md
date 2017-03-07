@@ -4,19 +4,14 @@ description: The dotnet-publish command publishes your .NET Core project into a 
 keywords: dotnet-publish, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
-
-#dotnet-publish (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-publish](../../tools/dotnet-publish.md) topic.
+#dotnet-publish
 
 ## Name
 
@@ -24,14 +19,14 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 
 ## Synopsis
 
-`dotnet publish [project] 
-    [--help] [--framework]  
-    [--runtime] [--output]  
-    [--version-suffix] [--configuration]`
+```
+dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
+dotnet publish [-h|--help]
+```
 
 ## Description
 
-`dotnet publish` compiles the application, reads through its dependencies specified in the project file and publishes the resulting set of files to a directory. 
+`dotnet publish` compiles the application, reads through its dependencies specified in the project file, and publishes the resulting set of files to a directory. 
 
 Depending on the type of portable app, the resulting directory will contain the following:
 
@@ -42,7 +37,7 @@ For more information, see the [.NET Core Application Deployment](../deploying/in
 
 ## Options
 
-`[project]` 
+`project` 
 
 The project to publish, which defaults to the current directory if `[project]` is not specified. 
 
@@ -70,6 +65,10 @@ Defines what `*` should be replaced with in the version field in the project fil
 `-c|--configuration [Debug|Release]`
 
 Configuration to use when publishing. The default value is `Debug`.
+
+`-v|--verbosity`
+
+Set the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
 ## Examples
 

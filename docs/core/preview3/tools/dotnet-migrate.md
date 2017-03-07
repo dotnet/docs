@@ -11,21 +11,21 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 ---
-
 #dotnet-migrate
 
-## Name 
-dotnet-migrate -- Migrates a Preview 2 .NET Core project to .NET Core SDK 1.0.0 project
+## Name
+
+`dotnet-migrate` - Migrates a Preview 2 .NET Core project to .NET Core SDK 1.0.0 project
 
 ## Synopsis
 
-`dotnet migrate [--help] [--template-file]  
-    [--sdk-package-version] [--xproj-file]  
-    [--skip-project-references]  [--report-file] [--format-report-file-json]
-    [--skip-backup]
-    [<arguments>]`
+```
+dotnet migrate [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file] [-s|--skip-project-references] [-r|--report-file] [--format-report-file-json] [--skip-backup] [<arguments>]
+dotnet migrate [-h|--help]
+```
 
 ## Description
+
 The `dotnet migrate` command will migrate a valid Preview 2 `project.json` based project to a valid SDK 1.0.0 `csproj` project. 
 By default, the command will migrate the root project and any project references that the root project contains. This behavior 
 can be disabled using the `--skip-project-references` option at runtime. 
@@ -64,7 +64,7 @@ The path to the xproj file to use. Required when there is more than one xproj in
 
 `-s|--skip-project-references [Debug|Release]`
 
-Skip migrating project references. By default project references are migrated recursively.
+Skip migrating project references. By default, project references are migrated recursively.
 
 `-r|--report-file <REPORT_FILE>`
 

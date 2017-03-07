@@ -4,19 +4,14 @@ description: The dotnet-pack command creates NuGet packages for your .NET Core p
 keywords: dotnet-pack, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
-
-#dotnet-pack (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-pack](../../tools/dotnet-pack.md) topic.
+#dotnet-pack
 
 ## Name
 
@@ -24,11 +19,10 @@ ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 
 ## Synopsis
 
-`dotnet pack [--help] [--output]  
-    [--no-build] [--include-symbols]
-    [--include-source] [--servicable]
-    [--configuration]  [--version-suffix]
-    [project]`  
+```
+dotnet pack [<project>] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-s|--servicable] [-c|--configuration] [--version-suffix] [-v|--verbosity]
+dotnet pack [-h|--help]
+```
 
 ## Description
 
@@ -46,7 +40,7 @@ Project-to-project references are not packaged inside the project. Currently, yo
 
 Prints out a short help for the command.  
 
-`[project]` 
+`project` 
     
 The project to pack. It can be either a path to a [csproj file](csproj.md) or to a directory. If omitted, it will
 default to the current directory. 
@@ -74,6 +68,10 @@ Configuration to use when building the project. If not specified, will default t
 `--version-suffix`
 
 Updates the star in `-*` package version suffix with a specified string.
+
+`--verbosity <LEVEL>`
+
+Set the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
 ## Examples
 

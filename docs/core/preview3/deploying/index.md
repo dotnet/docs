@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 ---
 
-# .NET Core Application Deployment (.NET Core SDK 1.0.0 Tools)
+# .NET Core Application Deployment
 
 You can create two types of deployments for .NET Core applications: 
 

@@ -106,7 +106,7 @@ The .NET Standard Library is compatible with a subset of PCL profiles. .NET Stan
 
 Profile-based PCL compatibility is provided by the [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) NuGet package. This dependency is required when referencing NuGet packages that contain profile-based PCLs.
 
-Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs in project.json. `netstandard` packaging is compatible with existing users.
+Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs. `netstandard` packaging is compatible with existing users.
 
 You can see the set of PCL profiles that are compatible with the .NET Standard: 
 

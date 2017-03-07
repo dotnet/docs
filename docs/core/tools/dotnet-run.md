@@ -21,7 +21,7 @@ ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ## Synopsis
 
 ```
-dotnet run [-p|--project] [-f|--framework] [-c|--configuration] [[--] [application arguments]]
+dotnet run [-c|--configuration] [-f|--framework] [-p|--project] [[--] [application arguments]]
 dotnet run [-h|--help]
 ```
 
@@ -52,22 +52,23 @@ All arguments after this one will be passed to the application being run.
 
 Prints out a short help for the command.
 
-`-p|--project <PATH>`
+`-c|--configuration {Debug|Release}`
 
-Specifies which project to run. It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to
-current directory if not specified. 
+Configuration to use for building the project. The default value is `Debug`.
 
 `-f|--framework <FRAMEWORK_IDENTIFIER>`
 
-Runs the application for a given framework identifier (FID). 
+Builds and runs the app using the specified framework. The framework has to be specified in the project file.
 
-`-c|--configuration {Debug|Release}`
+`-p|--project <PATH>`
 
-Configuration to use when publishing. The default value is `Debug`.
+Specifies the path to the project file to run. It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to
+current directory if not specified. 
 
 ## Examples
 
 Run the project in the current directory:
+
 `dotnet run` 
 
 Run the specified project:

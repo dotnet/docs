@@ -21,7 +21,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ## Synopsis
 
 ```
-dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
+dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [-c|--configuration] [--version-suffix] [-v|--verbosity]
 dotnet publish [-h|--help]
 ```
 
@@ -40,7 +40,7 @@ The `dotnet publish` command's output is ready to be deployed in a remote machin
 
 `project` 
 
-The project to publish, which defaults to the current directory if `<PROJECT>` is not specified. 
+The project to publish, which defaults to the current directory if `project` is not specified. 
 
 ## Options
 
@@ -54,20 +54,20 @@ Publishes the application for specified target framework. The target framework h
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md). Default is to publish a [framework-dependented app](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md). Default is to publish a [framework-dependent app](../deploying/index.md#framework-dependent-deployments-fdd).
 
 `-o|--output <OUTPUT_PATH>`
 
 Specify the path where to place the directory. If not specified, it will default to *_./bin/[configuration]/[framework]/_* 
 for portable applications or *_./bin/[configuration]/[framework]/[runtime]_* for self-contained deployments.
 
-`--version-suffix [VERSION_SUFFIX]`
+`-c|--configuration {Debug|Release}`
+
+Configuration to use when building the project. The default value is `Debug`.
+
+`--version-suffix <VERSION_SUFFIX>`
 
 Defines what `*` should be replaced with in the version field in the project file.
-
-`-c|--configuration [Debug|Release]`
-
-Configuration to use when publishing. The default value is `Debug`.
 
 `-v|--verbosity <LEVEL>`
 

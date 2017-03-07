@@ -40,8 +40,7 @@ The following is a list of the key NuGet packages for .NET Core:
 - [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including Enumerable and [ILookup&lt;TKey, TElement&gt;](http://docs.microsoft.com/dotnet/core/api/System.Linq.ILookup-2).
 - [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting and activating types, including [Assembly](http://docs.microsoft.com/dotnet/core/api/System.Reflection.Assembly), [TypeInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.TypeInfo) and [MethodInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.MethodInfo).
 
-In most cases, you do not need to reference the lower-level .NET Core packages directly since you'll end up with too many packages to manage. However, you can reference individual packages in your MSBuild project file. In the example below, the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package is referenced. 
-
+Typically, rather than including packages in your projects on a package-by-package basis, it is far easier to include a *metapackage*, which is a set of packages that are often used together. (For more information on metapackages, see the following section.) However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -15,7 +15,7 @@ ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 #dotnet-clean
 
 ## Name 
-`dotnet-clean` -- Cleans the output of a project. 
+`dotnet-clean` - Cleans the output of a project. 
 
 ## Synopsis
 

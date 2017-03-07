@@ -23,7 +23,7 @@ type the following two commands:
 `dotnet restore` installs all the dependencies for this sample into the current directory.
 `dotnet build` creates the output assembly (or assemblies).
 
-Next, change to the `src/app` directory and run those same
+Next, change to the `app` directory and run those same
 two commands again.
 
 After that, type this command to run the executable:
@@ -32,7 +32,7 @@ After that, type this command to run the executable:
 
 `dotnet run` runs the output executable. 
 
-To run the tests, change to the `test/test-library` directory and
+To run the tests, change to the `test-library` directory and
 type the following three commands:
 
 `dotnet restore`

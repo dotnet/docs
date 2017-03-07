@@ -1,11 +1,11 @@
 ﻿using static System.Console;
 using Library;
 
-namespace ConsoleApplication
+namespace app
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             WriteLine($"The answer is {new Thing().Get(19, 23)}");
         }

@@ -101,7 +101,7 @@ public class Example
             Console.WriteLine($"   Area: {r.Area}");
             break;
          case Shape shape when sh != null:
-            Console.WriteLine("A {sh.GetType().Name} shape");
+            Console.WriteLine($"A {sh.GetType().Name} shape");
             break;
          default:
             Console.WriteLine($"The {nameof(sh)} variable does not represent a Shape.");
@@ -110,13 +110,17 @@ public class Example
    }
 }
 // The example displays the following output:
-//     Information about rectangle:
-//        Dimensions: 10 x 10
-//        Area: 100
-//     Information about rectangle:
-//        Dimensions: 5 x 7
-//        Area: 35
-//     The sh variable does not represent a Shape.
-//     The shape: Square with no dimensions
+//       Information about square:
+//          Length of a side: 10
+//          Area: 100
+//       Information about rectangle:
+//          Dimensions: 5 x 7
+//          Area: 35
+//       An uninitialized shape
+//       The shape: Square with no dimensions
+//       Information about square rectangle:
+//          Length of a side: 8
+//          Area: 64
+//       A Circle shape
 // </Snippet1>
 

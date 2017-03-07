@@ -1,10 +1,10 @@
 ---
 title: Building a C# Hello World Application with .NET Core in Visual Studio 2017
-description: Learn how to build a simple .NET Core console application using Visual Studio 2017
+description: Learn how to build a simple .NET Core console application using Visual Studio 2017.
 keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: stevehoag
 ms.author: shoag
-ms.date: 11/16/2016
+ms.date: 03/07/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -18,9 +18,9 @@ This topic provides a step-by-step introduction to building, debugging, and publ
 
 ## Prerequisites ##
 
-- [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/#downloadvs) with the ".NET Core cross-platform development" workload installed. 
+- [Visual Studio 2017](https://www.visualstudio.com/downloads/) with the ".NET Core cross-platform development" workload installed. 
 
-For more information, see the [Visual Studio 2017 RC](../../core/windows-prerequisites.md) section on the Windows prerequisites topic.
+For more information, see the [Visual Studio 2017](../../core/windows-prerequisites.md) section on the Windows prerequisites topic.
 
 ## A simple "Hello World" application ##
 
@@ -30,8 +30,7 @@ Let's begin by creating a simple "Hello World" console application. Here are the
 
 1. In the right-hand pane, choose **Console App (.NET Core)**. Enter the name of the project, `HelloWorld`, and make sure that the **Create directory for solution** box is checked, as the following figure shows.
 
-   ![Image](./media/vs_newproject_2017.jpg)
-
+   ![Screenshot showing the New Project dialog with Console App selected](./media/vs_newproject_2017.jpg)
    
 1. Choose the **OK** button. Visual Studio displays its development environment with its code window, as the following figure shows. The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a @System.String array as an argument. `Main` is the application entry point, the method that is called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
@@ -79,9 +78,9 @@ Let's enhance our application to prompt the user for his or her name and then di
 
 You've now created and run your simple application. To develop a professional application, there are still some additional steps that you can take to make your application ready for release:
 
-- For information on debugging your application, see [Debugging the Hello World Application](.\debugging-with-visual-studio-2017.md)
+- For information on debugging your application, see [Debugging the Hello World Application](debugging-with-visual-studio-2017.md)
 
-- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](./publishing-with-visual-studio-2017.md).
+- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](publishing-with-visual-studio-2017.md).
 
 ## Related topics ##
 

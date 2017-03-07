@@ -16,7 +16,7 @@ ms.assetid: 1feadf3d-3cfc-41dd-abb5-a4fc303a7b53
 This document will cover migration scenarios for .NET Core projects and will go over the following three migration scenarios:
 
 1. [Migration from a valid latest schema of *project.json* to *csproj*](#migration-from-projectjson-to-csproj)
-2. [Migration from DNX to csproj](#migration-from-dnx-to-csproj)
+2. [Migration from DNX to csproj](from-dnx)
 3. [Migration from RC3 and previous .NET Core csproj projects to the final format](#migration-from-earlier-net-core-csproj-formats-to-rtm-csproj)
 
 ## Migration from project.json to csproj
@@ -63,7 +63,7 @@ You’ll get this error if you have a *global.json* file in the current or paren
 ## Migration from DNX to csproj
 If you are still using DNX for .NET Core development, your migration process should be done in two stages:
 
-1. Use the [existing DNX migration guidance](migrating-from-dnx.md) to migrate from DNX to project-json enabled CLI.
+1. Use the [existing DNX migration guidance](from-dnx.md) to migrate from DNX to project-json enabled CLI.
 2. Follow the steps from the previous section to migrate from *project.json* to *.csproj*.  
 
 > [!NOTE]

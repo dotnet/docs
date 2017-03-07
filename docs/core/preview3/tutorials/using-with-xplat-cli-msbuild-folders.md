@@ -1,5 +1,5 @@
 ---
-title: Organizing and testing projects with the .NET Core command line (.NET Core SDK 1.0.0 Tools) | Microsoft Docs
+title: Organizing and testing projects with the .NET Core command line | Microsoft Docs
 description: This tutorial explains how to organize and test .NET Core projects from the command line.
 keywords: .NET, .NET Core
 author: cartermp
@@ -12,9 +12,9 @@ ms.devlang: dotnet
 ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 ---
 
-# Organizing and testing projects with the .NET Core command line (.NET Core SDK 1.0.0 Tools)
+# Organizing and testing projects with the .NET Core command line
 
-This tutorial follows <xref:using-with-xplat-cli-msbuild> to show how to go beyond simple "Hello world!" scenarios and pave the way for more advanced and well-organized applications.
+This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line(./using-with-xplat-cli-msbuild.md) to show how to go beyond simple "Hello world!" scenarios and pave the way for more advanced and well-organized applications.
 
 ## Using folders to organize code
 

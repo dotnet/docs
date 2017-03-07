@@ -2,6 +2,7 @@ using System;
 
 namespace WeatherMicroservice
 {
+#region WeatherReport
     public class WeatherReport
     {
         private static readonly string[] PossibleConditions = new string[]
@@ -14,6 +15,7 @@ namespace WeatherMicroservice
             "Rain"
         };
 
+#region WeatherReportConstructor
         public WeatherReport(double latitude, double longitude, int daysInFuture)
         {
             var generator = new Random((int)(latitude + longitude) + daysInFuture);
@@ -23,10 +25,12 @@ namespace WeatherMicroservice
             AverageWindSpeed = generator.Next(0, 45);
             Conditions = PossibleConditions[generator.Next(0, PossibleConditions.Length - 1)];
         }
+#endregion
 
         public int HiTemperature { get; }
         public int LoTemperature { get; }
         public int AverageWindSpeed { get; }
         public string Conditions { get; }
     }
+#endregion
 }

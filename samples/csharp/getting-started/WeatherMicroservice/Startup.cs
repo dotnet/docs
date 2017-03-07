@@ -31,12 +31,15 @@ namespace WeatherMicroservice
 
             app.Run(async (context) =>
             {
+#region ReadQueryString
                 var latString = context.Request.Query["lat"].FirstOrDefault();
                 var longString = context.Request.Query["long"].FirstOrDefault();
-                
+#endregion
+#region UseTryParse
                 var latitude = latString.TryParse();
                 var longitude = longString.TryParse();
-
+#endregion
+#region GenerateRandomReport
                 if (latitude.HasValue && longitude.HasValue)
                 {
                     var forecast = new List<WeatherReport>();
@@ -44,13 +47,18 @@ namespace WeatherMicroservice
                     {
                         forecast.Add(new WeatherReport(latitude.Value, longitude.Value, days));
                     }
+#region ConvertToJSON
                     var json = JsonConvert.SerializeObject(forecast, Formatting.Indented);
                     context.Response.ContentType = "application/json; charset=utf-8";
                     await context.Response.WriteAsync(json);
+#endregion
                 }
+#endregion
                 else
                 {
+#region WriteResponse
                     await context.Response.WriteAsync($"Retrieving Weather for lat: {latitude}, long: {longitude}");                
+#endregion
                 }
             });
         }

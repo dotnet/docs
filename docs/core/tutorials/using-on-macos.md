@@ -23,8 +23,7 @@ it points out the differences for the Windows platform.
 
 ## Prerequisites
 
-Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/core),
-currently in RC4 pre-release. The .NET Core SDK includes the latest release
+Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/core). The .NET Core SDK includes the latest release
 of the .NET Core framework and runtime.
 
 You'll also need to install [Visual Studio Code](http://code.visualstudio.com).

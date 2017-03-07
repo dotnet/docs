@@ -40,76 +40,44 @@ The following is a list of the key NuGet packages for .NET Core:
 - [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including Enumerable and [ILookup&lt;TKey, TElement&gt;](http://docs.microsoft.com/dotnet/core/api/System.Linq.ILookup-2).
 - [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting and activating types, including [Assembly](http://docs.microsoft.com/dotnet/core/api/System.Reflection.Assembly), [TypeInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.TypeInfo) and [MethodInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.MethodInfo).
 
-Packages are referenced in project.json. In the example below, the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package is referenced. 
+Typically, rather than including packages in your projects on a package-by-package basis, it is far easier to include a *metapackage*, which is a set of packages that are often used together. (For more information on metapackages, see the following section.) However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
 
-```json
-{
-  "dependencies": {
-    "System.Runtime": "4.1.0"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+</Project>
 ```
-
-In most cases, you will not reference the lower-level .NET Core packages directly since you'll end up with too many packages to manage. Instead, you'll reference a metapackage.
 
 ## Metapackages
 
-Metapackages are a NuGet package convention for describing a set of packages that are meaningful together. They represent this set of packages by making them dependencies. They can optionally establish a
-framework for this set of packages by specifying a framework. 
+Metapackages are a NuGet package convention for describing a set of packages that are meaningful together. They represent this set of packages by making them dependencies. They can optionally establish a framework for this set of packages by specifying a framework. 
 
-By referencing a metapackage, you are, in effect, adding a reference to each of its dependent packages as a single gesture. That means that all of the libraries in those packages (refs or libs) are available for IntelliSense (or similar experience) and for publishing (libs only) your app. 
+Previous versions of the .NET Core tools (both project.json and csproj-based tools) by default specified both a framework and a metapackage. Currently, however, the metapackage is implicitly referenced by the target framework, so that each metapackage is tied to a target framework. For example, the `netstandard1.6` framework references the NetStandard.Library version 1.6.0 metapackage. Similarly, the `netcoreapp1.1` framework references the Microsoft.NETCore.App Version 1.1.0 metapackage. For more information, see [Implicit metapackage package reference in the .NET Core SDK](https://github.com/dotnet/core/blob/master/release-notes/1.0/sdk/1.0-rc3-implicit-package-refs.md).
 
-Note: The 'lib' and 'ref' terms refer to folders in NuGet packages. 'ref' folders describe the public API of a package via assembly metadata. 'lib' folders contain the implementation of that public API for a given
-framework. 
+Targeting a framework and implicitly referencing a metapackage means that you in effect are adding a reference to each of its dependent packages as a single gesture. That makes all of the libraries in those packages available for IntelliSense (or similar experience) and for publishing your app.  
 
 There are advantages to using metapackages:
 
 - Provides a convenient user experience to reference a large set of fine-grained packages. 
 - Defines a set of packages (including specific versions) that are tested and work well together.
 
-The .NET Standard Library metapackage:
+The .NET Standard Library metapackage is:
 
 - [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - Describes the libraries that are part of the ".NET Standard Library". Applies to all .NET implementations (for example, .NET Framework, .NET Core and Mono) that support the .NET Standard Library. Establishes the 'netstandard' framework.
 
-These are the key .NET Core metapackages:
+The key .NET Core metapackages are:
 
 - [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) - Describes the libraries that are part of the .NET Core distribution. Establishes the [`.NETCoreApp` framework](https://github.com/dotnet/core-setup/blob/master/pkg/projects/Microsoft.NETCore.App/Microsoft.NETCore.App.pkgproj). Depends on the smaller `NETStandard.Library`.
 - [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) - A set of compatibility facades that enable mscorlib-based Portable Class Libraries (PCLs) to run on .NET Core.
 
-Metapackages are referenced just like any other NuGet package in project.json. 
-
-In the following example, the `NETStandard.Library` meta package is referenced, which is used for creating libraries that are portable across .NET runtimes.
-
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  }
-}
-```
-
-In the following example, the `Microsoft.NETCore.App` metapackage is referenced, which is used for creating apps and libraries that are intended to run on and take full advantage of .NET Core. It provides access to a larger set of libraries than are provided by `NETStandard.Library`.
-
-```json
-{
-  "dependencies": {
-    "Microsoft.NETCore.App": "1.0.0"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {}
-  }
-}
-```
-
 ## Frameworks
 
-.NET Core packages each support a set of frameworks, declared with framework folders (within the lib and ref folders mentioned earlier). Frameworks describe an available API set (and potentially other characteristics) that you can rely on when you target a given framework. They are versioned as new APIs are added.
+.NET Core packages each support a set of runtime frameworks. Frameworks describe an available API set (and potentially other characteristics) that you can rely on when you target a given framework. They are versioned as new APIs are added.
 
 For example, [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) supports the following frameworks:
 
@@ -133,8 +101,6 @@ The second part of the relationship is asset selection. Packages can contain ass
 
 You can see this relationship in the image above. The *API* targets and defines the *framework*. The *framework* is used for *asset selection*. The *asset* gives you the API.
 
-It is an interesting question of where a package-based framework's definition ends and where consumption of that definition starts. One can consider your view of the framework as a function of a given project.json file. Your dependencies create your view of the framework, independent of the publisher(s) of those dependencies.
-
 The two primary package-based frameworks used with .NET Core are:
 
 - `netstandard`
@@ -142,39 +108,34 @@ The two primary package-based frameworks used with .NET Core are:
 
 ### .NET Standard
 
-The .NET Standard (TFM: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard Library](../standard/library.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement. 
+The .NET Standard (target framework moniker: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard Library](../standard/library.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement. 
 
-The `NETStandard.Library` metapackage targets the `netstandard` framework. The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET  libraries and associated APIs that define the .NET Standard Library. You can reference additional packages that target `netstandard` to get access to additional APIs.
+The `netstandard` framework implicitly references the `NETStandard.Library` metapackage. For example, the following MSBuild project file indicates that the project targets `netstandard1.6`, which references the .NET Standard Library version 1.6 metapackage. 
 
-A given [NETStandard.Library version](versions/index.md) matches the highest `netstandard` version it exposed (via its closure). The framework reference in project.json is used to select the correct assets from the underlying packages. In this case, `netstandard1.6` assets are required, as opposed to `netstandard1.4` or `net46`, for example. 
-
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+</Project>
 ```
 
-The framework and metapackage references in project.json do not need to match. For example, the following project.json is valid.
+However, the framework and metapackage references in the project file do not need to match, and you can use the `<NetStandardImplicitPackageVersion>` element in your project file to specify a framework version that is lower than the metapackage version. For example, the following project file is valid.
 
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
-  "frameworks": {
-    "netstandard1.3": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <NetStandardImplicitPackageVersion Include="NetStandardLibrary" Version="1.6.0" />
+  </ItemGroup>
+</Project>
 ```
 
 It may seem strange to target `netstandard1.3` but use the 1.6.0 version of `NETStandard.Library`. It is a valid use-case, since the metapackage maintains support for older `netstandard` versions. It could be the case you've standardized on the 1.6.0 version of the metapackage and use it for all your libraries, which target a variety of `netstandard` versions. With this approach, you only need to restore `NETStandard.Library` 1.6.0 and not earlier versions. 
 
-The reverse would not be valid: targeting `netstandard1.6` with the 1.3.0 version of `NETStandard.Library`. You cannot target a higher framework with a lower metapackage, since the lower version metapackage will not expose any assets for that higher framework. The [versioning scheme] for metapackages asserts that metapackages match the highest version of the framework they describe. By virtue of the versioning scheme, the first version of `NETStandard.Library` is v1.6.0 given that it contains `netstandard1.6` assets. v1.3.0 is used in the example above, for symmetry with the example above, but does not actually exist.
+The reverse would not be valid: targeting `netstandard1.6` with the 1.3.0 version of `NETStandard.Library`. You cannot target a higher framework with a lower metapackage, since the lower version metapackage will not expose any assets for that higher framework. The versioning scheme for metapackages asserts that metapackages match the highest version of the framework they describe. By virtue of the versioning scheme, the first version of `NETStandard.Library` is v1.6.0 given that it contains `netstandard1.6` assets. v1.3.0 is used in the example above, for symmetry with the example above, but does not actually exist.
 
 ### .NET Core Application
 

@@ -13,14 +13,8 @@ ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 ---
 #dotnet-migrate
 
-<<<<<<< f7386afd0187c225a8421897ef305282955b9078
-## Name
-
-`dotnet-migrate` - Migrates a Preview 2 .NET Core project to .NET Core SDK 1.0.0 project
-=======
 ## Name 
-dotnet-migrate - Migrates a Preview 2 .NET Core project to .NET Core SDK 1.0.0 project.
->>>>>>> removed warnings and RC4 mentions
+dotnet-migrate - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 project.
 
 ## Synopsis
 
@@ -30,12 +24,9 @@ dotnet migrate [-h|--help]
 ```
 
 ## Description
-<<<<<<< f7386afd0187c225a8421897ef305282955b9078
 
-The `dotnet migrate` command will migrate a valid Preview 2 `project.json` based project to a valid SDK 1.0.0 `csproj` project. 
-=======
-The `dotnet migrate` command will migrate a valid Preview 2 *project.json* based project to a valid .NET Core *csproj* project. 
->>>>>>> removed warnings and RC4 mentions
+The `dotnet migrate` command will migrate a valid Preview 2 *project.json* based project to a valid .NET Core SDK 1.0 *csproj* project. 
+
 By default, the command will migrate the root project and any project references that the root project contains. This behavior 
 can be disabled using the `--skip-project-references` option at runtime. 
 
@@ -51,13 +42,9 @@ exist. This can be overriden using the `--skip-backup` option.
 By default, the migration operation will output the state of the migration process to standard output (STDOUT). If you use the 
 `--report-file` option, that output will also be saved to a file that you specify. 
 
-<<<<<<< f7386afd0187c225a8421897ef305282955b9078
-As of the release of .NET Core SDK 1.0.0, the `dotnet migrate` command only supports valid Preview 2 `project.json` files. This means that you cannot use it to migrate old DNX or Preview 1 `project.json` files directly to csproj; you first need to migrate them to Preview 2 project.json files and then to csproj files. In the future, we will add support for Preview 1 projects. 
-=======
 The `dotnet migrate` command only supports valid Preview 2 *project.json* files. This means that you cannot 
 use it to migrate old DNX or Preview 1 *project.json* files directly to csproj; you first need to migrate them to Preview 2 project.json files and then 
 to csproj files. In the future, we will add support for Preview 1 projects. 
->>>>>>> removed warnings and RC4 mentions
 
 ## Options
 

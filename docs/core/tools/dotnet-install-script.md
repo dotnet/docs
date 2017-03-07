@@ -4,7 +4,7 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -15,7 +15,8 @@ ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 #dotnet-install scripts reference
 
 ## Name
-dotnet-install.ps1 | dotnet-install.sh - script used to install the Command Line Interface (CLI) tools and the shared runtime
+
+`dotnet-install.ps1` | `dotnet-install.sh` - script used to install the Command Line Interface (CLI) tools and the shared runtime
 
 ## Synopsis
 Windows:

@@ -4,7 +4,7 @@ description: The dotnet-new command creates new .NET Core projects in the curren
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 02/15/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -32,7 +32,10 @@ This command is invoked in the context of a directory. When invoked, the command
 After this, the project is ready to be compiled and/or edited further. 
 
 ## Arguments
-template - The template to instantiate when the command is invoked.
+
+`template`
+
+The template to instantiate when the command is invoked.
 
 The command contains a default list of templates; use `dotnet new --help`. 
 

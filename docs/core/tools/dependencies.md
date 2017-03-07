@@ -12,11 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 ---
 
-<<<<<<< f7386afd0187c225a8421897ef305282955b9078
-# Managing dependencies with .NET Core SDK
-=======
-# Managing dependencies in .NET Core tooling
->>>>>>> removed warnings and RC4 mentions
+# Managing dependencies with .NET Core SDK 1.0
 
 With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of dependencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
 

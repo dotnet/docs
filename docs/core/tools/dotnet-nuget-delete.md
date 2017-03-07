@@ -13,12 +13,8 @@ ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 ---
 #dotnet-nuget-delete
 
-<<<<<<< f7386afd0187c225a8421897ef305282955b9078
 ## Name
 
-=======
-## Name 
->>>>>>> removed warnings and RC4 mentions
 `dotnet-nuget-delete` - Deletes or unlists a package from the server. 
 
 ## Synopsis

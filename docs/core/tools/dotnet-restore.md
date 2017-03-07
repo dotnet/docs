@@ -4,7 +4,7 @@ description: Learn how to restore dependencies and project-specific tools with t
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,9 +20,10 @@ ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 
 ## Synopsis
 
-`dotnet restore [root] [--help] [--source]  
-    [--packages] [--disable-parallel] [--configfile] 
-    [--no-cache] [--ignore-failed-sources] [--no-dependencies]`
+```
+dotnet restore [root] [-s|--source] [-r|--runtime] [--packages] [--disable-parallel] [--configfile] [--no-cache] [--ignore-failed-sources] [--no-dependencies] [-v|--verbosity]
+dotnet restore [-h|--help]
+```
 
 ## Description
 
@@ -44,7 +45,7 @@ proceeds to restore the tool's dependencies as specified in its project file.
 
 ## Options
 
-`[root]` 
+`root` 
     
 Optional path to the project file to restore. 
 
@@ -78,7 +79,11 @@ Only warn about failed sources if there are packages meeting version requirement
 
 `--no-dependencies`
 
-When restoring a project with P2P references, do not restore the references, just the root project. 
+When restoring a project with P2P references, do not restore the references, just the root project.
+
+`--verbosity <LEVEL>`
+
+Displays this amount of details in the output. Level can be `normal`, `quiet`, or `detailed`.
 
 ## Examples
 

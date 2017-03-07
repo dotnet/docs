@@ -13,12 +13,8 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 ---
 #dotnet-nuget-push
 
-<<<<<<< f7386afd0187c225a8421897ef305282955b9078
 ## Name
 
-=======
-## Name 
->>>>>>> removed warnings and RC4 mentions
 `dotnet-nuget-push` - Pushes a package to the server and publishes it. 
 
 ## Synopsis

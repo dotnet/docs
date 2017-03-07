@@ -1,12 +1,16 @@
 { 
   "redirections": [ 
-    {   
+    {    
         "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md", 
         "redirect_url": "/dotnet/articles/core/preview3/tools/dotnet-nuget-delete"
     },
     {
         "source_path": "docs/cli-preview3/tools/dotnet-nuget-locals.md", 
         "redirect_url": "/dotnet/articles/core/preview3/tools/dotnet-nuget-locals"
+    },
+    {   
+        "source_path": "docs/core/tools/test-protocol.md", 
+        "redirect_url": "/dotnet/articles/core/tools/dotnet-test"
     },
     {
         "source_path": "docs/csharp/features.md", 

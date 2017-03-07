@@ -12,6 +12,7 @@ namespace Prime.UnitTests.Services
              _primeService = new PrimeService(); 
          } 
         
+        #region Sample_TestCode
         [Theory]
         [InlineData(-1)]
         [InlineData(0)]
@@ -22,6 +23,7 @@ namespace Prime.UnitTests.Services
             
             Assert.False(result, $"{value} should not be prime");
         }
+        #endregion
         
         [Theory] 
         [InlineData(2)] 

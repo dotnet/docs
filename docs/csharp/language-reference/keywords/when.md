@@ -60,7 +60,7 @@ case (expr) where (when-condition):
 ```
 where *expr* is a constant pattern or type pattern that is compared to the match expression, and *when-condition* is any Boolean expression. 
 
-The following example uses the `when` keyword to conditionally execute a switch section when a `Shape` object is `null` or has no area.
+The following example uses the `when` keyword to test for `Shape` objects that have an area of zero, as well as to test for a variety of `Shape` objects that have an area greater than zero. 
 
  [!code-cs[when-with-case#1](../../../../samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]  
 

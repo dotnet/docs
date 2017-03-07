@@ -4,7 +4,7 @@ description: This tutorial explains how to organize and test .NET Core projects 
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,6 +13,9 @@ ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 ---
 
 # Organizing and testing projects with the .NET Core command line
+
+> [!WARNING]
+> This topic hasn't been updated to the latest version of the tooling yet.
 
 This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line(./using-with-xplat-cli-msbuild.md) to show how to go beyond simple "Hello world!" scenarios and pave the way for more advanced and well-organized applications.
 
@@ -193,7 +196,7 @@ You'll probably be wanting to test your projects at some point. Here's a good wa
    |__/test
    ```
 
-3. Initialize the directory with a `dotnet new xunit` command. This assumes Xunit, but you can also use MS Test by replacing `xunit` with `mstest`.
+3. Initialize the directory with a `dotnet new xunit` command. This assumes xUnit, but you can also use MSTest by replacing `xunit` with `mstest`.
    
 ### Example: Extending the NewTypes project
 
@@ -219,13 +222,13 @@ The whole project structure should look like this:
 
 There are two new things to make sure you have in your test project:
 
-1. A correct `NewTypesTests.csproj` file with the following:
+1. A correct *NewTypesTests.csproj* file with the following:
 
    * A reference to `xunit`
    * A reference to `dotnet-test-xunit`
    * A reference to the namespace corresponding to the code under test
 
-   This can be built by typing `dotnet new xunit` at a command prompt in the `NewTypesTests` directory, then adding a project reference to the `NewTypes` project.
+   This can be built by typing `dotnet new xunit` at a command prompt in the *NewTypesTests* directory, then adding a project reference to the `NewTypes` project.
 
     `NewTypesTests/NewTypesTests.csproj`:
     ```xml
@@ -266,7 +269,7 @@ There are two new things to make sure you have in your test project:
     </Project>
     ```
 
-2. An Xunit test class.
+2. An xUnit test class.
 
     `PetTests.cs`: 
     ```csharp

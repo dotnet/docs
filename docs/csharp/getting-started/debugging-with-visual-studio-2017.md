@@ -4,7 +4,7 @@ description: Learn how to debug a Hello World app written in C# with Visual Stud
 keywords: .NET Core, .NET Core console application, .NET Core debugging
 author: stevehoag
 ms.author: shoag
-ms.date: 10/24/2016
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -140,4 +140,4 @@ To build and test the release version of your console application, change the bu
 
 When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the release version of your console application for you to test. You can then run and test it as you did the debug verison of the application.
 
-Once you've finished debugging your application, the next step is to publish a distributable version of your application. For information about how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio-2017.md).
+Once you've finished debugging your application, the next step is to publish a distributable version of your application. For information about how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio.md).

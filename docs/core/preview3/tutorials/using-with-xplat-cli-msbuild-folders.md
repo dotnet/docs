@@ -1,10 +1,10 @@
 ---
-title: Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4) | Microsoft Docs
-description: Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4)
+title: Organizing and testing projects with the .NET Core command line | Microsoft Docs
+description: This tutorial explains how to organize and test .NET Core projects from the command line.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
-ms.date: 06/20/2016
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,17 +12,16 @@ ms.devlang: dotnet
 ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 ---
 
-# Organizing and testing projects with the .NET Core command line (.NET Core Tools RC4)
+# Organizing and testing projects with the .NET Core command line
 
 > [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [Getting started with .NET Core on Windows/Linux/macOS using the command line](../../tutorials/using-with-xplat-cli.md) topic.
+> This topic hasn't been updated to the latest version of the tooling yet.
 
-This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)](./using-with-xplat-cli-msbuild.md) to show how to go beyond simple "hello world" scenarios and pave the way for more advanced and well-organized applications.
+This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line(./using-with-xplat-cli-msbuild.md) to show how to go beyond simple "Hello world!" scenarios and pave the way for more advanced and well-organized applications.
 
 ## Using folders to organize code
 
-Say you wanted to introduce some new types to do work on.  You can do this by adding more files and making sure to give them namespaces you can include in your `Program.cs` file.
+Say you wanted to introduce some new types to do work on. You can do this by adding more files and making sure to give them namespaces you can include in your *Program.cs* file.
 
 ```
 /MyProject
@@ -32,7 +31,7 @@ Say you wanted to introduce some new types to do work on.  You can do this by ad
 |__MyProject.csproj
 ```
 
-This works great when the size of your project is relatively small.  However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically. This is where folders come into play.  You can either follow along with [the NewTypes sample project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) that this guide covers, or create your own files and folders.
+This works great when the size of your project is relatively small. However if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically. This is where folders come into play. You can either follow along with [the NewTypes sample project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) that this guide covers, or create your own files and folders.
 
 To begin, create a new folder under the root of your project. `/Model` is chosen here.
 
@@ -180,7 +179,7 @@ New pet types can be added (such as a `Bird`), extending this project.
 
 ## Testing your Console App
 
-You'll probably be wanting to test your projects at some point.  Here's a good way to do it:
+You'll probably be wanting to test your projects at some point. Here's a good way to do it:
 
 1. Move any source of your existing project into a new `src` folder.
 
@@ -197,7 +196,7 @@ You'll probably be wanting to test your projects at some point.  Here's a good w
    |__/test
    ```
 
-3. Initialize the directory with a `dotnet new -t Xunittest` command. This assumes Xunit, but you can also use MS Test by replacing `Xunittest` with `Mstest`.
+3. Initialize the directory with a `dotnet new xunit` command. This assumes xUnit, but you can also use MSTest by replacing `xunit` with `mstest`.
    
 ### Example: Extending the NewTypes project
 
@@ -223,13 +222,13 @@ The whole project structure should look like this:
 
 There are two new things to make sure you have in your test project:
 
-1. A correct `NewTypesTests.csproj` file with the following:
+1. A correct *NewTypesTests.csproj* file with the following:
 
    * A reference to `xunit`
    * A reference to `dotnet-test-xunit`
    * A reference to the namespace corresponding to the code under test
 
-   This can be built by simply doing `dotnet new -t Xunittest` from the command-line in the `NewTypesTests` directory, then adding a project reference to the `NewTypes` project.
+   This can be built by typing `dotnet new xunit` at a command prompt in the *NewTypesTests* directory, then adding a project reference to the `NewTypes` project.
 
     `NewTypesTests/NewTypesTests.csproj`:
     ```xml
@@ -270,7 +269,7 @@ There are two new things to make sure you have in your test project:
     </Project>
     ```
 
-2. An Xunit test class.
+2. An xUnit test class.
 
     `PetTests.cs`: 
     ```csharp
@@ -299,7 +298,7 @@ There are two new things to make sure you have in your test project:
     }
     ```
    
-Now you can run tests!  The [`dotnet test`](../tools/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
+Now you can run tests! The [`dotnet test`](../tools/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
  
 ```
 $ cd test/NewTypesTests

@@ -4,31 +4,29 @@ description: The dotnet-new command creates new .NET Core projects in the curren
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 02/15/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
-#dotnet-new (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-new](../../tools/dotnet-new.md) topic.
+#dotnet-new
 
 ## Name
-dotnet-new - Creates a new .NET Core project in the current directory
+
+`dotnet-new` - Creates a new .NET Core project in the current directory
 
 ## Synopsis
 ```
-dotnet new [template] [-lang|--language] [-n|--name] [-o|--output] [-h|--help]
+dotnet new [template] [-lang|--language] [-n|--name] [-o|--output]
 dotnet new [template] [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
 
 ## Description
+
 The `dotnet new` command provides a convenient way to initialize a valid .NET Core project and sample source code to try out the Command-line interface (CLI) toolset. 
 
 This command is invoked in the context of a directory. When invoked, the command will scaffold out the resources and files according to the template and options passed into the command. 
@@ -36,7 +34,10 @@ This command is invoked in the context of a directory. When invoked, the command
 After this, the project is ready to be compiled and/or edited further. 
 
 ## Arguments
-template - The template to instansiate when the command is invoked.
+
+`template`
+
+The template to instansiate when the command is invoked.
 
 The command contains a default list of templates; use `dotnet new --help`. 
 

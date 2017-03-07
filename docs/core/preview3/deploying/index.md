@@ -4,18 +4,14 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
-ms.date: 07/02/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 ---
 
-# .NET Core Application Deployment (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 documentation,
-> see the [.NET Core Application Deployment](../../deploying/index.md) topic.
+# .NET Core Application Deployment
 
 You can create two types of deployments for .NET Core applications: 
 
@@ -47,7 +43,7 @@ There are also a few disadvantages:
 
 Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. The example uses the [dotnet utility](../tools/dotnet.md) from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
 
-1. Create a directory for your project, and from the command line, type [dotnet new](../tools/dotnet-new.md) to create a new C# console project.
+1. Create a directory for your project; and from the command line, type `[dotnet new console](../tools/dotnet-new.md)` to create a new C# console project.
 
 2. Open the `Program.cs` file in an editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
@@ -142,7 +138,7 @@ It also has a number of disadvantages:
 
 Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the csproj file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example uses the `dotnet` utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
 
-1. Create a directory for your project, and from the command line, type `dotnet new` to create a new C# console project.
+1. Create a directory for your project, and from the command line, type `dotnet new console` to create a new C# console project.
 
 2. Open the `Program.cs` file in an editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
@@ -217,7 +213,6 @@ The following is the complete `csproj` file for this project.
 </Project>
 ```
 
-
 ### Deploying a self-contained deployment with third-party dependencies ###
 
 Deploying a self-contained deployment with one or more third-party dependencies involves adding the third party dependency:
@@ -256,12 +251,12 @@ Note that you can only deploy a self-contained deployment with a third-party lib
 
 If the availability of adequate storage space on target systems is likely to be an issue, you can reduce the overall footprint of your app by excluding some system components. To do this, you explicitly define the .NET Core components that your app includes in your csproj file.
 
-To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment. Once you've run the `dotnet new` command and added the C# source code to your app, do the following:
+To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment. Once you've run the `dotnet new console` command and added the C# source code to your app, do the following:
 
 1. Open the `csproj` file and replace the `<TargetFramework>` element with the following:
 
-    ```xml
-      <TargetFramework>netstandard1.6</TargetFramework>
+  ```xml
+  <TargetFramework>netstandard1.6</TargetFramework>
   ```
 This operation indicates that, instead of using the entire `netcoreapp1.0` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.
 
@@ -272,20 +267,19 @@ This operation indicates that, instead of using the entire `netcoreapp1.0` frame
     <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
     <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.0.1" />
   </ItemGroup>
-```
+  ```
 
    This defines the system components used by our app. The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained deployment with a smaller footprint.
 
 3. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` in your `csproj` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
     ```xml
-        <PropertyGroup>
-          <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-        </PropertyGroup>
+    <PropertyGroup>
+      <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+    </PropertyGroup>
     ```
     
-
- A complete sample `csproj` file appears later in this section.
+   A complete sample `csproj` file appears later in this section.
 
 4. Run the `dotnet restore` command to restore the dependencies specified in your project.
 

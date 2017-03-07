@@ -1,10 +1,10 @@
 ---
 title: dotnet-remove package command | Microsoft Docs
 description: The dotnet-remove package command provides a convenient option to remove NuGet package reference to a project.
-keywords: dotnet-remove , CLI, CLI command, .NET Core
+keywords: dotnet-remove, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 02/16/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: 2fcc8d37-16b3-4581-8038-832160e72d36
 ---
 # dotnet-remove package
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
-
 ## Name
 
 `dotnet-remove package` - Removes package reference from a project file.
@@ -22,7 +20,7 @@ ms.assetid: 2fcc8d37-16b3-4581-8038-832160e72d36
 ## Synopsis
 
 ```
-dotnet remove [<PROJECT>] package <PACKAGE_NAME>
+dotnet remove [<project>] package <package_name>
 dotnet remove package [-h|--help]
 ```
 
@@ -32,11 +30,11 @@ The `dotnet remove package` command provides a convenient option to remove a NuG
 
 ## Arguments
 
-`PROJECT`
+`project`
 
 Project file to operate on. If not specified, the command will search the current directory for one.
 
-`PACKAGE_NAME`
+`package_name`
 
 The package reference to remove.
 

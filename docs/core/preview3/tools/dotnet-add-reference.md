@@ -1,10 +1,10 @@
 ---
 title: dotnet-add reference command | Microsoft Docs
 description: The dotnet-add reference command provides a convenient option to add project to project references.
-keywords: dotnet-add , CLI, CLI command, .NET Core
+keywords: dotnet-add, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 02/28/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ---
 # dotnet-add reference
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
-
 ## Name
 
 `dotnet-add reference` - Adds project to project references.
@@ -22,7 +20,7 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ## Synopsis
 
 ```
-dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES>
+dotnet add [<project>] reference [-f|--framework] <project_references>
 dotnet add reference [-h|--help]
 ```
 
@@ -32,19 +30,19 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ```xml
 <ItemGroup>
-    <ProjectReference Include="app.csproj" />
-    <ProjectReference Include="..\lib2\lib2.csproj" />
-    <ProjectReference Include="..\lib1\lib1.csproj" />
+  <ProjectReference Include="app.csproj" />
+  <ProjectReference Include="..\lib2\lib2.csproj" />
+  <ProjectReference Include="..\lib1\lib1.csproj" />
 </ItemGroup>
 ```
 
 ## Arguments
 
-`PROJECT`
+`project`
 
 Project file to operate on. If not specified, the command will search the current directory for one.
 
-`PROJECT_REFERENCES`
+`project_references`
 
 Project to project references to add. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux-based terminals.
 

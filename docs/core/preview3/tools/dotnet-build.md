@@ -4,29 +4,25 @@ description: The dotnet-build command builds a project and all of its dependenci
 keywords: dotnet-build, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/13/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
+#dotnet-build
 
-#dotnet-build (.NET Core Tools RC4)
+## Name
 
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-build](../../tools/dotnet-build.md) topic.
-
-## Name 
-dotnet-build -- Builds a project and all of its dependencies 
+`dotnet-build` - Builds a project and all of its dependencies 
 
 ## Synopsis
 
-`dotnet build [--help] [--output]  [--framework]  
-    [--configuration]  [--runtime] [--version-suffix]
-    [--build-profile]  [--no-incremental] [--no-dependencies]
-    [<project>]`
+```
+dotnet build [<project>] [-o|--output] [-f|--framework] [-c|--configuration] [-r|--runtime] [--version-suffix] [--no-incremental] [--no-dependencies] [-v|--verbosity]
+dotnet build [--help]
+```
 
 ## Description
 
@@ -46,7 +42,7 @@ In order to build an executable application instead of a library, you need to se
 
 ```xml
 <PropertyGroup>
-    <OutputType>Exe</OutputType>
+  <OutputType>Exe</OutputType>
 </PropertyGroup>
 ```
 
@@ -66,7 +62,7 @@ Compiles for a specific framework. The framework needs to be defined in the [pro
 
 `-c|--configuration [Debug|Release]`
 
-Defines a configuration under which to build.  If omitted, it defaults to `Debug`.
+Defines a configuration under which to build. If omitted, it defaults to `Debug`.
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
 
@@ -87,6 +83,10 @@ Marks the build as unsafe for incremental build. This turns off incremental comp
 `--no-dependencies`
 
 Ignores project-to-project references and only builds the root project specified to build.
+
+`-v|--verbosity`
+
+Set the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
 ## Examples
 

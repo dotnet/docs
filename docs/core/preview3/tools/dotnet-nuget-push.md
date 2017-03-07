@@ -4,32 +4,29 @@ description: The dotnet-nuget-push command pushes a package to the server and pu
 keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-ms.date: 11/11/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 ---
-
 #dotnet-nuget-push
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
+## Name
 
-## Name 
 `dotnet-nuget-push` - Pushes a package to the server and publishes it. 
 
 ## Synopsis
 
-`dotnet nuget push [<package>] [--help] [--source] [--symbols-source] 
-    [--timeout] [--api-key] [--symbol-api-key] [--disable-buffering] [--no-symbols] 
-    [--force-english-output] [--config-file] [--verbosity]`
+```
+dotnet nuget push [<package>] [-s|--source] [-ss|--symbol-source] [-t|--timeout] [-k|--api-key] [-sk|--symbol-api-key] [-d|--disable-buffering] [-n|--no-symbols] [--force-english-output] [-v|--verbosity]
+dotnet nuget push [-h|--help]
+```
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. 
-The push command uses server and credential details found in the system's NuGet config file, or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). 
-NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* 
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file, or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* 
 starting from root of drive and ending in current directory.
 
 ## Options
@@ -70,12 +67,6 @@ Does not push symbols (even if present).
 
 Forces all logged output to be in English. As well as the flexibility of producing English output on a non-English machine, the consistency across platforms provided by this option is a helpful feature for 
 automated tools which scrape the logs for text.
-
-`--config-file <FILE>`
-
-A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
-The path can be absolute or relative.
-For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). 
 
 `--verbosity <LEVEL>`
 

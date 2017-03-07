@@ -4,30 +4,28 @@ description: The dotnet-run command provides a convenient option to run your app
 keywords: dotnet-run, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
-
-#dotnet-run (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-run](../../tools/dotnet-run.md) topic.
+#dotnet-run
 
 ## Name 
 
-dotnet-run -- Runs source code 'in-place' without any explicit compile or launch commands.
+`dotnet-run` - Runs source code 'in-place' without any explicit compile or launch commands.
 
 ## Synopsis
 
-`dotnet run [--help] [--framework] [--configuration]
-    [--project] [[--] [application arguments]]`
+```
+dotnet run [-p|--project] [-f|--framework] [-c|--configuration] [[--] [application arguments]]
+dotnet run [-h|--help]
+```
 
 ## Description
+
 The `dotnet run` command provides a convenient option to run your application from the source code with one command. 
 It compiles source code, generates an output program and then runs that program. 
 This command is useful for fast iterative development and can also be used to run a source-distributed program (for example, a website).
@@ -59,19 +57,18 @@ All arguments after this one will be passed to the application being run.
 
 Prints out a short help for the command.
 
-`-f`, `--framework <FRAMEWORK_IDENTIFIER>`
+`-p|--project [PATH]`
+
+Specifies which project to run. It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to
+current directory if not specified. 
+
+`-f|--framework <FRAMEWORK_IDENTIFIER>`
 
 Runs the application for a given framework identifier (FID). 
 
-`-c`, `--configuration <Debug|Release>`
+`-c|--configuration <Debug|Release>`
 
 Configuration to use when publishing. The default value is `Debug`.
-
-`-p`, `--project [PATH]`
-
-Specifies which project to run. 
-It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to
-current directory if not specified. 
 
 ## Examples
 

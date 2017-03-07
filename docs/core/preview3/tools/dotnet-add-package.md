@@ -4,7 +4,7 @@ description: The dotnet-add package command provides a convenient option to add 
 keywords: dotnet-add , CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 02/28/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 ---
 # dotnet-add package
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
-
 ## Name
 
 `dotnet-add package` - Adds a package reference to a project file.
@@ -22,7 +20,7 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 ## Synopsis
 
 ```
-dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version] [-f|--framework] [-s|--source] [--package-directory]
+dotnet add [<project>] package <package_name> [-v|--version] [-f|--framework] [-n|--no-restore] [-s|--source] [--package-directory]
 dotnet add package [-h|--help]
 ```
 
@@ -51,17 +49,17 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](https://docs.micros
 
 ```xml
 <PackageReference Include="Newtonsoft.Json">
-    <Version>9.0.1</Version>
+  <Version>9.0.1</Version>
 </PackageReference>
 ```
 
 ## Arguments
 
-`PROJECT`
+`project`
 
 The project file to operate on. If not specified, the command searches the current directory for one.
 
-`PACKAGE_NAME`
+`package_name`
 
 The package reference to add.
 

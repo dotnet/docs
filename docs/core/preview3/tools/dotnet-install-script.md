@@ -4,22 +4,18 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 ---
-
-#dotnet-install scripts reference (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-install scripts reference](../../tools/dotnet-install-script.md) topic.
+#dotnet-install scripts reference
 
 ## Name
-dotnet-install.ps1 | dotnet-install.sh - script used to install the Command Line Interface (CLI) tools and the shared runtime
+
+`dotnet-install.ps1` | `dotnet-install.sh` - script used to install the Command Line Interface (CLI) tools and the shared runtime
 
 ## Synopsis
 Windows:
@@ -35,6 +31,7 @@ macOS/Linux:
     [--shared-runtime]`
 
 ## Description
+
 The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from our [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/scripts/obtain). 
 
 Their main use case is to help with automation scenarios and non-admin installations. There are two scripts, one for PowerShell that works on Windows and a bash script that works on Linux/OS X. They both have the same behavior. Bash script also "understands" PowerShell switches so you can use them across the board. 

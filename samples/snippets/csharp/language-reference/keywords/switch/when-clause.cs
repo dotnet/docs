@@ -39,13 +39,34 @@ public class Square : Rectangle
    public double Side { get; set; }
 }
 
+public class Circle : Shape
+{
+   public Circle(double radius) 
+   {
+      Radius = radius;
+   } 
+   
+   public double Radius { get; set; }
+
+   public override double Circumference
+   {
+      get { return 2 * Math.PI * Radius; }
+   }
+
+   public override double Area
+   {
+      get { return Math.PI * Math.Pow(Radius, 2); } 
+   }
+}
+
 public class Example
 {
    public static void Main()
    {
       Shape sh = null;
       Shape[] shapes = { new Square(10), new Rectangle(5, 7),
-                         sh, new Square(0) };
+                         sh, new Square(0), new Rectangle(8, 8),
+                         new Circle(3) };
       foreach (var shape in shapes)
          ShowShapeInfo(shape);
    }
@@ -54,21 +75,30 @@ public class Example
    {
       switch (sh)
       {
+         // Note that this code never evaluates to true.
          case Shape shape when shape == null:
+            Console.WriteLine($"An uninitialized shape (shape == null)");
+            break;
+         case null:
             Console.WriteLine($"An uninitialized shape");
             break;
          case Shape shape when sh.Area == 0:
             Console.WriteLine($"The shape: {sh.GetType().Name} with no dimensions");
             break;
-         case Rectangle r when sh.Area > 0:
-            Console.WriteLine("Information about rectangle:");
-            Console.WriteLine($"   Dimensions: {r.Length} x {r.Width}");
-            Console.WriteLine($"   Area: {r.Area}");
-            break;
          case Square sq when sh.Area > 0:
             Console.WriteLine("Information about square:");
             Console.WriteLine($"   Length of a side: {sq.Side}");
             Console.WriteLine($"   Area: {sq.Area}");
+            break;
+         case Rectangle r when r.Length == r.Width && r.Area > 0:
+            Console.WriteLine("Information about square rectangle:");
+            Console.WriteLine($"   Length of a side: {r.Length}");
+            Console.WriteLine($"   Area: {r.Area}");
+            break;
+         case Rectangle r when sh.Area > 0:
+            Console.WriteLine("Information about rectangle:");
+            Console.WriteLine($"   Dimensions: {r.Length} x {r.Width}");
+            Console.WriteLine($"   Area: {r.Area}");
             break;
          case Shape shape when sh != null:
             Console.WriteLine("A {sh.GetType().Name} shape");
@@ -89,3 +119,4 @@ public class Example
 //     The sh variable does not represent a Shape.
 //     The shape: Square with no dimensions
 // </Snippet1>
+

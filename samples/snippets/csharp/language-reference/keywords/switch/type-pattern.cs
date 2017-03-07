@@ -14,6 +14,9 @@ class Example
         var names = new List<string>();
         names.AddRange( new string[] { "Adam", "Abigail", "Bertrand", "Bridgette" } );
         ShowCollectionInformation(names);
+
+        List<int> numbers = null;
+        ShowCollectionInformation(numbers);
     }
    
     private static void ShowCollectionInformation(object coll)
@@ -35,6 +38,9 @@ class Example
                   result += "${e} ";
                Console.WriteLine(result);
                break;   
+            case null:
+               // Do nothing for a null.
+               break;
             default:
                Console.WriteLine($"A instance of type {coll.GetType().Name}");
                break;   

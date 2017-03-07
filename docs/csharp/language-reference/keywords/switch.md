@@ -76,7 +76,7 @@ Starting with C# 7, the match expression can be any non-null expression.
 
  [!code-cs[switch#2](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]  
 
- Only one switch section in a switch statement can execute. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."   
+ Only one switch section in a switch statement executes. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."   
 
 ```cs  
 switch (caseSwitch)  
@@ -94,7 +94,7 @@ This requirement is usually met by explicitly exiting the switch section by usin
   
  [!code-cs[switch#4](../../../../samples/snippets/csharp/language-reference/keywords/switch/switch4.cs#1)]    
   
- Execution of the statement list in the switch section that with a case label that matches the match expression begins with the first statement and proceeds through the statement list, typically until a jump statement, such as a `break`, `goto case`, `return`, or `throw`, is reached. At that point, control is transferred outside the `switch` statement or to another case label.  
+ Execution of the statement list in the switch section with a case label that matches the match expression begins with the first statement and proceeds through the statement list, typically until a jump statement, such as a `break`, `goto case`, `return`, or `throw`, is reached. At that point, control is transferred outside the `switch` statement or to another case label.  
 
 ## Case labels
 
@@ -104,7 +104,7 @@ This requirement is usually met by explicitly exiting the switch section by usin
 
  Because C# 6 supports only the constant pattern and does not allow the repetition of constant values, case labels define mutually exclusive values, and only one pattern can match the match expression. As a result, the order in which `case` statements appear is unimportant.
 
- In C# 7, however, because other patterns are supported, case labels need not define mutually exclusive values, and multiple patterns can match the match expression. Because only the statements in the switch section that contains the first matching pattern are executed, the order in which `case` statements appear is now important. If C# detects a switch section whose case statement or statements are equivalent to or aare subsets of previous statements, it generates a compiler error, CS8120, "The switch case has already been handled by a previous case." 
+ In C# 7, however, because other patterns are supported, case labels need not define mutually exclusive values, and multiple patterns can match the match expression. Because only the statements in the switch section that contains the first matching pattern are executed, the order in which `case` statements appear is now important. If C# detects a switch section whose case statement or statements are equivalent to or are subsets of previous statements, it generates a compiler error, CS8120, "The switch case has already been handled by a previous case." 
 
  The following example illustrates a `switch` statement that uses a variety of non-mutually exclusive patterns. If you move the `case 0:` switch section so that it is no longer the first section in the `switch` statement, C# generates a compiler error because an integer whose value is zero is a subset of all integers, which is the pattern defined by the `case int val` statement.
 
@@ -178,11 +178,17 @@ The `case` expression is `true` if any of the following is true:
 
 If the case expression is true, *varname* is definitely assigned and has local scope within the switch section only.
 
+Note that `null` does not match a type. To match a `null`, you use the following `case` label:
+
+```cs
+case null:
+```
+ 
 The following example uses the type pattern to provide information about various kinds of collection types.
 
 [!code-cs[switch#5](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern.cs#1)]
 
-Without pattern matching, this code might be written as follows. The use of type pattern matching produces more compact, readable code by eliminating the need to test whether the result of a conversion is a `null`.  
+Without pattern matching, this code might be written as follows. The use of type pattern matching produces more compact, readable code by eliminating the need to test whether the result of a conversion is a `null` or to perform repeated casts.  
 
 [!code-cs[switch#6](../../../../samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
 
@@ -190,10 +196,12 @@ Without pattern matching, this code might be written as follows. The use of type
 
 Starting with C# 7, because case statements need not be mutually exclusive, you can use add a `when` clause to specify an additional condition that must be satisfied for the case statement to evaluate to true. The `when` clause can be any expression that returns a Boolean value. One of the more common uses for the `when` clause is used to prevent a switch section from executing when the value of a match expression is `null`. 
 
- The following example defines a base `Shape` class, a `Rectangle` class that derives from `Shape`, and a `Square` class that derives from `Rectangle`. It uses the `when` clause to ensure that the `ShowShapeInfo` method does not attempt to display information either about an object that is `null` or a shape whose area is zero.
+ The following example defines a base `Shape` class, a `Rectangle` class that derives from `Shape`, and a `Square` class that derives from `Rectangle`. It uses the `when` clause to ensure that the `ShowShapeInfo` treats a `Rectangle` object that has been assigned equal lengths and widths as a `Square` even if is has not been instantiated as a `Square` object. The method does not attempt to display information either about an object that is `null` or a shape whose area is zero. 
 
 [!code-cs[switch#8](../../../../samples/snippets/csharp/language-reference/keywords/switch/when-clause.cs#1)]
   
+Note that the `when` clause in the example that attempts to test whether a `Shape` object is `null` does not execute. The correct type pattern to test for a `null` is `case null:`.
+
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   

@@ -141,7 +141,7 @@
 ## [Packages, Metapackages and Frameworks](core/packages.md)
 ## Migration
 ### [Migration to csproj format](core/migration/index.md)
-### [Migrating from DNX](core/migration/migrating-from-dnx.md)
+### [Migrating from DNX](core/migration/from-dnx.md)
 ## [Application Deployment](core/deploying/index.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)

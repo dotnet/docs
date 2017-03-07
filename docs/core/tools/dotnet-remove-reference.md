@@ -20,7 +20,7 @@ ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 ## Synopsis
 
 ```
-dotnet remove [<project>] reference [-f|--framework] <project_references>
+dotnet remove [project] reference [-f|--framework] <project_references>
 dotnet remove reference [-h|--help]
 ```
 

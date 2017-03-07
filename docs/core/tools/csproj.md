@@ -13,8 +13,6 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 # Additions to the csproj format for .NET Core
 
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
-
 This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and 
 [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, 
 see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
@@ -69,7 +67,7 @@ With csproj, we recommend that you remove the default globs from your project an
 ## Additions
 
 ### Sdk attribute 
-The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](layering.md) describes, is a set of MSBuild [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks) and [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks) and [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
@@ -125,7 +123,7 @@ a replacement for the `tools` node in *project.json*.
 `Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
 
 ### RuntimeIdentifiers
-The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../../rid-catalog.md) for the project. 
+The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project. 
 RIDs enable publishing a self-contained deployments. 
 
 ```xml
@@ -134,7 +132,7 @@ RIDs enable publishing a self-contained deployments.
 
 
 ### RuntimeIdentifier
-The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
+The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
 
 ```xml
 <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>

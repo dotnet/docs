@@ -37,7 +37,7 @@ Prints out a short help for the command.
 
 `-s|--source <SOURCE>`
 
-Specifies the server URL. This option is required unless DefaultPushSource config value is set in the NuGet config file.
+Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
 `--symbols-source <SOURCE>`
 

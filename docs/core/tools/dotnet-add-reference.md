@@ -20,7 +20,7 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ## Synopsis
 
 ```
-dotnet add [<project>] reference [-f|--framework] <project_references>
+dotnet add [project] reference [-f|--framework] <project_references>
 dotnet add reference [-h|--help]
 ```
 

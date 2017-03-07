@@ -57,7 +57,7 @@ From an usage perspective, it doesn't change the way you use the CLI. The CLI st
 * `test`
 * `pack` 
 
-These commands still do what you expect them to do (new up a project, build it, publish it, pack it and so on). Majority of the options are not changed, and are still there, and you can consult either the commands' help screens (using `dotent <command> --help`) or documentation on this site to get familiar with any changes. 
+These commands still do what you expect them to do (new up a project, build it, publish it, pack it and so on). Majority of the options are not changed, and are still there, and you can consult either the commands' help screens (using `dotnet <command> --help`) or documentation on this site to get familiar with any changes. 
 
 From an execution perspective, the CLI commands will take their parameters and construct a call to "raw" MSBuild that will set the needed properties and run the desired target. To better illustrate this, consider the following command: 
 

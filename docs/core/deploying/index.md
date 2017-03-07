@@ -86,9 +86,9 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 4. Create a debug build of your app by using the [dotnet build](../tools/dotnet-build.md) command.
 
-5. After you've debugged and tested the program, you can create the files to be deployed with your app by using the `dotnet publish -f netcoreapp1.0 -c release` command. This creates a release (rather than a debug) version of your app.
+5. After you've debugged and tested the program, you can create the files to be deployed with your app by using the `dotnet publish -f netcoreapp1.1 -c release` command. This creates a release (rather than a debug) version of your app.
 
-   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0` subdirectory.
+   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.1` subdirectory.
 
 6. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
@@ -193,7 +193,7 @@ Note that you also need to add a semicolon to separate the RIDs. Also, please no
    dotnet publish -c release -r win10-x64
    dotnet publish -c release -r osx.10.11-x64
    ```
-This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.0\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.1\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 6. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
@@ -205,7 +205,7 @@ The following is the complete `csproj` file for this project.
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
     <VersionPrefix>1.0.0</VersionPrefix>
     <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
@@ -233,7 +233,7 @@ The following is the complete csproj file for this project:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
     <VersionPrefix>1.0.0</VersionPrefix>
     <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
@@ -256,10 +256,11 @@ To create a self-contained deployment with a smaller footprint, start by followi
 
 1. Open the `csproj` file and replace the `<TargetFramework>` element with the following:
 
-    ```xml
-      <TargetFramework>netstandard1.6</TargetFramework>
-  ```
-This operation indicates that, instead of using the entire `netcoreapp1.0` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.
+```xml
+<TargetFramework>netstandard1.6</TargetFramework>
+```
+
+This operation indicates that, instead of using the entire `netcoreapp1.1` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.
 
 2. Replace the `<ItemGroup>` containing package references with the following:
 

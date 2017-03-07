@@ -4,7 +4,7 @@ description: Learn how to create and debug your first .NET Core application in C
 keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -37,7 +37,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
     * Alternatively, you can select **File** > **Open Folder** from the main menu to open your project folder.
 
 2. Initialize a C# project:
-    * Open the Integrated Terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>`</kbd> (backtick).
+    * Open the Integrated Terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick).
     * In the terminal window, type `dotnet new console`.
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written, along with a C# project file named `HelloWorld.csproj`.
 

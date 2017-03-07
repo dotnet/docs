@@ -13,8 +13,6 @@ ms.assetid: 1feadf3d-3cfc-41dd-abb5-a4fc303a7b53
 
 # Migrating .NET Core projects to the .csproj format
 
-[!INCLUDE[preview-warning](../../includes/warning.md)]
-
 This document will cover migration scenarios for .NET Core projects and will go over the following three migration scenarios:
 
 1. [Migration from a valid latest schema of *project.json* to *csproj*](#migration-from-projectjson-to-csproj)
@@ -46,7 +44,7 @@ A file named *UpgradeLog.htm* is also saved and automatically opened that contai
 
 ### dotnet migrate
 
-In the command-line scenario, you can use the [`dotnet migrate`](..\preview3\tools\dotnet-migrate.md) command. It will migrate a project, a solution or a set of folders in that order, depending on which ones were found. 
+In the command-line scenario, you can use the [`dotnet migrate`](../tools/dotnet-migrate.md) command. It will migrate a project, a solution or a set of folders in that order, depending on which ones were found. 
 When you migrate a project, the project and all its dependencies are migrated.
 
 Files that were migrated (*project.json*, *global.json* and *.xproj*) will be moved to a *backup* folder.
@@ -59,7 +57,7 @@ Files that were migrated (*project.json*, *global.json* and *.xproj*) will be mo
 
 - If you get an error: “No executable found matching command dotnet-migrate":
 
-Run `dotnet --version` to see which version you are using. [`dotnet migrate`](..\preview3\tools\dotnet-migrate.md) requires .NET Core CLI RC3 or higher.
+Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) requires .NET Core CLI RC3 or higher.
 You’ll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to an older version.
 
 ## Migration from DNX to csproj

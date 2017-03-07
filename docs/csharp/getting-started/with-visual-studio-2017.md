@@ -4,7 +4,7 @@ description: Learn how to build a simple .NET Core console application using Vis
 keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: stevehoag
 ms.author: shoag
-ms.date: 11/16/2016
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -79,9 +79,9 @@ Let's enhance our application to prompt the user for his or her name and then di
 
 You've now created and run your simple application. To develop a professional application, there are still some additional steps that you can take to make your application ready for release:
 
-- For information on debugging your application, see [Debugging the Hello World Application](.\debugging-with-visual-studio-2017.md)
+- For information on debugging your application, see [Debugging the Hello World Application](.\debugging-with-visual-studio.md)
 
-- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](./publishing-with-visual-studio-2017.md).
+- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](./publishing-with-visual-studio.md).
 
 ## Related topics ##
 

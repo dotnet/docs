@@ -1,10 +1,10 @@
 ---
 title: Working with LINQ
-description: Working with LINQ
+description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
-ms.date: 06/20/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -55,7 +55,7 @@ comfortable with.
 
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
-directory. Type the command "dotnet new" at the command prompt. This
+directory. Type the command `dotnet new console` at the command prompt. This
 creates the starter files for a basic “Hello World” application.
 
 If you've never used C# before, [this tutorial](console-teleprompter.md)

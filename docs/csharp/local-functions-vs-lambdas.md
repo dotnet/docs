@@ -19,7 +19,7 @@ In some use cases, you could create a lambda expression and use it
 without needing to create a local function. Here's an example async
 method that does just that:
 
-[!code-csharp[TaskLambdaExample](../../samples/snippets/csharp/new-in-7/new-in-7/AsyncWork.cs#36_TaskLambdaExample "Task returning method with lambda expression")]
+[!code-csharp[TaskLambdaExample](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#36_TaskLambdaExample "Task returning method with lambda expression")]
 
 However, there are a number of reasons to prefer using local functions
 instead of defining and calling lambda expressions.
@@ -39,11 +39,11 @@ Third, local functions can be called before they are defined. Lambda
 expressions must be declared before they are defined. This
 means local functions are easier to use in recursive algorithms:
 
-[!code-csharp[LocalFunctionFactorial](../../samples/snippets/csharp/new-in-7/new-in-7/MathUtilities.cs#37_LocalFunctionFactorial "Recursive factorial using local function")]
+[!code-csharp[LocalFunctionFactorial](../../samples/snippets/csharp/new-in-7/MathUtilities.cs#37_LocalFunctionFactorial "Recursive factorial using local function")]
 
 Contrast that implementation with a version that uses lambda expressions:
 
-[!code-csharp[26_LambdaFactorial](../../samples/snippets/csharp/new-in-7/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
+[!code-csharp[26_LambdaFactorial](../../samples/snippets/csharp/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
 
 Notice that the version using the lambda expression must declare and initialize
 the lambda expression, `nthFactorial` before defining it. Not doing so results

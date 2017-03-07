@@ -4,7 +4,7 @@ description: Learn how string interpolation works in C# 6
 keywords: .NET, .NET Core, C#, string
 author: mgroves
 ms.author: wiwagn
-ms.date: 12/09/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -27,7 +27,7 @@ echo "My name is $name.";
 In C# 6, we finally have that style of string interpolation. You can use a `$` before a string to indicate that it should substitute variables/expressions for their values.
 
 ## Prerequisites
-You’ll need to setup your machine to run .NET core. You can find the
+You’ll need to set up your machine to run .NET core. You can find the
 installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
 page.
 You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
@@ -39,23 +39,25 @@ comfortable with.
 ## Create the Application
 
 Now that you've installed all the tools, create a new .NET Core
-application. To use the command line generator, execute the following command in your favorite shell:
+application. To use the command line generator, create a directory for your project, such as `interpolated`, and execute the following command in your favorite shell:
 
-`dotnet new`
+```
+dotnet new console
+```
 
-This command will create a barebones .NET core project with `project.json` and `Program.cs` files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+This command will create a barebones .NET core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
 
 ## Intro to String Interpolation
 
-With `System.String.Format`, you would specify "placeholders" in a string that would be replaced by the parameters following the string. For instance:
+With `System.String.Format`, you specify "placeholders" in a string that are replaced by the parameters following the string. For instance:
 
 [!code-csharp[String.Format example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#StringFormatExample)]  
 
 That will output "My name is Matt Groves".
 
-In C# 6, Instead of using String.Format, you can tell C# that a string is interpolated by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
+In C# 6, instead of using `String.Format`, you define an interpolated string by prepending it with the `$` symbol, and then using the variables directly in the string. For instance:
 
 [!code-csharp[Interpolation example](../../../samples/snippets/csharp/new-in-6/string-interpolation.cs#InterpolationExample)]  
 
@@ -75,7 +77,7 @@ This is line number 5
 
 ## How string interpolation works
 
-Behind the scenes, this string interpolation syntax gets translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx).
+Behind the scenes, this string interpolation syntax is translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx).
 
 For instance, you can add padding and numeric formatting:
 

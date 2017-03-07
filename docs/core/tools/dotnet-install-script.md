@@ -4,38 +4,37 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
+ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 ---
 
 #dotnet-install scripts reference
 
-> [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [dotnet-install scripts reference (.NET Core Tools RC4)](../preview3/tools/dotnet-install-script.md) topic.
-
 ## Name
-`dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the Command Line Interface (CLI) tools and the shared runtime.
+
+`dotnet-install.ps1` | `dotnet-install.sh` - script used to install the .NET Core Command-line Interface (CLI) tools and the shared runtime.
 
 ## Synopsis
 Windows:
 
-`dotnet-install.ps1 [-Channel] [-Version]
-    [-InstallDir] [-Debug] [-NoPath] 
-    [-SharedRuntime]`
+```
+dotnet-install.ps1 [-Channel] [-Version] [-InstallDir] [-Architecture]
+    [-SharedRuntime] [-DebugSymbols] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress]
+```
 
 macOS/Linux:
 
-`dotnet-install.sh [--channel] [--version]
-    [--install-dir] [--debug] [--no-path] 
-    [--shared-runtime]`
+```
+dotnet-install.sh [--channel] [--version] [--install-dir] [--architecture]
+    [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]
+```
 
 ## Description
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from our [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/scripts/obtain). 
+The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from our [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain). 
 
 Their main use case is to help with automation scenarios and non-admin installations. There are two scripts, one for PowerShell that works on Windows and a bash script that works on Linux/OS X. They both have the same behavior. Bash script also "understands" PowerShell switches so you can use them across the board. 
 
@@ -60,52 +59,101 @@ Which channel (for example, `future`, `preview`, `production`) to install from. 
 
 `-Version [VERSION]`
 
-Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the `version` property; if that is not present, it will use Latest. 	
+Which version of CLI to install. You need to specify the version as a 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the `version` property. If that is not present, it will use Latest.
 
 `-InstallDir [DIR]`
 
-Path to install to. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet*.
+Path to install to. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*.
 
-`-Debug`
+`-Architecture [ARCH]`
 
-`true` to indicate that larger packages containing debugging symbols should be used; otherwise, `false`. The default value is `false`.
-
-`-NoPath`
-
-`true` to indicate that the prefix/installdir are not exported to the path for the current session; otherwise, `false`. 
-The default value is `false`, that is, the PATH is modified. 
-This makes the CLI tools available immediately after install. 
+Architecture of the .NET Core binaries to be installed. Possible values are &lt;auto&gt;, x64 and x86. The default value is &lt;auto&gt;, which represents currently running OS architecture.
 
 `-SharedRuntime`
 
-`true` to install just the shared runtime bits; `false` to install the entire SDK. The default value is `false`.
+If set, installs just the shared runtime bits, not the entire SDK.
+
+`-DebugSymbols`
+
+If set, the installer will include debugging symbols in the installation.
+
+> [!NOTE]
+> This switch does not work yet.
+
+`-DryRun`
+
+If set, the script won't perform the installation but instead it'll display what command line to use to consistently install currently requested version of .NET CLI. 
+For example, if you specify version `latest`, it will display a link with specific version, so that this command can be used deterministically in a build script.
+It also displays binaries location if you prefer to install or download it yourself.
+
+`-NoPath`
+
+If set, the prefix/installdir are not exported to the path for the current session. 
+By default, the script will modify the PATH, which makes the CLI tools available immediately after install.
+
+`-AzureFeed`
+
+The URL for the Azure feed to be used by this installer. Not recommended to be changed. The default is `https://dotnetcli.azureedge.net/dotnet`.
+
+`-ProxyAddress`
+
+If set, the installer will use the proxy when making web requests.
 
 ### Bash (macOS/Linux)
+
+`dotnet-install.sh [--channel] [--version] [--install-dir] [--architecture]
+    [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]
+`
+
 `--channel [CHANNEL]`
 
-Which channel (for example "future", "preview", "production") to install from. The default value is "Production".
+Which channel (for example "future", "dev", "production") to install from. The default value is "Production".
 
 `--version [VERSION]`
 
-Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the `version` property; if that is not present, it will use Latest. 	
+Which version of CLI to install. You need to specify the version as a 3-part version (for example, 1.0.0-13232). If omitted, it will default to the first [global.json](global-json.md) that contains the `version` property. If that is not present, it will use Latest.
 
 `--install-dir [DIR]`
 
 Path to where to install. The directory is created if it doesn't exist. The default value is `$HOME/.dotnet`.
 
-`--debug`
+`--architecture [ARCH]`
 
-`true` to indicate that larger packages containing debugging symbols should be used; otherwise, `false`. The default value is `false`.
-
-`--no-path`
-
-`true` to indicate that the prefix/installdir are not exported to the path for the current session; otherwise, `false`. 
-The default value is `false`, that is, the PATH is modified. 
-This makes the CLI tools available immediately after install.  
+Architecture of the .NET binaries to be installed. Possible values are &lt;auto&gt;, x64 and amd64. The default value is &lt;auto&gt;, which represents currently running OS architecture.
 
 `--shared-runtime`
 
-`true` to install just the shared runtime bits; `false` to install the entire SDK. The default value is `false`.
+If set, installs just the shared runtime bits, not the entire SDK.
+
+`--debug-symbols`
+
+If set, the installer will include debugging symbols in the installation.
+
+> [!NOTE]
+> This switch does not work yet.
+
+`--dry-run`
+
+If set, the script won't perform the installation but instead it'll display what command line to use to consistently install currently requested version of .NET CLI. 
+For example, if you specify version `latest`, it will display a link with specific version, so that this command can be used deterministically in a build script.
+It also displays binaries location if you prefer to install or download it yourself.
+
+`--no-path`
+
+If set, the prefix/installdir are not exported to the path for the current session. 
+By default, the script will modify the PATH, which makes the CLI tools available immediately after install.
+
+`--verbose`
+
+Display diagnostics information.
+
+`--azure-feed`
+
+The URL for the Azure feed to be used by this installer. Not recommended to be changed. The default is `https://dotnetcli.azureedge.net/dotnet`.
+
+`--help`
+
+Prints out help for the script.
 
 ## Examples
 

@@ -42,7 +42,7 @@ You can see the full set of [supported operating systems](https://github.com/dot
 You can use any editor of your choice to develop .NET Core applications using the .NET Core SDK. However, if you want to develop .NET Core applications on Windows in an integrated development environment, you can use [Visual Studio 2017](#visual-studio-2017).
 
 > [!NOTE]
-> Even though, it is possible to use Visual Studio 2015 with a preview version of the .NET Core tooling, these projects will be *project.json*-based, which is now deprecated. Visual Studio 2017 is using project files based on MSBuild. For more information about the format changes, see [High-level overview of changes](./preview3/tools/layering.md).
+> Even though, it is possible to use Visual Studio 2015 with a preview version of the .NET Core tooling, these projects will be *project.json*-based, which is now deprecated. Visual Studio 2017 is using project files based on MSBuild. For more information about the format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 
 To use Visual Studio 2017 to develop .NET Core apps, you'll need to have the latest version of Visual Studio installed with the **.NET Core cross-platform development** toolset (in the **Other Toolsets** section) selected.
 ![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs2017_workloads.jpg)

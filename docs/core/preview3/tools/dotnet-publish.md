@@ -20,7 +20,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ## Synopsis
 
 ```
-dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
+dotnet publish [<PROJECT>] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
 dotnet publish [-h|--help]
 ```
 
@@ -35,11 +35,13 @@ Depending on the type of portable app, the resulting directory will contain the 
 
 For more information, see the [.NET Core Application Deployment](../deploying/index.md) topic.
 
+## Arguments
+
+`<PROJECT>` 
+
+The project to publish, which defaults to the current directory if `<PROJECT>` is not specified. 
+
 ## Options
-
-`project` 
-
-The project to publish, which defaults to the current directory if `[project]` is not specified. 
 
 `-h|--help`
 
@@ -47,11 +49,11 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Publishes the application for a given framework identifier (FID). 
+Publishes the application for specified target framework. The target framework has to be specified in the project file.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md). Default is to publish a [framework-dependented app](../deploying/index.md#framework-dependent-deployments-fdd).
 
 `-o|--output <OUTPUT_PATH>`
 
@@ -66,28 +68,28 @@ Defines what `*` should be replaced with in the version field in the project fil
 
 Configuration to use when publishing. The default value is `Debug`.
 
-`-v|--verbosity`
+`-v|--verbosity <LEVEL>`
 
-Set the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 
-Publish an application.
+Publish the project found in the current directory:
 
 `dotnet publish`
 
-Publish the application using the specified project file
+Publish the application using the specified project file:
 
 `dotnet publish ~/projects/app1/app1.csproj`
 	
-Publish the current application using the `netcoreapp1.0` framework:
+Publish the project found in the current directory using the `netcoreapp1.1` framework:
 
-`dotnet publish --framework netcoreapp1.0`
+`dotnet publish --framework netcoreapp1.1`
 	
-Publish the current application using the `netcoreapp1.0` framework and runtime for `OS X 10.10` (this RID has to 
+Publish the current application using the `netcoreapp1.1` framework and runtime for `OS X 10.10` (this RID has to 
 exist in the project file).
 
-`dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
+`dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`
 
 ## See also
 * [Frameworks](../../../standard/frameworks.md)

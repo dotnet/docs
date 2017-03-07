@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
 
-#dotnet-build (.NET Core Tools RC4)
+#dotnet-build (.NET Core SDK 1.0.0 Tools)
 
 ## Name 
 dotnet-build - Builds a project and all of its dependencies 

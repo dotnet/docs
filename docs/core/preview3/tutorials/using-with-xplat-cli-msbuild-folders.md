@@ -1,6 +1,6 @@
 ---
 title: Organizing and testing projects with the .NET Core command line (.NET Core SDK 1.0.0 Tools) | Microsoft Docs
-description: This tutorial explains how to organize and test .NET Core projects from the .NET Core command line.
+description: This tutorial explains how to organize and test .NET Core projects from the command line.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw

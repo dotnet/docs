@@ -89,7 +89,7 @@ Does not build the test project prior to running it.
 
 `-v|--verbosity <LEVEL>`
 
-Set the verbosity level of the command. You can specify the following verbosity levels: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. 
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 

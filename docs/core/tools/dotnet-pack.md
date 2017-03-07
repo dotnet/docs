@@ -78,7 +78,7 @@ Sets the serviceable flag in the package. For more information, see https://aka.
 
 `--verbosity <LEVEL>`
 
-Sets the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 

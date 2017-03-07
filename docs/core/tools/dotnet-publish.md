@@ -71,7 +71,7 @@ Configuration to use when publishing. The default value is `Debug`.
 
 `-v|--verbosity <LEVEL>`
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 

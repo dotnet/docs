@@ -4,7 +4,7 @@ description: Unit Testing in .NET Core using dotnet test
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/20/2016
+ms.date: 002/02/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -17,9 +17,6 @@ By [Steve Smith](http://ardalis.com) and [Bill Wagner](https://github.com/BillWa
 
 [View or download sample code](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)
 
-> [!NOTE]
-> This topic applies to .NET Core 1.0.
-
 ## Creating the Projects
 
 [Writing Libraries with Cross Platform Tools](../tutorials/libraries.md)
@@ -29,37 +26,22 @@ final project structure will be something like this:
 
 ```
 /unit-testing-using-dotnet-test
-|__global.json
-|__/src
-   |__/PrimeService
-      |__Source Files
-      |__project.json
-|__/test
-   |__/PrimeService.Tests
-      |__Test Files
-      |__project.json
-```
-
-In the root directory, you'll need to create a `global.json` that
-contains the names of your `src` and `test` directories:
-
-```json
-{
-    "projects": [
-        "src",
-        "test"
-    ]
-}
+|__/PrimeService
+   |__Source Files
+   |__PrimeService.csproj
+|__/PrimeService.Tests
+   |__Test Files
+   |__PrimeService.csproj
 ```
 
 ### Creating the source project
 
-Then, in the `src` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new -t lib` to create the source
+Start in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
+CD into that directory, and run `dotnet new classib` to create the source
 project.
 
 
-Rename `Library.cs` as `PrimeService.cs`. To use test-driven development (TDD), you'll create a failing implementation of the
+Rename `Class1.cs` as `PrimeService.cs`. To use test-driven development (TDD), you'll create a failing implementation of the
 `PrimeService` class:
 
 ```cs
@@ -80,63 +62,44 @@ namespace Prime.Services
 
 ### Creating the test project
 
-Next, cd into the 'test' directory, and create the `PrimeServices.Tests` directory.
-CD into the `PrimeServices.Tests` directory and create a new project using
-`dotnet new -t xunittest`. `dotnet new -t xunittest` creates a test project
-that uses xunit as the test library. 
+Next, cd back into the 'unit-testing-using-dotnet-test' directory, and create the `PrimeServices.Tests` directory.
+CD into the `PrimeService.Tests` directory and create a new project using
+`dotnet new xunit`. `dotnet xunit` creates a test project
+that uses xUnit as the test library. 
 
 The generated template configured the test runner
-at the root of `project.json`:
+in the PrimeServiceTests.csproj:
 
-```json
-{
-  "version": "1.0.0-*",
-  "testRunner": "xunit",
-  // ...
-}
-```
-
-The template also sets the framework node to use
-`netcoreapp1.0`, and include the required imports to
-get xUnit.net to work with .NET Core RTM:
-
-```json
-  "frameworks": {
-    "netcoreapp1.0": {
-      "imports": [
-        "dotnet54",
-        "portable-net45+win8" 
-      ]
-    }
-  }
+```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170125-04" />
+    <PackageReference Include="xunit" Version="2.2.0-beta5-build3474" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0-beta5-build1225" />
+  </ItemGroup>
 ```
 
 The test project requires other packages to create and run unit tests.
-`dotnet new` added xunit, and the xunit runner. You need to add the PrimeService
-package as another dependency to the project:
+`dotnet new` added xUnit, and the xUnit runner. You need to add the PrimeService
+package as another dependency to the project. You can do that using the `dotnet`
+CLI:
 
-```json
-"dependencies": {
-  "xunit":"2.1.0",
-  "dotnet-test-xunit": "1.0.0-rc2-192208-24",
-  "PrimeService": {
-    "target": "project"
-  }
-}
+```
+dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 
-Notice that the `PrimeService` project does not include
-any directory path information. Because you created the
-project structure to match the expected organization of
-`src` and `test`, and the `global.json` file indicates
-that, the build system will find the correct location
-for the project. You add the `"target": "project"` element
-to inform NuGet that it should look in project directories,
-not in the NuGet feed. Without this key, you might download
-a package with the same name as your internal library.
+Or, you can directly edit the `PrimeService.Tests.csproj` file.
+Directly under the first
+`<ItemGroup>` node, add another `<ItemGroup>` node with a reference to 
+the library project:
+
+```xml
+  <ItemGroup>
+    <ProjectReference Include="..\PrimeService\PrimeService.csproj" />
+  </ItemGroup>
+```
 
 You can see the entire file in the
-[samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/project.json) 
+[samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService.Tests.csproj) 
 on GitHub.
 
 After this initial structure is in place, you can write your first test.
@@ -145,10 +108,14 @@ as you add features and tests.
 
 ## Creating the first test
 
+Before building the library or the tests, you need to run `dotnet restore`
+in both the `PrimeService` and `PrimeService.Tests` directories. This
+command restores all the necessary NuGet packages for each project.
+
 The TDD approach calls for writing one failing test, then making it pass,
 then repeating the process. So, let's write that one failing test. Remove
-`program.cs` from the `PrimeService.Tests` directory, and create a new
-C# file with the following content:
+`UnitTest1.cs` from the `PrimeService.Tests` directory, and create a new
+C# file named `PrimeService_IsPrimeShould.cs` with the following content:
 
 ```cs
 namespace Prime.UnitTests.Services
@@ -180,7 +147,7 @@ build system will detect that and build it because it is a
 dependency of the test project.
 
 Now, execute `dotnet test` to run the tests from the console.
-The xunit test runner has the program entry point to run your
+The xUnit test runner has the program entry point to run your
 tests from the Console. `dotnet test` starts the
 test runner, and provides a command line argument to the
 testrunner indicating the assembly that contains your tests.
@@ -204,7 +171,7 @@ public bool IsPrime(int candidate)
 Now, that you've made one test pass, it's time to write more.
 There are a few other simple cases for prime numbers: 0, -1. You
 could add those as new tests, with the `[Fact]` attribute, but that
-quickly becomes tedious. There are other xunit attributes that enable
+quickly becomes tedious. There are other xUnit attributes that enable
 you to write a suite of similar tests.  A `Theory` represents a suite
 of tests that execute the same code, but have different input arguments.
 You can use the `[InlineData]` attribute to specify values for those
@@ -214,17 +181,7 @@ inputs.
  to create a single theory that tests some values less than 2,
  which is the lowest prime number:
 
-```cs
-[Theory]
-[InlineData(-1)]
-[InlineData(0)]
-[InlineData(1)]
-public void ReturnFalseGivenValuesLessThan2(int value)
-{
-    var result = _primeService.IsPrime(value);
-
-    Assert.False(result, $"{value} should not be prime");
-}
+[!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs#Sample_TestCode "First tests")]
 ```
 
 Run `dotnet test` and you'll see that two of these tests fail.
@@ -240,7 +197,7 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
 and the
 [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/src/PrimeService/PrimeService.cs).
 

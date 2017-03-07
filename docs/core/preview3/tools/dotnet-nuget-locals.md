@@ -4,7 +4,7 @@ description: The dotnet-nuget-locals command clears or lists local NuGet resourc
 keywords: dotnet-nuget-locals, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-ms.date: 11/15/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 ---
 
 #dotnet-nuget-locals
-
-[!INCLUDE[preview-warning](../../../includes/warning.md)] 
 
 ## Name 
 `dotnet-nuget-locals` - Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
@@ -55,8 +53,7 @@ Prints out a short help for the command.
 
 `-c|--clear`
 
-The clear option is used to perform a clear operation on the specified cache type. The contents of the cache directories are deleted recursively. 
-The executing user/group should have permission to the files in the cache directories for the operation to be successful. If not, then an error is displayed indication the files/folders which were not cleared.
+The clear option is used to perform a clear operation on the specified cache type. The contents of the cache directories are deleted recursively. The executing user/group should have permission to the files in the cache directories for the operation to be successful. If not, then an error is displayed indication the files/folders which were not cleared.
 
 `-l|--list`
 

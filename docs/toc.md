@@ -140,8 +140,8 @@
 ### [Hosting .NET Core from native code](core/tutorials/netcore-hosting.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
 ## Migration
-### [Migrating from project.json](core/migration/index.md)
-### [Migrating from DNX](core/migrating-from-dnx.md)
+### [Migration to csproj format](core/migration/index.md)
+### [Migrating from DNX](core/migration/migrating-from-dnx.md)
 ## [Application Deployment](core/deploying/index.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)

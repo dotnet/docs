@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 ---
 
-# Migrating from DNX to .NET Core CLI
+# Migrating from DNX to .NET Core CLI (project.json)
 
 ## Overview
 The RC1 release of .NET Core and ASP.NET Core 1.0 introduced DNX tooling. The RC2 release of .NET 
@@ -188,5 +188,3 @@ import. If you are slightly lost or new to this, in general, specifying `dnxcore
 
 Running `dotnet build` will show any eventual build errors, though there shouldn't be too many of them. After your code is 
 building and running properly, you can test it out with the runner. Execute `dotnet <path-to-your-assembly>` and see it run.
-
-

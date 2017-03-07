@@ -4,7 +4,7 @@ description: The dotnet-nuget-delete command deletes or unlists a package from t
 keywords: dotnet-nuget-delete, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-ms.date: 11/11/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,8 +13,6 @@ ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 ---
 
 #dotnet-nuget-delete
-
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## Name 
 `dotnet-nuget-delete` - Deletes or unlists a package from the server. 
@@ -37,8 +35,7 @@ Prints out a short help for the command.
 
 `-s|--source <SOURCE>`
 
-Specifies the server URL. Supported URL's for nuget.org include `http://www.nuget.org`, `http://www.nuget.org/api/v3` and `http://www.nuget.org/api/v2/package`. 
-For private feeds, substitute the host name (for example, `%hostname%/api/v3`).
+Specifies the server URL. Supported URL's for nuget.org include `http://www.nuget.org`, `http://www.nuget.org/api/v3` and `http://www.nuget.org/api/v2/package`. For private feeds, substitute the host name (for example, `%hostname%/api/v3`).
 
 `--non-interactive`
 
@@ -58,9 +55,7 @@ Displays this amount of details in the output. Level can be `normal`, `quiet`, o
 
 `--config-file <FILE>`
 
-A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. 
-The path can be absolute or relative.
-For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+A NuGet configuration file used specifically for this command, replacing other config files found by the standard config file discovery and chaining process. The path can be absolute or relative. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
 ## Examples
 

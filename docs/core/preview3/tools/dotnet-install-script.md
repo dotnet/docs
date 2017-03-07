@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 ---
 
-#dotnet-install scripts reference (.NET Core SDK 1.0.0 Tools)
+#dotnet-install scripts reference
 
 ## Name
 dotnet-install.ps1 | dotnet-install.sh - script used to install the Command Line Interface (CLI) tools and the shared runtime

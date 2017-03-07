@@ -49,7 +49,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](https://docs.micros
 
 ```xml
 <PackageReference Include="Newtonsoft.Json">
-    <Version>9.0.1</Version>
+  <Version>9.0.1</Version>
 </PackageReference>
 ```
 

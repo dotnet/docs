@@ -13,8 +13,12 @@ ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 ---
 #dotnet-nuget-locals
 
+<<<<<<< f7386afd0187c225a8421897ef305282955b9078
 ## Name
 
+=======
+## Name 
+>>>>>>> removed warnings and RC4 mentions
 `dotnet-nuget-locals` - Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
 
 ## Synopsis

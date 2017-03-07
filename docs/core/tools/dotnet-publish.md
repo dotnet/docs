@@ -12,11 +12,7 @@ ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
 
-#dotnet-publish (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-publish](../../tools/dotnet-publish.md) topic.
+#dotnet-publish
 
 ## Name
 
@@ -56,7 +52,7 @@ Publishes the application for a given framework identifier (FID).
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../../rid-catalog.md).
+Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md).
 
 `-o|--output <OUTPUT_PATH>`
 
@@ -91,5 +87,5 @@ exist in the project file).
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 
 ## See also
-* [Frameworks](../../../standard/frameworks.md)
-* [Runtime IDentifier (RID) catalog](../../rid-catalog.md)
+* [Frameworks](../../standard/frameworks.md)
+* [Runtime IDentifier (RID) catalog](../rid-catalog.md)

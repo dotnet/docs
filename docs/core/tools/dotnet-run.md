@@ -12,11 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
 
-#dotnet-run (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-run](../../tools/dotnet-run.md) topic.
+#dotnet-run
 
 ## Name 
 

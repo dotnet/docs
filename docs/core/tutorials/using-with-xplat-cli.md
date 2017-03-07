@@ -12,11 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 ---
 
-# Getting started with .NET Core on Windows/Linux/macOS using the command line (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [Getting started with .NET Core on Windows/Linux/macOS using the CLI](../../tutorials/using-with-xplat-cli.md) topic.
+# Getting started with .NET Core on Windows/Linux/macOS using the command line
 
 This topic will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
 
@@ -24,7 +20,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core CLI tooling RC4](https://github.com/dotnet/core/blob/master/release-notes/rc4-download.md).
+- [.NET Core SDK 1.0.0](https://www.microsoft.com/net/download/core).
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -47,7 +43,7 @@ Let's do a quick walkthrough:
    
 `Hello.csproj`:
 
-[!code[Hello.csproj](../../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]   
+[!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]   
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
@@ -56,7 +52,7 @@ Let's do a quick walkthrough:
 
    `Program.cs`:
 
-[!code-csharp[Program.cs](../../../../samples/core/console-apps/HelloMsBuild/Program.cs)]   
+[!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]   
 
    The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes basic constructs such as `string`, or numeric types.
 
@@ -92,7 +88,7 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that in 
 
 1. Replace the contents of your *Program.cs*  file with the following code:
 
-[!code-csharp[Fibonacci](../../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]   
+[!code-csharp[Fibonacci](../../../samples/core/console-apps/fibonacci-msbuild/Program.cs)]   
 
 2. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
@@ -128,11 +124,11 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
 
-[!code-csharp[Fibonacci Generator](../../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
+[!code-csharp[Fibonacci Generator](../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]   
 
 2. Change the `Main` method in your *Program.cs* file to instantiate the new class and call its method as in the following example:
 
-[!code-csharp[New Program.cs](../../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
+[!code-csharp[New Program.cs](../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
 
 3. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
@@ -162,4 +158,4 @@ Note that the commands and steps shown in this tutorial to run your application 
 
 ## See also
 
-[Organizing and testing projects with the .NET Core CLI tools](using-with-xplat-cli-msbuild-folders.md)
+[Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)

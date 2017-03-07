@@ -11,11 +11,7 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
-# dotnet command (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet command](../../tools/dotnet.md) topic.
+# dotnet command
 
 ## Name
 
@@ -70,7 +66,7 @@ The following commands exist for dotnet:
 * [dotnet-pack](dotnet-pack.md)
   * Creates a NuGet package of your code.
 * [dotnet-migrate](dotnet-migrate.md)
-  * Migrates a valid Preview 2 project to a RC4 project.
+  * Migrates a valid Preview 2 project to a csproj project.
 * [dotnet-msbuild](dotnet-msbuild.md)
   * Provides access to the MSBuild command line.
 * [dotnet-sln](dotnet-sln.md)

@@ -13,9 +13,14 @@ ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 ---
 #dotnet-msbuild
 
+<<<<<<< f7386afd0187c225a8421897ef305282955b9078
 ## Name
 
 `dotnet-msbuild` - Builds a project and all of its dependencies.
+=======
+## Name 
+dotnet-msbuild -- Builds a project and all of its dependencies.
+>>>>>>> removed warnings and RC4 mentions
 
 ## Synopsis
 

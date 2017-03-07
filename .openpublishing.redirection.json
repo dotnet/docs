@@ -156,13 +156,18 @@
         "redirect_url": "/dotnet/articles/core/tools/using-ci-with-cli"
     },
     {
+        "source_path": "docs/core/preview3/tutorials/index.md", 
+        "redirect_url": "/dotnet/articles/core/tutorials/index",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md", 
         "redirect_url": "/dotnet/articles/core/tutorials/using-on-windows-full-solution",
         "redirect_document_id": true
     },
     {
         "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md", 
-        "redirect_url": "/dotnet/articles/core/tutorials/using-on-windows",
+        "redirect_url": "/dotnet/articles/csharp/getting-started/with-visual-studio-2017",
         "redirect_document_id": true
     },
     {
@@ -182,6 +187,10 @@
     {
         "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md", 
         "redirect_url": "/dotnet/articles/core/tools/cli-msbuild-architecture"
+    },
+    {
+        "source_path": "docs/core/preview3/tutorials/using-on-windows.md", 
+        "redirect_url": "/dotnet/articles/csharp/getting-started/with-visual-studio-2017"
     },
     {
         "source_path": "docs/fsharp/async.md", 

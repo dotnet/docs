@@ -4,18 +4,14 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
-ms.date: 07/02/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 ---
 
-# .NET Core Application Deployment (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 documentation,
-> see the [.NET Core Application Deployment](../../deploying/index.md) topic.
+# .NET Core Application Deployment
 
 You can create two types of deployments for .NET Core applications: 
 
@@ -31,7 +27,7 @@ For an FDD, you deploy only your app and any third-party dependencies. You do no
 
 Deploying an FDD has a number of advantages:
 
-- You do not have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../../standard/assembly-format.md).
+- You do not have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly-format.md).
 
 - The size of your deployment package is small. You only have to deploy your app and its dependencies, not .NET Core itself.
 
@@ -116,7 +112,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
 
 2. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
-Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems. This can happen if the third-party dependency itself depends on native code. A good example of this is Kestrel server. When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each [Runtime Identifier (RID)](../../rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
+Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems. This can happen if the third-party dependency itself depends on native code. A good example of this is Kestrel server. When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each [Runtime Identifier (RID)](../rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
 
 ## Self-contained deployments (SCD) ##
 
@@ -180,7 +176,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
     }
     ```
 
-3. Create a `<RuntimeIdentifiers>` tag under the `<PropertyGroup>` section in your `csproj` file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
+3. Create a `<RuntimeIdentifiers>` tag under the `<PropertyGroup>` section in your `csproj` file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
     ```xml
         <PropertyGroup>
@@ -276,7 +272,7 @@ This operation indicates that, instead of using the entire `netcoreapp1.0` frame
 
    This defines the system components used by our app. The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained deployment with a smaller footprint.
 
-3. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` in your `csproj` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
+3. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` in your `csproj` file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
     ```xml
         <PropertyGroup>

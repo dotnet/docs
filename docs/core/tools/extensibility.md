@@ -12,18 +12,14 @@ ms.devlang: dotnet
 ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 ---
 
-# .NET Core CLI extensibility model (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [.NET Core CLI extensibility model](../../tools/dotnet-test.md) topic.
+# .NET Core CLI extensibility model
 
 ## Overview
 This document will cover the main ways how to extend the CLI tools and explain the scenarios that drive each of them. 
 It will the outline how to consume the tools as well as provide short notes on how to build both types of tools. 
 
 ## How to extend CLI tools
-The RC4 CLI tools can be extended in three main ways:
+The CLI tools can be extended in three main ways:
 
 1. Via NuGet packages on a per-project basis
 2. Via NuGet packages with custom targets  
@@ -50,7 +46,7 @@ category.
 Consuming these tools requires you to add a `<DotNetCliToolReference>` element for each tool you want to use to your project file. Inside the `<DotNetCliToolReference>` element, you reference the package in which the tool resides and you specify the version you need. After running `dotnet restore`, the tool and its dependencies are restored. 
 
 For tools that need to load the build output of the project for execution, there is usually another dependency which is 
-listed under the regular dependencies in the project file. Since the RC4 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in RC4 becomes a set of MSBuild properties that can be read from any target. We will see how to add a custom target using NuGet later in this document. 
+listed under the regular dependencies in the project file. Since CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information becomes a set of MSBuild properties that can be read from any target. We will see how to add a custom target using NuGet later in this document. 
 
 Let's review an example of adding a simple tools-only tool to a simple project. Given an example command called 
 `dotnet-api-search` that allows you to search through the NuGet packages for the specified 

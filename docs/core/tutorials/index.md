@@ -4,7 +4,7 @@ description: .NET Core Tutorials
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-ms.date: 06/24/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -15,12 +15,30 @@ ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 
 The following tutorials are available for learning about .NET Core.
 
-- [Getting started with .NET Core on Windows](using-on-windows.md)
+## Building applications with Visual Studio 2017
+
+- [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio-2017.md)
+- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio-2017.md)
+- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio-2017.md)
+- [Building a C# class library](../../csharp/getting-started/library-with-visual-studio-2017.md)
+- [Testing a C# class library](../../csharp/getting-started/testing-library-with-visual-studio.md)
+- [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio-2017.md)
+- [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
+
+## Building applications with Visual Studio Code
+
+- [Getting Started with C# using Visual Studio Code](../../csharp/getting-started/with-visual-studio-code.md)
 - [Getting started with .NET Core on macOS](using-on-macos.md)
-- [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md)
+
+## Building applications with the .NET Core CLI tools
+
+- [Getting started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
+- [Organizing and testing projects with the .NET Core CLI tools)](testing-with-cli.md)
+- [Getting started with F#](../../fsharp/tutorials/getting-started/getting-started-command-line.md)
+
+## Other
 - [Developing Libraries with Cross Platform Tools](libraries.md)
 - [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
-- [Using MSBuild to build .NET Core projects](target-dotnetcore-with-msbuild.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
 
-For tutorials about developing ASP.NET Core web applications, we suggest you head over to [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, we suggest you head over to the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).

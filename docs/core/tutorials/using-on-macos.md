@@ -13,10 +13,8 @@ ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 
 # Getting started with .NET Core on macOS, using Visual Studio Code
 
-by [Bertrand Le Roy](https://github.com/bleroy),  [Phillip Carter](https://github.com/cartermp),
-[Bill Wagner](https://github.com/billwagner)
-
-Contributions by [Toni Solarin-Sodara](https://github.com/tsolarin)
+> [!WARNING]
+> This topic hasn't been updated to the latest version of the tooling yet.
 
 This document provides a tour of the steps and workflow to create a .NET
 Core Solution using [Visual Studio Code](http://code.visualstudio.com).

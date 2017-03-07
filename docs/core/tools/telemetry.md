@@ -12,11 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
 ---
 
-# .NET Core Tools Telemetry (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [.NET Core Tools Telemetry](../../tools/telemetry.md) topic.
+# .NET Core Tools Telemetry
 
 The .NET Core Tools include a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It’s important that the .NET Team understands how the tools are being used so that we can improve them.
 

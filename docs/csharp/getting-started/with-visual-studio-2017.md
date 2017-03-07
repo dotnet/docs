@@ -81,7 +81,7 @@ You've now created and run your simple application. To develop a professional ap
 
 - For information on debugging your application, see [Debugging the Hello World Application](.\debugging-with-visual-studio-2017.md)
 
-- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](./publishing-with-visual-studio.md).
+- For information on developing a publishing a distributable version of your application, see [Publishing the Hello World application](./publishing-with-visual-studio-2017.md).
 
 ## Related topics ##
 

@@ -139,6 +139,9 @@
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Hosting .NET Core from native code](core/tutorials/netcore-hosting.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
+## Migration
+### [Migration to csproj format](core/migration/index.md)
+### [Migrating from DNX](core/migration/migrating-from-dnx.md)
 ## [Application Deployment](core/deploying/index.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)
@@ -190,7 +193,6 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)
-## [Migrating from DNX](core/migrating-from-dnx.md)
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->

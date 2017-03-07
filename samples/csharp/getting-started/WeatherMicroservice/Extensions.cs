@@ -1,5 +1,6 @@
 namespace WeatherMicroservice
 {
+#region TryParseExtension
     public static class Extensions
     {
         public static double? TryParse(this string input)
@@ -15,4 +16,5 @@ namespace WeatherMicroservice
             }
         }
     }
+#endregion
 }

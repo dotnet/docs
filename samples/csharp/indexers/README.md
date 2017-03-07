@@ -8,9 +8,9 @@ for this sample.
 Key Features
 ------------
 
-This sample contains for different samples involving
+This sample contains four different samples involving
 indexers. You'll learn different C# idioms where indexers can be
-used to expression your design intent.
+used to express your design intent.
 
 Build and Run
 -------------

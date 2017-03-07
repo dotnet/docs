@@ -1,6 +1,6 @@
 ---
 title: "throw (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2015-03-02"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -12,11 +12,12 @@ dev_langs:
   - "CSharp"
 helpviewer_keywords: 
   - "throw statement [C#]"
+  - "throw expression [C#]"
   - "throw keyword [C#]"
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
 caps.latest.revision: 22
-author: "BillWagner"
-ms.author: "wiwagn"
+author: "rpetrusha"
+ms.author: "ronpet"
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -33,26 +34,48 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # throw (C# Reference)
-The `throw` statement is used to signal the occurrence of an anomalous situation (exception) during the program execution.  
+Signals the occurrence of an exception during program execution.  
   
-## Remarks  
- The thrown exception is an object whose class is derived from <xref:System.Exception?displayProperty=fullName>, as shown in the following example.  
+## Remarks
+
+The syntax of `throw` is:
+
+```cs
+throw [e]
+```
+where `e` is an instance of a class derived from <xref:System.Exception?displayProperty=fullName>. The following example uses the `throw` statement to throw an @System.IndexOutOfRangeException if the argument passed to a method named `GetNumber` does not correspond to a valid index of an internal array.
+
+[!code-cs[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]  
+
+Method callers then use a `try-catch` or `try-catch-finally` block to handle the thrown exception. The following example handles the exception thrown by the `GetNumber` method.
+
+[!code-cs[csrefKeyword#2](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#2)]  
+
+## Re-throwing an exception
+
+`throw` can also be used in a `catch` block to re-throw an exception handled in a `catch` block.  In this case, `throw` does not take an exception operand. It is most useful when a method passes on an argument from a caller to some other library method, and the library method throws an exception that must be passed on to the caller. For example, the following example re-throws an @System.NullReferenceException that is thrown when attempting to retrieve the first character of an uninitialized string. 
+
+[!code-cs[csrefKeyword#3](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-3.cs#3)]  
+
+> [!IMPORTANT]
+> You can also use the `throw e` syntax in a `catch` block to instantiate a new exception that you pass on to the caller. In this case, the stack trace of the original exception, which is available from the @System.Exception.Stacktrace property, is not preserved.
+ 
+## The `throw` expression
+
+Starting with C# 7, `throw` can be used as an expression as well as a statement. This allows an exception to be thrown in contexts that were previously unsupported. These include:
+
+- [the conditional operator](../operators/conditional-operator.md). The following example uses a `throw` expression to throw an @System.ArgumentException if a method is passed an empty string array. Before C# 7, this logic would need to appear in an `if`/`else` statement.
+
+   [!code-cs[csrefKeyword#4](../../../../samples/snippets/csharp/language-reference/keywords/throw/conditional.cs#1)]  
   
-```  
-class MyException : System.Exception {}  
-// ...  
-throw new MyException();  
-```  
-  
- Usually the `throw` statement is used with `try-catch` or `try-finally` statements.  A [throw](../../../csharp/language-reference/keywords/throw.md) statement can be used in a `catch` block to re-throw the exception that the `catch` block caught.  In this case, the [throw](../../../csharp/language-reference/keywords/throw.md) statement does not take an exception operand.  For more information and examples, see [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [How to: Explicitly Throw Exceptions](https://msdn.microsoft.com/library/xhcbs8fz).  
-  
-## Example  
- This example demonstrates how to throw an exception using the `throw` statement.  
-  
- [!code-cs[csrefKeywordsExceptions#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/throw_1.cs)]  
-  
-## Code Example  
- See the examples in [try-catch](../../../csharp/language-reference/keywords/try-catch.md) and [How to: Explicitly Throw Exceptions](https://msdn.microsoft.com/library/xhcbs8fz).  
+- [the null-coalescing operator](../operators/null-conditional-operator.md). In the following example, a `throw` expression is used with a null-coalescing operator to throw an exception if the string assigned to a `Name` property is `null`.
+ 
+   [!code-cs[csrefKeyword#5](../../../../samples/snippets/csharp/language-reference/keywords/throw/coalescing.cs#1)]  
+ 
+- an expression-bodied [lambda](../../lambda-expressions.md) or method. The following example illustrates an expression-bodied method that throws an @System.InvalidCastException because a conversion to a @System.DateTime value is not supported.
+ 
+   [!code-cs[csrefKeyword#6](../../../../samples/snippets/csharp/language-reference/keywords/throw/exp-bodied.cs#1)]  
+ 
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  

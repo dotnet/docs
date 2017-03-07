@@ -1,10 +1,10 @@
 ---
 title: Console Application
-description: Console Application
+description: This tutorial teaches you a number of features in .NET Core and the C# language.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
-ms.date: 11/06/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -37,7 +37,7 @@ You’ll need to install your favorite code editor.
 ## Create the Application
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
-directory. Type the command `dotnet new` at the command prompt. This
+directory. Type the command `dotnet new console` at the command prompt. This
 creates the starter files for a basic “Hello World” application.
 
 Before you start making modifications, let’s go through the steps to run
@@ -80,7 +80,7 @@ namespace TeleprompterConsole
 ## Reading and Echoing the File
 The first feature to add is to read a text file, and display all that text
 to the console. First, let’s add a text file. Copy the 
-[sampleQuotes.txt](https://github.com/dotnet/docs/blob/master/samples/csharp/getting-started/console-teleprompter/sampleQuotes.txt)
+[sampleQuotes.txt](https://raw.githubusercontent.com/dotnet/docs/master/samples/csharp/getting-started/console-teleprompter/sampleQuotes.txt)
 file from the GitHub repository for this [sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-teleprompter) into your project directory. 
 This will serve as the script for your
 application.

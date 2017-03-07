@@ -14,7 +14,7 @@ ms.assetid: d7b94076-1108-4174-94e7-a18f00072bb7
 
 # Consuming a class library with .NET Core in Visual Studio 2017 #
 
-Once you've followed the steps in [Building a C# class library with .NET Core in Visual Studio 2017 RC](./library-with-visual-studio-2017.md) and [Testing a class library with .NET Core in Visual Studio 2017 RC](testing-library-with-visual-studio.md) to build and test your class library, and you've built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
+Once you've followed the steps in [Building a C# class library with .NET Core in Visual Studio 2017](./library-with-visual-studio-2017.md) and [Testing a class library with .NET Core in Visual Studio 2017](testing-library-with-visual-studio.md) to build and test your class library, and you've built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
 
 - If the library will be used by a single solution (for example, if it is a component in a single large application), you can simply include it as a project in your solution.
 
@@ -22,9 +22,9 @@ Once you've followed the steps in [Building a C# class library with .NET Core in
 
 ## Including a library as a project in a solution ##
 
-Just as we included unit tests in the same solution as our class library, we can include our application as part of that solution. For example, let's use our class library in a console application that prompts the user to enter a string and reports whether its first charater is uppercase:
+Just as we included unit tests in the same solution as our class library, we can include our application as part of that solution. For example, let's use our class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
-1. Open the `ClassLibraryProjects` solution created in the [Building a C# Class Library with .NET Core in Visual Studio 2017 RC](./library-with-visual-studio-2017.md) topic, and in Solution Explorer, open the context menu for the **ClassLibraryProjects** node and choose **Add**, **New Project**.
+1. Open the `ClassLibraryProjects` solution created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio-2017.md) topic, and in Solution Explorer, open the context menu for the **ClassLibraryProjects** node and choose **Add**, **New Project**.
 
 1. In the **Add New Project** dialog, expand the **Visual C#** and **.NET Core** nodes, and choose the **Console App (.NET Core)** project template, as the following figure shows.
 
@@ -54,7 +54,7 @@ Just as we included unit tests in the same solution as our class library, we can
 
 1. Compile and run the program by clicking the green arrow on the **ShowCase** button.
 
-The application that uses this library can then be debugged and eventually published by following the steps listed in [Debugging your C# Hello World Application with Visual Studio 2017 RC](debugging-with-visual-studio-2017.md) and [Publishing your Hello World Application with Visual Studio 2017 RC](publishing-with-visual-studio-2017.md).
+The application that uses this library can then be debugged and eventually published by following the steps listed in [Debugging your C# Hello World Application with Visual Studio 2017](debugging-with-visual-studio-2017.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio-2017.md).
 
 ## Distributing the library in a NuGet package ##
 
@@ -70,4 +70,3 @@ You can make your class library more widely available by publishing it as a NuGe
    > If the directory that contains `dotnet.exe` is not in your path, you can find its location by entering `where dotnet.exe` in the console window.
 
 For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../../core/deploying/creating-nuget-packages.md).
-

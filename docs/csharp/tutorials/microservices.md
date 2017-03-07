@@ -4,7 +4,7 @@ description: Learn to create asp.net core services that run in Docker containers
 keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
 author: BillWagner
 ms.author: wiwagn
-ms.date: 08/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-docker
@@ -95,11 +95,11 @@ The template creates eight files for you:
 * A .gitignore, customized for asp.net core applications.
 * A Startup.cs file. This contains the basis of the application.
 * A Program.cs file. This contains the entry point of the application.
-* A project.json file. This is the build file for the application.
+* A WeatherMicroservice.csproj file. This is the build file for the application.
 * A Dockerfile. This script creates a Docker image for the application.
 * A README.md. This contains links to other asp.net core resources.
 * A web.config file. This contains basic configuration information.
-* A Properties/launchSettings.json file. This contains debugging settings used by IDEs.
+* A runtimeconfig.template.json file. This contains debugging settings used by IDEs.
 
 Now you can run the template generated application. That's done using a series
 of tools from the command line. The `dotnet` command runs the tools necessary
@@ -188,10 +188,7 @@ object has a `Query` property that contains a dictionary of all the
 values on the query string for the request. The first addition is to
 find the latitude and longitude values:
 
-```cs
-var latString = context.Request.Query["lat"].FirstOrDefault();
-var longString = context.Request.Query["long"].FirstOrDefault();
-```
+[!code-csharp[ReadQueryString](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#ReadQueryString "read variables from the query string")]
 
 The Query dictionary values are `StringValue` type. That type can
 contain a collection of strings. For your weather service, each
@@ -222,19 +219,7 @@ though they are members of that class. Extension methods may only be
 defined in static classes. Here's the definition of the class containing
 the extension method for parse:
 
-```cs
-public static class Extensions
-{
-    public static double? TryParse(this string input)
-    {
-        double result;
-        if (double.TryParse(input, out result))
-            return result;
-        else
-            return default(double?);
-    }
-}
-```  
+[!code-csharp[TryParseExtension](../../../samples/csharp/getting-started/WeatherMicroservice/Extensions.cs#TryParseExtension "try parse to a nullable")]
 
 The `default(double?)` expression returns the default value for the
 `double?` type. That default value is the null (or missing) value.
@@ -242,17 +227,12 @@ The `default(double?)` expression returns the default value for the
 You can use this extension method to convert the query string arguments
 into the double type:
 
-```cs
-var latitude = latString.TryParse();
-var longitude = longString.TryParse();
-```
+[!code-csharp[UseTryParse](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#UseTryParse "Use the try parse extension method")]
 
 To easily test the parsing code, update the response to include the values
 of the arguments:
 
-```cs
-await context.Response.WriteAsync($"Retrieving Weather for lat: {latitude}, long: {longitude}");
-```
+[!code-csharp[WriteResponse](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#WriteResponse "Write the output response")]
 
 At this point, you can run the web application and see if your parsing
 code is working. Add values to the web request in a browser, and you should see
@@ -289,62 +269,30 @@ means the forecast for the same location is the same. If you change the argument
 the latitude and longitude, you'll get a different forecast (because you start with a 
 different seed.)
 
-```cs
-public WeatherReport(double latitude, double longitude, int daysInFuture)
-{
-    var generator = new Random((int)(latitude + longitude) + daysInFuture);
-
-    HiTemperature = generator.Next(40, 100);
-    LoTemperature = generator.Next(0, HiTemperature);
-    AverageWindSpeed = generator.Next(0, 45);
-    Conditions = PossibleConditions[generator.Next(0, PossibleConditions.Length - 1)];
-}
-```
+[!code-csharp[WeatherReportConstructor](../../../samples/csharp/getting-started/WeatherMicroservice/WeatherReport.cs#WeatherReportConstructor "Weather Report Constructor")]
 
 You can now generate the 5-day forecast in your response method:
 
-```cs
-if (latitude.HasValue && longitude.HasValue)
-{
-    var forecast = new List<WeatherReport>();
-    for (var days = 1; days < 6; days++)
-    {
-        forecast.Add(new WeatherReport(latitude.Value, longitude.Value, days));
-    }
-}
-``` 
+[!code-csharp[GenerateRandomReport](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#GenerateRandomReport "Generate a random weather report")]
 
 ### Build the JSON response.
 
 The final code task on the server is to convert the WeatherReport array
 into a JSON packet, and send that back to the client. Let's start by creating
 the JSON packet. You'll add the NewtonSoft JSON Serializer to the
-list of dependencies:
+list of dependencies. You can do that using the `dotnet` CLI:
 
-```json
-  "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.0",
-      "type": "platform"
-    },
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
-    "Newtonsoft.Json": "8.0.4-beta1",
-    "Microsoft.NETCore.Portable.Compatibility": "1.0.0"
-  },
-``` 
+```
+dotnet add package Newtonsoft.Json
+```
 
 Then, you can use the `JsonConvert` class to write the object to a string:
 
-```cs
-var json = JsonConvert.SerializeObject(forecast, Formatting.Indented);
-context.Response.ContentType = "application/json; charset=utf-8";
-await context.Response.WriteAsync(json);
-```
+[!code-csharp[ConvertToJson](../../../samples/csharp/getting-started/WeatherMicroservice/Startup.cs#ConvertToJSON "Convert objects to JSON")]
 
 The code above converts the forecast object (a list of `WeatherForecast`
 objects) into a JSON packet. After you've constructed the response packet,
-you set the content type to 'application/json', and write the string.
+you set the content type to `application/json`, and write the string.
 
 The application now runs and returns random forecasts.
 
@@ -366,7 +314,7 @@ for our purposes. Let's go over its contents.
 The first line specifies the source image:
 
 ```
-FROM microsoft/dotnet:latest
+FROM microsoft/dotnet:1.1-sdk-msbuild
 ```
 
 Docker allows you to configure a machine image based on a
@@ -375,44 +323,60 @@ the machine parameters when you start, you only need to
 supply any changes. The changes here will be to include
 our application.
 
-In this first sample, we'll use the `latest` version of
+In this first sample, we'll use the `1.1-sdk-msbuild` version of
 the dotnet image. This is the easiest way to create a working Docker
 environment. This image include the dotnet core runtime, and the dotnet SDK. 
 That makes it easier to get started and build, but does create a larger image.
 
-The next four lines setup and build your application:
+The next five lines setup and build your application:
 
 ```
-COPY . /app
 WORKDIR /app
-RUN ["dotnet", "restore"]
-RUN ["dotnet", "build"]
+
+# copy csproj and restore as distinct layers
+
+COPY WeatherMicroservice.csproj .
+RUN dotnet restore
+
+# copy and build everything else
+
+COPY . .
+
+# RUN dotnet restore
+RUN dotnet publish -c Release -o out
 ```
 
-This will copy the contents of the current directory to the docker VM, and restore
+This will copy the project file from the  current directory to the docker VM, and restore
 all the packages. Using the dotnet CLI means that the Docker image must include the
-.NET Core SDK. 
+.NET Core SDK. After that, the rest of your application gets copied, and the dotnet
+publish command builds and packages your application.
 
-The final lines of the file set the tcp port (5000) this container 
-listens on and runs the application:
+The final line of the file runs the application:
 
 ```
-EXPOSE 5000/tcp
-ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]
+ENTRYPOINT ["dotnet", "out/WeatherMicroservice.dll", "--server.urls", "http://0.0.0.0:5000"]
 ```
 
-The `EXPOSE` command informs Docker to listen on port 5000. The Dockerfile created
-by the asp.net core generator uses this port because it is the default port
-for asp.net core applications. This same port is referenced in the `--server.urls`
-argument to `dotnet run` on the next line of the Dockerfile. The `ENTRYPOINT` command
+This configured port is referenced in the `--server.urls`
+argument to `dotnet` on the last  line of the Dockerfile. The `ENTRYPOINT` command
 informs Docker  what command and command line options start the service. 
-
-> [!Note]
-> You could also specify the TCP port in code with the `WebHostBuilder.UseUrls("http://0.0.0.0:5000")` method.
 
 ## Building and running the image in a container.
 
-Let's build an image and run the service inside a Docker container. You build the image
+Let's build an image and run the service inside a Docker container. You don't want
+all the files from your local directory copied into the image. Instead, you'll
+build the application in the container. You'll create a `.dockerignore` file
+to specify the directories that are not copied into the image. You don't want
+any of the build assets copied. Specify the build and publish directories
+in the `.dockerignore` file:
+
+```
+bin/*
+obj/*
+out/*
+```
+
+You build the image
 using the docker build command. Run the following command from the directory containing your code.
 
 ```console
@@ -422,7 +386,14 @@ docker build -t weather-microservice .
 This command builds the container image based on all the information in your Dockerfile. The `-t`
 argument provides a tag, or name, for this container image. In the command line above, the
 tag used for the Docker container is `weather-microservice`. When this command completes,
-you have a container ready to run your new service. Run the following command to start
+you have a container ready to run your new service. 
+
+> [!Note]
+> The copy command will copy all built assets, as well as the source for your application.
+> You should remove the `obj`, `bin`, and `out` directories from your local machine
+> before building your Docker image.
+
+Run the following command to start
 the container and launch your service:
 
 ```console

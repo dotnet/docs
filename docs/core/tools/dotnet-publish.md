@@ -4,7 +4,7 @@ description: The dotnet-publish command publishes your .NET Core project into a 
 keywords: dotnet-publish, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,26 +20,26 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ## Synopsis
 
 ```
-dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [--version-suffix] [-c|--configuration] [-v|--verbosity]
+dotnet publish [project] [-f|--framework] [-r|--runtime] [-o|--output] [-c|--configuration] [--version-suffix] [-v|--verbosity]
 dotnet publish [-h|--help]
 ```
 
 ## Description
 
-`dotnet publish` compiles the application, reads through its dependencies specified in the project file, and publishes the resulting set of files to a directory. 
+`dotnet publish` compiles the application, reads through its dependencies specified in the project file and publishes the resulting set of files to a directory. The output will contain the following:
 
-Depending on the type of portable app, the resulting directory will contain the following:
+1. Intermediate Language (IL) code in an assembly with a `*.dll` extension.
+2. *deps.json* file that contains all of the dependencies of the project. 
+3. *Runtime.config.json* file that specifies the shared runtime that the application expects, as well as other configuration options for the runtime (for example, garbage collection type).
+4. All of the application's dependencies. These are copied out of the NuGet cache and into the output folder. 
 
-1. *Framework-dependent deployment* - application's intermediate language (IL) code and all of application's managed dependencies.
-2. *Self-contained deployment* - same as above plus the entire runtime for the targeted platform.
-
-For more information, see the [.NET Core Application Deployment](../deploying/index.md) topic.
+The `dotnet publish` command's output is ready to be deployed in a remote machine for execution and is the only officially supported way to prepare the application to be deployed to another machine (for example, a server) for execution. Depending on the type of deployment that the project specifies, the remote machine will have to have .NET Core shared runtime installed on it. For more information, see the [.NET Core Application Deployment](../deploying/index.md) topic.
 
 ## Arguments
 
 `project` 
 
-The project to publish, which defaults to the current directory if `<PROJECT>` is not specified. 
+The project to publish, which defaults to the current directory if `project` is not specified. 
 
 ## Options
 
@@ -60,13 +60,13 @@ Publishes the application for a given runtime. This is used when creating a [sel
 Specify the path where to place the directory. If not specified, it will default to *_./bin/[configuration]/[framework]/_* 
 for portable applications or *_./bin/[configuration]/[framework]/[runtime]_* for self-contained deployments.
 
-`--version-suffix [VERSION_SUFFIX]`
+`-c|--configuration {Debug|Release}`
+
+Configuration to use when building the project. The default value is `Debug`.
+
+`--version-suffix <VERSION_SUFFIX>`
 
 Defines what `*` should be replaced with in the version field in the project file.
-
-`-c|--configuration [Debug|Release]`
-
-Configuration to use when publishing. The default value is `Debug`.
 
 `-v|--verbosity <LEVEL>`
 

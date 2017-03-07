@@ -180,7 +180,7 @@ Both solutions are perfectly valid and there is no inherent flaw or advantage to
 > For more information, please visit the [VSTS build documentation](https://www.visualstudio.com/docs/build/overview). 
 
 #### Using a manual script
-Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify the same script to run as the step.
+Taking the script we have started above and using it in VSTS is very simple. You can create a new build definition and then specify the same script to run as the step. Let's start by going to the "Build & Release" link in the top-level navigation bar. This is available after you log into Visual Studio Team Services and select a project to work on. 
 
 1. Start by creating a new build definition. On the **Create new build definition** dialog, select **Empty** to start a definition with no steps.
 

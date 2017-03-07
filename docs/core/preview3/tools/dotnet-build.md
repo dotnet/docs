@@ -4,7 +4,7 @@ description: The dotnet-build command builds a project and all of its dependenci
 keywords: dotnet-build, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/13/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -13,10 +13,6 @@ ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
 
 #dotnet-build (.NET Core Tools RC4)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools RC4. For the .NET Core Tools Preview 2 version,
-> see the [dotnet-build](../../tools/dotnet-build.md) topic.
 
 ## Name 
 dotnet-build -- Builds a project and all of its dependencies 
@@ -46,7 +42,7 @@ In order to build an executable application instead of a library, you need to se
 
 ```xml
 <PropertyGroup>
-    <OutputType>Exe</OutputType>
+  <OutputType>Exe</OutputType>
 </PropertyGroup>
 ```
 

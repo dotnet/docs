@@ -2,7 +2,7 @@
 redirect_url: /dotnet/articles/csharp/getting-started/with-visual-studio-2017
 ---
 
-# Getting started with .NET Core on Windows, using Visual Studio 2017 (.NET Core Tools RC4)
+# Getting started with .NET Core on Windows, using Visual Studio 2017
 
 ## Content retired!
 

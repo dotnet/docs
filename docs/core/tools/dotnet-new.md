@@ -14,12 +14,12 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 #dotnet-new
 
 ## Name
-`dotnet-new` - Creates a new .NET Core project in the current directory.
+`dotnet-new` - Creates a new project, configuration file or solution based on the specified template.
 
 ## Synopsis
 ```
-dotnet new [template] [-lang|--language] [-n|--name] [-o|--output] [-h|--help]
-dotnet new [template] [-l|--list]
+dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template arguments]
+dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
@@ -27,46 +27,63 @@ dotnet new [-h|--help]
 ## Description
 The `dotnet new` command provides a convenient way to initialize a valid .NET Core project and sample source code to try out the Command-line interface (CLI) toolset. 
 
-This command is invoked in the context of a directory. When invoked, the command will scaffold out the resources and files according to the template and options passed into the command. 
-
-After this, the project is ready to be compiled and/or edited further. 
+When invoked, the command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
 ## Arguments
 
-`template`
+`<TEMPLATE>`
 
-The template to instantiate when the command is invoked.
+The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-The command contains a default list of templates; use `dotnet new --help`. 
+The command contains a default list of templates. Use `dotnet new -all` to see all.
+
+The following table shows the templates that come pre-installed with the SDK. The default language for the template is shown inside brackets such as `[C#]`.
+
+|Template description  | Template name  | Languages |
+|----------------------|----------------|-----------|
+| Console application  | console        | [C#], F#  |
+| Class library        | classlib       | [C#], F#  |
+| Unit test project    | mstest         | [C#], F#  |
+| xUnit test project   | xunit          | [C#], F#  |
+| ASP.NET Core empty   | web            | [C#]      |
+| ASP.NET Core web app | mvc            | [C#], F#  |
+| ASP.NET Core web api | webapi         | [C#]      |
+| Nuget config         | nugetconfig    |           |
+| Web config           | webconfig      |           |
+| Solution file        | sln            |           |
 
 ## Options
 
-`-l|--list`         
+`-h|--help`
 
-List templates containing the specified name.
+Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
 
-`-lang|--language`  
+`-l|--list`
 
-Specifies the language of the template to create
+Lists templates containing the specified name. If invoked for the `dotnet new` command itself, it lists the possible templates to be used on the given directory.
+For example, if the directory already contains a project, it won't list all project templates.
 
-`-n|--name`         
+`-lang|--language <C#|F#>`
+
+The language of the template to create. Language accepted varies by template (see defaults in the [arguments](#arguments) section. 
+Not valid for some templates.
+
+`-n|--name <OUTPUT_NAME>`
 
 The name for the output being created. If no name is specified, the name of the current directory is used.
 
-`-o|--output`       
+`-o|--output <OUTPUT_DIRECTORY>`
 
-Location to place the generated output.
+Location to place the generated output. The default is the current directory.
 
-`-all|--show-all`   
+`-all|--show-all`
 
-Shows all templates for a specific type of project.
-
-`-h|--help`
-
-Prints out help for the command.
+Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. 
+When running in the context of a specific template, such as, `dotnet new web -all`, `-all` is interpreted as a force creation flag. 
+That might happen when the output directory already contains a project.
 
 ## Template options
-Each project template may have additional options available. The core templates, for example, have the following.
+Each project template may have additional options available. The core templates have the following options:
 
 **console, xunit, mstest, web, webapi **
 

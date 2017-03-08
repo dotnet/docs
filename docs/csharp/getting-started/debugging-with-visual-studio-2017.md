@@ -14,23 +14,23 @@ ms.assetid: cb213625-cc60-438b-9b9e-49aed0e4a974
 
 # Debugging your C# Hello World application with Visual Studio 2017
 
-So far, you've followed the steps in [Building a c# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio-2017.md) to create and run a simple console application. Once you've written and compiled an application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Building a C# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio.md) to create and run a simple console application. Once you've written and compiled an application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
 
 ## Debugging in Debug mode
 
-Debug mode is one of Visual Studio's two default build configurations. (The other is Release mode.) The current build configuration is shown on the toolbar. The following figure shows that Visual Studio is configured to compile your application in Debug mode.
+Debug mode and Release mode are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following figure shows that Visual Studio is configured to compile your application in Debug mode.
 
-   ![Image](./media/debugmode.jpg)
+   ![Visual Studio toolbar](./media/debugging-with-visual-studio-2017/toolbar1.png)
 
-You should always start out by testing your program in Debug mode. Debug mode turns off most compiler optimizations and provides richer information in the symbol database file (*.pdb* file) output during the build process.
+You should always begin by testing your program in Debug mode. Debug mode turns off most compiler optimizations and provides richer information during the build process.
 
 ## Setting a breakpoint
 
 Run your program in Debug mode and try a few debugging features:
 
-1. A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. Set a breakpoint by positioning the cursor on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` and clicking in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
+1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. Set a breakpoint on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` by clicking in the left margin of the code window on that line or by choosing the **Debug > Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
-   ![Image](./media/setbreakpoint_2017.jpg)
+   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio-2017/setbreakpoint.png)
 
 1. Run the program in Debug mode by selecting the the "HelloWorld" button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
 
@@ -38,43 +38,41 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   ![Image](./media/breakpoint_2017.jpg)
+   ![Visual Studio application window](./media/debugging-with-visual-studio-2017/break.png)
 
-1. Try to change the value of the variables to see how this affects our program. If the **Immediate window** is not visible, display it by choosing the **Debug > Windows > Immediate** menu item. The **Immediate window** lets you interact with the application you're debugging.
+1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug > Windows > Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 
-1. You can interactively change the values of variables. Enter `name = "Yuma"` in the immediate window and press the Enter key.
+1. You can interactively change the values of variables. Enter `name = "Gracie Law"` in the immediate window and press the Enter key.
 
 1. Enter `date = new DateTime(2016,11,01,11,59,00)` in the immediate window and press the Enter key.
 
-   The following image shows the **Immediate window**.
+   The **Immediate Window** displays the value of the string variable and the properties of the @System.DateTime value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
 
-   ![Image](./media/immediatewindow.jpg)
+   ![Autos window and Immediate Window](./media/debugging-with-visual-studio-2017/autosimmediate.png)
 
-   The window displays the value of the string variable and the properties of the `@System.DateTime` value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
+1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug > Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
-1. Continue program execution by selecting the **Continue** button in the toolbar or by choosing the **Debug > Continue** menu item. The values displayed in the console window correspond to the changes we made in the **Immediate window**.
-
-   ![Image](./media/changed.jpg)
+   ![Console window showing the typed value Jack Burton at the What is your name? prompt followed by Hello Gracie Law on 11/1/2016 at 11:59am](./media/debugging-with-visual-studio-2017/changed.png)
 
 1. Press any key to exit the application and end Debug mode.
 
 ## Setting a conditional breakpoint
 
-We now know that your program correctly displays the string that the user enters. What happens if the user doesn't enter anything? We can test this with a useful debugging feature, the *conditional breakpoint*, which breaks program execution when one or more conditions are met.
+Your program displays the string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature, the *conditional breakpoint*, which breaks program execution when one or more conditions are met.
 
 To set a conditional breakpoint and test what happens when the user fails to enter a string, do the following:
 
-1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions...** to open the **Breakpoint Settings** dialog shown in the following figure.
+1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions...** to open the **Breakpoint Settings** dialog shown in the following figure. Check the box for **Conditions**.
 
-   ![Image](./media/breakpoint_settings.jpg)
+   ![Breakpoint settings panel](./media/debugging-with-visual-studio-2017/breakpointsettings.png)
 
-1. In the text box that reads "e.g. x == 5", enter the following:
+1. For the **Conditional Expression** replace "e.g. x == 5" with the following:
 
    ```csharp
    String.IsNullOrEmpty(name)
    ```
 
-   Here, you're testing for a code condition. You can also specify a hit count, which interrupts program execution before a statement is executed a specified number of times, or a filter condition, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
+   You're testing for a code condition. You can also specify a hit count, which interrupts program execution before a statement is executed a specified number of times, or a filter condition, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Select the **Close** button to close the dialog.
 
@@ -84,17 +82,15 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Because the condition we specified has been satisfied, `name` is either `null` or [`String.Empty`](xref:System.String.Empty), program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
 
-1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, in this case the `Main` method.
+1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program.
 
-1. Note that the value of the `name` variable is "", or [`String.Empty`](xref:System.String.Empty). Confirm this by entering the following statement in the **Immediate window**:
+1. Observe that the value of the `name` variable is `""`, or [`String.Empty`](xref:System.String.Empty). Confirm this by entering the following statement in the **Immediate Window**. The response will be `true`.
 
    ```csharp
    ? name == String.Empty
    ```
 
-   The following figure shows the result.
-
-   ![Image](./media/emptystring.jpg)
+   ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio-2017/emptystring.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
@@ -108,13 +104,13 @@ Visual Studio also allows us to step line by line through a program and monitor 
 
 1. On the menu bar, choose **Debug > Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution, as the following figure shows.
 
-   ![Image](./media/step_into.jpg)
+   ![Visual Studio window](./media/debugging-with-visual-studio-2017/stepinto1.png)
 
    At this point, the **Autos** window shows that your program has defined only one variable, `args`. Because you haven't passed any command-line arguments to the program, its value is an empty string array. In addition, Visual Studio has opened a blank console window.
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio now highlights the next line to be execute. As the figure shows, it has taken three milliseconds to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
+1. Select **Debug > Step Into** or press the F11 key. Visual Studio now highlights the next line to be execute. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
-   ![Image](./media/step_into_2.jpg)
+   ![Visual Studio window](./media/debugging-with-visual-studio-2017/stepinto2.png)
 
 1. Select **Debug > Step Into** or press the F11 key. Visual Studio hightlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
@@ -136,8 +132,8 @@ Once you've tested the debug build of your application, you should also compile 
 
 To build and test the release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**, as shown in the following figure.
 
-![Image](./media/release.jpg)
+![Image](./media/debugging-with-visual-studio-2017/toolbar2.png)
 
-When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the release version of your console application. You can test it as you did the debug verison of the application.
+When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the release version of your console application. You can test it as you did the Debug verison of the application.
 
-Once you've finished debugging your application, the next step is to publish a distributable version of your application. For information on how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio-2017.md).
+Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio-2017.md).

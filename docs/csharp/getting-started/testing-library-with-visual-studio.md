@@ -76,7 +76,7 @@ To create the the test methods:
 
    Note that your test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, select **File > Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and then select **Save with Encoding***.
+1. On the menu bar, select **File > Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and then select **Save with Encoding**.
 
    ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
 

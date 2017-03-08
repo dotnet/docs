@@ -46,7 +46,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
  [!CODE-csharp[UsingClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs#1)]
 
-   The code uses the [Console.WindowHeight](xref:System.Console.WindowHeight) property to determine the number of rows in the console window. Whenever the [Console.CursorTop](xref:System.Console.CursorTop) property is greater than or equal to the number of rows in the console window, the code clears the console window and redisplays a message to the user.
+   The code uses the [Console.WindowHeight](xref:System.Console.WindowHeight) property to determine the number of rows in the console window. Whenever the [Console.CursorTop](xref:System.Console.CursorTop) property is greater than or equal to the number of rows in the console window, the code clears the console window and displays a message to the user.
 
    The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the **Enter** key without entering a string, the application terminates, and the console window closes.
 

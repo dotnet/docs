@@ -22,7 +22,7 @@ To create the unit test project, do the following:
 
 1. In **Solution Explorer**, open the context menu for the **ClassLibraryProject** solution node and select **Add > New Project**.
 
-   <!-- Need a VS 2017 version  [!NOTE] In addition to a Unit Test project, you can also use Visual Studio to create an XUnit test project for .NET Core. For a walkthrough that includes an XUnit test project, see [Getting started with .NET Core on Windows, using Visual Studio 2015](../../core/tutorials/using-on-windows.md). --> 
+   <!-- Need a VS 2017 version  [!NOTE] In addition to a Unit Test project, you can also use Visual Studio to create an xUnit test project for .NET Core. For a walkthrough that includes an xUnit test project, see [Getting started with .NET Core on Windows, using Visual Studio 2015](../../core/tutorials/using-on-windows.md). --> 
 
 1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Unit Test Project (.NET Core)** project template. In the **Name** text box, enter "StringLibraryTest" as the name of the project. Select **OK** to create the unit test project.
 
@@ -68,7 +68,7 @@ Since your library method handles strings, you also want to make sure that it su
 
 You'll define three methods, each of which calls its [Assert](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) method repeatedly for each element in a string array. Because the test method fails as soon as it encounters the first failure, you'll call a method overload that allows you to pass a string that indicates the string value used in the method call.
 
-To create the the test methods:
+To create the test methods:
 
 1. In the *UnitTest1.cs* code window, replace the code with the following code:
 
@@ -109,7 +109,7 @@ Your test run had no failures, but change it slightly so that one of the test me
 
 1. In the **Failed Tests** section, select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" were not tested.
 
-   ![Test Explorer window showing the IsFalse assertion failure](./media/testing-library-with-visual-studio/failedtestdetail.png)
+   ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failedtestdetail.png)
 
 1. Remove the code that you added (`"Error", `) and rerun the test. The tests will pass.
 

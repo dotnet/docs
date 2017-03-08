@@ -22,7 +22,7 @@ To publish and run your application:
 
    ![Visual Studio toolbar](media/publishing-with-visual-studio-2017/toolbar.png)
 
-1. Right-click on the HelloWorld project (not the HelloWorld solution) and select **Publish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
+1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
 
    ![Visual Studio toolbar](media/publishing-with-visual-studio-2017/publish1.png)
 

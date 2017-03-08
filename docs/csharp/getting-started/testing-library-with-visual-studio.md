@@ -40,7 +40,7 @@ To create the unit test project, do the following:
 
    * It applies the [\[TestMethod\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method for automatic execution when the unit test is run.
 
-1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu. This adds a reference to our class library project, `StringLibrary`.
+1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu. This adds a reference to your class library project, `StringLibrary`.
 
    ![Context menu of StringLibraryTest Dependencies](./media/testing-library-with-visual-studio/addreference.png)
 
@@ -62,9 +62,9 @@ Assert methods | Function
 `Assert.IsNotNull` | Verifies that an object is not `null`. The assert fails if the object is `null`.
 [\[ExpectedException\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.expectedexceptionattribute.aspx) attribute | Indicates the type of exception a test method is expected to throw. The test fails if the specified exception is not thrown.
 
-In testing the `StringLibrary.StartsWithUpper` method, you want to provide a number of strings that begin with an uppercase character. We expect the method to return `true` in these cases, so you can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/library/ms243754.aspx) method. Similarly, you want to provide a number of strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/library/ms243805.aspx) method.
+In testing the `StringLibrary.StartsWithUpper` method, you want to provide a number of strings that begin with an uppercase character. You expect the method to return `true` in these cases, so you can call the [Assert.IsTrue(Boolean, String)](https://msdn.microsoft.com/library/ms243754.aspx) method. Similarly, you want to provide a number of strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the [Assert.IsFalse(Boolean, String)](https://msdn.microsoft.com/library/ms243805.aspx) method.
 
-Since our library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose @System.String.Length is 0 and a `null` string that has not been initialized. If `StartsWithUpper` is called as an extension method on a @System.String instance, it cannot be passed a `null` string. However, you can also call it directly as a static method and pass a single @System.String argument.
+Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose @System.String.Length is 0 and a `null` string that has not been initialized. If `StartsWithUpper` is called as an extension method on a @System.String instance, it cannot be passed a `null` string. However, you can also call it directly as a static method and pass a single @System.String argument.
 
 You'll define three methods, each of which calls its [Assert](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.assert.aspx) method repeatedly for each element in a string array. Because the test method fails as soon as it encounters the first failure, you'll call a method overload that allows you to pass a string that indicates the string value used in the method call.
 
@@ -115,7 +115,7 @@ Your test run had no failures, but change it slightly so that one of the test me
 
 ## Testing the Release version of the library
 
-We've been running our tests against the Debug version of the library. Now that our tests have all passed and we've adequately tested our library, we should run the tests an additional time against the Release build of the library. A number of factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
+You've been running your tests against the Debug version of the library. Now that your tests have all passed and you've adequately tested your library, you should run the tests an additional time against the Release build of the library. A number of factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
 
 To test the Release build:
 

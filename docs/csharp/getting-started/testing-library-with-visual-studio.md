@@ -40,11 +40,11 @@ To create the unit test project, do the following:
 
    * It applies the [\[TestMethod\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method for automatic execution when the unit test is run.
 
-1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu. This adds a reference to your class library project, `StringLibrary`.
+1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu.
 
    ![Context menu of StringLibraryTest Dependencies](./media/testing-library-with-visual-studio/addreference.png)
 
-1. In the **Reference Manager** dialog, check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button.
+1. In the **Reference Manager** dialog, check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. This adds a reference to your class library project, `StringLibrary`.
 
    ![Reference manager](./media/testing-library-with-visual-studio/referencemanager.png)
 

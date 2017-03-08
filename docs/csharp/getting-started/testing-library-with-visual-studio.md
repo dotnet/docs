@@ -107,9 +107,9 @@ Your test run had no failures, but change it slightly so that one of the test me
 
    ![Test Explorer window](./media/testing-library-with-visual-studio/failedtest.png)
 
-1. In the **Failed Tests** section, select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True", as the following figure of **Test Explorer** shows. Because of the failure, all strings in the array after "Error" were not tested.
+1. In the **Failed Tests** section, select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" were not tested.
 
-   ![Test Explorer window](./media/testing-library-with-visual-studio/failedtestdetail.png)
+   ![Test Explorer window showing the IsFalse assertion failure](./media/testing-library-with-visual-studio/failedtestdetail.png)
 
 1. Remove the code that you added (`"Error", `) and rerun the test. The tests will pass.
 

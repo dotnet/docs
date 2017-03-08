@@ -34,7 +34,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Run the program in Debug mode by selecting the the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
 
-1. Enter a string in the console window when the program prompts for a name and press Enter.
+1. Enter a string in the console window when the program prompts for a name and press **Enter**.
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
@@ -42,9 +42,9 @@ Run your program in Debug mode and try a few debugging features:
 
 1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug > Windows > Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 
-1. You can interactively change the values of variables. Enter `name = "Gracie Law"` in the immediate window and press the Enter key.
+1. You can interactively change the values of variables. Enter `name = "Gracie Law"` in the immediate window and press the **Enter** key.
 
-1. Enter `date = new DateTime(2016,11,01,11,59,00)` in the immediate window and press the Enter key.
+1. Enter `date = new DateTime(2016,11,01,11,59,00)` in the immediate window and press the **Enter** key.
 
    The **Immediate Window** displays the value of the string variable and the properties of the @System.DateTime value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
 
@@ -78,7 +78,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Run the program in Debug mode.
 
-1. In the console window, press the Enter key when prompted to enter your name.
+1. In the console window, press the **Enter** key when prompted to enter your name.
 
 1. Because the condition we specified has been satisfied, `name` is either `null` or [`String.Empty`](xref:System.String.Empty), program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
 
@@ -114,7 +114,7 @@ Visual Studio also allows us to step line by line through a program and monitor 
 
 1. Select **Debug > Step Into** or press the F11 key. Visual Studio hightlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
-1. Respond to the prompt by entering a string in the console window and pressing Enter. The console is unresponsive, and the string you enter isn't displayed in the console window, but the [`Console.ReadLine`](xref:System.Console.ReadLine) method will nevertheless capture your input.
+1. Respond to the prompt by entering a string in the console window and pressing **Enter**. The console is unresponsive, and the string you enter isn't displayed in the console window, but the [`Console.ReadLine`](xref:System.Console.ReadLine) method will nevertheless capture your input.
 
 1. Select **Debug > Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the [`DateTime.Now`](xref:System.DateTime.Now) property value and the value returned by the call to the [`Console.ReadLine`](xref:System.Console.ReadLine) method. The console window also displays the string entered when the console prompted for input.
 

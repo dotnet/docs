@@ -1,5 +1,5 @@
 # [Getting Started](index.md)
-## [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio-2017.md)
+## [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md)
 ### [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio-2017.md)
 ### [Publishing your Hello World application with Visual Studio 2017](publishing-with-visual-studio-2017.md)
 ## [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio-2017.md)

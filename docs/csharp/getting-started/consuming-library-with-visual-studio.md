@@ -48,7 +48,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
    The code uses the [Console.WindowHeight](xref:System.Console.WindowHeight) property to determine the number of rows in the console window. Whenever the [Console.CursorTop](xref:System.Console.CursorTop) property is greater than or equal to the number of rows in the console window, the code clears the console window and displays a message to the user.
 
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the **Enter** key without entering a string, the application terminates, and the console window closes.
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application terminates, and the console window closes.
 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
@@ -60,7 +60,7 @@ You can debug and publish the application that uses this library by following th
 
 You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../../core/tools/dotnet.md):
 
-1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing **Enter** if it's selected in the search results.
+1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 
 1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the `Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary` directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
 

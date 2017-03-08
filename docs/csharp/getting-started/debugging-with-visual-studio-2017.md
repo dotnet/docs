@@ -72,7 +72,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    String.IsNullOrEmpty(name)
    ```
 
-   You're testing for a code condition. You can also specify a hit count, which interrupts program execution before a statement is executed a specified number of times, or a filter condition, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
+   You're testing for a code condition. You can also specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times, or a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Select the **Close** button to close the dialog.
 

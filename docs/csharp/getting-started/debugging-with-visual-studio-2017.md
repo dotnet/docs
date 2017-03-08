@@ -18,7 +18,7 @@ So far, you've followed the steps in [Building a C# Hello World Application with
 
 ## Debugging in Debug mode
 
-Debug mode and Release mode are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile your application in **Debug** mode.
+*Debug* and *Release* are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile your application in **Debug** mode.
 
    ![Visual Studio toolbar](./media/debugging-with-visual-studio-2017/toolbar1.png)
 
@@ -126,14 +126,14 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Press any key to close the console window and exit Debug mode.
 
-## Building a release version
+## Building a Release version
 
-Once you've tested the Debug build of your application, you should also compile and test the release version. The release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in asynchronous or multithreaded applications.
+Once you've tested the Debug build of your application, you should also compile and test the Release version. The Release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in asynchronous or multithreaded applications.
 
-To build and test the release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
+To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
 ![Image](./media/debugging-with-visual-studio-2017/toolbar2.png)
 
-When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the release version of your console application. You can test it as you did the Debug verison of the application.
+When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of your console application. You can test it as you did the Debug verison of the application.
 
 Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio-2017.md).

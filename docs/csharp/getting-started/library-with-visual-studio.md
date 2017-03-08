@@ -33,7 +33,7 @@ Start by creating a solution for your class library project and its related proj
 
 ## Creating the class library project
 
-Create our class library project:
+Create your class library project:
 
 1. In **Solution Explorer**, right-click on the **ClassLibraryProjects** solution file and from the context menu, select **Add > New Project**.
 

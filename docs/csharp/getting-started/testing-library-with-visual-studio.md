@@ -80,7 +80,7 @@ To create the the test methods:
 
    ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
 
-1. In the Confirm Save As dialog, select the **Yes** button to save the file.
+1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and then select **OK**.
 

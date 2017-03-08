@@ -40,7 +40,7 @@ To create the unit test project, do the following:
 
    * It applies the [\[TestMethod\]](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testmethodattribute.aspx) attribute to define `TestMethod1` as a test method for automatic execution when the unit test is run.
 
-1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and choose **Add Reference** from the context menu. This adds a reference to our class library project, `StringLibrary`.
+1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu. This adds a reference to our class library project, `StringLibrary`.
 
    ![Context menu of StringLibraryTest Dependencies](./media/testing-library-with-visual-studio/addreference.png)
 
@@ -76,11 +76,11 @@ To create the the test methods:
 
    Note that your test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, choose **File > Save UnitTest1.cs As**. In the **Save File As** dialog, choose the arrow beside the **Save** button, and then choose **Save with Encoding...***.
+1. On the menu bar, select **File > Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and then select **Save with Encoding***.
 
    ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
 
-1. In the Confirm Save As dialog, choose the **Yes** button to save the file.
+1. In the Confirm Save As dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and then select **OK**.
 
@@ -88,7 +88,7 @@ To create the the test methods:
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be accurate.
 
-1. On the menu bar, choose **Test > Run > All Tests**. The **Test Explorer** window opens and shows that the tests have run successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
+1. On the menu bar, select **Test > Run > All Tests**. The **Test Explorer** window opens and shows that the tests have run successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
    ![Test Explorer window](./media/testing-library-with-visual-studio/firsttest.png)
 

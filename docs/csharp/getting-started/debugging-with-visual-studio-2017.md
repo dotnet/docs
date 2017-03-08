@@ -96,7 +96,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Press any key to close the console window and exit Debug mode.
 
-1. Clear the breakpoint by clicking on the dot in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item.
+1. Clear the breakpoint by clicking on the dot in the left margin of the code window or by choosing the **Debug > Toggle Breakpoint** menu item with the row selected.
 
 ## Stepping through a program
 

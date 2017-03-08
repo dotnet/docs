@@ -199,7 +199,6 @@
 # [.NET Framework on Docker Guide](framework/index.md)
 ## [Docker](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework/docker/console.md)
-### [Running ASP.NET MVC Apps in Containers](framework/docker/aspnetmvc.md)
 <!-- End .NET Framework Content -->
 
 <!-- Start of C# Content -->

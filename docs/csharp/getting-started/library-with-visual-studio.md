@@ -41,7 +41,7 @@ Create our class library project:
 
    ![Add New Project dialog](./media/library-with-visual-studio/lib_project.png)
 
-   ![Visual Studio application window showing the default class library template code](./media/library-with-visual-studio/class_library.png)
+   ![Visual Studio application window showing the default class library template code](./media/library-with-visual-studio/string_library.png)
 
 1. Replace the code in the code window with the following code and save the file:
 

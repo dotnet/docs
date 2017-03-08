@@ -62,7 +62,7 @@ Your program displays the string that the user enters. What happens if the user 
 
 To set a conditional breakpoint and test what happens when the user fails to enter a string, do the following:
 
-1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions...** to open the **Breakpoint Settings** dialog shown in the following figure. Check the box for **Conditions**.
+1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog shown in the following figure. Check the box for **Conditions**.
 
    ![Breakpoint settings panel](./media/debugging-with-visual-studio-2017/breakpointsettings.png)
 

@@ -108,7 +108,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    At this point, the **Autos** window shows that your program has defined only one variable, `args`. Because you haven't passed any command-line arguments to the program, its value is an empty string array. In addition, Visual Studio has opened a blank console window.
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio now highlights the next execution line. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
+1. Select **Debug > Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
    ![Visual Studio window](./media/debugging-with-visual-studio-2017/stepinto2.png)
 

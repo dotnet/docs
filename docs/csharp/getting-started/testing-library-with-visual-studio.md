@@ -88,7 +88,7 @@ To create the the test methods:
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be accurate.
 
-1. On the menu bar, select **Test > Run > All Tests**. The **Test Explorer** window opens and shows that the tests have run successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
+1. On the menu bar, select **Test > Run > All Tests**. The **Test Explorer** window opens and shows that the tests run successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
    ![Test Explorer window](./media/testing-library-with-visual-studio/firsttest.png)
 

@@ -24,7 +24,7 @@ Once you've followed the steps in [Building a C# class library with .NET Core in
 
 Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
-1. Open the `ClassLibraryProjects` solution created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic; and in Solution Explorer, open the context menu for the **ClassLibraryProjects** node and select **Add**, **New Project**.
+1. Open the `ClassLibraryProjects` solution created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic; and in Solution Explorer, open the context menu for the **ClassLibraryProjects** node and select **Add > New Project**.
 
 1. In the **Add New Project** dialog, expand the **Visual C#** and **.NET Core** nodes, and select the **Console App (.NET Core)** project template, as the following figure shows:
 
@@ -36,7 +36,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
 1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, in **Solution Explorer**, open the context menu for the **Dependencies** node in the **ShowCase** project and select **Add Reference**.
 
-1. In the **Reference Manager** dialog, choose **StringLibrary**, your class library project, as the following figure shows, and select the **OK** button.
+1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, as the following figure shows, and select the **OK** button.
 
    ![Image](./media/add-lib-ref.jpg)
 

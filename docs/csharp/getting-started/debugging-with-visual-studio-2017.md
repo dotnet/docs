@@ -18,7 +18,7 @@ So far, you've followed the steps in [Building a C# Hello World Application with
 
 ## Debugging in Debug mode
 
-Debug mode and Release mode are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following figure shows that Visual Studio is configured to compile your application in Debug mode.
+Debug mode and Release mode are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile your application in **Debug** mode.
 
    ![Visual Studio toolbar](./media/debugging-with-visual-studio-2017/toolbar1.png)
 
@@ -130,7 +130,7 @@ Visual Studio also allows us to step line by line through a program and monitor 
 
 Once you've tested the debug build of your application, you should also compile and test the release version. The release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in asynchronous or multithreaded applications.
 
-To build and test the release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**, as shown in the following figure.
+To build and test the release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
 ![Image](./media/debugging-with-visual-studio-2017/toolbar2.png)
 

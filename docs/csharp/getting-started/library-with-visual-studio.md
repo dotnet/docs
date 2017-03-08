@@ -51,7 +51,7 @@ Create our class library project:
 
 1. On the menu bar, select **Build > Build Solution**. The project should compile without error.
 
-   ![Output pane showing that the build succeeded](./media/library-with-visual-studio/buildsucceeded.png)
+   ![Output pane showing that the build succeeded](./media/library-with-visual-studio/buildsucceeds.png)
 
 ## Next step
 

@@ -128,7 +128,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 ## Building a release version
 
-Once you've tested the debug build of your application, you should also compile and test the release version. The release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in asynchronous or multithreaded applications.
+Once you've tested the Debug build of your application, you should also compile and test the release version. The release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in asynchronous or multithreaded applications.
 
 To build and test the release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 

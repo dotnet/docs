@@ -58,7 +58,7 @@ You can debug and publish the application that uses this library by following th
 
 ## Distributing the library in a NuGet package
 
-You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../../core/tools/dotnet.md) as follows:
+You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../../core/tools/dotnet.md):
 
 1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing **Enter** if it's selected in the search results.
 

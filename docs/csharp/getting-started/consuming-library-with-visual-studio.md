@@ -38,7 +38,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
    ![ShowCase Dependencies context menu](./media/consuming-library-with-visual-studio/addreference.png)
 
-1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, as the following figure shows, and select the **OK** button.
+1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, and select the **OK** button.
 
    ![Reference manager](./media/consuming-library-with-visual-studio/referencemanager.png)
 

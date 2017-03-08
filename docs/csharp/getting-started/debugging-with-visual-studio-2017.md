@@ -100,7 +100,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 ## Stepping through a program
 
-Visual Studio also allows us to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since your program is small, you can step through the entire program by doing the following:
+Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since your program is small, you can step through the entire program by doing the following:
 
 1. On the menu bar, choose **Debug > Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution, as the following figure shows.
 

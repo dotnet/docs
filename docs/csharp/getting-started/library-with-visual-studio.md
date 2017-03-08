@@ -37,11 +37,9 @@ Create our class library project:
 
 1. In **Solution Explorer**, right-click on the **ClassLibraryProjects** solution file and from the context menu, select **Add > New Project**.
 
-1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Class Library (.NET Core)** project template. In the **Name** text box, enter "StringLibrary" as the name of the project.
+1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Class Library (.NET Core)** project template. In the **Name** text box, enter "StringLibrary" as the name of the project. Select **OK** to create the class library project.
 
    ![Add New Project dialog](./media/library-with-visual-studio/lib_project.png)
-
-1. Select **OK** to create the class library project. The default class library template code 
 
    ![Visual Studio application window showing the default class library template code](./media/library-with-visual-studio/class_library.png)
 

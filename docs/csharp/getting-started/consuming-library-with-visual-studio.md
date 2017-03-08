@@ -24,43 +24,43 @@ Once you've followed the steps in [Building a C# class library with .NET Core in
 
 Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
-1. Open the `ClassLibraryProjects` solution created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic; and in Solution Explorer, open the context menu for the **ClassLibraryProjects** node and select **Add > New Project**.
+1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add > New Project** from the context menu.
 
-1. In the **Add New Project** dialog, expand the **Visual C#** and **.NET Core** nodes, and select the **Console App (.NET Core)** project template, as the following figure shows:
+1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, enter `ShowCase`, and select the **OK** button.
 
-   ![Image](./media/use-library.jpg)
+   ![Add New Project dialog](./media/consuming-library-with-visual-studio/addnewproject.png)
 
-1. In the **Name** text box, enter `ShowCase`, and select the **OK** button.
+1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
 
-1. In Solution Explorer, open the context menu for the **ShowCase** project node and select **Set as StartUp Project**.
+   ![ShowCase context menu](./media/consuming-library-with-visual-studio/setstartupproject.png)
 
-1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, in **Solution Explorer**, open the context menu for the **Dependencies** node in the **ShowCase** project and select **Add Reference**.
+1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, you create a reference to the class library. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node and select **Add Reference**.
+
+   ![ShowCase Dependencies context menu](./media/consuming-library-with-visual-studio/addreference.png)
 
 1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, as the following figure shows, and select the **OK** button.
 
-   ![Image](./media/add-lib-ref.jpg)
+   ![Reference manager](./media/consuming-library-with-visual-studio/referencemanager.png)
 
 1. In the code window for the *Program.cs* file, replace all of the code with the following code:
 
  [!CODE-csharp[UsingClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs#1)]
 
-   The code uses the [Console.WindowHeight](xref:System.Console.WindowHeight) property to determine how many rows the console window has. Whenever the [Console.CursorTop](xref:System.Console.CursorTop) property is greater than or equal to the total number of rows in the console window, the code clears the console window and redisplays a message to the user.
+   The code uses the [Console.WindowHeight](xref:System.Console.WindowHeight) property to determine the number of rows in the console window. Whenever the [Console.CursorTop](xref:System.Console.CursorTop) property is greater than or equal to the number of rows in the console window, the code clears the console window and redisplays a message to the user.
 
-   The program itself just prompts the user to enter a string. It then indicates whether the string starts with an uppercase character. If the user presses the **Enter** key without entering a string, the console window closes and the application terminates.
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the **Enter** key without entering a string, the application terminates, and the console window closes.
 
-1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project, as the following figure shows:
+1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
-   ![Image](./media/showcase-toolbar.jpg)
+   ![Image](./media/consuming-library-with-visual-studio/toolbar.png)
 
-1. Compile and run the program by selecting the green arrow on the **ShowCase** button:
-
-You can debug and publish the application that uses this library by following the steps in [Debugging your C# Hello World Application with Visual Studio 2017](debugging-with-visual-studio-2017.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio-2017.md).
+You can debug and publish the application that uses this library by following the steps in [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio-2017.md).
 
 ## Distributing the library in a NuGet package
 
 You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../../core/tools/dotnet.md) as follows:
 
-1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt`, and select the **Command Prompt** desktop app to open the console window.
+1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 
 1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the `Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary` directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
 

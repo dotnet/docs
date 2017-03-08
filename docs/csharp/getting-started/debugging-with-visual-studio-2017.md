@@ -32,7 +32,7 @@ Run your program in Debug mode and try a few debugging features:
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio-2017/setbreakpoint.png)
 
-1. Run the program in Debug mode by selecting the the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
+1. Run the program in Debug mode by selecting the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
 
 1. Enter a string in the console window when the program prompts for a name and press Enter.
 
@@ -112,7 +112,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    ![Visual Studio window](./media/debugging-with-visual-studio-2017/stepinto2.png)
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio hightlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
+1. Select **Debug > Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
 1. Respond to the prompt by entering a string in the console window and pressing Enter. The console is unresponsive, and the string you enter isn't displayed in the console window, but the [`Console.ReadLine`](xref:System.Console.ReadLine) method will nevertheless capture your input.
 
@@ -134,6 +134,6 @@ To build and test the Release version of your console application, change the bu
 
 ![Image](./media/debugging-with-visual-studio-2017/toolbar2.png)
 
-When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of your console application. You can test it as you did the Debug verison of the application.
+When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of your console application. You can test it as you did the Debug version of the application.
 
 Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio-2017.md).

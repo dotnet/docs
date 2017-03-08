@@ -32,7 +32,7 @@ Run your program in Debug mode and try a few debugging features:
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio-2017/setbreakpoint.png)
 
-1. Run the program in Debug mode by selecting the the "HelloWorld" button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
+1. Run the program in Debug mode by selecting the the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
 
 1. Enter a string in the console window when the program prompts for a name and press Enter.
 

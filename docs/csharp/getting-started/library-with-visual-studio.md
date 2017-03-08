@@ -19,7 +19,7 @@ A *class library* defines types and methods that are called by an application. A
 > [!NOTE]
 > For a list of the .NET Standard versions and the platforms they support, see [.NET Standard Library](../../standard/library.md).
 
-In this topic, you'll create a simple utility library that contains a single string-handling method. You'll implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the `@System.String` class.
+In this topic, you'll create a simple utility library that contains a single string-handling method. You'll implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the @System.String class.
 
 ## Creating a class library solution
 
@@ -47,7 +47,7 @@ Create our class library project:
 
    [!CODE-csharp[ClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/classlib.cs#1)]
 
-   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`, which returns a `@System.Boolean` value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. In .NET Core, the [`Char.IsUpper`](xref:System.Char.IsUpper(System.Char)) method returns `true` if a character is uppercase.
+   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`, which returns a @System.Boolean value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. In .NET Core, the [`Char.IsUpper`](xref:System.Char.IsUpper(System.Char)) method returns `true` if a character is uppercase.
 
 1. On the menu bar, select **Build > Build Solution**. The project should compile without error.
 

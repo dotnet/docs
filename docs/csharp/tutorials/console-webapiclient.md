@@ -254,7 +254,7 @@ the name of each repository. Replace the lines that read:
 ```cs
 var msg = await stringTask;   //**Deleted this
 Console.Write(msg);
-```cs
+```
 
 with the following:
 

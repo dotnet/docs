@@ -28,7 +28,7 @@ To publish and run your application:
 
 1. In the **HelloWorld** publish window, the default publish output folder is supplied for you in the **Choose a folder** text box. Select the **Publish** button.
 
-   ![Visual Studio toolbar](media/publishing-with-visual-studio-2017/publish2.png)
+   ![Visual Studio toolbar](media/publishing-with-visual-studio-2017/publishwindow.png)
 
 1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 

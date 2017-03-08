@@ -42,9 +42,9 @@ Run your program in Debug mode and try a few debugging features:
 
 1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug > Windows > Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 
-1. You can interactively change the values of variables. Enter `name = "Gracie Law"` in the immediate window and press the **Enter** key.
+1. You can interactively change the values of variables. Enter `name = "Gracie Law"` in the **Immediate Window** and press the **Enter** key.
 
-1. Enter `date = new DateTime(2016,11,01,11,59,00)` in the immediate window and press the **Enter** key.
+1. Enter `date = new DateTime(2016,11,01,11,59,00)` in the **Immediate Window** and press the **Enter** key.
 
    The **Immediate Window** displays the value of the string variable and the properties of the @System.DateTime value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
 

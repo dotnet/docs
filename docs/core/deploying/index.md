@@ -43,7 +43,7 @@ There are also a few disadvantages:
 
 Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. The example uses the [dotnet utility](../tools/dotnet.md) from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.
 
-1. Create a directory for your project; and from the command line, type `[dotnet new console](../tools/dotnet-new.md)` to create a new C# console project.
+1. Create a directory for your project; and from the command line, type [`dotnet new console`](../tools/dotnet-new.md) to create a new C# console project.
 
 2. Open the `Program.cs` file in an editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 

@@ -26,7 +26,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
 1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add > New Project** from the context menu.
 
-1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, enter `ShowCase`, and select the **OK** button.
+1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
 
    ![Add New Project dialog](./media/consuming-library-with-visual-studio/addnewproject.png)
 

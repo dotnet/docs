@@ -84,7 +84,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or [`String.Empty`](xref:System.String.Empty).
 
-1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The response will be `true`.
+1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
 
    ```csharp
    ? name == String.Empty

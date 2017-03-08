@@ -41,7 +41,7 @@ To publish and run your application:
 
    The *HelloWorld.pdb* file contains debug symbols. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
 
-   ![Image](media/publishing-with-visual-studio-2017/publishedfiles.png)
+   ![Console window showing published files](media/publishing-with-visual-studio-2017/publishedfiles.png)
 
 The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application will run on any platform supported by .NET Core with .NET Core installed on the system. Users can run your application by issuing the `dotnet HelloWorld.dll` command from a console window.
 

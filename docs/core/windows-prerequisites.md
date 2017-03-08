@@ -4,7 +4,7 @@ description: Learn what dependencies you need on your Windows machine to develop
 keywords: .NET Core, Windows, prerequisites, dependencies, Visual Studio
 author: mairaw
 ms.author: mairaw
-ms.date: 01/05/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -41,9 +41,18 @@ You can see the full set of [supported operating systems](https://github.com/dot
 
 You can use any editor of your choice to develop .NET Core applications using the .NET Core SDK. However, if you want to develop .NET Core applications on Windows in an integrated development environment, you can use [Visual Studio 2017](#visual-studio-2017).
 
-To use Visual Studio 2017 to develop .NET Core apps, you'll need to have the latest version of Visual Studio installed with the **.NET Core cross-platform development** toolset (in the **Other Toolsets** section) selected.
+> [!IMPORTANT]
+> Even though, it's possible to use Visual Studio 2015 with a preview version of the .NET Core tooling, these projects will be *project.json*-based, which is now deprecated. Visual Studio 2017 uses project files based on MSBuild. For more information about the format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 
-There are different editions of Visual Studio 2017. You can download [Visual Studio Community 2017](https://www.visualstudio.com/vs/visual-studio-2017/#downloadvs) for free to get started.  To learn more about the Visual Studio installation process, see [Install Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio).
+To use Visual Studio 2017 to develop .NET Core apps, you'll need to have the latest version of Visual Studio installed with the **.NET Core cross-platform development** toolset (in the **Other Toolsets** section) selected.
+![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs_workloads.jpg)
+
+There are different editions of Visual Studio 2017. You can download [Visual Studio Community 2017](https://www.visualstudio.com/downloads/) for free to get started.  To learn more about the Visual Studio installation process, see [Install Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio).
+
++To verify that you're running the latest version of Visual Studio 2017, do the following:
+ +
+ +* On the **Help** menu, choose **About Microsoft Visual Studio**.
+ +* In the **About Microsoft Visual Studio** dialog, the version number should be 15.0.26228.4 or higher.
 
 You can read more about the changes in Visual Studio 2017 in the [release notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes).
 

@@ -60,7 +60,7 @@ You can debug and publish the application that uses this library by following th
 
 You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../../core/tools/dotnet.md) as follows:
 
-1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
+1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing **Enter** if it's selected in the search results.
 
 1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the `Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary` directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
 

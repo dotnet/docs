@@ -4,7 +4,7 @@ description: An overview of what the Command-Line Interface (CLI) is and its mai
 keywords: CLI, CLI tools, .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 ---
 
-# .NET Core command-line interface tools (.NET Core SDK 1.0 Tools)
+# .NET Core command-line interface (CLI) tools
 
 The .NET Core command-line interface (CLI) is a new foundational cross-platform toolchain for developing 
 .NET Core applications. It is "foundational" because it is the primary layer on which other, 
@@ -46,14 +46,27 @@ the [driver](#driver) section.
 ### What commands come in the box?
 The following commands are installed by default:
 
-* [new](dotnet-new.md)
-* [migrate](dotnet-migrate.md)
-* [restore](dotnet-restore.md)
-* [run](dotnet-run.md)
-* [build](dotnet-build.md)
-* [test](dotnet-test.md)
-* [publish](dotnet-publish.md)
-* [pack](dotnet-pack.md)
+* [dotnet add package](dotnet-add-package.md)
+* [dotnet add reference](dotnet-add-reference.md)
+* [dotnet build](dotnet-build.md)
+* [dotnet clean](dotnet-clean.md)
+* [dotnet install script](dotnet-install-script.md)
+* [dotnet list reference](dotnet-list-reference.md)
+* [dotnet migrate](dotnet-migrate.md)
+* [dotnet msbuild](dotnet-msbuild.md)
+* [dotnet new](dotnet-new.md)
+* [dotnet nuget delete](dotnet-nuget-delete.md)
+* [dotnet nuget locals](dotnet-nuget-locals.md)
+* [dotnet nuget push](dotnet-nuget-push.md)
+* [dotnet pack](dotnet-pack.md)
+* [dotnet publish](dotnet-publish.md)
+* [dotnet remove package](dotnet-remove-package.md)
+* [dotnet remove reference](dotnet-remove-reference.md)
+* [dotnet restore](dotnet-restore.md)
+* [dotnet run](dotnet-run.md)
+* [dotnet sln](dotnet-sln.md)
+* [dotnet test](dotnet-test.md)
+* [dotnet vstest](dotnet-vstest.md)
 
 There is also a way to import more commands on a per-project basis as well as to add your own commands. This is 
 explained in greater detail in the [extensibility section](#extensibility). 

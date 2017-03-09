@@ -1,4 +1,3 @@
-// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -34,4 +33,4 @@ namespace Applications.ConsoleApps
         }
     }
 }
-// </Snippet1>
+

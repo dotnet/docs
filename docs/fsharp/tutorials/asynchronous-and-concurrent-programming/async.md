@@ -97,7 +97,7 @@ There are other ways to start an async workflow available for more specific scen
 
 ### A Note on Threads
 
-The phrase “on another thread” is mentioned above, but it is important to know that **this does not mean that async workflows are a facade for multithreading**. The workflow actually “jumps” between threads, borrowing them for a small amount of time to do useful work. When an async workflow is effectively “waiting” (e.g. waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else. This allows async workflows to utilize the system they run on as effectively as possible, and makes them especially strong for high-volume I/O scenarios.
+The phrase “on another thread” is mentioned above, but it is important to know that **this does not mean that async workflows are a facade for multithreading**. The workflow actually “jumps” between threads, borrowing them for a small amount of time to do useful work. When an async workflow is effectively “waiting” (for example, waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else. This allows async workflows to utilize the system they run on as effectively as possible, and makes them especially strong for high-volume I/O scenarios.
 
 ## How to Add Parallelism to Async Code
 

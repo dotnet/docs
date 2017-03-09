@@ -143,7 +143,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
 1. Open the `Program.cs` file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!deploy-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs#1)]
+   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Define the platforms that your app will target.
 

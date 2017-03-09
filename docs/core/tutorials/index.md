@@ -17,7 +17,7 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with Visual Studio 2017
 
-- [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio-2017.md)
+- [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio.md)
 - [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio-2017.md)
 - [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio-2017.md)
 - [Building a C# class library](../../csharp/getting-started/library-with-visual-studio-2017.md)

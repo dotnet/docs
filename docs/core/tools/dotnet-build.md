@@ -33,7 +33,7 @@ Building requires the existence of an *assets.json* file (a file that lists all 
 
 `dotnet build` uses MSBuild to build the project, thus it supports both parallel builds and incremental builds. Please refer to [MSBuild documentation](https://docs.microsoft.com/visualstudio/msbuild/msbuild) to get more information on those topics. 
 
-In addition to its options, the `dotnet build` command will accept MSBuild options as well, such as `/p` for setting properties or `/l` to define a logger. You can find out more about these options in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. If you wish to know when 
+In addition to its options, the `dotnet build` command will accept MSBuild options as well, such as `/p` for setting properties or `/l` to define a logger. You can find out more about these options in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. 
 
 Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that will produce executable code: 
 

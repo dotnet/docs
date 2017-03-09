@@ -128,6 +128,7 @@
 ### [partial (Method)](partial-method.md)
 ### [remove](remove.md)
 ### [set](set.md)
+### [when (filter condition)](when.md)
 ### [where (generic type constraint)](where-generic-type-constraint.md)
 ### [value](value.md)
 ### [yield](yield.md)

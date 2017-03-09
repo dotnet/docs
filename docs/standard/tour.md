@@ -4,7 +4,7 @@ description: A guided tour through some of the prominent features of the .NET pl
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
-ms.date: 11/16/2016
+ms.date: 02/09/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -49,21 +49,27 @@ The following two lines both allocate memory:
 
 There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
-Types within a given scope normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the `using` statement:
+The garbage collector is just one of the services that help ensure *memory safety*.  The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed).  For instance, the runtime ensures that programs do not index off the end of an array or access a phantom field off the end of an object.
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L6-L9)]
+In the following example, the runtime will throw an `InvalidIndexException` exception, to enforce memory safety.
 
-Once the `using` block completes, the GC will know that the `stream` object in the previous example is free to be collected and its memory reclaimed.
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
-Rules for this have slightly different semantics in F#.  To learn more about resource management in F#, check out [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
+## Working with unmanaged resources
 
-One of the less obvious but quite far-reaching features that a garbage collector enables is memory safety. The invariant of memory safety is very simple: a program is memory safe if it accesses only memory that has been allocated (and not freed). Dangling pointers are always bugs, and tracking them down is often quite difficult.
+Some objects reference *unmanaged resources*. Unmanaged resources are resources that are not automatically maintained by the .NET runtime.  For example, a file handle is an unmanaged resource.  A @System.IO.FileStream object is a managed object, but it references a file handle, which is unmanaged.  When you are done using the FileStream, you need to release the file handle.
 
-The .NET runtime provides additional services, to complete the promise of memory safety, not naturally offered by a GC. It ensures that programs do not index off the end of an array or accessing a phantom field off the end of an object.
+In .NET, objects that reference unmanaged resources implement the @System.IDisposable interface.  When you are done using the object, you call the object's @System.IDisposable.Dispose method, which is responsible for releasing any unmanaged resources.  .NET languages provide a convenient `using` syntax for such objects, as in the following example:
 
-The following example will throw an exception as a result of memory safety.
+[!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L11-L12)]
+Once the `using` block completes, the .NET runtime will automatically call the `stream` object's @System.IDisposable.Dispose method, which releases the file handle.  The runtime will also do this if an exception causes control to leave the block.
+
+For more details, check out the following pages:
+
+* For C#, [using Statement](../csharp/language-reference/keywords/using-statement.md)
+* For F#, [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
+* For Visual Basic, [Using Statement](../visual-basic/language-reference/statements/using-statement.md)
 
 ## Type safety
 

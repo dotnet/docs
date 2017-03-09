@@ -1,6 +1,6 @@
 ---
 title: "C# Keywords | Microsoft Docs"
-ms.date: "2017-02-09"
+ms.date: "2017-03-07"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -73,7 +73,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[join](../../../csharp/language-reference/keywords/join-clause.md)|[let](../../../csharp/language-reference/keywords/let-clause.md)|[orderby](../../../csharp/language-reference/keywords/orderby-clause.md)|  
 |[partial (type)](../../../csharp/language-reference/keywords/partial-type.md)|[partial (method)](../../../csharp/language-reference/keywords/partial-method.md)|[remove](../../../csharp/language-reference/keywords/remove.md)|  
 |[select](../../../csharp/language-reference/keywords/select-clause.md)|[set](../../../csharp/language-reference/keywords/set.md)|[value](../../../csharp/language-reference/keywords/value.md)|  
-|[var](../../../csharp/language-reference/keywords/var.md)|[where (generic type constraint)](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|[where (query clause)](../../../csharp/language-reference/keywords/where-clause.md)|  
+|[var](../../../csharp/language-reference/keywords/var.md)|[when (filter condition)](when.md)|[where (generic type constraint)](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|[where (query clause)](../../../csharp/language-reference/keywords/where-clause.md)|  
 |[yield](../../../csharp/language-reference/keywords/yield.md)||  
   
 ## See Also  

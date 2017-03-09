@@ -1,6 +1,6 @@
 ---
 title: "Contextual Keywords (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-07"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -44,6 +44,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 |[set](../../../csharp/language-reference/keywords/set.md)|Defines an accessor method for a property or an indexer.|  
 |[value](../../../csharp/language-reference/keywords/value.md)|Used to set accessors and to add or remove event handlers.|  
 |[var](../../../csharp/language-reference/keywords/var.md)|Enables the type of a variable declared at method scope to be determined by the compiler.|  
+|[when](when.md)|Specifies a filter condition for a `catch` block or the `case` label of a `switch` statement.|
 |[where](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|Adds constraints to a generic declaration. (See also [where](../../../csharp/language-reference/keywords/where-clause.md)).|  
 |[yield](../../../csharp/language-reference/keywords/yield.md)|Used in an iterator block to return a value to the enumerator object or to signal the end of iteration.|  
   

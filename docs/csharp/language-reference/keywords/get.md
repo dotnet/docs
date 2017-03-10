@@ -45,7 +45,7 @@ Often, the `get` accessor consists of a single statement that returns a value, a
  
 For simple cases in which a property's `get` and `set` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for auto-implemented properties. The following example implements `Hours` as an auto-implemented property. 
   
- [!code-cs[get#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/get-2.cs)]  
+ [!code-cs[get#2](../../../../samples/snippets/csharp/language-reference/keywords/get/get-2.cs)]  
   
 ## C# Language Specification
 

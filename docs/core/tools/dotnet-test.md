@@ -4,7 +4,7 @@ description: The `dotnet test` command is used to execute unit tests in a given 
 keywords: dotnet-test, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,26 +20,19 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 
 ## Synopsis
 
-```
-dotnet test [project] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity]
-dotnet test [-h|--help]
-```
+`dotnet test [<PROJECT>] [-s|--settings <SETTINGS_FILE>] [-t|--list-tests] [--filter <EXPRESSION>] [-a|--test-adapter-path <PATH_TO_ADAPTER>] [-l|--logger <LoggerUri/FriendlyName>] [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>] [-o|--output <OUTPUT_DIRECTORY>] [-d|--diag <PATH_TO_DIAGNOSTICS_FILE>] [--no-build] [-v|--verbosity <LEVEL>] [-h|--help]`
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given project. Unit tests are class library 
-projects that have dependencies on the unit test framework (for example, NUnit or xUnit) and the 
-dotnet test runner for that unit testing framework. 
-These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
+The `dotnet test` command is used to execute unit tests in a given project. Unit tests are class library projects that have dependencies on the unit test framework (for example, NUnit or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
 
-Test projects also need to specify the test runner. This is specified using an ordinary `<PackageReference>` element, as 
-seen in the following sample project file:
+Test projects also must specify the test runner. This is specified using an ordinary `<PackageReference>` element, as seen in the following sample project file:
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
 ## Options
 
-`project`
+`PROJECT`
     
 Specifies a path to the test project. If omitted, it defaults to current directory.
 
@@ -67,9 +60,9 @@ Use the custom test adapters from the specified path in the test run.
 
 Specifies a logger for test results. 
 
-`-c|--configuration <Debug|Release>`
+`-c|--configuration <CONFIGURATION>`
 
-Configuration under which to build. The default value is `Debug` but your project's configuration could override this default SDK setting.
+Configuration under which to build. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -103,6 +96,5 @@ Run the tests in the test1 project:
 
 ## See also
 
-[Frameworks](../../standard/frameworks.md)
-
-[Runtime IDentifier (RID) catalog](../rid-catalog.md)
+* [Frameworks](../../standard/frameworks.md)
+* [Runtime IDentifier (RID) catalog](../rid-catalog.md)

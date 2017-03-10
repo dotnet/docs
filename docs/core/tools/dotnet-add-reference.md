@@ -4,13 +4,14 @@ description: The dotnet-add reference command provides a convenient option to ad
 keywords: dotnet-add, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ---
+
 # dotnet-add reference
 
 ## Name
@@ -19,14 +20,11 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 
 ## Synopsis
 
-```
-dotnet add [project] reference [-f|--framework] <project_references>
-dotnet add reference [-h|--help]
-```
+`dotnet add [<PROJECT>] reference [-f|--framework <FRAMEWORK>] <PROJECT_REFERENCES> [-h|--help]`
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items) fragments are added to the project file.
+The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items) elements are added to the project file.
 
 ```xml
 <ItemGroup>
@@ -38,13 +36,13 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ## Arguments
 
-`project`
+`PROJECT`
 
-Project file to operate on. If not specified, the command will search the current directory for one.
+Specifies the project file. If not specified, the command will search the current directory for one.
 
-`project_references`
+`PROJECT_REFERENCES`
 
-Project to project references to add. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux-based terminals.
+Project-to-project references to add. You can specify one or multiple projects. Globbing patterns are supported on Unix/Linux-based systems.
 
 ## Options
 
@@ -66,6 +64,6 @@ Add multiple project references:
 
 `dotnet add reference lib1/lib1.csproj lib2/lib2.csproj`
 
-Add multiple project references using globbing pattern on Linux/Unix:
+Add multiple project references using a globbing pattern on Linux/Unix:
 
 `dotnet add app/app.csproj reference **/*.csproj`

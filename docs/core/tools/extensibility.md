@@ -159,22 +159,22 @@ and is a binary that can be invoked, `dotnet` driver will invoke it.
 The binary can be pretty much anything that the operating system can execute. On Unix systems, this means anything that 
 has the execute bit set via `chmod +x`. On Windows, you can use *cmd* files. 
 
-Let's take a look at a very simple implementation of a `dotnet clean` command. We'll use `bash` to 
-implement this command. The following command will simply delete the `bin/` and `obj/` directories from the current directory.
+Let's take a look at the very simple implementation of a "Hello World" tool. We will use both `bash` and `cmd` on Windows. 
+The following command will simply echo "Hello World" to the console. 
 
 ```bash
 #!/bin/bash
 
-# Delete the bin and obj dirs
-rm -rf bin/ obj/
-
-echo "Cleaning complete..."
+echo "Hello World!"
 ```
 
-> [!NOTE]
-> You should use `dotnet clean` in production code and not the previous command. It's only given as an example. 
+```cmd
+echo "Hello World"
+```
 
-On macOS, we can save this script as `dotnet-clean` and set its executable bit with `chmod +x dotnet-clean`. We can then 
-create a symbolic link to it in `/usr/local/bin` using the command `ln -s dotnet-clean /usr/local/bin/`. This will make 
-it possible to invoke the command using the `dotnet clean` syntax. You can test this by creating an app, running 
-`dotnet build` on it and then running `dotnet clean`.
+On macOS, we can save this script as `dotnet-hello` and set its executable bit with `chmod +x dotnet-hello`. We can then 
+create a symbolic link to it in `/usr/local/bin` using the command `ln -s dotnet-hello /usr/local/bin/`. This will make 
+it possible to invoke the command using the `dotnet hello` syntax. 
+
+On Windows, we can save this script as `dotnet-hello.cmd` and put it in a location that is in a system path (or you can 
+add it to a folder that is already in the path). After this, you can just use `dotnet hello` to run this example. 

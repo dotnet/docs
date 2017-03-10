@@ -90,6 +90,7 @@
 ### [namespace](namespace.md)
 ### [using](using.md)
 #### [using Directive](using-directive.md)
+#### [using static Directive](using-static.md)
 #### [using Statement](using-statement.md)
 ### [extern alias](extern-alias.md)
 ## [Operator Keywords](operator-keywords.md)

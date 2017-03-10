@@ -25,7 +25,7 @@ In order to do this transparently, there has to be a common way to describe all 
 *   Establish a framework for cross-language execution.
 *   Provide an object-oriented model to support implementing various languages on .NET platform.
 *   Define a set of rules that all languages must follow when it comes to working with types.
-*   Provide a library that contains the basic primitive types that are used in application development (i.e. `Boolean`, `Byte`, `Char` etc.)
+*   Provide a library that contains the basic primitive types that are used in application development (such as, `Boolean`, `Byte`, `Char` etc.)
 
 CTS defines two main kinds of types that should be supported: reference and value types. Their names point to their definitions.
 

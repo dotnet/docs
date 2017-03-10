@@ -4,7 +4,7 @@ description: A step-by-step tutorial showing how to get started with .NET Core o
 keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,7 +20,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 1.0.0](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 1.0](https://www.microsoft.com/net/download/core).
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!

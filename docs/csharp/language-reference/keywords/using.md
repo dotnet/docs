@@ -38,6 +38,8 @@ The `using` keyword has two major uses:
   
 -   As a statement, when it defines a scope at the end of which an object will be disposed. See [using Statement](../../../csharp/language-reference/keywords/using-statement.md).  
   
+In addition, the [using static](using-static.md) directive lets you define a type whose static members you can access without specifying a type name.
+
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

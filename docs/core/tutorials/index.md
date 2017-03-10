@@ -4,11 +4,7 @@ description: .NET Core Tutorials
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-<<<<<<< HEAD
 ms.date: 03/16/2017
-=======
-ms.date: 03/07/2017
->>>>>>> Update index.md
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -22,8 +18,8 @@ The following tutorials are available for learning about .NET Core.
 ## Building applications with Visual Studio 2017
 
 - [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio.md)
-- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio-2017.md)
-- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio-2017.md)
+- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio.md)
+- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio.md)
 - [Building a C# class library](../../csharp/getting-started/library-with-visual-studio.md)
 - [Testing a C# class library](../../csharp/getting-started/testing-library-with-visual-studio.md)
 - [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
@@ -53,8 +49,4 @@ The following tutorials are available for learning about .NET Core.
 - [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
 
-<<<<<<< HEAD
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
-=======
-For tutorials about developing ASP.NET Core web applications, we suggest you head over to the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
->>>>>>> Update index.md

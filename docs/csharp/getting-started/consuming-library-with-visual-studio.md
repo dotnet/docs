@@ -54,7 +54,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
    ![Image](./media/consuming-library-with-visual-studio/toolbar.png)
 
-You can debug and publish the application that uses this library by following the steps in [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio-2017.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio-2017.md).
+You can debug and publish the application that uses this library by following the steps in [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio.md).
 
 ## Distributing the library in a NuGet package
 

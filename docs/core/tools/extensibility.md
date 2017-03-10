@@ -57,7 +57,7 @@ API, here is a console application's project file that uses that tool:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1/TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
   <!-- The tools reference -->
@@ -67,7 +67,7 @@ API, here is a console application's project file that uses that tool:
 </Project>
 ```
 
-The `<DotNetCliToolReference>` element is structured in a similar way as the `<PackageReference>` element. It needs the package ID of the package containing the tool and its version at the very least. 
+The `<DotNetCliToolReference>` element is structured in a similar way as the `<PackageReference>` element. It needs the package ID of the package containing the tool and its version to be able to restore.
 
 ### Building tools
 As mentioned, tools are just portable console applications. You would build one as you would build any console application. 
@@ -151,24 +151,18 @@ probe several locations and will finally fall to the system PATH. If the request
 and is a binary that can be invoked, `dotnet` driver will invoke it. 
 
 The binary can be pretty much anything that the operating system can execute. On Unix systems, this means anything that 
-has the execute bit set via `chmod +x`. On Windows it means anything that Windows knows how to run. 
+has the execute bit set via `chmod +x`. On Windows you can use `cmd` files. 
 
 As an example, let's take a look at a very simple implementation of a `dotnet clean` command. We will use `bash` to 
-implement this command. The command will simply delete the `bin/` and `obj/` directories in the current directory. If 
-the `--lock` argument is passed to it, it will also delete `project.lock.json` file. The entirety of the command is 
-given below. 
+implement this command. The command will simply delete the `bin/` and `obj/` directories in the current directory.The entirety of the command is given below. 
+
+> [!NOTE]: you should use `dotnet clean` in production code and not the below command. It is given only as an example. 
 
 ```bash
 #!/bin/bash
 
 # Delete the bin and obj dirs
 rm -rf bin/ obj/
-
-LOCK_FILE=$1
-if [[ "$LOCK_FILE" = "--lock" ]]; then
-    rm project.lock.json
-fi
-
 
 echo "Cleaning complete..."
 ```

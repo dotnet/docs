@@ -69,9 +69,16 @@ The most common use for this feature will be the `Try` pattern. In this
 pattern, a method returns a `bool` indicating success or failure and an
 `out` variable that provides the result if the method succeeds.
 
-> [!NOTE]
-> When using the `out` variable declaration, the scope of the declared variable is the same as it was in previous 
-> versions of C#. In other words, this is syntax sugar that enables inlining.  
+When using the `out` variable declaration, the declared variable "leaks" into the outer scope of the if statement. This allows you to use the variable afterwards:
+
+```csharp
+if (!int.TryParse(input, out int result))
+{    
+    return null;
+}
+
+return result;
+```
 
 ## Tuples
 

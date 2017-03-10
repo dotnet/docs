@@ -20,7 +20,7 @@ ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
 
 ## Synopsis
 
-`dotnet vstest [Arguments] [Options] [[--] <args>...]]`
+`dotnet vstest <TEST_FILE_NAMES> [--Settings|/Settings:<Settings File>] [--Tests|/Tests:<Test Names>] [--TestAdapterPath|/TestAdapterPath] [--Platform|/Platform:<Platform type>] [--Framework|/Framework:<Framework Version>] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter:<Expression>] [--logger|/logger:<Logger Uri/FriendlyName>] [-lt|--ListTests|/lt|/ListTests:<File Name>] [--ParentProcessId|/ParentProcessId:<ParentProcessId>] [--Port|/Port:<Port>] [--Diag|/Diag:<Path to log file>] [[--] <args>...]] [-?|--Help|/?|/Help]`
 
 ## Description
 
@@ -28,7 +28,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 ## Arguments
 
-`TestFileNames`
+`TEST_FILE_NAMES`
 
 Run tests from the specified files. Separate multiple test file names by spaces.
 

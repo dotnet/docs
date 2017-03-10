@@ -623,7 +623,7 @@ In MSBuild, this is done using [items](https://docs.microsoft.com/visualstudio/m
 ```
 
 > [!NOTE]
-> Many of default globbing patterns are added automatically by the .NET Core SDK.
+> Many of the default [glob](https://en.wikipedia.org/wiki/Glob_(programming)) patterns are added automatically by the .NET Core SDK.
 > For more information, see [Default Compile Item Values](https://aka.ms/sdkimplicititems).
 
 All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.

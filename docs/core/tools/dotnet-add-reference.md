@@ -44,7 +44,7 @@ Project file to operate on. If not specified, the command will search the curren
 
 `project_references`
 
-Project to project references to add. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux-based terminals.
+Project to project references to add. You can specify one or multiple projects. [Glob](https://en.wikipedia.org/wiki/Glob_(programming)) patterns are supported on Unix/Linux-based terminals.
 
 ## Options
 
@@ -66,6 +66,6 @@ Add multiple project references:
 
 `dotnet add reference lib1/lib1.csproj lib2/lib2.csproj`
 
-Add multiple project references using globbing pattern on Linux/Unix:
+Add multiple project references using a glob pattern on Unix/Linux:
 
 `dotnet add app/app.csproj reference **/*.csproj`

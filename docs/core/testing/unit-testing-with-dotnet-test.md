@@ -182,7 +182,6 @@ inputs.
  which is the lowest prime number:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs#Sample_TestCode "First tests")]
-```
 
 Run `dotnet test` and you'll see that two of these tests fail.
 You can make them pass by changing the service. You need to change

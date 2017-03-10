@@ -41,4 +41,4 @@ The following tutorials are available for learning about .NET Core.
 - [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
 
-For tutorials about developing ASP.NET Core web applications, we suggest you head over to the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).

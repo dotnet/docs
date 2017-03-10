@@ -18,7 +18,7 @@ public class Example
 {
    public static void Main()
    {
-      var person = new Person("John", "Doe");
+      var person = new Person("Wayne", "Withrow");
       Console.WriteLine(person.Name);
    }
 }

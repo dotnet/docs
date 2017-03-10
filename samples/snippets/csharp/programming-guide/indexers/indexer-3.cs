@@ -18,7 +18,7 @@ class Program
    static void Main()
    {
       var stringCollection = new SampleCollection<string>();
-      stringCollection[0] = "Hello, World";
+      stringCollection[0] = "Hello, World.";
       Console.WriteLine(stringCollection[0]);
    }
 }

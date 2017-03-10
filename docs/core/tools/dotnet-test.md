@@ -66,7 +66,7 @@ Configuration under which to build. The default value is `Debug`, but your proje
 
 `-f|--framework <FRAMEWORK>`
 
-Looks for test binaries for a specific framework.
+Looks for test binaries for a specific [framework](../../standard/frameworks.md).
 
 `-o|--output <OUTPUT_DIRECTORY>`
 

@@ -71,7 +71,7 @@ Version of the package.
 
 `-f|--framework <FRAMEWORK>`
 
-Adds a package reference only when targeting a specific framework.
+Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
 
 `-n|--no-restore`
 

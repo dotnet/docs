@@ -44,7 +44,7 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Removes reference only when targeting a specific framework.
+Removes reference only when targeting a specific [framework](../../standard/frameworks.md).
 
 ## Examples
 

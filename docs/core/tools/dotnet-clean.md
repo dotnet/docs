@@ -44,7 +44,7 @@ Directory in which the build outputs have been placed.
 
 `-f|--framework <FRAMEWORK>`
 
-The framework that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
+The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
 `-c|--configuration <CONFIGURATION>`
 

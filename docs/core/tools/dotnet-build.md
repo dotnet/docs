@@ -62,7 +62,7 @@ Directory in which to place the built binaries. You also need to define `--frame
 
 `-f|--framework <FRAMEWORK>`
 
-Compiles for a specific framework. The framework must be defined in the [project file](csproj.md).
+Compiles for a specific [framework](../../standard/frameworks.md). The framework must be defined in the [project file](csproj.md).
 
 `-c|--configuration <CONFIGURATION>`
 

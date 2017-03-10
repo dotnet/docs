@@ -47,7 +47,7 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Publishes the application for specified target framework. The target framework must be specified in the project file.
+Publishes the application for specified [target framework](../../standard/frameworks.md). The target framework must be specified in the project file.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 

@@ -54,7 +54,7 @@ Configuration to use for building the project. The default value is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 
-Builds and runs the app using the specified framework. The framework must be specified in the project file.
+Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
 
 `-p|--project <PATH>`
 

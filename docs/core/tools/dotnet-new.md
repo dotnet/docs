@@ -86,11 +86,11 @@ Each project template may have additional options available. The core templates 
 
 **console, xunit, mstest, web, webapi**
 
-`-f|--framework` - Specifies the framework to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (Default: `netcoreapp1.0`)
+`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (Default: `netcoreapp1.0`)
 
 **mvc**
 
-`-f|--framework` - Specifies the framework to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (`Default: netcoreapp1.0`)
+`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (`Default: netcoreapp1.0`)
 
 `-au|--authentication` - The type of authentication to use. Values: `None` or `Individual` (Default: `None`)
 
@@ -98,7 +98,7 @@ Each project template may have additional options available. The core templates 
 
 **classlib**
 
-`-f|--framework` - Specifies the framework to target. Values: `netcoreapp1.0`, `netcoreapp1.1`, or `netstandard1.0` to `netstandard1.6` (Default: `netstandard1.4`)
+`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0`, `netcoreapp1.1`, or `netstandard1.0` to `netstandard1.6` (Default: `netstandard1.4`)
 
 ## Examples
 

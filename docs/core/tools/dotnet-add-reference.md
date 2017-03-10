@@ -52,7 +52,7 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Adds project references only when targeting a specific framework.
+Adds project references only when targeting a specific [framework](../../standard/frameworks.md).
 
 ## Examples
 

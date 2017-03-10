@@ -116,7 +116,7 @@ Alternatively, the attribute can contain:
 a replacement for the `tools` node in *project.json*. 
 
 ```xml
-<DotnetCliToolReference Include="<package-id>" Version="" />
+<DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
 #### Version

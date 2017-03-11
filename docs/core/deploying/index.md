@@ -199,7 +199,7 @@ This creates a release (rather than a debug) version of your app for each target
 
 The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. 
 
-The following is the complete `csproj` file for this project. The sample app shown in this document is a console application, so you'll specify the `Microsoft.NET.Sdk` SDK in the `<Project>` element. If your app is a web app, use the `Microsoft.NET.Sdk.Web` SDK.
+The following is the complete `csproj` file for this project:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -225,7 +225,7 @@ Deploying a self-contained deployment with one or more third-party dependencies 
     ```
 2. If you haven't already, download the NuGet package containing the third-party dependency to your system. To make the dependency available to your app, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
-The following is the complete csproj file for this project. The sample app shown in this document is a console application, so you'll specify the `Microsoft.NET.Sdk` SDK in the `<Project>` element. If your app is a web app, use the `Microsoft.NET.Sdk.Web` SDK.
+The following is the complete csproj file for this project:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -292,7 +292,7 @@ This creates a release (rather than a debug) version of your app for each target
 
 The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice. 
 
-The following is the complete `csproj` file for this project. The sample app shown in this document is a console application, so you'll specify the `Microsoft.NET.Sdk` SDK in the `<Project>` element. If your app is a web app, use the `Microsoft.NET.Sdk.Web` SDK.
+The following is the complete `csproj` file for this project:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

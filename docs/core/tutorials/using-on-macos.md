@@ -4,7 +4,7 @@ description: Getting started with .NET Core on macOS, using Visual Studio Code
 keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 02/08/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -35,7 +35,7 @@ that will improve the .NET Core development experience.
 The source for this tutorial is available on
 [GitHub](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/golden).
 
-Start Visual Studio Code. Press Ctrl + '\`' (the back-quote character) to open
+Start Visual Studio Code. Press <kbd>Ctrl</kbd> + <kbd>\`</kbd> (the back-quote character) to open
 an embedded terminal in VS Code. (Alternatively, you can use a separate
 terminal window, if you prefer).
 
@@ -57,7 +57,7 @@ Your next task is to create the library. In the terminal window
 cd to *golden/* and type the command:
 
 ```
-dotnet new classlib library
+dotnet new classlib -o library
 ```
 
 This creates a library project, with two files: *library.csproj* and

@@ -4,7 +4,7 @@ description: Getting started with .NET Core on macOS, using Visual Studio Code
 keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 03/10/2017
+ms.date: 03/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -83,7 +83,7 @@ contains the following information:
 This library project will make use of JSON representation of objects, so you'll want to
 add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command
 adds new items to a project. To add a reference to a NuGet package, you use the 
-[`dotnet add package`](](../tools/dotnet-add-package.md)) command and specify the name of the package. 
+[`dotnet add package`](../tools/dotnet-add-package.md) command and specify the name of the package. 
 
 ```
 dotnet add library package Newtonsoft.Json

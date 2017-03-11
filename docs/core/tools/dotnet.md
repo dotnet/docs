@@ -119,3 +119,5 @@ Specifies the location of the servicing index to use by the shared host when loa
 `DOTNET_CLI_TELEMETRY_OPTOUT`
 
 Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. `true` to opt-out of the telemetry feature (values true, 1 or yes accepted); otherwise, `false` (values false, 0 or no accepted). If not set, it defaults to `false`, that is, the telemetry feature is on.
+
+[dotnet-vstest](dotnet-vstest.md)

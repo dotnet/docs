@@ -57,7 +57,7 @@ Your next task is to create the library. In the terminal window
 cd to *golden/* and type the command:
 
 ```
-dotnet new classlib library
+dotnet new classlib -o library
 ```
 
 This creates a library project, with two files: *library.csproj* and

@@ -33,17 +33,15 @@ that will improve the .NET Core development experience.
 ## Getting Started
 
 The source for this tutorial is available on
-[GitHub](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/golden).
+[GitHub](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/golden). By the time we're done, you'll create three projects: a library project,
+tests for that library project, and a console application that makes
+use of the library. 
 
 Start Visual Studio Code. Press <kbd>Ctrl</kbd> + <kbd>\`</kbd> (the back-quote character) to open
 an embedded terminal in VS Code. (Alternatively, you can use a separate
 terminal window, if you prefer).
 
-By the time we're done, you'll create three projects: a library project,
-tests for that library project, and a console application that makes
-use of the library. 
-
-Let's start by creating those folders. In the terminal, create a 'golden'
+Let's start by creating those folders. In the terminal, create a *golden*
 directory. In VS Code, open the *golden* directory. This directory is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution:
 
 ```
@@ -54,7 +52,7 @@ This command creates a *golden.sln* file for the entire solution.
 
 Your next task is to create the library. In the terminal window
 (either the embedded terminal in VS code, or another terminal),
-cd to *golden/* and type the command:
+change directory (`cd`) to *golden* and type the command:
 
 ```
 dotnet new classlib -o library
@@ -85,7 +83,7 @@ contains the following information:
 This library project will make use of JSON representation of objects, so you'll want to
 add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command
 adds new items to a project. To add a reference to a NuGet package, you use the 
-`package` command and specify the name of the package. 
+[`dotnet add package`](](../tools/dotnet-add-package.md)) command and specify the name of the package. 
 
 ```
 dotnet add library package Newtonsoft.Json
@@ -104,8 +102,13 @@ file and add the following node:
 ```
 
 After you've finished adding those dependencies, you need to install those
-packages into workspace. Run the `dotnet restore` command to updates all dependencies,
-and write a *obj/project.assets.json* file under the project directory. This
+packages into workspace. Run the `dotnet restore` command to updates all dependencies:
+
+```
+dotnet restore
+```
+
+This creates an *obj* directory inside *library* with three files in it, including a *project.assets.json* file. This
 file contains the full dependency tree of all the dependencies in your
 project. You don't need to read this file, it's used by tools in the .NET
 Core SDK.
@@ -134,20 +137,30 @@ static usings, expression-bodied members, and interpolated strings,
 that you can learn
 about in the [Learn C#](../../csharp/index.md) section.
 
-Now that you've updated the code, you can build the library using
-`dotnet build`.
+Now that you've updated the code, you can build the library:
+
+```
+dotnet build
+```
 
 You now have a built *library.dll* file under *golden/library/bin/Debug/netstandard1.4*.
 
 ### Writing the test project
 
 Let's build a test project for this library that you've build. Change to the *golden*
-directory. Run `dotnet new xunit -o test-library` to create a new test project. 
-You'll want to add this project to the solution as well by running
-`dotnet sln add test-library/test-library.csproj`.
+directory and create a new test project:
 
-You'll need to add a dependency node for the library you wrote in the steps
-above. The `dotnet add reference` command does that:
+```
+dotnet new xunit -o test-library
+```
+
+Add the test project to the solution:
+
+```
+dotnet sln add test-library/test-library.csproj
+```
+
+Add a dependency node for the library you wrote in the previous section by using the [`dotnet add reference`](../tools/dotnet-add-reference.md):
 
 ```
 dotnet add test-library/test-library.csproj reference library/library.csproj
@@ -188,17 +201,29 @@ namespace TestApp
 
 Now, run `dotnet restore` and `dotnet build`. These commands will
 recursively find all projects to restore dependencies and build them.
-Finally, run `dotnet test test-library/test-library.csproj` to
-run the tests.
+
+Run the tests by running the [`dotnet test`](../tools/dotnet-test.md) command:
+
+```
+dotnet test test-library/test-library.csproj
+```
+
 The xUnit console test runner will run the one test, and report
-that it is passing. 
+that it's passing. 
 
 ### Writing the console app
 
-In your terminal run `dotnet new console -o app`
-to create a new console application. This project is also
-part of the solution, so run `dotnet sln add app/app.csproj`
-to add the project to the solution.
+Now, let's create a new console application:
+
+```
+dotnet new console -o app
+```
+
+Add the console app project to the solution:
+
+```
+dotnet sln add app/app.csproj
+```
 
 Your console application depends on the library you built and tested
 in the previous steps. You need to indicate that by running `dotnet add reference`

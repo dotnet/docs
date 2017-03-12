@@ -118,6 +118,9 @@ then repeating the process. So, let's write that one failing test. Remove
 C# file named `PrimeService_IsPrimeShould.cs` with the following content:
 
 ```cs
+using Xunit;
+using Prime.Services;
+
 namespace Prime.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould

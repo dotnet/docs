@@ -64,7 +64,7 @@ namespace Prime.Services
 
 Next, cd back into the 'unit-testing-using-dotnet-test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeService.Tests` directory and create a new project using
-`dotnet new xunit`. `dotnet xunit` creates a test project
+`dotnet new xunit`. `dotnet new xunit` creates a test project
 that uses xUnit as the test library. 
 
 The generated template configured the test runner

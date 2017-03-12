@@ -37,7 +37,7 @@ final project structure will be something like this:
 ### Creating the source project
 
 Start in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new classib` to create the source
+CD into that directory, and run `dotnet new classlib` to create the source
 project.
 
 

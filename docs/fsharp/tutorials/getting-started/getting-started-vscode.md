@@ -59,7 +59,7 @@ C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsi.exe
 C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsiAnyCpu.exe
 ```
 
-Ionide automatically detects the compiler and tools, but if it doesn't for some reason (e.g., the Visual F# Tools were installed to a different directory), you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
+Ionide automatically detects the compiler and tools, but if it doesn't for some reason (for example, the Visual F# Tools were installed to a different directory), you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
 
 ### macOS
 

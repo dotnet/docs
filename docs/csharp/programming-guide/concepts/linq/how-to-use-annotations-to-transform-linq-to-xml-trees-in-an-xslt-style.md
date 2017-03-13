@@ -31,7 +31,7 @@ Annotations can be used to facilitate transforms of an XML tree.
 <text>A phrase with <b>bold</b> and <i>italic</i> text.</text>  
 ```  
   
- For any given text node, there may be any number of child `<b>` and `<i>` elements. This approach extends to a number of other situations: i.e. pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps. Cells in a table may contain text, drop down lists, or bitmaps. One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.  
+ For any given text node, there may be any number of child `<b>` and `<i>` elements. This approach extends to a number of other situations, such as pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps. Cells in a table may contain text, drop down lists, or bitmaps. One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.  
   
  If you want to transform elements in a tree where you don't necessarily know much about the children of the elements that you want to transform, then this approach that uses annotations is an effective approach.  
   

@@ -2,9 +2,9 @@
 title: Target frameworks
 description: Explains the concepts of target frameworks when writing .NET code.
 keywords: .NET, .NET Core, framework, tfm
-author: guardrex
+author: richlander
 ms.author: mairaw
-ms.date: 03/10/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -14,11 +14,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Target frameworks
 
-*Frameworks* define the objects, methods, protocols, and tools that you use to build and run applications, services, and libraries for *platforms*, such as Windows, Mac OS, and Linux. For example, the .NET Framework is used to create applications primarily for Windows platforms. .NET Core is a framework that allows you to build cross-platform applications that can run on a variety of platforms.
-
-Taken together, the objects, methods, protocols, and tools are called Application Programming Interfaces (APIs). Framework APIs are used in [Visual Studio](https://www.visualstudio.com/), [Visual Studio Code](https://code.visualstudio.com/), and other Integrated Development Environments (IDEs) and editors to provide you with the correct set of objects, methods, protocols, and tools for development. Frameworks are also used by [NuGet](https://www.nuget.org/) for the production and consumption of NuGet packages to ensure that you produce and use appropriate packages for the frameworks that you target in your app, service, or library.
-
-When you *target a framework*, you've decided which set of APIs and which versions of those APIs you would like to use. Frameworks are referenced in several ways: by product name, by long- or short-form framework names, and by family.
+The .NET ecosystem has a concept of *target frameworks*. Frameworks define the API that you can use to target a particular platform. For example, the .NET Framework 4.6 is a platform that you can target. Visual Studio and other IDEs and editors use frameworks to provide you with the correct set of APIs. NuGet also uses them to ensure that you produce and consume appropriate NuGet packages and underlying assets for the framework you're targeting.
 
 Refernece | Name
 --- | ---
@@ -28,21 +24,19 @@ Family | `.NETFramework` or `net`
 
 ## Lastest framework versions
 
-The table below defines the set of frameworks that you can use, how they're referenced, and which version of the [.NET Standard Library](library.md) they implement. These framework versions are the latest stable versions. Pre-release versions aren't described by this table.
+The table below defines the set of frameworks that you can use, how they're referenced, and which version of the [.NET Standard Library](library.md) they implement. These framework versions are the latest stable versions. Pre-release versions aren't shown.
 
-| Framework | Latest Version | Target Framework Moniker (TFM) | Compact Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
-| :--------: | :--: | :--: | :--: | :--: | :--: | :--: |
-| .NET Standard | 1.6 | .NETStandard,Version=1.6 | netstandard1.6 | N/A | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library)|
-| .NET Core Application | 1.1.1 | .NETCoreApp,Version=1.1 | netcoreapp1.1 | 1.6 | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App)|
-| .NET Framework | 4.6.2 | .NETFramework,Version=4.6.2 | net462 | 1.5 | N/A |
+Framework | Latest Version | Target Framework Moniker (TFM) | Compact Target Framework Moniker (TFM) | .NET Standard Version | Metapackage
+:--------: | :--: | :--: | :--: | :--: | :--: | :--:
+.NET Standard | 1.6.1 | .NETStandard,Version=1.6 | netstandard1.6 | N/A | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library)
+.NET Core Application | 1.1.1 | .NETCoreApp,Version=1.1 | netcoreapp1.1 | 1.6 | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App)
+.NET Framework | 4.6.2 | .NETFramework,Version=4.6.2 | net462 | 1.5 | N/A
 
 ## Supported frameworks
 
-A framework is typically referenced by a short target framework moniker or TFM. In .NET Standard this is also is generalized to *TxM* to allow a single reference to multiple frameworks.
+A framework is typically referenced by a short target framework moniker or *TFM*. In .NET Standard, this is also generalized to *TxM* to allow a single reference to multiple frameworks. The NuGet clients support the following frameworks. Equivalents are shown within brackets (`[]`).
 
-The NuGet clients support the following frameworks. Equivalents are shown within brackets [].
-
-Name | Abbreviation | TFMs/TxMs |
+Name | Abbreviation | TFMs/TxMs
 --- | --- | ---
 .NET Framework | net | net11
  | | net20
@@ -108,7 +102,7 @@ winrt | win
 
 ## Precedence
 
-A number of frameworks are related to and compatible with one another, but not necessarily equivalent:
+A number of frameworks are related to and compatible with one another but not necessarily equivalent:
 
 Framework | Can use
 --- | ---
@@ -118,26 +112,24 @@ uap (Universal Windows Platform) | win81
 win (Windows Store) | winrt
 | | winrt45
 
-## NET Platform Standard
+## .NET Standard
 
-The [.NET  Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) simplifies references between binary-compatible frameworks, allowing a single target framework to reference a combination of others. (For background, see the [.NET Primer](https://docs.microsoft.com/en-us/dotnet/articles/standard/index).)
+The [.NET Standard](https://github.com/dotnet/standard) simplifies references between binary-compatible frameworks, allowing a single target framework to reference a combination of others. For background, see the [.NET Platform Guide](https://docs.microsoft.com/dotnet/articles/standard/index).
 
-The [NuGet Get Nearest Framework Tool](https://aka.ms/s2m3th) simulates what NuGet uses to select one framework from many available framework assets in a package based on the project's framework.
+The [NuGet Tools Get Nearest Framework Tool](https://aka.ms/s2m3th) simulates the NuGet logic used for the selection of one framework from many available framework assets in a package based on the project's framework. To use the tool, enter one project framework and one or more package frameworks. Click the **Submit** button. The tool indicates if the package frameworks you list are compatible with the project framework you provide.
 
-The `dotnet` series of monikers should be used in NuGet 3.3 an earlier; the `netstandard` moniker syntax should be used in v3.4 and later.
+For NuGet 3.3 and earlier, use the `dotnet` series of monikers. For NuGet 3.4 and later, use the `netstandard` moniker syntax.
 
 ## Portable Class Libraries
 
 > [!Warning]
-> **PCLs are not recommended**
+> **PCLs not recommended**
 >
-> Although PCLs are supported, package authors should support netstandard instead. The .NET Platform Standard is an evolution of PCLs and represents binary portability across platforms using a single moniker that isn't tied to a static like like *portable-a+b+c* monikers.
+> Although PCLs are supported, package authors should support `netstandard` instead. .NET Standard is the evolution of PCLs and represents binary portability across platforms using a single moniker that isn't tied statically to frameworks, which is the case with the *portable-a+b+c* monikers of PCLs.
 
-To define a target framework that refers to multiple child-target-frameworks, the `portable` keyword use used to prefix the list of referenced frameworks. Avoid artificially including extra frameworks that are not directly compiled against because it can lead to unintended side-effects in those frameworks.
+To define a target framework that refers to multiple child target frameworks, prefix the referenced frameworks with the `portable` keyword. Avoid artificially including extra frameworks that aren't directly compiled against because it can lead to unintended side effects in those frameworks. Additional frameworks defined by third parties provide compatibility with other environments. Shorthand profile numbers are available to reference combinations of related frameworks as `Profile#`, where `#` is the profile number. Since using profile numbers reduces the readability of the folders and nuspec, using them isn't a recommended practice.
 
-Additional frameworks defined by third parties provide compatibility with other environments that are accessible in this manner. Additionally, there are shorthand profile numbers that are available to reference these combinations of related frameworks as `Profile#`, but this is not a recommended practice to use these numbers as it reduces the readability of the folders and nuspec.
-
-Profile # | Frameworks | Full name | .NET Standard
+Profile# | Frameworks | Full name | .NET Standard
  --- | --- | --- | ---
  Profile2 | .NETFramework 4.0 | portable-net40+win8+sl4+wp7 | 
  | Windows 8.0 | | 
@@ -280,7 +272,7 @@ Profile # | Frameworks | Full name | .NET Standard
  | WindowsPhone 8.1 | | 
  | WindowsPhone 8.0 | | 
 
-Additionally, NuGet packages targeting Xamarin can use additional Xamarin-defined frameworks. See [Creating NuGet packages for Xamarin](https://developer.xamarin.com/guides/cross-platform/advanced/nuget/).
+NuGet packages targeting Xamarin can use additional Xamarin-defined frameworks. For more information, see [Manually Creating NuGet Packages for Xamarin](https://developer.xamarin.com/guides/cross-platform/advanced/nuget/).
 
  Name | Description | .NET Standard
  --- | --- | ---
@@ -298,4 +290,4 @@ Additionally, NuGet packages targeting Xamarin can use additional Xamarin-define
  xamarinxboxone | Xamarin for XBox One | netstandard1.4
 
 > [!Note]
-> Stephen Cleary has created a tool that lists the supported PCLs, which you can find on his post, [Framework profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html).
+> Stephen Cleary created a tool that lists the supported PCLs. For more information, see [Framework Profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html).

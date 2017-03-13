@@ -4,7 +4,7 @@ description: The dotnet-add reference command provides a convenient option to ad
 keywords: dotnet-add, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -44,7 +44,7 @@ Project file to operate on. If not specified, the command will search the curren
 
 `project_references`
 
-Project to project references to add. You can specify one or multiple projects. [Glob](https://en.wikipedia.org/wiki/Glob_(programming)) patterns are supported on Unix/Linux-based terminals.
+Project to project references to add. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux-based terminals.
 
 ## Options
 

@@ -4,7 +4,7 @@ description: The dotnet-sln command provides a convenient option to add, remove,
 keywords: dotnet-sln, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -38,13 +38,13 @@ The `dotnet sln` command provides a convenient way to add, remove and list proje
 
 `add **/*`
 
-Adds a project or multiple projects to the solution file. Glob patterns are supported on Unix/Linux based terminals.
+Adds a project or multiple projects to the solution file. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 `remove <project>`
 
 `remove **/*`
 
-Remove a project or multiple projects from the solution file. Glob patterns are supported on Unix/Linux based terminals.
+Remove a project or multiple projects from the solution file. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 `list`
 

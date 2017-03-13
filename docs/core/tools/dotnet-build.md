@@ -20,7 +20,7 @@ ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 
 ## Synopsis
 
-`dotnet build [<PROJECT>] [-o|--output <OUTPUT_DIRECTORY>] [-f|--framework <FRAMEWORK>] [-c|--configuration <CONFIGURATION>] [-r|--runtime <RUNTIME_IDENTIFIER>] [--version-suffix <VERSION_SUFFIX>] [--no-incremental] [--no-dependencies] [-v|--verbosity <LEVEL>] [-h|--help]`
+`dotnet build [<PROJECT>] [-o|--output] [-f|--framework] [-c|--configuration] [-r|--runtime] [--version-suffix] [--no-incremental] [--no-dependencies] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
@@ -30,9 +30,9 @@ If the project has third-party dependencies, such as libraries from NuGet, they'
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when you execute [`dotnet restore`](dotnet-restore.md) before building the project. Without the assets file in place, the tooling cannot resolve reference assemblies, which will result in errors.
 
-`dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [MSBuild documentation](https://docs.microsoft.com/visualstudio/msbuild/msbuild) for more information. 
+`dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds) for more information. 
 
-In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. You can learn more about these options in the [`dotnet msbuild`](dotnet-msbuild.md) command documentation. 
+In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. You can learn more about these options in the [MSBuild Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference). 
 
 Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that will produce executable code:
 

@@ -20,7 +20,7 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 
 ## Synopsis
 
-`dotnet test [<PROJECT>] [-s|--settings <SETTINGS_FILE>] [-t|--list-tests] [--filter <EXPRESSION>] [-a|--test-adapter-path <PATH_TO_ADAPTER>] [-l|--logger <LoggerUri/FriendlyName>] [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>] [-o|--output <OUTPUT_DIRECTORY>] [-d|--diag <PATH_TO_DIAGNOSTICS_FILE>] [--no-build] [-v|--verbosity <LEVEL>] [-h|--help]`
+`dotnet test [<PROJECT>] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity] [-h|--help]`
 
 ## Description
 

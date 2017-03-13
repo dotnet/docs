@@ -20,7 +20,7 @@ ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 
 ## Synopsis
 
-`dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>] [-p|--project <PATH>] [[--] [application arguments]] [-h|--help]`
+`dotnet run [-c|--configuration] [-f|--framework] [-p|--project] [[--] [application arguments]] [-h|--help]`
 
 ## Description
 

@@ -20,7 +20,7 @@ ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 
 ## Synopsis
 
-`dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [-s|--source <SOURCE>] [--non-interactive] [-k|--api-key <API_KEY>] [--force-english-output] [-h|--help]`
+`dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [-s|--source] [--non-interactive] [-k|--api-key] [--force-english-output] [-h|--help]`
 
 ## Description
 

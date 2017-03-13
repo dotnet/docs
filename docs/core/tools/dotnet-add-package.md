@@ -20,7 +20,7 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version <VERSION>] [-f|--framework <FRAMEWORK>] [-n|--no-restore] [-s|--source <SOURCE>] [--package-directory <PACKAGE_DIRECTORY>] [-h|--help]`
+`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version] [-f|--framework] [-n|--no-restore] [-s|--source] [--package-directory] [-h|--help]`
 
 ## Description
 

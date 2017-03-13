@@ -20,7 +20,7 @@ ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 
 ## Synopsis
 
-`dotnet migrate [<PROJECT_JSON/GLOBAL_JSON/SOLUTION_FILE/PROJECT_DIR>] [-t|--template-file <TEMPLATE_FILE>] [-v|--sdk-package-version <VERSION>] [-x|--xproj-file <FILE>] [-s|--skip-project-references] [-r|--report-file <REPORT_FILE>] [--format-report-file-json <REPORT_FILE>] [--skip-backup] [-h|--help]`
+`dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file] [-s|--skip-project-references] [-r|--report-file] [--format-report-file-json] [--skip-backup] [-h|--help]`
 
 ## Description
 

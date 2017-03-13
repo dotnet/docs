@@ -20,7 +20,7 @@ ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 
 ## Synopsis
 
-`dotnet restore [<ROOT>] [-s|--source <SOURCE>] [-r|--runtime <RUNTIME_IDENTIFIER>] [--packages <PACKAGES_DIRECTORY>] [--disable-parallel] [--configfile <FILE>] [--no-cache] [--ignore-failed-sources] [--no-dependencies] [-v|--verbosity <LEVEL>] [-h|--help]`
+`dotnet restore [<ROOT>] [-s|--source] [-r|--runtime] [--packages] [--disable-parallel] [--configfile] [--no-cache] [--ignore-failed-sources] [--no-dependencies] [-v|--verbosity] [-h|--help]`
 
 ## Description
 

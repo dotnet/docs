@@ -20,7 +20,7 @@ ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 
 ## Synopsis
 
-`dotnet pack [<PROJECT>] [-o|--output <OUTPUT_DIRECTORY>] [--no-build] [--include-symbols] [--include-source] [-c|--configuration <CONFIGURATION>] [--version-suffix <VERSION_SUFFIX>] [-s|--serviceable] [-v|--verbosity <LEVEL>] [-h|--help]`
+`dotnet pack [<PROJECT>] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix <VERSION_SUFFIX>] [-s|--serviceable] [-v|--verbosity] [-h|--help]`
 
 ## Description
 

@@ -20,7 +20,7 @@ ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 
 ## Synopsis
 
-`dotnet [command] [arguments] [--version] [--info] [-d|--diagnostics] [-v|--verbose] [--fx-version <VERSION>] [--additionalprobingpath <PATH>] [-h|--help]`
+`dotnet [command] [arguments] [--version] [--info] [-d|--diagnostics] [-v|--verbose] [--fx-version] [--additionalprobingpath] [-h|--help]`
 
 ## Description
 

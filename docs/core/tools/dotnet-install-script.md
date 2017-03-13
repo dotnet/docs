@@ -22,11 +22,11 @@ ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 
 Windows:
 
-`dotnet-install.ps1 [-Channel <CHANNEL>] [-Version <VERSION>] [-InstallDir <DIRECTORY>] [-Architecture <ARCHITECTURE>] [-SharedRuntime] [-DebugSymbols] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress]`
+`dotnet-install.ps1 [-Channel] [-Version] [-InstallDir] [-Architecture] [-SharedRuntime] [-DebugSymbols] [-DryRun] [-NoPath] [-AzureFeed] [-ProxyAddress]`
 
 macOS/Linux:
 
-`dotnet-install.sh [--channel <CHANNEL>] [--version <VERSION>] [--install-dir <DIRECTORY>] [--architecture <ARCHITECTURE>] [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]`
+`dotnet-install.sh [--channel] [--version] [--install-dir] [--architecture] [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]`
 
 ## Description
 
@@ -95,7 +95,7 @@ If set, the installer uses the proxy when making web requests.
 
 ### Bash (macOS/Linux)
 
-`dotnet-install.sh [--channel <CHANNEL>] [--version <VERSION>] [--install-dir <DIRECTORY>] [--architecture <ARCHITECTURE>] [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]`
+`dotnet-install.sh [--channel] [--version] [--install-dir] [--architecture] [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]`
 
 `--channel <CHANNEL>`
 

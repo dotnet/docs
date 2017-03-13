@@ -20,7 +20,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 
 ## Synopsis
 
-`dotnet publish [<PROJECT>] [-f|--framework <FRAMEWORK>] [-r|--runtime <RUNTIME_IDENTIFIER>] [-o|--output OUTPUT_DIRECTORY] [-c|--configuration <CONFIGURATION>] [--version-suffix] [-v|--verbosity <LEVEL>] [-h|--help]`
+`dotnet publish [<PROJECT>] [-f|--framework] [-r|--runtime] [-o|--output] [-c|--configuration] [--version-suffix] [-v|--verbosity] [-h|--help]`
 
 ## Description
 

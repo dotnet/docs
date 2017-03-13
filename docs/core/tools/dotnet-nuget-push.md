@@ -20,7 +20,7 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 
 ## Synopsis
 
-`dotnet nuget push [<ROOT>] [-s|--source <SOURCE>] [-ss|--symbol-source <SOURCE>] [-t|--timeout <TIMEOUT>] [-k|--api-key <API_KEY>] [-sk|--symbol-api-key <API_KEY>] [-d|--disable-buffering] [-n|--no-symbols] [--force-english-output] [-h|--help]`
+`dotnet nuget push [<ROOT>] [-s|--source] [-ss|--symbol-source] [-t|--timeout] [-k|--api-key] [-sk|--symbol-api-key] [-d|--disable-buffering] [-n|--no-symbols] [--force-english-output] [-h|--help]`
 
 ## Description
 

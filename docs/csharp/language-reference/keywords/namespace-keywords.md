@@ -34,6 +34,8 @@ This section describes the keywords and operators that are associated with using
 -   [namespace](../../../csharp/language-reference/keywords/namespace.md)  
   
 -   [using](../../../csharp/language-reference/keywords/using.md)  
+ 
+-   [using static](using-static.md)
   
 -   [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
   

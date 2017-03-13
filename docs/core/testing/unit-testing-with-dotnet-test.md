@@ -37,7 +37,7 @@ final project structure will be something like this:
 ### Creating the source project
 
 Start in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new classib` to create the source
+CD into that directory, and run `dotnet new classlib` to create the source
 project.
 
 
@@ -64,7 +64,7 @@ namespace Prime.Services
 
 Next, cd back into the 'unit-testing-using-dotnet-test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeService.Tests` directory and create a new project using
-`dotnet new xunit`. `dotnet xunit` creates a test project
+`dotnet new xunit`. `dotnet new xunit` creates a test project
 that uses xUnit as the test library. 
 
 The generated template configured the test runner
@@ -118,6 +118,9 @@ then repeating the process. So, let's write that one failing test. Remove
 C# file named `PrimeService_IsPrimeShould.cs` with the following content:
 
 ```cs
+using Xunit;
+using Prime.Services;
+
 namespace Prime.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould

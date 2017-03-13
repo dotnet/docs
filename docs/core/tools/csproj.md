@@ -111,12 +111,12 @@ Alternatively, the attribute can contain:
 * `None` – none of the assets are used.
 * `All` – all assets are used.
 
-### DotnetCliToolReference
-`<DotnetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's 
+### DotNetCliToolReference
+`<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's 
 a replacement for the `tools` node in *project.json*. 
 
 ```xml
-<DotnetCliToolReference Include="<package-id>" Version="" />
+<DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
 #### Version

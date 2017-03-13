@@ -98,7 +98,7 @@ In addition to the application binaries, the installer should also either bundle
 
 ### Deploying a framework-dependent deployment with third-party dependencies ###
 
-Deploying a framework-dependent deployment with one or more third-party dependencies involves three additional steps before you can run the `dotnet restore` command:
+Deploying a framework-dependent deployment with one or more third-party dependencies involves two additional steps before you can run the `dotnet restore` command:
 
 1. Add references to any third-party libraries to the `<ItemGroup>` section of your `csproj` file. The following  `<ItemGroup>` section shows the `<ItemGroup>` containing the dependencies in the default project with Json.NET as a third-party library.
 

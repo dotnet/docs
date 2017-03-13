@@ -33,7 +33,7 @@ The following tutorials are available for learning about .NET Core.
 ## Building applications with the .NET Core CLI tools
 
 - [Getting started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
-- [Organizing and testing projects with the .NET Core CLI tools)](testing-with-cli.md)
+- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
 - [Getting started with F#](../../fsharp/tutorials/getting-started/getting-started-command-line.md)
 
 ## Other
@@ -41,4 +41,4 @@ The following tutorials are available for learning about .NET Core.
 - [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
 
-For tutorials about developing ASP.NET Core web applications, we suggest you head over to the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).

@@ -207,6 +207,12 @@ title: .NET Documentation
                                     </div>
                                 </div>
                             </li>
+                            <li class="fullSpan">
+                                <div class="container footer">
+                                    <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
+                                    <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                     <li>

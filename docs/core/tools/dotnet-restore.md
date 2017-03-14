@@ -59,7 +59,7 @@ Specifies a NuGet package source to use during the restore operation. This overr
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Specifies a runtime to restore packages for. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the `csproj` file. For a list of Runtime Identifiers (RIDs) you can use, see the [RID catalog](../rid-catalog.md).  Multiple RIDs can be provided by specifying this option multiple times.
+Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Provide multiple RIDs by specifying this option multiple times.
 
 `--packages <PACKAGES_DIRECTORY]`
 

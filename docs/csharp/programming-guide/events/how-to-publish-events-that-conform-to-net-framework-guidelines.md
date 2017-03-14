@@ -49,7 +49,21 @@ public delegate void EventHandler(object sender, EventArgs e);
   
 1.  (Skip this step and go to Step 3a if you do not have to send custom data with your event.) Declare the class for your custom data at a scope that is visible to both your publisher and subscriber classes. Then add the required members to hold your custom event data. In this example, a simple string is returned.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+    ```  
+    public class CustomEventArgs : EventArgs  
+    {  
+        public CustomEventArgs(string s)  
+        {  
+            msg = s;  
+        }  
+        private string msg;  
+        public string Message  
+        {  
+            get { return msg; }  
+        }   
+    }  
+    ```  
+  
 2.  (Skip this step if you are using the generic version of <xref:System.EventHandler%601> .) Declare a delegate in your publishing class. Give it a name that ends with *EventHandler*. The second parameter specifies your custom EventArgs type.  
   
     ```  

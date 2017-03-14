@@ -125,12 +125,22 @@ End Sub
   
  Suppose your application defines a form class called `specialForm`, which inherits from class <xref:System.Windows.Forms.Form>. You can declare an object variable that refers specifically to `specialForm`, as the following example shows.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+```  
+Public Class specialForm  
+    Inherits System.Windows.Forms.Form  
+    ' Insert code defining methods and properties of specialForm.  
+End Class  
+Dim nextForm As New specialForm  
+```  
+  
  The declaration in the preceding example limits the variable `nextForm` to objects of class `specialForm`, but it also makes all the methods and properties of `specialForm` available to `nextForm`, as well as all the members of all the classes from which `specialForm` inherits.  
   
  You can make an object variable more general by declaring it to be of type <xref:System.Windows.Forms.Form>, as the following example shows.  
   
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
+```  
+Dim anyForm As System.Windows.Forms.Form  
+```  
+  
  The declaration in the preceding example lets you assign any form in your application to `anyForm`. However, although `anyForm` can access all the members of class <xref:System.Windows.Forms.Form>, it cannot use any of the additional methods or properties defined for specific forms such as `specialForm`.  
   
  All the members of a base class are available to derived classes, but the additional members of a derived class are unavailable to the base class.  

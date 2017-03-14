@@ -34,7 +34,10 @@ translation.priority.ht:
 # where (generic type constraint) (C# Reference)
 In a generic type definition, the `where` clause is used to specify constraints on the types that can be used as arguments for a type parameter defined in a generic declaration. For example, you can declare a generic class, `MyGenericClass`, such that the type parameter `T` implements the <xref:System.IComparable%601> interface:  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```  
+public class MyGenericClass<T> where T:IComparable { }  
+```  
+  
 > [!NOTE]
 >  For more information on the where clause in a query expression, see [where clause](../../../csharp/language-reference/keywords/where-clause.md).  
   

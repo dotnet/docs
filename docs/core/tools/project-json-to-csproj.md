@@ -4,7 +4,7 @@ description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 03/02/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -623,7 +623,7 @@ In MSBuild, this is done using [items](https://docs.microsoft.com/visualstudio/m
 ```
 
 > [!NOTE]
-> Many of default globbing patterns are added automatically by the .NET Core SDK.
+> Many of the default [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are added automatically by the .NET Core SDK.
 > For more information, see [Default Compile Item Values](https://aka.ms/sdkimplicititems).
 
 All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.

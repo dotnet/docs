@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
-ms.date: 03/11/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -84,11 +84,11 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 3. Run the [dotnet restore](../tools/dotnet-restore.md) command to restore the dependencies specified in your project.
 
-4. Create a debug build of your app by using the [dotnet build](../tools/dotnet-build.md) command.
+4. Create a Debug build of your app by using the [dotnet build](../tools/dotnet-build.md) command.
 
-5. After you've debugged and tested the program, you can create the files to be deployed with your app by using the `dotnet publish -f netcoreapp1.1 -c release` command. This creates a release (rather than a debug) version of your app.
+5. After you've debugged and tested the program, you can create the files to be deployed with your app by using the `dotnet publish -f netcoreapp1.1 -c Release` command. This creates a Release (rather than a Debug) version of your app.
 
-   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.1` subdirectory.
+   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\Release\netcoreapp1.1` subdirectory.
 
 6. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
@@ -190,10 +190,10 @@ Note that you also need to add a semicolon to separate the RIDs. Also, please no
 5. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the `dotnet publish` command for both target platforms as follows:
 
    ```console
-   dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.11-x64
+   dotnet publish -c Release -r win10-x64
+   dotnet publish -c Release -r osx.10.11-x64
    ```
-This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.1\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\Release\netcoreapp1.1\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 6. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 
@@ -283,10 +283,10 @@ This operation indicates that, instead of using the entire `netcoreapp1.0` frame
 5. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the `dotnet publish` command for both target platforms as follows:
 
    ```console
-   dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.11-x64
+   dotnet publish -c Release -r win10-x64
+   dotnet publish -c Release -r osx.10.11-x64
    ```
-This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netstandard1.6\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\Release\netstandard1.6\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 6. Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.
 

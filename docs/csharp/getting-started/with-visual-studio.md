@@ -4,7 +4,7 @@ description: Learn how to build a simple .NET Core console application using Vis
 keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: stevehoag
 ms.author: shoag
-ms.date: 03/07/2016
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp

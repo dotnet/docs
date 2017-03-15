@@ -42,7 +42,7 @@ Specifies the project file. If not specified, the command will search the curren
 
 `PROJECT_REFERENCES`
 
-Project-to-project (P2P) references to add. Specify one or more projects. Globbing patterns are supported on Unix/Linux-based systems.
+Project-to-project (P2P) references to add. Specify one or more projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux-based systems.
 
 ## Options
 

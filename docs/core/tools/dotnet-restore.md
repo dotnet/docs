@@ -46,7 +46,11 @@ Prints out a short help for the command.
 
 Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* file(s). Multiple sources can be provided by specifying this option multiple times.
 
-`--packages <PACKAGES_DIRECTORY>`
+`-r|--runtime <RUNTIME_IDENTIFIER>`
+
+Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Provide multiple RIDs by specifying this option multiple times.
+
+`--packages <PACKAGES_DIRECTORY]`
 
 Specifies the directory for restored packages. 
 
@@ -62,7 +66,7 @@ The NuGet configuration file (*NuGet.config*) to use for the restore operation.
 
 Specifies to not cache packages and HTTP requests.
 
-` --ignore-failed-sources`
+`--ignore-failed-sources`
 
 Only warn about failed sources if there are packages meeting the version requirement.
 
@@ -84,13 +88,13 @@ Restore dependencies and tools for the `app1` project found in the given path:
 
 `dotnet restore ~/projects/app1/app1.csproj`
 	
-Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:
+Restore the dependencies and tools for the project in the current directory using the file path provided as the source:
 
-`dotnet restore -f c:\packages\mypackages` 
+`dotnet restore -s c:\packages\mypackages` 
 
-Restore the dependencies and tools for the project in the current directory using the two file paths provided as the fallback sources:
+Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
-`dotnet restore -f c:\packages\mypackages -f c:\packages\myotherpackages` 
+`dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages` 
 
 Restore dependencies and tools for the project in the current directory and shows only errors in the output:
 

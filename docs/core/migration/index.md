@@ -4,7 +4,7 @@ description: .NET Core project.json to csproj migration
 keywords: .NET, .NET Core, .NET Core migration
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/04/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -78,7 +78,7 @@ The .NET Core csproj format has been changing and evolving with each new pre-rel
 * Remove the `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` and `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` statements from the top and bottom of the project. These import statements are implied by the SDK, so there is no need for them to be in the project. 
 * If you have `Microsoft.NETCore.App` or `NETStandard.Library` `<PackageReference>` items in your project, you should remove them. These package references are [implied by the SDK](https://aka.ms/sdkimplicitrefs). 
 * Remove the `Microsoft.NET.Sdk` `<PackageReference>` element, if it exists. The SDK reference comes through the `Sdk` attribute on the `<Project>` element. 
-* Remove the globs that are [implied by the SDK](https://aka.ms/sdkimplicititems). Leaving these globs in your project will cause an error on build because compile items will be duplicated. 
+* Remove the [globs](https://en.wikipedia.org/wiki/Glob_(programming)) that are [implied by the SDK](../tools/csproj.md#default-compilation-includes-in-net-core-projects). Leaving these globs in your project will cause an error on build because compile items will be duplicated. 
 
 After these steps your project should be fully compatible with the RTM .NET Core csproj format. 
 

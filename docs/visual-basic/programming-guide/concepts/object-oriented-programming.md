@@ -325,7 +325,7 @@ Dim sampleObject =
  Inheritance enables you to create a new class that reuses, extends, and modifies the behavior that is defined in another class. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. However, all classes in Visual Basic implicitly inherit from the <xref:System.Object> class that supports .NET class hierarchy and provides low-level services to all classes.  
   
 > [!NOTE]
->  Visual Basic doesn't support multiple inheritance, i.e. you can specify only one base class for a derived class.  
+>  Visual Basic doesn't support multiple inheritance. That is, you can specify only one base class for a derived class.  
   
  To inherit from a base class:  
   

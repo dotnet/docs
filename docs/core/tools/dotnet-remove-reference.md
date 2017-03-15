@@ -34,7 +34,7 @@ Target project file. If not specified, the command searches the current director
 
 `PROJECT_REFERENCES`
 
-Project-to-project references to remove. You can specify one or multiple projects. Globbing patterns are supported on Unix/Linux-based systems.
+Project to project (P2P references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 ## Options
 
@@ -56,6 +56,6 @@ Remove multiple project references from the project in the current directory:
 
 `dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj`
 
-Remove multiple project references using globbing pattern:
+Remove multiple project references using a glob pattern on Unix/Linux:
 
 `dotnet remove app/app.csproj reference **/*.csproj`

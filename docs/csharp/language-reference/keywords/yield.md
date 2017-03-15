@@ -36,7 +36,7 @@ When you use the `yield` keyword in a statement, you indicate that the method, o
   
  The following example shows the two forms of the `yield` statement.  
   
-```  
+```cs  
 yield return <expression>;  
 yield break;  
 ```  

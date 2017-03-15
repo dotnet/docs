@@ -89,7 +89,7 @@ Some .NET Framework technologies are not available in .NET Core. Some of them wi
 
 * Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.
 
-* WPF and Windows Forms: WPF (Windows Presentation Foundation) and Windows Forms Applications are only available on the .NET Framework and there are no plans to bring them to .NET Core and these will continue to be part of .NET Framework. 
+* Windows Presentation Foundation (WPF) and Windows Forms: WPF and Windows Forms applications are only available on the .NET Framework. There are no plans to port them to .NET Core, and they remain part of the .NET Framework. 
 
 * Language support: Visual Basic and F# don’t currently have tooling support .NET Core, but both will be supported in Visual Studio 2017 and later versions of Visual Studio.
 

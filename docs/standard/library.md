@@ -26,11 +26,17 @@ The various .NET runtimes implement specific versions of the .NET Standard Libra
 
 ## .NET Platforms Support
 
-You can see the complete set of .NET runtimes that support the .NET Standard Library.
+The following table shows the compatibility matrix of the .NET platforms and the versions of .NET Standard:
 
 [!INCLUDE [net-standard-table](../includes/net-standard-table.md)]
 
-The arrows indicate that the platform supports a higher version of .NET Standard, even though you can target a lower version of .NET Standard for that platform.
+- The columns represent .NET Standard versions. The header is a link to a document that shows which APIs got added in that version of .NET Standard.
+- The rows represent .NET platforms.
+- The cells indicate which version of a given .NET platform implement that specific .NET Standard version.
+- The arrows indicate that the platform supports a higher version of .NET Standard, even though you can target a lower version of .NET Standard for that given platform.
+For example, .NET Core 1.0 supports .NET Standard 1.6, so .NET Standard versions 1.0 - 1.5 are pointing to that specific version.
+- You can use this table to understand what's the highest version of .NET Standard that you can target, based on which .NET platforms you intend to run on. 
+For example, if you want to run on .NET Framework 4.5 and .NET Core 1.0, you can at most target .NET Standard 1.1.
 
 ## Comparison to Portable Class Libraries
 
@@ -120,3 +126,6 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 ## Targeting .NET Standard Library
 
 You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard Library with .NET Core tools](../core/packages.md).
+
+## See also
+[.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)

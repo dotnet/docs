@@ -193,6 +193,7 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)
+## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->

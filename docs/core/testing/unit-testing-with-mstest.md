@@ -13,20 +13,18 @@ ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
 
 # Unit testing with MSTest and .NET Core
 
-## Creating the projects
-
-[Writing Libraries with Cross Platform Tools](../tutorials/libraries.md) has information on organizing multi-project solutions for both the source and the tests. This tutorial follows those conventions. This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/) before you begin.
+This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/) before you begin.
 
 ### Creating the source project
 
-Open a shell window. Create a directory to hold the solution, *unit-testing-using-mstest*. Start in the *unit-testing-using-mstest* directory and create a *PrimeService* directory. The directory structure thus far is shown below:
+Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution. Inside this new directory, create a *PrimeService* directory. The directory structure thus far is shown below:
 
 ```
 /unit-testing-using-mstest
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run `dotnet new classlib` to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you'll create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you'll create a failing implementation of the `PrimeService` class:
 
 ```cs
 using System;
@@ -55,17 +53,17 @@ Change the directory back to the *unit-testing-using-mstest* directory and creat
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using `dotnet new mstest`. This creates a test project that uses MStest as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new mstest`](../tools/dotnet-new.md). This creates a test project that uses MStest as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
 
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
-  <PackageReference Include="MSTest.TestAdapter" Version="1.1.13" />
-  <PackageReference Include="MSTest.TestFramework" Version="1.1.13" />
+  <PackageReference Include="MSTest.TestAdapter" Version="1.1.11" />
+  <PackageReference Include="MSTest.TestFramework" Version="1.1.11" />
 </ItemGroup>
 ```
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the MSTest SDK, the MSTest test framework, and the MSTest runner. Now, add the `PrimeService` class library as another dependency to the project. Use the `dotnet` CLI:
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the MSTest SDK, the MSTest test framework, and the MSTest runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```
 dotnet add reference ../PrimeService/PrimeService.csproj
@@ -83,9 +81,9 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 ## Creating the first test
 
-Before building the library or the tests, execute `dotnet restore` in the *PrimeService.Tests* directory. This command restores all the necessary NuGet packages for each project.
+Before building the library or the tests, execute [`dotnet restore`](../tools/dotnet-restore.md) in the *PrimeService.Tests* directory. This command restores all the necessary NuGet packages for each project.
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Now, write one failing test: Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs* with the following content:
+The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs* with the following content:
 
 ```cs
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -116,7 +114,7 @@ namespace Prime.UnitTests.Services
 
 The `[TestClass]` attribute denotes a class that contains unit tests. The `[TestMethod]` attribute denotes a method as a single test. 
 
-Save this file and execute `dotnet test` to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner and provides a command-line argument to the test runner indicating the assembly that contains your tests.
+Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner and provides a command-line argument to the test runner indicating the assembly that contains your tests.
 
 Your test fails. You haven't created the implementation yet. Write the simplest code in the `PrimeService` class to make this test pass:
 

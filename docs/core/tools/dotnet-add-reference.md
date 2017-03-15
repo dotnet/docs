@@ -4,7 +4,7 @@ description: The dotnet-add reference command provides a convenient option to ad
 keywords: dotnet-add, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -16,7 +16,7 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 
 ## Name
 
-`dotnet-add reference` - Adds project to project references.
+`dotnet-add reference` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 
@@ -42,7 +42,7 @@ Specifies the project file. If not specified, the command will search the curren
 
 `PROJECT_REFERENCES`
 
-Project-to-project references to add. You can specify one or multiple projects. Globbing patterns are supported on Unix/Linux-based systems.
+Project-to-project (P2P) references to add. Specify one or more projects. Globbing patterns are supported on Unix/Linux-based systems.
 
 ## Options
 

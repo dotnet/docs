@@ -4,7 +4,7 @@ description: Learn how to restore dependencies and project-specific tools with t
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -24,11 +24,11 @@ ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 
 ## Description
 
-The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are done in parallel.
+The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.
 
-In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You can specify more feeds by creating your own *NuGet.config* file in the project directory. You can also specify feeds per invocation at a command prompt. 
+In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt. 
 
-For dependencies, you can specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used. It's found in the `.nuget/packages` directory in the user's home directory on all operating systems (for example, */home/user1* on Linux or *C:\Users\user1* on Windows).
+For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems (for example, */home/user1* on Linux or *C:\Users\user1* on Windows).
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
@@ -64,7 +64,7 @@ Specifies to not cache packages and HTTP requests.
 
 ` --ignore-failed-sources`
 
-Only warn about failed sources if there are packages meeting version requirement.
+Only warn about failed sources if there are packages meeting the version requirement.
 
 `--no-dependencies`
 

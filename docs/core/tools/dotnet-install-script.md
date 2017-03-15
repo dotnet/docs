@@ -4,7 +4,7 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -64,18 +64,18 @@ Specifies the installation path. The directory is created if it doesn't exist. T
 
 `-Architecture <ARCHITECTURE>`
 
-Architecture of the .NET Core binaries to install. Possible values are `auto`, `x64` and `x86`. The default value is `auto`, which represents the currently running OS architecture.
+Architecture of the .NET Core binaries to install. Possible values are `auto`, `x64`, and `x86`. The default value is `auto`, which represents the currently running OS architecture.
 
 `-SharedRuntime`
 
 If set, this switch limits installation to the shared runtime. The entire SDK isn't installed.
 
-`-DebugSymbols`
+`-DebugSymbols` (see NOTE)
 
 If set, the installer includes debugging symbols in the installation.
 
 > [!NOTE]
-> This switch is not currently avaiable but planned for a future release.
+> The `-DebugSymbols` switch is not currently avaiable but planned for a future release.
 
 `-DryRun`
 

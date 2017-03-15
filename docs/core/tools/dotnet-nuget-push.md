@@ -4,7 +4,7 @@ description: The dotnet-nuget-push command pushes a package to the server and pu
 keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
 author: karann-msft
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -24,8 +24,7 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* 
-starting from the root of drive and ending in current directory.
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
 
 ## Arguments
 
@@ -73,34 +72,34 @@ Forces all logged output in English.
 
 ## Examples
 
-Pushes *foo.nupkg* to default push source, providing API key:
+Pushes *foo.nupkg* to the default push source, providing an API key:
 
 `dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a`
 
-Push *foo.nupkg* to custom push source `http://customsource`, providing API key:
+Push *foo.nupkg* to the custom push source `http://customsource`, providing an API key:
 
 `dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s http://customsource/` 
 
-Pushes *foo.nupkg* to default push source:
+Pushes *foo.nupkg* to the default push source:
 
 `dotnet nuget push foo.nupkg` 
 
-Pushes *foo.symbols.nupkg* to default symbols source:
+Pushes *foo.symbols.nupkg* to the default symbols source:
 
 `dotnet nuget push foo.symbols.nupkg`
 
-Pushes *foo.nupkg* to default push source, specifying 360 second timeout:
+Pushes *foo.nupkg* to the default push source, specifying a 360 second timeout:
 
 `dotnet nuget push foo.nupkg --timeout 360`
 
-Pushes all *.nupkg* files in current directory to default push source:
+Pushes all *.nupkg* files in the current directory to the default push source:
 
 `dotnet nuget push *.nupkg`
 
-Pushes all *.nupkg* files in current directory to default push source, specifying a custom config file *./config/My.Config*:
+Pushes all *.nupkg* files in the current directory to the default push source, specifying a custom config file *./config/My.Config*:
 
 `dotnet nuget push *.nupkg --config-file ./config/My.Config`
 
-Push all *.nupkg* files in current directory to default push source with maximum verbosity:
+Push all *.nupkg* files in the current directory to the default push source with maximum verbosity:
 
 `dotnet nuget push *.nupkg --verbosity detailed`

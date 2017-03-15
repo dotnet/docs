@@ -4,7 +4,7 @@ description: The dotnet-list reference command provides a convenient option to l
 keywords: dotnet-list, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli

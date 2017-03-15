@@ -4,7 +4,7 @@ description: The dotnet-migrate command migrates a project and all of its depend
 keywords: dotnet-migrate, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -39,8 +39,7 @@ The `dotnet migrate` command keeps the migrated *project.json* file inside a `ba
 
 By default, the migration operation outputs the state of the migration process to standard output (STDOUT). If you use the `--report-file <REPORT_FILE>` option, the output is saved to the file specify. 
 
-The `dotnet migrate` command only supports valid Preview 2 *project.json*-based projects. This means that you cannot 
-use it to migrate DNX or Preview 1 *project.json*-based projects directly to MSBuild/csproj projects. You first need to migrate the project to a Preview 2 *project.json*-based project and then use the `dotnet migrate` command to migrate the project.
+The `dotnet migrate` command only supports valid Preview 2 *project.json*-based projects. This means that you cannot use it to migrate DNX or Preview 1 *project.json*-based projects directly to MSBuild/csproj projects. You first need to manually migrate the project to a Preview 2 *project.json*-based project and then use the `dotnet migrate` command to migrate the project.
 
 ## Arguments
 
@@ -99,6 +98,6 @@ Migrate all projects that *global.json* file includes:
 
 `dotnet migrate path/to/global.json`
 
-Migrate only the current project and no project-to-project dependencies. Also, use a specific SDK version:
+Migrate only the current project and no project-to-project (P2P) dependencies. Also, use a specific SDK version:
 
 `dotnet migrate -s -v 1.0.0-preview4`

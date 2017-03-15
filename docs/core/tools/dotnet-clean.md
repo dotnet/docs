@@ -4,7 +4,7 @@ description: The dotnet-clean command cleans the current directory.
 keywords: dotnet-clean, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -24,13 +24,13 @@ ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 
 ## Description
 
-The `dotnet clean` command cleans the output of the previous build. It's implemented as an [MSBuild target](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets), so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (`obj`) and final output (`bin`) folders are cleaned.
+The `dotnet clean` command cleans the output of the previous build. It's implemented as an [MSBuild target](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets), so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (*obj*) and final output (*bin*) folders are cleaned.
 
 ## Arguments
 
 `PROJECT`
 
-The MSBuild project to clean. If a project file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in `proj` and uses that file.
+The MSBuild project to clean. If a project file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* and uses that file.
 
 ## Options
 

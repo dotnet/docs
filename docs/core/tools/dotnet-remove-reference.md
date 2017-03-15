@@ -4,7 +4,7 @@ description: The dotnet-remove reference command provides a convenient option to
 keywords: dotnet-remove, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -16,7 +16,7 @@ ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 
 ## Name
 
-`dotnet-remove reference` - Removes project to project references.
+`dotnet-remove reference` - Removes project-to-project references.
 
 ## Synopsis
 
@@ -30,7 +30,7 @@ The `dotnet remove reference` command provides a convenient option to remove pro
 
 `PROJECT`
 
-Project file to operate on. If not specified, the command searches the current directory for one.
+Target project file. If not specified, the command searches the current directory for one.
 
 `PROJECT_REFERENCES`
 
@@ -44,7 +44,7 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Removes reference only when targeting a specific [framework](../../standard/frameworks.md).
+Removes the reference only when targeting a specific [framework](../../standard/frameworks.md).
 
 ## Examples
 

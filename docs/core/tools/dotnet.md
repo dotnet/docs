@@ -4,7 +4,7 @@ description: Learn about the dotnet command (the generic driver for the .NET Cor
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -28,7 +28,7 @@ ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 
 Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
 
-The only time `dotnet` is used as a command on its own is to run portable apps. Just specify a portable application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
+The only time `dotnet` is used as a command on its own is to run portable apps. Specify a portable application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
 
 ## Options
 
@@ -46,7 +46,7 @@ Version of the installed Shared Framework to use to run the application.
 
 `--additionalprobingpath <PATH>`
 
-Path containing probing policy and assemblies to probe for.
+Path containing probing policy and assemblies to probe.
 
 `--version`
 
@@ -54,7 +54,7 @@ Prints out the version of the CLI tooling.
 
 `--info`
 
-Prints out more detailed information about the CLI tooling, such as the current operating system, commit SHA for the version, etc.
+Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
 
 `-h|--help`
 

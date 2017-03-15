@@ -4,7 +4,7 @@ description: The dotnet-new command creates new .NET Core projects in the curren
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -31,7 +31,7 @@ dotnet new [-h|--help]
 
 The `dotnet new` command provides a convenient way to initialize a valid .NET Core project. 
 
-When invoked, the command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
+The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
 ## Arguments
 
@@ -66,7 +66,7 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 
 `-lang|--language {C#|F#}`
 
-The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section. Not valid for some templates.
+The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
 `-n|--name <OUTPUT_NAME>`
 

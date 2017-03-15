@@ -4,7 +4,7 @@ description: The dotnet-run command provides a convenient option to run your app
 keywords: dotnet-run, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -30,13 +30,15 @@ Output files are written into the default location, which is `bin/<configuration
 
 If the project specifies multiple frameworks, executing `dotnet run` results in an error unless the `-f|--framework <FRAMEWORK>` option is used to specify the framework.
 
-The `dotnet run` command is used in the context of projects, not built assemblies. If you're trying to run a portable application DLL instead, you must use [dotnet](dotnet.md) without a command. For example, to run `myapp.dll`, use:
+The `dotnet run` command is used in the context of projects, not built assemblies. If you're trying to run a framework-dependent application DLL instead, you must use [dotnet](dotnet.md) without a command. For example, to run `myapp.dll`, use:
  
-`dotnet myapp.dll`
+```
+dotnet myapp.dll
+```
 
 For more information on the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
 
-In order to run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output produced. 
+In order to run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output. 
 
 ## Options
 

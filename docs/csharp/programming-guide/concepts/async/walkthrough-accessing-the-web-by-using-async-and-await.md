@@ -328,7 +328,6 @@ You can write asynchronous programs more easily and intuitively by using feature
   
     ```cs  
     private async byte[] GetURLContents(string url)  
-  
     ```  
   
 5.  The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../../csharp/language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."  
@@ -462,7 +461,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  In `SumPageSizesAsync,` replace the call to your `GetURLContentsAsync` method with a call to the `HttpClient` method.  
   
-    ```  
+    ```cs  
     byte[] urlContents = await client.GetByteArrayAsync(url);  
     ```  
   

@@ -64,7 +64,7 @@ Console.WriteLine(shortestWordLength2);
   
  You can specify the type of the input variable explicitly or let the compiler infer it; in either case, the variable is strongly typed at compile time. When you specify a type, you must enclose the type name and the variable name in parentheses, as the following example shows.  
   
-```  
+```cs  
 int shortestWordLength = words.Min((string w) => w.Length);  
 ```  
   

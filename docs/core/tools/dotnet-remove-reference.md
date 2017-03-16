@@ -4,7 +4,7 @@ description: The dotnet-remove reference command provides a convenient option to
 keywords: dotnet-remove, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -36,7 +36,7 @@ Project file to operate on. If not specified, the command will search the curren
 
 `project_references`
 
-Project to project references to remove. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux based terminals.
+Project to project references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 ## Options
 
@@ -58,6 +58,6 @@ Remove multiple project references from the project in the current directory:
 
 `dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj`
 
-Remove multiple project references using globbing pattern:
+Remove multiple project references using a glob pattern on Unix/Linux:
 
 `dotnet remove app/app.csproj reference **/*.csproj`

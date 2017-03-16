@@ -25,13 +25,13 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../core/macos-prerequisites.md).
 
-## Getting Started
+## Getting started
 
 Follow these steps to set up Visual Studio for Mac for .NET Core console application development:
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 
-1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Double-click the icon to run the installer. Read and accept the license agreement. When the install is complete, start the Visual Studio for Mac IDE.
+1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Double-click the icon to run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
 
 ## Creating a project
 

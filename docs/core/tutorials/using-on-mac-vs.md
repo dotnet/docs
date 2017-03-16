@@ -2,7 +2,7 @@
 title: Getting started with .NET Core on macOS using Visual Studio for Mac | Microsoft Docs
 description: Getting started with .NET Core on macOS, using Visual Studio for Mac
 keywords: .NET, .NET Core, macOS, Mac
-author: bleroy
+author: guardrex
 ms.author: mairaw
 ms.date: 03/16/2017
 ms.topic: article
@@ -16,18 +16,19 @@ ms.assetid: 8902e849-dd17-42c0-8264-cc7ae3927a0c
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 
 > [!NOTE]
-> Visual Studio for Mac is preview software.
+> Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a number of ways you can provide feedback to the development team on Visual Studio for Mac:
+> * Select **Help > Report Problem** from the menu bar or **Report a Problem** from the Welcome page, which will open a window for filing a bug report.
+> * To make a suggestion, select **Help > Provide a Suggestion** from the menu bar or **Provide a Suggestion** from the Welcome page, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
-* [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
-* [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+[.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
 
 For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../core/macos-prerequisites.md).
 
 ## Getting started
 
-Follow these steps to set up Visual Studio for Mac for .NET Core console application development:
+If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Building a library](#building-a-library). Follow these steps to install the prerequisites and Visual Studio for Mac:
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 
@@ -37,31 +38,25 @@ Follow these steps to set up Visual Studio for Mac for .NET Core console applica
 
 1. Select **New Project**.
 
-   ![New Project](./media/using-on-mac-vs/vsmac1.png)
+   ![New project button on the Visual Studio for Mac Welcome screen](./media/using-on-mac-vs/vsmac1.png)
 
-1. In the new project dialog, select **App** under **.NET Core**, then **Console Application (.NET Core)**.
+1. In the **New Project** dialog, select **App** under the **.NET Core** node. Select the **Console Application** template followed by **Next**.
 
-   ![.NET Core Console Application](./media/using-on-mac-vs/vsmac2.png)
+   ![New project templates list](./media/using-on-mac-vs/vsmac2.png)
 
-   Select **Next**.
+1. Name the project "HelloWorld". Optionally, specify a different parent folder for the new project. Select **Create**.
 
-1. Give your new project a name. We'll use "Hello" in this tutorial. You may optionally specify a different parent folder for the new project.
+   ![Configure your new Console Application dialog](./media/using-on-mac-vs/vsmac3.png)
 
-   ![Naming the project](./media/using-on-mac-vs/vsmac3.png)
+1. Wait while the project's dependencies are restored. The project has a single C# file, *Program.cs*, containing a `Program` class with a `Main` method. The `Console.WriteLine` statement will output "Hello World!" to the console when the app is run.
 
-   Select **Create**.
-
-1. The resulting project has a single C# file that will output "Hello World" to the console. Restoring the dependencies will take a few seconds.
-
-   ![Restoring dependencies](./media/using-on-mac-vs/vsmac4.png)
+   ![Main window with the Program.cs file open](./media/using-on-mac-vs/vsmac4.png)
 
 ## Run the application
 
-You may run this application in debug mode using F5, or in release mode using CTRL+F5. You may also set breakpoints to interrupt execution and inspect variables, or start writing more interesting code.
+Run the app in Debug mode using F5 or in Release mode using CTRL+F5.
 
-![Debugging the application](./media/using-on-mac-vs/vsmac6.png)
-
-![Running the application](./media/using-on-mac-vs/vsmac5.png)
+![The Application Output pane shows Hello World!](./media/using-on-mac-vs/vsmac5.png)
 
 Happy coding!
 

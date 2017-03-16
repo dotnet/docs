@@ -2,7 +2,7 @@
 title: Building a complete .NET Core solution on macOS using Visual Studio for Mac | Microsoft Docs
 description: Building a complete .NET Core solution on macOS, using Visual Studio for Mac
 keywords: .NET, .NET Core, macOS, Mac
-author: bleroy
+author: guardrex
 ms.author: mairaw
 ms.date: 03/16/2017
 ms.topic: article
@@ -16,18 +16,19 @@ ms.assetid: 6945bedf-5bf3-4955-8588-83fb87511b79
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a .NET Core solution that includes reusable libraries, unit testing, and third-party libraries.
 
 > [!NOTE]
-> Visual Studio for Mac is preview software.
+> Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a number of ways you can provide feedback to the development team on Visual Studio for Mac:
+> * Select **Help > Report Problem** from the menu bar or **Report a Problem** from the Welcome page, which will open a window for filing a bug report.
+> * To make a suggestion, select **Help > Provide a Suggestion** from the menu bar or **Provide a Suggestion** from the Welcome page, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
-* [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
-* [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+[.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
 
 For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../core/macos-prerequisites.md).
 
 ## Getting started
 
-Follow these steps to set up Visual Studio for Mac for .NET Core console application development:
+If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Building a library](#building-a-library). Follow these steps to install the prerequisites and Visual Studio for Mac:
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 

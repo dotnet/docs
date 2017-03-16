@@ -56,7 +56,7 @@ Starting with C# 7, you can also use the underscore character, `_`, as a digit s
 
 [!code-cs[uint](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#UIntS)]  
  
- Integer literals can also include a suffix that denotes the type. The suffix `U` or 'u' denotes either a `uint` or a `ulong`, depending on the numeric value of the literal. The following example uses the `u` suffix to denote an unsigned integer of both types. Note that the first literal is an `uint` because its value is less than <xref:System.UInt32.MaxValue?displayProperty=fullName>, while the second is a `ulong` because its value is greater than <xref:System.UInt32.MaxValue?displayProperty=fullName>.
+ Integer literals can also include a suffix that denotes the type. The suffix `U` or 'u' denotes either a `uint` or a `ulong`, depending on the numeric value of the literal. The following example uses the `u` suffix to denote an unsigned integer of both types. Note that the first literal is a `uint` because its value is less than <xref:System.UInt32.MaxValue?displayProperty=fullName>, while the second is a `ulong` because its value is greater than <xref:System.UInt32.MaxValue?displayProperty=fullName>.
 
 [!code-cs[usuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#1)]  
  

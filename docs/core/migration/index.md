@@ -53,6 +53,8 @@ Files that were migrated (*project.json*, *global.json* and *.xproj*) will be mo
 > If you are using VS Code, the `dotnet migrate` command will not modify VS Code-specific files such as `tasks.json`. These files need to be changed manually. 
 > This is also true if you are using Project Ryder or any editor or Integrated Development Environment (IDE) other than Visual Studio. 
 
+See [A mapping between project.json and csproj properties](../tools/project-json-to-csproj.md) for a comparison of project.json and csproj formats.
+
 ### Common issues
 
 - If you get an error: “No executable found matching command dotnet-migrate":

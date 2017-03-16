@@ -7,7 +7,31 @@
             "corefx/src/**/ref/**/*.csproj",
             "wcf/src/**/ref/**/*.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**"],
+          "exclude": [ "corefx/src/mscorlib/ref/Compat/mscorlib.csproj", "corefx/src/System.Runtime/ref/System.Runtime.csproj", "**/bin/**", "**/obj/**"],
+          "cwd": ".."
+        }
+      ],
+      "dest": "api"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "corefx/src/mscorlib/ref/Compat/mscorlib.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "cwd": ".."
+        }
+      ],
+      "dest": "api"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "corefx/src/System.Runtime/ref/System.Runtime.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
           "cwd": ".."
         }
       ],

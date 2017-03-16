@@ -4,7 +4,7 @@ description: Unit Testing in .NET Core using dotnet test
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn
-ms.date: 002/02/2017
+ms.date: 003/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -37,7 +37,7 @@ final project structure will be something like this:
 ### Creating the source project
 
 Start in the `unit-testing-using-dotnet-test` directory, create the `PrimeService` directory.
-CD into that directory, and run `dotnet new classib` to create the source
+CD into that directory, and run `dotnet new classlib` to create the source
 project.
 
 
@@ -64,7 +64,7 @@ namespace Prime.Services
 
 Next, cd back into the 'unit-testing-using-dotnet-test' directory, and create the `PrimeServices.Tests` directory.
 CD into the `PrimeService.Tests` directory and create a new project using
-`dotnet new xunit`. `dotnet xunit` creates a test project
+`dotnet new xunit`. `dotnet new xunit` creates a test project
 that uses xUnit as the test library. 
 
 The generated template configured the test runner
@@ -118,6 +118,9 @@ then repeating the process. So, let's write that one failing test. Remove
 C# file named `PrimeService_IsPrimeShould.cs` with the following content:
 
 ```cs
+using Xunit;
+using Prime.Services;
+
 namespace Prime.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould
@@ -196,9 +199,9 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
 and the
-[complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/src/PrimeService/PrimeService.cs).
+[complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
 
 You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests

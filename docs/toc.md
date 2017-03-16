@@ -139,6 +139,10 @@
 ### [How to Manage Package Dependency Versions for .NET Core 1.0](core/tutorials/managing-package-dependency-versions.md)
 ### [Hosting .NET Core from native code](core/tutorials/netcore-hosting.md)
 ## [Packages, Metapackages and Frameworks](core/packages.md)
+## [Changes in CLI overview](core/tools/cli-msbuild-architecture.md)
+### [Dependency management](core/tools/dependencies.md)
+### [Additions to the csproj format](core/tools/csproj.md)
+### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ## Migration
 ### [Migration to csproj format](core/migration/index.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
@@ -155,11 +159,6 @@
 ### [🔧 Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core Tools](core/tools/index.md)
-### [Changes in CLI overview](core/tools/cli-msbuild-architecture.md)
-### [Dependency management](core/tools/dependencies.md)
-### [Deploying applications](core/deploying/index.md)
-### [Additions to the csproj format](core/tools/csproj.md)
-### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)
@@ -193,6 +192,7 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 ### [🔧 NuGet packages](core/porting/nuget-packages.md)
+## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->

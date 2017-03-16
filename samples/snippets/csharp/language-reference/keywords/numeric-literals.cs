@@ -54,7 +54,7 @@ public class Example
       byte byteValue2 = 0x00C9;
       Console.WriteLine(byteValue2);
       
-      byte byteValue3 = 0b11001001;
+      byte byteValue3 = 0b1100_1001;
       Console.WriteLine(byteValue3);
       // The example displays the following output:
       //          201
@@ -82,7 +82,7 @@ public class Example
       short shortValue2 = 0x040A;
       Console.WriteLine(shortValue2);
       
-      short shortValue3 = 0b010000001010;
+      short shortValue3 = 0b0100_00001010;
       Console.WriteLine(shortValue3);
       // The example displays the following output:
       //          1034
@@ -113,7 +113,7 @@ public class Example
       int intValue2 = 0x16342;
       Console.WriteLine(intValue2);
       
-      int intValue3 = 0b00010110001101000010;
+      int intValue3 = 0b0001_0110_0011_0100_0010;
       Console.WriteLine(intValue3);
       // The example displays the following output:
       //          90946
@@ -149,7 +149,7 @@ public class Example
       long longValue2 = 0x100000000;
       Console.WriteLine(longValue2);
       
-      long longValue3 = 0b100000000000000000000000000000000;
+      long longValue3 = 0b1_0000_0000_0000_0000_0000_0000_0000_0000;
       Console.WriteLine(longValue3);
       // The example displays the following output:
       //          4294967296
@@ -186,7 +186,7 @@ public class Example
          sbyte sbyteValue4 = (sbyte)0x9A;
          Console.WriteLine(sbyteValue4);
          
-         sbyte sbyteValue5 = (sbyte)0b10011010;
+         sbyte sbyteValue5 = (sbyte)0b1001_1010;
          Console.WriteLine(sbyteValue5);
       }
       // The example displays the following output:
@@ -200,7 +200,7 @@ public class Example
    {
       // <SnippetSByteS>
       unchecked {
-         sbyte sbyteValue3 = (sbyte)0b10011010;
+         sbyte sbyteValue3 = (sbyte)0b1001_1010;
          Console.WriteLine(sbyteValue3);
       }
       // The example displays the following output:
@@ -217,7 +217,7 @@ public class Example
       ushort ushortValue2 = 0xFE0A;
       Console.WriteLine(ushortValue2);
       
-      ushort ushortValue3 = 0b1111111000001010;
+      ushort ushortValue3 = 0b1111_1110_0000_1010;
       Console.WriteLine(ushortValue3);
       // The example displays the following output:
       //          65034
@@ -249,7 +249,7 @@ public class Example
       uint uintValue2 = 0xB2D05E00;
       Console.WriteLine(uintValue2);
       
-      uint uintValue3 = 0b10110010110100000101111000000000;
+      uint uintValue3 = 0b1011_0010_1101_0000_0101_1110_0000_0000;
       Console.WriteLine(uintValue3);
       // The example displays the following output:
       //          3000000000
@@ -261,13 +261,13 @@ public class Example
    private static void AssignUIntegerWithSeparator()
    {
       // <SnippetUIntS>
-      uint uintValue1 = 3000000000;
+      uint uintValue1 = 3_000_000_000;
       Console.WriteLine(uintValue1);
       
       uint uintValue2 = 0xB2D0_5E00;
       Console.WriteLine(uintValue2);
       
-      uint uintValue3 = 0b10110010_11010000_01011110_00000000;
+      uint uintValue3 = 0b1011_0010_1101_0000_0101_1110_0000_0000;
       Console.WriteLine(uintValue3);
       // The example displays the following output:
       //          3000000000
@@ -285,7 +285,7 @@ public class Example
       ulong ulongValue2 = 0x0001D8e864DD;
       Console.WriteLine(ulongValue2);
       
-      ulong ulongValue3 = 0b000111011000111010000110010011011101;
+      ulong ulongValue3 = 0b0001_1101_1000_1110_1000_0110_0100_1101_1101;
       Console.WriteLine(ulongValue3);
       // The example displays the following output:
       //          7934076125
@@ -303,7 +303,7 @@ public class Example
       ulong ulongValue2 = 0x0001_D8e8_64DD;
       Console.WriteLine(ulongValue2);
       
-      ulong ulongValue3 = 0b00000001_11011000_11101000_01100100_11011101;
+      ulong ulongValue3 = 0b0000_0001_1101_1000_1110_1000_0110_0100_1101_1101;
       Console.WriteLine(ulongValue3);
       // The example displays the following output:
       //          7934076125

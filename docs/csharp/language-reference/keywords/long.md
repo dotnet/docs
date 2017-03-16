@@ -65,7 +65,7 @@ long value = 4294967296L;
   
  When you use the suffix `L`, the type of the literal integer is determined to be either `long` or [ulong](../../../csharp/language-reference/keywords/ulong.md), depending on its size. In this case, it is `long` because it less than the range of [ulong](../../../csharp/language-reference/keywords/ulong.md).  
   
- A common use of the suffix is to call overloaded methods. Tor example, the following overloaded methods have parameters of type `long` and [int](../../../csharp/language-reference/keywords/int.md):  
+ A common use of the suffix is to call overloaded methods. For example, the following overloaded methods have parameters of type `long` and [int](../../../csharp/language-reference/keywords/int.md):  
   
 ```cs
 public static void SampleMethod(int i) {}  

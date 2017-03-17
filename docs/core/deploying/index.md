@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
-ms.date: 03/06/2017
+ms.date: 03/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -41,15 +41,15 @@ There are also a few disadvantages:
 
 ### Deploying a framework-dependent deployment
 
-Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. The example explains how to create a framework-dependent deployment by using the [dotnet utility](../tools/dotnet.md) from the command line, as well as by using Visual Studio 2017. If you are working from the command line, you can use a program editor of your choice. If your program editor is Visual Studio Code, you can open a command console inside your Visual Studio Code environment by selecting **View**, **Integrated Terminal**.
+Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. The example explains how to create a framework-dependent deployment by using the [dotnet utility](../tools/dotnet.md) from the command line, as well as by using Visual Studio 2017. If you are working from the command line, you can use a program editor of your choice. If your program editor is Visual Studio Code, you can open a command console inside your Visual Studio Code environment by selecting **View** > **Integrated Terminal**.
 
 1. Create the project.
 
    **From the command line:** Create a directory for your project, and from the command line, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project.
 
-   **In Visual Studio 2017:** Select **File**, **New**, **Project**. In the **Add New Project** dialog, select **.NET Core** in the **Installed** project types pane, and select the **Console App (.NET Core)** template in the center pane. Enter a project name, such as `FDD`, in the **Name** text box, and select the **OK** button.
+   **In Visual Studio 2017:** Select **File** > **New** > **Project**. In the **Add New Project** dialog, select **.NET Core** in the **Installed** project types pane, and select the **Console App (.NET Core)** template in the center pane. Enter a project name, such as `FDD`, in the **Name** text box, and select the **OK** button.
 
-1. Open the `Program.cs` file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
+1. Open the *Program.cs* file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
    [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
@@ -59,7 +59,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
    **From the command line:** Use the [dotnet build](../tools/dotnet-build.md) command.
 
-   **In Visual Studio 2017:** Select **Build**, **Build Solution**. You can also compile and run the debug build of your application by selecting **Debug**, **Start Debugging**.
+   **In Visual Studio 2017:** Select **Build** > **Build Solution**. You can also compile and run the debug build of your application by selecting **Debug** > **Start Debugging**.
 
 1. After you've debugged and tested the program, you can create the files to be deployed with your app,
 
@@ -103,7 +103,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
 
 **In Visual Studio 2017:**
 
-1. Use the **NuGet Package Manager** to add a reference to a NuGet package to your project and, if the package is not already available on your system, install it. To open the package manager, select **Tools**, **NuGet Package Manager**, **Manage NuGet Packages for Solution**.
+1. Use the **NuGet Package Manager** to add a reference to a NuGet package to your project and, if the package is not already available on your system, install it. To open the package manager, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
 
 1. Confirm that Newtonsoft.Json is installed on your system and, if it is not, install it. The **Installed** tab lists NuGet packages installed on your system. If Newtonsoft.Json is not listed there, select the **Browse** tab and enter 'Newtonsoft.Json' in the search box. Select Newtonsoft.Json and, in the right pane, select your project before selecting **Install**.
 
@@ -133,17 +133,17 @@ It also has a number of disadvantages:
 
 ### <a name="simpleSelf"></a> Deploying a simple self-contained deployment
 
-Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the .csproj file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example explains how to create a self-contained deployment by using the [dotnet utility](../tools/dotnet.md) from the command line, as well as by using Visual Studio 2017. If you are using the command line, you can use a program editor of your choice. If your program editor is Visual Studio Code, you can open a command console inside your Visual Studio Code Environment by selecting **View**, **Integrated Terminal**.
+Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the .csproj file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. The example explains how to create a self-contained deployment by using the [dotnet utility](../tools/dotnet.md) from the command line, as well as by using Visual Studio 2017. If you are using the command line, you can use a program editor of your choice. If your program editor is Visual Studio Code, you can open a command console inside your Visual Studio Code Environment by selecting **View** > **Integrated Terminal**.
 
 1. Create the project.
 
    **From the command line:** Create a directory for your project, and from the command line, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project.
 
-   **In Visual Studio 2017:** Select **File**, **New**, **Project**. In the **Add New Project** dialog, select **.NET Core** in the **Installed** project types pane, and select the **Console App (.NET Core)** template in the center pane. Enter a project name, such as `SCD`, in the **Name** text box, and select the **OK** button.
+   **In Visual Studio 2017:** Select **File** > **New** > **Project**. In the **Add New Project** dialog, select **.NET Core** in the **Installed** project types pane, and select the **Console App (.NET Core)** template in the center pane. Enter a project name, such as `SCD`, in the **Name** text box, and select the **OK** button.
 
 1. Open the `Program.cs` file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!deploy-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs#1)]
+   [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
 1. Define the platforms that your app will target.
 
@@ -170,7 +170,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
    **From the command line:** Use the [dotnet build](../tools/dotnet-build.md) command.
 
-   **In Visual Studio 2017:** Select **Build**, **Build Solution**. You can also compile and run the debug build of your application by selecting **Debug**, **Start Debugging**.
+   **In Visual Studio 2017:** Select **Build** > **Build Solution**. You can also compile and run the debug build of your application by selecting **Debug** > **Start Debugging**.
 
 1. After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets.
 
@@ -203,15 +203,13 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
 The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
 
-The following is the complete `csproj` file for this project.
+The following is the complete `csproj` file for this project:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
@@ -235,7 +233,7 @@ Deploying a self-contained deployment with one or more third-party dependencies 
 
 **In Visual Studio 2017:**
 
-1. Use the **NuGet Package Manager** to add a reference to a NuGet package to your project and, if the package is not already available on your system, install it. To open the package manager, select **Tools**, **NuGet Package Manager**, **Manage NuGet Packages for Solution**.
+1. Use the **NuGet Package Manager** to add a reference to a NuGet package to your project and, if the package is not already available on your system, install it. To open the package manager, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
 
 1. Confirm that Newtonsoft.Json is installed on your system and, if it is not, install it. The **Installed** tab lists NuGet packages installed on your system. If Newtonsoft.Json is not listed there, select the **Browse** tab and enter 'Newtonsoft.Json' in the search box. Select Newtonsoft.Json and, in the right pane, select your project before selecting **Install**.
 
@@ -248,8 +246,6 @@ The following is the complete csproj file for this project:
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
@@ -332,15 +328,13 @@ This indicates that, instead of using the entire `netcoreapp1.0` framework, whic
 
 The published files can be deployed in any way you'd like. For example, you can package them in a zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
 
-The following is the complete `csproj` file for this project.
+The following is the complete `csproj` file for this project:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netstandard1.6</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>

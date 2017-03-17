@@ -97,7 +97,7 @@ This tutorial shows you how to build a simple .NET Core console application usin
 
 **[Building a complete .NET Core solution on Mac OS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
 
-This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing with a third-party library.
+This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
 
 ## Deploying to Containers
 

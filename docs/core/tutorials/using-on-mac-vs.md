@@ -16,9 +16,9 @@ ms.assetid: 8902e849-dd17-42c0-8264-cc7ae3927a0c
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 
 > [!NOTE]
-> Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a number of ways you can provide feedback to the development team on Visual Studio for Mac:
-> * Select **Help > Report a Problem** from the menu or **Report a Problem** from the Welcome page, which will open a window for filing a bug report.
-> * To make a suggestion, select **Help > Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome page, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
+> Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
+> * In Visual Studio for Mac, select **Help > Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which will open a window for filing a bug report.
+> * To make a suggestion, select **Help > Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ For more information on prerequisites, see the [Prerequisites for .NET Core on M
 
 ## Getting started
 
-If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Building a library](#creating-a-project). Follow these steps to install the prerequisites and Visual Studio for Mac:
+If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Creating a project](#creating-a-project). Follow these steps to install the prerequisites and Visual Studio for Mac:
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 
@@ -36,7 +36,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 ## Creating a project
 
-1. Select **New Project**.
+1. Select **New Project** on the Welcome screen.
 
    ![New project button on the Visual Studio for Mac Welcome screen](./media/using-on-mac-vs/vsmac1.png)
 
@@ -44,7 +44,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    ![New project templates list](./media/using-on-mac-vs/vsmac2.png)
 
-1. Name the project "HelloWorld". Optionally, specify a different parent folder for the new project. Select **Create**.
+1. Type "HelloWorld" for the **Project Name**. Optionally, specify a different parent folder for the new project. Select **Create**.
 
    ![Configure your new Console Application dialog](./media/using-on-mac-vs/vsmac3.png)
 
@@ -57,8 +57,6 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 Run the app in Debug mode using <kbd>F5</kbd> or in Release mode using <kbd>CTRL</kbd>+<kbd>F5</kbd>.
 
 ![The Application Output pane shows Hello World!](./media/using-on-mac-vs/vsmac5.png)
-
-Happy coding!
 
 ## Next step
 

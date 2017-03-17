@@ -36,7 +36,7 @@ ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
 ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 ```
 
-After installing OpenSSL, obtain the official [.NET Core SDK for Mac installer](https://go.microsoft.com/fwlink/?linkid=843444). .NET Core 1.1.1 is the latest version. For long term support versions and additional downloads, visit [.NET Downloads: All downloads](https://www.microsoft.com/net/download/core). If you have any problems with installation on macOS, please consult [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md).
+After installing OpenSSL, obtain the official [.NET Core SDK for Mac installer](https://go.microsoft.com/fwlink/?linkid=843444). .NET Core 1.1.1 is the latest version. For long term support versions and additional downloads, visit [.NET Downloads: All downloads](https://www.microsoft.com/net/download/core). If you have any problems with installation on macOS, consult [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md).
 
 ## Visual Studio for Mac
 

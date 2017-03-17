@@ -24,11 +24,11 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../core/macos-prerequisites.md).
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../macos-prerequisites.md).
 
 ## Getting started
 
-If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Building a library](#building-a-library). Follow these steps to install the prerequisites and Visual Studio for Mac:
+If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Building a library](#creating-a-project). Follow these steps to install the prerequisites and Visual Studio for Mac:
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 
@@ -38,25 +38,25 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 1. Select **New Project**.
 
-   ![New project button on the Visual Studio for Mac Welcome screen](./media/using-on-mac-vs/vsmac1.png)
+   ![New project button on the Visual Studio for Mac Welcome screen](../media/using-on-mac-vs/vsmac1.png)
 
 1. In the **New Project** dialog, select **App** under the **.NET Core** node. Select the **Console Application** template followed by **Next**.
 
-   ![New project templates list](./media/using-on-mac-vs/vsmac2.png)
+   ![New project templates list](../media/using-on-mac-vs/vsmac2.png)
 
 1. Name the project "HelloWorld". Optionally, specify a different parent folder for the new project. Select **Create**.
 
-   ![Configure your new Console Application dialog](./media/using-on-mac-vs/vsmac3.png)
+   ![Configure your new Console Application dialog](../media/using-on-mac-vs/vsmac3.png)
 
 1. Wait while the project's dependencies are restored. The project has a single C# file, *Program.cs*, containing a `Program` class with a `Main` method. The `Console.WriteLine` statement will output "Hello World!" to the console when the app is run.
 
-   ![Main window with the Program.cs file open](./media/using-on-mac-vs/vsmac4.png)
+   ![Main window with the Program.cs file open](../media/using-on-mac-vs/vsmac4.png)
 
 ## Run the application
 
 Run the app in Debug mode using <kbd>F5</kbd> or in Release mode using <kbd>CTRL</kbd>+<kbd>F5</kbd>.
 
-![The Application Output pane shows Hello World!](./media/using-on-mac-vs/vsmac5.png)
+![The Application Output pane shows Hello World!](../media/using-on-mac-vs/vsmac5.png)
 
 Happy coding!
 

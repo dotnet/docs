@@ -32,8 +32,8 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with Visual Studio for Mac
 
-- [Getting started with .NET Core on Mac OS using Visual Studio for Mac](using-on-mac-vs.md)
-- [Building a complete .NET Core solution on Mac OS using Visual Studio for Mac](using-on-mac-vs-full-solution.md)
+- [Getting started with .NET Core on macOS using Visual Studio for Mac](using-on-mac-vs.md)
+- [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md)
 
 ## Building applications with the .NET Core CLI tools
 

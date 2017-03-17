@@ -32,7 +32,36 @@ A covariant interface allows its methods to return more derived types than those
 ## Converting Generic Collections  
  The following example illustrates the benefits of covariance support in the <xref:System.Collections.Generic.IEnumerable%601> interface. The `PrintFullName` method accepts a collection of the `IEnumerable(Of Person)` type as a parameter. However, you can reuse it for a collection of the `IEnumerable(Of Person)` type because `Employee` inherits `Person`.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```vb  
+' Simple hierarchy of classes.  
+Public Class Person  
+    Public Property FirstName As String  
+    Public Property LastName As String  
+End Class  
+  
+Public Class Employee  
+    Inherits Person  
+End Class  
+  
+' The method has a parameter of the IEnumerable(Of Person) type.  
+Public Sub PrintFullName(ByVal persons As IEnumerable(Of Person))  
+    For Each person As Person In persons  
+        Console.WriteLine(  
+            "Name: " & person.FirstName & " " & person.LastName)  
+    Next  
+End Sub  
+  
+Sub Main()  
+    Dim employees As IEnumerable(Of Employee) = New List(Of Employee)  
+  
+    ' You can pass IEnumerable(Of Employee),   
+    ' although the method expects IEnumerable(Of Person).  
+  
+    PrintFullName(employees)  
+  
+End Sub  
+```  
+  
 ## Comparing Generic Collections  
  The following example illustrates the benefits of contravariance support in the <xref:System.Collections.Generic.IComparer%601> interface. The `PersonComparer` class implements the `IComparer(Of Person)` interface. However, you can reuse this class to compare a sequence of objects of the `Employee` type because `Employee` inherits `Person`.  
   

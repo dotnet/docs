@@ -68,20 +68,61 @@ End Module
   
  The following code example shows how to use the `Median` method for an array of type `double`.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+```vb  
+Dim numbers1() As Double = {1.9, 2, 8, 4, 5.7, 6, 7.2, 0}  
+  
+Dim query1 = Aggregate num In numbers1 Into Median()  
+  
+Console.WriteLine("Double: Median = " & query1)  
+```  
+  
+```vb  
+' This code produces the following output:  
+'  
+' Double: Median = 4.85  
+```  
+  
+
 ### Overloading an Aggregate Method to Accept Various Types  
  You can overload your aggregate method so that it accepts sequences of various types. The standard approach is to create an overload for each type. Another approach is to create an overload that will take a generic type and convert it to a specific type by using a delegate. You can also combine both approaches.  
   
 #### To create an overload for each type  
  You can create a specific overload for each type that you want to support. The following code example shows an overload of the `Median` method for the `integer` type.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+```vb  
+' Integer overload  
+  
+<Extension()>   
+Function Median(ByVal source As IEnumerable(Of Integer)) As Double  
+    Return Aggregate num In source Select CDbl(num) Into med = Median()  
+End Function  
+```  
  You can now call the `Median` overloads for both `integer` and `double` types, as shown in the following code:  
   
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```vb  
+Dim numbers1() As Double = {1.9, 2, 8, 4, 5.7, 6, 7.2, 0}  
+  
+Dim query1 = Aggregate num In numbers1 Into Median()  
+  
+Console.WriteLine("Double: Median = " & query1)  
+```  
+  
+```vb  
+Dim numbers2() As Integer = {1, 2, 3, 4, 5}  
+  
+Dim query2 = Aggregate num In numbers2 Into Median()  
+  
+Console.WriteLine("Integer: Median = " & query2)  
+```  
+  
+```vb  
+' This code produces the following output:  
+'  
+' Double: Median = 4.85  
+' Integer: Median = 3  
+```  
+  
+ 
 #### To create a generic overload  
  You can also create an overload that accepts a sequence of generic objects. This overload takes a delegate as a parameter and uses it to convert a sequence of objects of a generic type to a specific type.  
   
@@ -101,13 +142,56 @@ End Function
   
  The following example code shows how to call the `Median` method for an array of integers and an array of strings. For strings, the median for the lengths of strings in the array is calculated. The example shows how to pass the <xref:System.Func%602> delegate parameter to the `Median` method for each case.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+```vb  
+Dim numbers3() As Integer = {1, 2, 3, 4, 5}  
+  
+' You can use num as a parameter for the Median method   
+' so that the compiler will implicitly convert its value to double.  
+' If there is no implicit conversion, the compiler will  
+' display an error message.  
+  
+Dim query3 = Aggregate num In numbers3 Into Median(num)  
+  
+Console.WriteLine("Integer: Median = " & query3)  
+  
+Dim numbers4() As String = {"one", "two", "three", "four", "five"}  
+  
+' With the generic overload, you can also use numeric properties of objects.  
+  
+Dim query4 = Aggregate str In numbers4 Into Median(str.Length)  
+  
+Console.WriteLine("String: Median = " & query4)  
+  
+' This code produces the following output:  
+'  
+' Integer: Median = 3  
+' String: Median = 4  
+```  
 ## Adding a Method That Returns a Collection  
  You can extend the <xref:System.Collections.Generic.IEnumerable%601> interface with a custom query method that returns a sequence of values. In this case, the method must return a collection of type <xref:System.Collections.Generic.IEnumerable%601>. Such methods can be used to apply filters or data transforms to a sequence of values.  
   
  The following example shows how to create an extension method named `AlternateElements` that returns every other element in a collection, starting from the first element.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+```vb  
+' Extension method for the IEnumerable(of T) interface.   
+' The method returns every other element of a sequence.  
+  
+<Extension()>   
+Function AlternateElements(Of T)(  
+    ByVal source As IEnumerable(Of T)  
+    ) As IEnumerable(Of T)  
+  
+    Dim list As New List(Of T)  
+    Dim i = 0  
+    For Each element In source  
+        If (i Mod 2 = 0) Then  
+            list.Add(element)  
+        End If  
+        i = i + 1  
+    Next  
+    Return list  
+End Function  
+```  
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable%601> interface, as shown in the following code:  
   
 ```vb  

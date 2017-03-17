@@ -77,14 +77,32 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  Open the ISampleInterface.cs file. Add the following code to the ISampleInterface class file to create the ISampleInterface interface.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+    ```cs  
+    using System;  
+    using System.Runtime.InteropServices;  
+  
+    namespace TypeEquivalenceInterface  
+    {  
+        [ComImport]  
+        [Guid("8DA56996-A151-4136-B474-32784559F6DF")]  
+        public interface ISampleInterface  
+        {  
+            void GetUserInput();  
+            string UserInput { get; }  
+    	}  
+    }  
+    ```  
+  
 7.  On the **Tools** menu, click **Create Guid**. In the **Create GUID** dialog box, click **Registry Format** and then click **Copy**. Click **Exit**.  
   
 8.  In the `Guid` attribute, delete the sample GUID and paste in the GUID that you copied from the **Create GUID** dialog box. Remove the braces ({}) from the copied GUID.  
   
 9. In **Solution Explorer**, expand the **Properties** folder. Double-click the AssemblyInfo.cs file. Add the following attribute to the file.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+    ```cs  
+    [assembly: ImportedFromTypeLib("")]  
+    ```  
+  
      Save the file.  
   
 10. Save the project.  
@@ -111,7 +129,29 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 8.  Add the following code to the SampleClass class file to create the SampleClass class.  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+    ```cs  
+    using System;  
+    using System.Collections.Generic;  
+    using System.Linq;  
+    using System.Text;  
+    using TypeEquivalenceInterface;  
+  
+    namespace TypeEquivalenceRuntime  
+    {  
+        public class SampleClass : ISampleInterface  
+        {  
+            private string p_UserInput;  
+            public string UserInput { get { return p_UserInput; } }  
+  
+            public void GetUserInput()  
+            {  
+                Console.WriteLine("Please enter a value:");  
+                p_UserInput = Console.ReadLine();  
+            }  
+        }  
+    )  
+    ```  
+  
 9. Save the project.  
   
 10. Right-click the TypeEquivalenceRuntime project and click **Build**. The class library .dll file is compiled and saved to the specified build output path (for example, C:\TypeEquivalenceSample).  
@@ -132,7 +172,32 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  Add the following code to the Program.cs file to create the client program.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+    ```cs  
+    using System;  
+    using System.Collections.Generic;  
+    using System.Linq;  
+    using System.Text;  
+    using TypeEquivalenceInterface;  
+    using System.Reflection;  
+  
+    namespace TypeEquivalenceClient  
+    {  
+        class Program  
+        {  
+            static void Main(string[] args)  
+            {  
+                Assembly sampleAssembly = Assembly.Load("TypeEquivalenceRuntime");  
+                ISampleInterface sampleClass =   
+                    (ISampleInterface)sampleAssembly.CreateInstance("TypeEquivalenceRuntime.SampleClass");  
+                sampleClass.GetUserInput();  
+                Console.WriteLine(sampleClass.UserInput);  
+                Console.WriteLine(sampleAssembly.GetName().Version.ToString());  
+                Console.ReadLine();  
+            }  
+        }  
+    }  
+    ```  
+  
 7.  Press CTRL+F5 to build and run the program.  
   
 ## Modifying the Interface  
@@ -145,7 +210,10 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the SampleInterface.cs file. Add the following line of code to the ISampleInterface interface.  
   
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
+    ```cs  
+    DateTime GetDate();  
+    ```  
+  
      Save the file.  
   
 4.  Save the project.  

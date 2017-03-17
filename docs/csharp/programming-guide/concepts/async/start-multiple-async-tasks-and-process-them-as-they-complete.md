@@ -56,27 +56,38 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName>,
   
  The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```cs  
+IEnumerable<Task<int>> downloadTasksQuery =  
+    from url in urlList select ProcessURL(url, client, ct);  
+```  
+  
  In the MainWindow.xaml.cs file of the  project, make the following changes to the `AccessTheWebAsync` method.  
   
 -   Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName> instead of <xref:System.Linq.Enumerable.ToArray%2A>.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+    ```cs  
+    List<Task<int>> downloadTasks = downloadTasksQuery.ToList();  
+    ```  
+  
 -   Add a while loop that performs the following steps for each task in the collection.  
   
     1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+        ```cs  
+        Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
+        ```  
+  
     2.  Removes that task from the collection.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+        ```cs  
+        downloadTasks.Remove(firstFinishedTask);  
+        ```  
+  
     3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
   
         ```cs  
         int length = await firstFinishedTask;  
         resultsTextBox.Text += String.Format("\r\nLength of the download:  {0}", length);  
-        VBCopy Code  
-        Dim length = Await firstFinishedTask  
         ```  
   
  You should run the project several times to verify that the downloaded lengths don't always appear in the same order.  

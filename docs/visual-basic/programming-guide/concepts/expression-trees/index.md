@@ -38,22 +38,91 @@ Expression trees represent code in a tree-like data structure, where each node i
   
  The following code examples demonstrate how to have the Visual Basic compiler create an expression tree that represents the lambda expression `Function(num) num < 5`.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```vb  
+Dim lambda As Expression(Of Func(Of Integer, Boolean)) =  
+    Function(num) num < 5  
+```  
+  
 ## Creating Expression Trees by Using the API  
  To create expression trees by using the API, use the <xref:System.Linq.Expressions.Expression> class. This class contains static factory methods that create expression tree nodes of specific types, for example, <xref:System.Linq.Expressions.ParameterExpression>, which represents a variable or parameter, or <xref:System.Linq.Expressions.MethodCallExpression>, which represents a method call. <xref:System.Linq.Expressions.ParameterExpression>, <xref:System.Linq.Expressions.MethodCallExpression>, and the other expression-specific types are also defined in the <xref:System.Linq.Expressions> namespace. These types derive from the abstract type <xref:System.Linq.Expressions.Expression>.  
   
  The following code example demonstrates how to create an expression tree that represents the lambda expression `Function(num) num < 5` by using the API.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```vb  
+' Import the following namespace to your project: System.Linq.Expressions  
+  
+' Manually build the expression tree for the lambda expression num => num < 5.  
+Dim numParam As ParameterExpression = Expression.Parameter(GetType(Integer), "num")  
+Dim five As ConstantExpression = Expression.Constant(5, GetType(Integer))  
+Dim numLessThanFive As BinaryExpression = Expression.LessThan(numParam, five)  
+Dim lambda1 As Expression(Of Func(Of Integer, Boolean)) =  
+  Expression.Lambda(Of Func(Of Integer, Boolean))(  
+        numLessThanFive,  
+        New ParameterExpression() {numParam})  
+```  
+  
  In .NET Framework 4 or later, the expression trees API also supports assignments and control flow expressions such as loops, conditional blocks, and `try-catch` blocks. By using the API, you can create expression trees that are more complex than those that can be created from lambda expressions by the Visual Basic compiler. The following example demonstrates how to create an expression tree that calculates the factorial of a number.  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+```vb  
+' Creating a parameter expression.  
+Dim value As ParameterExpression =  
+    Expression.Parameter(GetType(Integer), "value")  
+  
+' Creating an expression to hold a local variable.   
+Dim result As ParameterExpression =  
+    Expression.Parameter(GetType(Integer), "result")  
+  
+' Creating a label to jump to from a loop.  
+Dim label As LabelTarget = Expression.Label(GetType(Integer))  
+  
+' Creating a method body.  
+Dim block As BlockExpression = Expression.Block(  
+    New ParameterExpression() {result},  
+    Expression.Assign(result, Expression.Constant(1)),  
+    Expression.Loop(  
+        Expression.IfThenElse(  
+            Expression.GreaterThan(value, Expression.Constant(1)),  
+            Expression.MultiplyAssign(result,  
+                Expression.PostDecrementAssign(value)),  
+            Expression.Break(label, result)  
+        ),  
+        label  
+    )  
+)  
+  
+' Compile an expression tree and return a delegate.  
+Dim factorial As Integer =  
+    Expression.Lambda(Of Func(Of Integer, Integer))(block, value).Compile()(5)  
+  
+Console.WriteLine(factorial)  
+' Prints 120.  
+```  
+  
  For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010 (or later)](http://go.microsoft.com/fwlink/?LinkId=169513).  
   
 ## Parsing Expression Trees  
  The following code example demonstrates how the expression tree that represents the lambda expression `Function(num) num < 5` can be decomposed into its parts.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+```vb  
+' Import the following namespace to your project: System.Linq.Expressions  
+  
+' Create an expression tree.  
+Dim exprTree As Expression(Of Func(Of Integer, Boolean)) = Function(num) num < 5  
+  
+' Decompose the expression tree.  
+Dim param As ParameterExpression = exprTree.Parameters(0)  
+Dim operation As BinaryExpression = exprTree.Body  
+Dim left As ParameterExpression = operation.Left  
+Dim right As ConstantExpression = operation.Right  
+  
+Console.WriteLine(String.Format("Decomposed expression: {0} => {1} {2} {3}",  
+                  param.Name, left.Name, operation.NodeType, right.Value))  
+  
+' This code produces the following output:  
+'  
+' Decomposed expression: num => num LessThan 5  
+```  
+  
 ## Immutability of Expression Trees  
  Expression trees should be immutable. This means that if you want to modify an expression tree, you must construct a new expression tree by copying the existing one and replacing nodes in it. You can use an expression tree visitor to traverse the existing expression tree. For more information, see [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md).  
   

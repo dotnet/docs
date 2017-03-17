@@ -300,13 +300,26 @@ Length of the downloaded string: 33946.
   
  The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.  
   
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
+```cs  
+Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
+```  
+  
  You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE,” represent the opportunity to do independent work  
   
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```  
+  
+THREE: Back in AccessTheWebAsync.  
+           Task getStringTask is started.  
+           About to await getStringTask & return a Task<int> to startButton_Click.  
+  
+```  
+  
  The following statement suspends progress in `AccessTheWebAsync` when `getStringTask` is awaited.  
   
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
+```cs  
+string urlContents = await getStringTask;  
+```  
+  
  The following image shows the flow of control from `client.GetStringAsync` to the assignment to `getStringTask` and from the creation of `getStringTask` to the application of an await operator.  
   
  ![Step THREE](../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "AsyncTrace-Three")  
@@ -323,13 +336,26 @@ Length of the downloaded string: 33946.
   
  The following statement assigns this task to the `getLengthTask` variable.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+```cs  
+Task<int> getLengthTask = AccessTheWebAsync();  
+```  
+  
  As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+```  
+  
+FOUR:  Back in startButton_Click.  
+           Task getLengthTask is started.  
+           About to await getLengthTask -- no caller to return to.  
+  
+```  
+  
  Progress in `startButton_Click` is suspended when `getLengthTask` is awaited. The following assignment statement suspends `startButton_Click` until `AccessTheWebAsync` is complete.  
   
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
+```cs  
+int contentLength = await getLengthTask;  
+```  
+  
  In the following illustration, the arrows show the flow of control from the await expression in `AccessTheWebAsync` to the assignment of a value to `getLengthTask`, followed by normal processing in `startButton_Click` until `getLengthTask` is awaited.  
   
  ![Step FOUR](../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png "AsyncTrace-FOUR")  
@@ -337,7 +363,15 @@ Length of the downloaded string: 33946.
 ### Step FIVE  
  When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.  
   
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
+```  
+  
+FIVE:  Back in AccessTheWebAsync.  
+           Task getStringTask is complete.  
+           Processing the return statement.  
+           Exiting from AccessTheWebAsync.  
+  
+```  
+  
  The operand of the return statement, `urlContents.Length`, is stored in the task that  `AccessTheWebAsync` returns. The await expression retrieves that value from `getLengthTask` in `startButton_Click`.  
   
  The following image shows the transfer of control after `client.GetStringAsync` (and `getStringTask`) are complete.  
@@ -351,10 +385,21 @@ Length of the downloaded string: 33946.
   
  The following lines of output represent the resumption of processing in `startButton_Async`:  
   
-<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
+```  
+  
+SIX:   Back in startButton_Click.  
+           Task getLengthTask is finished.  
+           Result from AccessTheWebAsync is stored in contentLength.  
+           About to display contentLength and exit.  
+  
+```  
+  
  The await expression retrieves from `getLengthTask` the integer value that’s the operand of the return statement in `AccessTheWebAsync`. The following statement assigns that value to the `contentLength` variable.  
   
-<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
+```cs  
+int contentLength = await getLengthTask;  
+```  
+  
  The following image shows the return of control from `AccessTheWebAsync` to `startButton_Click`.  
   
  ![Step SIX](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-SIX")  

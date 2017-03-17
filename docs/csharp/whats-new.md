@@ -28,5 +28,30 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
     - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many support Linux distributions, learn more about .NET Core.
 
 - [.NET Compiler Platform SDK](roslyn/index.md):
-    - The .NET Compiler Platform SDK enables you to write code that performs static analysis on C# code. You can use these APIs to find potential errors, or bad practices, suggest fixes, and even implement those fixes. 
-    
+    - The .NET Compiler Platform SDK enables you to write code that performs static analysis on C# code. You can use these APIs to find potential errors, or bad practices, suggest fixes, and even implement those fixes.
+
+
+  
+## Previous Versions
+The following lists key features that were introduced in previous versions of the C# language.  
+  
+ * Visual Studio .NET 2013: 
+     - This version of Visual Studio included bug fixes, performance improvements, and technology previews of .NET Compiler Platform (“Roslyn”) which became the [.NET Compiler Platform SDK](roslyn/index.md).
+
+ * C# 5, Visual Studio .NET 2012: 
+     - `Async` / `await`, and [caller information](programming-guide/concepts/caller-information.md) attributes.
+
+ * C# 4, Visual Studio .NET 2010: 
+     - `Dynamic`, [named arguments](programming-guide/classes-and-structs/named-and-optional-arguments.md), optional parameters, and generic [covariance and contra variance](programming-guide/concepts/covariance-contravariance/index.md).
+
+ * C# 3, Visual Studio .NET 2008: 
+     - Object and collection initializers, lambda expressions, extension methods, anonymous types, automatic properties, local `var` type inference, and [Language Integrated Query (LINQ)](programming-guide/concepts/linq/index.md).
+
+ * C# 2, Visual Studio .NET 2005: 
+     - Anonymous methods, generics, nullable types, iterators/yield, `static` classes, and covariance and contra variance for delegates.
+
+ * C# 1.1, Visual Studio .NET 2003: 
+     - `#line` pragma and xml doc comments.
+
+ * C# 1, Visual Studio .NET 2002: 
+     - The first release of [C#](../csharp/csharp.md).   

@@ -1,6 +1,6 @@
 ---
 title: Getting started with .NET Core on macOS using Visual Studio for Mac | Microsoft Docs
-description: Getting started with .NET Core on macOS, using Visual Studio for Mac
+description: This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
@@ -17,8 +17,8 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 > [!NOTE]
 > Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a number of ways you can provide feedback to the development team on Visual Studio for Mac:
-> * Select **Help > Report Problem** from the menu bar or **Report a Problem** from the Welcome page, which will open a window for filing a bug report.
-> * To make a suggestion, select **Help > Provide a Suggestion** from the menu bar or **Provide a Suggestion** from the Welcome page, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
+> * Select **Help > Report a Problem** from the menu or **Report a Problem** from the Welcome page, which will open a window for filing a bug report.
+> * To make a suggestion, select **Help > Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome page, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 ## Run the application
 
-Run the app in Debug mode using F5 or in Release mode using CTRL+F5.
+Run the app in Debug mode using <kbd>F5</kbd> or in Release mode using <kbd>CTRL</kbd>+<kbd>F5</kbd>.
 
 ![The Application Output pane shows Hello World!](./media/using-on-mac-vs/vsmac5.png)
 

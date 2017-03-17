@@ -51,13 +51,13 @@ You use a normal declaration statement to declare an object variable. For the da
 ## Declaration Syntax  
  Use the following syntax to declare an object variable:  
   
-```  
+```vb  
 Dim variablename As [New] { objectclass | Object }  
 ```  
   
  You can also specify [Public](../../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../../visual-basic/language-reference/modifiers/friend.md), `Protected Friend`, [Private](../../../../visual-basic/language-reference/modifiers/private.md), [Shared](../../../../visual-basic/language-reference/modifiers/shared.md), or [Static](../../../../visual-basic/language-reference/modifiers/static.md) in the declaration. The following example declarations are valid:  
   
-```  
+```vb  
 Private objA As Object  
 Static objB As System.Windows.Forms.Label  
 Dim objC As System.OperatingSystem  
@@ -88,7 +88,7 @@ Dim objC As System.OperatingSystem
 ## Access to Object Variable Members  
  When `Option Strict` is turned `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  
   
-```  
+```vb  
 ' Option statements must precede all other source file lines.  
 Option Strict On  
 ' Imports statement must precede all declarations in the source file.  
@@ -113,24 +113,36 @@ End Sub
   
  <xref:System.Object>  
   
- `` <xref:System.ComponentModel.Component>  
+ &nbsp;&nbsp;<xref:System.MarshalByRefObject>  
   
- `` <xref:System.Windows.Forms.Control>  
+ &nbsp;&nbsp;&nbsp;&nbsp;<xref:System.ComponentModel.Component>  
   
- `` <xref:System.Windows.Forms.ScrollableControl>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.Windows.Forms.Control>  
   
- `` <xref:System.Windows.Forms.ContainerControl>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.Windows.Forms.ScrollableControl>  
   
- `` <xref:System.Windows.Forms.Form>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.Windows.Forms.ContainerControl>  
+  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.Windows.Forms.Form>  
   
  Suppose your application defines a form class called `specialForm`, which inherits from class <xref:System.Windows.Forms.Form>. You can declare an object variable that refers specifically to `specialForm`, as the following example shows.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+```vb  
+Public Class specialForm  
+    Inherits System.Windows.Forms.Form  
+    ' Insert code defining methods and properties of specialForm.  
+End Class  
+Dim nextForm As New specialForm  
+```  
+  
  The declaration in the preceding example limits the variable `nextForm` to objects of class `specialForm`, but it also makes all the methods and properties of `specialForm` available to `nextForm`, as well as all the members of all the classes from which `specialForm` inherits.  
   
  You can make an object variable more general by declaring it to be of type <xref:System.Windows.Forms.Form>, as the following example shows.  
   
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
+```vb  
+Dim anyForm As System.Windows.Forms.Form  
+```  
+  
  The declaration in the preceding example lets you assign any form in your application to `anyForm`. However, although `anyForm` can access all the members of class <xref:System.Windows.Forms.Form>, it cannot use any of the additional methods or properties defined for specific forms such as `specialForm`.  
   
  All the members of a base class are available to derived classes, but the additional members of a derived class are unavailable to the base class.  

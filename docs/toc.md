@@ -5,7 +5,7 @@
 ## [Getting Started with .NET](standard/getting-started.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Architectural Components](standard/components.md)
-## [.NET Standard Library](standard/library.md)
+## [.NET Standard](standard/library.md)
 ## [Frameworks and Targets](standard/frameworks.md)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)

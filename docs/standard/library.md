@@ -1,7 +1,7 @@
 ---
 title: .NET Standard | Microsoft Docs
-description: .NET Standard Library
-keywords: .NET, .NET Core
+description: Learn what is .NET Standard, its versions and the .NET platforms supported.
+keywords: .NET Standard, PCL, .NET
 author: richlander
 ms.author: mairaw
 ms.date: 03/16/2017

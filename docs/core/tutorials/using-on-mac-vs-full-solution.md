@@ -26,7 +26,7 @@ This tutorial shows you how to create an application that accepts a search word 
 
 [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../macos-prerequisites.md).
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md).
 
 ## Getting started
 
@@ -46,11 +46,11 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    ![New project dialog](./media/using-on-mac-vs-full-solution/vsmacfull02.png)
 
-1. In the **Solution** sidebar, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Right-click the file, select **Rename** from the menu, and rename the file to *WordCount.cs*. Double-click the file to open it. Replace the contents of the file with the code below:
+1. In the **Solution** sidebar, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Right-click the file, select **Rename** from the menu, and rename the file to *WordCount.cs*. Double-click the file to open it. Replace the contents of the file with the following code:
 
    [!code-csharp[Main](../../../samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter/TextUtils/WordCount.cs)]
 
-1. Save the file by using using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File > Save** from the menu, or right-click on the file's tab and select **Save** from the contextual menu. The IDE window is shown below.
+1. Save the file by using using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File > Save** from the menu, or right-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
 
    ![IDE window showing the TextUtils class library, the WordCount class file, the static class WordCount, and the GetWordCount method](./media/using-on-mac-vs-full-solution/vsmacfull03.png)
 

@@ -24,7 +24,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../macos-prerequisites.md).
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md).
 
 ## Getting started
 

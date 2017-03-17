@@ -74,7 +74,12 @@ A *query* is an expression that retrieves data from a data source. Queries are e
   
  With [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)], you first create an object-relational mapping at design time, either manually or by using the [LINQ to SQL Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2) in Visual Studio. You write your queries against the objects, and at run-time [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)] handles the communication with the database. In the following example, `customers` represents a specific table in the database, and <xref:System.Data.Linq.Table%601> supports generic <xref:System.Linq.IQueryable%601>.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```vb  
+' Create a data source from a SQL table.  
+Dim db As New DataContext("C:\Northwind\Northwnd.mdf")  
+Dim customers As Table(Of Customer) = db.GetTable(Of Customer)  
+```  
+  
  For more information about how to create specific types of data sources, see the documentation for the various [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] providers. (For a list of these providers, see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).) The basic rule is simple: a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] data source is any object that supports the generic <xref:System.Collections.Generic.IEnumerable%601> interface, or an interface that inherits from it.  
   
 > [!NOTE]

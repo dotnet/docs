@@ -13,6 +13,9 @@ ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 
 # Organizing Your Project to Support .NET Framework and .NET Core
 
+> [!WARNING]
+> This topic hasn't been updated to the latest version of the tooling yet.
+
 This article is to help project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.  It provides several options to organize projects to help developers achieve this goal.  Here are some typical scenarios to consider when you are deciding how to setup your project layout with .NET Core.  They may not cover everything you want; prioritize based on your project's needs.
 
 * [**Combine existing projects and .NET Core projects into single projects**][option-xproj]

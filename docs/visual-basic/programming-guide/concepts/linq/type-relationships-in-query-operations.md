@@ -82,7 +82,18 @@ Parts of a LINQ query
 ## Queries That Return One Field from Selected Elements  
  The following example shows a [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)] query operation that returns a sequence containing only one part of each element selected from the data source. The query takes a collection of `Customer` objects as its data source and projects only the `Name` property in the result. Because the customer name is a string, the query produces a sequence of strings as output.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```vb  
+' Method GetTable returns a table of Customer objects.  
+Dim customers = db.GetTable(Of Customer)()  
+Dim custNames = From cust In customers   
+                Where cust.City = "London"   
+                Select cust.Name  
+  
+For Each custName In custNames  
+    Console.WriteLine(custName)  
+Next  
+```  
+  
  The relationships between variables are like those in the simpler example.  
   
 1.  The type of the elements in the data source, `customers`, is the type of the range variable, `cust`, in the query. In this example, that type is `Customer`.  
@@ -93,11 +104,34 @@ Parts of a LINQ query
   
  Without local type inference, the previous example would be more cumbersome to write and to understand, as the following example shows.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```vb  
+' Method GetTable returns a table of Customer objects.  
+ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)()  
+ Dim custNames As IEnumerable(Of String) =   
+     From cust As Customer In customers   
+     Where cust.City = "London"   
+     Select cust.Name  
+  
+ For Each custName As String In custNames  
+     Console.WriteLine(custName)  
+ Next  
+```  
+  
 ## Queries That Require Anonymous Types  
  The following example shows a more complex situation. In the previous example, it was inconvenient to specify types for all the variables explicitly. In this example, it is impossible. Instead of selecting entire `Customer` elements from the data source, or a single field from each element, the `Select` clause in this query returns two properties of the original `Customer` object: `Name` and `City`. In response to the `Select` clause, the compiler defines an anonymous type that contains those two properties. The result of executing `nameCityQuery` in the `For Each` loop is a collection of instances of the new anonymous type. Because the anonymous type has no usable name, you cannot specify the type of `nameCityQuery` or `custInfo` explicitly. That is, with an anonymous type, you have no type name to use in place of `String` in `IEnumerable(Of String)`. For more information, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+```vb  
+' Method GetTable returns a table of Customer objects.  
+Dim customers = db.GetTable(Of Customer)()  
+Dim nameCityQuery = From cust In customers   
+                    Where cust.City = "London"   
+                    Select cust.Name, cust.City  
+  
+For Each custInfo In nameCityQuery  
+    Console.WriteLine(custInfo.Name)  
+Next  
+```  
+  
  Although it is not possible to specify types for all the variables in the previous example, the relationships remain the same.  
   
 1.  The type of the elements in the data source is again the type of the range variable in the query. In this example, `cust` is an instance of `Customer`.  

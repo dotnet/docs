@@ -74,7 +74,7 @@ Unit tests provide automated software testing during your development and publis
 
    ![New Project dialog](./media/using-on-mac-vs-full-solution/vsmacfull05.png)
 
-1.  Name the new project "TestLibrary" and select **Create**.
+1. Name the new project "TestLibrary" and select **Create**.
 
    ![New Project dialog](./media/using-on-mac-vs-full-solution/vsmacfull06.png)
 

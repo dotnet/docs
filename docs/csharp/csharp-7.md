@@ -245,7 +245,7 @@ as a special case when there is no input. This demonstrates one important
 new feature in switch pattern expressions: the order of the `case`
 expressions now matters. The `0` case must appear before the general `int`
 case. Otherwise, the first pattern to match would be the `int` case,
-even when the value is `0`. If you acccidentally order match expressions such
+even when the value is `0`. If you accidentally order match expressions such
 that a later case has already been handled, the compiler will flag that
 and generate an error.
 

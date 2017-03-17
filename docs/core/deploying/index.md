@@ -4,7 +4,7 @@ description: .NET Core Application Deployment
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
 ms.author: ronpet
-ms.date: 03/11/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -65,7 +65,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
    **From the command line:** Use the `dotnet publish -f netcoreapp1.1 -c release` command. This creates a release (rather than a debug) version of your app.
 
-   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\release\netcoreapp1.1` subdirectory.
+   The resulting files are placed in a directory named `publish` that is in a subdirectory of your project's `.\bin\Release\netcoreapp1.1` subdirectory.
 
    **In Visual Studio 2017:** To publish from Visual Studio, do the following:
 
@@ -302,8 +302,8 @@ This indicates that, instead of using the entire `netcoreapp1.0` framework, whic
    Use the `dotnet publish` command for both target platforms as follows:
 
       ```console
-      dotnet publish -c release -r win10-x64
-      dotnet publish -c release -r osx.10.11-x64
+      dotnet publish -c Release -r win10-x64
+      dotnet publish -c Release -r osx.10.11-x64
       ```
 
    This creates a release (rather than a debug) version of your app for each target platform. The resulting files are placed in a subdirectory named `publish` that is in a subdirectory of your project's `.\bin\release\netstandard1.6\<runtime_identifier>` subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.

@@ -79,6 +79,18 @@ Another option is to edit the *PrimeService.Tests.csproj* file. Directly under t
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.
 
+The final solution layout is shown below:
+
+```
+/unit-testing-using-mstest
+    /PrimeService
+        Source Files
+        PrimeService.csproj
+    /PrimeService.Tests
+        PrimeService
+        PrimeServiceTests.csproj
+```
+
 ## Creating the first test
 
 Before building the library or the tests, execute [`dotnet restore`](../tools/dotnet-restore.md) in the *PrimeService.Tests* directory. This command restores all the necessary NuGet packages for each project.

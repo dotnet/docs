@@ -35,9 +35,9 @@ Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now impl
 ## Default compilation includes in .NET Core projects
 With the move to the *csproj* format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files. This means that you no longer need to specify these items in your project file. 
 
-The main reason for doing this is to reduce the clutter on your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed. 
+The main reason for doing this is to reduce the clutter in your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed. 
 
-The following table shows which element and which globs are both included and excluded in the SDK: 
+The following table shows which element and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are both included and excluded in the SDK: 
 
 | Element          	| Include glob                           	| Exclude glob                                     	            | Remove glob             	 |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
@@ -61,7 +61,7 @@ Setting this property to `false` will override implicit inclusion and the behavi
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
 ### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add globs file paths for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
+With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
 
 
 ## Additions

@@ -4,7 +4,7 @@ description: Unit Testing in .NET Core using dotnet test
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn
-ms.date: 002/02/2017
+ms.date: 003/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -199,9 +199,9 @@ Now, these tests all pass.
 You continue to iterate by adding more tests, more theories,
 and more code in the main library. You'll quickly end up
 with the
-[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
+[finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs)
 and the
-[complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/src/PrimeService/PrimeService.cs).
+[complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
 
 You've built a small library and a set of unit tests for that library.
 You've structured this solution so that adding new packages and tests

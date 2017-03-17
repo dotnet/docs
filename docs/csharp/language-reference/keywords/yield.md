@@ -36,7 +36,11 @@ When you use the `yield` keyword in a statement, you indicate that the method, o
   
  The following example shows the two forms of the `yield` statement.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```cs  
+yield return <expression>;  
+yield break;  
+```  
+  
 ## Remarks  
  You use a `yield return` statement to return each element one at a time.  
   
@@ -71,7 +75,14 @@ When you use the `yield` keyword in a statement, you indicate that the method, o
 ## Technical Implementation  
  The following code returns an `IEnumerable<string>` from an iterator method and then iterates through its elements.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```cs  
+IEnumerable<string> elements = MyIteratorMethod();  
+foreach (string element in elements)  
+{  
+   ...  
+}  
+```  
+  
  The call to `MyIteratorMethod` doesn't execute the body of the method. Instead the call returns an `IEnumerable<string>` into the `elements` variable.  
   
  On an iteration of the `foreach` loop, the <xref:System.Collections.IEnumerator.MoveNext%2A> method is called for `elements`. This call executes the body of `MyIteratorMethod` until the next `yield return` statement is reached. The expression returned by the `yield return` statement determines not only the value of the `element` variable for consumption by the loop body but also the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property of elements, which is an `IEnumerable<string>`.  

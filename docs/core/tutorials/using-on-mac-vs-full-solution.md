@@ -72,11 +72,11 @@ Unit tests provide automated software testing during your development and publis
 
 1. In the **New Project** dialog, select **Tests** from the **.NET Core** node. Select the **xUnit Test Project** followed by **Next**.
 
-   ![New Project dialog](./media/using-on-mac-vs-full-solution/vsmacfull05.png)
+   ![New Project dialog creating xUnit test project](./media/using-on-mac-vs-full-solution/vsmacfull05.png)
 
 1. Name the new project "TestLibrary" and select **Create**.
 
-   ![New Project dialog](./media/using-on-mac-vs-full-solution/vsmacfull06.png)
+   ![New Project dialog providing project name](./media/using-on-mac-vs-full-solution/vsmacfull06.png)
 
 1. In order for the test library to work with the `WordCount` class, add a reference to the `TextUtils` project. Right-click **Dependencies** under **TestLibrary** in the **Solution** sidebar. Select **Edit References** from the menu.
 

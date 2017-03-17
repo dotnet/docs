@@ -15,7 +15,7 @@ ms.assetid: 82ebe16d-5e1c-46cc-91e8-71974296429c
 
 You can deploy a .NET Core application either as a *framework-dependent deployment*, which includes your application binaries but depends on the presence of .NET Core on the target system, or as a *self-contained deployment*, which includes both your application and .NET Core binaries. For an overview of .NET Core application deployment, see [.NET Core Application Deployment](index.md).
 
-The following sections show how to use [.NET Core command-line interface tools](../tools.md) to create the following kinds of deployments:
+The following sections show how to use [.NET Core command-line interface tools](../tools/index.md) to create the following kinds of deployments:
 
 - A simple framework-dependent deployment
 - A framework-dependent deployment with third-party dependencies

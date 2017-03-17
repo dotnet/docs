@@ -1,6 +1,6 @@
 ---
 title: Prerequisites for .NET Core on Mac | Microsoft Docs
-description: Prerequisites for .NET Core on Mac
+description: Supported macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on macOS machines.
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
@@ -13,7 +13,7 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 
 # Prerequisites for .NET Core on Mac
 
-This article shows you the supported macOS versions and .NET Core dependencies that you need to develop, deploy, and run .NET Core applications on macOS machines. The supported OS versions and depdendencies shown below apply equally to all three ways of developing .NET Core apps on a Mac: via the [command-line with your favorite editor](tutorials/using-with-xplat-cli.md), with [Visual Studio Code (VS Code)](https://code.visualstudio.com/), and with [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/).
+This article shows you the supported macOS versions and .NET Core dependencies that you need to develop, deploy, and run .NET Core applications on macOS machines. The supported OS versions and depdendencies that follow apply to the three ways of developing .NET Core apps on a Mac: via the [command-line with your favorite editor](tutorials/using-with-xplat-cli.md), [Visual Studio Code (VS Code)](https://code.visualstudio.com/), and [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/).
 
 ## Supported macOS versions
 
@@ -22,13 +22,13 @@ This article shows you the supported macOS versions and .NET Core dependencies t
 * macOS 10.12 "Sierra"
 * macOS 10.11 "El Capitan"
 
-See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the full set of supported operating systems.
+See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the complete list of supported operating systems.
 
 ## .NET Core dependencies
 
-.NET Core requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](http://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a terminal prompt:
+.NET Core requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](http://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a Terminal (command) prompt:
 
-```terminal
+```Terminal
 brew update
 brew install openssl
 mkdir -p /usr/local/lib
@@ -36,7 +36,7 @@ ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
 ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 ```
 
-After installing OpenSSL, obtain the official [.NET Core SDK for Mac installer](https://go.microsoft.com/fwlink/?linkid=843444). .NET Core 1.1.1 is the latest version. For long term support versions and additional downloads, visit [.NET Downloads: All downloads](https://www.microsoft.com/net/download/core). If you have any problems with installation on macOS, consult [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md).
+After installing OpenSSL, obtain the official [.NET Core SDK for Mac installer](https://go.microsoft.com/fwlink/?linkid=843444). .NET Core 1.1.1 is the latest version. For long-term support versions and additional downloads, visit [.NET Downloads: All downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md).
 
 ## Visual Studio for Mac
 

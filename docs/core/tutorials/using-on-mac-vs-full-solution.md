@@ -15,7 +15,7 @@ ms.assetid: 6945bedf-5bf3-4955-8588-83fb87511b79
 
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a .NET Core solution that includes a reusable library and unit testing.
 
-This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter) before proceeding.
+This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter).
 
 > [!NOTE]
 > Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -34,11 +34,11 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 
-1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Double-click the icon to run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
+1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
 
 ## Building a library
 
-1. On the Welcome screen, select **New Project**. In the **New Project** dialog, under the **Multiplatform** node, select the **.NET Standard Library** template. Select **Next**.
+1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **Multiplatform** node, select the **.NET Standard Library** template. Select **Next**.
 
    ![New project dialog](./media/using-on-mac-vs-full-solution/vsmacfull01.png)
 
@@ -46,7 +46,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    ![New project dialog](./media/using-on-mac-vs-full-solution/vsmacfull02.png)
 
-1. In the **Solution** sidebar, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Right-click the file, select **Rename** from the menu, and rename the file to *WordCount.cs*. Double-click the file to open it. Replace the contents of the file with the following code:
+1. In the **Solution** sidebar, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Right-click the file, select **Rename** from the context menu, and rename the file to *WordCount.cs*. Open the file and replace the contents with the following code:
 
    [!code-csharp[Main](../../../samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter/TextUtils/WordCount.cs)]
 
@@ -60,7 +60,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 1. Select **Build > Build All** from the menu.
 
-   The solution builds. The build output panel shows that the build was successful.
+   The solution builds. The build output panel shows that the build is successful.
 
    ![Build output pane of the Errors panel displaying the Build successful message](./media/using-on-mac-vs-full-solution/vsmacfull04.png)
 
@@ -78,7 +78,7 @@ Unit tests provide automated software testing during your development and publis
 
    ![New Project dialog providing project name](./media/using-on-mac-vs-full-solution/vsmacfull06.png)
 
-1. In order for the test library to work with the `WordCount` class, add a reference to the `TextUtils` project. Right-click **Dependencies** under **TestLibrary** in the **Solution** sidebar. Select **Edit References** from the menu.
+1. In order for the test library to work with the `WordCount` class, add a reference to the `TextUtils` project. In the **Solution** sidebar, right-click **Dependencies** under **TestLibrary**. Select **Edit References** from the context menu.
 
 1. In the **Edit References** dialog, select the **TextUtils** project on the **Projects** tab. Select **OK**.
 
@@ -86,7 +86,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. In the **TestLibrary** project, rename the *UnitTest1.cs* file to *TextUtilsTests.cs*.
 
-1. Double-click the file to open it in the main window. Replace the code with the following:
+1. Open the file and replace the code with the following:
 
    ```cs
    using Xunit;
@@ -108,21 +108,21 @@ Unit tests provide automated software testing during your development and publis
    }
    ```
 
-   The contents of the file are seen below. Pay attention to the `Assert.NotEquals` statement.
+   The following image shows the IDE with the unit test code in place. Pay attention to the `Assert.NotEquals` statement.
 
-   ![Initial unit test to check GetWordCount. The unit test fails on purpose because it asserts that two instances aren't what the GetWordCount method returns, when that's exactly what it is going to return.](./media/using-on-mac-vs-full-solution/vsmacfull08.png)
+   ![Initial unit test to check GetWordCount in the IDE main window](./media/using-on-mac-vs-full-solution/vsmacfull08.png)
 
-   In TDD design, it's important to make the test fail once first to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
+   Using TDD, it's important to make a new test fail once to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
 
-1. Currently, Visual Studio for Mac doesn't integrate xUnit tests into its built-in test runner, so run xUnit tests in the console. Right-click the `TestLibrary` project, and choose **Tools > Open in Terminal** from the menu. At the command prompt, execute `dotnet test`.
+1. Currently, Visual Studio for Mac doesn't integrate xUnit tests into its built-in test runner, so run xUnit tests in the console. Right-click the `TestLibrary` project, and choose **Tools > Open in Terminal** from the context menu. At the command prompt, execute `dotnet test`.
    
    The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good. Leave the console window open, as you prepare to modify the test for its final version in the next step.
 
    ![Test failure in the console window. Total tests: 1 Passed: 0 Failed: 1. Test run failed.](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
 
-1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual(2, wordCount)` to `Assert.Equal(2, wordCount)`. Save the file by using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, **File > Save** from the menu, or right-clicking on the file's tab and selecting **Save** from the menu.
+1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file by using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, **File > Save** from the menu, or right-clicking on the file's tab and selecting **Save** from the context menu.
 
-   You expect that with the `searchWord` and `inputString` provided that "Jack" returns two instances with "Jack jack" passed into `GetWordCount`. In the console window, execute `dotnet test` again. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
+   You expect that the `searchWord` "Jack" returns two instances with `inputString` "Jack jack" passed into `GetWordCount`. In the console window, execute `dotnet test` again. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
 
    ![Test pass in the console window. Total tests: 1 Passed: 1 Failed: 0. Test run passed.](./media/using-on-mac-vs-full-solution/vsmacfull10.png)
 
@@ -142,7 +142,7 @@ Unit tests provide automated software testing during your development and publis
    }
    ```
 
-   The `CountInstancesCorrectly` checks that the `GetWordCount` method counts correctly. The `InlineData` provides a count, a search word, and an input string to check. The test method runs once for each line of data. Note once again that you're asserting a failure first by using `Assert.NotEqual`, even when you know that the counts in the data are correct and that the values will match the counts returned by the `GetWordCount` method. Going through the step of failing the test on purpose might seem like a waste of time, but checking the logic of the test by failing it first is an important check on the logic of your tests.
+   The `CountInstancesCorrectly` checks that the `GetWordCount` method counts correctly. The `InlineData` provides a count, a search word, and an input string to check. The test method runs once for each line of data. Note once again that you're asserting a failure first by using `Assert.NotEqual`, even when you know that the counts in the data are correct and that the values will match the counts returned by the `GetWordCount` method. Performing the step of failing the test on purpose might seem like a waste of time at first, but checking the logic of the test by failing it first is an important check on the logic of your tests. Eventually, you'll probably come across a test method that passes when you expect it to fail and find a bug in the logic of the test. It's worth the effort to take this step every time you create a test method.
    
 1. Save the file and execute `dotnet test` in the console window. The casing test passes but the three count tests fail. This is exactly what you expect to happen.
 
@@ -158,7 +158,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. In the **Solutions** sidebar, right-click the **Dependencies** node of the new **WordCounterApp** project. In the **Edit References** dialog, check **TextUtils** and select **OK**.
 
-1. Open the *Program.cs* file by double-clicking it under **WordCounterApp** in the sidebar. Replace the code of the file with the following:
+1. Open the *Program.cs* file. Replace the code with the following:
 
    [!code-csharp[Main](../../../samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter/WordCounterApp/Program.cs)]
 
@@ -166,15 +166,15 @@ Unit tests provide automated software testing during your development and publis
 
    ![Project Options window](./media/using-on-mac-vs-full-solution/vsmacfull13.png)
 
-1. Because the preview of Visual Studio for Mac cannot currently run the tests when the solution is run, you run the console app directly. Right-click on the `WordCounterApp` project and select **Run item** from the menu. If you attempt to run the app with the Play button, the test runner and app fail to run. For more information on the status of the work on this issue, see [xunit/xamarinstudio.xunit (#60)](https://github.com/xunit/xamarinstudio.xunit/issues/60). When you run the app, enter values for the search word and input string. The app indicates the number of times the search word appears in the string.
+1. Because the preview of Visual Studio for Mac cannot currently run the tests when the solution is run, you run the console app directly. Right-click on the `WordCounterApp` project and select **Run item** from the context menu. If you attempt to run the app with the Play button, the test runner and app fail to run. For more information on the status of the work on this issue, see [xunit/xamarinstudio.xunit (#60)](https://github.com/xunit/xamarinstudio.xunit/issues/60). When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
 
    ![Console window showing the word olives searched in the string, 'Iro ate olives by the lake, and the olives were wonderful.' The app responds, 'The search word olives appears 2 times.'](./media/using-on-mac-vs-full-solution/vsmacfull14.png)
 
-1. The last feature to explore here is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23. Alternatively, select anywhere on the line of code and select **Run > Toggle Breakpoint** from the menu.
+1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run > Toggle Breakpoint** from the menu.
 
    ![Breakpoint is set on line 23, the Console.WriteLine statement](./media/using-on-mac-vs-full-solution/vsmacfull15.png)
 
-1. Right-click the `WordCounterApp` project. Select **Start Debugging item** from the menu. When the app runs, enter the search word "cat" and "The dog chased the cat, but the cat escaped." for the string to search. When the `Console.WriteLine` statement is reached, program execution halts before the statement is executed. In the **Locals** tab, you can see the `searchWord`, `inputString`, `wordCount`, and `pluralChar` values.
+1. Right-click the `WordCounterApp` project. Select **Start Debugging item** from the context menu. When the app runs, enter the search word "cat" and "The dog chased the cat, but the cat escaped." for the string to search. When the `Console.WriteLine` statement is reached, program execution halts before the statement is executed. In the **Locals** tab, you can see the `searchWord`, `inputString`, `wordCount`, and `pluralChar` values.
 
    ![Program execution stopped at the Console.WriteLine statement with the Local window showing the values immediately before the Console.WriteLine statement is executed.](./media/using-on-mac-vs-full-solution/vsmacfull16.png)
 
@@ -190,5 +190,5 @@ Unit tests provide automated software testing during your development and publis
 
 ## Next steps
 
-* Explore additional features of Visual Studio for Mac at [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/) at the Xamarin Developer's website.
+* Explore additional features of Visual Studio for Mac in an [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/) at the Xamarin Developer's website.
 * For a more in depth review of Visual Studio for Mac's features, refer to the [Xamarin Studio Tour](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/ide-tour/) guide.

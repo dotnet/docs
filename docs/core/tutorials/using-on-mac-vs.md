@@ -32,7 +32,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
 
-1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Double-click the icon to run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
+1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
 
 ## Creating a project
 
@@ -44,7 +44,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    ![New project templates list](./media/using-on-mac-vs/vsmac2.png)
 
-1. Type "HelloWorld" for the **Project Name**. Optionally, specify a different parent folder for the new project. Select **Create**.
+1. Type "HelloWorld" for the **Project Name**. Select **Create**.
 
    ![Configure your new Console Application dialog](./media/using-on-mac-vs/vsmac3.png)
 
@@ -60,4 +60,4 @@ Run the app in Debug mode using <kbd>F5</kbd> or in Release mode using <kbd>CTRL
 
 ## Next step
 
-The [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md) topic will show you how to build a complete .NET Core solution that includes reusable libraries, unit testing, and third-party libraries.
+The [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md) topic shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.

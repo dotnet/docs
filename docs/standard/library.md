@@ -4,7 +4,7 @@ description: Learn what is .NET Standard, its versions and the .NET platforms su
 keywords: .NET Standard, PCL, .NET
 author: richlander
 ms.author: mairaw
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -30,15 +30,11 @@ The following table lists all versions of .NET Standard and the platforms suppor
 
 [!INCLUDE [net-standard-table](../includes/net-standard-table.md)]
 
-- The columns represent .NET Standard versions. Each header cell is a link to a document that shows which APIs got added in that version of .NET Standard.
-- The rows represent the different .NET platforms.
-- The version number in each cell indicates the *minimum* version of the platform you'll need to implement that .NET Standard version.
-
 To find the highest version of .NET Standard that you can target, do the following:
-1. Find the row that indicate the platform you want to run on.
+1. Find the row that indicate the .NET platform you want to run on.
 2. Find the column in that row that indicates your version starting from right to left.
-3. The column header indicates the .NET Standard version that supports your target (and any lower .NET Standard versions will also support it).
-4. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the common version among them, which would be the smaller version. For example, if you want to run on .NET Framework 4.5 and .NET Core 1.0, the highest .NET Standard version you can use is .NET Standard 1.1.
+3. The column header indicates the .NET Standard version that your target supports (and any lower .NET Standard versions will also support it).
+4. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.5 and .NET Core 1.0, the highest .NET Standard version you can use is .NET Standard 1.1.
 
 ### Which .NET Standard version to target
 

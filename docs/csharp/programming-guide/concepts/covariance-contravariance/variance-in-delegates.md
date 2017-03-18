@@ -142,24 +142,45 @@ public static void Test()
   
  You can declare a generic type parameter covariant in a generic delegate by using the `out` keyword. The covariant type can be used only as a method return type and not as a type of method arguments. The following code example shows how to declare a covariant generic delegate.  
   
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
+```cs  
+public delegate R DCovariant<out R>();  
+```  
+  
  You can declare a generic type parameter contravariant in a generic delegate by using the `in` keyword. The contravariant type can be used only as a type of method arguments and not as a method return type. The following code example shows how to declare a contravariant generic delegate.  
   
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```cs  
+public delegate void DContravariant<in A>(A a);  
+```  
+  
 > [!IMPORTANT]
 >  `ref` and `out` parameters in C# can't be marked as variant.  
   
  It is also possible to support both variance and covariance in the same delegate, but for different type parameters. This is shown in the following example.  
   
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
+```cs  
+public delegate R DVariant<in A, out R>(A a);  
+```  
+  
 ### Instantiating and Invoking Variant Generic Delegates  
  You can instantiate and invoke variant delegates just as you instantiate and invoke invariant delegates. In the following example, the delegate is instantiated by a lambda expression.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+```cs  
+DVariant<String, String> dvariant = (String str) => str + " ";  
+dvariant("test");  
+```  
+  
 ### Combining Variant Generic Delegates  
  You should not combine variant delegates. The <xref:System.Delegate.Combine%2A> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine%2A> method or by using the `+` operator, as shown in the following code example.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+```cs  
+Action<object> actObj = x => Console.WriteLine("object: {0}", x);  
+Action<string> actStr = x => Console.WriteLine("string: {0}", x);  
+// All of the following statements throw exceptions at run time.  
+// Action<string> actCombine = actStr + actObj;  
+// actStr += actObj;  
+// Delegate.Combine(actStr, actObj);  
+```  
+  
 ## Variance in Generic Type Parameters for Value and Reference Types  
  Variance for generic type parameters is supported for reference types only. For example, `DVariant<int>` can't be implicitly converted to `DVariant<Object>` or `DVariant<long>`, because integer is a value type.  
   

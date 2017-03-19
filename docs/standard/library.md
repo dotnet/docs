@@ -5,7 +5,8 @@ keywords: .NET, .NET Standard, .NET Platform, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: articlems.prod: .net
+ms.topic: article
+ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
@@ -134,8 +135,7 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 | 259         | 1.0           | .NET Framework 4.5, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8
 
 Note:
-    Full .NET Profile Subset name is Profile + <Profile Number from the table>.
-    E.g.: Profile7, Profile259, etc...
+    .NET Profile Subset full name is Profile + \<PCL Profile Number from the table\>. For example: Profile7, Profile259, etc...
 
 ## Targeting .NET Standard Library
 

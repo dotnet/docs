@@ -5,8 +5,7 @@ keywords: .NET, .NET Standard, .NET Platform, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
+ms.topic: articlems.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
@@ -32,7 +31,7 @@ For example:
 
 You can see the complete set of .NET runtimes that support the .NET Standard Library.
 
-| Platform Name              | Alias       |        |        |        |        |        |        |        | vNext* |
+| Platform Name              | Alias       |        |        |        |        |        |        |        | vNext^ |
 |:---------------------------|:------------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 | .NET Standard              | netstandard | 1.0    | 1.1    | 1.2    | 1.3    | 1.4    | 1.5    | 1.6    | 2.0    |
 | .NET Core                  | netcoreapp  | &rarr; | &rarr; | &rarr; | &rarr; | &rarr; | &rarr; | 1.0    | 2.0    |
@@ -45,7 +44,7 @@ You can see the complete set of .NET runtimes that support the .NET Standard Lib
 | Windows Phone              | wpa         | &rarr; | &rarr; | 8.1    |        |        |        |        |        |
 | Windows Phone Silverlight  | wp          | 8.0    |        |        |        |        |        |        |        |
 
-*Note:
+^Note:
  - .NET Standard 2.0 is still in development.
  - To learn more about [.NET Standard 2.0, follow here](https://github.com/dotnet/standard/blob/master/docs/faq.md).
 

@@ -28,7 +28,7 @@ ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 
 Each specific feature is implemented as a command. In order to use the feature, the command is specified after `dotnet`, such as [`dotnet build`](dotnet-build.md). All of the arguments following the command are its own arguments.
 
-The only time `dotnet` is used as a command on its own is to run portable apps. Specify a portable application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
+The only time `dotnet` is used as a command on its own is to run [framework-dependent apps](../app-types.md). Specify an application DLL after the `dotnet` verb to execute the application (for example, `dotnet myapp.dll`).
 
 ## Options
 
@@ -72,7 +72,7 @@ Command | Function
 [dotnet-msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.
 [dotnet-new](dotnet-new.md) | Initializes a C# or F# project for a given template.
 [dotnet-pack](dotnet-pack.md) | Creates a NuGet package of your code.
-[dotnet-publish](dotnet-publish.md) | Publishes a .NET portable or self-contained application.
+[dotnet-publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained application.
 [dotnet-restore](dotnet-restore.md) | Restores the dependencies for a given application.
 [dotnet-run](dotnet-run.md) | Runs the application from source.
 [dotnet-sln](dotnet-sln.md) | Options to add, remove, and list projects in a solution file.
@@ -115,7 +115,7 @@ Build a project and its dependencies in a given directory:
 
 `dotnet build`
 
-Run a portable app named `myapp.dll`:
+Run a framework-dependent app named `myapp.dll`:
 
 `dotnet myapp.dll`
 

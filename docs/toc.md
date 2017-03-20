@@ -142,9 +142,9 @@
 ## [Changes in CLI overview](core/tools/cli-msbuild-architecture.md)
 ### [Dependency management](core/tools/dependencies.md)
 ### [Additions to the csproj format](core/tools/csproj.md)
-### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ## Migration
 ### [Migration to csproj format](core/migration/index.md)
+### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
 ## [Application Deployment](core/deploying/index.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)

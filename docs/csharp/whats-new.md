@@ -33,7 +33,7 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 
   
 ## Previous Versions
-The following lists key features that were introduced in previous versions of the C# language.  
+The following lists key features that were introduced in previous versions of the C# language and Visual Studio .NET.  
   
  * Visual Studio .NET 2013: 
      - This version of Visual Studio included bug fixes, performance improvements, and technology previews of .NET Compiler Platform (“Roslyn”) which became the [.NET Compiler Platform SDK](roslyn/index.md).

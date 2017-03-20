@@ -1,6 +1,6 @@
 ---
 title: "ulong (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -32,6 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ulong (C# Reference)
+
 The `ulong` keyword denotes an integral type that stores values according to the size and range shown in the following table.  
   
 |Type|Range|Size|.NET Framework type|  
@@ -39,44 +40,43 @@ The `ulong` keyword denotes an integral type that stores values according to the
 |`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|<xref:System.UInt64?displayProperty=fullName>|  
   
 ## Literals  
- You can declare and initialize a `ulong` variable like this example:  
+
+You can declare and initialize a `ulong` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it.  If the integer literal is outside the range of `ulong` (that is, if it is less than <xref:System.UInt64.MinValue?displayProperty=fullName> or greater than <xref:System.UInt64.MaxValue?displayProperty=fullName>, a compilation error occurs. 
+
+In the following example, integers equal to 7,934,076,125 that are represented as decimal, hexadecimal, and binary literals are assigned to `ulong` values.  
   
-```  
-  
-ulong uLong = 9223372036854775808;  
-```  
-  
- When an integer literal has no suffix, its type is the first of these types in which its value can be represented: [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), `ulong`. In the example above, it is of the type `ulong`.  
-  
- You can also use suffixes to specify the type of the literal according to the following rules:  
-  
--   If you use L or l, the type of the literal integer will be either [long](../../../csharp/language-reference/keywords/long.md) or `ulong` according to its size.  
-  
-    > [!NOTE]
-    >  You can use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.  
-  
--   If you use `U` or `u`, the type of the literal integer will be either [uint](../../../csharp/language-reference/keywords/uint.md) or `ulong` according to its size.  
-  
--   If you use UL, ul, Ul, uL, LU, lu, Lu, or lU, the type of the literal integer will be `ulong`.  
-  
-     For example, the output of the following three statements will be the system type `UInt64`, which corresponds to the alias `ulong`:  
-  
-    ```  
-    Console.WriteLine(9223372036854775808L.GetType());  
-    Console.WriteLine(123UL.GetType());  
-    Console.WriteLine((123UL + 456).GetType());  
-    ```  
+[!code-cs[ulong](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ULong)]  
+
+> [!NOTE] 
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
+
+Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+
+[!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
+ 
+ Integer literals can also include a suffix that denotes the type. The suffix `UL` or `ul` unambiguously identifies a numeric literal as a `ulong` value. The `L` suffix denotes a `ulong` if the literal value exceeds <xref:System.Int64.MaxValue?displayProperty=fullName>. And the `U` or `u` suffix denotes a `ulong` if the literal value exceeds <xref:System.UInt32.MaxValue?displayProperty=fullName>. The following example uses the `ul` suffix to denote a long integer:
+ 
+[!code-cs[ulsuffix](../../../../samples/snippets/csharp/language-reference/keywords/numeric-suffixes.cs#2)]
+
+If an integer literal has no suffix, its type is the first of the following types in which its value can be represented: 
+
+1. [int](int.md)
+2. [uint](../../../csharp/language-reference/keywords/uint.md)
+3. [long](long.md)
+4. `ulong`
+
+## Compiler overload resolution
   
  A common use of the suffix is with calling overloaded methods. Consider, for example, the following overloaded methods that use `ulong` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```  
+```cs  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(ulong l) {}  
 ```  
   
  Using a suffix with the `ulong` parameter guarantees that the correct type is called, for example:  
   
-```  
+```cs  
 SampleMethod(5);    // Calling the method with the int parameter  
 SampleMethod(5UL);  // Calling the method with the ulong parameter  
 ```  
@@ -86,7 +86,7 @@ SampleMethod(5UL);  // Calling the method with the ulong parameter
   
  There is no implicit conversion from `ulong` to any integral type. For example, the following statement will produce a compilation error without an explicit cast:  
   
-```  
+```cs  
 long long1 = 8UL;   // Error: no implicit conversion from ulong  
 ```  
   
@@ -94,7 +94,7 @@ long long1 = 8UL;   // Error: no implicit conversion from ulong
   
  Also, there is no implicit conversion from floating-point types to `ulong`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```  
+```cs  
 // Error -- no implicit conversion from double:  
 ulong x = 3.0;  
 // OK -- explicit conversion:  

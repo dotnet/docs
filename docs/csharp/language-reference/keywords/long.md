@@ -1,6 +1,6 @@
 ---
 title: "long (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -32,60 +32,73 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # long (C# Reference)
-The `long` keyword denotes an integral type that stores values according to the size and range shown in the following table.  
+
+`long` denotes an integral type that stores values according to the size and range shown in the following table.  
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
 |`long`|–9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|<xref:System.Int64?displayProperty=fullName>|  
   
-## Literals  
- You can declare and initialize a `long` variable like this example:  
+## Literals 
+
+You can declare and initialize a `long` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. 
+
+In the following example, integers equal to 4,294,967,296 that are represented as decimal, hexadecimal, and binary literals are assigned to `long` values.  
   
+[!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Long)]  
+
+> [!NOTE] 
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
+
+Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+
+[!code-cs[long](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#LongS)]  
+ 
+ Integer literals can also include a suffix that denotes the type. The suffix `L` denotes a `long`. The following example uses the `L` suffix to denote a long integer:
+ 
+```cs
+long value = 4294967296L;  
 ```  
+
+> [!NOTE]
+>  You can also use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.  
   
-long long1 = 4294967296;  
-```  
+ When you use the suffix `L`, the type of the literal integer is determined to be either `long` or [ulong](../../../csharp/language-reference/keywords/ulong.md), depending on its size. In this case, it is `long` because it less than the range of [ulong](../../../csharp/language-reference/keywords/ulong.md).  
   
- When an integer literal has no suffix, its type is the first of these types in which its value can be represented: [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), `long`, [ulong](../../../csharp/language-reference/keywords/ulong.md). In the preceding example, it is of the type `long` because it exceeds the range of [uint](../../../csharp/language-reference/keywords/uint.md) (see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md) for the storage sizes of integral types).  
+ A common use of the suffix is to call overloaded methods. For example, the following overloaded methods have parameters of type `long` and [int](../../../csharp/language-reference/keywords/int.md):  
   
- You can also use the suffix L with the `long` type like this:  
-  
-```  
-  
-long long2 = 4294967296L;  
-```  
-  
- When you use the suffix L, the type of the literal integer is determined to be either `long` or [ulong](../../../csharp/language-reference/keywords/ulong.md) according to its size. In the case it is `long` because it less than the range of [ulong](../../../csharp/language-reference/keywords/ulong.md).  
-  
- A common use of the suffix is with calling overloaded methods. Consider, for example, the following overloaded methods that use `long` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
-  
-```  
+```cs
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(long l) {}  
 ```  
   
- Using the suffix L guarantees that the correct type is called, for example:  
+ The `L` suffix guarantees that the correct overload is called:  
   
+```cs  
+SampleMethod(5);    // Calls the method with the int parameter  
+SampleMethod(5L);   // Calls the method with the long parameter  
 ```  
-SampleMethod(5);    // Calling the method with the int parameter  
-SampleMethod(5L);   // Calling the method with the long parameter  
-```  
+If an integer literal has no suffix, its type is the first of the following types in which its value can be represented: 
+
+1. [int](int.md)
+2. [uint](../../../csharp/language-reference/keywords/uint.md)
+3. `long`
+4. [ulong](../../../csharp/language-reference/keywords/ulong.md) 
+
+The literal 4294967296 in the previous examples is of type `long`, because it exceeds the range of [uint](../../../csharp/language-reference/keywords/uint.md) (see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md) for the storage sizes of integral types).  
   
- You can use the `long` type with other numeric integral types in the same expression, in which case the expression is evaluated as `long` (or [bool](../../../csharp/language-reference/keywords/bool.md) in the case of relational or Boolean expressions). For example, the following expression evaluates as `long`:  
+ If you use the `long` type with other integral types in the same expression, the expression is evaluated as `long` (or [bool](../../../csharp/language-reference/keywords/bool.md) in the case of relational or Boolean expressions). For example, the following expression evaluates as `long`:  
   
-```  
+```cs  
 898L + 88  
 ```  
-  
-> [!NOTE]
->  You can also use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.  
   
  For information on arithmetic expressions with mixed floating-point types and integral types, see [float](../../../csharp/language-reference/keywords/float.md) and [double](../../../csharp/language-reference/keywords/double.md).  
   
 ## Conversions  
  There is a predefined implicit conversion from `long` to [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). Otherwise a cast must be used. For example, the following statement will produce a compilation error without an explicit cast:  
   
-```  
+```cs  
 int x = 8L;        // Error: no implicit conversion from long to int  
 int x = (int)8L;   // OK: explicit conversion to int  
 ```  
@@ -94,9 +107,8 @@ int x = (int)8L;   // OK: explicit conversion to int
   
  Notice also that there is no implicit conversion from floating-point types to `long`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```  
-  
-      long x = 3.0;         // Error: no implicit conversion from double  
+```cs  
+long x = 3.0;         // Error: no implicit conversion from double  
 long y = (long)3.0;   // OK: explicit conversion  
 ```  
   

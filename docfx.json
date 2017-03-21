@@ -47,7 +47,7 @@
     "overwrite": "apidoc/*.md",
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dotnet/toc.json",
+      "breadcrumb_path": "/dotnet-internal/toc.json",
       "_displayLangs": [
         "csharp"
       ],
@@ -60,10 +60,10 @@
     },
     "fileMetadata": {
       "ms.prod": {
-        "api_ref/**.yml": ".net"
+        "api/**.yml": ".net"
       },
       "ms.topic": {
-        "api_ref/**.yml": "managed-reference"
+        "api/**.yml": "managed-reference"
       }
     },
     "dest": "_site",

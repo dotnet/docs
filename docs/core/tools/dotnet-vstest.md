@@ -70,21 +70,21 @@ Prints out a short help for the command.
 
 Specify a logger for test results.  
       
-To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
+  To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
 
-```
-/logger:TfsPublisher;
-    Collection=<team project collection url>;
-    BuildName=<build name>;
-    TeamProject=<team project name>
-    [;Platform=<Defaults to "Any CPU">]
-    [;Flavor=<Defaults to "Debug">]
-    [;RunTitle=<title>]
-```
+  ```
+  /logger:TfsPublisher;
+      Collection=<team project collection url>;
+      BuildName=<build name>;
+      TeamProject=<team project name>
+      [;Platform=<Defaults to "Any CPU">]
+      [;Flavor=<Defaults to "Debug">]
+      [;RunTitle=<title>]
+  ```
 
-To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
+  To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
 
-`/logger:trx [;LogFileName=<Defaults to unique file name>]` 
+  `/logger:trx [;LogFileName=<Defaults to unique file name>]` 
 
 `-lt|--ListTests|/lt|/ListTests:<File Name>`
 

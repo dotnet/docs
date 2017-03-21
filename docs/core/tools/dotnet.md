@@ -4,13 +4,14 @@ description: Learn about the dotnet command (the generic driver for the .NET Cor
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
+
 # dotnet command
 
 ## Name
@@ -119,5 +120,3 @@ Specifies the location of the servicing index to use by the shared host when loa
 `DOTNET_CLI_TELEMETRY_OPTOUT`
 
 Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. `true` to opt-out of the telemetry feature (values true, 1 or yes accepted); otherwise, `false` (values false, 0 or no accepted). If not set, it defaults to `false`, that is, the telemetry feature is on.
-
-[dotnet-vstest](dotnet-vstest.md)

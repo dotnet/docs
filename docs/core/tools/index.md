@@ -29,27 +29,35 @@ By default, the CLI installs in a side-by-side (SxS) manner, so multiple version
 
 The following commands are installed by default:
 
-* [dotnet add package](dotnet-add-package.md)
-* [dotnet add reference](dotnet-add-reference.md)
-* [dotnet build](dotnet-build.md)
-* [dotnet clean](dotnet-clean.md)
+### Basic commands
+
+* [new](dotnet-new.md)
+* [restore](dotnet-restore.md)
+* [build](dotnet-build.md)
+* [publish](dotnet-publish.md)
+* [run](dotnet-run.md)
+* [test](dotnet-test.md)
+* [vstest](dotnet-vstest.md)
+* [pack](dotnet-pack.md)
+* [migrate](dotnet-migrate.md)
+* [clean](dotnet-clean.md)
+* [sln](dotnet-sln.md)
+
+### Project modification commands
+
+* [add package](dotnet-add-package.md)
+* [add reference](dotnet-add-reference.md)
+* [remove package](dotnet-remove-package.md)
+* [remove reference](dotnet-remove-reference.md)
+* [list reference](dotnet-list-reference.md)
+
+### Advanced commands
+
+* [nuget delete](dotnet-nuget-delete.md)
+* [nuget locals](dotnet-nuget-locals.md)
+* [nuget push](dotnet-nuget-push.md)
+* [msbuild](dotnet-msbuild.md)
 * [dotnet install script](dotnet-install-script.md)
-* [dotnet list reference](dotnet-list-reference.md)
-* [dotnet migrate](dotnet-migrate.md)
-* [dotnet msbuild](dotnet-msbuild.md)
-* [dotnet new](dotnet-new.md)
-* [dotnet nuget delete](dotnet-nuget-delete.md)
-* [dotnet nuget locals](dotnet-nuget-locals.md)
-* [dotnet nuget push](dotnet-nuget-push.md)
-* [dotnet pack](dotnet-pack.md)
-* [dotnet publish](dotnet-publish.md)
-* [dotnet remove package](dotnet-remove-package.md)
-* [dotnet remove reference](dotnet-remove-reference.md)
-* [dotnet restore](dotnet-restore.md)
-* [dotnet run](dotnet-run.md)
-* [dotnet sln](dotnet-sln.md)
-* [dotnet test](dotnet-test.md)
-* [dotnet vstest](dotnet-vstest.md)
 
 The CLI adopts an extensibility model that allows you to specify additional tools for your projects. For more information, see the [.NET Core CLI extensibility model](extensibility.md) topic.
 

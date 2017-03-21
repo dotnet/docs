@@ -28,9 +28,9 @@ If you want to introduce new types into a console app, you can do so by adding f
 |__Program.cs
 ```
 
-However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory. When you're building a larger app with many data types and multiple layers, you should organize the project using folders, which will make the project easier to navigate and maintain.
+However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
-To organize the project shown above, create a new folder and name it *Models* to hold the types.
+To organize the project shown above, create a new folder and name it *Models* to hold the type files.
 
 ```
 /MyProject
@@ -41,7 +41,7 @@ To organize the project shown above, create a new folder and name it *Models* to
 |__Program.cs
 ```
 
-Place the types into the `Models` folder:
+Place the type files into the `Models` folder:
 
 ```
 /MyProject
@@ -52,13 +52,11 @@ Place the types into the `Models` folder:
 |__Program.cs
 ```
 
-Organize type files into folders using a logical structure for the app. Consume the types across the app by using a common namespace, which is not generally recommended, or with different namespaces and exposing the types with `using` statements, which is the preferred approach.
-
 ## Organizing and testing using the NewTypes Pets Sample
 
 ### Building the sample
 
-For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. The sample contains two new types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder, which helps organize the project.
+For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. The sample contains two new types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder, which helps to organize the project.
 
 Create the following folder structure with file content indicated below:
 
@@ -112,15 +110,17 @@ Optional exercise: You can add a new pet type, such as a `Bird`, extending this 
 
 ### Testing the sample
 
-The `NewTypes` project is in place, and you have organized it well by keeping the pets-related types in a folder. Next, create your test project and start writing tests with the [xUnit](https://xunit.github.io/) test framework. Unit testing allows you to automatically check the bevahior of your pet types to confirm that they're operating properly.
+The `NewTypes` project is in place, and you've organized it by keeping the pets-related types in a folder. Next, create your test project and start writing tests with the [xUnit](https://xunit.github.io/) test framework. Unit testing allows you to automatically check the bevahior of your pet types to confirm that they're operating properly.
 
-Create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This procuduces two files: *NewTypesTests.csproj* and *UnitTest1.cs*. To add a project reference to the `NewTypes` project, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+Create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This procuduces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
+
+To add a project reference to the `NewTypes` project, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```
 dotnet add reference ../../src/NewTypes/NewTypes.csproj
 ```
 
-You also have the option of manually adding the project reference with an `<ItemGroup>` node:
+You also have the option of manually adding the project reference with an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
 
 ```xml
 <ItemGroup>
@@ -170,9 +170,9 @@ public class PetTests
 
 Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
 
-Note that although you expect the `expected` and `actual` values are equal that the initial assertions are that they are *not equal* with `Assert.NotEqual` checks. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, then you can adjust the assertions to allow them to pass.
+Note that although you expect the `expected` and `actual` values are equal that the initial assertions are that they are *not equal* with `Assert.NotEqual` checks. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you can adjust the assertions to allow them to pass.
 
-The following shows the complete project structure and contents of the test project's files:
+The following shows the complete project structure:
 
 ```
 /NewTypes
@@ -263,3 +263,5 @@ Test execution time: 1.6634 Seconds
 ```
 
 Testing passes. The pet types methods return the correct values when talking to the owner.
+
+You've learned techniques for organizing and testing projects using xUnit. Go forward with these techniques applying them in your own projects. *Happy coding!*

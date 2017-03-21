@@ -1,0 +1,1399 @@
+<Type Name="Strings" FullName="Microsoft.VisualBasic.Strings">
+  <TypeSignature Language="C#" Value="public sealed class Strings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Strings extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Asc">
+      <MemberSignature Language="C#" Value="public static int Asc (char String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Asc(char String) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="String">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Asc">
+      <MemberSignature Language="C#" Value="public static int Asc (string String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Asc(string String) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="String">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AscW">
+      <MemberSignature Language="C#" Value="public static int AscW (char String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 AscW(char String) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="String">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AscW">
+      <MemberSignature Language="C#" Value="public static int AscW (string String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 AscW(string String) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="String">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chr">
+      <MemberSignature Language="C#" Value="public static char Chr (int CharCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char Chr(int32 CharCode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CharCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="CharCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChrW">
+      <MemberSignature Language="C#" Value="public static char ChrW (int CharCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char ChrW(int32 CharCode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CharCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="CharCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public static string[] Filter (object[] Source, string Match, bool Include = true, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[] Filter(object[] Source, string Match, bool Include, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object[]" />
+        <Parameter Name="Match" Type="System.String" />
+        <Parameter Name="Include" Type="System.Boolean" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Source">To be added.</param>
+        <param name="Match">To be added.</param>
+        <param name="Include">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public static string[] Filter (string[] Source, string Match, bool Include = true, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[] Filter(string[] Source, string Match, bool Include, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String[]" />
+        <Parameter Name="Match" Type="System.String" />
+        <Parameter Name="Include" Type="System.Boolean" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Source">To be added.</param>
+        <param name="Match">To be added.</param>
+        <param name="Include">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public static string Format (object Expression, string Style = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Format(object Expression, string Style) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="Style" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="Style">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatCurrency">
+      <MemberSignature Language="C#" Value="public static string FormatCurrency (object Expression, int NumDigitsAfterDecimal = -1, Microsoft.VisualBasic.TriState IncludeLeadingDigit = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState UseParensForNegativeNumbers = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState GroupDigits = Microsoft.VisualBasic.TriState.UseDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatCurrency(object Expression, int32 NumDigitsAfterDecimal, valuetype Microsoft.VisualBasic.TriState IncludeLeadingDigit, valuetype Microsoft.VisualBasic.TriState UseParensForNegativeNumbers, valuetype Microsoft.VisualBasic.TriState GroupDigits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="NumDigitsAfterDecimal">To be added.</param>
+        <param name="IncludeLeadingDigit">To be added.</param>
+        <param name="UseParensForNegativeNumbers">To be added.</param>
+        <param name="GroupDigits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDateTime">
+      <MemberSignature Language="C#" Value="public static string FormatDateTime (DateTime Expression, Microsoft.VisualBasic.DateFormat NamedFormat = Microsoft.VisualBasic.DateFormat.GeneralDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatDateTime(valuetype System.DateTime Expression, valuetype Microsoft.VisualBasic.DateFormat NamedFormat) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.DateTime" />
+        <Parameter Name="NamedFormat" Type="Microsoft.VisualBasic.DateFormat" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="NamedFormat">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatNumber">
+      <MemberSignature Language="C#" Value="public static string FormatNumber (object Expression, int NumDigitsAfterDecimal = -1, Microsoft.VisualBasic.TriState IncludeLeadingDigit = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState UseParensForNegativeNumbers = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState GroupDigits = Microsoft.VisualBasic.TriState.UseDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatNumber(object Expression, int32 NumDigitsAfterDecimal, valuetype Microsoft.VisualBasic.TriState IncludeLeadingDigit, valuetype Microsoft.VisualBasic.TriState UseParensForNegativeNumbers, valuetype Microsoft.VisualBasic.TriState GroupDigits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="NumDigitsAfterDecimal">To be added.</param>
+        <param name="IncludeLeadingDigit">To be added.</param>
+        <param name="UseParensForNegativeNumbers">To be added.</param>
+        <param name="GroupDigits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatPercent">
+      <MemberSignature Language="C#" Value="public static string FormatPercent (object Expression, int NumDigitsAfterDecimal = -1, Microsoft.VisualBasic.TriState IncludeLeadingDigit = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState UseParensForNegativeNumbers = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState GroupDigits = Microsoft.VisualBasic.TriState.UseDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatPercent(object Expression, int32 NumDigitsAfterDecimal, valuetype Microsoft.VisualBasic.TriState IncludeLeadingDigit, valuetype Microsoft.VisualBasic.TriState UseParensForNegativeNumbers, valuetype Microsoft.VisualBasic.TriState GroupDigits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="NumDigitsAfterDecimal">To be added.</param>
+        <param name="IncludeLeadingDigit">To be added.</param>
+        <param name="UseParensForNegativeNumbers">To be added.</param>
+        <param name="GroupDigits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public static char GetChar (string str, int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char GetChar(string str, int32 Index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="Index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InStr">
+      <MemberSignature Language="C#" Value="public static int InStr (string String1, string String2, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 InStr(string String1, string String2, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String1" Type="System.String" />
+        <Parameter Name="String2" Type="System.String" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="String1">To be added.</param>
+        <param name="String2">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InStr">
+      <MemberSignature Language="C#" Value="public static int InStr (int Start, string String1, string String2, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 InStr(int32 Start, string String1, string String2, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="String1" Type="System.String" />
+        <Parameter Name="String2" Type="System.String" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Start">To be added.</param>
+        <param name="String1">To be added.</param>
+        <param name="String2">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InStrRev">
+      <MemberSignature Language="C#" Value="public static int InStrRev (string StringCheck, string StringMatch, int Start = -1, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 InStrRev(string StringCheck, string StringMatch, int32 Start, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="StringCheck" Type="System.String" />
+        <Parameter Name="StringMatch" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="StringCheck">To be added.</param>
+        <param name="StringMatch">To be added.</param>
+        <param name="Start">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (object[] SourceArray, string Delimiter = &quot; &quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Join(object[] SourceArray, string Delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SourceArray" Type="System.Object[]" />
+        <Parameter Name="Delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SourceArray">To be added.</param>
+        <param name="Delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (string[] SourceArray, string Delimiter = &quot; &quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Join(string[] SourceArray, string Delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SourceArray" Type="System.String[]" />
+        <Parameter Name="Delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SourceArray">To be added.</param>
+        <param name="Delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LCase">
+      <MemberSignature Language="C#" Value="public static char LCase (char Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char LCase(char Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LCase">
+      <MemberSignature Language="C#" Value="public static string LCase (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LCase(string Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public static string Left (string str, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Left(string str, int32 Length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (bool Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(bool Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (byte Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int8 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (char Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(char Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (DateTime Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(valuetype System.DateTime Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (decimal Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(valuetype System.Decimal Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (double Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(float64 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (short Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int16 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (int Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int32 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (long Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int64 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (object Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(object Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (sbyte Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int8 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (float Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(float32 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (string Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(string Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (ushort Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int16 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (uint Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int32 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (ulong Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int64 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LSet">
+      <MemberSignature Language="C#" Value="public static string LSet (string Source, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LSet(string Source, int32 Length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Source">To be added.</param>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LTrim">
+      <MemberSignature Language="C#" Value="public static string LTrim (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LTrim(string str) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mid">
+      <MemberSignature Language="C#" Value="public static string Mid (string str, int Start);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Mid(string str, int32 Start) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="Start">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mid">
+      <MemberSignature Language="C#" Value="public static string Mid (string str, int Start, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Mid(string str, int32 Start, int32 Length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="Start">To be added.</param>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public static string Replace (string Expression, string Find, string Replacement, int Start = 1, int Count = -1, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Replace(string Expression, string Find, string Replacement, int32 Start, int32 Count, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+        <Parameter Name="Find" Type="System.String" />
+        <Parameter Name="Replacement" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Count" Type="System.Int32" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="Find">To be added.</param>
+        <param name="Replacement">To be added.</param>
+        <param name="Start">To be added.</param>
+        <param name="Count">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public static string Right (string str, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Right(string str, int32 Length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RSet">
+      <MemberSignature Language="C#" Value="public static string RSet (string Source, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string RSet(string Source, int32 Length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Source">To be added.</param>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RTrim">
+      <MemberSignature Language="C#" Value="public static string RTrim (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string RTrim(string str) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Space">
+      <MemberSignature Language="C#" Value="public static string Space (int Number);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Space(int32 Number) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Number">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Split">
+      <MemberSignature Language="C#" Value="public static string[] Split (string Expression, string Delimiter = &quot; &quot;, int Limit = -1, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[] Split(string Expression, string Delimiter, int32 Limit, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+        <Parameter Name="Delimiter" Type="System.String" />
+        <Parameter Name="Limit" Type="System.Int32" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="Delimiter">To be added.</param>
+        <param name="Limit">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrComp">
+      <MemberSignature Language="C#" Value="public static int StrComp (string String1, string String2, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 StrComp(string String1, string String2, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String1" Type="System.String" />
+        <Parameter Name="String2" Type="System.String" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="String1">To be added.</param>
+        <param name="String2">To be added.</param>
+        <param name="Compare">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrConv">
+      <MemberSignature Language="C#" Value="public static string StrConv (string str, Microsoft.VisualBasic.VbStrConv Conversion, int LocaleID = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrConv(string str, valuetype Microsoft.VisualBasic.VbStrConv Conversion, int32 LocaleID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Conversion" Type="Microsoft.VisualBasic.VbStrConv" />
+        <Parameter Name="LocaleID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="Conversion">To be added.</param>
+        <param name="LocaleID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrDup">
+      <MemberSignature Language="C#" Value="public static string StrDup (int Number, char Character);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrDup(int32 Number, char Character) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Character" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Number">To be added.</param>
+        <param name="Character">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrDup">
+      <MemberSignature Language="C#" Value="public static object StrDup (int Number, object Character);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object StrDup(int32 Number, object Character) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Character" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Number">To be added.</param>
+        <param name="Character">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrDup">
+      <MemberSignature Language="C#" Value="public static string StrDup (int Number, string Character);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrDup(int32 Number, string Character) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Character" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Number">To be added.</param>
+        <param name="Character">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrReverse">
+      <MemberSignature Language="C#" Value="public static string StrReverse (string Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrReverse(string Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static string Trim (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Trim(string str) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UCase">
+      <MemberSignature Language="C#" Value="public static char UCase (char Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char UCase(char Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UCase">
+      <MemberSignature Language="C#" Value="public static string UCase (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string UCase(string Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

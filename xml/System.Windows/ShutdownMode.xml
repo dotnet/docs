@@ -1,0 +1,62 @@
+<Type Name="ShutdownMode" FullName="System.Windows.ShutdownMode">
+  <TypeSignature Language="C#" Value="public enum ShutdownMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShutdownMode extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnExplicitShutdown">
+      <MemberSignature Language="C#" Value="OnExplicitShutdown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ShutdownMode OnExplicitShutdown = unsigned int8(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLastWindowClose">
+      <MemberSignature Language="C#" Value="OnLastWindowClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ShutdownMode OnLastWindowClose = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMainWindowClose">
+      <MemberSignature Language="C#" Value="OnMainWindowClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ShutdownMode OnMainWindowClose = unsigned int8(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

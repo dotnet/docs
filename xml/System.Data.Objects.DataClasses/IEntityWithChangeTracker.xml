@@ -1,0 +1,35 @@
+<Type Name="IEntityWithChangeTracker" FullName="System.Data.Objects.DataClasses.IEntityWithChangeTracker">
+  <TypeSignature Language="C#" Value="public interface IEntityWithChangeTracker" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEntityWithChangeTracker" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetChangeTracker">
+      <MemberSignature Language="C#" Value="public void SetChangeTracker (System.Data.Objects.DataClasses.IEntityChangeTracker changeTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetChangeTracker(class System.Data.Objects.DataClasses.IEntityChangeTracker changeTracker) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changeTracker" Type="System.Data.Objects.DataClasses.IEntityChangeTracker" />
+      </Parameters>
+      <Docs>
+        <param name="changeTracker">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,32 @@
+<Type Name="IKeyFrameAnimation" FullName="System.Windows.Media.Animation.IKeyFrameAnimation">
+  <TypeSignature Language="C#" Value="public interface IKeyFrameAnimation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyFrameAnimation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyFrames">
+      <MemberSignature Language="C#" Value="public System.Collections.IList KeyFrames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList KeyFrames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

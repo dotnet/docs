@@ -1,0 +1,18 @@
+<Type Name="IReadOnlySessionState" FullName="System.Web.SessionState.IReadOnlySessionState">
+  <TypeSignature Language="C#" Value="public interface IReadOnlySessionState : System.Web.SessionState.IRequiresSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReadOnlySessionState implements class System.Web.SessionState.IRequiresSessionState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.SessionState.IRequiresSessionState</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

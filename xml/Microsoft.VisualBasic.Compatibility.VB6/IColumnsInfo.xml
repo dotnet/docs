@@ -1,0 +1,74 @@
+<Type Name="IColumnsInfo" FullName="Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo">
+  <TypeSignature Language="C#" Value="public interface IColumnsInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColumnsInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A11-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetColumnInfo">
+      <MemberSignature Language="C#" Value="public void GetColumnInfo (out int cColumns, out IntPtr pColumnInfo, out IntPtr pStringsBuffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetColumnInfo(int32 cColumns, native int pColumnInfo, native int pStringsBuffer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cColumns" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pColumnInfo" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="pStringsBuffer" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cColumns">To be added.</param>
+        <param name="pColumnInfo">To be added.</param>
+        <param name="pStringsBuffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapColumnIDs">
+      <MemberSignature Language="C#" Value="public void MapColumnIDs (int cColumnIDs, Microsoft.VisualBasic.Compatibility.VB6.DBID[] columnIDs, int[] rgColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void MapColumnIDs(int32 cColumnIDs, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBID[] columnIDs, int32[] rgColumns) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cColumnIDs" Type="System.Int32" />
+        <Parameter Name="columnIDs" Type="Microsoft.VisualBasic.Compatibility.VB6.DBID[]" />
+        <Parameter Name="rgColumns" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="cColumnIDs">To be added.</param>
+        <param name="columnIDs">To be added.</param>
+        <param name="rgColumns">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

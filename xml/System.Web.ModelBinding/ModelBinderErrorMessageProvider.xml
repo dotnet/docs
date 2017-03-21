@@ -1,0 +1,27 @@
+<Type Name="ModelBinderErrorMessageProvider" FullName="System.Web.ModelBinding.ModelBinderErrorMessageProvider">
+  <TypeSignature Language="C#" Value="public delegate string ModelBinderErrorMessageProvider(ModelBindingExecutionContext modelBindingExecutionContext, ModelMetadata modelMetadata, object incomingValue);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ModelBinderErrorMessageProvider extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+    <Parameter Name="modelMetadata" Type="System.Web.ModelBinding.ModelMetadata" />
+    <Parameter Name="incomingValue" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.String</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="modelBindingExecutionContext">To be added.</param>
+    <param name="modelMetadata">To be added.</param>
+    <param name="incomingValue">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

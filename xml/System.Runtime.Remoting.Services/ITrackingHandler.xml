@@ -1,11 +1,8 @@
 <Type Name="ITrackingHandler" FullName="System.Runtime.Remoting.Services.ITrackingHandler">
   <TypeSignature Language="C#" Value="public interface ITrackingHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITrackingHandler" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Services.ITrackingHandler" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -22,12 +19,9 @@
     <Member MemberName="DisconnectedObject">
       <MemberSignature Language="C#" Value="public void DisconnectedObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisconnectedObject(object obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.ITrackingHandler.DisconnectedObject(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -50,12 +44,9 @@
     <Member MemberName="MarshaledObject">
       <MemberSignature Language="C#" Value="public void MarshaledObject (object obj, System.Runtime.Remoting.ObjRef or);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarshaledObject(object obj, class System.Runtime.Remoting.ObjRef or) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.ITrackingHandler.MarshaledObject(System.Object,System.Runtime.Remoting.ObjRef)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -80,12 +71,9 @@
     <Member MemberName="UnmarshaledObject">
       <MemberSignature Language="C#" Value="public void UnmarshaledObject (object obj, System.Runtime.Remoting.ObjRef or);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnmarshaledObject(object obj, class System.Runtime.Remoting.ObjRef or) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Services.ITrackingHandler.UnmarshaledObject(System.Object,System.Runtime.Remoting.ObjRef)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

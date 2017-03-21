@@ -1,0 +1,25 @@
+<Type Name="IForwardIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IForwardIterator&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IForwardIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;, Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IForwardIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt;, class Microsoft.VisualC.StlClr.Generic.IOutputIterator`1&lt;!TValue&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

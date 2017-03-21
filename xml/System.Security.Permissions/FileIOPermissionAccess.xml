@@ -1,11 +1,8 @@
 <Type Name="FileIOPermissionAccess" FullName="System.Security.Permissions.FileIOPermissionAccess">
   <TypeSignature Language="C#" Value="public enum FileIOPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileIOPermissionAccess extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileIOPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,12 +24,9 @@
     <Member MemberName="AllAccess">
       <MemberSignature Language="C#" Value="AllAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess AllAccess = int32(15)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,12 +39,9 @@
     <Member MemberName="Append">
       <MemberSignature Language="C#" Value="Append" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess Append = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,12 +54,9 @@
     <Member MemberName="NoAccess">
       <MemberSignature Language="C#" Value="NoAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess NoAccess = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,12 +69,9 @@
     <Member MemberName="PathDiscovery">
       <MemberSignature Language="C#" Value="PathDiscovery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess PathDiscovery = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,12 +84,9 @@
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess Read = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,12 +99,9 @@
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess Write = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,0 +1,536 @@
+<Type Name="CAccPropServicesClass" FullName="Accessibility.CAccPropServicesClass">
+  <TypeSignature Language="C#" Value="public class CAccPropServicesClass : Accessibility.CAccPropServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi CAccPropServicesClass extends System.Object implements class Accessibility.CAccPropServices, class Accessibility.IAccPropServices" />
+  <AssemblyInfo>
+    <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Accessibility.CAccPropServices</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("B5F8350B-0548-48B1-A6EE-88BD00B4A5E7")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CAccPropServicesClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearHmenuProps">
+      <MemberSignature Language="C#" Value="public virtual void ClearHmenuProps (ref Accessibility._RemotableHandle hmenu, uint idChild, ref Guid paProps, int cProps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearHmenuProps(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hmenu" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="paProps" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="cProps" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearHwndProps">
+      <MemberSignature Language="C#" Value="public virtual void ClearHwndProps (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, ref Guid paProps, int cProps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearHwndProps(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idObject" Type="System.UInt32" />
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="paProps" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="cProps" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearProps">
+      <MemberSignature Language="C#" Value="public virtual void ClearProps (ref byte pIDString, uint dwIDStringLen, ref Guid paProps, int cProps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearProps(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid paProps, int32 cProps) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
+        <Parameter Name="paProps" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="cProps" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComposeHmenuIdentityString">
+      <MemberSignature Language="C#" Value="public virtual void ComposeHmenuIdentityString (ref Accessibility._RemotableHandle hmenu, uint idChild, IntPtr ppIDString, out uint pdwIDStringLen);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeHmenuIdentityString(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, native int ppIDString, unsigned int32 pdwIDStringLen) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hmenu" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="ppIDString" Type="System.IntPtr" />
+        <Parameter Name="pdwIDStringLen" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="ppIDString">To be added.</param>
+        <param name="pdwIDStringLen">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComposeHwndIdentityString">
+      <MemberSignature Language="C#" Value="public virtual void ComposeHwndIdentityString (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, IntPtr ppIDString, out uint pdwIDStringLen);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeHwndIdentityString(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, native int ppIDString, unsigned int32 pdwIDStringLen) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idObject" Type="System.UInt32" />
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="ppIDString" Type="System.IntPtr" />
+        <Parameter Name="pdwIDStringLen" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="ppIDString">To be added.</param>
+        <param name="pdwIDStringLen">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecomposeHmenuIdentityString">
+      <MemberSignature Language="C#" Value="public virtual void DecomposeHmenuIdentityString (ref byte pIDString, uint dwIDStringLen, IntPtr phmenu, out uint pidChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecomposeHmenuIdentityString(unsigned int8 pIDString, unsigned int32 dwIDStringLen, native int phmenu, unsigned int32 pidChild) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
+        <Parameter Name="phmenu" Type="System.IntPtr">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pidChild" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="phmenu">To be added.</param>
+        <param name="pidChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecomposeHwndIdentityString">
+      <MemberSignature Language="C#" Value="public virtual void DecomposeHwndIdentityString (ref byte pIDString, uint dwIDStringLen, IntPtr phwnd, out uint pidObject, out uint pidChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecomposeHwndIdentityString(unsigned int8 pIDString, unsigned int32 dwIDStringLen, native int phwnd, unsigned int32 pidObject, unsigned int32 pidChild) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
+        <Parameter Name="phwnd" Type="System.IntPtr">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pidObject" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pidChild" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="phwnd">To be added.</param>
+        <param name="pidObject">To be added.</param>
+        <param name="pidChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHmenuProp">
+      <MemberSignature Language="C#" Value="public virtual void SetHmenuProp (ref Accessibility._RemotableHandle hmenu, uint idChild, Guid idProp, object var);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuProp(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid idProp, object var) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hmenu" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="idProp" Type="System.Guid" />
+        <Parameter Name="var" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHmenuPropServer">
+      <MemberSignature Language="C#" Value="public virtual void SetHmenuPropServer (ref Accessibility._RemotableHandle hmenu, uint idChild, ref Guid paProps, int cProps, Accessibility.IAccPropServer pServer, Accessibility.AnnoScope AnnoScope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropServer(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps, class Accessibility.IAccPropServer pServer, valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hmenu" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="paProps" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="cProps" Type="System.Int32" />
+        <Parameter Name="pServer" Type="Accessibility.IAccPropServer" />
+        <Parameter Name="AnnoScope" Type="Accessibility.AnnoScope" />
+      </Parameters>
+      <Docs>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <param name="pServer">To be added.</param>
+        <param name="AnnoScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHmenuPropStr">
+      <MemberSignature Language="C#" Value="public virtual void SetHmenuPropStr (ref Accessibility._RemotableHandle hmenu, uint idChild, Guid idProp, string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHmenuPropStr(valuetype Accessibility._RemotableHandle hmenu, unsigned int32 idChild, valuetype System.Guid idProp, string str) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hmenu" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHMENU")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="idProp" Type="System.Guid" />
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hmenu">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHwndProp">
+      <MemberSignature Language="C#" Value="public virtual void SetHwndProp (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, Guid idProp, object var);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndProp(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid idProp, object var) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idObject" Type="System.UInt32" />
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="idProp" Type="System.Guid" />
+        <Parameter Name="var" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHwndPropServer">
+      <MemberSignature Language="C#" Value="public virtual void SetHwndPropServer (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, ref Guid paProps, int cProps, Accessibility.IAccPropServer pServer, Accessibility.AnnoScope AnnoScope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropServer(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid paProps, int32 cProps, class Accessibility.IAccPropServer pServer, valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idObject" Type="System.UInt32" />
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="paProps" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="cProps" Type="System.Int32" />
+        <Parameter Name="pServer" Type="Accessibility.IAccPropServer" />
+        <Parameter Name="AnnoScope" Type="Accessibility.AnnoScope" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <param name="pServer">To be added.</param>
+        <param name="AnnoScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHwndPropStr">
+      <MemberSignature Language="C#" Value="public virtual void SetHwndPropStr (ref Accessibility._RemotableHandle hwnd, uint idObject, uint idChild, Guid idProp, string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHwndPropStr(valuetype Accessibility._RemotableHandle hwnd, unsigned int32 idObject, unsigned int32 idChild, valuetype System.Guid idProp, string str) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="Accessibility._RemotableHandle&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Accessibility.wireHWND")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="idObject" Type="System.UInt32" />
+        <Parameter Name="idChild" Type="System.UInt32" />
+        <Parameter Name="idProp" Type="System.Guid" />
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <param name="idObject">To be added.</param>
+        <param name="idChild">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropServer">
+      <MemberSignature Language="C#" Value="public virtual void SetPropServer (ref byte pIDString, uint dwIDStringLen, ref Guid paProps, int cProps, Accessibility.IAccPropServer pServer, Accessibility.AnnoScope AnnoScope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropServer(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid paProps, int32 cProps, class Accessibility.IAccPropServer pServer, valuetype Accessibility.AnnoScope AnnoScope) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
+        <Parameter Name="paProps" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="cProps" Type="System.Int32" />
+        <Parameter Name="pServer" Type="Accessibility.IAccPropServer" />
+        <Parameter Name="AnnoScope" Type="Accessibility.AnnoScope" />
+      </Parameters>
+      <Docs>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="paProps">To be added.</param>
+        <param name="cProps">To be added.</param>
+        <param name="pServer">To be added.</param>
+        <param name="AnnoScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropValue">
+      <MemberSignature Language="C#" Value="public virtual void SetPropValue (ref byte pIDString, uint dwIDStringLen, Guid idProp, object var);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropValue(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid idProp, object var) runtime managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
+        <Parameter Name="idProp" Type="System.Guid" />
+        <Parameter Name="var" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pIDString">To be added.</param>
+        <param name="dwIDStringLen">To be added.</param>
+        <param name="idProp">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

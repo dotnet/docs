@@ -1,0 +1,245 @@
+<Type Name="InternalXmlHelper" FullName="Microsoft.VisualBasic.CompilerServices.InternalXmlHelper">
+  <TypeSignature Language="C#" Value="public sealed class InternalXmlHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InternalXmlHelper extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttributeValue">
+      <MemberSignature Language="C#" Value="public static string AttributeValue[System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source, System.Xml.Linq.XName name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AttributeValue(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt;, class System.Xml.Linq.XName)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;" />
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeValue">
+      <MemberSignature Language="C#" Value="public static string AttributeValue[System.Xml.Linq.XElement source, System.Xml.Linq.XName name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AttributeValue(class System.Xml.Linq.XElement, class System.Xml.Linq.XName)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Xml.Linq.XElement" />
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAttribute">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XAttribute CreateAttribute (System.Xml.Linq.XName name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Xml.Linq.XAttribute CreateAttribute(class System.Xml.Linq.XName name, object value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNamespaceAttribute">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XAttribute CreateNamespaceAttribute (System.Xml.Linq.XName name, System.Xml.Linq.XNamespace ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Xml.Linq.XAttribute CreateNamespaceAttribute(class System.Xml.Linq.XName name, class System.Xml.Linq.XNamespace ns) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+        <Parameter Name="ns" Type="System.Xml.Linq.XNamespace" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="ns">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveNamespaceAttributes">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable RemoveNamespaceAttributes (string[] inScopePrefixes, System.Xml.Linq.XNamespace[] inScopeNs, System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt; attributes, System.Collections.IEnumerable obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.IEnumerable RemoveNamespaceAttributes(string[] inScopePrefixes, class System.Xml.Linq.XNamespace[] inScopeNs, class System.Collections.Generic.List`1&lt;class System.Xml.Linq.XAttribute&gt; attributes, class System.Collections.IEnumerable obj) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inScopePrefixes" Type="System.String[]" />
+        <Parameter Name="inScopeNs" Type="System.Xml.Linq.XNamespace[]" />
+        <Parameter Name="attributes" Type="System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt;" />
+        <Parameter Name="obj" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="inScopePrefixes">To be added.</param>
+        <param name="inScopeNs">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveNamespaceAttributes">
+      <MemberSignature Language="C#" Value="public static object RemoveNamespaceAttributes (string[] inScopePrefixes, System.Xml.Linq.XNamespace[] inScopeNs, System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt; attributes, object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object RemoveNamespaceAttributes(string[] inScopePrefixes, class System.Xml.Linq.XNamespace[] inScopeNs, class System.Collections.Generic.List`1&lt;class System.Xml.Linq.XAttribute&gt; attributes, object obj) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inScopePrefixes" Type="System.String[]" />
+        <Parameter Name="inScopeNs" Type="System.Xml.Linq.XNamespace[]" />
+        <Parameter Name="attributes" Type="System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt;" />
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="inScopePrefixes">To be added.</param>
+        <param name="inScopeNs">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveNamespaceAttributes">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XElement RemoveNamespaceAttributes (string[] inScopePrefixes, System.Xml.Linq.XNamespace[] inScopeNs, System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt; attributes, System.Xml.Linq.XElement e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Xml.Linq.XElement RemoveNamespaceAttributes(string[] inScopePrefixes, class System.Xml.Linq.XNamespace[] inScopeNs, class System.Collections.Generic.List`1&lt;class System.Xml.Linq.XAttribute&gt; attributes, class System.Xml.Linq.XElement e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inScopePrefixes" Type="System.String[]" />
+        <Parameter Name="inScopeNs" Type="System.Xml.Linq.XNamespace[]" />
+        <Parameter Name="attributes" Type="System.Collections.Generic.List&lt;System.Xml.Linq.XAttribute&gt;" />
+        <Parameter Name="e" Type="System.Xml.Linq.XElement" />
+      </Parameters>
+      <Docs>
+        <param name="inScopePrefixes">To be added.</param>
+        <param name="inScopeNs">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public static string Value[System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Value(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt;)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

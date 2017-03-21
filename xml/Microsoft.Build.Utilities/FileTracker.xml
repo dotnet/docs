@@ -1,0 +1,841 @@
+<Type Name="FileTracker" FullName="Microsoft.Build.Utilities.FileTracker">
+  <TypeSignature Language="C#" Value="public static class FileTracker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FileTracker extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateRootingMarkerResponseFile">
+      <MemberSignature Language="C#" Value="public static string CreateRootingMarkerResponseFile (Microsoft.Build.Framework.ITaskItem[] sources);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateRootingMarkerResponseFile(class Microsoft.Build.Framework.ITaskItem[] sources) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="sources">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRootingMarkerResponseFile">
+      <MemberSignature Language="C#" Value="public static string CreateRootingMarkerResponseFile (string rootMarker);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateRootingMarkerResponseFile(string rootMarker) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootMarker" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootMarker">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrackingContext">
+      <MemberSignature Language="C#" Value="public static void EndTrackingContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndTrackingContext() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureFileTrackerOnPath">
+      <MemberSignature Language="C#" Value="public static string EnsureFileTrackerOnPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EnsureFileTrackerOnPath() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureFileTrackerOnPath">
+      <MemberSignature Language="C#" Value="public static string EnsureFileTrackerOnPath (string rootPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EnsureFileTrackerOnPath(string rootPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileIsExcludedFromDependencies">
+      <MemberSignature Language="C#" Value="public static bool FileIsExcludedFromDependencies (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FileIsExcludedFromDependencies(string fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileIsUnderPath">
+      <MemberSignature Language="C#" Value="public static bool FileIsUnderPath (string fileName, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FileIsUnderPath(string fileName, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindTrackerOnPath">
+      <MemberSignature Language="C#" Value="public static string FindTrackerOnPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FindTrackerOnPath() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceOutOfProcTracking">
+      <MemberSignature Language="C#" Value="public static bool ForceOutOfProcTracking (Microsoft.Build.Utilities.ExecutableType toolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ForceOutOfProcTracking(valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceOutOfProcTracking">
+      <MemberSignature Language="C#" Value="public static bool ForceOutOfProcTracking (Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string cancelEventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ForceOutOfProcTracking(valuetype Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string cancelEventName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="cancelEventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="cancelEventName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatRootingMarker">
+      <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem source) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.Build.Framework.ITaskItem" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatRootingMarker">
+      <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem[] sources);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem[] sources) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="sources">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatRootingMarker">
+      <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem source, Microsoft.Build.Framework.ITaskItem output);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem source, class Microsoft.Build.Framework.ITaskItem output) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.Build.Framework.ITaskItem" />
+        <Parameter Name="output" Type="Microsoft.Build.Framework.ITaskItem" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="output">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatRootingMarker">
+      <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem[] sources, Microsoft.Build.Framework.ITaskItem[] outputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem[] sources, class Microsoft.Build.Framework.ITaskItem[] outputs) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sources" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="outputs" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="sources">To be added.</param>
+        <param name="outputs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileTrackerPath">
+      <MemberSignature Language="C#" Value="public static string GetFileTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileTrackerPath">
+      <MemberSignature Language="C#" Value="public static string GetFileTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType, string rootPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType, string rootPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="rootPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">To be added.</param>
+        <param name="rootPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTrackerPath">
+      <MemberSignature Language="C#" Value="public static string GetTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTrackerPath">
+      <MemberSignature Language="C#" Value="public static string GetTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType, string rootPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType, string rootPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="rootPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">To be added.</param>
+        <param name="rootPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeTracking">
+      <MemberSignature Language="C#" Value="public static void ResumeTracking ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ResumeTracking() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetThreadCount">
+      <MemberSignature Language="C#" Value="public static void SetThreadCount (int threadCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetThreadCount(int32 threadCount) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threadCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="threadCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartProcess">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Process</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="toolType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartProcess">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string rootFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string rootFiles) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Process</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="rootFiles" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="toolType">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartProcess">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string intermediateDirectory, string rootFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string intermediateDirectory, string rootFiles) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Process</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="toolType">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartProcess">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Process</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="toolType">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartProcess">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Process</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="toolType" Type="Microsoft.Build.Utilities.ExecutableType" />
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+        <Parameter Name="cancelEventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="toolType">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <param name="cancelEventName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTrackingContext">
+      <MemberSignature Language="C#" Value="public static void StartTrackingContext (string intermediateDirectory, string taskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartTrackingContext(string intermediateDirectory, string taskName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTrackingContextWithRoot">
+      <MemberSignature Language="C#" Value="public static void StartTrackingContextWithRoot (string intermediateDirectory, string taskName, string rootMarkerResponseFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartTrackingContextWithRoot(string intermediateDirectory, string taskName, string rootMarkerResponseFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+        <Parameter Name="rootMarkerResponseFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <param name="rootMarkerResponseFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopTrackingAndCleanup">
+      <MemberSignature Language="C#" Value="public static void StopTrackingAndCleanup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StopTrackingAndCleanup() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendTracking">
+      <MemberSignature Language="C#" Value="public static void SuspendTracking ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SuspendTracking() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackerArguments">
+      <MemberSignature Language="C#" Value="public static string TrackerArguments (string command, string arguments, string dllName, string intermediateDirectory, string rootFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerArguments(string command, string arguments, string dllName, string intermediateDirectory, string rootFiles) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackerArguments">
+      <MemberSignature Language="C#" Value="public static string TrackerArguments (string command, string arguments, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerArguments(string command, string arguments, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+        <Parameter Name="cancelEventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="dllName">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <param name="cancelEventName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackerCommandArguments">
+      <MemberSignature Language="C#" Value="public static string TrackerCommandArguments (string command, string arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerCommandArguments(string command, string arguments) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="command">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackerResponseFileArguments">
+      <MemberSignature Language="C#" Value="public static string TrackerResponseFileArguments (string dllName, string intermediateDirectory, string rootFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerResponseFileArguments(string dllName, string intermediateDirectory, string rootFiles) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dllName">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackerResponseFileArguments">
+      <MemberSignature Language="C#" Value="public static string TrackerResponseFileArguments (string dllName, string intermediateDirectory, string rootFiles, string cancelEventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerResponseFileArguments(string dllName, string intermediateDirectory, string rootFiles, string cancelEventName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dllName" Type="System.String" />
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="rootFiles" Type="System.String" />
+        <Parameter Name="cancelEventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dllName">To be added.</param>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="rootFiles">To be added.</param>
+        <param name="cancelEventName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAllTLogs">
+      <MemberSignature Language="C#" Value="public static void WriteAllTLogs (string intermediateDirectory, string taskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllTLogs(string intermediateDirectory, string taskName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteContextTLogs">
+      <MemberSignature Language="C#" Value="public static void WriteContextTLogs (string intermediateDirectory, string taskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteContextTLogs(string intermediateDirectory, string taskName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="intermediateDirectory" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="intermediateDirectory">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

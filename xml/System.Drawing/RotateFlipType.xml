@@ -1,0 +1,257 @@
+<Type Name="RotateFlipType" FullName="System.Drawing.RotateFlipType">
+  <TypeSignature Language="C#" Value="public enum RotateFlipType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RotateFlipType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Rotate180FlipNone">
+      <MemberSignature Language="C#" Value="Rotate180FlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipNone = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate180FlipX">
+      <MemberSignature Language="C#" Value="Rotate180FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipX = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate180FlipXY">
+      <MemberSignature Language="C#" Value="Rotate180FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipXY = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate180FlipY">
+      <MemberSignature Language="C#" Value="Rotate180FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipY = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipNone">
+      <MemberSignature Language="C#" Value="Rotate270FlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipNone = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipX">
+      <MemberSignature Language="C#" Value="Rotate270FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipX = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipXY">
+      <MemberSignature Language="C#" Value="Rotate270FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipXY = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipY">
+      <MemberSignature Language="C#" Value="Rotate270FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipY = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipNone">
+      <MemberSignature Language="C#" Value="Rotate90FlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipNone = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipX">
+      <MemberSignature Language="C#" Value="Rotate90FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipX = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipXY">
+      <MemberSignature Language="C#" Value="Rotate90FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipXY = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipY">
+      <MemberSignature Language="C#" Value="Rotate90FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipY = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipNone">
+      <MemberSignature Language="C#" Value="RotateNoneFlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipNone = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipX">
+      <MemberSignature Language="C#" Value="RotateNoneFlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipX = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipXY">
+      <MemberSignature Language="C#" Value="RotateNoneFlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipXY = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipY">
+      <MemberSignature Language="C#" Value="RotateNoneFlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipY = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

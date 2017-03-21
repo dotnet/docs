@@ -1,0 +1,52 @@
+<Type Name="ExtendedResponse" FullName="System.DirectoryServices.Protocols.ExtendedResponse">
+  <TypeSignature Language="C#" Value="public class ExtendedResponse : System.DirectoryServices.Protocols.DirectoryResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtendedResponse extends System.DirectoryServices.Protocols.DirectoryResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryResponse</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResponseName">
+      <MemberSignature Language="C#" Value="public string ResponseName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseValue">
+      <MemberSignature Language="C#" Value="public byte[] ResponseValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ResponseValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

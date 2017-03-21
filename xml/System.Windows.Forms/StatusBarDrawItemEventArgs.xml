@@ -1,0 +1,93 @@
+<Type Name="StatusBarDrawItemEventArgs" FullName="System.Windows.Forms.StatusBarDrawItemEventArgs">
+  <TypeSignature Language="C#" Value="public class StatusBarDrawItemEventArgs : System.Windows.Forms.DrawItemEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarDrawItemEventArgs extends System.Windows.Forms.DrawItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DrawItemEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StatusBarDrawItemEventArgs (System.Drawing.Graphics g, System.Drawing.Font font, System.Drawing.Rectangle r, int itemId, System.Windows.Forms.DrawItemState itemState, System.Windows.Forms.StatusBarPanel panel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Drawing.Font font, valuetype System.Drawing.Rectangle r, int32 itemId, valuetype System.Windows.Forms.DrawItemState itemState, class System.Windows.Forms.StatusBarPanel panel) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="r" Type="System.Drawing.Rectangle" />
+        <Parameter Name="itemId" Type="System.Int32" />
+        <Parameter Name="itemState" Type="System.Windows.Forms.DrawItemState" />
+        <Parameter Name="panel" Type="System.Windows.Forms.StatusBarPanel" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="r">To be added.</param>
+        <param name="itemId">To be added.</param>
+        <param name="itemState">To be added.</param>
+        <param name="panel">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StatusBarDrawItemEventArgs (System.Drawing.Graphics g, System.Drawing.Font font, System.Drawing.Rectangle r, int itemId, System.Windows.Forms.DrawItemState itemState, System.Windows.Forms.StatusBarPanel panel, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Drawing.Font font, valuetype System.Drawing.Rectangle r, int32 itemId, valuetype System.Windows.Forms.DrawItemState itemState, class System.Windows.Forms.StatusBarPanel panel, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="r" Type="System.Drawing.Rectangle" />
+        <Parameter Name="itemId" Type="System.Int32" />
+        <Parameter Name="itemState" Type="System.Windows.Forms.DrawItemState" />
+        <Parameter Name="panel" Type="System.Windows.Forms.StatusBarPanel" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="r">To be added.</param>
+        <param name="itemId">To be added.</param>
+        <param name="itemState">To be added.</param>
+        <param name="panel">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Panel">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.StatusBarPanel Panel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.StatusBarPanel Panel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StatusBarPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

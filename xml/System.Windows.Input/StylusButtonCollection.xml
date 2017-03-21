@@ -1,0 +1,42 @@
+<Type Name="StylusButtonCollection" FullName="System.Windows.Input.StylusButtonCollection">
+  <TypeSignature Language="C#" Value="public class StylusButtonCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusButton&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusButtonCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Input.StylusButton&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusButton&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Input.StylusButton</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStylusButtonByGuid">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusButton GetStylusButtonByGuid (Guid guid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusButton GetStylusButtonByGuid(valuetype System.Guid guid) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="guid">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

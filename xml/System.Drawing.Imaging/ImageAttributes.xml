@@ -1,0 +1,943 @@
+<Type Name="ImageAttributes" FullName="System.Drawing.Imaging.ImageAttributes">
+  <TypeSignature Language="C#" Value="public sealed class ImageAttributes : ICloneable, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImageAttributes extends System.Object implements class System.ICloneable, class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearBrushRemapTable">
+      <MemberSignature Language="C#" Value="public void ClearBrushRemapTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearBrushRemapTable() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorKey">
+      <MemberSignature Language="C#" Value="public void ClearColorKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorKey() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorKey">
+      <MemberSignature Language="C#" Value="public void ClearColorKey (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorKey(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorMatrix">
+      <MemberSignature Language="C#" Value="public void ClearColorMatrix ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorMatrix() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorMatrix">
+      <MemberSignature Language="C#" Value="public void ClearColorMatrix (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorMatrix(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearGamma">
+      <MemberSignature Language="C#" Value="public void ClearGamma ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearGamma() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearGamma">
+      <MemberSignature Language="C#" Value="public void ClearGamma (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearGamma(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearNoOp">
+      <MemberSignature Language="C#" Value="public void ClearNoOp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearNoOp() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearNoOp">
+      <MemberSignature Language="C#" Value="public void ClearNoOp (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearNoOp(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannel">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannel() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannel">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannel (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannel(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannelColorProfile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannelColorProfile() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannelColorProfile (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannelColorProfile(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearRemapTable">
+      <MemberSignature Language="C#" Value="public void ClearRemapTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearRemapTable() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearRemapTable">
+      <MemberSignature Language="C#" Value="public void ClearRemapTable (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearRemapTable(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearThreshold">
+      <MemberSignature Language="C#" Value="public void ClearThreshold ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearThreshold() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearThreshold">
+      <MemberSignature Language="C#" Value="public void ClearThreshold (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearThreshold(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ImageAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAdjustedPalette">
+      <MemberSignature Language="C#" Value="public void GetAdjustedPalette (System.Drawing.Imaging.ColorPalette palette, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetAdjustedPalette(class System.Drawing.Imaging.ColorPalette palette, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="palette" Type="System.Drawing.Imaging.ColorPalette" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="palette">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBrushRemapTable">
+      <MemberSignature Language="C#" Value="public void SetBrushRemapTable (System.Drawing.Imaging.ColorMap[] map);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBrushRemapTable(class System.Drawing.Imaging.ColorMap[] map) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="map" Type="System.Drawing.Imaging.ColorMap[]" />
+      </Parameters>
+      <Docs>
+        <param name="map">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorKey">
+      <MemberSignature Language="C#" Value="public void SetColorKey (System.Drawing.Color colorLow, System.Drawing.Color colorHigh);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorKey(valuetype System.Drawing.Color colorLow, valuetype System.Drawing.Color colorHigh) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorLow" Type="System.Drawing.Color" />
+        <Parameter Name="colorHigh" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="colorLow">To be added.</param>
+        <param name="colorHigh">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorKey">
+      <MemberSignature Language="C#" Value="public void SetColorKey (System.Drawing.Color colorLow, System.Drawing.Color colorHigh, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorKey(valuetype System.Drawing.Color colorLow, valuetype System.Drawing.Color colorHigh, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorLow" Type="System.Drawing.Color" />
+        <Parameter Name="colorHigh" Type="System.Drawing.Color" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="colorLow">To be added.</param>
+        <param name="colorHigh">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrices">
+      <MemberSignature Language="C#" Value="public void SetColorMatrices (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrix grayMatrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrices(class System.Drawing.Imaging.ColorMatrix newColorMatrix, class System.Drawing.Imaging.ColorMatrix grayMatrix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="grayMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">To be added.</param>
+        <param name="grayMatrix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrices">
+      <MemberSignature Language="C#" Value="public void SetColorMatrices (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrix grayMatrix, System.Drawing.Imaging.ColorMatrixFlag flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrices(class System.Drawing.Imaging.ColorMatrix newColorMatrix, class System.Drawing.Imaging.ColorMatrix grayMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="grayMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">To be added.</param>
+        <param name="grayMatrix">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrices">
+      <MemberSignature Language="C#" Value="public void SetColorMatrices (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrix grayMatrix, System.Drawing.Imaging.ColorMatrixFlag mode, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrices(class System.Drawing.Imaging.ColorMatrix newColorMatrix, class System.Drawing.Imaging.ColorMatrix grayMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag mode, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="grayMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="mode" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">To be added.</param>
+        <param name="grayMatrix">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrix">
+      <MemberSignature Language="C#" Value="public void SetColorMatrix (System.Drawing.Imaging.ColorMatrix newColorMatrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrix(class System.Drawing.Imaging.ColorMatrix newColorMatrix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrix">
+      <MemberSignature Language="C#" Value="public void SetColorMatrix (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrixFlag flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrix(class System.Drawing.Imaging.ColorMatrix newColorMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrix">
+      <MemberSignature Language="C#" Value="public void SetColorMatrix (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrixFlag mode, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrix(class System.Drawing.Imaging.ColorMatrix newColorMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag mode, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="mode" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGamma">
+      <MemberSignature Language="C#" Value="public void SetGamma (float gamma);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGamma(float32 gamma) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gamma" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="gamma">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGamma">
+      <MemberSignature Language="C#" Value="public void SetGamma (float gamma, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGamma(float32 gamma, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gamma" Type="System.Single" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="gamma">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNoOp">
+      <MemberSignature Language="C#" Value="public void SetNoOp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNoOp() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNoOp">
+      <MemberSignature Language="C#" Value="public void SetNoOp (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNoOp(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannel">
+      <MemberSignature Language="C#" Value="public void SetOutputChannel (System.Drawing.Imaging.ColorChannelFlag flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannel(valuetype System.Drawing.Imaging.ColorChannelFlag flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorChannelFlag" />
+      </Parameters>
+      <Docs>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannel">
+      <MemberSignature Language="C#" Value="public void SetOutputChannel (System.Drawing.Imaging.ColorChannelFlag flags, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannel(valuetype System.Drawing.Imaging.ColorChannelFlag flags, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorChannelFlag" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="flags">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void SetOutputChannelColorProfile (string colorProfileFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannelColorProfile(string colorProfileFilename) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorProfileFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="colorProfileFilename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void SetOutputChannelColorProfile (string colorProfileFilename, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannelColorProfile(string colorProfileFilename, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorProfileFilename" Type="System.String" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="colorProfileFilename">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRemapTable">
+      <MemberSignature Language="C#" Value="public void SetRemapTable (System.Drawing.Imaging.ColorMap[] map);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRemapTable(class System.Drawing.Imaging.ColorMap[] map) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="map" Type="System.Drawing.Imaging.ColorMap[]" />
+      </Parameters>
+      <Docs>
+        <param name="map">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRemapTable">
+      <MemberSignature Language="C#" Value="public void SetRemapTable (System.Drawing.Imaging.ColorMap[] map, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRemapTable(class System.Drawing.Imaging.ColorMap[] map, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="map" Type="System.Drawing.Imaging.ColorMap[]" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="map">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetThreshold">
+      <MemberSignature Language="C#" Value="public void SetThreshold (float threshold);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetThreshold(float32 threshold) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="threshold">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetThreshold">
+      <MemberSignature Language="C#" Value="public void SetThreshold (float threshold, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetThreshold(float32 threshold, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Single" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="threshold">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public void SetWrapMode (System.Drawing.Drawing2D.WrapMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWrapMode(valuetype System.Drawing.Drawing2D.WrapMode mode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Drawing.Drawing2D.WrapMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public void SetWrapMode (System.Drawing.Drawing2D.WrapMode mode, System.Drawing.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWrapMode(valuetype System.Drawing.Drawing2D.WrapMode mode, valuetype System.Drawing.Color color) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Drawing.Drawing2D.WrapMode" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="mode">To be added.</param>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public void SetWrapMode (System.Drawing.Drawing2D.WrapMode mode, System.Drawing.Color color, bool clamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWrapMode(valuetype System.Drawing.Drawing2D.WrapMode mode, valuetype System.Drawing.Color color, bool clamp) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Drawing.Drawing2D.WrapMode" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+        <Parameter Name="clamp" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="mode">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="clamp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

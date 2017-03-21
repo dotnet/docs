@@ -1,11 +1,8 @@
 <Type Name="IDLDESC" FullName="System.Runtime.InteropServices.IDLDESC">
   <TypeSignature Language="C#" Value="public struct IDLDESC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit IDLDESC extends System.ValueType" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDLDESC" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,12 +22,9 @@
     <Member MemberName="dwReserved">
       <MemberSignature Language="C#" Value="public int dwReserved;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwReserved" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLDESC.dwReserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,12 +38,9 @@
     <Member MemberName="wIDLFlags">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.IDLFLAG wIDLFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.IDLFLAG wIDLFlags" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLDESC.wIDLFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,0 +1,115 @@
+<Type Name="StructureChangeType" FullName="System.Windows.Automation.StructureChangeType">
+  <TypeSignature Language="C#" Value="public enum StructureChangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StructureChangeType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("e4cfef41-071d-472c-a65c-c14f59ea81eb")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChildAdded">
+      <MemberSignature Language="C#" Value="ChildAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildAdded = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildRemoved">
+      <MemberSignature Language="C#" Value="ChildRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildRemoved = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenBulkAdded">
+      <MemberSignature Language="C#" Value="ChildrenBulkAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenBulkAdded = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenBulkRemoved">
+      <MemberSignature Language="C#" Value="ChildrenBulkRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenBulkRemoved = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenInvalidated">
+      <MemberSignature Language="C#" Value="ChildrenInvalidated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenInvalidated = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenReordered">
+      <MemberSignature Language="C#" Value="ChildrenReordered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenReordered = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

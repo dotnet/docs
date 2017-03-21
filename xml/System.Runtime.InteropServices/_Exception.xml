@@ -1,10 +1,8 @@
 <Type Name="_Exception" FullName="System.Runtime.InteropServices._Exception">
   <TypeSignature Language="C#" Value="public interface _Exception" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Exception" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices._Exception" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -30,11 +28,9 @@
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Exception.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,11 +49,9 @@
     <Member MemberName="GetBaseException">
       <MemberSignature Language="C#" Value="public Exception GetBaseException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Exception GetBaseException() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Exception.GetBaseException" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,11 +67,9 @@
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Exception.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,11 +85,9 @@
     <Member MemberName="GetObjectData">
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -122,11 +112,9 @@
     <Member MemberName="GetType">
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Exception.GetType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,11 +130,9 @@
     <Member MemberName="HelpLink">
       <MemberSignature Language="C#" Value="public string HelpLink { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpLink" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Exception.HelpLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,11 +147,9 @@
     <Member MemberName="InnerException">
       <MemberSignature Language="C#" Value="public Exception InnerException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception InnerException" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Exception.InnerException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,11 +164,9 @@
     <Member MemberName="Message">
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Exception.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,11 +181,9 @@
     <Member MemberName="Source">
       <MemberSignature Language="C#" Value="public string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Exception.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,11 +198,9 @@
     <Member MemberName="StackTrace">
       <MemberSignature Language="C#" Value="public string StackTrace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Exception.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,11 +215,9 @@
     <Member MemberName="TargetSite">
       <MemberSignature Language="C#" Value="public System.Reflection.MethodBase TargetSite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase TargetSite" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Exception.TargetSite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,11 +232,9 @@
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Exception.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

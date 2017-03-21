@@ -1,0 +1,90 @@
+<Type Name="SelectedCellsChangedEventArgs" FullName="System.Windows.Controls.SelectedCellsChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class SelectedCellsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectedCellsChangedEventArgs extends System.EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectedCellsChangedEventArgs (System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt; addedCells, System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt; removedCells);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; addedCells, class System.Collections.Generic.List`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; removedCells) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addedCells" Type="System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+        <Parameter Name="removedCells" Type="System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="addedCells">To be added.</param>
+        <param name="removedCells">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectedCellsChangedEventArgs (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt; addedCells, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt; removedCells);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; addedCells, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; removedCells) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addedCells" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+        <Parameter Name="removedCells" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="addedCells">To be added.</param>
+        <param name="removedCells">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddedCells">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt; AddedCells { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; AddedCells" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedCells">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt; RemovedCells { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; RemovedCells" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

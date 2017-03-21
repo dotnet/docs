@@ -1,0 +1,145 @@
+<Type Name="VSAITEMTYPE2" FullName="Microsoft.JScript.VSAITEMTYPE2">
+  <TypeSignature Language="C#" Value="public enum VSAITEMTYPE2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VSAITEMTYPE2 extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("581AD3D9-2BAA-3770-B92B-38607E1B463A")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EXPRESSION">
+      <MemberSignature Language="C#" Value="EXPRESSION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 EXPRESSION = int32(22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HOSTOBJECT">
+      <MemberSignature Language="C#" Value="HOSTOBJECT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTOBJECT = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HOSTSCOPE">
+      <MemberSignature Language="C#" Value="HOSTSCOPE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTSCOPE = int32(17)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HOSTSCOPEANDOBJECT">
+      <MemberSignature Language="C#" Value="HOSTSCOPEANDOBJECT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTSCOPEANDOBJECT = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SCRIPTBLOCK">
+      <MemberSignature Language="C#" Value="SCRIPTBLOCK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 SCRIPTBLOCK = int32(20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SCRIPTSCOPE">
+      <MemberSignature Language="C#" Value="SCRIPTSCOPE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 SCRIPTSCOPE = int32(19)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="STATEMENT">
+      <MemberSignature Language="C#" Value="STATEMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 STATEMENT = int32(21)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

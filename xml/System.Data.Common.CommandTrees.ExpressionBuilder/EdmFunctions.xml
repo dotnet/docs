@@ -1,0 +1,1614 @@
+<Type Name="EdmFunctions" FullName="System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions">
+  <TypeSignature Language="C#" Value="public static class EdmFunctions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EdmFunctions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abs">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Abs (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Abs(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDays">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddDays (this System.Data.Common.CommandTrees.DbExpression dateValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddDays(class System.Data.Common.CommandTrees.DbExpression dateValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHours">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddHours (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddHours(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMicroseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMicroseconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMicroseconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMilliseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMilliseconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMilliseconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMinutes">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMinutes (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMinutes(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMonths">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMonths (this System.Data.Common.CommandTrees.DbExpression dateValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMonths(class System.Data.Common.CommandTrees.DbExpression dateValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNanoseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddNanoseconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddNanoseconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSeconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddSeconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddSeconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddYears">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddYears (this System.Data.Common.CommandTrees.DbExpression dateValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddYears(class System.Data.Common.CommandTrees.DbExpression dateValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <param name="addValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Average">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Average (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Average(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseAnd">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseAnd (this System.Data.Common.CommandTrees.DbExpression value1, System.Data.Common.CommandTrees.DbExpression value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseAnd(class System.Data.Common.CommandTrees.DbExpression value1, class System.Data.Common.CommandTrees.DbExpression value2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value1">To be added.</param>
+        <param name="value2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseNot">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseNot (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseNot(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseOr">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseOr (this System.Data.Common.CommandTrees.DbExpression value1, System.Data.Common.CommandTrees.DbExpression value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseOr(class System.Data.Common.CommandTrees.DbExpression value1, class System.Data.Common.CommandTrees.DbExpression value2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value1">To be added.</param>
+        <param name="value2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseXor">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseXor (this System.Data.Common.CommandTrees.DbExpression value1, System.Data.Common.CommandTrees.DbExpression value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseXor(class System.Data.Common.CommandTrees.DbExpression value1, class System.Data.Common.CommandTrees.DbExpression value2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value1">To be added.</param>
+        <param name="value2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ceiling">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Ceiling (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Ceiling(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Concat">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Concat (this System.Data.Common.CommandTrees.DbExpression string1, System.Data.Common.CommandTrees.DbExpression string2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Concat(class System.Data.Common.CommandTrees.DbExpression string1, class System.Data.Common.CommandTrees.DbExpression string2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="string1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="string2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="string1">To be added.</param>
+        <param name="string2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression Contains (this System.Data.Common.CommandTrees.DbExpression searchedString, System.Data.Common.CommandTrees.DbExpression searchedForString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression Contains(class System.Data.Common.CommandTrees.DbExpression searchedString, class System.Data.Common.CommandTrees.DbExpression searchedForString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchedString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="searchedForString" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="searchedString">To be added.</param>
+        <param name="searchedForString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Count (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Count(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTime (System.Data.Common.CommandTrees.DbExpression year, System.Data.Common.CommandTrees.DbExpression month, System.Data.Common.CommandTrees.DbExpression day, System.Data.Common.CommandTrees.DbExpression hour, System.Data.Common.CommandTrees.DbExpression minute, System.Data.Common.CommandTrees.DbExpression second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTime(class System.Data.Common.CommandTrees.DbExpression year, class System.Data.Common.CommandTrees.DbExpression month, class System.Data.Common.CommandTrees.DbExpression day, class System.Data.Common.CommandTrees.DbExpression hour, class System.Data.Common.CommandTrees.DbExpression minute, class System.Data.Common.CommandTrees.DbExpression second) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDateTimeOffset">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTimeOffset (System.Data.Common.CommandTrees.DbExpression year, System.Data.Common.CommandTrees.DbExpression month, System.Data.Common.CommandTrees.DbExpression day, System.Data.Common.CommandTrees.DbExpression hour, System.Data.Common.CommandTrees.DbExpression minute, System.Data.Common.CommandTrees.DbExpression second, System.Data.Common.CommandTrees.DbExpression timeZoneOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTimeOffset(class System.Data.Common.CommandTrees.DbExpression year, class System.Data.Common.CommandTrees.DbExpression month, class System.Data.Common.CommandTrees.DbExpression day, class System.Data.Common.CommandTrees.DbExpression hour, class System.Data.Common.CommandTrees.DbExpression minute, class System.Data.Common.CommandTrees.DbExpression second, class System.Data.Common.CommandTrees.DbExpression timeZoneOffset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeZoneOffset" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="year">To be added.</param>
+        <param name="month">To be added.</param>
+        <param name="day">To be added.</param>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <param name="timeZoneOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CreateTime (System.Data.Common.CommandTrees.DbExpression hour, System.Data.Common.CommandTrees.DbExpression minute, System.Data.Common.CommandTrees.DbExpression second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CreateTime(class System.Data.Common.CommandTrees.DbExpression hour, class System.Data.Common.CommandTrees.DbExpression minute, class System.Data.Common.CommandTrees.DbExpression second) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="hour">To be added.</param>
+        <param name="minute">To be added.</param>
+        <param name="second">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentDateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTime() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentDateTimeOffset">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTimeOffset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTimeOffset() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUtcDateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CurrentUtcDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CurrentUtcDateTime() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Day">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Day (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Day(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfYear">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DayOfYear (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DayOfYear(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffDays">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffDays (this System.Data.Common.CommandTrees.DbExpression dateValue1, System.Data.Common.CommandTrees.DbExpression dateValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffDays(class System.Data.Common.CommandTrees.DbExpression dateValue1, class System.Data.Common.CommandTrees.DbExpression dateValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue1">To be added.</param>
+        <param name="dateValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffHours">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffHours (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffHours(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">To be added.</param>
+        <param name="timeValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMicroseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMicroseconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMicroseconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">To be added.</param>
+        <param name="timeValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMilliseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMilliseconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMilliseconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">To be added.</param>
+        <param name="timeValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMinutes">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMinutes (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMinutes(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">To be added.</param>
+        <param name="timeValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMonths">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMonths (this System.Data.Common.CommandTrees.DbExpression dateValue1, System.Data.Common.CommandTrees.DbExpression dateValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMonths(class System.Data.Common.CommandTrees.DbExpression dateValue1, class System.Data.Common.CommandTrees.DbExpression dateValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue1">To be added.</param>
+        <param name="dateValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffNanoseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffNanoseconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffNanoseconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">To be added.</param>
+        <param name="timeValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffSeconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffSeconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffSeconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">To be added.</param>
+        <param name="timeValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffYears">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffYears (this System.Data.Common.CommandTrees.DbExpression dateValue1, System.Data.Common.CommandTrees.DbExpression dateValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffYears(class System.Data.Common.CommandTrees.DbExpression dateValue1, class System.Data.Common.CommandTrees.DbExpression dateValue2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue1">To be added.</param>
+        <param name="dateValue2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndsWith">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression EndsWith (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression suffix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression EndsWith(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression suffix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="suffix" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <param name="suffix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Floor">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Floor (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Floor(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalOffsetMinutes">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression GetTotalOffsetMinutes (this System.Data.Common.CommandTrees.DbExpression dateTimeOffsetArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression GetTotalOffsetMinutes(class System.Data.Common.CommandTrees.DbExpression dateTimeOffsetArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffsetArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffsetArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hour">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Hour (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Hour(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression IndexOf (this System.Data.Common.CommandTrees.DbExpression searchString, System.Data.Common.CommandTrees.DbExpression stringToFind);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression IndexOf(class System.Data.Common.CommandTrees.DbExpression searchString, class System.Data.Common.CommandTrees.DbExpression stringToFind) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringToFind" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="searchString">To be added.</param>
+        <param name="stringToFind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Left (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Left(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Length (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Length(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongCount">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression LongCount (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression LongCount(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Max (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Max(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Millisecond">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Millisecond (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Millisecond(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Min (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Min(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minute">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Minute (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Minute(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Month (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Month(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewGuid">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression NewGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression NewGuid() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Power">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Power (this System.Data.Common.CommandTrees.DbExpression baseArgument, System.Data.Common.CommandTrees.DbExpression exponent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Power(class System.Data.Common.CommandTrees.DbExpression baseArgument, class System.Data.Common.CommandTrees.DbExpression exponent) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="exponent" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="baseArgument">To be added.</param>
+        <param name="exponent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Replace (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression toReplace, System.Data.Common.CommandTrees.DbExpression replacement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Replace(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression toReplace, class System.Data.Common.CommandTrees.DbExpression replacement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="toReplace" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="replacement" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <param name="toReplace">To be added.</param>
+        <param name="replacement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Reverse (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Reverse(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Right (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Right(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Round (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Round(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Round (this System.Data.Common.CommandTrees.DbExpression value, System.Data.Common.CommandTrees.DbExpression digits);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Round(class System.Data.Common.CommandTrees.DbExpression value, class System.Data.Common.CommandTrees.DbExpression digits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="digits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Second">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Second (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Second(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartsWith">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression StartsWith (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression StartsWith(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression prefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="prefix" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StDev">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression StDev (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression StDev(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StDevP">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression StDevP (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression StDevP(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Substring (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression start, System.Data.Common.CommandTrees.DbExpression length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Substring(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression start, class System.Data.Common.CommandTrees.DbExpression length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="start" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sum">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Sum (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Sum(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLower">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression ToLower (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression ToLower(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUpper">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression ToUpper (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression ToUpper(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Trim (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Trim(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression TrimEnd (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression TrimEnd(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression TrimStart (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression TrimStart(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Truncate (this System.Data.Common.CommandTrees.DbExpression value, System.Data.Common.CommandTrees.DbExpression digits);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Truncate(class System.Data.Common.CommandTrees.DbExpression value, class System.Data.Common.CommandTrees.DbExpression digits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="digits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TruncateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression TruncateTime (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression TruncateTime(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Var">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Var (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Var(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VarP">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression VarP (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression VarP(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Year">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Year (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Year(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

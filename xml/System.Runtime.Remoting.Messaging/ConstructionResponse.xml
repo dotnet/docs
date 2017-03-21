@@ -1,11 +1,8 @@
 <Type Name="ConstructionResponse" FullName="System.Runtime.Remoting.Messaging.ConstructionResponse">
   <TypeSignature Language="C#" Value="public class ConstructionResponse : System.Runtime.Remoting.Messaging.MethodResponse, System.Runtime.Remoting.Activation.IConstructionReturnMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConstructionResponse extends System.Runtime.Remoting.Messaging.MethodResponse implements class System.Runtime.Remoting.Activation.IConstructionReturnMessage, class System.Runtime.Remoting.Messaging.IMessage, class System.Runtime.Remoting.Messaging.IMethodMessage, class System.Runtime.Remoting.Messaging.IMethodReturnMessage" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.ConstructionResponse" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,12 +32,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConstructionResponse (System.Runtime.Remoting.Messaging.Header[] h, System.Runtime.Remoting.Messaging.IMethodCallMessage mcm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Remoting.Messaging.Header[] h, class System.Runtime.Remoting.Messaging.IMethodCallMessage mcm) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.ConstructionResponse.#ctor(System.Runtime.Remoting.Messaging.Header[],System.Runtime.Remoting.Messaging.IMethodCallMessage)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,12 +51,9 @@
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="public override System.Collections.IDictionary Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Properties" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.ConstructionResponse.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

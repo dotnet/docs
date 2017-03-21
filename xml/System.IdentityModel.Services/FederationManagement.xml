@@ -1,0 +1,153 @@
+<Type Name="FederationManagement" FullName="System.IdentityModel.Services.FederationManagement">
+  <TypeSignature Language="C#" Value="public static class FederationManagement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FederationManagement extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateApplicationFederationMetadata">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlReader CreateApplicationFederationMetadata (Uri applicationUri, System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.DisplayClaim&gt; claimsRequired, System.IdentityModel.Services.ApplicationType applicationType, System.Collections.ObjectModel.Collection&lt;Uri&gt; audienceUris);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader CreateApplicationFederationMetadata(class System.Uri applicationUri, class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Metadata.DisplayClaim&gt; claimsRequired, valuetype System.IdentityModel.Services.ApplicationType applicationType, class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; audienceUris) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="applicationUri" Type="System.Uri" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+        <Parameter Name="claimsRequired" Type="System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.DisplayClaim&gt;" />
+        <Parameter Name="applicationType" Type="System.IdentityModel.Services.ApplicationType" />
+        <Parameter Name="audienceUris" Type="System.Collections.ObjectModel.Collection&lt;System.Uri&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="applicationUri">To be added.</param>
+        <param name="certificate">To be added.</param>
+        <param name="claimsRequired">To be added.</param>
+        <param name="applicationType">To be added.</param>
+        <param name="audienceUris">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlReader UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="claimsOfferedUpdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">To be added.</param>
+        <param name="inputConfiguration">To be added.</param>
+        <param name="claimsOfferedUpdate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlReader UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate, System.IdentityModel.Metadata.MetadataSerializer metadataSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlReader UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, bool claimsOfferedUpdate, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="claimsOfferedUpdate" Type="System.Boolean" />
+        <Parameter Name="metadataSerializer" Type="System.IdentityModel.Metadata.MetadataSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">To be added.</param>
+        <param name="inputConfiguration">To be added.</param>
+        <param name="claimsOfferedUpdate">To be added.</param>
+        <param name="metadataSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static void UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, out System.Xml.XmlNodeReader newIssuerNameRegistry, out System.Xml.XmlNodeReader claimTypesOffered);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, class System.Xml.XmlNodeReader newIssuerNameRegistry, class System.Xml.XmlNodeReader claimTypesOffered) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">To be added.</param>
+        <param name="inputConfiguration">To be added.</param>
+        <param name="newIssuerNameRegistry">To be added.</param>
+        <param name="claimTypesOffered">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIdentityProviderTrustInfo">
+      <MemberSignature Language="C#" Value="public static void UpdateIdentityProviderTrustInfo (System.Xml.XmlReader metadataReader, System.Xml.XmlReader inputConfiguration, out System.Xml.XmlNodeReader newIssuerNameRegistry, out System.Xml.XmlNodeReader claimTypesOffered, System.IdentityModel.Metadata.MetadataSerializer metadataSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateIdentityProviderTrustInfo(class System.Xml.XmlReader metadataReader, class System.Xml.XmlReader inputConfiguration, class System.Xml.XmlNodeReader newIssuerNameRegistry, class System.Xml.XmlNodeReader claimTypesOffered, class System.IdentityModel.Metadata.MetadataSerializer metadataSerializer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="inputConfiguration" Type="System.Xml.XmlReader" />
+        <Parameter Name="newIssuerNameRegistry" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="claimTypesOffered" Type="System.Xml.XmlNodeReader&amp;" RefType="out" />
+        <Parameter Name="metadataSerializer" Type="System.IdentityModel.Metadata.MetadataSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="metadataReader">To be added.</param>
+        <param name="inputConfiguration">To be added.</param>
+        <param name="newIssuerNameRegistry">To be added.</param>
+        <param name="claimTypesOffered">To be added.</param>
+        <param name="metadataSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

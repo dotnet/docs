@@ -1,0 +1,72 @@
+<Type Name="IDesignTimeAssemblyLoader" FullName="System.ComponentModel.Design.IDesignTimeAssemblyLoader">
+  <TypeSignature Language="C#" Value="public interface IDesignTimeAssemblyLoader" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignTimeAssemblyLoader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("665f0ba5-ce72-4e87-9ba0-3c461de74d0b")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetTargetAssemblyPath">
+      <MemberSignature Language="C#" Value="public string GetTargetAssemblyPath (System.Reflection.AssemblyName runtimeOrTargetAssemblyName, string suggestedAssemblyPath, System.Runtime.Versioning.FrameworkName targetFramework);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTargetAssemblyPath(class System.Reflection.AssemblyName runtimeOrTargetAssemblyName, string suggestedAssemblyPath, class System.Runtime.Versioning.FrameworkName targetFramework) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runtimeOrTargetAssemblyName" Type="System.Reflection.AssemblyName" />
+        <Parameter Name="suggestedAssemblyPath" Type="System.String" />
+        <Parameter Name="targetFramework" Type="System.Runtime.Versioning.FrameworkName" />
+      </Parameters>
+      <Docs>
+        <param name="runtimeOrTargetAssemblyName">To be added.</param>
+        <param name="suggestedAssemblyPath">To be added.</param>
+        <param name="targetFramework">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadRuntimeAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly LoadRuntimeAssembly (System.Reflection.AssemblyName targetAssemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly LoadRuntimeAssembly(class System.Reflection.AssemblyName targetAssemblyName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetAssemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="targetAssemblyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

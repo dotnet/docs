@@ -1,0 +1,384 @@
+<Type Name="Financial" FullName="Microsoft.VisualBasic.Financial">
+  <TypeSignature Language="C#" Value="public sealed class Financial" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Financial extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DDB">
+      <MemberSignature Language="C#" Value="public static double DDB (double Cost, double Salvage, double Life, double Period, double Factor = 2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 DDB(float64 Cost, float64 Salvage, float64 Life, float64 Period, float64 Factor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Cost" Type="System.Double" />
+        <Parameter Name="Salvage" Type="System.Double" />
+        <Parameter Name="Life" Type="System.Double" />
+        <Parameter Name="Period" Type="System.Double" />
+        <Parameter Name="Factor" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Cost">To be added.</param>
+        <param name="Salvage">To be added.</param>
+        <param name="Life">To be added.</param>
+        <param name="Period">To be added.</param>
+        <param name="Factor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FV">
+      <MemberSignature Language="C#" Value="public static double FV (double Rate, double NPer, double Pmt, double PV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 FV(float64 Rate, float64 NPer, float64 Pmt, float64 PV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="NPer">To be added.</param>
+        <param name="Pmt">To be added.</param>
+        <param name="PV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPmt">
+      <MemberSignature Language="C#" Value="public static double IPmt (double Rate, double Per, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 IPmt(float64 Rate, float64 Per, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="Per" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="Per">To be added.</param>
+        <param name="NPer">To be added.</param>
+        <param name="PV">To be added.</param>
+        <param name="FV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IRR">
+      <MemberSignature Language="C#" Value="public static double IRR (ref double[] ValueArray, double Guess = 0.1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[] ValueArray, float64 Guess) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="Guess" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="ValueArray">To be added.</param>
+        <param name="Guess">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MIRR">
+      <MemberSignature Language="C#" Value="public static double MIRR (ref double[] ValueArray, double FinanceRate, double ReinvestRate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[] ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="FinanceRate" Type="System.Double" />
+        <Parameter Name="ReinvestRate" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="ValueArray">To be added.</param>
+        <param name="FinanceRate">To be added.</param>
+        <param name="ReinvestRate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NPer">
+      <MemberSignature Language="C#" Value="public static double NPer (double Rate, double Pmt, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 NPer(float64 Rate, float64 Pmt, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="Pmt">To be added.</param>
+        <param name="PV">To be added.</param>
+        <param name="FV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NPV">
+      <MemberSignature Language="C#" Value="public static double NPV (double Rate, ref double[] ValueArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[] ValueArray) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="ValueArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pmt">
+      <MemberSignature Language="C#" Value="public static double Pmt (double Rate, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 Pmt(float64 Rate, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="NPer">To be added.</param>
+        <param name="PV">To be added.</param>
+        <param name="FV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PPmt">
+      <MemberSignature Language="C#" Value="public static double PPmt (double Rate, double Per, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 PPmt(float64 Rate, float64 Per, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="Per" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="Per">To be added.</param>
+        <param name="NPer">To be added.</param>
+        <param name="PV">To be added.</param>
+        <param name="FV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PV">
+      <MemberSignature Language="C#" Value="public static double PV (double Rate, double NPer, double Pmt, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 PV(float64 Rate, float64 NPer, float64 Pmt, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">To be added.</param>
+        <param name="NPer">To be added.</param>
+        <param name="Pmt">To be added.</param>
+        <param name="FV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rate">
+      <MemberSignature Language="C#" Value="public static double Rate (double NPer, double Pmt, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod, double Guess = 0.1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 Rate(float64 NPer, float64 Pmt, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due, float64 Guess) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+        <Parameter Name="Guess" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="NPer">To be added.</param>
+        <param name="Pmt">To be added.</param>
+        <param name="PV">To be added.</param>
+        <param name="FV">To be added.</param>
+        <param name="Due">To be added.</param>
+        <param name="Guess">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SLN">
+      <MemberSignature Language="C#" Value="public static double SLN (double Cost, double Salvage, double Life);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 SLN(float64 Cost, float64 Salvage, float64 Life) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Cost" Type="System.Double" />
+        <Parameter Name="Salvage" Type="System.Double" />
+        <Parameter Name="Life" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Cost">To be added.</param>
+        <param name="Salvage">To be added.</param>
+        <param name="Life">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SYD">
+      <MemberSignature Language="C#" Value="public static double SYD (double Cost, double Salvage, double Life, double Period);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 SYD(float64 Cost, float64 Salvage, float64 Life, float64 Period) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Cost" Type="System.Double" />
+        <Parameter Name="Salvage" Type="System.Double" />
+        <Parameter Name="Life" Type="System.Double" />
+        <Parameter Name="Period" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Cost">To be added.</param>
+        <param name="Salvage">To be added.</param>
+        <param name="Life">To be added.</param>
+        <param name="Period">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

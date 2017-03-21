@@ -1,10 +1,20 @@
 <Type Name="ExceptionDispatchInfo" FullName="System.Runtime.ExceptionServices.ExceptionDispatchInfo">
   <TypeSignature Language="C#" Value="public sealed class ExceptionDispatchInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionDispatchInfo extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.ExceptionServices.ExceptionDispatchInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,11 +28,21 @@
     <Member MemberName="Capture">
       <MemberSignature Language="C#" Value="public static System.Runtime.ExceptionServices.ExceptionDispatchInfo Capture (Exception source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.ExceptionServices.ExceptionDispatchInfo Capture(class System.Exception source) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.ExceptionServices.ExceptionDispatchInfo</ReturnType>
@@ -40,11 +60,21 @@
     <Member MemberName="SourceException">
       <MemberSignature Language="C#" Value="public Exception SourceException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception SourceException" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
@@ -58,11 +88,21 @@
     <Member MemberName="Throw">
       <MemberSignature Language="C#" Value="public void Throw ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Throw() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

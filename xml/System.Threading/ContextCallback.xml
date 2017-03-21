@@ -1,20 +1,21 @@
 <Type Name="ContextCallback" FullName="System.Threading.ContextCallback">
   <TypeSignature Language="C#" Value="public delegate void ContextCallback(object state);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextCallback extends System.MulticastDelegate" />
-  <TypeSignature Language="DocId" Value="T:System.Threading.ContextCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Parameters>
     <Parameter Name="state" Type="System.Object" />
   </Parameters>

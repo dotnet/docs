@@ -1,0 +1,29 @@
+<Type Name="StartupNextInstanceEventHandler" FullName="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void StartupNextInstanceEventHandler(object sender, StartupNextInstanceEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StartupNextInstanceEventHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,46 @@
+<Type Name="IDefineEvent" FullName="Microsoft.JScript.IDefineEvent">
+  <TypeSignature Language="C#" Value="public interface IDefineEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDefineEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("D1A19408-BB6B-43eb-BB6F-E7CF6AF047D7")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public object AddEvent (string code, int startLine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddEvent(string code, int32 startLine) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="startLine" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="code">To be added.</param>
+        <param name="startLine">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

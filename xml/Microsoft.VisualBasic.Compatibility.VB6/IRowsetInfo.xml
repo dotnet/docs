@@ -1,0 +1,98 @@
+<Type Name="IRowsetInfo" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo">
+  <TypeSignature Language="C#" Value="public interface IRowsetInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A55-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public void GetProperties (int cPropertyIDSets, Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[] rgPropertyIDSets, out int cPropertySets, out IntPtr prgPropertySets);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetProperties(int32 cPropertyIDSets, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[] rgPropertyIDSets, int32 cPropertySets, native int prgPropertySets) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cPropertyIDSets" Type="System.Int32" />
+        <Parameter Name="rgPropertyIDSets" Type="Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[]" />
+        <Parameter Name="cPropertySets" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="prgPropertySets" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cPropertyIDSets">To be added.</param>
+        <param name="rgPropertyIDSets">To be added.</param>
+        <param name="cPropertySets">To be added.</param>
+        <param name="prgPropertySets">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRowset">
+      <MemberSignature Language="C#" Value="public void GetReferencedRowset (int iOrdinal, Guid riid, out object referencedRowset);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetReferencedRowset(int32 iOrdinal, valuetype System.Guid riid, object referencedRowset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iOrdinal" Type="System.Int32" />
+        <Parameter Name="riid" Type="System.Guid" />
+        <Parameter Name="referencedRowset" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="iOrdinal">To be added.</param>
+        <param name="riid">To be added.</param>
+        <param name="referencedRowset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpecification">
+      <MemberSignature Language="C#" Value="public void GetSpecification (Guid riid, out object specification);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetSpecification(valuetype System.Guid riid, object specification) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid" />
+        <Parameter Name="specification" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="riid">To be added.</param>
+        <param name="specification">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

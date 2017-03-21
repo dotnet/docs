@@ -1,0 +1,412 @@
+<Type Name="GeneratorSupport" FullName="System.CodeDom.Compiler.GeneratorSupport">
+  <TypeSignature Language="C#" Value="public enum GeneratorSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed GeneratorSupport extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ArraysOfArrays">
+      <MemberSignature Language="C#" Value="ArraysOfArrays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ArraysOfArrays = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyAttributes">
+      <MemberSignature Language="C#" Value="AssemblyAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport AssemblyAttributes = int32(4096)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChainedConstructorArguments">
+      <MemberSignature Language="C#" Value="ChainedConstructorArguments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ChainedConstructorArguments = int32(32768)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ComplexExpressions">
+      <MemberSignature Language="C#" Value="ComplexExpressions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ComplexExpressions = int32(524288)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareDelegates">
+      <MemberSignature Language="C#" Value="DeclareDelegates" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareDelegates = int32(512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareEnums">
+      <MemberSignature Language="C#" Value="DeclareEnums" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareEnums = int32(256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareEvents">
+      <MemberSignature Language="C#" Value="DeclareEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareEvents = int32(2048)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareIndexerProperties">
+      <MemberSignature Language="C#" Value="DeclareIndexerProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareIndexerProperties = int32(33554432)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareInterfaces">
+      <MemberSignature Language="C#" Value="DeclareInterfaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareInterfaces = int32(1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareValueTypes">
+      <MemberSignature Language="C#" Value="DeclareValueTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareValueTypes = int32(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryPointMethod">
+      <MemberSignature Language="C#" Value="EntryPointMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport EntryPointMethod = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeDeclaration">
+      <MemberSignature Language="C#" Value="GenericTypeDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport GenericTypeDeclaration = int32(16777216)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeReference">
+      <MemberSignature Language="C#" Value="GenericTypeReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport GenericTypeReference = int32(8388608)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GotoStatements">
+      <MemberSignature Language="C#" Value="GotoStatements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport GotoStatements = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultidimensionalArrays">
+      <MemberSignature Language="C#" Value="MultidimensionalArrays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport MultidimensionalArrays = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleInterfaceMembers">
+      <MemberSignature Language="C#" Value="MultipleInterfaceMembers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport MultipleInterfaceMembers = int32(131072)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NestedTypes">
+      <MemberSignature Language="C#" Value="NestedTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport NestedTypes = int32(65536)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterAttributes">
+      <MemberSignature Language="C#" Value="ParameterAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ParameterAttributes = int32(8192)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PartialTypes">
+      <MemberSignature Language="C#" Value="PartialTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport PartialTypes = int32(4194304)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicStaticMembers">
+      <MemberSignature Language="C#" Value="PublicStaticMembers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport PublicStaticMembers = int32(262144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceParameters">
+      <MemberSignature Language="C#" Value="ReferenceParameters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ReferenceParameters = int32(16384)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="Resources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport Resources = int32(2097152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnTypeAttributes">
+      <MemberSignature Language="C#" Value="ReturnTypeAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ReturnTypeAttributes = int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticConstructors">
+      <MemberSignature Language="C#" Value="StaticConstructors" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport StaticConstructors = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCatchStatements">
+      <MemberSignature Language="C#" Value="TryCatchStatements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport TryCatchStatements = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32Resources">
+      <MemberSignature Language="C#" Value="Win32Resources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport Win32Resources = int32(1048576)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

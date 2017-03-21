@@ -1,0 +1,162 @@
+<Type Name="SrgsGrammarCompiler" FullName="System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler">
+  <TypeSignature Language="C#" Value="public static class SrgsGrammarCompiler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SrgsGrammarCompiler extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public static void Compile (System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsGrammar, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Compile(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsGrammar, class System.IO.Stream outputStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srgsGrammar" Type="System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="srgsGrammar">To be added.</param>
+        <param name="outputStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public static void Compile (string inputPath, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Compile(string inputPath, class System.IO.Stream outputStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputPath" Type="System.String" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="inputPath">To be added.</param>
+        <param name="outputStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public static void Compile (System.Xml.XmlReader reader, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Compile(class System.Xml.XmlReader reader, class System.IO.Stream outputStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="outputStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileClassLibrary">
+      <MemberSignature Language="C#" Value="public static void CompileClassLibrary (System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsGrammar, string outputPath, string[] referencedAssemblies, string keyFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompileClassLibrary(class System.Speech.Recognition.SrgsGrammar.SrgsDocument srgsGrammar, string outputPath, string[] referencedAssemblies, string keyFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srgsGrammar" Type="System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
+        <Parameter Name="outputPath" Type="System.String" />
+        <Parameter Name="referencedAssemblies" Type="System.String[]" />
+        <Parameter Name="keyFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="srgsGrammar">To be added.</param>
+        <param name="outputPath">To be added.</param>
+        <param name="referencedAssemblies">To be added.</param>
+        <param name="keyFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileClassLibrary">
+      <MemberSignature Language="C#" Value="public static void CompileClassLibrary (string[] inputPaths, string outputPath, string[] referencedAssemblies, string keyFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompileClassLibrary(string[] inputPaths, string outputPath, string[] referencedAssemblies, string keyFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputPaths" Type="System.String[]" />
+        <Parameter Name="outputPath" Type="System.String" />
+        <Parameter Name="referencedAssemblies" Type="System.String[]" />
+        <Parameter Name="keyFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputPaths">To be added.</param>
+        <param name="outputPath">To be added.</param>
+        <param name="referencedAssemblies">To be added.</param>
+        <param name="keyFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileClassLibrary">
+      <MemberSignature Language="C#" Value="public static void CompileClassLibrary (System.Xml.XmlReader reader, string outputPath, string[] referencedAssemblies, string keyFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompileClassLibrary(class System.Xml.XmlReader reader, string outputPath, string[] referencedAssemblies, string keyFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="outputPath" Type="System.String" />
+        <Parameter Name="referencedAssemblies" Type="System.String[]" />
+        <Parameter Name="keyFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="outputPath">To be added.</param>
+        <param name="referencedAssemblies">To be added.</param>
+        <param name="keyFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

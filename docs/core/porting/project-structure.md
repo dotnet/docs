@@ -42,32 +42,17 @@ Consider the repository below:
 
 There are several different ways to add support for .NET Core for this repository depending on the constraints and complexity of existing projects which are described below.
 
-## Replace Existing Projects with a Multi-targeted .NET Core Project (xproj)
+## Replace Existing Projects with a Multi-targeted .NET Core Project
 
-The repository can be reorganized so that any existing `*.csproj` files are removed and a single `*.xproj` file is created that targets multiple frameworks.  This is a great option because a single project is able to compile for different frameworks.  It also has the power to handle different compilation options, dependencies, etc. per targeted framework.
+The repository can be reorganized so that any existing `*.csproj` files are removed and a single `*.csproj` file is created that targets multiple frameworks.  This is a great option because a single project is able to compile for different frameworks.  It also has the power to handle different compilation options, dependencies, etc. per targeted framework.
 
-![Create an xproj that targets multiple frameworks][example-csproj]
+![Create an csproj that targets multiple frameworks][example-csproj]
 
 [**Source Code**][example-csproj-code]
 
 Changes to note are:
-* Addition of `global.json`
-* Replacement of `packages.config` and `*.csproj` with `project.json` and `*.xproj`
+* Replacement of `packages.config` and `*.csproj` with new .NET Core `*.csproj`
 * Changes in the [Car's project.json][example-csproj-projectjson] and its [test project][example-csproj-projectjson-test] to support building for the existing .NET Framework as well as others
-
-## Create a Portable Class Library (PCL) to target .NET Core
-
-If existing projects contain complex build operations or properties in their `*.csproj` file, it may be easier to create a PCL.
-
-![][example-pcl]
-
-[**Source Code**][example-pcl-code]
-
-Changes to note are:
-*  Renaming `project.json` to `{project-name}.project.json`
-    * This prevents potential conflict in Visual Studio when trying to restore packages for the libraries in the same directory. For more information, see the [NuGet FAQ](https://docs.nuget.org/consume/nuget-faq#working-with-packages) under "_I have multiple projects in the same folder, how can I use separate packages.config or project.json files for each project?_".
-    *  **Alternative**: Create the PCL in another folder and reference the original source code to avoid this issue.  Placing the PCL in another folder has an added benefit that users who do not have Visual Studio 2015 can still work on the older projects without loading the new solution.
-*  To target .NET Standard after creating the PCL, in Visual Studio, open the **Project's Properties**. Under the **Targets** section, click on the link **"Target .NET Platform Standard"**.  This change can be reversed by repeating the same steps.
 
 ## Keep Existing Projects and Create a .NET Core Project
 
@@ -84,21 +69,21 @@ Changes to note are:
 
 ## See Also
 
-Please see [.NET Core porting documentation][porting-doc] for more guidance on moving to project.json and xproj.
+Please see [.NET Core porting documentation][porting-doc] for more guidance on moving to project.json and csproj.
 
 [porting-doc]: index.md
 [example-initial-project]: media/project-structure/project.png "Existing project"
 [example-initial-project-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library/
 
-[example-csproj]: media/project-structure/project.xproj.png "Create an xproj that targets multiple frameworks"
-[example-csproj-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/
-[example-csproj-projectjson]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/src/Car/project.json
-[example-csproj-projectjson-test]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/tests/Car.Tests/project.json
+[example-csproj]: media/project-structure/project.csproj.png "Create an csproj that targets multiple frameworks"
+[example-csproj-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-csproj/
+[example-csproj-projectjson]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-csproj/src/Car/project.json
+[example-csproj-projectjson-test]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-csproj/tests/Car.Tests/project.json
 
-[example-csproj-different-folder]: media/project-structure/project.xproj.different.png ".NET Core project with existing PCL in different folder"
-[example-csproj-different-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj-keep-csproj/
+[example-csproj-different-folder]: media/project-structure/project.csproj.different.png ".NET Core project with existing PCL in different folder"
+[example-csproj-different-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-csproj-keep-existing/
 
-[option-csproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj
+[option-csproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project
 [option-csproj-folder]: #keep-existing-projects-and-create-a-net-core-project
 
 [how-to-multitarget]: ../tutorials/libraries.md#how-to-multitarget

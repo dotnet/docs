@@ -1,0 +1,8 @@
+﻿<!--<SnippetSetJournalOwnershipProperty>-->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+  <!-- Frame that uses its own journal -->
+  <Frame JournalOwnership="OwnsJournal" Source="Page2.xaml" />
+
+</Page>
+<!--</SnippetSetJournalOwnershipProperty>-->

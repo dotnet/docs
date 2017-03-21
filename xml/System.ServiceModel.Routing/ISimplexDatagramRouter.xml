@@ -1,6 +1,7 @@
 <Type Name="ISimplexDatagramRouter" FullName="System.ServiceModel.Routing.ISimplexDatagramRouter">
   <TypeSignature Language="C#" Value="public interface ISimplexDatagramRouter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISimplexDatagramRouter" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.ISimplexDatagramRouter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,13 +13,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface required for processing messages from simplex datagram.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This contract has the following settings:  
+  
+-   Sessions are allowed, but not required.  
+  
+-   One way messages.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginProcessMessage">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginProcessMessage (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginProcessMessage(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -38,17 +51,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message to be processed.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that is invoked when the message processing has completed.</param>
+        <param name="state">A user-defined state object that is passed to the callback procedure.</param>
+        <summary>Initiates the asynchronous processing of the message.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that can be used to poll or wait for results, or both; this value is also needed when invoking <see cref="System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage%2A" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndProcessMessage">
       <MemberSignature Language="C#" Value="public void EndProcessMessage (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndProcessMessage(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -61,8 +75,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The asynchronous result returned by the call to <see cref="System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage%2A" />.</param>
+        <summary>Finishes asynchronous execution of message processing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

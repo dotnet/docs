@@ -1,0 +1,1 @@
+        Dim uiPerm1 As New UIPermission(UIPermissionWindow.SafeTopLevelWindows)

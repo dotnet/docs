@@ -1,0 +1,1 @@
+      return this.Real.Equals(value) && this.Imaginary.Equals(value);      

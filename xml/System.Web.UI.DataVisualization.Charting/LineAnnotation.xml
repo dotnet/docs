@@ -1,6 +1,7 @@
 <Type Name="LineAnnotation" FullName="System.Web.UI.DataVisualization.Charting.LineAnnotation">
   <TypeSignature Language="C#" Value="public class LineAnnotation : System.Web.UI.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LineAnnotation extends System.Web.UI.DataVisualization.Charting.Annotation" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LineAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a line annotation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LineAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LineAnnotation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,14 +51,15 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnchorAlignment">
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment AnchorAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment AnchorAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.AnchorAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -76,14 +80,22 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the position alignment of an annotation to the anchor point.</summary>
+        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the annotation alignment to the anchor point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The annotation must be anchored using either <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A>, or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties. Its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -107,14 +119,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of annotation.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use, should not be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -141,14 +161,15 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -172,14 +193,15 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -203,14 +225,15 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -237,14 +260,15 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCap">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle EndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle EndCap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.EndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -259,14 +283,15 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a style for the anchor cap at the end of the annotation line.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" /> enumeration value that represents the style to apply to the anchor cap at the end of the line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -284,14 +309,15 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -315,14 +341,15 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInfinitive">
       <MemberSignature Language="C#" Value="public virtual bool IsInfinitive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInfinitive" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.IsInfinitive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -337,14 +364,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that indicates whether an infinite line should be drawn.</summary>
+        <value>
+          <see langword="True" /> if a line should be drawn infinitely through two points provided, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSizeAlwaysRelative">
       <MemberSignature Language="C#" Value="public override bool IsSizeAlwaysRelative { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeAlwaysRelative" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.IsSizeAlwaysRelative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -359,14 +388,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a flag that specifies whether the size of an annotation is always defined in relative chart coordinates.</summary>
+        <value>
+          <see langword="True" /> if the <see cref="System.Web.UI.DataVisualization.Charting.Annotation.Width%2A" /> and <see cref="System.Web.UI.DataVisualization.Charting.Annotation.Height%2A" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The width and height of an annotation may be set in relative chart or in axes coordinates. By default, relative chart coordinates are used. To use axes coordinates for the annotation size, set the IsSizeAlwaysRelative property to `false`. Then anchor the annotation to a data point or set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartCap">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle StartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle StartCap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.StartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -381,14 +419,15 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a style for the anchor cap at the start of an annotation line.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" /> enumeration value that represents the style to apply to the anchor cap at the start of the line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.TextStyle TextStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.TextStyle TextStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.LineAnnotation.TextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -406,8 +445,8 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the line annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.TextStyle" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,8 +1,10 @@
 <Type Name="AppDomainManager" FullName="System.AppDomainManager">
   <TypeSignature Language="C#" Value="public class AppDomainManager : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppDomainManager extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.AppDomainManager" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,47 +20,107 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a managed equivalent of an unmanaged host.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Do not use AppDomainManager to configure an application domain in ASP.NET. In ASP.NET, configuration must be handled by the host.  
+  
+ Implementing the AppDomainManager class enables a hosting application to participate in the creation of new application domains. To replace the default AppDomainManager, identify the assembly and type of the replacement AppDomainManager in the APPDOMAIN_MANAGER_ASM and APPDOMAIN_MANAGER_TYPE environment variables, or use the [\<appDomainManagerAssembly>](../Topic/%3CappDomainManagerAssembly%3E%20Element.md) and [\<appDomainManagerType>](../Topic/%3CappDomainManagerType%3E%20Element.md) elements in your configuration file. The assembly must be fully trusted and be contained in the global assembly cache or the directory of the starting application. The type and assembly names must be fully qualified in the environment variables. For example:  
+  
+ `set APPDOMAIN_MANAGER_TYPE=MyNamespace.TestAppDomainManager`  
+  
+ `set APPDOMAIN_MANAGER_ASM=customappDomainmanager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f1368f7b12a08d72`  
+  
+> [!IMPORTANT]
+>  If the assembly that contains your subclass of AppDomainManager depends on assemblies that are marked with the conditional <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute, you must include those assemblies in the list that you pass to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A> property of the <xref:System.AppDomainSetup> you use to create application domains. Otherwise, the assemblies that are marked with the conditional APTCA attribute will be disabled.  
+  
+ The AppDomainManager is the managed equivalent of the unmanaged host. An AppDomainManager object participates in the creation of new application domains in a process and can customize the new <xref:System.AppDomain> before other managed code runs. The AppDomainManager can also supply host managers that participate in other aspects of common language runtime execution. For example, an AppDomainManager can identify a <xref:System.Security.HostSecurityManager> object that participates in the security decisions of the application domain.  
+  
+> [!NOTE]
+>  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
+  
+> [!NOTE]
+>  This class contains a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ The following example shows a very simple implementation of AppDomainManager.  
+  
+ [!code-vb[System.AppDomainManager#1](~/add/codesnippet/visualbasic/t-system.appdomainmanager_1.vb)]
+ [!code-cs[System.AppDomainManager#1](~/add/codesnippet/csharp/t-system.appdomainmanager_1.cs)]  
+  
+ ]]></format>
+    </remarks>
+    <exception cref="T:System.Security.SecurityException">The caller does not have the correct permissions. See the Requirements section.</exception>
+    <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for derived classes to plug executable code into the common language runtime hosting infrastructure. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AppDomainManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainManager.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainManager" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  AppDomainManager constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ApplicationActivator">
       <MemberSignature Language="C#" Value="public virtual System.Runtime.Hosting.ApplicationActivator ApplicationActivator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Hosting.ApplicationActivator ApplicationActivator" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainManager.ApplicationActivator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Hosting.ApplicationActivator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the application activator that handles the activation of add-ins and manifest-based applications for the domain.</summary>
+        <value>The application activator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is a single designated instance of the <xref:System.Runtime.Hosting.ApplicationActivator> class in each <xref:System.AppDomain> to which all add-in and manifest-based application activation calls are routed. The <xref:System.AppDomainManager> for the current <xref:System.AppDomain> can provide its own custom <xref:System.Runtime.Hosting.ApplicationActivator>, or an instance of the default <xref:System.Runtime.Hosting.ApplicationActivator> is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSecuritySettings">
       <MemberSignature Language="C#" Value="public virtual bool CheckSecuritySettings (System.Security.SecurityState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckSecuritySettings(class System.Security.SecurityState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainManager.CheckSecuritySettings(System.Security.SecurityState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,18 +130,30 @@
         <Parameter Name="state" Type="System.Security.SecurityState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="state">A subclass of <see cref="T:System.Security.SecurityState" /> that identifies the operation whose security status is requested.</param>
+        <summary>Indicates whether the specified operation is allowed in the application domain.</summary>
+        <returns>
+          <see langword="true" /> if the host allows the operation specified by <paramref name="state" /> to be performed in the application domain; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method returns `false`.  
+  
+ This method is called when the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A?displayProperty=fullName> method has been called to increase the isolated storage quota. An application that hosts the common language runtime (CLR) can override the CheckSecuritySettings method to perform policy decisions based on an <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityState> object (which inherits <xref:System.Security.SecurityState>), and can then allow or prevent the increase. For example, a host could prompt the end user to approve or deny the request to increase the quota. The host's implementation of CheckSecuritySettings should take into account the possibility of denial-of-service attacks. For example, it should prompt the user only if the method is called from a user-initiated event such as a button click.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDomain">
       <MemberSignature Language="C#" Value="public virtual AppDomain CreateDomain (string friendlyName, System.Security.Policy.Evidence securityInfo, AppDomainSetup appDomainInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AppDomain CreateDomain(string friendlyName, class System.Security.Policy.Evidence securityInfo, class System.AppDomainSetup appDomainInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainManager.CreateDomain(System.String,System.Security.Policy.Evidence,System.AppDomainSetup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -96,20 +170,31 @@
         <Parameter Name="appDomainInfo" Type="System.AppDomainSetup" />
       </Parameters>
       <Docs>
-        <param name="friendlyName">To be added.</param>
-        <param name="securityInfo">To be added.</param>
-        <param name="appDomainInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="friendlyName">The friendly name of the domain.</param>
+        <param name="securityInfo">An object that contains evidence mapped through the security policy to establish a top-of-stack permission set.</param>
+        <param name="appDomainInfo">An object that contains application domain initialization information.</param>
+        <summary>Returns a new or existing application domain.</summary>
+        <returns>A new or existing application domain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The friendly name, specified by the `friendlyName` parameter, can be displayed in user interfaces to identify the domain. For more information, see the <xref:System.AppDomain.FriendlyName%2A> property.  
+  
+ The default CreateDomain method calls the protected <xref:System.AppDomainManager.CreateDomainHelper%2A> method to create the <xref:System.AppDomain>. Overrides of this method do not need to call the <xref:System.AppDomainManager.CreateDomainHelper%2A> method but can return an existing domain.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDomainHelper">
       <MemberSignature Language="C#" Value="protected static AppDomain CreateDomainHelper (string friendlyName, System.Security.Policy.Evidence securityInfo, AppDomainSetup appDomainInfo);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.AppDomain CreateDomainHelper(string friendlyName, class System.Security.Policy.Evidence securityInfo, class System.AppDomainSetup appDomainInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainManager.CreateDomainHelper(System.String,System.Security.Policy.Evidence,System.AppDomainSetup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -126,20 +211,34 @@
         <Parameter Name="appDomainInfo" Type="System.AppDomainSetup" />
       </Parameters>
       <Docs>
-        <param name="friendlyName">To be added.</param>
-        <param name="securityInfo">To be added.</param>
-        <param name="appDomainInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="friendlyName">The friendly name of the domain.</param>
+        <param name="securityInfo">An object that contains evidence mapped through the security policy to establish a top-of-stack permission set.</param>
+        <param name="appDomainInfo">An object that contains application domain initialization information.</param>
+        <summary>Provides a helper method to create an application domain.</summary>
+        <returns>A newly created application domain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This protected helper method handles the creation of a new application domain.  
+  
+ This friendly name, specified by the `friendlyName` parameter, can be displayed in user interfaces to identify the domain. For more information, see the <xref:System.AppDomain.FriendlyName%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="friendlyName" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for controlling evidence. Security action: <see cref="T:System.Security.Permissions.SecurityAction" />. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="EntryAssembly">
       <MemberSignature Language="C#" Value="public virtual System.Reflection.Assembly EntryAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly EntryAssembly" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainManager.EntryAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,68 +250,105 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the entry assembly for an application.</summary>
+        <value>The entry assembly for the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the application is a manifest-activated application, the entry assembly is determined from the application manifest. If the application is not manifest activated, the entry assembly is the process executable in the default application domain. In other application domains, the entry assembly is the first executable that was executed by the <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostExecutionContextManager">
       <MemberSignature Language="C#" Value="public virtual System.Threading.HostExecutionContextManager HostExecutionContextManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.HostExecutionContextManager HostExecutionContextManager" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainManager.HostExecutionContextManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.HostExecutionContextManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the host execution context manager that manages the flow of the execution context.</summary>
+        <value>The host execution context manager.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows a host to provide a <xref:System.Threading.HostExecutionContextManager> that can participate in the flow of the execution context across asynchronous calls.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostSecurityManager">
       <MemberSignature Language="C#" Value="public virtual System.Security.HostSecurityManager HostSecurityManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.HostSecurityManager HostSecurityManager" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainManager.HostSecurityManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.HostSecurityManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the host security manager that participates in security decisions for the application domain.</summary>
+        <value>The host security manager.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows a host to provide a <xref:System.Security.HostSecurityManager> to participate in the security decisions for the application domain.  
+  
+   
+  
+## Examples  
+ The following example shows an override of the HostSecurityManager property for a custom application domain manager. This code example is part of a larger example provided for the <xref:System.AppDomainManager> class.  
+  
+ [!code-vb[System.AppDomainManager#3](~/add/codesnippet/visualbasic/p-system.appdomainmanage_1.vb)]
+ [!code-cs[System.AppDomainManager#3](~/add/codesnippet/csharp/p-system.appdomainmanage_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializationFlags">
       <MemberSignature Language="C#" Value="public AppDomainManagerInitializationOptions InitializationFlags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.AppDomainManagerInitializationOptions InitializationFlags" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainManager.InitializationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the initialization flags for custom application domain managers.</summary>
+        <value>A bitwise combination of the enumeration values that describe the initialization action to perform. The default is <see cref="T:System.AppDomainManagerInitializationOptions" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeNewDomain">
       <MemberSignature Language="C#" Value="public virtual void InitializeNewDomain (AppDomainSetup appDomainInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeNewDomain(class System.AppDomainSetup appDomainInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainManager.InitializeNewDomain(System.AppDomainSetup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -227,9 +363,35 @@
         <Parameter Name="appDomainInfo" Type="System.AppDomainSetup" />
       </Parameters>
       <Docs>
-        <param name="appDomainInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="appDomainInfo">An object that contains application domain initialization information.</param>
+        <summary>Initializes the new application domain.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Do not use this method to initialize an application domain in ASP.NET. In ASP.NET, configuration must be handled by the host. If you use this method to initialize the application domain, the host throws <xref:System.InvalidOperationException> when it attempts to initialize the application domain. The exception message indicates that initialization has already occurred.  
+  
+ This method is called immediately after the constructor. The default InitializeNewDomain implementation does nothing.  A custom implementation can set up internal classes and delegates, set up an interface with the unmanaged host interface, or set up event handlers for the new <xref:System.AppDomain>.  
+  
+ Also, for add-in activations, a custom implementation could identify the current <xref:System.AppDomain> as the target application domain.  
+  
+ Beginning with the [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)], you can use this method to sandbox the default application domain at application startup, or to modify the sandbox of a new application domain. To do this, adjust the <xref:System.Security.Policy.ApplicationTrust.DefaultGrantSet%2A> and <xref:System.Security.Policy.ApplicationTrust.FullTrustAssemblies%2A> properties on the <xref:System.Security.Policy.ApplicationTrust> object that is assigned to the <xref:System.AppDomainSetup.ApplicationTrust%2A?displayProperty=fullName> property of `appDomainInfo`, before you initialize the application domain.  
+  
+> [!NOTE]
+>  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the InitializeNewDomain method.  
+  
+   
+  
+## Examples  
+ The following example shows an override of the InitializeNewDomain method for a custom application domain manager. This code example is part of a larger example provided for the <xref:System.AppDomainManager> class.  
+  
+ [!code-vb[System.AppDomainManager#2](~/add/codesnippet/visualbasic/m-system.appdomainmanage_1.vb)]
+ [!code-cs[System.AppDomainManager#2](~/add/codesnippet/csharp/m-system.appdomainmanage_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

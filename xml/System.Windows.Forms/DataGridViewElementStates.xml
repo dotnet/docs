@@ -1,8 +1,10 @@
 <Type Name="DataGridViewElementStates" FullName="System.Windows.Forms.DataGridViewElementStates">
   <TypeSignature Language="C#" Value="public enum DataGridViewElementStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewElementStates extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewElementStates" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,128 +19,159 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the user interface (UI) state of a element within a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although these different states, like Frozen, are enforced by the UI, they can be programmatically overruled.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. For more information, see [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](../Topic/How%20to:%20Perform%20a%20Custom%20Action%20Based%20on%20Changes%20in%20a%20Cell%20of%20a%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-cs[System.Windows.Forms.DataGridViewMisc#135](~/add/codesnippet/csharp/t-system.windows.forms.d_64_1.cs)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/add/codesnippet/visualbasic/t-system.windows.forms.d_64_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Displayed">
       <MemberSignature Language="C#" Value="Displayed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Displayed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Displayed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the an element is currently displayed onscreen.</summary>
       </Docs>
     </Member>
     <Member MemberName="Frozen">
       <MemberSignature Language="C#" Value="Frozen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Frozen = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Frozen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element cannot be scrolled through the UI.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element is in its default state.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates ReadOnly = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element will not accept user input to change its value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resizable">
       <MemberSignature Language="C#" Value="Resizable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Resizable = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Resizable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element can be resized through the UI. This value is ignored except when combined with the ResizableSet value.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizableSet">
       <MemberSignature Language="C#" Value="ResizableSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates ResizableSet = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.ResizableSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element does not inherit the resizable state of its parent.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
       <MemberSignature Language="C#" Value="Selected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Selected = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element is in a selected (highlighted) UI state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Visible = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element is visible (displayable).</summary>
       </Docs>
     </Member>
   </Members>

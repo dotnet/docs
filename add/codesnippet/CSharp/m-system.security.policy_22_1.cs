@@ -1,0 +1,10 @@
+            Object [] oa1 = {};
+            Site site = new Site("www.wideworldimporters.com");
+            Object [] oa2 = { url, site };
+            Evidence ev3a = new Evidence(oa1, oa2);
+            enum1 = ev3a.GetHostEnumerator();
+            IEnumerator enum2 = ev3a.GetAssemblyEnumerator();
+            enum2.MoveNext();
+            Object obj1 = enum2.Current;
+            enum2.MoveNext();
+            Console.WriteLine("URL = " + obj1.ToString() + "  Site = " + enum2.Current.ToString());

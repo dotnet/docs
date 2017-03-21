@@ -1,0 +1,1 @@
+Dim myResolver As New XmlSecureResolver(New XmlUrlResolver(), "http://myLocalSite/") 

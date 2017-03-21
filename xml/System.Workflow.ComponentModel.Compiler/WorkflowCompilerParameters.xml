@@ -1,8 +1,10 @@
 <Type Name="WorkflowCompilerParameters" FullName="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters">
   <TypeSignature Language="C#" Value="public sealed class WorkflowCompilerParameters : System.CodeDom.Compiler.CompilerParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WorkflowCompilerParameters extends System.CodeDom.Compiler.CompilerParameters" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,9 +24,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCompilerParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -36,9 +40,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (string[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,6 +59,7 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -70,9 +77,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (string[] assemblyNames, string outputName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, string outputName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[],System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -89,9 +98,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (string[] assemblyNames, string outputName, bool includeDebugInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, string outputName, bool includeDebugInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[],System.String,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -110,9 +121,11 @@
     <Member MemberName="CompilerOptions">
       <MemberSignature Language="C#" Value="public string CompilerOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CompilerOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.CompilerOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,9 +140,11 @@
     <Member MemberName="GenerateCodeCompileUnitOnly">
       <MemberSignature Language="C#" Value="public bool GenerateCodeCompileUnitOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GenerateCodeCompileUnitOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.GenerateCodeCompileUnitOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,9 +159,11 @@
     <Member MemberName="LanguageToUse">
       <MemberSignature Language="C#" Value="public string LanguageToUse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LanguageToUse" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LanguageToUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,9 +178,11 @@
     <Member MemberName="LibraryPaths">
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection LibraryPaths { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection LibraryPaths" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LibraryPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,9 +197,11 @@
     <Member MemberName="UserCodeCompileUnits">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.CodeDom.CodeCompileUnit&gt; UserCodeCompileUnits { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.CodeDom.CodeCompileUnit&gt; UserCodeCompileUnits" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.UserCodeCompileUnits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

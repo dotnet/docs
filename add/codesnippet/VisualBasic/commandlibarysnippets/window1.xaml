@@ -1,0 +1,458 @@
+<Window x:Class="SDKSamples.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CommandLibarySnippets"
+    Loaded="OnLoaded"
+    KeyDown="OnKeyDown"
+    MouseDown="OnMouseDown" 
+    Name="RootWindow"
+    >
+  <Window.Resources>
+    <Style TargetType="{x:Type Button}">
+      <Setter Property="Height" Value="25" />
+      <Setter Property="Width" Value="50" />
+      <Setter Property="Margin" Value="10,2,10,2" />
+    </Style>
+  </Window.Resources>
+  <Window.InputBindings>
+    <KeyBinding Key="F12"
+                Command="ApplicationCommands.Open" />
+    
+    <KeyBinding Modifiers="Control+Shift" 
+                Key="D"
+                Command="ApplicationCommands.Copy" />
+    
+    <KeyBinding Modifiers="Alt"
+                Key="L"
+                Command="ApplicationCommands.Close" />
+
+    <!-- In the case where both the Gesture and the Modifiers+Key attributes-->
+    <!-- are used, the definition that comes last is used for the KeyGesture.-->
+    
+    <!-- The KeyGesture in this case is Alt+X.-->
+    <!-- The Modifiers and Key attributes are ignored. -->
+    <KeyBinding Modifiers="Alt"
+                Key="Z"
+                Gesture="Alt+X" 
+                Command="ApplicationCommands.Close" />
+
+    <!-- The KeyGesture is Alt+Q. -->
+    <!-- The Gesture attribute is ignored. -->
+    <KeyBinding Gesture="Alt+Y" 
+                Modifiers="Alt"
+                Key="Q"
+                Command="ApplicationCommands.Copy" />
+
+    <MouseBinding MouseAction="MiddleClick"
+                  Command="ApplicationCommands.Cut" />
+    
+    <MouseBinding Gesture="Alt+MiddleClick"
+                  Command="ApplicationCommands.New" />
+
+    <MouseBinding Gesture="Control+WheelClick"
+                  Command="ApplicationCommands.Open" />
+    
+    <KeyBinding Command="ApplicationCommands.New" 
+                Modifiers="Control" />
+    
+  </Window.InputBindings>
+  <Window.CommandBindings>
+    <!-- Application Commands-->
+    <CommandBinding Command="ApplicationCommands.CancelPrint"
+                    Executed="MyCommandExecute"
+                    CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Close"
+                Executed="CmdExecutedHandler"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.ContextMenu"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Copy"
+                Executed="CmdExecutedHandler"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.CorrectionList"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Cut"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Delete"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Find"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Help"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.New"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Open"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Paste"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Print"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.PrintPreview"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Properties"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Redo"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Replace"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Save"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.SaveAs"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.SelectAll"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Stop"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ApplicationCommands.Undo"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+
+    <!--Component Commands-->
+    <CommandBinding Command="ComponentCommands.ExtendSelectionDown"
+                    Executed="MyCommandExecute"
+                    CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ExtendSelectionDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ExtendSelectionLeft"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ExtendSelectionRight"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ExtendSelectionUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveFocusBack"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveFocusDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveFocusForward"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveFocusPageDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveFocusPageUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveFocusUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveLeft"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveRight"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveToEnd"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveToHome"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveToPageDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveToPageUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.MoveUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ScrollByLine"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ScrollPageDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ScrollPageLeft"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ScrollPageRight"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.ScrollPageUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.SelectToEnd"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.SelectToHome"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.SelectToPageDown"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="ComponentCommands.SelectToPageUp"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <!-- Media Commands-->
+    <CommandBinding Command="MediaCommands.BoostBass"
+                Executed="MyCommandExecute"
+                CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.ChannelDown"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.ChannelUp"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.DecreaseBass"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.DecreaseMicrophoneVolume"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.DecreaseTreble"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.DecreaseVolume"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.FastForward"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.IncreaseBass"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.IncreaseMicrophoneVolume"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.IncreaseTreble"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.IncreaseVolume"
+        Executed="MyCommandExecute"
+        CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.MuteMicrophoneVolume"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.MuteVolume"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.NextTrack"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.Pause"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.Play"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.PreviousTrack"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.Record"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.Rewind"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.Select"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.Stop"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.ToggleMicrophoneOnOff"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="MediaCommands.TogglePlayPause"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+
+    <!-- Navigation Commands-->
+    <CommandBinding Command="NavigationCommands.BrowseBack"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.BrowseForward"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.BrowseHome"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.BrowseStop"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.DecreaseZoom"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.Favorites"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.FirstPage"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.GoToPage"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.IncreaseZoom"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.LastPage"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.NavigateJournal"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.NextPage"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.PreviousPage"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.Refresh"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.Search"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    <CommandBinding Command="NavigationCommands.Zoom"
+            Executed="MyCommandExecute"
+            CanExecute="MyCanExecuteCommand"/>
+    
+    
+    
+    
+  </Window.CommandBindings>
+  <StackPanel Name="MyStack">
+  <Menu Height="25">
+    <MenuItem Header="Application Commands">
+      <MenuItem Command="ApplicationCommands.CancelPrint" />
+      <MenuItem Command="ApplicationCommands.Close" />
+      <MenuItem Command="ApplicationCommands.ContextMenu" />
+      <MenuItem Command="ApplicationCommands.Copy" />
+      <MenuItem Command="ApplicationCommands.CorrectionList" />
+      <MenuItem Command="ApplicationCommands.Cut" />
+      <MenuItem Command="ApplicationCommands.Delete" />
+      <MenuItem Command="ApplicationCommands.Find" />
+      <MenuItem Command="ApplicationCommands.Help" />
+      <MenuItem Command="ApplicationCommands.New" />
+      <MenuItem Command="ApplicationCommands.Open" />
+      <MenuItem Command="ApplicationCommands.Paste" />
+      <MenuItem Command="ApplicationCommands.Print" />
+      <MenuItem Command="ApplicationCommands.PrintPreview" />
+      <MenuItem Command="ApplicationCommands.Properties" />
+      <MenuItem Command="ApplicationCommands.Redo" />
+      <MenuItem Command="ApplicationCommands.Replace" />
+      <MenuItem Command="ApplicationCommands.Save" />
+      <MenuItem Command="ApplicationCommands.SaveAs" />
+      <MenuItem Command="ApplicationCommands.SelectAll" />
+      <MenuItem Command="ApplicationCommands.Stop" />
+      <MenuItem Command="ApplicationCommands.Undo" />
+    </MenuItem>
+    <MenuItem Header="Compoment Commands">
+      <MenuItem Command="ComponentCommands.ExtendSelectionDown" />
+      <MenuItem Command="ComponentCommands.ExtendSelectionLeft" />
+      <MenuItem Command="ComponentCommands.ExtendSelectionRight" />
+      <MenuItem Command="ComponentCommands.ExtendSelectionUp" />
+      <MenuItem Command="ComponentCommands.MoveDown" />
+      <MenuItem Command="ComponentCommands.MoveFocusBack" />
+      <MenuItem Command="ComponentCommands.MoveFocusDown" />
+      <MenuItem Command="ComponentCommands.MoveFocusForward" />
+      <MenuItem Command="ComponentCommands.MoveFocusPageDown" />
+      <MenuItem Command="ComponentCommands.MoveFocusPageUp" />
+      <MenuItem Command="ComponentCommands.MoveFocusUp" />
+      <MenuItem Command="ComponentCommands.MoveLeft" />
+      <MenuItem Command="ComponentCommands.MoveRight" />
+      <MenuItem Command="ComponentCommands.MoveToEnd" />
+      <MenuItem Command="ComponentCommands.MoveToHome" />
+      <MenuItem Command="ComponentCommands.MoveToPageDown" />
+      <MenuItem Command="ComponentCommands.MoveToPageUp" />
+      <MenuItem Command="ComponentCommands.MoveUp" />
+      <MenuItem Command="ComponentCommands.ScrollByLine" />
+      <MenuItem Command="ComponentCommands.ScrollPageDown" />
+      <MenuItem Command="ComponentCommands.ScrollPageLeft" />
+      <MenuItem Command="ComponentCommands.ScrollPageRight" />
+      <MenuItem Command="ComponentCommands.ScrollPageUp" />
+      <MenuItem Command="ComponentCommands.SelectToEnd" />
+      <MenuItem Command="ComponentCommands.SelectToHome" />
+      <MenuItem Command="ComponentCommands.SelectToPageDown" />
+      <MenuItem Command="ComponentCommands.SelectToPageUp" />
+    </MenuItem>
+    <MenuItem Header="Media Commands">
+      <MenuItem Command="MediaCommands.BoostBass" />
+      <MenuItem Command="MediaCommands.ChannelDown" />
+      <MenuItem Command="MediaCommands.ChannelUp" />
+      <MenuItem Command="MediaCommands.DecreaseBass" />
+      <MenuItem Command="MediaCommands.DecreaseMicrophoneVolume" />
+      <MenuItem Command="MediaCommands.DecreaseTreble" />
+      <MenuItem Command="MediaCommands.DecreaseVolume" />
+      <MenuItem Command="MediaCommands.FastForward" />
+      <MenuItem Command="MediaCommands.IncreaseBass" />
+      <MenuItem Command="MediaCommands.IncreaseMicrophoneVolume" />
+      <MenuItem Command="MediaCommands.IncreaseTreble" />
+      <MenuItem Command="MediaCommands.IncreaseVolume" />
+      <MenuItem Command="MediaCommands.MuteMicrophoneVolume" />
+      <MenuItem Command="MediaCommands.MuteVolume" />
+      <MenuItem Command="MediaCommands.NextTrack" />
+      <MenuItem Command="MediaCommands.Pause" />
+      <MenuItem Command="MediaCommands.Play" />
+      <MenuItem Command="MediaCommands.PreviousTrack" />
+      <MenuItem Command="MediaCommands.Record" />
+      <MenuItem Command="MediaCommands.Rewind" />
+      <MenuItem Command="MediaCommands.Select" />
+      <MenuItem Command="MediaCommands.Stop" />
+      <MenuItem Command="MediaCommands.ToggleMicrophoneOnOff" />
+      <MenuItem Command="MediaCommands.TogglePlayPause" />
+    </MenuItem>
+    <MenuItem Header="Navigation Commands">
+      <MenuItem Command="NavigationCommands.BrowseBack" />
+      <MenuItem Command="NavigationCommands.BrowseForward" />
+      <MenuItem Command="NavigationCommands.BrowseHome" />
+      <MenuItem Command="NavigationCommands.BrowseStop" />
+      <MenuItem Command="NavigationCommands.DecreaseZoom" />
+      <MenuItem Command="NavigationCommands.Favorites" />
+      <MenuItem Command="NavigationCommands.FirstPage" />
+      <MenuItem Command="NavigationCommands.GoToPage" />
+      <MenuItem Command="NavigationCommands.IncreaseZoom" />
+      <MenuItem Command="NavigationCommands.LastPage" />
+      <MenuItem Command="NavigationCommands.NavigateJournal" />
+      <MenuItem Command="NavigationCommands.NextPage" />
+      <MenuItem Command="NavigationCommands.PreviousPage" />
+      <MenuItem Command="NavigationCommands.Refresh" />
+      <MenuItem Command="NavigationCommands.Search" />
+      <MenuItem Command="NavigationCommands.Zoom" />
+    </MenuItem>
+  </Menu>
+      <TextBox Name="txtGesture"
+               Height="300"
+               Width="400"></TextBox>
+    <StackPanel Name="testStack" >
+      <Button Name="cmdButton" Click="cmdButtonClick" ></Button>
+      <TextBox Name="txtBox1" Height="100" Width="300">
+        <TextBox.InputBindings>
+          <KeyBinding Command="ApplicationCommands.Paste"
+                      Modifiers="Alt"
+                      Key="P" />
+        </TextBox.InputBindings>
+      </TextBox>
+      <TextBox Name="txtResults" Height="100" Width="300" TextWrapping="Wrap">
+        
+      </TextBox>
+    </StackPanel>
+  </StackPanel>
+</Window>

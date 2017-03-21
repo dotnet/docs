@@ -1,10 +1,7 @@
 <Type Name="ReturnValueNameAttribute" FullName="System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute">
   <TypeSignature Language="C#" Value="public sealed class ReturnValueNameAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReturnValueNameAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,18 +16,73 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name of the return value of a method in a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] component, all the parameters of a method and the return value must have names. By default, [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../Topic/Winmdexp.exe%20\(Windows%20Runtime%20Metadata%20Export%20Tool\).md) gives the return value the name "value". When you use a component in a [!INCLUDE[win8_appname_long](~/add/includes/win8-appname-long-md.md)] app written in JavaScript, you can use this name to retrieve the return value. For example, suppose a component defines a method that has a return value and two `out` parameters (`ByRef` parameters with the <xref:System.Runtime.InteropServices.OutAttribute> attribute in Visual Basic):  
+  
+```c#  
+public static int ComputeAverage([ReadOnlyArray()] int[] input,  
+    out int minValue, out int maxValue)  
+{  
+    …  
+}  
+```  
+  
+```vb  
+Public Shared Function ComputeAverage( _  
+        <ReadOnlyArray()> ByVal input As Integer, _  
+        <Out()> ByRef minValue As Integer, _  
+        <Out()> ByRef maxValue As Integer) As Integer  
+    …  
+End Function  
+  
+```  
+  
+ When you call the function from JavaScript, you can access the return value by its default name (`value`):  
+  
+```javascript  
+var data = [5, 13, 23, 37];  
+var results = SampleComponent.TestStuff.computeAverage(data);  
+var formattedResults = "Min=" + results.minValue + ", Avg=" +   
+    results.value + ", Max=" + results.maxValue;  
+  
+```  
+  
+ You must give the return value a different name if you already have a parameter named "value". Or you might simply want to use a more meaningful name (such as "average" in this example). Apply the ReturnValueNameAttribute attribute to your method and specify a new name.  
+  
+```c#  
+[return: ReturnValueName("average")]  
+public static int ComputeAverage([ReadOnlyArray()] int[] input,  
+    out int minValue, out int maxValue)  
+{  
+    …  
+}  
+  
+```  
+  
+```vb  
+Public Shared Function ComputeAverage( _  
+        <ReadOnlyArray()> ByVal input As Integer, _  
+        <Out()> ByRef minValue As Integer, _  
+        <Out()> ByRef maxValue As Integer) _  
+            As <ReturnValueName("average")> Integer  
+    …  
+End Function  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReturnValueNameAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,19 +91,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the return value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute" /> class, and specifies the name of the return value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute.Name" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,8 +109,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name that was specified for the return value of a method in a [!INCLUDE[wrt](~/add/includes/wrt-md.md)] component.</summary>
+        <value>The name of the method's return value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

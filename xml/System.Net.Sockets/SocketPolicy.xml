@@ -1,6 +1,7 @@
 <Type Name="SocketPolicy" FullName="System.Net.Sockets.SocketPolicy">
   <TypeSignature Language="C#" Value="public class SocketPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SocketPolicy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketPolicy" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,13 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a policy file instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SocketPolicy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketPolicy.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -32,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SocketPolicy" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

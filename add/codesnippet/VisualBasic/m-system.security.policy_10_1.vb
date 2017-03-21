@@ -1,0 +1,1 @@
+        Dim xmlElement As SecurityElement = policyStatement.ToXml()

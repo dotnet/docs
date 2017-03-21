@@ -1,0 +1,1 @@
+        Dim msgVersion As MessageVersion = MessageVersion.Default

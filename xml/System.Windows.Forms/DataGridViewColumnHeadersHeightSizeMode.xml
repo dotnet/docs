@@ -1,61 +1,88 @@
 <Type Name="DataGridViewColumnHeadersHeightSizeMode" FullName="System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewColumnHeadersHeightSizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewColumnHeadersHeightSizeMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines values for specifying how the height of the column headers is adjusted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, users can resize the height of the column headers. You can disable this ability to set a fixed height or you can use the automatic sizing mode to fit the height to the header contents. Automatic sizing also disables user resizing.  
+  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A> method.  
+  
+ For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this enumeration in a display-only, non-interactive <xref:System.Windows.Forms.DataGridView> control.  
+  
+ [!code-vb[System.Windows.Forms.DataGridViewStyleDemo#20](~/add/codesnippet/visualbasic/t-system.windows.forms.d_81_1.vb)]
+ [!code-cs[System.Windows.Forms.DataGridViewStyleDemo#20](~/add/codesnippet/csharp/t-system.windows.forms.d_81_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoSize">
       <MemberSignature Language="C#" Value="AutoSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode AutoSize = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column header height adjusts to fit the contents of all the column header cells.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisableResizing">
       <MemberSignature Language="C#" Value="DisableResizing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode DisableResizing = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users cannot adjust the column header height with the mouse.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableResizing">
       <MemberSignature Language="C#" Value="EnableResizing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode EnableResizing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users can adjust the column header height with the mouse.</summary>
       </Docs>
     </Member>
   </Members>

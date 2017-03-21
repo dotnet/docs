@@ -1,0 +1,52 @@
+﻿<Window x:Class="Viewport2DVisual3DExample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Button on 3D" Height="300" Width="300">
+
+    <Grid>
+        <!--<SnippetViewport3D>-->
+        <Viewport3D>
+            <!--<SnippetCamera>-->
+            <Viewport3D.Camera>
+                <PerspectiveCamera Position="0, 0, 4"/>
+            </Viewport3D.Camera>
+            <!--</SnippetCamera>-->
+            
+            <!--<SnippetButton>-->
+            <!-- Button on 3D -->
+            <Viewport2DVisual3D>
+                <!-- Give the plane a slight rotation -->
+                <Viewport2DVisual3D.Transform>
+                    <RotateTransform3D>
+                        <RotateTransform3D.Rotation>
+                            <AxisAngleRotation3D Angle="40" Axis="0, 1, 0" />
+                        </RotateTransform3D.Rotation>
+                    </RotateTransform3D>
+                </Viewport2DVisual3D.Transform>
+                
+                <!-- The Geometry, Material, and Visual for the Viewport2DVisual3D -->
+                <Viewport2DVisual3D.Geometry>
+                    <MeshGeometry3D Positions="-1,1,0 -1,-1,0 1,-1,0 1,1,0"
+                                    TextureCoordinates="0,0 0,1 1,1 1,0" TriangleIndices="0 1 2 0 2 3"/>
+                </Viewport2DVisual3D.Geometry>
+
+                <Viewport2DVisual3D.Material>
+                    <DiffuseMaterial Viewport2DVisual3D.IsVisualHostMaterial="True" Brush="White"/>
+                </Viewport2DVisual3D.Material>                               
+                
+                <Button>Hello, 3D</Button>
+            </Viewport2DVisual3D>
+            <!--</SnippetButton>-->
+            
+            <!--<SnippetLights>-->
+            <!-- Lights -->
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <DirectionalLight Color="#FFFFFFFF" Direction="0,0,-1"/>
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+            <!--</SnippetLights>-->
+        </Viewport3D>
+        <!--</SnippetViewport3D>-->
+    </Grid>
+</Window>

@@ -1,6 +1,7 @@
 <Type Name="RibbonDismissPopupEventHandler" FullName="System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler">
   <TypeSignature Language="C#" Value="public delegate void RibbonDismissPopupEventHandler(object sender, RibbonDismissPopupEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonDismissPopupEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonDismissPopupEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup" /> attached event of a <see cref="T:System.Windows.Controls.Ribbon.RibbonControlService" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

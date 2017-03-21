@@ -1,0 +1,1 @@
+        Dim pragma2 As New CodeChecksumPragma("test.txt", HashSHA1, New Byte() {&HBB, &HBB, &HBB})

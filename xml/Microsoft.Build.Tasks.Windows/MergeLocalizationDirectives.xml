@@ -1,8 +1,10 @@
 <Type Name="MergeLocalizationDirectives" FullName="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives">
   <TypeSignature Language="C#" Value="public sealed class MergeLocalizationDirectives : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MergeLocalizationDirectives extends Microsoft.Build.Utilities.Task" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,34 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>MergeLocalizationDirectives</c> task. Use the <c>MergeLocalizationDirectives</c> element in your project file to create and execute this task. For usage and parameter information, see [MergeLocalizationDirectives](../Topic/MergeLocalizationDirectives%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MergeLocalizationDirectives ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.Execute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,17 +47,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes a task.</summary>
+        <returns>
+          <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GeneratedLocalizationFiles">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] GeneratedLocalizationFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] GeneratedLocalizationFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.GeneratedLocalizationFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -63,17 +72,19 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the list of localization directives files for individual files in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] binary format.</summary>
+        <value>The list of localization directives files for individual files in [!INCLUDE[TLA2#tla_xaml](~/add/includes/tla2sharptla-xaml-md.md)] binary format.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputFile">
       <MemberSignature Language="C#" Value="public string OutputFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives.OutputFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -88,8 +99,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the output path of the compiled localization-directives assembly.</summary>
+        <value>The output path of the compiled localization-directives assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

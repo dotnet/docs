@@ -1,0 +1,2 @@
+        Dim feed = New SyndicationFeed("Feed Title", "Feed Description", New Uri("http:'Feed/Alternate/Link"), "FeedID", DateTime.Now)
+        feed.ImageUrl = New Uri("http:'contoso/images/TestFeedImage")

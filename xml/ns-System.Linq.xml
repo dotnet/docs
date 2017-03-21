@@ -1,6 +1,19 @@
 <Namespace Name="System.Linq">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The System.Linq namespace provides classes and interfaces that support queries that use [!INCLUDE[vbteclinqext](~/add/includes/vbteclinqext-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The System.Linq namespace is in the System.Core assembly (in System.Core.dll).  
+  
+ The <xref:System.Linq.Enumerable> class contains [!INCLUDE[vbteclinq](~/add/includes/vbteclinq-md.md)] standard query operators that operate on objects that implement <xref:System.Collections.Generic.IEnumerable%601>.  
+  
+ The <xref:System.Linq.Queryable> class contains [!INCLUDE[vbteclinq](~/add/includes/vbteclinq-md.md)] standard query operators that operate on objects that implement <xref:System.Linq.IQueryable%601>.  
+  
+ For information about LINQ to SQL, see [LINQ to SQL &#91;LINQ to SQL&#93;](../Topic/LINQ%20to%20SQL.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

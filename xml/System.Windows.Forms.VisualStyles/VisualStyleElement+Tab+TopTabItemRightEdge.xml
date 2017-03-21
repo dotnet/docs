@@ -1,8 +1,10 @@
 <Type Name="VisualStyleElement+Tab+TopTabItemRightEdge" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Tab+TopTabItemRightEdge">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.Tab.TopTabItemRightEdge" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Tab/TopTabItemRightEdge extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,76 +12,159 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for each state of a tab control that shares its bottom and left borders with other tab controls. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each property of the VisualStyleElement.Tab.TopTabItemRightEdge class gets a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for a different state of a tab control that shares its bottom and left borders with other tab controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementTabTopTabItemRightEdge1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cs[System.Windows.Forms.VisualStyleElementsExamples#130](~/add/codesnippet/csharp/t-system.windows.forms.v_109_1.cs)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#130](~/add/codesnippet/visualbasic/t-system.windows.forms.v_109_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Disabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Disabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge.Disabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a visual style element that represents a disabled tab control that shares its bottom and left borders with other tab controls.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a disabled tab control that shares its bottom and left borders with other tab controls.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Disabled property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Disabled property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementTabTopTabItemRightEdge4` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cs[System.Windows.Forms.VisualStyleElementsExamples#133](~/add/codesnippet/csharp/c70a0dc2-5a37-49f6-9495-_1.cs)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#133](~/add/codesnippet/visualbasic/c70a0dc2-5a37-49f6-9495-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hot">
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge.Hot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a visual style element that represents a hot tab control that shares its bottom and left borders with other tab controls.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a hot tab control that shares its bottom and left borders with other tab controls.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Hot property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Hot property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementTabTopTabItemRightEdge2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cs[System.Windows.Forms.VisualStyleElementsExamples#131](~/add/codesnippet/csharp/6031eaf7-38f2-4e98-935d-_1.cs)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#131](~/add/codesnippet/visualbasic/6031eaf7-38f2-4e98-935d-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Normal">
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge.Normal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a visual style element that represents a normal tab control that shares its bottom and left borders with other tab controls.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a normal tab control that shares its bottom and left borders with other tab controls.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Normal property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Normal property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementTabTopTabItemRightEdge1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cs[System.Windows.Forms.VisualStyleElementsExamples#130](~/add/codesnippet/csharp/a25a3116-991e-401f-9862-_1.cs)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#130](~/add/codesnippet/visualbasic/a25a3116-991e-401f-9862-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Pressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Pressed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge.Pressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a visual style element that represents a pressed tab control that shares its bottom and left borders with other tab controls.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a pressed tab control that shares its bottom and left borders with other tab controls.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Pressed property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the Pressed property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementTabTopTabItemRightEdge3` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cs[System.Windows.Forms.VisualStyleElementsExamples#132](~/add/codesnippet/csharp/ddf70dd2-919e-4702-9403-_1.cs)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#132](~/add/codesnippet/visualbasic/ddf70dd2-919e-4702-9403-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

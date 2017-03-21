@@ -1,0 +1,1 @@
+        Console.WriteLine("TraceLogRetentionOption =  " + ((EventSchemaTraceListener)ts.Listeners["eventListener"]).TraceLogRetentionOption);

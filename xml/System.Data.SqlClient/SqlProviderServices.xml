@@ -1,6 +1,7 @@
 <Type Name="SqlProviderServices" FullName="System.Data.SqlClient.SqlProviderServices">
   <TypeSignature Language="C#" Value="public sealed class SqlProviderServices : System.Data.Common.DbProviderServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlProviderServices extends System.Data.Common.DbProviderServices" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlProviderServices" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The DbProviderServices implementation for the SqlClient provider for SQL Server.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateDbCommandDefinition">
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbCommandDefinition CreateDbCommandDefinition (System.Data.Common.DbProviderManifest providerManifest, System.Data.Common.CommandTrees.DbCommandTree commandTree);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbCommandDefinition CreateDbCommandDefinition(class System.Data.Common.DbProviderManifest providerManifest, class System.Data.Common.CommandTrees.DbCommandTree commandTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.CreateDbCommandDefinition(System.Data.Common.DbProviderManifest,System.Data.Common.CommandTrees.DbCommandTree)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -45,6 +47,7 @@
     <Member MemberName="DbCreateDatabase">
       <MemberSignature Language="C#" Value="protected override void DbCreateDatabase (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DbCreateDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbCreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -69,6 +72,7 @@
     <Member MemberName="DbCreateDatabaseScript">
       <MemberSignature Language="C#" Value="protected override string DbCreateDatabaseScript (string providerManifestToken, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string DbCreateDatabaseScript(string providerManifestToken, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbCreateDatabaseScript(System.String,System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -92,6 +96,7 @@
     <Member MemberName="DbDatabaseExists">
       <MemberSignature Language="C#" Value="protected override bool DbDatabaseExists (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool DbDatabaseExists(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbDatabaseExists(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -117,6 +122,7 @@
     <Member MemberName="DbDeleteDatabase">
       <MemberSignature Language="C#" Value="protected override void DbDeleteDatabase (System.Data.Common.DbConnection connection, Nullable&lt;int&gt; commandTimeout, System.Data.Metadata.Edm.StoreItemCollection storeItemCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DbDeleteDatabase(class System.Data.Common.DbConnection connection, valuetype System.Nullable`1&lt;int32&gt; commandTimeout, class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbDeleteDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -141,6 +147,7 @@
     <Member MemberName="DbGetSpatialServices">
       <MemberSignature Language="C#" Value="protected override System.Data.Spatial.DbSpatialServices DbGetSpatialServices (string versionHint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Spatial.DbSpatialServices DbGetSpatialServices(string versionHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.DbGetSpatialServices(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -162,6 +169,7 @@
     <Member MemberName="GetDbProviderManifest">
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbProviderManifest GetDbProviderManifest (string versionHint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbProviderManifest GetDbProviderManifest(string versionHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.GetDbProviderManifest(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -183,6 +191,7 @@
     <Member MemberName="GetDbProviderManifestToken">
       <MemberSignature Language="C#" Value="protected override string GetDbProviderManifestToken (System.Data.Common.DbConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetDbProviderManifestToken(class System.Data.Common.DbConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(System.Data.Common.DbConnection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -204,6 +213,7 @@
     <Member MemberName="GetDbSpatialDataReader">
       <MemberSignature Language="C#" Value="protected override System.Data.Spatial.DbSpatialDataReader GetDbSpatialDataReader (System.Data.Common.DbDataReader fromReader, string versionHint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Spatial.DbSpatialDataReader GetDbSpatialDataReader(class System.Data.Common.DbDataReader fromReader, string versionHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.GetDbSpatialDataReader(System.Data.Common.DbDataReader,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -227,6 +237,7 @@
     <Member MemberName="SetDbParameterValue">
       <MemberSignature Language="C#" Value="protected override void SetDbParameterValue (System.Data.Common.DbParameter parameter, System.Data.Metadata.Edm.TypeUsage parameterType, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDbParameterValue(class System.Data.Common.DbParameter parameter, class System.Data.Metadata.Edm.TypeUsage parameterType, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlProviderServices.SetDbParameterValue(System.Data.Common.DbParameter,System.Data.Metadata.Edm.TypeUsage,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -251,6 +262,7 @@
     <Member MemberName="SingletonInstance">
       <MemberSignature Language="C#" Value="public static System.Data.SqlClient.SqlProviderServices SingletonInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Data.SqlClient.SqlProviderServices SingletonInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlProviderServices.SingletonInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -260,8 +272,8 @@
         <ReturnType>System.Data.SqlClient.SqlProviderServices</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the singleton instance of <see cref="T:System.Data.SqlClient.SqlProviderServices" />.</summary>
+        <value>Returns <see cref="T:System.Data.SqlClient.SqlProviderServices" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

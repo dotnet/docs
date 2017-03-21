@@ -1,8 +1,10 @@
 <Type Name="LenientVBArrayPrototype" FullName="Microsoft.JScript.LenientVBArrayPrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientVBArrayPrototype : Microsoft.JScript.VBArrayPrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientVBArrayPrototype extends Microsoft.JScript.VBArrayPrototype" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientVBArrayPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,103 +12,115 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class. The LenientVBArrayPrototype class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="constructor">
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="dimensions">
       <MemberSignature Language="C#" Value="public object dimensions;" />
       <MemberSignature Language="ILAsm" Value=".field public object dimensions" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.dimensions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.VBArrayPrototype.dimensions%2A" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getItem">
       <MemberSignature Language="C#" Value="public object getItem;" />
       <MemberSignature Language="ILAsm" Value=".field public object getItem" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.getItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.VBArrayPrototype.getItem%2A" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="lbound">
       <MemberSignature Language="C#" Value="public object lbound;" />
       <MemberSignature Language="ILAsm" Value=".field public object lbound" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.lbound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.VBArrayPrototype.lbound%2A" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toArray">
       <MemberSignature Language="C#" Value="public object toArray;" />
       <MemberSignature Language="ILAsm" Value=".field public object toArray" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.toArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.VBArrayPrototype.toArray%2A" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ubound">
       <MemberSignature Language="C#" Value="public object ubound;" />
       <MemberSignature Language="ILAsm" Value=".field public object ubound" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientVBArrayPrototype.ubound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.VBArrayPrototype.ubound%2A" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

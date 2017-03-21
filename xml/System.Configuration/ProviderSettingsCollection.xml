@@ -1,8 +1,10 @@
 <Type Name="ProviderSettingsCollection" FullName="System.Configuration.ProviderSettingsCollection">
   <TypeSignature Language="C#" Value="public sealed class ProviderSettingsCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProviderSettingsCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ProviderSettingsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,49 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ProviderSettingsCollection class represents the `providers` element within a configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to iterate through the <xref:System.Configuration.ProtectedConfigurationSection.Providers%2A> property, which returns a ProviderSettingsCollection.  
+  
+ [!code-vb[System.Configuration.ProviderSettings#1](~/add/codesnippet/visualbasic/t-system.configuration.p_1_1.vb)]
+ [!code-cs[System.Configuration.ProviderSettings#1](~/add/codesnippet/csharp/t-system.configuration.p_1_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProviderSettingsCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettingsCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Configuration.ProviderSettings provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Configuration.ProviderSettings provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.Add(System.Configuration.ProviderSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,17 +69,26 @@
         <Parameter Name="provider" Type="System.Configuration.ProviderSettings" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="provider">The <see cref="T:System.Configuration.ProviderSettings" /> object to add.</param>
+        <summary>Adds a <see cref="T:System.Configuration.ProviderSettings" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Add method to add a <xref:System.Configuration.ProviderSettings> object to the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,16 +96,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Clear method to remove all <xref:System.Configuration.ProviderSettings> objects from the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.CreateNewElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,9 +130,11 @@
     <Member MemberName="GetElementKey">
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,9 +153,11 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettings this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettings Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettingsCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,18 +167,27 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the <see cref="T:System.Configuration.ProviderSettings" /> to return.</param>
+        <summary>Gets or sets a value at the specified index in the <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection.</summary>
+        <value>The specified <see cref="T:System.Configuration.ProviderSettings" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Item property to get or set a specified <xref:System.Configuration.ProviderSettings> object contained within this <xref:System.Configuration.ProviderSettingsCollection> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettings this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettings Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettingsCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,18 +197,20 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">A string reference to the <see cref="T:System.Configuration.ProviderSettings" /> object within the collection.</param>
+        <summary>Gets an item from the collection.</summary>
+        <value>A <see cref="T:System.Configuration.ProviderSettings" /> object contained in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettingsCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,9 +225,11 @@
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.Remove(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,9 +239,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Configuration.ProviderSettings" /> object to remove.</param>
+        <summary>Removes an element from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Remove method to remove a specified <xref:System.Configuration.ProviderSettings> object from the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

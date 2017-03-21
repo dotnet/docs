@@ -1,0 +1,1 @@
+        Dim link As SyndicationLink = SyndicationLink.CreateSelfLink(New Uri("http://server/link"), "text/html")

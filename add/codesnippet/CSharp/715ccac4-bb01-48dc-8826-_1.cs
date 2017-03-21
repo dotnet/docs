@@ -1,0 +1,1 @@
+            eab.SetMetadataReader(XmlDictionaryReader.CreateDictionaryReader(XmlReader.Create(sr)));

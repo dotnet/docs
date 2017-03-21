@@ -1,6 +1,7 @@
 <Type Name="HtmlArea" FullName="System.Web.UI.HtmlControls.HtmlArea">
   <TypeSignature Language="C#" Value="public class HtmlArea : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlArea extends System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides programmatic access to the HTML <see langword="&lt;area&gt;" /> element on the server.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HtmlArea ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlArea.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -29,13 +31,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlArea" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Href">
       <MemberSignature Language="C#" Value="public string Href { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Href" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlArea.Href" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,14 +59,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="href" /> attribute.</summary>
+        <value>The <see langword="href" /> attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
       <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlArea.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,8 +80,8 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the control's attributes into the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,1 @@
+WebPermission myWebPermission = new WebPermission(PermissionState.None);

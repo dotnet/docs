@@ -1,0 +1,1 @@
+ruleSetting = healthMonitoringSection.Rules[i];

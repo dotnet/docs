@@ -1,6 +1,7 @@
 <Type Name="FindProgressChangedEventArgs" FullName="System.ServiceModel.Discovery.FindProgressChangedEventArgs">
   <TypeSignature Language="C#" Value="public class FindProgressChangedEventArgs : System.ComponentModel.ProgressChangedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FindProgressChangedEventArgs extends System.ComponentModel.ProgressChangedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.FindProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Arguments for the <see cref="E:System.ServiceModel.Discovery.DiscoveryClient.FindProgressChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EndpointDiscoveryMetadata">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.EndpointDiscoveryMetadata EndpointDiscoveryMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.EndpointDiscoveryMetadata EndpointDiscoveryMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindProgressChangedEventArgs.EndpointDiscoveryMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -26,14 +28,15 @@
         <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> instance associated with the current ongoing find operation.</summary>
+        <value>The endpoint discovery metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageSequence">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryMessageSequence MessageSequence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryMessageSequence MessageSequence" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindProgressChangedEventArgs.MessageSequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -43,8 +46,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instance associated with the current ongoing find operation.</summary>
+        <value>The discovery message sequence.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

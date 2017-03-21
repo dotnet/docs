@@ -1,0 +1,1 @@
+        Response.Write("Value of cache key: <B>" + Server.HtmlEncode(Cache["Key1"] as string) + "</B>");

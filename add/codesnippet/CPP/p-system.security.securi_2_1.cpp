@@ -1,0 +1,1 @@
+      String^ xmlTreeDescription = xmlElement->Text;

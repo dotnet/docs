@@ -1,6 +1,7 @@
 <Type Name="VisualBasicReference&lt;TResult&gt;" FullName="Microsoft.VisualBasic.Activities.VisualBasicReference&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class VisualBasicReference&lt;TResult&gt; : System.Activities.CodeActivity&lt;System.Activities.Location&lt;TResult&gt;&gt;, System.Activities.Expressions.ITextExpression, System.Activities.XamlIntegration.IValueSerializableExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VisualBasicReference`1&lt;TResult&gt; extends System.Activities.CodeActivity`1&lt;class System.Activities.Location`1&lt;!TResult&gt;&gt; implements class System.Activities.Expressions.ITextExpression, class System.Activities.XamlIntegration.IValueSerializableExpression" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,14 +29,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The type of the expression.</typeparam>
+    <summary>Contains an expression in Visual Basic syntax that evaluates to an l-value, which supports binding of the <see cref="T:System.Activities.ArgumentDirection" /> arguments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This activity uses the LINQ to Entity provider to evaluate LINQ expressions. Any LINQ expressions used with this activity must be evaluatable by the ADO.Net Entity Data Model. For example, LINQ expressions cannot be used to reference activities, variables, or arguments of the workflow itself.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VisualBasicReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,13 +52,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VisualBasicReference (string expressionText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string expressionText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,14 +69,15 @@
         <Parameter Name="expressionText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expressionText">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expressionText">The expression string in Visual Basic syntax.</param>
+        <summary>Initializes a new instance of the <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> class using the specific expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,6 +98,7 @@
     <Member MemberName="CanConvertToString">
       <MemberSignature Language="C#" Value="public bool CanConvertToString (System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanConvertToString(class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -99,15 +111,24 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The context information that is used for conversion.</param>
+        <summary>Determines whether the <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> can be converted into a string; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method always returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
       <MemberSignature Language="C#" Value="public string ConvertToString (System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ConvertToString(class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,15 +141,23 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The context information that is used for conversion.</param>
+        <summary>Converts the <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A string representation of the <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string representation consists of the <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601.ExpressionText%2A> surrounded by brackets.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override System.Activities.Location&lt;TResult&gt; Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Location`1&lt;!TResult&gt; Execute(class System.Activities.CodeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -150,6 +179,7 @@
     <Member MemberName="ExpressionText">
       <MemberSignature Language="C#" Value="public string ExpressionText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExpressionText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicReference`1.ExpressionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,14 +189,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or set the [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)] expression represented by this <see cref="Microsoft.VisualBasic.Activities.VisualBasicReference%601" />.</summary>
+        <value>The [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)] expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExpressionTree">
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression GetExpressionTree ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression GetExpressionTree() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicReference`1.GetExpressionTree" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -177,14 +208,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the expression tree used in the reference.</summary>
+        <returns>The expression tree used in the reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
       <MemberSignature Language="C#" Value="public string Language { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicReference`1.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -199,14 +231,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the language used in the reference.</summary>
+        <value>The language used in the reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresCompilation">
       <MemberSignature Language="C#" Value="public bool RequiresCompilation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresCompilation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicReference`1.RequiresCompilation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -216,8 +249,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the reference requires compilation.</summary>
+        <value>
+          <see langword="True" /> if the reference requires compilation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

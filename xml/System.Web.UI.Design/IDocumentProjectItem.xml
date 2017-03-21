@@ -1,22 +1,26 @@
 <Type Name="IDocumentProjectItem" FullName="System.Web.UI.Design.IDocumentProjectItem">
   <TypeSignature Language="C#" Value="public interface IDocumentProjectItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentProjectItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDocumentProjectItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an interface for accessing a document item retrieved from a design host at design time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetContents">
       <MemberSignature Language="C#" Value="public System.IO.Stream GetContents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetContents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDocumentProjectItem.GetContents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -24,17 +28,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the contents of a document item that is retrieved from the design host.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDocumentProjectItem.Open" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,7 +48,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Opens a document item that is retrieved from the design host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

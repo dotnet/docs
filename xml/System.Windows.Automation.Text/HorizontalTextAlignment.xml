@@ -1,8 +1,10 @@
 <Type Name="HorizontalTextAlignment" FullName="System.Windows.Automation.Text.HorizontalTextAlignment">
   <TypeSignature Language="C#" Value="public enum HorizontalTextAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HorizontalTextAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.HorizontalTextAlignment" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,68 +19,76 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.HorizontalTextAlignmentAttribute" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Centered">
       <MemberSignature Language="C#" Value="Centered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.HorizontalTextAlignment Centered = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.HorizontalTextAlignment.Centered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Centered.</summary>
       </Docs>
     </Member>
     <Member MemberName="Justified">
       <MemberSignature Language="C#" Value="Justified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.HorizontalTextAlignment Justified = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.HorizontalTextAlignment.Justified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Justified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.HorizontalTextAlignment Left = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.HorizontalTextAlignment.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligned left.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.HorizontalTextAlignment Right = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.HorizontalTextAlignment.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Text.HorizontalTextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligned right.</summary>
       </Docs>
     </Member>
   </Members>

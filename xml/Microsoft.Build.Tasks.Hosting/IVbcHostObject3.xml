@@ -1,6 +1,7 @@
 <Type Name="IVbcHostObject3" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject3">
   <TypeSignature Language="C#" Value="public interface IVbcHostObject3 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.IVbcHostObject2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObject3 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.IVbcHostObject, class Microsoft.Build.Tasks.Hosting.IVbcHostObject2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject3" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,13 +26,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface that allows the [Vbc](../Topic/Vbc%20Task.md) task to communicate with the host integrated development environment (IDE).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="SetLanguageVersion">
       <MemberSignature Language="C#" Value="public bool SetLanguageVersion (string languageVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetLanguageVersion(string languageVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject3.SetLanguageVersion(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -44,9 +46,9 @@
         <Parameter Name="languageVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="languageVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="languageVersion">The language version.</param>
+        <summary>Sets the language version.</summary>
+        <returns>Returns true if the language version is set; false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

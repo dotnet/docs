@@ -1,10 +1,7 @@
 <Type Name="DatabaseGeneratedAttribute" FullName="System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute">
   <TypeSignature Language="C#" Value="public class DatabaseGeneratedAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DatabaseGeneratedAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,18 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how the database generates values for a property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DatabaseGeneratedAttribute (System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption databaseGeneratedOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption databaseGeneratedOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute.#ctor(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption)" />
       <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,19 +33,16 @@
         <Parameter Name="databaseGeneratedOption" Type="System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption" />
       </Parameters>
       <Docs>
-        <param name="databaseGeneratedOption">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="databaseGeneratedOption">The database generated option.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DatabaseGeneratedOption">
       <MemberSignature Language="C#" Value="public System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption DatabaseGeneratedOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption DatabaseGeneratedOption" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute.DatabaseGeneratedOption" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,8 +51,8 @@
         <ReturnType>System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the pattern used to generate values for the property in the database.</summary>
+        <value>The database generated option.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

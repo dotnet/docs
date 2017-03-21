@@ -1,8 +1,10 @@
 <Type Name="IMessageCtrl" FullName="System.Runtime.Remoting.Messaging.IMessageCtrl">
   <TypeSignature Language="C#" Value="public interface IMessageCtrl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageCtrl" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMessageCtrl" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -12,16 +14,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a way to control asynchronous messages after they have dispatched using the <see cref="System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
       <MemberSignature Language="C#" Value="public void Cancel (int msToCancel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel(int32 msToCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMessageCtrl.Cancel(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -36,9 +40,11 @@
         <Parameter Name="msToCancel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="msToCancel">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="msToCancel">The number of milliseconds after which to cancel the message.</param>
+        <summary>Cancels an asynchronous call.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

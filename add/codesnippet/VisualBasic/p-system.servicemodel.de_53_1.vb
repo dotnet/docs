@@ -1,0 +1,1 @@
+            Dim itcc As IssuedTokenClientCredential = client.ClientCredentials.IssuedToken

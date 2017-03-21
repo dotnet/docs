@@ -1,8 +1,10 @@
 <Type Name="ScriptReferenceCollection" FullName="System.Web.UI.ScriptReferenceCollection">
   <TypeSignature Language="C#" Value="public class ScriptReferenceCollection : System.Collections.ObjectModel.Collection&lt;System.Web.UI.ScriptReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptReferenceCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.UI.ScriptReference&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,21 +15,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of script references.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to create a collection of script references that make up a composite script.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ScriptReferenceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptReferenceCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

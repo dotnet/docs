@@ -1,0 +1,2 @@
+        ServiceAuthorizationBehavior authorization =
+            hostDefault.Authorization;

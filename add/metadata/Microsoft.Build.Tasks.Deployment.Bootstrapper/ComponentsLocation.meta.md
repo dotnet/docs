@@ -1,0 +1,4 @@
+---
+uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation
+internalonly: False
+---

@@ -1,0 +1,1 @@
+      string shadeName = ((Shade) 1).ToString();      

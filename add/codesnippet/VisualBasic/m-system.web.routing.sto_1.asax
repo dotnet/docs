@@ -1,0 +1,1 @@
+        routes.Add(New Route("{resource}.axd/{*pathInfo}", New StopRoutingHandler()))

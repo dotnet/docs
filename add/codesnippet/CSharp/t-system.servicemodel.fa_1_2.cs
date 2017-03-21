@@ -1,0 +1,1 @@
+      throw new FaultException<int>(4);

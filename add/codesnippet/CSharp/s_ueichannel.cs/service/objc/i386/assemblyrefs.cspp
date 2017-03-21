@@ -1,0 +1,132 @@
+//------------------------------------------------------------------------------
+/// <copyright from='1997' to='2001' company='Microsoft Corporation'>           
+///    Copyright (c) Microsoft Corporation. All Rights Reserved.                
+///    Information Contained Herein is Proprietary and Confidential.            
+/// </copyright>                                                                
+//------------------------------------------------------------------------------
+
+/*
+ * Assembly attributes. This file is preprocessed to generate a .cs file
+ * with the correct information.  The original lives in VBL\Tools\DevDiv\
+ */
+
+using System;
+using System.Reflection;
+using System.Resources;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
+
+// HACK ALERT!  This is a temporary solution until we have a generalized
+// version story.
+#ifndef USE_VSVERSION
+#include <fxver.h>
+
+internal static class FXAssembly {
+    internal const string Version = VER_ASSEMBLYVERSION_STR;
+}
+
+#else
+
+// Pick up the FX Assembly Version we should be using before we
+// pick up the VS Assembly version
+#include <..\..\ndp\inc\asm_version.h>
+#define _QUOTE_MACRO_HELPER(x)          #x
+#define _QUOTE_MACRO(x)                 _QUOTE_MACRO_HELPER(x)
+
+internal static class FXAssembly {
+    internal const string Version = _QUOTE_MACRO(asm_rmj.asm_rmm.asm_rup.asm_rpt);
+}
+
+#undef asm_rmj
+#undef asm_rmm
+#undef asm_rup
+#undef asm_rpt
+#undef _QUOTE_MACRO
+#undef _QUOTE_MACRO_HELPER
+
+#include <vsver.h>
+#endif
+
+internal static class ThisAssembly {
+    internal const string Title = VER_INTERNALNAME_STR;
+    internal const string Description = VER_FILEDESCRIPTION_STR;
+    internal const string DefaultAlias = VER_INTERNALNAME_STR;
+    internal const string Copyright = VER_LEGALCOPYRIGHT_STR;
+    internal const string Version = VER_ASSEMBLYVERSION_STR;
+    internal const string InformationalVersion = VER_PRODUCTVERSION_STR;
+        internal const int DailyBuildNumber = VER_PRODUCTBUILD;
+}
+
+#pragma warning disable 436
+internal static class AssemblyRef {
+    internal const string EcmaPublicKey                              = ECMA_PUBLICKEY_STR;
+    internal const string EcmaPublicKeyToken                         = ECMA_PUBLICKEY_STR;
+    internal const string EcmaPublicKeyFull                          = ECMA_PUBLICKEY_FULL_STR;
+
+    internal const string Mscorlib                                   = "mscorlib, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    internal const string SystemData                                 = "System.Data, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    internal const string SystemDataOracleClient                     = "System.Data.OracleClient, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    internal const string System                                     = "System, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    internal const string SystemRuntimeRemoting                      = "System.Runtime.Remoting, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    internal const string SystemWindowsForms                         = "System.Windows.Forms, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    internal const string SystemXml                                  = "System.Xml, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + EcmaPublicKey;
+    
+    internal const string MicrosoftPublicKey                         = MICROSOFT_PUBLICKEY_STR;
+    internal const string MicrosoftPublicKeyToken                    = MICROSOFT_PUBLICKEY_STR;
+    internal const string MicrosoftPublicKeyFull                     = MICROSOFT_PUBLICKEY_FULL_STR;
+
+    internal const string SystemConfiguration                        = "System.Configuration, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemConfigurationInstall                 = "System.Configuration.Install, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemDeployment                           = "System.Deployment, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemDesign                               = "System.Design, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemDirectoryServices                    = "System.DirectoryServices, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemDrawingDesign                        = "System.Drawing.Design, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemDrawing                              = "System.Drawing, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemEnterpriseServices                   = "System.EnterpriseServices, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemManagement                           = "System.Management, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemMessaging                            = "System.Messaging, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemRuntimeSerializationFormattersSoap   = "System.Runtime.Serialization.Formatters.Soap, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemSecurity                             = "System.Security, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemServiceProcess                       = "System.ServiceProcess, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemWeb                                  = "System.Web, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemWebMobile                            = "System.Web.Mobile, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemWebRegularExpressions                = "System.Web.RegularExpressions, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string SystemWebServices                          = "System.Web.Services, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualStudio                      = "Microsoft.VisualStudio, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualStudioWindowsForms          = "Microsoft.VisualStudio.Windows.Forms, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string VJSharpCodeProvider                        = "VJSharpCodeProvider, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+
+    internal const string ASPBrowserCapsPublicKey                    = ASPBROWSERCAPS_PUBLICKEY_STR;
+    internal const string ASPBrowserCapsFactory                      = "ASP.BrowserCapsFactory, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + ASPBrowserCapsPublicKey;
+
+
+    // We do not want these sitting in non-VS specific files.  If you need them,
+    // add this line to sources:  
+    // C_DEFINES=$(C_DEFINES) /DINCLUDE_VSREFS
+    //
+    // M.VS.dll and M.VSDesigner.dll should also be included here, but it
+    // turns out that everyone, from Data, to XSP to Winforms to diagnostics
+    // has thrown some designer-specific code into M.VS.dll or M.VSDesigner.dll.
+    //
+    #if INCLUDE_VSREFS
+    internal const string EnvDTE                                     = "EnvDTE, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualStudioConfiguration         = "Microsoft.VisualStudio.Configuration, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualStudioDesign                = "Microsoft.VisualStudio.Design, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualCCppCodeProvider            = "CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualBasic                       = "Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    #endif
+
+    // VS Provided Assemblies... we can't strong bind to these, they 
+    // update their assembly versions too often
+    //
+    internal const string MicrosoftVSDesigner                        = "Microsoft.VSDesigner, Version=8.0.0.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVisualStudioWeb                   = "Microsoft.VisualStudio.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftVSDesignerMobile                  = "Microsoft.VSDesigner.Mobile, Version=8.0.0.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    internal const string MicrosoftJScript                           = "Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    
+    //internal const string MicrosoftVSDesigner                        = "Microsoft.VSDesigner, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
+    //internal const string MicrosoftJScript                           = "Microsoft.JScript, Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;   
+}
+#pragma warning restore 436
+

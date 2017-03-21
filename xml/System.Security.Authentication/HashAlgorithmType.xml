@@ -1,93 +1,84 @@
 <Type Name="HashAlgorithmType" FullName="System.Security.Authentication.HashAlgorithmType">
   <TypeSignature Language="C#" Value="public enum HashAlgorithmType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HashAlgorithmType extends System.Enum" />
-  <AssemblyInfo>
-    <AssemblyName>System.Net.Primitives</AssemblyName>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Security.Authentication.HashAlgorithmType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the algorithm used for generating message authentication codes (MACs).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.HashAlgorithm%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of an <xref:System.Net.Security.SslStream> after authentication has succeeded.  
+  
+ [!code-cpp[NCLSslClientAsync#3](~/add/codesnippet/cpp/t-system.security.authen_2_1.cpp)]
+ [!code-cs[NCLSslClientAsync#3](~/add/codesnippet/csharp/t-system.security.authen_2_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Md5">
       <MemberSignature Language="C#" Value="Md5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Md5 = int32(32771)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Md5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Message Digest 5 (MD5) hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No hashing algorithm is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha1">
       <MemberSignature Language="C#" Value="Sha1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Sha1 = int32(32772)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Secure Hashing Algorithm (SHA1).</summary>
       </Docs>
     </Member>
   </Members>

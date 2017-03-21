@@ -1,0 +1,1 @@
+            Dim storedDestroyTime As String = localXmlElement.SearchForTextOfTag("destroytime")

@@ -1,0 +1,1 @@
+            TimeSpan maxCookieCachingTime = settings.MaxCookieCachingTime;

@@ -1,6 +1,7 @@
 <Type Name="IJSVsaReferenceItem" FullName="Microsoft.JScript.Vsa.IJSVsaReferenceItem">
   <TypeSignature Language="C#" Value="public interface IJSVsaReferenceItem : Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJSVsaReferenceItem implements class Microsoft.JScript.Vsa.IJSVsaItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaReferenceItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,13 +26,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a reference added to the script engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AssemblyName">
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaReferenceItem.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -41,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the referenced assembly.</summary>
+        <value>Returns the string literal name of the referenced assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

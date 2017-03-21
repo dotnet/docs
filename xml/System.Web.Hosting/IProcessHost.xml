@@ -1,8 +1,10 @@
 <Type Name="IProcessHost" FullName="System.Web.Hosting.IProcessHost">
   <TypeSignature Language="C#" Value="public interface IProcessHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessHost" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHost" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,16 +17,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the set of process-wide functionality that every host of the application manager must implement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ IProcessHost is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EnumerateAppDomains">
       <MemberSignature Language="C#" Value="public void EnumerateAppDomains (out System.Web.Hosting.IAppDomainInfoEnum appDomainInfoEnum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumerateAppDomains(class System.Web.Hosting.IAppDomainInfoEnum appDomainInfoEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,17 +45,19 @@
         <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="appDomainInfoEnum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appDomainInfoEnum">The <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</param>
+        <summary>Gets an <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
       <MemberSignature Language="C#" Value="public void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.Shutdown" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,16 +65,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sends a request to terminate all applications in an application domain.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShutdownApplication">
       <MemberSignature Language="C#" Value="public void ShutdownApplication (string appId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShutdownApplication(string appId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.ShutdownApplication(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,17 +86,26 @@
         <Parameter Name="appId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="appId">The application to terminate.</param>
+        <summary>Terminates the specified application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ShutdownApplication is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartApplication">
       <MemberSignature Language="C#" Value="public void StartApplication (string appId, string appPath, out object runtimeInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartApplication(string appId, string appPath, object runtimeInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,10 +117,10 @@
         <Parameter Name="runtimeInterface" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="appId">To be added.</param>
-        <param name="appPath">To be added.</param>
-        <param name="runtimeInterface">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appId">The unique application ID.</param>
+        <param name="appPath">The virtual path to the application.</param>
+        <param name="runtimeInterface">A runtime manager interface.</param>
+        <summary>Starts the specified application</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

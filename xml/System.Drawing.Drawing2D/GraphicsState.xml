@@ -1,8 +1,10 @@
 <Type Name="GraphicsState" FullName="System.Drawing.Drawing2D.GraphicsState">
   <TypeSignature Language="C#" Value="public sealed class GraphicsState : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GraphicsState extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsState" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the state of a <see cref="T:System.Drawing.Graphics" /> object. This object is returned by a call to the <see cref="System.Drawing.Graphics.Save%2A" /> methods. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

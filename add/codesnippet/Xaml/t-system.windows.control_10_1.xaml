@@ -1,0 +1,15 @@
+    <Style TargetType="Button">
+      <!--Set to true to not get any properties from the themes.-->
+      <Setter Property="OverridesDefaultStyle" Value="True"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <Grid>
+              <Ellipse Fill="{TemplateBinding Background}"/>
+              <ContentPresenter HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+            </Grid>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>

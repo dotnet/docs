@@ -1,0 +1,6 @@
+public void AnonymousIdentification_Creating(object sender, 
+                                             AnonymousIdentificationEventArgs args)
+{
+  args.AnonymousID = Samples.AspNet.Security.MyIdClass.GetAnonymousId();
+  Samples.AspNet.Security.MyIdClass.LogAnonymousId(args.AnonymousID);
+}

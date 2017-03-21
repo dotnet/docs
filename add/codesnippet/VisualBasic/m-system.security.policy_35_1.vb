@@ -1,0 +1,8 @@
+            Dim url As New Url("http://www.treyresearch.com")
+            Console.WriteLine(("Adding host evidence " & url.ToString()))
+            ev2a.AddHost(url)
+            Dim ev2b As New Evidence(ev2a)
+            Console.WriteLine("Copy evidence into new evidence")
+            Dim enum1 As IEnumerator = ev2b.GetHostEnumerator()
+            enum1.MoveNext()
+            Console.WriteLine(enum1.Current.ToString())

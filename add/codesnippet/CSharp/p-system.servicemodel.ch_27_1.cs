@@ -1,0 +1,1 @@
+            TimeSpan timeSpan = settings.MaxClockSkew;

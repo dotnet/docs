@@ -1,0 +1,1 @@
+            indent("Type: " + sectionGroup.Type);

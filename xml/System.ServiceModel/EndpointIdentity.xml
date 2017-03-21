@@ -1,8 +1,10 @@
 <Type Name="EndpointIdentity" FullName="System.ServiceModel.EndpointIdentity">
   <TypeSignature Language="C#" Value="public abstract class EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EndpointIdentity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,41 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract class that when implemented provides an identity that enables the authentication of an endpoint by clients that exchange messages with it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the identity for an endpoint can be set with constructors of <xref:System.ServiceModel.EndpointAddress>, where its value can also be accessed as a read-only <xref:System.ServiceModel.EndpointAddress.Identity%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected EndpointIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an empty <see cref="T:System.ServiceModel.EndpointIdentity" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDnsIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateDnsIdentity (string dnsName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateDnsIdentity(string dnsName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateDnsIdentity(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,18 +56,38 @@
         <Parameter Name="dnsName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dnsName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dnsName">The name for the DNS identity.</param>
+        <summary>Creates a DNS identity with a specified DNS name.</summary>
+        <returns>A DNS <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="dnsName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a DNS claim that represents this identity.  
+  
+ This static method creates an instance of <xref:System.ServiceModel.DnsEndpointIdentity> by calling its constructor <xref:System.ServiceModel.DnsEndpointIdentity.%23ctor%2A>.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-cs[S_UEEndpointIdentity#41](~/add/codesnippet/csharp/m-system.servicemodel.en_10_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dnsName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateIdentity (System.IdentityModel.Claims.Claim identity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateIdentity(class System.IdentityModel.Claims.Claim identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateIdentity(System.IdentityModel.Claims.Claim)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,18 +97,38 @@
         <Parameter Name="identity" Type="System.IdentityModel.Claims.Claim" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="identity">A <see cref="T:System.IdentityModel.Claims.Claim" /> used to create the new identity.</param>
+        <summary>Creates an identity with the specified claim.</summary>
+        <returns>An <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="identity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
+  
+ This method can create an identity of type <xref:System.ServiceModel.DnsEndpointIdentity>, <xref:System.ServiceModel.SpnEndpointIdentity>, <xref:System.ServiceModel.UpnEndpointIdentity>, or <xref:System.ServiceModel.RsaEndpointIdentity>.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-cs[S_UEEndpointIdentity#42](~/add/codesnippet/csharp/bebd04cb-3651-4662-ae8e-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRsaIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateRsaIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateRsaIdentity(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateRsaIdentity(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,18 +138,40 @@
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the certificate for the RSA identity.</param>
+        <summary>Creates an RSA identity with the specified X.509 certificate.</summary>
+        <returns>An RSA <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="certificate" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key obtained from the certificate used to construct this identity.  
+  
+ This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-cs[S_UEEndpointIdentity#41](~/add/codesnippet/csharp/69d2b610-b068-4837-b3e0-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="certificate" /> is not an RSA certificate.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRsaIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateRsaIdentity (string publicKey);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateRsaIdentity(string publicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateRsaIdentity(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,18 +181,31 @@
         <Parameter Name="publicKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="publicKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="publicKey">The public key for the RSA identity.</param>
+        <summary>Creates an RSA identity with the specified public key.</summary>
+        <returns>An RSA <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="publicKey" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
+  
+ This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="publicKey" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSpnIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateSpnIdentity (string spnName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateSpnIdentity(string spnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateSpnIdentity(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,18 +215,40 @@
         <Parameter Name="spnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="spnName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="spnName">The name for the SPN identity.</param>
+        <summary>Creates a server principal name (SPN) identity with a specified name.</summary>
+        <returns>An SPN <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="spnName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
+  
+ This static method creates an instance of <xref:System.ServiceModel.SpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.SpnEndpointIdentity.%23ctor%2A>, using `spnName` as the input parameter.  
+  
+ If `spnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, authentication fails.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-cs[S_UEEndpointIdentity#12](~/add/codesnippet/csharp/m-system.servicemodel.en_8_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="spnName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateUpnIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateUpnIdentity (string upnName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateUpnIdentity(string upnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateUpnIdentity(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,18 +258,40 @@
         <Parameter Name="upnName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="upnName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="upnName">The name for the UPN identity.</param>
+        <summary>Creates a user principal name (UPN) identity with a specified name.</summary>
+        <returns>A UPN <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="upnName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
+  
+ This static method creates an instance of <xref:System.ServiceModel.UpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.UpnEndpointIdentity.%23ctor%2A>, using `upnName` as the input parameter.  
+  
+ If `upnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] makes a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-cs[S_UEEndpointIdentity#30](~/add/codesnippet/csharp/m-system.servicemodel.en_12_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="upnName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateX509CertificateIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateX509CertificateIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateX509CertificateIdentity(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateX509CertificateIdentity(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,18 +301,38 @@
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="certificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the certificate for the identity.</param>
+        <summary>Creates an X509Certificate identity with the specified certificate.</summary>
+        <returns>An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="certificate" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+  
+ This `static` method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `certificate` as the input parameter.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-cs[S_UEEndpointIdentity#40](~/add/codesnippet/csharp/8e1de9f7-19ac-4b90-82ab-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateX509CertificateIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateX509CertificateIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 primaryCertificate, System.Security.Cryptography.X509Certificates.X509Certificate2Collection supportingCertificates);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateX509CertificateIdentity(class System.Security.Cryptography.X509Certificates.X509Certificate2 primaryCertificate, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection supportingCertificates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateX509CertificateIdentity(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,19 +343,32 @@
         <Parameter Name="supportingCertificates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
       </Parameters>
       <Docs>
-        <param name="primaryCertificate">To be added.</param>
-        <param name="supportingCertificates">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="primaryCertificate">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the primary certificate for the identity.</param>
+        <param name="supportingCertificates">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> that contains the supporting certificates for the identity.</param>
+        <summary>Creates an X509Certificate identity with the specified primary and supporting certificates.</summary>
+        <returns>A secure [!INCLUDE[indigo2](~/add/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+  
+ An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and<paramref name=" supportingCertificates." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This static method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `primaryCertificate` and `supportingCertificates` as input parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="primaryCertificate" /> or <paramref name="supportingCertificates" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,18 +378,21 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> compared for equality with the current identity.</param>
+        <summary>Returns a value that determines whether a specified object is equal to the current identity object or if they have equal security properties.</summary>
+        <returns>
+          <see langword="true" /> if the specified object <paramref name="obj" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,34 +400,45 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides a hash code for the current instance of the identity.</summary>
+        <returns>The hash code for the current identity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IdentityClaim">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Claims.Claim IdentityClaim { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Claims.Claim IdentityClaim" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointIdentity.IdentityClaim" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Claims.Claim</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identity claim that corresponds to the identity.</summary>
+        <value>The <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the identity claim.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Clients that authenticate the server should verify that the claims that represent the server contain the identity claim provided by the `EndpointIdentity`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,17 +448,26 @@
         <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" />
       </Parameters>
       <Docs>
-        <param name="identityClaim">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="identityClaim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the constructors of all the classes derived from Initialize).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; claimComparer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; claimComparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,18 +478,20 @@
         <Parameter Name="claimComparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" />
       </Parameters>
       <Docs>
-        <param name="identityClaim">To be added.</param>
-        <param name="claimComparer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identityClaim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claimComparer">The <see cref="T:System.Collections.IEqualityComparer" /> used to compare claims.</param>
+        <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim and an interface and compares equality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,8 +499,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the identity.</summary>
+        <returns>A <see cref="T:System.String" /> of the form "identity(string)" where string = <see cref="System.ServiceModel.EndpointIdentity.IdentityClaim%2A" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

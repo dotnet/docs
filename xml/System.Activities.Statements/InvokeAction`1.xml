@@ -1,6 +1,7 @@
 <Type Name="InvokeAction&lt;T&gt;" FullName="System.Activities.Statements.InvokeAction&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class InvokeAction&lt;T&gt; : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvokeAction`1&lt;T&gt; extends System.Activities.NativeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.InvokeAction`1" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,14 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The data type of the <see cref="System.Activities.InArgument%601" /> passed to the <see cref="System.Activities.ActivityAction%601" />.</typeparam>
+    <summary>Invokes an activity’s <see cref="System.Activities.ActivityAction%601" /> handler.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvokeAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeAction`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -33,13 +35,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="System.Activities.Statements.InvokeAction%601" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
       <MemberSignature Language="C#" Value="public System.Activities.ActivityAction&lt;T&gt; Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityAction`1&lt;!T&gt; Action" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeAction`1.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,14 +57,15 @@
         <ReturnType>System.Activities.ActivityAction&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="System.Activities.ActivityAction%601" /> invoked by this <see cref="System.Activities.Statements.InvokeAction%601" />.</summary>
+        <value>The <see cref="System.Activities.ActivityAction%601" /> invoked by this <see cref="System.Activities.Statements.InvokeAction%601" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument">
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T&gt; Argument { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T&gt; Argument" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeAction`1.Argument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -76,14 +80,15 @@
         <ReturnType>System.Activities.InArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%601" />.</summary>
+        <value>The <see cref="System.Activities.InArgument%601" /> passed to the associated <see cref="System.Activities.ActivityAction%601" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeAction`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,6 +109,7 @@
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeAction`1.Execute(System.Activities.NativeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -124,6 +130,7 @@
     <Member MemberName="OnCreateDynamicUpdateMap">
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeAction`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

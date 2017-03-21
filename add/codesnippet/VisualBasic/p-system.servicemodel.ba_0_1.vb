@@ -1,0 +1,1 @@
+            Dim secMode As BasicHttpSecurityMode = security.Mode

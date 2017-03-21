@@ -1,76 +1,101 @@
 <Type Name="DataGridViewClipboardCopyMode" FullName="System.Windows.Forms.DataGridViewClipboardCopyMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewClipboardCopyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewClipboardCopyMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewClipboardCopyMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that indicate whether content is copied from a <see cref="T:System.Windows.Forms.DataGridView" /> control to the Clipboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property to indicate whether users can copy the text values of selected cells to the Clipboard and whether row and column header text is included.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to enable copying in the <xref:System.Windows.Forms.DataGridView> control. For the complete example, see [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](../Topic/How%20to:%20Enable%20Users%20to%20Copy%20Multiple%20Cells%20to%20the%20Clipboard%20from%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-cs[System.Windows.Forms.DataGridViewClipboardDemo#10](~/add/codesnippet/csharp/t-system.windows.forms.d_72_1.cs)]
+ [!code-vb[System.Windows.Forms.DataGridViewClipboardDemo#10](~/add/codesnippet/visualbasic/t-system.windows.forms.d_72_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disable">
       <MemberSignature Language="C#" Value="Disable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewClipboardCopyMode Disable = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.Disable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Copying to the Clipboard is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableAlwaysIncludeHeaderText">
       <MemberSignature Language="C#" Value="EnableAlwaysIncludeHeaderText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewClipboardCopyMode EnableAlwaysIncludeHeaderText = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text values of selected cells can be copied to the Clipboard. Header text is included for rows and columns that contain selected cells.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableWithAutoHeaderText">
       <MemberSignature Language="C#" Value="EnableWithAutoHeaderText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewClipboardCopyMode EnableWithAutoHeaderText = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithAutoHeaderText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text values of selected cells can be copied to the Clipboard. Row or column header text is included for rows or columns that contain selected cells only when the <see cref="System.Windows.Forms.DataGridView.SelectionMode%2A" /> property is set to <see cref="System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect" /> or <see cref="System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" /> and at least one header is selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableWithoutHeaderText">
       <MemberSignature Language="C#" Value="EnableWithoutHeaderText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewClipboardCopyMode EnableWithoutHeaderText = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewClipboardCopyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text values of selected cells can be copied to the Clipboard. Header text is not included.</summary>
       </Docs>
     </Member>
   </Members>

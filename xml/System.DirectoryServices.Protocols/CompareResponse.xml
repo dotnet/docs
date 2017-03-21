@@ -1,8 +1,10 @@
 <Type Name="CompareResponse" FullName="System.DirectoryServices.Protocols.CompareResponse">
   <TypeSignature Language="C#" Value="public class CompareResponse : System.DirectoryServices.Protocols.DirectoryResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompareResponse extends System.DirectoryServices.Protocols.DirectoryResponse" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.CompareResponse" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The CompareResponse class is returned by <see cref="System.DirectoryServices.Protocols.DirectoryConnection.SendRequest%2A" /> as a response to <see cref="T:System.DirectoryServices.Protocols.CompareRequest" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

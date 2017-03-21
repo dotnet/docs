@@ -1,8 +1,10 @@
 <Type Name="IVsaFullErrorInfo" FullName="Microsoft.JScript.IVsaFullErrorInfo">
   <TypeSignature Language="C#" Value="public interface IVsaFullErrorInfo : Microsoft.JScript.Vsa.IJSVsaError" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaFullErrorInfo implements class Microsoft.JScript.Vsa.IJSVsaError" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IVsaFullErrorInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -19,24 +21,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines properties to obtain information about errors. This interface provides extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="EndLine">
       <MemberSignature Language="C#" Value="public int EndLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.IVsaFullErrorInfo.EndLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a class, gets the end line of the code in which an error occurred.</summary>
+        <value>The end line of the code in which an error occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

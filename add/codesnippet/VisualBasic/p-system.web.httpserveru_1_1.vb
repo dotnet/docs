@@ -1,0 +1,2 @@
+Server.ScriptTimeout = 60
+   

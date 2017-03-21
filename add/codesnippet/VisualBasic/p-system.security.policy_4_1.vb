@@ -1,0 +1,1 @@
+        If (codeGroup.MergeLogic.Equals("Union")) Then

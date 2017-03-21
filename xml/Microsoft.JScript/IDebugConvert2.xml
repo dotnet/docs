@@ -1,8 +1,10 @@
 <Type Name="IDebugConvert2" FullName="Microsoft.JScript.IDebugConvert2">
   <TypeSignature Language="C#" Value="public interface IDebugConvert2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugConvert2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugConvert2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,16 +17,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines utility methods that convert data from one type to another. Includes methods that convert values to <see cref="T:System.String" /> objects so that they can be displayed by the debugger.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DecimalToString">
       <MemberSignature Language="C#" Value="public string DecimalToString (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DecimalToString(valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert2.DecimalToString(System.Decimal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,9 +38,9 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to convert.</param>
+        <summary>When implemented in a class, converts the specified <see cref="T:System.Decimal" /> value to a <see cref="T:System.String" />.</summary>
+        <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

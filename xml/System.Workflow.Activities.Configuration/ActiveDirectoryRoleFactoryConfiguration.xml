@@ -1,8 +1,10 @@
 <Type Name="ActiveDirectoryRoleFactoryConfiguration" FullName="System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration">
   <TypeSignature Language="C#" Value="public sealed class ActiveDirectoryRoleFactoryConfiguration : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActiveDirectoryRoleFactoryConfiguration extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,45 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the section in the configuration file that addresses the role class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
+  
+ This class derives from <xref:System.Configuration.ConfigurationSection> which represents a section in a configuration file when implemented in a derived class.  More information may be obtained by reference to this class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActiveDirectoryRoleFactoryConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectReports">
       <MemberSignature Language="C#" Value="public string DirectReports { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DirectReports" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DirectReports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -50,17 +67,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the names of the direct reports.</summary>
+        <value>The names of the direct reports.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DirectReports is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`DirectReports`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DistinguishedName">
       <MemberSignature Language="C#" Value="public string DistinguishedName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DistinguishedName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.DistinguishedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -72,17 +98,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the distinguished name for this instance.</summary>
+        <value>The distinguished name for this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DistinguishedName is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`DistiguishedName`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Group">
       <MemberSignature Language="C#" Value="public string Group { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Group" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -94,17 +129,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the group for this instance.</summary>
+        <value>The name of the group for this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Manager">
       <MemberSignature Language="C#" Value="public string Manager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Manager" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Manager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -116,17 +153,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the manager associated with this instance.</summary>
+        <value>The name of the manager associated with this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Manager is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`Manager`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Member">
       <MemberSignature Language="C#" Value="public string Member { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Member" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -138,17 +184,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the member for this instance.</summary>
+        <value>The member for this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Member is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`Member`". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootPath">
       <MemberSignature Language="C#" Value="public string RootPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootPath" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Configuration.ActiveDirectoryRoleFactoryConfiguration.RootPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -160,9 +215,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the root path for this instance.</summary>
+        <value>The root path for this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ RootPath is a <xref:System.Configuration.ConfigurationProperty> defined for this type with default value "`RootPath` ". This type represents a configuration property, attribute, or child element that is contained in an element of a configuration file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

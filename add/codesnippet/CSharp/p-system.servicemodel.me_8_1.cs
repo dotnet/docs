@@ -1,0 +1,1 @@
+            msOverMsmq.ClientCredentialType = MessageCredentialType.Certificate;

@@ -1,8 +1,10 @@
 <Type Name="IsLongModifier" FullName="Microsoft.VisualC.IsLongModifier">
   <TypeSignature Language="C#" Value="public sealed class IsLongModifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IsLongModifier extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.IsLongModifier" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,16 +17,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Is long modifier.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IsLongModifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.IsLongModifier.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -34,7 +38,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

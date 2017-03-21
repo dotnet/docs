@@ -1,0 +1,1 @@
+            be.MessageVersion = MessageVersion.Default;

@@ -1,0 +1,1 @@
+         m_MyServiceContainer.AddService(GetType(Control), sender)

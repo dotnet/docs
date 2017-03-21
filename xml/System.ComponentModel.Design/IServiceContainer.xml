@@ -1,35 +1,56 @@
 <Type Name="IServiceContainer" FullName="System.ComponentModel.Design.IServiceContainer">
   <TypeSignature Language="C#" Value="public interface IServiceContainer : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceContainer implements class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IServiceContainer" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
       <InterfaceName>System.IServiceProvider</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a container for services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A service container is, by definition, a service provider. In addition to providing services, it also provides a mechanism for adding and removing services. Services are a foundation of the .NET Framework design-time architecture. Services provide design-time objects access to specific features and methods implemented by a service object that provides a service or services.  
+  
+ To obtain a service at design time, call the <xref:System.ComponentModel.Component.GetService%2A> method of a component sited in design mode. Designers and other objects can add or remove services at design time through the <xref:System.ComponentModel.Design.IDesignerHost> interface.  
+  
+ Service containers can be contained by other service containers, forming a tree of service containers. By default, the IServiceContainer interface adds services to the closest service container. When a service is added, it can be added with instructions to promote it. When a service is promoted, it is added to any parent service container, on up until the top of the service container tree is reached. This allows a designer to provide a global service that other objects in the process can use.  
+  
+   
+  
+## Examples  
+ The following code example contains the code for a <xref:System.Windows.Forms.Form> that is configured to demonstrate the behavior of a network of linked service containers.  
+  
+ [!code-cs[IServiceContainerExample#1](~/add/codesnippet/csharp/t-system.componentmodel._124_1.cs)]
+ [!code-cpp[IServiceContainerExample#1](~/add/codesnippet/cpp/t-system.componentmodel._124_1.cpp)]
+ [!code-vb[IServiceContainerExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._124_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddService">
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, System.ComponentModel.Design.ServiceCreatorCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, class System.ComponentModel.Design.ServiceCreatorCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -39,23 +60,32 @@
         <Parameter Name="callback" Type="System.ComponentModel.Design.ServiceCreatorCallback" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The type of service to add.</param>
+        <param name="callback">A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested.</param>
+        <summary>Adds the specified service to the service container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates how to add a service to an <xref:System.ComponentModel.Design.IServiceContainer>.  
+  
+ [!code-cs[ServiceContainerExample#3](~/add/codesnippet/csharp/4abfcb9d-94a0-4da6-9ce0-_1.cs)]
+ [!code-vb[ServiceContainerExample#3](~/add/codesnippet/visualbasic/4abfcb9d-94a0-4da6-9ce0-_1.vb)]
+ [!code-cpp[ServiceContainerExample#3](~/add/codesnippet/cpp/4abfcb9d-94a0-4da6-9ce0-_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddService">
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, object serviceInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, object serviceInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -65,23 +95,32 @@
         <Parameter Name="serviceInstance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <param name="serviceInstance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The type of service to add.</param>
+        <param name="serviceInstance">An instance of the service type to add. This object must implement or inherit from the type indicated by the <c>serviceType</c> parameter.</param>
+        <summary>Adds the specified service to the service container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates how to add a service to an <xref:System.ComponentModel.Design.IServiceContainer>.  
+  
+ [!code-cs[ServiceContainerExample#2](~/add/codesnippet/csharp/78041303-5e2c-4bbb-9d48-_1.cs)]
+ [!code-vb[ServiceContainerExample#2](~/add/codesnippet/visualbasic/78041303-5e2c-4bbb-9d48-_1.vb)]
+ [!code-cpp[ServiceContainerExample#2](~/add/codesnippet/cpp/78041303-5e2c-4bbb-9d48-_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddService">
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, System.ComponentModel.Design.ServiceCreatorCallback callback, bool promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, class System.ComponentModel.Design.ServiceCreatorCallback callback, bool promote) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -92,24 +131,23 @@
         <Parameter Name="promote" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="promote">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceType">The type of service to add.</param>
+        <param name="callback">A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested.</param>
+        <param name="promote">
+          <see langword="true" /> to promote this request to any parent service containers; otherwise, <see langword="false" />.</param>
+        <summary>Adds the specified service to the service container, and optionally promotes the service to parent service containers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddService">
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, object serviceInstance, bool promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, object serviceInstance, bool promote) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.Object,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -120,24 +158,23 @@
         <Parameter Name="promote" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <param name="serviceInstance">To be added.</param>
-        <param name="promote">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceType">The type of service to add.</param>
+        <param name="serviceInstance">An instance of the service type to add. This object must implement or inherit from the type indicated by the <c>serviceType</c> parameter.</param>
+        <param name="promote">
+          <see langword="true" /> to promote this request to any parent service containers; otherwise, <see langword="false" />.</param>
+        <summary>Adds the specified service to the service container, and optionally promotes the service to any parent service containers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveService">
       <MemberSignature Language="C#" Value="public void RemoveService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.RemoveService(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -146,22 +183,31 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The type of service to remove.</param>
+        <summary>Removes the specified service type from the service container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to remove a service from an <xref:System.ComponentModel.Design.IServiceContainer>.  
+  
+ [!code-cs[ServiceContainerExample#4](~/add/codesnippet/csharp/m-system.componentmodel._46_1.cs)]
+ [!code-vb[ServiceContainerExample#4](~/add/codesnippet/visualbasic/m-system.componentmodel._46_1.vb)]
+ [!code-cpp[ServiceContainerExample#4](~/add/codesnippet/cpp/m-system.componentmodel._46_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveService">
       <MemberSignature Language="C#" Value="public void RemoveService (Type serviceType, bool promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveService(class System.Type serviceType, bool promote) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.RemoveService(System.Type,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -171,10 +217,22 @@
         <Parameter Name="promote" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <param name="promote">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The type of service to remove.</param>
+        <param name="promote">
+          <see langword="true" /> to promote this request to any parent service containers; otherwise, <see langword="false" />.</param>
+        <summary>Removes the specified service type from the service container, and optionally promotes the service to parent service containers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to remove a service from an <xref:System.ComponentModel.Design.IServiceContainer>.  
+  
+ [!code-cs[ServiceContainerExample#4](~/add/codesnippet/csharp/1ae84a0c-9fec-44a0-ac5a-_1.cs)]
+ [!code-vb[ServiceContainerExample#4](~/add/codesnippet/visualbasic/1ae84a0c-9fec-44a0-ac5a-_1.vb)]
+ [!code-cpp[ServiceContainerExample#4](~/add/codesnippet/cpp/1ae84a0c-9fec-44a0-ac5a-_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

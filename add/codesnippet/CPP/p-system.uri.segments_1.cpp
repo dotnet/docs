@@ -1,0 +1,2 @@
+         Uri^ uriAddress1 = gcnew Uri( "http://www.contoso.com/title/index.htm" );
+         Console::WriteLine( "The parts are {0}, {1}, {2}", uriAddress1->Segments[ 0 ], uriAddress1->Segments[ 1 ], uriAddress1->Segments[ 2 ] );

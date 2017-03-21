@@ -1,6 +1,11 @@
 <Type Name="ProcessorArchitecture" FullName="Microsoft.Build.Utilities.ProcessorArchitecture">
   <TypeSignature Language="C#" Value="public static class ProcessorArchitecture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProcessorArchitecture extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.ProcessorArchitecture" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,14 +15,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the correct tool in the Toolset that MSBuild should use, based on the current system's processor architecture.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Toolset contains several tools, such as compilers, that are used in different situations. <xref:System.Reflection.ProcessorArchitecture> determines which of these tools should be used based on the current system's architecture or CPU, such as x86, AMD64, and so forth.  
+  
+ For more information on Toolsets, see [Standard and Custom Toolset Configurations](../Topic/Standard%20and%20Custom%20Toolset%20Configurations.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AMD64">
       <MemberSignature Language="C#" Value="public const string AMD64;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AMD64" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.AMD64" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,13 +45,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the AMD64 processor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ARM">
       <MemberSignature Language="C#" Value="public const string ARM;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ARM" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.ARM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -42,14 +62,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an ARM processor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentProcessArchitecture">
       <MemberSignature Language="C#" Value="public static string CurrentProcessArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CurrentProcessArchitecture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ProcessorArchitecture.CurrentProcessArchitecture" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,15 +83,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current processor architecture of the system.</summary>
+        <value>A string containing the processor architecture value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IA64">
       <MemberSignature Language="C#" Value="public const string IA64;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string IA64" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.IA64" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,14 +105,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the IA64 processor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MSIL">
       <MemberSignature Language="C#" Value="public const string MSIL;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string MSIL" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.MSIL" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,14 +126,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents MSIL.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="X86">
       <MemberSignature Language="C#" Value="public const string X86;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string X86" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.X86" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v3.5</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,7 +147,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an x86 processor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

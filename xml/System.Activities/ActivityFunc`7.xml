@@ -1,6 +1,7 @@
 <Type Name="ActivityFunc&lt;T1,T2,T3,T4,T5,T6,TResult&gt;" FullName="System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class ActivityFunc&lt;T1,T2,T3,T4,T5,T6,TResult&gt; : System.Activities.ActivityDelegate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityFunc`7&lt;T1, T2, T3, T4, T5, T6, TResult&gt; extends System.Activities.ActivityDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityFunc`7" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,20 +20,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T1">To be added.</typeparam>
-    <typeparam name="T2">To be added.</typeparam>
-    <typeparam name="T3">To be added.</typeparam>
-    <typeparam name="T4">To be added.</typeparam>
-    <typeparam name="T5">To be added.</typeparam>
-    <typeparam name="T6">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T1">The type of the first in argument of the activity delegate.</typeparam>
+    <typeparam name="T2">The type of the second in argument of the activity delegate.</typeparam>
+    <typeparam name="T3">The type of the third in argument of the activity delegate.</typeparam>
+    <typeparam name="T4">The type of the fourth in argument of the activity delegate.</typeparam>
+    <typeparam name="T5">The type of the fifth in argument of the activity delegate.</typeparam>
+    <typeparam name="T6">The type of the sixth in argument of the activity delegate.</typeparam>
+    <typeparam name="TResult">The type of the out argument of the activity delegate.</typeparam>
+    <summary>Defines an activity delegate with six in arguments of type <c>T</c> and one out argument of type <c>TResult</c>.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.ActivityDelegate> enables activity authors to expose callbacks with specific signatures that users of the activity can provide activity-based handlers for. ActivityFunc(T1, is an <xref:System.Activities.ActivityDelegate> that returns a value. The signature of the ActivityFunc(T1, is specified as generic type arguments.  
+  
+ There are multiple generic versions of this type that take from 1 to 16 in arguments, plus the `out` argument, for the activity that is called. There are also **ActivityAction** types for activity delegates that do not return values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityFunc ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityFunc`7.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,13 +51,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="System.Activities.ActivityFunc%607" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument1">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T1&gt; Argument1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T1&gt; Argument1" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Argument1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,14 +73,15 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the first in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument2">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T2&gt; Argument2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T2&gt; Argument2" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Argument2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,14 +96,15 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the second in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument3">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T3&gt; Argument3 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T3&gt; Argument3" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Argument3" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -105,14 +119,15 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the third in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument4">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T4&gt; Argument4 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T4&gt; Argument4" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Argument4" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -127,14 +142,15 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T4&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument5">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T5&gt; Argument5 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T5&gt; Argument5" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Argument5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,14 +165,15 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T5&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fifth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Argument6">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T6&gt; Argument6 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T6&gt; Argument6" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Argument6" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -171,14 +188,15 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T6&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sixth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResultArgument">
       <MemberSignature Language="C#" Value="protected override System.Activities.DelegateOutArgument GetResultArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Activities.DelegateOutArgument GetResultArgument() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityFunc`7.GetResultArgument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -197,6 +215,7 @@
     <Member MemberName="Result">
       <MemberSignature Language="C#" Value="public System.Activities.DelegateOutArgument&lt;TResult&gt; Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateOutArgument`1&lt;!TResult&gt; Result" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityFunc`7.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -211,8 +230,8 @@
         <ReturnType>System.Activities.DelegateOutArgument&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the out argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

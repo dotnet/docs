@@ -1,8 +1,10 @@
 <Type Name="IDynamicProperty" FullName="System.Runtime.Remoting.Contexts.IDynamicProperty">
   <TypeSignature Language="C#" Value="public interface IDynamicProperty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicProperty" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IDynamicProperty" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -12,16 +14,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that the implementing property should be registered at runtime through the <see cref="System.Runtime.Remoting.Contexts.Context.RegisterDynamicProperty%2A" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic properties must also expose the <xref:System.Runtime.Remoting.Contexts.IContributeDynamicSink> interface if they want to provide dynamic sinks.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Contexts.IDynamicProperty.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -33,8 +44,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the dynamic property.</summary>
+        <value>The name of the dynamic property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

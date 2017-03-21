@@ -1,6 +1,7 @@
 <Type Name="MetadataExtensionMethods" FullName="System.Data.Entity.Design.MetadataExtensionMethods">
   <TypeSignature Language="C#" Value="public static class MetadataExtensionMethods" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MetadataExtensionMethods extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.MetadataExtensionMethods" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the methods for the metadata publishing protocols.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetPrimitiveTypes">
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt; GetPrimitiveTypes (this System.Data.Metadata.Edm.EdmItemCollection itemCollection, Version edmVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.PrimitiveType&gt; GetPrimitiveTypes(class System.Data.Metadata.Edm.EdmItemCollection itemCollection, class System.Version edmVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.MetadataExtensionMethods.GetPrimitiveTypes(System.Data.Metadata.Edm.EdmItemCollection,System.Version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -35,9 +37,9 @@
         <Parameter Name="edmVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="itemCollection">To be added.</param>
-        <param name="edmVersion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="itemCollection">The item collection from which to retrieve the list of primitive types</param>
+        <param name="edmVersion">The version of edm to use</param>
+        <summary>Get the list of primitive types for the given version of Edm</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

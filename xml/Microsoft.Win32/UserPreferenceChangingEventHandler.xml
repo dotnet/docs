@@ -1,8 +1,10 @@
 <Type Name="UserPreferenceChangingEventHandler" FullName="Microsoft.Win32.UserPreferenceChangingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void UserPreferenceChangingEventHandler(object sender, UserPreferenceChangingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserPreferenceChangingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceChangingEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,25 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event. When this event is raised by the <see cref="T:Microsoft.Win32.SystemEvents" /> class, this object is always <see langword="null" />.</param>
+    <param name="e">A <see cref="T:Microsoft.Win32.UserPreferenceChangedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:Microsoft.Win32.SystemEvents.UserPreferenceChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a UserPreferenceChangingEventHandler delegate, you identify the method that will handle the event. To associate the event with your event-handling method, add an instance of the delegate to the event. The event-handling method is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the UserPreferenceChangingEventHandler type to monitor the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
+  
+ [!code-cpp[SystemEvents#1](~/add/codesnippet/cpp/t-microsoft.win32.userpr_0_1.cpp)]
+ [!code-cs[SystemEvents#1](~/add/codesnippet/csharp/t-microsoft.win32.userpr_0_1.cs)]
+ [!code-vb[SystemEvents#1](~/add/codesnippet/visualbasic/t-microsoft.win32.userpr_0_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

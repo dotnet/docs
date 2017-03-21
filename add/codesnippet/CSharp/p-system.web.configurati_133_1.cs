@@ -1,0 +1,1 @@
+bufferModeSetting.UrgentFlushInterval = TimeSpan.Parse("00:01:00");

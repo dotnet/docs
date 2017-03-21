@@ -1,0 +1,1 @@
+[FileIOPermissionAttribute(SecurityAction::PermitOnly,ViewAndModify="C:\\example\\sample.txt")]

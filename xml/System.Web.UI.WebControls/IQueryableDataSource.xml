@@ -1,6 +1,7 @@
 <Type Name="IQueryableDataSource" FullName="System.Web.UI.WebControls.IQueryableDataSource">
   <TypeSignature Language="C#" Value="public interface IQueryableDataSource : System.Web.UI.IDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IQueryableDataSource implements class System.Web.UI.IDataSource" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IQueryableDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,13 +12,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes methods and properties that the <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control uses to communicate with data source controls.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="QueryCreated">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; QueryCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.QueryCreatedEventArgs&gt; QueryCreated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IQueryableDataSource.QueryCreated" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -27,13 +29,14 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a query is created in a data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseViewChanged">
       <MemberSignature Language="C#" Value="public void RaiseViewChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RaiseViewChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -44,7 +47,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" /> event by calling the <see cref="System.Web.UI.DataSourceView.OnDataSourceViewChanged%2A" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

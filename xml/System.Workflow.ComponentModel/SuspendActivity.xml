@@ -1,8 +1,10 @@
 <Type Name="SuspendActivity" FullName="System.Workflow.ComponentModel.SuspendActivity">
   <TypeSignature Language="C#" Value="public sealed class SuspendActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SuspendActivity extends System.Workflow.ComponentModel.Activity" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.SuspendActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,47 +29,87 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Suspends the running workflow instance when executed. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
+  
+ SuspendActivity causes a running workflow instance to pause in running, perhaps to reflect an error condition that requires attention beyond the scope of the workflow. All the state information for the workflow instance is saved, and will be reinstated when the administrator resumes the workflow instance.  
+  
+ You cannot include a SuspendActivity inside an atomic transaction.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SuspendActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.SuspendActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of the <xref:System.Workflow.ComponentModel.SuspendActivity> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Workflow.ComponentModel.SuspendActivity.Error%2A>|`Null` (`Nothing` in Visual Basic).|  
+  
+   
+  
+## Examples  
+ This example illustrates using the constructor for a <xref:System.Workflow.ComponentModel.SuspendActivity>, and other things discussed elsewhere within this type.  
+  
+ This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+  
+ [!code-cs[WF_Samples#173](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#173)]
+ [!code-vb[WF_Samples#173](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#173)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SuspendActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.SuspendActivity" /> class, along with the name for that activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Error">
       <MemberSignature Language="C#" Value="public string Error { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Error" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.SuspendActivity.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -85,33 +127,61 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an error message to report to administrators providing the reason for suspension.</summary>
+        <value>An error message that provides the reason for the workflow instance suspension. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Propagation of this error message is determined by the host (the instance manager or the persistence provider).  
+  
+   
+  
+## Examples  
+ This example illustrates initializing the Error property of a <xref:System.Workflow.ComponentModel.SuspendActivity>, and other concepts discussed elsewhere in this type.  
+  
+ This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+  
+ [!code-cs[WF_Samples#173](~/add/codesnippet/csharp/wf_snippets/snippets11.cs#173)]
+ [!code-vb[WF_Samples#173](~/add/codesnippet/visualbasic/wf_snippets/snippets11.vb#173)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ErrorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ErrorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.SuspendActivity.ErrorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="System.Workflow.ComponentModel.SuspendActivity.Error%2A" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/add/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override sealed System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,9 +200,11 @@
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="protected override void Initialize (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.Initialize(System.IServiceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

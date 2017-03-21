@@ -1,0 +1,1 @@
+   UriBuilder^ myUri = gcnew UriBuilder( "http", "www.contoso.com",8080 );

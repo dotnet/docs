@@ -1,8 +1,10 @@
 <Type Name="ErrorConstructor" FullName="Microsoft.JScript.ErrorConstructor">
   <TypeSignature Language="C#" Value="public sealed class ErrorConstructor : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ErrorConstructor extends Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorConstructor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
       <MemberSignature Language="C#" Value="public Microsoft.JScript.ErrorObject CreateInstance (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ErrorObject CreateInstance(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -40,18 +44,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments to pass to the constructor.</param>
+        <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>The instance of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public object Invoke (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorConstructor.Invoke(System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -72,9 +78,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments to pass to the constructor.</param>
+        <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>The instance of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

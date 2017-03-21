@@ -1,8 +1,10 @@
 <Type Name="WebBaseEvent" FullName="System.Web.Management.WebBaseEvent">
   <TypeSignature Language="C#" Value="public class WebBaseEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebBaseEvent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,60 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the base class for the ASP.NET health-monitoring events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The WebBaseEvent class is the root of the inheritance tree for all the ASP.NET health-monitoring event types. It uses the <xref:System.Web.Management.WebApplicationInformation> class to obtain application information that is available to its derived class.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `<healthMonitoring>` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of deriving from the WebBaseEvent class, see the example provided in this topic.  
+  
+   
+  
+## Examples  
+ The following example shows how to derive from the WebBaseEvent class to create a custom health-monitoring event.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#1](~/add/codesnippet/csharp/t-system.web.management._27_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#1](~/add/codesnippet/visualbasic/t-system.web.management._27_1.vb)]  
+  
+ The following example is an excerpt of the configuration file that enables ASP.NET to use the custom event.  
+  
+```  
+<healthMonitoring enabled="true" heartBeatInterval="0">  
+  <eventMappings>  
+    <add  name="SampleWebBaseEvent"   
+      type="SamplesAspNet.SampleWebBaseEvent,   
+      webbaseevent, Version=1.0.1573.24438, Culture=neutral,   
+      PublicKeyToken=2f5f337ae5c9bdaa,   
+      processorArchitecture=MSIL" />  
+  </eventMappings>  
+  
+  <rules>  
+    <add   
+      name="CustomWebBaseEvent"  
+      eventName="SampleWebBaseEvent"   
+      provider="EventLogProvider"   
+      profile="Critical"/>      
+  </rules>  
+</healthMonitoring>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WebBaseEvent (string message, object eventSource, int eventCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.#ctor(System.String,System.Object,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -28,19 +74,36 @@
         <Parameter Name="eventCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="eventSource">To be added.</param>
-        <param name="eventCode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The description of the event.</param>
+        <param name="eventSource">The object that raised the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseEvent" /> class using the supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of the <xref:System.Web.Management.WebBaseEvent> class, but you can call this constructor when you implement your own event type that inherits from this class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use this constructor.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#2](~/add/codesnippet/csharp/fc50a84c-c72b-48b6-a127-_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#2](~/add/codesnippet/visualbasic/fc50a84c-c72b-48b6-a127-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WebBaseEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,173 +113,297 @@
         <Parameter Name="eventDetailCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="eventSource">To be added.</param>
-        <param name="eventCode">To be added.</param>
-        <param name="eventDetailCode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The description of the raised event.</param>
+        <param name="eventSource">The object that raised the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <param name="eventDetailCode">The <see cref="T:System.Web.Management.WebEventCodes" /> value that specifies the detailed identifier for the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseEvent" /> class using the supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of the <xref:System.Web.Management.WebBaseEvent> class, but you can call this constructor when you implement your own event type that inherits from this class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use this constructor.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#3](~/add/codesnippet/csharp/fc8e8b3f-50ad-4886-9ab1-_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#3](~/add/codesnippet/visualbasic/fc8e8b3f-50ad-4886-9ab1-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationInformation">
       <MemberSignature Language="C#" Value="public static System.Web.Management.WebApplicationInformation ApplicationInformation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.Management.WebApplicationInformation ApplicationInformation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.ApplicationInformation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Management.WebApplicationInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Web.Management.WebApplicationInformation" /> object that contains information about the current application being monitored.</summary>
+        <value>A <see cref="T:System.Web.Management.WebApplicationInformation" /> object that contains information about the application being monitored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the application information.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#13](~/add/codesnippet/csharp/p-system.web.management._13_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#13](~/add/codesnippet/visualbasic/p-system.web.management._13_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventCode">
       <MemberSignature Language="C#" Value="public int EventCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EventCode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the code value associated with the event.</summary>
+        <value>One of the <see cref="T:System.Web.Management.WebEventCodes" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ More information about the event is contained in the related <xref:System.Web.Management.WebBaseEvent.Message%2A> value.  
+  
+> [!NOTE]
+>  If you inherit from the <xref:System.Web.Management.WebBaseEvent> class, the event code you specify for your custom event must be greater than <xref:System.Web.Management.WebEventCodes.WebExtendedBase>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the event code.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#6](~/add/codesnippet/csharp/p-system.web.management._53_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#6](~/add/codesnippet/visualbasic/p-system.web.management._53_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventDetailCode">
       <MemberSignature Language="C#" Value="public int EventDetailCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EventDetailCode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventDetailCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the event detail code.</summary>
+        <value>The <see cref="T:System.Web.Management.WebEventCodes" /> value that specifies the detailed identifier for the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the event detail code.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#7](~/add/codesnippet/csharp/p-system.web.management._30_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#7](~/add/codesnippet/visualbasic/p-system.web.management._30_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventID">
       <MemberSignature Language="C#" Value="public Guid EventID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid EventID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identifier associated with the event.</summary>
+        <value>The identifier associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EventOccurrence">
       <MemberSignature Language="C#" Value="public long EventOccurrence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EventOccurrence" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventOccurrence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a counter that represents the number of times the event has occurred.</summary>
+        <value>A counter that represents the number of times the event has occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only and is incremented as a result of calls to an internal method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventSequence">
       <MemberSignature Language="C#" Value="public long EventSequence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EventSequence" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventSequence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of times the event has been raised by the application.</summary>
+        <value>The number of times the event has been raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a counter that indicates how many instances of the event have been raised by the application.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the EventSequence value.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#8](~/add/codesnippet/csharp/p-system.web.management._33_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#8](~/add/codesnippet/visualbasic/p-system.web.management._33_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventSource">
       <MemberSignature Language="C#" Value="public object EventSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object EventSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the object that raises the event.</summary>
+        <value>The object that raised the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the EventSource value.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#9](~/add/codesnippet/csharp/p-system.web.management._23_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#9](~/add/codesnippet/visualbasic/p-system.web.management._23_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventTime">
       <MemberSignature Language="C#" Value="public DateTime EventTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EventTime" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the time when the event was raised.</summary>
+        <value>The time that the event was raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the EventTime value.  
+  
+ System.Web.Management.WebBaseEvent#10  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventTimeUtc">
       <MemberSignature Language="C#" Value="public DateTime EventTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EventTimeUtc" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.EventTimeUtc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the time when the event was raised.</summary>
+        <value>The time of the event in Coordinated Universal Time (UTC) format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the EventTimeUtc value.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#11](~/add/codesnippet/csharp/p-system.web.management._16_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#11](~/add/codesnippet/visualbasic/p-system.web.management._16_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormatCustomEventDetails">
       <MemberSignature Language="C#" Value="public virtual void FormatCustomEventDetails (System.Web.Management.WebEventFormatter formatter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FormatCustomEventDetails(class System.Web.Management.WebEventFormatter formatter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.FormatCustomEventDetails(System.Web.Management.WebEventFormatter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,17 +413,37 @@
         <Parameter Name="formatter" Type="System.Web.Management.WebEventFormatter" />
       </Parameters>
       <Docs>
-        <param name="formatter">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formatter">A <see cref="T:System.Web.Management.WebEventFormatter" /> object that contains the formatted event information.</param>
+        <summary>Provides standard formatting of the event information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The FormatCustomEventDetails method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
+  
+> [!NOTE]
+>  When you format your custom event information for display, override the FormatCustomEventDetails method rather than the <xref:System.Web.Management.WebBaseEvent.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+   
+  
+## Examples  
+ The following code example shows how to customize the FormatCustomEventDetails method.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#17](~/add/codesnippet/csharp/a03cb3e9-dc34-4fef-aa66-_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#17](~/add/codesnippet/visualbasic/a03cb3e9-dc34-4fef-aa66-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
       <MemberSignature Language="C#" Value="protected virtual void IncrementPerfCounters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void IncrementPerfCounters() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.IncrementPerfCounters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,33 +451,52 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used internally to increment performance counters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEvent.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the message that describes the event.</summary>
+        <value>The description of the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property describes the meaning of the <xref:System.Web.Management.WebEventCodes> code value associated with the raised event.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the Message value.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#8](~/add/codesnippet/csharp/p-system.web.management._41_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#8](~/add/codesnippet/visualbasic/p-system.web.management._41_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Raise">
       <MemberSignature Language="C#" Value="public virtual void Raise ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Raise() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.Raise" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,16 +504,36 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises an event by notifying any configured provider that the event has occurred.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you override this method, the event raised is your custom event.  
+  
+> [!NOTE]
+>  Medium trust or higher is required to raise an event.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Raise method.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#4](~/add/codesnippet/csharp/m-system.web.management._1_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#4](~/add/codesnippet/visualbasic/m-system.web.management._1_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Raise">
       <MemberSignature Language="C#" Value="public static void Raise (System.Web.Management.WebBaseEvent eventRaised);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Raise(class System.Web.Management.WebBaseEvent eventRaised) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.Raise(System.Web.Management.WebBaseEvent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,17 +543,38 @@
         <Parameter Name="eventRaised" Type="System.Web.Management.WebBaseEvent" />
       </Parameters>
       <Docs>
-        <param name="eventRaised">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventRaised">A <see cref="T:System.Web.Management.WebBaseEvent" /> object.</param>
+        <summary>Raises the specified event by notifying any configured provider that the event has occurred.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the specified event by notifying any configured provider that the event has occurred.  
+  
+> [!NOTE]
+>  Medium trust or higher is required to raise an event.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Raise method.  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#5](~/add/codesnippet/csharp/m-system.web.management._7_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#5](~/add/codesnippet/visualbasic/m-system.web.management._7_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="System.Web.Management.WebBaseEvent.EventCode%2A" /> property of <paramref name="eventRaised" /> has a value that is reserved for ASP.NET.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -315,17 +582,37 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Formats event information for display purposes.</summary>
+        <returns>The event information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ToString method is generally invoked by the provider that processes the event. The method ensures that the standard <xref:System.Web.Management.WebApplicationInformation> object is provided with the event-specific data. It formats event information by calling the event-specific <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method.  
+  
+> [!NOTE]
+>  When you format your custom event information for display, override the <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method rather than the <xref:System.Web.Management.WebBaseEvent.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the ToString method  
+  
+ [!code-cs[System.Web.Management.WebBaseEvent#14](~/add/codesnippet/csharp/m-system.web.management._3_1.cs)]
+ [!code-vb[System.Web.Management.WebBaseEvent#14](~/add/codesnippet/visualbasic/m-system.web.management._3_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public virtual string ToString (bool includeAppInfo, bool includeCustomEventDetails);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(bool includeAppInfo, bool includeCustomEventDetails) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEvent.ToString(System.Boolean,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -336,11 +623,23 @@
         <Parameter Name="includeCustomEventDetails" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeAppInfo">To be added.</param>
-        <param name="includeCustomEventDetails">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="includeAppInfo">
+          <see langword="true" /> if standard application information must be displayed as part of the event information; otherwise, <see langword="false" />.</param>
+        <param name="includeCustomEventDetails">
+          <see langword="true" /> if custom information must be displayed as part of the event information; otherwise, <see langword="false" />.</param>
+        <summary>Formats event information for display purposes.</summary>
+        <returns>The event information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebBaseEvent.ToString%2A> method is generally invoked by the provider that processes the event. It formats event information by calling the event-specific <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method. If `includeAppInfo` is `true`, the standard <xref:System.Web.Management.WebApplicationInformation> object is provided with the event-specific data.  
+  
+> [!NOTE]
+>  When you format your custom event information for display, override the <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method rather than the <xref:System.Web.Management.WebBaseEvent.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

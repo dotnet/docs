@@ -1,6 +1,7 @@
 <Type Name="WinMDExp" FullName="Microsoft.Build.Tasks.WinMDExp">
   <TypeSignature Language="C#" Value="public class WinMDExp : Microsoft.Build.Tasks.ToolTaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WinMDExp extends Microsoft.Build.Tasks.ToolTaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.WinMDExp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exports a managed assembly to a windows runtime metadata.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WinMDExp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WinMDExp.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of WinMDExp.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCommandLineCommands">
       <MemberSignature Language="C#" Value="protected override void AddCommandLineCommands (Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void AddCommandLineCommands(class Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WinMDExp.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -43,14 +46,15 @@
         <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandLine">Gets filled with command line commands</param>
+        <summary>Fills the provided CommandLineBuilderExtension with all the command line options used when executing this tool</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisabledWarnings">
       <MemberSignature Language="C#" Value="public string DisabledWarnings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisabledWarnings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.DisabledWarnings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,14 +64,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Warning codes to disable</summary>
+        <value>Returns the warning codes to disable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
       <MemberSignature Language="C#" Value="protected override string GenerateFullPathToTool ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateFullPathToTool() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WinMDExp.GenerateFullPathToTool" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -78,14 +83,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The full path of the tool to execute.</summary>
+        <returns>Returns the full path of the tool to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InputDocumentationFile">
       <MemberSignature Language="C#" Value="public string InputDocumentationFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InputDocumentationFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.InputDocumentationFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -95,14 +101,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Input documentation file</summary>
+        <value>Returns the input documentation file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InputPDBFile">
       <MemberSignature Language="C#" Value="public string InputPDBFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InputPDBFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.InputPDBFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -112,14 +119,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Input PDB file</summary>
+        <value>Returns the input PDB file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputDocumentationFile">
       <MemberSignature Language="C#" Value="public string OutputDocumentationFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputDocumentationFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.OutputDocumentationFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -129,14 +137,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Output documentation file</summary>
+        <value>Returns the output documentation file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputPDBFile">
       <MemberSignature Language="C#" Value="public string OutputPDBFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPDBFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.OutputPDBFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -146,14 +155,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Output PDB file</summary>
+        <value>Returns the output PDB file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputWindowsMetadataFile">
       <MemberSignature Language="C#" Value="public string OutputWindowsMetadataFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputWindowsMetadataFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.OutputWindowsMetadataFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -168,14 +178,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Output windows metadata file .winmd</summary>
+        <value>Returns the output windows metadata file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="References">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] References { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] References" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.References" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -190,14 +201,15 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Set of references to pass to the winmdexp tool.</summary>
+        <value>Returnsthe set of references.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SdkToolsPath">
       <MemberSignature Language="C#" Value="public string SdkToolsPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SdkToolsPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.SdkToolsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -207,14 +219,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Path to the SDK directory which contains this tool</summary>
+        <value>Returns the SDK directory path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SkipTaskExecution">
       <MemberSignature Language="C#" Value="protected override bool SkipTaskExecution ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool SkipTaskExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WinMDExp.SkipTaskExecution" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -225,14 +238,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns true if task execution is not necessary. Executed after ValidateParameters</summary>
+        <returns>Returns the flag indicating whether task execution is skipped.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardErrorEncoding">
       <MemberSignature Language="C#" Value="protected override System.Text.Encoding StandardErrorEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding StandardErrorEncoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.StandardErrorEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -242,14 +256,15 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value which specifies the encoding of the captured task standard error stream.</summary>
+        <value>Returns the value specifying the error stream encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardOutputEncoding">
       <MemberSignature Language="C#" Value="protected override System.Text.Encoding StandardOutputEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding StandardOutputEncoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.StandardOutputEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -259,14 +274,15 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value which specifies the encoding of the captured task standard output stream.</summary>
+        <value>Returns the value specifying the output stream encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolName">
       <MemberSignature Language="C#" Value="protected override string ToolName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.ToolName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -276,14 +292,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name of the tool to execute.</summary>
+        <value>Returns the tool name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TreatWarningsAsErrors">
       <MemberSignature Language="C#" Value="public bool TreatWarningsAsErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TreatWarningsAsErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.TreatWarningsAsErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -293,14 +310,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the flag indicating whether to treat warnings as errors.</summary>
+        <value>Returns the flag indicating whether to treat warnings as errors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UTF8Output">
       <MemberSignature Language="C#" Value="public bool UTF8Output { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UTF8Output" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.UTF8Output" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -310,14 +328,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the flag indicating whether to use UTF-8 output stream encoding.</summary>
+        <value>Returns the flag indicating UTF-8 output stream encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
       <MemberSignature Language="C#" Value="protected override bool ValidateParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ValidateParameters() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WinMDExp.ValidateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -328,14 +347,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Validate parameters, log errors and warnings and return true if Execute should proceed.</summary>
+        <returns>Returns the flag indicating whether execute should proceed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WinMDModule">
       <MemberSignature Language="C#" Value="public string WinMDModule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WinMDModule" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WinMDExp.WinMDModule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -350,8 +370,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>WinMDModule to generate the WinMDFile for.</summary>
+        <value>Returns the WinMDModule.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

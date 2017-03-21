@@ -1,6 +1,7 @@
 <Type Name="HttpPolicyDownloaderProtocol" FullName="System.Net.Sockets.HttpPolicyDownloaderProtocol">
   <TypeSignature Language="C#" Value="public class HttpPolicyDownloaderProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpPolicyDownloaderProtocol extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.HttpPolicyDownloaderProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,13 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Downloads the policy file that an instance of the <see cref="T:System.Net.Sockets.Socket" /> class will use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpPolicyDownloaderProtocol (Uri appUri, System.Net.IPAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri appUri, class System.Net.IPAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.HttpPolicyDownloaderProtocol.#ctor(System.Uri,System.Net.IPAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -43,15 +45,16 @@
         <Parameter Name="address" Type="System.Net.IPAddress" />
       </Parameters>
       <Docs>
-        <param name="appUri">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="appUri">The URI where the application is hosted.</param>
+        <param name="address">The IP address where the app will run.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.HttpPolicyDownloaderProtocol" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.HttpPolicyDownloaderProtocol.Abort" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -70,13 +73,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Abort the download of the policy file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDownload">
       <MemberSignature Language="C#" Value="public void BeginDownload (System.Net.Sockets.SecurityCriticalAction callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginDownload(class System.Net.Sockets.SecurityCriticalAction callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.HttpPolicyDownloaderProtocol.BeginDownload(System.Net.Sockets.SecurityCriticalAction)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -97,14 +101,15 @@
         <Parameter Name="callback" Type="System.Net.Sockets.SecurityCriticalAction" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">A callback function used to provide critical security actions.</param>
+        <summary>Begin the download of the policy file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadCallback">
       <MemberSignature Language="C#" Value="public void DownloadCallback (IAsyncResult ar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadCallback(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.HttpPolicyDownloaderProtocol.DownloadCallback(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -125,14 +130,15 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> to receive the results when the asynchronous operation completes.</param>
+        <summary>The download callback function to receive the results.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadCallback">
       <MemberSignature Language="C#" Value="public void ReadCallback (IAsyncResult ar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReadCallback(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.HttpPolicyDownloaderProtocol.ReadCallback(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -153,14 +159,15 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> to receive the results when the asynchronous operation completes.</param>
+        <summary>The read callback function to read the policy file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterUnsafeWebRequestCreator">
       <MemberSignature Language="C#" Value="public static void RegisterUnsafeWebRequestCreator (System.Net.IUnsafeWebRequestCreate creator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterUnsafeWebRequestCreator(class System.Net.IUnsafeWebRequestCreate creator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.HttpPolicyDownloaderProtocol.RegisterUnsafeWebRequestCreator(System.Net.IUnsafeWebRequestCreate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -181,14 +188,15 @@
         <Parameter Name="creator" Type="System.Net.IUnsafeWebRequestCreate" />
       </Parameters>
       <Docs>
-        <param name="creator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="creator">The object to create an unsafe <see cref="T:System.Net.WebRequest" />.</param>
+        <summary>Registers an object to creates an unsafe <see cref="T:System.Net.WebRequest" /> to a Uniform Resource Identifier (URI).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
       <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketPolicy Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Sockets.SocketPolicy Result" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.HttpPolicyDownloaderProtocol.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -206,8 +214,10 @@
         <ReturnType>System.Net.Sockets.SocketPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the result of the download of the socket policy file.</summary>
+        <value>Returns <see cref="T:System.Net.Sockets.SocketPolicy" />.  
+  
+ The socket policy file that was downloaded.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,6 +1,7 @@
 <Type Name="RibbonSeparator" FullName="System.Windows.Controls.Ribbon.RibbonSeparator">
   <TypeSignature Language="C#" Value="public class RibbonSeparator : System.Windows.Controls.Separator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonSeparator extends System.Windows.Controls.Separator" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonSeparator" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a control that provides a divider and optional label between elements in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> menu or <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RibbonSeparator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSeparator.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSeparator.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -40,14 +43,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text that is displayed with the visual separator line.</summary>
+        <value>The text that is displayed with the visual separator line. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the optional Label property to display text along with the visual separator line that is displayed by the <xref:System.Windows.Controls.Ribbon.RibbonSeparator>.  
+  
+<a name="dependencyPropertyInfo_Label"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSeparator.LabelProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LabelProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LabelProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSeparator.LabelProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -57,13 +76,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonSeparator.Label%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSeparator.OnCreateAutomationPeer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -74,14 +94,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonSeparatorAutomationPeer" /> object for this control.</summary>
+        <returns>A new automation peer object for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
       <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSeparator.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,14 +115,15 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data that describes the property that changed, as well as old and new values.</param>
+        <summary>Invoked whenever the effective value of any dependency property on this <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" /> has been updated. The specific dependency property that changed is reported in the arguments parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnVisualParentChanged">
       <MemberSignature Language="C#" Value="protected override void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnVisualParentChanged(class System.Windows.DependencyObject oldParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSeparator.OnVisualParentChanged(System.Windows.DependencyObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -114,14 +136,15 @@
         <Parameter Name="oldParent" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="oldParent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldParent">Old parent or <see langword="null" /> if the element in the visual tree did not have a parent before.</param>
+        <summary>Invoked when the parent of this element in the visual tree is changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ribbon">
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.Ribbon Ribbon { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.Ribbon Ribbon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSeparator.Ribbon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -131,14 +154,30 @@
         <ReturnType>System.Windows.Controls.Ribbon.Ribbon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
+        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set on the parent <xref:System.Windows.Controls.Ribbon.Ribbon> control and is inherited by the child controls. It is used to access visual style brushes defined on the <xref:System.Windows.Controls.Ribbon.Ribbon> class.  
+  
+<a name="dependencyPropertyInfo_Ribbon"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonSeparator.RibbonProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RibbonProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RibbonProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RibbonProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSeparator.RibbonProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -148,7 +187,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonButton.Ribbon%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

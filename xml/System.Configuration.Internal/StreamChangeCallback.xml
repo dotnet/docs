@@ -1,8 +1,10 @@
 <Type Name="StreamChangeCallback" FullName="System.Configuration.Internal.StreamChangeCallback">
   <TypeSignature Language="C#" Value="public delegate void StreamChangeCallback(string streamName);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StreamChangeCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.StreamChangeCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,8 +17,8 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="streamName">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="streamName">The name of the <see cref="T:System.IO.Stream" /> object performing I/O tasks on the configuration file.</param>
+    <summary>Represents a method for hosts to call when a monitored stream has changed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

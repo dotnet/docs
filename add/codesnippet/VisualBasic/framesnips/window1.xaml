@@ -1,0 +1,12 @@
+<Page x:Class="FrameSnips.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FrameSnips"
+    Loaded="InitializeFrameSnip"
+    >
+    <StackPanel Background="Green">
+      <Frame Source="http://www.msn.com"/>    
+      <Frame Name="myFrame" Source="http://www.msn.com" Navigated="onNavigated"/>
+      <Button Click="onClick"/>
+    </StackPanel>
+  </Page>

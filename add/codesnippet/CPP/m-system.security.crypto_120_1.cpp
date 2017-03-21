@@ -1,0 +1,1 @@
+      HashAlgorithm^ hashAlgorithm = dsaSignature->CreateDigest();

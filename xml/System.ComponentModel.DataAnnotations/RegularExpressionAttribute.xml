@@ -1,12 +1,10 @@
 <Type Name="RegularExpressionAttribute" FullName="System.ComponentModel.DataAnnotations.RegularExpressionAttribute">
   <TypeSignature Language="C#" Value="public class RegularExpressionAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegularExpressionAttribute extends System.ComponentModel.DataAnnotations.ValidationAttribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.RegularExpressionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,41 +17,68 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a data field value in ASP.NET Dynamic Data must match the specified regular expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You apply the RegularExpressionAttribute attribute to a property when you need to validate values for the property against a regular expression. The regular expression enables you to specify very precisely the format of valid values. The Pattern property contains the regular expression.If the value of the property is null or an empty string (""), the value automatically passes validation for the RegularExpressionAttribute attribute. To validate that the value is not `null` or an empty string, use the **RequiredAttribute** attribute.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the RegularExpressionAttribute attribute to validate the FirstName and LastName data fields. The regular expression allows up to 40 uppercase and lowercase characters. The example performs the following tasks:  
+  
+-   Implements a metadata partial class and the associated metadata class.  
+  
+-   In the associated metadata class, applies the RegularExpressionAttribute attribute to the FirstName and LastName data fields, specifying the pattern and custom error messages.  
+  
+ [!code-cs[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#1](~/add/codesnippet/csharp/t-system.componentmodel._149_1.cs)]
+ [!code-vb[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#1](~/add/codesnippet/visualbasic/t-system.componentmodel._149_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RegularExpressionAttribute (string pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pattern">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pattern">The regular expression that is used to validate the data field value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.RegularExpressionAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to apply the <xref:System.ComponentModel.DataAnnotations.RegularExpressionAttribute> to a data field. If validation fails, the code in the example displays the validation error message that is provided by Dynamic Data.  
+  
+ [!code-cs[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#2](~/add/codesnippet/csharp/432bba28-3854-4311-b1ca-_1.cs)]
+ [!code-vb[System.ComponentModel.DataAnnotations.RegularExpressionAttribute#2](~/add/codesnippet/visualbasic/432bba28-3854-4311-b1ca-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pattern" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FormatErrorMessage">
       <MemberSignature Language="C#" Value="public override string FormatErrorMessage (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatErrorMessage(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.FormatErrorMessage(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,22 +88,27 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the field that caused the validation failure.</param>
+        <summary>Formats the error message to display if the regular expression validation fails.</summary>
+        <returns>The formatted error message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The FormatErrorMessage creates the error message by using the name of the data field that caused the validation failure. You can override this method in custom validation attributes to customize how errors are created or to provide a more complex message that contains parameters that you evaluate at run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
       <MemberSignature Language="C#" Value="public override bool IsValid (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValid(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.IsValid(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,20 +118,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The data field value to validate.</param>
+        <summary>Checks whether the value entered by the user matches the regular expression pattern.</summary>
+        <returns>
+          <see langword="true" /> if validation is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The data field value did not match the regular expression pattern.</exception>
       </Docs>
     </Member>
     <Member MemberName="MatchTimeoutInMilliseconds">
       <MemberSignature Language="C#" Value="public int MatchTimeoutInMilliseconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MatchTimeoutInMilliseconds" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.MatchTimeoutInMilliseconds" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -110,29 +139,27 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or set the amount of time in milliseconds to execute a single matching operation before the operation times out.</summary>
+        <value>The amount of time in milliseconds to execute a single matching operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
       <MemberSignature Language="C#" Value="public string Pattern { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the regular expression pattern.</summary>
+        <value>The pattern to match.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,11 @@
 <Type Name="LicenseContext" FullName="System.ComponentModel.LicenseContext">
   <TypeSignature Language="C#" Value="public class LicenseContext : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LicenseContext extends System.Object implements class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseContext" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,39 +16,42 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies when you can use a licensed object and provides a way of obtaining additional services needed to support licenses running within its domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides the default LicenseContext. It implements only run-time support and does not support saved license keys.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LicenseContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicenseContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSavedLicenseKey">
       <MemberSignature Language="C#" Value="public virtual string GetSavedLicenseKey (Type type, System.Reflection.Assembly resourceAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSavedLicenseKey(class System.Type type, class System.Reflection.Assembly resourceAssembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -60,24 +61,22 @@
         <Parameter Name="resourceAssembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="resourceAssembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">A <see cref="T:System.Type" /> that represents the type of component.</param>
+        <param name="resourceAssembly">An <see cref="T:System.Reflection.Assembly" /> with the license key.</param>
+        <summary>When overridden in a derived class, returns a saved license key for the specified type, from the specified resource assembly.</summary>
+        <returns>The <see cref="System.ComponentModel.License.LicenseKey%2A" /> for the specified type. This method returns <see langword="null" /> unless you override it.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetService">
       <MemberSignature Language="C#" Value="public virtual object GetService (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.GetService(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -86,23 +85,21 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type of service to retrieve.</param>
+        <summary>Gets the requested service, if it is available.</summary>
+        <returns>An instance of the service, or <see langword="null" /> if the service cannot be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSavedLicenseKey">
       <MemberSignature Language="C#" Value="public virtual void SetSavedLicenseKey (Type type, string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSavedLicenseKey(class System.Type type, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -112,30 +109,35 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">A <see cref="T:System.Type" /> that represents the component associated with the license key.</param>
+        <param name="key">The <see cref="System.ComponentModel.License.LicenseKey%2A" /> to save for the type of component.</param>
+        <summary>When overridden in a derived class, sets a license key for the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, call this method when you set <xref:System.ComponentModel.LicenseUsageMode> at design time. You must override the <xref:System.ComponentModel.LicenseContext.UsageMode%2A> property to implement design-time license support.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UsageMode">
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.LicenseUsageMode UsageMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.LicenseUsageMode UsageMode" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.LicenseContext.UsageMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LicenseUsageMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that specifies when you can use a license.</summary>
+        <value>One of the <see cref="T:System.ComponentModel.LicenseUsageMode" /> values that specifies when you can use a license. The default is <see cref="T:System.ComponentModel.LicenseUsageMode" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

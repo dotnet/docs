@@ -1,6 +1,11 @@
 <Type Name="SyndicationLink" FullName="System.ServiceModel.Syndication.SyndicationLink">
   <TypeSignature Language="C#" Value="public class SyndicationLink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyndicationLink extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationLink" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,28 +20,53 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a link within a syndication feed or item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SyndicationLink can be added to a <xref:System.ServiceModel.Syndication.SyndicationFeed> or <xref:System.ServiceModel.Syndication.SyndicationItem>. When serialized to Atom 1.0 a SyndicationLink is written out as a `<link>` element, with the SyndicationLink properties written out as attributes of the `<link>` element. When serialized to RSS 2.0, the first SyndicationLink with a relationship value of ‘alternate’ is written out as a `<link>` element. Any additional links are written out as a `<a10:link>` elements.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the SyndicationLink class.  
+  
+ [!code-cs[SyndicationLink#0](~/add/codesnippet/csharp/t-system.servicemodel.sy_3_1.cs)]
+ [!code-vb[SyndicationLink#0](~/add/codesnippet/visualbasic/t-system.servicemodel.sy_3_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyndicationLink ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.#ctor" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected SyndicationLink (System.ServiceModel.Syndication.SyndicationLink source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationLink source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.#ctor(System.ServiceModel.Syndication.SyndicationLink)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,15 +75,20 @@
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationLink" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance used to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyndicationLink (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.#ctor(System.Uri)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,15 +97,30 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI to the linked resource.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-cs[SyndicationLink#1](~/add/codesnippet/csharp/m-system.servicemodel.sy_2_1.cs)]
+ [!code-vb[SyndicationLink#1](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyndicationLink (Uri uri, string relationshipType, string title, string mediaType, long length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string relationshipType, string title, string mediaType, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.#ctor(System.Uri,System.String,System.String,System.String,System.Int64)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,19 +133,49 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="relationshipType">To be added.</param>
-        <param name="title">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI to the linked resource.</param>
+        <param name="relationshipType">The relationship type.</param>
+        <param name="title">The title of the link.</param>
+        <param name="mediaType">The media type of the link.</param>
+        <param name="length">The length of the linked content.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> class with the specified <see cref="T:System.Uri" />, relation type, title, media type, and length.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Well-known relationship types include:  
+  
+-   `alternate` - The link identifies an alternate version of the resource described by the containing Feed or Item.  
+  
+-   `related` - The link identifies a resource related to the containing Feed or Item.  
+  
+-   `self` - The link identifies a resource equivalent to the containing Feed or Item.  
+  
+-   `enclosure` - The link identifies a related resource that is potentially large in size and might require special handling. This link relation is often used when podcasts or audio files are distributed in a Feed.  
+  
+-   `via` - The link identifies a resource that is the source of the information provided in the containing Feed or Item.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-cs[SyndicationLink#0](~/add/codesnippet/csharp/31694c69-bff3-41d7-9a86-_1.cs)]
+ [!code-vb[SyndicationLink#0](~/add/codesnippet/visualbasic/31694c69-bff3-41d7-9a86-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttributeExtensions">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,string&gt; AttributeExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.Xml.XmlQualifiedName, string&gt; AttributeExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.AttributeExtensions" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,15 +184,35 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the attribute extensions of the link.</summary>
+        <value>A dictionary that contains a collection of attribute extensions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ AttributeExtensions allows you to add custom attributes to the <xref:System.ServiceModel.Syndication.SyndicationLink>. When serialized to Atom 1.0, the custom attributes appear within the `<link>` element. When serialized to RSS 2.0, the custom attributes appear in the `<a10:link>` element. Any valid XML attribute can be added.  
+  
+   
+  
+## Examples  
+ The following code shows how to add an attribute extension to a syndication link.  
+  
+ [!code-cs[LooselyTypedExtensions#4](~/add/codesnippet/csharp/p-system.servicemodel.sy_22_1.cs)]
+ [!code-vb[LooselyTypedExtensions#4](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_22_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.BaseUri" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,15 +221,29 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the base URI of the syndication link.</summary>
+        <value>A <see cref="T:System.Uri" /> instance that contains the base URI of the syndication link.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to set the base URI of a syndication link.  
+  
+   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Syndication.SyndicationLink Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationLink Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.Clone" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -139,15 +253,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a copy of the current <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create a clone of a syndication link.  
+  
+   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAlternateLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateAlternateLink (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateAlternateLink(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.CreateAlternateLink(System.Uri)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -159,16 +287,31 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the linked resource.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> object with the specified <see cref="T:System.Uri" />.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an alternate link.  
+  
+ [!code-cs[SyndicationLink#4](~/add/codesnippet/csharp/2b42e813-0762-4447-bc6b-_1.cs)]
+ [!code-vb[SyndicationLink#4](~/add/codesnippet/visualbasic/2b42e813-0762-4447-bc6b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAlternateLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateAlternateLink (Uri uri, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateAlternateLink(class System.Uri uri, string mediaType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.CreateAlternateLink(System.Uri,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -181,17 +324,32 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the linked resource.</param>
+        <param name="mediaType">The media type of the link.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> object with the specified <see cref="T:System.Uri" /> and media type.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an alternate link.  
+  
+ [!code-cs[SyndicationLink#5](~/add/codesnippet/csharp/6eb37ab3-35f0-4533-a20d-_1.cs)]
+ [!code-vb[SyndicationLink#5](~/add/codesnippet/visualbasic/6eb37ab3-35f0-4533-a20d-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMediaEnclosureLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateMediaEnclosureLink (Uri uri, string mediaType, long length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateMediaEnclosureLink(class System.Uri uri, string mediaType, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.CreateMediaEnclosureLink(System.Uri,System.String,System.Int64)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -205,18 +363,38 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the linked resource.</param>
+        <param name="mediaType">The media type of the link.</param>
+        <param name="length">The length of the linked content.</param>
+        <summary>Creates a media enclosure link with the specified URI, media type, and length.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `enclosure`.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a media enclosure link.  
+  
+ [!code-cs[SyndicationLink#6](~/add/codesnippet/csharp/fb8e5f22-a822-476e-a825-_1.cs)]
+ [!code-vb[SyndicationLink#6](~/add/codesnippet/visualbasic/fb8e5f22-a822-476e-a825-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSelfLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateSelfLink (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateSelfLink(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.CreateSelfLink(System.Uri)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -228,16 +406,31 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI to the linked resource.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> with the specified URI and relationship type set to <see langword="self" />.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a self link.  
+  
+ [!code-cs[SyndicationLink#7](~/add/codesnippet/csharp/m-system.servicemodel.sy_24_1.cs)]
+ [!code-vb[SyndicationLink#7](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_24_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSelfLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateSelfLink (Uri uri, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateSelfLink(class System.Uri uri, string mediaType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.CreateSelfLink(System.Uri,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -250,17 +443,32 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI to the linked resource.</param>
+        <param name="mediaType">The media type of the link.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> with the specified URI, media type, and relationship type set to <see langword="self" />.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a self link.  
+  
+ [!code-cs[SyndicationLink#8](~/add/codesnippet/csharp/3029fb48-439c-4223-a715-_1.cs)]
+ [!code-vb[SyndicationLink#8](~/add/codesnippet/visualbasic/3029fb48-439c-4223-a715-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementExtensions">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.ElementExtensions" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -269,15 +477,35 @@
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the element extensions for the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" /> that contains the element extensions for the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+  
+   
+  
+## Examples  
+ The following code shows how to add an element extension to a syndication link.  
+  
+ [!code-cs[LooselyTypedExtensions#5](~/add/codesnippet/csharp/p-system.servicemodel.sy_26_1.cs)]
+ [!code-vb[LooselyTypedExtensions#5](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_26_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAbsoluteUri">
       <MemberSignature Language="C#" Value="public Uri GetAbsoluteUri ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri GetAbsoluteUri() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.GetAbsoluteUri" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -287,15 +515,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the absolute URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</summary>
+        <returns>A <see cref="T:System.Uri" /> instance that contains the absolute URI of the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to get the absolute URI of a syndication link.  
+  
+   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
       <MemberSignature Language="C#" Value="public long Length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.Length" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -304,15 +546,44 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the length of the linked resource in bytes.</summary>
+        <value>The length of the linked resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0 the Length property is written as a `length` attribute in the `<link>` element.  
+  
+ When serialized to RSS 2.0 this value is written as the `length` attribute of the `<a10:link>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the length of a syndication link.  
+  
+   
+  
+ The following XML shows how the Length property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationLink#2](~/add/codesnippet/xml/p-system.servicemodel.sy_0_2.xml)]  
+  
+ The following XML shows how the Length property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationLink#3](~/add/codesnippet/xml/p-system.servicemodel.sy_0_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MediaType">
       <MemberSignature Language="C#" Value="public string MediaType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MediaType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.MediaType" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -321,15 +592,42 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the media type of the linked resource.</summary>
+        <value>The media type of the linked resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0 this value is written as a `type` attribute in the `<link>` element. When serialized to RSS 2.0 this value is written as the `type` attribute in the `<a10:link>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the media type on a syndication link.  
+  
+   
+  
+ The following XML shows how the MediaType property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationLink#2](~/add/codesnippet/xml/p-system.servicemodel.sy_10_2.xml)]  
+  
+ The following XML shows how the MediaType property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationLink#3](~/add/codesnippet/xml/p-system.servicemodel.sy_10_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelationshipType">
       <MemberSignature Language="C#" Value="public string RelationshipType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.RelationshipType" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -338,15 +636,54 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the relationship type of the linked resource.</summary>
+        <value>The relationship type of the linked resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Well-known relationship types include:  
+  
+-   `alternate` - The link identifies an alternate version of the resource described by the containing Feed or Item.  
+  
+-   `related` - The link identifies a resource related to the containing Feed or Item.  
+  
+-   `self` - The link identifies a resource equivalent to the containing Feed or Item.  
+  
+-   `enclosure` - The link identifies a related resource that is potentially large in size and might require special handling. This link relation is often used when podcasts or audio files are distributed in a Feed.  
+  
+-   `via` - The link identifies a resource that is the source of the information provided in the containing Feed or Item.  
+  
+ When serialized to Atom 1.0 this value is written out as the `rel` attribute of the `<link>` element. When serialized to RSS 2.0, this value is written out as the `rel` attribute in the `<a10:link>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the relationship type of a syndication link.  
+  
+   
+  
+ The following XML shows how the RelationshipType property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationLink#2](~/add/codesnippet/xml/p-system.servicemodel.sy_2_2.xml)]  
+  
+ The following XML shows how the RelationshipType property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationLink#3](~/add/codesnippet/xml/p-system.servicemodel.sy_2_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.Title" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -355,15 +692,45 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the title of the linked resource.</summary>
+        <value>The title of the linked resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0 this value is written out as the `title` attribute in the `<link>` element.  
+  
+ When serialized to RSS 2.0 the title is written out as the `title` attribute in the `<a10:link>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the title of a syndication link.  
+  
+ [!code-cs[SyndicationLink#0](~/add/codesnippet/csharp/p-system.servicemodel.sy_16_1.cs)]
+ [!code-vb[SyndicationLink#0](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_16_1.vb)]  
+  
+ The following XML shows how the Title property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationLink#2](~/add/codesnippet/xml/p-system.servicemodel.sy_16_2.xml)]  
+  
+ The following XML shows how the Title property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationLink#3](~/add/codesnippet/xml/p-system.servicemodel.sy_16_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
       <MemberSignature Language="C#" Value="protected virtual bool TryParseAttribute (string name, string ns, string value, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseAttribute(string name, string ns, string value, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -378,19 +745,32 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute to parse.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extension.</summary>
+        <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<link`> element. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
       <MemberSignature Language="C#" Value="protected virtual bool TryParseElement (System.Xml.XmlReader reader, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseElement(class System.Xml.XmlReader reader, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -403,17 +783,30 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="version">The syndication version to use while parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>A value that specifies whether the element extension was parsed successfully.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized element extensions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
       </Docs>
     </Member>
     <Member MemberName="Uri">
       <MemberSignature Language="C#" Value="public Uri Uri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationLink.Uri" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -422,15 +815,44 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the URI for the linked resource.</summary>
+        <value>A <see cref="T:System.Uri" /> instance that contains the URI for the linked resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0 this value is written out as the `href` attribute in the `<link>` element.  
+  
+ When serialized to RSS 2.0, this value is written out as the `href` attribute in the `<a10:link>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the URI of a syndication link.  
+  
+   
+  
+ The following XML shows how the Uri property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationLink#2](~/add/codesnippet/xml/p-system.servicemodel.sy_42_2.xml)]  
+  
+ The following XML shows how the Uri property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationLink#3](~/add/codesnippet/xml/p-system.servicemodel.sy_42_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
       <MemberSignature Language="C#" Value="protected virtual void WriteAttributeExtensions (System.Xml.XmlWriter writer, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteAttributeExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -443,16 +865,28 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlReader" /> to write to.</param>
+        <param name="version">The syndication version to use while writing.</param>
+        <summary>Writes the attribute extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<link>` element. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
       <MemberSignature Language="C#" Value="protected virtual void WriteElementExtensions (System.Xml.XmlWriter writer, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteElementExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationLink.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -465,10 +899,17 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlReader" /> to write to.</param>
+        <param name="version">The syndication version to use while writing.</param>
+        <summary>Writes the element extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized element extensions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

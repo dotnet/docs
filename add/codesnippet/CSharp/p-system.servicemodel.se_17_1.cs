@@ -1,0 +1,2 @@
+        ServiceCredentials credentials =
+                        hostDefault.Credentials;

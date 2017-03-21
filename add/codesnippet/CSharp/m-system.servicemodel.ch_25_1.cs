@@ -1,0 +1,2 @@
+            LocalClientSecuritySettings clone =
+                settings.Clone();

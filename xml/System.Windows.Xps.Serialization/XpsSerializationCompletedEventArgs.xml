@@ -1,8 +1,10 @@
 <Type Name="XpsSerializationCompletedEventArgs" FullName="System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class XpsSerializationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsSerializationCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.XpsSerializationCompleted" /> event of an <see cref="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XpsSerializationCompletedEventArgs (bool canceled, object state, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool canceled, object state, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs.#ctor(System.Boolean,System.Object,System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -28,10 +32,11 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="canceled">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="canceled">
+          <see langword="true" /> to indicate that the serialization was canceled before completion; otherwise, <see langword="false" />.</param>
+        <param name="state">A user-supplied object that provides additional data to the event handler.</param>
+        <param name="exception">An exception, if any, that interrupted the serialization operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

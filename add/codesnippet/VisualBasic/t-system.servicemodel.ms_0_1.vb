@@ -1,0 +1,1 @@
+            Dim message As New MsmqMessage(Of String)("Hello, world")

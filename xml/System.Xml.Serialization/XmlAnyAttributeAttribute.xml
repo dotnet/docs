@@ -1,17 +1,11 @@
 <Type Name="XmlAnyAttributeAttribute" FullName="System.Xml.Serialization.XmlAnyAttributeAttribute">
   <TypeSignature Language="C#" Value="public class XmlAnyAttributeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlAnyAttributeAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAnyAttributeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -19,34 +13,80 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that the member (a field that returns an array of <see cref="T:System.Xml.XmlAttribute" /> objects) can contain any XML attributes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the XmlAnyAttributeAttribute to contain arbitrary data (as XML attributes) that is sent as part of an XML document, such as, metadata sent as part of the document.  
+  
+ Apply the XmlAnyAttributeAttribute to a field that returns an array of <xref:System.Xml.XmlAttribute> or <xref:System.Xml.XmlNode> objects. When the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method of the <xref:System.Xml.Serialization.XmlSerializer> class is called, all XML attributes that do not have a corresponding member in the class being deserialized are collected in the array. After deserialization, you can iterate through the collection of <xref:System.Xml.XmlAttribute> items to process the data.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> and <xref:System.Xml.Serialization.XmlSerializer.UnknownAttribute> events of the <xref:System.Xml.Serialization.XmlSerializer> do not occur if you apply the XmlAnyAttributeAttribute to a member of a class.  
+  
+> [!NOTE]
+>  You can use the word `XmlAnyAttribute` in your code instead of the longer XmlAnyAttributeAttribute.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following example collects all unknown attributes into an array of <xref:System.Xml.XmlAttribute> objects. To try the example, create a file named `UnknownAttributes.xml` that contains the following XML:  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+GroupType = 'Technical' GroupNumber = '42' GroupBase = 'Red'>  
+  <GroupName>MyGroup</GroupName>  
+</Group>  
+```  
+  
+ [!code-cs[XmlAnyAttributeAttribute Example#1](~/add/codesnippet/csharp/t-system.xml.serializati_38_1.cs)]
+ [!code-cpp[XmlAnyAttributeAttribute Example#1](~/add/codesnippet/cpp/t-system.xml.serializati_38_1.cpp)]
+ [!code-vb[XmlAnyAttributeAttribute Example#1](~/add/codesnippet/visualbasic/t-system.xml.serializati_38_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlAnyAttributeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAnyAttributeAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Constructs a new instance of the <see cref="T:System.Xml.Serialization.XmlAnyAttributeAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example constructs an <xref:System.Xml.Serialization.XmlAnyAttributeAttribute> that is used to override the deserialization of an object. To try the example, create a file named UnknownAttributes.xml that contains the following XML:  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" GroupType = 'Technical' GroupNumber = '42' GroupBase = 'Red'>  
+  <GroupName>MyGroup</GroupName>  
+</Group>  
+```  
+  
+ [!code-cs[XmlAnyAttributeAttribute_ctor Example#1](~/add/codesnippet/csharp/m-system.xml.serializati_16_1.cs)]
+ [!code-cpp[XmlAnyAttributeAttribute_ctor Example#1](~/add/codesnippet/cpp/m-system.xml.serializati_16_1.cpp)]
+ [!code-vb[XmlAnyAttributeAttribute_ctor Example#1](~/add/codesnippet/visualbasic/m-system.xml.serializati_16_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

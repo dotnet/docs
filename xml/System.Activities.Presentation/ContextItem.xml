@@ -1,6 +1,7 @@
 <Type Name="ContextItem" FullName="System.Activities.Presentation.ContextItem">
   <TypeSignature Language="C#" Value="public abstract class ContextItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContextItem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a base class from which all context items must derive. This class is abstract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A context item represents a piece of transient state in a designer. Context items are managed by a <xref:System.Activities.Presentation.ContextItemManager>,  which is part of the <xref:System.Activities.Presentation.EditingContext> employed by a <xref:System.Activities.Presentation.WorkflowDesigner> when representing the workflow model visually. The <xref:System.Activities.Presentation.ContextItemManager> is returned by the <xref:System.Activities.Presentation.EditingContext.Items%2A> property which contains the data that is shared between a host and the designer.  This data provides the mechanism needed to hook into subscription and change notification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ContextItem ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItem.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -24,13 +33,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initiates a new instance of the <see cref="T:System.Activities.Presentation.ContextItem" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemType">
       <MemberSignature Language="C#" Value="public abstract Type ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ContextItem.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -40,14 +50,22 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented in a derived class, gets the type of item derived from the editing context class.</summary>
+        <value>The item <see cref="T:System.Type" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is not implemented for the base <xref:System.Activities.Presentation.ContextItem> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemChanged">
       <MemberSignature Language="C#" Value="protected virtual void OnItemChanged (System.Activities.Presentation.EditingContext context, System.Activities.Presentation.ContextItem previousItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemChanged(class System.Activities.Presentation.EditingContext context, class System.Activities.Presentation.ContextItem previousItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItem.OnItemChanged(System.Activities.Presentation.EditingContext,System.Activities.Presentation.ContextItem)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -61,10 +79,17 @@
         <Parameter Name="previousItem" Type="System.Activities.Presentation.ContextItem" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="previousItem">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="T:System.Activities.Presentation.EditingContext" /> within which the change is being made.</param>
+        <param name="previousItem">The previously active <see cref="T:System.Activities.Presentation.ContextItem" />.</param>
+        <summary>Represents a method that is called on the context item before it is stored in the context item manager. The previous item in the context item manager is passed as a parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because items must have default constructors, a default item will be constructed if an item is passed into the context the first time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

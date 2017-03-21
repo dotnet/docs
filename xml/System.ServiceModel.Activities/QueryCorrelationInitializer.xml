@@ -1,6 +1,7 @@
 <Type Name="QueryCorrelationInitializer" FullName="System.ServiceModel.Activities.QueryCorrelationInitializer">
   <TypeSignature Language="C#" Value="public sealed class QueryCorrelationInitializer : System.ServiceModel.Activities.CorrelationInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit QueryCorrelationInitializer extends System.ServiceModel.Activities.CorrelationInitializer" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.QueryCorrelationInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Initializes the associated <see cref="System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle%2A" /> based on the results of the <see cref="System.ServiceModel.Activities.QueryCorrelationInitializer.MessageQuerySet%2A" /> when the message is sent or received.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the QueryCorrelationInitializer class to set the correlation initialize for a <xref:System.ServiceModel.Activities.SendReply> activity.  
+  
+ [!code-cs[ImplicitExplicitCorrelation#0](~/add/codesnippet/csharp/implicitexplicitcorrelation.service/pharmacyservice.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QueryCorrelationInitializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.QueryCorrelationInitializer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -29,13 +40,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.QueryCorrelationInitializer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-cs[ImplicitExplicitCorrelation#1](~/add/codesnippet/csharp/implicitexplicitcorrelation.service/pharmacyservice.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageQuerySet">
       <MemberSignature Language="C#" Value="public System.ServiceModel.MessageQuerySet MessageQuerySet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MessageQuerySet MessageQuerySet" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.QueryCorrelationInitializer.MessageQuerySet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -45,9 +66,20 @@
         <ReturnType>System.ServiceModel.MessageQuerySet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.MessageQuerySet" /> that is used to perform the <see cref="T:System.ServiceModel.Channels.CorrelationKey" /> calculation.</summary>
+        <value>The <see cref="T:System.ServiceModel.MessageQuerySet" /> that is used to perform the <see cref="T:System.ServiceModel.Channels.CorrelationKey" /> calculation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the MessageQuerySet property.  
+  
+ [!code-cs[ImplicitExplicitCorrelation#2](~/add/codesnippet/csharp/implicitexplicitcorrelation.service/pharmacyservice.cs#2)]  
+  
+ [!code-cs[ImplicitExplicitCorrelation#1](~/add/codesnippet/csharp/implicitexplicitcorrelation.service/pharmacyservice.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

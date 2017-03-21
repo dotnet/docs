@@ -1,6 +1,7 @@
 <Type Name="EncryptedSecurityToken" FullName="System.IdentityModel.Tokens.EncryptedSecurityToken">
   <TypeSignature Language="C#" Value="public class EncryptedSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EncryptedSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EncryptedSecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A wrapping-token that handles encryption for a token that does not natively support it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, a <xref:System.IdentityModel.Tokens.SamlSecurityToken> cannot encrypt itself, so to issue an encrypted SAML11 assertion, wrap a <xref:System.IdentityModel.Tokens.SamlSecurityToken> with an EncryptedSecurityToken and provide appropriate <xref:System.IdentityModel.Tokens.EncryptingCredentials>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EncryptedSecurityToken (System.IdentityModel.Tokens.SecurityToken token, System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityToken.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.EncryptingCredentials)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -27,15 +36,23 @@
         <Parameter Name="encryptingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <param name="encryptingCredentials">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="token">The token to encrypt.</param>
+        <param name="encryptingCredentials">The credentials to use to encrypt the token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedSecurityToken" /> class for the specified token by using the specified encrypting credentials.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanCreateKeyIdentifierClause&lt;T&gt;">
       <MemberSignature Language="C#" Value="public override bool CanCreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityToken.CanCreateKeyIdentifierClause``1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,15 +70,24 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the key identifier clause.</typeparam>
+        <summary>Gets a value that indicates whether the token can create a key identifier clause of the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the token can create a key identifier clause of the specified type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyIdentifierClause&lt;T&gt;">
       <MemberSignature Language="C#" Value="public override T CreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityToken.CreateKeyIdentifierClause``1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,15 +105,16 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the key identifier clause to create.</typeparam>
+        <summary>Creates a key identifier clause of the specified type for the token.</summary>
+        <returns>A key identifier clause of the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EncryptingCredentials">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.EncryptingCredentials EncryptingCredentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.EncryptingCredentials EncryptingCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityToken.EncryptingCredentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,14 +124,15 @@
         <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the credentials to use for encryption.</summary>
+        <value>The credentials to use for encryption.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public override string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityToken.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,14 +142,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique identifier of the security token.</summary>
+        <value>The unique identifier of the security token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchesKeyIdentifierClause">
       <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,15 +163,24 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="keyIdentifierClause">A key identifier clause to compare to this instance.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance can be resolved to the specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> if the specified key identifier clause can be resolved by this instance; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveKeyIdentifierClause">
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -155,15 +193,23 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="keyIdentifierClause">The key identifier clause to get the key for.</param>
+        <summary>Gets the key for the specified key identifier clause.</summary>
+        <returns>The key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityKeys">
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -173,14 +219,22 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the cryptographic keys associated with the security token.</summary>
+        <value>The set of keys associated with the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Token">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken Token { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityToken Token" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityToken.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -190,14 +244,15 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the encrypted token.</summary>
+        <value>The encrypted token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidFrom">
       <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -207,14 +262,15 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the first instant in time at which the security token is valid.</summary>
+        <value>The instant in time at which the security token is valid.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
       <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -224,8 +280,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the last instant in time at which the security token is valid.</summary>
+        <value>The last instant in time at which the security token is valid.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

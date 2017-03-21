@@ -1,8 +1,10 @@
 <Type Name="FtpCachePolicyElement" FullName="System.Net.Configuration.FtpCachePolicyElement">
   <TypeSignature Language="C#" Value="public sealed class FtpCachePolicyElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FtpCachePolicyElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.FtpCachePolicyElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,45 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the default FTP cache policy for network resources. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class corresponds to the [\&lt;defaultFtpCachePolicy\&gt; Element (Network Settings)](../Topic/%3CdefaultFtpCachePolicy%3E%20Element%20\(Network%20Settings\).md) configuration element.  
+  
+ This class is used to specify the FTP caching configuration that applies to network resources that are obtained by using the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+  
+ This class provides programmatic access to information that can be stored in configuration files.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FtpCachePolicyElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.FtpCachePolicyElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.FtpCachePolicyElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeserializeElement">
       <MemberSignature Language="C#" Value="protected override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.FtpCachePolicyElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,9 +70,11 @@
     <Member MemberName="PolicyLevel">
       <MemberSignature Language="C#" Value="public System.Net.Cache.RequestCacheLevel PolicyLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Cache.RequestCacheLevel PolicyLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.FtpCachePolicyElement.PolicyLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -67,17 +86,26 @@
         <ReturnType>System.Net.Cache.RequestCacheLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets FTP caching behavior for the local machine.</summary>
+        <value>A <see cref="T:System.Net.Cache.RequestCacheLevel" /> value that specifies the cache behavior.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications typically use <xref:System.Net.Cache.RequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.FtpCachePolicyElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,9 +120,11 @@
     <Member MemberName="Reset">
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.FtpCachePolicyElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,0 +1,1 @@
+			Dim binding1 As New WSHttpBinding()

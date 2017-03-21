@@ -1,0 +1,1 @@
+         int inputBlockSize = base64Transform->InputBlockSize;

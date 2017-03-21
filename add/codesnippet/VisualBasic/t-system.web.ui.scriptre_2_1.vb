@@ -1,0 +1,2 @@
+<Assembly: System.Web.UI.WebResource("LocalizingScriptResources.CheckAnswer.js", "application/x-javascript")> 
+<Assembly: System.Web.UI.ScriptResource("LocalizingScriptResources.CheckAnswer.js", "LocalizingScriptResources.VerificationResources", "Answer")> 

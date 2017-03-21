@@ -1,6 +1,7 @@
 <Type Name="BuildSubmission" FullName="Microsoft.Build.Execution.BuildSubmission">
   <TypeSignature Language="C#" Value="public class BuildSubmission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildSubmission extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildSubmission" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a build request that has been submitted to the build manager for processing. The methods of this class may be used to execute synchronous or asynchronous build requests and to provide access to the results upon completion.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is thread-safe.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsyncContext">
       <MemberSignature Language="C#" Value="public object AsyncContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object AsyncContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.AsyncContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -26,14 +35,15 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the asynchronous context provided to <see cref="Microsoft.Build.Execution.BuildSubmission.ExecuteAsync%2A" />, if any.</summary>
+        <value>Returns the asynchronous context provided to <see cref="Microsoft.Build.Execution.BuildSubmission.ExecuteAsync%2A" />. Returns null if no context is provided.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildManager">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.BuildManager BuildManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Execution.BuildManager BuildManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.BuildManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -43,14 +53,15 @@
         <ReturnType>Microsoft.Build.Execution.BuildManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the build manager this build submission is associated with.</summary>
+        <value>Returns the build manager this build submission is associated with.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildResult">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.BuildResult BuildResult { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Execution.BuildResult BuildResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.BuildResult" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -60,14 +71,22 @@
         <ReturnType>Microsoft.Build.Execution.BuildResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the result of the build.</summary>
+        <value>Returns the result of the build.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result is not valid until <xref:Microsoft.Build.Execution.BuildSubmission.WaitHandle%2A> is signalled.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.BuildResult Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Execution.BuildResult Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildSubmission.Execute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -78,14 +97,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Starts a build request synchronously and waits until results are available.</summary>
+        <returns>Returns the build request.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The request has already been started or is already complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExecuteAsync">
       <MemberSignature Language="C#" Value="public void ExecuteAsync (Microsoft.Build.Execution.BuildSubmissionCompleteCallback callback, object context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteAsync(class Microsoft.Build.Execution.BuildSubmissionCompleteCallback callback, object context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildSubmission.ExecuteAsync(Microsoft.Build.Execution.BuildSubmissionCompleteCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -99,15 +120,17 @@
         <Parameter Name="context" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">The callback method to call when the build submission is complete.</param>
+        <param name="context">The context in which the build submission occurs.</param>
+        <summary>Starts a build request asynchronously and within the given context. Immediately returns control to the caller.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The request has already been started or is already complete.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -117,14 +140,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether this build submission is complete.</summary>
+        <value>Returns true if this build submission is complete; false otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmissionId">
       <MemberSignature Language="C#" Value="public int SubmissionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SubmissionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.SubmissionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -134,14 +158,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an ID uniquely identifying this build submission.</summary>
+        <value>Returns an ID uniquely identifying this build submission.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This ID is used to distinguish this build submission from other build submissions within the same build.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WaitHandle">
       <MemberSignature Language="C#" Value="public System.Threading.WaitHandle WaitHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle WaitHandle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildSubmission.WaitHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -151,8 +183,8 @@
         <ReturnType>System.Threading.WaitHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Threading.WaitHandle" /> object that will be signalled when the build is complete.</summary>
+        <value>Returns null until <see cref="Microsoft.Build.Execution.BuildSubmission.Execute%2A" /> or <see cref="Microsoft.Build.Execution.BuildSubmission.ExecuteAsync%2A" /> returns, then returns the WaitHandle object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

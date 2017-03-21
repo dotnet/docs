@@ -1,6 +1,7 @@
 <Type Name="EntityTemplateUserControl" FullName="System.Web.DynamicData.EntityTemplateUserControl">
   <TypeSignature Language="C#" Value="public class EntityTemplateUserControl : System.Web.UI.UserControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityTemplateUserControl extends System.Web.UI.UserControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplateUserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the base class for entity templates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Entity templates are user controls that apply to an entity (a table) instead of to a single data field, as with field templates. An entity template typically contains several <xref:System.Web.DynamicData.DynamicControl> controls for rendering data fields.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityTemplateUserControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateUserControl.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -24,13 +33,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.EntityTemplateUserControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainerType">
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ContainerType ContainerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.DynamicData.ContainerType ContainerType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.ContainerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -40,14 +50,24 @@
         <ReturnType>System.Web.DynamicData.ContainerType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the data-bound control that contains this entity template.</summary>
+        <value>The type that contains the template.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ContainerType class provides information about the context (the control type) in which the <xref:System.Web.DynamicData.EntityTemplateUserControl> class is contained. This type can be a list control, such as a <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.ListView> control. It can also be a single-item control, such as a <xref:System.Web.UI.WebControls.DetailsView> or <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ You can customize the behavior of an application depending on the ContainerType value, such as conditionally displaying or hiding specific UI elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataBoundControlMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataBoundControlMode Mode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -57,14 +77,15 @@
         <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data-rendering mode for the entity.</summary>
+        <value>The data-rendering mode for the entity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Table">
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable Table { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable Table" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -74,14 +95,15 @@
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the table that the entity template applies to.</summary>
+        <value>The table that the entity template applies to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
       <MemberSignature Language="C#" Value="public string ValidationGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.EntityTemplateUserControl.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -91,8 +113,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the validation to apply to the entity control group.</summary>
+        <value>The validation to apply to the entity control group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

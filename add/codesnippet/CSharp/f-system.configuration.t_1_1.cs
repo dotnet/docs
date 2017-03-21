@@ -1,0 +1,2 @@
+            string absoluteMin =
+                TimeSpanValidatorAttribute.TimeSpanMinValue;

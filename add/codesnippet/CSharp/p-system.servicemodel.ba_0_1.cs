@@ -1,0 +1,1 @@
+            BasicHttpSecurityMode secMode = security.Mode;

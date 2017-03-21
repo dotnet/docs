@@ -1,0 +1,419 @@
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetBoolean(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlString(System.Int32,System.Data.SqlTypes.SqlString)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetFieldType(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlSingle(System.Int32,System.Data.SqlTypes.SqlSingle)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt64(System.Int32,System.Data.SqlTypes.SqlInt64)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlString(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.#ctor(Microsoft.SqlServer.Server.SqlMetaData[])
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.System#Data#IDataRecord#GetData(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetDateTimeOffset(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetInt32(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlMetaData(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetDateTime(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDateTime(System.Int32,System.Data.SqlTypes.SqlDateTime)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlXml(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetDecimal(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBytes(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetChar(System.Int32,System.Char)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBoolean(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetValue(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDecimal(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt32(System.Int32,System.Data.SqlTypes.SqlInt32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDecimal(System.Int32,System.Data.SqlTypes.SqlDecimal)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBytes(System.Int32,System.Data.SqlTypes.SqlBytes)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetFloat(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.FieldCount
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetInt64(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetChar(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetInt16(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDouble(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetByte(System.Int32,System.Byte)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetDateTimeOffset(System.Int32,System.DateTimeOffset)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlGuid(System.Int32,System.Data.SqlTypes.SqlGuid)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlValue(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetGuid(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetInt32(System.Int32,System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlXml(System.Int32,System.Data.SqlTypes.SqlXml)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetDecimal(System.Int32,System.Decimal)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlMoney(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetString(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.Item(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetDouble(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlInt16(System.Int32,System.Data.SqlTypes.SqlInt16)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlMoney(System.Int32,System.Data.SqlTypes.SqlMoney)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetBoolean(System.Int32,System.Boolean)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlDouble(System.Int32,System.Data.SqlTypes.SqlDouble)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBinary(System.Int32,System.Data.SqlTypes.SqlBinary)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlByte(System.Int32,System.Data.SqlTypes.SqlByte)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetDBNull(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlGuid(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetInt64(System.Int32,System.Int64)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlChars(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt32(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt16(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetDouble(System.Int32,System.Double)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetTimeSpan(System.Int32,System.TimeSpan)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetValues(System.Object[])
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlByte(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetTimeSpan(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetDataTypeName(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlInt64(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetDateTime(System.Int32,System.DateTime)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlBinary(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetValue(System.Int32,System.Object)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlChars(System.Int32,System.Data.SqlTypes.SqlChars)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlSingle(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetGuid(System.Int32,System.Guid)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetByte(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlValues(System.Object[])
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetOrdinal(System.String)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetSqlBoolean(System.Int32,System.Data.SqlTypes.SqlBoolean)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlDateTime(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetFloat(System.Int32,System.Single)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetString(System.Int32,System.String)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetSqlFieldType(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.SetInt16(System.Int32,System.Int16)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetName(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.IsDBNull(System.Int32)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.Item(System.String)
+internalonly: False
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlDataRecord.GetValues(System.Object[])
+internalonly: False
+---

@@ -1,6 +1,16 @@
 <Namespace Name="System.Data.EntityClient">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The System.Data.EntityClient namespace is the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] Data Provider for the [!INCLUDE[adonet_ef](~/add/includes/adonet-ef-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `EntityClient` provider uses storage-specific [!INCLUDE[vstecado](~/add/includes/vstecado-md.md)] Data Provider classes and mapping metadata for interacting with entity data models. `EntityClient` translates operations performed on conceptual entities into operations performed on physical data sources. It translates result sets returned from physical data sources into conceptual entities.  
+  
+> [!NOTE]
+>  For more information about how to use this namespace in [!INCLUDE[adonet_ef](~/add/includes/adonet-ef-md.md)] applications, see [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

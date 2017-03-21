@@ -1,6 +1,7 @@
 <Type Name="ISessionStateModule" FullName="System.Web.SessionState.ISessionStateModule">
   <TypeSignature Language="C#" Value="public interface ISessionStateModule : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISessionStateModule implements class System.Web.IHttpModule" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SessionState.ISessionStateModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,13 +12,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the interface for managing session state modules.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ReleaseSessionState">
       <MemberSignature Language="C#" Value="public void ReleaseSessionState (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseSessionState(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SessionState.ISessionStateModule.ReleaseSessionState(System.Web.HttpContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -30,14 +32,15 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The  <see cref="T:System.Web.HttpContext" /> for which to to release the session state.</param>
+        <summary>Releases the session state for the specified <see cref="T:System.Web.HttpContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseSessionStateAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReleaseSessionStateAsync (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ReleaseSessionStateAsync(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SessionState.ISessionStateModule.ReleaseSessionStateAsync(System.Web.HttpContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,9 +53,9 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The  <see cref="T:System.Web.HttpContext" /> for which to to release the session state.</param>
+        <summary>Asynchronously releases the session state for the specified <see cref="T:System.Web.HttpContext" />.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> for the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

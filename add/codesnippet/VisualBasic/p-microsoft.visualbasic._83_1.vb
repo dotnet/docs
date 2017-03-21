@@ -1,0 +1,1 @@
+    Err.Raise(Number:=vbObjectError + 1051, Source:="SomeClass")

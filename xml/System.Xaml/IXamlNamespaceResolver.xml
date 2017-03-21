@@ -1,19 +1,31 @@
 <Type Name="IXamlNamespaceResolver" FullName="System.Xaml.IXamlNamespaceResolver">
   <TypeSignature Language="C#" Value="public interface IXamlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlNamespaceResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes a service that can return a XAML namespace that is based on its prefix as it is mapped in XAML markup.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Type converters and markup extensions can query for IXamlNamespaceResolver as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md) and [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
+  
+## WPF Usage Notes  
+ This interface is also implemented as part of the WPF XAML implementation in the <xref:System.Windows.Markup.XmlnsDictionary> class. <xref:System.Windows.Markup.XmlnsDictionary> stores XAML namespace information and interacts with XAML processors to forward that information to the service context through the same <xref:System.Windows.Markup.IXamlTypeResolver> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetNamespace">
       <MemberSignature Language="C#" Value="public string GetNamespace (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetNamespace(string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNamespaceResolver.GetNamespace(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -26,15 +38,16 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix for which to retrieve the XAML namespace information.</param>
+        <summary>Retrieves a XAML namespace identifier for the specified prefix string.</summary>
+        <returns>The requested XAML namespace identifier, as a string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNamespacePrefixes">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xaml.NamespaceDeclaration&gt; GetNamespacePrefixes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.NamespaceDeclaration&gt; GetNamespacePrefixes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNamespaceResolver.GetNamespacePrefixes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -45,8 +58,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns all the possible prefix-to-XAML namespace mappings (<see cref="T:System.Xaml.NamespaceDeclaration" /> values) that are available in the active XAML schema context.</summary>
+        <returns>An enumerable set of <see cref="T:System.Xaml.NamespaceDeclaration" /> values. To get all the prefix strings, get the <see cref="System.Xaml.NamespaceDeclaration.Prefix%2A" /> value from each value in the returned set. To get prefixes for specific XAML namespaces, process any return value that has the desired <see cref="System.Xaml.NamespaceDeclaration.Namespace%2A" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

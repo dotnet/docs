@@ -1,8 +1,10 @@
 <Type Name="AuthenticateEventArgs" FullName="System.Web.UI.WebControls.AuthenticateEventArgs">
   <TypeSignature Language="C#" Value="public class AuthenticateEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticateEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AuthenticateEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,56 +12,96 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.Login.Authenticate" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The AuthenticateEventArgs class provides the data needed for the <xref:System.Web.UI.WebControls.Login.Authenticate> event. Custom authentication schemes for a Web site use the <xref:System.Web.UI.WebControls.AuthenticateEventArgs.Authenticated%2A> property to  indicate whether a user's login attempt succeeded.  
+  
+   
+  
+## Examples  
+ The following code example uses the AuthenticateEventArgs class to pass data to a custom authentication method.  
+  
+ [!code-cs[LoginAuthenticate#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_392_1.aspx)]
+ [!code-vb[LoginAuthenticate#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_392_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AuthenticateEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AuthenticateEventArgs.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" /> class with the <see cref="System.Web.UI.WebControls.AuthenticateEventArgs.Authenticated%2A" /> property set to <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AuthenticateEventArgs (bool authenticated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool authenticated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AuthenticateEventArgs.#ctor(System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="authenticated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="authenticated">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="authenticated">
+          <see langword="true" /> if the user is authenticated; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AuthenticateEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Authenticated">
       <MemberSignature Language="C#" Value="public bool Authenticated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Authenticated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AuthenticateEventArgs.Authenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether a user's authentication attempt succeeded.</summary>
+        <value>
+          <see langword="true" /> if the authentication attempt succeeded; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Authenticated property in custom authentication schemes implemented in the <xref:System.Web.UI.WebControls.Login.Authenticate?displayProperty=fullName> event handler to indicate the success or failure of the user's login attempt.  
+  
+ Setting the Authenticated property to `false` indicates that the Web site user has not presented valid credentials and the <xref:System.Web.UI.WebControls.Login> control should raise the <xref:System.Web.UI.WebControls.Login.LoginError> event in addition to displaying text that indicates the login attempt was not successful. The <xref:System.Web.UI.WebControls.Login.LoginError> event enables the page developer to have additional processes or action occur when user authentication is not successful. Setting Authenticated to `true` indicates that the user has presented valid credentials and the <xref:System.Web.UI.WebControls.Login> control should raise the <xref:System.Web.UI.WebControls.Login.LoggedIn> event and redirect the user back to the current page or to the page indicated by <xref:System.Web.UI.WebControls.Login.DestinationPageUrl%2A>.  
+  
+   
+  
+## Examples  
+ The following code example uses the Authenticated property with a custom authentication scheme to indicate the success or failure of a user's login attempt.  
+  
+ [!code-cs[LoginAuthenticate#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1320_1.aspx)]
+ [!code-vb[LoginAuthenticate#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1320_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

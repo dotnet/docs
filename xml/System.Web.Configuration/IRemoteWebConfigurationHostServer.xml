@@ -1,8 +1,10 @@
 <Type Name="IRemoteWebConfigurationHostServer" FullName="System.Web.Configuration.IRemoteWebConfigurationHostServer">
   <TypeSignature Language="C#" Value="public interface IRemoteWebConfigurationHostServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteWebConfigurationHostServer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IRemoteWebConfigurationHostServer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,16 +17,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used internally to support remote access to configuration data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Base class from which <xref:System.Web.Configuration.RemoteWebConfigurationHostServer> extends.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DoEncryptOrDecrypt">
       <MemberSignature Language="C#" Value="public string DoEncryptOrDecrypt (bool doEncrypt, string xmlString, string protectionProviderName, string protectionProviderType, string[] parameterKeys, string[] parameterValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DoEncryptOrDecrypt(bool doEncrypt, string xmlString, string protectionProviderName, string protectionProviderType, string[] parameterKeys, string[] parameterValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.DoEncryptOrDecrypt(System.Boolean,System.String,System.String,System.String,System.String[],System.String[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -39,23 +50,26 @@
         <Parameter Name="parameterValues" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="doEncrypt">To be added.</param>
-        <param name="xmlString">To be added.</param>
-        <param name="protectionProviderName">To be added.</param>
-        <param name="protectionProviderType">To be added.</param>
-        <param name="parameterKeys">To be added.</param>
-        <param name="parameterValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doEncrypt">
+          <see langword="True" /> to encrypt; <see langword="false" /> to decrypt.</param>
+        <param name="xmlString">The XML to be encrypted or decrypted.</param>
+        <param name="protectionProviderName">The provider used to protect the configuration data.</param>
+        <param name="protectionProviderType">The <see cref="T:System.Type" /> of the protection provider.</param>
+        <param name="parameterKeys">The keys of optional parameters for the protection provider.</param>
+        <param name="parameterValues">The values of optional parameters for the protection provider.</param>
+        <summary>Conditionally encrypts or decrypts the value of the string referenced by the <paramref name="xmlString" /> parameter.</summary>
+        <returns>A string containing either the encrypted or decrypted value of the <paramref name="xmlString" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetData">
       <MemberSignature Language="C#" Value="public byte[] GetData (string fileName, bool getReadTimeOnly, out long readTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetData(string fileName, bool getReadTimeOnly, int64 readTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,20 +81,22 @@
         <Parameter Name="readTime" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="getReadTimeOnly">To be added.</param>
-        <param name="readTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Path to the remote configuration file to be accessed.</param>
+        <param name="getReadTimeOnly">A Boolean value specifying whether only the <c>readTime</c> is returned.</param>
+        <param name="readTime">Time the file was last accessed.</param>
+        <summary>Used internally to support remote access to configuration data.</summary>
+        <returns>An <see langword="array" /> of 8-bit unsigned integers (bytes) containing the configuration data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFileDetails">
       <MemberSignature Language="C#" Value="public void GetFileDetails (string name, out bool exists, out long size, out long createDate, out long lastWriteDate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFileDetails(string name, bool exists, int64 size, int64 createDate, int64 lastWriteDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,21 +110,24 @@
         <Parameter Name="lastWriteDate" Type="System.Int64&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="exists">To be added.</param>
-        <param name="size">To be added.</param>
-        <param name="createDate">To be added.</param>
-        <param name="lastWriteDate">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the file.</param>
+        <param name="exists">
+          <see langword="true" /> if the file exists; otherwise, <see langword="false" />.</param>
+        <param name="size">The size of the file.</param>
+        <param name="createDate">The date the file was created.</param>
+        <param name="lastWriteDate">The date the file was last written.</param>
+        <summary>Gets the details of the configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFilePaths">
       <MemberSignature Language="C#" Value="public string GetFilePaths (int webLevel, string path, string site, string locationSubPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFilePaths(int32 webLevel, string path, string site, string locationSubPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFilePaths(System.Int32,System.String,System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,21 +140,23 @@
         <Parameter Name="locationSubPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="webLevel">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="site">To be added.</param>
-        <param name="locationSubPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="webLevel">The level of the configuration file.</param>
+        <param name="path">Path to the remote configuration file to be accessed.</param>
+        <param name="site">Path to the remote machine.</param>
+        <param name="locationSubPath">The subpath of the location of the configuration file.</param>
+        <summary>Used internally to support remote access to configuration data.</summary>
+        <returns>A concatenated string representing the file path of the configuration file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteData">
       <MemberSignature Language="C#" Value="public void WriteData (string fileName, string templateFileName, byte[] data, ref long readTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteData(string fileName, string templateFileName, unsigned int8[] data, int64 readTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,11 +169,11 @@
         <Parameter Name="readTime" Type="System.Int64&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="templateFileName">To be added.</param>
-        <param name="data">To be added.</param>
-        <param name="readTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">Path to the remote configuration file to be accessed.</param>
+        <param name="templateFileName">File to duplicate file attributes from.</param>
+        <param name="data">Data to be written.</param>
+        <param name="readTime">Time the file was last accessed.</param>
+        <summary>Used internally to support remote access to configuration data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

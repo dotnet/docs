@@ -1,0 +1,1 @@
+        LargeObject large = lazyLargeObject.Value;

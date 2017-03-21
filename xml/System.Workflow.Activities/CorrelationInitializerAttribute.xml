@@ -1,8 +1,10 @@
 <Type Name="CorrelationInitializerAttribute" FullName="System.Workflow.Activities.CorrelationInitializerAttribute">
   <TypeSignature Language="C#" Value="public sealed class CorrelationInitializerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CorrelationInitializerAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CorrelationInitializerAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,21 +20,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the method or event on an ExternalDataExchange interface that initializes the correlation value. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
+  
+ The indicated method or event must be the first reference to the correlation value in the workflow for validation to succeed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CorrelationInitializerAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CorrelationInitializerAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CorrelationInitializerAttribute" /> attribute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

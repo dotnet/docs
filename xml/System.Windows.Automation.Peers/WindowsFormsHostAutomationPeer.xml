@@ -1,8 +1,10 @@
 <Type Name="WindowsFormsHostAutomationPeer" FullName="System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer">
   <TypeSignature Language="C#" Value="public sealed class WindowsFormsHostAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsFormsHostAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,33 +12,37 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WindowsFormsHostAutomationPeer (System.Windows.Forms.Integration.WindowsFormsHost owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Integration.WindowsFormsHost owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.#ctor(System.Windows.Forms.Integration.WindowsFormsHost)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.Integration.WindowsFormsHost" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.GetAutomationControlTypeCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,9 +58,11 @@
     <Member MemberName="GetClassNameCore">
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.GetClassNameCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,9 +78,11 @@
     <Member MemberName="GetHostRawElementProviderCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.HostedWindowWrapper GetHostRawElementProviderCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.HostedWindowWrapper GetHostRawElementProviderCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.GetHostRawElementProviderCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -96,9 +106,11 @@
     <Member MemberName="IsHwndHost">
       <MemberSignature Language="C#" Value="protected override bool IsHwndHost { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHwndHost" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.WindowsFormsHostAutomationPeer.IsHwndHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

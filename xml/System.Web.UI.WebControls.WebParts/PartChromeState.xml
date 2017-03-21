@@ -1,46 +1,74 @@
 <Type Name="PartChromeState" FullName="System.Web.UI.WebControls.WebParts.PartChromeState">
   <TypeSignature Language="C#" Value="public enum PartChromeState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartChromeState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PartChromeState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a control and the border surrounding it are in a normal or minimized state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PartChromeState enumeration represents the possible visible states that a Web Parts control and its surrounding border can be in.  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate the declarative use of the PartChromeState enumeration by using a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control referenced in an ASP.NET Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](../Topic/Walkthrough:%20Developing%20and%20Using%20a%20Custom%20Web%20Server%20Control.md).  
+  
+ The first part of the example contains the code for the custom control, named `TextDisplayWebPart`. Because the control derives from <xref:System.Web.UI.WebControls.WebParts.WebPart>, it also inherits the common properties that the <xref:System.Web.UI.WebControls.WebParts.Part> class provides, including the <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property, which uses the PartChromeState enumeration as its return type.  
+  
+ [!code-vb[WebParts_Part_Overview#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_230_1.vb)]
+ [!code-cs[WebParts_Part_Overview#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_230_1.cs)]  
+  
+ Note that in the declarative markup for the Web page, the second instance of the `TextDisplayWebPart` control sets its <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property. After you load the page in a browser, the second control instance appears minimized.  
+  
+ [!code-cs[WebParts_Part_Overview#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_230_2.aspx)]
+ [!code-vb[WebParts_Part_Overview#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_230_2.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Minimized">
       <MemberSignature Language="C#" Value="Minimized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeState Minimized = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A control and border in a collapsed or minimized state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PartChromeState Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PartChromeState.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A control and border in a normal state.</summary>
       </Docs>
     </Member>
   </Members>

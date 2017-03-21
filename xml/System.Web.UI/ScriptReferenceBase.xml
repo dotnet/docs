@@ -1,8 +1,10 @@
 <Type Name="ScriptReferenceBase" FullName="System.Web.UI.ScriptReferenceBase">
   <TypeSignature Language="C#" Value="public abstract class ScriptReferenceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ScriptReferenceBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReferenceBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The base class for all script reference classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ScriptReferenceBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptReferenceBase" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUrl">
       <MemberSignature Language="C#" Value="protected abstract string GetUrl (System.Web.UI.ScriptManager scriptManager, bool zip);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetUrl(class System.Web.UI.ScriptManager scriptManager, bool zip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.GetUrl(System.Web.UI.ScriptManager,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -49,16 +55,18 @@
         <Parameter Name="zip" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="scriptManager">To be added.</param>
-        <param name="zip">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="scriptManager">The <see langword="ScriptManager" /> control on the target Web page.</param>
+        <param name="zip">
+          <see langword="true" /> to compress the script; otherwise, <see langword="false" />.</param>
+        <summary>Retrieves the URL that is rendered as the value of the <see langword="src" /> attribute of the <see langword="script" /> element.</summary>
+        <returns>A string that contains the URL that is rendered as the value of the <see langword="src" /> attribute of the <see langword="script" /> element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAjaxFrameworkScript">
       <MemberSignature Language="C#" Value="protected virtual bool IsAjaxFrameworkScript (System.Web.UI.ScriptManager scriptManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsAjaxFrameworkScript(class System.Web.UI.ScriptManager scriptManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -71,18 +79,21 @@
         <Parameter Name="scriptManager" Type="System.Web.UI.ScriptManager" />
       </Parameters>
       <Docs>
-        <param name="scriptManager">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="scriptManager">A <see cref="T:System.Web.UI.ScriptManager" /> object.</param>
+        <summary>Determines whether the specified script reference is an ASP.NET AJAX script.</summary>
+        <returns>
+          <see langword="true" /> if the script reference is an ASP.NET AJAX script; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFromSystemWebExtensions">
       <MemberSignature Language="C#" Value="protected abstract bool IsFromSystemWebExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsFromSystemWebExtensions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.IsFromSystemWebExtensions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -95,17 +106,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the composite script contains a reference to an ASP.NET AJAX framework script.</summary>
+        <returns>
+          <see langword="true" /> if the composite script contains a reference to an ASP.NET AJAX framework script; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NotifyScriptLoaded">
       <MemberSignature Language="C#" Value="public bool NotifyScriptLoaded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NotifyScriptLoaded" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -126,17 +140,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.Handlers.ScriptResourceHandler" /> object automatically adds code at the end of the ECMAScript (JavaScript) file to call the client NotifyScriptLoaded method of the [Sys.Application](../Topic/Sys.Application%20Class.md) class.</summary>
+        <value>
+          <see langword="true" /> if the [Sys.Application.notifyScriptLoaded](../Topic/Sys.Application.notifyScriptLoaded%20Method.md) method is automatically called at the end of a JavaScript file, or <see langword="false" /> if user code calls the [Sys.Application.notifyScriptLoaded](../Topic/Sys.Application.notifyScriptLoaded%20Method.md) method that is already in the JavaScript file. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the NotifyScriptLoaded property to `false` if you reference a script file in an assembly and the script file already contains code to call [Sys.Application.notifyScriptLoaded](../Topic/Sys.Application.notifyScriptLoaded%20Method.md). An error is thrown if [Sys.Application.notifyScriptLoaded](../Topic/Sys.Application.notifyScriptLoaded%20Method.md) method is called more than one time from a script file.  
+  
+ If you reference a standalone script file that is not embedded in an assembly, you must include code at the end of the script file to call the [Sys.Application.notifyScriptLoaded](../Topic/Sys.Application.notifyScriptLoaded%20Method.md) method. The following example shows the code to include at the end of the script file.  
+  
+```  
+if(typeof(Sys) !== "undefined) Sys.Application.notifyScriptLoaded();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -157,17 +187,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path of the referenced client script file, relative to the Web page.</summary>
+        <value>The path of the referenced client script</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceExtension">
       <MemberSignature Language="C#" Value="protected static string ReplaceExtension (string pathOrName);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string ReplaceExtension(string pathOrName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReferenceBase.ReplaceExtension(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,18 +209,27 @@
         <Parameter Name="pathOrName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pathOrName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pathOrName">The full path of the script to rename. The path must end with ".js".</param>
+        <summary>Replaces the file-name extension in the specified script path to designate a debug script.</summary>
+        <returns>A string that contains the path of the script with the debug extension.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method assumes that the script has a ".js" extension. It then replaces the extension with ".debug.js".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResourceUICultures">
       <MemberSignature Language="C#" Value="public string[] ResourceUICultures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ResourceUICultures" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.ResourceUICultures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -212,17 +253,19 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a comma-delimited list of UI cultures that are supported by the <see cref="System.Web.UI.ScriptReferenceBase.Path%2A" /> property.</summary>
+        <value>A string that contains a comma-delimited list of UI cultures.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptMode">
       <MemberSignature Language="C#" Value="public System.Web.UI.ScriptMode ScriptMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ScriptMode ScriptMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReferenceBase.ScriptMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -240,8 +283,8 @@
         <ReturnType>System.Web.UI.ScriptMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version of the client script file (release or debug) to use.</summary>
+        <value>A <see cref="T:System.Web.UI.ScriptMode" /> value that indicates which version of the client script file to reference. The default is <see cref="T:System.Web.UI.ScriptMode" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

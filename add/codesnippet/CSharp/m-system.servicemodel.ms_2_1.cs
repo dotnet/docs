@@ -1,0 +1,1 @@
+            MsmqMessage<string> message2 = new MsmqMessage<string>(message.Body);

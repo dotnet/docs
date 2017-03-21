@@ -1,8 +1,10 @@
 <Type Name="CreateUserWizardDesigner" FullName="System.Web.UI.Design.WebControls.CreateUserWizardDesigner">
   <TypeSignature Language="C#" Value="public class CreateUserWizardDesigner : System.Web.UI.Design.WebControls.WizardDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CreateUserWizardDesigner extends System.Web.UI.Design.WebControls.WizardDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CreateUserWizardDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,47 +12,73 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extend the CreateUserWizardDesigner class if you want to create a designer for a class that extends the <xref:System.Web.UI.WebControls.CreateUserWizard> Web server control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to extend the CreateUserWizardDesigner class and display debugging information on the design surface in case of an error.  
+  
+ [!code-cs[WebNet.Design.WebControls.CreateUserWizardDesigner#1](~/add/codesnippet/csharp/t-system.web.ui.design.w_14_1.cs)]
+ [!code-vb[WebNet.Design.WebControls.CreateUserWizardDesigner#1](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_14_1.vb)]  
+  
+ The following code example shows how to associate a control class with the designer defined in the preceding example.  
+  
+ [!code-cs[WebNet.Design.WebControls.CreateUserWizardDesigner#2](~/add/codesnippet/csharp/t-system.web.ui.design.w_14_2.cs)]
+ [!code-vb[WebNet.Design.WebControls.CreateUserWizardDesigner#2](~/add/codesnippet/visualbasic/t-system.web.ui.design.w_14_2.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CreateUserWizardDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.CreateUserWizardDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object for this designer.</summary>
+        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddDesignerRegions">
       <MemberSignature Language="C#" Value="protected override void AddDesignerRegions (System.Web.UI.Design.DesignerRegionCollection regions);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddDesignerRegions(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AddDesignerRegions(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,34 +88,38 @@
         <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
       </Parameters>
       <Docs>
-        <param name="regions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="regions">The <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> to which regions associated with the wizard control are added.</param>
+        <summary>Creates a <see cref="T:System.Web.UI.Design.DesignerRegion" /> object for each step associated with the underlying wizard control, and then adds it to the specified <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object associated with this designer.</summary>
+        <value>The <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToCustomNavigationTemplate">
       <MemberSignature Language="C#" Value="protected override void ConvertToCustomNavigationTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ConvertToCustomNavigationTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ConvertToCustomNavigationTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,16 +127,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the child controls associated with the underlying wizard control to a custom navigation template.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
       <MemberSignature Language="C#" Value="protected override string GetErrorDesignTimeHtml (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetErrorDesignTimeHtml(class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,18 +148,30 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="e">The exception that occurred.</param>
+        <summary>Gets the HTML that provides information about the specified exception. This method is typically called after an error has been encountered at design time.</summary>
+        <returns>The HTML for the specified exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the GetErrorDesignTimeHtml method to display debugging information on the design surface in case of an error.  
+  
+ [!code-cs[WebNet.Design.WebControls.CreateUserWizardDesigner#1](~/add/codesnippet/csharp/5a1ecb60-dcf8-4f7d-a8eb-_1.cs)]
+ [!code-vb[WebNet.Design.WebControls.CreateUserWizardDesigner#1](~/add/codesnippet/visualbasic/5a1ecb60-dcf8-4f7d-a8eb-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,17 +181,19 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The control element being designed.</param>
+        <summary>Initializes the designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,26 +203,48 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="properties">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that represent the properties of the component's base class. The keys in the dictionary of properties are property names.</param>
+        <summary>Exposes the properties associated with each default step through the property grid on the designer tool.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PreFilterProperties method provides a way to add items to the dictionary of properties that a designer exposes.  
+  
+ The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
       <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the designer uses the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control itself to generate the design-time HTML or uses a temporarily created copy.</summary>
+        <value>Always<see langword=" true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value of the UsePreviewControl property is `true`, the designer uses a temporary copy of the wizard control to generate the design-time HTML; when the value of UsePreviewControl is `false`, the designer uses the wizard control itself to generate the design-time HTML.  
+  
+ The value of UsePreviewControl modifies the return value of the designer's <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property. When UsePreviewControl is `true`, <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> returns a copy of the wizard control. When UsePreviewControl is `false`, <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> returns the wizard control itself.  
+  
+ If the wizard control is marked with a class-level <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute, the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> is ignored, because the value of UsePreviewControl is always `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

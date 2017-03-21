@@ -1,19 +1,21 @@
 <Type Name="IStringLocalizerProvider" FullName="System.Web.Globalization.IStringLocalizerProvider">
   <TypeSignature Language="C#" Value="public interface IStringLocalizerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStringLocalizerProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Globalization.IStringLocalizerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an interface for a string localizer provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetLocalizedString">
       <MemberSignature Language="C#" Value="public string GetLocalizedString (System.Globalization.CultureInfo culture, string name, object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLocalizedString(class System.Globalization.CultureInfo culture, string name, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Globalization.IStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,11 +36,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="culture">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="culture">The culture.</param>
+        <param name="name">The key to the localized string.</param>
+        <param name="arguments">Parameters to pass to the localized string.</param>
+        <summary>Gets the localized string.</summary>
+        <returns>The localized string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

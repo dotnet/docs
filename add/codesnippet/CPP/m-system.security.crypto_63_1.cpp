@@ -1,0 +1,1 @@
+      SignatureDescription^ signatureDescription = gcnew SignatureDescription;

@@ -1,8 +1,10 @@
 <Type Name="ClaimTypeElementCollection" FullName="System.ServiceModel.Configuration.ClaimTypeElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ClaimTypeElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.ClaimTypeElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClaimTypeElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ClaimTypeElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClaimTypeElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,30 +20,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.ClaimTypeElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ClaimTypeElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClaimTypeElementCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ClaimTypeElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetElementKey">
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClaimTypeElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

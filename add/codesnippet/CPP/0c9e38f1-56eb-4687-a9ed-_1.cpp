@@ -1,0 +1,2 @@
+   System::Net::NetworkInformation::NetworkInformationPermission^ read = gcnew System::Net::NetworkInformation::NetworkInformationPermission( System::Net::NetworkInformation::NetworkInformationAccess::Read );
+   

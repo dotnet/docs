@@ -1,0 +1,1 @@
+      Return first.UtcDateTime = second.UtcDateTime

@@ -1,0 +1,2 @@
+	    string statusDescription =
+		responseProperty.StatusDescription;

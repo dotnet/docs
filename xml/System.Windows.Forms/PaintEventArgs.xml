@@ -1,8 +1,10 @@
 <Type Name="PaintEventArgs" FullName="System.Windows.Forms.PaintEventArgs">
   <TypeSignature Language="C#" Value="public class PaintEventArgs : EventArgs, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaintEventArgs extends System.EventArgs implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PaintEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,16 +16,40 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Control.Paint> event occurs when a control is redrawn. A PaintEventArgs specifies the <xref:System.Windows.Forms.PaintEventArgs.Graphics%2A> to use to paint the control and the <xref:System.Windows.Forms.PaintEventArgs.ClipRectangle%2A> in which to paint.  
+  
+ For information about the event model, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates handling the <xref:System.Windows.Forms.Control.Paint> event and using the PaintEventArgs class to draw rectangles on the form. The <xref:System.Windows.Forms.Control.MouseDown> and <xref:System.Windows.Forms.Control.MouseUp> events are handled to determine the size of the rectangle. The example also demonstrates the <xref:System.Windows.Forms.Control.Invalidate%2A> method to invalidate the area of the rectangle, causing it to be redrawn.  
+  
+ [!code-cpp[Demontrates Form Paint Event#1](~/add/codesnippet/cpp/t-system.windows.forms.p_10_1.cpp)]
+ [!code-cs[Demontrates Form Paint Event#1](~/add/codesnippet/csharp/t-system.windows.forms.p_10_1.cs)]
+ [!code-vb[Demontrates Form Paint Event#1](~/add/codesnippet/visualbasic/t-system.windows.forms.p_10_1.vb)]  
+  
+ [!code-cs[Control.Paint#1](~/add/codesnippet/csharp/t-system.windows.forms.p_10_2.cs)]
+ [!code-cpp[Control.Paint#1](~/add/codesnippet/cpp/t-system.windows.forms.p_10_2.cpp)]
+ [!code-vb[Control.Paint#1](~/add/codesnippet/visualbasic/t-system.windows.forms.p_10_2.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PaintEventArgs (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipRect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipRect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -31,35 +57,67 @@
         <Parameter Name="clipRect" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="graphics">To be added.</param>
-        <param name="clipRect">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to paint the item.</param>
+        <param name="clipRect">The <see cref="T:System.Drawing.Rectangle" /> that represents the rectangle in which to paint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PaintEventArgs" /> class with the specified graphics and clipping rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Graphics> identified by the `graphics` parameter is disposed when the <xref:System.Windows.Forms.PaintEventArgs> is disposed.  
+  
+   
+  
+## Examples  
+ The following code examples draws lines and text on a <xref:System.Windows.Forms.PictureBox> control.  
+  
+ [!code-cs[Control.Paint#1](~/add/codesnippet/csharp/a86da71f-d749-4104-840a-_1.cs)]
+ [!code-cpp[Control.Paint#1](~/add/codesnippet/cpp/a86da71f-d749-4104-840a-_1.cpp)]
+ [!code-vb[Control.Paint#1](~/add/codesnippet/visualbasic/a86da71f-d749-4104-840a-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClipRectangle">
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ClipRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ClipRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PaintEventArgs.ClipRectangle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the rectangle in which to paint.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> in which to paint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.Paint?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.Paint?displayProperty=fullName> event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#42](~/add/codesnippet/csharp/p-system.windows.forms.p_38_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#42](~/add/codesnippet/visualbasic/p-system.windows.forms.p_38_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,16 +125,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.PaintEventArgs" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call Dispose when you are finished using the <xref:System.Windows.Forms.PaintEventArgs>. The Dispose method leaves the <xref:System.Windows.Forms.PaintEventArgs> in an unusable state. After calling Dispose, you must release all references to the <xref:System.Windows.Forms.PaintEventArgs> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.PaintEventArgs> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call Dispose before you release your last reference to the <xref:System.Windows.Forms.PaintEventArgs>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.PaintEventArgs> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,17 +156,29 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.PaintEventArgs" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected Dispose method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.PaintEventArgs> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
       <MemberSignature Language="C#" Value="~PaintEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PaintEventArgs.Finalize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,25 +186,42 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PaintEventArgs.Graphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the graphics used to paint.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> object used to paint. The <see cref="T:System.Drawing.Graphics" /> object provides methods for drawing objects on the display device.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates handling the <xref:System.Windows.Forms.Control.Paint> event and using the <xref:System.Windows.Forms.PaintEventArgs> class to draw rectangles on the form. The <xref:System.Windows.Forms.Control.MouseDown> and <xref:System.Windows.Forms.Control.MouseUp> events are handled to determine the size of the rectangle. The example also demonstrates the <xref:System.Windows.Forms.Control.Invalidate%2A> method to invalidate the area of the rectangle, causing it to be redrawn.  
+  
+ [!code-cpp[Demontrates Form Paint Event#1](~/add/codesnippet/cpp/p-system.windows.forms.p_1_1.cpp)]
+ [!code-cs[Demontrates Form Paint Event#1](~/add/codesnippet/csharp/p-system.windows.forms.p_1_1.cs)]
+ [!code-vb[Demontrates Form Paint Event#1](~/add/codesnippet/visualbasic/p-system.windows.forms.p_1_1.vb)]  
+  
+ [!code-cs[Control.Paint#1](~/add/codesnippet/csharp/p-system.windows.forms.p_1_2.cs)]
+ [!code-cpp[Control.Paint#1](~/add/codesnippet/cpp/p-system.windows.forms.p_1_2.cpp)]
+ [!code-vb[Control.Paint#1](~/add/codesnippet/visualbasic/p-system.windows.forms.p_1_2.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

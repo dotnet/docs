@@ -1,0 +1,33 @@
+<feed xml:lang="en-us" CustomAttribute="Value" xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Feed Title</title>
+  <subtitle type="text">This is a sample feed</subtitle>
+  <id>FeedID</id>
+
+  <rights type="text">Copyright 2007</rights>
+  <updated>2007-04-13T17:29:38Z</updated>
+  <category term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme" />
+  <logo>http://contoso/image.jpg</logo>
+  <author>
+    <name>Jesper Aaberg</name>
+    <uri>http://contoso/Aaberg</uri>
+    <email>Jesper.Asberg@contoso.com</email>
+  </author>
+  <contributor>
+    <name>Lene Aalling</name>
+    <uri>http://contoso/Aalling</uri>
+    <email>Lene.Aaling@contoso.com</email>
+  </contributor>
+  <generator>Sample Code</generator>
+  <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://contoso/link" />
+
+  <link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://contoso/link" />
+  <CustomElement xmlns="">Some text</CustomElement>
+  <entry>
+    <id>ItemID</id>
+    <title type="text">Item Title</title>
+    <updated>2007-04-13T17:29:38Z</updated>
+    <link rel="alternate" href="http://contoso/items" />
+    <content type="text">Some text content</content>
+  </entry>
+
+</feed>

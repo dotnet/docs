@@ -1,6 +1,7 @@
 <Type Name="GeoPositionChangedEventArgs&lt;T&gt;" FullName="System.Device.Location.GeoPositionChangedEventArgs&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class GeoPositionChangedEventArgs&lt;T&gt; : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoPositionChangedEventArgs`1&lt;T&gt; extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionChangedEventArgs`1" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,14 +14,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the location data in the <see cref="System.Device.Location.GeoPosition%601.Location%2A" /> property of this event's <see cref="System.Device.Location.GeoPositionChangedEventArgs%601.Position%2A" /> property.</typeparam>
+    <summary>Provides data for the <see cref="E:System.Device.Location.GeoCoordinateWatcher.PositionChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GeoPositionChangedEventArgs (System.Device.Location.GeoPosition&lt;T&gt; position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Device.Location.GeoPosition`1&lt;!T&gt; position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPositionChangedEventArgs`1.#ctor(System.Device.Location.GeoPosition{`0})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -30,14 +32,15 @@
         <Parameter Name="position" Type="System.Device.Location.GeoPosition&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="position">The updated position.</param>
+        <summary>Initializes a new instance of the <see cref="System.Device.Location.GeoPositionChangedEventArgs%601" /> class</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
       <MemberSignature Language="C#" Value="public System.Device.Location.GeoPosition&lt;T&gt; Position { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Device.Location.GeoPosition`1&lt;!T&gt; Position" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPositionChangedEventArgs`1.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -47,8 +50,8 @@
         <ReturnType>System.Device.Location.GeoPosition&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location data associated with the event.</summary>
+        <value>A <see cref="System.Device.Location.GeoPosition%601" /> object that contains the location data in its <see cref="System.Device.Location.GeoPosition%601.Location%2A" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

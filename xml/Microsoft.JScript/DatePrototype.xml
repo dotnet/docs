@@ -1,8 +1,10 @@
 <Type Name="DatePrototype" FullName="Microsoft.JScript.DatePrototype">
   <TypeSignature Language="C#" Value="public class DatePrototype : Microsoft.JScript.DateObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DatePrototype extends Microsoft.JScript.DateObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DatePrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,33 +12,37 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.DateObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="constructor">
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.DateConstructor constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.DateConstructor constructor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.DatePrototype.constructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.JScript.DateConstructor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
+        <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getDate">
       <MemberSignature Language="C#" Value="public static double getDate (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getDate(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getDate(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -51,18 +57,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the date value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The date value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getDay">
       <MemberSignature Language="C#" Value="public static double getDay (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getDay(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getDay(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -77,18 +85,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the day-of-the-week value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The day-of-the-week value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getFullYear">
       <MemberSignature Language="C#" Value="public static double getFullYear (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getFullYear(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getFullYear(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,18 +113,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The year value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getHours">
       <MemberSignature Language="C#" Value="public static double getHours (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getHours(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getHours(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -129,18 +141,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the hour value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The hour value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getMilliseconds">
       <MemberSignature Language="C#" Value="public static double getMilliseconds (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getMilliseconds(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getMilliseconds(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -155,18 +169,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the millisecond value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The millisecond value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getMinutes">
       <MemberSignature Language="C#" Value="public static double getMinutes (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getMinutes(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getMinutes(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -181,18 +197,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the minutes value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The minutes value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getMonth">
       <MemberSignature Language="C#" Value="public static double getMonth (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getMonth(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getMonth(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -207,18 +225,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the month value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The month value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getSeconds">
       <MemberSignature Language="C#" Value="public static double getSeconds (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getSeconds(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getSeconds(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -233,18 +253,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the seconds value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The seconds value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getTime">
       <MemberSignature Language="C#" Value="public static double getTime (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getTime(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getTime(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -259,18 +281,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the time value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The time value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getTimezoneOffset">
       <MemberSignature Language="C#" Value="public static double getTimezoneOffset (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getTimezoneOffset(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getTimezoneOffset(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -285,18 +309,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the offset of the specified <see cref="T:Microsoft.JScript.DateObject" /> from Coordinated Universal Time (UTC).</summary>
+        <returns>The difference between <paramref name="thisob" /> and Coordinated Universal Time (UTC).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCDate">
       <MemberSignature Language="C#" Value="public static double getUTCDate (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCDate(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCDate(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -311,18 +337,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the date value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The date value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCDay">
       <MemberSignature Language="C#" Value="public static double getUTCDay (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCDay(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCDay(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -337,18 +365,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the day-of-the-week value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The day-of-the-week value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCFullYear">
       <MemberSignature Language="C#" Value="public static double getUTCFullYear (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCFullYear(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCFullYear(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -363,18 +393,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCHours">
       <MemberSignature Language="C#" Value="public static double getUTCHours (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCHours(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCHours(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -389,18 +421,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the hour value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The hour value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCMilliseconds">
       <MemberSignature Language="C#" Value="public static double getUTCMilliseconds (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCMilliseconds(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCMilliseconds(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -415,18 +449,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the millisecond value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The millisecond value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCMinutes">
       <MemberSignature Language="C#" Value="public static double getUTCMinutes (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCMinutes(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCMinutes(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -441,18 +477,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the minutes value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The minutes value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCMonth">
       <MemberSignature Language="C#" Value="public static double getUTCMonth (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCMonth(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCMonth(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -467,18 +505,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the month value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The month value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getUTCSeconds">
       <MemberSignature Language="C#" Value="public static double getUTCSeconds (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getUTCSeconds(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getUTCSeconds(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -493,18 +533,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the seconds value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The seconds value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getVarDate">
       <MemberSignature Language="C#" Value="public static object getVarDate (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object getVarDate(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getVarDate(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -519,18 +561,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Returns the specified <see cref="T:Microsoft.JScript.DateObject" /> as a <see cref="T:System.DateTime" /> object.</summary>
+        <returns>The value of <paramref name="thisob" />, expressed as a <see cref="T:System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="getYear">
       <MemberSignature Language="C#" Value="public static double getYear (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 getYear(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.getYear(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -548,18 +592,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setDate">
       <MemberSignature Language="C#" Value="public static double setDate (object thisob, double ddate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setDate(object thisob, float64 ddate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setDate(System.Object,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -575,19 +621,21 @@
         <Parameter Name="ddate" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="ddate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="ddate">The date value to set for <c>thisob</c>.</param>
+        <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setFullYear">
       <MemberSignature Language="C#" Value="public static double setFullYear (object thisob, double dyear, object month, object date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setFullYear(object thisob, float64 dyear, object month, object date) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setFullYear(System.Object,System.Double,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -605,21 +653,23 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dyear">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dyear">The year value to set for <c>thisob</c>.</param>
+        <param name="month">The month value to set for <c>thisob</c>.</param>
+        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
+        <returns>The year value that is set for <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setHours">
       <MemberSignature Language="C#" Value="public static double setHours (object thisob, double dhour, object min, object sec, object msec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setHours(object thisob, float64 dhour, object min, object sec, object msec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setHours(System.Object,System.Double,System.Object,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -638,22 +688,24 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dhour">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="sec">To be added.</param>
-        <param name="msec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dhour">The hour value to set for <c>thisob</c>.</param>
+        <param name="min">The minutes value to set for <c>thisob</c>.</param>
+        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
+        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setMilliseconds">
       <MemberSignature Language="C#" Value="public static double setMilliseconds (object thisob, double dmsec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setMilliseconds(object thisob, float64 dmsec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setMilliseconds(System.Object,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -669,19 +721,21 @@
         <Parameter Name="dmsec" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dmsec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dmsec">The millisecond value to set for <c>thisob</c>.</param>
+        <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setMinutes">
       <MemberSignature Language="C#" Value="public static double setMinutes (object thisob, double dmin, object sec, object msec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setMinutes(object thisob, float64 dmin, object sec, object msec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setMinutes(System.Object,System.Double,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -699,21 +753,23 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dmin">To be added.</param>
-        <param name="sec">To be added.</param>
-        <param name="msec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dmin">The minutes value to set for <c>thisob</c>.</param>
+        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
+        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setMonth">
       <MemberSignature Language="C#" Value="public static double setMonth (object thisob, double dmonth, object date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setMonth(object thisob, float64 dmonth, object date) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setMonth(System.Object,System.Double,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -730,20 +786,22 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dmonth">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dmonth">The month value to set for <c>thisob</c>.</param>
+        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setSeconds">
       <MemberSignature Language="C#" Value="public static double setSeconds (object thisob, double dsec, object msec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setSeconds(object thisob, float64 dsec, object msec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setSeconds(System.Object,System.Double,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -760,20 +818,22 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dsec">To be added.</param>
-        <param name="msec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dsec">The seconds value to set for <c>thisob</c>.</param>
+        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setTime">
       <MemberSignature Language="C#" Value="public static double setTime (object thisob, double time);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setTime(object thisob, float64 time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setTime(System.Object,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -789,19 +849,21 @@
         <Parameter Name="time" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="time">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="time">The time value to set for <c>thisob</c>.</param>
+        <summary>Sets the time value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified time value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCDate">
       <MemberSignature Language="C#" Value="public static double setUTCDate (object thisob, double ddate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCDate(object thisob, float64 ddate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCDate(System.Object,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -817,19 +879,21 @@
         <Parameter Name="ddate" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="ddate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="ddate">The date value to set for <c>thisob</c>.</param>
+        <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCFullYear">
       <MemberSignature Language="C#" Value="public static double setUTCFullYear (object thisob, double dyear, object month, object date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCFullYear(object thisob, float64 dyear, object month, object date) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCFullYear(System.Object,System.Double,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -847,21 +911,23 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dyear">To be added.</param>
-        <param name="month">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dyear">The year value to set for <c>thisob</c>.</param>
+        <param name="month">The month value to set for <c>thisob</c>.</param>
+        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCHours">
       <MemberSignature Language="C#" Value="public static double setUTCHours (object thisob, double dhour, object min, object sec, object msec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCHours(object thisob, float64 dhour, object min, object sec, object msec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCHours(System.Object,System.Double,System.Object,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -880,22 +946,24 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dhour">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="sec">To be added.</param>
-        <param name="msec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dhour">The hour value to set for <c>thisob</c>.</param>
+        <param name="min">The minutes value to set for <c>thisob</c>.</param>
+        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
+        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCMilliseconds">
       <MemberSignature Language="C#" Value="public static double setUTCMilliseconds (object thisob, double dmsec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCMilliseconds(object thisob, float64 dmsec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCMilliseconds(System.Object,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -911,19 +979,21 @@
         <Parameter Name="dmsec" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dmsec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dmsec">The millisecond value to set for <c>thisob</c>.</param>
+        <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCMinutes">
       <MemberSignature Language="C#" Value="public static double setUTCMinutes (object thisob, double dmin, object sec, object msec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCMinutes(object thisob, float64 dmin, object sec, object msec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCMinutes(System.Object,System.Double,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -941,21 +1011,23 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dmin">To be added.</param>
-        <param name="sec">To be added.</param>
-        <param name="msec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dmin">The minutes value to set for <c>thisob</c>.</param>
+        <param name="sec">The seconds value to set for <c>thisob</c>.</param>
+        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCMonth">
       <MemberSignature Language="C#" Value="public static double setUTCMonth (object thisob, double dmonth, object date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCMonth(object thisob, float64 dmonth, object date) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCMonth(System.Object,System.Double,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -972,20 +1044,22 @@
         <Parameter Name="date" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dmonth">To be added.</param>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dmonth">The month value to set for <c>thisob</c>.</param>
+        <param name="date">The date value to set for <c>thisob</c>.</param>
+        <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setUTCSeconds">
       <MemberSignature Language="C#" Value="public static double setUTCSeconds (object thisob, double dsec, object msec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setUTCSeconds(object thisob, float64 dsec, object msec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setUTCSeconds(System.Object,System.Double,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1002,20 +1076,22 @@
         <Parameter Name="msec" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dsec">To be added.</param>
-        <param name="msec">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dsec">The seconds value to set for <c>thisob</c>.</param>
+        <param name="msec">The milliseconds value to set for <c>thisob</c>.</param>
+        <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="setYear">
       <MemberSignature Language="C#" Value="public static double setYear (object thisob, double dyear);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 setYear(object thisob, float64 dyear) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.setYear(System.Object,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1034,19 +1110,21 @@
         <Parameter Name="dyear" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <param name="dyear">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="dyear">The year value to set for <c>thisob</c>.</param>
+        <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
+        <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toDateString">
       <MemberSignature Language="C#" Value="public static string toDateString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toDateString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toDateString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1061,18 +1139,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, and the year.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toGMTString">
       <MemberSignature Language="C#" Value="public static string toGMTString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toGMTString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toGMTString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1090,18 +1170,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the year, and the time, expressed in Coordinated Universal Time (UTC). Use <see cref="Microsoft.JScript.DatePrototype.toUTCString%2A" /> instead, when you can.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toLocaleDateString">
       <MemberSignature Language="C#" Value="public static string toLocaleDateString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toLocaleDateString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toLocaleDateString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1116,18 +1198,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the date but not the time.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
       <MemberSignature Language="C#" Value="public static string toLocaleString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toLocaleString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toLocaleString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1142,18 +1226,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the date and time.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toLocaleTimeString">
       <MemberSignature Language="C#" Value="public static string toLocaleTimeString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toLocaleTimeString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toLocaleTimeString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1168,18 +1254,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the time but not the date.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toString">
       <MemberSignature Language="C#" Value="public static string toString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1194,18 +1282,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the time, the time zone, and the year.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toTimeString">
       <MemberSignature Language="C#" Value="public static string toTimeString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toTimeString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toTimeString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1220,18 +1310,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the time and the time zone.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toUTCString">
       <MemberSignature Language="C#" Value="public static string toUTCString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toUTCString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.toUTCString(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1246,18 +1338,20 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the year, and the time, expressed in Coordinated Universal Time (UTC).</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="valueOf">
       <MemberSignature Language="C#" Value="public static double valueOf (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 valueOf(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DatePrototype.valueOf(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1272,9 +1366,9 @@
         <Parameter Name="thisob" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="thisob">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Returns the value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
+        <returns>The value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

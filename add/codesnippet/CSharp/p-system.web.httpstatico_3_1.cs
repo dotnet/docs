@@ -1,0 +1,5 @@
+if (Application.StaticObjects.IsReadOnly)
+{
+   //...
+}
+   

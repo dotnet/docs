@@ -1,6 +1,7 @@
 <Type Name="ValidatableObjectAdapter" FullName="System.Web.ModelBinding.ValidatableObjectAdapter">
   <TypeSignature Language="C#" Value="public class ValidatableObjectAdapter : System.Web.ModelBinding.ModelValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidatableObjectAdapter extends System.Web.ModelBinding.ModelValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ValidatableObjectAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an adapter for objects that implement the <see cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ValidatableObjectAdapter (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValidatableObjectAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -27,15 +29,16 @@
         <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata.</param>
+        <param name="context">The execution context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValidatableObjectAdapter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidationResult&gt; Validate (object container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidationResult&gt; Validate(object container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValidatableObjectAdapter.Validate(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,9 +51,9 @@
         <Parameter Name="container" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The container for the object to be validated.</param>
+        <summary>Validates the specified object.</summary>
+        <returns>The validation results.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

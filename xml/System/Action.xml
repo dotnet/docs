@@ -1,30 +1,60 @@
 <Type Name="Action" FullName="System.Action">
   <TypeSignature Language="C#" Value="public delegate void Action();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Action" />
   <AssemblyInfo>
-    <AssemblyName>System.Runtime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Parameters />
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates a method that has no parameters and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this delegate to pass a method as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have no parameters and no return value. (In C#, the method must return `void`. In Visual Basic, it must be defined by the `Sub`…`End Sub` construct. It can also be a method that returns a value that is ignored.) Typically, such a method is used to perform an operation.  
+  
+> [!NOTE]
+>  To reference a method that has no parameters and returns a value, use the generic <xref:System.Func%601> delegate instead.  
+  
+ When you use the Action delegate, you do not have to explicitly define a delegate that encapsulates a parameterless procedure. For example, the following code explicitly declares a delegate named `ShowValue` and assigns a reference to the `Name.DisplayToWindow` instance method to its delegate instance.  
+  
+ [!code-cpp[System.Action.Delegate#1](~/add/codesnippet/cpp/delegate/delegate.cpp#1)]
+ [!code-vb[System.Action.Delegate#1](~/add/codesnippet/visualbasic/t-system.action_1.vb)]
+ [!code-cs[System.Action.Delegate#1](~/add/codesnippet/csharp/t-system.action_1.cs)]  
+  
+ The following example simplifies this code by instantiating the Action delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-cpp[System.Action#2](~/add/codesnippet/cpp/t-system.action_2.cpp)]
+ [!code-cs[System.Action#2](~/add/codesnippet/csharp/t-system.action_2.cs)]
+ [!code-vb[System.Action#2](~/add/codesnippet/visualbasic/t-system.action_2.vb)]  
+  
+ You can also use the Action delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](../Topic/Anonymous%20Methods%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Action#3](~/add/codesnippet/csharp/t-system.action_3.cs)]  
+  
+ You can also assign a lambda expression to an Action delegate instance, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Action#4](~/add/codesnippet/csharp/t-system.action_4.cs)]
+ [!code-vb[System.Action#4](~/add/codesnippet/visualbasic/t-system.action_4.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -1,0 +1,2 @@
+Application.Remove("MyAppVar1");
+   

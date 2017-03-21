@@ -1,6 +1,7 @@
 <Type Name="WorkflowApplicationUnhandledExceptionEventArgs" FullName="System.Activities.WorkflowApplicationUnhandledExceptionEventArgs">
   <TypeSignature Language="C#" Value="public class WorkflowApplicationUnhandledExceptionEventArgs : System.Activities.WorkflowApplicationEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowApplicationUnhandledExceptionEventArgs extends System.Activities.WorkflowApplicationEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about an unhandled exception that occurred in a workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an exception is thrown by an activity and is unhandled, the default behavior is to terminate the workflow instance. If an <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is present, it can override this default behavior. This handler gives the workflow host author an opportunity to provide the appropriate handling, such as custom logging, aborting the workflow, canceling the workflow, or terminating the workflow.  
+  
+   
+  
+## Examples  
+ The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The WorkflowApplicationUnhandledExceptionEventArgs are inspected to provide information about the exception, and the workflow is terminated.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#1](~/add/codesnippet/csharp/t-system.activities.work_0_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExceptionSource">
       <MemberSignature Language="C#" Value="public System.Activities.Activity ExceptionSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity ExceptionSource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs.ExceptionSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -26,14 +42,29 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the activity that is the source of the unhandled exception.</summary>
+        <value>An activity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an exception is thrown by an activity and is unhandled, the default behavior is to terminate the workflow instance. If an <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is present, it can override this default behavior. This handler gives the workflow host author an opportunity to provide the appropriate handling, such as custom logging, aborting the workflow, canceling the workflow, or terminating the workflow.  
+  
+   
+  
+## Examples  
+ The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#1](~/add/codesnippet/csharp/eda69030-f6e5-45e1-954d-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExceptionSourceInstanceId">
       <MemberSignature Language="C#" Value="public string ExceptionSourceInstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExceptionSourceInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs.ExceptionSourceInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,14 +74,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the unique identifier of the activity instance that is the source of the unhandled exception.</summary>
+        <value>An identifier of the activity instance that is the source of the unhandled exception.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an exception is thrown by an activity and is unhandled, the default behavior is to terminate the workflow instance. If an <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is present, it can override this default behavior. This handler gives the workflow host author an opportunity to provide the appropriate handling, such as custom logging, aborting the workflow, canceling the workflow, or terminating the workflow.  
+  
+   
+  
+## Examples  
+ The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#1](~/add/codesnippet/csharp/28b0f72c-0ddb-46ea-94fd-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhandledException">
       <MemberSignature Language="C#" Value="public Exception UnhandledException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception UnhandledException" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs.UnhandledException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,9 +106,23 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Exception" /> that was unhandled by the workflow instance.</summary>
+        <value>The <see cref="T:System.Exception" /> that was unhandled by the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an exception is thrown by an activity and is unhandled, the default behavior is to terminate the workflow instance. If an <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is present, it can override this default behavior. This handler gives the workflow host author an opportunity to provide the appropriate handling, such as custom logging, aborting the workflow, canceling the workflow, or terminating the workflow.  
+  
+   
+  
+## Examples  
+ The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#1](~/add/codesnippet/csharp/6087d33d-eea3-44f0-8b12-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

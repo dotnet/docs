@@ -1,8 +1,10 @@
 <Type Name="DispatcherUnhandledExceptionFilterEventHandler" FullName="System.Windows.Threading.DispatcherUnhandledExceptionFilterEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DispatcherUnhandledExceptionFilterEventHandler(object sender, DispatcherUnhandledExceptionFilterEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DispatcherUnhandledExceptionFilterEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherUnhandledExceptionFilterEventHandler" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,18 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Threading.Dispatcher.UnhandledExceptionFilter" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Threading.Dispatcher.UnhandledExceptionFilter> event occurs when code executing by way of the <xref:System.Windows.Threading.Dispatcher> throws an exception that is not handled.  
+  
+ The <xref:System.Windows.Threading.Dispatcher.UnhandledExceptionFilter> event provides a means to not raise the <xref:System.Windows.Threading.Dispatcher.UnhandledException> event.  The <xref:System.Windows.Threading.Dispatcher.UnhandledExceptionFilter> event is raised first, and If <xref:System.Windows.Threading.DispatcherUnhandledExceptionFilterEventArgs.RequestCatch%2A> on the <xref:System.Windows.Threading.DispatcherUnhandledExceptionFilterEventArgs> is set to `false`, the <xref:System.Windows.Threading.Dispatcher.UnhandledException> event will not be raised.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

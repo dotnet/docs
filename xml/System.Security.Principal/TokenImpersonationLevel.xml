@@ -1,0 +1,109 @@
+<Type Name="TokenImpersonationLevel" FullName="System.Security.Principal.TokenImpersonationLevel">
+  <TypeSignature Language="C#" Value="public enum TokenImpersonationLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TokenImpersonationLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Principal.TokenImpersonationLevel" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anonymous">
+      <MemberSignature Language="C#" Value="Anonymous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenImpersonationLevel Anonymous = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Anonymous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delegation">
+      <MemberSignature Language="C#" Value="Delegation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenImpersonationLevel Delegation = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Identification">
+      <MemberSignature Language="C#" Value="Identification" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenImpersonationLevel Identification = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Identification" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Impersonation">
+      <MemberSignature Language="C#" Value="Impersonation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenImpersonationLevel Impersonation = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.Impersonation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenImpersonationLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenImpersonationLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

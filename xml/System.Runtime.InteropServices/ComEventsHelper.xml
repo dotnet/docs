@@ -1,0 +1,84 @@
+<Type Name="ComEventsHelper" FullName="System.Runtime.InteropServices.ComEventsHelper">
+  <TypeSignature Language="C#" Value="public static class ComEventsHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ComEventsHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComEventsHelper" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Combine">
+      <MemberSignature Language="C#" Value="public static void Combine (object rcw, Guid iid, int dispid, Delegate d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Combine(object rcw, valuetype System.Guid iid, int32 dispid, class System.Delegate d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComEventsHelper.Combine(System.Object,System.Guid,System.Int32,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rcw" Type="System.Object" />
+        <Parameter Name="iid" Type="System.Guid" />
+        <Parameter Name="dispid" Type="System.Int32" />
+        <Parameter Name="d" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="rcw">To be added.</param>
+        <param name="iid">To be added.</param>
+        <param name="dispid">To be added.</param>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public static Delegate Remove (object rcw, Guid iid, int dispid, Delegate d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate Remove(object rcw, valuetype System.Guid iid, int32 dispid, class System.Delegate d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComEventsHelper.Remove(System.Object,System.Guid,System.Int32,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Delegate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rcw" Type="System.Object" />
+        <Parameter Name="iid" Type="System.Guid" />
+        <Parameter Name="dispid" Type="System.Int32" />
+        <Parameter Name="d" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="rcw">To be added.</param>
+        <param name="iid">To be added.</param>
+        <param name="dispid">To be added.</param>
+        <param name="d">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

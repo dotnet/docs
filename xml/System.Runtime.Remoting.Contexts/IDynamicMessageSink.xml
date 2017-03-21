@@ -1,0 +1,87 @@
+<Type Name="IDynamicMessageSink" FullName="System.Runtime.Remoting.Contexts.IDynamicMessageSink">
+  <TypeSignature Language="C#" Value="public interface IDynamicMessageSink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicMessageSink" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IDynamicMessageSink" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProcessMessageFinish">
+      <MemberSignature Language="C#" Value="public void ProcessMessageFinish (System.Runtime.Remoting.Messaging.IMessage replyMsg, bool bCliSide, bool bAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessMessageFinish(class System.Runtime.Remoting.Messaging.IMessage replyMsg, bool bCliSide, bool bAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IDynamicMessageSink.ProcessMessageFinish(System.Runtime.Remoting.Messaging.IMessage,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="replyMsg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+        <Parameter Name="bCliSide" Type="System.Boolean" />
+        <Parameter Name="bAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="replyMsg">To be added.</param>
+        <param name="bCliSide">To be added.</param>
+        <param name="bAsync">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessMessageStart">
+      <MemberSignature Language="C#" Value="public void ProcessMessageStart (System.Runtime.Remoting.Messaging.IMessage reqMsg, bool bCliSide, bool bAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessMessageStart(class System.Runtime.Remoting.Messaging.IMessage reqMsg, bool bCliSide, bool bAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IDynamicMessageSink.ProcessMessageStart(System.Runtime.Remoting.Messaging.IMessage,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reqMsg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+        <Parameter Name="bCliSide" Type="System.Boolean" />
+        <Parameter Name="bAsync" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reqMsg">To be added.</param>
+        <param name="bCliSide">To be added.</param>
+        <param name="bAsync">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

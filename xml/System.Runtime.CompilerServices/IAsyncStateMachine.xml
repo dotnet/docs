@@ -1,0 +1,55 @@
+<Type Name="IAsyncStateMachine" FullName="System.Runtime.CompilerServices.IAsyncStateMachine">
+  <TypeSignature Language="C#" Value="public interface IAsyncStateMachine" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncStateMachine" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IAsyncStateMachine" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public void MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStateMachine">
+      <MemberSignature Language="C#" Value="public void SetStateMachine (System.Runtime.CompilerServices.IAsyncStateMachine stateMachine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStateMachine(class System.Runtime.CompilerServices.IAsyncStateMachine stateMachine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
+      </Parameters>
+      <Docs>
+        <param name="stateMachine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

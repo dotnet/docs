@@ -1,0 +1,87 @@
+<Type Name="ComponentGuaranteesOptions" FullName="System.Runtime.Versioning.ComponentGuaranteesOptions">
+  <TypeSignature Language="C#" Value="public enum ComponentGuaranteesOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ComponentGuaranteesOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ComponentGuaranteesOptions" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exchange">
+      <MemberSignature Language="C#" Value="Exchange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions Exchange = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SideBySide">
+      <MemberSignature Language="C#" Value="SideBySide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions SideBySide = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stable">
+      <MemberSignature Language="C#" Value="Stable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions Stable = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

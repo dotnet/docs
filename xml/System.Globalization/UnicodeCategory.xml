@@ -1,0 +1,565 @@
+<Type Name="UnicodeCategory" FullName="System.Globalization.UnicodeCategory">
+  <TypeSignature Language="C#" Value="public enum UnicodeCategory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed UnicodeCategory extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.UnicodeCategory" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClosePunctuation">
+      <MemberSignature Language="C#" Value="ClosePunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ClosePunctuation = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ClosePunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectorPunctuation">
+      <MemberSignature Language="C#" Value="ConnectorPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ConnectorPunctuation = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ConnectorPunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="Control" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory Control = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.Control" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencySymbol">
+      <MemberSignature Language="C#" Value="CurrencySymbol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory CurrencySymbol = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.CurrencySymbol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DashPunctuation">
+      <MemberSignature Language="C#" Value="DashPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory DashPunctuation = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.DashPunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DecimalDigitNumber">
+      <MemberSignature Language="C#" Value="DecimalDigitNumber" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory DecimalDigitNumber = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.DecimalDigitNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnclosingMark">
+      <MemberSignature Language="C#" Value="EnclosingMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory EnclosingMark = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.EnclosingMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalQuotePunctuation">
+      <MemberSignature Language="C#" Value="FinalQuotePunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory FinalQuotePunctuation = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.FinalQuotePunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="Format" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory Format = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.Format" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialQuotePunctuation">
+      <MemberSignature Language="C#" Value="InitialQuotePunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory InitialQuotePunctuation = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.InitialQuotePunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LetterNumber">
+      <MemberSignature Language="C#" Value="LetterNumber" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory LetterNumber = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.LetterNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LineSeparator">
+      <MemberSignature Language="C#" Value="LineSeparator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory LineSeparator = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.LineSeparator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LowercaseLetter">
+      <MemberSignature Language="C#" Value="LowercaseLetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory LowercaseLetter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.LowercaseLetter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MathSymbol">
+      <MemberSignature Language="C#" Value="MathSymbol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory MathSymbol = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.MathSymbol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifierLetter">
+      <MemberSignature Language="C#" Value="ModifierLetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ModifierLetter = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ModifierLetter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifierSymbol">
+      <MemberSignature Language="C#" Value="ModifierSymbol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ModifierSymbol = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ModifierSymbol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonSpacingMark">
+      <MemberSignature Language="C#" Value="NonSpacingMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory NonSpacingMark = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.NonSpacingMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenPunctuation">
+      <MemberSignature Language="C#" Value="OpenPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OpenPunctuation = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OpenPunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherLetter">
+      <MemberSignature Language="C#" Value="OtherLetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherLetter = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherLetter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherNotAssigned">
+      <MemberSignature Language="C#" Value="OtherNotAssigned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherNotAssigned = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherNotAssigned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherNumber">
+      <MemberSignature Language="C#" Value="OtherNumber" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherNumber = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherPunctuation">
+      <MemberSignature Language="C#" Value="OtherPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherPunctuation = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherPunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherSymbol">
+      <MemberSignature Language="C#" Value="OtherSymbol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherSymbol = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherSymbol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphSeparator">
+      <MemberSignature Language="C#" Value="ParagraphSeparator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ParagraphSeparator = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ParagraphSeparator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateUse">
+      <MemberSignature Language="C#" Value="PrivateUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory PrivateUse = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.PrivateUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SpaceSeparator">
+      <MemberSignature Language="C#" Value="SpaceSeparator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory SpaceSeparator = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.SpaceSeparator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SpacingCombiningMark">
+      <MemberSignature Language="C#" Value="SpacingCombiningMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory SpacingCombiningMark = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.SpacingCombiningMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Surrogate">
+      <MemberSignature Language="C#" Value="Surrogate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory Surrogate = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.Surrogate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TitlecaseLetter">
+      <MemberSignature Language="C#" Value="TitlecaseLetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory TitlecaseLetter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.TitlecaseLetter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UppercaseLetter">
+      <MemberSignature Language="C#" Value="UppercaseLetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory UppercaseLetter = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.UppercaseLetter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,106 @@
+<Type Name="ResourceConsumptionAttribute" FullName="System.Runtime.Versioning.ResourceConsumptionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ResourceConsumptionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceConsumptionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ResourceConsumptionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Property, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.Conditional("RESOURCE_ANNOTATION_WORK")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceConsumptionAttribute (System.Runtime.Versioning.ResourceScope resourceScope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.Versioning.ResourceScope resourceScope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor(System.Runtime.Versioning.ResourceScope)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceScope" Type="System.Runtime.Versioning.ResourceScope" />
+      </Parameters>
+      <Docs>
+        <param name="resourceScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceConsumptionAttribute (System.Runtime.Versioning.ResourceScope resourceScope, System.Runtime.Versioning.ResourceScope consumptionScope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.Versioning.ResourceScope resourceScope, valuetype System.Runtime.Versioning.ResourceScope consumptionScope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.ResourceConsumptionAttribute.#ctor(System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceScope" Type="System.Runtime.Versioning.ResourceScope" />
+        <Parameter Name="consumptionScope" Type="System.Runtime.Versioning.ResourceScope" />
+      </Parameters>
+      <Docs>
+        <param name="resourceScope">To be added.</param>
+        <param name="consumptionScope">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumptionScope">
+      <MemberSignature Language="C#" Value="public System.Runtime.Versioning.ResourceScope ConsumptionScope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Versioning.ResourceScope ConsumptionScope" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.ResourceConsumptionAttribute.ConsumptionScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceScope">
+      <MemberSignature Language="C#" Value="public System.Runtime.Versioning.ResourceScope ResourceScope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Versioning.ResourceScope ResourceScope" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Versioning.ResourceConsumptionAttribute.ResourceScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

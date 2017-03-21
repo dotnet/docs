@@ -1,0 +1,31 @@
+<Type Name="Comparison&lt;T&gt;" FullName="System.Comparison&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate int Comparison&lt;in T&gt;(T x, T y);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Comparison`1&lt;- T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Comparison`1" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="x" Type="T" />
+    <Parameter Name="y" Type="T" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Int32</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <param name="x">To be added.</param>
+    <param name="y">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

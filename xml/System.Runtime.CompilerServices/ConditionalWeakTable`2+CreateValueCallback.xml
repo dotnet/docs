@@ -1,0 +1,36 @@
+<Type Name="ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback" FullName="System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback">
+  <TypeSignature Language="C#" Value="public delegate TValue ConditionalWeakTable&lt;TKey,TValue&gt;.CreateValueCallback(TKey key) where TKey : class where TValue : class;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ConditionalWeakTable`2/CreateValueCallback&lt;class TKey, class TValue&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TValue">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="key" Type="TKey" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>TValue</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="key">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

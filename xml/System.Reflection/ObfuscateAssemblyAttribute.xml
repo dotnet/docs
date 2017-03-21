@@ -1,0 +1,85 @@
+<Type Name="ObfuscateAssemblyAttribute" FullName="System.Reflection.ObfuscateAssemblyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ObfuscateAssemblyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObfuscateAssemblyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.ObfuscateAssemblyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObfuscateAssemblyAttribute (bool assemblyIsPrivate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool assemblyIsPrivate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.ObfuscateAssemblyAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyIsPrivate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyIsPrivate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyIsPrivate">
+      <MemberSignature Language="C#" Value="public bool AssemblyIsPrivate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AssemblyIsPrivate" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscateAssemblyAttribute.AssemblyIsPrivate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StripAfterObfuscation">
+      <MemberSignature Language="C#" Value="public bool StripAfterObfuscation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StripAfterObfuscation" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscateAssemblyAttribute.StripAfterObfuscation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

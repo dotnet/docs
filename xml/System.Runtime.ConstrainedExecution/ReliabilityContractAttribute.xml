@@ -1,0 +1,84 @@
+<Type Name="ReliabilityContractAttribute" FullName="System.Runtime.ConstrainedExecution.ReliabilityContractAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ReliabilityContractAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReliabilityContractAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Interface, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReliabilityContractAttribute (System.Runtime.ConstrainedExecution.Consistency consistencyGuarantee, System.Runtime.ConstrainedExecution.Cer cer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.ConstrainedExecution.Consistency consistencyGuarantee, valuetype System.Runtime.ConstrainedExecution.Cer cer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.#ctor(System.Runtime.ConstrainedExecution.Consistency,System.Runtime.ConstrainedExecution.Cer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="consistencyGuarantee" Type="System.Runtime.ConstrainedExecution.Consistency" />
+        <Parameter Name="cer" Type="System.Runtime.ConstrainedExecution.Cer" />
+      </Parameters>
+      <Docs>
+        <param name="consistencyGuarantee">To be added.</param>
+        <param name="cer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cer">
+      <MemberSignature Language="C#" Value="public System.Runtime.ConstrainedExecution.Cer Cer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.ConstrainedExecution.Cer Cer" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.Cer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.ConstrainedExecution.Cer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsistencyGuarantee">
+      <MemberSignature Language="C#" Value="public System.Runtime.ConstrainedExecution.Consistency ConsistencyGuarantee { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.ConstrainedExecution.Consistency ConsistencyGuarantee" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.ConsistencyGuarantee" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.ConstrainedExecution.Consistency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -32,11 +32,13 @@ For dependencies, you specify where the restored packages are placed during the 
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
-## Options
+## Arguments
 
 `ROOT` 
     
-Optional path to the project file to restore. 
+Optional path to the project file to restore.
+
+## Options
 
 `-h|--help`
 

@@ -1,98 +1,90 @@
 ﻿{
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "corefx/src/**/ref/**/*.csproj",
-            "wcf/src/**/ref/**/*.csproj"
-          ],
-          "exclude": [ "**/bin/**", "**/obj/**"],
-          "cwd": ".."
-        }
-      ],
-      "dest": "api"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "corefx/src/**/src/**/*.csproj",
-            "wcf/src/**/src/**/*.csproj",
-            "coreclr/src/mscorlib/System.Private.CoreLib.csproj"
-          ],
-          "exclude": [ "**/bin/**", "**/obj/**"],
-          "cwd": ".."
-        }
-      ],
-      "dest": "api_src"
-    }
-  ],
   "build": {
-    "content":
-      [
-        {
-          "files": ["*.yml"],
-          "src": "api_ref",
-          "dest": "core/api"
-        },
-        {
-          "files": ["**/*.md"],
-          "src": "docs",
-          "dest": "articles",
-          "exclude": ["**/includes/**", "***/contributing.md"] 
-        },
-        {
-          "files": ["*.md"],
-          "src": "api",
-          "dest": "core/api"
-        },
-        {
-          "files": ["toc.yml", "index.md"]
-        }
-      ],
-    "resource":
-      [
-        {
-          "files": [
-            "images/**", 
-            "**/*.png",
-            "**/*.svg",            
-            "**/*.jpg",
-            "**/*.gif",
-            "**/*.bmp"
-          ],
-          "src": "docs",
-          "dest": "articles",
-          "exclude": [
-            "**/obj/**",
-            "_themes/DocPacker/**"
-          ]
-        }
-      ],
-    "overwrite": "apidoc/*.md",
-    "externalReference": [
+    "content": [
+      {
+        "files": [
+          "api/*.yml"
+        ],
+        "exclude": [
+          "add/includes/**/*.md",
+          "add/metadata/**/*.md",
+          "**/obj/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "docs",
+        "dest": "articles",
+        "exclude": [
+          "**/includes/**",
+          "***/contributing.md"
+        ]
+      },
+      {
+        "files": [
+          "toc.yml",
+          "index.md"
+        ]
+      }
     ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
+        ],
+        "src": "docs",
+        "dest": "articles",
+        "exclude": [
+          "**/obj/**",
+          "add/codesnippet/**/*.*",
+          "_themes/DocPacker/**"
+        ]
+      }
+    ],
+    "overwrite": "apidoc/*.md",
+    "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/toc.json",
-      "_displayLangs": ["csharp"],
+      "_displayLangs": [
+        "csharp"
+      ],
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
       "manager": "wpickett",
-      "searchScope": [".NET"]
+      "searchScope": [
+        ".NET"
+      ]
     },
     "fileMetadata": {
-      "ms.prod":
-      {
+      "ms.prod": {
         "api_ref/**.yml": ".net"
       },
-      "ms.topic":
-      {
+      "ms.topic": {
         "api_ref/**.yml": "managed-reference"
       }
     },
     "dest": "_site",
-    "template": [ "docs.html" ],
-    "xref": ["_zip/msdn.4.5.2.zip", "_zip/namespaces.4.5.2.zip", "_zip/vs.110.zip", "_zip/vs.140.zip", "_zip/office15.zip", "_zip/missingapi.yml"]
+    "template": [
+      "docs.html"
+    ],
+    "xref": [
+      "_zip/msdn.4.5.2.zip",
+      "_zip/namespaces.4.5.2.zip",
+      "_zip/vs.110.zip",
+      "_zip/vs.140.zip",
+      "_zip/office15.zip",
+      "_zip/missingapi.yml"
+    ],
+    "lruSize": 0
   }
 }

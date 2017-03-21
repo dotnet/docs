@@ -49,7 +49,7 @@ Projects that logically group files into folders are easy to navigate and mainta
 
 For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. The types are logically organized into a folder structure that permits the addition of more types later, and tests are also logically placed in folders permitting the addition of more tests later.
 
-The sample contains two types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder, which helps to organize the project. If another set of types is added later, they 
+The sample contains two types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder. If another set of types is added later, they're placed in the *NewTypes* folder alongside the *Pets* folder. In this way as types are added, the project remains well organized. 
 
 Create the following folder structure with file content indicated below:
 
@@ -163,7 +163,7 @@ public class PetTests
 
 Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
 
-Note that although you expect the `expected` and `actual` values are equal that the initial assertions are that they are *not equal* with `Assert.NotEqual` checks. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you can adjust the assertions to allow them to pass.
+Note that although you expect the `expected` and `actual` values are equal that the initial assertions are that they are *not equal* with `Assert.NotEqual` checks. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you adjust the assertions to allow them to pass.
 
 The following shows the complete project structure:
 
@@ -255,6 +255,6 @@ Test Run Successful.
 Test execution time: 1.6634 Seconds
 ```
 
-Testing passes. The pet types methods return the correct values when talking to the owner.
+Testing passes. The pet types' methods return the correct values when talking to the owner.
 
 You've learned techniques for organizing and testing projects using xUnit. Go forward with these techniques applying them in your own projects. *Happy coding!*

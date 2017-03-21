@@ -1,10 +1,10 @@
 ---
 title: Target frameworks | Microsoft Docs
 description: Explains the concepts of target frameworks when writing .NET code.
-keywords: .NET, .NET Core, framework, tfm
+keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw
-ms.date: 03/13/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -45,7 +45,8 @@ Name | Abbreviation | TFMs/TxMs
  | | netstandard1.4
  | | netstandard1.5
  | | netstandard1.6
-.NET Core App | netcoreapp | netcoreapp1.0 | netcoreapp1.1
+.NET Core App | netcoreapp | netcoreapp1.0
+ | | netcoreapp1.1
 .NET Framework | net | net11
  | | net20
  | | net35
@@ -122,7 +123,7 @@ For NuGet 3.3 and earlier, use the `dotnet` series of monikers. For NuGet 3.4 an
 
 ## Portable Class Libraries
 
-For information on Portable Class Libraries, see the [Portable Class Libraries](https://docs.microsoft.com/nuget/schema/target-frameworks#portable-class-libraries) section of the *Target Framework* topic in the NuGet documentation..
+For information on Portable Class Libraries, see the [Portable Class Libraries](https://docs.microsoft.com/nuget/schema/target-frameworks#portable-class-libraries) section of the *Target Framework* topic in the NuGet documentation.
 
  Name | Description | .NET Standard
  --- | --- | ---

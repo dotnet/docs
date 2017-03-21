@@ -4,7 +4,7 @@ description: How is the C# language evolving
 keywords: C#, Latest Features, What's New, Roslyn
 author: BillWagner
 ms.author: wiwagn
-ms.date: 10/14/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -16,10 +16,10 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 
 
 * [C# 7](csharp-7.md):
-    - This page describes the latest features in the C# language. This covers C# 7, currently available in [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017-rc/).
+    - This page describes the latest features in the C# language. This covers C# 7, currently available in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/).
 
 * [C# 6](csharp-6.md):
-    - This page describes the latest features in the currently released version of C#, C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on macOS and Linux.
+    - This page describes the features that were added in C# 6. These features are available in Visual Studio 2015 for Windows developers, and on .NET Core 1.0 for developers exploring C# on macOS and Linux.
 
 * [C# Interactive](../interactive/index.md): 
     - This page describes C# Interactive, an interactive Read Eval Print Loop (REPL) that you can use to explore the C# language. You can use it to write code interactively and see it execute immediately, without any compile or build step.

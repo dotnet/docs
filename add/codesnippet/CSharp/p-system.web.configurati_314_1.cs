@@ -1,0 +1,1 @@
+bufferModeSetting.RegularFlushInterval = TimeSpan.MaxValue;

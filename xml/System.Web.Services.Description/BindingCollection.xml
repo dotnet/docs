@@ -1,8 +1,10 @@
 <Type Name="BindingCollection" FullName="System.Web.Services.Description.BindingCollection">
   <TypeSignature Language="C#" Value="public sealed class BindingCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.BindingCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.Binding" /> class supported by the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Description.Binding> class corresponds to the Web Services Description Language (WSDL) `<binding>` element enclosed by the root `<definitions>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.Add(System.Web.Services.Description.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -29,18 +40,29 @@
         <Parameter Name="binding" Type="System.Web.Services.Description.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binding">The <see cref="T:System.Web.Services.Description.Binding" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Binding" /> to the end of the <see cref="T:System.Web.Services.Description.BindingCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="binding" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[BindingCollectionsample3#2](~/add/codesnippet/cpp/f2ed6070-afa0-43f3-846c-_1.cpp)]
+ [!code-vb[BindingCollectionsample3#2](~/add/codesnippet/visualbasic/f2ed6070-afa0-43f3-846c-_1.vb)]
+ [!code-cs[BindingCollectionsample3#2](~/add/codesnippet/csharp/f2ed6070-afa0-43f3-846c-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.Contains(System.Web.Services.Description.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,18 +72,30 @@
         <Parameter Name="binding" Type="System.Web.Services.Description.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binding">A <see cref="T:System.Web.Services.Description.Binding" /> for which to check collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Binding" /> is a member of the <see cref="T:System.Web.Services.Description.BindingCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="binding" /> parameter is a member of the <see cref="T:System.Web.Services.Description.BindingCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[BindingCollectionsample3#3](~/add/codesnippet/cpp/8907f90b-4a68-427b-bd50-_1.cpp)]
+ [!code-vb[BindingCollectionsample3#3](~/add/codesnippet/visualbasic/8907f90b-4a68-427b-bd50-_1.vb)]
+ [!code-cs[BindingCollectionsample3#3](~/add/codesnippet/csharp/8907f90b-4a68-427b-bd50-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.Binding[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.Binding[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.CopyTo(System.Web.Services.Description.Binding[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,18 +106,29 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Binding" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.BindingCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.Binding" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[BindingCollectionsample1#2](~/add/codesnippet/cpp/19f8b1a2-3f0a-4d9c-bf7b-_1.cpp)]
+ [!code-cs[BindingCollectionsample1#2](~/add/codesnippet/csharp/19f8b1a2-3f0a-4d9c-bf7b-_1.cs)]
+ [!code-vb[BindingCollectionsample1#2](~/add/codesnippet/visualbasic/19f8b1a2-3f0a-4d9c-bf7b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
       <MemberSignature Language="C#" Value="protected override string GetKey (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKey(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.GetKey(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +147,11 @@
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.IndexOf(System.Web.Services.Description.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,18 +161,29 @@
         <Parameter Name="binding" Type="System.Web.Services.Description.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="binding">The <see cref="T:System.Web.Services.Description.Binding" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Binding" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[BindingCollectionsample3#4](~/add/codesnippet/cpp/c4337d01-8a61-4fe7-8ebe-_1.cpp)]
+ [!code-vb[BindingCollectionsample3#4](~/add/codesnippet/visualbasic/c4337d01-8a61-4fe7-8ebe-_1.vb)]
+ [!code-cs[BindingCollectionsample3#4](~/add/codesnippet/csharp/c4337d01-8a61-4fe7-8ebe-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.Insert(System.Int32,System.Web.Services.Description.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,18 +194,38 @@
         <Parameter Name="binding" Type="System.Web.Services.Description.Binding" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <c>binding</c> parameter.</param>
+        <param name="binding">The <see cref="T:System.Web.Services.Description.Binding" /> to be added to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Binding" /> to the <see cref="T:System.Web.Services.Description.BindingCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `binding` parameter is added to the end of the <xref:System.Web.Services.Description.BindingCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ [!code-cpp[BindingCollectionSample2#6](~/add/codesnippet/cpp/9b47f449-9464-42fd-aa2b-_1.cpp)]
+ [!code-cs[BindingCollectionSample2#6](~/add/codesnippet/csharp/9b47f449-9464-42fd-aa2b-_1.cs)]
+ [!code-vb[BindingCollectionSample2#6](~/add/codesnippet/visualbasic/9b47f449-9464-42fd-aa2b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Binding this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Binding Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BindingCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,18 +235,34 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Binding" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.Binding" /> at the specified zero-based index.</summary>
+        <value>A <see langword="Binding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[BindingCollectionsample1#1](~/add/codesnippet/cpp/p-system.web.services.de_63_1.cpp)]
+ [!code-cs[BindingCollectionsample1#1](~/add/codesnippet/csharp/p-system.web.services.de_63_1.cs)]
+ [!code-vb[BindingCollectionsample1#1](~/add/codesnippet/visualbasic/p-system.web.services.de_63_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="index" /> parameter is greater than <see cref="System.Collections.CollectionBase.Count%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Binding this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Binding Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BindingCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,18 +272,31 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Services.Description.Binding" /> returned.</param>
+        <summary>Gets a <see cref="T:System.Web.Services.Description.Binding" /> specified by its name.</summary>
+        <value>A <see langword="Binding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example searches the `Bindings` property of myServiceDescription for a <xref:System.Web.Services.Description.Binding> named "MathServiceHttpGet".  
+  
+ [!code-cpp[BindingCollectionsample1#3](~/add/codesnippet/cpp/p-system.web.services.de_13_1.cpp)]
+ [!code-cs[BindingCollectionsample1#3](~/add/codesnippet/csharp/p-system.web.services.de_13_1.cs)]
+ [!code-vb[BindingCollectionsample1#3](~/add/codesnippet/visualbasic/p-system.web.services.de_13_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.Remove(System.Web.Services.Description.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,17 +306,35 @@
         <Parameter Name="binding" Type="System.Web.Services.Description.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="binding">The <see cref="T:System.Web.Services.Description.Binding" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Binding" /> from the <see cref="T:System.Web.Services.Description.BindingCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed `Binding` move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ [!code-cpp[BindingCollectionsample3#1](~/add/codesnippet/cpp/a37a9de1-1774-4e40-9e59-_1.cpp)]
+ [!code-vb[BindingCollectionsample3#1](~/add/codesnippet/visualbasic/a37a9de1-1774-4e40-9e59-_1.vb)]
+ [!code-cs[BindingCollectionsample3#1](~/add/codesnippet/csharp/a37a9de1-1774-4e40-9e59-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">
       <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BindingCollection.SetParent(System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

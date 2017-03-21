@@ -1,6 +1,7 @@
 <Type Name="TaskPropertyInfo" FullName="Microsoft.Build.Framework.TaskPropertyInfo">
   <TypeSignature Language="C#" Value="public class TaskPropertyInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TaskPropertyInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskPropertyInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the parameter information from the using task as a strongly typed class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TaskPropertyInfo (string name, Type typeOfParameter, bool output, bool required);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type typeOfParameter, bool output, bool required) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskPropertyInfo.#ctor(System.String,System.Type,System.Boolean,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -29,17 +31,18 @@
         <Parameter Name="required" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="typeOfParameter">To be added.</param>
-        <param name="output">To be added.</param>
-        <param name="required">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the parameter</param>
+        <param name="typeOfParameter">The type of the parameter</param>
+        <param name="output">True if the parameter is both an output and an input parameter. False if the parameter is only an input parameter.</param>
+        <param name="required">True if the parameter must be supplied to each invocation of the task.</param>
+        <summary>Encapsulates a list of parameters declared in the task.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -49,7 +52,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Name of the property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +60,7 @@
     <Member MemberName="Output">
       <MemberSignature Language="C#" Value="public bool Output { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Output" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.Output" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -66,7 +70,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>True of output properties</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -74,6 +78,7 @@
     <Member MemberName="PropertyType">
       <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -83,7 +88,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type of the property</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +96,7 @@
     <Member MemberName="Required">
       <MemberSignature Language="C#" Value="public bool Required { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Required" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskPropertyInfo.Required" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -100,7 +106,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>True if the property is required.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

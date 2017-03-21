@@ -1,0 +1,2 @@
+' Set component access controls.
+<Assembly: ApplicationAccessControl(Authentication:=AuthenticationOption.Privacy, ImpersonationLevel:=ImpersonationLevelOption.Identify, AccessChecksLevel:=AccessChecksLevelOption.ApplicationComponent)> 

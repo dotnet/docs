@@ -1,6 +1,11 @@
 <Type Name="RoleProvider" FullName="System.Web.Security.RoleProvider">
   <TypeSignature Language="C#" Value="public abstract class RoleProvider : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RoleProvider extends System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,28 +20,60 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the contract that ASP.NET implements to provide role-management services using custom role providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET role management is designed to enable you to easily use a number of different role providers for your ASP.NET applications. You can use the supplied role providers that are included with the .NET Framework, or you can implement your own provider.  
+  
+ When implementing a custom role provider, you are required to inherit the RoleProvider abstract class.  
+  
+ There are two primary reasons for creating a custom role provider.  
+  
+-   You need to store role information in a data source that is not supported by the role providers included with the .NET Framework, such as a FoxPro database, an Oracle database, or other data sources.  
+  
+-   You need to manage role information using a database schema that is different from the database schema used by the providers that ship with the .NET Framework. A common example of this would be role data that already exists in a SQL Server database for a company or Web site.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected RoleProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.#ctor" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.RoleProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You are not required to implement a constructor for a class that inherits the <xref:System.Web.Security.RoleProvider> abstract class. Initialization values for a <xref:System.Web.Security.RoleProvider> implementation are passed to the <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddUsersToRoles">
       <MemberSignature Language="C#" Value="public abstract void AddUsersToRoles (string[] usernames, string[] roleNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddUsersToRoles(string[] usernames, string[] roleNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.AddUsersToRoles(System.String[],System.String[])" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,16 +86,46 @@
         <Parameter Name="roleNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="usernames">To be added.</param>
-        <param name="roleNames">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="usernames">A string array of user names to be added to the specified roles.</param>
+        <param name="roleNames">A string array of the role names to add the specified user names to.</param>
+        <summary>Adds the specified user names to the specified roles for the configured <see langword="applicationName" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ AddUsersToRoles is called by the <xref:System.Web.Security.Roles> class to associate the specified users with the specified roles at the data source. Roles are added to the configured <xref:System.Web.Security.RoleProvider.ApplicationName%2A>.  
+  
+ If any of the specified role names are not found for the configured `applicationName`, we recommend that your provider throw a <xref:System.Configuration.Provider.ProviderException>.  
+  
+ If any of the specified user names are not associated with any of the specified role names for the configured `applicationName`, we recommend that your provider throw a <xref:System.Configuration.Provider.ProviderException>.  
+  
+ If any of the specified user names is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+ If any of the specified role names is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+ If your data source supports transactions, we recommend that you include each add operation in a transaction and that you roll back the transaction and throw an exception if any add operation fails.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the AddUsersToRoles method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#2](~/add/codesnippet/csharp/9c87da0e-51df-48b4-8c4b-_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#2](~/add/codesnippet/visualbasic/9c87da0e-51df-48b4-8c4b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
       <MemberSignature Language="C#" Value="public abstract string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleProvider.ApplicationName" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,15 +134,37 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the application to store and retrieve role information for.</summary>
+        <value>The name of the application to store and retrieve role information for.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ApplicationName is used by the <xref:System.Web.Security.Roles> class to associate users and roles with different applications. This enables multiple applications to use the same database to store user and role information without running into conflicts between duplicate user names or role names. Multiple ASP.NET applications can use the same database by specifying the same value in the <xref:System.Web.Security.Roles.ApplicationName%2A> property. The <xref:System.Web.Security.Roles.ApplicationName%2A> property can be set programmatically, or it can be set declaratively in the configuration file for the Web application using the `applicationName` attribute.  
+  
+ If no ApplicationName property is specified, we recommend that the <xref:System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath%2A> property value be used.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the ApplicationName property.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#1](~/add/codesnippet/csharp/p-system.web.security.ro_4_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#1](~/add/codesnippet/visualbasic/p-system.web.security.ro_4_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
       <MemberSignature Language="C#" Value="public abstract void CreateRole (string roleName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateRole(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.CreateRole(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,15 +176,41 @@
         <Parameter Name="roleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="roleName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="roleName">The name of the role to create.</param>
+        <summary>Adds a new role to the data source for the configured <see langword="applicationName" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ CreateRole is called by the <xref:System.Web.Security.Roles.CreateRole%2A> method of the <xref:System.Web.Security.Roles> class to add the specified role to the data source for the configured <xref:System.Web.Security.RoleProvider.ApplicationName%2A>.  
+  
+ If the specified role name already exists for the configured `applicationName`, is `null`, or is an empty string, we recommend that your provider throw an exception.  
+  
+ If the specified role name contains a comma, we recommend that your provider throw an exception.  
+  
+ If your data source restricts the length of the role name, for example, through a fixed-length column of a table in a database, we recommend that you throw an exception if the role name exceeds the maximum length allowed by the data source.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the CreateRole method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#3](~/add/codesnippet/csharp/m-system.web.security.ro_17_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#3](~/add/codesnippet/visualbasic/m-system.web.security.ro_17_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteRole">
       <MemberSignature Language="C#" Value="public abstract bool DeleteRole (string roleName, bool throwOnPopulatedRole);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DeleteRole(string roleName, bool throwOnPopulatedRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.DeleteRole(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,17 +223,44 @@
         <Parameter Name="throwOnPopulatedRole" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="roleName">To be added.</param>
-        <param name="throwOnPopulatedRole">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="roleName">The name of the role to delete.</param>
+        <param name="throwOnPopulatedRole">If <see langword="true" />, throw an exception if <c>roleName</c> has one or more members and do not delete <c>roleName</c>.</param>
+        <summary>Removes a role from the data source for the configured <see langword="applicationName" />.</summary>
+        <returns>
+          <see langword="true" /> if the role was successfully deleted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ DeleteRole is called by the <xref:System.Web.Security.Roles.DeleteRole%2A> and the <xref:System.Web.Security.Roles.DeleteRole%2A> methods of the <xref:System.Web.Security.Roles> class to delete the specified role from the data source for the configured <xref:System.Web.Security.RoleProvider.ApplicationName%2A>.  
+  
+ When you delete a role from the data source, ensure that you also delete any associations between a user name and the deleted role for the configured `applicationName`.  
+  
+ If `throwOnPopulatedRole` is `true`, and the role identified by the `roleName` parameter has one or more members, throw a <xref:System.Configuration.Provider.ProviderException> and do not delete the role. If `throwOnPopulatedRole` is `false`, then delete the role whether it is empty or not.  
+  
+ If the specified role name does not exist, is `null`, or is an empty string, we recommend that your provider throw an exception.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the DeleteRole method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#4](~/add/codesnippet/csharp/m-system.web.security.ro_23_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#4](~/add/codesnippet/visualbasic/m-system.web.security.ro_23_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindUsersInRole">
       <MemberSignature Language="C#" Value="public abstract string[] FindUsersInRole (string roleName, string usernameToMatch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] FindUsersInRole(string roleName, string usernameToMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.FindUsersInRole(System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -131,17 +273,39 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="roleName">To be added.</param>
-        <param name="usernameToMatch">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="roleName">The role to search in.</param>
+        <param name="usernameToMatch">The user name to search for.</param>
+        <summary>Gets an array of user names in a role where the user name contains the specified user name to match.</summary>
+        <returns>A string array containing the names of all the users where the user name matches <paramref name="usernameToMatch" /> and the user is a member of the specified role.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The FindUsersInRole method is called by the <xref:System.Web.Security.Roles> class and returns a list of users in a role where the user name contains a match of the supplied `usernameToMatch` for the configured `applicationName`. Wildcard support is included based on the data source. Users are returned in alphabetical order by user name.  
+  
+ We recommend that you throw a <xref:System.Configuration.Provider.ProviderException> if `roleName` does not exist in the data source.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample FindUsersInRole implementation.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#11](~/add/codesnippet/csharp/m-system.web.security.ro_8_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#11](~/add/codesnippet/visualbasic/m-system.web.security.ro_8_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAllRoles">
       <MemberSignature Language="C#" Value="public abstract string[] GetAllRoles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetAllRoles() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.GetAllRoles" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -151,15 +315,37 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list of all the roles for the configured <see langword="applicationName" />.</summary>
+        <returns>A string array containing the names of all the roles stored in the data source for the configured <see langword="applicationName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetAllRoles is called by the <xref:System.Web.Security.Roles.GetAllRoles%2A> method of the <xref:System.Web.Security.Roles> class to retrieve a list of role names from the data source. Only the roles for the specified <xref:System.Web.Security.RoleProvider.ApplicationName%2A> are retrieved.  
+  
+ If no roles exist for the configured `applicationName`, we recommend that your provider return a string array with no elements.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the GetAllRoles method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#5](~/add/codesnippet/csharp/m-system.web.security.ro_7_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#5](~/add/codesnippet/visualbasic/m-system.web.security.ro_7_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRolesForUser">
       <MemberSignature Language="C#" Value="public abstract string[] GetRolesForUser (string username);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetRolesForUser(string username) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.GetRolesForUser(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -171,16 +357,40 @@
         <Parameter Name="username" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="username">The user to return a list of roles for.</param>
+        <summary>Gets a list of the roles that a specified user is in for the configured <see langword="applicationName" />.</summary>
+        <returns>A string array containing the names of all the roles that the specified user is in for the configured <see langword="applicationName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetRolesForUser is called by the <xref:System.Web.Security.Roles.GetRolesForUser%2A> method of the <xref:System.Web.Security.Roles> class to retrieve the role names that the specified user is associated with from the data source. Only the roles for the configured <xref:System.Web.Security.RoleProvider.ApplicationName%2A> are retrieved.  
+  
+ If no roles exist for the specified user for the configured `applicationName`, we recommend that your provider return a string array with no elements.  
+  
+ If the specified user name is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the GetRolesForUser method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#6](~/add/codesnippet/csharp/m-system.web.security.ro_4_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#6](~/add/codesnippet/visualbasic/m-system.web.security.ro_4_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
       <MemberSignature Language="C#" Value="public abstract string[] GetUsersInRole (string roleName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetUsersInRole(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.GetUsersInRole(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -192,16 +402,40 @@
         <Parameter Name="roleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="roleName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="roleName">The name of the role to get the list of users for.</param>
+        <summary>Gets a list of users in the specified role for the configured <see langword="applicationName" />.</summary>
+        <returns>A string array containing the names of all the users who are members of the specified role for the configured <see langword="applicationName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetUsersInRole is called by the <xref:System.Web.Security.Roles.GetUsersInRole%2A> method of the <xref:System.Web.Security.Roles> class to retrieve the user names associated with a role from the data source. Only the roles for the configured <xref:System.Web.Security.RoleProvider.ApplicationName%2A> are retrieved.  
+  
+ If the specified role name does not exist for the configured `applicationName` or if it is `null` or an empty string, we recommend that your provider throw an exception.  
+  
+ If no users are associated with the specified role for the configured `applicationName`, we recommend that your provider return a string array with no elements.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the GetUsersInRole method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#7](~/add/codesnippet/csharp/m-system.web.security.ro_19_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#7](~/add/codesnippet/visualbasic/m-system.web.security.ro_19_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUserInRole">
       <MemberSignature Language="C#" Value="public abstract bool IsUserInRole (string username, string roleName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUserInRole(string username, string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.IsUserInRole(System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -214,17 +448,42 @@
         <Parameter Name="roleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="username">To be added.</param>
-        <param name="roleName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="username">The user name to search for.</param>
+        <param name="roleName">The role to search in.</param>
+        <summary>Gets a value indicating whether the specified user is in the specified role for the configured <see langword="applicationName" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified user is in the specified role for the configured <see langword="applicationName" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The IsUserInRole method is called by the <xref:System.Web.Security.Roles.IsUserInRole%2A> method of the <xref:System.Web.Security.Roles> class to determine whether the current logged-on user is associated with a role from the data source for the configured <xref:System.Web.Security.Roles.ApplicationName%2A>.  
+  
+ If the specified user name is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+ If the specified role name is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the IsUserInRole method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#8](~/add/codesnippet/csharp/m-system.web.security.ro_27_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#8](~/add/codesnippet/visualbasic/m-system.web.security.ro_27_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
       <MemberSignature Language="C#" Value="public abstract void RemoveUsersFromRoles (string[] usernames, string[] roleNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveUsersFromRoles(string[] usernames, string[] roleNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.RemoveUsersFromRoles(System.String[],System.String[])" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -237,16 +496,46 @@
         <Parameter Name="roleNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="usernames">To be added.</param>
-        <param name="roleNames">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="usernames">A string array of user names to be removed from the specified roles.</param>
+        <param name="roleNames">A string array of role names to remove the specified user names from.</param>
+        <summary>Removes the specified user names from the specified roles for the configured <see langword="applicationName" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ RemoveUsersFromRoles is called by <xref:System.Web.Security.Roles.RemoveUserFromRole%2A> , <xref:System.Web.Security.Roles.RemoveUsersFromRole%2A> , <xref:System.Web.Security.Roles.RemoveUserFromRoles%2A> , and <xref:System.Web.Security.Roles.RemoveUsersFromRoles%2A> methods of the <xref:System.Web.Security.Roles> class to remove the specified users from the specified roles at the data source. Only roles for the configured <xref:System.Web.Security.RoleProvider.ApplicationName%2A> are modified.  
+  
+ If any of the specified role names are not found for the configured `applicationName`, we recommend that your provider throw a <xref:System.Configuration.Provider.ProviderException>.  
+  
+ If any of the specified user names are not associated with any of the specified role names for the configured `applicationName`, we recommend that your provider throw a <xref:System.Configuration.Provider.ProviderException>.  
+  
+ If any of the specified user names is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+ If any of the specified role names is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+ If your data source supports transactions, we recommend that you include each remove operation in a transaction and that you roll back the transaction and throw an exception if any remove operation fails.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the RemoveUsersFromRoles method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#9](~/add/codesnippet/csharp/a5de33b5-439f-4bfb-8008-_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#9](~/add/codesnippet/visualbasic/a5de33b5-439f-4bfb-8008-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RoleExists">
       <MemberSignature Language="C#" Value="public abstract bool RoleExists (string roleName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RoleExists(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProvider.RoleExists(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -258,10 +547,28 @@
         <Parameter Name="roleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="roleName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="roleName">The name of the role to search for in the data source.</param>
+        <summary>Gets a value indicating whether the specified role name already exists in the role data source for the configured <see langword="applicationName" />.</summary>
+        <returns>
+          <see langword="true" /> if the role name already exists in the data source for the configured <see langword="applicationName" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ RoleExists is called by the <xref:System.Web.Security.Roles.RoleExists%2A> method of the <xref:System.Web.Security.Roles> class to determine whether a role name exists in the data source for the configured <xref:System.Web.Security.Roles.ApplicationName%2A>.  
+  
+ If the specified role name is `null` or is an empty string, we recommend that your provider throw an exception.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample implementation of the RoleExists method.  
+  
+ [!code-cs[System.Web.Security.IRoleProvider#10](~/add/codesnippet/csharp/m-system.web.security.ro_24_1.cs)]
+ [!code-vb[System.Web.Security.IRoleProvider#10](~/add/codesnippet/visualbasic/m-system.web.security.ro_24_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

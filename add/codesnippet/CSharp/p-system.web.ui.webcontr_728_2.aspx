@@ -1,0 +1,1 @@
+      PasswordRecovery1.SubmitButtonText = "Enter User Name";

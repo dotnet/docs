@@ -1,0 +1,1 @@
+            Dim MessageId = message.Id

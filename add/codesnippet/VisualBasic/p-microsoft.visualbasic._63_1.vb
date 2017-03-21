@@ -1,0 +1,1 @@
+        MsgBox(My.Computer.FileSystem.SpecialDirectories.Desktop)

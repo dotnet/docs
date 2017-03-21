@@ -1,0 +1,1 @@
+            Console.WriteLine("Message was sent at {0}", message.SentTime)

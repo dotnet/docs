@@ -1,6 +1,7 @@
 <Type Name="RuntimeOps" FullName="System.Runtime.CompilerServices.RuntimeOps">
   <TypeSignature Language="C#" Value="public static class RuntimeOps" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeOps extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeOps" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,13 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains helper methods called from dynamically generated methods.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateRuntimeVariables">
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -43,14 +45,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
+        <returns>An interface to access variables.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRuntimeVariables">
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables (object[] data, long[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.IRuntimeVariables CreateRuntimeVariables(object[] data, int64[] indexes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables(System.Object[],System.Int64[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -72,16 +75,17 @@
         <Parameter Name="indexes" Type="System.Int64[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="indexes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The closure array.</param>
+        <param name="indexes">An array of indicies into the closure array where variables are found.</param>
+        <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
+        <returns>An interface to access variables.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandoCheckVersion">
       <MemberSignature Language="C#" Value="public static bool ExpandoCheckVersion (System.Dynamic.ExpandoObject expando, object version);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoCheckVersion(class System.Dynamic.ExpandoObject expando, object version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoCheckVersion(System.Dynamic.ExpandoObject,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -103,16 +107,17 @@
         <Parameter Name="version" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="expando">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expando">The Expando object.</param>
+        <param name="version">The version to check.</param>
+        <summary>Checks the version of the Expando object.</summary>
+        <returns>Returns true if the version is equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandoPromoteClass">
       <MemberSignature Language="C#" Value="public static void ExpandoPromoteClass (System.Dynamic.ExpandoObject expando, object oldClass, object newClass);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExpandoPromoteClass(class System.Dynamic.ExpandoObject expando, object oldClass, object newClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoPromoteClass(System.Dynamic.ExpandoObject,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -135,16 +140,17 @@
         <Parameter Name="newClass" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="expando">To be added.</param>
-        <param name="oldClass">To be added.</param>
-        <param name="newClass">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expando">The Expando object.</param>
+        <param name="oldClass">The old class of the Expando object.</param>
+        <param name="newClass">The new class of the Expando object.</param>
+        <summary>Promotes an Expando object from one class to a new class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandoTryDeleteValue">
       <MemberSignature Language="C#" Value="public static bool ExpandoTryDeleteValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoTryDeleteValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, string name, bool ignoreCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTryDeleteValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -169,19 +175,20 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="expando">To be added.</param>
-        <param name="indexClass">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expando">The expando object.</param>
+        <param name="indexClass">The class of the expando object.</param>
+        <param name="index">The index of the member.</param>
+        <param name="name">The name of the member.</param>
+        <param name="ignoreCase">true if the name should be matched ignoring case; false otherwise.</param>
+        <summary>Deletes the value of an item in an expando object.</summary>
+        <returns>true if the item was successfully removed; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandoTryGetValue">
       <MemberSignature Language="C#" Value="public static bool ExpandoTryGetValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, string name, bool ignoreCase, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoTryGetValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, string name, bool ignoreCase, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTryGetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.String,System.Boolean,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -207,20 +214,21 @@
         <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="expando">To be added.</param>
-        <param name="indexClass">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expando">The expando object.</param>
+        <param name="indexClass">The class of the expando object.</param>
+        <param name="index">The index of the member.</param>
+        <param name="name">The name of the member.</param>
+        <param name="ignoreCase">true if the name should be matched ignoring case; false otherwise.</param>
+        <param name="value">The out parameter containing the value of the member.</param>
+        <summary>Gets the value of an item in an expando object.</summary>
+        <returns>True if the member exists in the expando object, otherwise false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandoTrySetValue">
       <MemberSignature Language="C#" Value="public static object ExpandoTrySetValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, object value, string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ExpandoTrySetValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, object value, string name, bool ignoreCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTrySetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.Object,System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -246,20 +254,21 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="expando">To be added.</param>
-        <param name="indexClass">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expando">The expando object.</param>
+        <param name="indexClass">The class of the expando object.</param>
+        <param name="index">The index of the member.</param>
+        <param name="value">The value of the member.</param>
+        <param name="name">The name of the member.</param>
+        <param name="ignoreCase">true if the name should be matched ignoring case; false otherwise.</param>
+        <summary>Sets the value of an item in an expando object.</summary>
+        <returns>Returns the index for the set member.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeRuntimeVariables">
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.IRuntimeVariables MergeRuntimeVariables (System.Runtime.CompilerServices.IRuntimeVariables first, System.Runtime.CompilerServices.IRuntimeVariables second, int[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.CompilerServices.IRuntimeVariables MergeRuntimeVariables(class System.Runtime.CompilerServices.IRuntimeVariables first, class System.Runtime.CompilerServices.IRuntimeVariables second, int32[] indexes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables,System.Runtime.CompilerServices.IRuntimeVariables,System.Int32[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -282,17 +291,18 @@
         <Parameter Name="indexes" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="first">To be added.</param>
-        <param name="second">To be added.</param>
-        <param name="indexes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="first">The first list.</param>
+        <param name="second">The second list.</param>
+        <param name="indexes">The index array indicating which list to get variables from.</param>
+        <summary>Combines two runtime variable lists and returns a new list.</summary>
+        <returns>The merged runtime variables.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Quote">
       <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression Quote (System.Linq.Expressions.Expression expression, object hoistedLocals, object[] locals);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.Expression Quote(class System.Linq.Expressions.Expression expression, object hoistedLocals, object[] locals) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.Quote(System.Linq.Expressions.Expression,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -315,11 +325,11 @@
         <Parameter Name="locals" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="hoistedLocals">To be added.</param>
-        <param name="locals">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression to quote.</param>
+        <param name="hoistedLocals">The hoisted local state provided by the compiler.</param>
+        <param name="locals">The actual hoisted local values.</param>
+        <summary>Quotes the provided expression tree.</summary>
+        <returns>The quoted expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

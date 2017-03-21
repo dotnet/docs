@@ -1,6 +1,7 @@
 <Type Name="Catch" FullName="System.Activities.Statements.Catch">
   <TypeSignature Language="C#" Value="public abstract class Catch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Catch extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Catch" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the actions to be executed after an exception is thrown in the corresponding <see langword="Try" /> block of a <see cref="System.Activities.Statements.TryCatchFinally" /> activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once placed in the designer, Catch activities cannot be reordered in the designer.  To reorder the collection of Catch activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExceptionType">
       <MemberSignature Language="C#" Value="public abstract Type ExceptionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExceptionType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Catch.ExceptionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -26,8 +35,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The type of exception that the <see cref="T:System.Activities.Statements.Catch" /> block is handling.</summary>
+        <value>The exception type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

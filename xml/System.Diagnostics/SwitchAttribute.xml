@@ -1,13 +1,11 @@
 <Type Name="SwitchAttribute" FullName="System.Diagnostics.SwitchAttribute">
   <TypeSignature Language="C#" Value="public sealed class SwitchAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SwitchAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.SwitchAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -15,48 +13,76 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Event | System.AttributeTargets.Method | System.AttributeTargets.Property)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Event)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies a switch used in an assembly, class, or member.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A SwitchAttribute attribute can be used on an assembly, class, constructor, method, property, or event.  
+  
+ The SwitchAttribute attribute can be used by tools that inspect an assembly for configuration settings.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the SwitchAttribute attribute to identify the switch used in an assembly. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+  
+ [!code-cs[System.Diagnostics.TraceSource2#2](~/add/codesnippet/csharp/t-system.diagnostics.swi_1_1.cs)]
+ [!code-vb[System.Diagnostics.TraceSource2#2](~/add/codesnippet/visualbasic/t-system.diagnostics.swi_1_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SwitchAttribute (string switchName, Type switchType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string switchName, class System.Type switchType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SwitchAttribute.#ctor(System.String,System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="switchName" Type="System.String" />
         <Parameter Name="switchType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="switchName">To be added.</param>
-        <param name="switchType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="switchName">The display name of the switch.</param>
+        <param name="switchType">The type of the switch.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SwitchAttribute" /> class, specifying the name and the type of the switch.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `switchName` parameter should match the <xref:System.Diagnostics.Switch.DisplayName%2A> property of the switch.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the SwitchAttribute constructor to create a switch attribute. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+  
+ [!code-cs[System.Diagnostics.TraceSource2#2](~/add/codesnippet/csharp/m-system.diagnostics.swi_2_1.cs)]
+ [!code-vb[System.Diagnostics.TraceSource2#2](~/add/codesnippet/visualbasic/m-system.diagnostics.swi_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAll">
       <MemberSignature Language="C#" Value="public static System.Diagnostics.SwitchAttribute[] GetAll (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.SwitchAttribute[] GetAll(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SwitchAttribute.GetAll(System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.SwitchAttribute[]</ReturnType>
@@ -65,73 +91,114 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assembly">The assembly to check for switch attributes.</param>
+        <summary>Returns all switch attributes for the specified assembly.</summary>
+        <returns>An array that contains all the switch attributes for the assembly.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the GetAll method to identify the switches used in an assembly. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+  
+ [!code-cs[System.Diagnostics.TraceSource2#12](~/add/codesnippet/csharp/m-system.diagnostics.swi_0_1.cs)]
+ [!code-vb[System.Diagnostics.TraceSource2#12](~/add/codesnippet/visualbasic/m-system.diagnostics.swi_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assembly" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SwitchDescription">
       <MemberSignature Language="C#" Value="public string SwitchDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SwitchDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchAttribute.SwitchDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the description of the switch.</summary>
+        <value>The description of the switch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SwitchDescription property typically indicates the function of the switch.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SwitchName">
       <MemberSignature Language="C#" Value="public string SwitchName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SwitchName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchAttribute.SwitchName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the display name of the switch.</summary>
+        <value>The display name of the switch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SwitchName property should match the <xref:System.Diagnostics.Switch.DisplayName%2A> property of the switch.  
+  
+   
+  
+## Examples  
+ The following code example displays the value the SwitchName property for all switches used in an assembly. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+  
+ [!code-cs[System.Diagnostics.TraceSource2#12](~/add/codesnippet/csharp/p-system.diagnostics.swi_3_1.cs)]
+ [!code-vb[System.Diagnostics.TraceSource2#12](~/add/codesnippet/visualbasic/p-system.diagnostics.swi_3_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">SwitchName is set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">SwitchName is set to an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="SwitchType">
       <MemberSignature Language="C#" Value="public Type SwitchType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type SwitchType" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchAttribute.SwitchType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the switch.</summary>
+        <value>The type of the switch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of the SwitchType property for all switches used in an assembly. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+  
+ [!code-cs[System.Diagnostics.TraceSource2#12](~/add/codesnippet/csharp/p-system.diagnostics.swi_4_1.cs)]
+ [!code-vb[System.Diagnostics.TraceSource2#12](~/add/codesnippet/visualbasic/p-system.diagnostics.swi_4_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">SwitchType is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

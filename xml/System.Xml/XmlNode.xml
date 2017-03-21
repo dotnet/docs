@@ -1,17 +1,11 @@
 <Type Name="XmlNode" FullName="System.Xml.XmlNode">
   <TypeSignature Language="C#" Value="public abstract class XmlNode : ICloneable, System.Collections.IEnumerable, System.Xml.XPath.IXPathNavigable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlNode extends System.Object implements class System.Collections.IEnumerable, class System.ICloneable, class System.Xml.XPath.IXPathNavigable" />
-  <AssemblyInfo>
-    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-    <AssemblyVersion>4.0.1.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +21,11 @@
       <InterfaceName>System.Xml.XPath.IXPathNavigable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{debuggerDisplayProxy}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -35,18 +34,12 @@
     <Member MemberName="AppendChild">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode AppendChild (System.Xml.XmlNode newChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode AppendChild(class System.Xml.XmlNode newChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -64,18 +57,12 @@
     <Member MemberName="Attributes">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlAttributeCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttributeCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttributeCollection</ReturnType>
@@ -89,18 +76,12 @@
     <Member MemberName="BaseURI">
       <MemberSignature Language="C#" Value="public virtual string BaseURI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseURI" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.BaseURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -114,18 +95,12 @@
     <Member MemberName="ChildNodes">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNodeList ChildNodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNodeList ChildNodes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.ChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
@@ -139,14 +114,12 @@
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -161,18 +134,12 @@
     <Member MemberName="CloneNode">
       <MemberSignature Language="C#" Value="public abstract System.Xml.XmlNode CloneNode (bool deep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.CloneNode(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -190,14 +157,12 @@
     <Member MemberName="CreateNavigator">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XPath.XPathNavigator CreateNavigator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XPath.XPathNavigator CreateNavigator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.CreateNavigator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
@@ -212,18 +177,12 @@
     <Member MemberName="FirstChild">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode FirstChild { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode FirstChild" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.FirstChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -237,18 +196,12 @@
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -263,18 +216,12 @@
     <Member MemberName="GetNamespaceOfPrefix">
       <MemberSignature Language="C#" Value="public virtual string GetNamespaceOfPrefix (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetNamespaceOfPrefix(string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -292,18 +239,12 @@
     <Member MemberName="GetPrefixOfNamespace">
       <MemberSignature Language="C#" Value="public virtual string GetPrefixOfNamespace (string namespaceURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPrefixOfNamespace(string namespaceURI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.GetPrefixOfNamespace(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -321,18 +262,12 @@
     <Member MemberName="HasChildNodes">
       <MemberSignature Language="C#" Value="public virtual bool HasChildNodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasChildNodes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.HasChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -346,18 +281,12 @@
     <Member MemberName="InnerText">
       <MemberSignature Language="C#" Value="public virtual string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.InnerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -371,18 +300,12 @@
     <Member MemberName="InnerXml">
       <MemberSignature Language="C#" Value="public virtual string InnerXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerXml" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.InnerXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -396,18 +319,12 @@
     <Member MemberName="InsertAfter">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode InsertAfter (System.Xml.XmlNode newChild, System.Xml.XmlNode refChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode InsertAfter(class System.Xml.XmlNode newChild, class System.Xml.XmlNode refChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -427,18 +344,12 @@
     <Member MemberName="InsertBefore">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode InsertBefore (System.Xml.XmlNode newChild, System.Xml.XmlNode refChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode InsertBefore(class System.Xml.XmlNode newChild, class System.Xml.XmlNode refChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -458,18 +369,12 @@
     <Member MemberName="IsReadOnly">
       <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -483,18 +388,12 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlElement this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -512,18 +411,12 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlElement this[string localname, string ns] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Item(string, string)" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.Item(System.String,System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -543,18 +436,12 @@
     <Member MemberName="LastChild">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode LastChild { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode LastChild" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.LastChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -568,18 +455,12 @@
     <Member MemberName="LocalName">
       <MemberSignature Language="C#" Value="public abstract string LocalName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.LocalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -593,18 +474,12 @@
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -618,18 +493,12 @@
     <Member MemberName="NamespaceURI">
       <MemberSignature Language="C#" Value="public virtual string NamespaceURI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.NamespaceURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -643,18 +512,12 @@
     <Member MemberName="NextSibling">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode NextSibling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode NextSibling" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.NextSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -668,18 +531,12 @@
     <Member MemberName="NodeType">
       <MemberSignature Language="C#" Value="public abstract System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeType</ReturnType>
@@ -693,18 +550,12 @@
     <Member MemberName="Normalize">
       <MemberSignature Language="C#" Value="public virtual void Normalize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Normalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.Normalize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -718,18 +569,12 @@
     <Member MemberName="OuterXml">
       <MemberSignature Language="C#" Value="public virtual string OuterXml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OuterXml" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.OuterXml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -743,18 +588,12 @@
     <Member MemberName="OwnerDocument">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDocument OwnerDocument { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDocument OwnerDocument" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.OwnerDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDocument</ReturnType>
@@ -768,18 +607,12 @@
     <Member MemberName="ParentNode">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ParentNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode ParentNode" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.ParentNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -793,18 +626,12 @@
     <Member MemberName="Prefix">
       <MemberSignature Language="C#" Value="public virtual string Prefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.Prefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -818,18 +645,12 @@
     <Member MemberName="PrependChild">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode PrependChild (System.Xml.XmlNode newChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode PrependChild(class System.Xml.XmlNode newChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -847,18 +668,12 @@
     <Member MemberName="PreviousSibling">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode PreviousSibling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode PreviousSibling" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.PreviousSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -872,14 +687,11 @@
     <Member MemberName="PreviousText">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode PreviousText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode PreviousText" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.PreviousText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -893,18 +705,12 @@
     <Member MemberName="RemoveAll">
       <MemberSignature Language="C#" Value="public virtual void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.RemoveAll" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -918,18 +724,12 @@
     <Member MemberName="RemoveChild">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode RemoveChild (System.Xml.XmlNode oldChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode RemoveChild(class System.Xml.XmlNode oldChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -947,18 +747,12 @@
     <Member MemberName="ReplaceChild">
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlNode ReplaceChild (System.Xml.XmlNode newChild, System.Xml.XmlNode oldChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ReplaceChild(class System.Xml.XmlNode newChild, class System.Xml.XmlNode oldChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -978,14 +772,12 @@
     <Member MemberName="SchemaInfo">
       <MemberSignature Language="C#" Value="public virtual System.Xml.Schema.IXmlSchemaInfo SchemaInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.IXmlSchemaInfo SchemaInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.SchemaInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.IXmlSchemaInfo</ReturnType>
@@ -999,14 +791,12 @@
     <Member MemberName="SelectNodes">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNodeList SelectNodes (string xpath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlNodeList SelectNodes(string xpath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.SelectNodes(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
@@ -1024,14 +814,12 @@
     <Member MemberName="SelectNodes">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNodeList SelectNodes (string xpath, System.Xml.XmlNamespaceManager nsmgr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlNodeList SelectNodes(string xpath, class System.Xml.XmlNamespaceManager nsmgr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.SelectNodes(System.String,System.Xml.XmlNamespaceManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
@@ -1051,14 +839,12 @@
     <Member MemberName="SelectSingleNode">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode SelectSingleNode (string xpath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlNode SelectSingleNode(string xpath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -1076,14 +862,12 @@
     <Member MemberName="SelectSingleNode">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode SelectSingleNode (string xpath, System.Xml.XmlNamespaceManager nsmgr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlNode SelectSingleNode(string xpath, class System.Xml.XmlNamespaceManager nsmgr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.SelectSingleNode(System.String,System.Xml.XmlNamespaceManager)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -1103,18 +887,12 @@
     <Member MemberName="Supports">
       <MemberSignature Language="C#" Value="public virtual bool Supports (string feature, string version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Supports(string feature, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.Supports(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1134,18 +912,12 @@
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -1160,14 +932,12 @@
     <Member MemberName="System.ICloneable.Clone">
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.System#ICloneable#Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1182,18 +952,12 @@
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public virtual string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNode.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1207,18 +971,12 @@
     <Member MemberName="WriteContentTo">
       <MemberSignature Language="C#" Value="public abstract void WriteContentTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteContentTo(class System.Xml.XmlWriter w) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.WriteContentTo(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1235,18 +993,12 @@
     <Member MemberName="WriteTo">
       <MemberSignature Language="C#" Value="public abstract void WriteTo (System.Xml.XmlWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteTo(class System.Xml.XmlWriter w) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNode.WriteTo(System.Xml.XmlWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

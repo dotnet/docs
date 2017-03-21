@@ -1,6 +1,11 @@
 <Type Name="UidPropertyAttribute" FullName="System.Windows.Markup.UidPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class UidPropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UidPropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.UidPropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,14 +23,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the CLR property of a class that provides the [x:Uid Directive](../Topic/x:Uid%20Directive.md) value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The  is a XAML language attribute that identifies element nodes in markup so that they can be uniquely identified. Although the model for `x:Uid` is potentially more general, one usage of unique identifiers for XAML elements is for localization tools, so that XAML language components that need localization can generate a companion localization source and then re-integrated with the original XAML. For more information on how `x:Uid` is used in WPF localization. see [WPF Globalization and Localization Overview](../Topic/WPF%20Globalization%20and%20Localization%20Overview.md).  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)], UidPropertyAttribute is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UidPropertyAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.UidPropertyAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,15 +53,20 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the property that provides the <see langword="x:Uid" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.UidPropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.UidPropertyAttribute.Name" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,8 +75,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the CLR property that represents the [x:Uid Directive](../Topic/x:Uid%20Directive.md) value.</summary>
+        <value>The name of the CLR property that represents [x:Uid Directive](../Topic/x:Uid%20Directive.md).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

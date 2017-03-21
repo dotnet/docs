@@ -1,0 +1,1 @@
+            Dim quotas As XmlDictionaryReaderQuotas = be.ReaderQuotas

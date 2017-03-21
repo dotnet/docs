@@ -1,6 +1,7 @@
 <Type Name="IApplicationPreloadUtil" FullName="System.Web.Hosting.IApplicationPreloadUtil">
   <TypeSignature Language="C#" Value="public interface IApplicationPreloadUtil" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationPreloadUtil" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationPreloadUtil" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods that ASP.NET uses to communicate with [!INCLUDE[iisver](~/add/includes/iisver-md.md)] while the server preloads an application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetApplicationPreloadInfo">
       <MemberSignature Language="C#" Value="public void GetApplicationPreloadInfo (string context, out bool enabled, out string startupObjType, out string[] parametersForStartupObj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetApplicationPreloadInfo(string context, bool enabled, string startupObjType, string[] parametersForStartupObj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadUtil.GetApplicationPreloadInfo(System.String,System.Boolean@,System.String@,System.String[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -37,17 +39,18 @@
         <Parameter Name="parametersForStartupObj" Type="System.String[]&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="enabled">To be added.</param>
-        <param name="startupObjType">To be added.</param>
-        <param name="parametersForStartupObj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The application context.</param>
+        <param name="enabled">When this method returns, contains <see langword="true" /> to indicate that the application has to be preloaded; otherwise, <see langword="false" />. This parameter is passed uninitialized.</param>
+        <param name="startupObjType">When this method returns, contains a string that identifies the managed type that is part of the preload process. This parameter is passed uninitialized.</param>
+        <param name="parametersForStartupObj">When this method returns, contains the data that will be passed to the preloaded type. This parameter is passed uninitialized.</param>
+        <summary>Gets initialization data that is required in order to preload an application. This method is called by ASP.NET.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportApplicationPreloadFailure">
       <MemberSignature Language="C#" Value="public void ReportApplicationPreloadFailure (string context, int errorCode, string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportApplicationPreloadFailure(string context, int32 errorCode, string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadUtil.ReportApplicationPreloadFailure(System.String,System.Int32,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,10 +65,10 @@
         <Parameter Name="errorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="errorCode">To be added.</param>
-        <param name="errorMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The application context.</param>
+        <param name="errorCode">The numeric error code.</param>
+        <param name="errorMessage">The error text.</param>
+        <summary>Reports that an error occurred in [!INCLUDE[iisver](~/add/includes/iisver-md.md)] while the server was preloading the ASP.NET application.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

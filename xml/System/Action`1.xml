@@ -1,27 +1,14 @@
 <Type Name="Action&lt;T&gt;" FullName="System.Action&lt;T&gt;">
   <TypeSignature Language="C#" Value="public delegate void Action&lt;in T&gt;(T obj);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action`1&lt;- T&gt; extends System.MulticastDelegate" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Action`1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <TypeParameters>
-    <TypeParameter Name="T">
-      <Constraints>
-        <ParameterAttribute>Contravariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
+    <TypeParameter Name="T" />
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -33,9 +20,56 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <param name="obj">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the parameter of the method that this delegate encapsulates.</typeparam>
+    <param name="obj">The parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has a single parameter and does not return a value.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#486d58da4553e12d).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#486d58da4553e12d). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ You can use the Action(T) delegate to pass a method as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have one parameter that is passed to it by value, and it must not return a value. (In C#, the method must return `void`. In Visual Basic, it must be defined by the `Sub`…`End Sub` construct. It can also be a method that returns a value that is ignored.) Typically, such a method is used to perform an operation.  
+  
+> [!NOTE]
+>  To reference a method that has one parameter and returns a value, use the generic <xref:System.Func%602> delegate instead.  
+  
+ When you use the Action(T) delegate, you do not have to explicitly define a delegate that encapsulates a method with a single parameter. For example, the following code explicitly declares a delegate named `DisplayMessage` and assigns a reference to either the <xref:System.Console.WriteLine%2A> method or the `ShowWindowsMessage` method to its delegate instance.  
+  
+ [!code-cs[System.Action~1#1](~/add/codesnippet/csharp/t-system.action`1_1.cs)]
+ [!code-cpp[System.Action~1#1](~/add/codesnippet/cpp/t-system.action`1_1.cpp)]
+ [!code-vb[System.Action~1#1](~/add/codesnippet/visualbasic/t-system.action`1_1.vb)]  
+  
+ The following example simplifies this code by instantiating the Action(T) delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-vb[System.Action~1#2](~/add/codesnippet/visualbasic/t-system.action`1_2.vb)]
+ [!code-cpp[System.Action~1#2](~/add/codesnippet/cpp/t-system.action`1_2.cpp)]
+ [!code-cs[System.Action~1#2](~/add/codesnippet/csharp/t-system.action`1_2.cs)]  
+  
+ You can also use the Action(T) delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](../Topic/Anonymous%20Methods%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Action~1#3](~/add/codesnippet/csharp/t-system.action`1_3.cs)]  
+  
+ You can also assign a lambda expression to an Action(T) delegate instance, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Action~1#4](~/add/codesnippet/csharp/t-system.action`1_4.cs)]
+ [!code-vb[System.Action~1#4](~/add/codesnippet/visualbasic/t-system.action`1_4.vb)]  
+  
+ The <xref:System.Collections.Generic.List%601.ForEach%2A> and <xref:System.Array.ForEach%2A> methods each take an Action(T) delegate as a parameter. The method encapsulated by the delegate allows you to perform an action on each element in the array or list. The example uses the <xref:System.Collections.Generic.List%601.ForEach%2A> method to provide an illustration.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the Action(T) delegate to print the contents of a <xref:System.Collections.Generic.List%601> object. In this example, the `Print` method is used to display the contents of the list to the console. In addition, the C# example also demonstrates the use of anonymous methods to display the contents to the console. Note that the example does not explicitly declare an Action(T) variable. Instead, it passes a reference to a method that takes a single parameter and that does not return a value to the <xref:System.Collections.Generic.List%601.ForEach%2A?displayProperty=fullName> method, whose single parameter is an Action(T) delegate. Similarly, in the C# example, an Action(T) delegate is not explicitly instantiated because the signature of the anonymous method matches the signature of the Action(T) delegate that is expected by the <xref:System.Collections.Generic.List%601.ForEach%2A?displayProperty=fullName> method.  
+  
+ [!code-cs[System.Action_PrintExample#01](~/add/codesnippet/csharp/t-system.action`1_5.cs)]
+ [!code-vb[System.Action_PrintExample#01](~/add/codesnippet/visualbasic/t-system.action`1_5.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

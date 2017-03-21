@@ -1,0 +1,1 @@
+        Dim myGacInstalled As New GacInstalled

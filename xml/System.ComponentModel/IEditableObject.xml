@@ -1,97 +1,119 @@
 <Type Name="IEditableObject" FullName="System.ComponentModel.IEditableObject">
   <TypeSignature Language="C#" Value="public interface IEditableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEditableObject" />
-  <AssemblyInfo>
-    <AssemblyName>System.ComponentModel</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.IEditableObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides functionality to commit or rollback changes to an object that is used as a data source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is typically used to capture the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> semantics of a <xref:System.Data.DataRowView>.  
+  
+   
+  
+## Examples  
+ The following sample provides a simple implementation of the IEditableObject interface. The `Customer` class stores customer information and can be used as a collection for a customer database. This sample assumes that you have used the `CustomerList` class that can be found in sample in the <xref:System.ComponentModel.IBindingList> class.  
+  
+ [!code-cs[Binding_Editable#1](~/add/codesnippet/csharp/t-system.componentmodel._141_1.cs)]
+ [!code-cpp[Binding_Editable#1](~/add/codesnippet/cpp/t-system.componentmodel._141_1.cpp)]
+ [!code-vb[Binding_Editable#1](~/add/codesnippet/visualbasic/t-system.componentmodel._141_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginEdit">
       <MemberSignature Language="C#" Value="public void BeginEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IEditableObject.BeginEdit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Begins an edit on an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used to capture the BeginEdit semantics of a <xref:System.Data.DataRowView>.  
+  
+ If BeginEdit is called on an object that is already being edited, the second and subsequent calls are ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
       <MemberSignature Language="C#" Value="public void CancelEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IEditableObject.CancelEdit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Discards changes since the last <see cref="System.ComponentModel.IEditableObject.BeginEdit%2A" /> call.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used to capture the CancelEdit semantics of a <xref:System.Data.DataRowView>.  
+  
+ This method will be ignored if called on an object that is not being edited.  
+  
+> [!NOTE]
+>  If the owning list implements <xref:System.ComponentModel.IBindingList>, calling CancelEdit on an object created using <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=fullName> discards the object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndEdit">
       <MemberSignature Language="C#" Value="public void EndEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IEditableObject.EndEdit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Pushes changes since the last <see cref="System.ComponentModel.IEditableObject.BeginEdit%2A" /> or <see cref="System.ComponentModel.IBindingList.AddNew%2A" /> call into the underlying object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used to capture the EndEdit semantics of a <xref:System.Data.DataRowView>.  
+  
+ This method will be ignored if called on an object that is not being edited.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

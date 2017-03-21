@@ -1,0 +1,1 @@
+            XmlDictionaryReaderQuotas quotas = be.ReaderQuotas;

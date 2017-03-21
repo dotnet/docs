@@ -1,0 +1,4 @@
+---
+uid: System.Web.UI.WebControls.LoginTextLayout
+internalonly: False
+---

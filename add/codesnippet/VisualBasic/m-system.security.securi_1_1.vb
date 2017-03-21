@@ -1,0 +1,1 @@
+        If Not (localXmlElement.SearchForChildByTag("destroytime") Is Nothing) Then

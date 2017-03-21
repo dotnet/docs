@@ -1,0 +1,1 @@
+            Dim bindingElement As BindingElement = be.Clone()

@@ -1,0 +1,1 @@
+        Dim textContent As TextSyndicationContent = New TextSyndicationContent("Some text content")

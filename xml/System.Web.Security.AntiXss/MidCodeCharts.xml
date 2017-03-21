@@ -1,6 +1,7 @@
 <Type Name="MidCodeCharts" FullName="System.Web.Security.AntiXss.MidCodeCharts">
   <TypeSignature Language="C#" Value="public enum MidCodeCharts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MidCodeCharts extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.MidCodeCharts" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies values for the middle region of the UTF-8 Unicode code charts, from U1F00 to U2DDF.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Arrows">
       <MemberSignature Language="C#" Value="Arrows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Arrows = int64(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.Arrows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -30,12 +32,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Arrows code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="BlockElements">
       <MemberSignature Language="C#" Value="BlockElements" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts BlockElements = int64(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.BlockElements" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,12 +48,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Block Elements code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="BoxDrawing">
       <MemberSignature Language="C#" Value="BoxDrawing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts BoxDrawing = int64(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.BoxDrawing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,12 +64,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Box Drawing code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="BraillePatterns">
       <MemberSignature Language="C#" Value="BraillePatterns" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts BraillePatterns = int64(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.BraillePatterns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,12 +80,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Braille Patterns code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CombiningDiacriticalMarksForSymbols">
       <MemberSignature Language="C#" Value="CombiningDiacriticalMarksForSymbols" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts CombiningDiacriticalMarksForSymbols = int64(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.CombiningDiacriticalMarksForSymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,12 +96,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Combining Diacritical Marks for Symbols code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlPictures">
       <MemberSignature Language="C#" Value="ControlPictures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts ControlPictures = int64(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.ControlPictures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,12 +112,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Control Pictures code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Coptic">
       <MemberSignature Language="C#" Value="Coptic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Coptic = int64(134217728)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.Coptic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,12 +128,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Coptic code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrencySymbols">
       <MemberSignature Language="C#" Value="CurrencySymbols" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts CurrencySymbols = int64(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.CurrencySymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,12 +144,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Currency Symbols code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dingbats">
       <MemberSignature Language="C#" Value="Dingbats" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Dingbats = int64(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.Dingbats" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,12 +160,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Dingbats code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnclosedAlphanumerics">
       <MemberSignature Language="C#" Value="EnclosedAlphanumerics" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts EnclosedAlphanumerics = int64(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.EnclosedAlphanumerics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,12 +176,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Enclosed Alphanumerics code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="EthiopicExtended">
       <MemberSignature Language="C#" Value="EthiopicExtended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts EthiopicExtended = int64(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.EthiopicExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,12 +192,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Ethiopic Extended code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeneralPunctuation">
       <MemberSignature Language="C#" Value="GeneralPunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GeneralPunctuation = int64(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.GeneralPunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,12 +208,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The General Punctuation code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeometricShapes">
       <MemberSignature Language="C#" Value="GeometricShapes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GeometricShapes = int64(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.GeometricShapes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,12 +224,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Geometric Shapes code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeorgianSupplement">
       <MemberSignature Language="C#" Value="GeorgianSupplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GeorgianSupplement = int64(268435456)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.GeorgianSupplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,12 +240,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Georgian Supplement code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Glagolitic">
       <MemberSignature Language="C#" Value="Glagolitic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Glagolitic = int64(33554432)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.Glagolitic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,12 +256,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Glagolitic code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreekExtended">
       <MemberSignature Language="C#" Value="GreekExtended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GreekExtended = int64(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.GreekExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,12 +272,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Greek Extended code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedC">
       <MemberSignature Language="C#" Value="LatinExtendedC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts LatinExtendedC = int64(67108864)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.LatinExtendedC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,12 +288,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Latin Extended-C code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="LetterlikeSymbols">
       <MemberSignature Language="C#" Value="LetterlikeSymbols" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts LetterlikeSymbols = int64(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.LetterlikeSymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,12 +304,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Letterlike Symbols code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="MathematicalOperators">
       <MemberSignature Language="C#" Value="MathematicalOperators" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MathematicalOperators = int64(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.MathematicalOperators" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,12 +320,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Mathematical Operators code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousMathematicalSymbolsA">
       <MemberSignature Language="C#" Value="MiscellaneousMathematicalSymbolsA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousMathematicalSymbolsA = int64(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.MiscellaneousMathematicalSymbolsA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,12 +336,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Miscellaneous Mathematical Symbols-A code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousMathematicalSymbolsB">
       <MemberSignature Language="C#" Value="MiscellaneousMathematicalSymbolsB" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousMathematicalSymbolsB = int64(4194304)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.MiscellaneousMathematicalSymbolsB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -330,12 +352,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Miscellaneous Mathematical Symbols-B code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousSymbols">
       <MemberSignature Language="C#" Value="MiscellaneousSymbols" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousSymbols = int64(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.MiscellaneousSymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -345,12 +368,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Miscellaneous Symbols code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousSymbolsAndArrows">
       <MemberSignature Language="C#" Value="MiscellaneousSymbolsAndArrows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousSymbolsAndArrows = int64(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.MiscellaneousSymbolsAndArrows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -360,12 +384,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Miscellaneous Symbols and Arrows code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousTechnical">
       <MemberSignature Language="C#" Value="MiscellaneousTechnical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousTechnical = int64(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.MiscellaneousTechnical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,12 +400,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Miscellaneous Technical code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts None = int64(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -390,12 +416,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>None of the UTF-8 Unicode code charts from the middle region are marked as safe.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberForms">
       <MemberSignature Language="C#" Value="NumberForms" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts NumberForms = int64(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.NumberForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,12 +432,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Number Forms code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="OpticalCharacterRecognition">
       <MemberSignature Language="C#" Value="OpticalCharacterRecognition" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts OpticalCharacterRecognition = int64(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.OpticalCharacterRecognition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -420,12 +448,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Optical Character Recognition code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuperscriptsAndSubscripts">
       <MemberSignature Language="C#" Value="SuperscriptsAndSubscripts" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SuperscriptsAndSubscripts = int64(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.SuperscriptsAndSubscripts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,12 +464,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Superscripts and Subscripts code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupplementalArrowsA">
       <MemberSignature Language="C#" Value="SupplementalArrowsA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SupplementalArrowsA = int64(524288)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.SupplementalArrowsA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,12 +480,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Supplemental Arrows-A code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupplementalArrowsB">
       <MemberSignature Language="C#" Value="SupplementalArrowsB" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SupplementalArrowsB = int64(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.SupplementalArrowsB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -465,12 +496,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Supplemental Arrows-B code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupplementalMathematicalOperators">
       <MemberSignature Language="C#" Value="SupplementalMathematicalOperators" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SupplementalMathematicalOperators = int64(8388608)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.SupplementalMathematicalOperators" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -480,12 +512,13 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Supplemental Mathematical Operators code chart.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tifinagh">
       <MemberSignature Language="C#" Value="Tifinagh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Tifinagh = int64(536870912)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.MidCodeCharts.Tifinagh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,7 +528,7 @@
         <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Tifinagh code chart.</summary>
       </Docs>
     </Member>
   </Members>

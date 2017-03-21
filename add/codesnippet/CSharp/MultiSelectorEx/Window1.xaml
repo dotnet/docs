@@ -1,0 +1,15 @@
+﻿<Window x:Class="MultiSelectorEx.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:MultiSelectorEx"
+    Title="Window1" Height="300" Width="300">
+
+    <StackPanel>
+        <Button Width="100" Height="50" Content="Add Some Items" />
+        <my:MyMultiSelector x:Name="myControl"  >
+            <ListBoxItem>One</ListBoxItem>
+            <ListBoxItem>Two</ListBoxItem>
+            <ListBoxItem>Three</ListBoxItem>
+        </my:MyMultiSelector>
+    </StackPanel>
+</Window>

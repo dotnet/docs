@@ -1,0 +1,1 @@
+            bool reconnect = settings.ReconnectTransportOnFailure;

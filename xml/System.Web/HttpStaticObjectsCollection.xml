@@ -1,8 +1,10 @@
 <Type Name="HttpStaticObjectsCollection" FullName="System.Web.HttpStaticObjectsCollection">
   <TypeSignature Language="C#" Value="public sealed class HttpStaticObjectsCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpStaticObjectsCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpStaticObjectsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,30 +16,34 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a collection of application-scoped objects for the <see cref="System.Web.HttpApplicationState.StaticObjects%2A" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpStaticObjectsCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpStaticObjectsCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,35 +54,59 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The array to copy the <see cref="T:System.Web.HttpStaticObjectsCollection" /> into.</param>
+        <param name="index">The member of the collection where copying starts.</param>
+        <summary>Copies members of an <see cref="T:System.Web.HttpStaticObjectsCollection" /> into an array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Object> array of the required size and copies an existing <xref:System.Web.HttpApplicationState.StaticObjects%2A> collection into it.  
+  
+ [!code-vb[Classic HttpStaticObjectsCollection.CopyTo Example#1](~/add/codesnippet/visualbasic/m-system.web.httpstatico_1_1.vb)]
+ [!code-cs[Classic HttpStaticObjectsCollection.CopyTo Example#1](~/add/codesnippet/csharp/m-system.web.httpstatico_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of objects in the collection.</summary>
+        <value>The number of objects in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The code in the following example executes only if the number of objects in the collection exceeds five.  
+  
+ [!code-cs[Classic HttpStaticObjectsCollection.Count Example#1](~/add/codesnippet/csharp/p-system.web.httpstatico_1_1.cs)]
+ [!code-vb[Classic HttpStaticObjectsCollection.Count Example#1](~/add/codesnippet/visualbasic/p-system.web.httpstatico_1_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
       <MemberSignature Language="C#" Value="public static System.Web.HttpStaticObjectsCollection Deserialize (System.IO.BinaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.HttpStaticObjectsCollection Deserialize(class System.IO.BinaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.Deserialize(System.IO.BinaryReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,18 +116,27 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> used to read the serialized collection from a stream or encoded string.</param>
+        <summary>Creates an <see cref="T:System.Web.HttpStaticObjectsCollection" /> object from a binary file that was written by using the <see cref="System.Web.HttpStaticObjectsCollection.Serialize%2A" /> method.</summary>
+        <returns>An <see cref="T:System.Web.HttpStaticObjectsCollection" /> populated with the contents from a binary file written using the <see cref="System.Web.HttpStaticObjectsCollection.Serialize%2A" /> method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Deserialize method is used to read the contents of a <xref:System.Web.HttpStaticObjectsCollection> object that is stored in a storage location that is created by the <xref:System.Web.HttpStaticObjectsCollection.Serialize%2A> method. To serialize an <xref:System.Web.HttpStaticObjectsCollection>, use the <xref:System.Web.HttpStaticObjectsCollection.Serialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,17 +144,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a dictionary enumerator used for iterating through the key-and-value pairs contained in the collection.</summary>
+        <returns>The enumerator for the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an enumerator for the <xref:System.Web.HttpApplicationState.StaticObjects%2A> collection.  
+  
+ [!code-cs[Classic HttpStaticObjectsCollection.GetEnumerator Example#1](~/add/codesnippet/csharp/m-system.web.httpstatico_2_1.cs)]
+ [!code-vb[Classic HttpStaticObjectsCollection.GetEnumerator Example#1](~/add/codesnippet/visualbasic/m-system.web.httpstatico_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObject">
       <MemberSignature Language="C#" Value="public object GetObject (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetObject(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.GetObject(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,52 +176,78 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The case-insensitive name of the object to return.</param>
+        <summary>Returns the object with the specified name from the collection. This property is an alternative to the <see langword="this" /> accessor.</summary>
+        <returns>An object from the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example returns an object named ArrayList1 from the <xref:System.Web.HttpApplicationState.StaticObjects%2A> collection and copies it to an object variable.  
+  
+ [!code-cs[Classic HttpStaticObjectsCollection.GetObject Example#1](~/add/codesnippet/csharp/m-system.web.httpstatico_0_1.cs)]
+ [!code-vb[Classic HttpStaticObjectsCollection.GetObject Example#1](~/add/codesnippet/visualbasic/m-system.web.httpstatico_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>Always returns <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The code in the following example executes only if the collection is read-only.  
+  
+ [!code-vb[Classic HttpStaticObjectsCollection.IsReadOnly Example#1](~/add/codesnippet/visualbasic/p-system.web.httpstatico_3_1.vb)]
+ [!code-cs[Classic HttpStaticObjectsCollection.IsReadOnly Example#1](~/add/codesnippet/csharp/p-system.web.httpstatico_3_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the collection is synchronized (that is, thread-safe).</summary>
+        <value>In this implementation, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public object this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,35 +257,50 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The case-insensitive name of the object to get.</param>
+        <summary>Gets the object with the specified name from the collection.</summary>
+        <value>An object from the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example retrieves an object named ArrayList1 from the <xref:System.Web.HttpApplicationState.StaticObjects%2A> collection and copies it to an object variable.  
+  
+ [!code-vb[Classic HttpStaticObjectsCollection.this Example#1](~/add/codesnippet/visualbasic/p-system.web.httpstatico_2_1.vb)]
+ [!code-cs[Classic HttpStaticObjectsCollection.this Example#1](~/add/codesnippet/csharp/p-system.web.httpstatico_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NeverAccessed">
       <MemberSignature Language="C#" Value="public bool NeverAccessed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NeverAccessed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.NeverAccessed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value indicating whether the collection has been accessed before.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.HttpStaticObjectsCollection" /> has never been accessed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.BinaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.BinaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.Serialize(System.IO.BinaryWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,26 +310,52 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> used to write the serialized collection to a stream or encoded string.</param>
+        <summary>Writes the contents of the collection to a <see cref="T:System.IO.BinaryWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the Serialize method to write the contents of a <xref:System.Web.HttpStaticObjectsCollection> object to a <xref:System.IO.BinaryWriter> object. To retrieve a serialized <xref:System.Web.HttpStaticObjectsCollection> object, use the <xref:System.Web.HttpStaticObjectsCollection.Deserialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>The current <see cref="T:System.Web.HttpStaticObjectsCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Program code should generally perform synchronized operations on the SyncRoot of a collection, not directly on the collection itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection object.  
+  
+ The object returned in this implementation is the <xref:System.Web.HttpStaticObjectsCollection> itself.  
+  
+   
+  
+## Examples  
+ The following example creates an object used to synchronize access to the <xref:System.Web.HttpStaticObjectsCollection>.  
+  
+ [!code-vb[Classic HttpStaticObjectsCollection.SyncRoot Example#1](~/add/codesnippet/visualbasic/p-system.web.httpstatico_0_1.vb)]
+ [!code-cs[Classic HttpStaticObjectsCollection.SyncRoot Example#1](~/add/codesnippet/csharp/p-system.web.httpstatico_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

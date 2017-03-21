@@ -1,8 +1,10 @@
 <Type Name="UserNameSecurityToken" FullName="System.IdentityModel.Tokens.UserNameSecurityToken">
   <TypeSignature Language="C#" Value="public class UserNameSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserNameSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.UserNameSecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token that is based upon a user name and password.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use UserNameSecurityToken class to provide authentication credentials in the form of a user name and password.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UserNameSecurityToken (string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.UserNameSecurityToken.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -27,18 +38,26 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="userName">A user name. Sets the <see cref="System.IdentityModel.Tokens.UserNameSecurityToken.UserName%2A" /> property.</param>
+        <param name="password">A password for the user name. Sets the <see cref="System.IdentityModel.Tokens.UserNameSecurityToken.Password%2A" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> class using the specified user name and password.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="password" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UserNameSecurityToken (string userName, string password, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userName, string password, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.UserNameSecurityToken.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,113 +66,163 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">To be added.</param>
-        <param name="password">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="userName">A user name. Sets the <see cref="System.IdentityModel.Tokens.UserNameSecurityToken.UserName%2A" /> property.</param>
+        <param name="password">A password for the user name. Sets the <see cref="System.IdentityModel.Tokens.UserNameSecurityToken.Password%2A" /> property.</param>
+        <param name="id">A unique identifier of the security token. Sets the <see cref="System.IdentityModel.Tokens.UserNameSecurityToken.Id%2A" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> class using the specified user name, password, and unique identifier.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="password" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="id" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public override string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a unique identifier of the security token.</summary>
+        <value>A unique identifier of the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Id property is usually in the format of a URI with a GUID.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Password">
       <MemberSignature Language="C#" Value="public string Password { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the password for the user name associated with the security token.</summary>
+        <value>The password for the user name associated with the security token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityKeys">
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.SecurityKeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the cryptographic keys associated with the security token.</summary>
+        <value>A <see cref="System.Collections.ObjectModel.ReadOnlyCollection%601" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens cannot be used for cryptographic operations, by default, so the SecurityKeys property returns an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">
       <MemberSignature Language="C#" Value="public string UserName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user name that is associated with the security token.</summary>
+        <value>The user name that is associated with the security token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidFrom">
       <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the first instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the ValidFrom and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The ValidFrom and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidTo">
       <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the last instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and ValidTo properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and ValidTo properties represent the first and last instants in time in which the security token is valid, respectively.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

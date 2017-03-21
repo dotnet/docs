@@ -1,0 +1,50 @@
+<!-- <SnippetColorExample> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+<StackPanel Margin="20">
+  
+  <!-- This rectangle fill uses a Color with ScRGB values to
+       create a completely opaque blue. -->
+  <Rectangle Width="50" Height="50"  Margin="10">
+     <Rectangle.Fill>
+       <SolidColorBrush>
+         <SolidColorBrush.Color>
+
+           <!-- Describes the brush's color using
+                ScRGB values. Each value has a range of 0-1.  -->
+           <Color ScA="1.0" ScR="0.0" ScG="0.0" ScB="1.0" />
+        </SolidColorBrush.Color>
+      </SolidColorBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+
+  <!-- This rectangle fill uses a Color with sRGB values to
+       create a completely opaque blue. -->
+  <Rectangle Width="50" Height="50"  Margin="10">
+     <Rectangle.Fill>
+       <SolidColorBrush>
+         <SolidColorBrush.Color>
+
+           <!-- Describes the brush's color using
+                sRGB values. Each value is a byte with range of 0-255.  -->
+           <Color A="255" R="0" G="0" B="255" />
+        </SolidColorBrush.Color>
+      </SolidColorBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+
+  <!-- <SnippetColorContextXAML> -->
+  <!-- This rectangle fill uses the sRGB color profile and values to
+       create a complete opaque blue. -->
+  <Rectangle Width="50" Height="50"  Margin="10">
+    <Rectangle.Fill>
+      <SolidColorBrush Color="ContextColor 
+	   file://C:/WINDOWS/system32/spool/drivers/color/sRGB%20Color%20Space%20Profile.icm
+	   1.0,0.0,0.0,1.0"/>
+    </Rectangle.Fill>
+  </Rectangle>
+  <!-- </SnippetColorContextXAML> -->
+
+</StackPanel>
+</Page>
+<!-- </SnippetColorExample> -->

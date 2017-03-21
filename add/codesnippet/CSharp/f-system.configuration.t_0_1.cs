@@ -1,0 +1,2 @@
+            string absoluteMax =
+                TimeSpanValidatorAttribute.TimeSpanMaxValue;

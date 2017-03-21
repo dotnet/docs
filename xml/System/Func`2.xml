@@ -1,36 +1,27 @@
 <Type Name="Func&lt;T,TResult&gt;" FullName="System.Func&lt;T,TResult&gt;">
   <TypeSignature Language="C#" Value="public delegate TResult Func&lt;in T,out TResult&gt;(T arg);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`2&lt;- T, + TResult&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Func`2" />
   <AssemblyInfo>
-    <AssemblyName>System.Runtime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <TypeParameters>
-    <TypeParameter Name="T">
-      <Constraints>
-        <ParameterAttribute>Contravariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
-    <TypeParameter Name="TResult">
-      <Constraints>
-        <ParameterAttribute>Covariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
+    <TypeParameter Name="T" />
+    <TypeParameter Name="TResult" />
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Parameters>
     <Parameter Name="arg" Type="T" />
   </Parameters>
@@ -38,11 +29,56 @@
     <ReturnType>TResult</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <param name="arg">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
+    <param name="arg">The parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has one parameter and returns a value of the type specified by the <paramref name="TResult" /> parameter.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#7a86aba051da82dd).</summary>
+    <returns>The return value of the method that this delegate encapsulates.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#7a86aba051da82dd). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have one parameter that is passed to it by value, and that it must return a value.  
+  
+> [!NOTE]
+>  To reference a method that has one parameter and returns `void` (or in Visual Basic, that is declared as a `Sub` rather than as a `Function`), use the generic <xref:System.Action%601> delegate instead.  
+  
+ When you use the Func(T, delegate, you do not have to explicitly define a delegate that encapsulates a method with a single parameter. For example, the following code explicitly declares a delegate named `ConvertMethod` and assigns a reference to the `UppercaseString` method to its delegate instance.  
+  
+ [!code-cs[System.Func~2#1](~/add/codesnippet/csharp/t-system.func`2_1.cs)]
+ [!code-vb[System.Func~2#1](~/add/codesnippet/visualbasic/t-system.func`2_1.vb)]  
+  
+ The following example simplifies this code by instantiating the Func(T, delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-vb[System.Func~2#2](~/add/codesnippet/visualbasic/t-system.func`2_2.vb)]
+ [!code-cs[System.Func~2#2](~/add/codesnippet/csharp/t-system.func`2_2.cs)]  
+  
+ You can also use the Func(T, delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](../Topic/Anonymous%20Methods%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Func~2#3](~/add/codesnippet/csharp/t-system.func`2_3.cs)]  
+  
+ You can also assign a lambda expression to a Func(T, delegate, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md) and [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Func~2#4](~/add/codesnippet/csharp/t-system.func`2_4.cs)]
+ [!code-vb[System.Func~2#4](~/add/codesnippet/visualbasic/t-system.func`2_4.vb)]  
+  
+ The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate. In particular, because many methods of types in the <xref:System.Linq> namespace have Func(T, parameters, you can pass these methods a lambda expression without explicitly instantiating a Func(T, delegate.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a Func(T, delegate. This example declares a Func(T, variable and assigns it a lambda expression that converts the characters in a string to uppercase. The delegate that encapsulates this method is subsequently passed to the <xref:System.Linq.Enumerable.Select%2A?displayProperty=fullName> method to change the strings in an array of strings to uppercase.  
+  
+ [!code-cs[System.Func~2#5](~/add/codesnippet/csharp/t-system.func`2_5.cs)]
+ [!code-vb[System.Func~2#5](~/add/codesnippet/visualbasic/t-system.func`2_5.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -1,6 +1,7 @@
 <Type Name="CreateWorkflowOwnerCommand" FullName="System.Activities.DurableInstancing.CreateWorkflowOwnerCommand">
   <TypeSignature Language="C#" Value="public sealed class CreateWorkflowOwnerCommand : System.Runtime.DurableInstancing.InstancePersistenceCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CreateWorkflowOwnerCommand extends System.Runtime.DurableInstancing.InstancePersistenceCommand" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Use this persistence command to register a workflow service host as a lock owner in the persistence database.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CreateWorkflowOwnerCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceOwnerMetadata">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt; InstanceOwnerMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt; InstanceOwnerMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.InstanceOwnerMetadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,14 +43,15 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata about the instance owner (currently has a one-to-one mapping to a service host) in a dictionary with an XName object as the key and an <see cref="System.Runtime.Persistence.InstanceValue" /> object as a value.</summary>
+        <value>The metadata about the instance owner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTransactionEnlistmentOptional">
       <MemberSignature Language="C#" Value="protected override bool IsTransactionEnlistmentOptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTransactionEnlistmentOptional" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.IsTransactionEnlistmentOptional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -65,6 +69,7 @@
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="protected override void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Validate(class System.Runtime.DurableInstancing.InstanceView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

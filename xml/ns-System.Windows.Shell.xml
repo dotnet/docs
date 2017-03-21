@@ -1,6 +1,13 @@
 <Namespace Name="System.Windows.Shell">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains types that provide managed code access to the enhanced functionality of the [!INCLUDE[win7](~/add/includes/win7-md.md)] taskbar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[win7](~/add/includes/win7-md.md)] taskbar provides enhanced functionality that enables you to use the taskbar button to communicate status to a user and expose common tasks when the window is minimized or hidden. The functionality exposed by the types in the System.Windows.Shell namespace is not available in versions of Windows prior to [!INCLUDE[win7](~/add/includes/win7-md.md)]. In [!INCLUDE[win7](~/add/includes/win7-md.md)], some functionality might not be available depending on the user's settings.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

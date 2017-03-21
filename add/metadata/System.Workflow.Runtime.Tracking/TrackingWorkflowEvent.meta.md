@@ -1,0 +1,4 @@
+---
+uid: System.Workflow.Runtime.Tracking.TrackingWorkflowEvent
+internalonly: False
+---

@@ -1,0 +1,1 @@
+            TimeSpan rollover = settings.SessionKeyRolloverInterval;

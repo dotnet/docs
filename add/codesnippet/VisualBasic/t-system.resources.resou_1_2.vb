@@ -1,0 +1,1 @@
+      Dim rm As New ResourceManager(GetType(MyCompany.StringResources))

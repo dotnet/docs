@@ -1,0 +1,1 @@
+            TimeSpan sessionKeyRenewalInterval = settings.SessionKeyRenewalInterval;

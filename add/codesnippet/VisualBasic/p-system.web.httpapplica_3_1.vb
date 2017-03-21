@@ -1,0 +1,3 @@
+If Application.Count > 5 Then
+   ' ...
+End If

@@ -1,0 +1,1 @@
+      returnTime = DateTime.SpecifyKind(cal.AddMinutes(time, minutes), time.Kind)

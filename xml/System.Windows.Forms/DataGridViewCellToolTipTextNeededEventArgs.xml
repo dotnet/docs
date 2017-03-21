@@ -1,8 +1,10 @@
 <Type Name="DataGridViewCellToolTipTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewCellToolTipTextNeededEventArgs : System.Windows.Forms.DataGridViewCellEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellToolTipTextNeededEventArgs extends System.Windows.Forms.DataGridViewCellEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,25 +12,67 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.CellToolTipTextNeeded" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event occurs only when the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event, the ToolTip text you specify in the handler is shown whenever the mouse pointer is over a cell and the control <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A> property value is `true`. The <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event is useful when you want to display ToolTips determined by the current state or value of a cell.  
+  
+ The <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A?displayProperty=fullName> property is retrieved, either programmatically or when the mouse pointer enters a cell.  
+  
+ You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A> properties to determine the state or value of a cell, and use this information to set the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property, which the event value overrides.  
+  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example fills the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A> with information from hidden cells in the <xref:System.Windows.Forms.DataGridView>.  
+  
+ [!code-cs[System.Windows.Forms.DataGridView_NeededEvents#20](~/add/codesnippet/csharp/t-system.windows.forms.d_43_1.cs)]
+ [!code-vb[System.Windows.Forms.DataGridView_NeededEvents#20](~/add/codesnippet/visualbasic/t-system.windows.forms.d_43_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ToolTipText">
       <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ToolTip text.</summary>
+        <value>The current ToolTip text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property initially contains the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A?displayProperty=fullName> property if it has been set for a cell.  
+  
+   
+  
+## Examples  
+ The following code example sets the ToolTipText property depending on which cell the cursor is over. In this example, the ToolTipText is filled with information from hidden columns in the <xref:System.Windows.Forms.DataGridView>.  
+  
+ [!code-cs[System.Windows.Forms.DataGridView_NeededEvents#20](~/add/codesnippet/csharp/p-system.windows.forms.d_299_1.cs)]
+ [!code-vb[System.Windows.Forms.DataGridView_NeededEvents#20](~/add/codesnippet/visualbasic/p-system.windows.forms.d_299_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

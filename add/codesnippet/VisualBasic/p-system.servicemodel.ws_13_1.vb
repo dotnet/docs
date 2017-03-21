@@ -1,0 +1,1 @@
+		Dim envelopeVersion As EnvelopeVersion = binding1.EnvelopeVersion

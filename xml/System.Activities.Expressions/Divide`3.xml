@@ -1,6 +1,7 @@
 <Type Name="Divide&lt;TLeft,TRight,TResult&gt;" FullName="System.Activities.Expressions.Divide&lt;TLeft,TRight,TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class Divide&lt;TLeft,TRight,TResult&gt; : System.Activities.CodeActivity&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Divide`3&lt;TLeft, TRight, TResult&gt; extends System.Activities.CodeActivity`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.Divide`3" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,16 +19,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TLeft">To be added.</typeparam>
-    <typeparam name="TRight">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TLeft">The type of the left operand.</typeparam>
+    <typeparam name="TRight">The type of the right operand.</typeparam>
+    <typeparam name="TResult">The type of the result.</typeparam>
+    <summary>Computes the quotient of a division operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Divide ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Divide`3.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -35,13 +37,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.Divide%603" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Divide`3.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -62,6 +65,7 @@
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override TResult Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TResult Execute(class System.Activities.CodeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.Divide`3.Execute(System.Activities.CodeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +87,7 @@
     <Member MemberName="Left">
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;TLeft&gt; Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!TLeft&gt; Left" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.Divide`3.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,14 +105,15 @@
         <ReturnType>System.Activities.InArgument&lt;TLeft&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the left operand. The left operand is the divisor.</summary>
+        <value>The left operand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;TRight&gt; Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!TRight&gt; Right" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.Divide`3.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,8 +131,8 @@
         <ReturnType>System.Activities.InArgument&lt;TRight&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the right operand. The right operand is the dividend.</summary>
+        <value>The right operand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,6 +1,13 @@
 <Namespace Name="System.Runtime.Caching.Configuration">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The System.Runtime.Caching.Configuration namespace contains configuration handler classes for the .NET Framework caching feature.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configuration handler classes in this namespace are for general caching used with .NET Framework applications. The configuration handlers for ASP.NET caching are contained in the <xref:System.Web.Configuration> namespace.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

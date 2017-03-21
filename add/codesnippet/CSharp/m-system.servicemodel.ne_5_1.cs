@@ -1,0 +1,1 @@
+	    NetTcpBinding bConfigurationName = new NetTcpBinding("MyConfiguration");

@@ -1,0 +1,2 @@
+        Dim item As New SyndicationItem("Item Title", "Item Content", New Uri("http:' Item/Alternate/Link"))
+        item.Contributors.Add(New SyndicationPerson("jesper@contoso.com", "Jesper Aaberg", "http:' contoso/jesper"))

@@ -1,0 +1,2 @@
+      ServiceDescription^ myServiceDescription = ServiceDescription::Read( "Sample_cpp.wsdl" );
+      ServiceDescriptionFormatExtensionCollection^ myCollection = gcnew ServiceDescriptionFormatExtensionCollection( myServiceDescription );

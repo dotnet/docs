@@ -1,6 +1,7 @@
 <Type Name="EasingPoint3DKeyFrame" FullName="System.Windows.Media.Animation.EasingPoint3DKeyFrame">
   <TypeSignature Language="C#" Value="public class EasingPoint3DKeyFrame : System.Windows.Media.Animation.Point3DKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EasingPoint3DKeyFrame extends System.Windows.Media.Animation.Point3DKeyFrame" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingPoint3DKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A class that enables you to associate easing functions with a <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" /> key frame animation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used as part of a <xref:System.Windows.Media.Animation.Point3DKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> to animate a <xref:System.Windows.Media.Media3D.Point3D> property value along a set of key frames. This <xref:System.Windows.Media.Animation.Point3DKeyFrame> interpolates between the <xref:System.Windows.Media.Media3D.Point3D> value of the previous key frame and its own value linearly with an easing function to produce its output value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EasingPoint3DKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingPoint3DKeyFrame.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -24,13 +33,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingPoint3DKeyFrame" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EasingPoint3DKeyFrame (System.Windows.Media.Media3D.Point3D value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Point3D value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingPoint3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -40,14 +50,15 @@
         <Parameter Name="value" Type="System.Windows.Media.Media3D.Point3D" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The initial <see cref="T:System.Windows.Media.Media3D.Point3D" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingPoint3DKeyFrame" /> class with the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EasingPoint3DKeyFrame (System.Windows.Media.Media3D.Point3D value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Point3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingPoint3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Animation.KeyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,15 +69,16 @@
         <Parameter Name="keyTime" Type="System.Windows.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="keyTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The initial <see cref="T:System.Windows.Media.Media3D.Point3D" /> value.</param>
+        <param name="keyTime">The initial key time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingPoint3DKeyFrame" /> class with the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> value and key time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EasingPoint3DKeyFrame (System.Windows.Media.Media3D.Point3D value, System.Windows.Media.Animation.KeyTime keyTime, System.Windows.Media.Animation.IEasingFunction easingFunction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Point3D value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.IEasingFunction easingFunction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingPoint3DKeyFrame.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,16 +90,17 @@
         <Parameter Name="easingFunction" Type="System.Windows.Media.Animation.IEasingFunction" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="keyTime">To be added.</param>
-        <param name="easingFunction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The initial <see cref="T:System.Windows.Media.Media3D.Point3D" /> value.</param>
+        <param name="keyTime">The initial key time.</param>
+        <param name="easingFunction">The easing function.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.EasingPoint3DKeyFrame" /> class with the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> value, key time, and easing function.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingPoint3DKeyFrame.CreateInstanceCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,14 +111,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Freezable" /> derived class. When creating a derived class, you must override this method.</summary>
+        <returns>The new instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+  
+   
+  
+## Examples  
+ The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+  
+ [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/add/codesnippet/visualbasic/freezablesample_visualbasic/freezablesample.vb#createinstancecoreexample)]
+ [!code-cs[freezablesample_procedural#CreateInstanceCoreExample](~/add/codesnippet/csharp/freezablesample_csharp/freezablesample.cs#createinstancecoreexample)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction EasingFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction EasingFunction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.EasingPoint3DKeyFrame.EasingFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,14 +144,15 @@
         <ReturnType>System.Windows.Media.Animation.IEasingFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the easing function applied to the key frame.</summary>
+        <value>The easing function applied to the key frame.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EasingFunctionProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingFunctionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingFunctionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingPoint3DKeyFrame.EasingFunctionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,13 +162,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Media.Animation.EasingPoint3DKeyFrame.EasingFunction%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InterpolateValueCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Media3D.Point3D InterpolateValueCore (System.Windows.Media.Media3D.Point3D baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Media3D.Point3D InterpolateValueCore(valuetype System.Windows.Media.Media3D.Point3D baseValue, float64 keyFrameProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingPoint3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Point3D,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,10 +183,10 @@
         <Parameter Name="keyFrameProgress" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="baseValue">To be added.</param>
-        <param name="keyFrameProgress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="baseValue">The value to animate from.</param>
+        <param name="keyFrameProgress">A value between 0.0 and 1.0, inclusive, that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Interpolates, according to the easing function used, between the previous key frame value and the value of the current key frame, using the supplied progress increment.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

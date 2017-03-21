@@ -1,6 +1,7 @@
 <Type Name="DispatcherPriorityAwaitable" FullName="System.Windows.Threading.DispatcherPriorityAwaitable">
   <TypeSignature Language="C#" Value="public struct DispatcherPriorityAwaitable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DispatcherPriorityAwaitable extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherPriorityAwaitable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an awaitable object that asynchronously yields control back to the current dispatcher and provides an opportunity for the dispatcher to process other events</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Threading.Dispatcher.Yield%2A?displayProperty=fullName> method returns a DispatcherPriorityAwaitable.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetAwaiter">
       <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherPriorityAwaiter GetAwaiter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Threading.DispatcherPriorityAwaiter GetAwaiter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherPriorityAwaitable.GetAwaiter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -27,8 +36,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an object that waits for the completion of an asynchronous task.</summary>
+        <returns>An object that waits for the completion of an asynchronous task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

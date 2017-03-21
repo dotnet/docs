@@ -1,0 +1,1 @@
+            TimeSpan timestamp = settings.TimestampValidityDuration;

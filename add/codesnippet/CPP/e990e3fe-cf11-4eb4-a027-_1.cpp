@@ -1,0 +1,1 @@
+    UIPermission ^ uiPerm2 = gcnew UIPermission(PermissionState::None);

@@ -1,0 +1,1 @@
+   if (str == nullptr || str->Equals(String::Empty))

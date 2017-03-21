@@ -1,8 +1,10 @@
 <Type Name="IMessage" FullName="System.Runtime.Remoting.Messaging.IMessage">
   <TypeSignature Language="C#" Value="public interface IMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessage" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -12,16 +14,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains communication data sent between cooperating message sinks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message sinks that use IMessage can be placed in the client sink chains or in the server sink chains. A message object is passed from message sink to message sink through the chain, and carries a set of named properties such as action identifiers, envoy information, and parameters.  
+  
+ An object that implements the IMessage interface meets the minimum qualifications to be considered a message object. The exact object received by a message sink does not have to be passed on to the next sink, but this is often the case.  
+  
+ Although the objects in the property bag do not have to be serializable, the message sink implementer needs to consider this, since the properties that flow out of the application domain must be serializable.  
+  
+   
+  
+## Examples  
+ [!code-vb[ChannelServices_SyncDispatchMessage#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_60_1.vb)]
+ [!code-cs[ChannelServices_SyncDispatchMessage#1](~/add/codesnippet/csharp/t-system.runtime.remotin_60_1.cs)]
+ [!code-cpp[ChannelServices_SyncDispatchMessage#1](~/add/codesnippet/cpp/t-system.runtime.remotin_60_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMessage.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -33,9 +55,20 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.Collections.IDictionary" /> that represents a collection of the message's properties.</summary>
+        <value>A dictionary that represents a collection of the message's properties.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cs[IMessageSink_Client#2](~/add/codesnippet/csharp/p-system.runtime.remotin_99_1.cs)]
+ [!code-vb[IMessageSink_Client#2](~/add/codesnippet/visualbasic/p-system.runtime.remotin_99_1.vb)]
+ [!code-cpp[IMessageSink_Client#2](~/add/codesnippet/cpp/p-system.runtime.remotin_99_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

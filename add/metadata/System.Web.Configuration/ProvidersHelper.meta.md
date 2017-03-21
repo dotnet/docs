@@ -1,0 +1,14 @@
+---
+uid: System.Web.Configuration.ProvidersHelper
+internalonly: False
+---
+
+---
+uid: System.Web.Configuration.ProvidersHelper.InstantiateProvider(System.Configuration.ProviderSettings,System.Type)
+internalonly: False
+---
+
+---
+uid: System.Web.Configuration.ProvidersHelper.InstantiateProviders(System.Configuration.ProviderSettingsCollection,System.Configuration.Provider.ProviderCollection,System.Type)
+internalonly: False
+---

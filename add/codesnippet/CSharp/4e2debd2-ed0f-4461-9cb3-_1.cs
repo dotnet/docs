@@ -1,0 +1,1 @@
+            transportBindingElement.BuildChannelFactory<IOutputChannel>(context);

@@ -1,0 +1,1 @@
+    Response.Write("Value of cache key: <B>" + Server.HtmlEncode(CType(Cache("Key1"),String)) + "</B>")

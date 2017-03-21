@@ -1,22 +1,33 @@
 <Type Name="IHttpModule" FullName="System.Web.IHttpModule">
   <TypeSignature Language="C#" Value="public interface IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHttpModule" />
+  <TypeSignature Language="DocId" Value="T:System.Web.IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides module initialization and disposal events to the implementing class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For an example of a custom module that implements IHttpModule, see [Walkthrough: Creating and Registering a Custom HTTP Module](../Topic/Walkthrough:%20Creating%20and%20Registering%20a%20Custom%20HTTP%20Module.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IHttpModule.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -24,16 +35,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disposes of the resources (other than memory) used by the module that implements <see cref="T:System.Web.IHttpModule" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Dispose method performs any final cleanup work prior to removal of the module from the execution pipeline.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
       <MemberSignature Language="C#" Value="public void Init (System.Web.HttpApplication context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.HttpApplication context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IHttpModule.Init(System.Web.HttpApplication)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,9 +63,21 @@
         <Parameter Name="context" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.Web.HttpApplication" /> that provides access to the methods, properties, and events common to all application objects within an ASP.NET application</param>
+        <summary>Initializes a module and prepares it to handle requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Init method to register event handling methods with specific events.  
+  
+   
+  
+## Examples  
+ For an example of a custom module that implements <xref:System.Web.IHttpModule>, see [Walkthrough: Creating and Registering a Custom HTTP Module](../Topic/Walkthrough:%20Creating%20and%20Registering%20a%20Custom%20HTTP%20Module.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

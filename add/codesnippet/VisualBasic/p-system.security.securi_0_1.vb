@@ -1,0 +1,1 @@
+        Dim childrenCount As String = xmlElement.Children.Count.ToString()

@@ -1,8 +1,10 @@
 <Type Name="WebBaseEventCollection" FullName="System.Web.Management.WebBaseEventCollection">
   <TypeSignature Language="C#" Value="public sealed class WebBaseEventCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebBaseEventCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseEventCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,33 +12,71 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:System.Web.Management.WebBaseEvent" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The WebBaseEventCollection class is used to deliver a collection of health-monitoring events to providers such as the <xref:System.Web.Management.SqlWebEventProvider>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the WebBaseEventCollection class.  
+  
+ [!code-vb[System.Web.Management.WebBaseEventCollection#1](~/add/codesnippet/visualbasic/t-system.web.management._20_1.vb)]
+ [!code-cs[System.Web.Management.WebBaseEventCollection#1](~/add/codesnippet/csharp/t-system.web.management._20_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebBaseEventCollection (System.Collections.ICollection events);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.#ctor(System.Collections.ICollection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="events" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="events">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="events">The collection of <see cref="T:System.Web.Management.WebBaseEvent" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseEventCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WebBaseEventCollection constructor allows you to create an instance of the <xref:System.Web.Management.WebBaseEventCollection> class and initialize it with a collection of <xref:System.Web.Management.WebBaseEvent> objects.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use this constructor.  
+  
+ [!code-vb[System.Web.Management.WebBaseEventCollection#2](~/add/codesnippet/visualbasic/1c566865-43ba-46e4-9a97-_1.vb)]
+ [!code-cs[System.Web.Management.WebBaseEventCollection#2](~/add/codesnippet/csharp/1c566865-43ba-46e4-9a97-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="events" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Management.WebBaseEvent value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Management.WebBaseEvent value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.Contains(System.Web.Management.WebBaseEvent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,18 +86,31 @@
         <Parameter Name="value" Type="System.Web.Management.WebBaseEvent" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Web.Management.WebBaseEvent" /> object to search for.</param>
+        <summary>Indicates whether the collection contains the specified <see cref="T:System.Web.Management.WebBaseEvent" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the Contains property.  
+  
+ [!code-vb[System.Web.Management.WebBaseEventCollection#5](~/add/codesnippet/visualbasic/7eb395ac-bbc0-45a2-b8d0-_1.vb)]
+ [!code-cs[System.Web.Management.WebBaseEventCollection#5](~/add/codesnippet/csharp/7eb395ac-bbc0-45a2-b8d0-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Management.WebBaseEvent value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Management.WebBaseEvent value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.IndexOf(System.Web.Management.WebBaseEvent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,18 +120,31 @@
         <Parameter Name="value" Type="System.Web.Management.WebBaseEvent" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Web.Management.WebBaseEvent" /> object for which to obtain the index.</param>
+        <summary>Gets the index of the specified <see cref="T:System.Web.Management.WebBaseEvent" /> object.</summary>
+        <returns>The index of the specified <see cref="T:System.Web.Management.WebBaseEvent" /> object within the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the IndexOf property.  
+  
+ [!code-vb[System.Web.Management.WebBaseEventCollection#4](~/add/codesnippet/visualbasic/a94f58b1-fb7e-4764-b08f-_1.vb)]
+ [!code-cs[System.Web.Management.WebBaseEventCollection#4](~/add/codesnippet/csharp/a94f58b1-fb7e-4764-b08f-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The object is not in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Management.WebBaseEvent this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebBaseEvent Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEventCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,10 +154,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The collection index of the <see cref="T:System.Web.Management.WebBaseEvent" /> object you want to retrieve.</param>
+        <summary>Gets the <see cref="T:System.Web.Management.WebBaseEvent" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.Web.Management.WebBaseEvent" /> object at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the Item property.  
+  
+ [!code-vb[System.Web.Management.WebBaseEventCollection#3](~/add/codesnippet/visualbasic/p-system.web.management._43_1.vb)]
+ [!code-cs[System.Web.Management.WebBaseEventCollection#3](~/add/codesnippet/csharp/p-system.web.management._43_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is outside the range of the collection.</exception>
       </Docs>
     </Member>
   </Members>

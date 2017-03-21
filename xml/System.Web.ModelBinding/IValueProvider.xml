@@ -1,19 +1,21 @@
 <Type Name="IValueProvider" FullName="System.Web.ModelBinding.IValueProvider">
   <TypeSignature Language="C#" Value="public interface IValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValueProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the methods that are required for a value provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ContainsPrefix">
       <MemberSignature Language="C#" Value="public bool ContainsPrefix (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsPrefix(string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IValueProvider.ContainsPrefix(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -26,15 +28,17 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix.</param>
+        <summary>Returns a value that specifies whether the collection contains the specified prefix.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified prefix; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ValueProviderResult GetValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IValueProvider.GetValue(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,9 +51,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key.</param>
+        <summary>Returns a value object using the specified key.</summary>
+        <returns>The value object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

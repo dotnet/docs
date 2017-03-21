@@ -1,6 +1,7 @@
 <Type Name="FlowDecision" FullName="System.Activities.Statements.FlowDecision">
   <TypeSignature Language="C#" Value="public sealed class FlowDecision : System.Activities.Statements.FlowNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FlowDecision extends System.Activities.Statements.FlowNode" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.FlowDecision" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A specialized <see cref="T:System.Activities.Statements.FlowNode" /> that provides the ability to model a conditional node with two outcomes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ FlowDecision uses a condition and defines actions to take if the condition is `true` or `false`.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a FlowDecision node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FlowDecision ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.FlowDecision.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -24,13 +40,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FlowDecision (System.Activities.Activity&lt;bool&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity`1&lt;bool&gt; condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.FlowDecision.#ctor(System.Activities.Activity{System.Boolean})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,14 +66,24 @@
         <Parameter Name="condition" Type="System.Activities.Activity&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="condition">The condition the <see cref="T:System.Activities.Statements.FlowDecision" /> is testing.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class with the specified condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FlowDecision (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,bool&gt;&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, bool&gt;&gt; condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.FlowDecision.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,System.Boolean}})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -57,14 +93,24 @@
         <Parameter Name="condition" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,System.Boolean&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="condition">The condition the <see cref="T:System.Activities.Statements.FlowDecision" /> is testing.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class with the specified condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
       <MemberSignature Language="C#" Value="public System.Activities.Activity&lt;bool&gt; Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity`1&lt;bool&gt; Condition" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowDecision.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,14 +125,29 @@
         <ReturnType>System.Activities.Activity&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the condition the <see cref="T:System.Activities.Statements.FlowDecision" /> is testing.</summary>
+        <value>A value expression that represents the condition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the condition evaluates to `true`, the <xref:System.Activities.Statements.FlowNode> in the <xref:System.Activities.Statements.FlowDecision.True%2A> property is executed. Otherwise the <xref:System.Activities.Statements.FlowNode> in the <xref:System.Activities.Statements.FlowDecision.False%2A> property is executed.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using the Condition property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowDecision.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,14 +162,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name of this flow decision to be displayed in the activity designer.</summary>
+        <value>The name of the flow decision.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="False">
       <MemberSignature Language="C#" Value="public System.Activities.Statements.FlowNode False { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Statements.FlowNode False" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowDecision.False" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -126,14 +188,24 @@
         <ReturnType>System.Activities.Statements.FlowNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Activities.Statements.FlowNode" /> that is executed when the condition evaluates to <see langword="false" />.</summary>
+        <value>The activity that is executed when the condition evaluates to <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the False property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="True">
       <MemberSignature Language="C#" Value="public System.Activities.Statements.FlowNode True { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Statements.FlowNode True" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowDecision.True" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -151,9 +223,18 @@
         <ReturnType>System.Activities.Statements.FlowNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Activities.Statements.FlowNode" /> that is executed when the condition evaluates to <see langword="true" />.</summary>
+        <value>The activity to execute when the condition evaluates to <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the True property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](../Topic/Fault%20Handling%20in%20a%20Flowchart%20Activity%20Using%20TryCatch.md) sample.  
+  
+ [!code-cs[wfs_FlowChartWithFaultHandling#3](~/add/codesnippet/csharp/flowchartwithfaulthandling/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

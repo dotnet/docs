@@ -1,159 +1,167 @@
 <Type Name="LocalVariableInfo" FullName="System.Reflection.LocalVariableInfo">
   <TypeSignature Language="C#" Value="public class LocalVariableInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalVariableInfo extends System.Object" />
-  <AssemblyInfo>
-    <AssemblyName>System.Reflection</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Reflection.LocalVariableInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Discovers the attributes of a local variable and provides access to local variable metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get a list of local variables in a method, use the <xref:System.Reflection.MethodBody.LocalVariables%2A?displayProperty=fullName> property. Use the <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method to obtain the <xref:System.Reflection.MethodBody> for a <xref:System.Reflection.MethodInfo> object.  
+  
+> [!NOTE]
+>  Local variable names are not persisted in metadata. In Microsoft intermediate language (MSIL), local variables are accessed by their position in the local variable signature.  
+  
+   
+  
+## Examples  
+ The following example defines a test method named `MethodBodyExample`, and displays its local variable information. The <xref:System.Reflection.MethodBase.GetMethodBody%2A> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.LocalVariables%2A> property is then used to obtain a list of LocalVariableInfo objects and to display their types and index order.  
+  
+ This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
+  
+ [!code-cpp[MethodBody#2](~/add/codesnippet/cpp/t-system.reflection.loca_1.cpp)]
+ [!code-vb[MethodBody#2](~/add/codesnippet/visualbasic/t-system.reflection.loca_1.vb)]
+ [!code-cs[MethodBody#2](~/add/codesnippet/csharp/t-system.reflection.loca_1.cs)]  
+[!code-cpp[MethodBody#3](~/add/codesnippet/cpp/t-system.reflection.loca_2.cpp)]
+[!code-vb[MethodBody#3](~/add/codesnippet/visualbasic/t-system.reflection.loca_2.vb)]
+[!code-cs[MethodBody#3](~/add/codesnippet/csharp/t-system.reflection.loca_2.cs)]  
+[!code-cpp[MethodBody#5](~/add/codesnippet/cpp/t-system.reflection.loca_3.cpp)]
+[!code-vb[MethodBody#5](~/add/codesnippet/visualbasic/t-system.reflection.loca_3.vb)]
+[!code-cs[MethodBody#5](~/add/codesnippet/csharp/t-system.reflection.loca_3.cs)]  
+[!code-cpp[MethodBody#6](~/add/codesnippet/cpp/t-system.reflection.loca_4.cpp)]
+[!code-vb[MethodBody#6](~/add/codesnippet/visualbasic/t-system.reflection.loca_4.vb)]
+[!code-cs[MethodBody#6](~/add/codesnippet/csharp/t-system.reflection.loca_4.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected LocalVariableInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.LocalVariableInfo.#ctor" />
       <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.LocalVariableInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is invoked by derived classes during the construction of <xref:System.Reflection.LocalVariableInfo> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPinned">
       <MemberSignature Language="C#" Value="public virtual bool IsPinned { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPinned" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.IsPinned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the object referred to by the local variable is pinned in memory.</summary>
+        <value>
+          <see langword="true" /> if the object referred to by the variable is pinned in memory; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In unsafe code, an object must be pinned before it can be referred to by an unmanaged pointer. While the referenced object is pinned, it cannot be moved by garbage collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalIndex">
       <MemberSignature Language="C#" Value="public virtual int LocalIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LocalIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.LocalIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the index of the local variable within the method body.</summary>
+        <value>An integer value that represents the order of declaration of the local variable within the method body.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Index numbers are assigned to local variables in the order in which they are declared.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalType">
       <MemberSignature Language="C#" Value="public virtual Type LocalType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type LocalType" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.LocalType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the local variable.</summary>
+        <value>The type of the local variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.LocalVariableInfo.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a user-readable string that describes the local variable.</summary>
+        <returns>A string that displays information about the local variable, including the type name, index, and pinned status.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

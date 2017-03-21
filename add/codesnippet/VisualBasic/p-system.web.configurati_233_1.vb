@@ -1,0 +1,1 @@
+profileSetting.Custom = "MyEvaluators.MyCustomeEvaluator, MyCustom.dll"

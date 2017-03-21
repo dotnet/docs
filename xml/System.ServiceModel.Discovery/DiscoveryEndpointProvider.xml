@@ -1,6 +1,7 @@
 <Type Name="DiscoveryEndpointProvider" FullName="System.ServiceModel.Discovery.DiscoveryEndpointProvider">
   <TypeSignature Language="C#" Value="public abstract class DiscoveryEndpointProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DiscoveryEndpointProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryEndpointProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a discovery endpoint.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class uses classes derived from DiscoveryEndpointProvider to get the discovery endpoint to use.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DiscoveryEndpointProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryEndpointProvider.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -24,13 +33,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpointProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDiscoveryEndpoint">
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Discovery.DiscoveryEndpoint GetDiscoveryEndpoint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Discovery.DiscoveryEndpoint GetDiscoveryEndpoint() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -41,9 +51,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the discovery endpoint.</summary>
+        <returns>The discovery endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class calls the GetDiscoveryEndpoint method on the <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> instance passed by the user to get the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> for discovering the services. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> also calls GetDiscoveryEndpoint method whenever it must clone itself.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

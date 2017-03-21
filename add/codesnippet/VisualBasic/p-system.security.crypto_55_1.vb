@@ -1,0 +1,1 @@
+        Dim outputBlockSize As Integer = cryptoTransform.OutputBlockSize

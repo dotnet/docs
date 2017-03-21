@@ -1,8 +1,10 @@
 <Type Name="SoapClientMessage" FullName="System.Web.Services.Protocols.SoapClientMessage">
   <TypeSignature Language="C#" Value="public sealed class SoapClientMessage : System.Web.Services.Protocols.SoapMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapClientMessage extends System.Web.Services.Protocols.SoapMessage" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapClientMessage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,50 +12,99 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the data in a SOAP request sent or a SOAP response received by an XML Web service client at a specific <see cref="T:System.Web.Services.Protocols.SoapMessageStage" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This specific fragment processes the SoapClientMessage passed into the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A?displayProperty=fullName> method of the SOAP extension by writing properties of the SoapClientMessage to the log file.  
+  
+ [!code-cpp[SoapClientMessage#1](~/add/codesnippet/cpp/t-system.web.services.pr_22_1.cpp)]
+ [!code-cs[SoapClientMessage#1](~/add/codesnippet/csharp/t-system.web.services.pr_22_1.cs)]
+ [!code-vb[SoapClientMessage#1](~/add/codesnippet/visualbasic/t-system.web.services.pr_22_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Action">
       <MemberSignature Language="C#" Value="public override string Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see langword="SOAPAction" /> HTTP request header field for the SOAP request or SOAP response.</summary>
+        <value>The <see langword="SOAPAction" /> HTTP request header field for the SOAP request or SOAP response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Action property is available in any <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+  
+   
+  
+## Examples  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This particular fragment outputs to that log file the value of the `SOAPAction` HTTP request header field.  
+  
+ [!code-cpp[SoapClientMessage#2](~/add/codesnippet/cpp/p-system.web.services.pr_23_1.cpp)]
+ [!code-cs[SoapClientMessage#2](~/add/codesnippet/csharp/p-system.web.services.pr_23_1.cs)]
+ [!code-vb[SoapClientMessage#2](~/add/codesnippet/visualbasic/p-system.web.services.pr_23_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Client">
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapHttpClientProtocol Client { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.SoapHttpClientProtocol Client" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.Client" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapHttpClientProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of the client proxy class, which derives from <see cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />.</summary>
+        <value>An instance of the client proxy class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Client property can be accessed during any <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+  
+   
+  
+## Examples  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This particular fragment outputs to the log file the type of the proxy class, if it is `MathSvc`.  
+  
+ [!code-cpp[SoapClientMessage#3](~/add/codesnippet/cpp/p-system.web.services.pr_29_1.cpp)]
+ [!code-cs[SoapClientMessage#3](~/add/codesnippet/csharp/p-system.web.services.pr_29_1.cs)]
+ [!code-vb[SoapClientMessage#3](~/add/codesnippet/visualbasic/p-system.web.services.pr_29_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureInStage">
       <MemberSignature Language="C#" Value="protected override void EnsureInStage ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EnsureInStage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapClientMessage.EnsureInStage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,9 +119,11 @@
     <Member MemberName="EnsureOutStage">
       <MemberSignature Language="C#" Value="protected override void EnsureOutStage ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EnsureOutStage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapClientMessage.EnsureOutStage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,43 +138,84 @@
     <Member MemberName="MethodInfo">
       <MemberSignature Language="C#" Value="public override System.Web.Services.Protocols.LogicalMethodInfo MethodInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.LogicalMethodInfo MethodInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.MethodInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a representation of the method prototype of the XML Web service method for which the SOAP request is intended.</summary>
+        <value>A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> representing the XML Web service method for which the SOAP request is intended.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the MethodInfo property can be accessed during any stage, the method information is only available during <xref:System.Web.Services.Protocols.SoapMessageStage> and <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+  
+   
+  
+## Examples  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This particular fragment outputs to that log file the name of the proxy class method invoked by the client.  
+  
+ [!code-cpp[SoapClientMessage#4](~/add/codesnippet/cpp/p-system.web.services.pr_42_1.cpp)]
+ [!code-cs[SoapClientMessage#4](~/add/codesnippet/csharp/p-system.web.services.pr_42_1.cs)]
+ [!code-vb[SoapClientMessage#4](~/add/codesnippet/visualbasic/p-system.web.services.pr_42_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OneWay">
       <MemberSignature Language="C#" Value="public override bool OneWay { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OneWay" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.OneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the client waits for the server to finish processing an XML Web service method.</summary>
+        <value>
+          <see langword="true" /> if the client does not wait for the server to completely process a method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> or <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> applied to an XML Web service method or XML Web service client can specify whether the XML Web service method is one way by setting the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay%2A> property of the attribute.  
+  
+ The OneWay property can be accessed during any <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+  
+   
+  
+## Examples  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This particular fragment outputs to that log file a phrase stating the XML Web service method is one-way, when the OneWay property is `true`.  
+  
+ [!code-cpp[SoapClientMessage#5](~/add/codesnippet/cpp/p-system.web.services.pr_1_1.cpp)]
+ [!code-cs[SoapClientMessage#5](~/add/codesnippet/csharp/p-system.web.services.pr_1_1.cs)]
+ [!code-vb[SoapClientMessage#5](~/add/codesnippet/visualbasic/p-system.web.services.pr_1_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SoapVersion">
       <MemberSignature Language="C#" Value="public override System.Web.Services.Protocols.SoapProtocolVersion SoapVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapProtocolVersion SoapVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.SoapVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -133,26 +227,51 @@
         <ReturnType>System.Web.Services.Protocols.SoapProtocolVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the version of the SOAP protocol used to communicate with the XML Web service.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Protocols.SoapProtocolVersion" /> values. The default is <see cref="T:System.Web.Services.Protocols.SoapProtocolVersion" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an XML Web service supports SOAP version 1.1,.NET Framework clients communicate with an XML Web service in that version by default. For details on how to change the version of the SOAP protocol, see the <xref:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
       <MemberSignature Language="C#" Value="public override string Url { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapClientMessage.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the URL of the XML Web service.</summary>
+        <value>The URL of the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Url property can be accessed during any <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+  
+   
+  
+## Examples  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This particular fragment outputs to that log file the URL of the XML Web service.  
+  
+ [!code-cpp[SoapClientMessage#6](~/add/codesnippet/cpp/p-system.web.services.pr_45_1.cpp)]
+ [!code-cs[SoapClientMessage#6](~/add/codesnippet/csharp/p-system.web.services.pr_45_1.cs)]
+ [!code-vb[SoapClientMessage#6](~/add/codesnippet/visualbasic/p-system.web.services.pr_45_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,8 +1,10 @@
 <Type Name="IErrorHandler" FullName="Microsoft.JScript.IErrorHandler">
   <TypeSignature Language="C#" Value="public interface IErrorHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IErrorHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IErrorHandler" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,16 +17,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines methods to handle errors that occur when code is being parsed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="OnCompilerError">
       <MemberSignature Language="C#" Value="public bool OnCompilerError (Microsoft.JScript.IVsaFullErrorInfo error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnCompilerError(class Microsoft.JScript.IVsaFullErrorInfo error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IErrorHandler.OnCompilerError(Microsoft.JScript.IVsaFullErrorInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,9 +38,10 @@
         <Parameter Name="error" Type="Microsoft.JScript.IVsaFullErrorInfo" />
       </Parameters>
       <Docs>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="error">An object that contains information about the error.</param>
+        <summary>When implemented in a class, determines how to handle an error that occurs when code is being parsed.</summary>
+        <returns>
+          <see langword="false" /> to handle the error; <see langword="true" /> to ignore the error and continue parsing.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

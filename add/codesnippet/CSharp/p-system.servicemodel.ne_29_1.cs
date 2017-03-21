@@ -1,0 +1,2 @@
+		TransactionProtocol transactionProtocol =
+			binding.TransactionProtocol;

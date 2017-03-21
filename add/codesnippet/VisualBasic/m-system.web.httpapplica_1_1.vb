@@ -1,0 +1,1 @@
+        Application.Remove("MyAppVar1")

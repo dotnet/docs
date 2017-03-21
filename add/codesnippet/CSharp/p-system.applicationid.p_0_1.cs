@@ -1,0 +1,1 @@
+            Console.WriteLine("ApplicationId.ProcessorArchitecture property = " + asi.ApplicationId.ProcessorArchitecture);

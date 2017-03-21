@@ -1,0 +1,1 @@
+This snippet ID 1 is used in multiple files: /cs/proxy.cs, /cs/serviceendpointcollection.service.overview.cs. Rename the duplicate ID to make it unique, and update the reference to the snippet ID in the topic(s).

@@ -1,6 +1,7 @@
 <Type Name="DiscoveryClientSettingsElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryClientSettingsElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientSettingsElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the configuration element whose settings enable a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscoveryClientSettingsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscoveryEndpoint">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ChannelEndpointElement DiscoveryEndpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ChannelEndpointElement DiscoveryEndpoint" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement.DiscoveryEndpoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -45,14 +48,15 @@
         <ReturnType>System.ServiceModel.Configuration.ChannelEndpointElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
+        <value>A channel endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FindCriteria">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.Configuration.FindCriteriaElement FindCriteria { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.Configuration.FindCriteriaElement FindCriteria" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement.FindCriteria" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -67,14 +71,15 @@
         <ReturnType>System.ServiceModel.Discovery.Configuration.FindCriteriaElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" /> that supplies a set of criteria used by a client application to search for a discovery workflow service.</summary>
+        <value>A find criteria element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

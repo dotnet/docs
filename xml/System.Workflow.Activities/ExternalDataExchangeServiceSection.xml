@@ -1,8 +1,10 @@
 <Type Name="ExternalDataExchangeServiceSection" FullName="System.Workflow.Activities.ExternalDataExchangeServiceSection">
   <TypeSignature Language="C#" Value="public class ExternalDataExchangeServiceSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExternalDataExchangeServiceSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExternalDataExchangeServiceSection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration section that allows you to specify, in a configuration file, a set of services to be added to an instance of <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExternalDataExchangeServiceSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeServiceSection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Workflow.Activities.ExternalDataExchangeServiceSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Services">
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection Services { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection Services" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataExchangeServiceSection.Services" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -50,8 +65,8 @@
         <ReturnType>System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of services to be added to an instance of <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" />.</summary>
+        <value>A collection of service elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

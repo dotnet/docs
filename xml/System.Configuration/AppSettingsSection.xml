@@ -1,8 +1,10 @@
 <Type Name="AppSettingsSection" FullName="System.Configuration.AppSettingsSection">
   <TypeSignature Language="C#" Value="public sealed class AppSettingsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AppSettingsSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.AppSettingsSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,53 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides configuration system support for the <see langword="appSettings" /> configuration section. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `appSettings` configuration section provides for key/value pairs of `string` values for an application. Rather than accessing these values by using an instance of an AppSettingsSection object, you should use the <xref:System.Configuration.ConfigurationManager.AppSettings%2A> property of the <xref:System.Configuration.ConfigurationManager> class or the <xref:System.Web.Configuration.WebConfigurationManager.AppSettings%2A> property of the <xref:System.Web.Configuration.WebConfigurationManager> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the AppSettingsSection class in a console application. It reads and writes the key/value pairs that are contained by the `appSettings` section. It also shows how to access the <xref:System.Configuration.AppSettingsSection.File%2A> property of the AppSettingsSection class.  
+  
+> [!NOTE]
+>  Before you compile this code, add a reference in your project to System.Configuration.dll.  
+  
+ [!code-cs[System.Configuration.AppSettingsSection#21](~/add/codesnippet/csharp/t-system.configuration.a_0_1.cs)]
+ [!code-vb[System.Configuration.AppSettingsSection#21](~/add/codesnippet/visualbasic/t-system.configuration.a_0_1.vb)]
+ [!code-vb[System.Configuration.AppSettingsSection#21](~/add/codesnippet/visualbasic/t-system.configuration.a_0_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AppSettingsSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.AppSettingsSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeserializeElement">
       <MemberSignature Language="C#" Value="protected override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,9 +78,11 @@
     <Member MemberName="File">
       <MemberSignature Language="C#" Value="public string File { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string File" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.AppSettingsSection.File" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -67,17 +94,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a configuration file that provides additional settings or overrides the settings specified in the <see langword="appSettings" /> element.</summary>
+        <value>A configuration file that provides additional settings or overrides the settings specified in the <see langword="appSettings" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example stores additional `appSettings` values in an external configuration file and saves the name of this file in the File property.  
+  
+ [!code-cs[System.Configuration.AppSettingsSection#22](~/add/codesnippet/csharp/p-system.configuration.a_1_1.cs)]
+ [!code-vb[System.Configuration.AppSettingsSection#22](~/add/codesnippet/visualbasic/p-system.configuration.a_1_1.vb)]
+ [!code-vb[System.Configuration.AppSettingsSection#22](~/add/codesnippet/visualbasic/p-system.configuration.a_1_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
       <MemberSignature Language="C#" Value="protected override object GetRuntimeObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object GetRuntimeObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.GetRuntimeObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,9 +133,11 @@
     <Member MemberName="IsModified">
       <MemberSignature Language="C#" Value="protected override bool IsModified ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsModified() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.IsModified" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,9 +153,11 @@
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.AppSettingsSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,9 +172,11 @@
     <Member MemberName="Reset">
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentSection);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentSection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.Reset(System.Configuration.ConfigurationElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,9 +194,11 @@
     <Member MemberName="SerializeSection">
       <MemberSignature Language="C#" Value="protected override string SerializeSection (System.Configuration.ConfigurationElement parentElement, string name, System.Configuration.ConfigurationSaveMode saveMode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string SerializeSection(class System.Configuration.ConfigurationElement parentElement, string name, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,9 +221,11 @@
     <Member MemberName="Settings">
       <MemberSignature Language="C#" Value="public System.Configuration.KeyValueConfigurationCollection Settings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.KeyValueConfigurationCollection Settings" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.AppSettingsSection.Settings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -187,9 +237,20 @@
         <ReturnType>System.Configuration.KeyValueConfigurationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of key/value pairs that contains application settings.</summary>
+        <value>A collection of key/value pairs that contains the application settings from the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the Settings property to read the `appSettings` values.  
+  
+ [!code-cs[System.Configuration.AppSettingsSection#24](~/add/codesnippet/csharp/p-system.configuration.a_0_1.cs)]
+ [!code-vb[System.Configuration.AppSettingsSection#24](~/add/codesnippet/visualbasic/p-system.configuration.a_0_1.vb)]
+ [!code-vb[System.Configuration.AppSettingsSection#24](~/add/codesnippet/visualbasic/p-system.configuration.a_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

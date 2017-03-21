@@ -1,8 +1,10 @@
 <Type Name="SiteMapProviderCollection" FullName="System.Web.SiteMapProviderCollection">
   <TypeSignature Language="C#" Value="public sealed class SiteMapProviderCollection : System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SiteMapProviderCollection extends System.Configuration.Provider.ProviderCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SiteMapProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,67 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used by the <see cref="T:System.Web.SiteMap" /> class to track the set of <see cref="T:System.Web.SiteMapProvider" /> objects that are available to the <see cref="T:System.Web.SiteMap" /> during site map initialization. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SiteMapProviderCollection class is a strongly typed <xref:System.Collections.Hashtable> collection of <xref:System.Web.SiteMapProvider> objects. In addition to the two add methods, <xref:System.Web.SiteMapProviderCollection.Add%28System.Configuration.Provider.ProviderBase%29> and <xref:System.Web.SiteMapProviderCollection.Add%28System.Web.SiteMapProvider%29>, the SiteMapProviderCollection class supports the <xref:System.Web.SiteMapProviderCollection.AddArray%2A> method to add an array of type <xref:System.Web.SiteMapProvider>.  
+  
+ The SiteMapProviderCollection is used by the <xref:System.Web.SiteMap> class to track the set of <xref:System.Web.SiteMapProvider> objects that are available to the <xref:System.Web.SiteMap> during site map initialization. However, the presence of a <xref:System.Web.SiteMapProvider> in the provider collection does not necessarily mean it is used by a <xref:System.Web.SiteMap> object, only that it is available for use.  
+  
+ When a <xref:System.Web.SiteMapProvider> is stored in the SiteMapProviderCollection, the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property is used as the key.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve the SiteMapProviderCollection object from the <xref:System.Web.SiteMap> object and iterate through it.  
+  
+ If you have more than just the default provider configured for your site, you will see each provider that is displayed. For example, if you are using the sample `AccessSiteMapProvider` found in the <xref:System.Web.SiteMapProvider> class overview, you will see the following output.  
+  
+```  
+XmlSiteMapProvider   System.Web.XmlSiteMapProvider  
+AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider  
+```  
+  
+ [!code-cs[System.Web.SiteMap_2#1](~/add/codesnippet/csharp/t-system.web.sitemapprov_0_1.aspx)]
+ [!code-vb[System.Web.SiteMap_2#1](~/add/codesnippet/visualbasic/t-system.web.sitemapprov_0_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SiteMapProviderCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapProviderCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SiteMapProviderCollection default constructor initializes any fields to their default values  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,17 +82,36 @@
         <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="provider">The <see cref="T:System.Web.SiteMapProvider" /> to add.</param>
+        <summary>Adds a <see cref="T:System.Web.SiteMapProvider" /> to the provider collection using the <see cref="System.Configuration.Provider.ProviderBase.Name%2A" /> property as the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapProviderCollection> object that is returned by the <xref:System.Web.SiteMap.Providers%2A> property is read-only. For this reason, you cannot use the <xref:System.Web.SiteMapProviderCollection.Add%2A> and <xref:System.Web.SiteMapProviderCollection.AddArray%2A> methods to add additional providers programmatically at run time. Therefore, the <xref:System.Web.SiteMapProviderCollection.Add%2A> and <xref:System.Web.SiteMapProviderCollection.AddArray%2A> methods are used only in scenarios where you manually create site map provider objects and manage them with an instance of the <xref:System.Web.SiteMapProviderCollection> class. The Add method checks the type of the specified provider, and then calls the <xref:System.Web.SiteMapProviderCollection.Add%28System.Web.SiteMapProvider%29> method to add it to the collection.  
+  
+ Because the <xref:System.Web.SiteMap> class is static, any <xref:System.Web.SiteMapProvider> contained in its <xref:System.Web.SiteMap.Providers%2A> collection remains for the lifetime of the Web application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="System.Configuration.Provider.ProviderBase.Name%2A" /> of the <see cref="T:System.Web.SiteMapProvider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> is not an instance of the <see cref="T:System.Web.SiteMapProvider" /> class.  
+  
+ \- or -  
+  
+ A <see cref="T:System.Web.SiteMapProvider" /> with the same name already exists in the <see cref="T:System.Web.SiteMapProviderCollection" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Web.SiteMapProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.SiteMapProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.Add(System.Web.SiteMapProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,17 +121,32 @@
         <Parameter Name="provider" Type="System.Web.SiteMapProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="provider">The <see cref="T:System.Web.SiteMapProvider" /> to add.</param>
+        <summary>Adds a <see cref="T:System.Web.SiteMapProvider" /> object to the provider collection using the <see cref="System.Configuration.Provider.ProviderBase.Name%2A" /> property as the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapProviderCollection> object that is returned by the <xref:System.Web.SiteMap.Providers%2A> property is read-only. For this reason, you cannot use the <xref:System.Web.SiteMapProviderCollection.Add%2A> and <xref:System.Web.SiteMapProviderCollection.AddArray%2A> methods to programmatically add additional providers to the <xref:System.Web.SiteMap> at run time. Therefore, the <xref:System.Web.SiteMapProviderCollection.Add%2A> and <xref:System.Web.SiteMapProviderCollection.AddArray%2A> methods are used only in scenarios where you manually create site map provider objects and manage them with an instance of the <xref:System.Web.SiteMapProviderCollection> class. Use the Add method when you want to add a single <xref:System.Web.SiteMapProvider> to the <xref:System.Web.SiteMapProviderCollection>.  
+  
+ Because the <xref:System.Web.SiteMap> class is static, any <xref:System.Web.SiteMapProvider> contained in its <xref:System.Web.SiteMap.Providers%2A> collection remains for the lifetime of the Web application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>
+        <exception cref="T:System.ArgumentException">A <see cref="T:System.Web.SiteMapProvider" /> with the same name already exists in the <see cref="T:System.Web.SiteMapProviderCollection" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddArray">
       <MemberSignature Language="C#" Value="public void AddArray (System.Web.SiteMapProvider[] providerArray);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArray(class System.Web.SiteMapProvider[] providerArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapProviderCollection.AddArray(System.Web.SiteMapProvider[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,17 +156,32 @@
         <Parameter Name="providerArray" Type="System.Web.SiteMapProvider[]" />
       </Parameters>
       <Docs>
-        <param name="providerArray">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="providerArray">The array of <see cref="T:System.Web.SiteMapProvider" /> objects to add.</param>
+        <summary>Adds an array of <see cref="T:System.Web.SiteMapProvider" /> objects into the provider collection using the <see cref="System.Configuration.Provider.ProviderBase.Name%2A" /> properties as keys.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapProviderCollection> that is returned by the <xref:System.Web.SiteMap.Providers%2A> property is read-only. For this reason, you cannot use the <xref:System.Web.SiteMapProviderCollection.Add%2A> and AddArray methods to add additional providers programmatically at run time. Therefore, the <xref:System.Web.SiteMapProviderCollection.Add%2A> and AddArray methods are only used in scenarios where you manually create site map provider objects and manage them with an instance of the <xref:System.Web.SiteMapProviderCollection> class.  
+  
+ Because the <xref:System.Web.SiteMap> class is static, any <xref:System.Web.SiteMapProvider> contained in its <xref:System.Web.SiteMap.Providers%2A> collection remains for the lifetime of the Web application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A <see cref="T:System.Web.SiteMapProvider" /> with the same name already exists in the <see cref="T:System.Web.SiteMapProviderCollection" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerArray" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.SiteMapProvider this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapProvider Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapProviderCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,10 +191,25 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.SiteMapProvider" /> to find.</param>
+        <summary>Gets a <see cref="T:System.Web.SiteMapProvider" /> object with a specific name from the provider collection.</summary>
+        <value>A <see cref="T:System.Web.SiteMapProvider" /> that represents a <see cref="T:System.Web.SiteMapProviderCollection" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the indexer to iterate over the contents of a <xref:System.Web.SiteMapProviderCollection> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the Item property to retrieve the default ASP.NET <xref:System.Web.SiteMapProvider> object from the <xref:System.Web.SiteMapProviderCollection> object that is returned when the <xref:System.Web.SiteMap.Providers%2A> collection is accessed.  
+  
+ [!code-cs[System.Web.SiteMapProviderCollection_2#1](~/add/codesnippet/csharp/p-system.web.sitemapprov_1_1.aspx)]
+ [!code-vb[System.Web.SiteMapProviderCollection_2#1](~/add/codesnippet/visualbasic/p-system.web.sitemapprov_1_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

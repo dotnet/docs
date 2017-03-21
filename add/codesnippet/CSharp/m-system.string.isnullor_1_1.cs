@@ -1,0 +1,1 @@
+      return String.IsNullOrEmpty(value) || value.Trim().Length == 0;

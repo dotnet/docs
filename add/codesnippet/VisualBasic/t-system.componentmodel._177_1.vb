@@ -1,0 +1,2 @@
+            ' Adds a LocalizationExtenderProvider that provides localization support properties to the specified component.
+            extender = New LocalizationExtenderProvider(Me.component_.Site, Me.component_)

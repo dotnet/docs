@@ -1,8 +1,10 @@
 <Type Name="QueryContinueDragEventArgs" FullName="System.Windows.Forms.QueryContinueDragEventArgs">
   <TypeSignature Language="C#" Value="public class QueryContinueDragEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryContinueDragEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryContinueDragEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,16 +17,38 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.QueryContinueDrag" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Control.QueryContinueDrag> event occurs during a drag-and-drop operation and allows the drag source to determine whether the drag-and-drop operation should be canceled. A QueryContinueDragEventArgs specifies whether and how the drag-and-drop operation should proceed, whether any modifier keys are pressed, and whether the user has pressed the ESC key.  
+  
+ By default, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event sets <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> to <xref:System.Windows.Forms.DragAction?displayProperty=fullName> if the ESC key was pressed and sets `Action` to <xref:System.Windows.Forms.DragAction?displayProperty=fullName> if the left, middle, or right mouse button is pressed.  
+  
+ For information about the event model, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ This code excerpt demonstrates using the QueryContinueDragEventArgs class with the <xref:System.Windows.Forms.Control.QueryContinueDrag> event. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/cpp/t-system.windows.forms.q_4_1.cpp)]
+ [!code-vb[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/visualbasic/t-system.windows.forms.q_4_1.vb)]
+ [!code-cs[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/csharp/t-system.windows.forms.q_4_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QueryContinueDragEventArgs (int keyState, bool escapePressed, System.Windows.Forms.DragAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 keyState, bool escapePressed, valuetype System.Windows.Forms.DragAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QueryContinueDragEventArgs.#ctor(System.Int32,System.Boolean,System.Windows.Forms.DragAction)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -33,62 +57,133 @@
         <Parameter Name="action" Type="System.Windows.Forms.DragAction" />
       </Parameters>
       <Docs>
-        <param name="keyState">To be added.</param>
-        <param name="escapePressed">To be added.</param>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyState">The current state of the SHIFT, CTRL, and ALT keys.</param>
+        <param name="escapePressed">
+          <see langword="true" /> if the ESC key was pressed; otherwise, <see langword="false" />.</param>
+        <param name="action">A <see cref="T:System.Windows.Forms.DragAction" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DragAction Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DragAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryContinueDragEventArgs.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the status of a drag-and-drop operation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DragAction" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event sets Action to <xref:System.Windows.Forms.DragAction?displayProperty=fullName> if the ESC key was pressed and sets `Action` to <xref:System.Windows.Forms.DragAction?displayProperty=fullName> if the left, middle, or right mouse button is pressed.  
+  
+   
+  
+## Examples  
+ This code excerpt demonstrates using the <xref:System.Windows.Forms.QueryContinueDragEventArgs> class with the <xref:System.Windows.Forms.Control.QueryContinueDrag> event. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/cpp/p-system.windows.forms.q_0_1.cpp)]
+ [!code-vb[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/visualbasic/p-system.windows.forms.q_0_1.vb)]
+ [!code-cs[System.Windows.Forms.Control.DoDragDrop#6](~/add/codesnippet/csharp/p-system.windows.forms.q_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EscapePressed">
       <MemberSignature Language="C#" Value="public bool EscapePressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EscapePressed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryContinueDragEventArgs.EscapePressed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets whether the user pressed the ESC key.</summary>
+        <value>
+          <see langword="true" /> if the ESC key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event sets <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> to <xref:System.Windows.Forms.DragAction?displayProperty=fullName> if EscapePressed is true.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the EscapePressed . In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=fullName> event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#43](~/add/codesnippet/csharp/p-system.windows.forms.q_6_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#43](~/add/codesnippet/visualbasic/p-system.windows.forms.q_6_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyState">
       <MemberSignature Language="C#" Value="public int KeyState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryContinueDragEventArgs.KeyState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current state of the SHIFT, CTRL, and ALT keys.</summary>
+        <value>The current state of the SHIFT, CTRL, and ALT keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bits that are set in the KeyState property identify the keys or mouse buttons that were pressed during the operation. For example, if the left mouse button is pressed, the first bit in the KeyState property is set. You can use the bitwise `AND` operator to test for a given key state.  
+  
+ The following table lists the bits that are set for a specified event.  
+  
+|Bit|Key|  
+|---------|---------|  
+|1|The left mouse button.|  
+|2|The right mouse button.|  
+|4|The SHIFT key.|  
+|8|The CTL key.|  
+|16|The middle mouse button.|  
+|32|The ALT key.|  
+  
+ By default, the <xref:System.Windows.Forms.Control.QueryContinueDrag> event sets <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> to <xref:System.Windows.Forms.DragAction?displayProperty=fullName> if KeyState indicates that the left, middle, or right mouse button is pressed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.QueryContinueDrag?displayProperty=fullName> event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#43](~/add/codesnippet/csharp/p-system.windows.forms.q_2_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#43](~/add/codesnippet/visualbasic/p-system.windows.forms.q_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

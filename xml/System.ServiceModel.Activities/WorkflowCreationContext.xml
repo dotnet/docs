@@ -1,6 +1,7 @@
 <Type Name="WorkflowCreationContext" FullName="System.ServiceModel.Activities.WorkflowCreationContext">
   <TypeSignature Language="C#" Value="public class WorkflowCreationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowCreationContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowCreationContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a context that is set up during workflow activation using the workflow hosting endpoint to handle arguments, and receive workflow completion notifications.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowCreationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -29,13 +31,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initiates a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateOnly">
       <MemberSignature Language="C#" Value="public bool CreateOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreateOnly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.CreateOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -50,14 +53,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates if the workflow instance should be suspended or run after creation..</summary>
+        <value>
+          <see langword="true" /> if the workflow instance is suspended after it is created ; <see langword="false" /> if the workflow is run after it is created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompletionTransactionRequired">
       <MemberSignature Language="C#" Value="public bool IsCompletionTransactionRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompletionTransactionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.IsCompletionTransactionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -72,14 +77,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the <see cref="System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted%2A" /> method is called in a transaction..</summary>
+        <value>
+          <see langword="true" /> if a completion transaction is required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAbort">
       <MemberSignature Language="C#" Value="protected virtual void OnAbort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnAbort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -90,13 +97,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Aborts the <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to implement the OnAbort method.  
+  
+ [!code-cs[WFCreationContext#2](~/add/codesnippet/csharp/m-system.servicemodel.ac_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginWorkflowCompleted">
       <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginWorkflowCompleted (System.Activities.ActivityInstanceState completionState, System.Collections.Generic.IDictionary&lt;string,object&gt; workflowOutputs, Exception terminationException, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWorkflowCompleted(valuetype System.Activities.ActivityInstanceState completionState, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; workflowOutputs, class System.Exception terminationException, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted(System.Activities.ActivityInstanceState,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -114,20 +131,30 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="completionState">To be added.</param>
-        <param name="workflowOutputs">To be added.</param>
-        <param name="terminationException">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="completionState">The state of the workflow instance.</param>
+        <param name="workflowOutputs">A collection of key/value pairs that contain output generated by the workflow instance.</param>
+        <param name="terminationException">If present, an error that caused the workflow to terminate.</param>
+        <param name="timeout">The time interval during which the asynchronous operation must complete.</param>
+        <param name="callback">The location in an application to which control returns when the asynchronous operation completes.</param>
+        <param name="state">User-defined state.</param>
+        <summary>Begins an asynchronous operation to perform workflow instance completion notification. This method is called when the workflow instance associated with this <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" /> completes. Derived classes can override this operation to perform custom actions on workflow instance completion.</summary>
+        <returns>The status of the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to implement the OnBeginWorkflowCompleted method.  
+  
+ [!code-cs[WFCreationContext#0](~/add/codesnippet/csharp/ca079ff5-a0a9-48b1-8963-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEndWorkflowCompleted">
       <MemberSignature Language="C#" Value="protected virtual void OnEndWorkflowCompleted (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnEndWorkflowCompleted(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowCreationContext.OnEndWorkflowCompleted(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -140,14 +167,24 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous operation that notifies workflow instance completion associated with this <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a simple implementation of the OnEndWorkflowCompleted method. Notice that the base class <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort%2A> method is called.  
+  
+ [!code-cs[WFCreationContext#2](~/add/codesnippet/csharp/b5a9b6de-7712-4caa-a9e8-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkflowArguments">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; WorkflowArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; WorkflowArguments" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowCreationContext.WorkflowArguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -157,8 +194,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the arguments passed to the newly created workflow instance.</summary>
+        <value>A dictionary of key/value pair arguments to the workflow instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

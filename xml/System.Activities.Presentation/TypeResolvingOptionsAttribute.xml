@@ -1,6 +1,7 @@
 <Type Name="TypeResolvingOptionsAttribute" FullName="System.Activities.Presentation.TypeResolvingOptionsAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeResolvingOptionsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeResolvingOptionsAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.TypeResolvingOptionsAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used to configure how a [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] initializes type-resolver and type-browser dialogs to enable a user to select a type for arguments, variables, and generic type activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+   
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeResolvingOptionsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.TypeResolvingOptionsAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -29,13 +38,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.TypeResolvingOptionsAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeResolvingOptionsAttribute (System.Activities.Presentation.View.TypeResolvingOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.View.TypeResolvingOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.TypeResolvingOptionsAttribute.#ctor(System.Activities.Presentation.View.TypeResolvingOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -45,14 +55,15 @@
         <Parameter Name="options" Type="System.Activities.Presentation.View.TypeResolvingOptions" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="options">The <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> that are supported.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.TypeResolvingOptionsAttribute" /> class with specified type resolving options.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeResolvingOptions">
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.TypeResolvingOptions TypeResolvingOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.View.TypeResolvingOptions TypeResolvingOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.TypeResolvingOptionsAttribute.TypeResolvingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -62,8 +73,8 @@
         <ReturnType>System.Activities.Presentation.View.TypeResolvingOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the options used to configure how a [!INCLUDE[wfd1](~/add/includes/wfd1-md.md)] initializes type-resolver and type-browser dialogs to enable a user to select a type for arguments, variables, and generic type activities.</summary>
+        <value>An instance of <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> that specifies the options available for how a [!INCLUDE[wfd2](~/add/includes/wfd2-md.md)] initializes type-resolver and type-browser dialogs to enable a user to select a type for arguments, variables, and generic type activities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

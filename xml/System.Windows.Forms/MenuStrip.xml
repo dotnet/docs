@@ -1,8 +1,10 @@
 <Type Name="MenuStrip" FullName="System.Windows.Forms.MenuStrip">
   <TypeSignature Language="C#" Value="public class MenuStrip : System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuStrip extends System.Windows.Forms.ToolStrip" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuStrip" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,30 +20,76 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a menu system for a form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ MenuStrip is the top-level container that supersedes <xref:System.Windows.Forms.MainMenu>. It also provides key handling and multiple document interface (MDI) features. Functionally, <xref:System.Windows.Forms.ToolStripDropDownItem> and <xref:System.Windows.Forms.ToolStripMenuItem> work along with MenuStrip, although they are derived from <xref:System.Windows.Forms.ToolStripItem>.  
+  
+ The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the MenuStrip control:  
+  
+-   <xref:System.Windows.Forms.ToolStripMenuItem>  
+  
+-   <xref:System.Windows.Forms.ToolStripTextBox>  
+  
+-   <xref:System.Windows.Forms.ToolStripComboBox>  
+  
+ The MenuStrip control represents the container for the menu structure of a form. You can add <xref:System.Windows.Forms.ToolStripMenuItem> objects to the MenuStrip that represent the individual menu commands in the menu structure. Each <xref:System.Windows.Forms.ToolStripMenuItem> can be a command for your application or a parent menu for other submenu items.  
+  
+ Although MenuStrip replaces and adds functionality to the <xref:System.Windows.Forms.MainMenu> control of previous versions, <xref:System.Windows.Forms.MainMenu> is retained for both backward compatibility and future use if you choose.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a MenuStrip in a multiple-document interface (MDI) scenario.  
+  
+ [!code-cs[System.Windows.Forms.ToolStrip.Misc#10](~/add/codesnippet/csharp/t-system.windows.forms.m_2_1.cs)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#10](~/add/codesnippet/visualbasic/t-system.windows.forms.m_2_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MenuStrip ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuStrip" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a <xref:System.Windows.Forms.MenuStrip> to which you can add <xref:System.Windows.Forms.ToolStripMenuItem> objects.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the MenuStrip constructor. This example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripPanel> class.  
+  
+ [!code-cs[System.Windows.Forms.ToolStrip.Misc#12](~/add/codesnippet/csharp/m-system.windows.forms.m_2_1.cs)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#12](~/add/codesnippet/visualbasic/m-system.windows.forms.m_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanOverflow">
       <MemberSignature Language="C#" Value="public bool CanOverflow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanOverflow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.CanOverflow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -56,17 +104,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MenuStrip" /> supports overflow functionality.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.MenuStrip" /> supports overflow functionality; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overflow feature moves menu items to a drop-down menu when there is not enough room to display them in a <xref:System.Windows.Forms.MenuStrip>. When you set the CanOverflow property to `true`, you must also enable overflow for specific menu items by setting the <xref:System.Windows.Forms.ToolStripMenuItem.Overflow%2A?displayProperty=fullName> property. By default, menu items are not displayed if they cannot fit within the available space.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.CreateAccessibilityInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,17 +132,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new accessibility object for the control.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not explicitly call the CreateAccessibilityInstance method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName> property is referenced.  
+  
+> [!NOTE]
+>  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=fullName> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
+  
+ For a code example of using CreateAccessibilityInstance, see <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultItem">
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ToolStripItem CreateDefaultItem (string text, System.Drawing.Image image, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Windows.Forms.ToolStripItem CreateDefaultItem(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.CreateDefaultItem(System.String,System.Drawing.Image,System.EventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,88 +168,121 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="onClick">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to use for the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />. If the <c>text</c> parameter is a hyphen (-), this method creates a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to display on the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</param>
+        <param name="onClick">An event handler that raises the <see cref="E:System.Windows.Forms.Control.Click" /> event when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is clicked.</param>
+        <summary>Creates a <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> with the specified text, image, and event handler on a new <see cref="T:System.Windows.Forms.MenuStrip" />.</summary>
+        <returns>A <see cref="System.Windows.Forms.ToolStripMenuItem.%23ctor%28System.String%2CSystem.Drawing.Image%2CSystem.EventHandler%29" />, or a <see cref="T:System.Windows.Forms.ToolStripSeparator" /> if the <paramref name="text" /> parameter is a hyphen (-).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the CreateDefaultItem method to add a <xref:System.Windows.Forms.ToolStripMenuItem> with commonly used characteristics to a <xref:System.Windows.Forms.MenuStrip>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultGripMargin">
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultGripMargin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultGripMargin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultGripMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default spacing, in pixels, between the sizing grip and the edges of the <see cref="T:System.Windows.Forms.MenuStrip" />.</summary>
+        <value>
+          <see cref="T:System.Windows.Forms.Padding" /> values representing the spacing, in pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPadding">
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Padding DefaultPadding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding DefaultPadding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the spacing, in pixels, between the left, right, top, and bottom edges of the <see cref="T:System.Windows.Forms.MenuStrip" /> from the edges of the form.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> that represents the spacing. The default is <c>{Left=6, Top=2, Right=0, Bottom=2}</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the DefaultPadding property to set the interior space between controls. When a control is a container of items, padding represents the space from the edge of the container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultShowItemToolTips">
       <MemberSignature Language="C#" Value="protected override bool DefaultShowItemToolTips { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultShowItemToolTips" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultShowItemToolTips" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether ToolTips are shown for the <see cref="T:System.Windows.Forms.MenuStrip" /> by default.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The DefaultShowItemToolTips property always returns `false` because typically, ToolTips are not used for menus or menu items.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the horizontal and vertical dimensions, in pixels, of the <see cref="T:System.Windows.Forms.MenuStrip" /> when it is first created.</summary>
+        <value>A <see cref="System.Drawing.Point.%23ctor%2A" /> value representing the <see cref="T:System.Windows.Forms.MenuStrip" /> horizontal and vertical dimensions, in pixels. The default is 200 x 21 pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GripStyle">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripGripStyle GripStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripGripStyle GripStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.GripStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -189,17 +294,19 @@
         <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the visibility of the grip used to reposition the control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripStyle" /> values. The default is <see cref="T:System.Windows.Forms.ToolStripGripStyle" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MdiWindowListItem">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripMenuItem MdiWindowListItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripMenuItem MdiWindowListItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.MdiWindowListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -217,49 +324,110 @@
         <ReturnType>System.Windows.Forms.ToolStripMenuItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> that is used to display a list of Multiple-document interface (MDI) child forms.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> that represents the menu item displaying a list of MDI child forms that are open in the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the MdiWindowListItem property to designate or discover which <xref:System.Windows.Forms.ToolStripMenuItem> displays MDI children.  
+  
+ Use the <xref:System.Windows.Forms.MenuStrip.MenuActivate> and <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> events on child menus to reflect changes to the value of MdiWindowListItem.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the MdiWindowListItem property. This example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripPanel> class.  
+  
+ [!code-cs[System.Windows.Forms.ToolStrip.Misc#12](~/add/codesnippet/csharp/p-system.windows.forms.m_44_1.cs)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#12](~/add/codesnippet/visualbasic/p-system.windows.forms.m_44_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuActivate">
       <MemberSignature Language="C#" Value="public event EventHandler MenuActivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MenuActivate" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MenuStrip.MenuActivate" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user accesses the menu with the keyboard or mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When activated by the ALT key, the <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ToolStrip> typically neither take nor remove the focus from the control that currently has the focus. If there is a control hosted within the <xref:System.Windows.Forms.MenuStrip> or a drop-down of the <xref:System.Windows.Forms.MenuStrip>, the control gains focus when the user presses the TAB key. In general, the <xref:System.Windows.Forms.Control.GotFocus>, <xref:System.Windows.Forms.Control.LostFocus>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.Control.Leave> events of <xref:System.Windows.Forms.MenuStrip> might not be raised when they are activated by the keyboard. In such cases, use the MenuActivate and <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> events instead.  
+  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the MenuActivate event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MenuStrip> named `MenuStrip1`. Then ensure that the event handler is associated with the MenuActivate event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#489](~/add/codesnippet/csharp/e-system.windows.forms.m_7_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#489](~/add/codesnippet/visualbasic/e-system.windows.forms.m_7_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MenuDeactivate">
       <MemberSignature Language="C#" Value="public event EventHandler MenuDeactivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MenuDeactivate" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MenuStrip.MenuDeactivate" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.MenuStrip" /> is deactivated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When activated by the ALT key, the <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ToolStrip> typically neither take nor remove the focus from the control that currently has the focus. If there is a control hosted within the <xref:System.Windows.Forms.MenuStrip> or a drop-down of the <xref:System.Windows.Forms.MenuStrip>, the control gains focus when the user presses the TAB key. In general, the <xref:System.Windows.Forms.Control.GotFocus>, <xref:System.Windows.Forms.Control.LostFocus>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.Control.Leave> events of <xref:System.Windows.Forms.MenuStrip> might not be raised when they are activated by the keyboard. In such cases, use the <xref:System.Windows.Forms.MenuStrip.MenuActivate> and MenuDeactivate events instead.  
+  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the MenuDeactivate event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MenuStrip> named `MenuStrip1`. Then ensure that the event handler is associated with the MenuDeactivate event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#490](~/add/codesnippet/csharp/e-system.windows.forms.m_4_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#490](~/add/codesnippet/visualbasic/e-system.windows.forms.m_4_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMenuActivate">
       <MemberSignature Language="C#" Value="protected virtual void OnMenuActivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMenuActivate(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.OnMenuActivate(System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,17 +437,28 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.MenuStrip.MenuActivate" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The OnMenuActivate method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMenuDeactivate">
       <MemberSignature Language="C#" Value="protected virtual void OnMenuDeactivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMenuDeactivate(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.OnMenuDeactivate(System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,17 +468,28 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.MenuStrip.MenuDeactivate" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The OnMenuDeactivate method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,19 +500,23 @@
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
+        <summary>Processes a command key.</summary>
+        <returns>
+          <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ShowItemToolTips">
       <MemberSignature Language="C#" Value="public bool ShowItemToolTips { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowItemToolTips" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.ShowItemToolTips" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -334,17 +528,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether ToolTips are shown for the <see cref="T:System.Windows.Forms.MenuStrip" />.</summary>
+        <value>
+          <see langword="true" /> if ToolTips are shown for the <see cref="T:System.Windows.Forms.MenuStrip" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ShowItemToolTips property returns `false` by default because typically, ToolTips are not used for menus or menu items.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
       <MemberSignature Language="C#" Value="public bool Stretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Stretch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MenuStrip.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -356,17 +560,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MenuStrip" /> stretches from end to end in its container.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.MenuStrip" /> stretches from end to end in its container; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuStrip.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -376,9 +583,28 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All messages are sent to the <xref:System.Windows.Forms.Control.WndProc%2A> method after getting filtered through the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method.  
+  
+ The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the `WindowProc` function documentation in the Windows Platform SDK reference located in the MSDN library at http://msdn.microsoft.com/library.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values. Actual constant values can be found in the windows.h header file included in the Platform SDK (Core SDK section) download, which is also available on MSDN.  
+  
+ [!code-cs[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/csharp/m-system.windows.forms.m_5_1.cs)]
+ [!code-vb[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/visualbasic/m-system.windows.forms.m_5_1.vb)]
+ [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/add/codesnippet/cpp/m-system.windows.forms.m_5_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

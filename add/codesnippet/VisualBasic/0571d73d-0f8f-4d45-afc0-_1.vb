@@ -1,0 +1,1 @@
+			Dim sessionKeyRenewalInterval As TimeSpan = settings.SessionKeyRenewalInterval

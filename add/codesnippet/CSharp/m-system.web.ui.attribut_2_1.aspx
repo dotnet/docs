@@ -1,0 +1,1 @@
+   myAttributeCollection = new AttributeCollection(ViewState);

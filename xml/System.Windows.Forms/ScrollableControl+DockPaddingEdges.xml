@@ -1,8 +1,10 @@
 <Type Name="ScrollableControl+DockPaddingEdges" FullName="System.Windows.Forms.ScrollableControl+DockPaddingEdges">
   <TypeSignature Language="C#" Value="public class ScrollableControl.DockPaddingEdges : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ScrollableControl/DockPaddingEdges extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,16 +21,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the border padding for docked controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ScrollableControl.DockPaddingEdges class creates a margin on a given edge or all edges of a docked control. You can set the width of this margin for each individual edge by setting the following properties: <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left%2A>, <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right%2A>. Alternatively, you can set all the edges to the same width simultaneously by setting the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All%2A> property. If the size of the control is too large for its container, the control will be resized to fit in the container, minus the specified margin width.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the ScrollableControl.DockPaddingEdges properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.s_18_1.vb)]
+ [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/cpp/t-system.windows.forms.s_18_1.cpp)]
+ [!code-cs[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/csharp/t-system.windows.forms.s_18_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
       <MemberSignature Language="C#" Value="public int All { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 All" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.All" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -40,17 +60,35 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding width for all edges of a docked control.</summary>
+        <value>The padding width, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The padding width assigned to this property is applied to all edges of the docked control.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_77_1.vb)]
+ [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_77_1.cpp)]
+ [!code-cs[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_77_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
       <MemberSignature Language="C#" Value="public int Bottom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Bottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -62,17 +100,35 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding width for the bottom edge of a docked control.</summary>
+        <value>The padding width, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The padding width assigned to this property is applied only to the bottom edge of the docked control.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_156_1.vb)]
+ [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_156_1.cpp)]
+ [!code-cs[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_156_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,8 +138,8 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="other">The object to compare with the current <see cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" /> object.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdges" /> object.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,9 +147,11 @@
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,17 +159,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
       <MemberSignature Language="C#" Value="public int Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -123,17 +183,35 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding width for the left edge of a docked control.</summary>
+        <value>The padding width, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The padding width assigned to this property is applied only to the left edge of the docked control.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_119_1.vb)]
+ [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_119_1.cpp)]
+ [!code-cs[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_119_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
       <MemberSignature Language="C#" Value="public int Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -145,17 +223,35 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding width for the right edge of a docked control.</summary>
+        <value>The padding width, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The padding width assigned to this property is applied only to the right edge of the docked control.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_86_1.vb)]
+ [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_86_1.cpp)]
+ [!code-cs[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_86_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.System#ICloneable#Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -163,17 +259,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPaddingEdges.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -185,17 +283,35 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding width for the top edge of a docked control.</summary>
+        <value>The padding width, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The padding width assigned to this property is applied only to the top edge of the docked control.  
+  
+   
+  
+## Examples  
+ The following code example uses the derived class, <xref:System.Windows.Forms.Panel>. The example docks a button in a panel control and cycles through the <xref:System.Windows.Forms.ScrollableControl.DockPaddingEdges> properties, setting each individually on the click of the button. This code requires that a <xref:System.Windows.Forms.Panel> control and a <xref:System.Windows.Forms.Button> have been instantiated on a form, and a class-level member variable named `myCounter` has been declared as a 32-bit signed integer. This code should be called on the <xref:System.Windows.Forms.Control.Click> event of the button.  
+  
+ [!code-vb[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.s_132_1.vb)]
+ [!code-cpp[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/cpp/p-system.windows.forms.s_132_1.cpp)]
+ [!code-cs[Classic ScrollableControl.DockPaddingEdges Example#1](~/add/codesnippet/csharp/p-system.windows.forms.s_132_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdges.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -203,8 +319,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an empty string.</summary>
+        <returns>An empty string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

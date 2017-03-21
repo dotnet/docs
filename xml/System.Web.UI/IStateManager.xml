@@ -1,39 +1,71 @@
 <Type Name="IStateManager" FullName="System.Web.UI.IStateManager">
   <TypeSignature Language="C#" Value="public interface IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStateManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the properties and methods any class must implement to support view state management for a server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A server control's view state comprises the cumulative values of the control's properties. This interface includes methods that save and load a server control's view state values, as well as a method that instructs the control to track any changes to its view state.  
+  
+ To customize the way your ASP.NET application manages server control view state, you must create a class that implements this interface because you cannot inherit from the <xref:System.Web.UI.StateBag> class.  
+  
+   
+  
+## Examples  
+ The following code example shows a class that implements the IStateManager interface. It includes implementations of the <xref:System.Web.UI.IStateManager.IsTrackingViewState%2A> property and the <xref:System.Web.UI.IStateManager.LoadViewState%2A>, <xref:System.Web.UI.IStateManager.SaveViewState%2A>, and <xref:System.Web.UI.IStateManager.TrackViewState%2A> methods.  
+  
+ [!code-vb[StateBag_IStateManager_Sample1#8](~/add/codesnippet/visualbasic/t-system.web.ui.istatema_1.vb)]
+ [!code-cs[StateBag_IStateManager_Sample1#8](~/add/codesnippet/csharp/t-system.web.ui.istatema_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IsTrackingViewState">
       <MemberSignature Language="C#" Value="public bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented by a class, gets a value indicating whether a server control is tracking its view state changes.</summary>
+        <value>
+          <see langword="true" /> if a server control is tracking its view state changes; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[StateBag_IStateManager_Sample1#6](~/add/codesnippet/visualbasic/p-system.web.ui.istatema_1.vb)]
+ [!code-cs[StateBag_IStateManager_Sample1#6](~/add/codesnippet/csharp/p-system.web.ui.istatema_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
       <MemberSignature Language="C#" Value="public void LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadViewState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,17 +75,32 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="state">An <see cref="T:System.Object" /> that contains the saved view state values for the control.</param>
+        <summary>When implemented by a class, loads the server control's previously saved view state to the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
+  
+   
+  
+## Examples  
+ [!code-vb[StateBag_IStateManager_Sample1#3](~/add/codesnippet/visualbasic/m-system.web.ui.istatema_2_1.vb)]
+ [!code-cs[StateBag_IStateManager_Sample1#3](~/add/codesnippet/csharp/m-system.web.ui.istatema_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
       <MemberSignature Language="C#" Value="public object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateManager.SaveViewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,17 +108,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object" />.</summary>
+        <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[StateBag_IStateManager_Sample1#4](~/add/codesnippet/visualbasic/m-system.web.ui.istatema_1_1.vb)]
+ [!code-cs[StateBag_IStateManager_Sample1#4](~/add/codesnippet/csharp/m-system.web.ui.istatema_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
       <MemberSignature Language="C#" Value="public void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateManager.TrackViewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,8 +136,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When implemented by a class, instructs the server control to track changes to its view state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After this method has been called on a server control, the <xref:System.Web.UI.IStateManager.IsTrackingViewState%2A> property will return `true`.  
+  
+   
+  
+## Examples  
+ [!code-vb[StateBag_IStateManager_Sample1#5](~/add/codesnippet/visualbasic/m-system.web.ui.istatema_0_1.vb)]
+ [!code-cs[StateBag_IStateManager_Sample1#5](~/add/codesnippet/csharp/m-system.web.ui.istatema_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

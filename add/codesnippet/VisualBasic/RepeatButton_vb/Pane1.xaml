@@ -1,0 +1,71 @@
+ 
+<DockPanel  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="RepeatButton_vb.Pane1"
+>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10, 10, 5, 5" 
+               HorizontalAlignment="Left"
+               Grid.Column="0" Grid.Row="0"
+               FontSize="24">
+      RepeatButtons
+    </TextBlock>
+
+    <TextBlock Margin="10, 10, 5, 5" 
+               HorizontalAlignment="Left" 
+               Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" 
+               FontSize="14">
+      The following repeat
+      button examples demonstrate:
+    </TextBlock>
+
+    <DockPanel Margin="10, 10, 5, 5" HorizontalAlignment="Left" Grid.Column="0" 
+           Grid.Row="2">
+
+      <RepeatButton Width="100" DockPanel.Dock="Top" 
+                    Delay="500" Interval="100" 
+                    Click="Increase">
+        Increase
+      </RepeatButton>
+
+      <TextBlock Name="valueText" 
+                 Width="100" DockPanel.Dock="Top" 
+                 TextAlignment="Center" FontSize="16">
+        0
+      </TextBlock>
+
+      <RepeatButton Width="100" DockPanel.Dock="Top" 
+                    Delay="500" Interval="100" 
+                    Click="Decrease">
+        Decrease
+      </RepeatButton>
+     
+    </DockPanel>
+
+    <TextBlock Margin="10, 10, 5, 5" HorizontalAlignment="Left" Grid.Column="1" 
+               Grid.Row="2" FontSize="12" VerticalAlignment="Center" 
+               TextWrapping="WrapWithOverflow">
+      Two repeat buttons that increase and
+      decrease a numerical value. They have their delay properties set to
+      500 milliseconds and their interval properties set to 100.
+    </TextBlock>
+
+  </Grid>
+</DockPanel>
+
+

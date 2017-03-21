@@ -1,0 +1,2 @@
+            AuthenticationSection newauthenticationSection = 
+                new AuthenticationSection();

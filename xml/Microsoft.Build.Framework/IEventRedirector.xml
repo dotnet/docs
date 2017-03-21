@@ -1,22 +1,33 @@
 <Type Name="IEventRedirector" FullName="Microsoft.Build.Framework.IEventRedirector">
   <TypeSignature Language="C#" Value="public interface IEventRedirector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventRedirector" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IEventRedirector" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Forwards build events to other loggers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See [Writing Multi-Processor-Aware Loggers](../Topic/Writing%20Multi-Processor-Aware%20Loggers.md) for more information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ForwardEvent">
       <MemberSignature Language="C#" Value="public void ForwardEvent (Microsoft.Build.Framework.BuildEventArgs buildEvent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForwardEvent(class Microsoft.Build.Framework.BuildEventArgs buildEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IEventRedirector.ForwardEvent(Microsoft.Build.Framework.BuildEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -26,9 +37,16 @@
         <Parameter Name="buildEvent" Type="Microsoft.Build.Framework.BuildEventArgs" />
       </Parameters>
       <Docs>
-        <param name="buildEvent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="buildEvent">The <see cref="T:Microsoft.Build.Framework.BuildEventArgs" /> to forward.</param>
+        <summary>Called by the node loggers to forward build events to the central logger.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See [Writing Multi-Processor-Aware Loggers](../Topic/Writing%20Multi-Processor-Aware%20Loggers.md) for more information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

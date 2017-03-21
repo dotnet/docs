@@ -1,0 +1,1 @@
+      Return Me.UtcDateTime = DirectCast(obj, DatetimeOffset).UtcDateTime

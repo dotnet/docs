@@ -1,8 +1,10 @@
 <Type Name="IActivityEventListener&lt;T&gt;" FullName="System.Workflow.ComponentModel.IActivityEventListener&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IActivityEventListener&lt;T&gt; where T : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityEventListener`1&lt;(class System.EventArgs) T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IActivityEventListener`1" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -19,17 +21,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the event argument.</typeparam>
+    <summary>Defines the interface for an object that listens for an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
+  
+ The typing of the event arguments is important to this definition.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnEvent">
       <MemberSignature Language="C#" Value="public void OnEvent (object sender, T e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnEvent(object sender, !T e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IActivityEventListener`1.OnEvent(System.Object,`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,9 +55,9 @@
         <Parameter Name="e" Type="T" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

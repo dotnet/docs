@@ -1,0 +1,45 @@
+<!-- If you change the root element of this file, be sure to change the class that is subclassed in app.xaml.cs -->
+<Application
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Slider_wcp.app"
+    StartupUri="Pane1.xaml"
+    >
+    <!-- Resources & Styles defined in this section will impact the entire application.  -->
+    <Application.Resources>
+    
+    <!--<Snippet1>-->
+    <Style x:Key="Horizontal" TargetType="{x:Type Slider}">
+    <Setter Property = "Background" Value = "Red"/>
+    <Setter Property = "IsSnapToTickEnabled" Value ="True"/>
+    <Setter Property = "TickPlacement" Value ="BottomRight"/>
+    <Setter Property = "AutoToolTipPlacement" Value ="BottomRight"/>
+    <Setter Property = "TickFrequency" Value ="1"/>
+    </Style>
+    <!--</Snippet1>-->
+
+    <!--<Snippet2>-->
+    <Style x:Key="Vertical" TargetType="{x:Type Slider}">
+    <Setter Property = "Background" Value = "Blue"/>
+    <Setter Property = "IsSnapToTickEnabled" Value ="True"/>
+    <Setter Property = "TickPlacement" Value ="TopLeft"/>
+    <Setter Property = "AutoToolTipPlacement" Value ="TopLeft"/>
+    <Setter Property = "TickFrequency" Value ="1"/>
+    </Style>
+    <!--</Snippet2>-->
+
+    <!--<Snippet3>-->
+    <Style x:Key="Triggers" TargetType="{x:Type Slider}">
+    <Style.Triggers>
+    <Trigger Property="Slider.IsMouseOver" Value="True">
+        <Setter Property = "Background" Value="Green"/>
+        <Setter Property = "IsSnapToTickEnabled" Value ="True"/>
+        <Setter Property = "TickPlacement" Value ="TopLeft"/>
+        <Setter Property = "TickFrequency" Value ="1"/>
+    </Trigger>
+    </Style.Triggers>
+    </Style>
+    <!--</Snippet3>-->
+   
+</Application.Resources>
+</Application>

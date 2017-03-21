@@ -1,0 +1,1 @@
+	    NetTcpBinding bSecurity = new NetTcpBinding(SecurityMode.Transport);

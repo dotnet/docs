@@ -1,6 +1,7 @@
 <Type Name="WorkflowApplicationCompletedEventArgs" FullName="System.Activities.WorkflowApplicationCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class WorkflowApplicationCompletedEventArgs : System.Activities.WorkflowApplicationEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowApplicationCompletedEventArgs extends System.Activities.WorkflowApplicationEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about a workflow instance that has completed its execution.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example inspects the WorkflowApplicationCompletedEventArgs passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#4](~/add/codesnippet/csharp/t-system.activities.work_5_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CompletionState">
       <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState CompletionState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.ActivityInstanceState CompletionState" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationCompletedEventArgs.CompletionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -26,14 +37,24 @@
         <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the completion state of the workflow instance, which indicates whether the workflow instance completed successfully, was canceled, or faulted.</summary>
+        <value>The completion state of the workflow instance, which indicates whether the workflow instance completed successfully, was canceled, or faulted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#4](~/add/codesnippet/csharp/p-system.activities.work_8_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Outputs">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Outputs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Outputs" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,14 +64,24 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a dictionary that contains the values of <see cref="T:System.Activities.OutArgument" />s of the workflow instance’s root activity, keyed by argument name.</summary>
+        <value>A dictionary that contains the values of <see cref="T:System.Activities.OutArgument" />s of the workflow instance’s root activity, keyed by argument name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#4](~/add/codesnippet/csharp/p-system.activities.work_5_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TerminationException">
       <MemberSignature Language="C#" Value="public Exception TerminationException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception TerminationException" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationCompletedEventArgs.TerminationException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,9 +91,18 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the exception associated with the termination of the workflow instance.</summary>
+        <value>The exception associated with the termination of the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+  
+ [!code-cs[CFX_WorkflowApplicationExample#4](~/add/codesnippet/csharp/p-system.activities.work_9_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

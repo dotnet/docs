@@ -1,0 +1,5 @@
+if (MyCookie.Secure)
+ {
+   //...
+ }
+    

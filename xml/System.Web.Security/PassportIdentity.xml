@@ -1,8 +1,10 @@
 <Type Name="PassportIdentity" FullName="System.Web.Security.PassportIdentity">
   <TypeSignature Language="C#" Value="public sealed class PassportIdentity : IDisposable, System.Security.Principal.IIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassportIdentity extends System.Object implements class System.IDisposable, class System.Security.Principal.IIdentity" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,47 +24,82 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a class to be used by <see cref="T:System.Web.Security.PassportAuthenticationModule" />. It provides a way for an application to access the <see cref="System.Web.Security.PassportIdentity.Ticket%2A" /> method. This class cannot be inherited. This class is deprecated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[PassportIdentityExample#1](~/add/codesnippet/csharp/t-system.web.security.pa_1.aspx)]
+ [!code-vb[PassportIdentityExample#1](~/add/codesnippet/visualbasic/t-system.web.security.pa_1.aspx)]  
+[!code-cs[PassportIdentityExample#3](~/add/codesnippet/csharp/t-system.web.security.pa_2.aspx)]
+[!code-vb[PassportIdentityExample#3](~/add/codesnippet/visualbasic/t-system.web.security.pa_2.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PassportIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.PassportIdentity" /> class. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
       <MemberSignature Language="C#" Value="public string AuthenticationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of authentication used to identify the user. This class is deprecated.</summary>
+        <value>The string "Passport".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl">
       <MemberSignature Language="C#" Value="public string AuthUrl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,17 +107,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string containing the Login server URL for a member, as well as with optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[System.Web.Security.PassportIdentity.AuthUrl#1](~/add/codesnippet/csharp/m-system.web.security.pa_5_1.cs)]
+ [!code-vb[System.Web.Security.PassportIdentity.AuthUrl#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_5_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl">
       <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,18 +142,27 @@
         <Parameter Name="strReturnUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">The URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Returns a string containing the Login server URL for a member, along with optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl">
       <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,25 +179,34 @@
         <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="bUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="bUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns the authentication server URL for a member. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl">
       <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,25 +223,34 @@
         <Parameter Name="iUseSecureAuth" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="iForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iUseSecureAuth">Declares whether the actual Login UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns a string containing the Login server URL for a member, along with the optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl2">
       <MemberSignature Language="C#" Value="public string AuthUrl2 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,17 +258,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string containing the Login server URL for a member, as well as optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Security.PassportIdentity.AuthUrl2#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_6_1.vb)]
+ [!code-cs[System.Web.Security.PassportIdentity.AuthUrl2#1](~/add/codesnippet/csharp/m-system.web.security.pa_6_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl2">
       <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,18 +293,27 @@
         <Parameter Name="strReturnUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">The URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Returns a string containing the Login server URL for a member, as well as optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl2">
       <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,25 +330,34 @@
         <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="bUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="bUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns a string containing the Login server URL for a member, as well as the optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthUrl2">
       <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,25 +374,34 @@
         <Parameter Name="iUseSecureAuth" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="iForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Retrieves a string containing the Login server URL for a member, as well as the optional information sent to the Login server in the query string. This class is deprecated.</summary>
+        <returns>The Login server URL for a member, as well as the optional information sent to the Login server in the query string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compress">
       <MemberSignature Language="C#" Value="public static string Compress (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Compress(string strData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Compress(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,18 +411,27 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strData">The data to be compressed.</param>
+        <summary>Compresses data. This class is deprecated.</summary>
+        <returns>The compressed data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CryptIsValid">
       <MemberSignature Language="C#" Value="public static bool CryptIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CryptIsValid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.CryptIsValid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,17 +439,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the state of a flag indicating if the Passport Manager is in a valid state for encryption. This class is deprecated.</summary>
+        <returns>
+          <see langword="true" /> if the key used for encryption and decryption is valid and if the Passport Manager is in a valid state for encryption; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CryptPutHost">
       <MemberSignature Language="C#" Value="public static int CryptPutHost (string strHost);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CryptPutHost(string strHost) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.CryptPutHost(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -329,18 +469,27 @@
         <Parameter Name="strHost" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strHost">The host name or IP address.</param>
+        <summary>Sets the key being used for Passport encryption and decryption. This class is deprecated.</summary>
+        <returns>An integer result code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CryptPutSite">
       <MemberSignature Language="C#" Value="public static int CryptPutSite (string strSite);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CryptPutSite(string strSite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.CryptPutSite(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,18 +499,27 @@
         <Parameter Name="strSite" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strSite">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strSite">The site label.</param>
+        <summary>Sets the key being used for Passport encryption and decryption by referring to the site-name label assigned to that key when the key was first installed. This class is deprecated.</summary>
+        <returns>An integer result code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Decompress">
       <MemberSignature Language="C#" Value="public static string Decompress (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decompress(string strData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Decompress(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -371,18 +529,27 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strData">The data to be decompressed.</param>
+        <summary>Decompresses data that has been compressed by the <see cref="System.Web.Security.PassportIdentity.Compress%2A" /> method. This class is deprecated.</summary>
+        <returns>The decompressed data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
       <MemberSignature Language="C#" Value="public static string Decrypt (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decrypt(string strData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Decrypt(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -392,18 +559,27 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strData">The data to be decrypted.</param>
+        <summary>Decrypts data using the Passport participant key for the current site. This class is deprecated.</summary>
+        <returns>Data decrypted using the Passport participant key for the current site.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
       <MemberSignature Language="C#" Value="public static string Encrypt (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encrypt(string strData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Encrypt(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -413,35 +589,53 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strData">The data to be encrypted.</param>
+        <summary>Encrypts data using the Passport participant key for the current site. This class is deprecated.</summary>
+        <returns>Data encrypted using the Passport participant key for the current site.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Error">
       <MemberSignature Language="C#" Value="public int Error { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Error" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.Error" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating the error state associated with the current Passport ticket. This class is deprecated.</summary>
+        <value>A 32-bit signed integer indicating the current error state.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
       <MemberSignature Language="C#" Value="~PassportIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Finalize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -449,16 +643,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows this passport identity to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentConfig">
       <MemberSignature Language="C#" Value="public object GetCurrentConfig (string strAttribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentConfig(string strAttribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetCurrentConfig(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -468,18 +664,27 @@
         <Parameter Name="strAttribute" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strAttribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strAttribute">The name of the registry key.</param>
+        <summary>Gets the contents of a registry key under the HKLM\SW\Microsoft\Passport hive. This class is deprecated.</summary>
+        <returns>The contents of the registry key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDomainAttribute">
       <MemberSignature Language="C#" Value="public string GetDomainAttribute (string strAttribute, int iLCID, string strDomain);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDomainAttribute(string strAttribute, int32 iLCID, string strDomain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetDomainAttribute(System.String,System.Int32,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -491,20 +696,29 @@
         <Parameter Name="strDomain" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strAttribute">To be added.</param>
-        <param name="iLCID">To be added.</param>
-        <param name="strDomain">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strAttribute">The name of the attribute value to retrieve.</param>
+        <param name="iLCID">The language in which various Passport network pages should be displayed to the member.</param>
+        <param name="strDomain">The domain authority name to query for an attribute.</param>
+        <summary>Provides information for a Passport domain by querying the Passport manager for the requested domain attribute. This class is deprecated.</summary>
+        <returns>A string representing the requested attribute.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDomainFromMemberName">
       <MemberSignature Language="C#" Value="public string GetDomainFromMemberName (string strMemberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDomainFromMemberName(string strMemberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetDomainFromMemberName(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,35 +728,60 @@
         <Parameter Name="strMemberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strMemberName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strMemberName">The name of the Passport member</param>
+        <summary>Returns the Passport domain from the member name string. This class is deprecated.</summary>
+        <returns>The Passport domain for the specified member.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[System.Web.Security.PassportIdentity.GetDomainFromMemberName#1](~/add/codesnippet/csharp/m-system.web.security.pa_3_1.cs)]
+ [!code-vb[System.Web.Security.PassportIdentity.GetDomainFromMemberName#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_3_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFromNetworkServer">
       <MemberSignature Language="C#" Value="public bool GetFromNetworkServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GetFromNetworkServer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.GetFromNetworkServer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets information on a Passport server connection and query string. This class is deprecated.</summary>
+        <value>
+          <see langword="true" /> if a connection is coming back from the Passport server (logon, update, or registration) and if the Passport data contained on the query string is valid; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsAuthenticated">
       <MemberSignature Language="C#" Value="public bool GetIsAuthenticated (int iTimeWindow, bool bForceLogin, bool bCheckSecure);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsAuthenticated(int32 iTimeWindow, bool bForceLogin, bool bCheckSecure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetIsAuthenticated(System.Int32,System.Boolean,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -554,20 +793,30 @@
         <Parameter Name="bCheckSecure" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="bForceLogin">To be added.</param>
-        <param name="bCheckSecure">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on to the calling domain. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="bForceLogin">Determines how the <c>iTimeWindow</c> parameter is used.</param>
+        <param name="bCheckSecure">Enables checking for an encrypted logon. SSL sign-in is not available as an option in the current version Login servers, so the value passed in is ignored at the server.</param>
+        <summary>Indicates whether the user is authenticated by a central site responsible for Passport authentication. This class is deprecated.</summary>
+        <returns>
+          <see langword="true" /> if the user is authenticated by a Passport authority; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIsAuthenticated">
       <MemberSignature Language="C#" Value="public bool GetIsAuthenticated (int iTimeWindow, int iForceLogin, int iCheckSecure);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsAuthenticated(int32 iTimeWindow, int32 iForceLogin, int32 iCheckSecure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetIsAuthenticated(System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -579,20 +828,44 @@
         <Parameter Name="iCheckSecure" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="iForceLogin">To be added.</param>
-        <param name="iCheckSecure">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on to the calling domain. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.</param>
+        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter is used. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.</param>
+        <param name="iCheckSecure">Enables checking for an encrypted logon. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.  
+  
+ A value of 10 or 100 for Passport version 2.1 Login servers specify <c>SecureLevel</c> 10 or 100 for the Passport Manager <c>IsAuthenticated</c> method. See the Passport version 2.1 SDK documentation for more information.  
+  
+ SSL sign-in is not available as an option for Passport version 1.4 Login servers. The value of <c>iCheckSecure</c> is ignored at the server.</param>
+        <summary>Indicates whether the user is authenticated by a Passport authority. This class is deprecated.</summary>
+        <returns>
+          <see langword="true" /> if the user is authenticated by a central site responsible for Passport authentication; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[PassportIdentityExample#1](~/add/codesnippet/csharp/8498acbf-b536-4ccc-90f8-_1.aspx)]
+ [!code-vb[PassportIdentityExample#1](~/add/codesnippet/visualbasic/8498acbf-b536-4ccc-90f8-_1.aspx)]  
+[!code-cs[PassportIdentityExample#2](~/add/codesnippet/csharp/8498acbf-b536-4ccc-90f8-_2.aspx)]
+[!code-vb[PassportIdentityExample#2](~/add/codesnippet/visualbasic/8498acbf-b536-4ccc-90f8-_2.aspx)]  
+[!code-cs[PassportIdentityExample#4](~/add/codesnippet/csharp/8498acbf-b536-4ccc-90f8-_3.aspx)]
+[!code-vb[PassportIdentityExample#4](~/add/codesnippet/visualbasic/8498acbf-b536-4ccc-90f8-_3.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoginChallenge">
       <MemberSignature Language="C#" Value="public string GetLoginChallenge ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetLoginChallenge" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -600,17 +873,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Logs the user on, either by generating a 302 redirect URL or initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>A string representing the Passport Login Challenge.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoginChallenge">
       <MemberSignature Language="C#" Value="public string GetLoginChallenge (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge(string strReturnUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetLoginChallenge(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,18 +902,27 @@
         <Parameter Name="strReturnUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Logs the user on by outputting the appropriate headers to either a 302 redirect URL or the initiation of a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>A string representing the Passport Login Challenge.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLoginChallenge">
       <MemberSignature Language="C#" Value="public string GetLoginChallenge (string szRetURL, int iTimeWindow, int fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth, object oExtraParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge(string szRetURL, int32 iTimeWindow, int32 fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth, object oExtraParams) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetLoginChallenge(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -649,26 +940,35 @@
         <Parameter Name="oExtraParams" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="szRetURL">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="szCOBrandArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <param name="oExtraParams">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="szRetURL">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="szCOBrandArgs">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iUseSecureAuth">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="oExtraParams">See Passport documentation for IPassportManager3.GetLoginChallenge. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Logs the user on, either by generating a 302 redirect URL or initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>A string representing the Passport Login Challenge.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOption">
       <MemberSignature Language="C#" Value="public object GetOption (string strOpt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetOption(string strOpt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetOption(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -678,18 +978,27 @@
         <Parameter Name="strOpt" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strOpt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strOpt">The logon option to query.</param>
+        <summary>Gets a specific Passport logon option. This class is deprecated.</summary>
+        <returns>The Passport logon option <paramref name="strOpt" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProfileObject">
       <MemberSignature Language="C#" Value="public object GetProfileObject (string strProfileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetProfileObject(string strProfileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetProfileObject(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -699,18 +1008,27 @@
         <Parameter Name="strProfileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strProfileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strProfileName">The Passport profile attribute to return.</param>
+        <summary>Returns Passport profile information for the specified profile attribute. This class is deprecated.</summary>
+        <returns>The value of the Passport profile attribute specified by the <paramref name="strProfileName" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasFlag">
       <MemberSignature Language="C#" Value="public bool HasFlag (int iFlagMask);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasFlag(int32 iFlagMask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.HasFlag(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -720,18 +1038,28 @@
         <Parameter Name="iFlagMask" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="iFlagMask">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="iFlagMask">The Passport profile flag to query.</param>
+        <summary>Indicates whether a given flag is set in this user's profile. This class is deprecated.</summary>
+        <returns>
+          <see langword="true" /> if the Passport profile flag <paramref name="iFlagMask" /> is set in this user's profile; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasProfile">
       <MemberSignature Language="C#" Value="public bool HasProfile (string strProfile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasProfile(string strProfile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.HasProfile(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -741,52 +1069,106 @@
         <Parameter Name="strProfile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strProfile">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strProfile">The Passport profile attribute to query.</param>
+        <summary>Indicates whether a given profile attribute exists in this user's profile. This class is deprecated.</summary>
+        <returns>
+          <see langword="true" /> if the profile attribute <paramref name="strProfile" /> exists in this user's profile; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[PassportIdentityExample#1](~/add/codesnippet/csharp/m-system.web.security.pa_1_1.aspx)]
+ [!code-vb[PassportIdentityExample#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_1_1.aspx)]  
+[!code-cs[PassportIdentityExample#2](~/add/codesnippet/csharp/m-system.web.security.pa_1_2.aspx)]
+[!code-vb[PassportIdentityExample#2](~/add/codesnippet/visualbasic/m-system.web.security.pa_1_2.aspx)]  
+[!code-cs[PassportIdentityExample#5](~/add/codesnippet/csharp/m-system.web.security.pa_1_3.aspx)]
+[!code-vb[PassportIdentityExample#5](~/add/codesnippet/visualbasic/m-system.web.security.pa_1_3.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasSavedPassword">
       <MemberSignature Language="C#" Value="public bool HasSavedPassword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasSavedPassword" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.HasSavedPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets information on whether the Passport member's password was saved. This class is deprecated.</summary>
+        <value>
+          <see langword="true" /> if the Passport member's ticket indicates that the password was saved on the Passport logon page the last time the ticket was refreshed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[System.Web.Security.PassportIdentity.HasSavedPassword#1](~/add/codesnippet/csharp/p-system.web.security.pa_3_1.cs)]
+ [!code-vb[System.Web.Security.PassportIdentity.HasSavedPassword#1](~/add/codesnippet/visualbasic/p-system.web.security.pa_3_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTicket">
       <MemberSignature Language="C#" Value="public bool HasTicket { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasTicket" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.HasTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the query string includes a Passport ticket as a cookie. This class is deprecated.</summary>
+        <value>
+          <see langword="true" /> if the query string includes a Passport ticket as a cookie; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[PassportIdentityExample#1](~/add/codesnippet/csharp/p-system.web.security.pa_5_1.aspx)]
+ [!code-vb[PassportIdentityExample#1](~/add/codesnippet/visualbasic/p-system.web.security.pa_5_1.aspx)]  
+[!code-cs[PassportIdentityExample#3](~/add/codesnippet/csharp/p-system.web.security.pa_5_2.aspx)]
+[!code-vb[PassportIdentityExample#3](~/add/codesnippet/visualbasic/p-system.web.security.pa_5_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HaveConsent">
       <MemberSignature Language="C#" Value="public bool HaveConsent (bool bNeedFullConsent, bool bNeedBirthdate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HaveConsent(bool bNeedFullConsent, bool bNeedBirthdate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.HaveConsent(System.Boolean,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -797,53 +1179,90 @@
         <Parameter Name="bNeedBirthdate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="bNeedFullConsent">To be added.</param>
-        <param name="bNeedBirthdate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bNeedFullConsent">
+          <see langword="true" /> to indicate full consent is required for Passport Authentication; otherwise, <see langword="false" />.</param>
+        <param name="bNeedBirthdate">
+          <see langword="true" /> to indicate the user's birthdate is required for Passport Authentication; otherwise, <see langword="false" />.</param>
+        <summary>Indicates whether full consent is granted in this user's profile. This class is deprecated.</summary>
+        <returns>
+          <see langword="true" /> if full consent is granted in this user's profile.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HexPUID">
       <MemberSignature Language="C#" Value="public string HexPUID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HexPUID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.HexPUID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the Passport Unique Identifier (PUID) for the currently authenticated user, in hexadecimal form. This class is deprecated.</summary>
+        <value>The PUID for the currently authenticated user, in hexadecimal form.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
       <MemberSignature Language="C#" Value="public bool IsAuthenticated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.IsAuthenticated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the user is authenticated against a Passport authority. This class is deprecated.</summary>
+        <value>
+          <see langword="true" /> if the user is authenticated against a central site responsible for Passport authentication; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Security.PassportIdentity.IsAuthenticated#1](~/add/codesnippet/visualbasic/p-system.web.security.pa_2_1.vb)]
+ [!code-cs[System.Web.Security.PassportIdentity.IsAuthenticated#1](~/add/codesnippet/csharp/p-system.web.security.pa_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public string this[string strProfileName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -853,18 +1272,27 @@
         <Parameter Name="strProfileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strProfileName">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="strProfileName">The Passport profile attribute to return.</param>
+        <summary>Gets Passport profile attributes. This class is deprecated.</summary>
+        <value>The Passport profile attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoginUser">
       <MemberSignature Language="C#" Value="public int LoginUser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -872,17 +1300,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Logs the user on, either by generating a 302 redirect URL or initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>An integer result code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoginUser">
       <MemberSignature Language="C#" Value="public int LoginUser (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string strReturnUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -892,18 +1329,27 @@
         <Parameter Name="strReturnUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">The URL to which the Login server should redirect users after sign in is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Logs the user on, either by generating a 302 redirect URL or initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>An integer result code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoginUser">
       <MemberSignature Language="C#" Value="public int LoginUser (string szRetURL, int iTimeWindow, bool fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, bool fUseSecureAuth, object oExtraParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string szRetURL, int32 iTimeWindow, bool fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool fUseSecureAuth, object oExtraParams) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Boolean,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -921,26 +1367,44 @@
         <Parameter Name="oExtraParams" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="szRetURL">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="szCOBrandArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="fUseSecureAuth">To be added.</param>
-        <param name="oExtraParams">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="szRetURL">The URL to which the Login server should redirect users after sign in is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">The time value, in seconds. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">
+          <see langword="true" /> to have the Login server compare the <c>iTimeWindow</c> parameter against the time since the user last signed in; <see langword="false" /> to have the Login server compare <c>iTimeWindow</c> against the last time the Ticket was refreshed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="szCOBrandArgs">A string specifying variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">A locale identifier (LCID) specifying the language in which the Login page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">A domain name space to which you want to direct users without Passports to register. The specified name space must appear as a "domain name" entry in the Partner.xml Component Configuration Document (CCD). The typical default name space is "passport.com". Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Pass -1 to indicate that Passport should use the default value. This parameter is only relevant when implementing Kids Passport service; however, Kids Passport service cannot currently support use of this method.</param>
+        <param name="fUseSecureAuth">SSL sign-in is not available as an option in the current version Login servers. Passport Manager methods include SSL sign-in parameters and they may be required for syntax, but they are currently ignored at the server. Check the Passport Web site for updates on the status of SSL sign-in. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="oExtraParams">Name-value pairs to be inserted directly into the challenge authentication header, specifically for Passport-aware authentication interaction. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Logs the user on, either by generating a 302 redirect URL or by initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>An integer result code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[PassportIdentityExample#1](~/add/codesnippet/csharp/31492ada-71c9-486a-9acc-_1.aspx)]
+ [!code-vb[PassportIdentityExample#1](~/add/codesnippet/visualbasic/31492ada-71c9-486a-9acc-_1.aspx)]  
+[!code-cs[PassportIdentityExample#3](~/add/codesnippet/csharp/31492ada-71c9-486a-9acc-_2.aspx)]
+[!code-vb[PassportIdentityExample#3](~/add/codesnippet/visualbasic/31492ada-71c9-486a-9acc-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoginUser">
       <MemberSignature Language="C#" Value="public int LoginUser (string szRetURL, int iTimeWindow, int fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth, object oExtraParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string szRetURL, int32 iTimeWindow, int32 fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth, object oExtraParams) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -958,26 +1422,35 @@
         <Parameter Name="oExtraParams" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="szRetURL">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="szCOBrandArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <param name="oExtraParams">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="szRetURL">The URL to which the Login server should redirect users after sign in is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">The time value, in seconds. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Indicates whether the Login server should compare the <c>iTimeWindow</c> parameter against the time since the user last signed in or against the last time the Ticket was refreshed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="szCOBrandArgs">A string specifying variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">A locale identifier (LCID) specifying the language in which the Login page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">A domain name space to which you want to direct users without Passports to register. The specified name space must appear as a "domain name" entry in the Partner.xml Component Configuration Document (CCD). The typical default name space is "passport.com". Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Pass -1 to indicate that Passport should use the default value. This parameter is only relevant when implementing Kids Passport service; however, Kids Passport service cannot currently support use of this method.</param>
+        <param name="iUseSecureAuth">SSL sign-in is not available as an option in the current version Login servers. Passport Manager methods include SSL sign-in parameters and they may be required for syntax, but they are currently ignored at the server. Check the Passport Web site for updates on the status of SSL sign-in. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="oExtraParams">Name-value pairs to be inserted directly into the challenge authentication header, specifically for Passport-aware authentication interaction. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Logs the user on, either by generating a 302 redirect URL or initiating a Passport-aware client authentication exchange. This class is deprecated.</summary>
+        <returns>An integer result code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag">
       <MemberSignature Language="C#" Value="public string LogoTag ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -985,17 +1458,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an HTML fragment containing an image tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Security.PassportIdentity.LogoTag#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_4_1.vb)]
+ [!code-cs[System.Web.Security.PassportIdentity.LogoTag#1](~/add/codesnippet/csharp/m-system.web.security.pa_4_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag">
       <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1005,18 +1493,27 @@
         <Parameter Name="strReturnUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag">
       <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, bool fSecure, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, bool fSecure, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1034,26 +1531,35 @@
         <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="fSecure">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="bUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="bUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag">
       <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, int iSecure, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, int32 iSecure, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1071,26 +1577,35 @@
         <Parameter Name="iUseSecureAuth" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="iForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="iSecure">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag2">
       <MemberSignature Language="C#" Value="public string LogoTag2 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1098,17 +1613,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an HTML fragment containing an image tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Security.PassportIdentity.LogoTag2#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_0_1.vb)]
+ [!code-cs[System.Web.Security.PassportIdentity.LogoTag2#1](~/add/codesnippet/csharp/m-system.web.security.pa_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag2">
       <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1118,18 +1648,27 @@
         <Parameter Name="strReturnUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag2">
       <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, bool fSecure, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, bool fSecure, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1147,26 +1686,35 @@
         <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="fForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="fSecure">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="bUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="bUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoTag2">
       <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, int iSecure, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, int32 iSecure, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1184,26 +1732,35 @@
         <Parameter Name="iUseSecureAuth" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="strReturnUrl">To be added.</param>
-        <param name="iTimeWindow">To be added.</param>
-        <param name="iForceLogin">To be added.</param>
-        <param name="strCoBrandedArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="iSecure">To be added.</param>
-        <param name="strNameSpace">To be added.</param>
-        <param name="iKPP">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iKPP">Specifies data collection policies for purposes of Children's Online Privacy Protection Act (COPPA) compliance. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iUseSecureAuth">Declares whether the actual logon UI should be served HTTPS from the Passport domain authority. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns an HTML fragment containing an HTML &lt;img&gt; tag for a Passport link. This class is deprecated.</summary>
+        <returns>An HTML fragment containing an image tag for a Passport link.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoutURL">
       <MemberSignature Language="C#" Value="public string LogoutURL ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoutURL() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoutURL" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1211,17 +1768,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the Passport logout URL string. This class is deprecated.</summary>
+        <returns>The Passport logout URL string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogoutURL">
       <MemberSignature Language="C#" Value="public string LogoutURL (string szReturnURL, string szCOBrandArgs, int iLangID, string strDomain, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoutURL(string szReturnURL, string szCOBrandArgs, int32 iLangID, string strDomain, int32 iUseSecureAuth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoutURL(System.String,System.String,System.Int32,System.String,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1235,39 +1801,63 @@
         <Parameter Name="iUseSecureAuth" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="szReturnURL">To be added.</param>
-        <param name="szCOBrandArgs">To be added.</param>
-        <param name="iLangID">To be added.</param>
-        <param name="strDomain">To be added.</param>
-        <param name="iUseSecureAuth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="szReturnURL">See IPassportManager3.LogoutUrl for more details. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="szCOBrandArgs">See IPassportManager3.LogoutUrl for more details. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iLangID">See IPassportManager3.LogoutUrl for more details. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="strDomain">See IPassportManager3.LogoutUrl for more details. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
+        <param name="iUseSecureAuth">See IPassportManager3.LogoutUrl for more details. Pass -1 to indicate that Passport should use the default value.</param>
+        <summary>Returns the Passport logout URL string using the specified parameters. This class is deprecated.</summary>
+        <returns>The Passport logout URL string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the current user. This class is deprecated.</summary>
+        <value>The name of the current user, which is the Passport Unique Identifier (PUID).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[System.Web.Security.PassportIdentity.Name#1](~/add/codesnippet/csharp/p-system.web.security.pa_4_1.cs)]
+ [!code-vb[System.Web.Security.PassportIdentity.Name#1](~/add/codesnippet/visualbasic/p-system.web.security.pa_4_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetOption">
       <MemberSignature Language="C#" Value="public void SetOption (string strOpt, object vOpt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOption(string strOpt, object vOpt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.SetOption(System.String,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1278,18 +1868,27 @@
         <Parameter Name="vOpt" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="strOpt">To be added.</param>
-        <param name="vOpt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="strOpt">The option to set.</param>
+        <param name="vOpt">The value to set.</param>
+        <summary>Sets a specific Passport logon option. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SignOut">
       <MemberSignature Language="C#" Value="public static void SignOut (string strSignOutDotGifFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignOut(string strSignOutDotGifFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.SignOut(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1299,17 +1898,32 @@
         <Parameter Name="strSignOutDotGifFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strSignOutDotGifFileName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="strSignOutDotGifFileName">An HTML fragment containing an image for the user to click on to sign out.</param>
+        <summary>Logs off the given Passport member from the current session. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Security.PassportIdentity.SignOut#1](~/add/codesnippet/visualbasic/m-system.web.security.pa_2_1.vb)]
+ [!code-cs[System.Web.Security.PassportIdentity.SignOut#1](~/add/codesnippet/csharp/m-system.web.security.pa_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.System#IDisposable#Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1317,16 +1931,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Web.Security.PassportIdentity" /> class. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ticket">
       <MemberSignature Language="C#" Value="public object Ticket (string strAttribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Ticket(string strAttribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Ticket(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1336,44 +1959,81 @@
         <Parameter Name="strAttribute" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strAttribute">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strAttribute">A string identifying the Passport authentication ticket to return.</param>
+        <summary>Gets information on a specific attribute of the Passport authentication ticket. This class is deprecated.</summary>
+        <returns>An object representing an attribute of the Passport authentication ticket.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TicketAge">
       <MemberSignature Language="C#" Value="public int TicketAge { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TicketAge" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.TicketAge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the time, in seconds, since the last ticket was issued or refreshed. This class is deprecated.</summary>
+        <value>The time, in seconds, since the last ticket was issued or refreshed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Security.PassportIdentity.TicketAge#1](~/add/codesnippet/visualbasic/p-system.web.security.pa_1_1.vb)]
+ [!code-cs[System.Web.Security.PassportIdentity.TicketAge#1](~/add/codesnippet/csharp/p-system.web.security.pa_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeSinceSignIn">
       <MemberSignature Language="C#" Value="public int TimeSinceSignIn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TimeSinceSignIn" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.TimeSinceSignIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the time, in seconds, since a member's logon to the Passport logon server. This class is deprecated.</summary>
+        <value>The time, in seconds, since a member's logon to the Passport logon server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+   
+  
+## Examples  
+ [!code-cs[System.Web.Security.PassportIdentity.TimeSinceSignIn#1](~/add/codesnippet/csharp/p-system.web.security.pa_0_1.cs)]
+ [!code-vb[System.Web.Security.PassportIdentity.TimeSinceSignIn#1](~/add/codesnippet/visualbasic/p-system.web.security.pa_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

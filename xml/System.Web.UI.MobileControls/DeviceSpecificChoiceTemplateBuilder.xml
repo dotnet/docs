@@ -1,8 +1,10 @@
 <Type Name="DeviceSpecificChoiceTemplateBuilder" FullName="System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder">
   <TypeSignature Language="C#" Value="public class DeviceSpecificChoiceTemplateBuilder : System.Web.UI.TemplateBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceSpecificChoiceTemplateBuilder extends System.Web.UI.TemplateBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,35 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Supports the page parser in building a template and the child controls it contains. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeviceSpecificChoiceTemplateBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendLiteralString">
       <MemberSignature Language="C#" Value="public override void AppendLiteralString (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.AppendLiteralString(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,17 +55,19 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The literal content to add to a template.</param>
+        <summary>Adds the specified literal content to a template. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendSubBuilder">
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,17 +77,19 @@
         <Parameter Name="subBuilder" Type="System.Web.UI.ControlBuilder" />
       </Parameters>
       <Docs>
-        <param name="subBuilder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subBuilder">A <see cref="T:System.Web.UI.ControlBuilder" /> object.</param>
+        <summary>Adds builders to the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder" /> object for any child controls that belong to the container control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
       <MemberSignature Language="C#" Value="public override void Init (System.Web.UI.TemplateParser parser, System.Web.UI.ControlBuilder parentBuilder, Type type, string tagName, string id, System.Collections.IDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,13 +104,13 @@
         <Parameter Name="attributes" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="parser">To be added.</param>
-        <param name="parentBuilder">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="tagName">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parser">The template parser object that is responsible for parsing the control.</param>
+        <param name="parentBuilder">The control builder object that is responsible for building the parent control. If the <see cref="T:System.Web.UI.ControlBuilder" /> is not a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificControlBuilder" /> object, an exception is thrown.</param>
+        <param name="type">The type that is assigned to the control that the builder will create.</param>
+        <param name="tagName">The name of the tag to be built. This enables the builder to support multiple tag types.</param>
+        <param name="id">The <see cref="System.Web.UI.ControlBuilder.ID%2A" /> attribute that is assigned to the control.</param>
+        <param name="attributes">An object that holds the specified tag attributes.</param>
+        <summary>Initializes the <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder" /> for use after it is instantiated. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

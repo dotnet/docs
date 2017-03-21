@@ -1,6 +1,7 @@
 <Type Name="DataPointComparer" FullName="System.Windows.Forms.DataVisualization.Charting.DataPointComparer">
   <TypeSignature Language="C#" Value="public class DataPointComparer : System.Collections.Generic.IComparer&lt;System.Windows.Forms.DataVisualization.Charting.DataPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPointComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class System.Windows.Forms.DataVisualization.Charting.DataPoint&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.DataPointComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Compares data points.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataPointComparer (System.Windows.Forms.DataVisualization.Charting.Series series, System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortOrder, string sortBy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Series series, valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder sortOrder, string sortBy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointComparer.#ctor(System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.PointSortOrder,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -32,16 +34,17 @@
         <Parameter Name="sortBy" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="series">To be added.</param>
-        <param name="sortOrder">To be added.</param>
-        <param name="sortBy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="series">Data series.</param>
+        <param name="sortOrder">Sort order.</param>
+        <param name="sortBy">Value used for the sort, for example, "X", "Y or Y1", "Y2", and so forth.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPointComparer" /> class with the specified data series, sort order and sort value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Compare">
       <MemberSignature Language="C#" Value="public int Compare (System.Windows.Forms.DataVisualization.Charting.DataPoint x, System.Windows.Forms.DataVisualization.Charting.DataPoint y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(class System.Windows.Forms.DataVisualization.Charting.DataPoint x, class System.Windows.Forms.DataVisualization.Charting.DataPoint y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointComparer.Compare(System.Windows.Forms.DataVisualization.Charting.DataPoint,System.Windows.Forms.DataVisualization.Charting.DataPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -55,10 +58,10 @@
         <Parameter Name="y" Type="System.Windows.Forms.DataVisualization.Charting.DataPoint" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">First data point.</param>
+        <param name="y">Second data point.</param>
+        <summary>Compares two data points.</summary>
+        <returns>An <see langword="integer" /> value. Returns zero (0) if the two values are equal. Returns a positive integer if the value of <paramref name="x" /> is greater than the value of <paramref name="y" />; otherwise, returns a negative integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

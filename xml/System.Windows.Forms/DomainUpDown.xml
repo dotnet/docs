@@ -1,8 +1,10 @@
 <Type Name="DomainUpDown" FullName="System.Windows.Forms.DomainUpDown">
   <TypeSignature Language="C#" Value="public class DomainUpDown : System.Windows.Forms.UpDownBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DomainUpDown extends System.Windows.Forms.UpDownBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DomainUpDown" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,30 +29,74 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Windows spin box (also known as an up-down control) that displays string values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A DomainUpDown control displays a single string value that is selected from an <xref:System.Object> collection by clicking the up or down buttons of the control. The user can also enter text in the control, unless the <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A> property is set to `true` (the string typed in must match an item in the collection to be accepted). When an item is selected, the object is converted to a string value so it can be displayed in the spin box.  
+  
+ To create a collection of objects to display in the DomainUpDown control, you can add or remove the items individually by using the <xref:System.Collections.ArrayList.Add%2A> and <xref:System.Collections.ArrayList.Remove%2A> methods. This can be called in an event handler, such as the <xref:System.Windows.Forms.Control.Click> event of a button. The object collection can be sorted alphabetically by setting the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property to `true`. When the <xref:System.Windows.Forms.DomainUpDown.Wrap%2A> property is set to `true`, if you scroll past the last or first object in the collection, the list will start over with the first or last object respectively and appear to roll in a continuous list.  
+  
+ When the <xref:System.Windows.Forms.DomainUpDown.UpButton%2A> or <xref:System.Windows.Forms.DomainUpDown.DownButton%2A> methods are called, either in code or by the click of the up or down buttons, <xref:System.Windows.Forms.DomainUpDown.UpdateEditText%2A> is called to update the control with the new string. If <xref:System.Windows.Forms.UpDownBase.UserEdit%2A> is set to `true`, the string is matched to one of the values in the collection prior to updating the control's text display.  
+  
+ Starting with the [!INCLUDE[net_2015](~/add/includes/net-2015-md.md)], the DomainUpDown control will be resized based on the system DPI setting when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+  
+```  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a DomainUpDown control. The example allows you to set some of its properties and create a collection of strings for display in the spin box. The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/t-system.windows.forms.d_93_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.d_93_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/t-system.windows.forms.d_93_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DomainUpDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DomainUpDown" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box (also known as an up-down control). The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/m-system.windows.forms.d_13_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.d_13_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/m-system.windows.forms.d_13_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.CreateAccessibilityInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,17 +104,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.DomainUpDown" /> control.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject" /> for the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not explicitly call the CreateAccessibilityInstance method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property is referenced.  
+  
+> [!NOTE]
+>  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property, you must add a reference to the Accessibility assembly installed with the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DownButton">
       <MemberSignature Language="C#" Value="public override void DownButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DownButton() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DownButton" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,16 +134,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Displays the next item in the object collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As you move through the collection of items in the <xref:System.Windows.Forms.DomainUpDown> control using the down button, you will eventually reach the last item in the collection. If you continue, and <xref:System.Windows.Forms.DomainUpDown.Wrap%2A> is set to `true`, the list will start over with the first item in the collection and appear to be continuous. This behavior also occurs when you move through the collection using the up button.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DomainUpDown/DomainUpDownItemCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -103,17 +170,35 @@
         <ReturnType>System.Windows.Forms.DomainUpDown+DomainUpDownItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>A collection of objects assigned to the spin box (also known as an up-down control).</summary>
+        <value>A <see cref="T:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection" /> that contains an <see cref="T:System.Object" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Object> collection can be built and made available to the <xref:System.Windows.Forms.DomainUpDown> control in two ways. You can add items to the collection by using the <xref:System.Collections.ArrayList.Add%2A> or <xref:System.Collections.ArrayList.Insert%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box. The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the Items collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_349_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_349_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_349_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
       <MemberSignature Language="C#" Value="protected override void OnChanged (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.OnChanged(System.Object,System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,18 +209,20 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DomainUpDown.SelectedItemChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedItemChanged">
       <MemberSignature Language="C#" Value="protected void OnSelectedItemChanged (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSelectedItemChanged(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.OnSelectedItemChanged(System.Object,System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,18 +233,38 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DomainUpDown.SelectedItemChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The OnSelectedItemChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box (also known as an up-down control). The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/7e53d524-fe71-4bd9-af4b-_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/7e53d524-fe71-4bd9-af4b-_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/7e53d524-fe71-4bd9-af4b-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTextBoxKeyPress">
       <MemberSignature Language="C#" Value="protected override void OnTextBoxKeyPress (object source, System.Windows.Forms.KeyPressEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTextBoxKeyPress(object source, class System.Windows.Forms.KeyPressEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.OnTextBoxKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,18 +275,31 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyPressEventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The source of the event.</param>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A> property is set to `true`, the <xref:System.Windows.Forms.DomainUpDown> control chooses the item on the list that begins with the character. If more than one item in the collection starts with the same character, the <xref:System.Windows.Forms.DomainUpDown> control selects the next item that begins with the typed character, starting from the currently selected position.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The OnTextBoxKeyPress method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -197,17 +317,27 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the spacing between the <see cref="T:System.Windows.Forms.DomainUpDown" /> control's contents and its edges.</summary>
+        <value>
+          <see cref="T:System.Windows.Forms.Padding" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even if you set the Padding property, it will have a value of <xref:System.Windows.Forms.Padding>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DomainUpDown.PaddingChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -222,16 +352,25 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the value of the <see cref="System.Windows.Forms.DomainUpDown.Padding%2A" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
       <MemberSignature Language="C#" Value="public int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.SelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -246,17 +385,43 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the index value of the selected item.</summary>
+        <value>The zero-based index value of the selected item. The default value is -1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SelectedIndex property holds the index value of the item in the collection that is currently selected in the spin box (also known as an up-down control). Collection items can be reassigned new index values if the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property has been changed from `false` to `true`. As the collection is re-sorted alphabetically, the items will be assigned a new index value.  
+  
+> [!NOTE]
+>  If the user has entered an item in the spin box, or if no item has been selected, the SelectedIndex value will be the default value, -1.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box. The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_15_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_15_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_15_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than the default, -1.  
+  
+ -or-  
+  
+ The assigned value is greater than the <see cref="System.Windows.Forms.DomainUpDown.Items%2A" /> count.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
       <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.SelectedItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -271,33 +436,70 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the selected item based on the index value of the selected item in the collection.</summary>
+        <value>The selected item based on the <see cref="System.Windows.Forms.DomainUpDown.SelectedIndex%2A" /> value. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set, the value is validated to be one of the items in the collection, and the <xref:System.Windows.Forms.DomainUpDown.SelectedIndex%2A> property is set to the appropriate index value.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box (also known as an up-down control). The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_410_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_410_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_410_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItemChanged">
       <MemberSignature Language="C#" Value="public event EventHandler SelectedItemChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedItemChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DomainUpDown.SelectedItemChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="System.Windows.Forms.DomainUpDown.SelectedItem%2A" /> property has been changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the SelectedItemChanged event to occur, the <xref:System.Windows.Forms.DomainUpDown.SelectedItem%2A> property can be changed in code, by the user typing in a new value or clicking the control's up or down buttons.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the SelectedItemChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DomainUpDown> named `DomainUpDown1`. Then ensure that the event handler is associated with the SelectedItemChanged event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#381](~/add/codesnippet/csharp/e-system.windows.forms.d_47_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#381](~/add/codesnippet/visualbasic/e-system.windows.forms.d_47_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sorted">
       <MemberSignature Language="C#" Value="public bool Sorted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Sorted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -309,17 +511,36 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the item collection is sorted.</summary>
+        <value>
+          <see langword="true" /> if the item collection is sorted; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When Sorted is set to `true`, the collection is sorted in alphabetical order.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box (also known as an up-down control). The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the Sorted property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_237_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_237_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_237_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,17 +548,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.DomainUpDown" /> control.</summary>
+        <returns>A string that represents the current <see cref="T:System.Windows.Forms.DomainUpDown" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return string includes the type and the values for the <xref:System.Collections.ArrayList.Count%2A> and <xref:System.Windows.Forms.DomainUpDown.SelectedIndex%2A> properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpButton">
       <MemberSignature Language="C#" Value="public override void UpButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpButton() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.UpButton" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,16 +575,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Displays the previous item in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As you move through the collection of items in the <xref:System.Windows.Forms.DomainUpDown> control using the up button, you will eventually reach the first item in the collection. If you continue, and <xref:System.Windows.Forms.DomainUpDown.Wrap%2A> is set to `true`, the list will start over with the last item in the collection and appear to be continuous. This behavior also occurs when you move through the collection using the down button.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateEditText">
       <MemberSignature Language="C#" Value="protected override void UpdateEditText ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateEditText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.UpdateEditText" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,16 +601,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Updates the text in the spin box (also known as an up-down control) to display the selected item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
       <MemberSignature Language="C#" Value="public bool Wrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Wrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -386,9 +627,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the collection of items continues to the first or last item if the user continues past the end of the list.</summary>
+        <value>
+          <see langword="true" /> if the list starts again when the user reaches the beginning or end of the collection; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the Wrap property is set to `true`, if you reach the last item in the collection and continue, the list will start over with the first item and appear to be continuous. This behavior works in reverse as well.  
+  
+   
+  
+## Examples  
+ The following code example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the spin box (also known as an up-down control). The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox>, and <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the spin box.  
+  
+ [!code-cpp[Classic DomainUpDown Example#1](~/add/codesnippet/cpp/p-system.windows.forms.d_23_1.cpp)]
+ [!code-vb[Classic DomainUpDown Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.d_23_1.vb)]
+ [!code-cs[Classic DomainUpDown Example#1](~/add/codesnippet/csharp/p-system.windows.forms.d_23_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,14 @@
+---
+uid: System.Web.UI.IStyleSheet
+internalonly: False
+---
+
+---
+uid: System.Web.UI.IStyleSheet.RegisterStyle(System.Web.UI.WebControls.Style,System.Web.UI.IUrlResolutionService)
+internalonly: False
+---
+
+---
+uid: System.Web.UI.IStyleSheet.CreateStyleRule(System.Web.UI.WebControls.Style,System.Web.UI.IUrlResolutionService,System.String)
+internalonly: False
+---

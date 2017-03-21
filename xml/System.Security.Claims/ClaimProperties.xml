@@ -1,6 +1,7 @@
 <Type Name="ClaimProperties" FullName="System.Security.Claims.ClaimProperties">
   <TypeSignature Language="C#" Value="public static class ClaimProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimProperties" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the keys for properties contained in the <see cref="System.Security.Claims.Claim.Properties%2A" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Namespace">
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -26,13 +28,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The claim properties namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SamlAttributeDisplayName">
       <MemberSignature Language="C#" Value="public const string SamlAttributeDisplayName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SamlAttributeDisplayName" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlAttributeDisplayName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,13 +45,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SAML display name attribute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SamlAttributeNameFormat">
       <MemberSignature Language="C#" Value="public const string SamlAttributeNameFormat;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SamlAttributeNameFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlAttributeNameFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,13 +62,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SAML name format attribute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SamlNameIdentifierFormat">
       <MemberSignature Language="C#" Value="public const string SamlNameIdentifierFormat;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SamlNameIdentifierFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierFormat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,13 +79,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SAML name identifier format.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SamlNameIdentifierNameQualifier">
       <MemberSignature Language="C#" Value="public const string SamlNameIdentifierNameQualifier;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SamlNameIdentifierNameQualifier" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierNameQualifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -90,13 +96,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that defines the key for the SAML <see langword="NameQualifier" /> attribute of the SAML <see langword="&lt;NameID&gt;" /> element. The <see langword="NameQualifier" /> attribute specifies the security or administrative domain that qualifies the name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SamlNameIdentifierSPNameQualifier">
       <MemberSignature Language="C#" Value="public const string SamlNameIdentifierSPNameQualifier;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SamlNameIdentifierSPNameQualifier" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierSPNameQualifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,13 +113,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that defines the key for the <see langword="SPNameQualifier" /> attribute of the SAML <see langword="&lt;NameID&gt; " />element. The <see langword="SPNameQualifier" /> attribute specifies the name of a service provider or affiliation of providers that is used to further qualify a name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SamlNameIdentifierSPProvidedId">
       <MemberSignature Language="C#" Value="public const string SamlNameIdentifierSPProvidedId;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SamlNameIdentifierSPProvidedId" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimProperties.SamlNameIdentifierSPProvidedId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -122,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant that defines the key for the <see langword="SPProvidedId" /> attribute of the SAML <see langword="&lt;NameID&gt;" /> element. The <see langword="SPProvidedId" /> attribute specifies a name identifier established by a service provider or affiliation of providers for the entity, if different from the primary name identifier.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

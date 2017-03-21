@@ -1,6 +1,7 @@
 <Type Name="DataGridBoundColumn" FullName="System.Windows.Controls.DataGridBoundColumn">
   <TypeSignature Language="C#" Value="public abstract class DataGridBoundColumn : System.Windows.Controls.DataGridColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract DataGridBoundColumn extends System.Windows.Controls.DataGridColumn" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridBoundColumn" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Serves as the base class for columns that can bind to a property in the data source of a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DataGridBoundColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridBoundColumn" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Binding">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Data.BindingBase Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase Binding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -40,14 +43,22 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the binding that associates the column with a property in the data source.</summary>
+        <value>The object that represents the data binding for the column. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Binding property allows a column to specify a property of the data grid's <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> to bind to. For more information about binding paths, see the "Binding Path Syntax" section in [Binding Declarations Overview](../Topic/Binding%20Declarations%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClipboardContentBinding">
       <MemberSignature Language="C#" Value="public override System.Windows.Data.BindingBase ClipboardContentBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase ClipboardContentBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.ClipboardContentBinding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,14 +68,15 @@
         <ReturnType>System.Windows.Data.BindingBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding object to use when getting or setting cell content for the clipboard.</summary>
+        <value>An object that represents the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingElementStyle">
       <MemberSignature Language="C#" Value="public System.Windows.Style EditingElementStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style EditingElementStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.EditingElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,14 +86,15 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.</summary>
+        <value>The style that is used when rendering an editing element. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingElementStyleProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EditingElementStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EditingElementStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridBoundColumn.EditingElementStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,13 +104,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.DataGridBoundColumn.EditingElementStyle%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementStyle">
       <MemberSignature Language="C#" Value="public System.Windows.Style ElementStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style ElementStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridBoundColumn.ElementStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,14 +121,15 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.</summary>
+        <value>The style that is used when rendering a display-only element. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementStyleProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ElementStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ElementStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridBoundColumn.ElementStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,13 +139,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.DataGridBoundColumn.ElementStyle%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBindingChanged">
       <MemberSignature Language="C#" Value="protected virtual void OnBindingChanged (System.Windows.Data.BindingBase oldBinding, System.Windows.Data.BindingBase newBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBindingChanged(class System.Windows.Data.BindingBase oldBinding, class System.Windows.Data.BindingBase newBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.OnBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,15 +160,16 @@
         <Parameter Name="newBinding" Type="System.Windows.Data.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="oldBinding">To be added.</param>
-        <param name="newBinding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldBinding">The previous binding.</param>
+        <param name="newBinding">The binding that the column has been changed to.</param>
+        <summary>Notifies the <see cref="T:System.Windows.Controls.DataGrid" /> when the value of the <see cref="System.Windows.Controls.DataGridBoundColumn.Binding%2A" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCoerceIsReadOnly">
       <MemberSignature Language="C#" Value="protected override bool OnCoerceIsReadOnly (bool baseValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnCoerceIsReadOnly(bool baseValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.OnCoerceIsReadOnly(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -165,15 +182,17 @@
         <Parameter Name="baseValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="baseValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="baseValue">The value that was passed to the delegate.</param>
+        <summary>Determines the value of the <see cref="System.Windows.Controls.DataGridColumn.IsReadOnly%2A" /> property based on property rules from the data grid that contains this column.</summary>
+        <returns>
+          <see langword="true" /> if cells in the column cannot be edited based on rules from the data grid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshCellContent">
       <MemberSignature Language="C#" Value="protected override void RefreshCellContent (System.Windows.FrameworkElement element, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RefreshCellContent(class System.Windows.FrameworkElement element, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridBoundColumn.RefreshCellContent(System.Windows.FrameworkElement,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,9 +206,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The cell to update.</param>
+        <param name="propertyName">The name of the column property that has changed.</param>
+        <summary>Rebuilds the contents of a cell in the column in response to a binding change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

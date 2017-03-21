@@ -1,8 +1,10 @@
 <Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
   <TypeSignature Language="C#" Value="protected class WebBrowser.WebBrowserSite : System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit WebBrowser/WebBrowserSite extends System.Windows.Forms.WebBrowserSiteBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser.WebBrowserSite" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,25 +17,41 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the host window of a <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are familiar with OLE development using the unmanaged `WebBrowser` ActiveX control, you can extend the functionality of the Windows Forms <xref:System.Windows.Forms.WebBrowser> control, which is a managed wrapper for the ActiveX control. You can use this extensibility, for example, to customize the browser shortcut menu and shortcut keys or to provide a custom security configuration for hosted documents.  
+  
+ To use this feature, implement classes that inherit from the <xref:System.Windows.Forms.WebBrowser> and WebBrowser.WebBrowserSite classes. The unmanaged `WebBrowser` ActiveX control uses the protected <xref:System.Windows.Forms.WebBrowser.CreateWebBrowserSiteBase%2A?displayProperty=fullName> method to retrieve extensibility interfaces implemented by the WebBrowser.WebBrowserSite class. Override the <xref:System.Windows.Forms.WebBrowser.CreateWebBrowserSiteBase%2A> method to return an instance of your own class that inherits from the WebBrowser.WebBrowserSite class. The WebBrowser.WebBrowserSite class provides a default implementations of the OLE `IDocHostUIHandler` interface. For more information, see [IDocHostUIHandler Interface](http://go.microsoft.com/fwlink/?LinkId=98895) in the MSDN library. You can provide your own implementation of this interface or implement any other `WebBrowser` ActiveX control interface in order to customize the behavior of the control. For more information, see [WebBrowser Control](http://go.microsoft.com/fwlink/?LinkID=98894) in the MSDN library.  
+  
+> [!NOTE]
+>  If you provide your own implementation for any `IDocHostUIHandler` members, you must implement all the members of that interface.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for overriding this type, which requires access to unmanaged code. Associated enumerations: <see cref="T:System.Security.Permissions.SecurityAction" /> and <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebBrowserSite (System.Windows.Forms.WebBrowser host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.WebBrowser host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.WebBrowserSite.#ctor(System.Windows.Forms.WebBrowser)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="host" Type="System.Windows.Forms.WebBrowser" />
       </Parameters>
       <Docs>
-        <param name="host">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="host">The <see cref="T:System.Windows.Forms.WebBrowser" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" /> class.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing unmanaged code. Associated enumerations: <see cref="T:System.Security.Permissions.SecurityAction" /> and <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

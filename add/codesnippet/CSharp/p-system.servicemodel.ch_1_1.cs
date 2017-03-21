@@ -1,0 +1,1 @@
+            TimeSpan replayWindow = settings.ReplayWindow;

@@ -1,8 +1,10 @@
 <Type Name="DetailsViewInsertedEventHandler" FullName="System.Web.UI.WebControls.DetailsViewInsertedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DetailsViewInsertedEventHandler(object sender, DetailsViewInsertedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DetailsViewInsertedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewInsertedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,31 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.DetailsViewInsertedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" /> event of a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DetailsView> control raises the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event when an Insert button (a button with its `CommandName` property set to "Insert") within the control is clicked, but after the <xref:System.Web.UI.WebControls.DetailsView> control inserts the record. This allows you to provide an event handler that performs a custom routine, such as checking the results of an insert operation, whenever this event occurs.  
+  
+ When you create a DetailsViewInsertedEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add a DetailsViewInsertedEventHandler delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ [!code-vb[DetailsViewInsertedEventHandlerInline#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_383_1.aspx)]
+ [!code-cs[DetailsViewInsertedEventHandlerInline#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_383_1.aspx)]  
+  
+ The following code example demonstrates how to declaratively add a DetailsViewInsertedEventHandler delegate to the <xref:System.Web.UI.WebControls.DetailsView.ItemInserted> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ [!code-cs[DetailsViewInsertedEventHandler#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_383_2.aspx)]
+ [!code-vb[DetailsViewInsertedEventHandler#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_383_2.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

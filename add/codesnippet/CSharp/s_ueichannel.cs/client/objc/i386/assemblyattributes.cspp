@@ -1,0 +1,117 @@
+//------------------------------------------------------------------------------
+/// <copyright from='1997' to='2001' company='Microsoft Corporation'>           
+///    Copyright (c) Microsoft Corporation. All Rights Reserved.                
+///    Information Contained Herein is Proprietary and Confidential.            
+/// </copyright>                                                                
+//------------------------------------------------------------------------------
+
+/*
+ * Assembly attributes. This file is preprocessed to generate a .cs file
+ * with the correct information.
+ */
+
+// HACK ALERT!  This is a temporary solution until we have a generalized
+// version story.
+#ifndef USE_VSVERSION
+#include <fxver.h>
+#else
+#include <vsver.h>
+#endif
+
+#ifndef QUOTE_MACRO
+#define STRING(X) #X
+#define QUOTE_MACRO(X) STRING(X)
+#endif
+
+using System;
+using System.Reflection;
+using System.Security;
+using System.Resources;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
+
+[assembly:ComVisible(ASSEMBLY_ATTRIBUTE_COM_VISIBLE)]
+
+#ifdef ASSEMBLY_ATTRIBUTE_CLS_COMPLIANT
+[assembly:CLSCompliant(ASSEMBLY_ATTRIBUTE_CLS_COMPLIANT != 0)]
+#endif
+
+#if ALLOW_PARTIALTRUSTCALLS
+[assembly:AllowPartiallyTrustedCallers]
+#endif
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+
+                                                        // Corresponding version resource field
+[assembly:AssemblyTitle(VER_INTERNALNAME_STR)]          // InternalName
+[assembly:AssemblyDescription(VER_FILEDESCRIPTION_STR)] // FileDescription
+[assembly:AssemblyDefaultAlias(VER_INTERNALNAME_STR)]   // InternalName
+[assembly:AssemblyCompany(VER_COMPANYNAME_STR)]         // CompanyName
+[assembly:AssemblyProduct(VER_PRODUCTNAME_STR)]         // ProductName
+[assembly:AssemblyCopyright(VER_LEGALCOPYRIGHT_STR)]    // LegalCopyright
+// [assembly:AssemblyCulture("")]                         // Invariant Culture
+// [assembly:AssemblyOperatingSystem()]                 // TODO (adams 8/14/2000): ??? Inadequately specified
+
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Revision
+//      Build Number
+//
+// You can specify all the value or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly:AssemblyVersion(VER_ASSEMBLYVERSION_STR)]
+[assembly:AssemblyFileVersion(VER_FILEVERSION_STR)]
+[assembly:AssemblyInformationalVersion(VER_PRODUCTVERSION_STR)]
+[assembly:SatelliteContractVersion(VER_ASSEMBLYVERSION_STR)]
+
+
+#if USE_US_ENGLISH_SATELLITE  // Eventual Longhorn requirement
+[assembly:NeutralResourcesLanguageAttribute("en-US", UltimateResourceFallbackLocation.Satellite)]
+#else
+[assembly:NeutralResourcesLanguageAttribute("en-US")]
+#endif
+
+//
+// In order to sign your assembly you must specify a key to use. Refer to the 
+// COM+ 2.0 documentation for more information on assembly signing.
+//
+// Use the attributes below to control which key is used for signing. 
+//
+// Notes: 
+//   (*) If no key is specified - the assembly cannot be signed.
+//   (*) KeyName refers to a key that has been installed in the Crypto Service
+//       Provider (CSP) on your machine. 
+//   (*) If the key file and a key name attributes are both specified, the 
+//       following processing occurs:
+//       (1) If the KeyName can be found in the CSP - that key is used.
+//       (2) If the KeyName does not exist and the KeyFile does exist, the key 
+//           in the file is installed into the CSP and used.
+//   (*) Delay Signing is an advanced option - see the COM+ 2.0 documentation for 
+//       more information on this.
+//
+
+#if SIGN_ASSEMBLY
+[assembly:AssemblyDelaySign(true)]
+[assembly:AssemblyKeyFile(QUOTE_MACRO(ASSEMBLY_KEY_FILE))]
+#endif
+
+#if COM_COMPATIBLE_SIDEBYSIDE
+// These two attributes are for supporting side-by-side of COM-visible
+// objects with NDP 1.0 RTM.  This file is built into all assemblies
+// that expose COM-visible types to be made Side by Side with NDP 1.0 RTM.
+[assembly:ComCompatibleVersion(1,0,3300,0)]
+#endif
+
+#if !NO_RUNTIMECOMPATIBILITY_ATTRIBUTE
+[assembly:System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+#endif
+

@@ -1,6 +1,7 @@
 <Type Name="InertiaRotationBehavior2D" FullName="System.Windows.Input.Manipulations.InertiaRotationBehavior2D">
   <TypeSignature Language="C#" Value="public sealed class InertiaRotationBehavior2D : System.Windows.Input.Manipulations.InertiaParameters2D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InertiaRotationBehavior2D extends System.Windows.Input.Manipulations.InertiaParameters2D" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.InertiaRotationBehavior2D" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes desired rotation behavior of an inertia processor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InertiaRotationBehavior2D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.Manipulations.InertiaRotationBehavior2D" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DesiredDeceleration">
       <MemberSignature Language="C#" Value="public float DesiredDeceleration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 DesiredDeceleration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredDeceleration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -40,14 +43,26 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the desired angular deceleration, in radians per millisecond squared.</summary>
+        <value>The desired angular deceleration, in radians per millisecond squared.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the desired angular deceleration to be used during the inertia operation. This property value is mutually exclusive with the <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation%2A> property; setting this property will set <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation%2A> to `NaN`. The default value for both this property and <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation%2A> is `NaN`. You must set one or the other property before inertia processing starts.  
+  
+ DesiredDeceleration must be a finite, non-negative number.  
+  
+ This property cannot be set while the inertia processor is running; otherwise, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DesiredRotation">
       <MemberSignature Language="C#" Value="public float DesiredRotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 DesiredRotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -57,14 +72,33 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the desired rotation, in radians.</summary>
+        <value>The desired rotation, in radians.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the desired ending rotation of the inertia operation. This property value is mutually exclusive with the <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredDeceleration%2A> property; setting this property will set <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredDeceleration%2A> to `NaN`. The default value for both this property and <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredDeceleration%2A> is `NaN`. You must set one or the other property before inertia processing starts.  
+  
+ DesiredRotation must be a finite, non-negative number. The direction of rotation is determined by the <xref:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.InitialVelocity%2A> property.  
+  
+ This property cannot be set while the inertia processor is running; otherwise, an exception is thrown.  
+  
+   
+  
+## Examples  
+ In the following example, the DesiredRotation property is set to enable inertia processing to rotate an object three-and-one-half times from its starting orientation.  
+  
+ [!code-cs[ManipulationAPI#_ManipulationItem_SetDesiredRotation](~/add/codesnippet/csharp/build/manipulationitem.xaml.cs#_manipulationitem_setdesiredrotation)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialVelocity">
       <MemberSignature Language="C#" Value="public float InitialVelocity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 InitialVelocity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.InitialVelocity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -74,9 +108,18 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the initial rotational velocity, in radians per millisecond.</summary>
+        <value>The initial rotational velocity, in radians per millisecond.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for this property is `NaN`. Leaving this property unchanged from the default or setting this property to zero (0) will disable rotational inertia.  
+  
+ This property cannot be set while the inertia processor is running; otherwise, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

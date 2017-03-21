@@ -1,8 +1,10 @@
 <Type Name="IAccessible" FullName="Accessibility.IAccessible">
   <TypeSignature Language="C#" Value="public interface IAccessible" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccessible" />
+  <TypeSignature Language="DocId" Value="T:Accessibility.IAccessible" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,16 +17,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The IAccessible interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about IAccessible, see the documentation for `IAccessible` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="accChild">
       <MemberSignature Language="C#" Value="public object accChild[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accChild(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accChild(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,18 +56,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accChild, see the documentation for `IAccessible::get_accChild` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accChildCount">
       <MemberSignature Language="C#" Value="public int accChildCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 accChildCount" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accChildCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -74,17 +94,26 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An integer representing the count.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accChildCount, see the documentation for `IAccessible::get_accChildCount` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accDefaultAction">
       <MemberSignature Language="C#" Value="public string accDefaultAction[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accDefaultAction(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accDefaultAction(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -105,18 +134,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>A string representing the action.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accDefaultAction, see the documentation for `IAccessible::get_DefaultAction` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accDescription">
       <MemberSignature Language="C#" Value="public string accDescription[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accDescription(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accDescription(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -137,18 +175,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>A string representing the description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accDescription, see the documentation for `IAccessible::get_accDescription` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accDoDefaultAction">
       <MemberSignature Language="C#" Value="public void accDoDefaultAction (object varChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accDoDefaultAction(object varChild) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accDoDefaultAction(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -166,17 +213,26 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accDoDefaultAction, see the documentation for `IAccessible::accDoDefaultAction` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accFocus">
       <MemberSignature Language="C#" Value="public object accFocus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accFocus" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accFocus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -194,17 +250,26 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>If successful, returns S_OK. Otherwise, returns another standard COM error code.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accFocus, see the documentation for `IAccessible::get_accFocus` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accHelp">
       <MemberSignature Language="C#" Value="public string accHelp[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accHelp(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accHelp(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -225,18 +290,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>A string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accHelp, see the documentation for `IAccessible::get_Help` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accHelpTopic">
       <MemberSignature Language="C#" Value="public int accHelpTopic[out string pszHelpFile, object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 accHelpTopic(string, object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accHelpTopic(System.String@,System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -258,19 +332,28 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pszHelpFile">To be added.</param>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="pszHelpFile">This parameter is intended for internal use only.</param>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An integer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accHelpTopic, see the documentation for `IAccessible::get_HelpTopic` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accHitTest">
       <MemberSignature Language="C#" Value="public object accHitTest (int xLeft, int yTop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accHitTest(int32 xLeft, int32 yTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accHitTest(System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -289,19 +372,28 @@
         <Parameter Name="yTop" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="xLeft">To be added.</param>
-        <param name="yTop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="xLeft">This parameter is intended for internal use only.</param>
+        <param name="yTop">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <returns>An object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accHitTest, see the documentation for `IAccessible::accHitTest` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accKeyboardShortcut">
       <MemberSignature Language="C#" Value="public string accKeyboardShortcut[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accKeyboardShortcut(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accKeyboardShortcut(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -322,18 +414,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>A string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accKeyboardShortcut, see the documentation for `IAccessible::get_accKeyboardShortcut` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accLocation">
       <MemberSignature Language="C#" Value="public void accLocation (out int pxLeft, out int pyTop, out int pcxWidth, out int pcyHeight, object varChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accLocation(int32 pxLeft, int32 pyTop, int32 pcxWidth, int32 pcyHeight, object varChild) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -355,21 +456,30 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pxLeft">To be added.</param>
-        <param name="pyTop">To be added.</param>
-        <param name="pcxWidth">To be added.</param>
-        <param name="pcyHeight">To be added.</param>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pxLeft">This parameter is intended for internal use only.</param>
+        <param name="pyTop">This parameter is intended for internal use only.</param>
+        <param name="pcxWidth">This parameter is intended for internal use only.</param>
+        <param name="pcyHeight">This parameter is intended for internal use only.</param>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accLocation, see the documentation for `IAccessible::accLocation` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accName">
       <MemberSignature Language="C#" Value="public string accName[object varChild] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accName(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accName(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -396,18 +506,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>A string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accName, see the documentation for `IAccessible::get_accName` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accNavigate">
       <MemberSignature Language="C#" Value="public object accNavigate (int navDir, object varStart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accNavigate(int32 navDir, object varStart) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accNavigate(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -426,19 +545,28 @@
         <Parameter Name="varStart" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="navDir">To be added.</param>
-        <param name="varStart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navDir">This parameter is intended for internal use only.</param>
+        <param name="varStart">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <returns>If successful, returns S_OK. For other possible return values, see the documentation for <see langword="IAccessible::accNavigate" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accNavigate, see the documentation for `IAccessible::accNavigate` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accParent">
       <MemberSignature Language="C#" Value="public object accParent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accParent" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -456,17 +584,26 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accParent, see the documentation for `IAccessible::get_Parent` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accRole">
       <MemberSignature Language="C#" Value="public object accRole[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accRole(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accRole(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -487,18 +624,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accRole, see the documentation for `IAccessible::get_accRole` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accSelect">
       <MemberSignature Language="C#" Value="public void accSelect (int flagsSelect, object varChild);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accSelect(int32 flagsSelect, object varChild) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Accessibility.IAccessible.accSelect(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -517,18 +663,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="flagsSelect">To be added.</param>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="flagsSelect">This parameter is intended for internal use only.</param>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accSelect, see the documentation for `IAccessible::accSelect` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accSelection">
       <MemberSignature Language="C#" Value="public object accSelection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accSelection" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -546,17 +701,26 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accSelection, see the documentation for `IAccessible::get_accSelection` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accState">
       <MemberSignature Language="C#" Value="public object accState[object varChild] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object accState(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accState(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -577,18 +741,27 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>An object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accState, see the documentation for `IAccessible::get_accState` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="accValue">
       <MemberSignature Language="C#" Value="public string accValue[object varChild] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string accValue(object)" />
+      <MemberSignature Language="DocId" Value="P:Accessibility.IAccessible.accValue(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -615,10 +788,17 @@
         <Parameter Name="varChild" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varChild">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varChild">This parameter is intended for internal use only.</param>
+        <summary>The <see cref="T:Accessibility.IAccessible" /> interface and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccessible" /> interface.</summary>
+        <value>A string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about accValue, see the documentation for `IAccessible::get_accValue` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,1 @@
+      PolicyStatement^ policyStatementCopy = policyStatement->Copy();

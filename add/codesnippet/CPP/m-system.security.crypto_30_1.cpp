@@ -1,0 +1,1 @@
+                Object^ outputObject = xmlTransform->GetOutput();

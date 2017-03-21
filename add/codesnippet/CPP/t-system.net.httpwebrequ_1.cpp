@@ -1,0 +1,1 @@
+      HttpWebRequest^ myReq = dynamic_cast<HttpWebRequest^>(WebRequest::Create( "http://www.contoso.com/" ));

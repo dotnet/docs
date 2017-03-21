@@ -1,6 +1,7 @@
 <Type Name="PickWithTwoBranchesFactory" FullName="System.Activities.Core.Presentation.Factories.PickWithTwoBranchesFactory">
   <TypeSignature Language="C#" Value="public sealed class PickWithTwoBranchesFactory : System.Activities.Presentation.IActivityTemplateFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PickWithTwoBranchesFactory extends System.Object implements class System.Activities.Presentation.IActivityTemplateFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.Factories.PickWithTwoBranchesFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,21 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates <see cref="T:System.Activities.Statements.Pick" /> activities that contain two branches each.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+   
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PickWithTwoBranchesFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.Factories.PickWithTwoBranchesFactory.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -28,13 +37,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Core.Presentation.Factories.PickWithTwoBranchesFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public System.Activities.Activity Create (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Activity Create(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.Factories.PickWithTwoBranchesFactory.Create(System.Windows.DependencyObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -47,9 +57,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The workflow UI element that is the visual container of the new activity. This parameter is ignored.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Statements.Pick" /> activity that contains two branches.</summary>
+        <returns>A new <see cref="T:System.Activities.Statements.Pick" /> activity that contains two branches.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

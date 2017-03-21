@@ -1,17 +1,11 @@
 <Type Name="ContractNamespaceAttribute" FullName="System.Runtime.Serialization.ContractNamespaceAttribute">
   <TypeSignature Language="C#" Value="public sealed class ContractNamespaceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractNamespaceAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
-    <AssemblyVersion>4.1.1.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ContractNamespaceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -23,83 +17,92 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the CLR namespace and XML namespace of the data contract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the ContractNamespaceAttribute attribute to an assembly that contains types to which the <xref:System.Runtime.Serialization.DataContractAttribute> has been applied. The ContractNamespaceAttribute enables you to set a namespace that is different than the one generated when the type is serialized. For more information about how names are generated, see [Data Contract Names](../Topic/Data%20Contract%20Names.md).  
+  
+ If you are using a type to conform to an existing data contract, you must match the namespace of the existing contract by using the ContractNamespaceAttribute (or the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute> class).  
+  
+> [!NOTE]
+>  In any code, you can use the word `ContractNamespace` instead of the longer ContractNamespaceAttribute.  
+  
+   
+  
+## Examples  
+ The following example shows the ContractNamespaceAttribute applied to an assembly.  
+  
+ [!code-vb[ContractNamespaceAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.seriali_27_1.vb)]
+ [!code-cs[ContractNamespaceAttribute#1](~/add/codesnippet/csharp/t-system.runtime.seriali_27_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContractNamespaceAttribute (string contractNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ContractNamespaceAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contractNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractNamespace">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractNamespace">The namespace of the contract.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.ContractNamespaceAttribute" /> class using the supplied namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClrNamespace">
       <MemberSignature Language="C#" Value="public string ClrNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClrNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ContractNamespaceAttribute.ClrNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the CLR namespace of the data contract type.</summary>
+        <value>The CLR-legal namespace of a type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractNamespace">
       <MemberSignature Language="C#" Value="public string ContractNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContractNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ContractNamespaceAttribute.ContractNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the namespace of the data contract members.</summary>
+        <value>The namespace of the data contract members.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can only be set using the constructor when applying the attribute to an assembly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

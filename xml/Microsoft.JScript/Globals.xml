@@ -1,8 +1,10 @@
 <Type Name="Globals" FullName="Microsoft.JScript.Globals">
   <TypeSignature Language="C#" Value="public sealed class Globals" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Globals extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Globals" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores references to all globally available types and manages the stack. This class belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ConstructArray">
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject ConstructArray (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject ConstructArray(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArray(System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -40,18 +44,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The values to populate the array with.</param>
+        <summary>Provides global access to the <see cref="Microsoft.JScript.ArrayConstructor.CreateInstance%2A" /> method.</summary>
+        <returns>A new instance of a JScript <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConstructArrayLiteral">
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject ConstructArrayLiteral (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject ConstructArrayLiteral(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Globals.ConstructArrayLiteral(System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,18 +67,20 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The values to populate the array with.</param>
+        <summary>Provides global access to the <see cref="Microsoft.JScript.ArrayConstructor.ConstructArray%2A" /> method.</summary>
+        <returns>A new instance of a JScript <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="contextEngine">
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.Vsa.VsaEngine contextEngine;" />
       <MemberSignature Language="ILAsm" Value=".field public static class Microsoft.JScript.Vsa.VsaEngine contextEngine" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Globals.contextEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -84,7 +92,7 @@
         <ReturnType>Microsoft.JScript.Vsa.VsaEngine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a global reference to the single scripting engine that is running in the current context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

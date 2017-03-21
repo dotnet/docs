@@ -1,6 +1,7 @@
 <Type Name="IUnsafeWebRequestCreate" FullName="System.Net.IUnsafeWebRequestCreate">
   <TypeSignature Language="C#" Value="public interface IUnsafeWebRequestCreate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnsafeWebRequestCreate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.IUnsafeWebRequestCreate" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Creates an unsafe <see cref="T:System.Net.WebRequest" /> to a Uniform Resource Identifier (URI).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public System.Net.WebRequest Create (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebRequest Create(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IUnsafeWebRequestCreate.Create(System.Uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -42,9 +44,11 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">The URI of the requested resource.</param>
+        <summary>Initializes a new <see cref="T:System.Net.WebRequest" /> for the specified URI scheme.</summary>
+        <returns>Returns <see cref="T:System.Net.WebRequest" />.  
+  
+ A <see cref="T:System.Net.WebRequest" /> descendant for the specified URI scheme.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

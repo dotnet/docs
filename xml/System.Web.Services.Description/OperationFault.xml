@@ -1,8 +1,10 @@
 <Type Name="OperationFault" FullName="System.Web.Services.Description.OperationFault">
   <TypeSignature Language="C#" Value="public sealed class OperationFault : System.Web.Services.Description.OperationMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationFault extends System.Web.Services.Description.OperationMessage" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationFault" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,52 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the specifications for error messages returned by the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are members of the <xref:System.Web.Services.Description.Operation.Faults%2A> property of the parent <xref:System.Web.Services.Description.Operation> instance.  
+  
+ The OperationFault class corresponds to the Web Services Description Language (WSDL) `fault` element enclosed by the `operation` element that is in turn enclosed by the `portType` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the properties and methods exposed by the OperationFault class.  
+  
+ [!code-cs[OperationFault_OperationFault#1](~/add/codesnippet/csharp/t-system.web.services.de_4_1.cs)]
+ [!code-cpp[OperationFault_OperationFault#1](~/add/codesnippet/cpp/t-system.web.services.de_4_1.cpp)]
+ [!code-vb[OperationFault_OperationFault#1](~/add/codesnippet/visualbasic/t-system.web.services.de_4_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OperationFault ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFault.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.OperationFault" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
       <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationFault.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -50,8 +74,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.OperationFault" />.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.OperationFault" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

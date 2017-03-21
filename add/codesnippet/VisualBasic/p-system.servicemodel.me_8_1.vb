@@ -1,0 +1,1 @@
+                .ClientCredentialType = MessageCredentialType.Certificate

@@ -1,6 +1,7 @@
 <Type Name="AnnotationSmartLabelStyle" FullName="System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle">
   <TypeSignature Language="C#" Value="public class AnnotationSmartLabelStyle : System.Web.UI.DataVisualization.Charting.SmartLabelStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnotationSmartLabelStyle extends System.Web.UI.DataVisualization.Charting.SmartLabelStyle" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,13 +19,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the smart label properties of an annotation to store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is derived from the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle> class used for <xref:System.Web.UI.DataVisualization.Charting.Series> objects.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnnotationSmartLabelStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -32,13 +41,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnnotationSmartLabelStyle (object chartElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object chartElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor(System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -48,14 +58,15 @@
         <Parameter Name="chartElement" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="chartElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="chartElement">The chart element that this style belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle" /> class with the specified chart element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutBackColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color CalloutBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalloutBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -82,14 +93,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the back color of the label callout. This property is only applicable when the <see cref="System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle%2A" /> property is set to a value of <see cref="T:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> object that represents the back color of the label callout.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use and is hidden at design time and run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutLineAnchorCapStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle CalloutLineAnchorCapStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle CalloutLineAnchorCapStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -110,14 +129,22 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the anchor cap style for the label callout line.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" /> object that represents the anchor cap style for the label callout line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use and is hidden at design time and run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutLineColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color CalloutLineColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalloutLineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -144,14 +171,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color of the label callout line.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> object that represents the color of the label callout line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use and is hidden at design time and run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutLineDashStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.ChartDashStyle CalloutLineDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle CalloutLineDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -175,14 +210,22 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the style of the label callout line.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> object that represents the style of the label callout line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use and is hidden at design time and run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutLineWidth">
       <MemberSignature Language="C#" Value="public override int CalloutLineWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CalloutLineWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -203,14 +246,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the width of the label callout line.</summary>
+        <value>The width of the callout line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use and is hidden at design time and run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalloutStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.LabelCalloutStyle CalloutStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LabelCalloutStyle CalloutStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -231,9 +282,16 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelCalloutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the callout style of the repositioned smart labels.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle" /> object that represents the callout style of the repositioned smart labels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use and is hidden at design time and run time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

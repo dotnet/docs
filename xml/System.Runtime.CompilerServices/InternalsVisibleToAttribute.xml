@@ -1,20 +1,11 @@
 <Type Name="InternalsVisibleToAttribute" FullName="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
   <TypeSignature Language="C#" Value="public sealed class InternalsVisibleToAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InternalsVisibleToAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.InternalsVisibleToAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -26,85 +17,215 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that types that are ordinarily visible only within the current assembly are visible to a specified assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Ordinarily, types and members with `internal` scope (in C#) and `friend` scope (in Visual Basic) are visible only in the assembly in which they are defined. The InternalsVisibleToAttribute attribute makes them also visible to the types in a specified assembly, which is known as a friend assembly.  
+  
+ The attribute is applied at the assembly level. This means that it can be included at the beginning of a source code file, or it can be included in the AssemblyInfo file in a Visual Studio project. You can use the attribute to specify a single friend assembly that can access the internal types and members of the current assembly. You can define multiple friend assemblies in two ways. They can appear as individual assembly-level attributes, as the following example illustrates.  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#3](~/add/codesnippet/csharp/t-system.runtime.compile_16_1.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#3](~/add/codesnippet/visualbasic/t-system.runtime.compile_16_1.vb)]  
+  
+ They can also appear with separateInternalsVisibleToAttribute tags but a single `assembly` keyword, as the following example illustrates.  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#4](~/add/codesnippet/csharp/t-system.runtime.compile_16_2.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#4](~/add/codesnippet/visualbasic/t-system.runtime.compile_16_2.vb)]  
+  
+ The friend assembly is identified by the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor. Both the current assembly and the friend assembly must be unsigned, or both assemblies must be signed with a strong name.  
+  
+ If both assemblies are unsigned, the `assemblyName` argument consists of the name of the friend assembly, specified without a directory path or file name extension.  
+  
+ If both assemblies are signed with a strong name, the argument to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor must consist of the name of the assembly without its directory path or file name extension, along with the full public key (and not its public key token). To get the full public key of a strong-named assembly, see the [Getting the full public key](#Key) section later in this article. For more information about using InternalsVisibleToAttribute with strong-named assemblies, see the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor.  
+  
+ Do not include values for the <xref:System.Reflection.AssemblyName.CultureInfo%2A>, <xref:System.Reflection.AssemblyName.Version%2A>, or <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A> field in the argument; the Visual Basic, C#, and C++ compilers treat this as a compiler error. If you use a compiler that does not treat it as an error (such as the [IL Assembler (ILAsm.exe)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md)) and the assemblies are strong-named, a <xref:System.MethodAccessException> exception is thrown the first time the specified friend assembly accesses the assembly that contains the InternalsVisibleToAttribute attribute.  
+  
+ For more information about how to use this attribute, see the following topics:  
+  
+-   [Friend Assemblies (C++)](../Topic/Friend%20Assemblies%20\(C++\).md)  
+  
+-   [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)  
+  
+<a name="Key"></a>   
+## Getting the full public key  
+ You can use the [Strong Name Tool (Sn.exe)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) to retrieve the full public key from a strong-named key (.snk) file. To do this, you perform the following steps:  
+  
+1.  Extract the public key from the strong-named key file to a separate file:  
+  
+     **Sn -p**  *snk_file* *outfile*  
+  
+2.  Display the full public key to the console:  
+  
+     **Sn -tp**  *outfile*  
+  
+3.  Copy and paste the full public key value into your source code.  
+  
+## Compiling the friend assembly with C#  
+ If you use the C# compiler to compile the friend assembly, you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. The **/out** compiler option is optional for the Visual Basic compiler, and the corresponding **-out** or **-o** compiler option should not be used when compiling friend assemblies with the F# compiler.  
+  
+## Compiling the friend assembly with C++  
+ In C++, in order to make the internal members enabled by the InternalsVisibleToAttribute attribute accessible to a friend assembly, you must use the `as_friend` attribute in the C++  directive. For more information, see [Friend Assemblies (C++)](../Topic/Friend%20Assemblies%20\(C++\).md).  
+  
+   
+  
+## Examples  
+ **Signed assemblies**  
+  
+ The following example uses the InternalsVisibleToAttribute attribute to make an `internal` method named `AppendDirectorySeparator` in a signed assembly visible to another signed assembly. It defines a `FileUtilities` class that includes an internal `AppendDirectorySeparator` method. The InternalsVisibleToAttribute attribute is applied to the assembly that contains the `FileUtilities` class. The attribute allows an assembly named `Friend1` to access this internal member.  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#1](~/add/codesnippet/csharp/t-system.runtime.compile_16_3.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#1](~/add/codesnippet/visualbasic/t-system.runtime.compile_16_3.vb)]  
+  
+ If the following example is compiled into a strong-named assembly named `Friend1`, the `Example.Main` method in `Friend1` can successfully call the `FileUtilities.AppendDirectorySeparator` method, although the method is internal to the `Assembly1` assembly. Note that if you are compiling in C# from the command line, you must use the **/out** compiler switch to ensure that the name of the friend assembly is available when the compiler binds to external references.  
+  
+ [!code-cpp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/add/codesnippet/cpp/t-system.runtime.compile_16_4.cpp)]
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/add/codesnippet/csharp/t-system.runtime.compile_16_4.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/add/codesnippet/visualbasic/t-system.runtime.compile_16_4.vb)]  
+  
+ **Unsigned assemblies**  
+  
+ The following example uses the InternalsVisibleToAttribute attribute to make an `internal` member of an unsigned assembly visible to another unsigned assembly. The attribute ensures that the `internal``StringLib.IsFirstLetterUpperCase` method in an assembly named `UtilityLib` is visible to the code in an assembly named `Friend2`.  The following is the source code for UtilityLib.dll:  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/add/codesnippet/csharp/t-system.runtime.compile_16_5.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/add/codesnippet/visualbasic/t-system.runtime.compile_16_5.vb)]  
+  
+ The following example provides the source code for the `Friend2` assembly. Note that if you are compiling in C# from the command line, you must use the **/out** compiler switch to ensure that the name of the friend assembly is available when the compiler binds to external references.  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#6](~/add/codesnippet/csharp/t-system.runtime.compile_16_6.cs)]
+ [!code-cpp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#6](~/add/codesnippet/cpp/t-system.runtime.compile_16_6.cpp)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#6](~/add/codesnippet/visualbasic/t-system.runtime.compile_16_6.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InternalsVisibleToAttribute (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.InternalsVisibleToAttribute.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assemblyName">The name of a friend assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.InternalsVisibleToAttribute" /> class with the name of the specified friend assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The InternalsVisibleToAttribute constructor defines a friend assembly, which is an assembly that has access to the internal types and members of the current assembly.  
+  
+ Both the current assembly and the friend assembly must be unsigned, or both must be signed with a strong name. (For more information about strong-named assemblies, see [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md).) If both are unsigned, the `assemblyName` argument consists of the name of the friend assembly, specified without a directory path or file extension. If both are signed, `assemblyName` consists of the name of the friend assembly without its directory path or file name extension, along with its full public key (but not its public key token). The other components of a strong name, such as those that provide culture, version, or processor architecture information, cannot be specified in the `assemblyName` argument.  
+  
+> [!IMPORTANT]
+>  If you use the C# compiler to compile the friend assembly, you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. The **/out** compiler option is optional for the Visual Basic compiler, and the corresponding **-out** or **-o** compiler option should not be used when compiling friend assemblies with the F# compiler.  
+  
+ You can use [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) to retrieve the full public key from a strong-named key (.snk) file. To do this, you perform the following steps:  
+  
+1.  Extract the public key from the strong-named key file to a separate file:  
+  
+     **Sn -p**  *snk_file* *outfile*  
+  
+2.  Display the full public key to the console:  
+  
+     **Sn -tp**  *outfile*  
+  
+3.  Copy and paste the full public key value into your source code.  
+  
+ For more information about how to use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, see the following topics:  
+  
+-   [Friend Assemblies (C++)](../Topic/Friend%20Assemblies%20\(C++\).md)  
+  
+-   [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)  
+  
+   
+  
+## Examples  
+ **Signed assemblies**  
+  
+ The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to make an `internal` method named `AppendDirectorySeparator` in a signed assembly visible to another signed assembly. It defines a `FileUtilities` class that includes an internal `AppendDirectorySeparator` method. The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute is applied to the assembly that contains the `FileUtilities` class. The attribute allows an assembly named `Friend1` to access this internal member.  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#1](~/add/codesnippet/csharp/9050e0b8-7e34-4655-89ec-_1.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#1](~/add/codesnippet/visualbasic/9050e0b8-7e34-4655-89ec-_1.vb)]  
+  
+ If the following example is compiled into a strong-named assembly named `Friend1`, it can successfully call the `FileUtilities.AppendDirectorySeparator` method, even though the method is internal to the `Assembly1` assembly. Note that if you are compiling in C# from the command line, you must use the **/out** compiler switch to ensure that the name of the friend assembly is available when the compiler binds to external references.  
+  
+ [!code-cpp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/add/codesnippet/cpp/9050e0b8-7e34-4655-89ec-_2.cpp)]
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/add/codesnippet/csharp/9050e0b8-7e34-4655-89ec-_2.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/add/codesnippet/visualbasic/9050e0b8-7e34-4655-89ec-_2.vb)]  
+  
+ The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to make an `internal` member of an unsigned assembly visible to another unsigned assembly. The attribute ensures that the `internal``StringLib.IsFirstLetterUpperCase` method in an assembly named `UtilityLib` is visible to the code in an assembly named `Friend2`.  The following is the source code for UtilityLib.dll:  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/add/codesnippet/csharp/9050e0b8-7e34-4655-89ec-_3.cs)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/add/codesnippet/visualbasic/9050e0b8-7e34-4655-89ec-_3.vb)]  
+  
+ **Unsigned assemblies**  
+  
+ The following example provides the source code for the `Friend2` assembly. Note that if you are compiling in C# from the command line, you must use the **/out** compiler switch to ensure that the name of the friend assembly is available when the compiler binds to external references.  
+  
+ [!code-cs[System.Runtime.CompilerServices.InternalsVisibleToAttribute#6](~/add/codesnippet/csharp/9050e0b8-7e34-4655-89ec-_4.cs)]
+ [!code-cpp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#6](~/add/codesnippet/cpp/9050e0b8-7e34-4655-89ec-_4.cpp)]
+ [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#6](~/add/codesnippet/visualbasic/9050e0b8-7e34-4655-89ec-_4.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllInternalsVisible">
       <MemberSignature Language="C#" Value="public bool AllInternalsVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllInternalsVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.InternalsVisibleToAttribute.AllInternalsVisible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not implemented.</summary>
+        <value>This property does not return a value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">
       <MemberSignature Language="C#" Value="public string AssemblyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.InternalsVisibleToAttribute.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the friend assembly to which all types and type members that are marked with the <see langword="internal" /> keyword are to be made visible.</summary>
+        <value>A string that represents the name of the friend assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, see the following topics:  
+  
+-   [Friend Assemblies (C++)](../Topic/Friend%20Assemblies%20\(C++\).md)  
+  
+-   [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

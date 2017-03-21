@@ -1,6 +1,11 @@
 <Type Name="ProxyStub" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub">
   <TypeSignature Language="C#" Value="public class ProxyStub" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProxyStub extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,28 +20,38 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a proxy in a ClickOnce application manifest. .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProxyStub ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.#ctor" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseInterface">
       <MemberSignature Language="C#" Value="public string BaseInterface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseInterface" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,15 +65,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the IID of the interface from which the interface described by the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID%2A" /> property is derived.</summary>
+        <value>The IID of the base interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IID">
       <MemberSignature Language="C#" Value="public string IID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,15 +92,27 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the IID of the interface for which the proxy is being declared.</summary>
+        <value>The IID of the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The IID must have braces ({}) surrounding it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,15 +126,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the component.</summary>
+        <value>The name of the component.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NumMethods">
       <MemberSignature Language="C#" Value="public string NumMethods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NumMethods" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,15 +153,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of methods in the component.</summary>
+        <value>The number of methods in the component.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TlbId">
       <MemberSignature Language="C#" Value="public string TlbId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TlbId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -138,15 +180,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the GUID for the type library for the component.</summary>
+        <value>The GUID for the type library.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlBaseInterface">
       <MemberSignature Language="C#" Value="public string XmlBaseInterface { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlBaseInterface" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlBaseInterface" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,15 +213,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface%2A" /> property to an XML file.</summary>
+        <value>The value of the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface%2A" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlIID">
       <MemberSignature Language="C#" Value="public string XmlIID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlIID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlIID" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -194,15 +246,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID%2A" /> property to an XML file.</summary>
+        <value>The value of the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID%2A" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlName">
       <MemberSignature Language="C#" Value="public string XmlName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlName" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -222,15 +279,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name%2A" /> property to an XML file.</summary>
+        <value>The value of the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name%2A" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlNumMethods">
       <MemberSignature Language="C#" Value="public string XmlNumMethods { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlNumMethods" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlNumMethods" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -250,15 +312,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods%2A" /> property to an XML file.</summary>
+        <value>The value of the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods%2A" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlTlbId">
       <MemberSignature Language="C#" Value="public string XmlTlbId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlTlbId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.XmlTlbId" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -278,8 +345,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId%2A" /> property to an XML file.</summary>
+        <value>The value of the <see cref="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId%2A" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

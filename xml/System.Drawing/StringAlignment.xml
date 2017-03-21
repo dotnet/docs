@@ -1,61 +1,85 @@
 <Type Name="StringAlignment" FullName="System.Drawing.StringAlignment">
   <TypeSignature Language="C#" Value="public enum StringAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.StringAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the alignment of a text string relative to its layout rectangle.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When used with the <xref:System.Drawing.StringFormat.LineAlignment%2A> property, this enumeration sets the vertical alignment for a drawn string. When used with the <xref:System.Drawing.StringFormat.Alignment%2A> property, this enumeration sets the horizontal alignment.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.StringFormat.LineAlignment%2A> and <xref:System.Drawing.StringFormat.Alignment%2A> properties and the StringAlignment enumeration to align strings. This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineAndAlignment` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
+  
+ [!code-cs[System.Drawing.Misc2#1](~/add/codesnippet/csharp/t-system.drawing.stringa_1.cs)]
+ [!code-vb[System.Drawing.Misc2#1](~/add/codesnippet/visualbasic/t-system.drawing.stringa_1.vb)]
+ [!code-cpp[System.Drawing.Misc2#1](~/add/codesnippet/cpp/t-system.drawing.stringa_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Center">
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringAlignment Center = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that text is aligned in the center of the layout rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Far">
       <MemberSignature Language="C#" Value="Far" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringAlignment Far = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Far" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that text is aligned far from the origin position of the layout rectangle. In a left-to-right layout, the far position is right. In a right-to-left layout, the far position is left.</summary>
       </Docs>
     </Member>
     <Member MemberName="Near">
       <MemberSignature Language="C#" Value="Near" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringAlignment Near = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Near" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the text be aligned near the layout. In a left-to-right layout, the near position is left. In a right-to-left layout, the near position is right.</summary>
       </Docs>
     </Member>
   </Members>

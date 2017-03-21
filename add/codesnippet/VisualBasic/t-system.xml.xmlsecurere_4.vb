@@ -1,0 +1,1 @@
+Dim myWebPermission As New WebPermission(PermissionState.None)

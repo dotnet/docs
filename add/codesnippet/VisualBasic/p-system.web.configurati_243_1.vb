@@ -1,0 +1,1 @@
+eventMappingSetting.Name = "All Errors"

@@ -1,0 +1,1 @@
+            EndpointAddress ea = eab.ToEndpointAddress();

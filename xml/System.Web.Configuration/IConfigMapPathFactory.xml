@@ -1,22 +1,33 @@
 <Type Name="IConfigMapPathFactory" FullName="System.Web.Configuration.IConfigMapPathFactory">
   <TypeSignature Language="C#" Value="public interface IConfigMapPathFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigMapPathFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IConfigMapPathFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Maps the configuration file virtual and physical paths.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ IConfigMapPathFactory is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.IConfigMapPath Create (string virtualPath, string physicalPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Configuration.IConfigMapPath Create(string virtualPath, string physicalPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IConfigMapPathFactory.Create(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -27,11 +38,18 @@
         <Parameter Name="physicalPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <param name="physicalPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="virtualPath">The configuration-file virtual path.</param>
+        <param name="physicalPath">The configuration-file physical path.</param>
+        <summary>Creates the interface for the mapping between configuration-file virtual and physical paths.</summary>
+        <returns>The <see cref="T:System.Web.Configuration.IConfigMapPath" /> object associated with the specified configuration-file path mapping.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Create is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

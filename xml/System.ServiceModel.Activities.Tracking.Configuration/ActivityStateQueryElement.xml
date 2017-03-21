@@ -1,6 +1,7 @@
 <Type Name="ActivityStateQueryElement" FullName="System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement">
   <TypeSignature Language="C#" Value="public class ActivityStateQueryElement : System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityStateQueryElement extends System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A configuration element that represents a <see cref="T:System.Activities.Tracking.ActivityStateQuery" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityStateQueryElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivityName">
       <MemberSignature Language="C#" Value="public string ActivityName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ActivityName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.ActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -48,14 +51,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the activity to filter <see cref="T:System.Activities.Tracking.ActivityStateRecord" /> instances on.</summary>
+        <value>The name of the activity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is “*” (all).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Arguments">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection Arguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection Arguments" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -70,14 +81,15 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection" /> that contains the variables to filter <see cref="T:System.Activities.Tracking.ActivityStateRecord" /> on.</summary>
+        <value>The collection of arguments.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NewTrackingQuery">
       <MemberSignature Language="C#" Value="protected override System.Activities.Tracking.TrackingQuery NewTrackingQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Tracking.TrackingQuery NewTrackingQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.NewTrackingQuery" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -88,14 +100,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Activities.Tracking.ActivityStateQuery" />.</summary>
+        <returns>The activity state query.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -105,14 +118,15 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> that contains the properties of the configuration element.</summary>
+        <value>The configuration element properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="States">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection States { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection States" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.States" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -127,14 +141,15 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection" /> that contains the states to filter <see cref="T:System.Activities.Tracking.ActivityStateRecord" /> on.</summary>
+        <value>The collection of states.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Variables">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Tracking.Configuration.VariableElementCollection Variables { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Tracking.Configuration.VariableElementCollection Variables" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement.Variables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -149,8 +164,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.VariableElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.VariableElementCollection" /> that contains the variables to filter <see cref="T:System.Activities.Tracking.ActivityStateRecord" /> on.</summary>
+        <value>The collection of variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

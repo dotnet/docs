@@ -1,8 +1,10 @@
 <Type Name="PersistStreamTypeWrapper" FullName="System.ServiceModel.ComIntegration.PersistStreamTypeWrapper">
   <TypeSignature Language="C#" Value="public class PersistStreamTypeWrapper : System.Runtime.Serialization.IExtensibleDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PersistStreamTypeWrapper extends System.Object implements class System.Runtime.Serialization.IExtensibleDataObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,27 +21,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Persists objects that implement <see langword="IPersistStream" /> (such as ADO Recordset) to a byte stream.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PersistStreamTypeWrapper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtensionData">
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.ExtensionDataObject ExtensionData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ExtensionDataObject ExtensionData" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.ExtensionData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,17 +54,19 @@
         <ReturnType>System.Runtime.Serialization.ExtensionDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Runtime.Serialization.ExtensionDataObject" /> associated with the <see cref="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" />.</summary>
+        <value>An<see cref="T:System.Runtime.Serialization.ExtensionDataObject" />instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObject&lt;T&gt;">
       <MemberSignature Language="C#" Value="public void GetObject&lt;T&gt; (ref T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetObject&lt;T&gt;(!!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.GetObject``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -77,18 +84,20 @@
         <Parameter Name="obj" Type="T&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The object type.</typeparam>
+        <param name="obj">An object into which the deserialized object will be placed.</param>
+        <summary>Uses the <see langword="IPersistStream" /> interface of the object to deserialize an object from a byte stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetObject&lt;T&gt;">
       <MemberSignature Language="C#" Value="public void SetObject&lt;T&gt; (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetObject&lt;T&gt;(!!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper.SetObject``1(``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -106,10 +115,17 @@
         <Parameter Name="obj" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The object type.</typeparam>
+        <param name="obj">The object to be persisted to the byte stream.</param>
+        <summary>Uses the <see langword="IPersistStream" /> interface of the object to serialize that object to a byte stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object to be persisted to the byte stream must be a COM object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

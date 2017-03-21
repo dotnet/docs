@@ -1,0 +1,8 @@
+    <Style TargetType="ListBoxItem" x:Key="ContainerStyle">
+      <Setter Property="Opacity" Value="0.5" />
+      <Setter Property="Opacity" Value="0.5" />
+      <Setter Property="MaxHeight" Value="75" />
+      <Style.Triggers>
+        <Trigger Property="IsSelected" Value="True">
+          <Setter Property="Opacity" Value="1.0" />
+        </Trigger>

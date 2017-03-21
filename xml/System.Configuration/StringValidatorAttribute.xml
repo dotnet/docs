@@ -1,8 +1,10 @@
 <Type Name="StringValidatorAttribute" FullName="System.Configuration.StringValidatorAttribute">
   <TypeSignature Language="C#" Value="public sealed class StringValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StringValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.StringValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,90 +17,179 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Declaratively instructs the .NET Framework to perform string validation on a configuration property. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the StringValidatorAttribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using the <xref:System.Configuration.StringValidator> and pass to it the value of the decorating parameters.  
+  
+ You can apply StringValidatorAttribute objects to property types only.  
+  
+   
+  
+## Examples  
+ The following example shows how to decorate the properties of a custom <xref:System.Configuration.ConfigurationSection> object using the StringValidatorAttribute object.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/visualbasic/t-system.configuration.s_1_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/csharp/t-system.configuration.s_1_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StringValidatorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.StringValidatorAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.StringValidatorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor in the attributed model to ensure that the value assigned to the configuration-element property is of a string type.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the StringValidatorAttribute constructor.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#3](~/add/codesnippet/visualbasic/m-system.configuration.s_2_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#3](~/add/codesnippet/csharp/m-system.configuration.s_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidCharacters">
       <MemberSignature Language="C#" Value="public string InvalidCharacters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InvalidCharacters" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.InvalidCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the invalid characters for the property.</summary>
+        <value>The string that contains the set of characters that are not allowed for the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the InvalidCharacters property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/visualbasic/p-system.configuration.s_15_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/csharp/p-system.configuration.s_15_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
       <MemberSignature Language="C#" Value="public int MaxLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum length allowed for the string to assign to the property.</summary>
+        <value>An integer that indicates the maximum allowed length for the string to assign to the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the MaxLength property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/visualbasic/p-system.configuration.s_8_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/csharp/p-system.configuration.s_8_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see cref="System.Configuration.StringValidatorAttribute.MinLength%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MinLength">
       <MemberSignature Language="C#" Value="public int MinLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinLength" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.MinLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum allowed value for the string to assign to the property.</summary>
+        <value>An integer that indicates the allowed minimum length for the string to assign to the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the MinLength property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/visualbasic/p-system.configuration.s_12_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#2](~/add/codesnippet/csharp/p-system.configuration.s_12_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is greater than <see cref="System.Configuration.StringValidatorAttribute.MaxLength%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidatorInstance">
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.StringValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of the <see cref="T:System.Configuration.StringValidator" /> class.</summary>
+        <value>A current <see cref="T:System.Configuration.StringValidator" /> settings in a <see cref="T:System.Configuration.ConfigurationValidatorBase" /> validator instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the ValidatorInstance property to perform string validation by calling its <xref:System.Configuration.StringValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the ValidatorInstance property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#14](~/add/codesnippet/visualbasic/p-system.configuration.s_4_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#14](~/add/codesnippet/csharp/p-system.configuration.s_4_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

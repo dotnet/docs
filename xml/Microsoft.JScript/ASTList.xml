@@ -1,8 +1,10 @@
 <Type Name="ASTList" FullName="Microsoft.JScript.ASTList">
   <TypeSignature Language="C#" Value="public sealed class ASTList : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ASTList extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ASTList" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Maintains a list of <see cref="T:Microsoft.JScript.AST" /> elements. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

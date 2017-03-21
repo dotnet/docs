@@ -1,6 +1,7 @@
 <Type Name="SystemCommands" FullName="System.Windows.SystemCommands">
   <TypeSignature Language="C#" Value="public static class SystemCommands" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed SystemCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.SystemCommands" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines routed commands that are common to window management.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The commands in the SystemCommands class represent a set of common commands that manage a <xref:System.Windows.Window>.  The properties in this class represent <xref:System.Windows.Input.RoutedCommand> objects and do not provide the implementation logic for the command. You can provide the logic for a command by binding the command with a <xref:System.Windows.Input.CommandBinding>.  For more information, see [How to: Hook Up a Command to a Control with No Command Support](../Topic/How%20to:%20Hook%20Up%20a%20Command%20to%20a%20Control%20with%20No%20Command%20Support.md). Alternatively, the SystemCommands class provides static methods that implement the logic for the specified <xref:System.Windows.Window>. You can pass a static method to a type that implements <xref:System.Windows.Input.ICommand> and that accepts a delegate. For more information, see the example in the <xref:System.Windows.Input.InputBinding> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CloseWindow">
       <MemberSignature Language="C#" Value="public static void CloseWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CloseWindow(class System.Windows.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.CloseWindow(System.Windows.Window)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -34,14 +43,15 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to close.</param>
+        <summary>Closes the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseWindowCommand">
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand CloseWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand CloseWindowCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.CloseWindowCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,14 +61,15 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that closes a window.</summary>
+        <value>A command that closes a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximizeWindow">
       <MemberSignature Language="C#" Value="public static void MaximizeWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaximizeWindow(class System.Windows.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.MaximizeWindow(System.Windows.Window)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,14 +87,15 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to maximize.</param>
+        <summary>Maximizes the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximizeWindowCommand">
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand MaximizeWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand MaximizeWindowCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.MaximizeWindowCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,14 +105,15 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that maximizes a window.</summary>
+        <value>A command that maximizes a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimizeWindow">
       <MemberSignature Language="C#" Value="public static void MinimizeWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MinimizeWindow(class System.Windows.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.MinimizeWindow(System.Windows.Window)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,14 +131,15 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to minimize.</param>
+        <summary>Minimizes the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimizeWindowCommand">
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand MinimizeWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand MinimizeWindowCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.MinimizeWindowCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,14 +149,15 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that maximizes a window.</summary>
+        <value>A command that maximizes a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RestoreWindow">
       <MemberSignature Language="C#" Value="public static void RestoreWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RestoreWindow(class System.Windows.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.RestoreWindow(System.Windows.Window)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,14 +175,15 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to restore.</param>
+        <summary>Restores the specified widow.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RestoreWindowCommand">
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand RestoreWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand RestoreWindowCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.RestoreWindowCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,14 +193,15 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that restores a window.</summary>
+        <value>A command that restores a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSystemMenu">
       <MemberSignature Language="C#" Value="public static void ShowSystemMenu (System.Windows.Window window, System.Windows.Point screenLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowSystemMenu(class System.Windows.Window window, valuetype System.Windows.Point screenLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.ShowSystemMenu(System.Windows.Window,System.Windows.Point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,15 +220,16 @@
         <Parameter Name="screenLocation" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <param name="screenLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to have its system menu displayed.</param>
+        <param name="screenLocation">The location of the system menu.</param>
+        <summary>Displays the system menu for the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSystemMenuCommand">
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand ShowSystemMenuCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand ShowSystemMenuCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.ShowSystemMenuCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -221,8 +239,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that displays the system menu.</summary>
+        <value>A command that displays the system menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

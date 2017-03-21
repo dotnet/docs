@@ -1,0 +1,2 @@
+        ServiceDescription description =
+                hostDefault.Description;

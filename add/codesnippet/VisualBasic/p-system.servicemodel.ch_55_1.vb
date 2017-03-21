@@ -1,0 +1,1 @@
+			Dim id As IdentityVerifier = settings.IdentityVerifier

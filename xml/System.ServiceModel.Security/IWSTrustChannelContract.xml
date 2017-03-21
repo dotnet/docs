@@ -1,6 +1,7 @@
 <Type Name="IWSTrustChannelContract" FullName="System.ServiceModel.Security.IWSTrustChannelContract">
   <TypeSignature Language="C#" Value="public interface IWSTrustChannelContract : System.ServiceModel.Security.IWSTrustContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWSTrustChannelContract implements class System.ServiceModel.Security.IWSTrustContract" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustChannelContract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,13 +20,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A service contract that defines the methods that wrap the Message-oriented operation contracts exposed by IWSTrustChannelContract.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginCancel">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCancel(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginCancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,17 +42,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Cancel message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginIssue">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginIssue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginIssue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.AsyncCallback callback, object asyncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginIssue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,17 +68,18 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Renew message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginRenew">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRenew (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRenew(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginRenew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,17 +94,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Renew message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginValidate">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginValidate (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginValidate(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginValidate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,17 +120,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Validate message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Cancel (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Cancel(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Cancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,15 +144,16 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Cancel message to an endpoint.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCancel">
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,15 +167,16 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="System.ServiceModel.Security.IWSTrustChannelContract.BeginCancel%2A" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndIssue">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken EndIssue (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken EndIssue(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,16 +190,17 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="System.ServiceModel.Security.IWSTrustChannelContract.BeginIssue%2A" />.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token issued by the STS.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndRenew">
       <MemberSignature Language="C#" Value="public void EndRenew (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRenew(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,15 +214,16 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="System.ServiceModel.Security.IWSTrustChannelContract.BeginRenew%2A" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndValidate">
       <MemberSignature Language="C#" Value="public void EndValidate (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndValidate(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -227,15 +237,16 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="System.ServiceModel.Security.IWSTrustChannelContract.BeginValidate%2A" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Issue">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken Issue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,15 +259,16 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token issued by the STS.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Issue">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken Issue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,16 +282,17 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the response from the STS.</param>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token issued by the STS.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Renew">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Renew (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Renew(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Renew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -292,15 +305,16 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Renew message to an endpoint.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Validate (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse Validate(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustChannelContract.Validate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -313,9 +327,9 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Validate message to an endpoint.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

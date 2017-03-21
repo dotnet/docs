@@ -1,8 +1,10 @@
 <Type Name="DsmlInvalidDocumentException" FullName="System.DirectoryServices.Protocols.DsmlInvalidDocumentException">
   <TypeSignature Language="C#" Value="public class DsmlInvalidDocumentException : System.DirectoryServices.Protocols.DirectoryException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DsmlInvalidDocumentException extends System.DirectoryServices.Protocols.DirectoryException" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,47 +12,60 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The DsmlInvalidDocumentException class is an exception that occurs when a DSML Request or Response document is not well-formed XML or cannot be validated with DSMLv2 schema.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DsmlInvalidDocumentException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The DsmlInvalidDocumentException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default text message displayed to the client is "The DSML document could not be parsed."  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DsmlInvalidDocumentException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception is thrown.</param>
+        <summary>The DsmlInvalidDocumentException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class using the specified parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DsmlInvalidDocumentException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -58,18 +73,20 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception thrown.</param>
+        <param name="context">The contextual data about the source or destination.</param>
+        <summary>The DsmlInvalidDocumentException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class using the specified serialization data and streaming contextual data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DsmlInvalidDocumentException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.String,System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,9 +94,9 @@
         <Parameter Name="inner" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message displayed to the client when the exception is thrown.</param>
+        <param name="inner">The <see cref="System.Exception.InnerException%2A" />, if any, that threw the exception.</param>
+        <summary>The DsmlInvalidDocumentException constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class using the specified parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

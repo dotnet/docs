@@ -1,0 +1,14 @@
+  <entry>
+    <id>Item ID</id>
+    <title type="text">My Item</title>
+    <updated>2007-03-16T23:02:54Z</updated>
+    <author>
+      <name>Jesper Aaberg</name>
+      <uri>http://contoso/Jesper</uri>
+      <email>jesper@contoso.com</email>
+    </author>
+    <link rel="alternate" href="http://someserver/MyItem" />
+    <link rel="alternate" type="text/html" title="Alternate Link" length="1000" href="http://otherserver/Item" />
+    <category term="Category One" />
+    <content type="text">This is some content</content>
+  </entry>

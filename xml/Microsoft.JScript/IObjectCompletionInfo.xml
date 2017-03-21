@@ -1,8 +1,10 @@
 <Type Name="IObjectCompletionInfo" FullName="Microsoft.JScript.IObjectCompletionInfo">
   <TypeSignature Language="C#" Value="public interface IObjectCompletionInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObjectCompletionInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IObjectCompletionInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This is a marker interface and has no methods.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

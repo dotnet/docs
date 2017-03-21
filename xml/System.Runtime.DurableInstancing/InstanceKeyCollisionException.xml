@@ -1,6 +1,7 @@
 <Type Name="InstanceKeyCollisionException" FullName="System.Runtime.DurableInstancing.InstanceKeyCollisionException">
   <TypeSignature Language="C#" Value="public class InstanceKeyCollisionException : System.Runtime.DurableInstancing.InstancePersistenceCommandException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InstanceKeyCollisionException extends System.Runtime.DurableInstancing.InstancePersistenceCommandException" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A persistence provider throws this exception when it expects to find an instance key in the unassociated state, but finds the key in a different state.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceKeyCollisionException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceKeyCollisionException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -40,14 +43,15 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The reason for the exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with the error message passed as a parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected InstanceKeyCollisionException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -63,15 +67,16 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The information about the current exception.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with serialized data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceKeyCollisionException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor(System.String,System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -82,15 +87,16 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The reason for the exception.</param>
+        <param name="innerException">The exception that caused the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with the error message and the inner exception information passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceKeyCollisionException (System.Xml.Linq.XName commandName, Guid instanceId, System.Runtime.DurableInstancing.InstanceKey instanceKey, Guid conflictingInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceKey instanceKey, valuetype System.Guid conflictingInstanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor(System.Xml.Linq.XName,System.Guid,System.Runtime.DurableInstancing.InstanceKey,System.Guid)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -103,17 +109,18 @@
         <Parameter Name="conflictingInstanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <param name="instanceId">To be added.</param>
-        <param name="instanceKey">To be added.</param>
-        <param name="conflictingInstanceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the <c>conflictingInstanceId</c> parameter.</param>
+        <param name="instanceKey">The instance key information.</param>
+        <param name="conflictingInstanceId">The ID of the instance that is currently associated with the instance key.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with the name of the command, ID of the instance against which the command was executed, instance key information, and the instance ID that is currently associated with the instance key passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceKeyCollisionException (System.Xml.Linq.XName commandName, Guid instanceId, System.Runtime.DurableInstancing.InstanceKey instanceKey, Guid conflictingInstanceId, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceKey instanceKey, valuetype System.Guid conflictingInstanceId, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor(System.Xml.Linq.XName,System.Guid,System.Runtime.DurableInstancing.InstanceKey,System.Guid,System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -127,18 +134,19 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <param name="instanceId">To be added.</param>
-        <param name="instanceKey">To be added.</param>
-        <param name="conflictingInstanceId">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the <c>conflictingInstanceId</c> parameter.</param>
+        <param name="instanceKey">The instance key information.</param>
+        <param name="conflictingInstanceId">The ID of the instance that is currently associated with the instance key.</param>
+        <param name="innerException">The exception that caused the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with the name of the command, ID of the instance against which the command was executed, instance key information, the instance ID that is currently associated with the instance key, and inner exception information passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceKeyCollisionException (System.Xml.Linq.XName commandName, Guid instanceId, System.Runtime.DurableInstancing.InstanceKey instanceKey, Guid conflictingInstanceId, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceKey instanceKey, valuetype System.Guid conflictingInstanceId, string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor(System.Xml.Linq.XName,System.Guid,System.Runtime.DurableInstancing.InstanceKey,System.Guid,System.String,System.Exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -153,19 +161,20 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <param name="instanceId">To be added.</param>
-        <param name="instanceKey">To be added.</param>
-        <param name="conflictingInstanceId">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the conflictingInstanceId parameter.</param>
+        <param name="instanceKey">The instance key information.</param>
+        <param name="conflictingInstanceId">The ID of the instance that is currently associated with the instance key.</param>
+        <param name="message">The reason for the exception.</param>
+        <param name="innerException">The exception that caused the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with the name of the command, ID of the instance against which the command was executed, instance key information, the instance ID that is currently associated with the instance key, the error message that describes the exception, and inner exception information passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ConflictingInstanceId">
       <MemberSignature Language="C#" Value="public Guid ConflictingInstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ConflictingInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyCollisionException.ConflictingInstanceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -175,14 +184,15 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the instance ID currently associated with the instance key. The persistence provider expects to find the instance key in an unassociated state, but the key is associated with this instance ID.</summary>
+        <value>The instance ID. Returns Guid.Empty if the conflicting instance ID is not known.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceKeyCollisionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -201,15 +211,16 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception being thrown.</param>
+        <param name="context">The contextual information about the source or the destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceKey">
       <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceKey InstanceKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.DurableInstancing.InstanceKey InstanceKey" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyCollisionException.InstanceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -219,8 +230,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Contains information about the instance key.</summary>
+        <value>The instance key information. Returns null if the conflicting instance key is not known.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

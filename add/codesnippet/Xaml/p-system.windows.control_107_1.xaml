@@ -1,0 +1,11 @@
+    <Style TargetType="ListBox">
+      <Setter Property="ItemsPanel">
+        <Setter.Value>
+          <ItemsPanelTemplate>
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"/>
+          </ItemsPanelTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>

@@ -1,6 +1,7 @@
 <Type Name="KeyTipVerticalPlacement" FullName="System.Windows.Controls.KeyTipVerticalPlacement">
   <TypeSignature Language="C#" Value="public enum KeyTipVerticalPlacement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyTipVerticalPlacement extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipVerticalPlacement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,13 +10,14 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the values for the vertical placement of the KeyTip relative to its placement target.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="KeyTipBottomAtTargetBottom">
       <MemberSignature Language="C#" Value="KeyTipBottomAtTargetBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipBottomAtTargetBottom = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipBottomAtTargetBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -25,12 +27,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bottom of the KeyTip is aligned with the bottom of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipBottomAtTargetCenter">
       <MemberSignature Language="C#" Value="KeyTipBottomAtTargetCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipBottomAtTargetCenter = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipBottomAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -40,12 +43,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bottom of the KeyTip is aligned with the center of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipBottomAtTargetTop">
       <MemberSignature Language="C#" Value="KeyTipBottomAtTargetTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipBottomAtTargetTop = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipBottomAtTargetTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -55,12 +59,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bottom of the KeyTip is aligned with the top of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipCenterAtTargetBottom">
       <MemberSignature Language="C#" Value="KeyTipCenterAtTargetBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipCenterAtTargetBottom = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipCenterAtTargetBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -70,12 +75,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The center of the KeyTip is aligned with the bottom of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipCenterAtTargetCenter">
       <MemberSignature Language="C#" Value="KeyTipCenterAtTargetCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipCenterAtTargetCenter = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipCenterAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -85,12 +91,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The center of the KeyTip is aligned with the center of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipCenterAtTargetTop">
       <MemberSignature Language="C#" Value="KeyTipCenterAtTargetTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipCenterAtTargetTop = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipCenterAtTargetTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -100,12 +107,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The center of the KeyTip is aligned with the top of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipTopAtTargetBottom">
       <MemberSignature Language="C#" Value="KeyTipTopAtTargetBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipTopAtTargetBottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipTopAtTargetBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -115,12 +123,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The top of the KeyTip is aligned with the bottom of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipTopAtTargetCenter">
       <MemberSignature Language="C#" Value="KeyTipTopAtTargetCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipTopAtTargetCenter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipTopAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -130,12 +139,13 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The top of the KeyTip is aligned with the center of the target element.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTipTopAtTargetTop">
       <MemberSignature Language="C#" Value="KeyTipTopAtTargetTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipTopAtTargetTop = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipVerticalPlacement.KeyTipTopAtTargetTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -145,7 +155,7 @@
         <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The top of the KeyTip is aligned with the top of the target element.</summary>
       </Docs>
     </Member>
   </Members>

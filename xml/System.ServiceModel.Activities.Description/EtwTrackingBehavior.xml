@@ -1,6 +1,7 @@
 <Type Name="EtwTrackingBehavior" FullName="System.ServiceModel.Activities.Description.EtwTrackingBehavior">
   <TypeSignature Language="C#" Value="public class EtwTrackingBehavior : System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EtwTrackingBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.EtwTrackingBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A service behavior that allows a service to utilize ETW tracking using an <see cref="T:System.Activities.Tracking.EtwTrackingParticipant" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EtwTrackingBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.EtwTrackingBehavior.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -28,13 +30,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Description.EtwTrackingBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddBindingParameters">
       <MemberSignature Language="C#" Value="public virtual void AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.EtwTrackingBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -50,17 +53,18 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <param name="endpoints">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <param name="endpoints">The service endpoints.</param>
+        <param name="bindingParameters">Custom objects required to implement the behavior.</param>
+        <summary>An implementation of the <see cref="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyDispatchBehavior">
       <MemberSignature Language="C#" Value="public virtual void ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.EtwTrackingBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,15 +78,16 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>An implementation of the <see cref="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProfileName">
       <MemberSignature Language="C#" Value="public string ProfileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProfileName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.EtwTrackingBehavior.ProfileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -92,14 +97,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the <see cref="T:System.Activities.Tracking.TrackingProfile" /> associated with this behavior.</summary>
+        <value>The name of the <see cref="T:System.Activities.Tracking.TrackingProfile" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual void Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.EtwTrackingBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -113,9 +119,9 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>An implementation of the <see cref="System.ServiceModel.Description.IServiceBehavior.Validate%2A" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

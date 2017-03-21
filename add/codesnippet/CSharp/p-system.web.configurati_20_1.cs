@@ -1,0 +1,3 @@
+
+        object[] collectionKeys = sqlCdds.AllKeys;
+               

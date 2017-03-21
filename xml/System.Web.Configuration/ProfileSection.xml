@@ -1,8 +1,10 @@
 <Type Name="ProfileSection" FullName="System.Web.Configuration.ProfileSection">
   <TypeSignature Language="C#" Value="public sealed class ProfileSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfileSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,103 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The ProfileSection class provides a way to programmatically access and modify the <see langword="profile" /> section of a configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ProfileSection class provides a way to programmatically access and modify the content of the configuration file `profile` section. The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `profile` section of the configuration file. The class allows you to access and modify the values for individual profiles. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=fullName> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/add/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](../Topic/ASP.NET%20Profile%20Properties%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify values for several properties of the ProfileSection class.  
+  
+```  
+<system.web>  
+  <profile enabled = "true"   
+     defaultProvider="AspNetSqlProfileProvider">  
+    <providers>  
+      <add  name="AspNetSqlProfileProvider"  
+        type="System.Web.Profile.SqlProfileProvider"  
+        connectionStringName="LocalSqlServer"  
+        applicationName="/"  
+        description="Stores and retrieves profile data from the   
+local Microsoft SQL Server database" />  
+    </providers>  
+    <properties>  
+      <add name = "FirstName"/>  
+      <add name = "LastName"/>  
+      <add name = "FavoriteURLs" type =  
+        "System.Collection.Specialized.StringCollection, System"   
+        serializeAs = "Xml"/>        
+      <add name = "ShoppingCart" type =   
+        "MyCommerce.ShoppingCart, MyCommerce"   
+        serializeAs = "Binary"/>  
+      <group name = "SiteColors" >  
+        <add name = "BackGround"/>  
+        <add name = "SideBar"/>  
+        <add name = "ForeGroundText"/>  
+        <add name = "ForeGroundBorders"/>  
+      </group>  
+      <group name="Forums">  
+        <add name = "HasAvatar" type="bool" provider="Forums"/>  
+        <add name = "LastLogin" type="DateTime" provider="Forums"/>  
+        <add name = "TotalPosts" type="int" provider="Forums"/>  
+      </group>  
+    </properties>  
+  </profile>  
+</system.web>  
+```  
+  
+ The following code example shows how to use the ProfileSection type.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#3](~/add/codesnippet/csharp/t-system.web.configurati_90_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#3](~/add/codesnippet/visualbasic/t-system.web.configurati_90_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProfileSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfileSection" /> class using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Setting|Default Value|  
+|-------------|-------------------|  
+|<xref:System.Web.Configuration.ProfileSection.DefaultProvider%2A>|"AspNetSqlProfileProvider".|  
+|<xref:System.Web.Configuration.ProfileSection.Enabled%2A>|`true`.|  
+|<xref:System.Web.Configuration.ProfileSection.Inherits%2A>|An empty string ("").|  
+|<xref:System.Web.Configuration.ProfileSection.PropertySettings%2A>|An empty <xref:System.Web.Configuration.RootProfilePropertySettingsCollection>.|  
+|<xref:System.Web.Configuration.ProfileSection.Providers%2A>|An empty <xref:System.Configuration.ProviderSettingsCollection>.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticSaveEnabled">
       <MemberSignature Language="C#" Value="public bool AutomaticSaveEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticSaveEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.AutomaticSaveEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,17 +120,35 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that determines whether changes to user-profile information are automatically saved on page exit.</summary>
+        <value>
+          <see langword="true" /> if profile information is automatically saved on page exit; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the AutomaticSaveEnabled property is `false`, changes to individual profiles are not saved unless the <xref:System.Web.Profile.ProfileBase.Save%2A> method of the `ProfileCommon` class is called in code. When the AutomaticSaveEnabled property is `true`, the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event also allows code to override the automatic save behavior.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the AutomaticSaveEnabled property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#4](~/add/codesnippet/csharp/p-system.web.configurati_213_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#4](~/add/codesnippet/visualbasic/p-system.web.configurati_213_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProvider">
       <MemberSignature Language="C#" Value="public string DefaultProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -70,17 +163,34 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the default profile provider.</summary>
+        <value>The name of a provider in the <see cref="System.Web.Configuration.ProfileSection.Providers%2A" /> collection, or an empty string (""). The default is "AspNetSqlProfileProvider."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A profile provider points to a data source in which user profile values are stored. You can specify profile providers in the `providers` subsection of the `profile` section of a configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the DefaultProvider property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#5](~/add/codesnippet/csharp/p-system.web.configurati_19_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#5](~/add/codesnippet/visualbasic/p-system.web.configurati_19_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,17 +202,37 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the ASP.NET profile feature is enabled.</summary>
+        <value>
+          <see langword="true" /> if the ASP.NET compilation system should generate a <see langword="ProfileCommon" /> class that can be used to access information about individual user profiles; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the Enabled property is `false`, the profile feature is disabled, and you will not be able to access user-profile information from your ASP.NET code.  
+  
+ When the property is `true`, at run time the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Enabled property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#9](~/add/codesnippet/csharp/p-system.web.configurati_271_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#9](~/add/codesnippet/visualbasic/p-system.web.configurati_271_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Inherits">
       <MemberSignature Language="C#" Value="public string Inherits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Inherits" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Inherits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -114,17 +244,39 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a type reference for a custom type derived from <see cref="T:System.Web.Profile.ProfileBase" />.</summary>
+        <value>A valid type reference, or an empty string (""). The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ At run time, the ASP.NET compilation system uses the information specified in the `profile` section of the configuration to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. To customize the information this class provides, you can set the Inherits property to the name of a type you create that derives from <xref:System.Web.Profile.ProfileBase>, and the compilation system will use this custom type as the base class for `ProfileCommon`.  
+  
+> [!NOTE]
+>  If you provide a type reference in the Inherits property, you can define properties in your custom types that are not defined with a `property` element.  
+  
+ For more information about the profile features added to [!INCLUDE[vstecasplong](~/add/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](../Topic/ASP.NET%20Profile%20Properties%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Inherits property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#6](~/add/codesnippet/csharp/p-system.web.configurati_117_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#6](~/add/codesnippet/visualbasic/p-system.web.configurati_117_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,9 +291,11 @@
     <Member MemberName="PropertySettings">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.RootProfilePropertySettingsCollection PropertySettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.RootProfilePropertySettingsCollection PropertySettings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.PropertySettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -153,17 +307,34 @@
         <ReturnType>System.Web.Configuration.RootProfilePropertySettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> collection of <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> object that contains all the properties defined within the <see langword="properties" /> subsection of the <see langword="profile" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PropertySettings property is a <xref:System.Web.Configuration.RootProfilePropertySettingsCollection> that provides a collection of <xref:System.Web.Configuration.ProfilePropertySettings> objects and a collection of <xref:System.Web.Configuration.ProfileGroupSettings> objects, each of which provides a named collection of other <xref:System.Web.Configuration.ProfilePropertySettings> objects. These collections are used by the ASP.NET compilation engine to dynamically generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The properties of the `ProfileCommon` class consist of the properties defined in the two collections. In addition, each group property of the `ProfileCommon` class will contain its own properties, as defined for that group.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the PropertySettings property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#7](~/add/codesnippet/csharp/p-system.web.configurati_292_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#7](~/add/codesnippet/visualbasic/p-system.web.configurati_292_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Providers">
       <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -175,9 +346,24 @@
         <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Configuration.ProviderSettingsCollection" /> that contains the providers defined within the <see langword="providers" /> subsection of the <see langword="profile" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A profile provider points to a data source in which user profile values are stored. You can specify profile providers in the `providers` subsection of the `profile` section of a configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Providers property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-cs[System.Web.Configuration.ProfileSection#8](~/add/codesnippet/csharp/p-system.web.configurati_326_1.cs)]
+ [!code-vb[System.Web.Configuration.ProfileSection#8](~/add/codesnippet/visualbasic/p-system.web.configurati_326_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,6 +1,7 @@
 <Type Name="VariableReference&lt;T&gt;" FullName="System.Activities.Expressions.VariableReference&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class VariableReference&lt;T&gt; : System.Activities.Expressions.EnvironmentLocationReference&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VariableReference`1&lt;T&gt; extends System.Activities.Expressions.EnvironmentLocationReference`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.VariableReference`1" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,14 +17,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the VariableReference(T).</typeparam>
+    <summary>Represents a <see cref="T:System.Activities.Variable" /> used as an l-value in an expression.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VariableReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.VariableReference`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -31,13 +33,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.VariableReference%601" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VariableReference (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Variable variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.VariableReference`1.#ctor(System.Activities.Variable)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -47,14 +50,15 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="variable">The value of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.VariableReference%601" /> class using the specified variable.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.VariableReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -75,6 +79,7 @@
     <Member MemberName="LocationReference">
       <MemberSignature Language="C#" Value="public override System.Activities.LocationReference LocationReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReference LocationReference" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.VariableReference`1.LocationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -84,14 +89,15 @@
         <ReturnType>System.Activities.LocationReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the variable reference of <see cref="System.Activities.Expressions.VariableReference%601" />.</summary>
+        <value>The variable reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.VariableReference`1.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -102,14 +108,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.String" /> representation of the <see cref="System.Activities.Expressions.VariableReference%601" />.</summary>
+        <returns>The variable reference.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Activities.Expressions.VariableReference%601.Variable%2A> property has been set then the string representation consists of the variable’s name; otherwise, it consists of the activity ID and name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Variable">
       <MemberSignature Language="C#" Value="public System.Activities.Variable Variable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Variable Variable" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.VariableReference`1.Variable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,8 +133,8 @@
         <ReturnType>System.Activities.Variable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.Variable" /> represented by the <see cref="System.Activities.Expressions.VariableReference%601" />.</summary>
+        <value>The variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

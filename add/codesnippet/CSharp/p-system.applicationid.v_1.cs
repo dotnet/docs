@@ -1,0 +1,1 @@
+            Console.WriteLine("ApplicationId.Version property = " + asi.ApplicationId.Version);

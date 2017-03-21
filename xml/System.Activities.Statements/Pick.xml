@@ -1,6 +1,7 @@
 <Type Name="Pick" FullName="System.Activities.Statements.Pick">
   <TypeSignature Language="C#" Value="public sealed class Pick : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pick extends System.Activities.NativeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Pick" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides event-based control flow modeling.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This activity behaves similarly to <xref:System.Activities.Statements.Switch> in that it executes only one of several activities in response to events. The action chosen to be executed is defined by an event, chosen from a set of events.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a Pick activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
+  
+ [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Pick ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -29,13 +45,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Pick" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Pick> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
+  
+ [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Branches">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.PickBranch&gt; Branches { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Statements.PickBranch&gt; Branches" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Pick.Branches" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -45,14 +71,24 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.PickBranch&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The collection of <see cref="T:System.Activities.Statements.PickBranch" /> objects that the <see cref="T:System.Activities.Statements.Pick" /> activity potentially executes one of, based on incoming events.</summary>
+        <value>The branch collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Branches property of a <xref:System.Activities.Statements.Pick> activity. This example is from the [Using the Pick Activity](../Topic/Using%20the%20Pick%20Activity.md) sample.  
+  
+ [!code-cs[wfs_Pick#1](~/add/codesnippet/csharp/pick/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,6 +109,7 @@
     <Member MemberName="Cancel">
       <MemberSignature Language="C#" Value="protected override void Cancel (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Cancel(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.Cancel(System.Activities.NativeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +130,7 @@
     <Member MemberName="CanInduceIdle">
       <MemberSignature Language="C#" Value="protected override bool CanInduceIdle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInduceIdle" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Pick.CanInduceIdle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -110,6 +148,7 @@
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.Execute(System.Activities.NativeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -130,6 +169,7 @@
     <Member MemberName="OnCreateDynamicUpdateMap">
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -152,6 +192,7 @@
     <Member MemberName="UpdateInstance">
       <MemberSignature Language="C#" Value="protected override void UpdateInstance (System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateInstance(class System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Pick.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

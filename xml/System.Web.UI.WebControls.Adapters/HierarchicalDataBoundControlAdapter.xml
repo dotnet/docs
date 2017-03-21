@@ -1,8 +1,10 @@
 <Type Name="HierarchicalDataBoundControlAdapter" FullName="System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter">
   <TypeSignature Language="C#" Value="public class HierarchicalDataBoundControlAdapter : System.Web.UI.WebControls.Adapters.WebControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HierarchicalDataBoundControlAdapter extends System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,47 +12,121 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Customizes the behavior of a <see cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" /> object with which this control adapter is associated, for specific browser requests.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The HierarchicalDataBoundControlAdapter class adapts the associated <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control to modify the default markup or behavior for a specific browser. You can extend the HierarchicalDataBoundControlAdapter class to further customize rendering of the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control.  
+  
+ A <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control is bound to a data source and generates its user interface (or child control hierarchy, typically), by enumerating the items in the data source to which it is bound. For more information on hierarchical data-bound controls, see <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl>.  
+  
+ Control adapters are.NET components that manage one or more stages in the life cycle of a control for a specific browser. Extending the HierarchicalDataBoundControlAdapter class provides access to the life-cycle stages of the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control. For more information, see [Architectural Overview of Adaptive Control Behavior](../Topic/Architectural%20Overview%20of%20Adaptive%20Control%20Behavior.md).  
+  
+ The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control, given the characteristics of the requesting browser. Browser definition files are used by the <xref:System.Web.HttpBrowserCapabilities> class to identify the characteristics of the client browser and map the adapter to the browser type.  
+  
+   
+  
+## Examples  
+ The following code example shows how to extend the HierarchicalDataBoundControlAdapter class to render a hierarchical <xref:System.Web.UI.WebControls.TreeView> control that is bound to an <xref:System.Web.UI.WebControls.XmlDataSource> object.  
+  
+ This code example contains four objects:  
+  
+-   An adapter derived from the HierarchicalDataBoundControlAdapter class.  
+  
+-   The .aspx file that incorporates the <xref:System.Web.UI.WebControls.TreeView> control and device-specific content.  
+  
+-   A browser file to link the adapter to a device type.  
+  
+-   An XML file that contains a hierarchical list of employees.  
+  
+ This code example consists of four code segments. The first code segment demonstrates how to extend the HierarchicalDataBoundControlAdapter class.  
+  
+ [!code-cs[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_338_1.cs)]
+ [!code-vb[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_338_1.vb)]  
+  
+ The second code segment demonstrates how to declare a <xref:System.Web.UI.WebControls.TreeView> to bind to an XML data source.  
+  
+ [!code-cs[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#4](~/add/codesnippet/csharp/t-system.web.ui.webcontr_338_2.aspx)]
+ [!code-vb[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#4](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_338_2.aspx)]  
+  
+ The third code segment shows how to link the <xref:System.Web.UI.WebControls.TreeView> control to the custom adapter for browsers running on Windows CE.  
+  
+   
+  
+ The final code segment provides the XML data that the <xref:System.Web.UI.WebControls.TreeView> control binds to.  
+  
+   
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HierarchicalDataBoundControlAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework constructs an instance of the <xref:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter> class. The initial request for an adapter causes the .NET Framework to search for a mapped adapter for the control given the characteristics of the requesting browser. After the adapter is found, the control holds a reference to the mapped adapter instance in its <xref:System.Web.UI.Control.Adapter%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Control">
       <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.HierarchicalDataBoundControl Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.HierarchicalDataBoundControl Control" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.Control" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HierarchicalDataBoundControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a strongly typed reference to the <see cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" /> control associated with this <see cref="T:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter" /> object.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.HierarchicalDataBoundControl" /> associated with the current instance of <see cref="T:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Control property provides access to the corresponding control, including its properties and methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the Control property to retrieve a strongly typed <xref:System.Web.UI.WebControls.TreeView> control. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter> class.  
+  
+ [!code-cs[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#2](~/add/codesnippet/csharp/f9f6a568-6944-4b2c-8dc0-_1.cs)]
+ [!code-vb[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#2](~/add/codesnippet/visualbasic/f9f6a568-6944-4b2c-8dc0-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
       <MemberSignature Language="C#" Value="protected virtual void PerformDataBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void PerformDataBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.PerformDataBinding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,8 +134,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Binds the data in the data source of the associated hierarchical data-bound control to the adapter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PerformDataBinding method binds the data in the specified data source of the associated <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control to the <xref:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter> object. You can override PerformDataBinding to replace the standard data-binding functionality of the associated <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control or to provide additional data-binding functionality if the associated <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> control has been extended.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the PerformDataBinding method to verify the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID%2A> property has been set prior to calling the parent PerformDataBinding method. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter> class.  
+  
+ [!code-cs[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#2](~/add/codesnippet/csharp/437bf7cf-e5ef-4fb3-b2ab-_1.cs)]
+ [!code-vb[System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter#2](~/add/codesnippet/visualbasic/437bf7cf-e5ef-4fb3-b2ab-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

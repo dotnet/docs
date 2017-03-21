@@ -1,0 +1,1 @@
+                If xmlElement.Equal(localXmlElement) Then

@@ -1,0 +1,942 @@
+<Type Name="ClaimTypes" FullName="System.Security.Claims.ClaimTypes">
+  <TypeSignature Language="C#" Value="public static class ClaimTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimTypes" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Actor">
+      <MemberSignature Language="C#" Value="public const string Actor;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Actor" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Actor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Anonymous">
+      <MemberSignature Language="C#" Value="public const string Anonymous;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Anonymous" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Anonymous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public const string Authentication;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Authentication" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Authentication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationInstant">
+      <MemberSignature Language="C#" Value="public const string AuthenticationInstant;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AuthenticationInstant" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.AuthenticationInstant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationMethod">
+      <MemberSignature Language="C#" Value="public const string AuthenticationMethod;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AuthenticationMethod" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.AuthenticationMethod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorizationDecision">
+      <MemberSignature Language="C#" Value="public const string AuthorizationDecision;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AuthorizationDecision" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.AuthorizationDecision" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookiePath">
+      <MemberSignature Language="C#" Value="public const string CookiePath;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CookiePath" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.CookiePath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Country">
+      <MemberSignature Language="C#" Value="public const string Country;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Country" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Country" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateOfBirth">
+      <MemberSignature Language="C#" Value="public const string DateOfBirth;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DateOfBirth" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.DateOfBirth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyOnlyPrimaryGroupSid">
+      <MemberSignature Language="C#" Value="public const string DenyOnlyPrimaryGroupSid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DenyOnlyPrimaryGroupSid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.DenyOnlyPrimaryGroupSid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyOnlyPrimarySid">
+      <MemberSignature Language="C#" Value="public const string DenyOnlyPrimarySid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DenyOnlyPrimarySid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.DenyOnlyPrimarySid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyOnlySid">
+      <MemberSignature Language="C#" Value="public const string DenyOnlySid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DenyOnlySid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.DenyOnlySid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyOnlyWindowsDeviceGroup">
+      <MemberSignature Language="C#" Value="public const string DenyOnlyWindowsDeviceGroup;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DenyOnlyWindowsDeviceGroup" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.DenyOnlyWindowsDeviceGroup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dns">
+      <MemberSignature Language="C#" Value="public const string Dns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Dns" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Dns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dsa">
+      <MemberSignature Language="C#" Value="public const string Dsa;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Dsa" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Dsa" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="public const string Email;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Email" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Email" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expiration">
+      <MemberSignature Language="C#" Value="public const string Expiration;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Expiration" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Expiration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="public const string Expired;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Expired" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gender">
+      <MemberSignature Language="C#" Value="public const string Gender;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Gender" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Gender" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GivenName">
+      <MemberSignature Language="C#" Value="public const string GivenName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GivenName" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.GivenName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupSid">
+      <MemberSignature Language="C#" Value="public const string GroupSid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GroupSid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.GroupSid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hash">
+      <MemberSignature Language="C#" Value="public const string Hash;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Hash" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Hash" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HomePhone">
+      <MemberSignature Language="C#" Value="public const string HomePhone;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string HomePhone" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.HomePhone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPersistent">
+      <MemberSignature Language="C#" Value="public const string IsPersistent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsPersistent" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.IsPersistent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locality">
+      <MemberSignature Language="C#" Value="public const string Locality;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Locality" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Locality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MobilePhone">
+      <MemberSignature Language="C#" Value="public const string MobilePhone;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MobilePhone" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.MobilePhone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public const string Name;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Name" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameIdentifier">
+      <MemberSignature Language="C#" Value="public const string NameIdentifier;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NameIdentifier" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.NameIdentifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherPhone">
+      <MemberSignature Language="C#" Value="public const string OtherPhone;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OtherPhone" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.OtherPhone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalCode">
+      <MemberSignature Language="C#" Value="public const string PostalCode;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PostalCode" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.PostalCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryGroupSid">
+      <MemberSignature Language="C#" Value="public const string PrimaryGroupSid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PrimaryGroupSid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.PrimaryGroupSid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimarySid">
+      <MemberSignature Language="C#" Value="public const string PrimarySid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PrimarySid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.PrimarySid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public const string Role;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Role" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Role" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rsa">
+      <MemberSignature Language="C#" Value="public const string Rsa;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Rsa" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Rsa" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerialNumber">
+      <MemberSignature Language="C#" Value="public const string SerialNumber;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SerialNumber" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.SerialNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sid">
+      <MemberSignature Language="C#" Value="public const string Sid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Sid" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Sid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spn">
+      <MemberSignature Language="C#" Value="public const string Spn;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Spn" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Spn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateOrProvince">
+      <MemberSignature Language="C#" Value="public const string StateOrProvince;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StateOrProvince" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.StateOrProvince" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StreetAddress">
+      <MemberSignature Language="C#" Value="public const string StreetAddress;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StreetAddress" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.StreetAddress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Surname">
+      <MemberSignature Language="C#" Value="public const string Surname;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Surname" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Surname" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="public const string System;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string System" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.System" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbprint">
+      <MemberSignature Language="C#" Value="public const string Thumbprint;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Thumbprint" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Thumbprint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upn">
+      <MemberSignature Language="C#" Value="public const string Upn;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Upn" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Upn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public const string Uri;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Uri" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Uri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserData">
+      <MemberSignature Language="C#" Value="public const string UserData;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UserData" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.UserData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public const string Version;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Version" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Version" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Webpage">
+      <MemberSignature Language="C#" Value="public const string Webpage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Webpage" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.Webpage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsAccountName">
+      <MemberSignature Language="C#" Value="public const string WindowsAccountName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsAccountName" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.WindowsAccountName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsDeviceClaim">
+      <MemberSignature Language="C#" Value="public const string WindowsDeviceClaim;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsDeviceClaim" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.WindowsDeviceClaim" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsDeviceGroup">
+      <MemberSignature Language="C#" Value="public const string WindowsDeviceGroup;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsDeviceGroup" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.WindowsDeviceGroup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsFqbnVersion">
+      <MemberSignature Language="C#" Value="public const string WindowsFqbnVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsFqbnVersion" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.WindowsFqbnVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsSubAuthority">
+      <MemberSignature Language="C#" Value="public const string WindowsSubAuthority;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsSubAuthority" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.WindowsSubAuthority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsUserClaim">
+      <MemberSignature Language="C#" Value="public const string WindowsUserClaim;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsUserClaim" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.WindowsUserClaim" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X500DistinguishedName">
+      <MemberSignature Language="C#" Value="public const string X500DistinguishedName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string X500DistinguishedName" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimTypes.X500DistinguishedName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

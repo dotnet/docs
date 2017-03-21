@@ -1,0 +1,50 @@
+<Type Name="PartialTrustVisibilityLevel" FullName="System.Security.PartialTrustVisibilityLevel">
+  <TypeSignature Language="C#" Value="public enum PartialTrustVisibilityLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartialTrustVisibilityLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.PartialTrustVisibilityLevel" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NotVisibleByDefault">
+      <MemberSignature Language="C#" Value="NotVisibleByDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.PartialTrustVisibilityLevel NotVisibleByDefault = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleToAllHosts">
+      <MemberSignature Language="C#" Value="VisibleToAllHosts" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.PartialTrustVisibilityLevel VisibleToAllHosts = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.PartialTrustVisibilityLevel.VisibleToAllHosts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

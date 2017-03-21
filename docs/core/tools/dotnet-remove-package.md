@@ -4,13 +4,14 @@ description: The dotnet-remove package command provides a convenient option to r
 keywords: dotnet-remove, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 2fcc8d37-16b3-4581-8038-832160e72d36
 ---
+
 # dotnet-remove package
 
 ## Name
@@ -19,10 +20,7 @@ ms.assetid: 2fcc8d37-16b3-4581-8038-832160e72d36
 
 ## Synopsis
 
-```
-dotnet remove [project] package <package_name>
-dotnet remove package [-h|--help]
-```
+`dotnet remove [<PROJECT>] package <PACKAGE_NAME> [-h|--help]`
 
 ## Description
 
@@ -30,11 +28,11 @@ The `dotnet remove package` command provides a convenient option to remove a NuG
 
 ## Arguments
 
-`project`
+`PROJECT`
 
-Project file to operate on. If not specified, the command will search the current directory for one.
+Specifies the project file. If not specified, the command will search the current directory for one.
 
-`package_name`
+`PACKAGE_NAME`
 
 The package reference to remove.
 

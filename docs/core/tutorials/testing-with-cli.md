@@ -14,11 +14,11 @@ ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 
 # Organizing and testing projects with the .NET Core command line
 
-This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md) taking you beyond the creation of a simple console app to pave the way for the development of advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) unit testing framework.
+This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md) taking you beyond the creation of a simple console app to pave the way for the development of advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
 
 ## Using folders to organize code
 
-If you want to introduce new types into a console app, you can do so by adding files containing the types to the app. You just need to ensure that the types share a common namespace with the app or that the types' namespaces are specified in the *Program.cs* file with `using` statements. For example if you add files containing `AccountInformation` and `MonthlyReportRecords` types to your project, the project file structure is flat and easy to navigate:
+If you want to introduce new types into a console app, you can do so by adding files containing the types to the app. For example if you add files containing `AccountInformation` and `MonthlyReportRecords` types to your project, the project file structure is flat and easy to navigate:
 
 ```
 /MyProject
@@ -30,18 +30,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 
 However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
-To organize the project shown above, create a new folder and name it *Models* to hold the type files.
-
-```
-/MyProject
-|__/Models
-|__AccountInformation.cs
-|__MonthlyReportRecords.cs
-|__MyProject.csproj
-|__Program.cs
-```
-
-Place the type files into the `Models` folder:
+To organize the project shown above, create a new folder and name it *Models* to hold the type files. Place the type files into the `Models` folder:
 
 ```
 /MyProject
@@ -52,11 +41,15 @@ Place the type files into the `Models` folder:
 |__Program.cs
 ```
 
+Projects that logically group files into folders are easy to navigate and maintain. In the next section, you create a more complex sample with folders and unit testing.
+
 ## Organizing and testing using the NewTypes Pets Sample
 
 ### Building the sample
 
-For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. The sample contains two new types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder, which helps to organize the project.
+For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. The types are logically organized into a folder structure that permits the addition of more types later, and tests are also logically placed in folders permitting the addition of more tests later.
+
+The sample contains two types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder, which helps to organize the project. If another set of types is added later, they 
 
 Create the following folder structure with file content indicated below:
 

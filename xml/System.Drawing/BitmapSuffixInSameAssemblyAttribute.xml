@@ -1,6 +1,7 @@
 <Type Name="BitmapSuffixInSameAssemblyAttribute" FullName="System.Drawing.BitmapSuffixInSameAssemblyAttribute">
   <TypeSignature Language="C#" Value="public class BitmapSuffixInSameAssemblyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapSuffixInSameAssemblyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.BitmapSuffixInSameAssemblyAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that, when interpreting <see cref="T:System.Drawing.ToolboxBitmapAttribute" /> declarations, the assembly should look for the indicated resources in the same assembly, but with the <see cref="System.Drawing.Configuration.SystemDrawingSection.BitmapSuffix%2A" /> configuration value appended to the declared file name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bitmap suffix is appended to the file name before the extension. For example, with a bitmap suffix of ".test.1.0", a <xref:System.Drawing.ToolboxBitmapAttribute> reference to "my.bmp" is interpreted as "my.test.1.0.bmp".  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BitmapSuffixInSameAssemblyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.BitmapSuffixInSameAssemblyAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -29,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.BitmapSuffixInSameAssemblyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

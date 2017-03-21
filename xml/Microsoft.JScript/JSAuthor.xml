@@ -1,8 +1,10 @@
 <Type Name="JSAuthor" FullName="Microsoft.JScript.JSAuthor">
   <TypeSignature Language="C#" Value="public class JSAuthor : Microsoft.JScript.IAuthorServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JSAuthor extends System.Object implements class Microsoft.JScript.IAuthorServices" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSAuthor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,30 +24,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides services for authoring JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JSAuthor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSAuthor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCodeSense">
       <MemberSignature Language="C#" Value="public virtual Microsoft.JScript.IParseText GetCodeSense ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IParseText GetCodeSense() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.GetCodeSense" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,17 +59,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an object that is used to add IntelliSense to text when JScript code is being authored in an editor.</summary>
+        <returns>An object that is used to add IntelliSense to text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetColorizer">
       <MemberSignature Language="C#" Value="public virtual Microsoft.JScript.IColorizeText GetColorizer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IColorizeText GetColorizer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSAuthor.GetColorizer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,8 +79,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an object that is used to colorize text when JScript code is being authored in an editor.</summary>
+        <returns>An object that is used to colorize text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

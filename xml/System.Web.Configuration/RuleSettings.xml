@@ -1,8 +1,10 @@
 <Type Name="RuleSettings" FullName="System.Web.Configuration.RuleSettings">
   <TypeSignature Language="C#" Value="public sealed class RuleSettings : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleSettings extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RuleSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,75 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures the ASP.NET event rules. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Event rules determine which event, using which profile, is fired to which provider.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify the properties of the RuleSettings class.  
+  
+```  
+<healthMonitoring>  
+    <rules>  
+        <add name="All Errors Default"  
+            eventName="All Errors"  
+            provider="EventLogProvider"  
+            profile="Default"  
+            minInterval="00:01:00"   
+        />  
+        <add name="All Audits Default"  
+            eventName="All Audits"  
+            provider="SqlWebEventProvider"  
+            profile="Default"  
+            minInterval="00:00:30"   
+        />  
+        <add name="Failure Audits Default"  
+            eventName="Failure Audits"  
+            provider="WmiWebEventProvider"  
+            profile="Critical"  
+            minInterval="00:00:30"   
+        />  
+        <add name="Request Processing Errors"  
+            eventName="Request Processing Errors"  
+            provider="CriticalMailEventProvider"  
+            profile="Default"  
+        />  
+        <add name="Infrastructure Notifications"  
+            eventName="Infrastructure Errors"  
+            provider="CriticalMailEventProvider"  
+            profile="Critical"  
+        />  
+   </rules>  
+</healthMonitoring>  
+```  
+  
+ The following code example shows how to create and set the values of the RuleSettings type. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#73](~/add/codesnippet/csharp/t-system.web.configurati_67_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#73](~/add/codesnippet/visualbasic/t-system.web.configurati_67_1.vb)]  
+  
+ The following code example shows how to get and display the values of the RuleSettings type. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#78](~/add/codesnippet/csharp/t-system.web.configurati_67_2.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#78](~/add/codesnippet/visualbasic/t-system.web.configurati_67_2.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleSettings (string name, string eventName, string provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string eventName, string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettings.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -28,19 +89,44 @@
         <Parameter Name="provider" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.RuleSettings" /> object to create.</param>
+        <param name="eventName">The name of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> object this rule applies to.</param>
+        <param name="provider">The name of the <see cref="T:System.Configuration.ProviderSettings" /> object this rule applies to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.RuleSettings" /> class using default settings; however, the name, event name, and provider are specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Web.Configuration.RuleSettings.Custom%2A>|An empty string ("").|  
+|<xref:System.Web.Configuration.RuleSettings.MaxLimit%2A>|<xref:System.Int32.MaxValue>.|  
+|<xref:System.Web.Configuration.RuleSettings.MinInstances%2A>|1.|  
+|<xref:System.Web.Configuration.RuleSettings.MinInterval%2A>|0 ticks.|  
+|<xref:System.Web.Configuration.RuleSettings.Profile%2A>|An empty string ("").|  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the RuleSettings constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#74](~/add/codesnippet/csharp/6bcdb3d9-175c-4afe-b8f0-_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#74](~/add/codesnippet/visualbasic/6bcdb3d9-175c-4afe-b8f0-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleSettings (string name, string eventName, string provider, string profile, int minInstances, int maxLimit, TimeSpan minInterval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string eventName, string provider, string profile, int32 minInstances, int32 maxLimit, valuetype System.TimeSpan minInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettings.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.TimeSpan)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,23 +139,44 @@
         <Parameter Name="minInterval" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="provider">To be added.</param>
-        <param name="profile">To be added.</param>
-        <param name="minInstances">To be added.</param>
-        <param name="maxLimit">To be added.</param>
-        <param name="minInterval">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.RuleSettings" /> object to create.</param>
+        <param name="eventName">The name of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> object this rule applies to.</param>
+        <param name="provider">The name of the <see cref="T:System.Configuration.ProviderSettings" /> object this rule applies to.</param>
+        <param name="profile">The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object this rule applies to.</param>
+        <param name="minInstances">The minimum number of occurrences of the same type of event that can occur before the event is raised to the provider.</param>
+        <param name="maxLimit">The maximum number of times events of the same type can be raised.</param>
+        <param name="minInterval">The minimum time interval between two events of the same type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.RuleSettings" /> class where all values except those of the <see cref="System.Web.Configuration.RuleSettings.Custom%2A" /> class are specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Web.Configuration.RuleSettings.Custom%2A>|An empty string ("").|  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the RuleSettings constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#75](~/add/codesnippet/csharp/ecea162c-b06f-4f72-8df7-_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#75](~/add/codesnippet/visualbasic/ecea162c-b06f-4f72-8df7-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleSettings (string name, string eventName, string provider, string profile, int minInstances, int maxLimit, TimeSpan minInterval, string custom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string eventName, string provider, string profile, int32 minInstances, int32 maxLimit, valuetype System.TimeSpan minInterval, string custom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RuleSettings.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.TimeSpan,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -83,24 +190,41 @@
         <Parameter Name="custom" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="provider">To be added.</param>
-        <param name="profile">To be added.</param>
-        <param name="minInstances">To be added.</param>
-        <param name="maxLimit">To be added.</param>
-        <param name="minInterval">To be added.</param>
-        <param name="custom">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.RuleSettings" /> object to create.</param>
+        <param name="eventName">The name of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> object this rule applies to.</param>
+        <param name="provider">The name of the <see cref="T:System.Configuration.ProviderSettings" /> object this rule applies to.</param>
+        <param name="profile">The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object this rule applies to.</param>
+        <param name="minInstances">The minimum number of occurrences of an event of the same type before the event is fired to the provider.</param>
+        <param name="maxLimit">The maximum number of times events of the same type are fired.</param>
+        <param name="minInterval">The minimum time interval between two events of the same type.</param>
+        <param name="custom">The fully qualified type of a custom class that implements <see cref="T:System.Web.Management.IWebEventCustomEvaluator" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> class where all values are specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must provide every setting for this constructor.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the RuleSettings constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#76](~/add/codesnippet/csharp/7d9f1eda-a977-4490-b090-_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#76](~/add/codesnippet/visualbasic/7d9f1eda-a977-4490-b090-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Custom">
       <MemberSignature Language="C#" Value="public string Custom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Custom" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.Custom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -112,17 +236,34 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the fully qualified type of a custom class that implements <see cref="T:System.Web.Management.IWebEventCustomEvaluator" />.</summary>
+        <value>The fully qualified type of a custom class that implements <see cref="T:System.Web.Management.IWebEventCustomEvaluator" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type reference is formed as follows (items in brackets are not required): *Namespace*.*Typename*, *Assemblyname*[,] [Version=x,] [Culture=y,] [PublicKeyToken=z]. For example, "ExampleNameSpace.ExampleType, Example.Assembly, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Custom property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#92](~/add/codesnippet/csharp/p-system.web.configurati_215_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#92](~/add/codesnippet/visualbasic/p-system.web.configurati_215_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventName">
       <MemberSignature Language="C#" Value="public string EventName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EventName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.EventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -134,17 +275,36 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> object this rule applies to.</summary>
+        <value>The name of the <see cref="T:System.Web.Configuration.EventMappingSettings" /> object this rule applies to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.EventMappingSettings> object referenced by this property must be contained by the same <xref:System.Web.Configuration.HealthMonitoringSection> object that also contains this <xref:System.Web.Configuration.RuleSettings>  
+  
+ object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the EventName property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#86](~/add/codesnippet/csharp/p-system.web.configurati_17_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#86](~/add/codesnippet/visualbasic/p-system.web.configurati_17_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLimit">
       <MemberSignature Language="C#" Value="public int MaxLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLimit" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.MaxLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -162,17 +322,36 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of times events of the same type are raised.</summary>
+        <value>The maximum number of times events of the same type are raised. The default value is <see cref="T:System.Int32" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ This represents the maximum number of times an event of the same type will be raised. For example, if the value is `10`, then the event will be raised 10 times and ignored thereafter.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the MaxLimit property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#89](~/add/codesnippet/csharp/p-system.web.configurati_319_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#89](~/add/codesnippet/visualbasic/p-system.web.configurati_319_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinInstances">
       <MemberSignature Language="C#" Value="public int MinInstances { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinInstances" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.MinInstances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -187,17 +366,36 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum number of occurrences of the same type of event before the event is raised to the provider.</summary>
+        <value>The minimum number of occurrences of the same type of event before the event is raised to the provider. The default value is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ This represents the minimum number of times an event occurs before an event is raised to the provider. For example, if the return value is `5`, then ASP.NET will not raise an event to the provider until the fifth instance of the event occurs.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the MinInstances property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#90](~/add/codesnippet/csharp/p-system.web.configurati_220_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#90](~/add/codesnippet/visualbasic/p-system.web.configurati_220_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinInterval">
       <MemberSignature Language="C#" Value="public TimeSpan MinInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MinInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.MinInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -212,17 +410,36 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum time interval between two events of the same type.</summary>
+        <value>The minimum time interval between two events of the same type. The default value is 0 ticks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value can be made infinite by setting it to <xref:System.Int32.MaxValue>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ If the value is zero, then there is no minimum interval.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the MinInterval property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#91](~/add/codesnippet/csharp/p-system.web.configurati_345_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#91](~/add/codesnippet/visualbasic/p-system.web.configurati_345_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -237,17 +454,34 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Configuration.RuleSettings" /> object.</summary>
+        <value>The name of the <see cref="T:System.Web.Configuration.RuleSettings" /> object. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A unique name is required.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Name property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#85](~/add/codesnippet/csharp/p-system.web.configurati_325_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#85](~/add/codesnippet/visualbasic/p-system.web.configurati_325_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Profile">
       <MemberSignature Language="C#" Value="public string Profile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Profile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.Profile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -259,17 +493,36 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object this rule applies to.</summary>
+        <value>The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object this rule applies to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ProfileSettings> object referenced by this property must be contained by the same <xref:System.Web.Configuration.HealthMonitoringSection> object that also contains this <xref:System.Web.Configuration.RuleSettings>  
+  
+ object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Profile property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#88](~/add/codesnippet/csharp/p-system.web.configurati_41_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#88](~/add/codesnippet/visualbasic/p-system.web.configurati_41_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,9 +537,11 @@
     <Member MemberName="Provider">
       <MemberSignature Language="C#" Value="public string Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RuleSettings.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -298,9 +553,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Configuration.ProviderSettings" /> object this rule applies to.</summary>
+        <value>The name of the <see cref="T:System.Configuration.ProviderSettings" /> object this rule applies to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ProviderSettings> object referenced by this property must be contained by the same <xref:System.Web.Configuration.HealthMonitoringSection> object that also contains this <xref:System.Web.Configuration.RuleSettings> object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Provider property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-cs[System.Web.Configuration.HealthMonitoringSection#87](~/add/codesnippet/csharp/p-system.web.configurati_309_1.cs)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#87](~/add/codesnippet/visualbasic/p-system.web.configurati_309_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

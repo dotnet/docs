@@ -1,6 +1,7 @@
 <Type Name="ImageAnnotation" FullName="System.Web.UI.DataVisualization.Charting.ImageAnnotation">
   <TypeSignature Language="C#" Value="public class ImageAnnotation : System.Web.UI.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageAnnotation extends System.Web.UI.DataVisualization.Charting.Annotation" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ImageAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an image annotation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ImageAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ImageAnnotation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ImageAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -45,14 +48,22 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the alignment of the annotation image.</summary>
+        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the alignment of the annotation image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to align a non-scaled image.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -76,14 +87,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the annotation type name.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This abstract property is used to get the name of each annotation type such as <xref:System.Web.UI.DataVisualization.Charting.LineAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation>, and so forth.  
+  
+ This property is for internal use.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -110,14 +131,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -141,14 +170,22 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -172,14 +209,22 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -206,14 +251,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -231,14 +284,22 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -262,14 +323,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Image">
       <MemberSignature Language="C#" Value="public virtual string Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Image" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -290,14 +359,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the annotation image.</summary>
+        <value>A <see langword="string" /> value that represents the name of the annotation image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image name can be a file name, a URL or a named image—that is, its name component—from the <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageTransparentColor">
       <MemberSignature Language="C#" Value="public System.Drawing.Color ImageTransparentColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageTransparentColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.ImageTransparentColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -321,14 +398,15 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a color that will be replaced with a transparent color when the image is drawn.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that will be replaced with a transparent color when he image is drawn.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageWrapMode">
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartImageWrapMode ImageWrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartImageWrapMode ImageWrapMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.ImageWrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -346,14 +424,15 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the drawing mode of the image.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode" /> enumeration value that defines the drawing mode of the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color LineColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.LineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -377,14 +456,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineDashStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.ChartDashStyle LineDashStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle LineDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.LineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -402,14 +489,22 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
       <MemberSignature Language="C#" Value="public override int LineWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.LineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -427,14 +522,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the image annotation type.</summary>
+        <value>An <see langword="integer" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the image annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextStyle">
       <MemberSignature Language="C#" Value="public override System.Web.UI.DataVisualization.Charting.TextStyle TextStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.TextStyle TextStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ImageAnnotation.TextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -452,8 +555,8 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text style of the annotation.</summary>
+        <value>A TextStyle enumeration value that represents the style used to draw the annotation text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

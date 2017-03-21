@@ -1,0 +1,1 @@
+        SecurityElement xmlElement = policyStatement.ToXml();

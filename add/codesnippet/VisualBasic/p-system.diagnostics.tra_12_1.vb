@@ -1,0 +1,1 @@
+            ts.Listeners("console").TraceOutputOptions = ts.Listeners("console").TraceOutputOptions Or TraceOptions.Callstack

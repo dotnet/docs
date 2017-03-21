@@ -1,6 +1,7 @@
 <Type Name="ActivityWithResult" FullName="System.Activities.ActivityWithResult">
   <TypeSignature Language="C#" Value="public abstract class ActivityWithResult : System.Activities.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityWithResult extends System.Activities.Activity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityWithResult" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Retrieves the value or type of an activity <see langword="out" /> argument. This class is abstract and derives from <see cref="T:System.Activities.Activity" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Result">
       <MemberSignature Language="C#" Value="public System.Activities.OutArgument Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.OutArgument Result" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityWithResult.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -31,14 +33,15 @@
         <ReturnType>System.Activities.OutArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets or sets the value of an object of type <see cref="T:System.Activities.OutArgument" />.</summary>
+        <value>An <see langword="out" /> argument.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResultType">
       <MemberSignature Language="C#" Value="public Type ResultType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ResultType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityWithResult.ResultType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,8 +51,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets the type of an activity <see cref="T:System.Activities.OutArgument" />.</summary>
+        <value>A type object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

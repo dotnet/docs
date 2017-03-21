@@ -1,0 +1,1 @@
+            Dim mef As MessageEncoderFactory = be.CreateMessageEncoderFactory()

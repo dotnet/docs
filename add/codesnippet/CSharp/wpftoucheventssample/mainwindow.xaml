@@ -1,0 +1,15 @@
+﻿<!-- <snippet000> -->
+<Window x:Class="WpfTouchEventsSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="525" Width="525">
+    <Grid>
+        <Canvas x:Name="canvas1"
+                Width="500" Height="500"
+                Background="Black"
+                TouchDown="canvas_TouchDown"
+                TouchMove="canvas_TouchMove"
+                TouchUp="canvas_TouchUp" />
+    </Grid>
+</Window>
+<!-- </snippet000> -->

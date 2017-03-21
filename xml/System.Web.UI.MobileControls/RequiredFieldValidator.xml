@@ -1,8 +1,10 @@
 <Type Name="RequiredFieldValidator" FullName="System.Web.UI.MobileControls.RequiredFieldValidator">
   <TypeSignature Language="C#" Value="public class RequiredFieldValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequiredFieldValidator extends System.Web.UI.MobileControls.BaseValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,30 +23,54 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides control capability to validate whether the value of the associated input control is different from its initial value. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class behaves identically to the ASP.NET <xref:System.Web.UI.WebControls.RequiredFieldValidator?displayProperty=fullName> control.  
+  
+ By default, <xref:System.Web.UI.MobileControls.Command> controls on a form raise validator controls on the form to perform validation when the form is submitted to the server. To disable automatic validation, set the <xref:System.Web.UI.MobileControls.Command.CausesValidation%2A> property on the <xref:System.Web.UI.MobileControls.Command> to `false`.  
+  
+   
+  
+## Examples  
+ The following code example requires a user to enter a number from 1 to 23. It uses both the <xref:System.Web.UI.MobileControls.RangeValidator> and the RequiredFieldValidator to validate user entries.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-vb[MobileRegExprValidatorSample#1](~/add/codesnippet/visualbasic/t-system.web.ui.mobileco_8_1.aspx)]
+ [!code-cs[MobileRegExprValidatorSample#1](~/add/codesnippet/csharp/t-system.web.ui.mobileco_8_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RequiredFieldValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.RequiredFieldValidator.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.BaseValidator CreateWebValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.BaseValidator CreateWebValidator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.RequiredFieldValidator.CreateWebValidator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,17 +78,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The Web validator gets and sets the common properties of Web based validator. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>An aggregated Web validator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.RequiredFieldValidator.EvaluateIsValid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,17 +98,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Called during the validation stage when ASP.NET processes a Web Form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>
+          <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialValue">
       <MemberSignature Language="C#" Value="public string InitialValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InitialValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.RequiredFieldValidator.InitialValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -95,9 +126,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the base value for the validator. The default value is <see langword="null" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The base value for the validator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During validation, the validator compares a submitted value to the value of the InitialValue property. If the values are the same, the validator assumes that the value for the required field has not been filled in and reports a validation error.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

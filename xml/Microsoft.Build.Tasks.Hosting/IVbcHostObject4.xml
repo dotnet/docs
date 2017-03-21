@@ -1,6 +1,7 @@
 <Type Name="IVbcHostObject4" FullName="Microsoft.Build.Tasks.Hosting.IVbcHostObject4">
   <TypeSignature Language="C#" Value="public interface IVbcHostObject4 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.IVbcHostObject3" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVbcHostObject4 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.IVbcHostObject, class Microsoft.Build.Tasks.Hosting.IVbcHostObject2, class Microsoft.Build.Tasks.Hosting.IVbcHostObject3" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.IVbcHostObject4" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,13 +26,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface for the Vbc task to communicate with the IDE. In particular, the Vbc task will delegate the actual compilation to the IDE, rather than shelling out to the command-line compilers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="SetVBRuntime">
       <MemberSignature Language="C#" Value="public bool SetVBRuntime (string VBRuntime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetVBRuntime(string VBRuntime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.IVbcHostObject4.SetVBRuntime(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -44,9 +46,9 @@
         <Parameter Name="VBRuntime" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="VBRuntime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="VBRuntime">The name of the Visual Basic Runtime Library.</param>
+        <summary>Defines an interface for the Vbc task to communicate with the IDE. In particular, the Vbc task will delegate the actual compilation to the IDE, rather than shelling out to the command line compiler.</summary>
+        <returns>Returns <see langword="true" /> if the method succeeds; otherwise, returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

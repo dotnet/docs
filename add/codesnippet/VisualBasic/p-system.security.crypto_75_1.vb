@@ -1,0 +1,1 @@
+        If (Not base64Transform.CanReuseTransform) Then

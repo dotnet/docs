@@ -1,6 +1,7 @@
 <Type Name="DataAnnotationsModelMetadataProvider" FullName="System.Web.ModelBinding.DataAnnotationsModelMetadataProvider">
   <TypeSignature Language="C#" Value="public class DataAnnotationsModelMetadataProvider : System.Web.ModelBinding.AssociatedMetadataProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataAnnotationsModelMetadataProvider extends System.Web.ModelBinding.AssociatedMetadataProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the default model metadata provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataAnnotationsModelMetadataProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMetadata">
       <MemberSignature Language="C#" Value="protected override System.Web.ModelBinding.ModelMetadata CreateMetadata (System.Collections.Generic.IEnumerable&lt;Attribute&gt; attributes, Type containerType, Func&lt;object&gt; modelAccessor, Type modelType, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.ModelBinding.ModelMetadata CreateMetadata(class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; attributes, class System.Type containerType, class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider.CreateMetadata(System.Collections.Generic.IEnumerable{System.Attribute},System.Type,System.Func{System.Object},System.Type,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,13 +50,13 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="modelAccessor">To be added.</param>
-        <param name="modelType">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributes">The attributes.</param>
+        <param name="containerType">The type of the container, or <see langword="null" /> if there is no container.</param>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <param name="propertyName">The name of the property, or <see langword="null" /> if the model is not a property.</param>
+        <summary>Creates metadata for a specified model.</summary>
+        <returns>Metadata for a model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

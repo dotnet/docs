@@ -1,0 +1,1 @@
+                    Console.WriteLine("Is the target file writable? " + (target.CanWrite ? "true" : "false"));

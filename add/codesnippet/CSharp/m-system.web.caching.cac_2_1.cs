@@ -1,0 +1,2 @@
+Cache.Get("MyTextBox.Value");
+   

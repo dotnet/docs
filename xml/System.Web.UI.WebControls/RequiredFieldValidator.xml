@@ -1,8 +1,10 @@
 <Type Name="RequiredFieldValidator" FullName="System.Web.UI.WebControls.RequiredFieldValidator">
   <TypeSignature Language="C#" Value="public class RequiredFieldValidator : System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequiredFieldValidator extends System.Web.UI.WebControls.BaseValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RequiredFieldValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,70 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Makes the associated input control a required field.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this control to make an input control a required field. The input control fails validation if its value does not change from the <xref:System.Web.UI.WebControls.RequiredFieldValidator.InitialValue%2A> property upon losing focus.  
+  
+ Multiple validators can be associated with the same input control. For example, a RequiredFieldValidator can be used to ensure input to a control, while at the same time a <xref:System.Web.UI.WebControls.RangeValidator> can be used to ensure that the input is within a specified data range.  
+  
+> [!NOTE]
+>  When you use the RequiredFieldValidator control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
+  
+ For additional information on validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>.  
+  
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the RequiredFieldValidator control to make sure that the user enters a value into the text box.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-cs[Classic RequiredFieldValidator Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_26_1.aspx)]
+ [!code-xml[Classic RequiredFieldValidator Example#1](~/add/codesnippet/xml/t-system.web.ui.webcontr_26_1.xml)]
+ [!code-vb[Classic RequiredFieldValidator Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_26_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RequiredFieldValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RequiredFieldValidator.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.WebControls.RequiredFieldValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RequiredFieldValidator> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RequiredFieldValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,17 +90,34 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Adds the HTML attributes and styles that need to be rendered for the control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the AddAttributesToRender method in a custom server control so that the <xref:System.Web.UI.WebControls.RequiredFieldValidator> error message always displays as bold.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-cs[CustomRequiredFieldValidatorAddAttributesToRender#1](~/add/codesnippet/csharp/ad497204-c2d4-4faa-ad2b-_1.aspx)]
+ [!code-vb[CustomRequiredFieldValidatorAddAttributesToRender#1](~/add/codesnippet/visualbasic/ad497204-c2d4-4faa-ad2b-_1.aspx)]  
+[!code-cs[CustomRequiredFieldValidatorAddAttributesToRender#2](~/add/codesnippet/csharp/ad497204-c2d4-4faa-ad2b-_2.cs)]
+[!code-vb[CustomRequiredFieldValidatorAddAttributesToRender#2](~/add/codesnippet/visualbasic/ad497204-c2d4-4faa-ad2b-_2.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RequiredFieldValidator.EvaluateIsValid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,17 +125,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Called during the validation stage when ASP.NET processes a Web Form.</summary>
+        <returns>
+          <see langword="true" /> if the value in the input control is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the EvaluateIsValid method in a custom server control so that it always returns `false` if the value of the <xref:System.Web.UI.WebControls.RequiredFieldValidator> is null or empty, and always returns `true` otherwise.  
+  
+ [!code-cs[CustomRequiredFieldValidatorEvaluateIsValid#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_185_1.aspx)]
+ [!code-vb[CustomRequiredFieldValidatorEvaluateIsValid#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_185_1.aspx)]  
+[!code-cs[CustomRequiredFieldValidatorEvaluateIsValid#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_185_2.cs)]
+[!code-vb[CustomRequiredFieldValidatorEvaluateIsValid#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_185_2.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitialValue">
       <MemberSignature Language="C#" Value="public string InitialValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InitialValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RequiredFieldValidator.InitialValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -91,9 +165,39 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the initial value of the associated input control.</summary>
+        <value>A string that specifies the initial value of the associated input control. The default is <see cref="T:System.String" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the initial value of the input control.  
+  
+ Validation fails only if the value of the associated input control matches this InitialValue upon losing focus.  
+  
+> [!NOTE]
+>  The strings in both the InitialValue property and the input control are trimmed to remove extra spaces before and after the string before validation is performed.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the InitialValue property to ensure that the user enters a value in the text box.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-cs[Classic RequiredFieldValidator.InitialValue Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_720_1.aspx)]
+ [!code-vb[Classic RequiredFieldValidator.InitialValue Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_720_1.aspx)]  
+  
+ The following example demonstrates how to use the InitialValue property to ensure that the user selects an item from the list box.  
+  
+ [!code-cs[Classic RequiredFieldValidator.InitialValue Example#2](~/add/codesnippet/csharp/p-system.web.ui.webcontr_720_2.aspx)]
+ [!code-vb[Classic RequiredFieldValidator.InitialValue Example#2](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_720_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

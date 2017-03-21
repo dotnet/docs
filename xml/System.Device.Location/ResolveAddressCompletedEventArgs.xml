@@ -1,6 +1,7 @@
 <Type Name="ResolveAddressCompletedEventArgs" FullName="System.Device.Location.ResolveAddressCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class ResolveAddressCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveAddressCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.ResolveAddressCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the ResolveAddressCompletedEventArgs.  
+  
+ [!code-cs[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/csharp/resolveaddressasync/resolvecivicaddressasync.cs#2)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/add/codesnippet/visualbasic/resolvecivicaddressasync/resolvecivicaddressasync.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResolveAddressCompletedEventArgs (System.Device.Location.CivicAddress address, Exception error, bool cancelled, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Device.Location.CivicAddress address, class System.Exception error, bool cancelled, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.ResolveAddressCompletedEventArgs.#ctor(System.Device.Location.CivicAddress,System.Exception,System.Boolean,System.Object)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -29,17 +41,26 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="error">To be added.</param>
-        <param name="cancelled">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="address">The <see cref="T:System.Device.Location.CivicAddress" /> that contains the address resolved from the latitude/longitude location, if successful.</param>
+        <param name="error">The exception object for any exception that may have occurred during the attempt to resolve the address.</param>
+        <param name="cancelled">
+          <see langword="true" /> if the operation was cancelled; otherwise, <see langword="false" />.</param>
+        <param name="userState">A token for tracking the request to resolve the address. May be <see langword="null" /> if not used.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Device.Location.ResolveAddressCompletedEventArgs" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is public so that classes implementing the <xref:System.Device.Location.ICivicAddressResolver> interface can create this object to fire events.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Address">
       <MemberSignature Language="C#" Value="public System.Device.Location.CivicAddress Address { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Device.Location.CivicAddress Address" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.ResolveAddressCompletedEventArgs.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -49,8 +70,8 @@
         <ReturnType>System.Device.Location.CivicAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Device.Location.CivicAddress" /> associated with the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event.</summary>
+        <value>The <see cref="T:System.Device.Location.CivicAddress" /> associated with the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event. If the address could not be resolved, this property returns <see cref="F:System.Device.Location.CivicAddress.Unknown" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

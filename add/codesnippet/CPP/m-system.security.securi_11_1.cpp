@@ -1,0 +1,1 @@
+      xmlRootElement->AddChild( windowsRoleElement );

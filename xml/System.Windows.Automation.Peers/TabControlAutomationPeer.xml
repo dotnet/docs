@@ -1,8 +1,10 @@
 <Type Name="TabControlAutomationPeer" FullName="System.Windows.Automation.Peers.TabControlAutomationPeer">
   <TypeSignature Language="C#" Value="public class TabControlAutomationPeer : System.Windows.Automation.Peers.SelectorAutomationPeer, System.Windows.Automation.Provider.ISelectionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabControlAutomationPeer extends System.Windows.Automation.Peers.SelectorAutomationPeer implements class System.Windows.Automation.Provider.ISelectionProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TabControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,33 +16,37 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.TabControl" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TabControlAutomationPeer (System.Windows.Controls.TabControl owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.TabControl owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabControlAutomationPeer.#ctor(System.Windows.Controls.TabControl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.TabControl" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.TabControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TabControlAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TabControlAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItemAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabControlAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,18 +56,20 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.Windows.Controls.TabItem" /> that is associated with the new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />.</summary>
+        <returns>The created <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabControlAutomationPeer.GetAutomationControlTypeCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,17 +77,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the collection of child elements for the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with the new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabControlAutomationPeer.GetClassNameCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,17 +97,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with the new <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
+        <returns>A string that contains "TabControl".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Point GetClickablePointCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Point GetClickablePointCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TabControlAutomationPeer.GetClickablePointCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,25 +117,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint%2A" />.</summary>
+        <returns>A <see cref="T:System.Windows.Point" /> containing <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />; the only clickable points in a <see cref="T:System.Windows.Controls.TabControl" /> are the child <see cref="T:System.Windows.Controls.TabItem" /> elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired">
       <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TabControlAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/add/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>Returns <see langword="S_OK" /> if successful, or an error value otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

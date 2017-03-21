@@ -1,8 +1,10 @@
 <Type Name="SqlProvider" FullName="System.Data.Linq.SqlClient.SqlProvider">
   <TypeSignature Language="C#" Value="public class SqlProvider : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlProvider extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.SqlClient.SqlProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,30 +16,34 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains functionality to connect to and communicate with a [!INCLUDE[ssNoVersion](~/add/includes/ssnoversion-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlProvider.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.SqlClient.SqlProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlProvider.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,16 +51,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases managed references and closes connections opened by the <see cref="T:System.Data.Linq.SqlClient.SqlProvider" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlProvider.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,8 +72,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release managed references and close connections; otherwise, <see langword="false" />.</param>
+        <summary>Optionally releases managed references and closes connections opened by the <see cref="T:System.Data.Linq.SqlClient.SqlProvider" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

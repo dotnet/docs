@@ -1,82 +1,49 @@
 <Type Name="CustomQueryInterfaceMode" FullName="System.Runtime.InteropServices.CustomQueryInterfaceMode">
   <TypeSignature Language="C#" Value="public enum CustomQueryInterfaceMode" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomQueryInterfaceMode extends System.Enum" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.1.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CustomQueryInterfaceMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomQueryInterfaceMode" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates whether the <see cref="System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29" /> method's [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) calls can use the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Allow">
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CustomQueryInterfaceMode Allow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow" />
       <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method calls can use the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface. When you use this value, the <see cref="System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29" /> method overload functions like the <see cref="System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%29" /> overload.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
       <MemberSignature Language="C#" Value="Ignore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CustomQueryInterfaceMode Ignore = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore" />
       <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method calls should ignore the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface.</summary>
       </Docs>
     </Member>
   </Members>

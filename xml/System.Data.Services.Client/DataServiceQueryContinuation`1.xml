@@ -1,8 +1,10 @@
 <Type Name="DataServiceQueryContinuation&lt;T&gt;" FullName="System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class DataServiceQueryContinuation&lt;T&gt; : System.Data.Services.Client.DataServiceQueryContinuation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceQueryContinuation`1&lt;T&gt; extends System.Data.Services.Client.DataServiceQueryContinuation" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceQueryContinuation`1" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -13,9 +15,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of continuation token.</typeparam>
+    <summary>Encapsulates a URI that returns the next page of a paged [!INCLUDE[ssAstoria](~/add/includes/ssastoria-md.md)] query result.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example uses a `do…while` loop to load `Customers` entities from a paged results from the data service.  
+  
+ [!code-vb[Astoria Northwind Client#GetCustomersPaged](~/add/codesnippet/visualbasic/northwindclientvb/source.vb#getcustomerspaged)]
+ [!code-cs[Astoria Northwind Client#GetCustomersPaged](~/add/codesnippet/csharp/northwindclientcs/source.cs#getcustomerspaged)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

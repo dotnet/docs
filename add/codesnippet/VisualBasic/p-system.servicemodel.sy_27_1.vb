@@ -1,0 +1,2 @@
+        Dim item As New SyndicationItem("Item Title", "Item Content", New Uri("http:' Item/Alternate/Link"))
+        item.Links.Add(New SyndicationLink(New Uri("http:' server/link"), "alternate", "Link Title", "text/html", 1000))

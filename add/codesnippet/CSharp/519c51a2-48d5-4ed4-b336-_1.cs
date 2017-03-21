@@ -1,0 +1,1 @@
+        uiPerm1 = new UIPermission(UIPermissionClipboard.AllClipboard);

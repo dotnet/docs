@@ -1,6 +1,7 @@
 <Type Name="ResolveCriteria" FullName="System.ServiceModel.Discovery.ResolveCriteria">
   <TypeSignature Language="C#" Value="public class ResolveCriteria" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveCriteria extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.ResolveCriteria" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the criteria to use when resolving a service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resolve is performed when a service to which you already have an endpoint reference changes its endpoint address.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResolveCriteria ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.ResolveCriteria.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -24,13 +33,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.ResolveCriteria" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResolveCriteria (System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.ResolveCriteria.#ctor(System.ServiceModel.EndpointAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -40,14 +50,15 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.ResolveCriteria" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Address">
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress Address" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCriteria.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -57,14 +68,15 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The endpoint address of the service to resolve.</summary>
+        <value>The endpoint address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Duration">
       <MemberSignature Language="C#" Value="public TimeSpan Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCriteria.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -74,14 +86,22 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.TimeSpan" /> that specifies a time span within which the resolve operation must complete before timing out.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for Duration is 20 seconds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt; Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.Linq.XElement&gt; Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveCriteria.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -91,8 +111,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of extensions in the <see cref="T:System.ServiceModel.Discovery.ResolveCriteria" /> instance.</summary>
+        <value>A <see cref="System.Collections.ObjectModel.Collection%601" /> instance that contains the XML extensions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

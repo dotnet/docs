@@ -1,8 +1,10 @@
 <Type Name="HyperLink" FullName="System.Web.UI.WebControls.HyperLink">
   <TypeSignature Language="C#" Value="public class HyperLink : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLink extends System.Web.UI.WebControls.WebControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLink" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,30 +32,129 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A control that displays a link to another Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ Use the HyperLink control to create a link to another Web page. The HyperLink control is typically displayed as text specified by the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property. It can also be displayed as an image specified by the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property.  
+  
+ If both the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> and <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> properties are set, the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property takes precedence. If the image is unavailable, the text in the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property is displayed. In browsers that support ToolTip functionality, the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property also becomes the ToolTip.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:HyperLink  
+    AccessKey="string"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CssClass="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    ImageUrl="uri"  
+    NavigateUrl="uri"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    Target="string|_blank|_parent|_search|_self|_top"  
+    Text="string"  
+    ToolTip="string"  
+    Visible="True|False"  
+    Width="size"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a HyperLink control on a Web page that links to another Web page.  
+  
+ [!code-cs[Classic HyperLink.NavigateUrl Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_3_1.aspx)]
+ [!code-vb[Classic HyperLink.NavigateUrl Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_3_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HyperLink ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HyperLink" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.HyperLink> class.  
+  
+ [!code-vb[Classic HyperLink.HyperLink Example#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_22_1.vb)]
+ [!code-cs[Classic HyperLink.HyperLink Example#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_22_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,17 +164,34 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The output stream to render on the client.</param>
+        <summary>Adds the attributes of a <see cref="T:System.Web.UI.WebControls.HyperLink" /> control to the output stream for rendering.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the AddAttributesToRender method in a custom server control so that the <xref:System.Web.UI.WebControls.HyperLink> text is displayed in a bold font.  
+  
+ [!code-cs[CustomHyperLinkAddAttributesToRender#2](~/add/codesnippet/csharp/11c923f0-1fca-4e04-a40a-_1.cs)]
+ [!code-vb[CustomHyperLinkAddAttributesToRender#2](~/add/codesnippet/visualbasic/11c923f0-1fca-4e04-a40a-_1.vb)]  
+  
+ The following Web Form uses the custom server control to display a hyperlink with a bold font.  
+  
+ [!code-vb[CustomHyperLinkAddAttributesToRender#1](~/add/codesnippet/visualbasic/11c923f0-1fca-4e04-a40a-_2.aspx)]
+ [!code-cs[CustomHyperLinkAddAttributesToRender#1](~/add/codesnippet/csharp/11c923f0-1fca-4e04-a40a-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
       <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.AddParsedSubObject(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,14 +201,35 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
+        <summary>Notifies the control that an element was parsed, and adds the element to the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers, when deriving a custom control from the <xref:System.Web.UI.WebControls.HyperLink> class.  
+  
+ If the input object is a <xref:System.Web.UI.LiteralControl>, and the <xref:System.Web.UI.WebControls.HyperLink> control has no child controls, then the input object is used to set the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property of the control. Otherwise, the <xref:System.Web.UI.Control.AddParsedSubObject%2A> method of the base <xref:System.Web.UI.Control> class is called and the specified object is added to the <xref:System.Web.UI.Control.Controls%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the AddParsedSubObject method in a custom <xref:System.Web.UI.WebControls.HyperLink> server control so that it always sets the text property to the parsed object's text property, if the parsed object is a <xref:System.Web.UI.WebControls.Literal>, and to an empty string otherwise.  
+  
+ [!code-cs[CustomHyperLinkAddParsedSubObject#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_133_1.aspx)]
+ [!code-vb[CustomHyperLinkAddParsedSubObject#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_133_1.aspx)]  
+  
+ [!code-cs[CustomHyperLinkAddParsedSubObject#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_133_2.cs)]
+ [!code-vb[CustomHyperLinkAddParsedSubObject#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_133_2.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageHeight">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit ImageHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit ImageHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.ImageHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,17 +244,19 @@
         <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the height of the hyperlink when the hyperlink is an image.</summary>
+        <value>The height of the hyperlink image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
       <MemberSignature Language="C#" Value="public virtual string ImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -136,14 +277,33 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path to an image to display for the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control.</summary>
+        <value>The path to the image to display for the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLink> control can be displayed as text or an image. Use the ImageUrl property to specify an image to display for the <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+> [!NOTE]
+>  If both the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> and ImageUrl properties are set, the ImageUrl property takes precedence. If the image is unavailable, the text in the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property is displayed. In browsers that support ToolTip functionality, the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property also becomes the ToolTip.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the ImageUrl property to specify the path to the image to display.  
+  
+ [!code-cs[Classic HyperLink.NavigateUrl Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_188_1.aspx)]
+ [!code-vb[Classic HyperLink.NavigateUrl Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_188_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageWidth">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit ImageWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit ImageWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.ImageWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,17 +318,19 @@
         <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the width of the hyperlink when the hyperlink is an image.</summary>
+        <value>The width of the hyperlink image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.LoadViewState(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,17 +340,19 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="savedState">An object that contains the previously saved state.</param>
+        <summary>Restores view-state information from a previous request that was saved with the <see cref="System.Web.UI.WebControls.WebControl.SaveViewState%2A" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
       <MemberSignature Language="C#" Value="public string NavigateUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.NavigateUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -209,17 +373,34 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL to link to when the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control is clicked.</summary>
+        <value>The URL to link to when the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control is clicked. The default value is an empty string ('').</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the NavigateUrl property to specify the URL to navigate to when the <xref:System.Web.UI.WebControls.HyperLink> control is clicked.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the NavigateUrl property to specify the URL to link to when the <xref:System.Web.UI.WebControls.HyperLink> control is clicked.  
+  
+ [!code-cs[Classic HyperLink.NavigateUrl Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_683_1.aspx)]
+ [!code-vb[Classic HyperLink.NavigateUrl Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_683_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
       <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,14 +410,28 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The output stream to render on the client.</param>
+        <summary>Displays the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control on a page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the RenderContents method in a custom server control so that some text is appended to the <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+ [!code-vb[CustomHyperLinkRenderContents#1](~/add/codesnippet/visualbasic/9e147f38-6b97-4b7e-9ae6-_1.aspx)]
+ [!code-cs[CustomHyperLinkRenderContents#1](~/add/codesnippet/csharp/9e147f38-6b97-4b7e-9ae6-_1.aspx)]  
+  
+ [!code-cs[CustomHyperLinkRenderContents#2](~/add/codesnippet/csharp/9e147f38-6b97-4b7e-9ae6-_2.cs)]
+ [!code-vb[CustomHyperLinkRenderContents#2](~/add/codesnippet/visualbasic/9e147f38-6b97-4b7e-9ae6-_2.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
       <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.SupportsDisabledAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,17 +441,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="System.Web.UI.WebControls.WebControl.IsEnabled%2A" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Web.UI.Control.RenderingCompatibility%2A" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -271,17 +476,91 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the target window or frame in which to display the Web page content linked to when the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control is clicked.</summary>
+        <value>The target window or frame to load the Web page linked to when the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control is clicked. Values must begin with a letter in the range of a through z (case-insensitive), except for the special values listed in the following table, which begin with an underscore.  
+  
+ <list type="table">  
+<item>  
+<term> <see langword="_blank " />  
+  
+ </term>  
+<description> Renders the content in a new window without frames.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="_parent " />  
+  
+ </term>  
+<description> Renders the content in the immediate frameset parent.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="_search" />  
+  
+ </term>  
+<description> Renders the content in the search pane.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="_self " />  
+  
+ </term>  
+<description> Renders the content in the frame with focus.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="_top " />  
+  
+ </term>  
+<description> Renders the content in the full window without frames.  
+  
+ </description>  
+</item>  
+</list>  
+  
+ <block subset="none" type="note">  
+ Check your browser documentation to determine if the <see langword="_search" /> value is supported.  For example, Microsoft Internet Explorer 5.0 and later support the <see langword="_search" /> target value.  
+  
+</block>  
+  
+ The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Target property to specify the frame or window that displays the Web page linked to when the <xref:System.Web.UI.WebControls.HyperLink> control is clicked. The Web page is specified by setting the <xref:System.Web.UI.WebControls.HyperLink.NavigateUrl%2A> property.  
+  
+ If this property is not set, the browser or window with focus refreshes when the <xref:System.Web.UI.WebControls.HyperLink> control is clicked.  
+  
+> [!NOTE]
+>  The Target property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the Target property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLink> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](../Topic/XHTML%20Standards%20in%20Visual%20Studio%20and%20ASP.NET.md).  
+>   
+>  When creating accessible Web pages, it is strongly recommended you avoid using the Target property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the Target property to specify the window or frame to display the page associated with the <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+ [!code-vb[Classic HyperLink.Target Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_719_1.aspx)]
+ [!code-cs[Classic HyperLink.Target Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_719_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -302,9 +581,31 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text caption for the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control.</summary>
+        <value>The text caption for the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLink> control can be displayed as text or an image. Use the Text property to specify the text to display for the <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+ If both the Text and <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> properties are set, the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property takes precedence. If the image is unavailable, the text in the Text property is displayed. In browsers that support ToolTip functionality, the Text property also becomes the ToolTip.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the Text property to specify the text to display for the <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+ [!code-vb[Classic HyperLink.Text Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_304_1.aspx)]
+ [!code-cs[Classic HyperLink.Text Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_304_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

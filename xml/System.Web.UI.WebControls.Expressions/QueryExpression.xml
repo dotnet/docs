@@ -1,6 +1,7 @@
 <Type Name="QueryExpression" FullName="System.Web.UI.WebControls.Expressions.QueryExpression">
   <TypeSignature Language="C#" Value="public class QueryExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryExpression extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.QueryExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,13 +19,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Retrieves instances of a specific entity type by using a complex query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data source controls that derive from <xref:System.Web.UI.WebControls.IQueryableDataSource> expose the data source query that enables you to create LINQ queries declaratively. You can create new expressions by deriving from <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public QueryExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.QueryExpression.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -32,13 +41,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.QueryExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expressions">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection Expressions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection Expressions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.QueryExpression.Expressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -53,14 +63,15 @@
         <ReturnType>System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of expressions in the query.</summary>
+        <value>The collection of expressions in the query.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetQueryable">
       <MemberSignature Language="C#" Value="public virtual System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.QueryExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -73,15 +84,23 @@
         <Parameter Name="source" Type="System.Linq.IQueryable" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The data source control to use.</param>
+        <summary>Resolves the expression by using the specified <see cref="T:System.Linq.IQueryable" /> data source control.</summary>
+        <returns>An instance of the data source control that was used to resolve the expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GetQueryable method uses the specified <xref:System.Linq.IQueryable> object to resolve the expression.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public void Initialize (System.Web.UI.Control owner, System.Web.HttpContext context, System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class System.Web.UI.Control owner, class System.Web.HttpContext context, class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.QueryExpression.Initialize(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -96,10 +115,10 @@
         <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="dataSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The control to use.</param>
+        <param name="context">The context to use.</param>
+        <param name="dataSource">The data source to use.</param>
+        <summary>Initializes the <see cref="T:System.Web.UI.WebControls.Expressions.QueryExpression" /> object by using the specified owner control, a <see cref="T:System.Web.HttpContext" /> instance, and <see cref="T:System.Web.UI.WebControls.IQueryableDataSource" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

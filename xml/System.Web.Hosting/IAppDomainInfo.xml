@@ -1,8 +1,10 @@
 <Type Name="IAppDomainInfo" FullName="System.Web.Hosting.IAppDomainInfo">
   <TypeSignature Language="C#" Value="public interface IAppDomainInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppDomainInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppDomainInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -15,16 +17,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about the application domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ IAppDomainInfo is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetId">
       <MemberSignature Language="C#" Value="public string GetId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -32,17 +43,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the application domain ID.</summary>
+        <returns>The unique application domain ID.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetId is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPhysicalPath">
       <MemberSignature Language="C#" Value="public string GetPhysicalPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPhysicalPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetPhysicalPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,17 +70,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the physical path of the application domain.</summary>
+        <returns>The physical path of the application domain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetPhysicalPath is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSiteId">
       <MemberSignature Language="C#" Value="public int GetSiteId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSiteId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetSiteId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,17 +97,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the site ID of the application domain.</summary>
+        <returns>The site ID of the application domain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetSiteId is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualPath">
       <MemberSignature Language="C#" Value="public string GetVirtualPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetVirtualPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetVirtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,17 +124,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the root virtual path of the application domain.</summary>
+        <returns>The root virtual path of the application domain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetVirtualPath is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIdle">
       <MemberSignature Language="C#" Value="public bool IsIdle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsIdle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.IsIdle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,9 +151,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the state of the application domain.</summary>
+        <returns>
+          <see langword="true" /> if the application domain is idle; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ IsIdle is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

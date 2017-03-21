@@ -1,0 +1,3 @@
+        For Each de As DictionaryEntry In mySortedList
+            '...
+        Next de

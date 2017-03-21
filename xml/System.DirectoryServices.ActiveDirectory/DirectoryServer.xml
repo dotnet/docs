@@ -1,8 +1,10 @@
 <Type Name="DirectoryServer" FullName="System.DirectoryServices.ActiveDirectory.DirectoryServer">
   <TypeSignature Language="C#" Value="public abstract class DirectoryServer : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DirectoryServer extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,30 +16,35 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The DirectoryServer class is an abstract class that represents an Active Directory Domain Services server or AD LDS instance.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DirectoryServer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckReplicationConsistency">
       <MemberSignature Language="C#" Value="public abstract void CheckReplicationConsistency ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CheckReplicationConsistency() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.CheckReplicationConsistency" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,16 +52,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uses the Knowledge Consistency Checker (KCC) to verify and recalculate the replication topology for this server.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,16 +72,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all managed and unmanaged resources that are used by the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,17 +93,26 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">Determines if the managed resources should be released. <see langword="true" /> if the managed resources are released; <see langword="false" /> if the managed resources are not released.</param>
+        <summary>Releases all unmanaged resources and, optionally, all managed resources that are used by the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
       <MemberSignature Language="C#" Value="~DirectoryServer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.Finalize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,16 +120,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Overrides the <see cref="System.Object.Finalize%2A" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAllReplicationNeighbors">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection GetAllReplicationNeighbors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection GetAllReplicationNeighbors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetAllReplicationNeighbors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,17 +139,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves all of the replication neighbors for this object.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry GetDirectoryEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry GetDirectoryEntry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetDirectoryEntry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,17 +160,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory server.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationConnectionFailures">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection GetReplicationConnectionFailures ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection GetReplicationConnectionFailures() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetReplicationConnectionFailures" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,17 +181,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a collection of the replication connection failures for this directory server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" /> object that contains the replication connection failures for this directory server.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationCursors">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection GetReplicationCursors (string partition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection GetReplicationCursors(string partition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetReplicationCursors(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,18 +204,21 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partition">The distinguished name of the partition for which to retrieve the replication cursor information.</param>
+        <summary>Retrieves the replication cursor information for the specified partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" /> that contains the replication cursor information.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationMetadata">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata GetReplicationMetadata (string objectPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata GetReplicationMetadata(string objectPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetReplicationMetadata(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,18 +228,21 @@
         <Parameter Name="objectPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objectPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectPath">The path to the object for which to retrieve the replication metadata.</param>
+        <summary>Retrieves the replication metadata for a specific Active Directory Domain Services object.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" /> object that contains the replication metadata for the specified object.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationNeighbors">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection GetReplicationNeighbors (string partition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection GetReplicationNeighbors(string partition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetReplicationNeighbors(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,18 +252,21 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partition">The distinguished name of the partition for which to retrieve the replication.</param>
+        <summary>Retrieves the replication neighbors of this directory server for the specified partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationOperationInformation">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation GetReplicationOperationInformation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation GetReplicationOperationInformation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.GetReplicationOperationInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,51 +274,60 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the current and pending replication operations for this directory server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> object that contains the current and pending replication operations.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="InboundConnections">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection InboundConnections { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection InboundConnections" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.InboundConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the inbound replication connections for this directory server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the inbound replication connections for this directory server.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IPAddress">
       <MemberSignature Language="C#" Value="public abstract string IPAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IPAddress" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.IPAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the IP address of this directory server.</summary>
+        <value>The Internet protocol (IP) address of this directory server in string form.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="MoveToAnotherSite">
       <MemberSignature Language="C#" Value="public void MoveToAnotherSite (string siteName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveToAnotherSite(string siteName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.MoveToAnotherSite(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,102 +337,132 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="siteName">The name of the site within the domain to which to move the directory server.</param>
+        <summary>Moves the directory server to another site within the forest or configuration set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the directory server is a domain controller, this method will move the domain controller to a different site in the forest. If the directory server is an AD LDS instance, this method will move the AD LDS instance to a different site in the configuration set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the directory server.</summary>
+        <value>The name of the directory server.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OutboundConnections">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection OutboundConnections { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection OutboundConnections" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.OutboundConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the outbound replication connections for this directory server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the outbound replication connections for this directory server.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Partitions">
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection Partitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection Partitions" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.Partitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the partitions on this directory server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection" /> object that contains the distinguished names of the partitions on this directory server.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SiteName">
       <MemberSignature Language="C#" Value="public abstract string SiteName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SiteName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.SiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the site that this directory server belongs to.</summary>
+        <value>The name of the site that this directory server belongs to.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncFromAllServersCallback">
       <MemberSignature Language="C#" Value="public abstract System.DirectoryServices.ActiveDirectory.SyncUpdateCallback SyncFromAllServersCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.SyncUpdateCallback SyncFromAllServersCallback" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryServer.SyncFromAllServersCallback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncUpdateCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the synchronization delegate for this directory server.</summary>
+        <value>The delegate that this directory server will use for synchronization notifications.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromAllServers">
       <MemberSignature Language="C#" Value="public abstract void SyncReplicaFromAllServers (string partition, System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SyncReplicaFromAllServers(string partition, valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,18 +473,21 @@
         <Parameter Name="options" Type="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <param name="options">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" /> members.</param>
+        <summary>Causes this directory server to synchronize the specified partition with all other directory servers in the same site that hosts the partition.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromServer">
       <MemberSignature Language="C#" Value="public abstract void SyncReplicaFromServer (string partition, string sourceServer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SyncReplicaFromServer(string partition, string sourceServer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.SyncReplicaFromServer(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,18 +498,21 @@
         <Parameter Name="sourceServer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <param name="sourceServer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <param name="sourceServer">The name of the server to synchronize the partition with.</param>
+        <summary>Causes this directory server to synchronize the specified partition with the specified directory server.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,17 +520,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the name of the directory server.</summary>
+        <returns>The name of the server.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TriggerSyncReplicaFromNeighbors">
       <MemberSignature Language="C#" Value="public abstract void TriggerSyncReplicaFromNeighbors (string partition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TriggerSyncReplicaFromNeighbors(string partition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.TriggerSyncReplicaFromNeighbors(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -454,9 +542,10 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <summary>Begins a synchronization of the specified partition.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="T:System.Security.Permissions.SecurityAction" /></permission>
       </Docs>
     </Member>
   </Members>

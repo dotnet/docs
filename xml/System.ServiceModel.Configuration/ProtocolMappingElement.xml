@@ -1,6 +1,7 @@
 <Type Name="ProtocolMappingElement" FullName="System.ServiceModel.Configuration.ProtocolMappingElement">
   <TypeSignature Language="C#" Value="public sealed class ProtocolMappingElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProtocolMappingElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ProtocolMappingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the functionality to create a protocol mapping element. This class is sealed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProtocolMappingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ProtocolMappingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProtocolMappingElement (string schemeType, string binding, string bindingConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string schemeType, string binding, string bindingConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElement.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,16 +45,17 @@
         <Parameter Name="bindingConfiguration" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="schemeType">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="bindingConfiguration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="schemeType">A communications protocol scheme.</param>
+        <param name="binding">A communications protocol message format style.</param>
+        <param name="bindingConfiguration">The binding settings for the configuration of the protocol mapping element.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ProtocolMappingElement" /> class with a specified scheme type, binding, and binding configuration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Binding">
       <MemberSignature Language="C#" Value="public string Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Binding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,14 +73,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the settings for the communications protocol message formatting.</summary>
+        <value>The communications protocol message formatting information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingConfiguration">
       <MemberSignature Language="C#" Value="public string BindingConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.BindingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,14 +99,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding settings for the protocol mapping configuration element.</summary>
+        <value>The binding configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +125,7 @@
     <Member MemberName="Scheme">
       <MemberSignature Language="C#" Value="public string Scheme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ProtocolMappingElement.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,8 +143,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the communications protocol type.</summary>
+        <value>Names the communications protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,8 +1,10 @@
 <Type Name="RadioButtonRenderer" FullName="System.Windows.Forms.RadioButtonRenderer">
   <TypeSignature Language="C#" Value="public sealed class RadioButtonRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RadioButtonRenderer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RadioButtonRenderer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,38 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods used to render an option button control (also known as a radio button) with or without visual styles. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The RadioButtonRenderer class provides a set of `static` methods that can be used to render an option button control. Rendering a control refers to drawing the user interface of a control. To draw an option button, use one of the <xref:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton%2A> methods. These methods provide a variety of options, such as drawing text or an image with the option button.  
+  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, <xref:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton%2A> will draw the option button with the current visual style. Otherwise, <xref:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton%2A> will draw the option button with the classic Windows style. This is useful if you are drawing a custom control that should automatically match the current visual style setting of the operating system.  
+  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.RadioButton?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to write a custom control that uses the <xref:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton%2A> method to draw an option button that responds to mouse clicks.  
+  
+ [!code-vb[System.Windows.Forms.RadioButtonRenderer#0](~/add/codesnippet/visualbasic/t-system.windows.forms.r_6_1.vb)]
+ [!code-cpp[System.Windows.Forms.RadioButtonRenderer#0](~/add/codesnippet/cpp/t-system.windows.forms.r_6_1.cpp)]
+ [!code-cs[System.Windows.Forms.RadioButtonRenderer#0](~/add/codesnippet/csharp/t-system.windows.forms.r_6_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DrawParentBackground">
       <MemberSignature Language="C#" Value="public static void DrawParentBackground (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.Control childControl);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawParentBackground(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.Control childControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawParentBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.Control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -31,19 +55,28 @@
         <Parameter Name="childControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="childControl">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <c>childControl</c>.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
+        <param name="childControl">The control whose parent's background will be drawn.</param>
+        <summary>Draws the background of a control's parent in the specified area.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the option button (also known as a radio button) with the current visual style. Otherwise, this method will draw the option button with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
       <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics g, System.Drawing.Point glyphLocation, System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,19 +88,28 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the option button glyph at.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Draws an option button control (also known as a radio button) in the specified state and location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the option button with the current visual style. Otherwise, this method will draw the option button with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
       <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics g, System.Drawing.Point glyphLocation, System.Drawing.Rectangle textBounds, string radioButtonText, System.Drawing.Font font, bool focused, System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,23 +125,42 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="radioButtonText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the option button glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>radioButtonText</c> in.</param>
+        <param name="radioButtonText">The <see cref="T:System.String" /> to draw with the option button.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>radioButtonText</c>.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Draws an option button control (also known as a radio button) in the specified state and location, with the specified text, and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the option button with the current visual style. Otherwise, this method will draw the option button with the classic Windows style.  
+  
+   
+  
+## Examples  
+ The following code example uses the DrawRadioButton method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw an option button in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.RadioButtonRenderer> class.  
+  
+ [!code-vb[System.Windows.Forms.RadioButtonRenderer#4](~/add/codesnippet/visualbasic/dd94c6d1-07ed-48af-8d38-_1.vb)]
+ [!code-cpp[System.Windows.Forms.RadioButtonRenderer#4](~/add/codesnippet/cpp/dd94c6d1-07ed-48af-8d38-_1.cpp)]
+ [!code-cs[System.Windows.Forms.RadioButtonRenderer#4](~/add/codesnippet/csharp/dd94c6d1-07ed-48af-8d38-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
       <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics g, System.Drawing.Point glyphLocation, System.Drawing.Rectangle textBounds, string radioButtonText, System.Drawing.Font font, System.Windows.Forms.TextFormatFlags flags, bool focused, System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,24 +177,34 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="radioButtonText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the option button glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>radioButtonText</c> in.</param>
+        <param name="radioButtonText">The <see cref="T:System.String" /> to draw with the option button.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>radioButtonText</c>.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Draws an option button control (also known as a radio button) in the specified state and location, with the specified text and text formatting, and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the option button with the current visual style. Otherwise, this method will draw the option button with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
       <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics g, System.Drawing.Point glyphLocation, System.Drawing.Rectangle textBounds, string radioButtonText, System.Drawing.Font font, System.Drawing.Image image, System.Drawing.Rectangle imageBounds, bool focused, System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,25 +222,35 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="radioButtonText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="imageBounds">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the option button glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>radioButtonText</c> in.</param>
+        <param name="radioButtonText">The <see cref="T:System.String" /> to draw with the option button.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>radioButtonText</c>.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw with the option button.</param>
+        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>image</c> in.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Draws an option button control (also known as a radio button) in the specified state and location, with the specified text and image, and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the option button with the current visual style. Otherwise, this method will draw the option button with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawRadioButton">
       <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics g, System.Drawing.Point glyphLocation, System.Drawing.Rectangle textBounds, string radioButtonText, System.Drawing.Font font, System.Windows.Forms.TextFormatFlags flags, System.Drawing.Image image, System.Drawing.Rectangle imageBounds, bool focused, System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics g, valuetype System.Drawing.Point glyphLocation, valuetype System.Drawing.Rectangle textBounds, string radioButtonText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton(System.Drawing.Graphics,System.Drawing.Point,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,26 +269,36 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="radioButtonText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="imageBounds">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the option button glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>radioButtonText</c> in.</param>
+        <param name="radioButtonText">The <see cref="T:System.String" /> to draw with the option button.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>radioButtonText</c>.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw with the option button.</param>
+        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>image</c> in.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Draws an option button control (also known as a radio button) in the specified state and location; with the specified text, text formatting, and image; and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the option button with the current visual style. Otherwise, this method will draw the option button with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetGlyphSize">
       <MemberSignature Language="C#" Value="public static System.Drawing.Size GetGlyphSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetGlyphSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.GetGlyphSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,19 +309,37 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Returns the size, in pixels, of the option button (also known as a radio button) glyph.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that represents the size, in pixels, of the option button glyph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is determined by the current visual style of the operating system.  
+  
+   
+  
+## Examples  
+ The following code example uses the GetGlyphSize method to determine the bounds of the option button text. This code example is part of a larger example provided for the <xref:System.Windows.Forms.RadioButtonRenderer> class.  
+  
+ [!code-vb[System.Windows.Forms.RadioButtonRenderer#2](~/add/codesnippet/visualbasic/b6f9ef67-00aa-457d-aee8-_1.vb)]
+ [!code-cpp[System.Windows.Forms.RadioButtonRenderer#2](~/add/codesnippet/cpp/b6f9ef67-00aa-457d-aee8-_1.cpp)]
+ [!code-cs[System.Windows.Forms.RadioButtonRenderer#2](~/add/codesnippet/csharp/b6f9ef67-00aa-457d-aee8-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBackgroundPartiallyTransparent">
       <MemberSignature Language="C#" Value="public static bool IsBackgroundPartiallyTransparent (System.Windows.Forms.VisualStyles.RadioButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBackgroundPartiallyTransparent(valuetype System.Windows.Forms.VisualStyles.RadioButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RadioButtonRenderer.IsBackgroundPartiallyTransparent(System.Windows.Forms.VisualStyles.RadioButtonState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,27 +349,46 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.RadioButtonState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
+        <summary>Indicates whether the background of the option button (also known as a radio button) has semitransparent or alpha-blended pieces.</summary>
+        <returns>
+          <see langword="true" /> if the background of the option button has semitransparent or alpha-blended pieces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderMatchingApplicationState">
       <MemberSignature Language="C#" Value="public static bool RenderMatchingApplicationState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool RenderMatchingApplicationState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RadioButtonRenderer.RenderMatchingApplicationState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the renderer uses the application state to determine rendering style.</summary>
+        <value>
+          <see langword="true" /> if the application state is used to determine rendering style; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the RenderMatchingApplicationState property is `true`, the <xref:System.Windows.Forms.RadioButtonRenderer> uses the setting from the <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property to determine the rendering style. If RenderMatchingApplicationState is `false`, the renderer will always render using visual styles.  
+  
+   
+  
+## Examples  
+ The following code example uses the RenderMatchingApplicationState property to show the render style is changed depending on the application state. This code example is part of a larger example provided for the <xref:System.Windows.Forms.RadioButtonRenderer> class.  
+  
+ [!code-vb[System.Windows.Forms.RadioButtonRenderer#3](~/add/codesnippet/visualbasic/p-system.windows.forms.r_1_1.vb)]
+ [!code-cs[System.Windows.Forms.RadioButtonRenderer#3](~/add/codesnippet/csharp/p-system.windows.forms.r_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

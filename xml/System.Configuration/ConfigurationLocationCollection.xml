@@ -1,8 +1,10 @@
 <Type Name="ConfigurationLocationCollection" FullName="System.Configuration.ConfigurationLocationCollection">
   <TypeSignature Language="C#" Value="public class ConfigurationLocationCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationLocationCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationLocationCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,36 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of ConfigurationLocationCollection objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the ConfigurationLocationCollection class to iterate through a collection of <xref:System.Configuration.ConfigurationLocation> objects, which represent the resources for which location-specific configuration settings are defined. ConfigurationLocationCollection is the type returned by the <xref:System.Configuration.Configuration.Locations%2A> property.  
+  
+> [!NOTE]
+>  The ConfigurationLocationCollection class might not reference the collection of  <xref:System.Configuration.ConfigurationLocation> objects in the order that they are specified in the configuration file.  
+  
+   
+  
+## Examples  
+ In the following code example, the Web configuration for the application `MySampleApp` is loaded, and the locations defined in this configuration are displayed by iterating through the ConfigurationLocationCollection object returned by the <xref:System.Configuration.Configuration.Locations%2A> property.  
+  
+ [!code-vb[ConfigurationLocationCollection#1](~/add/codesnippet/visualbasic/t-system.configuration.c_1_1.vb)]
+ [!code-cs[ConfigurationLocationCollection#1](~/add/codesnippet/csharp/t-system.configuration.c_1_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLocation this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLocation Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationLocationCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -29,10 +51,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index location of the <see cref="T:System.Configuration.ConfigurationLocationCollection" /> to return.</param>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationLocationCollection" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationLocationCollection" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Item accessor to the <xref:System.Configuration.ConfigurationLocationCollection> class to get a specific <xref:System.Configuration.ConfigurationLocation> object from the collection by specifying its index within the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

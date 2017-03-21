@@ -1,46 +1,29 @@
 <Type Name="Func&lt;T1,T2,T3,TResult&gt;" FullName="System.Func&lt;T1,T2,T3,TResult&gt;">
   <TypeSignature Language="C#" Value="public delegate TResult Func&lt;in T1,in T2,in T3,out TResult&gt;(T1 arg1, T2 arg2, T3 arg3);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`4&lt;- T1, - T2, - T3, + TResult&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Func`4" />
   <AssemblyInfo>
-    <AssemblyName>System.Runtime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <TypeParameters>
-    <TypeParameter Name="T1">
-      <Constraints>
-        <ParameterAttribute>Contravariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
-    <TypeParameter Name="T2">
-      <Constraints>
-        <ParameterAttribute>Contravariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
-    <TypeParameter Name="T3">
-      <Constraints>
-        <ParameterAttribute>Contravariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
-    <TypeParameter Name="TResult">
-      <Constraints>
-        <ParameterAttribute>Covariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="TResult" />
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Parameters>
     <Parameter Name="arg1" Type="T1" />
     <Parameter Name="arg2" Type="T2" />
@@ -50,15 +33,54 @@
     <ReturnType>TResult</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="T1">To be added.</typeparam>
-    <typeparam name="T2">To be added.</typeparam>
-    <typeparam name="T3">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <param name="arg1">To be added.</param>
-    <param name="arg2">To be added.</param>
-    <param name="arg3">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <typeparam name="T1">The type of the first parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T2">The type of the second parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T3">The type of the third parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
+    <param name="arg1">The first parameter of the method that this delegate encapsulates.</param>
+    <param name="arg2">The second parameter of the method that this delegate encapsulates.</param>
+    <param name="arg3">The third parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has three parameters and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <returns>The return value of the method that this delegate encapsulates.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have three parameters, each of which is passed to it by value, and that it must return a value.  
+  
+> [!NOTE]
+>  To reference a method that has three parameters and returns `void` (or in Visual Basic, that is declared as a `Sub` rather than as a `Function`), use the generic <xref:System.Action%603> delegate instead.  
+  
+ When you use the Func(T1, delegate, you do not have to explicitly define a delegate that encapsulates a method with three parameters. For example, the following code explicitly declares a generic delegate named `ParseNumber` and assigns a reference to the <xref:System.Int32.Parse%2A> method to its delegate instance.  
+  
+ [!code-cs[System.Func~4#1](~/add/codesnippet/csharp/t-system.func`4_1.cs)]
+ [!code-vb[System.Func~4#1](~/add/codesnippet/visualbasic/t-system.func`4_1.vb)]  
+  
+ The following example simplifies this code by instantiating the Func(T1, delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-vb[System.Func~4#2](~/add/codesnippet/visualbasic/t-system.func`4_2.vb)]
+ [!code-cs[System.Func~4#2](~/add/codesnippet/csharp/t-system.func`4_2.cs)]  
+  
+ You can use the Func(T1, delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](../Topic/Anonymous%20Methods%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-cs[System.Func~4#3](~/add/codesnippet/csharp/t-system.func`4_3.cs)]  
+  
+ You can also assign a lambda expression to a Func(T1, delegate, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md) and [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md).)  
+  
+ [!code-vb[System.Func~4#4](~/add/codesnippet/visualbasic/t-system.func`4_4.vb)]
+ [!code-cs[System.Func~4#4](~/add/codesnippet/csharp/t-system.func`4_4.cs)]  
+  
+ The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate. In particular, because many methods of types in the <xref:System.Linq> namespace have `Func` parameters, you can pass these methods a lambda expression without explicitly instantiating a `Func` delegate.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a <xref:System.Func%603> delegate. This example declares a <xref:System.Func%603> variable and assigns it a lambda expression that takes a <xref:System.String> value and an <xref:System.Int32> value as parameters. The lambda expression returns `true` if the length of the <xref:System.String> parameter is equal to the value of the <xref:System.Int32> parameter. The delegate that encapsulates this method is subsequently used in a query to filter strings in an array of strings.  
+  
+ [!code-cs[System.Func~3#5](~/add/codesnippet/csharp/t-system.func`4_5.cs)]
+ [!code-vb[System.Func~3#5](~/add/codesnippet/visualbasic/t-system.func`4_5.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

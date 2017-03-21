@@ -1,8 +1,10 @@
 <Type Name="ConnectionStringSettings" FullName="System.Configuration.ConnectionStringSettings">
   <TypeSignature Language="C#" Value="public sealed class ConnectionStringSettings : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConnectionStringSettings extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,49 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single, named connection string in the connection strings configuration file section.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A ConnectionStringSettings object represents a single entry in the `connectionStrings` configuration file section.  
+  
+   
+  
+## Examples  
+ The following example shows how to access a ConnectionStringSettings object at a given index in a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-cs[System.Configuration.ConnectionStrings#21](~/add/codesnippet/csharp/t-system.configuration.c_15_1.cs)]
+ [!code-vb[System.Configuration.ConnectionStrings#21](~/add/codesnippet/visualbasic/t-system.configuration.c_15_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConnectionStringSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettings.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConnectionStringSettings (string name, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettings.#ctor(System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,18 +62,20 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the connection string.</param>
+        <param name="connectionString">The connection string.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConnectionStringSettings (string name, string connectionString, string providerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string connectionString, string providerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettings.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,19 +84,31 @@
         <Parameter Name="providerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <param name="providerName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the connection string.</param>
+        <param name="connectionString">The connection string.</param>
+        <param name="providerName">The name of the provider to use with the connection string.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a <xref:System.Configuration.ConnectionStringSettings> object and add it to a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-cs[System.Configuration.ConnectionStrings#8](~/add/codesnippet/csharp/7d53f196-6714-4240-85b9-_1.cs)]
+ [!code-vb[System.Configuration.ConnectionStrings#8](~/add/codesnippet/visualbasic/7d53f196-6714-4240-85b9-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettings.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -85,17 +120,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the connection string.</summary>
+        <value>The string value assigned to the ConnectionString property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the ConnectionString property.  
+  
+ [!code-cs[System.Configuration.ConnectionStrings#4](~/add/codesnippet/csharp/p-system.configuration.c_37_1.cs)]
+ [!code-vb[System.Configuration.ConnectionStrings#4](~/add/codesnippet/visualbasic/p-system.configuration.c_37_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettings.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -107,17 +154,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Configuration.ConnectionStringSettings" /> name.</summary>
+        <value>The string value assigned to the Name property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the Name property.  
+  
+ [!code-cs[System.Configuration.ConnectionStrings#5](~/add/codesnippet/csharp/p-system.configuration.c_27_1.cs)]
+ [!code-vb[System.Configuration.ConnectionStrings#5](~/add/codesnippet/visualbasic/p-system.configuration.c_27_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettings.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,9 +191,11 @@
     <Member MemberName="ProviderName">
       <MemberSignature Language="C#" Value="public string ProviderName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettings.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -146,17 +207,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the provider name property.</summary>
+        <value>Gets or sets the ProviderName property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the ProviderName property.  
+  
+ [!code-cs[System.Configuration.ConnectionStrings#6](~/add/codesnippet/csharp/p-system.configuration.c_56_1.cs)]
+ [!code-vb[System.Configuration.ConnectionStrings#6](~/add/codesnippet/visualbasic/p-system.configuration.c_56_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettings.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,8 +237,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the object.</summary>
+        <returns>A string representation of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

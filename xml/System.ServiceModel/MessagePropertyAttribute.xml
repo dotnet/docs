@@ -1,8 +1,10 @@
 <Type Name="MessagePropertyAttribute" FullName="System.ServiceModel.MessagePropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class MessagePropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessagePropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessagePropertyAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,38 +17,57 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents data that is passed locally with a custom message type but not serialized into a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the MessagePropertyAttribute attribute to attach data to the custom message type as it passes through the [!INCLUDE[indigo1](~/add/includes/indigo1-md.md)] system without serializing the data into a SOAP message.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the MessagePropertyAttribute attribute.  
+  
+ [!code-cs[messagepropertyattribute#0](~/add/codesnippet/csharp/t-system.servicemodel.me_5_1.cs)]
+ [!code-vb[messagepropertyattribute#0](~/add/codesnippet/visualbasic/t-system.servicemodel.me_5_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessagePropertyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessagePropertyAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessagePropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessagePropertyAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the property.</summary>
+        <value>The name of the <see cref="T:System.ServiceModel.MessagePropertyAttribute" /> attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

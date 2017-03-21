@@ -1,8 +1,10 @@
 <Type Name="MessageQueueTransaction" FullName="System.Messaging.MessageQueueTransaction">
   <TypeSignature Language="C#" Value="public class MessageQueueTransaction : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageQueueTransaction extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueTransaction" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,30 +16,68 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a Message Queuing internal transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To send or receive a message as part of a transaction, you can use the MessageQueueTransaction class to create a transaction and pass it to an overload of the <xref:System.Messaging.MessageQueue.Send%2A?displayProperty=fullName> method or the <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> method that takes a `transaction` parameter. Messages sent as part of a transaction must be sent to transactional queues. Messages received from transactional queues must be received using a specified transaction.  
+  
+ In addition to the <xref:System.Messaging.MessageQueue.Receive%2A> method, you can receive messages with a specified identifier or specified correlation identifier. See the <xref:System.Messaging.MessageQueue.ReceiveById%2A> and <xref:System.Messaging.MessageQueue.ReceiveByCorrelationId%2A> methods for more information about selectively receiving messages from transactional queues.  
+  
+ Messages sent to transactional queues are removed if the transaction is committed. Similarly, messages received from transactional queues are returned to the queue if the transaction is rolled back.  
+  
+ If you instantiate a MessageQueueTransaction and pass it to an applicable overload of the <xref:System.Messaging.MessageQueue.Send%2A> method or <xref:System.Messaging.MessageQueue.Receive%2A> method to send a message to a non-transactional queue or receive a message from a non-transactional queue, the method throws an exception that indicates "Wrong Transaction Usage."  
+  
+ [Visual Basic]  
+  
+ MessageQueueTransaction is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
+  
+```  
+<System.MTAThreadAttribute>  
+ public sub Main()  
+```  
+  
+```vb#  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageQueueTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueTransaction" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Messaging.MessageQueueTransaction.Status%2A> property to `Initialized`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Abort">
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Abort" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,16 +85,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Rolls back the pending internal transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Abort marks the unsuccessful completion of a process begun at a call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A>.  
+  
+ Typically, one makes a call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A> within a `Try...Catch` exception-handling block, putting a call to <xref:System.Messaging.MessageQueueTransaction.Commit%2A> in the `Try` clause, and a call to Abort in the `Catch` clause.  
+  
+ Abort rolls back the entire transaction. This includes all messages sent or received after the call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The internal transaction you are attempting to roll back has not started.</exception>
+        <exception cref="T:System.Messaging.MessageQueueException">An internal Message Queuing error occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Begin">
       <MemberSignature Language="C#" Value="public void Begin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Begin" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,16 +117,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Begins a new Message Queuing internal transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Begin marks the start of processing that will be committed or rolled back, depending on the success of the transaction. If an exception occurs during processing, the entire transaction is rolled back. This includes all messages sent or received after the call to Begin.  
+  
+ Typically, one makes a call to Begin within a `Try...Catch` exception-handling block, putting a call to <xref:System.Messaging.MessageQueueTransaction.Commit%2A> in the `Try` clause, and a call to <xref:System.Messaging.MessageQueueTransaction.Abort%2A> in the `Catch` clause.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been started.</exception>
+        <exception cref="T:System.Messaging.MessageQueueException">An internal Message Queuing error occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Commit">
       <MemberSignature Language="C#" Value="public void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Commit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,16 +147,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Commits a pending internal transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Commit marks the successful completion of processing begun at a call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A>. If an exception occurs between the call the <xref:System.Messaging.MessageQueueTransaction.Begin%2A> and the call to Commit, the entire transaction is rolled back. This includes all messages sent or received after the call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A>.  
+  
+ Typically, one makes a call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A> within a `Try...Catch` exception-handling block, putting a call to Commit in the `Try` clause, and a call to <xref:System.Messaging.MessageQueueTransaction.Abort%2A> in the `Catch` clause.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The transaction you are trying to commit has not started.</exception>
+        <exception cref="T:System.Messaging.MessageQueueException">An internal Message Queuing error occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,16 +177,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Messaging.MessageQueueTransaction" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling Dispose allows the resources used by the <xref:System.Messaging.MessageQueueTransaction> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
+  
+ Any pending internal transactions are rolled back by Dispose.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,17 +207,29 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Messaging.MessageQueueTransaction" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public <xref:System.Messaging.MessageQueueTransaction.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Messaging.MessageQueueTransaction> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
       <MemberSignature Language="C#" Value="~MessageQueueTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Finalize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,25 +237,43 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName>. Application code should not call this method; an object's Finalize method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Status">
       <MemberSignature Language="C#" Value="public System.Messaging.MessageQueueTransactionStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.MessageQueueTransactionStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueTransaction.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the status of the transaction.</summary>
+        <value>One of the <see cref="T:System.Messaging.MessageQueueTransactionStatus" /> values that indicates whether the transaction has been committed, aborted, initialized, or is pending.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an instance of the <xref:System.Messaging.MessageQueueTransaction> class has been created, the Status is set by the constructor to `Initialized`. After a call to <xref:System.Messaging.MessageQueueTransaction.Begin%2A> but before a call to <xref:System.Messaging.MessageQueueTransaction.Commit%2A> or <xref:System.Messaging.MessageQueueTransaction.Abort%2A>, the Status is `Pending`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

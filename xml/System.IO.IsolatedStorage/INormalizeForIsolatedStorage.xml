@@ -1,39 +1,47 @@
 <Type Name="INormalizeForIsolatedStorage" FullName="System.IO.IsolatedStorage.INormalizeForIsolatedStorage">
   <TypeSignature Language="C#" Value="public interface INormalizeForIsolatedStorage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INormalizeForIsolatedStorage" />
+  <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.INormalizeForIsolatedStorage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables comparisons between an isolated store and an application domain and assembly's evidence.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Isolated storage uses evidence about an assembly in order to identify it and provide it with a unique file storage location. When an assembly requests a store, its evidence (as presented by the host that loaded it) is processed and compared with the evidence used to create the existing stores. This determines if you need to create a new store or if one already exists for the assembly in question. Due to the comparison technique used, pieces of evidence that are functionally equivalent might not result in a true comparison if the serialized forms are not identical. When implementing custom evidence, consider whether this is the case for your evidence class and, if so, implement INormalizeForIsolatedStorage. For evidence that implements this interface, the <xref:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize%2A> method is called and comparisons are based on the normalized copy of the object returned by that method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Normalize">
       <MemberSignature Language="C#" Value="public object Normalize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Normalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns a normalized copy of the object on which it is called.</summary>
+        <returns>A normalized object that represents the instance on which this method was called. This instance can be a string, stream, or any serializable object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

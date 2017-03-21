@@ -1,6 +1,7 @@
 <Type Name="TargetResult" FullName="Microsoft.Build.Execution.TargetResult">
   <TypeSignature Language="C#" Value="public class TargetResult : Microsoft.Build.Execution.ITargetResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TargetResult extends System.Object implements class Microsoft.Build.Execution.ITargetResult" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.TargetResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents both the result code for building a single target and the overall build result.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.TargetResult.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -35,14 +37,15 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the exception which aborted this target, if any.</summary>
+        <value>Returns the exception which aborted this target, if any.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.TargetResult.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -57,14 +60,22 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the items produced by this target.</summary>
+        <value>Returns the items produced by this target.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ITaskItem has no item-type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResultCode">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.TargetResultCode ResultCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Execution.TargetResultCode ResultCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.TargetResult.ResultCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,8 +90,8 @@
         <ReturnType>Microsoft.Build.Execution.TargetResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the result code for building this target.</summary>
+        <value>Returns the result code for building this target.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

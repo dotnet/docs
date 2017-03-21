@@ -1,17 +1,11 @@
 <Type Name="SocketFlags" FullName="System.Net.Sockets.SocketFlags">
   <TypeSignature Language="C#" Value="public enum SocketFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketFlags extends System.Enum" />
-  <AssemblyInfo>
-    <AssemblyName>System.Net.Sockets</AssemblyName>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketFlags" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -22,215 +16,189 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies socket send and receive behaviors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sends data and specifies None for SocketFlags.  
+  
+ [!code-vb[Socket_Sync_Send_Receive#3](~/add/codesnippet/visualbasic/t-system.net.sockets.soc_0_1.vb)]
+ [!code-cs[Socket_Sync_Send_Receive#3](~/add/codesnippet/csharp/t-system.net.sockets.soc_0_1.cs)]
+ [!code-cpp[Socket_Sync_Send_Receive#3](~/add/codesnippet/cpp/t-system.net.sockets.soc_0_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Broadcast">
       <MemberSignature Language="C#" Value="Broadcast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags Broadcast = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Broadcast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a broadcast packet.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlDataTruncated">
       <MemberSignature Language="C#" Value="ControlDataTruncated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags ControlDataTruncated = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.ControlDataTruncated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the control data did not fit into an internal 64-KB buffer and was truncated.</summary>
       </Docs>
     </Member>
     <Member MemberName="DontRoute">
       <MemberSignature Language="C#" Value="DontRoute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags DontRoute = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.DontRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Send without using routing tables.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxIOVectorLength">
+      <MemberSignature Language="C#" Value="MaxIOVectorLength" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags MaxIOVectorLength = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.MaxIOVectorLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides a standard value for the number of WSABUF structures that are used to send and receive data. This value is not used or supported on [!INCLUDE[net_v45](~/add/includes/net-v45-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Multicast">
       <MemberSignature Language="C#" Value="Multicast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags Multicast = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Multicast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a multicast packet.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use no flags for this call.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfBand">
       <MemberSignature Language="C#" Value="OutOfBand" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags OutOfBand = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.OutOfBand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Process out-of-band data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Partial">
       <MemberSignature Language="C#" Value="Partial" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags Partial = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Partial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Partial send or receive for message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Peek">
       <MemberSignature Language="C#" Value="Peek" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags Peek = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Peek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Peek at the incoming message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Truncated">
       <MemberSignature Language="C#" Value="Truncated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketFlags Truncated = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Truncated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Sockets</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message was too large to fit into the specified buffer and was truncated.</summary>
       </Docs>
     </Member>
   </Members>

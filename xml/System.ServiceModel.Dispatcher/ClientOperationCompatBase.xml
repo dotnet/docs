@@ -1,6 +1,7 @@
 <Type Name="ClientOperationCompatBase" FullName="System.ServiceModel.Dispatcher.ClientOperationCompatBase">
   <TypeSignature Language="C#" Value="public class ClientOperationCompatBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientOperationCompatBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ClientOperationCompatBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a client operation compat base.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ParameterInspectors">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt; ParameterInspectors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.ServiceModel.Dispatcher.IParameterInspector&gt; ParameterInspectors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,8 +41,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of parameter inspectors.</summary>
+        <value>A collection of parameter inspectors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

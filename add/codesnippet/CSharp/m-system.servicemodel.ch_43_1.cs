@@ -1,0 +1,1 @@
+            BindingElement bindingElement = be.Clone();

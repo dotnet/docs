@@ -1,0 +1,2 @@
+MyCookieCollection.Remove(MyCookie)
+    

@@ -1,8 +1,10 @@
 <Type Name="MethodToken" FullName="System.Reflection.Emit.MethodToken">
   <TypeSignature Language="C#" Value="public struct MethodToken" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit MethodToken extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.MethodToken" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,32 +17,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see langword="MethodToken" /> struct is an object representation of a token that represents a method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Empty">
       <MemberSignature Language="C#" Value="public static readonly System.Reflection.Emit.MethodToken Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Reflection.Emit.MethodToken Empty" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.MethodToken.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.MethodToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default <see langword="MethodToken" /> with <see cref="System.Reflection.Emit.MethodToken.Token%2A" /> value 0.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,18 +56,21 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare to this object.</param>
+        <summary>Tests whether the given object is equal to this <see langword="MethodToken" /> object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is an instance of <see langword="MethodToken" /> and is equal to this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Emit.MethodToken obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Reflection.Emit.MethodToken obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.Equals(System.Reflection.Emit.MethodToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,18 +80,21 @@
         <Parameter Name="obj" Type="System.Reflection.Emit.MethodToken" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Reflection.Emit.MethodToken" /> to compare to the current instance.</param>
+        <summary>Indicates whether the current instance is equal to the specified <see cref="T:System.Reflection.Emit.MethodToken" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="obj" /> is equal to the value of the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,17 +102,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the generated hash code for this method.</summary>
+        <returns>Returns the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
       <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Emit.MethodToken a, System.Reflection.Emit.MethodToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.MethodToken a, valuetype System.Reflection.Emit.MethodToken b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.op_Equality(System.Reflection.Emit.MethodToken,System.Reflection.Emit.MethodToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,19 +125,22 @@
         <Parameter Name="b" Type="System.Reflection.Emit.MethodToken" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="a">The <see cref="T:System.Reflection.Emit.MethodToken" /> to compare to <c>b</c>.</param>
+        <param name="b">The <see cref="T:System.Reflection.Emit.MethodToken" /> to compare to <c>a</c>.</param>
+        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.MethodToken" /> structures are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
       <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.MethodToken a, System.Reflection.Emit.MethodToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.MethodToken a, valuetype System.Reflection.Emit.MethodToken b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.MethodToken.op_Inequality(System.Reflection.Emit.MethodToken,System.Reflection.Emit.MethodToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,27 +151,30 @@
         <Parameter Name="b" Type="System.Reflection.Emit.MethodToken" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="a">The <see cref="T:System.Reflection.Emit.MethodToken" /> to compare to <c>b</c>.</param>
+        <param name="b">The <see cref="T:System.Reflection.Emit.MethodToken" /> to compare to <c>a</c>.</param>
+        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.MethodToken" /> structures are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Token">
       <MemberSignature Language="C#" Value="public int Token { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Token" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.MethodToken.Token" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the metadata token for this method.</summary>
+        <value>Read-only. Returns the metadata token for this method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,8 +1,10 @@
 <Type Name="OutputCacheProfile" FullName="System.Web.Configuration.OutputCacheProfile">
   <TypeSignature Language="C#" Value="public sealed class OutputCacheProfile : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheProfile extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheProfile" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,33 +12,61 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures the output cache profile that can be used by the application pages. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The OutputCacheProfile class provides a way to programmatically access and modify the `add` element of the `outputCacheProfiles` section in the `caching` section of a configuration file.  
+  
+ The OutputCacheProfile object centralizes frequently used configuration settings such as dependencies, cache location, and cache expiration time, eliminating the need to specify them on every page.  
+  
+ The OutputCacheProfile can be applied to a page using the `CacheProfile` attribute of the  directive.  
+  
+> [!NOTE]
+>  The  directive can override all the settings contained by an OutputCacheProfile object except for the <xref:System.Web.Configuration.OutputCacheProfile.Enabled%2A> attribute. This is to enable or disable the OutputCacheProfile without having to modify the directives in all the pages that might have overridden it.  
+  
+ The <xref:System.Web.Caching.CacheDependency> class monitors the dependencies so that when any cached item changes, the cached item will be automatically removed.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSettingsSection.OutputCacheProfiles%2A> collection to access its OutputCacheProfile objects.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#1](~/add/codesnippet/visualbasic/t-system.web.configurati_15_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#1](~/add/codesnippet/csharp/t-system.web.configurati_15_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OutputCacheProfile (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheProfile.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name value to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Duration">
       <MemberSignature Language="C#" Value="public int Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Duration" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -48,17 +78,37 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the time duration during which the page or control is cached.</summary>
+        <value>The time duration in seconds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Duration represents the time in seconds that the page or user control is cached. Setting this property establishes an expiration policy for HTTP responses from the page or control to which it applies and will automatically cause the caching of their output.  
+  
+> [!NOTE]
+>  The Duration must be defined in either the profile or the  directive of a page using the profile.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Duration property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#10](~/add/codesnippet/visualbasic/p-system.web.configurati_305_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#10](~/add/codesnippet/csharp/p-system.web.configurati_305_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -70,17 +120,35 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether caching is enabled.</summary>
+        <value>
+          <see langword="true" /> if caching is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Enabled property allows enabling or disabling the caching mechanism in one place only. It affects all the pages or controls that use this <xref:System.Web.Configuration.OutputCacheProfile>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Enabled property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#12](~/add/codesnippet/visualbasic/p-system.web.configurati_161_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#12](~/add/codesnippet/csharp/p-system.web.configurati_161_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
       <MemberSignature Language="C#" Value="public System.Web.UI.OutputCacheLocation Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.OutputCacheLocation Location" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,17 +160,34 @@
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the output cache location.</summary>
+        <value>One of the <see cref="T:System.Web.UI.OutputCacheLocation" /> enumeration values. The default is <see langword="Any" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If Location is set to `Any`, the output cache can be located on the browser client, where the request originated; on a proxy server, or any other server, participating in the request; or on the server where the request was processed.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Location property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#5](~/add/codesnippet/visualbasic/p-system.web.configurati_63_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#5](~/add/codesnippet/csharp/p-system.web.configurati_63_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -120,17 +205,34 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> name.</summary>
+        <value>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the Name to assign a value to the `CacheProfile` attribute of the  directive if you want to apply the <xref:System.Web.Configuration.OutputCacheProfile> values to a page or control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the Name property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#11](~/add/codesnippet/visualbasic/p-system.web.configurati_275_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#11](~/add/codesnippet/csharp/p-system.web.configurati_275_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoStore">
       <MemberSignature Language="C#" Value="public bool NoStore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoStore" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.NoStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -142,17 +244,37 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether secondary storage is enabled.</summary>
+        <value>
+          <see langword="true" /> if secondary storage is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The page that has the NoStore property set to `true` issues a response specifying in its header to prevent secondary storage of sensitive information.  
+  
+ Setting this attribute to `true` is equivalent to invoking the <xref:System.Web.HttpCachePolicy.SetNoStore%2A?displayProperty=fullName> method during a Web request.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the NoStore property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#4](~/add/codesnippet/visualbasic/p-system.web.configurati_316_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#4](~/add/codesnippet/csharp/p-system.web.configurati_316_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,9 +289,11 @@
     <Member MemberName="SqlDependency">
       <MemberSignature Language="C#" Value="public string SqlDependency { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SqlDependency" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.SqlDependency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -181,17 +305,37 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the SqlDependency property.</summary>
+        <value>The SqlDependency value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SqlDependency defines a relationship between a Web application and an instance of SQL Server, allowing the detection of changes in the data at the server. The SqlDependency ensures that output cached pages are removed from the cache whenever the SQL table on which they depend changes.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Caching.SqlCacheDependency> class monitors the table so that when the table changes, the item will be automatically removed from the Cache. This class cannot be inherited.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the SqlDependency property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#7](~/add/codesnippet/visualbasic/p-system.web.configurati_123_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#7](~/add/codesnippet/csharp/p-system.web.configurati_123_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByContentEncoding">
       <MemberSignature Language="C#" Value="public string VaryByContentEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByContentEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByContentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -203,17 +347,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the semicolon-delimited set of content encodings to be cached.</summary>
+        <value>The list of content encodings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The VaryByContentEncoding settings are the same ones used by the `VaryByContentEncoding` attribute of the  directive.  
+  
+ VaryByContentEncoding is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
       <MemberSignature Language="C#" Value="public string VaryByControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -225,17 +380,39 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the VaryByControl property.</summary>
+        <value>The VaryByControl value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The VaryByControl is a semicolon-delimited set of IDs of controls to be cached.  
+  
+ For more information, see [Caching Multiple Versions of User Control Output](../Topic/Caching%20Multiple%20Versions%20of%20User%20Control%20Output.md).  
+  
+> [!NOTE]
+>  The VaryByControl settings are the same ones used by the `VaryByControls` attribute of the  directive.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the VaryByControl property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#3](~/add/codesnippet/visualbasic/p-system.web.configurati_343_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#3](~/add/codesnippet/csharp/p-system.web.configurati_343_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByCustom">
       <MemberSignature Language="C#" Value="public string VaryByCustom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByCustom" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByCustom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -247,17 +424,37 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the VaryByCustom property.</summary>
+        <value>The VaryByCustom value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The VaryByCustom can be any text that represents custom output-caching requirements. If a custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A> method in the application's Global.asax file.  
+  
+> [!NOTE]
+>  The VaryByCustom settings are the same ones used by the `VaryByCustom` attribute of the  directive.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the VaryByCustom property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#9](~/add/codesnippet/visualbasic/p-system.web.configurati_327_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#9](~/add/codesnippet/csharp/p-system.web.configurati_327_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
       <MemberSignature Language="C#" Value="public string VaryByHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -269,17 +466,37 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the VaryByHeader property.</summary>
+        <value>The VaryByHeader value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The VaryByHeader is a semicolon-delimited set of headers used to vary the cached output. These are HTTP headers associated with the request. For more information, see [Caching Multiple Versions of a Page](../Topic/Caching%20Multiple%20Versions%20of%20a%20Page.md).  
+  
+> [!NOTE]
+>  The VaryByHeader settings are the same ones used by the `VaryByHeader` attribute of the . Varying by all headers by setting the value of "*" is not recommended. It can result in cache overflow or a denial of service attack on the Web server.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the VaryByHeader property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#2](~/add/codesnippet/visualbasic/p-system.web.configurati_36_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#2](~/add/codesnippet/csharp/p-system.web.configurati_36_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByParam">
       <MemberSignature Language="C#" Value="public string VaryByParam { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VaryByParam" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheProfile.VaryByParam" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -291,9 +508,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the VaryByParam property.</summary>
+        <value>The VaryByParam value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The VaryByParam is a semicolon-delimited set of parameters used to vary the cached output. It allows varying the cached output by GET query string or form POST parameters. For instance, you can vary the user-control output to the cache by specifying the user-control name along with either a query string or a form POST parameter. For more information, see [Caching Multiple Versions of User Control Output](../Topic/Caching%20Multiple%20Versions%20of%20User%20Control%20Output.md).  
+  
+ The VaryByParam setting must be defined in either the profile or the  directive of the page using the profile.  
+  
+> [!NOTE]
+>  The VaryByParam settings are the same ones used by the `VaryByParam` attribute of the . Varying by all parameters by setting the value of "*" is not recommended. It can result in cache overflow or a denial of service attack on the Web server.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the VaryByParam property.  
+  
+ [!code-vb[System.Web.Configuration.OutputCacheProfile#8](~/add/codesnippet/visualbasic/p-system.web.configurati_119_1.vb)]
+ [!code-cs[System.Web.Configuration.OutputCacheProfile#8](~/add/codesnippet/csharp/p-system.web.configurati_119_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

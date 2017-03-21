@@ -1,0 +1,1 @@
+	    NetTcpBinding bSecurityReliable = new NetTcpBinding(SecurityMode.Transport, true);

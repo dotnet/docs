@@ -1,8 +1,10 @@
 <Type Name="PanelControlBuilder" FullName="System.Web.UI.MobileControls.PanelControlBuilder">
   <TypeSignature Language="C#" Value="public class PanelControlBuilder : System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PanelControlBuilder extends System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PanelControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,21 +17,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides parsing support for <see cref="T:System.Web.UI.MobileControls.Panel" /> controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is internally created and used by the page parser when parsing < `mobile:Panel` > elements. The PanelControlBuilder class parses literal text.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PanelControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PanelControlBuilder.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.PanelControlBuilder" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

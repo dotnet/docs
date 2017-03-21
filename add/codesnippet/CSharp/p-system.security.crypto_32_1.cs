@@ -1,0 +1,1 @@
+        string xmlParameters = rsaFormatter.Parameters;

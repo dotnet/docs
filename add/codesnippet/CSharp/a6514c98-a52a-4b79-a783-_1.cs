@@ -1,0 +1,1 @@
+        ReflectionPermission restrictedMemberAccessPerm = new ReflectionPermission(PermissionState.None);

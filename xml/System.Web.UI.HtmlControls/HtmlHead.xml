@@ -1,8 +1,10 @@
 <Type Name="HtmlHead" FullName="System.Web.UI.HtmlControls.HtmlHead">
   <TypeSignature Language="C#" Value="public sealed class HtmlHead : System.Web.UI.HtmlControls.HtmlGenericControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlHead extends System.Web.UI.HtmlControls.HtmlGenericControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlHead" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,47 +17,101 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides programmatic access to the HTML <see langword="head" /> element in server code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The HTML `head` element is a container that can contain additional information about the page. The HtmlHead control is useful for specifying page formatting information that can be accessed at run time.  
+  
+> [!NOTE]
+>  Adding styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](../Topic/Microsoft%20Ajax%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to programmatically access the HtmlHead control to dynamically add `title` and `style` elements to the `head` element of the page.  
+  
+ [!code-cs[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/add/codesnippet/csharp/t-system.web.ui.htmlcont_3_1.aspx)]
+ [!code-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/add/codesnippet/visualbasic/t-system.web.ui.htmlcont_3_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HtmlHead ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlHead.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlHead>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The string "head".|  
+  
+   
+  
+## Examples  
+ The following example shows how to programmatically add an <xref:System.Web.UI.HtmlControls.HtmlHead> control to a page and add `title` and `link` elements to it.  
+  
+ [!code-cs[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/add/codesnippet/csharp/m-system.web.ui.htmlcont_48_1.aspx)]
+ [!code-vb[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/add/codesnippet/visualbasic/m-system.web.ui.htmlcont_48_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HtmlHead (string tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlHead.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tag">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="tag">A string that specifies the tag name of the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> class by using the specified tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlHead>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The value of the `tag` parameter.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddedControl">
       <MemberSignature Language="C#" Value="protected override void AddedControl (System.Web.UI.Control control, int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void AddedControl(class System.Web.UI.Control control, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlHead.AddedControl(System.Web.UI.Control,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,6 +131,7 @@
     <Member MemberName="Description">
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlHead.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,14 +141,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the content of the "description" <see langword="meta" /> element.</summary>
+        <value>The content of the "description" <see langword="meta" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this property, see the <xref:System.Web.UI.Page.MetaDescription%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
       <MemberSignature Language="C#" Value="public string Keywords { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Keywords" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlHead.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,17 +166,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the content of the "keywords" <see langword="meta" /> element.</summary>
+        <value>The content of the "keywords" <see langword="meta" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this property, see the <xref:System.Web.UI.Page.MetaKeywords%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlHead.OnInit(System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,9 +203,11 @@
     <Member MemberName="RemovedControl">
       <MemberSignature Language="C#" Value="protected override void RemovedControl (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RemovedControl(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlHead.RemovedControl(System.Web.UI.Control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,9 +225,11 @@
     <Member MemberName="RenderChildren">
       <MemberSignature Language="C#" Value="protected override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlHead.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,34 +247,56 @@
     <Member MemberName="StyleSheet">
       <MemberSignature Language="C#" Value="public System.Web.UI.IStyleSheet StyleSheet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.IStyleSheet StyleSheet" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlHead.StyleSheet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.IStyleSheet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.Web.UI.IStyleSheet" /> instance that represents the style rules in the <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> control.</summary>
+        <value>An object that represents the style rules in the <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The StyleSheet property returns an <xref:System.Web.UI.IStyleSheet> that represents the embedded style rules in the <xref:System.Web.UI.HtmlControls.HtmlHead> control.  
+  
+> [!NOTE]
+>  Adding styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](../Topic/Microsoft%20Ajax%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to programmatically add an embedded style rule for the HTML `body` element. This example is part of a larger example provided for the <xref:System.Web.UI.HtmlControls.HtmlHead> class.  
+  
+ [!code-cs[System.Web.UI.HtmlControls.HtmlHeadClass#2](~/add/codesnippet/csharp/p-system.web.ui.htmlcont_91_1.aspx)]
+ [!code-vb[System.Web.UI.HtmlControls.HtmlHeadClass#2](~/add/codesnippet/visualbasic/p-system.web.ui.htmlcont_91_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlHead.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the page title.</summary>
+        <value>The page title.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

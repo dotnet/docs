@@ -1,0 +1,1 @@
+        Console.WriteLine("IsThreadSafe? " + CType(ts.Listeners("eventListener"), EventSchemaTraceListener).IsThreadSafe.ToString())

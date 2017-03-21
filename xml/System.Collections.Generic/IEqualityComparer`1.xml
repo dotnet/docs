@@ -1,53 +1,52 @@
 <Type Name="IEqualityComparer&lt;T&gt;" FullName="System.Collections.Generic.IEqualityComparer&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IEqualityComparer&lt;in T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEqualityComparer`1&lt;- T&gt;" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IEqualityComparer`1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <TypeParameters>
-    <TypeParameter Name="T">
-      <Constraints>
-        <ParameterAttribute>Contravariant</ParameterAttribute>
-      </Constraints>
-    </TypeParameter>
+    <TypeParameter Name="T" />
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of objects to compare.</typeparam>
+    <summary>Defines methods to support the comparison of objects for equality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows the implementation of customized equality comparison for collections. That is, you can create your own definition of equality for type `T`, and specify that this definition be used with a collection type that accepts the IEqualityComparer(T) generic interface. In the .NET Framework, constructors of the <xref:System.Collections.Generic.Dictionary%602> generic collection type accept this interface.  
+  
+ A default implementation of this interface is provided by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property of the <xref:System.Collections.Generic.EqualityComparer%601> generic class. The <xref:System.StringComparer> class implements IEqualityComparer(T) of type <xref:System.String>.  
+  
+ This interface supports only equality comparisons. Customization of comparisons for sorting and ordering is provided by the <xref:System.Collections.Generic.IComparer%601> generic interface.  
+  
+ We recommend that you derive from the <xref:System.Collections.Generic.EqualityComparer%601> class instead of implementing the IEqualityComparer(T) interface, because the <xref:System.Collections.Generic.EqualityComparer%601> class tests for equality using the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method instead of the <xref:System.Object.Equals%2A?displayProperty=fullName> method. This is consistent with the `Contains`, `IndexOf`, `LastIndexOf`, and `Remove` methods of the <xref:System.Collections.Generic.Dictionary%602> class and other generic collections.  
+  
+   
+  
+## Examples  
+ The following example adds custom `Box` objects to a dictionary collection. The `Box` objects are considered equal if their dimensions are the same.  
+  
+ [!code-cs[System.Collections.Generic.IEqualityComparer#1](~/add/codesnippet/csharp/t-system.collections.gen_14_1.cs)]
+ [!code-vb[System.Collections.Generic.IEqualityComparer#1](~/add/codesnippet/visualbasic/t-system.collections.gen_14_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(!T x, !T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -57,31 +56,30 @@
         <Parameter Name="y" Type="T" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first object of type <c>T</c> to compare.</param>
+        <param name="y">The second object of type <c>T</c> to compare.</param>
+        <summary>Determines whether the specified objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement this method to provide a customized equality comparison for type `T`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public int GetHashCode (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -90,10 +88,18 @@
         <Parameter Name="obj" Type="T" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Object" /> for which a hash code is to be returned.</param>
+        <summary>Returns a hash code for the specified object.</summary>
+        <returns>A hash code for the specified object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement this method to provide a customized hash code for type `T`,corresponding to the customized equality comparison provided by the <xref:System.Collections.Generic.IEqualityComparer%601.Equals%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

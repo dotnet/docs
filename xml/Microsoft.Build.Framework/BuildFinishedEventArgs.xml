@@ -1,8 +1,11 @@
 <Type Name="BuildFinishedEventArgs" FullName="Microsoft.Build.Framework.BuildFinishedEventArgs">
   <TypeSignature Language="C#" Value="public class BuildFinishedEventArgs : Microsoft.Build.Framework.BuildStatusEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BuildFinishedEventArgs extends Microsoft.Build.Framework.BuildStatusEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildFinishedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +13,36 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.BuildFinished" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BuildFinishedEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildFinishedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BuildFinishedEventArgs (string message, string helpKeyword, bool succeeded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, bool succeeded) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,16 +51,18 @@
         <Parameter Name="succeeded" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="succeeded">
+          <see langword="true" /> to indicate the build succeeded; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildFinishedEventArgs" /> class with the specified <see cref="Microsoft.Build.Framework.BuildEventArgs.Message%2A" />, <see cref="Microsoft.Build.Framework.BuildEventArgs.HelpKeyword%2A" />, and <see cref="Microsoft.Build.Framework.BuildFinishedEventArgs.Succeeded%2A" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BuildFinishedEventArgs (string message, string helpKeyword, bool succeeded, DateTime eventTimestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, bool succeeded, valuetype System.DateTime eventTimestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean,System.DateTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -64,17 +75,18 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">Text message.</param>
+        <param name="helpKeyword">Help keyword.</param>
+        <param name="succeeded">True if the event succeeded.</param>
+        <param name="eventTimestamp">Message for the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildFinishedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BuildFinishedEventArgs (string message, string helpKeyword, bool succeeded, DateTime eventTimestamp, object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, bool succeeded, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor(System.String,System.String,System.Boolean,System.DateTime,System.Object[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -94,29 +106,33 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <param name="messageArgs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">Text message.</param>
+        <param name="helpKeyword">Help keyword.</param>
+        <param name="succeeded">True if the event succeeded.</param>
+        <param name="eventTimestamp">Date and time associated with the event.</param>
+        <param name="messageArgs">Message for the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildFinishedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
       <MemberSignature Language="C#" Value="public bool Succeeded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Succeeded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildFinishedEventArgs.Succeeded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the build succeeded.</summary>
+        <value>
+          <see langword="true" /> to indicate the build succeeded; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

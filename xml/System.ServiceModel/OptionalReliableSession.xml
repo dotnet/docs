@@ -1,8 +1,10 @@
 <Type Name="OptionalReliableSession" FullName="System.ServiceModel.OptionalReliableSession">
   <TypeSignature Language="C#" Value="public class OptionalReliableSession : System.ServiceModel.ReliableSession" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OptionalReliableSession extends System.ServiceModel.ReliableSession" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.OptionalReliableSession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,13 +12,33 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides convenient access to whether a reliable session is enabled when using one of the predefined bindings where it is optional.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ability to enable a reliable session is provided with three of the system-provided bindings. A reliable session is:  
+  
+-   Optional (and off by default) with <xref:System.ServiceModel.NetTcpBinding> and <xref:System.ServiceModel.WSHttpBinding> and  
+  
+-   Required (and hence always on) with <xref:System.ServiceModel.WSDualHttpBinding>.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a new reliable session, access and change the default values of that session.  
+  
+ [!code-vb[S_UEOptionalReliableSession#0](~/add/codesnippet/visualbasic/t-system.servicemodel.op_6_1.vb)]
+ [!code-cs[S_UEOptionalReliableSession#0](~/add/codesnippet/csharp/t-system.servicemodel.op_6_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OptionalReliableSession ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OptionalReliableSession.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -24,42 +46,67 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OptionalReliableSession" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OptionalReliableSession (System.ServiceModel.Channels.ReliableSessionBindingElement reliableSessionBindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ReliableSessionBindingElement reliableSessionBindingElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OptionalReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="reliableSessionBindingElement" Type="System.ServiceModel.Channels.ReliableSessionBindingElement" />
       </Parameters>
       <Docs>
-        <param name="reliableSessionBindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reliableSessionBindingElement">The <see cref="T:System.ServiceModel.Channels.ReliableSessionBindingElement" /> whose property value is used to initialize the reliable session.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OptionalReliableSession" /> class from a reliable session binding element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="reliableSessionBindingElement" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OptionalReliableSession.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the reliable session is enabled.</summary>
+        <value>
+          <see langword="true" /> if the reliable session is enabled; otherwise, <see langword="false" />. The default value depends on the binding being used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ability to enable a reliable session is provided with three of the system-provided bindings. A reliable session is:  
+  
+-   Optional (and off by default) with <xref:System.ServiceModel.NetTcpBinding> and <xref:System.ServiceModel.WSHttpBinding>.  
+  
+-   Required (and hence always on) with <xref:System.ServiceModel.WSDualHttpBinding>.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a new reliable session, access and change the default values of that session.  
+  
+ [!code-vb[S_UEOptionalReliableSession#0](~/add/codesnippet/visualbasic/p-system.servicemodel.op_6_1.vb)]
+ [!code-cs[S_UEOptionalReliableSession#0](~/add/codesnippet/csharp/p-system.servicemodel.op_6_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

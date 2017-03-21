@@ -1,0 +1,1 @@
+            fileIOPerm1.SetPathList(FileIOPermissionAccess.Read, "C:\\temp");

@@ -1,46 +1,67 @@
 <Type Name="UserActivationMode" FullName="System.Security.RightsManagement.UserActivationMode">
   <TypeSignature Language="C#" Value="public enum UserActivationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserActivationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UserActivationMode" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of user Rights Account Certificate to request for rights management activation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used as a parameter to the <xref:System.Security.RightsManagement.SecureEnvironment.Create%2A> method of a <xref:System.Security.RightsManagement.SecureEnvironment>, UserActivationMode specifies to request either a `Temporary` or `Permanent` [Rights Account Certificate](http://go.microsoft.com/fwlink/?LinkId=74474).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to create a <xref:System.Security.RightsManagement.SecureEnvironment>.  
+  
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/add/codesnippet/visualbasic/rmpackagepublish/window1.xaml.vb#rmpkgpubsecenv)]
+ [!code-cs[RightsManagedPackagePublish#RmPkgPubSecEnv](~/add/codesnippet/csharp/RmPackagePublish/Window1.xaml.cs#rmpkgpubsecenv)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Permanent">
       <MemberSignature Language="C#" Value="Permanent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.UserActivationMode Permanent = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.UserActivationMode.Permanent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.UserActivationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A permanent Rights Account Certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
       <MemberSignature Language="C#" Value="Temporary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.UserActivationMode Temporary = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.UserActivationMode.Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.UserActivationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A temporary Rights Account Certificate.</summary>
       </Docs>
     </Member>
   </Members>

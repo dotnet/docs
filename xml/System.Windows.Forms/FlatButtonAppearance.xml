@@ -1,8 +1,10 @@
 <Type Name="FlatButtonAppearance" FullName="System.Windows.Forms.FlatButtonAppearance">
   <TypeSignature Language="C#" Value="public class FlatButtonAppearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlatButtonAppearance extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatButtonAppearance" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,16 +17,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides properties that specify the appearance of <see cref="T:System.Windows.Forms.Button" /> controls whose <see cref="T:System.Windows.Forms.FlatStyle" /> is <see cref="T:System.Windows.Forms.FlatStyle" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BorderColor">
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.BorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -45,17 +49,19 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the border around the button.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the border around the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderSize">
       <MemberSignature Language="C#" Value="public int BorderSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.BorderSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -76,17 +82,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies the size, in pixels, of the border around the button.</summary>
+        <value>An <see cref="T:System.Int32" /> representing the size, in pixels, of the border around the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedBackColor">
       <MemberSignature Language="C#" Value="public System.Drawing.Color CheckedBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CheckedBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.CheckedBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -107,17 +115,19 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the client area of the button when the button is checked and the mouse pointer is outside the bounds of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDownBackColor">
       <MemberSignature Language="C#" Value="public System.Drawing.Color MouseDownBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MouseDownBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.MouseDownBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -138,17 +148,19 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the client area of the button when the mouse is pressed within the bounds of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseOverBackColor">
       <MemberSignature Language="C#" Value="public System.Drawing.Color MouseOverBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MouseOverBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FlatButtonAppearance.MouseOverBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -169,8 +181,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the client area of the button when the mouse pointer is within the bounds of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

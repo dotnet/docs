@@ -1,8 +1,10 @@
 <Type Name="GiveFeedbackEventArgs" FullName="System.Windows.GiveFeedbackEventArgs">
   <TypeSignature Language="C#" Value="public sealed class GiveFeedbackEventArgs : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GiveFeedbackEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.GiveFeedbackEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,33 +12,44 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains arguments for the <see cref="System.Windows.DragDrop.GiveFeedback" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DragDrop.GiveFeedback> event occurs when a drag-and-drop operation is started. The <xref:System.Windows.DragDrop.GiveFeedback> event enables the source of a drag event to modify the appearance of the mouse pointer to provide the user with visual feedback during a drag-and-drop operation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Effects">
       <MemberSignature Language="C#" Value="public System.Windows.DragDropEffects Effects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.DragDropEffects Effects" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.GiveFeedbackEventArgs.Effects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DragDropEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates the effects of drag-and-drop operation.</summary>
+        <value>A member of the <see cref="T:System.Windows.DragDropEffects" /> enumeration that indicates the effects of the drag-and-drop operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.GiveFeedbackEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,18 +69,27 @@
     <Member MemberName="UseDefaultCursors">
       <MemberSignature Language="C#" Value="public bool UseDefaultCursors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCursors" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.GiveFeedbackEventArgs.UseDefaultCursors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value indicating whether default cursor feedback behavior should be used for the associated drag-and-drop operation.</summary>
+        <value>A Boolean value that indicating whether default cursor feedback behavior should be used for the associated drag-and-drop operation. <see langword="true" /> to use default feedback cursor behavior; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the mouse cursor changes to provide feedback about permissible actions during a drag-and-drop operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

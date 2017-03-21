@@ -1,0 +1,1 @@
+        Dim envVersion As EnvelopeVersion = msgVersion.Envelope

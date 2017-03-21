@@ -1,0 +1,33 @@
+
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" > 
+
+  <!--<SnippetButtonTemplate>-->
+  <Button FontSize="16" FontWeight="Bold">Click the Background
+    <Button.Template>
+      <ControlTemplate TargetType="{x:Type Button}">
+        <Border Background="{TemplateBinding Background}">
+           <ContentPresenter/>
+        </Border>
+      </ControlTemplate>
+    </Button.Template>
+
+    <Button.Style>
+      <Style TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Blue"/>
+        <Style.Triggers>
+          <Trigger Property="IsPressed" Value="true">
+            <Setter Property="Background" Value="Red"/>
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+    </Button.Style>
+  </Button>
+  <!--</SnippetButtonTemplate>-->
+
+</Page>
+
+
+
+

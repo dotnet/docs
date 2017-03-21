@@ -1,0 +1,1 @@
+        Dim hashCode As Integer = policyStatement.GetHashCode()

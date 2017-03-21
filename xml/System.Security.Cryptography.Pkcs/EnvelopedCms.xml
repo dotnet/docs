@@ -1,12 +1,10 @@
 <Type Name="EnvelopedCms" FullName="System.Security.Cryptography.Pkcs.EnvelopedCms">
   <TypeSignature Language="C#" Value="public sealed class EnvelopedCms" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnvelopedCms extends System.Object" />
-  <AssemblyInfo>
-    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.EnvelopedCms" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,59 +12,88 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The EnvelopedCms class represents a CMS/PKCS #7 structure for enveloped data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Cryptographic Message Syntax RFC specifies the following MIME types and file name extensions for CMS/PKCS #7 messages with these content types.  
+  
+|Content type|MIME type|Extension|  
+|------------------|---------------|---------------|  
+|envelopedData|application/pkcs7-mime|.p7m|  
+|signedData|application/pkcs7-signature|.p7s.p7c|  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedCms ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The EnvelopedCms constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms> class has the following default property values.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentInfo%2A>|1.2.840.113549.1.7.1 (data)Length: zero|  
+|<xref:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm%2A>|1.2.840.113549.3.7 (RSA_DES_EDE3_CBC)|  
+  
+ The default <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType> for recipients is <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" />
       </Parameters>
       <Docs>
-        <param name="contentInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentInfo">An instance of the <see cref="System.Security.Cryptography.Pkcs.EnvelopedCms.ContentInfo%2A" /> class that represents the content and its type.</param>
+        <summary>The EnvelopedCms constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class by using the specified content information as the inner content type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.%23ctor>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo, System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, class System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Security.Cryptography.Pkcs.AlgorithmIdentifier)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -74,18 +101,28 @@
         <Parameter Name="encryptionAlgorithm" Type="System.Security.Cryptography.Pkcs.AlgorithmIdentifier" />
       </Parameters>
       <Docs>
-        <param name="contentInfo">To be added.</param>
-        <param name="encryptionAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentInfo">A  <see cref="T:System.Security.Cryptography.Pkcs.ContentInfo" /> object that represents the content and its type.</param>
+        <param name="encryptionAlgorithm">An <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> object that specifies the encryption algorithm.</param>
+        <summary>The EnvelopedCms constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class by using the specified content information and encryption algorithm. The specified content information is to be used as the inner content type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.%23ctor>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -93,18 +130,30 @@
         <Parameter Name="contentInfo" Type="System.Security.Cryptography.Pkcs.ContentInfo" />
       </Parameters>
       <Docs>
-        <param name="recipientIdentifierType">To be added.</param>
-        <param name="contentInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipientIdentifierType">A member of the <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" /> enumeration that specifies the means of identifying the recipient.</param>
+        <param name="contentInfo">A <see cref="T:System.Security.Cryptography.Pkcs.ContentInfo" /> object that represents the content and its type.</param>
+        <summary>The EnvelopedCms constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class by using the specified subject identifier type and content information. The specified content information is to be used as the inner content type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.%23ctor>.  
+  
+ Subjects can be identified by either the issuer and serial number of their public key certificate or by the key identifier of their public key certificate.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo, System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, class System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Security.Cryptography.Pkcs.AlgorithmIdentifier)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -118,86 +167,93 @@
         <Parameter Name="encryptionAlgorithm" Type="System.Security.Cryptography.Pkcs.AlgorithmIdentifier" />
       </Parameters>
       <Docs>
-        <param name="recipientIdentifierType">To be added.</param>
-        <param name="contentInfo">To be added.</param>
-        <param name="encryptionAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="recipientIdentifierType">A member of the <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" /> enumeration that specifies the means of identifying the recipient.</param>
+        <param name="contentInfo">A <see cref="T:System.Security.Cryptography.Pkcs.ContentInfo" /> object that represents the content and its type.</param>
+        <param name="encryptionAlgorithm">An <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> object that specifies the encryption algorithm.</param>
+        <summary>The EnvelopedCms constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class by using the specified subject identifier type, content information, and encryption algorithm. The specified content information is to be used as the inner content type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
     <Member MemberName="Certificates">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.Certificates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The Certificates property retrieves the set of certificates associated with the enveloped CMS/PKCS #7 message.</summary>
+        <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> collection that represents the X.509 certificates used with the enveloped CMS/PKCS #7 message. If no certificates exist, the property value is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentEncryptionAlgorithm">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.AlgorithmIdentifier ContentEncryptionAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.AlgorithmIdentifier ContentEncryptionAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.AlgorithmIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The ContentEncryptionAlgorithm property retrieves the identifier of the algorithm used to encrypt the content.</summary>
+        <value>An <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> object that represents the algorithm identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an algorithm identifier was not set in a constructor, this property contains the default value. For the default property values used with the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms> class, see <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.%23ctor>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentInfo">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.ContentInfo ContentInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.ContentInfo ContentInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.ContentInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The ContentInfo property retrieves the inner content information for the enveloped CMS/PKCS #7 message.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.Pkcs.ContentInfo" /> object that represents the inner content information from the enveloped CMS/PKCS #7 message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you call any of the decrypt methods, such as <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt>, before viewing this property, the content returned is encrypted.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Decode">
       <MemberSignature Language="C#" Value="public void Decode (byte[] encodedMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decode(unsigned int8[] encodedMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -212,21 +268,27 @@
         <Parameter Name="encodedMessage" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encodedMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="encodedMessage">An array of byte values that represent the information to be decoded.</param>
+        <summary>The Decode method decodes the specified enveloped CMS/PKCS #7 message and resets all member variables in the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should be called before <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt?displayProperty=fullName> or any other EnvelopedCms.Decrypt method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
       <MemberSignature Language="C#" Value="public void Decrypt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,20 +296,36 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The Decrypt method decrypts the contents of the decoded enveloped CMS/PKCS #7 message. The Decrypt method searches the current user and computer My stores for the appropriate certificate and private key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode%2A?displayProperty=fullName> should be called before Decrypt or any other <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt%2A> method.  
+  
+ The Decrypt method does not search the computer My store if it is inaccessible.  
+  
+## .NET Framework Security  
+ The following permissions are required to access the decryption key:  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
       <MemberSignature Language="C#" Value="public void Decrypt (System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(class System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt(System.Security.Cryptography.Pkcs.RecipientInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,21 +335,35 @@
         <Parameter Name="recipientInfo" Type="System.Security.Cryptography.Pkcs.RecipientInfo" />
       </Parameters>
       <Docs>
-        <param name="recipientInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipientInfo">A <see cref="T:System.Security.Cryptography.Pkcs.RecipientInfo" /> object that represents the recipient information that identifies the certificate associated with the private key to use for the decryption.</param>
+        <summary>The Decrypt method decrypts the contents of the decoded enveloped CMS/PKCS #7 message by using the private key associated with the certificate identified by the specified recipient information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ The following permissions are required to access the decryption key:  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
       <MemberSignature Language="C#" Value="public void Decrypt (System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,21 +373,35 @@
         <Parameter Name="extraStore" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
       </Parameters>
       <Docs>
-        <param name="extraStore">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="extraStore">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> collection that represents additional certificates to use for the decryption. The Decrypt method searches this certificate collection and the My certificate store for the proper certificate to use for the decryption.</param>
+        <summary>The Decrypt method decrypts the contents of the decoded enveloped CMS/PKCS #7 message by using the specified certificate collection. The Decrypt method searches the specified certificate collection and the My certificate store for the proper certificate to use for the decryption.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ The following permissions are required to access the decryption key:  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
       <MemberSignature Language="C#" Value="public void Decrypt (System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo, System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(class System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt(System.Security.Cryptography.Pkcs.RecipientInfo,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,22 +412,36 @@
         <Parameter Name="extraStore" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
       </Parameters>
       <Docs>
-        <param name="recipientInfo">To be added.</param>
-        <param name="extraStore">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipientInfo">A <see cref="T:System.Security.Cryptography.Pkcs.RecipientInfo" /> object that represents the recipient information to use for the decryption.</param>
+        <param name="extraStore">An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> collection that represents additional certificates to use for the decryption. The Decrypt method searches this certificate collection and the My certificate store for the proper certificate to use for the decryption.</param>
+        <summary>The Decrypt method decrypts the contents of the decoded enveloped CMS/PKCS #7 message by using the private key associated with the certificate identified by the specified recipient information and by using the specified certificate collection.  The Decrypt method searches the specified certificate collection and the My certificate store for the proper certificate to use for the decryption.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ The following permissions are required to access the decryption key:  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
       <MemberSignature Language="C#" Value="public byte[] Encode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -334,17 +454,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>The Encode method encodes the contents of the enveloped CMS/PKCS #7 message and returns it as an array of byte values. Encryption must be done before encoding.</summary>
+        <returns>If the method succeeds, the method returns an array of byte values that represent the encoded information.  
+  
+ If the method fails, it throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt?displayProperty=fullName> or another <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%2A> method must be called before this method.  
+  
+ The Encode method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
       <MemberSignature Language="C#" Value="public void Encrypt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -352,20 +486,35 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The Encrypt method encrypts the contents of the CMS/PKCS #7 message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method displays a user interface in which you choose the recipients for whom to encrypt the message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+  
+ The user interface will only present certificates that are within their validity period and that have key encipherment or key agreement included in their key usage.  
+  
+ The Encrypt method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+  
+## .NET Framework Security  
+ The following permissions are required to display the user interface:  
+  
+-   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
       <MemberSignature Language="C#" Value="public void Encrypt (System.Security.Cryptography.Pkcs.CmsRecipient recipient);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(class System.Security.Cryptography.Pkcs.CmsRecipient recipient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt(System.Security.Cryptography.Pkcs.CmsRecipient)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,21 +524,28 @@
         <Parameter Name="recipient" Type="System.Security.Cryptography.Pkcs.CmsRecipient" />
       </Parameters>
       <Docs>
-        <param name="recipient">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipient">A <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object that represents the recipient information.</param>
+        <summary>The Encrypt method encrypts the contents of the CMS/PKCS #7 message by using the specified recipient information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Encrypt method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
       <MemberSignature Language="C#" Value="public void Encrypt (System.Security.Cryptography.Pkcs.CmsRecipientCollection recipients);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(class System.Security.Cryptography.Pkcs.CmsRecipientCollection recipients) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt(System.Security.Cryptography.Pkcs.CmsRecipientCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,21 +555,28 @@
         <Parameter Name="recipients" Type="System.Security.Cryptography.Pkcs.CmsRecipientCollection" />
       </Parameters>
       <Docs>
-        <param name="recipients">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="recipients">A <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection that represents the information for the list of recipients.</param>
+        <summary>The Encrypt method encrypts the contents of the CMS/PKCS #7 message by using the information for the specified list of recipients. The message is encrypted by using a message encryption key with a symmetric encryption algorithm such as triple DES. The message encryption key is then encrypted with the public key of each recipient.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Encrypt method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="RecipientInfos">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.RecipientInfoCollection RecipientInfos { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.RecipientInfoCollection RecipientInfos" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -425,51 +588,63 @@
         <ReturnType>System.Security.Cryptography.Pkcs.RecipientInfoCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The RecipientInfos property retrieves the recipient information associated with the enveloped CMS/PKCS #7 message.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.Pkcs.RecipientInfoCollection" /> collection that represents the recipient information. If no recipients exist, the property value is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this property is read-only, a modification to the <xref:System.Security.Cryptography.Pkcs.RecipientInfo> objects in the <xref:System.Security.Cryptography.Pkcs.RecipientInfoCollection> can be done by using their properties.  
+  
+ The RecipientInfos property is not populated as a result of calling the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode%2A?displayProperty=fullName> method nor any of the overloaded EnvelopedCms.Encrypt methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnprotectedAttributes">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObjectCollection UnprotectedAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObjectCollection UnprotectedAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.UnprotectedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CryptographicAttributeObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The UnprotectedAttributes property retrieves the unprotected (unencrypted) attributes associated with the enveloped CMS/PKCS #7 message. Unprotected attributes are not encrypted, and so do not have data confidentiality within an <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> object.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" /> collection that represents the unprotected attributes. If no unprotected attributes exist, the property value is an empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">
       <MemberSignature Language="C#" Value="public int Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The Version property retrieves the version of the enveloped CMS/PKCS #7 message.</summary>
+        <value>An int value that represents the version of the enveloped CMS/PKCS #7 message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The version determines whether the message is a PKCS #7 message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

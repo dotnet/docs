@@ -1,61 +1,84 @@
 <Type Name="ListViewItemType" FullName="System.Web.UI.WebControls.ListViewItemType">
   <TypeSignature Language="C#" Value="public enum ListViewItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewItemType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewItemType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the function of an item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ListViewItemType enumeration identifies the function of items in a <xref:System.Web.UI.WebControls.ListView> control. You can use the ListViewItemType enumeration to identify the type of a <xref:System.Web.UI.WebControls.ListViewItem> object.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the ListViewItemType enumeration to check the type of a <xref:System.Web.UI.WebControls.ListViewItem> object.  
+  
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_55_1.aspx)]
+ [!code-cs[System.Web.UI.WebControls.ListView.ItemDataBound#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_55_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataItem">
       <MemberSignature Language="C#" Value="DataItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewItemType DataItem = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewItemType.DataItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmptyItem">
       <MemberSignature Language="C#" Value="EmptyItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewItemType EmptyItem = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewItemType.EmptyItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An empty item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control. The empty item is displayed when the <see cref="T:System.Web.UI.WebControls.ListView" /> control has no records to display, or when a group in the <see cref="T:System.Web.UI.WebControls.ListView" /> control has no more records to display.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
       <MemberSignature Language="C#" Value="InsertItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewItemType InsertItem = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewItemType.InsertItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An insert item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
       </Docs>
     </Member>
   </Members>

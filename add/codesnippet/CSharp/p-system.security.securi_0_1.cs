@@ -1,0 +1,1 @@
+        string childrenCount = xmlElement.Children.Count.ToString();

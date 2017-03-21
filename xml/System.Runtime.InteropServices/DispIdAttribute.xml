@@ -1,21 +1,11 @@
 <Type Name="DispIdAttribute" FullName="System.Runtime.InteropServices.DispIdAttribute">
   <TypeSignature Language="C#" Value="public sealed class DispIdAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DispIdAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.1.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DispIdAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -23,69 +13,72 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Event | System.AttributeTargets.Field | System.AttributeTargets.Method | System.AttributeTargets.Property, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Event, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the COM dispatch identifier (DISPID) of a method, field, or property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to methods, fields, or properties.  
+  
+ This attribute contains the DISPID for the method, field, or property it describes. Unique DISPIDs are typically assigned by the common language runtime, but you can use this attribute to assign a specific DISPID to a method. When importing a type library, this attribute is applied to all methods with assigned DISPIDs. This ensures that any managed implementation of the same method retains the same DISPID if exposed to COM.  
+  
+ See [DISPID Constants](https://msdn.microsoft.com/library/windows/desktop/ms221242\(v=vs.85\).aspx) for a list of commonly used DISPID values.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how explicit DISPIDs can be assigned to members of a class.  
+  
+ [!code-cpp[Classic DispIdAttribute Example#1](~/add/codesnippet/cpp/t-system.runtime.interop_13_1.cpp)]
+ [!code-cs[Classic DispIdAttribute Example#1](~/add/codesnippet/csharp/t-system.runtime.interop_13_1.cs)]
+ [!code-vb[Classic DispIdAttribute Example#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_13_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DispIdAttribute (int dispId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dispId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.DispIdAttribute.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dispId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dispId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dispId">The DISPID for the member.</param>
+        <summary>Initializes a new instance of the <see langword="DispIdAttribute" /> class with the specified DISPID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public int Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.DispIdAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the DISPID for the member.</summary>
+        <value>The DISPID for the member.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

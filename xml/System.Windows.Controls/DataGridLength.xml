@@ -1,6 +1,7 @@
 <Type Name="DataGridLength" FullName="System.Windows.Controls.DataGridLength">
   <TypeSignature Language="C#" Value="public struct DataGridLength : IEquatable&lt;System.Windows.Controls.DataGridLength&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataGridLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Controls.DataGridLength&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridLength" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,13 +20,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the lengths of elements within the <see cref="T:System.Windows.Controls.DataGrid" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridLength (double pixels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.#ctor(System.Double)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,14 +37,17 @@
         <Parameter Name="pixels" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="pixels">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pixels">The absolute pixel value (96 pixels-per-inch) to initialize the length to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class with an absolute value in pixels.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pixels" /> is <see cref="T:System.Double" />, <see cref="T:System.Double" />, or <see cref="T:System.Double" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridLength (double value, System.Windows.Controls.DataGridLengthUnitType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Controls.DataGridLengthUnitType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.#ctor(System.Double,System.Windows.Controls.DataGridLengthUnitType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,15 +58,22 @@
         <Parameter Name="type" Type="System.Windows.Controls.DataGridLengthUnitType" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The requested size of the element.</param>
+        <param name="type">The type that is used to determine how the size of the element is calculated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class with a specified value and unit.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see cref="T:System.Double" />, <see cref="T:System.Double" />, or <see cref="T:System.Double" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is not <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, or <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridLength (double value, System.Windows.Controls.DataGridLengthUnitType type, double desiredValue, double displayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Controls.DataGridLengthUnitType type, float64 desiredValue, float64 displayValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.#ctor(System.Double,System.Windows.Controls.DataGridLengthUnitType,System.Double,System.Double)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,17 +86,32 @@
         <Parameter Name="displayValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="desiredValue">To be added.</param>
-        <param name="displayValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The requested size of the element.</param>
+        <param name="type">The type that is used to determine how the size of the element is calculated.</param>
+        <param name="desiredValue">The calculated size needed for the element.</param>
+        <param name="displayValue">The allocated size for the element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class with the specified value, unit, desired value, and display value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see cref="T:System.Double" />, <see cref="T:System.Double" />, or <see cref="T:System.Double" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is not <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />, or <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />.  
+  
+ -or-  
+  
+ <paramref name="desiredValue" /> is <see cref="F:System.Double.NegativeInfinity" /> or <see cref="F:System.Double.PositiveInfinity" />.  
+  
+ -or-  
+  
+ <paramref name="displayValue" /> is <see cref="F:System.Double.NegativeInfinity" /> or <see cref="F:System.Double.PositiveInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Auto">
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength Auto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.DataGridLength Auto" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.Auto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,14 +121,22 @@
         <ReturnType>System.Windows.Controls.DataGridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the standard automatic sizing mode.</summary>
+        <value>A <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the standard automatic sizing mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The standard automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of both cells and column headers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DesiredValue">
       <MemberSignature Language="C#" Value="public double DesiredValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.DesiredValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,14 +146,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the calculated pixel value needed for the element.</summary>
+        <value>The number of pixels calculated for the size of the element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayValue">
       <MemberSignature Language="C#" Value="public double DisplayValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DisplayValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.DisplayValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,14 +164,15 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the pixel value allocated for the size of the element.</summary>
+        <value>The number of pixels allocated for the element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,15 +185,17 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare to the current instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Controls.DataGridLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is a <see cref="T:System.Windows.Controls.DataGridLength" /> with the same value or sizing mode as the current <see cref="T:System.Windows.Controls.DataGridLength" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.DataGridLength other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Controls.DataGridLength other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.Equals(System.Windows.Controls.DataGridLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,15 +208,17 @@
         <Parameter Name="other" Type="System.Windows.Controls.DataGridLength" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:System.Windows.Controls.DataGridLength" /> to compare to the current instance.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Controls.DataGridLength" /> is equal to the current <see cref="T:System.Windows.Controls.DataGridLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is a <see cref="T:System.Windows.Controls.DataGridLength" /> with the same value or sizing mode as the current <see cref="T:System.Windows.Controls.DataGridLength" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,14 +229,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a hash code for the <see cref="T:System.Windows.Controls.DataGridLength" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Windows.Controls.DataGridLength" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAbsolute">
       <MemberSignature Language="C#" Value="public bool IsAbsolute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbsolute" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsAbsolute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,14 +247,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this instance sizes elements based on a fixed pixel value.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Windows.Controls.DataGridLength.UnitType%2A" /> property is set to <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAuto">
       <MemberSignature Language="C#" Value="public bool IsAuto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuto" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsAuto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -222,14 +266,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this instance automatically sizes elements based on both the content of cells and the column headers.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Windows.Controls.DataGridLength.UnitType%2A" /> property is set to <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSizeToCells">
       <MemberSignature Language="C#" Value="public bool IsSizeToCells { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeToCells" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsSizeToCells" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -239,14 +285,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this instance automatically sizes elements based on the content of the cells.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Windows.Controls.DataGridLength.UnitType%2A" /> property is set to <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSizeToHeader">
       <MemberSignature Language="C#" Value="public bool IsSizeToHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeToHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsSizeToHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,14 +304,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this instance automatically sizes elements based on the header.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Windows.Controls.DataGridLength.UnitType%2A" /> property is set to <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsStar">
       <MemberSignature Language="C#" Value="public bool IsStar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsStar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,14 +323,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this instance automatically sizes elements based on a weighted proportion of available space.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Windows.Controls.DataGridLength.UnitType%2A" /> property is set to <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
       <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.DataGridLength gl1, System.Windows.Controls.DataGridLength gl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.DataGridLength gl1, valuetype System.Windows.Controls.DataGridLength gl2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.op_Equality(System.Windows.Controls.DataGridLength,System.Windows.Controls.DataGridLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -294,16 +346,18 @@
         <Parameter Name="gl2" Type="System.Windows.Controls.DataGridLength" />
       </Parameters>
       <Docs>
-        <param name="gl1">To be added.</param>
-        <param name="gl2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="gl1">The first <see cref="T:System.Windows.Controls.DataGridLength" /> instance to compare.</param>
+        <param name="gl2">The second <see cref="T:System.Windows.Controls.DataGridLength" /> instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.DataGridLength" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.DataGridLength" /> instances have the same value or sizing mode; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength op_Implicit (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Controls.DataGridLength op_Implicit(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.op_Implicit(System.Double)~System.Windows.Controls.DataGridLength" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -325,6 +379,7 @@
     <Member MemberName="op_Inequality">
       <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.DataGridLength gl1, System.Windows.Controls.DataGridLength gl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.DataGridLength gl1, valuetype System.Windows.Controls.DataGridLength gl2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.op_Inequality(System.Windows.Controls.DataGridLength,System.Windows.Controls.DataGridLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -338,16 +393,18 @@
         <Parameter Name="gl2" Type="System.Windows.Controls.DataGridLength" />
       </Parameters>
       <Docs>
-        <param name="gl1">To be added.</param>
-        <param name="gl2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="gl1">The first <see cref="T:System.Windows.Controls.DataGridLength" /> instance to compare.</param>
+        <param name="gl2">The second <see cref="T:System.Windows.Controls.DataGridLength" /> instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.DataGridLength" /> structures to determine whether they are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.DataGridLength" /> instances do not have the same value or sizing mode; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeToCells">
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength SizeToCells { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.DataGridLength SizeToCells" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.SizeToCells" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,14 +414,22 @@
         <ReturnType>System.Windows.Controls.DataGridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the cell-based automatic sizing mode.</summary>
+        <value>A <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the cell-based automatic sizing mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cell-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of cells in the column, not including column headers. This sizing mode will cause columns to expand if content that is larger than the current column size is scrolled into view. The column will not shrink after the content is scrolled out of view.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeToHeader">
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength SizeToHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.DataGridLength SizeToHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.SizeToHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,14 +439,22 @@
         <ReturnType>System.Windows.Controls.DataGridLength</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the header-based automatic sizing mode.</summary>
+        <value>A <see cref="T:System.Windows.Controls.DataGridLength" /> structure that represents the header-based automatic sizing mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The header-based automatic sizing mode sizes <xref:System.Windows.Controls.DataGrid> columns based on the contents of column headers only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -392,14 +465,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represent the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnitType">
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridLengthUnitType UnitType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.DataGridLengthUnitType UnitType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.UnitType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -409,14 +483,15 @@
         <ReturnType>System.Windows.Controls.DataGridLengthUnitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type that is used to determine how the size of the element is calculated.</summary>
+        <value>A type that represents how size is determined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -426,8 +501,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the absolute value of the <see cref="T:System.Windows.Controls.DataGridLength" /> in pixels.</summary>
+        <value>The absolute value of the <see cref="T:System.Windows.Controls.DataGridLength" /> in pixels, or 1.0 if the <see cref="System.Windows.Controls.DataGridLength.UnitType%2A" /> property is set to <see cref="T:System.Windows.Controls.DataGridLengthUnitType" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

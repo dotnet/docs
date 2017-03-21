@@ -1,0 +1,1 @@
+        int outputBlockSize = cryptoTransform.OutputBlockSize;

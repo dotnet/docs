@@ -1,0 +1,1 @@
+            Dim secMode = security.Mode

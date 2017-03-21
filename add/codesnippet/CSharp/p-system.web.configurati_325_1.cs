@@ -1,0 +1,1 @@
+ruleSetting.Name = "All Errors Custom";

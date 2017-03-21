@@ -1,8 +1,10 @@
 <Type Name="ValidatorCollection" FullName="System.Web.UI.ValidatorCollection">
   <TypeSignature Language="C#" Value="public sealed class ValidatorCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValidatorCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ValidatorCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,30 +16,51 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Exposes an array of <see cref="T:System.Web.UI.IValidator" /> references. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each ValidatorCollection reference is associated with a validation server control contained on the requested page. These controls add themselves to this collection when the <xref:System.Web.UI.Control.Init> event of the <xref:System.Web.UI.Page> object is handled. They remove themselves when the <xref:System.Web.UI.Control.Unload> event of the <xref:System.Web.UI.Page> object is handled. The <xref:System.Web.UI.Page> class inherits both of these methods from the <xref:System.Web.UI.Control> class.  
+  
+ You can access this collection, its methods, and its properties through the <xref:System.Web.UI.Page.Validators%2A?displayProperty=fullName> property. If the tested condition of any validator in this collection fails, the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=fullName> property is set to `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the collection through the <xref:System.Web.UI.Page.Validators%2A?displayProperty=fullName> property and use the <xref:System.Web.UI.ValidatorCollection.GetEnumerator%2A> method to iterate through the values.  
+  
+ [!code-cs[ValidatorCollection_GetEnumerator#1](~/add/codesnippet/csharp/t-system.web.ui.validato_1.aspx)]
+ [!code-vb[ValidatorCollection_GetEnumerator#1](~/add/codesnippet/visualbasic/t-system.web.ui.validato_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ValidatorCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ValidatorCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ValidatorCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Web.UI.IValidator validator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.IValidator validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ValidatorCollection.Add(System.Web.UI.IValidator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,17 +70,34 @@
         <Parameter Name="validator" Type="System.Web.UI.IValidator" />
       </Parameters>
       <Docs>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="validator">The validation server control to add.</param>
+        <summary>Adds the specified validation server control to the <see cref="T:System.Web.UI.ValidatorCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When added to the <xref:System.Web.UI.ValidatorCollection> collection of a <xref:System.Web.UI.Page> object through the <xref:System.Web.UI.Page.Validators%2A> property, the <xref:System.Web.UI.IValidator> implementation takes part in validation. Its <xref:System.Web.UI.IValidator.Validate%2A> method is called together with the <xref:System.Web.UI.IValidator.Validate%2A> methods of all other validators. All validators then share in determining whether the <xref:System.Web.UI.Page> object as a whole is valid.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the Add method.  
+  
+ [!code-vb[ValidatorCollection_Add#1](~/add/codesnippet/visualbasic/m-system.web.ui.validato_2_1.vb)]
+ [!code-cs[ValidatorCollection_Add#1](~/add/codesnippet/csharp/m-system.web.ui.validato_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.IValidator validator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.IValidator validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ValidatorCollection.Contains(System.Web.UI.IValidator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,18 +107,31 @@
         <Parameter Name="validator" Type="System.Web.UI.IValidator" />
       </Parameters>
       <Docs>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="validator">The validation server control to check for.</param>
+        <summary>Determines whether the specified validation server control is contained within the page's <see cref="T:System.Web.UI.ValidatorCollection" /> collection.</summary>
+        <returns>
+          <see langword="true" /> if the validation server control is in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the Contains method.  
+  
+ [!code-cs[ValidatorCollection_Contains_Remove#1](~/add/codesnippet/csharp/m-system.web.ui.validato_0_1.cs)]
+ [!code-vb[ValidatorCollection_Contains_Remove#1](~/add/codesnippet/visualbasic/m-system.web.ui.validato_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ValidatorCollection.CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,35 +142,59 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The collection to which the validation server control is added.</param>
+        <param name="index">The index where the validation server control is copied.</param>
+        <summary>Copies the validator collection to the specified array, beginning at the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the CopyTo method.  
+  
+ [!code-cs[ValidatorCollection_CopyTo#1](~/add/codesnippet/csharp/m-system.web.ui.validato_4_1.aspx)]
+ [!code-vb[ValidatorCollection_CopyTo#1](~/add/codesnippet/visualbasic/m-system.web.ui.validato_4_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidatorCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of references in the collection.</summary>
+        <value>The number of validation controls in the page's <see cref="T:System.Web.UI.ValidatorCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the Count property.  
+  
+ [!code-cs[ValidatorCollection_Constructor_Count#2](~/add/codesnippet/csharp/p-system.web.ui.validato_3_1.aspx)]
+ [!code-vb[ValidatorCollection_Constructor_Count#2](~/add/codesnippet/visualbasic/p-system.web.ui.validato_3_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ValidatorCollection.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,51 +202,99 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> instance for the <see cref="T:System.Web.UI.ValidatorCollection" /> collection.</summary>
+        <returns>The <see cref="T:System.Collections.IEnumerator" /> for the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to create an <xref:System.Collections.IEnumerator?displayProperty=fullName> instance that can be iterated through easily to get each item in the <xref:System.Web.UI.ValidatorCollection> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the GetEnumerator method.  
+  
+ [!code-cs[ValidatorCollection_GetEnumerator#1](~/add/codesnippet/csharp/m-system.web.ui.validato_1_1.aspx)]
+ [!code-vb[ValidatorCollection_GetEnumerator#1](~/add/codesnippet/visualbasic/m-system.web.ui.validato_1_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidatorCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.ValidatorCollection" /> collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the IsReadOnly property.  
+  
+ [!code-vb[ValidatorCollection_3#1](~/add/codesnippet/visualbasic/p-system.web.ui.validato_0_1.aspx)]
+ [!code-cs[ValidatorCollection_3#1](~/add/codesnippet/csharp/p-system.web.ui.validato_0_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidatorCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.ValidatorCollection" /> collection is synchronized.</summary>
+        <value>
+          <see langword="true" /> if the collection is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is synchronized, it is thread safe.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the IsSynchronized property.  
+  
+ [!code-vb[ValidatorCollection_3#2](~/add/codesnippet/visualbasic/p-system.web.ui.validato_4_1.aspx)]
+ [!code-cs[ValidatorCollection_3#2](~/add/codesnippet/csharp/p-system.web.ui.validato_4_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.UI.IValidator this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.IValidator Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidatorCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,18 +304,30 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the validator to return.</param>
+        <summary>Gets the validation server control at the specified index location in the <see cref="T:System.Web.UI.ValidatorCollection" /> collection.</summary>
+        <value>The value of the specified validator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the Item property.  
+  
+ [!code-cs[ValidatorCollection_Item#1](~/add/codesnippet/csharp/p-system.web.ui.validato_1_1.aspx)]
+ [!code-vb[ValidatorCollection_Item#1](~/add/codesnippet/visualbasic/p-system.web.ui.validato_1_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.IValidator validator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.IValidator validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ValidatorCollection.Remove(System.Web.UI.IValidator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,26 +337,48 @@
         <Parameter Name="validator" Type="System.Web.UI.IValidator" />
       </Parameters>
       <Docs>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="validator">The validation server control to remove from the collection.</param>
+        <summary>Removes the specified validation server control from the page's <see cref="T:System.Web.UI.ValidatorCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the Remove method.  
+  
+ [!code-cs[ValidatorCollection_Contains_Remove#1](~/add/codesnippet/csharp/m-system.web.ui.validato_3_1.cs)]
+ [!code-vb[ValidatorCollection_Contains_Remove#1](~/add/codesnippet/visualbasic/m-system.web.ui.validato_3_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidatorCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize the <see cref="T:System.Web.UI.ValidatorCollection" /> collection.</summary>
+        <value>The <see cref="T:System.Object" /> to synchronize the collection with.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the SyncRoot property.  
+  
+ [!code-vb[ValidatorCollection_3#2](~/add/codesnippet/visualbasic/p-system.web.ui.validato_2_1.aspx)]
+ [!code-cs[ValidatorCollection_3#2](~/add/codesnippet/csharp/p-system.web.ui.validato_2_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

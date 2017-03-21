@@ -1,8 +1,10 @@
 <Type Name="DownloadFileGroupCompletedEventArgs" FullName="System.Deployment.Application.DownloadFileGroupCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class DownloadFileGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DownloadFileGroupCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadFileGroupCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,25 +12,54 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes a file download that has recently completed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example downloads a file group named `HelpFiles`, and displays download progress in a status bar. This example requires that you deploy a Windows Forms application, and that your main form has a <xref:System.Windows.Forms.StatusStrip> control, and a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`.  
+  
+ [!code-cs[ClickOnceAPI#8](~/add/codesnippet/csharp/ClickOnceAPI/Form1.cs#8)]
+ [!code-cpp[ClickOnceAPI#8](~/add/codesnippet/cpp/t-system.deployment.appl_7_1.cpp)]
+ [!code-vb[ClickOnceAPI#8](~/add/codesnippet/visualbasic/ClickOnceAPIVB/Form1.vb#8)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Group">
       <MemberSignature Language="C#" Value="public string Group { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Group" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadFileGroupCompletedEventArgs.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the file group being downloaded.</summary>
+        <value>A <see cref="T:System.String" /> representing the name of the file group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can initiate multiple calls to <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> and download multiple file groups simultaneously. Use Group to determine which event callbacks correspond to which group.  
+  
+   
+  
+## Examples  
+ The following code example downloads a file group named `HelpFiles`, and displays download progress in a status bar. This example requires that you deploy a Windows Forms application, and that your main form has a <xref:System.Windows.Forms.StatusStrip> control, and a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`.  
+  
+ [!code-cs[ClickOnceAPI#8](~/add/codesnippet/csharp/ClickOnceAPI/Form1.cs#8)]
+ [!code-cpp[ClickOnceAPI#8](~/add/codesnippet/cpp/p-system.deployment.appl_9_1.cpp)]
+ [!code-vb[ClickOnceAPI#8](~/add/codesnippet/visualbasic/ClickOnceAPIVB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

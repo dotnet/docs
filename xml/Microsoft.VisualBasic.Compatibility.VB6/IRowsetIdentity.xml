@@ -1,8 +1,10 @@
 <Type Name="IRowsetIdentity" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity">
   <TypeSignature Language="C#" Value="public interface IRowsetIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetIdentity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -18,16 +20,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowsetIdentity" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IsSameRow">
       <MemberSignature Language="C#" Value="public int IsSameRow (int hThisRow, int hThatRow);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 IsSameRow(int32 hThisRow, int32 hThatRow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity.IsSameRow(System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,11 +49,18 @@
         <Parameter Name="hThatRow" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hThisRow">To be added.</param>
-        <param name="hThatRow">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hThisRow">The handle of an active row.</param>
+        <param name="hThatRow">The handle of an active row.</param>
+        <summary>Compares two row handles to see whether they refer to the same row instance.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

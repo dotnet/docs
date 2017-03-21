@@ -1,0 +1,1 @@
+      String^ permissionSetName = codeGroup->PermissionSetName;

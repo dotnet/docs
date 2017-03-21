@@ -1,8 +1,10 @@
 <Type Name="IOutputSessionChannel" FullName="System.ServiceModel.Channels.IOutputSessionChannel">
   <TypeSignature Language="C#" Value="public interface IOutputSessionChannel : System.ServiceModel.Channels.IOutputChannel, System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IOutputSession&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOutputSessionChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IOutputChannel, class System.ServiceModel.Channels.ISessionChannel`1&lt;class System.ServiceModel.Channels.IOutputSession&gt;, class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IOutputSessionChannel" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -14,8 +16,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface that associates an output channel with a session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The IOutputSessionChannel interface indicates that an <xref:System.ServiceModel.Channels.IOutputChannel> implements <xref:System.ServiceModel.Channels.IOutputSession> semantics.  
+  
+ The <xref:System.ServiceModel.Channels.IOutputSession> associated with an IOutputSessionChannel can be retrieved through the <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

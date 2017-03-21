@@ -1,17 +1,11 @@
 <Type Name="OnDeserializingAttribute" FullName="System.Runtime.Serialization.OnDeserializingAttribute">
   <TypeSignature Language="C#" Value="public sealed class OnDeserializingAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OnDeserializingAttribute extends System.Attribute" />
-  <AssemblyInfo>
-    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
-    <AssemblyVersion>4.1.1.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.OnDeserializingAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -21,31 +15,51 @@
     <Attribute>
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, Inherited=false)</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>When applied to a method, specifies that the method is called during deserialization of an object in an object graph. The order of deserialization relative to other objects in the graph is non-deterministic.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnDeserializingAttribute to set default values during deserialization. For example, if the type that you are deserializing does not contain a constructor, create a method to set values of any fields in the instance and apply the attribute to the method.  
+  
+ To use the OnDeserializingAttribute, the method must contain a <xref:System.Runtime.Serialization.StreamingContext> parameter. The attribute marks the method to be called by the serialization infrastructure and the <xref:System.Runtime.Serialization.StreamingContext> provides additional data about the type of serialization taking place.  The usage is shown in the following code:  
+  
+ [!code-vb[System.Runtime.Serialization.OnSerialization#4](~/add/codesnippet/visualbasic/t-system.runtime.seriali_1_1.vb)]
+ [!code-cs[System.Runtime.Serialization.OnSerialization#4](~/add/codesnippet/csharp/t-system.runtime.seriali_1_1.cs)]  
+  
+> [!NOTE]
+>  In your code, you can use the word `OnDeserializing` instead of the longer OnDeserializingAttribute.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Runtime.Serialization.OnDeserializedAttribute>, <xref:System.Runtime.Serialization.OnSerializingAttribute>, <xref:System.Runtime.Serialization.OnSerializedAttribute>, and OnDeserializingAttribute attributes to methods in a class.  
+  
+ [!code-vb[System.Runtime.Serialization.OnSerialization#1](~/add/codesnippet/visualbasic/t-system.runtime.seriali_1_2.vb)]
+ [!code-cs[System.Runtime.Serialization.OnSerialization#1](~/add/codesnippet/csharp/t-system.runtime.seriali_1_2.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OnDeserializingAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.OnDeserializingAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.OnDeserializingAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

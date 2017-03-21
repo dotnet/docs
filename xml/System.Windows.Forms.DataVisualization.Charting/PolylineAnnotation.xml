@@ -1,6 +1,7 @@
 <Type Name="PolylineAnnotation" FullName="System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation">
   <TypeSignature Language="C#" Value="public class PolylineAnnotation : System.Windows.Forms.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolylineAnnotation extends System.Windows.Forms.DataVisualization.Charting.Annotation" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a polyline annotation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PolylineAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,14 +51,15 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -79,14 +83,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the annotation type.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use, should not be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -113,14 +125,15 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -144,14 +157,22 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polyline annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -175,14 +196,22 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polyline annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -209,14 +238,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polyline annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -229,14 +266,16 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCap">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.EndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -251,14 +290,15 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style of an anchor cap at the end of the annotation line.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> value that represents the style used for an anchor cap located at the end of an annotation line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndPlacement">
       <MemberSignature Language="C#" Value="public override void EndPlacement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndPlacement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.EndPlacement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -269,13 +309,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends the user placement of a polyline annotation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method ends an annotation placement operation previously started by a <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method call.  
+  
+ You are not required to call this method, because placement will automatically end when an end user enters all required points. However, it is useful when an annotation placement operation needs to be aborted for some reason.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -293,14 +343,22 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polyline annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -324,14 +382,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polyline annotation type.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polyline annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GraphicsPath">
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Drawing2D.GraphicsPath GraphicsPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.GraphicsPath GraphicsPath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -352,14 +418,24 @@
         <ReturnType>System.Drawing.Drawing2D.GraphicsPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path points of a polyline annotation at run time.</summary>
+        <value>A GraphicsPath object with the polyline shape.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A polyline must use coordinates relative to an annotation object, where (0,0) denotes the top-left coordinates and (100,100) denotes the bottom-right coordinates of the annotation.  
+  
+ This property is not accessible at design time, when you should use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPathPoints%2A> property instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GraphicsPathPoints">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection GraphicsPathPoints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection GraphicsPathPoints" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPathPoints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -380,14 +456,24 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path points of the polyline annotation at design time.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection" /> object with the polyline shape.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A polyline must use coordinates relative to an annotation object, where (0,0) denotes the top-left coordinates and (100,100) denotes the bottom-right coordinates of the annotation.  
+  
+ This property is not accessible at run time, when you should use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath%2A> property instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFreeDrawPlacement">
       <MemberSignature Language="C#" Value="public virtual bool IsFreeDrawPlacement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFreeDrawPlacement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.IsFreeDrawPlacement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -402,14 +488,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a flag that determines whether an annotation should be placed using the free-draw mode.</summary>
+        <value>
+          <see langword="True" /> if an annotation should be placed using free-draw mode, otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two different placement modes are supported when the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.BeginPlacement%2A> method is called. Set the IsFreeDrawPlacement property to `true` to switch from the default mode to free-draw mode, which allows the user to free draw while moving the mouse cursor.  
+  
+ To allow the user to free draw the annotation, you must also set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AllowPathEditing%2A> property to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartCap">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.StartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -424,14 +521,15 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a style for the anchor cap at the start of the annotation line.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> value that represents the style for an anchor cap located at the start of an annotation line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextStyle">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.TextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -449,8 +547,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text style of an annotation.</summary>
+        <value>A TextStyle value used to draw the text of an annotation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

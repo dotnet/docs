@@ -1,0 +1,1 @@
+      result = s == null || s == String.Empty;

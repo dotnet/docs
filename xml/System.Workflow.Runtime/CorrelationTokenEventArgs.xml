@@ -1,8 +1,10 @@
 <Type Name="CorrelationTokenEventArgs" FullName="System.Workflow.Runtime.CorrelationTokenEventArgs">
   <TypeSignature Language="C#" Value="public sealed class CorrelationTokenEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CorrelationTokenEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.CorrelationTokenEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,41 +17,55 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the event data associated with the <see cref="T:System.Workflow.Runtime.CorrelationToken" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/add/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CorrelationToken">
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.CorrelationToken CorrelationToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.CorrelationToken CorrelationToken" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationTokenEventArgs.CorrelationToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.CorrelationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <value>The current <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInitializing">
       <MemberSignature Language="C#" Value="public bool IsInitializing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInitializing" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationTokenEventArgs.IsInitializing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="System.Workflow.Runtime.CorrelationToken.Initialize%2A" /> method has been executed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="System.Workflow.Runtime.CorrelationToken.Initialize%2A" /> method has been executed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

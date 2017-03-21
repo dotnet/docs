@@ -1,0 +1,1 @@
+      signatureDescription->KeyAlgorithm = L"System.Security.Cryptography.RSACryptoServiceProvider";

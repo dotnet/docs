@@ -1,0 +1,1 @@
+    GacInstalled ^ myGacInstalled = gcnew GacInstalled;

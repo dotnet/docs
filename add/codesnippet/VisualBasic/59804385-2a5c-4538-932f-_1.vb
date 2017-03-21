@@ -1,0 +1,1 @@
+        Dim category As New SyndicationCategory("MyCategory", "http://contoso/MyCategory", "Contoso Category")

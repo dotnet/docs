@@ -1,8 +1,10 @@
 <Type Name="LoadItemsEventArgs" FullName="System.Web.UI.MobileControls.LoadItemsEventArgs">
   <TypeSignature Language="C#" Value="public class LoadItemsEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoadItemsEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LoadItemsEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,16 +17,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides event data for ASP.NET mobile controls that support custom pagination. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The class LoadItemsEventArgs object provides event data with information about how many items to load into the control on demand.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.MobileControls.List.OnLoadItems%2A> event calls the function `LoadNow`. The <xref:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemIndex%2A> property determines the number of items to be added to an array that is bound to a list. In order to see the effects of this example, you must view the page on a device that can paginate the list.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+  
+ [!code-vb[MobileLoadListEventArgsSample#1](~/add/codesnippet/visualbasic/t-system.web.ui.mobileco_23_1.aspx)]
+ [!code-cs[MobileLoadListEventArgsSample#1](~/add/codesnippet/csharp/t-system.web.ui.mobileco_23_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Web.AspNetHostingPermissionLevel" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LoadItemsEventArgs (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LoadItemsEventArgs.#ctor(System.Int32,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -32,43 +55,54 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">Initializes the <see cref="System.Web.UI.MobileControls.LoadItemsEventArgs.ItemIndex%2A" /> property with this value.</param>
+        <param name="count">Initializes the <see cref="System.Web.UI.MobileControls.LoadItemsEventArgs.ItemCount%2A" /> property with this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.LoadItemsEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Constructs a new <xref:System.Web.UI.MobileControls.LoadItemsEventArgs> object, initializing the <xref:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemIndex%2A> and <xref:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemCount%2A> properties with the values of the `index`, and `count` parameters, respectively.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemCount">
       <MemberSignature Language="C#" Value="public int ItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the count of items in the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The count of items in the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
       <MemberSignature Language="C#" Value="public int ItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.LoadItemsEventArgs.ItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index of the first item to be loaded by the invoked event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The index of the first item to be loaded by the invoked event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

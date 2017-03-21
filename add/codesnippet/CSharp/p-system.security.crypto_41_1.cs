@@ -1,0 +1,1 @@
+        Type[] validInTypes = xmlTransform.InputTypes;

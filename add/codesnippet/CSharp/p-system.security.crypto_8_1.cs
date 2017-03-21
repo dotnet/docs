@@ -1,0 +1,1 @@
+        byte[] outputBytes = new byte[base64Transform.OutputBlockSize];

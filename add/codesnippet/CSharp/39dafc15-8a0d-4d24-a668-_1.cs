@@ -1,0 +1,3 @@
+            SymmetricSecurityBindingElement b =
+                SecurityBindingElement.
+                CreateAnonymousForCertificateBindingElement();

@@ -1,6 +1,7 @@
 <Type Name="PolygonAnnotation" FullName="System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation">
   <TypeSignature Language="C#" Value="public class PolygonAnnotation : System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolygonAnnotation extends System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a polygon annotation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PolygonAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AnnotationType">
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.AnnotationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -54,14 +57,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the annotation type.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use, should not be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -88,14 +99,15 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background color of an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackGradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -119,14 +131,22 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background gradient style of an annotation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw the annotation background.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two colors are used to draw the gradient fill; the primary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackHatchStyle">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackHatchStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -150,14 +170,22 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background hatch style of an annotation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the annotation background.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two colors are used to draw the hatching fill; the primary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackSecondaryColor">
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -184,14 +212,22 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the secondary color of the annotation background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background with hatching or gradient fill.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This secondary color is used with a primary color, defined with the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property, when the <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackHatchStyle%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.BackGradientStyle%2A> properties are used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCap">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.EndCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -209,14 +245,22 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polygon annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polygon annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartCap">
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.StartCap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -234,9 +278,16 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property is not applicable to the polygon annotation type.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not applicable to the polygon annotation type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

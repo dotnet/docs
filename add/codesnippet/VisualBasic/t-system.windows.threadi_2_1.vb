@@ -1,0 +1,1 @@
+        Public Delegate Sub NextPrimeDelegate()

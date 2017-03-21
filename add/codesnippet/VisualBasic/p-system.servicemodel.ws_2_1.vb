@@ -1,0 +1,1 @@
+		Dim reliableSession As OptionalReliableSession = binding1.ReliableSession

@@ -1,0 +1,1 @@
+        Type[] validOutTypes = xmlTransform.OutputTypes;

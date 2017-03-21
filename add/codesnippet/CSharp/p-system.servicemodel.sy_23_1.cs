@@ -1,0 +1,2 @@
+            SyndicationItem item = new SyndicationItem("Item Title", "Item Content", new Uri("http://Item/Alternate/Link"));
+            item.Copyright = new TextSyndicationContent("Copyright 2007 Contoso");

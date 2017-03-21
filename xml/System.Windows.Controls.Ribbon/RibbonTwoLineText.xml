@@ -1,6 +1,7 @@
 <Type Name="RibbonTwoLineText" FullName="System.Windows.Controls.Ribbon.RibbonTwoLineText">
   <TypeSignature Language="C#" Value="public class RibbonTwoLineText : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonTwoLineText extends System.Windows.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,13 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a specialized label that can display its contents on one or two lines, with an optional shape displayed inline with the text.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RibbonTwoLineText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -35,13 +37,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaselineOffset">
       <MemberSignature Language="C#" Value="public double BaselineOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 BaselineOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.BaselineOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -51,14 +54,31 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount by which each line of text is offset from the baseline.</summary>
+        <value>The amount by which each line of text is offset from the baseline, in device independent pixels. A value of <see cref="T:System.Double" /> indicates that an optimal baseline offset is automatically calculated from the current font characteristics. The default is <see cref="T:System.Double" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.BaselineOffset%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.BaselineOffset%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_BaselineOffset"></a>   
+## Dependency Property Information  
+ The baseline is the invisible horizontal line with which the base of each character in a line of text is aligned.  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.BaselineOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaselineOffsetProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BaselineOffsetProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BaselineOffsetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.BaselineOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,13 +88,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.BaselineOffset%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHasTwoLines">
       <MemberSignature Language="C#" Value="public static bool GetHasTwoLines (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetHasTwoLines(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.GetHasTwoLines(System.Windows.DependencyObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -87,15 +108,17 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The object from which the property value is read.</param>
+        <summary>Gets the value of the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.HasTwoLines%2A" /> attached property for an object.</summary>
+        <returns>The object’s <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.HasTwoLines%2A" /> property value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPathData">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Geometry GetPathData (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Geometry GetPathData(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.GetPathData(System.Windows.DependencyObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -108,15 +131,17 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The object from which the property value is read.</param>
+        <summary>Gets the value of the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.PathData%2A" /> attached property for an object.</summary>
+        <returns>The object’s <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.PathData%2A" /> property value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasTwoLinesProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasTwoLinesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasTwoLinesProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.HasTwoLinesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -126,13 +151,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.HasTwoLines%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineHeight">
       <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.LineHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -147,14 +173,31 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the height of each line of content.</summary>
+        <value>The height of each line, in device independent pixels, in the range of 0.0034 to 160000. A value of <see cref="T:System.Double" /> indicates that the line height is determined automatically from the current font characteristics. The default is <see cref="T:System.Double" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.LineHeight%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.LineHeight%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_LineHeight"></a>   
+## Dependency Property Information  
+ Gets or sets the height of the line set on the internal <xref:System.Windows.Controls.TextBlock>.  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.LineHeightProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineHeightProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineHeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.LineHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -164,13 +207,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.LineHeight%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStackingStrategy">
       <MemberSignature Language="C#" Value="public System.Windows.LineStackingStrategy LineStackingStrategy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LineStackingStrategy LineStackingStrategy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.LineStackingStrategy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -180,14 +224,30 @@
         <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the mechanism by which the line box is determined for each line of content.</summary>
+        <value>One of the enumeration values that specifies how the line box is determined for each line of text. The default is <see cref="T:System.Windows.LineStackingStrategy" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.LineStackingStrategyProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStackingStrategyProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineStackingStrategyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineStackingStrategyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.LineStackingStrategyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -197,13 +257,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.LineStackingStrategy%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.MeasureOverride(System.Windows.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -216,15 +277,16 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" />.</param>
+        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" /> in preparation of arranging them during the <see cref="System.Windows.Controls.Control.ArrangeOverride%2A" /> pass.</summary>
+        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.OnApplyTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -235,13 +297,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTwoLineText" /> when a new template is applied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.OnCreateAutomationPeer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -252,14 +322,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonTwoLineTextAutomationPeer" /> object for this control.</summary>
+        <returns>A new automation peer object for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -269,14 +340,29 @@
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the thickness of the space between the boundaries of the content area and the displayed content.</summary>
+        <value>The thickness of the space between the boundaries of the content area and the displayed content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Padding"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.PaddingProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.PaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -286,13 +372,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.Padding%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PathDataProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathDataProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathDataProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathDataProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -302,13 +389,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.PathData%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PathFill">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush PathFill { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush PathFill" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathFill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -318,14 +406,29 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the inside of the shape that is displayed with the label.</summary>
+        <value>The brush that is used to draw the inside of the shape that is displayed with the label. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PathFill"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathFillProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PathFillProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathFillProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathFillProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathFillProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -335,13 +438,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.PathFill%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PathStroke">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush PathStroke { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush PathStroke" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathStroke" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -351,14 +455,29 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the brush that is used to draw the outline of the shape that is displayed with the label.</summary>
+        <value>The brush that is used to draw the outline of the shape that is displayed with the label. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PathStroke"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathStrokeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PathStrokeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathStrokeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathStrokeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.PathStrokeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -368,13 +487,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.PathStroke%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHasTwoLines">
       <MemberSignature Language="C#" Value="public static void SetHasTwoLines (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHasTwoLines(class System.Windows.DependencyObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.SetHasTwoLines(System.Windows.DependencyObject,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -388,15 +508,17 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The object to which the attached property is written.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value of the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.HasTwoLines%2A" /> attached property for an object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetPathData">
       <MemberSignature Language="C#" Value="public static void SetPathData (System.Windows.DependencyObject element, System.Windows.Media.Geometry value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPathData(class System.Windows.DependencyObject element, class System.Windows.Media.Geometry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTwoLineText.SetPathData(System.Windows.DependencyObject,System.Windows.Media.Geometry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -410,15 +532,17 @@
         <Parameter Name="value" Type="System.Windows.Media.Geometry" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The object to which the attached property is written.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value of the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.PathData%2A" /> attached property for an object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -428,14 +552,29 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text content in this element.</summary>
+        <value>The text content in this element. The registered default is an <see cref="T:System.String" /> string. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Text"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlignment">
       <MemberSignature Language="C#" Value="public System.Windows.TextAlignment TextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextAlignment TextAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -445,14 +584,30 @@
         <ReturnType>System.Windows.TextAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the horizontal alignment of text content in this element.</summary>
+        <value>One of the enumeration values that indicates the horizontal alignment of text content in this element. The default is <see cref="T:System.Windows.TextAlignment" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.TextAlignment%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.TextAlignment%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_TextAlignment"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextAlignmentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlignmentProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextAlignmentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -462,13 +617,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.TextAlignment%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextDecorations">
       <MemberSignature Language="C#" Value="public System.Windows.TextDecorationCollection TextDecorations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextDecorations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -478,14 +634,30 @@
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.Windows.TextDecorationCollection" /> that contains the effects to apply to the text content in this element.</summary>
+        <value>A <see cref="T:System.Windows.TextDecorationCollection" /> that contains the effects to apply to the text content in this element. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.TextDecorations%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.TextDecorations%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_TextDecorations"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextDecorationsProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextDecorationsProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextDecorationsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextDecorationsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextDecorationsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -495,13 +667,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.TextDecorations%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextEffects">
       <MemberSignature Language="C#" Value="public System.Windows.Media.TextEffectCollection TextEffects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextEffectCollection TextEffects" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -511,14 +684,30 @@
         <ReturnType>System.Windows.Media.TextEffectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the effects to apply to the text content in this element.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextEffectCollection" /> containing one or more <see cref="T:System.Windows.Media.TextEffect" /> objects that define effects to apply to the text content in this element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.TextEffects%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.TextEffects%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_TextEffects"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextEffectsProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextEffectsProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextEffectsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextEffectsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextEffectsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -528,13 +717,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.TextEffects%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -544,13 +734,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.Text%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextTrimming">
       <MemberSignature Language="C#" Value="public System.Windows.TextTrimming TextTrimming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextTrimming TextTrimming" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextTrimming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -560,14 +751,30 @@
         <ReturnType>System.Windows.TextTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text trimming behavior to use when content overflows the content area.</summary>
+        <value>One of the enumeration values that specifies the text trimming behavior to use when content overflows the content area. The default is <see cref="T:System.Windows.TextTrimming" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets or sets the value of the <xref:System.Windows.Controls.TextBlock.TextTrimming%2A> property of the control’s internal <xref:System.Windows.Controls.TextBlock>. For more information, see <xref:System.Windows.Controls.TextBlock.TextTrimming%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_TextTrimming"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextTrimmingProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextTrimmingProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextTrimmingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextTrimmingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTwoLineText.TextTrimmingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -577,7 +784,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonTwoLineText.TextTrimming%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

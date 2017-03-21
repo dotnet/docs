@@ -1,0 +1,1 @@
+        this.dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;

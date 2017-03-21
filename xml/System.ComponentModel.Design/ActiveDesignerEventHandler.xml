@@ -1,13 +1,11 @@
 <Type Name="ActiveDesignerEventHandler" FullName="System.ComponentModel.Design.ActiveDesignerEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ActiveDesignerEventHandler(object sender, ActiveDesignerEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDesignerEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ActiveDesignerEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -20,9 +18,27 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.ComponentModel.Design.ActiveDesignerEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.ComponentModel.Design.IDesignerEventService.ActiveDesignerChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IDesignerEventService.ActiveDesignerChanged> event is raised when the currently active document has been modified.  
+  
+ When you create an ActiveDesignerEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates registering an ActiveDesignerEventHandler and handling an <xref:System.ComponentModel.Design.IDesignerEventService.ActiveDesignerChanged> event.  
+  
+ [!code-cs[ActiveDesignerEventHandlerExample#1](~/add/codesnippet/csharp/t-system.componentmodel._109_1.cs)]
+ [!code-vb[ActiveDesignerEventHandlerExample#1](~/add/codesnippet/visualbasic/t-system.componentmodel._109_1.vb)]
+ [!code-cpp[ActiveDesignerEventHandlerExample#1](~/add/codesnippet/cpp/t-system.componentmodel._109_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

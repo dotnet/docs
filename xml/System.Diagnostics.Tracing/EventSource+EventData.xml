@@ -1,83 +1,80 @@
 <Type Name="EventSource+EventData" FullName="System.Diagnostics.Tracing.EventSource+EventData">
   <TypeSignature Language="C#" Value="protected struct EventSource.EventData" />
   <TypeSignature Language="ILAsm" Value=".class nested protected sequential ansi sealed beforefieldinit EventSource/EventData extends System.ValueType" />
-  <AssemblyInfo>
-    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.10.0</AssemblyVersion>
-    <AssemblyVersion>4.0.20.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSource.EventData" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the event data for creating fast <see cref="System.Diagnostics.Tracing.EventSource.WriteEvent%2A" /> overloads by using the <see cref="System.Diagnostics.Tracing.EventSource.WriteEventCore%2A" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how to use the EventSource.EventData structure.  
+  
+```  
+  
+[NonEvent]  
+public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg4) {  
+    EventData* dataDesc = stackalloc EventProvider.EventData[4];  
+  
+    dataDesc[0].DataPointer = (IntPtr)(&arg1);  
+    dataDesc[0].Size = 4;  
+    dataDesc[1].DataPointer = (IntPtr)(&arg2);  
+    dataDesc[1].Size = 4;  
+    dataDesc[2].DataPointer = (IntPtr)(&arg3);  
+    dataDesc[2].Size = 4;  
+    dataDesc[3].DataPointer = (IntPtr)(&arg4);  
+    dataDesc[3].Size = 4;  
+  
+    WriteEventCore(eventId, 4, (IntPtr)dataDesc);  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataPointer">
       <MemberSignature Language="C#" Value="public IntPtr DataPointer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int DataPointer" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the pointer to the data for the new <see cref="System.Diagnostics.Tracing.EventSource.WriteEvent%2A" /> overload.</summary>
+        <value>The pointer to the data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
       <MemberSignature Language="C#" Value="public int Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
       <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of payload items in the new <see cref="System.Diagnostics.Tracing.EventSource.WriteEvent%2A" /> overload.</summary>
+        <value>The number of payload items in the new overload.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

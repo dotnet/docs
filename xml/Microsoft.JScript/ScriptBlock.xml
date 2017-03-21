@@ -1,8 +1,10 @@
 <Type Name="ScriptBlock" FullName="Microsoft.JScript.ScriptBlock">
   <TypeSignature Language="C#" Value="public class ScriptBlock : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptBlock extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ScriptBlock" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a block of JScript code. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

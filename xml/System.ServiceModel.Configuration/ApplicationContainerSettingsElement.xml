@@ -1,6 +1,7 @@
 <Type Name="ApplicationContainerSettingsElement" FullName="System.ServiceModel.Configuration.ApplicationContainerSettingsElement">
   <TypeSignature Language="C#" Value="public sealed class ApplicationContainerSettingsElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationContainerSettingsElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ApplicationContainerSettingsElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies settings for the application container settings element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ApplicationContainerSettingsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ApplicationContainerSettingsElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ApplicationContainerSettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PackageFullName">
       <MemberSignature Language="C#" Value="public string PackageFullName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PackageFullName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ApplicationContainerSettingsElement.PackageFullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,14 +51,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the full name of the package.</summary>
+        <value>The full name of the package.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ApplicationContainerSettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +77,7 @@
     <Member MemberName="SessionId">
       <MemberSignature Language="C#" Value="public int SessionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SessionId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ApplicationContainerSettingsElement.SessionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,8 +95,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the unique session identifier for the <see cref="T:System.ServiceModel.Configuration.ApplicationContainerSettingsElement" />.</summary>
+        <value>The unique session identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

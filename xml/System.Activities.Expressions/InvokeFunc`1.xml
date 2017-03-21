@@ -1,6 +1,7 @@
 <Type Name="InvokeFunc&lt;TResult&gt;" FullName="System.Activities.Expressions.InvokeFunc&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class InvokeFunc&lt;TResult&gt; : System.Activities.NativeActivity&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvokeFunc`1&lt;TResult&gt; extends System.Activities.NativeActivity`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeFunc`1" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,14 +22,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the return <see cref="System.Activities.OutArgument%601" /> whose value is returned from the <see cref="System.Activities.ActivityFunc%601" />.</typeparam>
+    <summary>Invokes an <see cref="System.Activities.ActivityFunc%601" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvokeFunc ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -36,13 +38,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="System.Activities.Expressions.InvokeFunc%601" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`1.Execute(System.Activities.NativeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -63,6 +66,7 @@
     <Member MemberName="Func">
       <MemberSignature Language="C#" Value="public System.Activities.ActivityFunc&lt;TResult&gt; Func { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityFunc`1&lt;!TResult&gt; Func" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`1.Func" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,8 +81,8 @@
         <ReturnType>System.Activities.ActivityFunc&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="System.Activities.ActivityFunc%601" /> to be invoked.</summary>
+        <value>The activity function to be invoked.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

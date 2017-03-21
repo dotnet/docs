@@ -1,8 +1,10 @@
 <Type Name="IUnrestrictedPermission" FullName="System.Security.Permissions.IUnrestrictedPermission">
   <TypeSignature Language="C#" Value="public interface IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -12,16 +14,38 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows a permission to expose an unrestricted state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All code access permissions should implement IUnrestrictedPermission.  
+  
+   
+  
+## Examples  
+ This example shows how to define a permission class for use with code access security. All of the necessary permission interfaces are implemented.  
+  
+ The following code example demonstrates the behavior of the IUnrestrictedPermission methods.  
+  
+ The example is intended to show how the methods perform if you execute the methods from your code. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
+  
+ [!code-cs[Permission#1](~/add/codesnippet/csharp/t-system.security.permis_10_1.cs)]
+ [!code-vb[Permission#1](~/add/codesnippet/visualbasic/t-system.security.permis_10_1.vb)]
+ [!code-cpp[Permission#1](~/add/codesnippet/cpp/t-system.security.permis_10_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IsUnrestricted">
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -29,9 +53,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a value indicating whether unrestricted access to the resource protected by the permission is allowed.</summary>
+        <returns>
+          <see langword="true" /> if unrestricted use of the resource protected by the permission is allowed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates implementing the IsUnrestricted method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.IUnrestrictedPermission> class.  
+  
+ [!code-cs[Permission#8](~/add/codesnippet/csharp/m-system.security.permis_11_1.cs)]
+ [!code-vb[Permission#8](~/add/codesnippet/visualbasic/m-system.security.permis_11_1.vb)]
+ [!code-cpp[Permission#8](~/add/codesnippet/cpp/m-system.security.permis_11_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

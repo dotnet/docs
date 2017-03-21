@@ -1,0 +1,1 @@
+        Dim signatureDescription As New SignatureDescription

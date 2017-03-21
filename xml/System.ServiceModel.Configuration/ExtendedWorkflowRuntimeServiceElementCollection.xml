@@ -1,8 +1,10 @@
 <Type Name="ExtendedWorkflowRuntimeServiceElementCollection" FullName="System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection">
   <TypeSignature Language="C#" Value="public class ExtendedWorkflowRuntimeServiceElementCollection : System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtendedWorkflowRuntimeServiceElementCollection extends System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,30 +20,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the collection of configuration elements that represents extended services to be added to the workflow runtime engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExtendedWorkflowRuntimeServiceElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection.Remove(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,17 +57,19 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the configuration element to be removed.</param>
+        <summary>Removes the configuration element with the specified key from this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement serviceSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement serviceSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection.Remove(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,8 +79,8 @@
         <Parameter Name="serviceSettings" Type="System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" />
       </Parameters>
       <Docs>
-        <param name="serviceSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceSettings">The service configuration element to be removed.</param>
+        <summary>Removes the first occurrence of a specific configuration element from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

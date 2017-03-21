@@ -1,8 +1,10 @@
 <Type Name="SamlAttributeStatement" FullName="System.IdentityModel.Tokens.SamlAttributeStatement">
   <TypeSignature Language="C#" Value="public class SamlAttributeStatement : System.IdentityModel.Tokens.SamlSubjectStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlAttributeStatement extends System.IdentityModel.Tokens.SamlSubjectStatement" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAttributeStatement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,43 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a set of attributes associated with a particular <see cref="System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SamlAttributeStatement class corresponds to the `<saml:AttributeStatement>` XML element that is defined in the OASIS SAML 1.1 specification.  
+  
+ The claims for SamlSecurityToken security tokens are contained in SAML statements, which are in turn contained within a <xref:System.IdentityModel.Tokens.SamlAssertion>. One such statement is the SamlAttributeStatement, which binds a set of arbitrary claims to a particular <xref:System.IdentityModel.Tokens.SamlSubject>. The claims are represented as a collection of <xref:System.IdentityModel.Tokens.SamlAttribute> and are stored in the <xref:System.IdentityModel.Tokens.SamlAttributeStatement.Attributes%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlAttributeStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttributeStatement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlAttributeStatement (System.IdentityModel.Tokens.SamlSubject samlSubject, System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAttribute&gt; attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSubject samlSubject, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAttribute})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,18 +56,40 @@
         <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAttribute&gt;" />
       </Parameters>
       <Docs>
-        <param name="samlSubject">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="samlSubject">A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that specifies the subject of the claim.</param>
+        <param name="attributes">An <see cref="System.Collections.Generic.IEnumerable%601" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> that contains a set of attributes associated with the subject.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttributeStatement" /> class using the specified subject and set of attributes associated with the subject.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table specifies the properties set by the parameters to this constructor.  
+  
+|Property|Parameter|  
+|--------------|---------------|  
+|<xref:System.IdentityModel.Tokens.SamlAttributeStatement.Attributes%2A>|`Attributes`|  
+|<xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A>|`samlSubject`|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="samlSubject" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="attributes" /> contains a member that is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="attributes" /> contains zero members.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddClaimsToList">
       <MemberSignature Language="C#" Value="protected override void AddClaimsToList (System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddClaimsToList(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,51 +99,81 @@
         <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
       </Parameters>
       <Docs>
-        <param name="claims">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="claims">An <see cref="System.Collections.Generic.IList%601" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the set of claims to add to the SAML statement.</param>
+        <summary>Adds the specified set of claims as attributes to this SAML statement.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the AddClaimsToList method to convert a set of claims into attributes of a SAML assertion.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAttribute&gt; Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Tokens.SamlAttribute&gt; Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttributeStatement.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAttribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of attributes associated with the subject of the SAML assertion.</summary>
+        <value>An <see cref="System.Collections.Generic.IList%601" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> that contains a set of attributes associated with the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.IdentityModel.Tokens.SamlAttribute> may contain multiple attribute values.  
+  
+ Each member of the Attributes collection corresponds to the `\<saml:Attribute>` element that is defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttributeStatement.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make this instance of the <xref:System.IdentityModel.Tokens.SamlAttributeStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAttributeStatement.MakeReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
       <MemberSignature Language="C#" Value="public override void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MakeReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.MakeReadOnly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,16 +181,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the MakeReadOnly method is called, the <xref:System.IdentityModel.Tokens.SamlAttributeStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
       <MemberSignature Language="C#" Value="public override void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,20 +212,41 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML attribute statement.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML attribute statement that is defined in the SAML specification.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <summary>Reads the SAML attribute statement from the specified XML reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ReadXml method sets the <xref:System.IdentityModel.Tokens.SamlAttributeStatement.Attributes%2A> and <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" /></exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">
+          <paramref name="reader" /> refers to an XML element that does not contain a <see langword="&lt;saml:Subject&gt;" /> element  
+  
+ -or-  
+  
+ <paramref name="reader" /> refers to an XML element that contains a <see langword="&lt;saml:Attribute&gt;" /> element that does not have an attribute value.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
       <MemberSignature Language="C#" Value="public override void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttributeStatement.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,11 +258,17 @@
         <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML attribute statement.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing XML elements in a SAML assertion.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
+        <summary>Writes the SAML attribute statement into the specified XML serializer.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
   </Members>

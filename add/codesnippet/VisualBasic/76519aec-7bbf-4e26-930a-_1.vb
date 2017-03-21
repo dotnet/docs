@@ -1,0 +1,1 @@
+            be.MaxSessionSize = 2048

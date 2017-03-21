@@ -1,8 +1,10 @@
 <Type Name="PlaceHolder" FullName="System.Web.UI.WebControls.PlaceHolder">
   <TypeSignature Language="C#" Value="public class PlaceHolder : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlaceHolder extends System.Web.UI.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PlaceHolder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,30 +17,77 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores dynamically added server controls on the Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ Use the PlaceHolder control as a container to store server controls that are dynamically added to the Web page. The PlaceHolder control does not produce any visible output and is used only as a container for other controls on the Web page. You can use the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection to add, insert, or remove a control in the PlaceHolder control.  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:PlaceHolder  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Visible="True|False"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to dynamically add controls to the PlaceHolder control.  
+  
+ [!code-vb[PlaceHolder#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_162_1.aspx)]
+ [!code-cs[PlaceHolder#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_162_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PlaceHolder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PlaceHolder.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PlaceHolder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
       <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PlaceHolder.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -50,9 +99,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether themes apply to this control.</summary>
+        <value>
+          <see langword="true" /> to use themes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The EnableTheming property indicates whether themes are enabled for the <xref:System.Web.UI.WebControls.PlaceHolder> control. The EnableTheming property also affects whether themes are enabled for the controls contained in its <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection. When the EnableTheming property is `true`, the application's theme directory is searched for control skins to apply. If no skin for the particular control exists in the theme directory, a skin is not applied.  
+  
+ When the EnableTheming property is `false`, the theme directory is not searched and the contents of the <xref:System.Web.UI.Control.SkinID%2A> property are not used.  
+  
+ Themes can be enabled at the page, container, or control level. When themes are disabled at the page or container level, they are disabled for all controls contained by the page or container.  
+  
+ It is possible for the EnableTheming property and the <xref:System.Web.UI.Control.EnableTheming%2A> property to be different. For example, if the <xref:System.Web.UI.Page> containing the control has themes disabled, the EnableTheming property for the control can be `true` while the <xref:System.Web.UI.Control.EnableTheming%2A> property is `false`. Because themes are disabled at the page level, no themes would be applied to the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,6 +1,7 @@
 <Type Name="RoutingExtensionElement" FullName="System.ServiceModel.Routing.Configuration.RoutingExtensionElement">
   <TypeSignature Language="C#" Value="public sealed class RoutingExtensionElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoutingExtensionElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.RoutingExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that contains sub-elements that specify the routing behavior.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RoutingExtensionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.Routing.Configuration.RoutingExtensionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BehaviorType">
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -40,14 +43,15 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of behavior.</summary>
+        <value>The behavior type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
       <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.CreateBehavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -66,6 +70,7 @@
     <Member MemberName="EnsureOrderedDispatch">
       <MemberSignature Language="C#" Value="public bool EnsureOrderedDispatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnsureOrderedDispatch" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.EnsureOrderedDispatch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -80,14 +85,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether messages are to be dispatched in the order they were sent.</summary>
+        <value>
+          <see langword="true" /> if messages are to be dispatched in the order they were sent; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterTableName">
       <MemberSignature Language="C#" Value="public string FilterTableName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FilterTableName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.FilterTableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -102,14 +109,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the filter table used by this routing service for routing messages.</summary>
+        <value>The name of the filter table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RouteOnHeadersOnly">
       <MemberSignature Language="C#" Value="public bool RouteOnHeadersOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RouteOnHeadersOnly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.RouteOnHeadersOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -124,14 +132,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the filter is allowed to access only the message headers or the message headers and message body.</summary>
+        <value>**true** if the filter can only access header values; otherwise, **false**. The default is **true**.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SoapProcessingEnabled">
       <MemberSignature Language="C#" Value="public bool SoapProcessingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SoapProcessingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingExtensionElement.SoapProcessingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -146,9 +155,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether SOAP processing should occur.</summary>
+        <value>**true** if messages should be marshaled; otherwise, **false**. The default is **true**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crabout](~/add/includes/crabout-md.md)] SOAP processing, see <xref:System.ServiceModel.Routing.SoapProcessingBehavior>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,1 @@
+      return first.UtcDateTime == second.UtcDateTime;

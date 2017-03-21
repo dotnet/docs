@@ -1,0 +1,1 @@
+        GacIdentityPermission Gac1 = new GacIdentityPermission(PermissionState.None);

@@ -1,0 +1,4 @@
+---
+uid: XamlGeneratedNamespace
+internalonly: False
+---

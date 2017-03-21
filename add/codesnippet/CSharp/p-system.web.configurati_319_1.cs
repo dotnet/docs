@@ -1,0 +1,1 @@
+ruleSetting.MaxLimit = Int32.MaxValue;

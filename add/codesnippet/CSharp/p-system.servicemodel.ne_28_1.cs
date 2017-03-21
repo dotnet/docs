@@ -1,0 +1,1 @@
+		NetNamedPipeSecurity security = binding.Security;

@@ -1,0 +1,1 @@
+        [PermissionSetAttribute(SecurityAction.PermitOnly, File = "c:\\temp\\LocalIntranet.xml")]

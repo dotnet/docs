@@ -1,8 +1,10 @@
 <Type Name="NumberConstructor" FullName="Microsoft.JScript.NumberConstructor">
   <TypeSignature Language="C#" Value="public class NumberConstructor : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberConstructor extends Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumberConstructor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
       <MemberSignature Language="C#" Value="public Microsoft.JScript.NumberObject CreateInstance (object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.NumberObject CreateInstance(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -40,18 +44,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments to pass to the constructor.</param>
+        <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public double Invoke (object arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Invoke(object arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberConstructor.Invoke(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,18 +67,21 @@
         <Parameter Name="arg" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arg">The object to convert.</param>
+        <summary>Converts the specified object to a number.</summary>
+        <returns>
+          <paramref name="arg" /> expressed as a number, if that is possible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MAX_VALUE">
       <MemberSignature Language="C#" Value="public const double MAX_VALUE = 1.79769313486232E+308;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 MAX_VALUE = (1.79769313486232E+308)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.NumberConstructor.MAX_VALUE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,16 +89,18 @@
       </ReturnValue>
       <MemberValue>1.79769313486232E+308</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the largest possible value of a <see cref="T:System.Double" />. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MIN_VALUE">
       <MemberSignature Language="C#" Value="public const double MIN_VALUE = 4.94065645841247E-324;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 MIN_VALUE = (4.94065645841247E-324)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.NumberConstructor.MIN_VALUE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,16 +108,18 @@
       </ReturnValue>
       <MemberValue>4.94065645841247E-324</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the smallest positive <see cref="T:System.Double" /> value that is greater than zero. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NaN">
       <MemberSignature Language="C#" Value="public const double NaN = NaN;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 NaN = (NaN)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.NumberConstructor.NaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,16 +127,18 @@
       </ReturnValue>
       <MemberValue>NaN</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a value that is not a number (NaN). This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NEGATIVE_INFINITY">
       <MemberSignature Language="C#" Value="public const double NEGATIVE_INFINITY = -Infinity;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 NEGATIVE_INFINITY = (-Infinity)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.NumberConstructor.NEGATIVE_INFINITY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,16 +146,18 @@
       </ReturnValue>
       <MemberValue>-Infinity</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents negative infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="POSITIVE_INFINITY">
       <MemberSignature Language="C#" Value="public const double POSITIVE_INFINITY = Infinity;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal float64 POSITIVE_INFINITY = (Infinity)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.NumberConstructor.POSITIVE_INFINITY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,7 +165,7 @@
       </ReturnValue>
       <MemberValue>Infinity</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents positive infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

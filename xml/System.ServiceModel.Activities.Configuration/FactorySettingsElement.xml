@@ -1,6 +1,7 @@
 <Type Name="FactorySettingsElement" FullName="System.ServiceModel.Activities.Configuration.FactorySettingsElement">
   <TypeSignature Language="C#" Value="public sealed class FactorySettingsElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FactorySettingsElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.FactorySettingsElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enables assigning values to the settings of a channel factory configuration element in a workflow service application. This is a sealed class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FactorySettingsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.FactorySettingsElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.FactorySettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IdleTimeout">
       <MemberSignature Language="C#" Value="public TimeSpan IdleTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan IdleTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.FactorySettingsElement.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -51,14 +54,15 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum interval of time for which the object can remain idle in a workflow cache before being disposed.</summary>
+        <value>A timespan object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LeaseTimeout">
       <MemberSignature Language="C#" Value="public TimeSpan LeaseTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan LeaseTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.FactorySettingsElement.LeaseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -79,14 +83,15 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the interval of time after which an object will be removed from a workflow cache.</summary>
+        <value>A timespan object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemsInCache">
       <MemberSignature Language="C#" Value="public int MaxItemsInCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInCache" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.FactorySettingsElement.MaxItemsInCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -104,14 +109,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of objects that can be in a workflow cache.</summary>
+        <value>An integer representing a maximum number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.FactorySettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

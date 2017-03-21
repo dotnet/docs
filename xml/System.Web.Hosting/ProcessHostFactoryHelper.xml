@@ -1,8 +1,10 @@
 <Type Name="ProcessHostFactoryHelper" FullName="System.Web.Hosting.ProcessHostFactoryHelper">
   <TypeSignature Language="C#" Value="public sealed class ProcessHostFactoryHelper : MarshalByRefObject, System.Web.Hosting.IProcessHostFactoryHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProcessHostFactoryHelper extends System.MarshalByRefObject implements class System.Web.Hosting.IProcessHostFactoryHelper" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessHostFactoryHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,30 +16,48 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a method to retrieve an <see cref="T:System.Web.Hosting.IProcessHost" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ProcessHostFactoryHelper is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProcessHostFactoryHelper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHostFactoryHelper.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.ProcessHostFactoryHelper" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ProcessHostFactoryHelper is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProcessHost">
       <MemberSignature Language="C#" Value="public object GetProcessHost (System.Web.Hosting.IProcessHostSupportFunctions functions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProcessHost(class System.Web.Hosting.IProcessHostSupportFunctions functions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -47,18 +67,27 @@
         <Parameter Name="functions" Type="System.Web.Hosting.IProcessHostSupportFunctions" />
       </Parameters>
       <Docs>
-        <param name="functions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="functions">Functions that are declared by the <see cref="T:System.Web.Hosting.IProcessHostSupportFunctions" /> interface.</param>
+        <summary>Gets the process host.</summary>
+        <returns>An object that contains the process host.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetProcessHost is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHostFactoryHelper.InitializeLifetimeService" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,9 +95,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gives the process an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>
+          <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ InitializeLifetimeService is introduced in the [!INCLUDE[net_v35_long](~/add/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

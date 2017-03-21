@@ -1,0 +1,1 @@
+        this.InternalSort(new string[]{"D", "B"});

@@ -1,6 +1,7 @@
 <Type Name="Switch&lt;T&gt;" FullName="System.Activities.Statements.Switch&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class Switch&lt;T&gt; : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Switch`1&lt;T&gt; extends System.Activities.NativeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Switch`1" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,14 +19,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the values provided in the <see cref="System.Activities.Statements.Switch%601.Cases%2A" /> collection.</typeparam>
+    <summary>Selects one choice from a number of activities to execute, based on the value of a given expression of the type specified in this object’s type specifier.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each case in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary consists of a value (serving as the key for the dictionary) and an activity (serving as the value for the dictionary). The <xref:System.Activities.Statements.Switch.Expression%2A> is evaluated and compared against the keys in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary. If a match is found, the corresponding activity is executed. Every key in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary must be unique according to the dictionary’s equality comparer.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a Switch(T) activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-cs[wfs_Procedurals#1](~/add/codesnippet/csharp/guessinggame/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Switch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -33,13 +49,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="System.Activities.Statements.Switch%601" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-cs[wfs_Procedurals#1](~/add/codesnippet/csharp/guessinggame/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Switch (System.Activities.Activity&lt;T&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity`1&lt;!T&gt; expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor(System.Activities.Activity{`0})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -49,14 +75,15 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The expression to evaluate and compare against the values in the <see cref="System.Activities.Statements.Switch%601.Cases%2A" /> dictionary.</param>
+        <summary>Creates a new instance of the <see cref="System.Activities.Statements.Switch%601" /> class with the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Switch (System.Activities.InArgument&lt;T&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.InArgument`1&lt;!T&gt; expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor(System.Activities.InArgument{`0})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,14 +93,15 @@
         <Parameter Name="expression" Type="System.Activities.InArgument&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The expression to evaluate and compare against the values in the <see cref="System.Activities.Statements.Switch%601.Cases%2A" /> dictionary.</param>
+        <summary>Creates a new instance of the <see cref="System.Activities.Statements.Switch%601" /> class with the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Switch (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !T&gt;&gt; expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,14 +111,15 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The expression to evaluate and compare against the values in the <see cref="System.Activities.Statements.Switch%601.Cases%2A" /> dictionary.</param>
+        <summary>Creates a new instance of the <see cref="System.Activities.Statements.Switch%601" /> class with the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +140,7 @@
     <Member MemberName="Cases">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;T,System.Activities.Activity&gt; Cases { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;!T, class System.Activities.Activity&gt; Cases" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Switch`1.Cases" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,14 +150,29 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;T,System.Activities.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Represents the dictionary of potential execution paths. Each entry contains a key and an activity that is executed when the result of the expression matches the key.</summary>
+        <value>The execution paths.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the activity executes, the case that is executed is the first case whose key matches the <xref:System.Activities.Statements.Switch.Expression%2A> property.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Cases property of a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-cs[wfs_Procedurals#1](~/add/codesnippet/csharp/guessinggame/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public System.Activities.Activity Default { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Default" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Switch`1.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -142,14 +187,15 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Represents the activity that is executed if no keys of entries in the <see cref="System.Activities.Statements.Switch.Cases%2A" /> collection match the <see cref="System.Activities.Statements.Switch.Expression%2A" /> property.</summary>
+        <value>The default activity to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.Execute(System.Activities.NativeActivityContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -170,6 +216,7 @@
     <Member MemberName="Expression">
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T&gt; Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T&gt; Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Switch`1.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -187,14 +234,29 @@
         <ReturnType>System.Activities.InArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the object to compare to the keys in the <see cref="System.Activities.Statements.Switch.Cases%2A" /> collection.</summary>
+        <value>The object to compare to the keys in the <see cref="System.Activities.Statements.Switch.Cases%2A" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparison occurs after the expression is evaluated.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Expression property of a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-cs[wfs_Procedurals#1](~/add/codesnippet/csharp/guessinggame/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateDynamicUpdateMap">
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

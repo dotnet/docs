@@ -1,6 +1,7 @@
 <Type Name="RibbonApplicationMenu" FullName="System.Windows.Controls.Ribbon.RibbonApplicationMenu">
   <TypeSignature Language="C#" Value="public class RibbonApplicationMenu : System.Windows.Controls.Ribbon.RibbonMenuButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonApplicationMenu extends System.Windows.Controls.Ribbon.RibbonMenuButton" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,13 +31,52 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an Application Menu that is used in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every ribbon includes an Application Menu as the first tab in the ribbon. Other ribbon tabs contain controls for working with the document content. In contrast, the Application Menu presents a menu of commands for working with the file. Examples include commands that traditionally go in the File menu to create, open, save, and print files. It is also used to access program options and the Exit command.  
+  
+ The following illustration shows the Application Menu for a ribbon control.  
+  
+ ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
+  
+ The RibbonApplicationMenu can host <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> and <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> objects. The Application Menu also has an *auxiliary pane* and a *footer pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A> property hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> and is typically used to display a list of recent documents. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A> property typically hosts buttons that enable access to program options and the Exit command.  
+  
+ The following list shows the typical hierarchy of elements in an Application Menu.  
+  
+-   RibbonApplicationMenu  
+  
+    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
+  
+    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem>  
+  
+        -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
+  
+    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A>  
+  
+        -   <xref:System.Windows.Controls.Ribbon.RibbonButton>  
+  
+    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A>  
+  
+        -   <xref:System.Windows.Controls.Ribbon.RibbonGallery>  
+  
+   
+  
+## Examples  
+ The following example shows the Application Menu as illustrated previously.  
+  
+ [!code-xml[Ribbon_Snippets#AppMenuFull](~/add/codesnippet/xaml/wpfribbonapplication1/ribbonwindow1.xaml#appmenufull)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RibbonApplicationMenu ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -44,13 +84,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryPaneContent">
       <MemberSignature Language="C#" Value="public object AuxiliaryPaneContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object AuxiliaryPaneContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -60,14 +101,41 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content of the Application Menu auxiliary pane.</summary>
+        <value>The content of the Application Menu auxiliary pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Application Menu has an *auxiliary pane* that can host additional content. The AuxiliaryPaneContent property hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> and is typically used to display a list of recent documents.  
+  
+ The following illustration shows the Application Menu for a ribbon control. The auxiliary pane hosts a list of recent documents.  
+  
+ ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
+  
+<a name="dependencyPropertyInfo_AuxiliaryPaneContent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows the auxiliary pane content of the Application Menu shown previously.  
+  
+ [!code-xml[Ribbon_Snippets#AppMenuAuxPane](~/add/codesnippet/xaml/wpfribbonapplication1/ribbonwindow1.xaml#appmenuauxpane)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryPaneContentProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AuxiliaryPaneContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AuxiliaryPaneContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -77,13 +145,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryPaneContentTemplate">
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate AuxiliaryPaneContentTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate AuxiliaryPaneContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -93,14 +162,29 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the template that is used to display the content of the Application Menu auxiliary pane.</summary>
+        <value>The template that is used to display the content of the Application Menu auxiliary pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_AuxiliaryPaneContentTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryPaneContentTemplateProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AuxiliaryPaneContentTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AuxiliaryPaneContentTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -110,13 +194,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryPaneContentTemplateSelector">
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector AuxiliaryPaneContentTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector AuxiliaryPaneContentTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -126,14 +211,30 @@
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.DataTemplate" /> that is used to display the contents of the Application Menu auxiliary pane.</summary>
+        <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A> property is set.  
+  
+<a name="dependencyPropertyInfo_AuxiliaryPaneContentTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuxiliaryPaneContentTemplateSelectorProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AuxiliaryPaneContentTemplateSelectorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AuxiliaryPaneContentTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -143,13 +244,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateSelector%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterPaneContent">
       <MemberSignature Language="C#" Value="public object FooterPaneContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object FooterPaneContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -159,14 +261,41 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content of the Application Menu footer pane.</summary>
+        <value>The content of the Application Menu footer pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Application Menu has a *footer pane* that can host additional content. The FooterPaneContent property typically hosts buttons that enable access to program options and the Exit command.  
+  
+ The following illustration shows the Application Menu for a ribbon control. The footer pane hosts an **Exit** button.  
+  
+ ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
+  
+<a name="dependencyPropertyInfo_FooterPaneContent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows the footer pane content of the Application Menu shown previously.  
+  
+   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterPaneContentProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterPaneContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterPaneContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -176,13 +305,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterPaneContentTemplate">
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate FooterPaneContentTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate FooterPaneContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -192,14 +322,29 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the template that is used to display the content of the Application Menu footer pane.</summary>
+        <value>The template that is used to display the content of the Application Menu footer pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_FooterPaneContentTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterPaneContentTemplateProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterPaneContentTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterPaneContentTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -209,13 +354,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterPaneContentTemplateSelector">
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector FooterPaneContentTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector FooterPaneContentTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -225,14 +371,30 @@
         <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the custom logic for selecting a <see cref="T:System.Windows.DataTemplate" /> that is used to display the contents of the Application Menu footer pane.</summary>
+        <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A> property is set.  
+  
+<a name="dependencyPropertyInfo_FooterPaneContentTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterPaneContentTemplateSelectorProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterPaneContentTemplateSelectorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterPaneContentTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateSelectorProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -242,13 +404,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateSelector%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContainerForItemOverride">
       <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.GetContainerForItemOverride" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -259,14 +422,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem" /> object.</summary>
+        <returns>A new menu item object that is the container for the item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsItemItsOwnContainerOverride">
       <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -279,15 +443,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to test.</param>
+        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
+        <returns>
+          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem" />, a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />, or a <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivatingKeyTip">
       <MemberSignature Language="C#" Value="protected override void OnActivatingKeyTip (System.Windows.Controls.ActivatingKeyTipEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -300,14 +466,15 @@
         <Parameter Name="e" Type="System.Windows.Controls.ActivatingKeyTipEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Contains data about the activation.</param>
+        <summary>Called when the KeyTip or accelerator key is pressed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.OnApplyTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -318,13 +485,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" /> when a new template is applied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.OnCreateAutomationPeer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -335,14 +510,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonApplicationMenuAutomationPeer" /> object for this control.</summary>
+        <returns>A new automation peer object for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
       <MemberSignature Language="C#" Value="protected override void OnPreviewKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -355,14 +531,15 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewKeyDown" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldApplyItemContainerStyle">
       <MemberSignature Language="C#" Value="protected override bool ShouldApplyItemContainerStyle (System.Windows.DependencyObject container, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationMenu.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -376,10 +553,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The container element.</param>
+        <param name="item">The item that the container is for.</param>
+        <summary>Returns a value that indicates whether to apply the style from the <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyle%2A" /> or <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A" /> property to the container element of the specified item.</summary>
+        <returns>
+          <see langword="false" /> if <paramref name="container" /> is a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />, <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, the value returned by the base implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

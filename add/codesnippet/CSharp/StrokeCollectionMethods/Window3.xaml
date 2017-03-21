@@ -1,0 +1,21 @@
+﻿
+<Window x:Class="StrokeCollectionEraseMethods.Window3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:StrokeCollectionEraseMethods"
+    Name="StrokeCollectionEraseMethods"
+    xmlns:cc="controls"
+    >
+	<Canvas Background="DarkSlateBlue">
+		<StackPanel  Background="DarkSlateBlue">
+			<!--<Button Name="switchMode" MinHeight="20" MaxHeight="50" MinWidth="40"
+		  Click="SwitchMode_Click">
+			Select
+		</Button>-->
+		</StackPanel>
+		<InkCanvas Canvas.Top="0" Canvas.Left="0" Width ="400" Height="400"
+								 Name="inkCanvas1"  />
+		<!--<Canvas Canvas.Top="0" Canvas.Left="0" Width ="100" Height="100"
+								 Name="canvas1" Background="White" />-->
+	</Canvas>
+</Window>

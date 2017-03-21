@@ -1,0 +1,1 @@
+        If (Not cryptoTransform.CanReuseTransform) Then

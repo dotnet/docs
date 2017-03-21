@@ -1,0 +1,2 @@
+            WorkflowControlEndpoint wce = new WorkflowControlEndpoint(new BasicHttpBinding(), new EndpointAddress(new Uri("http://localhost/DataflowControl.xaml")));
+            WorkflowControlClient controlClient = new WorkflowControlClient(wce);

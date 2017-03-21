@@ -1,8 +1,10 @@
 <Type Name="KeyPressEventHandler" FullName="System.Windows.Forms.KeyPressEventHandler">
   <TypeSignature Language="C#" Value="public delegate void KeyPressEventHandler(object sender, KeyPressEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyPressEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyPressEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,29 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event of a <see cref="T:System.Windows.Forms.Control" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=fullName> to `true` to cancel the `KeyPress` event. This keeps the control from processing the key press.  
+  
+ When you create a KeyPressEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about handling events with delegates, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ [!code-vb[KeyPressEventArgs#1](~/add/codesnippet/visualbasic/t-system.windows.forms.k_1_1.vb)]
+ [!code-cs[KeyPressEventArgs#1](~/add/codesnippet/csharp/t-system.windows.forms.k_1_1.cs)]
+ [!code-cpp[KeyPressEventArgs#1](~/add/codesnippet/cpp/t-system.windows.forms.k_1_1.cpp)]  
+  
+ [!code-vb[Control.KeyDown#1](~/add/codesnippet/visualbasic/t-system.windows.forms.k_1_2.vb)]
+ [!code-cpp[Control.KeyDown#1](~/add/codesnippet/cpp/t-system.windows.forms.k_1_2.cpp)]
+ [!code-cs[Control.KeyDown#1](~/add/codesnippet/csharp/t-system.windows.forms.k_1_2.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

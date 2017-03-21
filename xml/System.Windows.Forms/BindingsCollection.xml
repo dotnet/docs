@@ -1,8 +1,10 @@
 <Type Name="BindingsCollection" FullName="System.Windows.Forms.BindingsCollection">
   <TypeSignature Language="C#" Value="public class BindingsCollection : System.Windows.Forms.BaseCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingsCollection extends System.Windows.Forms.BaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,16 +17,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Forms.Binding" /> objects for a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Simple data binding is accomplished by adding <xref:System.Windows.Forms.Binding> objects to a BindingsCollection. Any object that inherits from the <xref:System.Windows.Forms.Control> class can access the BindingsCollection through the <xref:System.Windows.Forms.Control.DataBindings%2A> property. For a list of Windows controls that support data binding, see the <xref:System.Windows.Forms.Binding> class.  
+  
+   
+  
+## Examples  
+ The following example binds the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control to a field in a database.  
+  
+ [!code-vb[Classic BindingsCollection Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.b_5_1.vb)]
+ [!code-cs[Classic BindingsCollection Example#1](~/add/codesnippet/csharp/t-system.windows.forms.b_5_1.cs)]
+ [!code-cpp[Classic BindingsCollection Example#1](~/add/codesnippet/cpp/t-system.windows.forms.b_5_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="protected void Add (System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Add(class System.Windows.Forms.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.Add(System.Windows.Forms.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -34,17 +54,19 @@
         <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The <see cref="T:System.Windows.Forms.Binding" /> to add to the collection.</param>
+        <summary>Adds the specified binding to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCore">
       <MemberSignature Language="C#" Value="protected virtual void AddCore (System.Windows.Forms.Binding dataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.AddCore(System.Windows.Forms.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,17 +76,27 @@
         <Parameter Name="dataBinding" Type="System.Windows.Forms.Binding" />
       </Parameters>
       <Docs>
-        <param name="dataBinding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dataBinding">The <see cref="T:System.Windows.Forms.Binding" /> to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.Binding" /> to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[Classic BindingsCollection.AddCore Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.b_3_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="dataBinding" /> argument was <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
       <MemberSignature Language="C#" Value="protected void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,16 +104,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the collection of binding objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event occurs when you invoke the Clear method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearCore">
       <MemberSignature Language="C#" Value="protected virtual void ClearCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ClearCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.ClearCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,65 +130,107 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears the collection of any members.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingsCollection.CollectionChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the collection has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the CollectionChanged event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingsCollection> named `BindingsCollection1`. Then ensure that the event handler is associated with the CollectionChanged event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#126](~/add/codesnippet/csharp/e-system.windows.forms.b_14_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#126](~/add/codesnippet/visualbasic/e-system.windows.forms.b_14_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanging">
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanging" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingsCollection.CollectionChanging" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the collection is about to change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the CollectionChanging event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingsCollection> named `BindingsCollection1`. Then ensure that the event handler is associated with the CollectionChanging event.  
+  
+ [!code-cs[System.Windows.Forms.EventExamples#125](~/add/codesnippet/csharp/e-system.windows.forms.b_11_1.cs)]
+ [!code-vb[System.Windows.Forms.EventExamples#125](~/add/codesnippet/visualbasic/e-system.windows.forms.b_11_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingsCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of bindings in the collection.</summary>
+        <value>The total number of bindings in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Binding Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingsCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,35 +240,51 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the <see cref="T:System.Windows.Forms.Binding" /> to find.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.Binding" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Binding" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the <xref:System.Windows.Forms.BindingMemberInfo.BindingMember%2A> value of each <xref:System.Windows.Forms.Binding> in a control's <xref:System.Windows.Forms.BindingsCollection>.  
+  
+ [!code-cpp[Classic BindingsCollection.this Example#1](~/add/codesnippet/cpp/p-system.windows.forms.b_16_1.cpp)]
+ [!code-cs[Classic BindingsCollection.this Example#1](~/add/codesnippet/csharp/p-system.windows.forms.b_16_1.cs)]
+ [!code-vb[Classic BindingsCollection.this Example#1](~/add/codesnippet/visualbasic/p-system.windows.forms.b_16_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The collection doesn't contain an item at the specified index.</exception>
       </Docs>
     </Member>
     <Member MemberName="List">
       <MemberSignature Language="C#" Value="protected override System.Collections.ArrayList List { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList List" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingsCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the bindings in the collection as an object.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> containing all of the collection members.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanged">
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs ccevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,17 +294,28 @@
         <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="ccevent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ccevent">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingsCollection.CollectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The OnCollectionChanged method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCollectionChanging">
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanging (System.ComponentModel.CollectionChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanging(class System.ComponentModel.CollectionChangeEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.OnCollectionChanging(System.ComponentModel.CollectionChangeEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,17 +325,30 @@
         <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingsCollection.CollectionChanging" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingsCollection.CollectionChanging> event occurs when the event is about to change.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+ The OnCollectionChanging method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="protected void Remove (System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Remove(class System.Windows.Forms.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.Remove(System.Windows.Forms.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,17 +358,19 @@
         <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The Binding to remove from the collection.</param>
+        <summary>Deletes the specified binding from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
       <MemberSignature Language="C#" Value="protected void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.RemoveAt(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -255,17 +380,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the <see cref="T:System.Windows.Forms.Binding" /> to remove.</param>
+        <summary>Deletes the binding from the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveCore">
       <MemberSignature Language="C#" Value="protected virtual void RemoveCore (System.Windows.Forms.Binding dataBinding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RemoveCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.RemoveCore(System.Windows.Forms.Binding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,17 +402,19 @@
         <Parameter Name="dataBinding" Type="System.Windows.Forms.Binding" />
       </Parameters>
       <Docs>
-        <param name="dataBinding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataBinding">The <see cref="T:System.Windows.Forms.Binding" /> to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Forms.Binding" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeMyAll">
       <MemberSignature Language="C#" Value="protected bool ShouldSerializeMyAll ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool ShouldSerializeMyAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingsCollection.ShouldSerializeMyAll" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,8 +422,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value that indicates whether the collection should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the collection count is greater than zero; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

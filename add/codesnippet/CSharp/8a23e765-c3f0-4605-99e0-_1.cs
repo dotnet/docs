@@ -1,0 +1,1 @@
+         EnsureStage(SoapMessageStage.BeforeSerialize | SoapMessageStage.BeforeDeserialize);

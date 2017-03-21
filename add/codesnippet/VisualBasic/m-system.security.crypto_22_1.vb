@@ -1,0 +1,1 @@
+        Dim encodedMessage() As Byte = cryptoConfig.EncodeOID(sha1Oid)

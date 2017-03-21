@@ -1,8 +1,10 @@
 <Type Name="IDataFormatDisp" FullName="Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp">
   <TypeSignature Language="C#" Value="public interface IDataFormatDisp" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataFormatDisp" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -18,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for the <see cref="Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat%2A" /> property of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

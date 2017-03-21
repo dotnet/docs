@@ -1,8 +1,10 @@
 <Type Name="VerticalAlignment" FullName="System.Windows.VerticalAlignment">
   <TypeSignature Language="C#" Value="public enum VerticalAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerticalAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.VerticalAlignment" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,68 +16,92 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes how a child element is vertically positioned or stretched within a parent's layout slot.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties that are explicitly set on an element take precedence over the <xref:System.Windows.HorizontalAlignment> property value.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the VerticalAlignment enumeration in code and [!INCLUDE[TLA#tla_xaml](~/add/includes/tlasharptla-xaml-md.md)].  
+  
+ [!code-cs[mpalayoutverticalalignment#2](~/add/codesnippet/csharp/MPA_Layout_VerticallAlignment/MPA_Layout_VerticalAlignment.cs#2)]
+ [!code-xml[mpalayoutverticalalignment#2](~/add/codesnippet/xaml/MPA_Layout_VerticalAlignment/default.xaml#2)]
+ [!code-vb[mpalayoutverticalalignment#2](~/add/codesnippet/visualbasic/MPA_Layout_VerticalAlignment/MPA_Layout_VerticalAlignment.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Bottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child element is aligned to the bottom of the parent's layout slot.</summary>
       </Docs>
     </Member>
     <Member MemberName="Center">
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Center = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child element is aligned to the center of the parent's layout slot.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
       <MemberSignature Language="C#" Value="Stretch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Stretch = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child element stretches to fill the parent's layout slot.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Top = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child element is aligned to the top of the parent's layout slot.</summary>
       </Docs>
     </Member>
   </Members>

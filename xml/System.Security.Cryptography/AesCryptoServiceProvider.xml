@@ -1,75 +1,94 @@
 <Type Name="AesCryptoServiceProvider" FullName="System.Security.Cryptography.AesCryptoServiceProvider">
   <TypeSignature Language="C#" Value="public sealed class AesCryptoServiceProvider : System.Security.Cryptography.Aes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AesCryptoServiceProvider extends System.Security.Cryptography.Aes" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AesCryptoServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Cryptography.Aes</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Performs symmetric encryption and decryption using the Cryptographic Application Programming Interfaces (CAPI) implementation of the Advanced Encryption Standard (AES) algorithm.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to encrypt and decrypt sample data using the AesCryptoServiceProvider class.  
+  
+ [!code-vb[AesCryptoServProvider#1](~/add/codesnippet/visualbasic/t-system.security.crypto_74_1.vb)]
+ [!code-cs[AesCryptoServProvider#1](~/add/codesnippet/csharp/t-system.security.crypto_74_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AesCryptoServiceProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.AesCryptoServiceProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">There is no supported key size for the current platform.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDecryptor">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a symmetric AES decryptor object using the current key and initialization vector (IV).</summary>
+        <returns>A symmetric AES decryptor object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The current key is invalid or missing.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDecryptor">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] key, byte[] iv);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] key, unsigned int8[] iv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
       </ReturnValue>
@@ -78,47 +97,67 @@
         <Parameter Name="iv" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="iv">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The secret key to use for the symmetric algorithm.</param>
+        <param name="iv">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>Creates a symmetric AES decryptor object using the specified key and initialization vector (IV).</summary>
+        <returns>A symmetric AES decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the CreateDecryptor method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+  
+ [!code-vb[AesCryptoServProvider#3](~/add/codesnippet/visualbasic/da7de4f0-05be-4eb7-95ca-_1.vb)]
+ [!code-cs[AesCryptoServProvider#3](~/add/codesnippet/csharp/da7de4f0-05be-4eb7-95ca-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="iv" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateEncryptor">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a symmetric AES encryptor object using the current key and initialization vector (IV).</summary>
+        <returns>A symmetric AES encryptor object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateEncryptor">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] key, byte[] iv);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] key, unsigned int8[] iv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
       </ReturnValue>
@@ -127,25 +166,46 @@
         <Parameter Name="iv" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="iv">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The secret key to use for the symmetric algorithm.</param>
+        <param name="iv">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>Creates a symmetric encryptor object using the specified key and initialization vector (IV).</summary>
+        <returns>A symmetric AES encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the code examples in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes%2A> properties to determine the size of the `key` and `iv` parameters.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the CreateEncryptor method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+  
+ [!code-vb[AesCryptoServProvider#2](~/add/codesnippet/visualbasic/2e043d16-7828-4c0a-bf1c-_1.vb)]
+ [!code-cs[AesCryptoServProvider#2](~/add/codesnippet/csharp/2e043d16-7828-4c0a-bf1c-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="iv" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.Dispose(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -161,85 +221,111 @@
     <Member MemberName="GenerateIV">
       <MemberSignature Language="C#" Value="public override void GenerateIV ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateIV() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.GenerateIV" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates a random initialization vector (IV) to use for the algorithm.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The initialization vector (IV) could not be generated.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateKey">
       <MemberSignature Language="C#" Value="public override void GenerateKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.GenerateKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generates a random key to use for the algorithm.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key could not be generated.</exception>
       </Docs>
     </Member>
     <Member MemberName="Key">
       <MemberSignature Language="C#" Value="public override byte[] Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AesCryptoServiceProvider.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the symmetric key that is used for encryption and decryption.</summary>
+        <value>The symmetric key that is used for encryption and decryption.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The value for the key is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The size of the key is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="KeySize">
       <MemberSignature Language="C#" Value="public override int KeySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AesCryptoServiceProvider.KeySize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the size, in bits, of the secret key.</summary>
+        <value>The size, in bits, of the key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The minimum size of the key is 128 bits, and the maximum size is 256 bits.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,1 @@
+eventMappingSetting.EndEventCode = 4096

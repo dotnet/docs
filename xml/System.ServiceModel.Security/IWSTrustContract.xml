@@ -1,6 +1,7 @@
 <Type Name="IWSTrustContract" FullName="System.ServiceModel.Security.IWSTrustContract">
   <TypeSignature Language="C#" Value="public interface IWSTrustContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWSTrustContract" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustContract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,13 +13,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the service contract for sending WS-Trust messages to an STS.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginCancel">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCancel(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginCancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -38,17 +40,18 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Cancel binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginIssue">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginIssue (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginIssue(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginIssue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,17 +71,18 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Issue binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginRenew">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRenew (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRenew(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginRenew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,17 +102,18 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Renew binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginValidate">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginValidate (System.ServiceModel.Channels.Message message, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginValidate(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object asyncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.BeginValidate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,17 +133,18 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>The asynchronous begin method for the WS-Trust Validate binding.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Cancel (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Cancel(System.ServiceModel.Channels.Message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,15 +162,16 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Cancel binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCancel">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndCancel (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndCancel(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndCancel(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -177,15 +184,16 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Cancel binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndIssue">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndIssue (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndIssue(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndIssue(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,15 +206,16 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Issue binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndRenew">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndRenew (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndRenew(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndRenew(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,15 +228,16 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Renew binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EndValidate">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndValidate (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndValidate(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.EndValidate(System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -240,15 +250,16 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the outstanding asynchronous send request.</param>
+        <summary>The asynchronous end method for the WS-Trust Validate binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Issue">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Issue (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Issue(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Issue(System.ServiceModel.Channels.Message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -266,15 +277,16 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Issue binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Renew">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Renew (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Renew(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Renew(System.ServiceModel.Channels.Message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -292,15 +304,16 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Renew binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Validate (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Validate(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustContract.Validate(System.ServiceModel.Channels.Message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,9 +331,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>The method for the WS-Trust Validate binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

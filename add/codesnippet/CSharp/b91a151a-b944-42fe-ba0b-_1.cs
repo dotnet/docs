@@ -1,0 +1,1 @@
+            WorkflowControlClient controlClient = new WorkflowControlClient("ConfigName", new EndpointAddress(new Uri("http://localhost/DataflowControl.xaml")));

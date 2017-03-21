@@ -1,0 +1,1 @@
+		bool TransactionFlow = binding.TransactionFlow;

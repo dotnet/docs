@@ -1,8 +1,10 @@
 <Type Name="CAccPropServices" FullName="Accessibility.CAccPropServices">
   <TypeSignature Language="C#" Value="public interface CAccPropServices : Accessibility.IAccPropServices" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CAccPropServices implements class Accessibility.IAccPropServices" />
+  <TypeSignature Language="DocId" Value="T:Accessibility.CAccPropServices" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -19,8 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The CAccPropServices and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServices" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

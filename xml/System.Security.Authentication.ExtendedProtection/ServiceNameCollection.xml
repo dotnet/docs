@@ -1,69 +1,66 @@
 <Type Name="ServiceNameCollection" FullName="System.Security.Authentication.ExtendedProtection.ServiceNameCollection">
   <TypeSignature Language="C#" Value="public class ServiceNameCollection : System.Collections.ReadOnlyCollectionBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceNameCollection extends System.Collections.ReadOnlyCollectionBase" />
-  <AssemblyInfo>
-    <AssemblyName>System.Net.Security</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceNameCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="E:\mdoc\binaries\dotnet\netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The ServiceNameCollection class is a read-only collection of service principal names.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ServiceNameCollection class is used in an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> when validating against a custom list of service provider names (SPNs).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceNameCollection (System.Collections.ICollection items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.#ctor(System.Collections.ICollection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="items" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="items">An instance of the <see cref="T:System.Collections.ICollection" /> class that contains the specified values of service names to be used to initialize the class.</param>
+        <summary>Initializes a new read-only instance of the <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> class based on an existing <see cref="T:System.Collections.ICollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item " />is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="item" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (string searchServiceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string searchServiceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Contains(System.String)" />
       <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -72,44 +69,23 @@
         <Parameter Name="searchServiceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchServiceName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Count">
-      <MemberSignature Language="C#" Value="public int Count { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="searchServiceName">The string to seek.</param>
+        <summary>Returns a value indicating whether the specified string occurs within this <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.  
+  
+ <see langword="true" /> if the <paramref name="searchServiceName" /> parameter occurs within this <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Merge">
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ServiceNameCollection Merge (System.Collections.IEnumerable serviceNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Authentication.ExtendedProtection.ServiceNameCollection Merge(class System.Collections.IEnumerable serviceNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge(System.Collections.IEnumerable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.ServiceNameCollection</ReturnType>
@@ -118,27 +94,32 @@
         <Parameter Name="serviceNames" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="serviceNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceNames">An instance of the <see cref="T:System.Collections.IEnumerable" /> class that contains the specified values of service names to be merged.</param>
+        <summary>Merges the current <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> with the specified values to create a new <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> containing the union.</summary>
+        <returns>A new <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance that contains the union of the existing <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance merged with the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceNames " />is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceNames" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Merge">
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ServiceNameCollection Merge (string serviceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Authentication.ExtendedProtection.ServiceNameCollection Merge(string serviceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.ServiceNameCollection</ReturnType>
@@ -147,44 +128,21 @@
         <Parameter Name="serviceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serviceName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.ICollection.IsSynchronized">
-      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.ICollection.SyncRoot">
-      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="serviceName">A string that contains the specified values of service names to be used to initialize the class.</param>
+        <summary>Merges the current <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> with the specified values to create a new <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> containing the union.</summary>
+        <returns>A new <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance that contains the union of the existing <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance merged with the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceNames " />is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="serviceNames" /> is empty.</exception>
       </Docs>
     </Member>
   </Members>

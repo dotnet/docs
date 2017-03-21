@@ -1,8 +1,10 @@
 <Type Name="MailMessage" FullName="System.Web.Mail.MailMessage">
   <TypeSignature Language="C#" Value="public class MailMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailMessage" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,260 +17,420 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides properties and methods for constructing an e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the MailMessage class.  
+  
+> [!IMPORTANT]
+>  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-vb[System.Web.Mail.MailMessage#1](~/add/codesnippet/visualbasic/t-system.web.mail.mailme_1.aspx)]
+ [!code-cs[System.Web.Mail.MailMessage#1](~/add/codesnippet/csharp/t-system.web.mail.mailme_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MailMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mail.MailMessage.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Mail.MailMessage" /> class. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Attachments">
       <MemberSignature Language="C#" Value="public System.Collections.IList Attachments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Attachments" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Attachments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the collection of attachments that are transmitted with the message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> collection of <see cref="T:System.Web.Mail.MailAttachment" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ New attachments can be added to the mail message by a call to `Message.Attachments.Add(MyMailMessage)`. See <xref:System.Web.Mail.SmtpMail.Send%2A> for an example of <xref:System.Web.Mail.SmtpMail> usage.  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Mail.MailMessage.Attachments#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_4_1.vb)]
+ [!code-cs[System.Web.Mail.MailMessage.Attachments#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_4_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bcc">
       <MemberSignature Language="C#" Value="public string Bcc { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Bcc" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Bcc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a semicolon-delimited list of email addresses that receive a blind carbon copy (BCC) of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>A semicolon-delimited list of e-mail addresses that receive a blind carbon copy (BCC) of the e-mail message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+  
+ The primary and carbon copy (<xref:System.Web.Mail.MailMessage.Cc%2A>) recipients do not see the addresses in the `Bcc` field.  
+  
+   
+  
+## Examples  
+ [!code-cs[System.Web.Mail.MailMessage.Bcc#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_2_1.cs)]
+ [!code-vb[System.Web.Mail.MailMessage.Bcc#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
       <MemberSignature Language="C#" Value="public string Body { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Body" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Body" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The body of the e-mail message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BodyEncoding">
       <MemberSignature Language="C#" Value="public System.Text.Encoding BodyEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding BodyEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.BodyEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the encoding type of the body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>One of the <see cref="T:System.Text.Encoding" /> values that indicates the encoding type of the body of the e-mail message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cs[System.Web.Mail.MailMessage.BodyEncoding#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_10_1.cs)]
+ [!code-vb[System.Web.Mail.MailMessage.BodyEncoding#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_10_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BodyFormat">
       <MemberSignature Language="C#" Value="public System.Web.Mail.MailFormat BodyFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Mail.MailFormat BodyFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.BodyFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Mail.MailFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content type of the body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>One of the <see cref="T:System.Web.Mail.MailFormat" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[System.Web.Mail.MailMessage.BodyFormat#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_8_1.vb)]
+ [!code-cs[System.Web.Mail.MailMessage.BodyFormat#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_8_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cc">
       <MemberSignature Language="C#" Value="public string Cc { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Cc" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Cc" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a semicolon-delimited list of e-mail addresses that receive a carbon copy (CC) of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>A semicolon-delimited list of e-mail addresses that receive a carbon copy (CC) of the e-mail message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+  
+   
+  
+## Examples  
+ [!code-vb[System.Web.Mail.MailMessage.Cc#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_9_1.vb)]
+ [!code-cs[System.Web.Mail.MailMessage.Cc#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_9_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fields">
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Fields { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Fields" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Fields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of objects that map to Microsoft Collaboration Data Objects (CDO) fields. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> collection of objects that map to Collaboration Data Objects (CDO) fields.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Fields property is used to set extended properties for Collaboration Data Objects (CDO). For more information about CDO, see "Collaboration Data Objects" and "Configuration CoClass" in the MSDN library at http://msdn.microsoft.com/library.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the Fields property to send your user name and password to a Simple Mail Transfer Protocol (SMTP) server for authentication.  
+  
+ [!code-vb[System.Web.Mail.MailMessage.Fields#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_0_1.aspx)]
+ [!code-cs[System.Web.Mail.MailMessage.Fields#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_0_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="From">
       <MemberSignature Language="C#" Value="public string From { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string From" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the e-mail address of the sender. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The sender's e-mail address.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[SystemWebMailMailMessageFrom#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_1_1.vb)]
+ [!code-cs[SystemWebMailMailMessageFrom#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the custom headers that are transmitted with the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> collection of custom headers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
       <MemberSignature Language="C#" Value="public System.Web.Mail.MailPriority Priority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Mail.MailPriority Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Mail.MailPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the priority of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>One of the <see cref="T:System.Web.Mail.MailPriority" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[System.Web.Mail.MailMessage.Priority#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_5_1.vb)]
+ [!code-cs[System.Web.Mail.MailMessage.Priority#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_5_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">
       <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the subject line of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The subject line of the e-mail message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="To">
       <MemberSignature Language="C#" Value="public string To { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string To" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a semicolon-delimited list of recipient e-mail addresses. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>A semicolon-delimited list of e-mail addresses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Recipients in the semicolon-delimited list can be either email addresses or address book display names.  
+  
+   
+  
+## Examples  
+ [!code-cs[SystemWebMailMailMessageTo#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_6_1.cs)]
+ [!code-vb[SystemWebMailMailMessageTo#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_6_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UrlContentBase">
       <MemberSignature Language="C#" Value="public string UrlContentBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UrlContentBase" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.UrlContentBase" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="Content-Base" /> HTTP header, the URL base of all relative URLs used within the HTML-encoded body of the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The URL base.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cs[System.Web.Mail.MailMessage.UrlContentBase#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_7_1.cs)]
+ [!code-vb[System.Web.Mail.MailMessage.UrlContentBase#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_7_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UrlContentLocation">
       <MemberSignature Language="C#" Value="public string UrlContentLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UrlContentLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailMessage.UrlContentLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="Content-Location" /> HTTP header for the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The <see langword="content-base" /> header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[System.Web.Mail.MailMessage#1](~/add/codesnippet/visualbasic/p-system.web.mail.mailme_3_1.aspx)]
+ [!code-cs[System.Web.Mail.MailMessage#1](~/add/codesnippet/csharp/p-system.web.mail.mailme_3_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

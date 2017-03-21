@@ -1,6 +1,7 @@
 <Type Name="ControlValueProvider" FullName="System.Web.ModelBinding.ControlValueProvider">
   <TypeSignature Language="C#" Value="public sealed class ControlValueProvider : System.Web.ModelBinding.SimpleValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ControlValueProvider extends System.Web.ModelBinding.SimpleValueProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ControlValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a value provider for control values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ControlValueProvider (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ControlValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -27,15 +29,16 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="propertyName">The name of the control property to get the value from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ControlValueProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FetchValue">
       <MemberSignature Language="C#" Value="protected override object FetchValue (string controlId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object FetchValue(string controlId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ControlValueProvider.FetchValue(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +60,7 @@
     <Member MemberName="PropertyName">
       <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ControlValueProvider.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,8 +70,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the control property to get the value from.</summary>
+        <value>The property name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

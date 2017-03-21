@@ -1,0 +1,1 @@
+      SecurityElement^ windowsRoleElement = gcnew SecurityElement( L"WindowsMembership.WindowsRole" );

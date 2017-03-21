@@ -1,0 +1,2 @@
+            ' Obtains and shows the size of the standard design-mode grid square.
+            Dim size As Size = CType(designerOptionService.GetOptionValue("WindowsFormsDesigner\General", "GridSize"), Size)

@@ -1,75 +1,105 @@
 <Type Name="ConsoleCancelEventArgs" FullName="System.ConsoleCancelEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ConsoleCancelEventArgs : EventArgs" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConsoleCancelEventArgs extends System.EventArgs" />
-  <AssemblyInfo>
-    <AssemblyName>System.Console</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConsoleCancelEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ConsoleCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Console.CancelKeyPress" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A user can interrupt a console application process by simultaneously pressing the <xref:System.ConsoleModifiers> modifier key and the <xref:System.ConsoleKey> console key (Ctrl+C), or the <xref:System.ConsoleModifiers> modifier key and the Break console key (Ctrl+Break). The .NET Framework consequently provides a ConsoleCancelEventArgs object to the event handler for the <xref:System.Console.CancelKeyPress?displayProperty=fullName> event to specify whether the process should be cancelled.  
+  
+ If the <xref:System.ConsoleCancelEventArgs.Cancel%2A> property is set to `true` in the event handler, the process is resumed; otherwise, the process is terminated. By default, the value of the ConsoleCancelEventArgs property is `false`, and the process terminates.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the ConsoleCancelEventArgs class to handle an event.  
+  
+ [!code-cs[console.cancelkeypress#1](~/add/codesnippet/csharp/t-system.consolecancelev_1_1.cs)]
+ [!code-cpp[console.cancelkeypress#1](~/add/codesnippet/cpp/t-system.consolecancelev_1_1.cpp)]
+ [!code-vb[console.cancelkeypress#1](~/add/codesnippet/visualbasic/t-system.consolecancelev_1_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
+      <MemberSignature Language="DocId" Value="P:System.ConsoleCancelEventArgs.Cancel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether simultaneously pressing the <see cref="T:System.ConsoleModifiers" /> modifier key and the <see cref="T:System.ConsoleKey" /> console key (Ctrl+C) or the Ctrl+Break keys terminates the current process. The default is <see langword="false" />, which terminates the current process.</summary>
+        <value>
+          <see langword="true" /> if the current process should resume when the event handler concludes; <see langword="false" /> if the current process should terminate. The default value is <see langword="false" />; the current process terminates when the event handler returns. If <see langword="true" />, the current process continues.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Cancel property is automatically initialized to `false` when the handler for the <xref:System.Console.CancelKeyPress> event is invoked. The value of the Cancel property when the event handler finishes determines whether the current process resumes or terminates.  
+  
+ In a set operation after Ctrl+C is pressed, specify `true` to indicate that the current process should resume when the event handler concludes, or `false` to indicate that the current process should terminate.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the Cancel property to handle an event.  
+  
+ [!code-cs[console.cancelkeypress#1](~/add/codesnippet/csharp/p-system.consolecancelev_0_1.cs)]
+ [!code-cpp[console.cancelkeypress#1](~/add/codesnippet/cpp/p-system.consolecancelev_0_1.cpp)]
+ [!code-vb[console.cancelkeypress#1](~/add/codesnippet/visualbasic/p-system.consolecancelev_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SpecialKey">
       <MemberSignature Language="C#" Value="public ConsoleSpecialKey SpecialKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ConsoleSpecialKey SpecialKey" />
+      <MemberSignature Language="DocId" Value="P:System.ConsoleCancelEventArgs.SpecialKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ConsoleSpecialKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the combination of modifier and console keys that interrupted the current process.</summary>
+        <value>One of the enumeration values that specifies the key combination that interrupted the current process. There is no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the SpecialKey property to handle an event.  
+  
+ [!code-cs[console.cancelkeypress#1](~/add/codesnippet/csharp/p-system.consolecancelev_1_1.cs)]
+ [!code-cpp[console.cancelkeypress#1](~/add/codesnippet/cpp/p-system.consolecancelev_1_1.cpp)]
+ [!code-vb[console.cancelkeypress#1](~/add/codesnippet/visualbasic/p-system.consolecancelev_1_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

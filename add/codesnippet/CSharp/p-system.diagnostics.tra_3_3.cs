@@ -1,0 +1,2 @@
+        [Event(5, Opcode = EventOpcode.Start, Task = Tasks.DBQuery, Keywords = Keywords.DataBase, Level = EventLevel.Informational)]
+        public void DBQueryStart(string sqlQuery) { WriteEvent(5, sqlQuery); }

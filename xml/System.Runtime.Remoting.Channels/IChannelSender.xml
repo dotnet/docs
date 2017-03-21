@@ -1,8 +1,10 @@
 <Type Name="IChannelSender" FullName="System.Runtime.Remoting.Channels.IChannelSender">
   <TypeSignature Language="C#" Value="public interface IChannelSender : System.Runtime.Remoting.Channels.IChannel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelSender implements class System.Runtime.Remoting.Channels.IChannel" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelSender" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -16,16 +18,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides required functions and properties for the sender channels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The sending side of channels must expose the IChannelSender interface.  
+  
+   
+  
+## Examples  
+ [!code-cs[IChannelSender#1](~/add/codesnippet/csharp/t-system.runtime.remotin_44_1.cs)]
+ [!code-vb[IChannelSender#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_44_1.vb)]
+ [!code-cpp[IChannelSender#1](~/add/codesnippet/cpp/t-system.runtime.remotin_44_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateMessageSink">
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink (string url, object remoteChannelData, out string objectURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink(string url, object remoteChannelData, string objectURI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink(System.String,System.Object,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -42,12 +60,28 @@
         <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="remoteChannelData">To be added.</param>
-        <param name="objectURI">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="url">The URL to which the new sink will deliver messages. Can be <see langword="null" />.</param>
+        <param name="remoteChannelData">The channel data object of the remote host to which the new sink will deliver messages. Can be <see langword="null" />.</param>
+        <param name="objectURI">When this method returns, contains a URI of the new channel message sink that delivers messages to the specified URL or channel data object. This parameter is passed uninitialized.</param>
+        <summary>Returns a channel message sink that delivers messages to the specified URL or channel data object.</summary>
+        <returns>A channel message sink that delivers messages to the specified URL or channel data object, or <see langword="null" /> if the channel cannot connect to the given endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CreateMessageSink method returns a channel message sink that delivers messages to either the specified URL or the channel data object. If the `uri` parameter is `null`, the `remoteChannelData` parameter is used as a target for the sink. Either the `url` parameter or the `remoteChannelData` parameter can be `null`, but not both.  
+  
+   
+  
+## Examples  
+ [!code-cs[IChannelSender#1](~/add/codesnippet/csharp/3c7b4cc4-07d7-406d-89fa-_1.cs)]
+ [!code-vb[IChannelSender#1](~/add/codesnippet/visualbasic/3c7b4cc4-07d7-406d-89fa-_1.vb)]
+ [!code-cpp[IChannelSender#1](~/add/codesnippet/cpp/3c7b4cc4-07d7-406d-89fa-_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

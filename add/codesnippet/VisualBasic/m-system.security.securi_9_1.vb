@@ -1,0 +1,1 @@
+        Dim xmlCreationDate As String = xmlElement.Attribute("creationdate")

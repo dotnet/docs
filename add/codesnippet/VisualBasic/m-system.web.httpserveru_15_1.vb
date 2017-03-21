@@ -1,0 +1,2 @@
+Server.Execute("updateinfo.aspx")
+   

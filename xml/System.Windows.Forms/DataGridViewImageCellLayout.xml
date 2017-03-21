@@ -1,76 +1,97 @@
 <Type Name="DataGridViewImageCellLayout" FullName="System.Windows.Forms.DataGridViewImageCellLayout">
   <TypeSignature Language="C#" Value="public enum DataGridViewImageCellLayout" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewImageCellLayout extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewImageCellLayout" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the layout for an image contained in a <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-cs[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/add/codesnippet/csharp/t-system.windows.forms.d_115_1.cs)]
+ [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/add/codesnippet/cpp/t-system.windows.forms.d_115_1.cpp)]
+ [!code-vb[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/add/codesnippet/visualbasic/t-system.windows.forms.d_115_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Normal">
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewImageCellLayout Normal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewImageCellLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The graphic is displayed centered using its native resolution.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewImageCellLayout NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewImageCellLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The layout specification has not been set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
       <MemberSignature Language="C#" Value="Stretch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewImageCellLayout Stretch = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewImageCellLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The graphic is stretched by the percentages required to fit the width and height of the containing cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
       <MemberSignature Language="C#" Value="Zoom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewImageCellLayout Zoom = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewImageCellLayout.Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewImageCellLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The graphic is uniformly enlarged until it fills the width or height of the containing cell.</summary>
       </Docs>
     </Member>
   </Members>

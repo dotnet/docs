@@ -1,46 +1,55 @@
 <Type Name="PropertyPosition" FullName="Microsoft.Build.BuildEngine.PropertyPosition">
   <TypeSignature Language="C#" Value="public enum PropertyPosition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.PropertyPosition" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies constants that define the location in the project to insert a property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="UseExistingOrCreateAfterLastImport">
       <MemberSignature Language="C#" Value="UseExistingOrCreateAfterLastImport" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.PropertyPosition UseExistingOrCreateAfterLastImport = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.PropertyPosition.UseExistingOrCreateAfterLastImport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.PropertyPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replace the existing [Property](../Topic/Property%20Element%20\(MSBuild\).md) element if it exists. Otherwise, create the <c>Property</c> after the last [Import](../Topic/Import%20Element%20\(MSBuild\).md) element in the project.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseExistingOrCreateAfterLastPropertyGroup">
       <MemberSignature Language="C#" Value="UseExistingOrCreateAfterLastPropertyGroup" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.PropertyPosition UseExistingOrCreateAfterLastPropertyGroup = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.PropertyPosition.UseExistingOrCreateAfterLastPropertyGroup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.BuildEngine.PropertyPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replace the existing [Property](../Topic/Property%20Element%20\(MSBuild\).md) element if it exists. Otherwise, if possible, create a new <c>Property</c> element as a child of an existing compatible [PropertyGroup](../Topic/PropertyGroup%20Element%20\(MSBuild\).md) element. If necessary, create a new compatible <c>PropertyGroup</c> element immediately following the last <c>PropertyGroup</c> in the project.</summary>
       </Docs>
     </Member>
   </Members>

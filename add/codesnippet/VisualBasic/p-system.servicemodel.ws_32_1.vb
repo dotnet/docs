@@ -1,0 +1,1 @@
+            Dim useDefaultWebProxy = binding1.UseDefaultWebProxy

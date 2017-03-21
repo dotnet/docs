@@ -1,8 +1,10 @@
 <Type Name="ADODC+EndOfRecordsetDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+EndOfRecordsetDelegate">
   <TypeSignature Language="C#" Value="public delegate void ADODC.EndOfRecordsetDelegate(ref bool fMoreData, ref EventStatusEnum adStatus, Recordset pRecordset);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/EndOfRecordsetDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.EndOfRecordsetDelegate" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,10 +27,17 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="fMoreData">To be added.</param>
-    <param name="adStatus">To be added.</param>
-    <param name="pRecordset">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="fMoreData">A <see langword="Boolean" /> determining whether the end of the <see cref="Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset%2A" /> has been reached.</param>
+    <param name="adStatus">An <see langword="ADODB.EventStatusEnum" />.</param>
+    <param name="pRecordset">An <see langword="ADODB.Recordset" /> object.</param>
+    <summary>Represents the method that will handle an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/add/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

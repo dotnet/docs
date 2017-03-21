@@ -1,6 +1,7 @@
 <Type Name="RibbonContextMenu" FullName="System.Windows.Controls.Ribbon.RibbonContextMenu">
   <TypeSignature Language="C#" Value="public class RibbonContextMenu : System.Windows.Controls.ContextMenu" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonContextMenu extends System.Windows.Controls.ContextMenu" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonContextMenu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a menu that is displayed in the context of a particular control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RibbonContextMenu ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -29,13 +31,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextMenu" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearContainerForItemOverride">
       <MemberSignature Language="C#" Value="protected override void ClearContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -49,15 +52,23 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element that is used to display the item.</param>
+        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
+        <summary>Unloads the container for the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method undoes the effects of the <xref:System.Windows.Controls.Ribbon.RibbonContextMenu.PrepareContainerForItemOverride%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContainerForItemOverride">
       <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.GetContainerForItemOverride" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,14 +79,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> object.</summary>
+        <returns>A new <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" /> container object that is used to display an item from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HasGallery">
       <MemberSignature Language="C#" Value="public bool HasGallery { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasGallery" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonContextMenu.HasGallery" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -85,14 +97,30 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
+        <value>
+          <see langword="true" /> if at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_HasGallery"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonContextMenu.HasGalleryProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasGalleryProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasGalleryProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasGalleryProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonContextMenu.HasGalleryProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -102,13 +130,14 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Ribbon.RibbonContextMenu.HasGallery%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsItemItsOwnContainerOverride">
       <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -121,15 +150,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to test.</param>
+        <summary>Returns a value that indicates whether the specified item is (or is eligible to be) its own container.</summary>
+        <returns>
+          <see langword="true" /> if the item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonMenuItem" />, a <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.OnCreateAutomationPeer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -140,14 +171,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer" /> object for this control.</summary>
+        <returns>A new automation peer object for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -160,14 +192,15 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareContainerForItemOverride">
       <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -181,15 +214,16 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element that is used to display the item.</param>
+        <param name="item">The item to display from the <see cref="System.Windows.Controls.ItemsControl.Items%2A" /> collection.</param>
+        <summary>Prepares the specified element to display the specified item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldApplyItemContainerStyle">
       <MemberSignature Language="C#" Value="protected override bool ShouldApplyItemContainerStyle (System.Windows.DependencyObject container, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonContextMenu.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -203,10 +237,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The container element.</param>
+        <param name="item">The item to display.</param>
+        <summary>Returns a value that indicates whether to apply the style from the <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyle%2A" /> or <see cref="System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A" /> property to the container element of the specified item.</summary>
+        <returns>
+          <see langword="false" /> if <paramref name="container" /> is a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />, <see cref="T:System.Windows.Controls.Ribbon.RibbonSeparator" />, or <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, the value returned by the base implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

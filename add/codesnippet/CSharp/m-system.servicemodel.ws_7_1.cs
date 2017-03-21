@@ -1,0 +1,1 @@
+            WSHttpBinding binding1 = new WSHttpBinding();

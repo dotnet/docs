@@ -1,6 +1,25 @@
 <Namespace Name="System.Xml.Serialization.Configuration">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The System.Xml.Serialization.Configuration namespace contains classes used to read the values found in application configuration files under the [\&lt;system.xml.serialization\&gt; Element](../Topic/%3Csystem.xml.serialization%3E%20Element.md) section.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace are used by the serialization infrastructure to handle the configuration elements and cannot be used directly. For more information about configuration files, see [Configuration File Schema](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md).  
+  
+ Instead, to configure the <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements:  
+  
+-   [\&lt;system.xml.serialization\&gt; Element](../Topic/%3Csystem.xml.serialization%3E%20Element.md)  
+  
+-   [\&lt;schemaImporterExtensions\&gt; Element](../Topic/%3CschemaImporterExtensions%3E%20Element.md)  
+  
+-   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](../Topic/%3Cadd%3E%20Element%20for%20%3CxmlSchemaImporterExtensions%3E.md)  
+  
+-   [\&lt;dateTimeSerialization\&gt; Element](../Topic/%3CdateTimeSerialization%3E%20Element.md)  
+  
+-   [\&lt;xmlSerializer\&gt; Element](../Topic/%3CxmlSerializer%3E%20Element.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

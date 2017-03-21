@@ -1,0 +1,1 @@
+		Dim messageEncoding As WSMessageEncoding = binding1.MessageEncoding

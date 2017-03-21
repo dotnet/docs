@@ -1,0 +1,1 @@
+        Dim xmlTransform As New XmlDsigC14NTransform(True)

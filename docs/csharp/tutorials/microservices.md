@@ -388,11 +388,6 @@ argument provides a tag, or name, for this container image. In the command line 
 tag used for the Docker container is `weather-microservice`. When this command completes,
 you have a container ready to run your new service. 
 
-> [!Note]
-> The copy command will copy all built assets, as well as the source for your application.
-> You should remove the `obj`, `bin`, and `out` directories from your local machine
-> before building your Docker image.
-
 Run the following command to start
 the container and launch your service:
 

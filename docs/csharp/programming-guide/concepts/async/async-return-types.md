@@ -124,7 +124,16 @@ await Task_MethodAsync();
   
  The following code separates calling `Task_MethodAsync` from awaiting the task that `Task_MethodAsync` returns.  
   
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```cs  
+// Call and await in separate statements.  
+Task simpleTask = Task_MethodAsync();  
+  
+// You can do other work that does not rely on simpleTask before awaiting.  
+textBox1.Text += String.Format("\r\nApplication can continue working while the Task runs. . . .\r\n");  
+  
+await simpleTask;  
+```  
+  
 ##  <a name="BKMK_VoidReturnType"></a> Void Return Type  
  The primary use of the void return type is in event handlers, where a void return type is required. A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget." However, you should return a `Task` wherever possible, because a void-returning async method can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   
@@ -134,7 +143,21 @@ await Task_MethodAsync();
   
  The following code defines an async event handler.  
   
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
+```cs  
+// VOID EXAMPLE  
+private async void button1_Click(object sender, RoutedEventArgs e)  
+{  
+    textBox1.Clear();  
+  
+    // Start the process and await its completion. DriverAsync is a   
+    // Task-returning async method.  
+    await DriverAsync();  
+  
+    // Say goodbye.  
+    textBox1.Text += "\r\nAll done, exiting button-click event handler.";  
+}  
+```  
+  
 ##  <a name="BKMK_Example"></a> Complete Example  
  The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.  
   

@@ -43,13 +43,38 @@ The `await` operator is applied to a task in an asynchronous method to suspend t
   
  In the following code, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> returns a `Task\<byte[]>`, `getContentsTask`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator is applied to `getContentsTask` to suspend execution in `SumPageSizesAsync` until `getContentsTask` is complete. In the meantime, control is returned to the caller of `SumPageSizesAsync`. When `getContentsTask` is finished, the `await` expression evaluates to a byte array.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```cs  
+  
+private async Task SumPageSizesAsync()  
+{  
+    // To use the HttpClient type in desktop apps, you must include a using directive and add a   
+    // reference for the System.Net.Http namespace.  
+    HttpClient client = new HttpClient();  
+    // . . .  
+    Task<byte[]> getContentsTask = client.GetByteArrayAsync(url);  
+    byte[] urlContents = await getContentsTask;  
+  
+    // Equivalently, now that you see how it works, you can write the same thing in a single line.  
+    //byte[] urlContents = await client.GetByteArrayAsync(url);  
+    // . . .  
+}  
+  
+```  
+  
 > [!IMPORTANT]
 >  For the complete example, see [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the sample from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkID=255191&clcid=0x409) on the Microsoft website. The example is in the AsyncWalkthrough_HttpClient project.  
   
  As shown in the previous example, if `await` is applied to the result of a method call that returns a `Task<TResult>`, then the type of the `await` expression is TResult. If `await` is applied to the result of a method call that returns a `Task`, then the type of the `await` expression is void. The following example illustrates the difference.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```cs  
+// Keyword await used with a method that returns a Task<TResult>.  
+TResult result = await AsyncMethodThatReturnsTaskTResult();  
+  
+// Keyword await used with a method that returns a Task.  
+await AsyncMethodThatReturnsTask();  
+  
+```  
+  
  An `await` expression does not block the thread on which it is executing. Instead, it causes the compiler to sign up the rest of the async method as a continuation on the awaited task. Control then returns to the caller of the async method. When the task completes, it invokes its continuation, and execution of the async method resumes where it left off.  
   
  An `await` expression can occur only in the body of an immediately enclosing method, lambda expression, or anonymous method that is marked by an `async` modifier. The term *await* serves as a keyword only in that context. Elsewhere, it is interpreted as an identifier. Within the method, lambda expression, or anonymous method, an `await` expression cannot occur in the body of a synchronous function, in a query expression,, in the block of a [lock statement](../../../csharp/language-reference/keywords/lock-statement.md), or in an [unsafe](../../../csharp/language-reference/keywords/unsafe.md) context.  

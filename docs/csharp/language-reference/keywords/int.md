@@ -1,6 +1,6 @@
 ---
 title: "int (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -32,33 +32,48 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # int (C# Reference)
-The `int` keyword denotes an integral type that stores values according to the size and range shown in the following table.  
+
+`int` denotes an integral type that stores values according to the size and range shown in the following table.  
   
 |Type|Range|Size|.NET Framework type|Default Value|  
 |----------|-----------|----------|-------------------------|-------------------|  
 |`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=fullName>|0|  
   
 ## Literals  
- You can declare and initialize a variable of the type `int` like this example:  
+ 
+You can declare and initialize an `int` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it.  If the integer literal is outside the range of `int` (that is, if it is less than <xref:System.Int32.MinValue?displayProperty=fullName> or greater than <xref:System.Int32.MaxValue?displayProperty=fullName>, a compilation error occurs. 
+
+In the following example, integers equal to 16,342 that are represented as decimal, hexadecimal, and binary literals are assigned to `int` values.  
   
-```  
-  
-int i = 123;  
-```  
-  
- When an integer literal has no suffix, its type is the first of these types in which its value can be represented: `int`, [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md). In this example, it is of the type `int`.  
+[!code-cs[int](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Int)]  
+
+> [!NOTE] 
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix. 
+
+Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+
+[!code-cs[int](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#IntS)]  
+ 
+ Integer literals can also include a suffix that denotes the type, although there is no suffix that denotes the `int` type. If an integer literal has no suffix, its type is the first of the following types in which its value can be represented: 
+
+1. `int`
+2. [uint](../../../csharp/language-reference/keywords/uint.md)
+3. [long](../../../csharp/language-reference/keywords/long.md)
+4. [ulong](../../../csharp/language-reference/keywords/ulong.md) 
+ 
+In these examples, the literal 90946 is of type `int`.
   
 ## Conversions  
  There is a predefined implicit conversion from `int` to [long](../../../csharp/language-reference/keywords/long.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). For example:  
   
-```  
+```cs  
 // '123' is an int, so an implicit conversion takes place here:  
 float f = 123;  
 ```  
   
  There is a predefined implicit conversion from [sbyte](../../../csharp/language-reference/keywords/sbyte.md), [byte](../../../csharp/language-reference/keywords/byte.md), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), or [char](../../../csharp/language-reference/keywords/char.md) to `int`. For example, the following assignment statement will produce a compilation error without a cast:  
   
-```  
+```cs  
 long aLong = 22;  
 int i1 = aLong;       // Error: no implicit conversion from long.  
 int i2 = (int)aLong;  // OK: explicit conversion.  
@@ -66,9 +81,8 @@ int i2 = (int)aLong;  // OK: explicit conversion.
   
  Notice also that there is no implicit conversion from floating-point types to `int`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```  
-  
-      int x = 3.0;         // Error: no implicit conversion from double.  
+```cs  
+int x = 3.0;         // Error: no implicit conversion from double.  
 int y = (int)3.0;    // OK: explicit conversion.  
 ```  
   

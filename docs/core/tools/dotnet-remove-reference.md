@@ -4,25 +4,23 @@ description: The dotnet-remove reference command provides a convenient option to
 keywords: dotnet-remove, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 ---
+
 # dotnet-remove reference
 
 ## Name
 
-`dotnet-remove reference` - Removes project to project references.
+`dotnet-remove reference` - Removes project-to-project references.
 
 ## Synopsis
 
-```
-dotnet remove [project] reference [-f|--framework] <project_references>
-dotnet remove reference [-h|--help]
-```
+`dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]`
 
 ## Description
 
@@ -30,13 +28,13 @@ The `dotnet remove reference` command provides a convenient option to remove pro
 
 ## Arguments
 
-`project`
+`PROJECT`
 
-Project file to operate on. If not specified, the command will search the current directory for one.
+Target project file. If not specified, the command searches the current directory for one.
 
-`project_references`
+`PROJECT_REFERENCES`
 
-Project to project references to remove. You can specify one or multiple projects. Glob pattern is supported on Unix/Linux based terminals.
+Project to project (P2P references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 ## Options
 
@@ -46,7 +44,7 @@ Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
-Removes reference only when targeting a specific framework.
+Removes the reference only when targeting a specific [framework](../../standard/frameworks.md).
 
 ## Examples
 
@@ -58,6 +56,6 @@ Remove multiple project references from the project in the current directory:
 
 `dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj`
 
-Remove multiple project references using globbing pattern:
+Remove multiple project references using a glob pattern on Unix/Linux:
 
 `dotnet remove app/app.csproj reference **/*.csproj`

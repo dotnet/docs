@@ -286,12 +286,19 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      To retrieve the `WebResponse` value from the task, apply an [await](../../../../csharp/language-reference/keywords/await.md) operator to the call to `GetResponseAsync`, as the following code shows.  
   
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
+    ```cs  
+    using (WebResponse response = await webReq.GetResponseAsync())  
+    ```  
+  
      The `await` operator suspends the execution of the current method, `GetURLContents`, until the awaited task is complete. In the meantime, control returns to the caller of the current method. In this example, the current method is `GetURLContents`, and the caller is `SumPageSizes`. When the task is finished, the promised `WebResponse` object is produced as the value of the awaited task and assigned to the variable `response`.  
   
      The previous statement can be separated into the following two statements to clarify what happens.  
   
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+    ```cs  
+    //Task<WebResponse> responseTask = webReq.GetResponseAsync();  
+    //using (WebResponse response = await responseTask)  
+    ```  
+  
      The call to `webReq.GetResponseAsync` returns a `Task(Of WebResponse)` or `Task<WebResponse>`. Then an await operator is applied to the task to retrieve the `WebResponse` value.  
   
      If your async method has work to do that doesn’t depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the `await` operator is applied. For examples, see [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) and [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).  
@@ -302,13 +309,27 @@ You can write asynchronous programs more easily and intuitively by using feature
   
     -   The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn’t return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.  
   
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
+        ```cs  
+        await responseStream.CopyToAsync(content);  
+        ```  
+  
          The previous statement abbreviates the following two lines of code.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+        ```cs  
+        // CopyToAsync returns a Task, not a Task<T>.  
+        //Task copyTask = responseStream.CopyToAsync(content);  
+  
+        // When copyTask is completed, content contains a copy of  
+        // responseStream.  
+        //await copyTask;  
+        ```  
+  
 4.  All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../../csharp/language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+    ```cs  
+    private async byte[] GetURLContents(string url)  
+    ```  
+  
 5.  The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../../csharp/language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."  
   
      For more information, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).  
@@ -440,7 +461,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  In `SumPageSizesAsync,` replace the call to your `GetURLContentsAsync` method with a call to the `HttpClient` method.  
   
-    ```  
+    ```cs  
     byte[] urlContents = await client.GetByteArrayAsync(url);  
     ```  
   

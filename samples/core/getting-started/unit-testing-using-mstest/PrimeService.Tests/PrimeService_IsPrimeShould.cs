@@ -7,6 +7,7 @@ namespace Prime.UnitTests.Services
     public class PrimeService_IsPrimeShould
     {
         private readonly PrimeService _primeService;
+        
         public PrimeService_IsPrimeShould()
         {
             _primeService = new PrimeService();
@@ -32,6 +33,5 @@ namespace Prime.UnitTests.Services
             Assert.IsFalse(result, $"{value} should not be prime");
         }
         #endregion
-
     }
 }

@@ -1,0 +1,236 @@
+<Type Name="IsolatedStorageContainment" FullName="System.Security.Permissions.IsolatedStorageContainment">
+  <TypeSignature Language="C#" Value="public enum IsolatedStorageContainment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IsolatedStorageContainment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStorageContainment" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdministerIsolatedStorageByUser">
+      <MemberSignature Language="C#" Value="AdministerIsolatedStorageByUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AdministerIsolatedStorageByUser = int32(112)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIsolationByMachine">
+      <MemberSignature Language="C#" Value="ApplicationIsolationByMachine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment ApplicationIsolationByMachine = int32(69)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByMachine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIsolationByRoamingUser">
+      <MemberSignature Language="C#" Value="ApplicationIsolationByRoamingUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment ApplicationIsolationByRoamingUser = int32(101)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByRoamingUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIsolationByUser">
+      <MemberSignature Language="C#" Value="ApplicationIsolationByUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment ApplicationIsolationByUser = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyIsolationByMachine">
+      <MemberSignature Language="C#" Value="AssemblyIsolationByMachine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AssemblyIsolationByMachine = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByMachine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyIsolationByRoamingUser">
+      <MemberSignature Language="C#" Value="AssemblyIsolationByRoamingUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AssemblyIsolationByRoamingUser = int32(96)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByRoamingUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyIsolationByUser">
+      <MemberSignature Language="C#" Value="AssemblyIsolationByUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AssemblyIsolationByUser = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainIsolationByMachine">
+      <MemberSignature Language="C#" Value="DomainIsolationByMachine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment DomainIsolationByMachine = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByMachine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainIsolationByRoamingUser">
+      <MemberSignature Language="C#" Value="DomainIsolationByRoamingUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment DomainIsolationByRoamingUser = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByRoamingUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainIsolationByUser">
+      <MemberSignature Language="C#" Value="DomainIsolationByUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment DomainIsolationByUser = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnrestrictedIsolatedStorage">
+      <MemberSignature Language="C#" Value="UnrestrictedIsolatedStorage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment UnrestrictedIsolatedStorage = int32(240)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.UnrestrictedIsolatedStorage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

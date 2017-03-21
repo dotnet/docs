@@ -1,0 +1,112 @@
+<Type Name="DebuggableAttribute+DebuggingModes" FullName="System.Diagnostics.DebuggableAttribute+DebuggingModes">
+  <TypeSignature Language="C#" Value="public enum DebuggableAttribute.DebuggingModes" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed DebuggableAttribute/DebuggingModes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggableAttribute.DebuggingModes" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggableAttribute+DebuggingModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableOptimizations">
+      <MemberSignature Language="C#" Value="DisableOptimizations" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes DisableOptimizations = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggableAttribute+DebuggingModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableEditAndContinue">
+      <MemberSignature Language="C#" Value="EnableEditAndContinue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes EnableEditAndContinue = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggableAttribute+DebuggingModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreSymbolStoreSequencePoints">
+      <MemberSignature Language="C#" Value="IgnoreSymbolStoreSequencePoints" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes IgnoreSymbolStoreSequencePoints = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggableAttribute+DebuggingModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggableAttribute/DebuggingModes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggableAttribute.DebuggingModes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggableAttribute+DebuggingModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

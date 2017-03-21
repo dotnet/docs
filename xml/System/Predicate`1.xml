@@ -1,0 +1,29 @@
+<Type Name="Predicate&lt;T&gt;" FullName="System.Predicate&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate bool Predicate&lt;in T&gt;(T obj);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Predicate`1&lt;- T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Predicate`1" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="obj" Type="T" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <param name="obj">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

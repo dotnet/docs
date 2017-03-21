@@ -1,0 +1,214 @@
+<Type Name="HostProtectionResource" FullName="System.Security.Permissions.HostProtectionResource">
+  <TypeSignature Language="C#" Value="public enum HostProtectionResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed HostProtectionResource extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.HostProtectionResource" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource All = int32(511)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalProcessMgmt">
+      <MemberSignature Language="C#" Value="ExternalProcessMgmt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource ExternalProcessMgmt = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalThreading">
+      <MemberSignature Language="C#" Value="ExternalThreading" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource ExternalThreading = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.ExternalThreading" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MayLeakOnAbort">
+      <MemberSignature Language="C#" Value="MayLeakOnAbort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource MayLeakOnAbort = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityInfrastructure">
+      <MemberSignature Language="C#" Value="SecurityInfrastructure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SecurityInfrastructure = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SecurityInfrastructure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelfAffectingProcessMgmt">
+      <MemberSignature Language="C#" Value="SelfAffectingProcessMgmt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SelfAffectingProcessMgmt = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SelfAffectingProcessMgmt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelfAffectingThreading">
+      <MemberSignature Language="C#" Value="SelfAffectingThreading" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SelfAffectingThreading = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SelfAffectingThreading" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SharedState">
+      <MemberSignature Language="C#" Value="SharedState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource SharedState = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.SharedState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronization">
+      <MemberSignature Language="C#" Value="Synchronization" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource Synchronization = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.Synchronization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UI">
+      <MemberSignature Language="C#" Value="UI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.HostProtectionResource UI = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.HostProtectionResource.UI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.HostProtectionResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

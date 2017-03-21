@@ -1,0 +1,31 @@
+<Type Name="ObjectCreationDelegate" FullName="System.Runtime.InteropServices.ObjectCreationDelegate">
+  <TypeSignature Language="C#" Value="public delegate IntPtr ObjectCreationDelegate(IntPtr aggregator);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectCreationDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ObjectCreationDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="aggregator" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IntPtr</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="aggregator">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,27 @@
+<Type Name="ThreadStart" FullName="System.Threading.ThreadStart">
+  <TypeSignature Language="C#" Value="public delegate void ThreadStart();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadStart extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.ThreadStart" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

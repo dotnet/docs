@@ -127,7 +127,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  Add the following `using` directives at the top of the code file if they’re not already present.  
   
-    ```cs  
+    ```csharp  
     using System.Net.Http;  
     using System.Net;  
     using System.IO;  
@@ -140,7 +140,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  In MainWindow.xaml.cs, copy the following code into the body of `startButton_Click`:  
   
-    ```cs  
+    ```csharp  
     resultsTextBox.Clear();  
     SumPageSizes();  
     resultsTextBox.Text += "\r\nControl returned to startButton_Click.";  
@@ -160,7 +160,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      Copy the following four methods, and then paste them under the `startButton_Click` event handler in MainWindow.xaml.cs:  
   
-    ```cs  
+    ```csharp  
     private void SumPageSizes()  
     {  
         // Make a list of web addresses.  
@@ -278,7 +278,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      Change the method that's called in the third line of `GetURLContents` from `GetResponse` to the asynchronous, task-based <xref:System.Net.WebRequest.GetResponseAsync%2A> method.  
   
-    ```cs  
+    ```csharp  
     using (WebResponse response = webReq.GetResponseAsync())  
     ```  
   
@@ -321,7 +321,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     private async Task<byte[]> GetURLContentsAsync(string url)  
     ```  
   
@@ -338,13 +338,13 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     byte[] urlContents = await GetURLContentsAsync(url);  
     ```  
   
      The previous assignment abbreviates the following two lines of code.  
   
-    ```cs  
+    ```csharp  
     // GetURLContentsAsync returns a Task<T>. At completion, the task  
     // produces a byte array.  
     //Task<byte[]> getContentsTask = GetURLContentsAsync(url);  
@@ -361,7 +361,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     private async Task SumPageSizesAsync()  
     ```  
   
@@ -378,7 +378,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      As in previous procedures, you can convert the call by using one statement or two statements. The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     // One-step async call.  
     await SumPageSizesAsync();  
   
@@ -389,14 +389,14 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 3.  To prevent accidentally reentering the operation, add the following statement at the top of `startButton_Click` to disable the **Start** button.  
   
-    ```cs  
+    ```csharp  
     // Disable the button until the operation is complete.  
     startButton.IsEnabled = false;  
     ```  
   
      You can reenable the button at the end of the event handler.  
   
-    ```cs  
+    ```csharp  
     // Reenable the button in case you want to run the operation again.  
     startButton.IsEnabled = true;  
     ```  
@@ -405,7 +405,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 4.  Finally, add the `async` modifier to the declaration so that the event handler can await `SumPagSizesAsync`.  
   
-    ```cs  
+    ```csharp  
     private async void startButton_Click(object sender, RoutedEventArgs e)  
     ```  
   
@@ -431,7 +431,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The first step is to create an `HttpClient` object in method `SumPageSizesAsync`. Add the following declaration at the start of the method.  
   
-    ```cs  
+    ```csharp  
     // Declare an HttpClient object and increase the buffer size. The  
     // default buffer size is 65,536.  
     HttpClient client =  
@@ -453,7 +453,7 @@ You can write asynchronous programs more easily and intuitively by using feature
 ##  <a name="BKMK_CompleteCodeExamples"></a> Example  
  The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous `GetURLContentsAsync` method that you wrote. Notice that it strongly resembles the original, synchronous solution.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -602,7 +602,7 @@ namespace AsyncExampleWPF
   
  The following code contains the full example of the solution that uses the `HttpClient` method, `GetByteArrayAsync`.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

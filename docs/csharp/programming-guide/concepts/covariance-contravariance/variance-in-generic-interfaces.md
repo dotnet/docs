@@ -54,7 +54,7 @@ translation.priority.mt:
 <CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  It is also important to remember that classes that implement variant interfaces are still invariant. For example, although <xref:System.Collections.Generic.List%601> implements the covariant interface <xref:System.Collections.Generic.IEnumerable%601>, you cannot implicitly convert `List<Object>` to `List<String>`. This is illustrated in the following code example.  
   
-```cs  
+```csharp  
 // The following line generates a compiler error  
 // because classes are invariant.  
 // List<Object> list = new List<String>();  

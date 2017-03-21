@@ -40,7 +40,7 @@ Checks if an object is compatible with a given type, or (starting with C# 7) tes
 
 The `is` keyword evaluates type compatibility at runtime. It determines whether an object instance or the result of an expression can be converted to a specified type. It has the syntax
 
-```cs
+```csharp
    expr is type
 ```
 
@@ -87,7 +87,7 @@ Starting with C# 7, the `is` and [switch](../../../csharp/language-reference/key
 
 When using the type pattern to perform pattern matching, `is` tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type. It is a straightforward extension of the `is` statement that enables concise type evaluation and conversion. The general form of the `is` type pattern is:
 
-```cs
+```csharp
    expr is type varname 
 ```
 
@@ -125,7 +125,7 @@ The equivalent code without pattern matching requires a separate assignment that
 
 When performing pattern matching with the constant pattern, `is` tests whether an expression equals a specified constant. In C# 6 and earlier versions, the constant pattern is supported by the [switch](switch.md) statement. Starting with C# 7, it is supported by the `is` statement as well. Its syntax is:
 
-```cs
+```csharp
    expr is constant
 ```
 
@@ -151,7 +151,7 @@ The following example combines the type and constant patterns to test whether an
 
 A pattern match with the var pattern always succeeds. Its syntax is
 
-```cs 
+```csharp 
    expr is var varname
 ```
 

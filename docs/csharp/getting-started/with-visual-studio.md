@@ -40,7 +40,7 @@ Let's begin by creating a simple "Hello World" console application. Here are the
 
 4. Let's have our existing application pause before it closes the console window. Add the following code immediately after the call to the @System.Console.WriteLine(System.String) method:
 
-   ```cs
+   ```csharp
    Console.Write("Press any key to continue...");
    Console.ReadKey(true);
    ```

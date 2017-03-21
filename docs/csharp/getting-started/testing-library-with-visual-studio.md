@@ -96,7 +96,7 @@ Our test run had no failures, so let's change it slightly so that one of the tes
 
 1. Modify the `words` array in the `TestDoesNotStartWithUpper` method to include the string "Error", so that the statement reads as follows:
 
-   ```cs
+   ```csharp
    string[] words = { "alphabet", "Error", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
                       "1234", ".", ";", " " };
    ```

@@ -25,7 +25,7 @@ of values.
 You access an indexer through a variable name and square brackets . You place the indexer
 arguments inside the brackets:
 
-```cs
+```csharp
 var item = someObject["key"];
 someObject["AnotherKey"] = item;
 ```
@@ -34,7 +34,7 @@ You declare indexers using the `this` keyword as the property name, and
 declaring the arguments within square brackets. This declaration would match
 the usage shown in the previous paragraph:
 
-```cs
+```csharp
 public int this[string key]
 {
     get { return storage.Find(key); }
@@ -94,7 +94,7 @@ this behavior. It reports on how many data points exist. It creates
 pages to hold sections of the data on demand. It removes pages
 from memory to make room for pages needed by more recent requests.
 
-```cs
+```csharp
 public class DataSamples
 {
     private class Page
@@ -230,7 +230,7 @@ class that maps a command line option to an `Action` delegate, and an
 `ArgsProcessor` that uses the `ArgsActions` to execute each `Action` when
 it encounters that option.
 
-```cs
+```csharp
 public class ArgsProcessor
 {
     private readonly ArgsActions actions;
@@ -292,7 +292,7 @@ is in the set, and the class's maxIterations value is returned. (The computer
 generated images popularized for the Mandelbrot set define colors for the
 number of iterations necessary to determine that a point is outside the set.
 
-```cs
+```csharp
 public class Mandelbrot
 {
     readonly private int maxIterations;
@@ -334,7 +334,7 @@ of different types. Consider a program that manages historical temperature
 data. This indexer uses a city and a date to set or get the high and low 
 temperatures for that location:
 
-```cs
+```csharp
 using DateMeasurements = 
     System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
 using CityDataMeasurements = 
@@ -389,7 +389,7 @@ the underlying storage must use different core collection types.
 There are two parts of this code that may be unfamiliar
 to some developers. These two `using` statements:
 
-```cs
+```csharp
 using DateMeasurements = System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
 using CityDataMeasurements = System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>>;
 ```

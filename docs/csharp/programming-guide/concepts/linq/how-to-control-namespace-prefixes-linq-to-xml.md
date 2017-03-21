@@ -40,7 +40,7 @@ This topic describes how you can control namespace prefixes when serializing an 
 ## Example  
  This example declares two namespaces. It specifies that the `http://www.adventure-works.com` namespace has the prefix of `aw`, and that the `www.fourthcoffee.com` namespace has the prefix of `fc`.  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XNamespace fc = "www.fourthcoffee.com";  
 XElement root = new XElement(aw + "Root",  

@@ -47,7 +47,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 2. Open the `Program.cs` file in an editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-    ```cs
+    ```csharp
     using System;
     using System.Text.RegularExpressions;
 
@@ -142,7 +142,7 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
 2. Open the `Program.cs` file in an editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-    ```cs
+    ```csharp
     using System;
     using System.Text.RegularExpressions;
 

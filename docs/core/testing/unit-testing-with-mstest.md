@@ -40,7 +40,7 @@ project.
 Rename *Class1.cs* as *PrimeService.cs*. To use test-driven development (TDD), you'll create a failing implementation of the
 `PrimeService` class:
 
-```cs
+```csharp
 using System;
 
 namespace Prime.Services
@@ -112,7 +112,7 @@ then repeating the process. So, let's write that one failing test. Remove
 *UnitTest1.cs* from the *PrimeService.Tests* directory, and create a new
 C# file named *PrimeService_IsPrimeShould.cs* with the following content:
 
-```cs
+```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Prime.Services;
 
@@ -155,7 +155,7 @@ test runner indicating the assembly that contains your tests.
 Your test fails. You haven't created the implementation yet.
 Write the simplest code to make this one test pass:
 
-```cs
+```csharp
 public bool IsPrime(int candidate) 
 {
     if(candidate == 1) 
@@ -192,7 +192,7 @@ Run `dotnet test` and you'll see that two of these tests fail.
 You can make them pass by changing the service. You need to change
 the `if` clause at the beginning of the method:
 
-```cs
+```csharp
 if(candidate < 2)
 ```
 

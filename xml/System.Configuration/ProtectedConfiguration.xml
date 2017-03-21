@@ -1,8 +1,10 @@
 <Type Name="ProtectedConfiguration" FullName="System.Configuration.ProtectedConfiguration">
   <TypeSignature Language="C#" Value="public static class ProtectedConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProtectedConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,90 +12,179 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to the protected-configuration providers for the current application's configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ProtectedConfiguration class allows you to obtain information about the providers available to protect sensitive configuration data. You typically use the standard providers, but you can also create custom providers by deriving from the <xref:System.Configuration.ProtectedConfigurationProvider> class.  
+  
+ For more information about protected configuration, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the ProtectedConfiguration class to retrieve a collection of protected-configuration providers and discover their provider name, RSA provider name, and section names.  
+  
+ [!code-cs[System.Configuration.ProtectedConfiguration#1](~/add/codesnippet/csharp/t-system.configuration.p_4_1.cs)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#1](~/add/codesnippet/visualbasic/t-system.configuration.p_4_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataProtectionProviderName">
       <MemberSignature Language="C#" Value="public const string DataProtectionProviderName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DataProtectionProviderName" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.DataProtectionProviderName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The name of the data protection provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This a constant string variable that contains the name of the data-protection provider made available by the system to protect a configuration section.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the DataProtectionProviderName property to retrieve the name of the current data-protection provider.  
+  
+ [!code-cs[System.Configuration.ProtectedConfiguration#4](~/add/codesnippet/csharp/f-system.configuration.p_2_1.cs)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#4](~/add/codesnippet/visualbasic/f-system.configuration.p_2_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProvider">
       <MemberSignature Language="C#" Value="public static string DefaultProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DefaultProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfiguration.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the default protected-configuration provider.</summary>
+        <value>The name of the default protected-configuration provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default provider is identified by the `defaultProvider` attribute of the `<configProtectedData>` configuration-file element. The value must correspond to the name of one of the providers added in the `<providers>` subsection of the `<configProtectedData>` section. The `<configProtectedData>` section can also be accessed through an instance of the <xref:System.Configuration.ProtectedConfigurationSection> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectedDataSectionName">
       <MemberSignature Language="C#" Value="public const string ProtectedDataSectionName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ProtectedDataSectionName" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.ProtectedDataSectionName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The name of the protected data section.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a constant string variable that contains the name of the protected data section.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the ProtectedDataSectionName property to retrieve the name of a protected data section.  
+  
+ [!code-cs[System.Configuration.ProtectedConfiguration#6](~/add/codesnippet/csharp/f-system.configuration.p_0_1.cs)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#6](~/add/codesnippet/visualbasic/f-system.configuration.p_0_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Providers">
       <MemberSignature Language="C#" Value="public static System.Configuration.ProtectedConfigurationProviderCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Configuration.ProtectedConfigurationProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfiguration.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ProtectedConfigurationProviderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the installed protected-configuration providers.</summary>
+        <value>A <see cref="T:System.Configuration.ProtectedConfigurationProviderCollection" /> collection of installed <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the Providers property to retrieve the collection of installed <xref:System.Configuration.ProtectedConfigurationProvider> objects.  
+  
+ [!code-cs[System.Configuration.ProtectedConfiguration#3](~/add/codesnippet/csharp/p-system.configuration.p_16_1.cs)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#3](~/add/codesnippet/visualbasic/p-system.configuration.p_16_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RsaProviderName">
       <MemberSignature Language="C#" Value="public const string RsaProviderName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string RsaProviderName" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.RsaProviderName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The name of the RSA provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This a constant string variable that contains the name of the RSA provider made available by the system to protect a configuration section.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the RsaProviderName property to retrieve the name of the current RSA provider.  
+  
+ [!code-cs[System.Configuration.ProtectedConfiguration#5](~/add/codesnippet/csharp/f-system.configuration.p_1_1.cs)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#5](~/add/codesnippet/visualbasic/f-system.configuration.p_1_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

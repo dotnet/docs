@@ -1,0 +1,1 @@
+        Dim xmlTransform As New XmlDsigBase64Transform

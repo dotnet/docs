@@ -1,0 +1,1 @@
+bufferModeSetting.MaxBufferSize = 128

@@ -1,6 +1,7 @@
 <Type Name="StringLocalizerProviders" FullName="System.Web.Globalization.StringLocalizerProviders">
   <TypeSignature Language="C#" Value="public static class StringLocalizerProviders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringLocalizerProviders extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Globalization.StringLocalizerProviders" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages string localizer providers for globalization.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DataAnnotationStringLocalizerProvider">
       <MemberSignature Language="C#" Value="public static System.Web.Globalization.IStringLocalizerProvider DataAnnotationStringLocalizerProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.Globalization.IStringLocalizerProvider DataAnnotationStringLocalizerProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Globalization.StringLocalizerProviders.DataAnnotationStringLocalizerProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -26,8 +28,8 @@
         <ReturnType>System.Web.Globalization.IStringLocalizerProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the the string localizer provider for globalization.</summary>
+        <value>An interface for the string localizer provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

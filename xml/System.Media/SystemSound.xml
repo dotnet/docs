@@ -1,8 +1,10 @@
 <Type Name="SystemSound" FullName="System.Media.SystemSound">
   <TypeSignature Language="C#" Value="public class SystemSound" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SystemSound extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Media.SystemSound" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a system sound type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Media.SystemSounds.Asterisk%2A> property.  
+  
+ [!code-cs[SystemSoundsExample#1](~/add/codesnippet/csharp/t-system.media.systemsound_1.cs)]
+ [!code-vb[SystemSoundsExample#1](~/add/codesnippet/visualbasic/t-system.media.systemsound_1.vb)]
+ [!code-cpp[SystemSoundsExample#1](~/add/codesnippet/cpp/t-system.media.systemsound_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Play">
       <MemberSignature Language="C#" Value="public void Play ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Play() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Media.SystemSound.Play" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -27,8 +42,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Plays the system sound type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Play method plays the sound asynchronously.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Media.SystemSounds.Asterisk%2A> property.  
+  
+ [!code-cs[SystemSoundsExample#1](~/add/codesnippet/csharp/m-system.media.systemsou_1.cs)]
+ [!code-vb[SystemSoundsExample#1](~/add/codesnippet/visualbasic/m-system.media.systemsou_1.vb)]
+ [!code-cpp[SystemSoundsExample#1](~/add/codesnippet/cpp/m-system.media.systemsou_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

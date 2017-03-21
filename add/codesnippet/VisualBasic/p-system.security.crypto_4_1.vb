@@ -1,0 +1,1 @@
+        Dim skipKeySize As Integer = firstKeySize.SkipSize

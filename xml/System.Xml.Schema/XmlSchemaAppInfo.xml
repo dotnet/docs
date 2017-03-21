@@ -1,52 +1,66 @@
 <Type Name="XmlSchemaAppInfo" FullName="System.Xml.Schema.XmlSchemaAppInfo">
   <TypeSignature Language="C#" Value="public class XmlSchemaAppInfo : System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaAppInfo extends System.Xml.Schema.XmlSchemaObject" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAppInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.Schema.XmlSchemaObject</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the World Wide Web Consortium (W3C) <see langword="appinfo" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `appinfo` element defines application-specific information within an annotation  
+  
+   
+  
+## Examples  
+ The following example creates an `appinfo` element.  
+  
+ [!code-cpp[Classic WebData XmlSchemaAppInfo Example#1](~/add/codesnippet/cpp/t-system.xml.schema.xmls_20_1.cpp)]
+ [!code-cs[Classic WebData XmlSchemaAppInfo Example#1](~/add/codesnippet/csharp/t-system.xml.schema.xmls_20_1.cs)]
+ [!code-vb[Classic WebData XmlSchemaAppInfo Example#1](~/add/codesnippet/visualbasic/t-system.xml.schema.xmls_20_1.vb)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaAppInfo Example#2](~/add/codesnippet/xml/t-system.xml.schema.xmls_20_2.xml)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlSchemaAppInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaAppInfo.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaAppInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Markup">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode[] Markup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode[] Markup" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAppInfo.Markup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -60,30 +74,42 @@
         <ReturnType>System.Xml.XmlNode[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an array of <see cref="T:System.Xml.XmlNode" /> objects that represents the <see langword="appinfo" /> child nodes.</summary>
+        <value>An array of <see cref="T:System.Xml.XmlNode" /> objects that represents the <see langword="appinfo" /> child nodes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Source">
       <MemberSignature Language="C#" Value="public string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAppInfo.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("source", DataType="anyURI")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the source of the application information.</summary>
+        <value>A Uniform Resource Identifier (URI) reference. The default is <see langword="String.Empty" />.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The source must be a URI reference. Optional.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

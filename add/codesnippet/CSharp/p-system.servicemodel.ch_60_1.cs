@@ -1,0 +1,1 @@
+            AddressingVersion addrVersion = msgVersion.Addressing;

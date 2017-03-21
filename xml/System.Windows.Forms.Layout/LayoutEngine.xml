@@ -1,8 +1,10 @@
 <Type Name="LayoutEngine" FullName="System.Windows.Forms.Layout.LayoutEngine">
   <TypeSignature Language="C#" Value="public abstract class LayoutEngine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LayoutEngine extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Layout.LayoutEngine" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,50 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the base class for implementing layout engines.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the LayoutEngine class when you want to create custom layout behavior at run time. Derive your own class from the LayoutEngine class and override the <xref:System.Windows.Forms.Layout.LayoutEngine.Layout%2A> method to define your custom layout behavior.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the LayoutEngine class to implement custom layout behavior.  
+  
+ [!code-cpp[System.Windows.Forms.Layout.LayoutEngine#1](~/add/codesnippet/cpp/t-system.windows.forms.l_19_1.cpp)]
+ [!code-cs[System.Windows.Forms.Layout.LayoutEngine#1](~/add/codesnippet/csharp/t-system.windows.forms.l_19_1.cs)]
+ [!code-vb[System.Windows.Forms.Layout.LayoutEngine#1](~/add/codesnippet/visualbasic/t-system.windows.forms.l_19_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected LayoutEngine ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Layout.LayoutEngine.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InitLayout">
       <MemberSignature Language="C#" Value="public virtual void InitLayout (object child, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitLayout(object child, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Layout.LayoutEngine.InitLayout(System.Object,System.Windows.Forms.BoundsSpecified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,18 +66,29 @@
         <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <param name="specified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="child">The container on which the layout engine will operate.</param>
+        <param name="specified">The bounds defining the container's size and position.</param>
+        <summary>Initializes the layout engine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Optionally provide initialization logic in the InitLayout method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="child" /> is not a type on which <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> can perform layout.</exception>
       </Docs>
     </Member>
     <Member MemberName="Layout">
       <MemberSignature Language="C#" Value="public virtual bool Layout (object container, System.Windows.Forms.LayoutEventArgs layoutEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Layout(object container, class System.Windows.Forms.LayoutEventArgs layoutEventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Layout.LayoutEngine.Layout(System.Object,System.Windows.Forms.LayoutEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,11 +99,30 @@
         <Parameter Name="layoutEventArgs" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="layoutEventArgs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="container">The container on which the layout engine will operate.</param>
+        <param name="layoutEventArgs">An event argument from a <see cref="E:System.Windows.Forms.Control.Layout" /> event.</param>
+        <summary>Requests that the layout engine perform a layout operation.</summary>
+        <returns>
+          <see langword="true" /> if layout should be performed again by the parent of <paramref name="container" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the layout engine is to perform a layout operation on the `container` parameter. You can check the value of the <xref:System.Windows.Forms.LayoutEventArgs.AffectedProperty%2A>, <xref:System.Windows.Forms.LayoutEventArgs.AffectedComponent%2A>, and <xref:System.Windows.Forms.LayoutEventArgs.AffectedControl%2A> properties on `layoutEventArgs` to decide if a layout operation is necessary.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the Layout method to implement custom layout behavior. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Layout.LayoutEngine> class.  
+  
+ [!code-cpp[System.Windows.Forms.Layout.LayoutEngine#4](~/add/codesnippet/cpp/3ccaf263-2cc7-4acd-9279-_1.cpp)]
+ [!code-cs[System.Windows.Forms.Layout.LayoutEngine#4](~/add/codesnippet/csharp/3ccaf263-2cc7-4acd-9279-_1.cs)]
+ [!code-vb[System.Windows.Forms.Layout.LayoutEngine#4](~/add/codesnippet/visualbasic/3ccaf263-2cc7-4acd-9279-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="container" /> is not a type on which <see cref="T:System.Windows.Forms.Layout.LayoutEngine" /> can perform layout.</exception>
       </Docs>
     </Member>
   </Members>

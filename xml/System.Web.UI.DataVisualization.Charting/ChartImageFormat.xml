@@ -1,6 +1,7 @@
 <Type Name="ChartImageFormat" FullName="System.Web.UI.DataVisualization.Charting.ChartImageFormat">
   <TypeSignature Language="C#" Value="public enum ChartImageFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartImageFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartImageFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,13 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the image type for the chart.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ChartImageFormat enumeration represents an image type that is used to save the chart to a file or stream.  
+  
+> [!NOTE]
+>  Only charts saved to disk can use the EmfDual and EmfPlus formats. Charts cannot be rendered on a Web page using EMF-dual or EMF+.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bmp">
       <MemberSignature Language="C#" Value="Bmp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat Bmp = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.Bmp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -25,12 +37,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A bitmap (BMP) image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Emf">
       <MemberSignature Language="C#" Value="Emf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat Emf = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.Emf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -40,12 +53,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Windows Enhanced Metafile (EMF) image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfDual">
       <MemberSignature Language="C#" Value="EmfDual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat EmfDual = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.EmfDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -55,12 +69,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Windows Enhanced Metafile Dual (EMF-dual) image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmfPlus">
       <MemberSignature Language="C#" Value="EmfPlus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat EmfPlus = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.EmfPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -70,12 +85,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Windows Enhanced Metafile Plus (EMF+) image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gif">
       <MemberSignature Language="C#" Value="Gif" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat Gif = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.Gif" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -85,12 +101,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A GIF image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Jpeg">
       <MemberSignature Language="C#" Value="Jpeg" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat Jpeg = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.Jpeg" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -100,12 +117,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A JPEG image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Png">
       <MemberSignature Language="C#" Value="Png" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat Png = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -115,12 +133,13 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A PNG image format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tiff">
       <MemberSignature Language="C#" Value="Tiff" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageFormat Tiff = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageFormat.Tiff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -130,7 +149,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A TIFF image format.</summary>
       </Docs>
     </Member>
   </Members>

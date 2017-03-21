@@ -1,0 +1,1 @@
+            TextSyndicationContent textContent2 = new TextSyndicationContent("Some text content", TextSyndicationContentKind.Plaintext);

@@ -1,0 +1,1 @@
+    customCryptoAlgorithm->Clear();

@@ -1,0 +1,1 @@
+        Dim windowsRoleElement As New SecurityElement("WindowsMembership.WindowsRole")

@@ -1,0 +1,766 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options" 
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="PresentationOptions"  
+  xmlns:customControls="clr-namespace:Microsoft.Samples.CustomControls">
+
+  <DrawingBrush 
+    x:Key="CheckerBrush"
+    Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+    <DrawingBrush.Drawing>
+      <DrawingGroup>
+        <GeometryDrawing Brush="White">
+          <GeometryDrawing.Geometry>
+            <RectangleGeometry Rect="0,0 100,100" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing Brush="LightGray">
+          <GeometryDrawing.Geometry>
+            <GeometryGroup>
+              <RectangleGeometry Rect="0,0 50,50" />
+              <RectangleGeometry Rect="50,50 50,50" />
+            </GeometryGroup>
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+      </DrawingGroup>
+    </DrawingBrush.Drawing>
+  </DrawingBrush>
+
+
+  <GeometryGroup x:Key="FancyColorMarkerGeometry">
+    <EllipseGeometry RadiusX="8" RadiusY="8"  />
+    <EllipseGeometry RadiusX="4" RadiusY="4"  />
+  </GeometryGroup>
+
+
+  <!-- Spectrum Slider -->
+  <Style x:Key="SliderRepeatButtonStyle"
+         TargetType="{x:Type RepeatButton}">
+    <Setter Property="OverridesDefaultStyle"
+            Value="true"/>
+    <Setter Property="IsTabStop"
+            Value="false"/>
+    <Setter Property="Focusable"
+            Value="false"/>
+    <Setter Property="Background"
+            Value="Transparent"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type RepeatButton}">
+          <Border Background="{TemplateBinding Background}"/>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style 
+     x:Key="{x:Type customControls:ColorThumb}" 
+     TargetType="{x:Type customControls:ColorThumb}">
+
+    <Setter Property="PointerOutlineBrush"
+      Value="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" />
+    <Setter Property="PointerOutlineThickness"
+      Value="2" />
+    <Setter Property="Foreground" Value="{x:Null}"/>
+    <Setter Property="ThumbColor" Value="Transparent" />
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="Height" Value="5"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type customControls:ColorThumb}">
+
+          <Border Background="{TemplateBinding Background}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}">
+            <Polygon
+              Name="arrow"
+              Points="100,20 80,50 100,80"
+              Stretch="Fill"
+              Stroke="{TemplateBinding PointerOutlineBrush}" 
+              StrokeThickness="{TemplateBinding PointerOutlineThickness}">
+              <Polygon.Fill>
+                <SolidColorBrush 
+                  Color="{Binding ThumbColor, RelativeSource={RelativeSource TemplatedParent}}"  />
+              </Polygon.Fill>
+            </Polygon>
+          </Border>
+
+          <ControlTemplate.Triggers>
+
+            <Trigger Property="IsDragging" Value="False">
+              <Setter Property="BitmapEffect" TargetName="arrow">
+                <Setter.Value>
+                  <BitmapEffectGroup>
+                    <BevelBitmapEffect BevelWidth="5" Relief="0.5"  />
+                    <DropShadowBitmapEffect />
+                  </BitmapEffectGroup>
+                </Setter.Value>
+              </Setter>
+            </Trigger>
+
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Foreground"
+                      Value="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+
+  <Style x:Key="VerticalSliderLeftThumbStyle"
+         TargetType="{x:Type Thumb}">
+    <Setter Property="Foreground"
+            Value="{x:Null}"/>
+    <Setter Property="Background"
+            Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+    <Setter Property="Width"
+            Value="21"/>
+    <Setter Property="Height"
+            Value="11"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Thumb}">
+          <Canvas>
+            <!-- Fill Background Area including base border -->
+            <Path Fill="{TemplateBinding Background}"
+                  Data="M 21 11 L 21 0 L 6 0 L 0 5 L 0 6 L 6 11 z"/>
+            <!-- TopTip/Top OuterLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 20 0.5 L 5.5 0.5 L 0.5 5 L 0.5 5.5 "/>
+            <!-- Right/Bottom/BottomTip OuterLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 0.5 5.5 L 0.5 6 L 5.5 10.5 L 20.5 10.5 L 20.5 0 "/>
+            <!-- TopTip/Top InnerLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 19 1.5 L 5.5 1.5 L 1.5 5 L 1.5 5.5 "/>
+            <!-- Right/Bottom/BottomTip InnerLine-->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 1.5 5.5 L 1.5 6 L 5.5 9.5 L 19.5 9.5 L 19.5 1.0 "/>
+            <!-- Fill Inner Area -->
+            <Path Fill="{TemplateBinding Foreground}"
+                  Opacity="0.5"
+                  Data="M 19 9 L 19 2 L 6 2 L 2 5.5 L 6 9 z"/>
+          </Canvas>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsDragging"
+                     Value="true">
+              <Setter Property="Foreground"
+                      Value="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled"
+                     Value="false">
+              <Setter Property="Foreground"
+                      Value="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="VerticalSliderRightThumbStyle"
+         TargetType="{x:Type Thumb}">
+    <Setter Property="BorderThickness"
+            Value="0,0,0,0"/>
+    <Setter Property="Foreground"
+            Value="{x:Null}"/>
+    <Setter Property="Background"
+            Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+    <Setter Property="Width"
+            Value="21"/>
+    <Setter Property="Height"
+            Value="11"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Thumb}">
+          <Canvas>
+            <!-- Fill Background Area including base border -->
+            <Path Fill="{TemplateBinding Background}"
+                  Data="M 0 11 L 0 0 L 15 0 L 21 5 L 21 6 L 15 11 z"/>
+            <!-- Left/Top/TopTip OuterLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 0.5 10 L 0.5 0.5 L 15.5 0.5 L 20.5 5 L 20.5 5.5 "/>
+            <!-- Bottom/BottomTip OuterLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 20.5 5.5 L 20.5 6 L 15.5 10.5 L 0 10.5 "/>
+            <!-- Left/Top/TopTip InnerLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 1.5 9 L 1.5 1.5 L 15.5 1.5 L 19.5 5 L 19.5 5.5 "/>
+            <!-- Bottom/BottomTip InnerLine -->
+            <Path Stroke="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+                  StrokeThickness="1.0"
+                  Data="M 19.5 5.5 L 19.5 6 L 15.5 9.5 L 1 9.5 "/>
+            <!-- Fill Inner Area -->
+            <Path Fill="{TemplateBinding Foreground}"
+                  Opacity="0.5"
+                  Data="M 2 9 L 2 2 L 15 2 L 19 5.5 L 15 9 "/>
+          </Canvas>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsDragging"
+                     Value="true">
+              <Setter Property="Foreground"
+                      Value="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled"
+                     Value="false">
+              <Setter Property="Foreground"
+                      Value="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+
+
+  <Style x:Key="{x:Type customControls:SpectrumSlider}"
+             TargetType="{x:Type customControls:SpectrumSlider}">
+
+    <Setter Property="Orientation"
+            Value="Vertical"/>
+    <Setter Property="Stylus.IsPressAndHoldEnabled"
+            Value="false"/>
+    <Setter Property="Background"
+            Value="Transparent"/>
+    <Setter Property="Foreground"
+            Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    <Setter Property="Minimum"
+            Value="0"/>
+    <Setter Property="Maximum" Value="100"/>
+    <Setter Property="TickFrequency"
+            Value="0.001" />
+    <Setter Property="IsSnapToTickEnabled"
+            Value="True" />
+    <Setter Property="IsDirectionReversed" Value="False" />
+    <Setter Property="Value" Value="1" />
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type customControls:SpectrumSlider}">
+          <Border Background="{TemplateBinding Background}"
+                  BorderBrush="{TemplateBinding BorderBrush}"
+                  BorderThickness="{TemplateBinding BorderThickness}"
+                  Height="{TemplateBinding Height}">
+            <Grid>
+
+
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"
+                  MinWidth="{TemplateBinding Slider.MinWidth}"/>
+                <ColumnDefinition Width="Auto"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+
+
+              <!--
+                                          #
+                                          # Slider Track Background
+                                          #
+                                          # Draw Track Background. Usually, the track image is smaller than the size of
+                                          # the channel. So, we need to put the background at center of the channel.
+                                          #
+                                      -->
+
+
+
+              <Border x:Name="PART_TrackBackground"
+                Grid.Column="1" Width="20" Margin="10,0,10,0">
+                <Rectangle x:Name="PART_SpectrumDisplay"
+                  Stretch="Fill" VerticalAlignment="Stretch" />
+                <Border.BitmapEffect>
+                  <BevelBitmapEffect BevelWidth="3"
+                    EdgeProfile="BulgedUp" Relief="0.3" />
+                </Border.BitmapEffect>
+              </Border>
+
+
+              <Canvas Grid.Column="1"
+                      HorizontalAlignment="Center"
+                      Width="4">
+                <!--
+                                              #
+                                              # SelectionRangeElement
+                                              #
+                                          -->
+                <Rectangle x:Name="PART_SelectionRange"
+                           Canvas.Left="1"
+                           Fill="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                           Width="2.0"
+                           Visibility="Hidden" />
+
+              </Canvas>
+              <!--
+                                              #
+                                              # MainPartsPanel
+                                              # ==============
+                                              #   This is a panel that hold 2 transparent RepeatButtons and Thumb.
+                                              #   This part usually lay on top of the Track background.
+                                          -->
+              <Track Grid.Column="1" Name="PART_Track">
+                <Track.DecreaseRepeatButton>
+                  <RepeatButton Style="{StaticResource SliderRepeatButtonStyle}"
+                                Command="Slider.DecreaseLarge"/>
+                </Track.DecreaseRepeatButton>
+                <Track.IncreaseRepeatButton>
+                  <RepeatButton Style="{StaticResource SliderRepeatButtonStyle}"
+                                Command="Slider.IncreaseLarge"/>
+                </Track.IncreaseRepeatButton>
+                <Track.Thumb>
+                  <customControls:ColorThumb 
+                         x:Name="Thumb"
+                         Height="20"
+                         ThumbColor="{Binding SelectedColor, RelativeSource={RelativeSource TemplatedParent}}" />
+                </Track.Thumb>
+              </Track>
+
+
+            </Grid>
+          </Border>
+          
+          <ControlTemplate.Triggers>
+            <!-- Display SelectionRange background -->
+            <Trigger Property="IsSelectionRangeEnabled"
+                     Value="true">
+              <Setter TargetName="PART_SelectionRange"
+                      Property="Visibility"
+                      Value="Visible"/>
+            </Trigger>
+            <Trigger Property="Width"
+                     Value="Auto">
+              <Setter Property="MinWidth"
+                      Value="21"/>
+            </Trigger>
+            <Trigger Property="Height"
+                     Value="Auto">
+              <Setter Property="MinHeight"
+                      Value="104"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+
+  </Style>
+  <!-- End Spectrum Slider -->
+
+
+
+  <!-- Start ColorPicker -->
+
+  <Style x:Key="{x:Type customControls:ColorPicker}"
+         TargetType="{x:Type customControls:ColorPicker}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type customControls:ColorPicker}">
+
+          <Border 
+            Height="{TemplateBinding Height}"
+            Width="{TemplateBinding Width}"
+            Background="{TemplateBinding Background}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}">
+
+            <Grid Margin="{TemplateBinding Padding}">
+
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+              </Grid.RowDefinitions>
+
+              <Border Grid.Row="1" Grid.Column="0" 
+                Background="{StaticResource CheckerBrush}"
+                BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" 
+                BorderThickness="2">
+                <Grid>
+                  <Rectangle Name="PART_ColorDetail" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch"
+                    Cursor="Cross">
+                    <Rectangle.Fill>
+                      <DrawingBrush 
+                        Opacity="{Binding ElementName=opacitySlider,Path=Value}">
+                        <DrawingBrush.Drawing>
+                          <DrawingGroup>
+                            <GeometryDrawing>
+                              <GeometryDrawing.Geometry>
+                                <RectangleGeometry Rect="0,0,100,100" />
+                              </GeometryDrawing.Geometry>
+                              <GeometryDrawing.Brush>
+                                <SolidColorBrush 
+                                  Color="{Binding ElementName=PART_ColorSlider,Path=SelectedColor}" />
+                              </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                            <GeometryDrawing>
+                              <GeometryDrawing.Geometry>
+                                <RectangleGeometry Rect="0,0,100,100" />
+                              </GeometryDrawing.Geometry>
+                              <GeometryDrawing.Brush>
+                                <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+                                  <GradientStop Offset="0.0" Color="Black" />
+                                  <GradientStop Offset="1.0" 
+                                   Color="{Binding ElementName=PART_ColorSlider,Path=SelectedColor}" />
+                                </LinearGradientBrush>
+                              </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                            <DrawingGroup PresentationOptions:Freeze="True">
+                              <GeometryDrawing>
+                                <GeometryDrawing.Geometry>
+                                  <RectangleGeometry Rect="0,0,100,100" />
+                                </GeometryDrawing.Geometry>
+                                <GeometryDrawing.Brush>
+                                  <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                    <GradientStop Offset="0.0" Color="White" />
+                                    <GradientStop Offset="1" Color="Black" />
+                                  </LinearGradientBrush>
+                                </GeometryDrawing.Brush>
+                              </GeometryDrawing>   
+                              <DrawingGroup.OpacityMask>
+                                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                  <GradientStop Offset="0.0" Color="#FF000000" />
+                                  <GradientStop Offset="1" Color="#00000000" />
+                                </LinearGradientBrush>
+                              </DrawingGroup.OpacityMask>
+                            </DrawingGroup>
+                          </DrawingGroup>
+                        </DrawingBrush.Drawing>
+                      </DrawingBrush>
+                    </Rectangle.Fill>
+                  </Rectangle>
+
+                  <Path 
+                    Name="PART_ColorMarker" 
+                    StrokeThickness="2"
+                    Cursor="Cross">
+                    <Path.Data>
+                      <EllipseGeometry RadiusX="7" RadiusY="7"  />
+                    </Path.Data>
+                    <Path.Stroke>
+                      <SolidColorBrush 
+                        x:Name="markerBrush"
+                        Color="White" />
+                    </Path.Stroke>         
+                    <Path.Fill>
+                      <SolidColorBrush 
+                        Color="{Binding SelectedColor, RelativeSource={RelativeSource TemplatedParent}}" />
+                    </Path.Fill>
+                  </Path>
+                  
+                </Grid>
+              </Border>
+
+              <customControls:SpectrumSlider 
+                x:Name="PART_ColorSlider"
+                Grid.Column="1" Grid.Row="1"
+                Value="0"
+                Margin="5,0,0,0"
+                IsMoveToPointEnabled="True"
+                IsSnapToTickEnabled="False"
+                Maximum="360" />
+
+
+              <Grid Grid.Column="2" Grid.Row="1"
+                Margin="5,0,5,0">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+                <Grid    Grid.Row="0"
+                  Grid.ColumnSpan="3">
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                  </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0"><Bold>Selected Color</Bold></TextBlock>
+                <Border
+                  Grid.Row="1"
+                  BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"
+                  BorderThickness="2"
+                  Background="{StaticResource CheckerBrush}"
+                  Margin="0,0,0,5">
+                  <Rectangle Margin="5" 
+                    RadiusX="5" RadiusY="5"
+                    Stroke="Black"
+                    Stretch="Fill"
+                    HorizontalAlignment="Stretch"
+                    MinWidth="50" MinHeight="50"
+                    VerticalAlignment="Stretch">
+                    <Rectangle.Fill>
+                      <SolidColorBrush 
+                        Color="{Binding SelectedColor, RelativeSource={RelativeSource TemplatedParent}}" />
+                    </Rectangle.Fill>
+                  </Rectangle>
+                </Border>
+
+                <TextBlock Grid.Row="2"><Bold>Opacity</Bold></TextBlock>
+                <Border BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"
+                  BorderThickness="2,2,2,2"
+                  Background="{StaticResource CheckerBrush}"
+                  VerticalAlignment="Top"
+                  Grid.Row="3"
+                  Margin="0,2,0,5">
+
+                  <Slider
+                    x:Name="opacitySlider"
+                    Orientation="Horizontal"
+                    Minimum="0" Maximum="1"
+                    TickFrequency="0.01" 
+                    SmallChange="0.01"
+                    LargeChange="0.02"
+                    IsDirectionReversed="True"
+                    Value="{Binding ScA, RelativeSource={RelativeSource TemplatedParent}}"> 
+                    <Slider.Background>
+                      <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Offset="0.0" Color="Black" />
+                        <GradientStop Offset="1.0" Color="Transparent" />
+                      </LinearGradientBrush>
+                    </Slider.Background>
+
+                  </Slider>
+
+                </Border>                
+                
+
+                
+                </Grid>
+
+                <Grid Margin="2,2,7,2" Grid.Column="0" Grid.Row="1">
+
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                  </Grid.RowDefinitions>
+                  <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">
+                    <Bold>ScRGB</Bold>
+                  </Label>
+                  <Label Grid.Column="0" Grid.Row="1"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">ScA</Label>
+                  <TextBox
+                     Grid.Column="1" Grid.Row="1"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"
+                     Text="{Binding ScA, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
+                       />
+                  <Label Grid.Column="0" Grid.Row="2"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">ScR</Label>
+                  <TextBox 
+                     Grid.Column="1" Grid.Row="2"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                         
+                     Text="{Binding ScR, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                  <Label Grid.Column="0" Grid.Row="3"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">ScG</Label>
+                  <TextBox 
+                     Grid.Column="1" Grid.Row="3"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                         
+                     Text="{Binding ScG, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                  <Label Grid.Column="0" Grid.Row="4"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">ScB</Label>
+                  <TextBox 
+                     Grid.Column="1" Grid.Row="4"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                         
+                     Text="{Binding ScB, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+
+                </Grid>
+
+                <Grid Grid.Column="2" Grid.Row="1" Margin="2">
+
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                  </Grid.RowDefinitions>
+                  <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">
+                    <Bold>sRGB</Bold>
+                  </Label>
+                  <Label Grid.Column="0" Grid.Row="1"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">A</Label>
+                  <TextBox
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                      
+                     Grid.Column="1" Grid.Row="1"
+                     Text="{Binding A, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                  <Label Grid.Column="0" Grid.Row="2"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">R</Label>
+                  <TextBox 
+                     Grid.Column="1" Grid.Row="2"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                         
+                     Text="{Binding R, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                  <Label Grid.Column="0" Grid.Row="3"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">G</Label>
+                  <TextBox 
+                     Grid.Column="1" Grid.Row="3"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                         
+                     Text="{Binding G, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                  <Label Grid.Column="0" Grid.Row="4"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">B</Label>
+                  <TextBox 
+                     Grid.Column="1" Grid.Row="4"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}"                         
+                     Text="{Binding B, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                </Grid>
+
+                <Grid Margin="2,7,0,0"
+                  Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2">
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Label Grid.Column="0" Grid.Row="0"
+                     FontFamily="{TemplateBinding FontFamily}"
+                     FontSize="{TemplateBinding FontSize}"
+                     Foreground="{TemplateBinding Foreground}">
+                    <Bold>Hexadecimal Notation</Bold>
+                  </Label>
+
+                  <TextBox Grid.Column="1" Grid.Row="1"
+                    FontFamily="{TemplateBinding FontFamily}"
+                    FontSize="{TemplateBinding FontSize}"
+                    Foreground="{TemplateBinding Foreground}"                     
+                    Text="{Binding HexadecimalString, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+
+                </Grid>
+              </Grid>
+
+            </Grid>
+
+            
+          </Border>
+
+
+          <ControlTemplate.Triggers>
+
+
+
+            <Trigger SourceName="PART_ColorMarker" Property="IsMouseOver" Value="False">
+              
+              <Setter TargetName="PART_ColorMarker" Property="StrokeDashArray" Value="2,1" />             
+              
+              <Setter TargetName="PART_ColorMarker" Property="Data" Value="{StaticResource FancyColorMarkerGeometry}">
+              </Setter>
+              <Setter TargetName="PART_ColorMarker" Property="BitmapEffect">
+                <Setter.Value>
+                  <BitmapEffectGroup>
+                    <BevelBitmapEffect />
+                    <DropShadowBitmapEffect />
+                  </BitmapEffectGroup>
+                </Setter.Value>
+              </Setter>
+            
+            </Trigger>
+
+
+            <EventTrigger SourceName="PART_ColorMarker" RoutedEvent="Path.Loaded">
+              <BeginStoryboard Name="markerBeginStoryboard">
+                <Storyboard>
+                  <DoubleAnimation 
+                    Storyboard.TargetName="PART_ColorMarker"
+                    Storyboard.TargetProperty="StrokeDashOffset"
+                    From="0" To="3" RepeatBehavior="Forever" />
+                  <ColorAnimation 
+                    Storyboard.TargetName="markerBrush"
+                    Storyboard.TargetProperty="Color"
+                     From="White" To="Black" 
+                     Duration="0:0:1" AutoReverse="True"
+                     RepeatBehavior="Forever" />
+                </Storyboard>
+              </BeginStoryboard>
+            </EventTrigger>
+
+            <EventTrigger SourceName="PART_ColorMarker" RoutedEvent="Path.Unloaded">
+              <RemoveStoryboard BeginStoryboardName="markerBeginStoryboard" />
+            </EventTrigger>
+
+
+          </ControlTemplate.Triggers>
+
+
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+
+
+  <!-- End ColorPicker -->
+</ResourceDictionary>

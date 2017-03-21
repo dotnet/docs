@@ -1,0 +1,1 @@
+        Console.WriteLine("MaximumFileSize =  " + CType(ts.Listeners("eventListener"), EventSchemaTraceListener).MaximumFileSize.ToString())

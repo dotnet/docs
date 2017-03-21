@@ -1,0 +1,1 @@
+            ts.TraceEvent(TraceEventType.Warning, 1)

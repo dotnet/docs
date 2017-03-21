@@ -1,0 +1,1 @@
+			Dim replayWindow As TimeSpan = settings.ReplayWindow

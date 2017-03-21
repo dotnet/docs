@@ -1,6 +1,7 @@
 <Type Name="ModelErrorCollection" FullName="System.Web.ModelBinding.ModelErrorCollection">
   <TypeSignature Language="C#" Value="public class ModelErrorCollection : System.Collections.ObjectModel.Collection&lt;System.Web.ModelBinding.ModelError&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ModelErrorCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.ModelBinding.ModelError&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelErrorCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,13 +14,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container for model validation errors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ModelErrorCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelErrorCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -27,13 +29,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelErrorCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelErrorCollection.Add(System.Exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,14 +49,15 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The exception.</param>
+        <summary>Adds a validation error to the collection using the specified exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelErrorCollection.Add(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,8 +70,8 @@
         <Parameter Name="errorMessage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorMessage">The error message string.</param>
+        <summary>Adds a validation error to the collection using the specified error message string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

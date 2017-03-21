@@ -1,6 +1,7 @@
 <Type Name="KeyType" FullName="System.IdentityModel.Metadata.KeyType">
   <TypeSignature Language="C#" Value="public enum KeyType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.KeyType" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,13 +10,14 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the key types for the <see cref="System.IdentityModel.Metadata.KeyDescriptor.Use%2A" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Encryption">
       <MemberSignature Language="C#" Value="Encryption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.KeyType Encryption = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.KeyType.Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -25,12 +27,13 @@
         <ReturnType>System.IdentityModel.Metadata.KeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key is used for encryption.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signing">
       <MemberSignature Language="C#" Value="Signing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.KeyType Signing = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.KeyType.Signing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -40,12 +43,13 @@
         <ReturnType>System.IdentityModel.Metadata.KeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key is used for signing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.KeyType Unspecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.KeyType.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,7 +59,7 @@
         <ReturnType>System.IdentityModel.Metadata.KeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key type is not specified.</summary>
       </Docs>
     </Member>
   </Members>

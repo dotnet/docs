@@ -1,8 +1,10 @@
 <Type Name="MetadataTypeAttribute" FullName="System.ComponentModel.DataAnnotations.MetadataTypeAttribute">
   <TypeSignature Language="C#" Value="public sealed class MetadataTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataTypeAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.MetadataTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,41 +17,90 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the metadata class to associate with a data model class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The MetadataTypeAttribute attribute enables you to associate a class with a data-model partial class. In this associated class you provide additional metadata information that is not in the data model.  
+  
+ For example, in the associated class you can apply the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute to a data field. This enforces that a value is provided for the field even if this constraint is not required by the database schema.  
+  
+ You use the MetadataTypeAttribute attribute as follows:  
+  
+-   In your application, create a file in which you create the data-model partial class that you want to modify.  
+  
+-   Create the associated metadata class.  
+  
+-   Apply the MetadataTypeAttribute attribute to the partial entity class, specifying the associated class.  
+  
+ When you apply this attribute, you must adhere to the following usage constraints:  
+  
+-   The attribute can only be applied to a class.  
+  
+-   The attribute cannot be inherited by derived classes.  
+  
+-   The attribute can be applied only one time.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the MetadataTypeAttribute to associate a metadata class with an entity partial class. The example applies the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute to a data field to show how to provide additional information in the associated metadata class.  
+  
+ [!code-vb[System.ComponentModel.DataAnnotations.MetadataTypeAttribute#1](~/add/codesnippet/visualbasic/t-system.componentmodel._22_1.vb)]
+ [!code-cs[System.ComponentModel.DataAnnotations.MetadataTypeAttribute#1](~/add/codesnippet/csharp/t-system.componentmodel._22_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MetadataTypeAttribute (Type metadataClassType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type metadataClassType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.MetadataTypeAttribute.#ctor(System.Type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="metadataClassType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="metadataClassType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="metadataClassType">The metadata class to reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.MetadataTypeAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.ComponentModel.DataAnnotations.MetadataTypeAttribute> to associate a metadata class with an entity partial class.  
+  
+ [!code-vb[System.ComponentModel.DataAnnotations.MetadataTypeAttribute#2](~/add/codesnippet/visualbasic/23a2b654-9386-4f04-ab1b-_1.vb)]
+ [!code-cs[System.ComponentModel.DataAnnotations.MetadataTypeAttribute#2](~/add/codesnippet/csharp/23a2b654-9386-4f04-ab1b-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="metadataClassType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MetadataClassType">
       <MemberSignature Language="C#" Value="public Type MetadataClassType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type MetadataClassType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.MetadataTypeAttribute.MetadataClassType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata class that is associated with a data-model partial class.</summary>
+        <value>The type value that represents the metadata class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,21 @@
+Imports System
+Imports System.Configuration.Install
+
+Class MyCheckIfInstallableClass
+   
+   Shared Sub Main()
+
+      Try
+         ' Determine whether the assembly 'MyAssembly' is installable.
+         AssemblyInstaller.CheckIfInstallable("MyAssembly_CheckIfInstallable.exe")
+         
+         Console.WriteLine("The assembly 'MyAssembly_CheckIfInstallable' is installable")
+         
+         ' Determine whether the assembly 'NonExistant' is installable.
+         AssemblyInstaller.CheckIfInstallable("NonExistant")
+       Catch 
+      End Try
+
+   End Sub 'Main
+
+End Class 'MyCheckIfInstallableClass 

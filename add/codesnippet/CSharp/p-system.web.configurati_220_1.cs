@@ -1,0 +1,1 @@
+ruleSetting.MinInstances = 1;

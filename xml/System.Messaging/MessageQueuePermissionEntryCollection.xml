@@ -1,8 +1,10 @@
 <Type Name="MessageQueuePermissionEntryCollection" FullName="System.Messaging.MessageQueuePermissionEntryCollection">
   <TypeSignature Language="C#" Value="public class MessageQueuePermissionEntryCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MessageQueuePermissionEntryCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermissionEntryCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a strongly typed collection of <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of MessageQueuePermissionEntryCollection.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#0](~/add/codesnippet/cpp/t-system.messaging.messa_10_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#0](~/add/codesnippet/csharp/t-system.messaging.messa_10_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Messaging.MessageQueuePermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Messaging.MessageQueuePermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Add(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -29,18 +43,30 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> to add.</param>
+        <summary>Adds a specified <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> to this collection.</summary>
+        <returns>The zero-based index of the added <see cref="T:System.Messaging.MessageQueuePermissionEntry" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of Add.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#1](~/add/codesnippet/cpp/962e1c32-9597-4b6a-9095-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#1](~/add/codesnippet/csharp/962e1c32-9597-4b6a-9095-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Messaging.MessageQueuePermissionEntry[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Messaging.MessageQueuePermissionEntry[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.AddRange(System.Messaging.MessageQueuePermissionEntry[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,17 +76,29 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntry[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">An array of type <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> objects that contains the permission entries to add.</param>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of AddRange.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#2](~/add/codesnippet/cpp/fea2c4c7-d747-40e9-a5f6-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#2](~/add/codesnippet/csharp/fea2c4c7-d747-40e9-a5f6-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Messaging.MessageQueuePermissionEntryCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Messaging.MessageQueuePermissionEntryCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.AddRange(System.Messaging.MessageQueuePermissionEntryCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,17 +108,29 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntryCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Messaging.MessageQueuePermissionEntryCollection" /> that contains the permission entries to add.</param>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of AddRange.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#3](~/add/codesnippet/cpp/cbf56890-9115-4991-80a3-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#3](~/add/codesnippet/csharp/cbf56890-9115-4991-80a3-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Messaging.MessageQueuePermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Messaging.MessageQueuePermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Contains(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,18 +140,31 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> to find.</param>
+        <summary>Determines whether this collection contains a specified <see cref="T:System.Messaging.MessageQueuePermissionEntry" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> belongs to this collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of Contains.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#4](~/add/codesnippet/cpp/218a0d2e-d927-4fa8-b2a0-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#4](~/add/codesnippet/csharp/218a0d2e-d927-4fa8-b2a0-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Messaging.MessageQueuePermissionEntry[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Messaging.MessageQueuePermissionEntry[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.CopyTo(System.Messaging.MessageQueuePermissionEntry[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,18 +175,30 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> that receives this collection's permission entries.</param>
+        <param name="index">The zero-based index at which to begin copying the permission entries.</param>
+        <summary>Copies the permission entries from this collection to an array, starting at a particular index of the array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of CopyTo.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#5](~/add/codesnippet/cpp/81eb91f7-2e38-4b54-8ef5-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#5](~/add/codesnippet/csharp/81eb91f7-2e38-4b54-8ef5-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (System.Messaging.MessageQueuePermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Messaging.MessageQueuePermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.IndexOf(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,18 +208,30 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The permission entry to search for.</param>
+        <summary>Determines the index of a specified permission entry in this collection.</summary>
+        <returns>The zero-based index of the specified permission entry, or -1 if the permission entry was not found in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of IndexOf.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#6](~/add/codesnippet/cpp/7a139ebc-6184-41be-b8f2-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#6](~/add/codesnippet/csharp/7a139ebc-6184-41be-b8f2-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Messaging.MessageQueuePermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Messaging.MessageQueuePermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Insert(System.Int32,System.Messaging.MessageQueuePermissionEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,18 +242,30 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index into the collection at which to insert the permission entry.</param>
+        <param name="value">The permission entry to insert into this collection.</param>
+        <summary>Inserts a permission entry into this collection at a specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of Insert.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#7](~/add/codesnippet/cpp/8b8f6c79-2699-4936-8f6d-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#7](~/add/codesnippet/csharp/8b8f6c79-2699-4936-8f6d-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Messaging.MessageQueuePermissionEntry this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueuePermissionEntry Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntryCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,18 +275,30 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index into the collection.</param>
+        <summary>Gets or sets the object at a specified index.</summary>
+        <value>The <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> that exists at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of Item.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#8](~/add/codesnippet/cpp/p-system.messaging.messa_4_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#8](~/add/codesnippet/csharp/p-system.messaging.messa_4_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClear">
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnClear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,16 +306,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs additional custom processes after clearing the contents of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnInsert(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,18 +328,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
+        <param name="value">The new value of the permission entry at <c>index</c>.</param>
+        <summary>Performs additional custom processes before a new permission entry is inserted into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
       <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnRemove(System.Int32,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,18 +352,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
+        <param name="value">The permission entry to remove from <c>index</c>.</param>
+        <summary>Performs additional custom processes when removing a new permission entry from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSet">
       <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,19 +377,21 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
+        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
+        <param name="newValue">The new value of the permission entry at <c>index</c>.</param>
+        <summary>Performs additional custom processes before setting a value in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Messaging.MessageQueuePermissionEntry value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Messaging.MessageQueuePermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntryCollection.Remove(System.Messaging.MessageQueuePermissionEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,9 +401,19 @@
         <Parameter Name="value" Type="System.Messaging.MessageQueuePermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The permission entry to remove.</param>
+        <summary>Removes a specified permission entry from this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of Remove.  
+  
+ [!code-cpp[MessageQueuePermissionEntryCollection#9](~/add/codesnippet/cpp/4f8a439c-cc2f-4796-8858-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntryCollection#9](~/add/codesnippet/csharp/4f8a439c-cc2f-4796-8858-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

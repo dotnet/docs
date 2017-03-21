@@ -1,0 +1,1 @@
+                nnpSecurity.Mode = NetNamedPipeSecurityMode.Transport;

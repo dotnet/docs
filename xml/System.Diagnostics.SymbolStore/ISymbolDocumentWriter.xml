@@ -1,31 +1,51 @@
 <Type Name="ISymbolDocumentWriter" FullName="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">
   <TypeSignature Language="C#" Value="public interface ISymbolDocumentWriter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISymbolDocumentWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolDocumentWriter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a document referenced by a symbol store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A document is defined by a URL and a document type GUID. Optionally, the document source can be stored in the symbol store.  
+  
+> [!NOTE]
+>  This interface is the managed counterpart of the `ISymUnmanagedDocumentWriter` interface, which is one of the unmanaged symbol store interfaces that provide an alternate way to read and write debug symbol information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how an ISymbolDocumentWriter can be obtained when calling <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument%2A>.  
+  
+ [!code-cs[ModuleBuilder_DefineDocument#1](~/add/codesnippet/csharp/t-system.diagnostics.sym_1_1.cs)]
+ [!code-cpp[ModuleBuilder_DefineDocument#1](~/add/codesnippet/cpp/t-system.diagnostics.sym_1_1.cpp)]
+ [!code-vb[ModuleBuilder_DefineDocument#1](~/add/codesnippet/visualbasic/t-system.diagnostics.sym_1_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SetCheckSum">
       <MemberSignature Language="C#" Value="public void SetCheckSum (Guid algorithmId, byte[] checkSum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCheckSum(valuetype System.Guid algorithmId, unsigned int8[] checkSum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetCheckSum(System.Guid,System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -35,23 +55,28 @@
         <Parameter Name="checkSum" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithmId">To be added.</param>
-        <param name="checkSum">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="algorithmId">The GUID representing the algorithm ID.</param>
+        <param name="checkSum">The checksum.</param>
+        <summary>Sets checksum information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sets the checksum for the document.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSource">
       <MemberSignature Language="C#" Value="public void SetSource (byte[] source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSource(unsigned int8[] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetSource(System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -60,9 +85,16 @@
         <Parameter Name="source" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The document source represented as unsigned bytes.</param>
+        <summary>Stores the raw source for a document in the symbol store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An array of unsigned bytes is used instead of character data to accommodate a wider variety of sources.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

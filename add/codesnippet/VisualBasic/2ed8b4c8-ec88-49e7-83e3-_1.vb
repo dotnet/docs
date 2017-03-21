@@ -1,0 +1,1 @@
+			Dim reconnect As Boolean = settings.ReconnectTransportOnFailure

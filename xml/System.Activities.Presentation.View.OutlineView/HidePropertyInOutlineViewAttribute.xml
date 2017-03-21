@@ -1,6 +1,7 @@
 <Type Name="HidePropertyInOutlineViewAttribute" FullName="System.Activities.Presentation.View.OutlineView.HidePropertyInOutlineViewAttribute">
   <TypeSignature Language="C#" Value="public sealed class HidePropertyInOutlineViewAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HidePropertyInOutlineViewAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.OutlineView.HidePropertyInOutlineViewAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the attributes associated with hiding the property in outline view.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HidePropertyInOutlineViewAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.OutlineView.HidePropertyInOutlineViewAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -29,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.View.OutlineView.HidePropertyInOutlineViewAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

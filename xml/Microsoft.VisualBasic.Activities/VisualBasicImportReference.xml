@@ -1,6 +1,7 @@
 <Type Name="VisualBasicImportReference" FullName="Microsoft.VisualBasic.Activities.VisualBasicImportReference">
   <TypeSignature Language="C#" Value="public class VisualBasicImportReference : IEquatable&lt;Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualBasicImportReference extends System.Object implements class System.IEquatable`1&lt;class Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,21 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an assembly reference and the namespace imported from that assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> to provide assembly references and namespaces required for expression compilation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VisualBasicImportReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicImportReference.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -28,13 +37,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
       <MemberSignature Language="C#" Value="public string Assembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Assembly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicImportReference.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,14 +54,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the full name of the assembly referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</summary>
+        <value>The full name of the assembly referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.VisualBasic.Activities.VisualBasicImportReference other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.VisualBasic.Activities.VisualBasicImportReference other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicImportReference.Equals(Microsoft.VisualBasic.Activities.VisualBasicImportReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -64,15 +75,17 @@
         <Parameter Name="other" Type="Microsoft.VisualBasic.Activities.VisualBasicImportReference" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> to compare with the current <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</param>
+        <summary>Determines whether the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> is equal to the current <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> is equal to the current <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicImportReference.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,14 +96,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> instance.</summary>
+        <returns>The hash code for the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Import">
       <MemberSignature Language="C#" Value="public string Import { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Import" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicImportReference.Import" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,8 +114,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the imported namespace referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</summary>
+        <value>The imported namespace referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

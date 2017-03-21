@@ -1,0 +1,2 @@
+            WebHeaderCollection whCollection =
+			responseProperty.Headers;

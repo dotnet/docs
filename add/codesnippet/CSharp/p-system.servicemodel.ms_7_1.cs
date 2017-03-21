@@ -1,0 +1,1 @@
+            message.ResponseQueue = new Uri(".\\private$\\MyResponseQueue");

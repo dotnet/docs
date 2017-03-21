@@ -1,0 +1,1 @@
+    public void Clear() { ItemsInUse = 0; }

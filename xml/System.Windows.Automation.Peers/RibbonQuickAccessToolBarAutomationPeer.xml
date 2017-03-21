@@ -1,6 +1,7 @@
 <Type Name="RibbonQuickAccessToolBarAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonQuickAccessToolBarAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer, System.Windows.Automation.Provider.IExpandCollapseProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonQuickAccessToolBarAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer implements class System.Windows.Automation.Provider.IExpandCollapseProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/add/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RibbonQuickAccessToolBarAutomationPeer (System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -30,14 +32,15 @@
         <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Collapse">
       <MemberSignature Language="C#" Value="public void Collapse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Collapse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.Collapse" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -48,13 +51,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hides all items that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> does not have items in the overflow menu.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateItemAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -67,15 +72,16 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">An object that is in the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" /> for the specified item.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.RibbonControlDataAutomationPeer" /> for the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Expand">
       <MemberSignature Language="C#" Value="public void Expand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Expand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.Expand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -86,13 +92,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays all items that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> does not have items in the overflow menu.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExpandCollapseState">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.ExpandCollapseState ExpandCollapseState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState ExpandCollapseState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -102,14 +110,15 @@
         <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state, expanded or collapsed, of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
+        <value>The state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.GetAutomationControlTypeCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -120,14 +129,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType%2A" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.GetChildrenCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -138,14 +148,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A" />.</summary>
+        <returns>The collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.GetClassNameCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -156,14 +167,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />. This method is called by <see cref="System.Windows.Automation.Peers.AutomationPeer.GetClassName%2A" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -176,9 +188,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonQuickAccessToolBarAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" />, <see cref="T:System.Windows.Automation.Peers.PatternInterface" /> value, or if the <see cref="T:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar" /> has items in the overflow menu and <paramref name="patternInterface" /> is the <see cref="T:System.Windows.Automation.Peers.PatternInterface" /> value; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

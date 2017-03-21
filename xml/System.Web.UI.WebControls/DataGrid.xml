@@ -1,8 +1,10 @@
 <Type Name="DataGrid" FullName="System.Web.UI.WebControls.DataGrid">
   <TypeSignature Language="C#" Value="public class DataGrid : System.Web.UI.WebControls.BaseDataList, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGrid extends System.Web.UI.WebControls.BaseDataList implements class System.Web.UI.INamingContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGrid" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,30 +24,347 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A data bound list control that displays the items from data source in a table. The DataGrid control allows you to select, sort, and edit these items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#Introduction)  
+  
+-   [Accessibility](#Accessibility)  
+  
+-   [Declarative Syntax](#DeclarativeSyntax)  
+  
+    > [!NOTE]
+    >  Before you use the DataGrid control, consider using the <xref:System.Web.UI.WebControls.GridView> control instead. The <xref:System.Web.UI.WebControls.GridView> control, which was introduced in the .NET Framework version 2.0, is the successor to the DataGrid control.  
+  
+<a name="Introduction"></a>   
+## Introduction  
+ Use the DataGrid control to display the fields of a data source as columns in a table. Each row in the DataGrid control represents a record in the data source. The DataGrid control supports selection, editing, deleting, paging, and sorting.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+ Different column types determine the behavior of the columns in the control. The following table lists the different column types that can be used.  
+  
+|Column Type|Description|  
+|-----------------|-----------------|  
+|<xref:System.Web.UI.WebControls.BoundColumn>|Displays a column bound to a field in a data source. It displays each item in the field as text. This is the default column type of the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.ButtonColumn>|Displays a command button for each item in the column. This allows you to create a column of custom button controls, such as `Add` or `Remove` buttons.|  
+|<xref:System.Web.UI.WebControls.EditCommandColumn>|Displays a column that contains editing commands for each item in the column.|  
+|<xref:System.Web.UI.WebControls.HyperLinkColumn>|Displays the contents of each item in the column as a hyperlink. The contents of the column can be bound to a field in a data source or static text.|  
+|<xref:System.Web.UI.WebControls.TemplateColumn>|Displays each item in the column following a specified template. This allows you to provide custom controls in the column.|  
+  
+ By default, the <xref:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns%2A> property is set to `true`, which creates a <xref:System.Web.UI.WebControls.BoundColumn> object for each field in the data source. Each field is then rendered as a column in the DataGrid control in the order that each field appears in the data source.  
+  
+ You can also manually control which columns appear in the DataGrid control by setting the <xref:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns%2A> property to `false` and then listing the columns that you want to include between the opening and closing `<Columns>` tags. The columns specified are added to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection in the order listed. This allows you to programmatically control the columns in the DataGrid control.  
+  
+> [!NOTE]
+>  The order that the columns are displayed in the DataGrid control is controlled by the order that the columns appear in the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection. Although you can programmatically change the order of the columns by manipulating the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection, it is easier to list the columns in the desired display order.  
+  
+ Explicitly declared columns can be displayed in conjunction with automatically generated columns. When using both, explicitly declared columns will be rendered first, followed by the automatically generated columns.  
+  
+> [!NOTE]
+>  Automatically generated columns are not added to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection.  
+  
+ The appearance of the DataGrid control may be customized by setting the style properties for the different parts of the control. The following table lists the different style properties.  
+  
+|Style Property|Description|  
+|--------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A>|Specifies the style for alternating items in the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.EditItemStyle%2A>|Specifies the style for the item being edited in the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.FooterStyle%2A>|Specifies the style for the footer section in the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.HeaderStyle%2A>|Specifies the style for the header section in the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A>|Specifies the style for the items in the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.PagerStyle%2A>|Specifies the style for the page selection section of the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.SelectedItemStyle%2A>|Specifies the style for the selected item in the DataGrid control.|  
+  
+ You can also show or hide different parts of the control. The following table lists the properties that control which parts are shown or hidden.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataGrid.ShowFooter%2A>|Shows or hides the footer section of the DataGrid control.|  
+|<xref:System.Web.UI.WebControls.DataGrid.ShowHeader%2A>|Shows or hides the header section of the DataGrid control.|  
+  
+ You can control the appearance of the DataGrid control by programmatically adding attributes to the `<td>` and `<tr>` tags rendered by the control on the browser. Attributes can be programmatically added by providing code in the event handler for the <xref:System.Web.UI.WebControls.DataGrid.OnItemCreated%2A> or <xref:System.Web.UI.WebControls.DataGrid.OnItemDataBound%2A> event.  
+  
+ To add an attribute to the `<td>` tag, first get the <xref:System.Web.UI.WebControls.TableCell> object that represents the cell in the DataGrid control you want to add the attribute to. The <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection for the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> object passed into the event handler can be used to get the desired <xref:System.Web.UI.WebControls.TableCell> object. You can then use the <xref:System.Web.UI.AttributeCollection.Add%2A?displayProperty=fullName> method of the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection for the <xref:System.Web.UI.WebControls.TableCell> object to add attributes to the `<td>` tag.  
+  
+ To add an attribute to the `<tr>` tag, first get the <xref:System.Web.UI.WebControls.DataGridItem> object that represents the row in the DataGrid control you want to add the attribute to. The <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> object passed into the event handler can be used to get the desired <xref:System.Web.UI.WebControls.DataGridItem> object. You can then use the <xref:System.Web.UI.AttributeCollection.Add%2A?displayProperty=fullName> method of the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection for the <xref:System.Web.UI.WebControls.DataGridItem> object to add attributes to the `<tr>` tag.  
+  
+<a name="Accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:DataGrid  
+    AccessKey="string"  
+    AllowCustomPaging="True|False"  
+    AllowPaging="True|False"  
+    AllowSorting="True|False"  
+    AutoGenerateColumns="True|False"  
+    BackColor="color name|#dddddd"  
+    BackImageUrl="uri"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    Caption="string"  
+    CaptionAlign="NotSet|Top|Bottom|Left|Right"  
+    CellPadding="integer"  
+    CellSpacing="integer"  
+    CssClass="string"  
+    DataKeyField="string"  
+    DataMember="string"  
+    DataSource="string"  
+    DataSourceID="string"  
+    EditItemIndex="integer"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    GridLines="None|Horizontal|Vertical|Both"  
+    Height="size"  
+    HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+    ID="string"  
+    OnCancelCommand="CancelCommand event handler"  
+    OnDataBinding="DataBinding event handler"  
+    OnDeleteCommand="DeleteCommand event handler"  
+    OnDisposed="Disposed event handler"  
+    OnEditCommand="EditCommand event handler"  
+    OnInit="Init event handler"  
+    OnItemCommand="ItemCommand event handler"  
+    OnItemCreated="ItemCreated event handler"  
+    OnItemDataBound="ItemDataBound event handler"  
+    OnLoad="Load event handler"  
+    OnPageIndexChanged="PageIndexChanged event handler"  
+    OnPreRender="PreRender event handler"  
+    OnSelectedIndexChanged="SelectedIndexChanged event handler"  
+    OnSortCommand="SortCommand event handler"  
+    OnUnload="Unload event handler"  
+    OnUpdateCommand="UpdateCommand event handler"  
+    PageSize="integer"  
+    runat="server"  
+    SelectedIndex="integer"  
+    ShowFooter="True|False"  
+    ShowHeader="True|False"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    UseAccessibleHeader="True|False"  
+    Visible="True|False"  
+    Width="size"  
+>  
+        <AlternatingItemStyle />  
+        <Columns>  
+                <asp:BoundColumn  
+                    DataField="string"  
+                    DataFormatString="string"  
+                    FooterText="string"  
+                    HeaderImageUrl="uri"  
+                    HeaderText="string"  
+                    ReadOnly="True|False"  
+                    SortExpression="string"  
+                    Visible="True|False"  
+>  
+                        <FooterStyle />  
+                        <HeaderStyle />  
+                        <ItemStyle />  
+                </asp:BoundColumn>  
+                <asp:ButtonColumn  
+                    ButtonType="LinkButton|PushButton"  
+                    CausesValidation="True|False"  
+                    CommandName="string"  
+                    DataTextField="string"  
+                    DataTextFormatString="string"  
+                    FooterText="string"  
+                    HeaderImageUrl="uri"  
+                    HeaderText="string"  
+                    SortExpression="string"  
+                    Text="string"  
+                    ValidationGroup="string"  
+                    Visible="True|False"  
+>  
+                        <FooterStyle />  
+                        <HeaderStyle />  
+                        <ItemStyle />  
+                </asp:ButtonColumn>  
+                <asp:EditCommandColumn  
+                    ButtonType="LinkButton|PushButton"  
+                    CancelText="string"  
+                    CausesValidation="True|False"  
+                    EditText="string"  
+                    FooterText="string"  
+                    HeaderImageUrl="uri"  
+                    HeaderText="string"  
+                    SortExpression="string"  
+                    UpdateText="string"  
+                    ValidationGroup="string"  
+                    Visible="True|False"  
+>  
+                        <FooterStyle />  
+                        <HeaderStyle />  
+                        <ItemStyle />  
+                </asp:EditCommandColumn>  
+                <asp:HyperLinkColumn  
+                    DataNavigateUrlField="string"  
+                    DataNavigateUrlFormatString="string"  
+                    DataTextField="string"  
+                    DataTextFormatString="string"  
+                    FooterText="string"  
+                    HeaderImageUrl="uri"  
+                    HeaderText="string"  
+                    NavigateUrl="uri"  
+                    SortExpression="string"  
+                    Target="string|_blank|_parent|_search|_self|_top"  
+                    Text="string"  
+                    Visible="True|False"  
+>  
+                        <FooterStyle />  
+                        <HeaderStyle />  
+                        <ItemStyle />  
+                </asp:HyperLinkColumn>  
+                <asp:TemplateColumn  
+                    FooterText="string"  
+                    HeaderImageUrl="uri"  
+                    HeaderText="string"  
+                    SortExpression="string"  
+                    Visible="True|False"  
+>  
+                            <FooterStyle />  
+                            <HeaderStyle />  
+                            <ItemStyle />  
+                        <EditItemTemplate>  
+                            <!-- child controls -->  
+                        </EditItemTemplate>  
+                        <FooterTemplate>  
+                            <!-- child controls -->  
+                        </FooterTemplate>  
+                        <HeaderTemplate>  
+                            <!-- child controls -->  
+                        </HeaderTemplate>  
+                        <ItemTemplate>  
+                            <!-- child controls -->  
+                        </ItemTemplate>  
+                </asp:TemplateColumn>  
+        </Columns>  
+        <EditItemStyle />  
+        <FooterStyle />  
+        <HeaderStyle />  
+        <ItemStyle />  
+        <PagerStyle  
+            BackColor="color name|#dddddd"  
+            BorderColor="color name|#dddddd"  
+            BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|  
+                Groove|Ridge|Inset|Outset"  
+            BorderWidth="size"  
+            CssClass="string"  
+            Font-Bold="True|False"  
+            Font-Italic="True|False"  
+            Font-Names="string"  
+            Font-Overline="True|False"  
+            Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|  
+                Medium|Large|X-Large|XX-Large"  
+            Font-Strikeout="True|False"  
+            Font-Underline="True|False"  
+            ForeColor="color name|#dddddd"  
+            Height="size"  
+            HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+            Mode="NextPrev|NumericPages"  
+            NextPageText="string"  
+            OnDisposed="Disposed event handler"  
+            PageButtonCount="integer"  
+            Position="Bottom|Top|TopAndBottom"  
+            PrevPageText="string"  
+            VerticalAlign="NotSet|Top|Middle|Bottom"  
+            Visible="True|False"  
+            Width="size"  
+            Wrap="True|False"  
+        />  
+        <SelectedItemStyle />  
+</asp:DataGrid>  
+```  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://code.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmsdnexamples&DownloadId=11217).  
+  
+ The following code example demonstrates how to use the DataGrid control to display the items in the data source.  
+  
+ [!code-cs[Classic DataGrid Example 2#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_163_1.aspx)]
+ [!code-vb[Classic DataGrid Example 2#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_163_1.aspx)]  
+  
+ The following code example demonstrates how to use the DataGrid control for a simple shopping cart.  
+  
+ [!code-vb[Classic DataGrid Example 2#2](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_163_2.aspx)]
+ [!code-cs[Classic DataGrid Example 2#2](~/add/codesnippet/csharp/t-system.web.ui.webcontr_163_2.aspx)]  
+  
+ The following code example demonstrates how to dynamically add attributes to the `<td>` and `<tr>` tags generated by the DataGrid control.  
+  
+ [!code-cs[DataGridTrTdTags#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_163_3.aspx)]
+ [!code-vb[DataGridTrTdTags#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_163_3.aspx)]  
+  
+ [!code-vb[DataGridExample#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_163_4.aspx)]
+ [!code-cs[DataGridExample#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_163_4.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGrid ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGrid> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGrid> class.  
+  
+ [!code-cs[DataGridCtor#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_148_1.aspx)]
+ [!code-vb[DataGridCtor#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_148_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowCustomPaging">
       <MemberSignature Language="C#" Value="public virtual bool AllowCustomPaging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowCustomPaging" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AllowCustomPaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -57,17 +376,53 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether custom paging is enabled.</summary>
+        <value>
+          <see langword="true" /> if custom paging is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Paging allows you to display the contents of the <xref:System.Web.UI.WebControls.DataGrid> control in page segments. The number of items on a page is determined by the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property. If no value is specified for the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property, the <xref:System.Web.UI.WebControls.DataGrid> will display 10 items on a page.  
+  
+ Normally, a data source that contains every row in the <xref:System.Web.UI.WebControls.DataGrid> control is loaded every time the <xref:System.Web.UI.WebControls.DataGrid> control moves to a different page. This can consume a lot of resources when the data source is very large. Custom paging allows you to load just the segment of data needed to display a single page.  
+  
+ To enable custom paging, set both the <xref:System.Web.UI.WebControls.DataGrid.AllowPaging%2A> and AllowCustomPaging properties to `true`. Next, provide code to handle the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event.  
+  
+ The typical logic for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event handler is to first set the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property to the index of the page you want to display.  
+  
+> [!NOTE]
+>  The event handler receives a <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs> object as a parameter. You can use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex%2A> property of this parameter to determine the index of the page selected by the user from the page selection elements of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Next, create a data source that contains the data to display on a single page and then use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  Because only a segment of the data is loaded, you must set the <xref:System.Web.UI.WebControls.DataGrid.VirtualItemCount%2A> property to the total number of items in the <xref:System.Web.UI.WebControls.DataGrid> control. This allows the control to determine the total number of pages needed to display every item in the <xref:System.Web.UI.WebControls.DataGrid> control. This property is normally programmatically set once the total number of items in the <xref:System.Web.UI.WebControls.DataGrid> control is determined.  
+  
+ When paging is enabled with the AllowCustomPaging property is set to `false`, the <xref:System.Web.UI.WebControls.DataGrid> control assumes that the data source contains all the items to be displayed. The <xref:System.Web.UI.WebControls.DataGrid> control calculates the indexes of the items on the displayed page based on the page index, specified by the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property, and the number of items on a page, specified by the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property.  
+  
+ When the AllowCustomPaging property is set to `true`, the <xref:System.Web.UI.WebControls.DataGrid> control assumes that the data source only contains the items as determined by the <xref:System.Web.UI.WebControls.DataGrid.VirtualItemCount%2A> property. All items up to the number of items specified by the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property are displayed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the AllowCustomPaging property to enable custom paging.  
+  
+ [!code-cs[DataGridCustomPaging#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_71_1.aspx)]
+ [!code-vb[DataGridCustomPaging#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_71_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowPaging">
       <MemberSignature Language="C#" Value="public virtual bool AllowPaging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowPaging" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AllowPaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -79,17 +434,49 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether paging is enabled.</summary>
+        <value>
+          <see langword="true" /> if paging is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Paging allows you to display the contents of the <xref:System.Web.UI.WebControls.DataGrid> control in page segments. The number of items on a page is determined by the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property. If no value is specified for the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property, the <xref:System.Web.UI.WebControls.DataGrid> control will display 10 items on a page.  
+  
+ By default, paging is disabled. To enable paging, set this property to `true` and provide code to handle the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event.  
+  
+ The typical logic for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event is to set the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property to the index of the page you want to display and then use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  The event handler receives a <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs> object as a parameter. You can use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex%2A> property of this parameter to determine the index of the page selected by the user from the page selection elements of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ With standard paging, the <xref:System.Web.UI.WebControls.DataGrid> control assumes that the data source contains all the items to be displayed. The <xref:System.Web.UI.WebControls.DataGrid> control calculates the indexes of the items on the displayed page based on the page index, specified by the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property, and the number of items of items on a page, specified by the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property.  
+  
+ Normally, a data source that contains all items to be displayed is loaded every time the <xref:System.Web.UI.WebControls.DataGrid> control is paged. This can consume a lot of resources when the data source is very large. Custom paging allows you to load just the segment of data needed to display a single page. For additional information on custom paging, see the <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the AllowPaging property to enable paging.  
+  
+ [!code-cs[Classic DataGrid.AllowPaging Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_166_1.aspx)]
+ [!code-vb[Classic DataGrid.AllowPaging Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_166_1.aspx)]  
+  
+ [!code-vb[DataGridAllowPaging#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_166_2.aspx)]
+ [!code-cs[DataGridAllowPaging#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_166_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowSorting">
       <MemberSignature Language="C#" Value="public virtual bool AllowSorting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSorting" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AllowSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -101,17 +488,40 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether sorting is enabled.</summary>
+        <value>
+          <see langword="true" /> if sorting is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When sorting is enabled, <xref:System.Web.UI.WebControls.LinkButton> controls are rendered in the heading section of each column where the <xref:System.Web.UI.WebControls.DataGridColumn.SortExpression%2A> property is set. These <xref:System.Web.UI.WebControls.LinkButton> controls allow you to sort the <xref:System.Web.UI.WebControls.DataGrid> control by the selected column. The only exception is when you use a <xref:System.Web.UI.WebControls.TemplateColumn> column type with the <xref:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate%2A> property set. In this case, you must provide a <xref:System.Web.UI.WebControls.Button> control in the <xref:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate%2A> of the column.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event is raised when one of the <xref:System.Web.UI.WebControls.LinkButton> controls is clicked. It is up to you to provide code for the event handler. The typical logic for the handler is to sort the list, and then rebind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the AllowSorting property to enable sorting.  
+  
+ [!code-cs[Classic DataGrid.AllowSorting Example 2#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_144_1.aspx)]
+ [!code-vb[Classic DataGrid.AllowSorting Example 2#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_144_1.aspx)]  
+  
+ [!code-cs[DataGridAllowSorting#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_144_2.aspx)]
+ [!code-vb[DataGridAllowSorting#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_144_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle AlternatingItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle AlternatingItemStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -129,17 +539,49 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties for alternating items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that represents the style properties for alternating items in the <see cref="T:System.Web.UI.WebControls.DataGrid" />. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the AlternatingItemStyle property to provide a custom style for the alternating items in the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control are inherited from one item style property to another through a hierarchy. Item style properties set lower in the hierarchy are inherited by item style properties higher in the hierarchy. For example, if you specify a red font for the <xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A> property, all other item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control will also have a red font. This allows you to provide a common appearance for the control by setting a single item style property. You can override the inherited style settings for an item style property that is higher in the hierarchy by setting its style properties. For example, you can specify a blue font for the AlternatingItemStyle property, overriding the red font specified in the <xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A> property. The following table lists the hierarchy order from highest to lowest.  
+  
+|Precedence|Style Property|  
+|----------------|--------------------|  
+|1|<xref:System.Web.UI.WebControls.DataGrid.EditItemStyle%2A>|  
+|2|<xref:System.Web.UI.WebControls.DataGrid.SelectedItemStyle%2A>|  
+|3|AlternatingItemStyle|  
+|4|<xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A>|  
+|5|<xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A>|  
+  
+ To specify a custom style for the alternating items, place the `<AlternatingItemStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<AlternatingItemStyle>` tag.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the AlternatingItemStyle property to specify a different background color for alternating items in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridAlternatingItemStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_513_1.aspx)]
+ [!code-vb[DataGridAlternatingItemStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_513_1.aspx)]  
+  
+ [!code-vb[DataGridItemStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_513_2.aspx)]
+ [!code-cs[DataGridItemStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_513_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateColumns">
       <MemberSignature Language="C#" Value="public virtual bool AutoGenerateColumns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateColumns" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,17 +593,47 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Web.UI.WebControls.BoundColumn" /> objects are automatically created and displayed in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control for each field in the data source.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Web.UI.WebControls.BoundColumn" /> objects are automatically created and displayed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to automatically create a <xref:System.Web.UI.WebControls.BoundColumn> object for each field in the data source. Each field is then rendered as a column in the <xref:System.Web.UI.WebControls.DataGrid> control in the order that the fields appear in the data source.  
+  
+ Not all data types can be bound to the <xref:System.Web.UI.WebControls.DataGrid> control. If a field contains an unsupported data type, a column is not created for that field. If the data source only contains one column with an unsupported data type, an exception is thrown. The following table shows the data types that can be bound to the control.  
+  
+|Data Type|Description|  
+|---------------|-----------------|  
+|Primitives|A primitive data type, such as <xref:System.Int32?displayProperty=fullName>, <xref:System.Char>, <xref:System.Double>, and so on. For a complete list, see <xref:System.Type.IsPrimitive%2A?displayProperty=fullName>.|  
+|String|A <xref:System.String?displayProperty=fullName> object.|  
+|DateTime|A <xref:System.DateTime?displayProperty=fullName> object.|  
+|Decimal|A <xref:System.Decimal?displayProperty=fullName> object.|  
+  
+> [!NOTE]
+>  Explicitly declared columns may be used in conjunction with auto-generated columns. When using both, explicitly declared columns will be rendered first, followed by the auto-generated columns. Auto-generated columns are not added to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the AutoGenerateColumns property to automatically create a <xref:System.Web.UI.WebControls.BoundColumn> object for each field in the data source.  
+  
+ [!code-cs[Classic DataGrid.AutoGenerateColumns Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_75_1.aspx)]
+ [!code-vb[Classic DataGrid.AutoGenerateColumns Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_75_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
       <MemberSignature Language="C#" Value="public virtual string BackImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BackImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.BackImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -179,49 +651,108 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL of an image to display in the background of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>The URL of an image to display in the background of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the BackImageUrl property to specify an image to display in the background of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  If the specified image is smaller than the <xref:System.Web.UI.WebControls.DataGrid> control, the image will tile to fill in the background of the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how use the BackImageUrl property to specify a background image for the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.BackImageUrl Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1166_1.aspx)]
+ [!code-vb[Classic DataGrid.BackImageUrl Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1166_1.aspx)]  
+  
+ [!code-cs[DataGridBackImageUrl#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1166_2.aspx)]
+ [!code-vb[DataGridBackImageUrl#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1166_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelCommand">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridCommandEventHandler CancelCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridCommandEventHandler CancelCommand" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see langword="Cancel" /> button is clicked for an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CancelCommand event is raised when the `Cancel` button is clicked for an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the CancelCommand event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to `-1` (to deselect the item) and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the CancelCommand event to cancel edits made to an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_95_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_95_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_95_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_95_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
       <MemberSignature Language="C#" Value="public const string CancelCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string CancelCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.CancelCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see langword="Cancel" /> command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the CancelCommandName field to represent the `Cancel` command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataGridColumnCollection Columns { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridColumnCollection Columns" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -242,17 +773,55 @@
         <ReturnType>System.Web.UI.WebControls.DataGridColumnCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of objects that represent the columns of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> object that contains a collection of objects that represent the columns of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically control the collection of columns in the <xref:System.Web.UI.WebControls.DataGrid> control. The Columns collection contains explicitly declared columns that get rendered in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  Explicitly declared columns may be used in conjunction with automatically generated columns. When using both, explicitly declared columns will be rendered first, followed by the automatically generated columns. Automatically generated columns are not added to the Columns collection.  
+  
+ The order that the columns are displayed in the <xref:System.Web.UI.WebControls.DataGrid> control is controlled by the order that the columns appear in the Columns collection.  
+  
+ The following table shows the different column classes that derive from the <xref:System.Web.UI.WebControls.DataGridColumn> class and can be used in the Columns collection.  
+  
+|Column type|Description|  
+|-----------------|-----------------|  
+|<xref:System.Web.UI.WebControls.BoundColumn>|Displays a column bound to a field in a data source. It displays each item in the field as text. This is the default column type of the <xref:System.Web.UI.WebControls.DataGrid> control.|  
+|<xref:System.Web.UI.WebControls.ButtonColumn>|Displays a command button for each item in the column. This allows you to create a column of custom button controls, such as the `Add` or `Remove` button.|  
+|<xref:System.Web.UI.WebControls.EditCommandColumn>|Displays a column that contains editing commands for each item in the column.|  
+|<xref:System.Web.UI.WebControls.HyperLinkColumn>|Displays the contents of each item in the column as a hyperlink. The contents of the column can be bound to a field in a data source or static text.|  
+|<xref:System.Web.UI.WebControls.TemplateColumn>|Displays each item in the column following a specified template. This allows you to provide custom controls in the column.|  
+  
+> [!NOTE]
+>  Although you can programmatically add columns to the Columns collection, it is easier to list the columns statically and then use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to show or hide the column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the Columns collection to dynamically add a column to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-vb[Classic DataGrid.Columns Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_225_1.aspx)]
+ [!code-cs[Classic DataGrid.Columns Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_225_1.aspx)]  
+  
+ [!code-cs[DataGridColumnVisible#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_225_2.aspx)]
+ [!code-vb[DataGridColumnVisible#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_225_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateColumnSet">
       <MemberSignature Language="C#" Value="protected virtual System.Collections.ArrayList CreateColumnSet (System.Web.UI.WebControls.PagedDataSource dataSource, bool useDataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ArrayList CreateColumnSet(class System.Web.UI.WebControls.PagedDataSource dataSource, bool useDataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateColumnSet(System.Web.UI.WebControls.PagedDataSource,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,19 +832,21 @@
         <Parameter Name="useDataSource" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="dataSource">To be added.</param>
-        <param name="useDataSource">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSource">The data source being used to create the control hierarchy</param>
+        <param name="useDataSource">Whether to use the data source to generate columns automatically or to use saved state.</param>
+        <summary>Creates the set of columns to be used to build up the control hierarchy. When <see cref="System.Web.UI.WebControls.DataGrid.AutoGenerateColumns%2A" /> is true, the columns are created to match the data source and are appended to the set of columns defined in the <see cref="System.Web.UI.WebControls.DataGrid.Columns%2A" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.ArrayList" /> containing the effective set of columns in the right order.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateControlHierarchy">
       <MemberSignature Language="C#" Value="protected override void CreateControlHierarchy (bool useDataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateControlHierarchy(bool useDataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,17 +856,32 @@
         <Parameter Name="useDataSource" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useDataSource">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="useDataSource">Whether to use the data source to generate columns automatically or to use saved state.</param>
+        <summary>Creates the control hierarchy that is used to render the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation assumes that all the children in the controls collection have already been cleared.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="useDataSource" /> is <see langword="true" />, the value of <see cref="System.Web.UI.WebControls.DataGrid.VirtualItemCount%2A" /> is not set, and the selected data source does not implement the <see cref="T:System.Collections.ICollection" /> interface.  
+  
+ \- or -  
+  
+ <paramref name="useDataSource" /> is <see langword="true" /> and the data source has an invalid <see cref="System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex%2A" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateControlStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,17 +889,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates new control style.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Style" /> the represents the new style.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the CreateControlStyle method in a custom server control so that it always displays the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> with no <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> in the <xref:System.Web.UI.WebControls.DataGrid>.  
+  
+ [!code-cs[CustomDataGridCreateControlStyle#1](~/add/codesnippet/csharp/m-system.web.ui.webcontr_9_1.aspx)]
+ [!code-vb[CustomDataGridCreateControlStyle#1](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_9_1.aspx)]  
+[!code-cs[CustomDataGridCreateControlStyle#2](~/add/codesnippet/csharp/m-system.web.ui.webcontr_9_2.cs)]
+[!code-vb[CustomDataGridCreateControlStyle#2](~/add/codesnippet/visualbasic/m-system.web.ui.webcontr_9_2.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.DataGridItem CreateItem (int itemIndex, int dataSourceIndex, System.Web.UI.WebControls.ListItemType itemType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.DataGridItem CreateItem(int32 itemIndex, int32 dataSourceIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.CreateItem(System.Int32,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,20 +925,32 @@
         <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">To be added.</param>
-        <param name="dataSourceIndex">To be added.</param>
-        <param name="itemType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="itemIndex">The index for the <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object.</param>
+        <param name="dataSourceIndex">The index of the data item from the data source.</param>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
+        <summary>Creates a <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CreateItem is a helper method used by the <xref:System.Web.UI.WebControls.DataGrid> class to create its <xref:System.Web.UI.WebControls.DataGridItem> objects.  
+  
+> [!NOTE]
+>  This method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentPageIndex">
       <MemberSignature Language="C#" Value="public int CurrentPageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentPageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.CurrentPageIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -353,81 +965,173 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the index of the currently displayed page.</summary>
+        <value>The zero-based index of the page currently displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to determine the currently displayed page in the <xref:System.Web.UI.WebControls.DataGrid> control when paging is enabled. This property is also used to programmatically control which page is displayed.  
+  
+ You can also hide the built in paging controls and create custom controls. To display a specific page, set this property to the page index you want to display and then rebind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the CurrentPageIndex property to programmatically control the page to display in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.CurrentPageIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_442_1.aspx)]
+ [!code-vb[Classic DataGrid.CurrentPageIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_442_1.aspx)]  
+  
+ [!code-vb[DataGridAllowPaging#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_442_2.aspx)]
+ [!code-cs[DataGridAllowPaging#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_442_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified page index is a negative value.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteCommand">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridCommandEventHandler DeleteCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridCommandEventHandler DeleteCommand" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.DeleteCommand" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the Delete button is clicked for an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The DeleteCommand event is raised when the Delete button is clicked for an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the DeleteCommand event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the DeleteCommand event to delete an item from the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_54_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_54_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_54_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_54_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteCommandName">
       <MemberSignature Language="C#" Value="public const string DeleteCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.DeleteCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Delete command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the DeleteCommandName field to represent the Delete command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditCommand">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridCommandEventHandler EditCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridCommandEventHandler EditCommand" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.EditCommand" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the Edit button is clicked for an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The EditCommand event is raised when the Edit button is clicked for an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the EditCommand event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to the selected row and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the EditCommand event to edit an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_147_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_147_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_147_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_147_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditCommandName">
       <MemberSignature Language="C#" Value="public const string EditCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string EditCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.EditCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Edit command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the EditCommandName field to represent the Edit command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditItemIndex">
       <MemberSignature Language="C#" Value="public virtual int EditItemIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EditItemIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.EditItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -439,17 +1143,45 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the index of an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control to edit.</summary>
+        <value>The index of an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control to edit. The default value is -1, which indicates that no item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control is being edited.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the EditItemIndex property when the <xref:System.Web.UI.WebControls.DataGrid> control contains an <xref:System.Web.UI.WebControls.EditCommandColumn> to determine the index of the item selected in the <xref:System.Web.UI.WebControls.DataGrid> control to edit.  
+  
+ This property is also used to programmatically control which item is being edited. Setting this property to an index of an item in the <xref:System.Web.UI.WebControls.DataGrid> control will enable editing controls for that item in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+> [!NOTE]
+>  The EditItemIndex property is zero based.  
+  
+ To cancel editing, programmatically set this property to -1.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the EditItemIndex property to determine the item selected for editing in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-vb[Classic DataGrid.EditItemIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1188_1.aspx)]
+ [!code-cs[Classic DataGrid.EditItemIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1188_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1.</exception>
       </Docs>
     </Member>
     <Member MemberName="EditItemStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle EditItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle EditItemStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.EditItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -467,17 +1199,46 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties of the item selected for editing in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that contains the style properties of the item selected for editing in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the EditItemStyle property to provide a custom style for the item selected for editing in the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control are inherited from one item style property to another through a hierarchy. Item style properties set lower in the hierarchy are inherited by item style properties higher in the hierarchy. For example, if you specify a red font for the <xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A> property, all other item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control will also have a red font. This allows you to provide a common appearance for the control by setting a single item style property. You can override the inherited style settings for an item style property that is higher in the hierarchy by setting its style properties. For example, you can specify a blue font for the <xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A> property, overriding the red font specified in the <xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A> property. The following table lists the hierarchy order from highest to lowest.  
+  
+|Precedence|Style Property|  
+|----------------|--------------------|  
+|1|EditItemStyle|  
+|2|<xref:System.Web.UI.WebControls.DataGrid.SelectedItemStyle%2A>|  
+|3|<xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A>|  
+|4|<xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A>|  
+|5|<xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A>|  
+  
+ To specify a custom style for the item selected for editing, place the `<EditItemStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<EditItemStyle>` tag.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the EditItemStyle property to set the background color of the item selected for editing to yellow.  
+  
+ [!code-vb[Classic DataGrid.EditItemStyle Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_343_1.aspx)]
+ [!code-cs[Classic DataGrid.EditItemStyle Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_343_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle FooterStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle FooterStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.FooterStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -498,17 +1259,44 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties of the footer section in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that contains the style properties of the footer section of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to provide a custom style for the footer of the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ The FooterStyle property of the <xref:System.Web.UI.WebControls.DataGrid> control inherits the style settings of the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property. For example, if you specify a red font for the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property, the FooterStyle property will also have a red font. This allows you to provide a common appearance for the control by setting a single style property. You can override the inherited style settings by setting the FooterStyle property. For example, you can specify a blue font for the FooterStyle property, overriding the red font specified in the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property.  
+  
+ To specify a custom style for the footer section, place the `<FooterStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<FooterStyle>` tag.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.DataGrid.ShowFooter%2A> property must be set to `true` for this property to be visible.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the FooterStyle property to set the background color of the footer section.  
+  
+ [!code-cs[classic datagrid.footerstyle example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_200_1.aspx)]
+ [!code-vb[classic datagrid.footerstyle example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_200_1.aspx)]  
+  
+ [!code-cs[DataGridFooterStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_200_2.aspx)]
+ [!code-vb[DataGridFooterStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_200_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle HeaderStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle HeaderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.HeaderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -529,17 +1317,44 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties of the heading section in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that contains the style properties of the heading section in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to provide a custom style for the heading section of the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ The HeaderStyle property of the <xref:System.Web.UI.WebControls.DataGrid> control inherits the style settings of the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property. For example, if you specify a red font for the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property, the HeaderStyle property will also have a red font. This allows you to provide a common appearance for the control by setting a single style property. You can override the inherited style settings by setting the HeaderStyle property. For example, you can specify a blue font for the HeaderStyle property, overriding the red font specified in the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property.  
+  
+ To specify a custom style for the heading section, place the `<HeaderStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<HeaderStyle>` tag.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.DataGrid.ShowHeader%2A> property must be set to `true` for this property to be visible.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the HeaderStyle property to set the background color of the heading section.  
+  
+ [!code-cs[classic datagrid.footerstyle example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1259_1.aspx)]
+ [!code-vb[classic datagrid.footerstyle example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1259_1.aspx)]  
+  
+ [!code-cs[DataGridFooterStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1259_2.aspx)]
+ [!code-vb[DataGridFooterStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1259_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeItem">
       <MemberSignature Language="C#" Value="protected virtual void InitializeItem (System.Web.UI.WebControls.DataGridItem item, System.Web.UI.WebControls.DataGridColumn[] columns);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeItem(class System.Web.UI.WebControls.DataGridItem item, class System.Web.UI.WebControls.DataGridColumn[] columns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.InitializeItem(System.Web.UI.WebControls.DataGridItem,System.Web.UI.WebControls.DataGridColumn[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -550,18 +1365,30 @@
         <Parameter Name="columns" Type="System.Web.UI.WebControls.DataGridColumn[]" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="columns">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Web.UI.WebControls.DataGridItem" /> to initialize.</param>
+        <param name="columns">An array of <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> objects that contains the columns in this <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</param>
+        <summary>Initializes the specified <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The InitializeItem method is a helper method used by the <xref:System.Web.UI.WebControls.DataGrid> class to initialize the specified <xref:System.Web.UI.WebControls.DataGridItem> object.  
+  
+> [!NOTE]
+>  This method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializePager">
       <MemberSignature Language="C#" Value="protected virtual void InitializePager (System.Web.UI.WebControls.DataGridItem item, int columnSpan, System.Web.UI.WebControls.PagedDataSource pagedDataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializePager(class System.Web.UI.WebControls.DataGridItem item, int32 columnSpan, class System.Web.UI.WebControls.PagedDataSource pagedDataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.InitializePager(System.Web.UI.WebControls.DataGridItem,System.Int32,System.Web.UI.WebControls.PagedDataSource)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -573,67 +1400,153 @@
         <Parameter Name="pagedDataSource" Type="System.Web.UI.WebControls.PagedDataSource" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="columnSpan">To be added.</param>
-        <param name="pagedDataSource">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Web.UI.WebControls.DataGridItem" /> that contains the pager.</param>
+        <param name="columnSpan">The number of columns to span the pager.</param>
+        <param name="pagedDataSource">A <see cref="T:System.Web.UI.WebControls.PagedDataSource" /> that contains the properties for the pager.</param>
+        <summary>Creates a <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object that contains the paging UI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The paging UI is a navigation bar that is a built into a single <xref:System.Web.UI.WebControls.TableCell> that spans across all columns of a <xref:System.Web.UI.WebControls.DataGrid> control. The InitializePager method is a helper method used by the <xref:System.Web.UI.WebControls.DataGrid> class to create the pager row.  
+  
+> [!NOTE]
+>  This method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemCommand">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridCommandEventHandler ItemCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridCommandEventHandler ItemCommand" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when any button is clicked in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ItemCommand event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataGrid> control. This event is commonly used to handle buttons controls with a custom CommandName value, such as Add, in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the ItemCommand event to add or remove an item from a shopping cart.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_148_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_148_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_148_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_148_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridItemEventHandler ItemCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridItemEventHandler ItemCreated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.ItemCreated" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs on the server when an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control is created.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ItemCreated event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is created, both during round-trips and at the time data is bound to the control.  
+  
+ The ItemCreated event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the ItemCreated event to display the order that items are created in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.ItemCreated Example#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_12_1.aspx)]
+ [!code-vb[Classic DataGrid.ItemCreated Example#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_12_1.aspx)]  
+  
+ [!code-vb[DataGridItemCreated#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_12_2.aspx)]
+ [!code-cs[DataGridItemCreated#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_12_2.aspx)]  
+  
+ [!code-cs[DataGridItemCreated2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_12_3.aspx)]
+ [!code-vb[DataGridItemCreated2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_12_3.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridItemEventHandler ItemDataBound;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridItemEventHandler ItemDataBound" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs after an item is data bound to the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ItemDataBound event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataGrid> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is nulled out and no longer available.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the ItemDataBound event to display the order that items in the <xref:System.Web.UI.WebControls.DataGrid> are data bounded.  
+  
+ [!code-vb[Classic DataGrid.ItemDataBound Example#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_14_1.aspx)]
+ [!code-cs[Classic DataGrid.ItemDataBound Example#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_14_1.aspx)]  
+  
+ [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_14_2.aspx)]
+ [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_14_2.aspx)]  
+  
+ [!code-vb[DataGridItemDataBound2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_14_3.aspx)]
+ [!code-cs[DataGridItemDataBound2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_14_3.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataGridItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridItemCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -648,17 +1561,40 @@
         <ReturnType>System.Web.UI.WebControls.DataGridItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.DataGridItem" /> objects that represent the individual items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataGridItemCollection" /> that contains a collection of <see cref="T:System.Web.UI.WebControls.DataGridItem" /> objects representing the individual items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Items collection to programmatically control the items in the <xref:System.Web.UI.WebControls.DataGrid> control. The Items collection does not provide any methods to add or remove items to the collection. However, you can control the contents of an item by providing a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event.  
+  
+> [!NOTE]
+>  Only items bound to the data source are contained in the Items collection. The header, footer, and separator are not included in the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the Items collection to display the contents of each item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.Items Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_967_1.aspx)]
+ [!code-vb[Classic DataGrid.Items Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_967_1.aspx)]  
+  
+ [!code-cs[DataGridColumnVisible#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_967_2.aspx)]
+ [!code-vb[DataGridColumnVisible#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_967_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle ItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle ItemStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.ItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -676,17 +1612,51 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties of the items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that contains the style properties of the items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to provide a custom style for the items of the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control are inherited from one item style property to another through a hierarchy. Item style properties set lower in the hierarchy are inherited by item style properties higher in the hierarchy. For example, if you specify a red font for the ItemStyle property, all other item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control will also have a red font. This allows you to provide a common appearance for the control by setting a single item style property. You can override the inherited style settings for an item style property that is higher in the hierarchy by setting its style properties. For example, you can specify a blue font for the <xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A> property, overriding the red font specified in the ItemStyle property. The following table lists the hierarchy order from highest to lowest.  
+  
+|Precedence|Style Property|  
+|----------------|--------------------|  
+|1|<xref:System.Web.UI.WebControls.DataGrid.EditItemStyle%2A>|  
+|2|<xref:System.Web.UI.WebControls.DataGrid.SelectedItemStyle%2A>|  
+|3|<xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A>|  
+|4|ItemStyle|  
+|5|<xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A>|  
+  
+ To specify a custom style for the items of the <xref:System.Web.UI.WebControls.DataGrid> control, place the `<ItemStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<ItemStyle>` tag.  
+  
+ You can also use the <xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A> property to provide a different appearance for the alternating items in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the ItemStyle property to set the background color of the items in the <xref:System.Web.UI.WebControls.DataGrid> to yellow.  
+  
+ [!code-cs[Classic DataGrid.ItemStyle Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_298_1.aspx)]
+ [!code-vb[Classic DataGrid.ItemStyle Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_298_1.aspx)]  
+  
+ [!code-vb[DataGridItemStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_298_2.aspx)]
+ [!code-cs[DataGridItemStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_298_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.LoadViewState(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -696,33 +1666,44 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="savedState">A saved state of the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</param>
+        <summary>Loads a saved state of the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NextPageCommandArgument">
       <MemberSignature Language="C#" Value="public const string NextPageCommandArgument;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string NextPageCommandArgument" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.NextPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Next command argument. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the NextPageCommandArgument field to represent the Next command argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -733,19 +1714,32 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Passes the event raised by a control within the container up the page's UI server control hierarchy.</summary>
+        <returns>
+          <see langword="true" /> to indicate that this method is passing an event raised by a control within the container up the page's UI server control hierarchy; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnBubbleEvent method to pass an event raised by a control within the container up the page's UI server control hierarchy.  
+  
+> [!NOTE]
+>  This method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCancelCommand">
       <MemberSignature Language="C#" Value="protected virtual void OnCancelCommand (System.Web.UI.WebControls.DataGridCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancelCommand(class System.Web.UI.WebControls.DataGridCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnCancelCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -755,17 +1749,46 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridCommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.CancelCommand" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnCancelCommand method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event is raised when the Cancel button is clicked for an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to `-1` (to deselect the item) and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event to cancel edits made to an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/51aa2dae-6c09-4eb8-9f08-_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/51aa2dae-6c09-4eb8-9f08-_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/51aa2dae-6c09-4eb8-9f08-_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/51aa2dae-6c09-4eb8-9f08-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeleteCommand">
       <MemberSignature Language="C#" Value="protected virtual void OnDeleteCommand (System.Web.UI.WebControls.DataGridCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeleteCommand(class System.Web.UI.WebControls.DataGridCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnDeleteCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -775,17 +1798,43 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridCommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.DeleteCommand" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnDeleteCommand method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event is raised when the Delete button is clicked for an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event to delete an item from the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/1890b438-1bae-42af-bde4-_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/1890b438-1bae-42af-bde4-_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/1890b438-1bae-42af-bde4-_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/1890b438-1bae-42af-bde4-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEditCommand">
       <MemberSignature Language="C#" Value="protected virtual void OnEditCommand (System.Web.UI.WebControls.DataGridCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEditCommand(class System.Web.UI.WebControls.DataGridCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnEditCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -795,17 +1844,46 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridCommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnEditCommand method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event is raised when the Edit button is clicked for an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to the selected row and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event to edit an item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/b46a6119-1e5d-457c-8ecf-_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/b46a6119-1e5d-457c-8ecf-_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/b46a6119-1e5d-457c-8ecf-_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/b46a6119-1e5d-457c-8ecf-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
       <MemberSignature Language="C#" Value="protected virtual void OnItemCommand (System.Web.UI.WebControls.DataGridCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCommand(class System.Web.UI.WebControls.DataGridCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnItemCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -815,17 +1893,41 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridCommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnItemCommand method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataGrid> control. This event is commonly used to handle buttons controls with a custom CommandName value, such as Add, in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event to add or remove an item from a shopping cart.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/bea05fa3-0074-4a3c-b2d7-_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/bea05fa3-0074-4a3c-b2d7-_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/bea05fa3-0074-4a3c-b2d7-_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/bea05fa3-0074-4a3c-b2d7-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
       <MemberSignature Language="C#" Value="protected virtual void OnItemCreated (System.Web.UI.WebControls.DataGridItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCreated(class System.Web.UI.WebControls.DataGridItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnItemCreated(System.Web.UI.WebControls.DataGridItemEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -835,17 +1937,46 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnItemCreated method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is created, both during round-trips and at the time data is bound to the control.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event to display the order that items are created in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.ItemCreated Example#1](~/add/codesnippet/csharp/687770eb-7dd3-4952-ab98-_1.aspx)]
+ [!code-vb[Classic DataGrid.ItemCreated Example#1](~/add/codesnippet/visualbasic/687770eb-7dd3-4952-ab98-_1.aspx)]  
+  
+ [!code-vb[DataGridItemCreated#1](~/add/codesnippet/visualbasic/687770eb-7dd3-4952-ab98-_2.aspx)]
+ [!code-cs[DataGridItemCreated#1](~/add/codesnippet/csharp/687770eb-7dd3-4952-ab98-_2.aspx)]  
+  
+ [!code-cs[DataGridItemCreated2#1](~/add/codesnippet/csharp/687770eb-7dd3-4952-ab98-_3.aspx)]
+ [!code-vb[DataGridItemCreated2#1](~/add/codesnippet/visualbasic/687770eb-7dd3-4952-ab98-_3.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
       <MemberSignature Language="C#" Value="protected virtual void OnItemDataBound (System.Web.UI.WebControls.DataGridItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemDataBound(class System.Web.UI.WebControls.DataGridItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnItemDataBound(System.Web.UI.WebControls.DataGridItemEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -855,17 +1986,44 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridItemEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnItemDataBound method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataGrid> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is nulled out and no longer available.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event to display the order that items in the <xref:System.Web.UI.WebControls.DataGrid> are data bounded.  
+  
+ [!code-vb[Classic DataGrid.ItemDataBound Example#1](~/add/codesnippet/visualbasic/434d1d8c-b319-467b-b3ec-_1.aspx)]
+ [!code-cs[Classic DataGrid.ItemDataBound Example#1](~/add/codesnippet/csharp/434d1d8c-b319-467b-b3ec-_1.aspx)]  
+  
+ [!code-cs[DataGridItemDataBound#1](~/add/codesnippet/csharp/434d1d8c-b319-467b-b3ec-_2.aspx)]
+ [!code-vb[DataGridItemDataBound#1](~/add/codesnippet/visualbasic/434d1d8c-b319-467b-b3ec-_2.aspx)]  
+  
+ [!code-vb[DataGridItemDataBound2#1](~/add/codesnippet/visualbasic/434d1d8c-b319-467b-b3ec-_3.aspx)]
+ [!code-cs[DataGridItemDataBound2#1](~/add/codesnippet/csharp/434d1d8c-b319-467b-b3ec-_3.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanged">
       <MemberSignature Language="C#" Value="protected virtual void OnPageIndexChanged (System.Web.UI.WebControls.DataGridPageChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPageIndexChanged(class System.Web.UI.WebControls.DataGridPageChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnPageIndexChanged(System.Web.UI.WebControls.DataGridPageChangedEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -875,17 +2033,46 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridPageChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridPageChangedEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnPageIndexChanged method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event is raised when one of the page selection elements is clicked.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event sets the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property to the index of the page you want to display and then uses the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  The event handler receives a <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs> object as a parameter. You can use the <xref:System.Web.UI.WebControls.DataGridPageChangedEventArgs.NewPageIndex%2A> property of this parameter to determine the index of the page selected by the user from the page selection elements of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event. It displays pages on the <xref:System.Web.UI.WebControls.DataGrid> control in 10-item increments.  
+  
+ [!code-vb[DataGridAllowPaging#1](~/add/codesnippet/visualbasic/77c294cf-ca10-45a1-858b-_1.aspx)]
+ [!code-cs[DataGridAllowPaging#1](~/add/codesnippet/csharp/77c294cf-ca10-45a1-858b-_1.aspx)]  
+  
+ [!code-cs[PageIndexChanged#1](~/add/codesnippet/csharp/77c294cf-ca10-45a1-858b-_2.aspx)]
+ [!code-vb[PageIndexChanged#1](~/add/codesnippet/visualbasic/77c294cf-ca10-45a1-858b-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnSortCommand">
       <MemberSignature Language="C#" Value="protected virtual void OnSortCommand (System.Web.UI.WebControls.DataGridSortCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSortCommand(class System.Web.UI.WebControls.DataGridSortCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -895,17 +2082,43 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridSortCommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridSortCommandEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.SortCommand" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnSortCommand method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event is raised when a column is sorted.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event sorts the list, and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.SortCommand> event to sort a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridAllowSorting#1](~/add/codesnippet/csharp/067f6c32-8382-41e3-abbc-_1.aspx)]
+ [!code-vb[DataGridAllowSorting#1](~/add/codesnippet/visualbasic/067f6c32-8382-41e3-abbc-_1.aspx)]  
+  
+ [!code-cs[DataGridSortCommand#1](~/add/codesnippet/csharp/067f6c32-8382-41e3-abbc-_2.aspx)]
+ [!code-vb[DataGridSortCommand#1](~/add/codesnippet/visualbasic/067f6c32-8382-41e3-abbc-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnUpdateCommand">
       <MemberSignature Language="C#" Value="protected virtual void OnUpdateCommand (System.Web.UI.WebControls.DataGridCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUpdateCommand(class System.Web.UI.WebControls.DataGridCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.OnUpdateCommand(System.Web.UI.WebControls.DataGridCommandEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -915,33 +2128,73 @@
         <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridCommandEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" /> event. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the OnUpdateCommand method to provide a custom handler for the <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> event.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> event is raised when the Update button for an item is clicked.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> event updates the data, sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to -1 (to deselect the item), and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The OnUpdateCommand method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> event to update the values of an item in the <xref:System.Web.UI.WebControls.DataGrid> control to new values specified by the user.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/cabcc454-95b4-44c8-9505-_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/cabcc454-95b4-44c8-9505-_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/cabcc454-95b4-44c8-9505-_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/cabcc454-95b4-44c8-9505-_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCommandName">
       <MemberSignature Language="C#" Value="public const string PageCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string PageCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.PageCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Page command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the PageCommandName field to represent the Page command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
       <MemberSignature Language="C#" Value="public int PageCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.PageCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -956,33 +2209,74 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the total number of pages required to display the items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>The total number of pages required to display the items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically determine the number of pages required to display the items in the <xref:System.Web.UI.WebControls.DataGrid> control. This property is only used when the <xref:System.Web.UI.WebControls.DataGrid.AllowPaging%2A> property is set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the PageCount property to determine the number of pages required to display the items in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.PageCount Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_640_1.aspx)]
+ [!code-vb[Classic DataGrid.PageCount Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_640_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanged">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridPageChangedEventHandler PageIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridPageChangedEventHandler PageIndexChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridPageChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when one of the page selection elements is clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PageIndexChanged event is raised when one of the page selection elements is clicked.  
+  
+ A typical handler for the PageIndexChanged event sets the <xref:System.Web.UI.WebControls.DataGrid.CurrentPageIndex%2A> property to the index of the page you want to display and then uses the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the PageIndexChanged event. It displays pages on the <xref:System.Web.UI.WebControls.DataGrid> control in 10-item increments.  
+  
+ [!code-vb[DataGridAllowPaging#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_145_1.aspx)]
+ [!code-cs[DataGridAllowPaging#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_145_1.aspx)]  
+  
+ [!code-cs[PageIndexChanged#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_145_2.aspx)]
+ [!code-vb[PageIndexChanged#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_145_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataGridPagerStyle PagerStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridPagerStyle PagerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.PagerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1000,17 +2294,39 @@
         <ReturnType>System.Web.UI.WebControls.DataGridPagerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties of the paging section of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataGridPagerStyle" /> object that contains the style properties of the paging section of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is an empty <see cref="T:System.Web.UI.WebControls.DataGridPagerStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to provide a custom style for the paging section of the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ To specify a custom style for the paging section, place the `<PagerStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<PagerStyle>` tag.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the PagerStyle property to specify a custom style for the page selection elements of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-vb[Classic DataGrid.PagerStyle Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1086_1.aspx)]
+ [!code-cs[Classic DataGrid.PagerStyle Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1086_1.aspx)]  
+  
+ [!code-cs[DataGridPagerStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_1086_2.aspx)]
+ [!code-vb[DataGridPagerStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_1086_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSize">
       <MemberSignature Language="C#" Value="public virtual int PageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.PageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1022,17 +2338,38 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of items to display on a single page of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>The number of items to display on a single page of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is 10.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the number of items to display on a single page of the <xref:System.Web.UI.WebControls.DataGrid> control. The <xref:System.Web.UI.WebControls.DataGrid.AllowPaging%2A> property must be set to `true` for this property have any effect.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the PageSize property to specify that five items are displayed on a single page of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[Classic DataGrid.PageCount Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_220_1.aspx)]
+ [!code-vb[Classic DataGrid.PageCount Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_220_1.aspx)]  
+  
+ [!code-vb[DataGridPageSize#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_220_2.aspx)]
+ [!code-cs[DataGridPageSize#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_220_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified page size less than 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
       <MemberSignature Language="C#" Value="protected override void PrepareControlHierarchy ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void PrepareControlHierarchy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.PrepareControlHierarchy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1040,32 +2377,50 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sets up the control hierarchy for this <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PrepareControlHierarchy method is a helper method called by the <xref:System.Web.UI.WebControls.DataGrid> control to set up the control hierarchy in the <xref:System.Web.UI.WebControls.DataGrid> control before the control is rendered.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrevPageCommandArgument">
       <MemberSignature Language="C#" Value="public const string PrevPageCommandArgument;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string PrevPageCommandArgument" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.PrevPageCommandArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Prev command argument. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the PrevPageCommandArgument field to represent the Prev command argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.SaveViewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1073,33 +2428,44 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Saves the current state of the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</summary>
+        <returns>The saved state of the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectCommandName">
       <MemberSignature Language="C#" Value="public const string SelectCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SelectCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.SelectCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Select command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the SelectCommandName field to represent the Select command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
       <MemberSignature Language="C#" Value="public virtual int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.SelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1114,17 +2480,37 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the index of the selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>The index of the selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the SelectedIndex property to determine the index of the item selected by the user in the <xref:System.Web.UI.WebControls.DataGrid> control. You can also use this property to programmatically specify which item is selected in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ To deselect an item in the <xref:System.Web.UI.WebControls.DataGrid> control, set this property to -1.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the SelectedIndex property to determine the index number of the selected item in the <xref:System.Web.UI.WebControls.DataGrid> control. It also shows how to select and deselect an item programmatically.  
+  
+ [!code-vb[Classic DataGrid.SelectedIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_583_1.aspx)]
+ [!code-cs[Classic DataGrid.SelectedIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_583_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataGridItem SelectedItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridItem SelectedItem" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.SelectedItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1139,17 +2525,37 @@
         <ReturnType>System.Web.UI.WebControls.DataGridItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object that represents the selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataGridItem" /> object that represents the selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the SelectedItem property to get a <xref:System.Web.UI.WebControls.DataGridItem> object that represents the selected item in the <xref:System.Web.UI.WebControls.DataGrid> control. This object can then be used to access the properties of the selected item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataList.SelectedItem%2A> property to access the properties of the selected item in the <xref:System.Web.UI.WebControls.DataList> control.  
+  
+ [!code-vb[Classic DataGrid.SelectedIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_976_1.aspx)]
+ [!code-cs[Classic DataGrid.SelectedIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_976_1.aspx)]  
+  
+ [!code-vb[BaseDataListSelectedIndexChanged#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_976_2.aspx)]
+ [!code-cs[BaseDataListSelectedIndexChanged#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_976_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedItemStyle">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle SelectedItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle SelectedItemStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.SelectedItemStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1167,17 +2573,49 @@
         <ReturnType>System.Web.UI.WebControls.TableItemStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the style properties of the currently selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that contains the style properties of the currently selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. The default value is an empty <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the SelectedItemStyle property to provide a custom style for the selected item in the <xref:System.Web.UI.WebControls.DataGrid> control. Common style attributes that can be adjusted include forecolor, backcolor, font, and content alignment within the cell. Providing a different style enhances the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ Item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control are inherited from one item style property to another through a hierarchy. Item style properties set lower in the hierarchy are inherited by item style properties higher in the hierarchy. For example, if you specify a red font for the <xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A> property, all other item style properties in the <xref:System.Web.UI.WebControls.DataGrid> control will also have a red font. This allows you to provide a common appearance for the control by setting a single item style property. You can override the inherited style settings for an item style property that is higher in the hierarchy by setting its style properties. For example, you can specify a blue font for the <xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A> property, overriding the red font specified in the <xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A> property. The following table lists the hierarchy order from highest to lowest.  
+  
+|Precedence|Style Property|  
+|----------------|--------------------|  
+|1|<xref:System.Web.UI.WebControls.DataGrid.EditItemStyle%2A>|  
+|2|SelectedItemStyle|  
+|3|<xref:System.Web.UI.WebControls.DataGrid.AlternatingItemStyle%2A>|  
+|4|<xref:System.Web.UI.WebControls.DataGrid.ItemStyle%2A>|  
+|5|<xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A>|  
+  
+ To specify a custom style for the selected item, place the `<SelectedItemStyle>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.DataGrid> control. You can then list the style attributes within the opening `<SelectedItemStyle>` tag.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use SelectedItemStyle property to set the background color of the selected item in the <xref:System.Web.UI.WebControls.DataGrid> control to yellow.  
+  
+ [!code-vb[Classic DataGrid.SelectedIndex Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_197_1.aspx)]
+ [!code-cs[Classic DataGrid.SelectedIndex Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_197_1.aspx)]  
+  
+ [!code-vb[DataGridSelectedItemStyle#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_197_2.aspx)]
+ [!code-cs[DataGridSelectedItemStyle#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_197_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFooter">
       <MemberSignature Language="C#" Value="public virtual bool ShowFooter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowFooter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.ShowFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1189,17 +2627,38 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the footer is displayed in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>
+          <see langword="true" /> to display the footer; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to `true` to display the footer in the <xref:System.Web.UI.WebControls.DataGrid> control. The appearance of the footer is controlled by using the <xref:System.Web.UI.WebControls.DataGrid.FooterStyle%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the ShowFooter property to display the footer in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-vb[Classic DataGrid.ShowFooter Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_541_1.aspx)]
+ [!code-cs[Classic DataGrid.ShowFooter Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_541_1.aspx)]  
+  
+ [!code-vb[DataGridShowHeader#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_541_2.aspx)]
+ [!code-cs[DataGridShowHeader#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_541_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
       <MemberSignature Language="C#" Value="public virtual bool ShowHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.ShowHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1211,66 +2670,129 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the header is displayed in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>
+          <see langword="true" /> to display the header; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to `true` to display the header in the <xref:System.Web.UI.WebControls.DataGrid>. The appearance of the header is controlled by using the <xref:System.Web.UI.WebControls.DataGrid.HeaderStyle%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the ShowHeader property to hide the header on the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-vb[Classic DataGrid.ShowHeader Example#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_893_1.aspx)]
+ [!code-cs[Classic DataGrid.ShowHeader Example#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_893_1.aspx)]  
+  
+ [!code-vb[DataGridShowHeader#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_893_2.aspx)]
+ [!code-cs[DataGridShowHeader#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_893_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SortCommand">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridSortCommandEventHandler SortCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridSortCommandEventHandler SortCommand" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.SortCommand" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridSortCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a column is sorted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SortCommand event is raised when a column is sorted.  
+  
+ A typical handler for the SortCommand event sorts the list, and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the SortCommand event to sort a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ [!code-cs[DataGridAllowSorting#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_20_1.aspx)]
+ [!code-vb[DataGridAllowSorting#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_20_1.aspx)]  
+  
+ [!code-cs[DataGridSortCommand#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_20_2.aspx)]
+ [!code-vb[DataGridSortCommand#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_20_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SortCommandName">
       <MemberSignature Language="C#" Value="public const string SortCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SortCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.SortCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Sort command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the SortCommandName field to represent the Sort command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TagKey">
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value for the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>Always returns <see langword="HtmlTextWriterTag.Table" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The TagKey property allows the output stream to write the appropriate HTML markup for the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGrid.TrackViewState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1278,48 +2800,86 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks the starting point to begin tracking and saving changes to the control as part of the control view state.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommand">
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataGridCommandEventHandler UpdateCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataGridCommandEventHandler UpdateCommand" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataGridCommandEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the Update button is clicked for an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The UpdateCommand event is raised when the Update button for an item is clicked.  
+  
+ A typical handler for the UpdateCommand event updates the data, sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to `-1` (to deselect the item), and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataGrid> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the UpdateCommand event to update the values of an item in the <xref:System.Web.UI.WebControls.DataGrid> control to new values specified by the user.  
+  
+ [!code-cs[DataGridEdit#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_117_1.aspx)]
+ [!code-vb[DataGridEdit#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_117_1.aspx)]  
+  
+ [!code-cs[DataGridEdit2#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_117_2.aspx)]
+ [!code-vb[DataGridEdit2#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_117_2.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateCommandName">
       <MemberSignature Language="C#" Value="public const string UpdateCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataGrid.UpdateCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the Update command name. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the UpdateCommandName field to represent the Update command name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VirtualItemCount">
       <MemberSignature Language="C#" Value="public virtual int VirtualItemCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VirtualItemCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGrid.VirtualItemCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1334,9 +2894,29 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the virtual number of items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control when custom paging is used.</summary>
+        <value>The virtual number of items in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control when custom paging is used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the virtual number of items in the <xref:System.Web.UI.WebControls.DataGrid> control when custom paging is used. This property is only used when the <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A> property is set to `true`.  
+  
+ If the <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A> property is set to `true`, the number of pages required to display every item in the <xref:System.Web.UI.WebControls.DataGrid> control is calculated based on the values of the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> and VirtualItemCount properties.  
+  
+ If the <xref:System.Web.UI.WebControls.DataGrid.AllowCustomPaging%2A> property is set to `false`, the number of pages displayed in the <xref:System.Web.UI.WebControls.DataGrid> control is calculated based on the values of the <xref:System.Web.UI.WebControls.DataGrid.PageSize%2A> property and the total number of items in the data source.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the VirtualItemCount property to specify the total number of items in the <xref:System.Web.UI.WebControls.DataGrid> control when custom paging is used.  
+  
+ [!code-cs[DataGridCustomPaging#1](~/add/codesnippet/csharp/p-system.web.ui.webcontr_635_1.aspx)]
+ [!code-vb[DataGridCustomPaging#1](~/add/codesnippet/visualbasic/p-system.web.ui.webcontr_635_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified value is a negative number.</exception>
       </Docs>
     </Member>
   </Members>

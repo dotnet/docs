@@ -1,8 +1,10 @@
 <Type Name="IConnectionPoint" FullName="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint">
   <TypeSignature Language="C#" Value="public interface IConnectionPoint" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConnectionPoint" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -18,16 +20,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an implementation of the OLE DB <see langword="IConnectionPoint" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Advise">
       <MemberSignature Language="C#" Value="public void Advise (IntPtr sink, out int cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Advise(native int sink, int32 cookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.Advise(System.IntPtr,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,18 +52,30 @@
         <Parameter Name="cookie" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="sink">To be added.</param>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sink">A reference to the sink to receive calls for the outgoing interface managed by this connection point.</param>
+        <param name="cookie">When this method returns, contains the connection cookie. This parameter is passed uninitialized.</param>
+        <summary>Establishes an advisory connection between the connection point and the caller's sink object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnumConnections">
       <MemberSignature Language="C#" Value="public void EnumConnections (out Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections enumC);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void EnumConnections(class Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections enumC) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.EnumConnections(Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,17 +85,29 @@
         <Parameter Name="enumC" Type="Microsoft.VisualBasic.Compatibility.VB6.IEnumConnections&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="enumC">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="enumC">When this method returns, contains the newly created enumerator. This parameter is passed uninitialized.</param>
+        <summary>Creates an enumerator object for iteration through the connections that exist to this connection point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConnectionInterface">
       <MemberSignature Language="C#" Value="public void GetConnectionInterface (out Guid piid);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetConnectionInterface(valuetype System.Guid piid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.GetConnectionInterface(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,17 +117,29 @@
         <Parameter Name="piid" Type="System.Guid&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="piid">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="piid">When this parameter returns, contains the IID of the outgoing interface managed by this connection point. This parameter is passed uninitialized.</param>
+        <summary>Returns the IID of the outgoing interface managed by this connection point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConnectionPointContainer">
       <MemberSignature Language="C#" Value="public void GetConnectionPointContainer (out Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer cpc);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetConnectionPointContainer(class Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer cpc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.GetConnectionPointContainer(Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,17 +149,29 @@
         <Parameter Name="cpc" Type="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPointContainer&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="cpc">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cpc">When this parameter returns, contains the connectable object's <see langword="IConnectionPointContainer" /> interface. This parameter is passed uninitialized.</param>
+        <summary>Retrieves the <see langword="IConnectionPointContainer" /> interface pointer to the connectable object that conceptually owns this connection point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unadvise">
       <MemberSignature Language="C#" Value="public void Unadvise (int cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Unadvise(int32 cookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.Unadvise(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,9 +181,19 @@
         <Parameter Name="cookie" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cookie">The connection cookie previously returned from the <see cref="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.Advise%2A" /> method.</param>
+        <summary>Closes an advisory connection that was previously established through the <see cref="Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.Advise%2A" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/add/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/add/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

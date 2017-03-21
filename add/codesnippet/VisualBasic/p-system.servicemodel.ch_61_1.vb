@@ -1,0 +1,1 @@
+			Dim replayCacheSize As Integer = settings.ReplayCacheSize

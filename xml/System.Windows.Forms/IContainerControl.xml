@@ -1,22 +1,37 @@
 <Type Name="IContainerControl" FullName="System.Windows.Forms.IContainerControl">
   <TypeSignature Language="C#" Value="public interface IContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContainerControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the functionality for a control to act as a parent for other controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the IContainerControl interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+  
+ [!code-cs[IContainerControl Implementation#1](~/add/codesnippet/csharp/t-system.windows.forms.i_14_1.cs)]
+ [!code-cpp[IContainerControl Implementation#1](~/add/codesnippet/cpp/t-system.windows.forms.i_14_1.cpp)]
+ [!code-vb[IContainerControl Implementation#1](~/add/codesnippet/visualbasic/t-system.windows.forms.i_14_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ActivateControl">
       <MemberSignature Language="C#" Value="public bool ActivateControl (System.Windows.Forms.Control active);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ActivateControl(class System.Windows.Forms.Control active) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IContainerControl.ActivateControl(System.Windows.Forms.Control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -26,27 +41,52 @@
         <Parameter Name="active" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="active">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="active">The <see cref="T:System.Windows.Forms.Control" /> being activated.</param>
+        <summary>Activates a specified control.</summary>
+        <returns>
+          <see langword="true" /> if the control is successfully activated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the ActivateControl method.  
+  
+ [!code-cs[IContainerControl Implementation#1](~/add/codesnippet/csharp/31ed16a7-0802-4903-9d02-_1.cs)]
+ [!code-cpp[IContainerControl Implementation#1](~/add/codesnippet/cpp/31ed16a7-0802-4903-9d02-_1.cpp)]
+ [!code-vb[IContainerControl Implementation#1](~/add/codesnippet/visualbasic/31ed16a7-0802-4903-9d02-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveControl">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control ActiveControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control ActiveControl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IContainerControl.ActiveControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the control that is active on the container control.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Control" /> that is currently active on the container control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the ActiveControl property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+  
+ [!code-cs[IContainerControl Implementation#1](~/add/codesnippet/csharp/p-system.windows.forms.i_23_1.cs)]
+ [!code-cpp[IContainerControl Implementation#1](~/add/codesnippet/cpp/p-system.windows.forms.i_23_1.cpp)]
+ [!code-vb[IContainerControl Implementation#1](~/add/codesnippet/visualbasic/p-system.windows.forms.i_23_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

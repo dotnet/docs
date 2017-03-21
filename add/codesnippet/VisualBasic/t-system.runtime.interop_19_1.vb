@@ -1,0 +1,1 @@
+   Public Sub SomeMethod(<MarshalAs(UnmanagedType.LPStr)> s As String)

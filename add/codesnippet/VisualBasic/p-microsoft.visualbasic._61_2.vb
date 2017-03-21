@@ -1,0 +1,1 @@
+        My.Computer.FileSystem.CurrentDirectory = "C:\TestDirectory"

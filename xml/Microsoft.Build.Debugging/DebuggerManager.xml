@@ -1,6 +1,7 @@
 <Type Name="DebuggerManager" FullName="Microsoft.Build.Debugging.DebuggerManager">
   <TypeSignature Language="C#" Value="public static class DebuggerManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DebuggerManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Debugging.DebuggerManager" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manager for supporting debugging a state machine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

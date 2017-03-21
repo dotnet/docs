@@ -1,0 +1,2 @@
+            // Adds a CodeAttributeDeclaration to the collection.
+            collection.Add( new CodeAttributeDeclaration("DescriptionAttribute",  new CodeAttributeArgument(new CodePrimitiveExpression("Test Description"))) );

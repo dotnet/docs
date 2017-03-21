@@ -1,8 +1,10 @@
 <Type Name="RuleConditionCollection" FullName="System.Workflow.Activities.Rules.RuleConditionCollection">
   <TypeSignature Language="C#" Value="public sealed class RuleConditionCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.Workflow.Activities.Rules.RuleCondition&gt;, System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RuleConditionCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Workflow.Activities.Rules.RuleCondition&gt; implements class System.Workflow.ComponentModel.IWorkflowChangeDiff" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,30 +20,44 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> classes defined on the workflow. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to dynamically update a condition that is part of the RuleConditionCollection. This code example is part of the ChangingRules SDK Sample from the Program.cs file. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)][Changing Rules](http://msdn.microsoft.com/en-us/68b2d284-34f0-4382-8944-9b21903d2287).  
+  
+ [!code-cs[wf_samples#96](~/add/codesnippet/csharp/wf_snippets/snippets1.cs#96)]
+ [!code-vb[wf_samples#96](~/add/codesnippet/visualbasic/wf_snippets/snippets1.vb#96)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleConditionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of a <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.Add(System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,17 +67,22 @@
         <Parameter Name="item" Type="System.Workflow.Activities.Rules.RuleCondition" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to add to the <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" />.</param>
+        <summary>Adds a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to the <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ReadOnlyException">The <see cref="T:System.Workflow.Activities.Rules.Rule" /> is runtime initialized.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Diff">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff (object originalDefinition, object changedDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff(object originalDefinition, object changedDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.Diff(System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,19 +93,21 @@
         <Parameter Name="changedDefinition" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="originalDefinition">To be added.</param>
-        <param name="changedDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="originalDefinition">The original <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" />.</param>
+        <param name="changedDefinition">The <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" /> with proposed changes.</param>
+        <summary>Determines the difference between two <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" /> classes.</summary>
+        <returns>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> classes that account for the differences between the <paramref name="originalDefinition" /> and the <paramref name="changedDefinition" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">
       <MemberSignature Language="C#" Value="protected override string GetKeyForItem (System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKeyForItem(class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.GetKeyForItem(System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,9 +126,11 @@
     <Member MemberName="InsertItem">
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.InsertItem(System.Int32,System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,9 +150,11 @@
     <Member MemberName="RemoveItem">
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.RemoveItem(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,9 +172,11 @@
     <Member MemberName="SetItem">
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.SetItem(System.Int32,System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

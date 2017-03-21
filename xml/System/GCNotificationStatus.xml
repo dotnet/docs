@@ -1,115 +1,119 @@
 <Type Name="GCNotificationStatus" FullName="System.GCNotificationStatus">
   <TypeSignature Language="C#" Value="public enum GCNotificationStatus" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GCNotificationStatus extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed GCNotificationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.GCNotificationStatus" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about the current registration for notification of the next full garbage collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.GC.RegisterForFullGCNotification%2A> method to register for a full garbage collection notification. Then use the <xref:System.GC.WaitForFullGCApproach%2A> method or the <xref:System.GC.WaitForFullGCComplete%2A> method to return a GCNotificationStatus enumeration that contains the status of the notification.  
+  
+   
+  
+## Examples  
+ The following example obtains a GCNotificationStatus enumeration from the <xref:System.GC.WaitForFullGCApproach%2A> method. If the enumeration returns Succeeded, it calls the custom method `OnFullGCApproachNotify` to perform actions in response to the approaching full garbage collection. This code example is part of a larger example provided for [Garbage Collection Notifications](../Topic/Garbage%20Collection%20Notifications.md) topic.  
+  
+ [!code-cpp[GCNotification#8](~/add/codesnippet/cpp/t-system.gcnotifications_1.cpp)]
+ [!code-cs[GCNotification#8](~/add/codesnippet/csharp/t-system.gcnotifications_1.cs)]
+ [!code-vb[GCNotification#8](~/add/codesnippet/visualbasic/t-system.gcnotifications_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Canceled">
       <MemberSignature Language="C#" Value="Canceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Canceled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current registration was canceled by the user.</summary>
       </Docs>
     </Member>
     <Member MemberName="Failed">
       <MemberSignature Language="C#" Value="Failed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Failed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Failed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The notification failed for any reason.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotApplicable">
       <MemberSignature Language="C#" Value="NotApplicable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus NotApplicable = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.NotApplicable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This result can be caused by the following: there is no current registration for a garbage collection notification, concurrent garbage collection is enabled, or the time specified for the <paramref name="millisecondsTimeout" /> parameter has expired and no garbage collection notification was obtained. (See the [&lt;gcConcurrent&gt;](../Topic/%3CgcConcurrent%3E%20Element.md) runtime setting for information about how to disable concurrent garbage collection.)</summary>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
       <MemberSignature Language="C#" Value="Succeeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Succeeded = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Succeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The notification was successful and the registration was not canceled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
       <MemberSignature Language="C#" Value="Timeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GCNotificationStatus Timeout = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.GCNotificationStatus.Timeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The time specified by the <paramref name="millisecondsTimeout" /> parameter for either <see cref="System.GC.WaitForFullGCApproach%28System.Int32%29" /> or <see cref="System.GC.WaitForFullGCComplete%28System.Int32%29" /> has elapsed.</summary>
       </Docs>
     </Member>
   </Members>

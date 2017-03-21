@@ -1,8 +1,10 @@
 <Type Name="FormViewInsertEventHandler" FullName="System.Web.UI.WebControls.FormViewInsertEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormViewInsertEventHandler(object sender, FormViewInsertEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewInsertEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewInsertEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,31 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.FormViewInsertEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.FormView.ItemInserting" /> event of a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormView> control raises the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event when an Insert button (a button with its `CommandName` property set to "Insert") within the control is clicked, but before the <xref:System.Web.UI.WebControls.FormView> control inserts the record. This allows you to provide an event-handling method that performs a custom routine, such as HTML encoding or validating the values of a record before inserting it in the data source, whenever this event occurs.  
+  
+ When you create a FormViewInsertEventHandler delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a FormViewInsertEventHandler delegate to the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ [!code-vb[FormViewInsertedEventHandler#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_355_1.aspx)]
+ [!code-cs[FormViewInsertedEventHandler#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_355_1.aspx)]  
+  
+ The following example demonstrates how to declaratively add a FormViewInsertEventHandler delegate to the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ [!code-vb[FormViewInsertEventArgs#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_355_2.aspx)]
+ [!code-cs[FormViewInsertEventArgs#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_355_2.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

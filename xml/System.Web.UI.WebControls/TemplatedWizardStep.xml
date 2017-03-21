@@ -1,8 +1,10 @@
 <Type Name="TemplatedWizardStep" FullName="System.Web.UI.WebControls.TemplatedWizardStep">
   <TypeSignature Language="C#" Value="public class TemplatedWizardStep : System.Web.UI.WebControls.WizardStepBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatedWizardStep extends System.Web.UI.WebControls.WizardStepBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplatedWizardStep" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,30 +32,54 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a step in a wizard control that can be customized through the use of templates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The TemplatedWizardStep class is provided to enable developers to apply a template to the steps in a control that acts as a wizard. The TemplatedWizardStep class is intended to be used primarily by control developers.  
+  
+ You can apply a theme to TemplatedWizardStep.  
+  
+   
+  
+## Examples  
+ The TemplatedWizardStep class allows you to customize the content and navigation templates within it. The following example shows how to define a template-based wizard step.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate%2A> property allows you to take full control of the navigation block, usually displayed at the bottom of the current view. Normally, you fill the navigation block with a series of buttons. However, other controls are acceptable as long as they support command bubbling, as does the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ [!code-cs[System.Web.UI.WebControls.TemplatedWizardStep#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_130_1.aspx)]
+ [!code-vb[System.Web.UI.WebControls.TemplatedWizardStep#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_130_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TemplatedWizardStep ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatedWizardStep.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TemplatedWizardStep" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplate">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate ContentTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -77,17 +103,19 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the template for displaying the content of a step in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
+        <value>An <see cref="T:System.Web.UI.ITemplate" /> object that contains the template for displaying the content of a step in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateContainer">
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ContentTemplateContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control ContentTemplateContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplateContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -102,17 +130,26 @@
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the container that a <see cref="T:System.Web.UI.WebControls.Wizard" /> control uses to create a <see cref="System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplate%2A" /> template for a step.</summary>
+        <value>A <see cref="T:System.Web.UI.Control" /> that contains the <see cref="System.Web.UI.WebControls.TemplatedWizardStep.ContentTemplate%2A" /> template for a step.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the syntax includes setting the ContentTemplateContainer property, it is for internal use only, so the property is effectively read-only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomNavigationTemplate">
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate CustomNavigationTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate CustomNavigationTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -136,17 +173,19 @@
         <ReturnType>System.Web.UI.ITemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the template for displaying the navigation user interface (UI) of a step in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</summary>
+        <value>An <see cref="T:System.Web.UI.ITemplate" /> object that contains the template for displaying the navigation UI of a step in a <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomNavigationTemplateContainer">
       <MemberSignature Language="C#" Value="public System.Web.UI.Control CustomNavigationTemplateContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control CustomNavigationTemplateContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplateContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -164,17 +203,29 @@
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the container that a <see cref="T:System.Web.UI.WebControls.Wizard" /> control uses to create a <see cref="System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate%2A" /> template for a step.</summary>
+        <value>A <see cref="T:System.Web.UI.Control" /> that contains the <see cref="System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate%2A" /> template for a step.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the syntax includes setting the CustomNavigationTemplateContainer property, it is for internal use only, so the property is effectively read-only. Your code should verify that the CustomNavigationTemplateContainer property is not `null` before referencing it.  
+  
+ This property is not bindable in visual designers, but is bindable at runtime. For more information, see <xref:System.ComponentModel.BindableAttribute>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NullReferenceException">If <see cref="System.Web.UI.WebControls.TemplatedWizardStep.CustomNavigationTemplate%2A" /> has no content.</exception>
       </Docs>
     </Member>
     <Member MemberName="SkinID">
       <MemberSignature Language="C#" Value="public override string SkinID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SkinID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatedWizardStep.SkinID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -186,8 +237,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the skin to apply to the control.</summary>
+        <value>The name of the skin to apply to the control. The default is <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

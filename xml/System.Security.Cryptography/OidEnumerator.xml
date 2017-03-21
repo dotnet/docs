@@ -1,17 +1,11 @@
 <Type Name="OidEnumerator" FullName="System.Security.Cryptography.OidEnumerator">
   <TypeSignature Language="C#" Value="public sealed class OidEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OidEnumerator extends System.Object implements class System.Collections.IEnumerator" />
-  <AssemblyInfo>
-    <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.OidEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,108 +16,159 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the ability to navigate through an <see cref="T:System.Security.Cryptography.OidCollection" /> object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements the <xref:System.Collections.IEnumerator> interface.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the OidEnumerator class.  
+  
+ [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/t-system.security.crypto_55_1.cs)]
+ [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/t-system.security.crypto_55_1.vb)]
+ [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/t-system.security.crypto_55_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Oid Current" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidEnumerator.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current <see cref="T:System.Security.Cryptography.Oid" /> object in an <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
+        <value>The current <see cref="T:System.Security.Cryptography.Oid" /> object in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created, the <xref:System.Security.Cryptography.OidEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the Current property; otherwise, Current returns `null` or throws an exception.  
+  
+ Current also returns `null` or throws an exception if the last call to <xref:System.Security.Cryptography.OidEnumerator.MoveNext%2A> returns `false`, which indicates that the end of the collection has been reached.  
+  
+ Current does not move the position of the enumerator, and consecutive calls to Current return the same object, until <xref:System.Security.Cryptography.OidEnumerator.MoveNext%2A> is called.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.OidEnumerator> class.  
+  
+ [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/p-system.security.crypto_54_1.cs)]
+ [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/p-system.security.crypto_54_1.vb)]
+ [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/p-system.security.crypto_54_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidEnumerator.MoveNext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Advances to the next <see cref="T:System.Security.Cryptography.Oid" /> object in an <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
+        <returns>
+          <see langword="true" />, if the enumerator was successfully advanced to the next element; <see langword="false" />, if the enumerator has passed the end of the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created, it is positioned before the first element of the collection, and the first call to the MoveNext method moves the enumerator over the first element of the collection. Subsequent calls to MoveNext advances the enumerator past subsequent items in the collection.  
+  
+ After the end of the collection is passed, calls to MoveNext return `false`.  
+  
+ An enumerator is valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator becomes invalid and the next call to MoveNext throws an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.OidEnumerator> class.  
+  
+ [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/m-system.security.crypto_126_1.cs)]
+ [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/m-system.security.crypto_126_1.vb)]
+ [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/m-system.security.crypto_126_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.OidEnumerator.Reset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sets an enumerator to its initial position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The initial position of an enumerator is before the first element in the <xref:System.Security.Cryptography.OidCollection> object. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator becomes invalid and the next call to the Reset method throws an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.OidEnumerator> class.  
+  
+ [!code-cs[Cryptography.Oid#1](~/add/codesnippet/csharp/m-system.security.crypto_90_1.cs)]
+ [!code-vb[Cryptography.Oid#1](~/add/codesnippet/visualbasic/m-system.security.crypto_90_1.vb)]
+ [!code-cpp[Cryptography.Oid#1](~/add/codesnippet/cpp/m-system.security.crypto_90_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.OidEnumerator.System#Collections#IEnumerator#Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current <see cref="T:System.Security.Cryptography.Oid" /> object in an <see cref="T:System.Security.Cryptography.OidCollection" /> object.</summary>
+        <value>The current <see cref="T:System.Security.Cryptography.Oid" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

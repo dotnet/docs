@@ -1,0 +1,1 @@
+            msOverMsmq.AlgorithmSuite = SecurityAlgorithmSuite.Basic128;

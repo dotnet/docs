@@ -1,29 +1,45 @@
 <Type Name="RuntimeEnvironment" FullName="System.Runtime.InteropServices.RuntimeEnvironment">
-  <TypeSignature Language="C#" Value="public static class RuntimeEnvironment" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeEnvironment extends System.Object" />
+  <TypeSignature Language="C#" Value="public class RuntimeEnvironment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuntimeEnvironment extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RuntimeEnvironment" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a collection of <see langword="static" /> methods that return information about the common language runtime environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to call many of the methods defined by the RuntimeEnvironment class.  
+  
+ [!code-cs[RuntimeEnvironment#1](~/add/codesnippet/csharp/t-system.runtime.interop_21_1.cs)]
+ [!code-vb[RuntimeEnvironment#1](~/add/codesnippet/visualbasic/t-system.runtime.interop_21_1.vb)]
+ [!code-cpp[RuntimeEnvironment#1](~/add/codesnippet/cpp/t-system.runtime.interop_21_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuntimeEnvironment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -33,21 +49,19 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.RuntimeEnvironment" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FromGlobalAccessCache">
       <MemberSignature Language="C#" Value="public static bool FromGlobalAccessCache (System.Reflection.Assembly a);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FromGlobalAccessCache(class System.Reflection.Assembly a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -56,46 +70,78 @@
         <Parameter Name="a" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="a">The assembly to test.</param>
+        <summary>Tests whether the specified assembly is loaded in the global assembly cache.</summary>
+        <returns>
+          <see langword="true" /> if the assembly is loaded in the global assembly cache; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates calling the FromGlobalAccessCache method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+  
+ [!code-cs[RuntimeEnvironment#2](~/add/codesnippet/csharp/79a16168-b32c-4317-a103-_1.cs)]
+ [!code-vb[RuntimeEnvironment#2](~/add/codesnippet/visualbasic/79a16168-b32c-4317-a103-_1.vb)]
+ [!code-cpp[RuntimeEnvironment#2](~/add/codesnippet/cpp/79a16168-b32c-4317-a103-_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeDirectory">
       <MemberSignature Language="C#" Value="public static string GetRuntimeDirectory ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRuntimeDirectory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the directory where the common language runtime is installed.</summary>
+        <returns>A string that contains the path to the directory where the common language runtime is installed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates calling the GetRuntimeDirectory method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+  
+ [!code-cs[RuntimeEnvironment#3](~/add/codesnippet/csharp/m-system.runtime.interop_27_1.cs)]
+ [!code-vb[RuntimeEnvironment#3](~/add/codesnippet/visualbasic/m-system.runtime.interop_27_1.vb)]
+ [!code-cpp[RuntimeEnvironment#3](~/add/codesnippet/cpp/m-system.runtime.interop_27_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for accessing files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeInterfaceAsIntPtr">
       <MemberSignature Language="C#" Value="public static IntPtr GetRuntimeInterfaceAsIntPtr (Guid clsid, Guid riid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetRuntimeInterfaceAsIntPtr(valuetype System.Guid clsid, valuetype System.Guid riid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -104,25 +150,52 @@
         <Parameter Name="riid" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="clsid">To be added.</param>
-        <param name="riid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="clsid">The identifier for the desired class.</param>
+        <param name="riid">The identifier for the desired interface.</param>
+        <summary>Returns the specified interface on the specified class.</summary>
+        <returns>An unmanaged pointer to the requested interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is similar to calling the  method on the  interface that represents this runtime.  
+  
+ The following table shows the supported combinations for `clsid` and `riid`.  
+  
+|`clsid`|`riid`|  
+|-------------|------------|  
+|CLSID_CorMetaDataDispenser|IID_IMetaDataDispenser, IID_IMetaDataDispenserEx|  
+|CLSID_CorMetaDataDispenserRuntime|IID_IMetaDataDispenser, IID_IMetaDataDispenserEx|  
+|CLSID_CorRuntimeHost|IID_CorRuntimeHost|  
+|CLSID_CLRRuntimeHost|IID_CLRRuntimeHost (not valid for the common language runtime that is provided by the [!INCLUDE[net_v40_long](~/add/includes/net-v40-long-md.md)]), IID_CLRRuntimeHost3|  
+|CLSID_TypeNameFactory|IID_TypeNameFactory|  
+|CLSID_CLRStrongName|IID_CLRStrongName|  
+  
+ GetRuntimeInterfaceAsIntPtr is similar to the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867) failure.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeInterfaceAsObject">
       <MemberSignature Language="C#" Value="public static object GetRuntimeInterfaceAsObject (Guid clsid, Guid riid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetRuntimeInterfaceAsObject(valuetype System.Guid clsid, valuetype System.Guid riid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -131,54 +204,92 @@
         <Parameter Name="riid" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="clsid">To be added.</param>
-        <param name="riid">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="clsid">The identifier for the desired class.</param>
+        <param name="riid">The identifier for the desired interface.</param>
+        <summary>Returns an instance of a type that represents a COM object by a pointer to its <see langword="IUnknown" /> interface.</summary>
+        <returns>An object that represents the specified unmanaged COM object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetRuntimeInterfaceAsObject is similar to the <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkId=144867) failure.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetSystemVersion">
       <MemberSignature Language="C#" Value="public static string GetSystemVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSystemVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the version number of the common language runtime that is running the current process.</summary>
+        <returns>A string containing the version number of the common language runtime.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates calling the GetSystemVersion method. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+  
+ [!code-cs[RuntimeEnvironment#4](~/add/codesnippet/csharp/m-system.runtime.interop_1_1.cs)]
+ [!code-vb[RuntimeEnvironment#4](~/add/codesnippet/visualbasic/m-system.runtime.interop_1_1.vb)]
+ [!code-cpp[RuntimeEnvironment#4](~/add/codesnippet/cpp/m-system.runtime.interop_1_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemConfigurationFile">
       <MemberSignature Language="C#" Value="public static string SystemConfigurationFile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string SystemConfigurationFile" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the path to the system configuration file.</summary>
+        <value>The path to the system configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the SystemConfigurationFile property. This code example is part of a larger example provided for the <xref:System.Runtime.InteropServices.RuntimeEnvironment> class.  
+  
+ [!code-cs[RuntimeEnvironment#5](~/add/codesnippet/csharp/p-system.runtime.interop_1_1.cs)]
+ [!code-vb[RuntimeEnvironment#5](~/add/codesnippet/visualbasic/p-system.runtime.interop_1_1.vb)]
+ [!code-cpp[RuntimeEnvironment#5](~/add/codesnippet/cpp/p-system.runtime.interop_1_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for accessing files and folders. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
       </Docs>
     </Member>
   </Members>

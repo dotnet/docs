@@ -1,8 +1,10 @@
 <Type Name="Control" FullName="System.Windows.Controls.Control">
   <TypeSignature Language="C#" Value="public class Control : System.Windows.FrameworkElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Control extends System.Windows.FrameworkElement" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,30 +12,71 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the base class for [!INCLUDE[TLA#tla_ui](~/add/includes/tlasharptla-ui-md.md)] elements that use a <see cref="T:System.Windows.Controls.ControlTemplate" /> to define their appearance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Control class is the base class for many of the controls you add to an application. The Control class defines very little behavior; while it is possible to add a Control to your application, it is far more common to add a control that inherits from Control, such as a <xref:System.Windows.Controls.Button> or <xref:System.Windows.Controls.ListBox>.  
+  
+ The <xref:System.Windows.Controls.Control.Template%2A> property, which is a <xref:System.Windows.Controls.ControlTemplate>, specifies the appearance of the Control. If you want to change the appearance of a control but retain its functionality, you should consider creating a new <xref:System.Windows.Controls.ControlTemplate> instead of creating a new class. For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+  
+ If you want to create a control with custom behavior as well as allow others to customize its appearance, your control can inherit from the Control class and define a <xref:System.Windows.Controls.ControlTemplate>.  If you want to extend the behavior of an existing control, you can inherit from a class that inherits from Control.  
+  
+ A Control that does not have a <xref:System.Windows.Controls.ControlTemplate> is not visible in your application, and setting the following properties has no effect unless the <xref:System.Windows.Controls.ControlTemplate> references them explicitly:  
+  
+-   <xref:System.Windows.Controls.Control.Background%2A>  
+  
+-   <xref:System.Windows.Controls.Control.BorderBrush%2A>  
+  
+-   <xref:System.Windows.Controls.Control.BorderThickness%2A>  
+  
+-   <xref:System.Windows.Controls.Control.FontFamily%2A>  
+  
+-   <xref:System.Windows.Controls.Control.FontSize%2A>  
+  
+-   <xref:System.Windows.Controls.Control.FontStretch%2A>  
+  
+-   <xref:System.Windows.Controls.Control.FontWeight%2A>  
+  
+-   <xref:System.Windows.Controls.Control.Foreground%2A>  
+  
+-   <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A>  
+  
+-   <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A>  
+  
+ A common way to use these properties is to bind an element in the <xref:System.Windows.Controls.ControlTemplate> to the property.  For example, if you want your control to change color according to the value of the <xref:System.Windows.Controls.Control.Background%2A> property, you can bind some property of an element in the <xref:System.Windows.Controls.ControlTemplate> to the <xref:System.Windows.Controls.Control.Background%2A>. Use the [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md) to bind properties on a control to an element in the <xref:System.Windows.Controls.ControlTemplate>.  
+  
+ Control overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `true`. For more information, see [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Control ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Control" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ArrangeOverride">
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeBounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,18 +86,27 @@
         <Parameter Name="arrangeBounds" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeBounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arrangeBounds">The computed size that is used to arrange the content.</param>
+        <summary>Called to arrange and size the content of a <see cref="T:System.Windows.Controls.Control" /> object.</summary>
+        <returns>The size of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default control arrangement arranges only the first visual child. No transforms are applied.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Background">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -69,33 +121,68 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a brush that describes the background of a control.</summary>
+        <value>The brush that is used to fill the background of the control. The default is <see cref="System.Windows.Media.Brushes.Transparent%2A" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Background property applies only to the resting state of a control.  The default style of the control specifies its appearance when the state of the control changes. For example, if you set the Background property on a <xref:System.Windows.Controls.Button>, the button has that value only when it is not pressed or disabled. If you want to create a control that has a more advanced customization of the background, you must define the control's style.  
+  
+ This property only affects a control whose template uses the Background property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_Background"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.BackgroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the background property of a control.  
+  
+ [!code-xml[ControlProps#11](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#11)]  
+  
+ [!code-cs[ControlProps#1](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#1)]
+ [!code-vb[ControlProps#1](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#1)]  
+  
+ The following example shows a template that enables a trigger to change the background of a button when it is pressed.  
+  
+ [!code-xml[BackgroundProp_snip#ButtonTemplate](~/add/codesnippet/xaml/backgroundprop/page1.xaml#buttontemplate)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.BackgroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.Background%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderBrush">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush BorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BorderBrush" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.BorderBrush" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -110,33 +197,62 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a brush that describes the border background of a control.</summary>
+        <value>The brush that is used to fill the control's border; the default is <see cref="System.Windows.Media.Brushes.Transparent%2A" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the BorderBrush property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_BorderBrush"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.BorderBrushProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the border brush property of a control.  
+  
+ [!code-xml[ControlProps#17](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#17)]  
+  
+ [!code-cs[ControlProps#7](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#7)]
+ [!code-vb[ControlProps#7](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderBrushProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.BorderBrushProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.BorderBrush%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderThickness">
       <MemberSignature Language="C#" Value="public System.Windows.Thickness BorderThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness BorderThickness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.BorderThickness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -151,33 +267,62 @@
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the border thickness of a control.</summary>
+        <value>A thickness value; the default is a thickness of 0 on all four sides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the BorderThickness property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_BorderThickness"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.BorderThicknessProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the border thickness property of a control.  
+  
+ [!code-xml[ControlProps_snip#AdditionalControlProps11](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#additionalcontrolprops11)]  
+  
+ [!code-cs[ControlProps_snip#AdditionalControlProps1](~/add/codesnippet/csharp/ControlProps_snip.ControlProps/Pane1.xaml.cs#additionalcontrolprops1)]
+ [!code-vb[ControlProps_snip#AdditionalControlProps1](~/add/codesnippet/visualbasic/ControlProps_snip.ControlProps/Window1.xaml.vb#additionalcontrolprops1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderThicknessProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderThicknessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderThicknessProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.BorderThicknessProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.BorderThickness%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
       <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontFamily" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -195,33 +340,62 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font family of the control.</summary>
+        <value>A font family. The default is the system dialog font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the FontFamily property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_FontFamily"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.FontFamilyProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the font family property of a control.  
+  
+ [!code-xml[ControlProps#13](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#13)]  
+  
+ [!code-cs[ControlProps#3](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#3)]
+ [!code-vb[ControlProps#3](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontFamilyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontFamilyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontFamilyProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.FontFamily%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontSize">
       <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -242,33 +416,93 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font size.</summary>
+        <value>The size of the text in the <see cref="T:System.Windows.Controls.Control" />. The default is <see cref="System.Windows.SystemFonts.MessageFontSize%2A" />. The font size must be a positive number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the FontSize property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_FontSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.FontSizeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+<a name="xamlAttributeUsage_FontSize"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object FontSize="double"/>  
+- or –  
+<object FontSize ="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_FontSize"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/add/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For example, a value of `1` is acceptable.  
+  
+ The same <xref:System.Double> range restrictions that are mentioned in the Property Value section apply here.  
+  
+ *qualifiedDouble*  
+ A *double* value as previously described that is followed by one of these unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/add/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ **Note** In many cases a double may be set to "Auto," but a FontSize does not render if set to "Auto".  
+  
+   
+  
+## Examples  
+ The following example shows how to set the font size property of a control.  
+  
+ [!code-xml[ControlProps#14](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#14)]  
+  
+ [!code-cs[ControlProps#4](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#4)]
+ [!code-vb[ControlProps#4](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontSizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontSizeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.FontSize%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStretch">
       <MemberSignature Language="C#" Value="public System.Windows.FontStretch FontStretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch FontStretch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontStretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -283,33 +517,62 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the degree to which a font is condensed or expanded on the screen.</summary>
+        <value>A <see cref="T:System.Windows.FontStretch" /> value. The default is <see cref="System.Windows.FontStretches.Normal%2A" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the FontStretch property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_FontStretch"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.FontStretchProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the font stretch property of a control. For possible stretch values, see <xref:System.Windows.FontStretches>.  
+  
+ [!code-xml[ControlProps_snip#AdditionalControlProps12](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#additionalcontrolprops12)]  
+  
+ [!code-cs[ControlProps_snip#AdditionalControlProps2](~/add/codesnippet/csharp/ControlProps_snip.ControlProps/Pane1.xaml.cs#additionalcontrolprops2)]
+ [!code-vb[ControlProps_snip#AdditionalControlProps2](~/add/codesnippet/visualbasic/ControlProps_snip.ControlProps/Window1.xaml.vb#additionalcontrolprops2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStretchProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStretchProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStretchProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontStretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.FontStretch%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
       <MemberSignature Language="C#" Value="public System.Windows.FontStyle FontStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle FontStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -324,33 +587,62 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font style.</summary>
+        <value>A <see cref="T:System.Windows.FontStyle" /> value. The default is <see cref="System.Windows.FontStyles.Normal%2A" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the FontStyle property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_FontStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.FontStyleProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the font style property of a control.  
+  
+ [!code-xml[ControlProps#15](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#15)]  
+  
+ [!code-cs[ControlProps#5](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#5)]
+ [!code-vb[ControlProps#5](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyleProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.FontStyle%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FontWeight">
       <MemberSignature Language="C#" Value="public System.Windows.FontWeight FontWeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight FontWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.FontWeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -365,33 +657,62 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the weight or thickness of the specified font.</summary>
+        <value>A <see cref="T:System.Windows.FontWeight" /> value. The default is <see cref="System.Windows.FontWeights.Normal%2A" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the FontWeight property as a parameter. On other controls, this property has no impact. For a list of predefined <xref:System.Windows.FontWeight> values, see the <xref:System.Windows.FontWeights> class.  
+  
+<a name="dependencyPropertyInfo_FontWeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.FontWeightProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the FontWeight property of a control.  
+  
+ [!code-xml[ControlProps#16](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#16)]  
+  
+ [!code-cs[ControlProps#6](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#6)]
+ [!code-vb[ControlProps#6](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontWeightProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontWeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontWeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.FontWeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.FontWeight%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Foreground">
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Foreground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Foreground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Foreground" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -406,50 +727,82 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a brush that describes the foreground color.</summary>
+        <value>The brush that paints the foreground of the control. The default value is the system dialog font color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only affects a control whose template uses the Foreground property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_Foreground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.ForegroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the font style property of a control.  
+  
+ [!code-xml[ControlProps#12](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#12)]  
+  
+ [!code-cs[ControlProps#2](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#2)]
+ [!code-vb[ControlProps#2](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.ForegroundProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.Foreground%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HandlesScrolling">
       <MemberSignature Language="C#" Value="protected virtual bool HandlesScrolling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HandlesScrolling" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.HandlesScrolling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether a control supports scrolling.</summary>
+        <value>
+          <see langword="true" /> if the control has a <see cref="T:System.Windows.Controls.ScrollViewer" /> in its style and has a custom keyboard scrolling behavior; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalContentAlignment">
       <MemberSignature Language="C#" Value="public System.Windows.HorizontalAlignment HorizontalContentAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.HorizontalAlignment HorizontalContentAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.HorizontalContentAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -464,33 +817,64 @@
         <ReturnType>System.Windows.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the horizontal alignment of the control's content.</summary>
+        <value>One of the <see cref="T:System.Windows.HorizontalAlignment" /> values. The default is <see cref="T:System.Windows.HorizontalAlignment" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, and <xref:System.Windows.HorizontalAlignment>, you can set the HorizontalContentAlignment property to <xref:System.Windows.HorizontalAlignment>, which stretches the child element to fill the allocated space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](../Topic/Alignment,%20Margins,%20and%20Padding%20Overview.md).  
+  
+ This property only affects a control whose template uses the HorizontalContentAlignment property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_HorizontalContentAlignment"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.HorizontalContentAlignmentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the horizontal content alignment property of a control.  
+  
+ [!code-xml[ControlProps#18](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#18)]  
+  
+ [!code-cs[ControlProps#8](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#8)]
+ [!code-vb[ControlProps#8](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalContentAlignmentProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HorizontalContentAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HorizontalContentAlignmentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.HorizontalContentAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.HorizontalContentAlignment%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTabStop">
       <MemberSignature Language="C#" Value="public bool IsTabStop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTabStop" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.IsTabStop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -505,33 +889,63 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether a control is included in tab navigation.</summary>
+        <value>
+          <see langword="true" /> if the control is included in tab navigation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If IsTabStop is `false`, the control is excluded from tab navigation.  
+  
+<a name="dependencyPropertyInfo_IsTabStop"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.IsTabStopProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the IsTabStop property and how to test whether a control is included in tab navigation.  
+  
+ [!code-xml[ControlProps_snip#AdditionalControlProps15](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#additionalcontrolprops15)]  
+  
+ [!code-cs[ControlProps_snip#AdditionalControlProps4](~/add/codesnippet/csharp/ControlProps_snip.ControlProps/Pane1.xaml.cs#additionalcontrolprops4)]
+ [!code-vb[ControlProps_snip#AdditionalControlProps4](~/add/codesnippet/visualbasic/ControlProps_snip.ControlProps/Window1.xaml.vb#additionalcontrolprops4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTabStopProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsTabStopProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsTabStopProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.IsTabStopProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.IsTabStop%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.MeasureOverride(System.Windows.Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -541,50 +955,95 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constraint">The maximum size that the method can return.</param>
+        <summary>Called to remeasure a control.</summary>
+        <returns>The size of the control, up to the maximum specified by <paramref name="constraint" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default control measurement only measures the first visual child.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
       <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler MouseDoubleClick" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Control.MouseDoubleClick" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButtonEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a mouse button is clicked two or more times.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this routed event seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised along the element tree by each <xref:System.Windows.UIElement>. If you set the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true` in a MouseDoubleClick event handler, subsequent MouseDoubleClick events along the route will occur with <xref:System.Windows.RoutedEventArgs.Handled%2A> set to `false`. This is a higher-level event for control consumers who want to be notified when the user double-clicks the control and to handle the event in an application.  
+  
+ Control authors who want to handle mouse double clicks should use the <xref:System.Windows.UIElement.MouseLeftButtonDown> event when <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> is equal to two.  This will cause the state of <xref:System.Windows.RoutedEventArgs.Handled%2A> to propagate appropriately in the case where another element in the element tree handles the event.  
+  
+ The <xref:System.Windows.Controls.Control> class defines the <xref:System.Windows.Controls.Control.PreviewMouseDoubleClick> and MouseDoubleClick events, but not corresponding single-click events.  To see if the user has clicked the control once, handle the <xref:System.Windows.UIElement.MouseDown> event (or one of its counterparts) and check whether the <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> property value is 1.  
+  
+<a name="routedEventInfo_MouseDoubleClick"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.MouseDoubleClickEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how to attach an event handler to the MouseDoubleClick event.  
+  
+ [!code-xml[ControlProps_snip#ControlEvents11](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#controlevents11)]  
+  
+ The following example shows the event handler of the MouseDoubleClick event.  
+  
+ [!code-cs[ControlProps_snip#ControlEvents1](~/add/codesnippet/csharp/ControlProps_snip.ControlProps/Pane1.xaml.cs#controlevents1)]
+ [!code-vb[ControlProps_snip#ControlEvents1](~/add/codesnippet/visualbasic/ControlProps_snip.ControlProps/Window1.xaml.vb#controlevents1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClickEvent">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent MouseDoubleClickEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent MouseDoubleClickEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.MouseDoubleClickEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Control.MouseDoubleClick" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDoubleClick">
       <MemberSignature Language="C#" Value="protected virtual void OnMouseDoubleClick (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseDoubleClick(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,17 +1053,26 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.Control.MouseDoubleClick" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The control raises the <xref:System.Windows.Controls.Control.MouseDoubleClick> event by calling the <xref:System.Windows.UIElement.RaiseEvent%2A> method. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviewMouseDoubleClick">
       <MemberSignature Language="C#" Value="protected virtual void OnPreviewMouseDoubleClick (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreviewMouseDoubleClick(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -614,17 +1082,26 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.Control.PreviewMouseDoubleClick" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The control raises the <xref:System.Windows.Controls.Control.PreviewMouseDoubleClick> event by calling the <xref:System.Windows.UIElement.RaiseEvent%2A> method.  For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTemplateChanged">
       <MemberSignature Language="C#" Value="protected virtual void OnTemplateChanged (System.Windows.Controls.ControlTemplate oldTemplate, System.Windows.Controls.ControlTemplate newTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTemplateChanged(class System.Windows.Controls.ControlTemplate oldTemplate, class System.Windows.Controls.ControlTemplate newTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -635,18 +1112,37 @@
         <Parameter Name="newTemplate" Type="System.Windows.Controls.ControlTemplate" />
       </Parameters>
       <Docs>
-        <param name="oldTemplate">To be added.</param>
-        <param name="newTemplate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="oldTemplate">The old template.</param>
+        <param name="newTemplate">The new template.</param>
+        <summary>Called whenever the control's template changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The timing for changing the template is as follows:  
+  
+1.  The template is changed by a <xref:System.Windows.DependencyObject.SetValue%2A> method call, a style trigger, or some other means.  
+  
+2.  The property value changes; the property-changed callback is called.  
+  
+3.  The old visual tree is removed.  
+  
+4.  An internal method is called which eventually calls the OnTemplateChanged method.  
+  
+5.  Later, during a measure, <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> is called and a new visual tree is attached.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Padding">
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -661,65 +1157,132 @@
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the padding inside a control.</summary>
+        <value>The amount of space between the content of a <see cref="T:System.Windows.Controls.Control" /> and its <see cref="System.Windows.FrameworkElement.Margin%2A" /> or <see cref="T:System.Windows.Controls.Border" />.  The default is a thickness of 0 on all four sides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Padding is specified in the order Left, Top, Right, and Bottom. For more information, see <xref:System.Windows.Thickness> and [Alignment, Margins, and Padding Overview](../Topic/Alignment,%20Margins,%20and%20Padding%20Overview.md).  
+  
+ This property only affects a control whose template uses the Padding property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_Padding"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.PaddingProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the padding property of a control.  
+  
+ [!code-xml[ControlProps_snip#AdditionalControlProps13](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#additionalcontrolprops13)]  
+  
+ [!code-cs[ControlProps_snip#AdditionalControlProps3](~/add/codesnippet/csharp/ControlProps_snip.ControlProps/Pane1.xaml.cs#additionalcontrolprops3)]
+ [!code-vb[ControlProps_snip#AdditionalControlProps3](~/add/codesnippet/visualbasic/ControlProps_snip.ControlProps/Window1.xaml.vb#additionalcontrolprops3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.PaddingProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.Padding%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseDoubleClick">
       <MemberSignature Language="C#" Value="public event System.Windows.Input.MouseButtonEventHandler PreviewMouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.MouseButtonEventHandler PreviewMouseDoubleClick" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Control.PreviewMouseDoubleClick" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseButtonEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a user clicks the mouse button two or more times.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this routed event seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised along the element tree by each <xref:System.Windows.UIElement>. If you set the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true` in a PreviewMouseDoubleClick event handler, subsequent PreviewMouseDoubleClick events along the route will occur with <xref:System.Windows.RoutedEventArgs.Handled%2A> set to `false`, but the <xref:System.Windows.Controls.Control.MouseDoubleClick> event will occur with <xref:System.Windows.RoutedEventArgs.Handled%2A> set to `true`. This is a higher-level event for control consumers who want to be notified when the user double-clicks the control and to handle the event in an application.  
+  
+ Control authors who want to handle mouse double clicks should use the <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> event when <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> is equal to two.  This will cause the state of <xref:System.Windows.RoutedEventArgs.Handled%2A> to propagate appropriately in the case where another element in the element tree handles the event.  
+  
+ The <xref:System.Windows.Controls.Control> class defines the PreviewMouseDoubleClick and <xref:System.Windows.Controls.Control.MouseDoubleClick> events, but not corresponding single-click events.  To see if the user has clicked the control once, handle the <xref:System.Windows.UIElement.MouseDown> event (or one of its counterparts) and check whether the <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> property value is 1.  
+  
+<a name="routedEventInfo_PreviewMouseDoubleClick"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.PreviewMouseDoubleClickEvent>|  
+|Routing strategy|Direct|  
+|Delegate|<xref:System.Windows.Input.MouseButtonEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how to attach an event handler the PreviewMouseDoubleClick event.  
+  
+ [!code-xml[ControlProps_snip#ControlEvents12](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#controlevents12)]  
+  
+ The following example shows the event handler of the PreviewMouseDoubleClick event.  
+  
+ [!code-cs[ControlProps_snip#ControlEvents2](~/add/codesnippet/csharp/ControlProps_snip.ControlProps/Pane1.xaml.cs#controlevents2)]
+ [!code-vb[ControlProps_snip#ControlEvents2](~/add/codesnippet/visualbasic/ControlProps_snip.ControlProps/Window1.xaml.vb#controlevents2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviewMouseDoubleClickEvent">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent PreviewMouseDoubleClickEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent PreviewMouseDoubleClickEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.PreviewMouseDoubleClickEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Control.PreviewMouseDoubleClick" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
       <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.TabIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -734,66 +1297,120 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that determines the order in which elements receive focus when the user navigates through controls by using the TAB key.</summary>
+        <value>A value that determines the order of logical navigation for a device. The default value is <see cref="T:System.Int32" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control with a lower tab index receives focus before a control with a higher index.  
+  
+<a name="dependencyPropertyInfo_TabIndex"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.TabIndexProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example sets the tab index of three buttons.  
+  
+ [!code-xml[ControlProps_snip#AdditionalControlProps17](~/add/codesnippet/xaml/ControlProps_snip.ControlProps/Pane1.xaml#additionalcontrolprops17)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndexProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabIndexProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabIndexProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.TabIndexProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.TabIndex%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Template">
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ControlTemplate Template { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ControlTemplate Template" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.Template" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ControlTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a control template.</summary>
+        <value>The template that defines the appearance of the <see cref="T:System.Windows.Controls.Control" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ControlTemplate> specifies the appearance of a <xref:System.Windows.Controls.Control>; if a <xref:System.Windows.Controls.Control> does not have a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.Controls.Control> will not appear in your application. The control author defines the default control template, and the application author can override the <xref:System.Windows.Controls.ControlTemplate> to redefine the visual tree of the control. See [Control Styles and Templates](../Topic/Control%20Styles%20and%20Templates.md) for information and examples of how to change the visual tree of existing controls.  
+  
+ A <xref:System.Windows.Controls.ControlTemplate> is intended to be a self-contained unit of implementation detail that is invisible to outside users and objects, including <xref:System.Windows.Style> objects. The only way to manipulate the content of the control template is from within the same control template.  
+  
+<a name="dependencyPropertyInfo_Template"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.TemplateProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  If you add this to your application as a resource, all the buttons in the application will appear as ellipses but will still function as buttons.  
+  
+ [!code-xml[StylingIntroSample_snip#ButtonCT](~/add/codesnippet/xaml/p-system.windows.control_20_1.xaml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TemplateProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.TemplateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.Template%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Control.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -801,17 +1418,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of a <see cref="T:System.Windows.Controls.Control" /> object.</summary>
+        <returns>A string that represents the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control authors should override this method to return a string that contains information that would be of interest to consumers of the control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalContentAlignment">
       <MemberSignature Language="C#" Value="public System.Windows.VerticalAlignment VerticalContentAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.VerticalAlignment VerticalContentAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Control.VerticalContentAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -826,24 +1452,53 @@
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the vertical alignment of the control's content.</summary>
+        <value>One of the <see cref="T:System.Windows.VerticalAlignment" /> values. The default is <see cref="T:System.Windows.VerticalAlignment" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to <xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>, and <xref:System.Windows.VerticalAlignment>, you can set the VerticalContentAlignment property to <xref:System.Windows.VerticalAlignment>, which stretches the child element to fill the allocated layout space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](../Topic/Alignment,%20Margins,%20and%20Padding%20Overview.md).  
+  
+ This property only affects a control whose template uses the VerticalContentAlignment property as a parameter. On other controls, this property has no impact.  
+  
+<a name="dependencyPropertyInfo_VerticalContentAlignment"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Control.VerticalContentAlignmentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the vertical content alignment property on a control.  
+  
+ [!code-xml[ControlProps#19](~/add/codesnippet/xaml/ControlProps.ControlProps/Pane1.xaml#19)]  
+  
+ [!code-cs[ControlProps#9](~/add/codesnippet/csharp/ControlProps.ControlProps/Pane1.xaml.cs#9)]
+ [!code-vb[ControlProps#9](~/add/codesnippet/visualbasic/ControlProps.ControlProps/Pane1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalContentAlignmentProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VerticalContentAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VerticalContentAlignmentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Control.VerticalContentAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.Control.VerticalContentAlignment%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

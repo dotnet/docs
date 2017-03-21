@@ -1,0 +1,1 @@
+        Dim x As String = "Double quotation marks aren't ""difficult"" to handle."

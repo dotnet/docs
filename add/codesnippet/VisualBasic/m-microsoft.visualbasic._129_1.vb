@@ -1,0 +1,2 @@
+        ' Sound a tone.
+        Beep()

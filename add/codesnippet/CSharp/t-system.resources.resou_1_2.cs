@@ -1,0 +1,1 @@
+      ResourceManager rm = new ResourceManager(typeof(MyCompany.StringResources));

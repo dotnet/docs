@@ -1,0 +1,1 @@
+			Dim cd1 As New ContractDescription("ICalculator", "http://www.tempuri.org")

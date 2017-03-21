@@ -1,121 +1,157 @@
 <Type Name="ValidationCompareOperator" FullName="System.Web.UI.WebControls.ValidationCompareOperator">
   <TypeSignature Language="C#" Value="public enum ValidationCompareOperator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationCompareOperator extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationCompareOperator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the validation comparison operators used by the <see cref="T:System.Web.UI.WebControls.CompareValidator" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ValidationCompareOperator enumeration represents the comparison operations that can be performed by the <xref:System.Web.UI.WebControls.CompareValidator> control.  
+  
+> [!NOTE]
+>  Unlike the other operators, `DataTypeCheck` is a unary operation. Only the data type of the input control being validated is checked. If the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> or <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties are set when this operation is used, those values are not checked.  
+  
+   
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-cs[Classic CompareValidator Example#1](~/add/codesnippet/csharp/t-system.web.ui.webcontr_67_1.aspx)]
+ [!code-vb[Classic CompareValidator Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_67_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataTypeCheck">
       <MemberSignature Language="C#" Value="DataTypeCheck" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator DataTypeCheck = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.DataTypeCheck" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for data type only.</summary>
       </Docs>
     </Member>
     <Member MemberName="Equal">
       <MemberSignature Language="C#" Value="Equal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator Equal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.Equal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for equality.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
       <MemberSignature Language="C#" Value="GreaterThan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator GreaterThan = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for greater than.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanEqual">
       <MemberSignature Language="C#" Value="GreaterThanEqual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator GreaterThanEqual = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.GreaterThanEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for greater than or equal to.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
       <MemberSignature Language="C#" Value="LessThan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator LessThan = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for less than.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanEqual">
       <MemberSignature Language="C#" Value="LessThanEqual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator LessThanEqual = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.LessThanEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for less than or equal to.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEqual">
       <MemberSignature Language="C#" Value="NotEqual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationCompareOperator NotEqual = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationCompareOperator.NotEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationCompareOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comparison for inequality.</summary>
       </Docs>
     </Member>
   </Members>

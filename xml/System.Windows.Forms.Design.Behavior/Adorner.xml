@@ -1,8 +1,10 @@
 <Type Name="Adorner" FullName="System.Windows.Forms.Design.Behavior.Adorner">
   <TypeSignature Language="C#" Value="public sealed class Adorner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Adorner extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.Adorner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,81 +12,159 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Manages a collection of user-interface related <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each Adorner can be enabled and disabled. Only enabled Adorner objects will receive hit test and paint messages from the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. An Adorner can be viewed as a proxy between user-interface related elements, which consist of all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, and the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+  
+ For more information, see [Behavior Service Overview](../Topic/Behavior%20Service%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the Adorner class interacts with the <xref:System.Windows.Forms.Design.Behavior.Glyph> and <xref:System.Windows.Forms.Design.Behavior.BehaviorService> classes. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/add/codesnippet/cpp/t-system.windows.forms.d_6_1.cpp)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/add/codesnippet/visualbasic/t-system.windows.forms.d_6_1.vb)]
+ [!code-cs[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/add/codesnippet/csharp/t-system.windows.forms.d_6_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Adorner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Adorner constructor creates a new <xref:System.Windows.Forms.Design.Behavior.GlyphCollection> and is enabled, by default.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a new instance of the <xref:System.Windows.Forms.Design.Behavior.Adorner> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/add/codesnippet/cpp/m-system.windows.forms.d_47_1.cpp)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/add/codesnippet/visualbasic/m-system.windows.forms.d_47_1.vb)]
+ [!code-cs[System.Windows.Forms.Design.Behavior.BehaviorService#3](~/add/codesnippet/csharp/m-system.windows.forms.d_47_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BehaviorService">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.BehaviorService BehaviorService { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.BehaviorService BehaviorService" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Adorner.BehaviorService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.BehaviorService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an <xref:System.Windows.Forms.Design.Behavior.Adorner> is added to the <xref:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection> of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>, the collection sets this property so that the <xref:System.Windows.Forms.Design.Behavior.Adorner> can call back to the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Adorner.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating if the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> is enabled.</summary>
+        <value>
+          <see langword="true" />, if the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the Enabled property is `true`, the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class will send `HitTest` and `Paint` messages to the <xref:System.Windows.Forms.Design.Behavior.Adorner>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to enable and disable an <xref:System.Windows.Forms.Design.Behavior.Adorner>. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](../Topic/How%20to:%20Extend%20the%20Appearance%20and%20Behavior%20of%20Controls%20in%20Design%20Mode.md).  
+  
+ [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/add/codesnippet/visualbasic/p-system.windows.forms.d_356_1.vb)]
+ [!code-cs[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/add/codesnippet/csharp/p-system.windows.forms.d_356_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Glyphs">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.GlyphCollection Glyphs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.GlyphCollection Glyphs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.Adorner.Glyphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.GlyphCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> collection.</summary>
+        <value>A collection of <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to access the <xref:System.Windows.Forms.Design.Behavior.Glyph> collection. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.Behavior.BehaviorService> class.  
+  
+ [!code-cpp[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/add/codesnippet/cpp/p-system.windows.forms.d_286_1.cpp)]
+ [!code-vb[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/add/codesnippet/visualbasic/p-system.windows.forms.d_286_1.vb)]
+ [!code-cs[System.Windows.Forms.Design.Behavior.BehaviorService#4](~/add/codesnippet/csharp/p-system.windows.forms.d_286_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.Invalidate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,16 +172,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](../Topic/How%20to:%20Extend%20the%20Appearance%20and%20Behavior%20of%20Controls%20in%20Design%20Mode.md).  
+  
+ [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/add/codesnippet/visualbasic/m-system.windows.forms.d_103_1.vb)]
+ [!code-cs[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/add/codesnippet/csharp/m-system.windows.forms.d_103_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Rectangle rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Rectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,17 +203,19 @@
         <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="rectangle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rectangle">The area to invalidate.</param>
+        <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window within the given <see cref="T:System.Drawing.Rectangle" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Region region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(class System.Drawing.Region region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Region)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,8 +225,8 @@
         <Parameter Name="region" Type="System.Drawing.Region" />
       </Parameters>
       <Docs>
-        <param name="region">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="region">The <see cref="T:System.Drawing.Region" /> to invalidate.</param>
+        <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window within the given <see cref="T:System.Drawing.Region" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

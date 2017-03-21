@@ -1,0 +1,1 @@
+            cryptoTransform.Clear();

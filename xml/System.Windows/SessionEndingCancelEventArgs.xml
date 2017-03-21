@@ -1,8 +1,10 @@
 <Type Name="SessionEndingCancelEventArgs" FullName="System.Windows.SessionEndingCancelEventArgs">
   <TypeSignature Language="C#" Value="public class SessionEndingCancelEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionEndingCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.SessionEndingCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,24 +12,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the event arguments for the <see cref="E:System.Windows.Application.SessionEnding" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ReasonSessionEnding">
       <MemberSignature Language="C#" Value="public System.Windows.ReasonSessionEnding ReasonSessionEnding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ReasonSessionEnding ReasonSessionEnding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.ReasonSessionEnding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates why the session is ending.</summary>
+        <value>A <see cref="T:System.Windows.ReasonSessionEnding" /> value that indicates why the session ended.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,1 @@
+      Dim date1 As New Date(2008, 5, 1, 8, 30, 52)

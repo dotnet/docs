@@ -1,19 +1,21 @@
 <Type Name="IHttpCookieContainerManager" FullName="System.ServiceModel.Channels.IHttpCookieContainerManager">
   <TypeSignature Language="C#" Value="public interface IHttpCookieContainerManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHttpCookieContainerManager" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IHttpCookieContainerManager" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the cookie container manager.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CookieContainer">
       <MemberSignature Language="C#" Value="public System.Net.CookieContainer CookieContainer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.CookieContainer CookieContainer" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IHttpCookieContainerManager.CookieContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -23,8 +25,8 @@
         <ReturnType>System.Net.CookieContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the cookie container.</summary>
+        <value>The cookie container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,8 +1,10 @@
 <Type Name="PropertyValueChangedEventHandler" FullName="System.Windows.Forms.PropertyValueChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void PropertyValueChangedEventHandler(object s, PropertyValueChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyValueChangedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="s">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="s">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.PropertyValueChangedEventArgs" /> that contains the event data.</param>
+    <summary>The event handler class that is invoked when a property in the grid is modified by the user.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

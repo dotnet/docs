@@ -1,8 +1,10 @@
 <Type Name="IMethodCallMessage" FullName="System.Runtime.Remoting.Messaging.IMethodCallMessage">
   <TypeSignature Language="C#" Value="public interface IMethodCallMessage : System.Runtime.Remoting.Messaging.IMethodMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMethodCallMessage implements class System.Runtime.Remoting.Messaging.IMessage, class System.Runtime.Remoting.Messaging.IMethodMessage" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -16,16 +18,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the method call message interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An IMethodCallMessage is generated as a result of a method called on a remote object, and is used to transport details about the remote method call to the server side.  
+  
+   
+  
+## Examples  
+ [!code-cs[IMethodCallMessage_GetInArg#1](~/add/codesnippet/csharp/t-system.runtime.remotin_48_1.cs)]
+ [!code-vb[IMethodCallMessage_GetInArg#1](~/add/codesnippet/visualbasic/t-system.runtime.remotin_48_1.vb)]
+ [!code-cpp[IMethodCallMessage_GetInArg#1](~/add/codesnippet/cpp/t-system.runtime.remotin_48_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetInArg">
       <MemberSignature Language="C#" Value="public object GetInArg (int argNum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInArg(int32 argNum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -40,18 +58,22 @@
         <Parameter Name="argNum" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="argNum">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="argNum">The number of the requested <see langword="in" /> argument.</param>
+        <summary>Returns the specified argument that is not marked as an <see langword="out" /> parameter.</summary>
+        <returns>The requested argument that is not marked as an <see langword="out" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetInArgName">
       <MemberSignature Language="C#" Value="public string GetInArgName (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetInArgName(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArgName(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -66,18 +88,22 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The number of the requested <see langword="in" /> argument.</param>
+        <summary>Returns the name of the specified argument that is not marked as an <see langword="out" /> parameter.</summary>
+        <returns>The name of a specific argument that is not marked as an <see langword="out" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="InArgCount">
       <MemberSignature Language="C#" Value="public int InArgCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InArgCount" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -89,17 +115,32 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of arguments in the call that are not marked as <see langword="out" /> parameters.</summary>
+        <value>The number of arguments in the call that are not marked as <see langword="out" /> parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example code shows a custom proxy that overrides RealProxy.Invoke in order to write the call message information to the console.  
+  
+ [!code-cs[IMethodCallMessage_GetInArg#2](~/add/codesnippet/csharp/p-system.runtime.remotin_22_1.cs)]
+ [!code-vb[IMethodCallMessage_GetInArg#2](~/add/codesnippet/visualbasic/p-system.runtime.remotin_22_1.vb)]
+ [!code-cpp[IMethodCallMessage_GetInArg#2](~/add/codesnippet/cpp/p-system.runtime.remotin_22_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
     <Member MemberName="InArgs">
       <MemberSignature Language="C#" Value="public object[] InArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] InArgs" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -111,9 +152,25 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an array of arguments that are not marked as <see langword="out" /> parameters.</summary>
+        <value>An array of arguments that are not marked as <see langword="out" /> parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the InArgs property is redundant since the same functionality can be achieved with the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount%2A> and <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg%2A> methods, there might be performance optimization available if the implementer understands when all the arguments will be retrieved.  
+  
+   
+  
+## Examples  
+ [!code-cs[IMethodCallMessage_GetInArg#2](~/add/codesnippet/csharp/p-system.runtime.remotin_98_1.cs)]
+ [!code-vb[IMethodCallMessage_GetInArg#2](~/add/codesnippet/visualbasic/p-system.runtime.remotin_98_1.vb)]
+ [!code-cpp[IMethodCallMessage_GetInArg#2](~/add/codesnippet/cpp/p-system.runtime.remotin_98_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="T:System.Security.Permissions.SecurityAction" />; Permission value: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
       </Docs>
     </Member>
   </Members>

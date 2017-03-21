@@ -1,0 +1,140 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="500" Width="400">
+  <StackPanel xmlns:src="clr-namespace:IEditableCollectionViewAddItemExample">
+    <StackPanel.Resources>
+      <src:LibraryCatalog x:Key="catalog"/>
+
+      <!--Use AlternationConverter to create alternating background brushes
+                to better distinguish each item. See AlternationConverter
+                for more information.-->
+      <AlternationConverter x:Key="BackgroundConverter">
+        <SolidColorBrush>LightBlue</SolidColorBrush>
+        <SolidColorBrush>LightGray</SolidColorBrush>
+      </AlternationConverter>
+
+      <!--The DataTemplate for LibraryItem, which is the base class
+                of the other data types.-->
+      <DataTemplate DataType="{x:Type src:LibraryItem}">
+        <StackPanel>
+
+          <TextBlock FontWeight="Bold">Item:</TextBlock>
+          <TextBlock Text="{Binding Title, StringFormat={}Title: {0}}"/>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Due Date: {0:d}    Call Number: {1}">
+                <Binding Path="DueDate"/>
+                <Binding Path="CallNumber"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+        </StackPanel>
+      </DataTemplate>
+
+      <!--The DataTemplate for Book.-->
+      <DataTemplate DataType="{x:Type src:Book}">
+        <StackPanel>
+
+          <TextBlock FontWeight="Bold">Book:</TextBlock>
+          <TextBlock Text="{Binding Title, StringFormat={}Title: {0}}"/>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Author: {0}    Genre: {1}">
+                <Binding Path="Author"/>
+                <Binding Path="Genre"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Due Date: {0:d}    Call Number: {1}">
+                <Binding Path="DueDate"/>
+                <Binding Path="CallNumber"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+        </StackPanel>
+      </DataTemplate>
+
+      <!--The DataTemplate for MusicCD.-->
+      <DataTemplate DataType="{x:Type src:MusicCD}">
+        <StackPanel>
+
+          <TextBlock FontWeight="Bold">Music CD:</TextBlock>
+          <TextBlock Text="{Binding Title, StringFormat={}Title: {0}}"/>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Artist: {0}    Tracks: {1}">
+                <Binding Path="Artist"/>
+                <Binding Path="NumberOfTracks"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Due Date: {0:d}    Call Number: {1}">
+                <Binding Path="DueDate"/>
+                <Binding Path="CallNumber"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+        </StackPanel>
+      </DataTemplate>
+
+      <!--The DataTemplate for MovieDVD-->
+      <DataTemplate DataType="{x:Type src:MovieDVD}">
+        <StackPanel>
+          <TextBlock FontWeight="Bold">Movie DVD:</TextBlock>
+          <TextBlock Text="{Binding Title, StringFormat={}Title: {0}}"/>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Director: {0}    Genre: {1}    Length: {2}">
+                <Binding Path="Director"/>
+                <Binding Path="Genre"/>
+                <Binding Path="Length"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+          <TextBlock>
+            <TextBlock.Text>
+              <MultiBinding StringFormat="{}Due Date: {0:d}    Call Number: {1}">
+                <Binding Path="DueDate"/>
+                <Binding Path="CallNumber"/>
+              </MultiBinding>
+            </TextBlock.Text>
+          </TextBlock>
+        </StackPanel>
+      </DataTemplate>
+
+    </StackPanel.Resources>
+
+    <!--Bind a ListBox to a collection of LibraryItem objects. The collection 
+            can hold objects any type that inherits from LibraryItem.-->
+    <ListBox Name="catalogList" Height="350" AlternationCount="2" 
+                 ItemsSource="{StaticResource catalog}">
+
+      <!--Use alternating background styles to better distinguish each item.
+                See ItemsControl.AlternationIndex for more information.-->
+      <ListBox.ItemContainerStyle>
+        <Style TargetType="ListBoxItem">
+          <Setter Property="Background" 
+                  Value="{Binding RelativeSource={RelativeSource Self},
+                  Path=(ItemsControl.AlternationIndex),
+                 Converter={StaticResource BackgroundConverter}}"/>
+
+          <Setter Property="Margin" Value="3"/>
+        </Style>
+      </ListBox.ItemContainerStyle>
+    </ListBox>
+
+    <!--Enable the user to choose a type of item to add to the collection.-->
+    <TextBlock>Select an item to add:</TextBlock>
+    <RadioButton Name="book" >Book</RadioButton>
+    <RadioButton Name="cd">Music CD</RadioButton>
+    <RadioButton Name="dvd">DVD</RadioButton>
+    <RadioButton>Other</RadioButton>
+
+    <Button Margin="0,3,0,0" Click="Button_Click">Add Item</Button>
+  </StackPanel>
+</Window>

@@ -1,0 +1,1 @@
+        Dim person As SyndicationPerson = New SyndicationPerson("lene@company.com")

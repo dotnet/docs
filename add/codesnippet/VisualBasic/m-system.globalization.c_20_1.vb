@@ -1,0 +1,1 @@
+      returnTime = DateTime.SpecifyKind(cal.AddMilliseconds(time, milliseconds), time.Kind)

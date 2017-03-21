@@ -1,0 +1,15 @@
+        <asp:LinqDataSource 
+            ContextTypeName="ExampleDataContext" 
+            TableName="Products" 
+            AutoPage="true"
+            AutoSort="true"
+            ID="LinqDataSource1" 
+            runat="server">
+        </asp:LinqDataSource>
+        <asp:GridView 
+            AllowPaging="true"
+            AllowSorting="true"
+            DataSourceID="LinqDataSource1"
+            ID="GridView1" 
+            runat="server">
+        </asp:GridView>

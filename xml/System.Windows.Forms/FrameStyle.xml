@@ -1,46 +1,70 @@
 <Type Name="FrameStyle" FullName="System.Windows.Forms.FrameStyle">
   <TypeSignature Language="C#" Value="public enum FrameStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FrameStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FrameStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the frame style of the selected control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A?displayProperty=fullName>.  
+  
+ <xref:System.Windows.Forms.ControlPaint.DrawReversibleFrame%2A> is used when selecting objects or during drag-and-drop operations.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the FrameStyle enumeration. To run the example, paste the following code in a form called Form1 containing several controls.This example assumes the MouseDown, MouseMove, and MouseUp events are connected to the event-handler methods defined in the example.  
+  
+ [!code-cs[System.Windows.Forms.RectangleToScreen#2](~/add/codesnippet/csharp/t-system.windows.forms.f_14_1.cs)]
+ [!code-cpp[System.Windows.Forms.RectangleToScreen#2](~/add/codesnippet/cpp/t-system.windows.forms.f_14_1.cpp)]
+ [!code-vb[System.Windows.Forms.RectangleToScreen#2](~/add/codesnippet/visualbasic/t-system.windows.forms.f_14_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dashed">
       <MemberSignature Language="C#" Value="Dashed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FrameStyle Dashed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FrameStyle.Dashed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FrameStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A thin, dashed border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thick">
       <MemberSignature Language="C#" Value="Thick" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FrameStyle Thick = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FrameStyle.Thick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FrameStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A thick, solid border.</summary>
       </Docs>
     </Member>
   </Members>

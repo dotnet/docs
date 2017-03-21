@@ -1,0 +1,2 @@
+            SyndicationItem item = new SyndicationItem("Item Title", "Item Content", new Uri("http://Item/Alternate/Link"), "itemID", DateTimeOffset.Now);
+            item.AddPermalink(new Uri("http://contoso/links/mylink"));

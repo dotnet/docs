@@ -1,6 +1,7 @@
 <Type Name="NotifyDataErrorValidationRule" FullName="System.Windows.Controls.NotifyDataErrorValidationRule">
   <TypeSignature Language="C#" Value="public sealed class NotifyDataErrorValidationRule : System.Windows.Controls.ValidationRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NotifyDataErrorValidationRule extends System.Windows.Controls.ValidationRule" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.NotifyDataErrorValidationRule" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a rule that checks for errors that are raised by a data source that implements <see cref="T:System.ComponentModel.INotifyDataErrorInfo" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with a <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.BindingGroup> object. The NotifyDataErrorValidationRule class is a built-in rule that checks for exceptions that are thrown during the updates of the binding source property. You can provide custom logic to specify how the binding engine handles these exceptions by using a <xref:System.Windows.Data.UpdateSourceExceptionFilterCallback>. For more information, see <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A>.  
+  
+ An alternative syntax to setting the NotifyDataErrorValidationRule explicitly is to set the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true` on your <xref:System.Windows.Data.Binding>, <xref:System.Windows.Data.MultiBinding>, or <xref:System.Windows.Data.BindingGroup> object. By default, the value of <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> is `true`, so you do not need to explicitly use a NotifyDataErrorValidationRule.  
+  
+ You can create a custom rule by creating a class that derives from <xref:System.Windows.Controls.ValidationRule>. For more information and a detailed discussion of data validation, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NotifyDataErrorValidationRule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.NotifyDataErrorValidationRule.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -24,13 +37,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.NotifyDataErrorValidationRule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public override System.Windows.Controls.ValidationResult Validate (object value, System.Globalization.CultureInfo cultureInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.NotifyDataErrorValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,10 +58,10 @@
         <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value (from the binding target) to check.</param>
+        <param name="cultureInfo">The culture to use in this rule.</param>
+        <summary>Performs validation checks on a value.</summary>
+        <returns>A <see cref="T:System.Windows.Controls.ValidationResult" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

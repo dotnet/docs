@@ -1,8 +1,10 @@
 <Type Name="ProgressBar" FullName="System.Windows.Controls.ProgressBar">
   <TypeSignature Language="C#" Value="public class ProgressBar : System.Windows.Controls.Primitives.RangeBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ProgressBar extends System.Windows.Controls.Primitives.RangeBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ProgressBar" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,63 +23,123 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the progress of an operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A ProgressBar control consists of a window that is filled, by default from left to right, as an operation progresses. The control has a range and a current position.  
+  
+ ProgressBar overrides the metadata of the <xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A> property and sets its default to 100. ProgressBar overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `false`. For more information, see [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md).  
+  
+## Customizing the ProgressBar Control  
+ To apply the same property settings to multiple ProgressBar controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the ProgressBar, see [ProgressBar Styles and Templates](../Topic/ProgressBar%20Styles%20and%20Templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in ProgressBar control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+  
+   
+  
+## Examples  
+ This example creates a ProgressBar and uses an animation to simulate the progress of an operation.  
+  
+ [!code-xml[StatusBar_Snips#1](~/add/codesnippet/xaml/StatusBar_Snips/Window1.xaml#1)]
+ [!code-xml[StatusBar_Snips#1](~/add/codesnippet/xaml/t-system.windows.control_128_1.xaml)]  
+  
+ [!code-vb[ProgressBar#1](~/add/codesnippet/visualbasic/progressbar/window1.xaml.vb#1)]
+ [!code-cs[ProgressBar#1](~/add/codesnippet/csharp/ProgressBar/Window1.xaml.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProgressBar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ProgressBar" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIndeterminate">
       <MemberSignature Language="C#" Value="public bool IsIndeterminate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsIndeterminate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ProgressBar.IsIndeterminate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the <see cref="T:System.Windows.Controls.ProgressBar" /> shows actual values or generic, continuous progress feedback.</summary>
+        <value>
+          <see langword="false" /> if the <see cref="T:System.Windows.Controls.ProgressBar" /> shows actual values; <see langword="true" /> if the <see cref="T:System.Windows.Controls.ProgressBar" /> shows generic progress. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is `true`, the <xref:System.Windows.Controls.ProgressBar> animates a few bars moving across the <xref:System.Windows.Controls.ProgressBar> in a continuous manner and ignores the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property.  
+  
+<a name="dependencyPropertyInfo_IsIndeterminate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ProgressBar.IsIndeterminateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example sets the IsIndeterminate property to `true` to create a <xref:System.Windows.Controls.ProgressBar> that shows generic progress.  
+  
+ [!code-vb[ProgressBar#3](~/add/codesnippet/visualbasic/progressbar/window1.xaml.vb#3)]
+ [!code-cs[ProgressBar#3](~/add/codesnippet/csharp/ProgressBar/Window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIndeterminateProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsIndeterminateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsIndeterminateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ProgressBar.IsIndeterminateProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.ProgressBar.IsIndeterminate%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnApplyTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,16 +147,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when a template is applied to a <see cref="T:System.Windows.Controls.ProgressBar" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnCreateAutomationPeer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,14 +166,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.ProgressBarAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/add/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMaximumChanged">
       <MemberSignature Language="C#" Value="protected override void OnMaximumChanged (double oldMaximum, double newMaximum);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMaximumChanged(float64 oldMaximum, float64 newMaximum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnMaximumChanged(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,15 +188,16 @@
         <Parameter Name="newMaximum" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldMaximum">To be added.</param>
-        <param name="newMaximum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldMaximum">Old value of the <see cref="System.Windows.Controls.Primitives.RangeBase.Maximum%2A" /> property.</param>
+        <param name="newMaximum">New value of the <see cref="System.Windows.Controls.Primitives.RangeBase.Maximum%2A" /> property.</param>
+        <summary>Updates the current position of the <see cref="T:System.Windows.Controls.ProgressBar" /> when the <see cref="System.Windows.Controls.Primitives.RangeBase.Maximum%2A" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMinimumChanged">
       <MemberSignature Language="C#" Value="protected override void OnMinimumChanged (double oldMinimum, double newMinimum);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMinimumChanged(float64 oldMinimum, float64 newMinimum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnMinimumChanged(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,18 +211,20 @@
         <Parameter Name="newMinimum" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldMinimum">To be added.</param>
-        <param name="newMinimum">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldMinimum">Old value of the <see cref="System.Windows.Controls.Primitives.RangeBase.Minimum%2A" /> property.</param>
+        <param name="newMinimum">New value of the <see cref="System.Windows.Controls.Primitives.RangeBase.Minimum%2A" /> property.</param>
+        <summary>Updates the current position of the <see cref="T:System.Windows.Controls.ProgressBar" /> when the <see cref="System.Windows.Controls.Primitives.RangeBase.Minimum%2A" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
       <MemberSignature Language="C#" Value="protected override void OnValueChanged (double oldValue, double newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValueChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnValueChanged(System.Double,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,42 +235,68 @@
         <Parameter Name="newValue" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldValue">Old value of the <see cref="System.Windows.Controls.Primitives.RangeBase.Value%2A" /> property.</param>
+        <param name="newValue">New value of the <see cref="System.Windows.Controls.Primitives.RangeBase.Value%2A" /> property.</param>
+        <summary>Updates the current position of the <see cref="T:System.Windows.Controls.ProgressBar" /> when the <see cref="System.Windows.Controls.Primitives.RangeBase.Value%2A" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Orientation Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation Orientation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ProgressBar.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the orientation of a <see cref="T:System.Windows.Controls.ProgressBar" />: horizontal or vertical.</summary>
+        <value>One of the <see cref="T:System.Windows.Controls.Orientation" /> values. The default is <see cref="T:System.Windows.Controls.Orientation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Orientation"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ProgressBar.OrientationProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example which creates a <xref:System.Windows.Controls.ProgressBar> shows how to use the Orientation property to make a horizontal bar.  
+  
+ [!code-vb[ProgressBar#1](~/add/codesnippet/visualbasic/progressbar/window1.xaml.vb#1)]
+ [!code-cs[ProgressBar#1](~/add/codesnippet/csharp/ProgressBar/Window1.xaml.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OrientationProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OrientationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ProgressBar.OrientationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="System.Windows.Controls.ProgressBar.Orientation%2A" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

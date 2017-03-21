@@ -1,0 +1,1 @@
+      if ( firstCodeGroup->Equals( secondCodeGroup ) )

@@ -1,0 +1,1 @@
+            message.AdministrationQueue = new Uri(".\\private$\\MyAdminQueue");

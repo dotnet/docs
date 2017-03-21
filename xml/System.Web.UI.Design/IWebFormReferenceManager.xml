@@ -1,8 +1,10 @@
 <Type Name="IWebFormReferenceManager" FullName="System.Web.UI.Design.IWebFormReferenceManager">
   <TypeSignature Language="C#" Value="public interface IWebFormReferenceManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebFormReferenceManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebFormReferenceManager" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -12,16 +14,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an interface that can look up information about the types used in the current Web Forms project.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The IWebFormReferenceManager interface is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
+  
+ A Web Forms document designer must implement this interface. Implementing this interface enables a designer to manage references and provide information related to Web Forms controls within the project.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetObjectType">
       <MemberSignature Language="C#" Value="public Type GetObjectType (string tagPrefix, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetObjectType(string tagPrefix, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormReferenceManager.GetObjectType(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -32,19 +47,30 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tagPrefix">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tagPrefix">The tag prefix for the type.</param>
+        <param name="typeName">The name of the type.</param>
+        <summary>Gets the type of the specified object.</summary>
+        <returns>The <see cref="T:System.Type" /> of the object, if it could be resolved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The GetObjectType method is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager.GetType%2A> method on the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRegisterDirectives">
       <MemberSignature Language="C#" Value="public string GetRegisterDirectives ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRegisterDirectives() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormReferenceManager.GetRegisterDirectives" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,17 +78,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the register directives for the current project.</summary>
+        <returns>The register directives for the current project.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The GetRegisterDirectives method is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager.GetRegisterDirectives%2A> method on the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTagPrefix">
       <MemberSignature Language="C#" Value="public string GetTagPrefix (Type objectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTagPrefix(class System.Type objectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormReferenceManager.GetTagPrefix(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,10 +109,19 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="objectType">The type of the object.</param>
+        <summary>Gets the tag prefix for the specified type of object.</summary>
+        <returns>The tag prefix for the specified object type, if it could be located.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The GetTagPrefix method is obsolete. Use the <xref:System.Web.UI.Design.WebFormsReferenceManager.GetTagPrefix%2A> method on the <xref:System.Web.UI.Design.WebFormsReferenceManager> class for equivalent designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

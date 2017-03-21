@@ -1,0 +1,1 @@
+		Dim proxyAddress As Uri = binding1.ProxyAddress

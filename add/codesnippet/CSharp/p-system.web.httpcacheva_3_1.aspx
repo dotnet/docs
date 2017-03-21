@@ -1,0 +1,1 @@
+    Response.Cache.VaryByHeaders.UserCharSet = true;

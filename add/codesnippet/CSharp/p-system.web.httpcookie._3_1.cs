@@ -1,0 +1,2 @@
+MyCookie.Domain = "Microsoft.com";
+    

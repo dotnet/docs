@@ -1,0 +1,1 @@
+        webBrowser1.IsWebBrowserContextMenuEnabled = false;

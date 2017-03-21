@@ -1,8 +1,10 @@
 <Type Name="MessageQueuePermissionEntry" FullName="System.Messaging.MessageQueuePermissionEntry">
   <TypeSignature Language="C#" Value="public class MessageQueuePermissionEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MessageQueuePermissionEntry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermissionEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,33 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the smallest unit of a code access security permission set for messaging.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Code Access Security](http://msdn.microsoft.com/en-us/23a20143-241d-4fe5-9d9f-3933fd594c03).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of MessageQueuePermissionEntry.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#0](~/add/codesnippet/cpp/t-system.messaging.messa_5_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#0](~/add/codesnippet/csharp/t-system.messaging.messa_5_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageQueuePermissionEntry (System.Messaging.MessageQueuePermissionAccess permissionAccess, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Messaging.MessageQueuePermissionAccess permissionAccess, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntry.#ctor(System.Messaging.MessageQueuePermissionAccess,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -27,18 +46,30 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="permissionAccess">A bitwise combination of the <see cref="T:System.Messaging.MessageQueuePermissionAccess" /> values. The <see cref="System.Messaging.MessageQueuePermissionEntry.PermissionAccess%2A" /> property is set to this value.</param>
+        <param name="path">The path of the queue that is referenced by the <see cref="T:System.Messaging.MessageQueue" /> object. The <see cref="System.Messaging.MessageQueuePermissionEntry.Path%2A" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> class with the specified permission access levels and the path of the queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermissionEntry>.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#1](~/add/codesnippet/cpp/1a5cae42-69bd-4274-8a33-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#1](~/add/codesnippet/csharp/1a5cae42-69bd-4274-8a33-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageQueuePermissionEntry (System.Messaging.MessageQueuePermissionAccess permissionAccess, string machineName, string label, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Messaging.MessageQueuePermissionAccess permissionAccess, string machineName, string label, string category) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermissionEntry.#ctor(System.Messaging.MessageQueuePermissionAccess,System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,97 +79,167 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="machineName">To be added.</param>
-        <param name="label">To be added.</param>
-        <param name="category">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="permissionAccess">A bitwise combination of the <see cref="T:System.Messaging.MessageQueuePermissionAccess" /> values. The <see cref="System.Messaging.MessageQueuePermissionEntry.PermissionAccess%2A" /> property is set to this value.</param>
+        <param name="machineName">The name of the computer where the Message Queuing queue is located. The <see cref="System.Messaging.MessageQueuePermissionEntry.MachineName%2A" /> property is set to this value.</param>
+        <param name="label">The queue description. The <see cref="System.Messaging.MessageQueuePermissionEntry.Label%2A" /> property is set to this value.</param>
+        <param name="category">The queue category (Message Queuing type identifier). The <see cref="System.Messaging.MessageQueuePermissionEntry.Category%2A" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> class with the specified permission access levels, the name of the computer where the queue is located, the queue description, and the queue category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermissionEntry>.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#2](~/add/codesnippet/cpp/9432c7a2-5c5c-4049-9db0-_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#2](~/add/codesnippet/csharp/9432c7a2-5c5c-4049-9db0-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
       <MemberSignature Language="C#" Value="public string Category { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntry.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the queue category.</summary>
+        <value>The queue category (Message Queuing type identifier), which allows an application to categorize its queues.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's Category property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#3](~/add/codesnippet/cpp/p-system.messaging.messa_75_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#3](~/add/codesnippet/csharp/p-system.messaging.messa_75_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Label">
       <MemberSignature Language="C#" Value="public string Label { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntry.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the queue description.</summary>
+        <value>The label for the message queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's Label property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#4](~/add/codesnippet/cpp/p-system.messaging.messa_55_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#4](~/add/codesnippet/csharp/p-system.messaging.messa_55_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MachineName">
       <MemberSignature Language="C#" Value="public string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntry.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the computer where the Message Queuing queue is located.</summary>
+        <value>The name of the computer where the queue is located.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's MachineName property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#5](~/add/codesnippet/cpp/p-system.messaging.messa_76_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#5](~/add/codesnippet/csharp/p-system.messaging.messa_76_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntry.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the queue's path.</summary>
+        <value>The queue that is referenced by the <see cref="T:System.Messaging.MessageQueue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's Path property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#6](~/add/codesnippet/cpp/p-system.messaging.messa_22_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#6](~/add/codesnippet/csharp/p-system.messaging.messa_22_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionAccess">
       <MemberSignature Language="C#" Value="public System.Messaging.MessageQueuePermissionAccess PermissionAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.MessageQueuePermissionAccess PermissionAccess" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermissionEntry.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueuePermissionAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the permission access levels used in the permissions request.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Messaging.MessageQueuePermissionAccess" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of a message queue permission entry's PermissionAccess property.  
+  
+ [!code-cpp[MessageQueuePermissionEntry#7](~/add/codesnippet/cpp/p-system.messaging.messa_9_1.cpp)]
+ [!code-cs[MessageQueuePermissionEntry#7](~/add/codesnippet/csharp/p-system.messaging.messa_9_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

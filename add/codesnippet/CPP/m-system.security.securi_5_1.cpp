@@ -1,0 +1,1 @@
+      windowsRoleElement->AddAttribute( L"version", L"1.00" );

@@ -1,8 +1,10 @@
 <Type Name="CodeArgumentReferenceExpression" FullName="System.CodeDom.CodeArgumentReferenceExpression">
   <TypeSignature Language="C#" Value="public class CodeArgumentReferenceExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeArgumentReferenceExpression extends System.CodeDom.CodeExpression" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArgumentReferenceExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,55 +20,79 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a reference to the value of an argument passed to a method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ CodeArgumentReferenceExpression can be used in a method to reference the value of a parameter that has been passed to the method.  
+  
+ The <xref:System.CodeDom.CodeArgumentReferenceExpression.ParameterName%2A> property specifies the name of the parameter to reference.  
+  
+   
+  
+## Examples  
+ The following example code defines a method that invokes `Console.WriteLine` to output the string parameter passed to the method. A CodeArgumentReferenceExpression references the argument passed to the method by method parameter name.  
+  
+ [!code-cs[CodeArgumentReferenceExpressionExample#2](~/add/codesnippet/csharp/t-system.codedom.codearg_1.cs)]
+ [!code-cpp[CodeArgumentReferenceExpressionExample#2](~/add/codesnippet/cpp/t-system.codedom.codearg_1.cpp)]
+ [!code-vb[CodeArgumentReferenceExpressionExample#2](~/add/codesnippet/visualbasic/t-system.codedom.codearg_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeArgumentReferenceExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArgumentReferenceExpression.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArgumentReferenceExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeArgumentReferenceExpression (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArgumentReferenceExpression.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the parameter to reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArgumentReferenceExpression" /> class using the specified parameter name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterName">
       <MemberSignature Language="C#" Value="public string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArgumentReferenceExpression.ParameterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the parameter this expression references.</summary>
+        <value>The name of the parameter to reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

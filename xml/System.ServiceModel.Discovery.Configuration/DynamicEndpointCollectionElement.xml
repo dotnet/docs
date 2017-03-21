@@ -1,6 +1,7 @@
 <Type Name="DynamicEndpointCollectionElement" FullName="System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement">
   <TypeSignature Language="C#" Value="public class DynamicEndpointCollectionElement : System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Discovery.DynamicEndpoint,System.ServiceModel.Discovery.Configuration.DynamicEndpointElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicEndpointCollectionElement extends System.ServiceModel.Configuration.StandardEndpointCollectionElement`2&lt;class System.ServiceModel.Discovery.DynamicEndpoint, class System.ServiceModel.Discovery.Configuration.DynamicEndpointElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +15,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a workflow configuration element that provides a collection of endpoints that each contain information to enable an application to function as a client program that can search for, find, and use a workflow service during runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DynamicEndpointCollectionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -28,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DynamicEndpointCollectionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

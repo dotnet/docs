@@ -1,6 +1,7 @@
 <Type Name="ActivityInstance" FullName="System.Activities.ActivityInstance">
   <TypeSignature Language="C#" Value="public sealed class ActivityInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityInstance extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityInstance" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the instance state of an activity at runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Activity">
       <MemberSignature Language="C#" Value="public System.Activities.Activity Activity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityInstance.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -31,14 +33,15 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the activity represented by the current <see cref="T:System.Activities.ActivityInstance" />.</summary>
+        <value>The activity represented by this <see cref="T:System.Activities.ActivityInstance" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityInstance.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -48,14 +51,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an identifier that uniquely identifies the <see cref="T:System.Activities.ActivityInstance" />.</summary>
+        <value>An identifier that uniquely identifies the <see cref="T:System.Activities.ActivityInstance" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ImplementationVersion">
       <MemberSignature Language="C#" Value="public Version ImplementationVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version ImplementationVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityInstance.ImplementationVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,14 +74,15 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the implementation version for the instance.</summary>
+        <value>The implementation version for the instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityInstance.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -87,14 +92,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the activity represented by the current <see cref="T:System.Activities.ActivityInstance" /> is completed.</summary>
+        <value>
+          <see langword="true" /> if the activity is completed; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
       <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.ActivityInstanceState State" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityInstance.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,8 +111,8 @@
         <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.ActivityInstanceState" /> of the current <see cref="T:System.Activities.ActivityInstance" />.</summary>
+        <value>The state of the activity instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

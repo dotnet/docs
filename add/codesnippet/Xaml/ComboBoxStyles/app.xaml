@@ -1,0 +1,47 @@
+<!-- If you change the root element of this file, be sure to change the class that is subclassed in app.xaml.cs -->
+<Application
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ComboBoxStyles.app"
+    StartupUri="Pane1.xaml"
+    >
+    <!-- Resources & Styles defined in this section will impact the entire application.  -->
+    <Application.Resources>
+<!--<Snippet1>-->
+    <Style x:Key="Simple" TargetType="{x:Type ComboBox}">
+    <Setter Property = "IsSelected" Value="true"/>
+    <Setter Property = "Background" Value="LightGray"/>
+    <Setter Property = "Foreground" Value="Purple"/>
+    </Style>
+<!--</Snippet1>-->
+<!--<Snippet2>-->
+    <Style x:Key="SimpleComboBoxItem" TargetType="{x:Type ComboBoxItem}">
+    <Setter Property = "FontSize" Value="14"/>
+    <Setter Property = "Background" Value="Pink"/>
+    <Setter Property = "Foreground" Value="Purple"/>
+    </Style>
+<!--</Snippet2>-->
+<!--<Snippet3>-->
+    <Style x:Key="Triggers" TargetType="{x:Type ComboBoxItem}">
+    <Style.Triggers>
+    <Trigger Property="ComboBoxItem.IsMouseOver" Value="true">
+        <Setter Property = "Foreground" Value="Red"/>
+        <Setter Property = "FontSize" Value="20"/>
+        <Setter Property = "FontFamily" Value="Arial Bold"/>
+    </Trigger>
+    </Style.Triggers>
+   </Style> 
+<!--</Snippet3>-->
+
+    <Style x:Key="SimplePlus" TargetType="{x:Type ComboBox}">
+    <!--<Snippet4>-->
+    <Setter Property = "IsDropDownOpen" Value="true"/>
+    <!--</Snippet4>-->
+ 
+    <!--<Snippet5>-->
+    <Setter Property = "MaxDropDownHeight" Value="30"/>
+    <!--</Snippet5>-->
+    </Style>
+
+    </Application.Resources>
+</Application>

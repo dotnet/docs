@@ -1,8 +1,10 @@
 <Type Name="TimeSpanValidatorAttribute" FullName="System.Configuration.TimeSpanValidatorAttribute">
   <TypeSignature Language="C#" Value="public sealed class TimeSpanValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TimeSpanValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.TimeSpanValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,156 +17,316 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Declaratively instructs the .NET Framework to perform time validation on a configuration property. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the TimeSpanValidatorAttribute attribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using the <xref:System.Configuration.TimeSpanValidator> class and pass to it the value of the decorating parameters.  
+  
+ You can apply TimeSpanValidatorAttribute objects to property types only.  
+  
+   
+  
+## Examples  
+ The following example shows how to decorate the properties of a custom <xref:System.Configuration.ConfigurationSection> object using the TimeSpanValidatorAttribute attribute.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/visualbasic/t-system.configuration.t_1_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/csharp/t-system.configuration.t_1_1.cs)]  
+  
+ The following example is an excerpt of the configuration file that contains the custom section used by the previous sample.  
+  
+```  
+<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">  
+  <configSections>  
+    <section name="custom" type="Microsoft.Samples.AspNet.Configuration.SampleSection, ConfigurationValidatorAttribute" />  
+  </configSections>  
+  <custom fileName="NewFile.txt" maxSize="1000" maxAttempts="101" maxUsers="2500" maxIdleTime="00:15:00" />  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TimeSpanValidatorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.TimeSpanValidatorAttribute.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanValidatorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor in the attributed model to ensure that the type of the value assigned to the related property is a <xref:System.TimeSpan> object.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.StringValidatorAttribute.%23ctor%2A> constructor.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#12](~/add/codesnippet/visualbasic/m-system.configuration.t_0_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#12](~/add/codesnippet/csharp/m-system.configuration.t_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExcludeRange">
       <MemberSignature Language="C#" Value="public bool ExcludeRange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExcludeRange" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.ExcludeRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether to include or exclude the integers in the range as defined by <see cref="System.Configuration.TimeSpanValidatorAttribute.MinValueString%2A" /> and <see cref="System.Configuration.TimeSpanValidatorAttribute.MaxValueString%2A" />.</summary>
+        <value>
+          <see langword="true" /> if the value must be excluded; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The range is inclusive of the <xref:System.Configuration.TimeSpanValidatorAttribute.MinValueString%2A> and <xref:System.Configuration.TimeSpanValidatorAttribute.MaxValueString%2A> properties. When the ExcludeRange property is `false`, the allowed values are outside the range.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the ExcludeRange property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/visualbasic/p-system.configuration.t_0_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/csharp/p-system.configuration.t_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
       <MemberSignature Language="C#" Value="public TimeSpan MaxValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxValue" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MaxValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the absolute maximum <see cref="T:System.TimeSpan" /> value.</summary>
+        <value>The allowed maximum <see cref="T:System.TimeSpan" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the absolute maximum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan> field.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxValueString">
       <MemberSignature Language="C#" Value="public string MaxValueString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MaxValueString" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MaxValueString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the relative maximum <see cref="T:System.TimeSpan" /> value.</summary>
+        <value>The allowed maximum <see cref="T:System.TimeSpan" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the relative maximum value as set by the user.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the MaxValueString property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/visualbasic/p-system.configuration.t_1_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/csharp/p-system.configuration.t_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value represents less than <see cref="System.Configuration.TimeSpanValidatorAttribute.MinValue%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MinValue">
       <MemberSignature Language="C#" Value="public TimeSpan MinValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MinValue" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MinValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the absolute minimum <see cref="T:System.TimeSpan" /> value.</summary>
+        <value>The allowed minimum <see cref="T:System.TimeSpan" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the absolute minimum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan> field.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinValueString">
       <MemberSignature Language="C#" Value="public string MinValueString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MinValueString" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MinValueString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the relative minimum <see cref="T:System.TimeSpan" /> value.</summary>
+        <value>The minimum allowed <see cref="T:System.TimeSpan" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the relative minimum value as set by the user.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the MinValueString property.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/visualbasic/p-system.configuration.t_2_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#8](~/add/codesnippet/csharp/p-system.configuration.t_2_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value represents more than <see cref="System.Configuration.TimeSpanValidatorAttribute.MaxValue%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TimeSpanMaxValue">
       <MemberSignature Language="C#" Value="public const string TimeSpanMaxValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string TimeSpanMaxValue" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets the absolute maximum value allowed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that contains the maximum allowed value for the time interval.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the TimeSpanMaxValue field.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#10](~/add/codesnippet/visualbasic/f-system.configuration.t_0_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#10](~/add/codesnippet/csharp/f-system.configuration.t_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeSpanMinValue">
       <MemberSignature Language="C#" Value="public const string TimeSpanMinValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string TimeSpanMinValue" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets the absolute minimum value allowed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that contains the minimum allowed value for the time interval.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the TimeSpanMinValue field.  
+  
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#11](~/add/codesnippet/visualbasic/f-system.configuration.t_1_1.vb)]
+ [!code-cs[System.Configuration.ConfigurationValidatorAttributes#11](~/add/codesnippet/csharp/f-system.configuration.t_1_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidatorInstance">
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.ValidatorInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of the <see cref="T:System.Configuration.TimeSpanValidator" /> class.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationValidatorBase" /> validator instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the ValidatorInstance property to perform string validation by calling its <xref:System.Configuration.TimeSpanValidator.Validate%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

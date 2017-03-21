@@ -1,0 +1,32 @@
+<Page  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ElemCollMethodsVB.Pane1"
+    WindowTitle="UI Element Collection - Methods Sample">
+<StackPanel>    
+    <TextBlock Name="txt" FontSize="16">UI Element Collection - Methods</TextBlock>
+    <TabControl>
+    <TabItem MouseLeftButtonUp="AddButton">
+    <TabItem.Header>Add Control</TabItem.Header>
+    </TabItem>
+
+    <TabItem MouseLeftButtonUp="RemoveButton">
+    <TabItem.Header>Remove Control</TabItem.Header>
+    </TabItem>
+
+    <TabItem MouseLeftButtonUp="InsertButton">
+    <TabItem.Header>Insert Control</TabItem.Header>
+    </TabItem>
+    
+    <TabItem MouseLeftButtonUp="ShowIndex">
+    <TabItem.Header>Show Index of Controls</TabItem.Header>
+    </TabItem>
+    
+    <TabItem MouseLeftButtonUp="ClearButtons">
+    <TabItem.Header>Clear Controls</TabItem.Header>
+    </TabItem>
+    </TabControl>
+
+<StackPanel Name="sp1"></StackPanel>
+</StackPanel>
+</Page>

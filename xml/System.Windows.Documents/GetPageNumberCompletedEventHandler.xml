@@ -1,8 +1,10 @@
 <Type Name="GetPageNumberCompletedEventHandler" FullName="System.Windows.Documents.GetPageNumberCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void GetPageNumberCompletedEventHandler(object sender, GetPageNumberCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GetPageNumberCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageNumberCompletedEventHandler" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,9 +18,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberCompleted" /> event of a <see cref="T:System.Windows.Documents.FixedDocument" />, or <see cref="T:System.Windows.Documents.FlowDocument" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

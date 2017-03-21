@@ -1,0 +1,1 @@
+        Dim Gac1 As New GacIdentityPermission(PermissionState.None)

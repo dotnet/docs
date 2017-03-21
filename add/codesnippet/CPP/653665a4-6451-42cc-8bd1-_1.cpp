@@ -1,0 +1,1 @@
+        fileIOPerm1->SetPathList(FileIOPermissionAccess::Write, gcnew array<String^> {"C:\\pictures", "C:\\music"});

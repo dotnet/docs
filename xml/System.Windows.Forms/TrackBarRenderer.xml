@@ -1,8 +1,10 @@
 <Type Name="TrackBarRenderer" FullName="System.Windows.Forms.TrackBarRenderer">
   <TypeSignature Language="C#" Value="public sealed class TrackBarRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TrackBarRenderer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TrackBarRenderer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,38 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods used to render a track bar control with visual styles. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The TrackBarRenderer class provides a set of `static` methods that can be used to render each part of a track bar control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style.  
+  
+ If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods in this class will draw the track bar with the current visual style. Otherwise, the methods in this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property.  
+  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a custom control that uses the TrackBarRenderer methods to draw a horizontal track bar that responds to mouse clicks.  
+  
+ [!code-cs[System.Windows.Forms.TrackBarRenderer#0](~/add/codesnippet/csharp/t-system.windows.forms.t_79_1.cs)]
+ [!code-cpp[System.Windows.Forms.TrackBarRenderer#0](~/add/codesnippet/cpp/t-system.windows.forms.t_79_1.cpp)]
+ [!code-vb[System.Windows.Forms.TrackBarRenderer#0](~/add/codesnippet/visualbasic/t-system.windows.forms.t_79_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DrawBottomPointingThumb">
       <MemberSignature Language="C#" Value="public static void DrawBottomPointingThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBottomPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawBottomPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -31,19 +55,37 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Draws a downward-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawHorizontalThumb">
       <MemberSignature Language="C#" Value="public static void DrawHorizontalThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawHorizontalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,19 +97,37 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Draws a horizontal track bar slider (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawHorizontalTicks">
       <MemberSignature Language="C#" Value="public static void DrawHorizontalTicks (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, int numTicks, System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalTicks(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, int32 numTicks, valuetype System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTicks(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.VisualStyles.EdgeStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,20 +140,40 @@
         <Parameter Name="edgeStyle" Type="System.Windows.Forms.VisualStyles.EdgeStyle" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="numTicks">To be added.</param>
-        <param name="edgeStyle">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the ticks.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the ticks.</param>
+        <param name="numTicks">The number of ticks to draw.</param>
+        <param name="edgeStyle">One of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeStyle" /> values.</param>
+        <summary>Draws the specified number of horizontal track bar ticks with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ If width or height of the bounding rectangle or the number of ticks is less than or equal to zero, or `g` is `null`, DrawHorizontalTicks returns without rendering.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawHorizontalTrack">
       <MemberSignature Language="C#" Value="public static void DrawHorizontalTrack (System.Drawing.Graphics g, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTrack(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,18 +184,45 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track.</param>
+        <summary>Draws the track for a horizontal track bar with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the DrawHorizontalTrack method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a track bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+  
+ [!code-cs[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/csharp/7af0371b-5221-40dd-ad37-_1.cs)]
+ [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/cpp/7af0371b-5221-40dd-ad37-_1.cpp)]
+ [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/visualbasic/7af0371b-5221-40dd-ad37-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawLeftPointingThumb">
       <MemberSignature Language="C#" Value="public static void DrawLeftPointingThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawLeftPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawLeftPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,19 +234,37 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Draws a left-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawRightPointingThumb">
       <MemberSignature Language="C#" Value="public static void DrawRightPointingThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRightPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawRightPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,19 +276,37 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Draws a right-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawTopPointingThumb">
       <MemberSignature Language="C#" Value="public static void DrawTopPointingThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTopPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,19 +318,46 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Draws an upward-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the DrawTopPointingThumb method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw an upward-pointing track bar slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+  
+ [!code-cs[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/csharp/fccd278b-d29d-48c9-b925-_1.cs)]
+ [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/cpp/fccd278b-d29d-48c9-b925-_1.cpp)]
+ [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/visualbasic/fccd278b-d29d-48c9-b925-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawVerticalThumb">
       <MemberSignature Language="C#" Value="public static void DrawVerticalThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawVerticalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,19 +369,37 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Draws a vertical track bar slider (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawVerticalTicks">
       <MemberSignature Language="C#" Value="public static void DrawVerticalTicks (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, int numTicks, System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalTicks(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, int32 numTicks, valuetype System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawVerticalTicks(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.VisualStyles.EdgeStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,20 +412,40 @@
         <Parameter Name="edgeStyle" Type="System.Windows.Forms.VisualStyles.EdgeStyle" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="numTicks">To be added.</param>
-        <param name="edgeStyle">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the ticks.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the ticks.</param>
+        <param name="numTicks">The number of ticks to draw.</param>
+        <param name="edgeStyle">One of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeStyle" /> values.</param>
+        <summary>Draws the specified number of vertical track bar ticks with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If width or height of the bounding rectangle or the number of ticks is less than or equal to zero, or `g` is `null`, DrawVerticalTicks returns without rendering.  
+  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawVerticalTrack">
       <MemberSignature Language="C#" Value="public static void DrawVerticalTrack (System.Drawing.Graphics g, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawVerticalTrack(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,18 +456,36 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track.</param>
+        <summary>Draws the track for a vertical track bar with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBottomPointingThumbSize">
       <MemberSignature Language="C#" Value="public static System.Drawing.Size GetBottomPointingThumbSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetBottomPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetBottomPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,19 +496,39 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
+        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points down.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the slider is determined by the current visual style of the operating system.  
+  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetLeftPointingThumbSize">
       <MemberSignature Language="C#" Value="public static System.Drawing.Size GetLeftPointingThumbSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetLeftPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetLeftPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,19 +539,39 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the slider.</param>
+        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points to the left.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the slider is determined by the current visual style of the operating system.  
+  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRightPointingThumbSize">
       <MemberSignature Language="C#" Value="public static System.Drawing.Size GetRightPointingThumbSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetRightPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetRightPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,19 +582,39 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the slider.</param>
+        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points to the right.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the slider is determined by the current visual style of the operating system.  
+  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTopPointingThumbSize">
       <MemberSignature Language="C#" Value="public static System.Drawing.Size GetTopPointingThumbSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.TrackBarThumbState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetTopPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetTopPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,28 +625,74 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TrackBarThumbState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the slider.</param>
+        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points up.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the slider is determined by the current visual style of the operating system.  
+  
+ Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the GetTopPointingThumbSize method to determine the size of the rectangle used by the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method to draw the slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+  
+ [!code-cs[System.Windows.Forms.TrackBarRenderer#2](~/add/codesnippet/csharp/f9a65ea6-a91d-46db-8c75-_1.cs)]
+ [!code-cpp[System.Windows.Forms.TrackBarRenderer#2](~/add/codesnippet/cpp/f9a65ea6-a91d-46db-8c75-_1.cpp)]
+ [!code-vb[System.Windows.Forms.TrackBarRenderer#2](~/add/codesnippet/visualbasic/f9a65ea6-a91d-46db-8c75-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSupported">
       <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBarRenderer.IsSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.TrackBarRenderer" /> class can be used to draw a track bar with visual styles.</summary>
+        <value>
+          <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `false`, the methods of this class will throw an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example uses the IsSupported property to determine whether to use the <xref:System.Windows.Forms.TrackBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+  
+ [!code-cs[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/csharp/p-system.windows.forms.t_140_1.cs)]
+ [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/cpp/p-system.windows.forms.t_140_1.cpp)]
+ [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/add/codesnippet/visualbasic/p-system.windows.forms.t_140_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

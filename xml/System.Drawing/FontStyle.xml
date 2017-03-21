@@ -1,8 +1,10 @@
 <Type Name="FontStyle" FullName="System.Drawing.FontStyle">
   <TypeSignature Language="C#" Value="public enum FontStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.FontStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,83 +16,104 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies style information applied to text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Drawing.Font> property of a button to a new bold-style font using the FontStyle enumeration. This example is designed to be used with Windows Forms. Create a form containing a button named Button1 and paste the following code into it. Associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cs[System.Drawing.MiscExamples#11](~/add/codesnippet/csharp/t-system.drawing.fontstyle_1.cs)]
+ [!code-cpp[System.Drawing.MiscExamples#11](~/add/codesnippet/cpp/t-system.drawing.fontstyle_1.cpp)]
+ [!code-vb[System.Drawing.MiscExamples#11](~/add/codesnippet/visualbasic/t-system.drawing.fontstyle_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bold">
       <MemberSignature Language="C#" Value="Bold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Bold = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Bold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bold text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Italic">
       <MemberSignature Language="C#" Value="Italic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Italic = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Italic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Italic text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Regular">
       <MemberSignature Language="C#" Value="Regular" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Regular = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Regular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Normal text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strikeout">
       <MemberSignature Language="C#" Value="Strikeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Strikeout = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Strikeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text with a line through the middle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Underline">
       <MemberSignature Language="C#" Value="Underline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Underline = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Underline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Underlined text.</summary>
       </Docs>
     </Member>
   </Members>

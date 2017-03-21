@@ -1,0 +1,1 @@
+      array<Type^>^validOutTypes = xmlTransform->OutputTypes;

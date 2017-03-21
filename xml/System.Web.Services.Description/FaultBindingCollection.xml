@@ -1,8 +1,10 @@
 <Type Name="FaultBindingCollection" FullName="System.Web.Services.Description.FaultBindingCollection">
   <TypeSignature Language="C#" Value="public sealed class FaultBindingCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FaultBindingCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.FaultBindingCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.FaultBinding" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cs[ImportSample#4](~/add/codesnippet/csharp/t-system.web.services.de_25_1.cs)]
+ [!code-cpp[ImportSample#4](~/add/codesnippet/cpp/t-system.web.services.de_25_1.cpp)]
+ [!code-vb[ImportSample#4](~/add/codesnippet/visualbasic/t-system.web.services.de_25_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.FaultBinding bindingOperationFault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.FaultBinding bindingOperationFault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Add(System.Web.Services.Description.FaultBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -29,18 +42,29 @@
         <Parameter Name="bindingOperationFault" Type="System.Web.Services.Description.FaultBinding" />
       </Parameters>
       <Docs>
-        <param name="bindingOperationFault">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingOperationFault">The <see cref="T:System.Web.Services.Description.FaultBinding" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.FaultBinding" /> to the end of the <see cref="T:System.Web.Services.Description.FaultBindingCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="bindingOperationFault" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-vb[FaultBindingCollection_Add#1](~/add/codesnippet/visualbasic/ae032dc2-af54-497c-8658-_1.vb)]
+ [!code-cpp[FaultBindingCollection_Add#1](~/add/codesnippet/cpp/ae032dc2-af54-497c-8658-_1.cpp)]
+ [!code-cs[FaultBindingCollection_Add#1](~/add/codesnippet/csharp/ae032dc2-af54-497c-8658-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.FaultBinding bindingOperationFault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.FaultBinding bindingOperationFault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Contains(System.Web.Services.Description.FaultBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,18 +74,32 @@
         <Parameter Name="bindingOperationFault" Type="System.Web.Services.Description.FaultBinding" />
       </Parameters>
       <Docs>
-        <param name="bindingOperationFault">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingOperationFault">The <see cref="T:System.Web.Services.Description.FaultBinding" /> for which to check collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.FaultBinding" /> is a member of the <see cref="T:System.Web.Services.Description.FaultBindingCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="bindingOperationFault" /> parameter is a member of the <see langword="FaultBindingCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `Contains` method.  
+  
+ [!code-cs[FaultBindingCollection_Remove#4](~/add/codesnippet/csharp/1910be75-c2df-470c-b150-_1.cs)]
+ [!code-cpp[FaultBindingCollection_Remove#4](~/add/codesnippet/cpp/1910be75-c2df-470c-b150-_1.cpp)]
+ [!code-vb[FaultBindingCollection_Remove#4](~/add/codesnippet/visualbasic/1910be75-c2df-470c-b150-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.FaultBinding[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.FaultBinding[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.CopyTo(System.Web.Services.Description.FaultBinding[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,18 +110,31 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.FaultBinding" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.FaultBindingCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.FaultBinding" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `CopyTo` method.  
+  
+ [!code-cs[FaultBindingCollection_Remove#2](~/add/codesnippet/csharp/d48c6ac1-164e-4e0c-946b-_1.cs)]
+ [!code-cpp[FaultBindingCollection_Remove#2](~/add/codesnippet/cpp/d48c6ac1-164e-4e0c-946b-_1.cpp)]
+ [!code-vb[FaultBindingCollection_Remove#2](~/add/codesnippet/visualbasic/d48c6ac1-164e-4e0c-946b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
       <MemberSignature Language="C#" Value="protected override string GetKey (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKey(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.GetKey(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +153,11 @@
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.FaultBinding bindingOperationFault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.FaultBinding bindingOperationFault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.IndexOf(System.Web.Services.Description.FaultBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,18 +167,31 @@
         <Parameter Name="bindingOperationFault" Type="System.Web.Services.Description.FaultBinding" />
       </Parameters>
       <Docs>
-        <param name="bindingOperationFault">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bindingOperationFault">The <see cref="T:System.Web.Services.Description.FaultBinding" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.FaultBinding" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `IndexOf` method.  
+  
+ [!code-cs[FaultBindingCollection_Remove#5](~/add/codesnippet/csharp/582bbce1-9887-463e-b44b-_1.cs)]
+ [!code-cpp[FaultBindingCollection_Remove#5](~/add/codesnippet/cpp/582bbce1-9887-463e-b44b-_1.cpp)]
+ [!code-vb[FaultBindingCollection_Remove#5](~/add/codesnippet/visualbasic/582bbce1-9887-463e-b44b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.FaultBinding bindingOperationFault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.FaultBinding bindingOperationFault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Insert(System.Int32,System.Web.Services.Description.FaultBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,18 +202,40 @@
         <Parameter Name="bindingOperationFault" Type="System.Web.Services.Description.FaultBinding" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="bindingOperationFault">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <c>bindingOperationFault</c> parameter.</param>
+        <param name="bindingOperationFault">The <see cref="T:System.Web.Services.Description.FaultBinding" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.FaultBinding" /> to the <see langword="FaultBindingCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `bindingOperationFault` parameter is added to the end of the <xref:System.Web.Services.Description.FaultBindingCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `Insert` method.  
+  
+ [!code-cs[FaultBindingCollection_Remove#3](~/add/codesnippet/csharp/bc86ba9c-702c-44f2-89be-_1.cs)]
+ [!code-cpp[FaultBindingCollection_Remove#3](~/add/codesnippet/cpp/bc86ba9c-702c-44f2-89be-_1.cpp)]
+ [!code-vb[FaultBindingCollection_Remove#3](~/add/codesnippet/visualbasic/bc86ba9c-702c-44f2-89be-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.FaultBinding this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.FaultBinding Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.FaultBindingCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,18 +245,36 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.FaultBinding" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.FaultBinding" /> at the specified zero-based index.</summary>
+        <value>A <see langword="FaultBinding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the <xref:System.Web.Services.Description.FaultBinding> class.  
+  
+ [!code-vb[FaultBindingCollection_Add#1](~/add/codesnippet/visualbasic/p-system.web.services.de_4_1.vb)]
+ [!code-cpp[FaultBindingCollection_Add#1](~/add/codesnippet/cpp/p-system.web.services.de_4_1.cpp)]
+ [!code-cs[FaultBindingCollection_Add#1](~/add/codesnippet/csharp/p-system.web.services.de_4_1.cs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="index" /> parameter is greater than <see cref="System.Collections.CollectionBase.Count%2A" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.FaultBinding this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.FaultBinding Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.FaultBindingCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,18 +284,31 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Web.Services.Description.FaultBinding" /> returned.</param>
+        <summary>Gets a <see cref="T:System.Web.Services.Description.FaultBinding" /> specified by its name.</summary>
+        <value>A <see langword="FaultBinding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of this property.  
+  
+ [!code-vb[FaultBindingCollection_Item#1](~/add/codesnippet/visualbasic/p-system.web.services.de_27_1.vb)]
+ [!code-cpp[FaultBindingCollection_Item#1](~/add/codesnippet/cpp/p-system.web.services.de_27_1.cpp)]
+ [!code-cs[FaultBindingCollection_Item#1](~/add/codesnippet/csharp/p-system.web.services.de_27_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.FaultBinding bindingOperationFault);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.FaultBinding bindingOperationFault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.Remove(System.Web.Services.Description.FaultBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,17 +318,37 @@
         <Parameter Name="bindingOperationFault" Type="System.Web.Services.Description.FaultBinding" />
       </Parameters>
       <Docs>
-        <param name="bindingOperationFault">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bindingOperationFault">The <see cref="T:System.Web.Services.Description.FaultBinding" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence the specified <see cref="T:System.Web.Services.Description.FaultBinding" /> from the <see cref="T:System.Web.Services.Description.FaultBindingCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.FaultBinding> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `Remove` method.  
+  
+ [!code-cs[FaultBindingCollection_Remove#1](~/add/codesnippet/csharp/b100a7fc-92e3-4924-be4b-_1.cs)]
+ [!code-cpp[FaultBindingCollection_Remove#1](~/add/codesnippet/cpp/b100a7fc-92e3-4924-be4b-_1.cpp)]
+ [!code-vb[FaultBindingCollection_Remove#1](~/add/codesnippet/visualbasic/b100a7fc-92e3-4924-be4b-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">
       <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBindingCollection.SetParent(System.Object,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

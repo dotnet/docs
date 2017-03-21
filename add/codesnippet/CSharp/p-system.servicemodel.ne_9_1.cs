@@ -1,0 +1,1 @@
+	    bool portSharingEnabled = binding.PortSharingEnabled;

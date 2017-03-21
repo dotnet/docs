@@ -1,6 +1,7 @@
 <Type Name="SecurityTokenHandlerCollectionManager+Usage" FullName="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager+Usage">
   <TypeSignature Language="C#" Value="public static class SecurityTokenHandlerCollectionManager.Usage" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit SecurityTokenHandlerCollectionManager/Usage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines standard collection names used by the framework.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ActAs">
       <MemberSignature Language="C#" Value="public const string ActAs;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ActAs" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.ActAs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -26,13 +28,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to reference a collection of handlers for ActAs element processing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public const string Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Default" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -42,13 +45,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to reference the default collection of handlers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBehalfOf">
       <MemberSignature Language="C#" Value="public const string OnBehalfOf;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OnBehalfOf" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.OnBehalfOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -58,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to reference a collection of handlers for OnBehalfOf element processing.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

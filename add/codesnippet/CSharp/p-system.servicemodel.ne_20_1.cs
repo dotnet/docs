@@ -1,0 +1,1 @@
+	    NetTcpSecurity security = binding.Security;

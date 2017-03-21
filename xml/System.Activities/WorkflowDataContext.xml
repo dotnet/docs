@@ -1,6 +1,7 @@
 <Type Name="WorkflowDataContext" FullName="System.Activities.WorkflowDataContext">
   <TypeSignature Language="C#" Value="public sealed class WorkflowDataContext : System.ComponentModel.CustomTypeDescriptor, IDisposable, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowDataContext extends System.ComponentModel.CustomTypeDescriptor implements class System.ComponentModel.INotifyPropertyChanged, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowDataContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,13 +18,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the data context of the current workflow environment and provides a bridge to bring workflow arguments and variables into the scope of [!INCLUDE[avalon1](~/add/includes/avalon1-md.md)] data binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,13 +36,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the <see cref="T:System.Activities.WorkflowDataContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.GetProperties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -51,14 +54,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the collection of properties managed by this <see cref="T:System.Activities.WorkflowDataContext" />.</summary>
+        <returns>The collection of properties managed by this <see cref="T:System.Activities.WorkflowDataContext" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.WorkflowDataContext.PropertyChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,8 +72,15 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a property value changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PropertyChanged event can indicate all properties on the object have changed by using either `null` (`Nothing` in Visual Basic) or <xref:String.Empty?displayProperty=fullName> as the property name in the <xref:System.ComponentModel.PropertyChangedEventArgs>. [!INCLUDE[crdefault](~/add/includes/crdefault-md.md)]<xref:System.ComponentModel.INotifyPropertyChanged>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

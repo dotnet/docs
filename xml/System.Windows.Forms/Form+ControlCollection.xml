@@ -1,8 +1,10 @@
 <Type Name="Form+ControlCollection" FullName="System.Windows.Forms.Form+ControlCollection">
   <TypeSignature Language="C#" Value="public class Form.ControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Form/ControlCollection extends System.Windows.Forms.Control/ControlCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Form.ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,33 +17,63 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of controls on the form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents the collection of controls contained within a form. You can use the <xref:System.Windows.Forms.Form.ControlCollection.Add%2A> method to add a control to the form and the <xref:System.Windows.Forms.Form.ControlCollection.Remove%2A> method to remove the control from the form. The control collection represented by this class cannot be created without binding it to a specific form. As a result, you cannot create multiple instances of this control collection and interchange them with an active form to provide different control layouts.  
+  
+   
+  
+## Examples  
+ The following code example adds a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.Label> control to the control collection of a form. The example requires that a form has been created and named `Form1`.  
+  
+ [!code-cs[Classic Form.ControlCollection Example#1](~/add/codesnippet/csharp/t-system.windows.forms.f_6_1.cs)]
+ [!code-vb[Classic Form.ControlCollection Example#1](~/add/codesnippet/visualbasic/t-system.windows.forms.f_6_1.vb)]
+ [!code-cpp[Classic Form.ControlCollection Example#1](~/add/codesnippet/cpp/t-system.windows.forms.f_6_1.cpp)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ControlCollection (System.Windows.Forms.Form owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Form owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.#ctor(System.Windows.Forms.Form)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.Form" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.Windows.Forms.Form" /> to contain the controls added to the control collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Form.ControlCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor allows you to properly bind the control collection to the form to enable controls to be added to the form.  
+  
+> [!NOTE]
+>  Because the control collection must be created with a specified form, you cannot create multiple collections of controls and interchange them with the form.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public override void Add (System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Windows.Forms.Control value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.Add(System.Windows.Forms.Control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,17 +83,36 @@
         <Parameter Name="value" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to add to the form.</param>
+        <summary>Adds a control to the form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to add controls to the form. If you want to add a group of already created controls to the form, use the <xref:System.Windows.Forms.Control.ControlCollection.AddRange%2A?displayProperty=fullName> method of the <xref:System.Windows.Forms.Control.ControlCollection> class.  
+  
+   
+  
+## Examples  
+ The following code example adds a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.Label> control to the control collection of a form. The example requires that a form has been created and named `Form1`.  
+  
+ [!code-cs[Classic Form.ControlCollection Example#1](~/add/codesnippet/csharp/m-system.windows.forms.f_7_1.cs)]
+ [!code-vb[Classic Form.ControlCollection Example#1](~/add/codesnippet/visualbasic/m-system.windows.forms.f_7_1.vb)]
+ [!code-cpp[Classic Form.ControlCollection Example#1](~/add/codesnippet/cpp/m-system.windows.forms.f_7_1.cpp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">A multiple document interface (MDI) parent form cannot have controls added to it.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public override void Remove (System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Remove(class System.Windows.Forms.Control value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.Remove(System.Windows.Forms.Control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,9 +122,16 @@
         <Parameter Name="value" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Windows.Forms.Control" /> to remove from the form.</param>
+        <summary>Removes a control from the form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to remove controls that you no longer need in your form. If you want to display a control after it is removed, you will need to add the control back to the form using the <xref:System.Windows.Forms.Form.ControlCollection.Add%2A> method. To have a control remain on the form but not displayed, use the <xref:System.Windows.Forms.Control.Visible%2A> property of the control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,1 @@
+            BinaryMessageEncodingBindingElement be = new BinaryMessageEncodingBindingElement();

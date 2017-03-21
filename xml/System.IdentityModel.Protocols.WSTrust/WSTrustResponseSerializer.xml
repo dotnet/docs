@@ -1,6 +1,7 @@
 <Type Name="WSTrustResponseSerializer" FullName="System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer">
   <TypeSignature Language="C#" Value="public abstract class WSTrustResponseSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WSTrustResponseSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,13 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The abstract base class that defines methods for serializing and deserializing versions of WS-Trust response (RSTR) messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WSTrustResponseSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -24,13 +26,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
       <MemberSignature Language="C#" Value="public abstract bool CanRead (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRead(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.CanRead(System.Xml.XmlReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -43,15 +46,17 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object from which to read.</param>
+        <summary>When overridden in a derived class, checks if the specified XML reader is positioned at a WS-Trust RequestSecurityTokenResponse element.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned at an RSTR element that this serializer can read; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse CreateInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse CreateInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.CreateInstance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -62,14 +67,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> class that this class can serialize or deserialize.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ReadXml (System.Xml.XmlReader reader, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ReadXml(class System.Xml.XmlReader reader, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.ReadXml(System.Xml.XmlReader,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,16 +89,17 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The XML reader over the RSTR.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, deserializes the RSTR from an <see cref="T:System.Xml.XmlReader" /> object to a <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object if the deserialization was successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadXmlElement">
       <MemberSignature Language="C#" Value="public abstract void ReadXmlElement (System.Xml.XmlReader reader, System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXmlElement(class System.Xml.XmlReader reader, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.ReadXmlElement(System.Xml.XmlReader,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -107,16 +114,17 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> object positioned at an element to read inside the RSTR.</param>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> element that is being populated from the reader.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in the derived class reads a child element inside the RSTR.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual void Validate (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.Validate(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,14 +137,17 @@
         <Parameter Name="requestSecurityTokenResponse" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
       </Parameters>
       <Docs>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object to validate.</param>
+        <summary>Validates the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object that has been deserialized.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestSecurityTokenResponse" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteKnownResponseElement">
       <MemberSignature Language="C#" Value="public abstract void WriteKnownResponseElement (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, System.Xml.XmlWriter writer, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteKnownResponseElement(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, class System.Xml.XmlWriter writer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.WriteKnownResponseElement(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.Xml.XmlWriter,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -151,16 +162,17 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, writes the supported elements on the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to the outgoing stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
       <MemberSignature Language="C#" Value="public abstract void WriteXml (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, System.Xml.XmlWriter writer, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response, class System.Xml.XmlWriter writer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.WriteXml(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.Xml.XmlWriter,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,16 +187,17 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, serializes the specified <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object into the <see cref="T:System.Xml.XmlWriter" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlElement">
       <MemberSignature Language="C#" Value="public abstract void WriteXmlElement (System.Xml.XmlWriter writer, string elementName, object elementValue, System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXmlElement(class System.Xml.XmlWriter writer, string elementName, object elementValue, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse requestSecurityTokenResponse, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer.WriteXmlElement(System.Xml.XmlWriter,System.String,System.Object,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,12 +214,12 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="elementName">To be added.</param>
-        <param name="elementValue">To be added.</param>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to which the RSTR is being serialized.</param>
+        <param name="elementName">The local name of the element to be written.</param>
+        <param name="elementValue">The value of the element.</param>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object that is being serialized.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, writes a child element inside the RSTR.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

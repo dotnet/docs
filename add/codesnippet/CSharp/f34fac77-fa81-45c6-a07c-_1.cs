@@ -1,0 +1,1 @@
+            msgVersion = MessageVersion.CreateVersion(envVersion);

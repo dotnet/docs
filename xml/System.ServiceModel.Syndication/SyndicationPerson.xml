@@ -1,6 +1,11 @@
 <Type Name="SyndicationPerson" FullName="System.ServiceModel.Syndication.SyndicationPerson">
   <TypeSignature Language="C#" Value="public class SyndicationPerson" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyndicationPerson extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationPerson" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,28 +20,65 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an author or contributor of syndication content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SyndicationPerson objects can be added to the authors and contributors collections on <xref:System.ServiceModel.Syndication.SyndicationFeed> and <xref:System.ServiceModel.Syndication.SyndicationItem> objects.  
+  
+ When serialized to Atom 1.0, the SyndicationPerson is written out as an `<author>` or `<contributor>` element.  
+  
+ When serialized to RSS 2.0, a SyndicationPerson instance is written out as a `<managingEditor>`, `<a10:author>`, or `<a10:contributor>` element. How a SyndicationPerson is serialized depends on the number of SyndicationPerson objects added to a <xref:System.ServiceModel.Syndication.SyndicationFeed> or <xref:System.ServiceModel.Syndication.SyndicationItem>, which collection the SyndicationPerson instances are added to, and the value of the `SerializeExtensionAsAtom` parameter to the <xref:System.ServiceModel.Syndication.Rss20ItemFormatter.%23ctor%28System.ServiceModel.Syndication.SyndicationItem%2CSystem.Boolean%29> constructor. If only one SyndicationPerson is added to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> (or <xref:System.ServiceModel.Syndication.SyndicationItem.Authors%2A>) collection, the SyndicationPerson is serialized to a `<managingEditor>` element. If more than one SyndicationPerson is added to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> (or <xref:System.ServiceModel.Syndication.SyndicationItem.Authors%2A>) collection and `SerializeExtensionsAsAtom` is set to `true`, all of the SyndicationPerson objects are serialized to `<a10:author>` elements. If `SerializeExtensionsAsAtom` is set to `false`, the SyndicationPerson instances is not serialized. Any SyndicationPerson instances added to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> (or <xref:System.ServiceModel.Syndication.SyndicationItem.Contributors%2A>) collection are only serialized if `SerializeExtensionsAsAtom` is set to `true`, in which case they are serialized to `<a10:contributor>` elements.  
+  
+   
+  
+## Examples  
+ The following code shows how to add a SyndicationPerson to the authors collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-vb[SyndicationPerson#8](~/add/codesnippet/visualbasic/t-system.servicemodel.sy_1_1.vb)]
+ [!code-cs[SyndicationPerson#8](~/add/codesnippet/csharp/t-system.servicemodel.sy_1_1.cs)]  
+  
+ The following XML shows how a SyndicationPerson is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationPerson#0](~/add/codesnippet/xml/t-system.servicemodel.sy_1_2.xml)]  
+  
+ The following XML shows how a SyndicationPerson is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationPerson#1](~/add/codesnippet/xml/t-system.servicemodel.sy_1_3.xml)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyndicationPerson ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.#ctor" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected SyndicationPerson (System.ServiceModel.Syndication.SyndicationPerson source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationPerson source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.#ctor(System.ServiceModel.Syndication.SyndicationPerson)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,15 +87,20 @@
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationPerson" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> class with the specified instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyndicationPerson (string email);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string email) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,15 +109,30 @@
         <Parameter Name="email" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="email">The e-mail address of the person.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified e-mail address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-vb[SyndicationPerson#2](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_13_1.vb)]
+ [!code-cs[SyndicationPerson#2](~/add/codesnippet/csharp/m-system.servicemodel.sy_13_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SyndicationPerson (string email, string name, string uri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string email, string name, string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,17 +143,32 @@
         <Parameter Name="uri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="email">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="email">The e-mail address of the person.</param>
+        <param name="name">The name of the person.</param>
+        <param name="uri">The URI of the person's Web page.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance with the specified e-mail address, name, and Uniform Resource Identifier (URI).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-vb[SyndicationPerson#3](~/add/codesnippet/visualbasic/53f6e6c2-3cc3-4bec-b5e6-_1.vb)]
+ [!code-cs[SyndicationPerson#3](~/add/codesnippet/csharp/53f6e6c2-3cc3-4bec-b5e6-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttributeExtensions">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,string&gt; AttributeExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.Xml.XmlQualifiedName, string&gt; AttributeExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationPerson.AttributeExtensions" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,15 +177,45 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the attribute extensions for the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
+        <value>A dictionary that contains a collection of attribute extensions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance. You can add any valid XML attribute/value.  
+  
+ When serialized to Atom 1.0, any custom attribute/value is written as an attribute in the `<author>` or `<contributor>` elements. When serialized to RSS 2.0, any custom attribute/value is written as an attribute in the `<managingEditor>`, `<a10:contributor>`, or `<a10:author>` elements.  
+  
+   
+  
+## Examples  
+ The following code shows how to add an attribute extension to a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance.  
+  
+ [!code-vb[SyndicationPerson#9](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_6_1.vb)]
+ [!code-cs[SyndicationPerson#9](~/add/codesnippet/csharp/p-system.servicemodel.sy_6_1.cs)]  
+  
+ The following XML shows how the AttributeExtensions collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationPerson#4](~/add/codesnippet/xml/p-system.servicemodel.sy_6_2.xml)]  
+  
+ The following XML shows how the AttributeExtensions collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationPerson#5](~/add/codesnippet/xml/p-system.servicemodel.sy_6_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Syndication.SyndicationPerson Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationPerson Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.Clone" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,15 +225,30 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a copy of the existing <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to clone a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance.  
+  
+ [!code-vb[SyndicationPerson#14](~/add/codesnippet/visualbasic/m-system.servicemodel.sy_6_1.vb)]
+ [!code-cs[SyndicationPerson#14](~/add/codesnippet/csharp/m-system.servicemodel.sy_6_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementExtensions">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationPerson.ElementExtensions" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -135,15 +257,47 @@
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the element extensions for the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" /> that contains the element extensions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Syndication object model allows you to add custom XML elements to a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance. You can add any valid XML element as long as the element namespace and the containing namespace are different.  
+  
+ When serialized to Atom 1.0, any custom element is written as an XML element within an `<author>` or `<contributor>` element.  
+  
+ When serialized to RSS 2.0, any custom element is written as an XML element within the `<managingEditor>`, `<a10:contributor>`, or `<a10:author>` elements.  
+  
+   
+  
+## Examples  
+ The following code shows how to add an element extension to a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance.  
+  
+ [!code-vb[SyndicationPerson#10](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_12_1.vb)]
+ [!code-cs[SyndicationPerson#10](~/add/codesnippet/csharp/p-system.servicemodel.sy_12_1.cs)]  
+  
+ The following XML shows how the ElementExtensions collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationPerson#6](~/add/codesnippet/xml/p-system.servicemodel.sy_12_2.xml)]  
+  
+ The following XML shows how the ElementExtensions collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationPerson#7](~/add/codesnippet/xml/p-system.servicemodel.sy_12_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Email">
       <MemberSignature Language="C#" Value="public string Email { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Email" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationPerson.Email" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -152,15 +306,45 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the e-mail address of the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
+        <value>The e-mail address of the person.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationPerson> property is written as an `<email>` element. The `<email>` element appears within an `<author>` or `<contributor>` element, which depends upon which collection (authors or contributors) the <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to.  
+  
+ When serialized to RSS 2.0, this value is written as an `<a10:email>` element. The `<a10:email>` element appears within a `<managingEditor>`, `<a10:author>`, or `<a10:contributor>` element. If only one <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the authors collection, the `<email>` element is written within the `<managingEditor>` element. If more than one <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the authors collection, the `<email>` element is written within an `<a10:author>` element. If the <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the contributors collection, the `<email>` element is written within an `<a10:contributor>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the email address of a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance.  
+  
+ [!code-vb[SyndicationPerson#11](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_30_1.vb)]
+ [!code-cs[SyndicationPerson#11](~/add/codesnippet/csharp/p-system.servicemodel.sy_30_1.cs)]  
+  
+ The following XML shows how the Email is serialized for Atom 1.0.  
+  
+ [!code-xml[SyndicationPerson#0](~/add/codesnippet/xml/p-system.servicemodel.sy_30_2.xml)]  
+  
+ The following XML shows how the Email is serialized for RSS 2.0.  
+  
+ [!code-xml[SyndicationPerson#1](~/add/codesnippet/xml/p-system.servicemodel.sy_30_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationPerson.Name" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -169,15 +353,45 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the name of the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
+        <value>The name of the person.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the Name property is written as a `<name>` element. The `<name>` element appears within an `<author>` or `<contributor>` element, which depends upon which collection (authors or contributors) the <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to.  
+  
+ When serialized to RSS 2.0, the Name property is written as an `<a10:name>` element. The `<a10:name>` element appears within a `<managingEditor>`, `<a10:author>`, or `<a10:contributor>` element. If only one <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the authors collection, the `<a10:name>` element is written within the `<managingEditor>` element. If more than one <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the authors collection, the `<a10:name>` element is written within the `<a10:author>` element. If the <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the contributors collection, the `<a10:name>` element is written within the `<a10:contributor>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the name of a <xref:System.ServiceModel.Syndication.SyndicationPerson>.  
+  
+ [!code-vb[SyndicationPerson#12](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_5_1.vb)]
+ [!code-cs[SyndicationPerson#12](~/add/codesnippet/csharp/p-system.servicemodel.sy_5_1.cs)]  
+  
+ The following XML shows how the Name is serialized for Atom 1.0.  
+  
+ [!code-xml[SyndicationPerson#0](~/add/codesnippet/xml/p-system.servicemodel.sy_5_2.xml)]  
+  
+ The following XML shows how the Name is serialized for RSS 2.0.  
+  
+ [!code-xml[SyndicationPerson#1](~/add/codesnippet/xml/p-system.servicemodel.sy_5_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParseAttribute">
       <MemberSignature Language="C#" Value="protected virtual bool TryParseAttribute (string name, string ns, string value, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseAttribute(string name, string ns, string value, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -192,19 +406,32 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute to parse.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extension.</summary>
+        <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<author>` or `<contributor>` element for Atom 1.0 or `<managingEditor>`, `<a10:author>`, or `<a10:contributor>` element for RSS 2.0. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override this method. This method is called for all unrecognized attribute extensions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryParseElement">
       <MemberSignature Language="C#" Value="protected virtual bool TryParseElement (System.Xml.XmlReader reader, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseElement(class System.Xml.XmlReader reader, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -217,17 +444,30 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="version">The syndication version to use while parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>A value that specifies whether the element extension was parsed successfully.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override this method. This method is called for all unrecognized element extensions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
       </Docs>
     </Member>
     <Member MemberName="Uri">
       <MemberSignature Language="C#" Value="public string Uri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Uri" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationPerson.Uri" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -236,15 +476,45 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the URI of the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" />.</summary>
+        <value>The URI of the person's Web site.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the Uri property is written as a `<uri>` element. The `<uri>` element appears within an `<author>` or `<contributor>` element, which depends upon which collection (authors or contributors) the <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to.  
+  
+ When serialized to RSS 2.0, the Uri property is written as an `<a10:uri>` element. The `<a10:uri>` element appears within a `<managingEditor>`, `<a10:author>`, or `<a10:contributor>` element. If only one <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the authors collection, the `<a10:uri>` element is written within the `<managingEditor>` element. If more than one <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the authors collection, the `<a10:uri>` element is written within the `<a10:author>` element. If the <xref:System.ServiceModel.Syndication.SyndicationPerson> is added to the contributors collection, the `<a10:uri>` element is written within the `<a10:contributor>` element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the URI for a <xref:System.ServiceModel.Syndication.SyndicationPerson> instance.  
+  
+ [!code-vb[SyndicationPerson#13](~/add/codesnippet/visualbasic/p-system.servicemodel.sy_28_1.vb)]
+ [!code-cs[SyndicationPerson#13](~/add/codesnippet/csharp/p-system.servicemodel.sy_28_1.cs)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationPerson.Name%2A> is serialized for Atom 1.0.  
+  
+ [!code-xml[SyndicationPerson#0](~/add/codesnippet/xml/p-system.servicemodel.sy_28_2.xml)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationPerson.Name%2A> is serialized for RSS 2.0.  
+  
+ [!code-xml[SyndicationPerson#1](~/add/codesnippet/xml/p-system.servicemodel.sy_28_3.xml)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributeExtensions">
       <MemberSignature Language="C#" Value="protected virtual void WriteAttributeExtensions (System.Xml.XmlWriter writer, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteAttributeExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,16 +527,28 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlReader" /> to write to.</param>
+        <param name="version">The syndication version to use while writing.</param>
+        <summary>Writes the attribute extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<author>` or `<contributor>` element for Atom 1.0 or `<managingEditor>`, `<a10:author>`, or `<a10:contributor>` element for RSS 2.0. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override this method. This method is called for all unrecognized attribute extensions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteElementExtensions">
       <MemberSignature Language="C#" Value="protected virtual void WriteElementExtensions (System.Xml.XmlWriter writer, string version);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteElementExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationPerson.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -279,10 +561,17 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlReader" /> to write to.</param>
+        <param name="version">The syndication version to use while writing.</param>
+        <summary>Writes the element extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override this method. This method is called for all unrecognized element extensions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

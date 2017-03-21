@@ -1,6 +1,7 @@
 <Type Name="IApplicationResourceStreamResolver" FullName="System.Xml.IApplicationResourceStreamResolver">
   <TypeSignature Language="C#" Value="public interface IApplicationResourceStreamResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationResourceStreamResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.IApplicationResourceStreamResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +16,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an application resource stream resolver.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="GetApplicationResourceStream">
       <MemberSignature Language="C#" Value="public System.IO.Stream GetApplicationResourceStream (Uri relativeUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetApplicationResourceStream(class System.Uri relativeUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IApplicationResourceStreamResolver.GetApplicationResourceStream(System.Uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -42,9 +44,9 @@
         <Parameter Name="relativeUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="relativeUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="relativeUri">The relative URI.</param>
+        <summary>Returns an application resource stream from the specified URI.</summary>
+        <returns>An application resource stream.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

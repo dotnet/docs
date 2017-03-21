@@ -1,8 +1,10 @@
 <Type Name="LenientFunctionPrototype" FullName="Microsoft.JScript.LenientFunctionPrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientFunctionPrototype : Microsoft.JScript.FunctionPrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientFunctionPrototype extends Microsoft.JScript.FunctionPrototype" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientFunctionPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,71 +12,79 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class. The LenientFunctionPrototype class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="apply">
       <MemberSignature Language="C#" Value="public object apply;" />
       <MemberSignature Language="ILAsm" Value=".field public object apply" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.apply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.FunctionPrototype.apply%2A" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="call">
       <MemberSignature Language="C#" Value="public object call;" />
       <MemberSignature Language="ILAsm" Value=".field public object call" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.FunctionPrototype.call%2A" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="constructor">
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="toString">
       <MemberSignature Language="C#" Value="public object toString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="Microsoft.JScript.FunctionPrototype.toString%2A" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

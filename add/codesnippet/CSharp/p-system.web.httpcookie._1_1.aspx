@@ -1,0 +1,1 @@
+        MyCookie.Expires = DateTime.Now.AddMinutes(10.0);

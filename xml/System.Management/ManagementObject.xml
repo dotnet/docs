@@ -1,8 +1,10 @@
 <Type Name="ManagementObject" FullName="System.Management.ManagementObject">
   <TypeSignature Language="C#" Value="public class ManagementObject : System.Management.ManagementBaseObject, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementObject extends System.Management.ManagementBaseObject implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ManagementObject" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,64 +16,124 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a WMI instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default constructor.  
+  
+ [!code-vb[wminet_ManagementObject()#1](~/add/codesnippet/visualbasic/m-system.management.mana_3_1.vb)]
+ [!code-cs[wminet_ManagementObject()#1](~/add/codesnippet/csharp/m-system.management.mana_3_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject (System.Management.ManagementPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Management.ManagementPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.Management.ManagementPath" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> that contains a path to a WMI object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class for the specified WMI object path. The path is provided as a <see cref="T:System.Management.ManagementPath" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with a specified WMI object path.  
+  
+ [!code-cs[wminet_ManagementObject(M)#1](~/add/codesnippet/csharp/m-system.management.mana_25_1.cs)]
+ [!code-vb[wminet_ManagementObject(M)#1](~/add/codesnippet/visualbasic/m-system.management.mana_25_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">A WMI path.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class for the specified WMI object path. The path is provided as a string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified path is a relative path only (a server or namespace is not specified), the default path is the local machine, and the default namespace is the <xref:System.Management.ManagementPath.DefaultPath%2A> path (by default, root\cimv2). If the user specifies a full path, the default settings are overridden.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class.  
+  
+ [!code-cs[wminet_ManagementObject(S)#1](~/add/codesnippet/csharp/m-system.management.mana_18_1.cs)]
+ [!code-vb[wminet_ManagementObject(S)#1](~/add/codesnippet/visualbasic/m-system.management.mana_18_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject (System.Management.ManagementPath path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path, class System.Management.ObjectGetOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,18 +141,37 @@
         <Parameter Name="options" Type="System.Management.ObjectGetOptions" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> containing the WMI path.</param>
+        <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> containing additional options for binding to the WMI object. This parameter could be null if default options are to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path, including the specified additional options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class that is bound to a specific WMI path.  
+  
+ [!code-cs[wminet_ManagementObject(M_O)#1](~/add/codesnippet/csharp/88575cf0-6254-4056-a201-_1.cs)]
+ [!code-vb[wminet_ManagementObject(M_O)#1](~/add/codesnippet/visualbasic/88575cf0-6254-4056-a201-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ManagementObject (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -98,18 +179,29 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" />) for this serialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class that is serializable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject (string path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Management.ObjectGetOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.String,System.Management.ObjectGetOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -117,18 +209,37 @@
         <Parameter Name="options" Type="System.Management.ObjectGetOptions" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The WMI path to the object.</param>
+        <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> representing options to get the specified WMI object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path, including the specified additional options. In this variant, the path can be specified as a string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class.  
+  
+ [!code-vb[wminet_ManagementObject(S_O)#1](~/add/codesnippet/visualbasic/739f87df-d2ff-42ff-ae68-_1.vb)]
+ [!code-cs[wminet_ManagementObject(S_O)#1](~/add/codesnippet/csharp/739f87df-d2ff-42ff-ae68-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject (System.Management.ManagementScope scope, System.Management.ManagementPath path, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.ManagementPath path, class System.Management.ObjectGetOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -137,19 +248,45 @@
         <Parameter Name="options" Type="System.Management.ObjectGetOptions" />
       </Parameters>
       <Docs>
-        <param name="scope">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="scope">A <see cref="T:System.Management.ManagementScope" /> representing the scope in which the WMI object resides. In this version, scopes can only be WMI namespaces.</param>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> representing the WMI path to the manageable object.</param>
+        <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> specifying additional options for getting the object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path that includes the specified options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because WMI paths can be relative or full, a conflict between the scope and the path specified may arise. However, if a scope is specified and a relative WMI path is specified, then there is no conflict. The following are some possible conflicts:  
+  
+ If a scope is not specified and a relative WMI path is specified, then the scope will default to the local machine's <xref:System.Management.ManagementPath.DefaultPath%2A>.  
+  
+ If a scope is not specified and a full WMI path is specified, then the scope will be inferred from the scope portion of the full path. For example, the full WMI path: `\\MyMachine\root\MyNamespace:MyClass.Name='abc'` will represent the WMI object 'MyClass.Name='abc'" in the scope '\\\MyMachine\root\MyNamespace'.  
+  
+ If a scope is specified and a full WMI path is specified, then the scope will override the scope portion of the full path. For example, if the following scope was specified: \\\MyMachine\root\MyScope, and the following full path was specified: \\\MyMachine\root\MyNamespace:MyClass.Name='abc', then look for the following `object: \\MyMachine\root\MyScope:MyClass.Name= 'abc'` (the scope part of the full path is ignored).  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class that is bound to a specific WMI path.  
+  
+ [!code-vb[wminet_ManagementObject(M_M_O)#1](~/add/codesnippet/visualbasic/7c198cea-0bb3-4f2e-bdb9-_1.vb)]
+ [!code-cs[wminet_ManagementObject(M_M_O)#1](~/add/codesnippet/csharp/7c198cea-0bb3-4f2e-bdb9-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManagementObject (string scopeString, string pathString, System.Management.ObjectGetOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scopeString, string pathString, class System.Management.ObjectGetOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.#ctor(System.String,System.String,System.Management.ObjectGetOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -158,36 +295,76 @@
         <Parameter Name="options" Type="System.Management.ObjectGetOptions" />
       </Parameters>
       <Docs>
-        <param name="scopeString">To be added.</param>
-        <param name="pathString">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="scopeString">The scope for the WMI object.</param>
+        <param name="pathString">The WMI object path.</param>
+        <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> representing additional options for getting the WMI object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path, and includes the specified options. The scope and the path are specified as strings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the equivalent overload for details.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with a specific WMI path and options.  
+  
+ [!code-vb[wminet_ManagementObject(S_S_O)#1](~/add/codesnippet/visualbasic/7d62ec2c-61be-4bbf-bf7b-_1.vb)]
+ [!code-cs[wminet_ManagementObject(S_S_O)#1](~/add/codesnippet/csharp/7d62ec2c-61be-4bbf-bf7b-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassPath">
       <MemberSignature Language="C#" Value="public override System.Management.ManagementPath ClassPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath ClassPath" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.ClassPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path to the object's class.</summary>
+        <value>A <see cref="T:System.Management.ManagementPath" /> representing the path to the object's class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class and then retrieves the class path for the <xref:System.Management.ManagementObject>.  
+  
+ [!code-vb[wminet_ManagementObject_Path#1](~/add/codesnippet/visualbasic/p-system.management.mana_0_1.vb)]
+ [!code-cs[wminet_ManagementObject_Path#1](~/add/codesnippet/csharp/p-system.management.mana_0_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,17 +372,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a copy of the object.</summary>
+        <returns>The copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath CopyTo (System.Management.ManagementPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementPath CopyTo(class System.Management.ManagementPath path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,18 +403,29 @@
         <Parameter Name="path" Type="System.Management.ManagementPath" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The <see cref="T:System.Management.ManagementPath" /> to which the object should be copied.</param>
+        <summary>Copies the object to a different location.</summary>
+        <returns>The new path of the copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath CopyTo (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementPath CopyTo(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,18 +435,29 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The path to which the object should be copied.</param>
+        <summary>Copies the object to a different location.</summary>
+        <returns>The new path of the copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Management.ManagementOperationObserver watcher, System.Management.ManagementPath path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Management.ManagementOperationObserver watcher, class System.Management.ManagementPath path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,18 +468,29 @@
         <Parameter Name="path" Type="System.Management.ManagementPath" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object that will receive the results of the operation.</param>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> specifying the path to which the object should be copied.</param>
+        <summary>Copies the object to a different location, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Management.ManagementOperationObserver watcher, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Management.ManagementOperationObserver watcher, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,18 +501,29 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object that will receive the results of the operation.</param>
+        <param name="path">The path to which the object should be copied.</param>
+        <summary>Copies the object to a different location, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath CopyTo (System.Management.ManagementPath path, System.Management.PutOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementPath CopyTo(class System.Management.ManagementPath path, class System.Management.PutOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,19 +534,30 @@
         <Parameter Name="options" Type="System.Management.PutOptions" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The <see cref="T:System.Management.ManagementPath" /> to which the object should be copied.</param>
+        <param name="options">The options for how the object should be put.</param>
+        <summary>Copies the object to a different location.</summary>
+        <returns>The new path of the copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath CopyTo (string path, System.Management.PutOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementPath CopyTo(string path, class System.Management.PutOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,19 +568,30 @@
         <Parameter Name="options" Type="System.Management.PutOptions" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The path to which the object should be copied.</param>
+        <param name="options">The options for how the object should be put.</param>
+        <summary>Copies the object to a different location.</summary>
+        <returns>The new path of the copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Management.ManagementOperationObserver watcher, System.Management.ManagementPath path, System.Management.PutOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Management.ManagementOperationObserver watcher, class System.Management.ManagementPath path, class System.Management.PutOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,19 +603,30 @@
         <Parameter Name="options" Type="System.Management.PutOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object that will receive the results of the operation.</param>
+        <param name="path">The path to which the object should be copied.</param>
+        <param name="options">The options for how the object should be put.</param>
+        <summary>Copies the object to a different location, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Management.ManagementOperationObserver watcher, string path, System.Management.PutOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Management.ManagementOperationObserver watcher, string path, class System.Management.PutOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,19 +638,30 @@
         <Parameter Name="options" Type="System.Management.PutOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object that will receive the results of the operation.</param>
+        <param name="path">The path to which the object should be copied.</param>
+        <param name="options">The options for how the object should be put.</param>
+        <summary>Copies the object to a different location, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,16 +669,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Deletes the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public void Delete (System.Management.DeleteOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(class System.Management.DeleteOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete(System.Management.DeleteOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,17 +699,28 @@
         <Parameter Name="options" Type="System.Management.DeleteOptions" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="options">The options for how to delete the object.</param>
+        <summary>Deletes the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public void Delete (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(class System.Management.ManagementOperationObserver watcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -432,17 +730,28 @@
         <Parameter Name="watcher" Type="System.Management.ManagementOperationObserver" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object that will receive the results of the operation.</param>
+        <summary>Deletes the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public void Delete (System.Management.ManagementOperationObserver watcher, System.Management.DeleteOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(class System.Management.ManagementOperationObserver watcher, class System.Management.DeleteOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -453,18 +762,29 @@
         <Parameter Name="options" Type="System.Management.DeleteOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object that will receive the results of the operation.</param>
+        <param name="options">The options for how to delete the object.</param>
+        <summary>Deletes the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Dispose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,16 +792,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the Component.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public void Get ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Get() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Get" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -489,16 +811,36 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Binds WMI class information to the management object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method is implicitly invoked at the first attempt to get or set information to the WMI object. It can also be explicitly invoked at the user's discretion, to better control the timing and manner of retrieval.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example calls the Get method to get an instance of the <xref:System.Management.ManagementObject> class.  
+  
+ [!code-vb[wminet_ManagementObject_GetMethod()#1](~/add/codesnippet/visualbasic/m-system.management.mana_29_1.vb)]
+ [!code-cs[wminet_ManagementObject_GetMethod()#1](~/add/codesnippet/csharp/m-system.management.mana_29_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public void Get (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Get(class System.Management.ManagementOperationObserver watcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,17 +850,37 @@
         <Parameter Name="watcher" Type="System.Management.ManagementOperationObserver" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to receive the results of the operation as events.</param>
+        <summary>Binds to the management object asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method will issue the request to get the object and then will immediately return. The results of the operation will then be delivered through events being fired on the watcher object provided.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example calls the Get method to asynchronously get an instance of the <xref:System.Management.ManagementObject> class.  
+  
+ [!code-cs[wminet_ManagementObject_GetMethod(M)#1](~/add/codesnippet/csharp/2713ebde-cf9b-4a4c-96ad-_1.cs)]
+ [!code-vb[wminet_ManagementObject_GetMethod(M)#1](~/add/codesnippet/visualbasic/2713ebde-cf9b-4a4c-96ad-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMethodParameters">
       <MemberSignature Language="C#" Value="public System.Management.ManagementBaseObject GetMethodParameters (string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementBaseObject GetMethodParameters(string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetMethodParameters(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -528,18 +890,30 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="methodName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="methodName">The name of the method.</param>
+        <summary>Returns a <see cref="T:System.Management.ManagementBaseObject" /> representing the list of input parameters for a method.</summary>
+        <returns>A <see cref="T:System.Management.ManagementBaseObject" /> containing the input parameters to the method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets the object containing the input parameters to a method, and then fills in the values and passes the object to the <xref:System.Management.ManagementObject.InvokeMethod%2A> call.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
       <MemberSignature Language="C#" Value="protected override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -550,18 +924,29 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object to be populated with serialization information.</param>
+        <param name="context">The location where serialized data will be stored and retrieved.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelated">
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelated ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -569,17 +954,37 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of objects related to the object (associators).</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the related objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example calls the GetRelated method to get a collection of objects related to an instance of the <xref:System.Management.ManagementObject> class.  
+  
+ [!code-cs[wminet_ManagementObject_GetRelated()#1](~/add/codesnippet/csharp/m-system.management.mana_10_1.cs)]
+ [!code-vb[wminet_ManagementObject_GetRelated()#1](~/add/codesnippet/visualbasic/m-system.management.mana_10_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelated">
       <MemberSignature Language="C#" Value="public void GetRelated (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelated(class System.Management.ManagementOperationObserver watcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -589,17 +994,28 @@
         <Parameter Name="watcher" Type="System.Management.ManagementOperationObserver" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to use to return results.</param>
+        <summary>Gets a collection of objects related to the object (associators) asynchronously. This call returns immediately, and a delegate is called when the results are available.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelated">
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelated (string relatedClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelated(string relatedClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -609,18 +1025,37 @@
         <Parameter Name="relatedClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relatedClass">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="relatedClass">A class of related objects.</param>
+        <summary>Gets a collection of objects related to the object (associators).</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the related objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example calls the GetRelated method to get a collection of objects related to an instance of the <xref:System.Management.ManagementObject> class.  
+  
+ [!code-cs[wminet_ManagementObject_GetRelated(S)#1](~/add/codesnippet/csharp/m-system.management.mana_14_1.cs)]
+ [!code-vb[wminet_ManagementObject_GetRelated(S)#1](~/add/codesnippet/visualbasic/m-system.management.mana_14_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelated">
       <MemberSignature Language="C#" Value="public void GetRelated (System.Management.ManagementOperationObserver watcher, string relatedClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelated(class System.Management.ManagementOperationObserver watcher, string relatedClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -631,18 +1066,30 @@
         <Parameter Name="relatedClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="relatedClass">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to use to return results.</param>
+        <param name="relatedClass">The class of related objects.</param>
+        <summary>Gets a collection of objects related to the object (associators).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelated">
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelated (string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelated(string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly, class System.Management.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -659,25 +1106,37 @@
         <Parameter Name="options" Type="System.Management.EnumerationOptions" />
       </Parameters>
       <Docs>
-        <param name="relatedClass">To be added.</param>
-        <param name="relationshipClass">To be added.</param>
-        <param name="relationshipQualifier">To be added.</param>
-        <param name="relatedQualifier">To be added.</param>
-        <param name="relatedRole">To be added.</param>
-        <param name="thisRole">To be added.</param>
-        <param name="classDefinitionsOnly">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="relatedClass">The class of the related objects.</param>
+        <param name="relationshipClass">The relationship class of interest.</param>
+        <param name="relationshipQualifier">The qualifier required to be present on the relationship class.</param>
+        <param name="relatedQualifier">The qualifier required to be present on the related class.</param>
+        <param name="relatedRole">The role that the related class is playing in the relationship.</param>
+        <param name="thisRole">The role that this class is playing in the relationship.</param>
+        <param name="classDefinitionsOnly">When this method returns, it contains only class definitions for the instances that match the query.</param>
+        <param name="options">Extended options for how to execute the query.</param>
+        <summary>Gets a collection of objects related to the object (associators).</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the related objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelated">
       <MemberSignature Language="C#" Value="public void GetRelated (System.Management.ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelated(class System.Management.ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly, class System.Management.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -695,25 +1154,37 @@
         <Parameter Name="options" Type="System.Management.EnumerationOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="relatedClass">To be added.</param>
-        <param name="relationshipClass">To be added.</param>
-        <param name="relationshipQualifier">To be added.</param>
-        <param name="relatedQualifier">To be added.</param>
-        <param name="relatedRole">To be added.</param>
-        <param name="thisRole">To be added.</param>
-        <param name="classDefinitionsOnly">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to use to return results.</param>
+        <param name="relatedClass">The class of the related objects.</param>
+        <param name="relationshipClass">The relationship class of interest.</param>
+        <param name="relationshipQualifier">The qualifier required to be present on the relationship class.</param>
+        <param name="relatedQualifier">The qualifier required to be present on the related class.</param>
+        <param name="relatedRole">The role that the related class is playing in the relationship.</param>
+        <param name="thisRole">The role that this class is playing in the relationship.</param>
+        <param name="classDefinitionsOnly">Return only class definitions for the instances that match the query.</param>
+        <param name="options">Extended options for how to execute the query.</param>
+        <summary>Gets a collection of objects related to the object (associators).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelationships ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationships() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -721,17 +1192,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of associations to the object.</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the association objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The operation is equivalent to a *REFERENCES OF* query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
       <MemberSignature Language="C#" Value="public void GetRelationships (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationships(class System.Management.ManagementOperationObserver watcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -741,17 +1224,29 @@
         <Parameter Name="watcher" Type="System.Management.ManagementOperationObserver" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to use to return results.</param>
+        <summary>Gets a collection of associations to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to a *REFERENCES OF* query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelationships (string relationshipClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationships(string relationshipClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -761,18 +1256,30 @@
         <Parameter Name="relationshipClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relationshipClass">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="relationshipClass">The associations to include.</param>
+        <summary>Gets a collection of associations to the object.</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the association objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to a *REFERENCES OF* query where the AssocClass = relationshipClass.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
       <MemberSignature Language="C#" Value="public void GetRelationships (System.Management.ManagementOperationObserver watcher, string relationshipClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationships(class System.Management.ManagementOperationObserver watcher, string relationshipClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -783,18 +1290,30 @@
         <Parameter Name="relationshipClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="relationshipClass">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to use to return results.</param>
+        <param name="relationshipClass">The associations to include.</param>
+        <summary>Gets a collection of associations to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to a *REFERENCES OF* query where the AssocClass = relationshipClass.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
       <MemberSignature Language="C#" Value="public System.Management.ManagementObjectCollection GetRelationships (string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationships(string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly, class System.Management.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -808,22 +1327,34 @@
         <Parameter Name="options" Type="System.Management.EnumerationOptions" />
       </Parameters>
       <Docs>
-        <param name="relationshipClass">To be added.</param>
-        <param name="relationshipQualifier">To be added.</param>
-        <param name="thisRole">To be added.</param>
-        <param name="classDefinitionsOnly">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="relationshipClass">The type of relationship of interest.</param>
+        <param name="relationshipQualifier">The qualifier to be present on the relationship.</param>
+        <param name="thisRole">The role of this object in the relationship.</param>
+        <param name="classDefinitionsOnly">When this method returns, it contains only the class definitions for the result set.</param>
+        <param name="options">The extended options for the query execution.</param>
+        <summary>Gets a collection of associations to the object.</summary>
+        <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the association objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to a *REFERENCES OF* query with possibly all the extensions.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRelationships">
       <MemberSignature Language="C#" Value="public void GetRelationships (System.Management.ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly, System.Management.EnumerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationships(class System.Management.ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly, class System.Management.EnumerationOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,22 +1369,34 @@
         <Parameter Name="options" Type="System.Management.EnumerationOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="relationshipClass">To be added.</param>
-        <param name="relationshipQualifier">To be added.</param>
-        <param name="thisRole">To be added.</param>
-        <param name="classDefinitionsOnly">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to use to return results.</param>
+        <param name="relationshipClass">The type of relationship of interest.</param>
+        <param name="relationshipQualifier">The qualifier to be present on the relationship.</param>
+        <param name="thisRole">The role of this object in the relationship.</param>
+        <param name="classDefinitionsOnly">When this method returns, it contains only the class definitions for the result set.</param>
+        <param name="options">The extended options for the query execution.</param>
+        <summary>Gets a collection of associations to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is equivalent to a *REFERENCES OF* query with possibly all the extensions.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeMethod">
       <MemberSignature Language="C#" Value="public object InvokeMethod (string methodName, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeMethod(string methodName, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -864,19 +1407,39 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="methodName">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="methodName">The name of the method to execute.</param>
+        <param name="args">An array containing parameter values.</param>
+        <summary>Invokes a method on the object.</summary>
+        <returns>The object value returned by the method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the method is static, the execution should still succeed.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example invokes the **Win32_Process::Create** method to start a new process of Notepad.exe.  
+  
+ [!code-cs[wminet_ManagementObject_InvokeMethod(S_O)#1](~/add/codesnippet/csharp/m-system.management.mana_15_1.cs)]
+ [!code-vb[wminet_ManagementObject_InvokeMethod(S_O)#1](~/add/codesnippet/visualbasic/m-system.management.mana_15_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeMethod">
       <MemberSignature Language="C#" Value="public void InvokeMethod (System.Management.ManagementOperationObserver watcher, string methodName, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvokeMethod(class System.Management.ManagementOperationObserver watcher, string methodName, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -888,19 +1451,31 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="methodName">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">The object to receive the results of the operation.</param>
+        <param name="methodName">The name of the method to execute.</param>
+        <param name="args">An array containing parameter values.</param>
+        <summary>Invokes a method on the object, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the method is static, the execution should still succeed.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeMethod">
       <MemberSignature Language="C#" Value="public System.Management.ManagementBaseObject InvokeMethod (string methodName, System.Management.ManagementBaseObject inParameters, System.Management.InvokeMethodOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementBaseObject InvokeMethod(string methodName, class System.Management.ManagementBaseObject inParameters, class System.Management.InvokeMethodOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -912,20 +1487,39 @@
         <Parameter Name="options" Type="System.Management.InvokeMethodOptions" />
       </Parameters>
       <Docs>
-        <param name="methodName">To be added.</param>
-        <param name="inParameters">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="methodName">The name of the method to execute.</param>
+        <param name="inParameters">A <see cref="T:System.Management.ManagementBaseObject" /> holding the input parameters to the method.</param>
+        <param name="options">An <see cref="T:System.Management.InvokeMethodOptions" /> containing additional options for the execution of the method.</param>
+        <summary>Invokes a method on the WMI object. The input and output parameters are represented as <see cref="T:System.Management.ManagementBaseObject" /> objects.</summary>
+        <returns>A <see cref="T:System.Management.ManagementBaseObject" /> containing the output parameters and return value of the executed method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe.  
+  
+ [!code-vb[wminet_ManagementObject_InvokeMethod(S_M_I)#1](~/add/codesnippet/visualbasic/8f3898a9-233c-43e3-ac54-_1.vb)]
+ [!code-cs[wminet_ManagementObject_InvokeMethod(S_M_I)#1](~/add/codesnippet/csharp/8f3898a9-233c-43e3-ac54-_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeMethod">
       <MemberSignature Language="C#" Value="public void InvokeMethod (System.Management.ManagementOperationObserver watcher, string methodName, System.Management.ManagementBaseObject inParameters, System.Management.InvokeMethodOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvokeMethod(class System.Management.ManagementOperationObserver watcher, string methodName, class System.Management.ManagementBaseObject inParameters, class System.Management.InvokeMethodOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -938,54 +1532,108 @@
         <Parameter Name="options" Type="System.Management.InvokeMethodOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="methodName">To be added.</param>
-        <param name="inParameters">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">A <see cref="T:System.Management.ManagementOperationObserver" /> used to handle the asynchronous execution's progress and results.</param>
+        <param name="methodName">The name of the method to be executed.</param>
+        <param name="inParameters">A <see cref="T:System.Management.ManagementBaseObject" /> containing the input parameters for the method.</param>
+        <param name="options">An <see cref="T:System.Management.InvokeMethodOptions" /> containing additional options used to execute the method.</param>
+        <summary>Invokes a method on the object, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method invokes the specified method execution and then returns. Progress and results are reported through events on the <xref:System.Management.ManagementOperationObserver>.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">
       <MemberSignature Language="C#" Value="public System.Management.ObjectGetOptions Options { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ObjectGetOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ObjectGetOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets additional information to use when retrieving the object.</summary>
+        <value>An <see cref="T:System.Management.ObjectGetOptions" /> to use when retrieving the object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the property is changed after the management object has been bound to a WMI object, the management object is disconnected from the original WMI object and later rebound using the new options.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class and then change the default options for the <xref:System.Management.ManagementObject>.  
+  
+ [!code-cs[wminet_ManagementObject_Options#1](~/add/codesnippet/csharp/p-system.management.mana_14_1.cs)]
+ [!code-vb[wminet_ManagementObject_Options#1](~/add/codesnippet/visualbasic/p-system.management.mana_14_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
       <MemberSignature Language="C#" Value="public virtual System.Management.ManagementPath Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath Path" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the object's WMI path.</summary>
+        <value>A <see cref="T:System.Management.ManagementPath" /> representing the object's path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changing the property after the management object has been bound to a WMI object in a particular namespace results in releasing the original WMI object. This causes the management object to be rebound to the new object specified by the new path properties and scope values.  
+  
+ The rebinding is performed in a "lazy" manner, that is, only when a requested value requires the management object to be bound to the WMI object. Changes can be made to more than just the property before attempting to rebind (for example, modifying the scope and path properties simultaneously).  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default namespace, and then changes the WMI path of the <xref:System.Management.ManagementObject>.  
+  
+ [!code-vb[wminet_ManagementObject_Path#1](~/add/codesnippet/visualbasic/p-system.management.mana_13_1.vb)]
+ [!code-cs[wminet_ManagementObject_Path#1](~/add/codesnippet/csharp/p-system.management.mana_13_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Put">
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath Put ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementPath Put() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -993,17 +1641,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Commits the changes to the object.</summary>
+        <returns>A <see cref="T:System.Management.ManagementPath" /> containing the path to the committed object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Put">
       <MemberSignature Language="C#" Value="public void Put (System.Management.ManagementOperationObserver watcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Put(class System.Management.ManagementOperationObserver watcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1013,17 +1672,28 @@
         <Parameter Name="watcher" Type="System.Management.ManagementOperationObserver" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">A <see cref="T:System.Management.ManagementOperationObserver" /> used to handle the progress and results of the asynchronous operation.</param>
+        <summary>Commits the changes to the object, asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Put">
       <MemberSignature Language="C#" Value="public System.Management.ManagementPath Put (System.Management.PutOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementPath Put(class System.Management.PutOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put(System.Management.PutOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1033,18 +1703,29 @@
         <Parameter Name="options" Type="System.Management.PutOptions" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="options">The options for how to commit the changes.</param>
+        <summary>Commits the changes to the object.</summary>
+        <returns>A <see cref="T:System.Management.ManagementPath" /> containing the path to the committed object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Put">
       <MemberSignature Language="C#" Value="public void Put (System.Management.ManagementOperationObserver watcher, System.Management.PutOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Put(class System.Management.ManagementOperationObserver watcher, class System.Management.PutOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1055,35 +1736,68 @@
         <Parameter Name="options" Type="System.Management.PutOptions" />
       </Parameters>
       <Docs>
-        <param name="watcher">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="watcher">A <see cref="T:System.Management.ManagementOperationObserver" /> used to handle the progress and results of the asynchronous operation.</param>
+        <param name="options">A <see cref="T:System.Management.PutOptions" /> used to specify additional options for the commit operation.</param>
+        <summary>Commits the changes to the object asynchronously and using the specified options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scope">
       <MemberSignature Language="C#" Value="public System.Management.ManagementScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementScope Scope" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementObject.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.ManagementScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the scope in which this object resides.</summary>
+        <value>The scope in which this object resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changing this property after the management object has been bound to a WMI object in a particular namespace results in releasing the original WMI object. This causes the management object to be rebound to the new object specified by the new path properties and scope values.  
+  
+ The rebinding is performed in a "lazy" manner, that is, only when a requested value requires the management object to be bound to the WMI object. Changes can be made to more than just this property before attempting to rebind (for example, modifying the scope and path properties simultaneously).  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default namespace, and then changes the scope of the <xref:System.Management.ManagementObject>.  
+  
+ [!code-cs[wminet_ManagementObject_Scope#1](~/add/codesnippet/csharp/p-system.management.mana_8_1.cs)]
+ [!code-vb[wminet_ManagementObject_Scope#1](~/add/codesnippet/visualbasic/p-system.management.mana_8_1.vb)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementObject.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1091,9 +1805,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the full path of the object. This is an override of the default object implementation.</summary>
+        <returns>The full path of the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

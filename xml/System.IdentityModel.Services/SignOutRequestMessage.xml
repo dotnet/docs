@@ -1,6 +1,7 @@
 <Type Name="SignOutRequestMessage" FullName="System.IdentityModel.Services.SignOutRequestMessage">
   <TypeSignature Language="C#" Value="public class SignOutRequestMessage : System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignOutRequestMessage extends System.IdentityModel.Services.WSFederationMessage" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignOutRequestMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +18,7 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SignOutRequestMessage (Uri baseUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.#ctor(System.Uri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -34,6 +36,7 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SignOutRequestMessage (Uri baseUrl, string reply);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, string reply) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.#ctor(System.Uri,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -53,6 +56,7 @@
     <Member MemberName="Reply">
       <MemberSignature Language="C#" Value="public string Reply { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Reply" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignOutRequestMessage.Reply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -70,6 +74,7 @@
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="protected override void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -87,6 +92,7 @@
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.IO.TextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutRequestMessage.Write(System.IO.TextWriter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

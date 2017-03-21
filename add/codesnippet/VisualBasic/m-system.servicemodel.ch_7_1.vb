@@ -1,0 +1,1 @@
+            Dim binding As BasicHttpBinding = New BasicHttpBinding()

@@ -1,0 +1,1 @@
+        WindowsIdentity windowsIdentity = WindowsIdentity.GetAnonymous();

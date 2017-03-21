@@ -1,0 +1,59 @@
+---
+uid: System.Reflection.Emit.EventBuilder
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.SetAddOnMethod(System.Reflection.Emit.MethodBuilder)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.System#Runtime#InteropServices#_EventBuilder#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.System#Runtime#InteropServices#_EventBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.GetEventToken
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.System#Runtime#InteropServices#_EventBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.SetRaiseMethod(System.Reflection.Emit.MethodBuilder)
+internalonly: False
+---
+
+---
+uid: System.Reflection.Emit.EventBuilder.System#Runtime#InteropServices#_EventBuilder#GetTypeInfoCount(System.UInt32@)
+internalonly: False
+---

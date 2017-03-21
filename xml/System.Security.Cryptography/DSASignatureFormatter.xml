@@ -1,73 +1,90 @@
 <Type Name="DSASignatureFormatter" FullName="System.Security.Cryptography.DSASignatureFormatter">
   <TypeSignature Language="C#" Value="public class DSASignatureFormatter : System.Security.Cryptography.AsymmetricSignatureFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DSASignatureFormatter extends System.Security.Cryptography.AsymmetricSignatureFormatter" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DSASignatureFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Cryptography.AsymmetricSignatureFormatter</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) signature.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/cpp/t-system.security.crypto_44_1.cpp)]
+ [!code-cs[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/csharp/t-system.security.crypto_44_1.cs)]
+ [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/visualbasic/t-system.security.crypto_44_1.vb)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DSASignatureFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSASignatureFormatter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DSASignatureFormatter (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The instance of the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) that holds the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSASignatureFormatter" /> class with the specified key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/cpp/a7c18e52-6af6-472f-bd00-_1.cpp)]
+ [!code-cs[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/csharp/a7c18e52-6af6-472f-bd00-_1.cs)]
+ [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/visualbasic/a7c18e52-6af6-472f-bd00-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSignature">
       <MemberSignature Language="C#" Value="public override byte[] CreateSignature (byte[] rgbHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] CreateSignature(unsigned int8[] rgbHash) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.CreateSignature(System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -76,23 +93,42 @@
         <Parameter Name="rgbHash" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbHash">The data to be signed.</param>
+        <summary>Creates the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) PKCS #1 signature for the specified data.</summary>
+        <returns>The digital signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting signature data can be verified by using <xref:System.Security.Cryptography.DSASignatureDeformatter.VerifySignature%2A>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/cpp/7b62d7a7-26c3-4cd8-9db3-_1.cpp)]
+ [!code-cs[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/csharp/7b62d7a7-26c3-4cd8-9db3-_1.cs)]
+ [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/visualbasic/7b62d7a7-26c3-4cd8-9db3-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rgbHash" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The OID is <see langword="null" />.  
+  
+ -or-  
+  
+ The DSA key is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetHashAlgorithm">
       <MemberSignature Language="C#" Value="public override void SetHashAlgorithm (string strName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetHashAlgorithm(string strName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.SetHashAlgorithm(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -101,22 +137,30 @@
         <Parameter Name="strName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="strName">The name of the hash algorithm to use for the signature formatter.</param>
+        <summary>Specifies the hash algorithm for the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) signature formatter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/cpp/22c076b4-72c5-4086-a7c2-_1.cpp)]
+ [!code-cs[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/csharp/22c076b4-72c5-4086-a7c2-_1.cs)]
+ [!code-vb[System.Security.Cryptography.DSASignatureFormatter#1](~/add/codesnippet/visualbasic/22c076b4-72c5-4086-a7c2-_1.vb)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The <paramref name="strName" /> parameter does not map to the <see cref="T:System.Security.Cryptography.SHA1" /> hash algorithm.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
       <MemberSignature Language="C#" Value="public override void SetKey (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetKey(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -125,9 +169,11 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The instance of <see cref="T:System.Security.Cryptography.DSA" /> that holds the key.</param>
+        <summary>Specifies the key to be used for the Digital Signature Algorithm (<see cref="T:System.Security.Cryptography.DSA" />) signature formatter.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

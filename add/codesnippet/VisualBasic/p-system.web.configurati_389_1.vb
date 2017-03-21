@@ -1,0 +1,1 @@
+profileSetting.MinInterval = TimeSpan.Parse("00:01:00")

@@ -1,0 +1,1 @@
+			Dim timestamp As TimeSpan = settings.TimestampValidityDuration

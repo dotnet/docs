@@ -1,0 +1,1 @@
+      if (str == null || str.Equals(String.Empty))

@@ -1,0 +1,1 @@
+eventMappingSetting = healthMonitoringSection.EventMappings[i];

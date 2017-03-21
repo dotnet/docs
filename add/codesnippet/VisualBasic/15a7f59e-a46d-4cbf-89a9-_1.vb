@@ -1,0 +1,1 @@
+        Dim zoneIdPerm2 As New ZoneIdentityPermission(PermissionState.None)

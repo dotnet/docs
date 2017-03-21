@@ -1,0 +1,1 @@
+                Dim secondTransform As New XmlDsigC14NTransform

@@ -1,8 +1,10 @@
 <Type Name="View" FullName="System.Web.UI.WebControls.View">
   <TypeSignature Language="C#" Value="public class View : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit View extends System.Web.UI.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.View" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,62 +23,154 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a control that acts as a container for a group of controls within a <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The View control is a container for a group of controls. A View control must always be contained within a <xref:System.Web.UI.WebControls.MultiView> control. Only one View control at a time can be defined as the active view within a <xref:System.Web.UI.WebControls.MultiView> control.  
+  
+ The <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property specifies the active View control within the <xref:System.Web.UI.WebControls.MultiView.Views%2A> collection of a <xref:System.Web.UI.WebControls.MultiView> control. The active view control is rendered to the client, as long as the containing <xref:System.Web.UI.WebControls.MultiView> control is visible. Use the <xref:System.Web.UI.WebControls.View.Visible%2A> property to determine whether a View control and its child controls are visible on the page and rendered to the client.  
+  
+ A View control can contain controls of any type, including other <xref:System.Web.UI.WebControls.MultiView> controls. A View control does not support any style properties. To apply styles to a View control, add one or more <xref:System.Web.UI.WebControls.Panel> controls to the View control.  
+  
+ The View class provides the <xref:System.Web.UI.WebControls.View.Activate> and <xref:System.Web.UI.WebControls.View.Deactivate> events. The <xref:System.Web.UI.WebControls.View.Activate> event is raised when the current View control becomes the active view. This occurs when the value of the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property changes or the <xref:System.Web.UI.WebControls.MultiView.SetActiveView%2A> method is called to specify a different View control. For example, if `View1` is the active view within a <xref:System.Web.UI.WebControls.MultiView> control, when the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property changes to specify `View2`, the <xref:System.Web.UI.WebControls.View.Activate> event is raised for `View2` and the <xref:System.Web.UI.WebControls.View.Deactivate> event is raised for `View1`.  
+  
+ To allow users to navigate between multiple View controls within a <xref:System.Web.UI.WebControls.MultiView> control, you can add a <xref:System.Web.UI.WebControls.LinkButton> or <xref:System.Web.UI.WebControls.Button> control to each View control. Set the <xref:System.Web.UI.WebControls.LinkButton> or <xref:System.Web.UI.WebControls.Button> control's `CommandName` property to the ID of the View control to navigate to. For a code example, see <xref:System.Web.UI.WebControls.MultiView.ActiveViewChanged>.  
+  
+ For more information on manipulating View controls within a <xref:System.Web.UI.WebControls.MultiView> control, see the <xref:System.Web.UI.WebControls.MultiView> topic.  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:View  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ID="string"  
+    OnActivate="Activate event handler"  
+    OnDataBinding="DataBinding event handler"  
+    OnDeactivate="Deactivate event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Visible="True|False"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.MultiView> control that contains three View controls. The first time the page is loaded, `DefaultView` is set as the active view. Each View control contains link buttons to allow the user to navigate to different views. Note that each View control contains a <xref:System.Web.UI.WebControls.Panel> control to allow styles to be applied.  
+  
+ [!code-vb[MultiView Class Example#1](~/add/codesnippet/visualbasic/t-system.web.ui.webcontr_298_1.aspx)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public View ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.View" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Activate">
       <MemberSignature Language="C#" Value="public event EventHandler Activate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activate" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Activate" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the current <see cref="T:System.Web.UI.WebControls.View" /> control becomes the active view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Activate event is raised when the current <xref:System.Web.UI.WebControls.View> control becomes the active view. This occurs when the value of the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property changes or the <xref:System.Web.UI.WebControls.MultiView.SetActiveView%2A> method is called to specify a different <xref:System.Web.UI.WebControls.View> control. For example, if `View1` is the active view within a <xref:System.Web.UI.WebControls.MultiView> control, when the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property changes to specify `View2`, the Activate event is raised for `View2` and the <xref:System.Web.UI.WebControls.View.Deactivate> event is raised for `View1`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code an event handler for the Activate event of a <xref:System.Web.UI.WebControls.View> control. When the active view changes, a message is displayed to the user specifying the <xref:System.Web.UI.WebControls.View> control that raised the Activate event and the <xref:System.Web.UI.WebControls.View> control that raised the <xref:System.Web.UI.WebControls.View.Deactivate> event.  
+  
+ [!code-vb[View.Activate Event Example#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_82_1.aspx)]
+ [!code-cs[View.Activate Event Example#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_82_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
       <MemberSignature Language="C#" Value="public event EventHandler Deactivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivate" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Deactivate" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the current active <see cref="T:System.Web.UI.WebControls.View" /> control becomes inactive.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Deactivate event is raised when the current active <xref:System.Web.UI.WebControls.View> control becomes inactive. A <xref:System.Web.UI.WebControls.View> control becomes inactive when the value of the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property changes or the <xref:System.Web.UI.WebControls.MultiView.SetActiveView%2A> method is called to specify a different <xref:System.Web.UI.WebControls.View> control. For example, if `View1` is the active view within a <xref:System.Web.UI.WebControls.MultiView> control, when the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property changes to specify `View2`, the Deactivate event is raised for `View1` and the <xref:System.Web.UI.WebControls.View.Activate> event is raised for `View2`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code an event handler for the Deactivate event of a <xref:System.Web.UI.WebControls.View> control. When the active view changes, a message is displayed to the user specifying the <xref:System.Web.UI.WebControls.View> control that raised the <xref:System.Web.UI.WebControls.View.Activate> event and the <xref:System.Web.UI.WebControls.View> control that raised the Deactivate event.  
+  
+ [!code-vb[View.Activate Event Example#1](~/add/codesnippet/visualbasic/e-system.web.ui.webcontr_15_1.aspx)]
+ [!code-cs[View.Activate Event Example#1](~/add/codesnippet/csharp/e-system.web.ui.webcontr_15_1.aspx)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
       <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -88,17 +182,29 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether themes apply to this control.</summary>
+        <value>
+          <see langword="true" /> to use themes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The EnableTheming property indicates whether themes are enabled for the <xref:System.Web.UI.WebControls.View> control. The EnableTheming property also affects whether themes are enabled for the controls contained in its <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection. When the EnableTheming property is `true`, the application's theme directory is searched for control skins to apply. If no skin for the particular control exists in the theme directory, a skin is not applied. When the EnableTheming property is `false`, the theme directory is not searched and the contents of the <xref:System.Web.UI.Control.SkinID%2A> property are not used.  
+  
+ A control can override the EnableTheming value set by its parent control, or by the containing page. For example, if a <xref:System.Web.UI.WebControls.View> control has EnableTheming set to `false`, you can selectively apply themes to child controls contained within the <xref:System.Web.UI.WebControls.View> control by setting the <xref:System.Web.UI.Control.EnableTheming%2A> property to `true` on the individual child controls.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivate">
       <MemberSignature Language="C#" Value="protected virtual void OnActivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnActivate(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnActivate(System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,17 +214,26 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.View.Activate" /> event of the <see cref="T:System.Web.UI.WebControls.View" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.View.Activate> event is raised when the current <xref:System.Web.UI.WebControls.View> control becomes the active view.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeactivate">
       <MemberSignature Language="C#" Value="protected virtual void OnDeactivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnDeactivate(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnDeactivate(System.EventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,17 +243,26 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.View.Deactivate" /> event of the <see cref="T:System.Web.UI.WebControls.View" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.View.Deactivate> event is raised when the current active <xref:System.Web.UI.WebControls.View> control becomes inactive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -153,9 +277,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.View" /> control is visible.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.View" /> control is visible; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the Visible property to determine whether the current <xref:System.Web.UI.WebControls.View> control is visible and rendered to the client. For a <xref:System.Web.UI.WebControls.View> control to be visible on the rendered page, it must be the active view in its containing <xref:System.Web.UI.WebControls.MultiView> control, and the containing <xref:System.Web.UI.WebControls.MultiView> control must be visible. If the containing <xref:System.Web.UI.WebControls.MultiView> control is not visible on the page, or if the <xref:System.Web.UI.WebControls.View> control is not the active view, then the <xref:System.Web.UI.WebControls.View> control and its child controls are not rendered.  
+  
+> [!NOTE]
+>  The Visible property is set internally based on the visibility and active view for the containing parent control. If you set this property at run time, an <xref:System.InvalidOperationException> exception is thrown. If you set the Visible property at design time, any changes to the property are ignored.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set this property at run time.</exception>
       </Docs>
     </Member>
   </Members>

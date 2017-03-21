@@ -1,0 +1,1 @@
+bufferModeSetting = healthMonitoringSection.BufferModes(i)

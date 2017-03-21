@@ -1,8 +1,10 @@
 <Type Name="RowCallback" FullName="System.Web.UI.WebControls.WebParts.RowCallback">
   <TypeSignature Language="C#" Value="public delegate void RowCallback(object rowData);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RowCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.RowCallback" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,8 +17,17 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="rowData">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="rowData">The data to retrieve from the provider.</param>
+    <summary>References the method to call when retrieving row data from a provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a Web Parts control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface and serves as a provider in a Web Parts connection, the connection or transformer must retrieve the row data from the provider. The RowCallback delegate represents the method to call for retrieving the provider data.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartRow.GetRowData%2A> method contains a RowCallback delegate parameter. The <xref:System.Web.UI.WebControls.WebParts.IWebPartRow.GetRowData%2A> method is used in the <xref:System.Web.UI.WebControls.WebParts.RowToFieldTransformer> class and the <xref:System.Web.UI.WebControls.WebParts.RowToParametersTransformer> class to retrieve row data for transformation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

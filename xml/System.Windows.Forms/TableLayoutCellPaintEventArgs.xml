@@ -1,8 +1,10 @@
 <Type Name="TableLayoutCellPaintEventArgs" FullName="System.Windows.Forms.TableLayoutCellPaintEventArgs">
   <TypeSignature Language="C#" Value="public class TableLayoutCellPaintEventArgs : System.Windows.Forms.PaintEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableLayoutCellPaintEventArgs extends System.Windows.Forms.PaintEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutCellPaintEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -10,16 +12,33 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.TableLayoutPanel.CellPaint" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The TableLayoutCellPaintEventArgs class provides information about the row, column, and bounds of the cell to support painting of the cell in the table.  
+  
+   
+  
+## Examples  
+ The following example shows how to a TableLayoutCellPaintEventArgs to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/visualbasic/t-system.windows.forms.t_33_1.vb)]
+ [!code-cs[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/csharp/t-system.windows.forms.t_33_1.cs)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TableLayoutCellPaintEventArgs (System.Drawing.Graphics g, System.Drawing.Rectangle clipRectangle, System.Drawing.Rectangle cellBounds, int column, int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle clipRectangle, valuetype System.Drawing.Rectangle cellBounds, int32 column, int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutCellPaintEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -30,64 +49,100 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="clipRectangle">To be added.</param>
-        <param name="cellBounds">To be added.</param>
-        <param name="column">To be added.</param>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to paint the item.</param>
+        <param name="clipRectangle">The <see cref="T:System.Drawing.Rectangle" /> that represents the rectangle in which to paint.</param>
+        <param name="cellBounds">The bounds of the cell.</param>
+        <param name="column">The column of the cell.</param>
+        <param name="row">The row of the cell.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TableLayoutCellPaintEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CellBounds">
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle CellBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle CellBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutCellPaintEventArgs.CellBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the size and location of the cell.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> representing the size and location of the cell.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/visualbasic/p-system.windows.forms.t_270_1.vb)]
+ [!code-cs[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/csharp/p-system.windows.forms.t_270_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
       <MemberSignature Language="C#" Value="public int Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutCellPaintEventArgs.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the column of the cell.</summary>
+        <value>The column position of the cell.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/visualbasic/p-system.windows.forms.t_239_1.vb)]
+ [!code-cs[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/csharp/p-system.windows.forms.t_239_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
       <MemberSignature Language="C#" Value="public int Row { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Row" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutCellPaintEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the row of the cell.</summary>
+        <value>The row position of the cell.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/visualbasic/p-system.windows.forms.t_139_1.vb)]
+ [!code-cs[System.Windows.Forms.TableLayoutPanel#100](~/add/codesnippet/csharp/p-system.windows.forms.t_139_1.cs)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

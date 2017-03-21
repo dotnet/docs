@@ -1,0 +1,4 @@
+---
+uid: UIAutomationClientsideProviders
+internalonly: False
+---

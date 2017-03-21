@@ -18,7 +18,7 @@ String Interpolation is the way that placeholders in a string are replaced by th
 
 Other programming languages have had string interpolation built into the language for a while. For instance, in PHP:
 
-```PHP
+```php
 $name = "Jonas";
 echo "My name is $name.";
 // This will output "My name is Jonas."

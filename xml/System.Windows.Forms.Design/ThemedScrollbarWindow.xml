@@ -1,0 +1,50 @@
+<Type Name="ThemedScrollbarWindow" FullName="System.Windows.Forms.Design.ThemedScrollbarWindow">
+  <TypeSignature Language="C#" Value="public struct ThemedScrollbarWindow" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ThemedScrollbarWindow extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int Handle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.ThemedScrollbarMode Mode;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Windows.Forms.Design.ThemedScrollbarMode Mode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ThemedScrollbarMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

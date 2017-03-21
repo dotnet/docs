@@ -1,0 +1,35 @@
+<Type Name="ChangeOperationResponse" FullName="System.Data.Services.Client.ChangeOperationResponse">
+  <TypeSignature Language="C#" Value="public sealed class ChangeOperationResponse : System.Data.Services.Client.OperationResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChangeOperationResponse extends System.Data.Services.Client.OperationResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Services.Client.OperationResponse</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Descriptor">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Client.Descriptor Descriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Client.Descriptor Descriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.Descriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,42 @@
+<Type Name="ICertificatePolicy" FullName="System.Net.ICertificatePolicy">
+  <TypeSignature Language="C#" Value="public interface ICertificatePolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICertificatePolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckValidationResult">
+      <MemberSignature Language="C#" Value="public bool CheckValidationResult (System.Net.ServicePoint srvPoint, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Net.WebRequest request, int certificateProblem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckValidationResult(class System.Net.ServicePoint srvPoint, class System.Security.Cryptography.X509Certificates.X509Certificate certificate, class System.Net.WebRequest request, int32 certificateProblem) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srvPoint" Type="System.Net.ServicePoint" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="request" Type="System.Net.WebRequest" />
+        <Parameter Name="certificateProblem" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="srvPoint">To be added.</param>
+        <param name="certificate">To be added.</param>
+        <param name="request">To be added.</param>
+        <param name="certificateProblem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,24 @@
+<Type Name="OrderedEnumerableRowCollection&lt;TRow&gt;" FullName="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;">
+  <TypeSignature Language="C#" Value="public sealed class OrderedEnumerableRowCollection&lt;TRow&gt; : System.Data.EnumerableRowCollection&lt;TRow&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OrderedEnumerableRowCollection`1&lt;TRow&gt; extends System.Data.EnumerableRowCollection`1&lt;!TRow&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TRow" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.EnumerableRowCollection&lt;TRow&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TRow">TRow</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TRow">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

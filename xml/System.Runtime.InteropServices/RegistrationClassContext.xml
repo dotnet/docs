@@ -1,10 +1,8 @@
 <Type Name="RegistrationClassContext" FullName="System.Runtime.InteropServices.RegistrationClassContext">
   <TypeSignature Language="C#" Value="public enum RegistrationClassContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistrationClassContext extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RegistrationClassContext" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,11 +21,9 @@
     <Member MemberName="DisableActivateAsActivator">
       <MemberSignature Language="C#" Value="DisableActivateAsActivator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext DisableActivateAsActivator = int32(32768)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.DisableActivateAsActivator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,11 +36,9 @@
     <Member MemberName="EnableActivateAsActivator">
       <MemberSignature Language="C#" Value="EnableActivateAsActivator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext EnableActivateAsActivator = int32(65536)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.EnableActivateAsActivator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,11 +51,9 @@
     <Member MemberName="EnableCodeDownload">
       <MemberSignature Language="C#" Value="EnableCodeDownload" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext EnableCodeDownload = int32(8192)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.EnableCodeDownload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,11 +66,9 @@
     <Member MemberName="FromDefaultContext">
       <MemberSignature Language="C#" Value="FromDefaultContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext FromDefaultContext = int32(131072)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.FromDefaultContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,11 +81,9 @@
     <Member MemberName="InProcessHandler">
       <MemberSignature Language="C#" Value="InProcessHandler" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessHandler = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,11 +96,9 @@
     <Member MemberName="InProcessHandler16">
       <MemberSignature Language="C#" Value="InProcessHandler16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessHandler16 = int32(32)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,11 +111,9 @@
     <Member MemberName="InProcessServer">
       <MemberSignature Language="C#" Value="InProcessServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessServer = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,11 +126,9 @@
     <Member MemberName="InProcessServer16">
       <MemberSignature Language="C#" Value="InProcessServer16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessServer16 = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessServer16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,11 +141,9 @@
     <Member MemberName="LocalServer">
       <MemberSignature Language="C#" Value="LocalServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext LocalServer = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.LocalServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,11 +156,9 @@
     <Member MemberName="NoCodeDownload">
       <MemberSignature Language="C#" Value="NoCodeDownload" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext NoCodeDownload = int32(1024)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.NoCodeDownload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,11 +171,9 @@
     <Member MemberName="NoCustomMarshal">
       <MemberSignature Language="C#" Value="NoCustomMarshal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext NoCustomMarshal = int32(4096)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.NoCustomMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,11 +186,9 @@
     <Member MemberName="NoFailureLog">
       <MemberSignature Language="C#" Value="NoFailureLog" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext NoFailureLog = int32(16384)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.NoFailureLog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,11 +201,9 @@
     <Member MemberName="RemoteServer">
       <MemberSignature Language="C#" Value="RemoteServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext RemoteServer = int32(16)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.RemoteServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,11 +216,9 @@
     <Member MemberName="Reserved1">
       <MemberSignature Language="C#" Value="Reserved1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved1 = int32(64)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,11 +231,9 @@
     <Member MemberName="Reserved2">
       <MemberSignature Language="C#" Value="Reserved2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved2 = int32(128)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,11 +246,9 @@
     <Member MemberName="Reserved3">
       <MemberSignature Language="C#" Value="Reserved3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved3 = int32(256)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,11 +261,9 @@
     <Member MemberName="Reserved4">
       <MemberSignature Language="C#" Value="Reserved4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved4 = int32(512)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,11 +276,9 @@
     <Member MemberName="Reserved5">
       <MemberSignature Language="C#" Value="Reserved5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved5 = int32(2048)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

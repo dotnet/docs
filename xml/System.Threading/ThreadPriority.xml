@@ -1,21 +1,17 @@
 <Type Name="ThreadPriority" FullName="System.Threading.ThreadPriority">
   <TypeSignature Language="C#" Value="public enum ThreadPriority" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ThreadPriority extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPriority" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadPriority extends System.Enum" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -24,13 +20,14 @@
     <Member MemberName="AboveNormal">
       <MemberSignature Language="C#" Value="AboveNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority AboveNormal = int32(3)" />
-      <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -42,13 +39,14 @@
     <Member MemberName="BelowNormal">
       <MemberSignature Language="C#" Value="BelowNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority BelowNormal = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -60,13 +58,14 @@
     <Member MemberName="Highest">
       <MemberSignature Language="C#" Value="Highest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority Highest = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Highest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -78,13 +77,14 @@
     <Member MemberName="Lowest">
       <MemberSignature Language="C#" Value="Lowest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority Lowest = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Lowest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -96,13 +96,14 @@
     <Member MemberName="Normal">
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority Normal = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>

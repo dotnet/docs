@@ -1,0 +1,548 @@
+<Type Name="Interaction" FullName="Microsoft.VisualBasic.Interaction">
+  <TypeSignature Language="C#" Value="public sealed class Interaction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Interaction extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppActivate">
+      <MemberSignature Language="C#" Value="public static void AppActivate (int ProcessId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void AppActivate(int32 ProcessId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ProcessId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ProcessId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppActivate">
+      <MemberSignature Language="C#" Value="public static void AppActivate (string Title);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void AppActivate(string Title) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Title">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Beep">
+      <MemberSignature Language="C#" Value="public static void Beep ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Beep() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallByName">
+      <MemberSignature Language="C#" Value="public static object CallByName (object ObjectRef, string ProcName, Microsoft.VisualBasic.CallType UseCallType, object[] Args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CallByName(object ObjectRef, string ProcName, valuetype Microsoft.VisualBasic.CallType UseCallType, object[] Args) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ObjectRef" Type="System.Object" />
+        <Parameter Name="ProcName" Type="System.String" />
+        <Parameter Name="UseCallType" Type="Microsoft.VisualBasic.CallType" />
+        <Parameter Name="Args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="ObjectRef">To be added.</param>
+        <param name="ProcName">To be added.</param>
+        <param name="UseCallType">To be added.</param>
+        <param name="Args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose">
+      <MemberSignature Language="C#" Value="public static object Choose (double Index, object[] Choice);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object Choose(float64 Index, object[] Choice) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Double" />
+        <Parameter Name="Choice" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <param name="Choice">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public static string Command ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Command() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public static object CreateObject (string ProgId, string ServerName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CreateObject(string ProgId, string ServerName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ProgId" Type="System.String" />
+        <Parameter Name="ServerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ProgId">To be added.</param>
+        <param name="ServerName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSetting">
+      <MemberSignature Language="C#" Value="public static void DeleteSetting (string AppName, string Section = null, string Key = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void DeleteSetting(string AppName, string Section, string Key) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">To be added.</param>
+        <param name="Section">To be added.</param>
+        <param name="Key">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Environ">
+      <MemberSignature Language="C#" Value="public static string Environ (int Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Environ(int32 Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Environ">
+      <MemberSignature Language="C#" Value="public static string Environ (string Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Environ(string Expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllSettings">
+      <MemberSignature Language="C#" Value="public static string[,] GetAllSettings (string AppName, string Section);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[,] GetAllSettings(string AppName, string Section) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[,]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">To be added.</param>
+        <param name="Section">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public static object GetObject (string PathName = null, string Class = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object GetObject(string PathName, string Class) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+        <Parameter Name="Class" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <param name="Class">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSetting">
+      <MemberSignature Language="C#" Value="public static string GetSetting (string AppName, string Section, string Key, string Default = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string GetSetting(string AppName, string Section, string Key, string Default) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" />
+        <Parameter Name="Default" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">To be added.</param>
+        <param name="Section">To be added.</param>
+        <param name="Key">To be added.</param>
+        <param name="Default">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IIf">
+      <MemberSignature Language="C#" Value="public static object IIf (bool Expression, object TruePart, object FalsePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object IIf(bool Expression, object TruePart, object FalsePart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Boolean" />
+        <Parameter Name="TruePart" Type="System.Object" />
+        <Parameter Name="FalsePart" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">To be added.</param>
+        <param name="TruePart">To be added.</param>
+        <param name="FalsePart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputBox">
+      <MemberSignature Language="C#" Value="public static string InputBox (string Prompt, string Title = &quot;&quot;, string DefaultResponse = &quot;&quot;, int XPos = -1, int YPos = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string InputBox(string Prompt, string Title, string DefaultResponse, int32 XPos, int32 YPos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Prompt" Type="System.String" />
+        <Parameter Name="Title" Type="System.String" />
+        <Parameter Name="DefaultResponse" Type="System.String" />
+        <Parameter Name="XPos" Type="System.Int32" />
+        <Parameter Name="YPos" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Prompt">To be added.</param>
+        <param name="Title">To be added.</param>
+        <param name="DefaultResponse">To be added.</param>
+        <param name="XPos">To be added.</param>
+        <param name="YPos">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgBox">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.MsgBoxResult MsgBox (object Prompt, Microsoft.VisualBasic.MsgBoxStyle Buttons = Microsoft.VisualBasic.MsgBoxStyle.ApplicationModal, object Title = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.MsgBoxResult MsgBox(object Prompt, valuetype Microsoft.VisualBasic.MsgBoxStyle Buttons, object Title) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Prompt" Type="System.Object" />
+        <Parameter Name="Buttons" Type="Microsoft.VisualBasic.MsgBoxStyle" />
+        <Parameter Name="Title" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Prompt">To be added.</param>
+        <param name="Buttons">To be added.</param>
+        <param name="Title">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition">
+      <MemberSignature Language="C#" Value="public static string Partition (long Number, long Start, long Stop, long Interval);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Partition(int64 Number, int64 Start, int64 Stop, int64 Interval) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int64" />
+        <Parameter Name="Start" Type="System.Int64" />
+        <Parameter Name="Stop" Type="System.Int64" />
+        <Parameter Name="Interval" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="Number">To be added.</param>
+        <param name="Start">To be added.</param>
+        <param name="Stop">To be added.</param>
+        <param name="Interval">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSetting">
+      <MemberSignature Language="C#" Value="public static void SaveSetting (string AppName, string Section, string Key, string Setting);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SaveSetting(string AppName, string Section, string Key, string Setting) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" />
+        <Parameter Name="Setting" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">To be added.</param>
+        <param name="Section">To be added.</param>
+        <param name="Key">To be added.</param>
+        <param name="Setting">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shell">
+      <MemberSignature Language="C#" Value="public static int Shell (string PathName, Microsoft.VisualBasic.AppWinStyle Style = Microsoft.VisualBasic.AppWinStyle.MinimizedFocus, bool Wait = false, int Timeout = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Shell(string PathName, valuetype Microsoft.VisualBasic.AppWinStyle Style, bool Wait, int32 Timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+        <Parameter Name="Style" Type="Microsoft.VisualBasic.AppWinStyle" />
+        <Parameter Name="Wait" Type="System.Boolean" />
+        <Parameter Name="Timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <param name="Style">To be added.</param>
+        <param name="Wait">To be added.</param>
+        <param name="Timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch">
+      <MemberSignature Language="C#" Value="public static object Switch (object[] VarExpr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object Switch(object[] VarExpr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="VarExpr" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="VarExpr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

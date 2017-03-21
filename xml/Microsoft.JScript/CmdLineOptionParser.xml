@@ -1,0 +1,151 @@
+<Type Name="CmdLineOptionParser" FullName="Microsoft.JScript.CmdLineOptionParser">
+  <TypeSignature Language="C#" Value="public class CmdLineOptionParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CmdLineOptionParser extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CmdLineOptionParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArgumentOption">
+      <MemberSignature Language="C#" Value="public static string IsArgumentOption (string option, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsArgumentOption(string option, string prefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArgumentOption">
+      <MemberSignature Language="C#" Value="public static string IsArgumentOption (string option, string shortPrefix, string longPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsArgumentOption(string option, string shortPrefix, string longPrefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="shortPrefix" Type="System.String" />
+        <Parameter Name="longPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">To be added.</param>
+        <param name="shortPrefix">To be added.</param>
+        <param name="longPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBooleanOption">
+      <MemberSignature Language="C#" Value="public static object IsBooleanOption (string option, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object IsBooleanOption(string option, string prefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBooleanOption">
+      <MemberSignature Language="C#" Value="public static object IsBooleanOption (string option, string shortPrefix, string longPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object IsBooleanOption(string option, string shortPrefix, string longPrefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="shortPrefix" Type="System.String" />
+        <Parameter Name="longPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">To be added.</param>
+        <param name="shortPrefix">To be added.</param>
+        <param name="longPrefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSimpleOption">
+      <MemberSignature Language="C#" Value="public static bool IsSimpleOption (string option, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSimpleOption(string option, string prefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

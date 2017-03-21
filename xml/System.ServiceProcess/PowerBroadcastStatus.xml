@@ -1,0 +1,152 @@
+<Type Name="PowerBroadcastStatus" FullName="System.ServiceProcess.PowerBroadcastStatus">
+  <TypeSignature Language="C#" Value="public enum PowerBroadcastStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PowerBroadcastStatus extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BatteryLow">
+      <MemberSignature Language="C#" Value="BatteryLow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus BatteryLow = int32(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemEvent">
+      <MemberSignature Language="C#" Value="OemEvent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus OemEvent = int32(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerStatusChange">
+      <MemberSignature Language="C#" Value="PowerStatusChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus PowerStatusChange = int32(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QuerySuspend">
+      <MemberSignature Language="C#" Value="QuerySuspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus QuerySuspend = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QuerySuspendFailed">
+      <MemberSignature Language="C#" Value="QuerySuspendFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus QuerySuspendFailed = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAutomatic">
+      <MemberSignature Language="C#" Value="ResumeAutomatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeAutomatic = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeCritical">
+      <MemberSignature Language="C#" Value="ResumeCritical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeCritical = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeSuspend">
+      <MemberSignature Language="C#" Value="ResumeSuspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeSuspend = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="Suspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus Suspend = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

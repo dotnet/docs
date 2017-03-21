@@ -1,0 +1,102 @@
+<Type Name="IRowsetChange" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange">
+  <TypeSignature Language="C#" Value="public interface IRowsetChange" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetChange" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A05-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteRows">
+      <MemberSignature Language="C#" Value="public void DeleteRows (int hChapterReserved, int cRows, int[] rghRows, out int[] rgRowStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void DeleteRows(int32 hChapterReserved, int32 cRows, int32[] rghRows, int32[] rgRowStatus) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hChapterReserved" Type="System.Int32" />
+        <Parameter Name="cRows" Type="System.Int32" />
+        <Parameter Name="rghRows" Type="System.Int32[]" />
+        <Parameter Name="rgRowStatus" Type="System.Int32[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hChapterReserved">To be added.</param>
+        <param name="cRows">To be added.</param>
+        <param name="rghRows">To be added.</param>
+        <param name="rgRowStatus">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertRow">
+      <MemberSignature Language="C#" Value="public void InsertRow (int hChapterReserved, int hAccessor, IntPtr pData, out int hRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void InsertRow(int32 hChapterReserved, int32 hAccessor, native int pData, int32 hRow) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hChapterReserved" Type="System.Int32" />
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="pData" Type="System.IntPtr" />
+        <Parameter Name="hRow" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hChapterReserved">To be added.</param>
+        <param name="hAccessor">To be added.</param>
+        <param name="pData">To be added.</param>
+        <param name="hRow">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (int hRow, int hAccessor, IntPtr pData);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData(int32 hRow, int32 hAccessor, native int pData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32" />
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="pData" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">To be added.</param>
+        <param name="hAccessor">To be added.</param>
+        <param name="pData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,109 @@
+<Type Name="UrlBuilder" FullName="System.Web.UI.Design.UrlBuilder">
+  <TypeSignature Language="C#" Value="public sealed class UrlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UrlBuilder extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildUrl">
+      <MemberSignature Language="C#" Value="public static string BuildUrl (System.ComponentModel.IComponent component, System.Windows.Forms.Control owner, string initialUrl, string caption, string filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildUrl(class System.ComponentModel.IComponent component, class System.Windows.Forms.Control owner, string initialUrl, string caption, string filter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="owner" Type="System.Windows.Forms.Control" />
+        <Parameter Name="initialUrl" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="initialUrl">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildUrl">
+      <MemberSignature Language="C#" Value="public static string BuildUrl (System.ComponentModel.IComponent component, System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, System.Web.UI.Design.UrlBuilderOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildUrl(class System.ComponentModel.IComponent component, class System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, valuetype System.Web.UI.Design.UrlBuilderOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="owner" Type="System.Windows.Forms.Control" />
+        <Parameter Name="initialUrl" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="options" Type="System.Web.UI.Design.UrlBuilderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="component">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="initialUrl">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildUrl">
+      <MemberSignature Language="C#" Value="public static string BuildUrl (IServiceProvider serviceProvider, System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, System.Web.UI.Design.UrlBuilderOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildUrl(class System.IServiceProvider serviceProvider, class System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, valuetype System.Web.UI.Design.UrlBuilderOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="owner" Type="System.Windows.Forms.Control" />
+        <Parameter Name="initialUrl" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="options" Type="System.Web.UI.Design.UrlBuilderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">To be added.</param>
+        <param name="owner">To be added.</param>
+        <param name="initialUrl">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="filter">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,152 @@
+<Type Name="KeyTipVerticalPlacement" FullName="System.Windows.Controls.KeyTipVerticalPlacement">
+  <TypeSignature Language="C#" Value="public enum KeyTipVerticalPlacement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyTipVerticalPlacement extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyTipBottomAtTargetBottom">
+      <MemberSignature Language="C#" Value="KeyTipBottomAtTargetBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipBottomAtTargetBottom = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipBottomAtTargetCenter">
+      <MemberSignature Language="C#" Value="KeyTipBottomAtTargetCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipBottomAtTargetCenter = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipBottomAtTargetTop">
+      <MemberSignature Language="C#" Value="KeyTipBottomAtTargetTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipBottomAtTargetTop = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipCenterAtTargetBottom">
+      <MemberSignature Language="C#" Value="KeyTipCenterAtTargetBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipCenterAtTargetBottom = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipCenterAtTargetCenter">
+      <MemberSignature Language="C#" Value="KeyTipCenterAtTargetCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipCenterAtTargetCenter = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipCenterAtTargetTop">
+      <MemberSignature Language="C#" Value="KeyTipCenterAtTargetTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipCenterAtTargetTop = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipTopAtTargetBottom">
+      <MemberSignature Language="C#" Value="KeyTipTopAtTargetBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipTopAtTargetBottom = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipTopAtTargetCenter">
+      <MemberSignature Language="C#" Value="KeyTipTopAtTargetCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipTopAtTargetCenter = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipTopAtTargetTop">
+      <MemberSignature Language="C#" Value="KeyTipTopAtTargetTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipVerticalPlacement KeyTipTopAtTargetTop = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipVerticalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

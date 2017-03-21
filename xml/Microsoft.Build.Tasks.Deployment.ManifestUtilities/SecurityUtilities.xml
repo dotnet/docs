@@ -1,0 +1,185 @@
+<Type Name="SecurityUtilities" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities">
+  <TypeSignature Language="C#" Value="public static class SecurityUtilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SecurityUtilities extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComputeZonePermissionSet">
+      <MemberSignature Language="C#" Value="public static System.Security.PermissionSet ComputeZonePermissionSet (string targetZone, System.Security.PermissionSet includedPermissionSet, string[] excludedPermissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet ComputeZonePermissionSet(string targetZone, class System.Security.PermissionSet includedPermissionSet, string[] excludedPermissions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetZone" Type="System.String" />
+        <Parameter Name="includedPermissionSet" Type="System.Security.PermissionSet" />
+        <Parameter Name="excludedPermissions" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="targetZone">To be added.</param>
+        <param name="includedPermissionSet">To be added.</param>
+        <param name="excludedPermissions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityListToPermissionSet">
+      <MemberSignature Language="C#" Value="public static System.Security.PermissionSet IdentityListToPermissionSet (string[] ids);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet IdentityListToPermissionSet(string[] ids) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ids" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="ids">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionSetToIdentityList">
+      <MemberSignature Language="C#" Value="public static string[] PermissionSetToIdentityList (System.Security.PermissionSet permissionSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] PermissionSetToIdentityList(class System.Security.PermissionSet permissionSet) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permissionSet" Type="System.Security.PermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="permissionSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignFile">
+      <MemberSignature Language="C#" Value="public static void SignFile (System.Security.Cryptography.X509Certificates.X509Certificate2 cert, Uri timestampUrl, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignFile(class System.Security.Cryptography.X509Certificates.X509Certificate2 cert, class System.Uri timestampUrl, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+        <Parameter Name="timestampUrl" Type="System.Uri" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="cert">To be added.</param>
+        <param name="timestampUrl">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignFile">
+      <MemberSignature Language="C#" Value="public static void SignFile (string certThumbprint, Uri timestampUrl, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignFile(string certThumbprint, class System.Uri timestampUrl, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certThumbprint" Type="System.String" />
+        <Parameter Name="timestampUrl" Type="System.Uri" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="certThumbprint">To be added.</param>
+        <param name="timestampUrl">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignFile">
+      <MemberSignature Language="C#" Value="public static void SignFile (string certPath, System.Security.SecureString certPassword, Uri timestampUrl, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignFile(string certPath, class System.Security.SecureString certPassword, class System.Uri timestampUrl, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certPath" Type="System.String" />
+        <Parameter Name="certPassword" Type="System.Security.SecureString" />
+        <Parameter Name="timestampUrl" Type="System.Uri" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="certPath">To be added.</param>
+        <param name="certPassword">To be added.</param>
+        <param name="timestampUrl">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlToPermissionSet">
+      <MemberSignature Language="C#" Value="public static System.Security.PermissionSet XmlToPermissionSet (System.Xml.XmlElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.PermissionSet XmlToPermissionSet(class System.Xml.XmlElement element) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

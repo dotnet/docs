@@ -1,0 +1,29 @@
+<Type Name="SyncUpdateCallback" FullName="System.DirectoryServices.ActiveDirectory.SyncUpdateCallback">
+  <TypeSignature Language="C#" Value="public delegate bool SyncUpdateCallback(SyncFromAllServersEvent eventType, string targetServer, string sourceServer, SyncFromAllServersOperationException exception);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SyncUpdateCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="eventType" Type="System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent" />
+    <Parameter Name="targetServer" Type="System.String" />
+    <Parameter Name="sourceServer" Type="System.String" />
+    <Parameter Name="exception" Type="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="eventType">To be added.</param>
+    <param name="targetServer">To be added.</param>
+    <param name="sourceServer">To be added.</param>
+    <param name="exception">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,10 +1,8 @@
 <Type Name="ApplicationTrustCollection" FullName="System.Security.Policy.ApplicationTrustCollection">
   <TypeSignature Language="C#" Value="public sealed class ApplicationTrustCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationTrustCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationTrustCollection" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -31,11 +29,9 @@
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Security.Policy.ApplicationTrust trust);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Security.Policy.ApplicationTrust trust) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.Add(System.Security.Policy.ApplicationTrust)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -59,11 +55,9 @@
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Security.Policy.ApplicationTrust[] trusts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Security.Policy.ApplicationTrust[] trusts) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.AddRange(System.Security.Policy.ApplicationTrust[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -86,11 +80,9 @@
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Security.Policy.ApplicationTrustCollection trusts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Security.Policy.ApplicationTrustCollection trusts) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.AddRange(System.Security.Policy.ApplicationTrustCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -113,11 +105,9 @@
     <Member MemberName="Clear">
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -137,11 +127,9 @@
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Security.Policy.ApplicationTrust[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Security.Policy.ApplicationTrust[] array, int32 index) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.CopyTo(System.Security.Policy.ApplicationTrust[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,11 +149,9 @@
     <Member MemberName="Count">
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -185,11 +171,9 @@
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrustCollection Find (ApplicationIdentity applicationIdentity, System.Security.Policy.ApplicationVersionMatch versionMatch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.ApplicationTrustCollection Find(class System.ApplicationIdentity applicationIdentity, valuetype System.Security.Policy.ApplicationVersionMatch versionMatch) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.Find(System.ApplicationIdentity,System.Security.Policy.ApplicationVersionMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -215,11 +199,9 @@
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrustEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.ApplicationTrustEnumerator GetEnumerator() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,11 +217,9 @@
     <Member MemberName="IsSynchronized">
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -259,11 +239,9 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrust this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.ApplicationTrust Item(int32)" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -287,11 +265,9 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrust this[string appFullName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.ApplicationTrust Item(string)" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustCollection.Item(System.String)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -315,11 +291,9 @@
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Security.Policy.ApplicationTrust trust);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Security.Policy.ApplicationTrust trust) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.Remove(System.Security.Policy.ApplicationTrust)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -342,11 +316,9 @@
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (ApplicationIdentity applicationIdentity, System.Security.Policy.ApplicationVersionMatch versionMatch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ApplicationIdentity applicationIdentity, valuetype System.Security.Policy.ApplicationVersionMatch versionMatch) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.Remove(System.ApplicationIdentity,System.Security.Policy.ApplicationVersionMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -371,11 +343,9 @@
     <Member MemberName="RemoveRange">
       <MemberSignature Language="C#" Value="public void RemoveRange (System.Security.Policy.ApplicationTrust[] trusts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRange(class System.Security.Policy.ApplicationTrust[] trusts) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.RemoveRange(System.Security.Policy.ApplicationTrust[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -398,11 +368,9 @@
     <Member MemberName="RemoveRange">
       <MemberSignature Language="C#" Value="public void RemoveRange (System.Security.Policy.ApplicationTrustCollection trusts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRange(class System.Security.Policy.ApplicationTrustCollection trusts) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.RemoveRange(System.Security.Policy.ApplicationTrustCollection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -425,11 +393,9 @@
     <Member MemberName="SyncRoot">
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationTrustCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -449,11 +415,9 @@
     <Member MemberName="System.Collections.ICollection.CopyTo">
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -478,11 +442,9 @@
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationTrustCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

@@ -1,0 +1,64 @@
+<Type Name="BlockScope" FullName="Microsoft.JScript.BlockScope">
+  <TypeSignature Language="C#" Value="public class BlockScope : Microsoft.JScript.ActivationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockScope extends Microsoft.JScript.ActivationObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ActivationObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockScope (Microsoft.JScript.ScriptObject parent, string name, int scopeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject parent, string name, int32 scopeId) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.JScript.ScriptObject" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopeId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="scopeId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected override Microsoft.JScript.JSVariableField CreateField (string name, System.Reflection.FieldAttributes attributeFlags, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.JScript.JSVariableField CreateField(string name, valuetype System.Reflection.FieldAttributes attributeFlags, object value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSVariableField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="attributeFlags" Type="System.Reflection.FieldAttributes" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="attributeFlags">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

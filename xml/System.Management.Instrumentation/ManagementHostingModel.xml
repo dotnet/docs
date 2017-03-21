@@ -1,0 +1,77 @@
+<Type Name="ManagementHostingModel" FullName="System.Management.Instrumentation.ManagementHostingModel">
+  <TypeSignature Language="C#" Value="public enum ManagementHostingModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManagementHostingModel extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decoupled">
+      <MemberSignature Language="C#" Value="Decoupled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel Decoupled = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalService">
+      <MemberSignature Language="C#" Value="LocalService" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel LocalService = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalSystem">
+      <MemberSignature Language="C#" Value="LocalSystem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel LocalSystem = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkService">
+      <MemberSignature Language="C#" Value="NetworkService" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel NetworkService = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

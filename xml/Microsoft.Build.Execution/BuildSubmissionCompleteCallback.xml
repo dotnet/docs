@@ -1,0 +1,22 @@
+<Type Name="BuildSubmissionCompleteCallback" FullName="Microsoft.Build.Execution.BuildSubmissionCompleteCallback">
+  <TypeSignature Language="C#" Value="public delegate void BuildSubmissionCompleteCallback(BuildSubmission submission);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildSubmissionCompleteCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="submission" Type="Microsoft.Build.Execution.BuildSubmission" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="submission">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

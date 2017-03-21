@@ -1,0 +1,277 @@
+<Type Name="CopyPixelOperation" FullName="System.Drawing.CopyPixelOperation">
+  <TypeSignature Language="C#" Value="public enum CopyPixelOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CopyPixelOperation extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Blackness">
+      <MemberSignature Language="C#" Value="Blackness" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation Blackness = int32(66)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptureBlt">
+      <MemberSignature Language="C#" Value="CaptureBlt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation CaptureBlt = int32(1073741824)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationInvert">
+      <MemberSignature Language="C#" Value="DestinationInvert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation DestinationInvert = int32(5570569)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeCopy">
+      <MemberSignature Language="C#" Value="MergeCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation MergeCopy = int32(12583114)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MergePaint">
+      <MemberSignature Language="C#" Value="MergePaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation MergePaint = int32(12255782)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMirrorBitmap">
+      <MemberSignature Language="C#" Value="NoMirrorBitmap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation NoMirrorBitmap = int32(-2147483648)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSourceCopy">
+      <MemberSignature Language="C#" Value="NotSourceCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation NotSourceCopy = int32(3342344)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSourceErase">
+      <MemberSignature Language="C#" Value="NotSourceErase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation NotSourceErase = int32(1114278)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PatCopy">
+      <MemberSignature Language="C#" Value="PatCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation PatCopy = int32(15728673)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PatInvert">
+      <MemberSignature Language="C#" Value="PatInvert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation PatInvert = int32(5898313)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PatPaint">
+      <MemberSignature Language="C#" Value="PatPaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation PatPaint = int32(16452105)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceAnd">
+      <MemberSignature Language="C#" Value="SourceAnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation SourceAnd = int32(8913094)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceCopy">
+      <MemberSignature Language="C#" Value="SourceCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation SourceCopy = int32(13369376)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceErase">
+      <MemberSignature Language="C#" Value="SourceErase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation SourceErase = int32(4457256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceInvert">
+      <MemberSignature Language="C#" Value="SourceInvert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation SourceInvert = int32(6684742)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourcePaint">
+      <MemberSignature Language="C#" Value="SourcePaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation SourcePaint = int32(15597702)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Whiteness">
+      <MemberSignature Language="C#" Value="Whiteness" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.CopyPixelOperation Whiteness = int32(16711778)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

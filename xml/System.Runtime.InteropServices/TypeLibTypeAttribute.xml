@@ -1,11 +1,8 @@
 <Type Name="TypeLibTypeAttribute" FullName="System.Runtime.InteropServices.TypeLibTypeAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeLibTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeLibTypeAttribute extends System.Attribute" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -28,12 +25,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeLibTypeAttribute (short flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 flags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeLibTypeAttribute.#ctor(System.Int16)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,12 +42,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeLibTypeAttribute (System.Runtime.InteropServices.TypeLibTypeFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.InteropServices.TypeLibTypeFlags flags) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.TypeLibTypeAttribute.#ctor(System.Runtime.InteropServices.TypeLibTypeFlags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -68,12 +59,9 @@
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.TypeLibTypeFlags Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.TypeLibTypeFlags Value" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.TypeLibTypeAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

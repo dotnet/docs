@@ -1,0 +1,326 @@
+<Type Name="MetaData" FullName="System.Runtime.Remoting.MetadataServices.MetaData">
+  <TypeSignature Language="C#" Value="public class MetaData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetaData extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetaData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertCodeSourceFileToAssemblyFile">
+      <MemberSignature Language="C#" Value="public static void ConvertCodeSourceFileToAssemblyFile (string codePath, string assemblyPath, string strongNameFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertCodeSourceFileToAssemblyFile(string codePath, string assemblyPath, string strongNameFilename) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codePath" Type="System.String" />
+        <Parameter Name="assemblyPath" Type="System.String" />
+        <Parameter Name="strongNameFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="codePath">To be added.</param>
+        <param name="assemblyPath">To be added.</param>
+        <param name="strongNameFilename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertCodeSourceStreamToAssemblyFile">
+      <MemberSignature Language="C#" Value="public static void ConvertCodeSourceStreamToAssemblyFile (System.Collections.ArrayList outCodeStreamList, string assemblyPath, string strongNameFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertCodeSourceStreamToAssemblyFile(class System.Collections.ArrayList outCodeStreamList, string assemblyPath, string strongNameFilename) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+        <Parameter Name="assemblyPath" Type="System.String" />
+        <Parameter Name="strongNameFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outCodeStreamList">To be added.</param>
+        <param name="assemblyPath">To be added.</param>
+        <param name="strongNameFilename">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertSchemaStreamToCodeSourceStream">
+      <MemberSignature Language="C#" Value="public static void ConvertSchemaStreamToCodeSourceStream (bool clientProxy, string outputDirectory, System.IO.Stream inputStream, System.Collections.ArrayList outCodeStreamList);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, string outputDirectory, class System.IO.Stream inputStream, class System.Collections.ArrayList outCodeStreamList) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientProxy" Type="System.Boolean" />
+        <Parameter Name="outputDirectory" Type="System.String" />
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="clientProxy">To be added.</param>
+        <param name="outputDirectory">To be added.</param>
+        <param name="inputStream">To be added.</param>
+        <param name="outCodeStreamList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertSchemaStreamToCodeSourceStream">
+      <MemberSignature Language="C#" Value="public static void ConvertSchemaStreamToCodeSourceStream (bool clientProxy, string outputDirectory, System.IO.Stream inputStream, System.Collections.ArrayList outCodeStreamList, string proxyUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, string outputDirectory, class System.IO.Stream inputStream, class System.Collections.ArrayList outCodeStreamList, string proxyUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientProxy" Type="System.Boolean" />
+        <Parameter Name="outputDirectory" Type="System.String" />
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+        <Parameter Name="proxyUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientProxy">To be added.</param>
+        <param name="outputDirectory">To be added.</param>
+        <param name="inputStream">To be added.</param>
+        <param name="outCodeStreamList">To be added.</param>
+        <param name="proxyUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertSchemaStreamToCodeSourceStream">
+      <MemberSignature Language="C#" Value="public static void ConvertSchemaStreamToCodeSourceStream (bool clientProxy, string outputDirectory, System.IO.Stream inputStream, System.Collections.ArrayList outCodeStreamList, string proxyUrl, string proxyNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, string outputDirectory, class System.IO.Stream inputStream, class System.Collections.ArrayList outCodeStreamList, string proxyUrl, string proxyNamespace) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientProxy" Type="System.Boolean" />
+        <Parameter Name="outputDirectory" Type="System.String" />
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+        <Parameter Name="proxyUrl" Type="System.String" />
+        <Parameter Name="proxyNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientProxy">To be added.</param>
+        <param name="outputDirectory">To be added.</param>
+        <param name="inputStream">To be added.</param>
+        <param name="outCodeStreamList">To be added.</param>
+        <param name="proxyUrl">To be added.</param>
+        <param name="proxyNamespace">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToFile">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToFile (System.Runtime.Remoting.MetadataServices.ServiceType[] types, System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToFile(class System.Runtime.Remoting.MetadataServices.ServiceType[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Runtime.Remoting.MetadataServices.ServiceType[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <param name="sdlType">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToFile">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToFile (Type[] types, System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToFile(class System.Type[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <param name="sdlType">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToStream">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToStream (System.Runtime.Remoting.MetadataServices.ServiceType[] serviceTypes, System.Runtime.Remoting.MetadataServices.SdlType sdlType, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToStream(class System.Runtime.Remoting.MetadataServices.ServiceType[] serviceTypes, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, class System.IO.Stream outputStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceTypes" Type="System.Runtime.Remoting.MetadataServices.ServiceType[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="serviceTypes">To be added.</param>
+        <param name="sdlType">To be added.</param>
+        <param name="outputStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToStream">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToStream (Type[] types, System.Runtime.Remoting.MetadataServices.SdlType sdlType, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToStream(class System.Type[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, class System.IO.Stream outputStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <param name="sdlType">To be added.</param>
+        <param name="outputStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveSchemaFromUrlToFile">
+      <MemberSignature Language="C#" Value="public static void RetrieveSchemaFromUrlToFile (string url, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RetrieveSchemaFromUrlToFile(string url, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveSchemaFromUrlToStream">
+      <MemberSignature Language="C#" Value="public static void RetrieveSchemaFromUrlToStream (string url, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RetrieveSchemaFromUrlToStream(string url, class System.IO.Stream outputStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="outputStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveStreamToFile">
+      <MemberSignature Language="C#" Value="public static void SaveStreamToFile (System.IO.Stream inputStream, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveStreamToFile(class System.IO.Stream inputStream, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputStream">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

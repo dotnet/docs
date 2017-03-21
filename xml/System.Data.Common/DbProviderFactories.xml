@@ -1,0 +1,99 @@
+<Type Name="DbProviderFactories" FullName="System.Data.Common.DbProviderFactories">
+  <TypeSignature Language="C#" Value="public static class DbProviderFactories" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DbProviderFactories extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetFactory">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetFactory (System.Data.Common.DbConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetFactory(class System.Data.Common.DbConnection connection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Data.Common.DbConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFactory">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetFactory (System.Data.DataRow providerRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetFactory(class System.Data.DataRow providerRow) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerRow" Type="System.Data.DataRow" />
+      </Parameters>
+      <Docs>
+        <param name="providerRow">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFactory">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetFactory (string providerInvariantName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetFactory(string providerInvariantName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerInvariantName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="providerInvariantName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFactoryClasses">
+      <MemberSignature Language="C#" Value="public static System.Data.DataTable GetFactoryClasses ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable GetFactoryClasses() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

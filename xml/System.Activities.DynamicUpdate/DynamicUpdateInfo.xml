@@ -1,0 +1,147 @@
+<Type Name="DynamicUpdateInfo" FullName="System.Activities.DynamicUpdate.DynamicUpdateInfo">
+  <TypeSignature Language="C#" Value="public static class DynamicUpdateInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DynamicUpdateInfo extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMapItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMapItem GetMapItem (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMapItem GetMapItem(object instance) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DynamicUpdate.DynamicUpdateMapItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalActivityBuilder">
+      <MemberSignature Language="C#" Value="public static System.Activities.ActivityBuilder GetOriginalActivityBuilder (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.ActivityBuilder GetOriginalActivityBuilder(object instance) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalDefinition">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity GetOriginalDefinition (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity GetOriginalDefinition(object instance) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMapItem">
+      <MemberSignature Language="C#" Value="public static void SetMapItem (object instance, System.Activities.DynamicUpdate.DynamicUpdateMapItem mapItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMapItem(object instance, class System.Activities.DynamicUpdate.DynamicUpdateMapItem mapItem) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="mapItem" Type="System.Activities.DynamicUpdate.DynamicUpdateMapItem" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <param name="mapItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOriginalActivityBuilder">
+      <MemberSignature Language="C#" Value="public static void SetOriginalActivityBuilder (object instance, System.Activities.ActivityBuilder originalActivityBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOriginalActivityBuilder(object instance, class System.Activities.ActivityBuilder originalActivityBuilder) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="originalActivityBuilder" Type="System.Activities.ActivityBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <param name="originalActivityBuilder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOriginalDefinition">
+      <MemberSignature Language="C#" Value="public static void SetOriginalDefinition (object instance, System.Activities.Activity originalDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOriginalDefinition(object instance, class System.Activities.Activity originalDefinition) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="originalDefinition" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <param name="originalDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

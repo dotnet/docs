@@ -1,0 +1,89 @@
+<Type Name="EntityFrameworkVersions" FullName="System.Data.Entity.Design.EntityFrameworkVersions">
+  <TypeSignature Language="C#" Value="public static class EntityFrameworkVersions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EntityFrameworkVersions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSchemaXsd">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream GetSchemaXsd (Version entityFrameworkVersion, System.Data.Metadata.Edm.DataSpace dataSpace);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetSchemaXsd(class System.Version entityFrameworkVersion, valuetype System.Data.Metadata.Edm.DataSpace dataSpace) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityFrameworkVersion" Type="System.Version" />
+        <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
+      </Parameters>
+      <Docs>
+        <param name="entityFrameworkVersion">To be added.</param>
+        <param name="dataSpace">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version1">
+      <MemberSignature Language="C#" Value="public static readonly Version Version1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version2">
+      <MemberSignature Language="C#" Value="public static readonly Version Version2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version3">
+      <MemberSignature Language="C#" Value="public static readonly Version Version3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

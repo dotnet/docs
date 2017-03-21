@@ -1,20 +1,22 @@
 <Type Name="ClaimValueTypes" FullName="System.Security.Claims.ClaimValueTypes">
   <TypeSignature Language="C#" Value="public static class ClaimValueTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimValueTypes extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimValueTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Claims</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -23,11 +25,18 @@
     <Member MemberName="Base64Binary">
       <MemberSignature Language="C#" Value="public const string Base64Binary;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Base64Binary" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Base64Binary" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -40,11 +49,18 @@
     <Member MemberName="Base64Octet">
       <MemberSignature Language="C#" Value="public const string Base64Octet;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Base64Octet" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Base64Octet" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -57,11 +73,18 @@
     <Member MemberName="Boolean">
       <MemberSignature Language="C#" Value="public const string Boolean;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Boolean" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Boolean" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -74,11 +97,18 @@
     <Member MemberName="Date">
       <MemberSignature Language="C#" Value="public const string Date;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Date" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Date" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -91,11 +121,18 @@
     <Member MemberName="DateTime">
       <MemberSignature Language="C#" Value="public const string DateTime;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DateTime" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DateTime" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,11 +145,18 @@
     <Member MemberName="DaytimeDuration">
       <MemberSignature Language="C#" Value="public const string DaytimeDuration;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DaytimeDuration" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DaytimeDuration" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -125,11 +169,18 @@
     <Member MemberName="DnsName">
       <MemberSignature Language="C#" Value="public const string DnsName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DnsName" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DnsName" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -142,11 +193,18 @@
     <Member MemberName="Double">
       <MemberSignature Language="C#" Value="public const string Double;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Double" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Double" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -159,11 +217,18 @@
     <Member MemberName="DsaKeyValue">
       <MemberSignature Language="C#" Value="public const string DsaKeyValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DsaKeyValue" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DsaKeyValue" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -176,11 +241,18 @@
     <Member MemberName="Email">
       <MemberSignature Language="C#" Value="public const string Email;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Email" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Email" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -193,11 +265,18 @@
     <Member MemberName="Fqbn">
       <MemberSignature Language="C#" Value="public const string Fqbn;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Fqbn" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Fqbn" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -210,11 +289,18 @@
     <Member MemberName="HexBinary">
       <MemberSignature Language="C#" Value="public const string HexBinary;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string HexBinary" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.HexBinary" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -227,11 +313,18 @@
     <Member MemberName="Integer">
       <MemberSignature Language="C#" Value="public const string Integer;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Integer" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Integer" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -244,11 +337,18 @@
     <Member MemberName="Integer32">
       <MemberSignature Language="C#" Value="public const string Integer32;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Integer32" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Integer32" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -261,11 +361,18 @@
     <Member MemberName="Integer64">
       <MemberSignature Language="C#" Value="public const string Integer64;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Integer64" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Integer64" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -278,11 +385,18 @@
     <Member MemberName="KeyInfo">
       <MemberSignature Language="C#" Value="public const string KeyInfo;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string KeyInfo" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.KeyInfo" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -295,11 +409,18 @@
     <Member MemberName="Rfc822Name">
       <MemberSignature Language="C#" Value="public const string Rfc822Name;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Rfc822Name" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Rfc822Name" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -312,11 +433,18 @@
     <Member MemberName="Rsa">
       <MemberSignature Language="C#" Value="public const string Rsa;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Rsa" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Rsa" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -329,11 +457,18 @@
     <Member MemberName="RsaKeyValue">
       <MemberSignature Language="C#" Value="public const string RsaKeyValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string RsaKeyValue" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.RsaKeyValue" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -346,11 +481,18 @@
     <Member MemberName="Sid">
       <MemberSignature Language="C#" Value="public const string Sid;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Sid" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Sid" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -363,11 +505,18 @@
     <Member MemberName="String">
       <MemberSignature Language="C#" Value="public const string String;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string String" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.String" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -380,11 +529,18 @@
     <Member MemberName="Time">
       <MemberSignature Language="C#" Value="public const string Time;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Time" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Time" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -397,11 +553,18 @@
     <Member MemberName="UInteger32">
       <MemberSignature Language="C#" Value="public const string UInteger32;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UInteger32" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.UInteger32" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -414,11 +577,18 @@
     <Member MemberName="UInteger64">
       <MemberSignature Language="C#" Value="public const string UInteger64;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UInteger64" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.UInteger64" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -431,11 +601,18 @@
     <Member MemberName="UpnName">
       <MemberSignature Language="C#" Value="public const string UpnName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UpnName" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.UpnName" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -448,11 +625,18 @@
     <Member MemberName="X500Name">
       <MemberSignature Language="C#" Value="public const string X500Name;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string X500Name" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.X500Name" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -465,11 +649,18 @@
     <Member MemberName="YearMonthDuration">
       <MemberSignature Language="C#" Value="public const string YearMonthDuration;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string YearMonthDuration" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.YearMonthDuration" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

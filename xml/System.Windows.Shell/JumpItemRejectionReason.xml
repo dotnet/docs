@@ -1,0 +1,77 @@
+<Type Name="JumpItemRejectionReason" FullName="System.Windows.Shell.JumpItemRejectionReason">
+  <TypeSignature Language="C#" Value="public enum JumpItemRejectionReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JumpItemRejectionReason extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InvalidItem">
+      <MemberSignature Language="C#" Value="InvalidItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason InvalidItem = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRegisteredHandler">
+      <MemberSignature Language="C#" Value="NoRegisteredHandler" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason NoRegisteredHandler = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedByUser">
+      <MemberSignature Language="C#" Value="RemovedByUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason RemovedByUser = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

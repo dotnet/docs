@@ -1,0 +1,483 @@
+<Type Name="ContainerBidirectionalIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public class ContainerBidirectionalIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerBidirectionalIterator`1&lt;TValue&gt; extends System.Object implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerBidirectionalIterator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerBidirectionalIterator (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerBidirectionalIterator (Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt; _Node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.INode`1&lt;!TValue&gt; _Node) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="_Node" Type="Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Node">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="container">
+      <MemberSignature Language="C#" Value="public virtual object container ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object container() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="equal_to">
+      <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="equal_to">
+      <MemberSignature Language="C#" Value="public virtual bool equal_to (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="next">
+      <MemberSignature Language="C#" Value="public virtual void next ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void next() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Assign">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator op_Assign (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) op_Assign(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Decrement">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Decrement">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="A_0" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public bool op_Equality (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public bool op_Equality (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt; op_Implicit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt; op_Implicit() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Increment">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Increment">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="A_0" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public bool op_Inequality (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public bool op_Inequality (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_MemberSelection">
+      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Left);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Left) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Left">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_PointerDereference">
+      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Left);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Left) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="_Left">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="prev">
+      <MemberSignature Language="C#" Value="public virtual void prev ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void prev() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="valid">
+      <MemberSignature Language="C#" Value="public virtual bool valid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool valid() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

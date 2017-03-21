@@ -1,0 +1,40 @@
+<Type Name="ITargetAwareCodeDomProvider" FullName="System.Resources.Tools.ITargetAwareCodeDomProvider">
+  <TypeSignature Language="C#" Value="public interface ITargetAwareCodeDomProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITargetAwareCodeDomProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SupportsProperty">
+      <MemberSignature Language="C#" Value="public bool SupportsProperty (Type type, string propertyName, bool isWritable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsProperty(class System.Type type, string propertyName, bool isWritable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="isWritable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <param name="isWritable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

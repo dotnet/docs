@@ -1,0 +1,117 @@
+<Type Name="WindowHelperService" FullName="System.Activities.Presentation.Hosting.WindowHelperService">
+  <TypeSignature Language="C#" Value="public class WindowHelperService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowHelperService extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowHelperService (IntPtr hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int hwnd) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentWindowHwnd">
+      <MemberSignature Language="C#" Value="public IntPtr ParentWindowHwnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ParentWindowHwnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterWindowMessageHandler">
+      <MemberSignature Language="C#" Value="public bool RegisterWindowMessageHandler (System.Activities.Presentation.Hosting.WindowMessage callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterWindowMessageHandler(class System.Activities.Presentation.Hosting.WindowMessage callback) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Activities.Presentation.Hosting.WindowMessage" />
+      </Parameters>
+      <Docs>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetWindowOwner">
+      <MemberSignature Language="C#" Value="public bool TrySetWindowOwner (System.Windows.DependencyObject source, System.Windows.Window target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetWindowOwner(class System.Windows.DependencyObject source, class System.Windows.Window target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.DependencyObject" />
+        <Parameter Name="target" Type="System.Windows.Window" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterWindowMessageHandler">
+      <MemberSignature Language="C#" Value="public bool UnregisterWindowMessageHandler (System.Activities.Presentation.Hosting.WindowMessage callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterWindowMessageHandler(class System.Activities.Presentation.Hosting.WindowMessage callback) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Activities.Presentation.Hosting.WindowMessage" />
+      </Parameters>
+      <Docs>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

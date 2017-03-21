@@ -1,0 +1,270 @@
+<Type Name="VisualStateManager" FullName="System.Windows.VisualStateManager">
+  <TypeSignature Language="C#" Value="public class VisualStateManager : System.Windows.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualStateManager extends System.Windows.DependencyObject" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualStateManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomVisualStateManagerProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CustomVisualStateManagerProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CustomVisualStateManagerProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomVisualStateManager">
+      <MemberSignature Language="C#" Value="public static System.Windows.VisualStateManager GetCustomVisualStateManager (System.Windows.FrameworkElement obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.VisualStateManager GetCustomVisualStateManager(class System.Windows.FrameworkElement obj) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.VisualStateManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualStateGroups">
+      <MemberSignature Language="C#" Value="public static System.Collections.IList GetVisualStateGroups (System.Windows.FrameworkElement obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IList GetVisualStateGroups(class System.Windows.FrameworkElement obj) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToElementState">
+      <MemberSignature Language="C#" Value="public static bool GoToElementState (System.Windows.FrameworkElement stateGroupsRoot, string stateName, bool useTransitions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GoToElementState(class System.Windows.FrameworkElement stateGroupsRoot, string stateName, bool useTransitions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateGroupsRoot" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="stateName" Type="System.String" />
+        <Parameter Name="useTransitions" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stateGroupsRoot">To be added.</param>
+        <param name="stateName">To be added.</param>
+        <param name="useTransitions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToState">
+      <MemberSignature Language="C#" Value="public static bool GoToState (System.Windows.FrameworkElement control, string stateName, bool useTransitions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GoToState(class System.Windows.FrameworkElement control, string stateName, bool useTransitions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="stateName" Type="System.String" />
+        <Parameter Name="useTransitions" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="stateName">To be added.</param>
+        <param name="useTransitions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoToStateCore">
+      <MemberSignature Language="C#" Value="protected virtual bool GoToStateCore (System.Windows.FrameworkElement control, System.Windows.FrameworkElement stateGroupsRoot, string stateName, System.Windows.VisualStateGroup group, System.Windows.VisualState state, bool useTransitions);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool GoToStateCore(class System.Windows.FrameworkElement control, class System.Windows.FrameworkElement stateGroupsRoot, string stateName, class System.Windows.VisualStateGroup group, class System.Windows.VisualState state, bool useTransitions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="stateGroupsRoot" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="stateName" Type="System.String" />
+        <Parameter Name="group" Type="System.Windows.VisualStateGroup" />
+        <Parameter Name="state" Type="System.Windows.VisualState" />
+        <Parameter Name="useTransitions" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="stateGroupsRoot">To be added.</param>
+        <param name="stateName">To be added.</param>
+        <param name="group">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="useTransitions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCurrentStateChanged">
+      <MemberSignature Language="C#" Value="protected void RaiseCurrentStateChanged (System.Windows.VisualStateGroup stateGroup, System.Windows.VisualState oldState, System.Windows.VisualState newState, System.Windows.FrameworkElement control, System.Windows.FrameworkElement stateGroupsRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCurrentStateChanged(class System.Windows.VisualStateGroup stateGroup, class System.Windows.VisualState oldState, class System.Windows.VisualState newState, class System.Windows.FrameworkElement control, class System.Windows.FrameworkElement stateGroupsRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateGroup" Type="System.Windows.VisualStateGroup" />
+        <Parameter Name="oldState" Type="System.Windows.VisualState" />
+        <Parameter Name="newState" Type="System.Windows.VisualState" />
+        <Parameter Name="control" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="stateGroupsRoot" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="stateGroup">To be added.</param>
+        <param name="oldState">To be added.</param>
+        <param name="newState">To be added.</param>
+        <param name="control">To be added.</param>
+        <param name="stateGroupsRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCurrentStateChanging">
+      <MemberSignature Language="C#" Value="protected void RaiseCurrentStateChanging (System.Windows.VisualStateGroup stateGroup, System.Windows.VisualState oldState, System.Windows.VisualState newState, System.Windows.FrameworkElement control, System.Windows.FrameworkElement stateGroupsRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCurrentStateChanging(class System.Windows.VisualStateGroup stateGroup, class System.Windows.VisualState oldState, class System.Windows.VisualState newState, class System.Windows.FrameworkElement control, class System.Windows.FrameworkElement stateGroupsRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateGroup" Type="System.Windows.VisualStateGroup" />
+        <Parameter Name="oldState" Type="System.Windows.VisualState" />
+        <Parameter Name="newState" Type="System.Windows.VisualState" />
+        <Parameter Name="control" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="stateGroupsRoot" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="stateGroup">To be added.</param>
+        <param name="oldState">To be added.</param>
+        <param name="newState">To be added.</param>
+        <param name="control">To be added.</param>
+        <param name="stateGroupsRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCustomVisualStateManager">
+      <MemberSignature Language="C#" Value="public static void SetCustomVisualStateManager (System.Windows.FrameworkElement obj, System.Windows.VisualStateManager value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCustomVisualStateManager(class System.Windows.FrameworkElement obj, class System.Windows.VisualStateManager value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="value" Type="System.Windows.VisualStateManager" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualStateGroupsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VisualStateGroupsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VisualStateGroupsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

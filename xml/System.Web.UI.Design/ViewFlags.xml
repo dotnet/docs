@@ -1,0 +1,67 @@
+<Type Name="ViewFlags" FullName="System.Web.UI.Design.ViewFlags">
+  <TypeSignature Language="C#" Value="public enum ViewFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewFlags extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CustomPaint">
+      <MemberSignature Language="C#" Value="CustomPaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags CustomPaint = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignTimeHtmlRequiresLoadComplete">
+      <MemberSignature Language="C#" Value="DesignTimeHtmlRequiresLoadComplete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags DesignTimeHtmlRequiresLoadComplete = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEditing">
+      <MemberSignature Language="C#" Value="TemplateEditing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags TemplateEditing = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

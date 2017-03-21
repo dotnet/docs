@@ -1,0 +1,1376 @@
+<Type Name="ControlPaint" FullName="System.Windows.Forms.ControlPaint">
+  <TypeSignature Language="C#" Value="public sealed class ControlPaint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ControlPaint extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContrastControlDark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ContrastControlDark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ContrastControlDark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHBitmap16Bit">
+      <MemberSignature Language="C#" Value="public static IntPtr CreateHBitmap16Bit (System.Drawing.Bitmap bitmap, System.Drawing.Color background);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateHBitmap16Bit(class System.Drawing.Bitmap bitmap, valuetype System.Drawing.Color background) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmap" Type="System.Drawing.Bitmap" />
+        <Parameter Name="background" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="bitmap">To be added.</param>
+        <param name="background">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHBitmapColorMask">
+      <MemberSignature Language="C#" Value="public static IntPtr CreateHBitmapColorMask (System.Drawing.Bitmap bitmap, IntPtr monochromeMask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateHBitmapColorMask(class System.Drawing.Bitmap bitmap, native int monochromeMask) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmap" Type="System.Drawing.Bitmap" />
+        <Parameter Name="monochromeMask" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="bitmap">To be added.</param>
+        <param name="monochromeMask">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHBitmapTransparencyMask">
+      <MemberSignature Language="C#" Value="public static IntPtr CreateHBitmapTransparencyMask (System.Drawing.Bitmap bitmap);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateHBitmapTransparencyMask(class System.Drawing.Bitmap bitmap) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bitmap" Type="System.Drawing.Bitmap" />
+      </Parameters>
+      <Docs>
+        <param name="bitmap">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Dark (System.Drawing.Color baseColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color Dark(valuetype System.Drawing.Color baseColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Dark (System.Drawing.Color baseColor, float percOfDarkDark);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color Dark(valuetype System.Drawing.Color baseColor, float32 percOfDarkDark) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseColor" Type="System.Drawing.Color" />
+        <Parameter Name="percOfDarkDark" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="baseColor">To be added.</param>
+        <param name="percOfDarkDark">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkDark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color DarkDark (System.Drawing.Color baseColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color DarkDark(valuetype System.Drawing.Color baseColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder">
+      <MemberSignature Language="C#" Value="public static void DrawBorder (System.Drawing.Graphics graphics, System.Drawing.Rectangle bounds, System.Drawing.Color color, System.Windows.Forms.ButtonBorderStyle style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color color, valuetype System.Windows.Forms.ButtonBorderStyle style) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+        <Parameter Name="style" Type="System.Windows.Forms.ButtonBorderStyle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder">
+      <MemberSignature Language="C#" Value="public static void DrawBorder (System.Drawing.Graphics graphics, System.Drawing.Rectangle bounds, System.Drawing.Color leftColor, int leftWidth, System.Windows.Forms.ButtonBorderStyle leftStyle, System.Drawing.Color topColor, int topWidth, System.Windows.Forms.ButtonBorderStyle topStyle, System.Drawing.Color rightColor, int rightWidth, System.Windows.Forms.ButtonBorderStyle rightStyle, System.Drawing.Color bottomColor, int bottomWidth, System.Windows.Forms.ButtonBorderStyle bottomStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.Color leftColor, int32 leftWidth, valuetype System.Windows.Forms.ButtonBorderStyle leftStyle, valuetype System.Drawing.Color topColor, int32 topWidth, valuetype System.Windows.Forms.ButtonBorderStyle topStyle, valuetype System.Drawing.Color rightColor, int32 rightWidth, valuetype System.Windows.Forms.ButtonBorderStyle rightStyle, valuetype System.Drawing.Color bottomColor, int32 bottomWidth, valuetype System.Windows.Forms.ButtonBorderStyle bottomStyle) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="leftColor" Type="System.Drawing.Color" />
+        <Parameter Name="leftWidth" Type="System.Int32" />
+        <Parameter Name="leftStyle" Type="System.Windows.Forms.ButtonBorderStyle" />
+        <Parameter Name="topColor" Type="System.Drawing.Color" />
+        <Parameter Name="topWidth" Type="System.Int32" />
+        <Parameter Name="topStyle" Type="System.Windows.Forms.ButtonBorderStyle" />
+        <Parameter Name="rightColor" Type="System.Drawing.Color" />
+        <Parameter Name="rightWidth" Type="System.Int32" />
+        <Parameter Name="rightStyle" Type="System.Windows.Forms.ButtonBorderStyle" />
+        <Parameter Name="bottomColor" Type="System.Drawing.Color" />
+        <Parameter Name="bottomWidth" Type="System.Int32" />
+        <Parameter Name="bottomStyle" Type="System.Windows.Forms.ButtonBorderStyle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="leftColor">To be added.</param>
+        <param name="leftWidth">To be added.</param>
+        <param name="leftStyle">To be added.</param>
+        <param name="topColor">To be added.</param>
+        <param name="topWidth">To be added.</param>
+        <param name="topStyle">To be added.</param>
+        <param name="rightColor">To be added.</param>
+        <param name="rightWidth">To be added.</param>
+        <param name="rightStyle">To be added.</param>
+        <param name="bottomColor">To be added.</param>
+        <param name="bottomWidth">To be added.</param>
+        <param name="bottomStyle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder3D">
+      <MemberSignature Language="C#" Value="public static void DrawBorder3D (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder3D">
+      <MemberSignature Language="C#" Value="public static void DrawBorder3D (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.Border3DStyle style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.Border3DStyle style) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="style" Type="System.Windows.Forms.Border3DStyle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder3D">
+      <MemberSignature Language="C#" Value="public static void DrawBorder3D (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.Border3DStyle style, System.Windows.Forms.Border3DSide sides);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.Border3DStyle style, valuetype System.Windows.Forms.Border3DSide sides) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="style" Type="System.Windows.Forms.Border3DStyle" />
+        <Parameter Name="sides" Type="System.Windows.Forms.Border3DSide" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="sides">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder3D">
+      <MemberSignature Language="C#" Value="public static void DrawBorder3D (System.Drawing.Graphics graphics, int x, int y, int width, int height);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder3D">
+      <MemberSignature Language="C#" Value="public static void DrawBorder3D (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.Border3DStyle style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.Border3DStyle style) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="style" Type="System.Windows.Forms.Border3DStyle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBorder3D">
+      <MemberSignature Language="C#" Value="public static void DrawBorder3D (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.Border3DStyle style, System.Windows.Forms.Border3DSide sides);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBorder3D(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.Border3DStyle style, valuetype System.Windows.Forms.Border3DSide sides) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="style" Type="System.Windows.Forms.Border3DStyle" />
+        <Parameter Name="sides" Type="System.Windows.Forms.Border3DSide" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="style">To be added.</param>
+        <param name="sides">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawButton">
+      <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawButton">
+      <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawCaptionButton">
+      <MemberSignature Language="C#" Value="public static void DrawCaptionButton (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.CaptionButton button, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCaptionButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.CaptionButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="button" Type="System.Windows.Forms.CaptionButton" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawCaptionButton">
+      <MemberSignature Language="C#" Value="public static void DrawCaptionButton (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.CaptionButton button, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCaptionButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.CaptionButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="button" Type="System.Windows.Forms.CaptionButton" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawCheckBox">
+      <MemberSignature Language="C#" Value="public static void DrawCheckBox (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCheckBox(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawCheckBox">
+      <MemberSignature Language="C#" Value="public static void DrawCheckBox (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawCheckBox(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawComboButton">
+      <MemberSignature Language="C#" Value="public static void DrawComboButton (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawComboButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawComboButton">
+      <MemberSignature Language="C#" Value="public static void DrawComboButton (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawComboButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawContainerGrabHandle">
+      <MemberSignature Language="C#" Value="public static void DrawContainerGrabHandle (System.Drawing.Graphics graphics, System.Drawing.Rectangle bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawContainerGrabHandle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFocusRectangle">
+      <MemberSignature Language="C#" Value="public static void DrawFocusRectangle (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawFocusRectangle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFocusRectangle">
+      <MemberSignature Language="C#" Value="public static void DrawFocusRectangle (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawFocusRectangle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawGrabHandle">
+      <MemberSignature Language="C#" Value="public static void DrawGrabHandle (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, bool primary, bool enabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawGrabHandle(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, bool primary, bool enabled) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="primary" Type="System.Boolean" />
+        <Parameter Name="enabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="primary">To be added.</param>
+        <param name="enabled">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawGrid">
+      <MemberSignature Language="C#" Value="public static void DrawGrid (System.Drawing.Graphics graphics, System.Drawing.Rectangle area, System.Drawing.Size pixelsBetweenDots, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawGrid(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle area, valuetype System.Drawing.Size pixelsBetweenDots, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="area" Type="System.Drawing.Rectangle" />
+        <Parameter Name="pixelsBetweenDots" Type="System.Drawing.Size" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="area">To be added.</param>
+        <param name="pixelsBetweenDots">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawImageDisabled">
+      <MemberSignature Language="C#" Value="public static void DrawImageDisabled (System.Drawing.Graphics graphics, System.Drawing.Image image, int x, int y, System.Drawing.Color background);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawImageDisabled(class System.Drawing.Graphics graphics, class System.Drawing.Image image, int32 x, int32 y, valuetype System.Drawing.Color background) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="background" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="image">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="background">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawLockedFrame">
+      <MemberSignature Language="C#" Value="public static void DrawLockedFrame (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, bool primary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawLockedFrame(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, bool primary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="primary" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="primary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMenuGlyph">
+      <MemberSignature Language="C#" Value="public static void DrawMenuGlyph (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.MenuGlyph glyph);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.MenuGlyph glyph) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="glyph" Type="System.Windows.Forms.MenuGlyph" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMenuGlyph">
+      <MemberSignature Language="C#" Value="public static void DrawMenuGlyph (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.MenuGlyph glyph, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.MenuGlyph glyph, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="glyph" Type="System.Windows.Forms.MenuGlyph" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMenuGlyph">
+      <MemberSignature Language="C#" Value="public static void DrawMenuGlyph (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.MenuGlyph glyph);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.MenuGlyph glyph) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="glyph" Type="System.Windows.Forms.MenuGlyph" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMenuGlyph">
+      <MemberSignature Language="C#" Value="public static void DrawMenuGlyph (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.MenuGlyph glyph, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMenuGlyph(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.MenuGlyph glyph, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="glyph" Type="System.Windows.Forms.MenuGlyph" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="glyph">To be added.</param>
+        <param name="foreColor">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMixedCheckBox">
+      <MemberSignature Language="C#" Value="public static void DrawMixedCheckBox (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMixedCheckBox(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMixedCheckBox">
+      <MemberSignature Language="C#" Value="public static void DrawMixedCheckBox (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawMixedCheckBox(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRadioButton">
+      <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRadioButton">
+      <MemberSignature Language="C#" Value="public static void DrawRadioButton (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRadioButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawReversibleFrame">
+      <MemberSignature Language="C#" Value="public static void DrawReversibleFrame (System.Drawing.Rectangle rectangle, System.Drawing.Color backColor, System.Windows.Forms.FrameStyle style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawReversibleFrame(valuetype System.Drawing.Rectangle rectangle, valuetype System.Drawing.Color backColor, valuetype System.Windows.Forms.FrameStyle style) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="style" Type="System.Windows.Forms.FrameStyle" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="style">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawReversibleLine">
+      <MemberSignature Language="C#" Value="public static void DrawReversibleLine (System.Drawing.Point start, System.Drawing.Point end, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawReversibleLine(valuetype System.Drawing.Point start, valuetype System.Drawing.Point end, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Drawing.Point" />
+        <Parameter Name="end" Type="System.Drawing.Point" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawScrollButton">
+      <MemberSignature Language="C#" Value="public static void DrawScrollButton (System.Drawing.Graphics graphics, System.Drawing.Rectangle rectangle, System.Windows.Forms.ScrollButton button, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawScrollButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle rectangle, valuetype System.Windows.Forms.ScrollButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="button" Type="System.Windows.Forms.ScrollButton" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="rectangle">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawScrollButton">
+      <MemberSignature Language="C#" Value="public static void DrawScrollButton (System.Drawing.Graphics graphics, int x, int y, int width, int height, System.Windows.Forms.ScrollButton button, System.Windows.Forms.ButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawScrollButton(class System.Drawing.Graphics graphics, int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.ScrollButton button, valuetype System.Windows.Forms.ButtonState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="button" Type="System.Windows.Forms.ScrollButton" />
+        <Parameter Name="state" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawSelectionFrame">
+      <MemberSignature Language="C#" Value="public static void DrawSelectionFrame (System.Drawing.Graphics graphics, bool active, System.Drawing.Rectangle outsideRect, System.Drawing.Rectangle insideRect, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSelectionFrame(class System.Drawing.Graphics graphics, bool active, valuetype System.Drawing.Rectangle outsideRect, valuetype System.Drawing.Rectangle insideRect, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="active" Type="System.Boolean" />
+        <Parameter Name="outsideRect" Type="System.Drawing.Rectangle" />
+        <Parameter Name="insideRect" Type="System.Drawing.Rectangle" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="active">To be added.</param>
+        <param name="outsideRect">To be added.</param>
+        <param name="insideRect">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawSizeGrip">
+      <MemberSignature Language="C#" Value="public static void DrawSizeGrip (System.Drawing.Graphics graphics, System.Drawing.Color backColor, System.Drawing.Rectangle bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSizeGrip(class System.Drawing.Graphics graphics, valuetype System.Drawing.Color backColor, valuetype System.Drawing.Rectangle bounds) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawSizeGrip">
+      <MemberSignature Language="C#" Value="public static void DrawSizeGrip (System.Drawing.Graphics graphics, System.Drawing.Color backColor, int x, int y, int width, int height);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSizeGrip(class System.Drawing.Graphics graphics, valuetype System.Drawing.Color backColor, int32 x, int32 y, int32 width, int32 height) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawStringDisabled">
+      <MemberSignature Language="C#" Value="public static void DrawStringDisabled (System.Drawing.Graphics graphics, string s, System.Drawing.Font font, System.Drawing.Color color, System.Drawing.RectangleF layoutRectangle, System.Drawing.StringFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawStringDisabled(class System.Drawing.Graphics graphics, string s, class System.Drawing.Font font, valuetype System.Drawing.Color color, valuetype System.Drawing.RectangleF layoutRectangle, class System.Drawing.StringFormat format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+        <Parameter Name="layoutRectangle" Type="System.Drawing.RectangleF" />
+        <Parameter Name="format" Type="System.Drawing.StringFormat" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="s">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="layoutRectangle">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawStringDisabled">
+      <MemberSignature Language="C#" Value="public static void DrawStringDisabled (System.Drawing.IDeviceContext dc, string s, System.Drawing.Font font, System.Drawing.Color color, System.Drawing.Rectangle layoutRectangle, System.Windows.Forms.TextFormatFlags format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawStringDisabled(class System.Drawing.IDeviceContext dc, string s, class System.Drawing.Font font, valuetype System.Drawing.Color color, valuetype System.Drawing.Rectangle layoutRectangle, valuetype System.Windows.Forms.TextFormatFlags format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="System.Drawing.IDeviceContext" />
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+        <Parameter Name="layoutRectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="format" Type="System.Windows.Forms.TextFormatFlags" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="s">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="layoutRectangle">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawVisualStyleBorder">
+      <MemberSignature Language="C#" Value="public static void DrawVisualStyleBorder (System.Drawing.Graphics graphics, System.Drawing.Rectangle bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVisualStyleBorder(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillReversibleRectangle">
+      <MemberSignature Language="C#" Value="public static void FillReversibleRectangle (System.Drawing.Rectangle rectangle, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FillReversibleRectangle(valuetype System.Drawing.Rectangle rectangle, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">To be added.</param>
+        <param name="backColor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Light">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Light (System.Drawing.Color baseColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color Light(valuetype System.Drawing.Color baseColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Light">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Light (System.Drawing.Color baseColor, float percOfLightLight);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color Light(valuetype System.Drawing.Color baseColor, float32 percOfLightLight) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseColor" Type="System.Drawing.Color" />
+        <Parameter Name="percOfLightLight" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="baseColor">To be added.</param>
+        <param name="percOfLightLight">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightLight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color LightLight (System.Drawing.Color baseColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color LightLight(valuetype System.Drawing.Color baseColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="baseColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

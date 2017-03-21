@@ -1,10 +1,8 @@
 <Type Name="CodeConnectAccess" FullName="System.Security.Policy.CodeConnectAccess">
   <TypeSignature Language="C#" Value="public class CodeConnectAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeConnectAccess extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Policy.CodeConnectAccess" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,11 +22,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeConnectAccess (string allowScheme, int allowPort);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string allowScheme, int32 allowPort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.#ctor(System.String,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -45,11 +41,9 @@
     <Member MemberName="AnyScheme">
       <MemberSignature Language="C#" Value="public static readonly string AnyScheme;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string AnyScheme" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.AnyScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,11 +57,9 @@
     <Member MemberName="CreateAnySchemeAccess">
       <MemberSignature Language="C#" Value="public static System.Security.Policy.CodeConnectAccess CreateAnySchemeAccess (int allowPort);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.CodeConnectAccess CreateAnySchemeAccess(int32 allowPort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.CreateAnySchemeAccess(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,11 +78,9 @@
     <Member MemberName="CreateOriginSchemeAccess">
       <MemberSignature Language="C#" Value="public static System.Security.Policy.CodeConnectAccess CreateOriginSchemeAccess (int allowPort);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.CodeConnectAccess CreateOriginSchemeAccess(int32 allowPort) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.CreateOriginSchemeAccess(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,11 +99,9 @@
     <Member MemberName="DefaultPort">
       <MemberSignature Language="C#" Value="public static readonly int DefaultPort;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultPort" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.DefaultPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,11 +115,9 @@
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,11 +136,9 @@
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,11 +154,9 @@
     <Member MemberName="OriginPort">
       <MemberSignature Language="C#" Value="public static readonly int OriginPort;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 OriginPort" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.OriginPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,11 +170,9 @@
     <Member MemberName="OriginScheme">
       <MemberSignature Language="C#" Value="public static readonly string OriginScheme;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string OriginScheme" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.OriginScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,11 +186,9 @@
     <Member MemberName="Port">
       <MemberSignature Language="C#" Value="public int Port { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeConnectAccess.Port" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,11 +203,9 @@
     <Member MemberName="Scheme">
       <MemberSignature Language="C#" Value="public string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeConnectAccess.Scheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

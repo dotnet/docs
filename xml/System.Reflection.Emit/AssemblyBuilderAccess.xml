@@ -1,11 +1,12 @@
 <Type Name="AssemblyBuilderAccess" FullName="System.Reflection.Emit.AssemblyBuilderAccess">
   <TypeSignature Language="C#" Value="public enum AssemblyBuilderAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AssemblyBuilderAccess extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.AssemblyBuilderAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Emit</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,11 +28,9 @@
     <Member MemberName="ReflectionOnly">
       <MemberSignature Language="C#" Value="ReflectionOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.AssemblyBuilderAccess ReflectionOnly = int32(6)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.ReflectionOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,12 +43,13 @@
     <Member MemberName="Run">
       <MemberSignature Language="C#" Value="Run" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.AssemblyBuilderAccess Run = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.Run" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,8 +62,11 @@
     <Member MemberName="RunAndCollect">
       <MemberSignature Language="C#" Value="RunAndCollect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.AssemblyBuilderAccess RunAndCollect = int32(9)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.RunAndCollect" />
       <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,12 +81,9 @@
     <Member MemberName="RunAndSave">
       <MemberSignature Language="C#" Value="RunAndSave" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.AssemblyBuilderAccess RunAndSave = int32(3)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,12 +96,9 @@
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="Save" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.AssemblyBuilderAccess Save = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

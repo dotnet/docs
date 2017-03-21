@@ -1,11 +1,8 @@
 <Type Name="UCOMIPersistFile" FullName="System.Runtime.InteropServices.UCOMIPersistFile">
   <TypeSignature Language="C#" Value="public interface UCOMIPersistFile" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIPersistFile" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIPersistFile" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -28,12 +25,9 @@
     <Member MemberName="GetClassID">
       <MemberSignature Language="C#" Value="public void GetClassID (out Guid pClassID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetClassID(valuetype System.Guid pClassID) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.GetClassID(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,12 +45,9 @@
     <Member MemberName="GetCurFile">
       <MemberSignature Language="C#" Value="public void GetCurFile (out string ppszFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCurFile(string ppszFileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.GetCurFile(System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,12 +65,9 @@
     <Member MemberName="IsDirty">
       <MemberSignature Language="C#" Value="public int IsDirty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsDirty() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.IsDirty" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,12 +83,9 @@
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (string pszFileName, int dwMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(string pszFileName, int32 dwMode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.Load(System.String,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,12 +105,9 @@
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save (string pszFileName, bool fRemember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(string pszFileName, bool fRemember) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.Save(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,12 +127,9 @@
     <Member MemberName="SaveCompleted">
       <MemberSignature Language="C#" Value="public void SaveCompleted (string pszFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveCompleted(string pszFileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIPersistFile.SaveCompleted(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

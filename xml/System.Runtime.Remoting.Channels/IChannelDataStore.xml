@@ -1,11 +1,8 @@
 <Type Name="IChannelDataStore" FullName="System.Runtime.Remoting.Channels.IChannelDataStore">
   <TypeSignature Language="C#" Value="public interface IChannelDataStore" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelDataStore" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelDataStore" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -22,12 +19,9 @@
     <Member MemberName="ChannelUris">
       <MemberSignature Language="C#" Value="public string[] ChannelUris { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ChannelUris" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelDataStore.ChannelUris" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -47,12 +41,9 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelDataStore.Item(System.Object)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

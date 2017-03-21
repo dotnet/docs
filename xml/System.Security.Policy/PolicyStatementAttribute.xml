@@ -1,11 +1,8 @@
 <Type Name="PolicyStatementAttribute" FullName="System.Security.Policy.PolicyStatementAttribute">
   <TypeSignature Language="C#" Value="public enum PolicyStatementAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PolicyStatementAttribute extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyStatementAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,12 +24,9 @@
     <Member MemberName="All">
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute All = int32(3)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,12 +39,9 @@
     <Member MemberName="Exclusive">
       <MemberSignature Language="C#" Value="Exclusive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute Exclusive = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.Exclusive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,12 +54,9 @@
     <Member MemberName="LevelFinal">
       <MemberSignature Language="C#" Value="LevelFinal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute LevelFinal = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.LevelFinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,12 +69,9 @@
     <Member MemberName="Nothing">
       <MemberSignature Language="C#" Value="Nothing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute Nothing = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

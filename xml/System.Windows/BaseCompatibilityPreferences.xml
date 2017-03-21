@@ -1,0 +1,69 @@
+<Type Name="BaseCompatibilityPreferences" FullName="System.Windows.BaseCompatibilityPreferences">
+  <TypeSignature Language="C#" Value="public static class BaseCompatibilityPreferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BaseCompatibilityPreferences extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlowDispatcherSynchronizationContextPriority">
+      <MemberSignature Language="C#" Value="public static bool FlowDispatcherSynchronizationContextPriority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool FlowDispatcherSynchronizationContextPriority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineDispatcherSynchronizationContextSend">
+      <MemberSignature Language="C#" Value="public static bool InlineDispatcherSynchronizationContextSend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool InlineDispatcherSynchronizationContextSend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReuseDispatcherSynchronizationContextInstance">
+      <MemberSignature Language="C#" Value="public static bool ReuseDispatcherSynchronizationContextInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool ReuseDispatcherSynchronizationContextInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

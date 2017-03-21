@@ -1,0 +1,41 @@
+<Type Name="InOutArgument" FullName="System.Activities.InOutArgument">
+  <TypeSignature Language="C#" Value="public abstract class InOutArgument : System.Activities.Argument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InOutArgument extends System.Activities.Argument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Argument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateReference">
+      <MemberSignature Language="C#" Value="public static System.Activities.InOutArgument CreateReference (System.Activities.InOutArgument argumentToReference, string referencedArgumentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InOutArgument CreateReference(class System.Activities.InOutArgument argumentToReference, string referencedArgumentName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.InOutArgument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argumentToReference" Type="System.Activities.InOutArgument" />
+        <Parameter Name="referencedArgumentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argumentToReference">To be added.</param>
+        <param name="referencedArgumentName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

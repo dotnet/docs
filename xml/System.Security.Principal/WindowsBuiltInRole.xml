@@ -1,11 +1,12 @@
 <Type Name="WindowsBuiltInRole" FullName="System.Security.Principal.WindowsBuiltInRole">
   <TypeSignature Language="C#" Value="public enum WindowsBuiltInRole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed WindowsBuiltInRole extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsBuiltInRole" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,12 +25,13 @@
     <Member MemberName="AccountOperator">
       <MemberSignature Language="C#" Value="AccountOperator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole AccountOperator = int32(548)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.AccountOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,12 +44,13 @@
     <Member MemberName="Administrator">
       <MemberSignature Language="C#" Value="Administrator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole Administrator = int32(544)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.Administrator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,12 +63,13 @@
     <Member MemberName="BackupOperator">
       <MemberSignature Language="C#" Value="BackupOperator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole BackupOperator = int32(551)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.BackupOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,12 +82,13 @@
     <Member MemberName="Guest">
       <MemberSignature Language="C#" Value="Guest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole Guest = int32(546)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.Guest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,12 +101,13 @@
     <Member MemberName="PowerUser">
       <MemberSignature Language="C#" Value="PowerUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole PowerUser = int32(547)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.PowerUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,12 +120,13 @@
     <Member MemberName="PrintOperator">
       <MemberSignature Language="C#" Value="PrintOperator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole PrintOperator = int32(550)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.PrintOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,12 +139,13 @@
     <Member MemberName="Replicator">
       <MemberSignature Language="C#" Value="Replicator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole Replicator = int32(552)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.Replicator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,12 +158,13 @@
     <Member MemberName="SystemOperator">
       <MemberSignature Language="C#" Value="SystemOperator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole SystemOperator = int32(549)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.SystemOperator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,12 +177,13 @@
     <Member MemberName="User">
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.WindowsBuiltInRole User = int32(545)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsBuiltInRole.User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

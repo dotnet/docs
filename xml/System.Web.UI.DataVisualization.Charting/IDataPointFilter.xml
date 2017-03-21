@@ -1,0 +1,40 @@
+<Type Name="IDataPointFilter" FullName="System.Web.UI.DataVisualization.Charting.IDataPointFilter">
+  <TypeSignature Language="C#" Value="public interface IDataPointFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataPointFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FilterDataPoint">
+      <MemberSignature Language="C#" Value="public bool FilterDataPoint (System.Web.UI.DataVisualization.Charting.DataPoint point, System.Web.UI.DataVisualization.Charting.Series series, int pointIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool FilterDataPoint(class System.Web.UI.DataVisualization.Charting.DataPoint point, class System.Web.UI.DataVisualization.Charting.Series series, int32 pointIndex) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Web.UI.DataVisualization.Charting.DataPoint" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="pointIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <param name="series">To be added.</param>
+        <param name="pointIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

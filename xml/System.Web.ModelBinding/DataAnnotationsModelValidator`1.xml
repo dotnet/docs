@@ -1,0 +1,64 @@
+<Type Name="DataAnnotationsModelValidator&lt;TAttribute&gt;" FullName="System.Web.ModelBinding.DataAnnotationsModelValidator&lt;TAttribute&gt;">
+  <TypeSignature Language="C#" Value="public class DataAnnotationsModelValidator&lt;TAttribute&gt; : System.Web.ModelBinding.DataAnnotationsModelValidator where TAttribute : ValidationAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataAnnotationsModelValidator`1&lt;(class System.ComponentModel.DataAnnotations.ValidationAttribute) TAttribute&gt; extends System.Web.ModelBinding.DataAnnotationsModelValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TAttribute">
+      <Constraints>
+        <BaseTypeName>System.ComponentModel.DataAnnotations.ValidationAttribute</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.DataAnnotationsModelValidator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TAttribute">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataAnnotationsModelValidator (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context, TAttribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context, !TAttribute attribute) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="attribute" Type="TAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="attribute">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attribute">
+      <MemberSignature Language="C#" Value="protected TAttribute Attribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TAttribute Attribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

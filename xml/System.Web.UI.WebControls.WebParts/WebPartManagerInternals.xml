@@ -1,0 +1,528 @@
+<Type Name="WebPartManagerInternals" FullName="System.Web.UI.WebControls.WebParts.WebPartManagerInternals">
+  <TypeSignature Language="C#" Value="public sealed class WebPartManagerInternals" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartManagerInternals extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddWebPart">
+      <MemberSignature Language="C#" Value="public void AddWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallOnClosing">
+      <MemberSignature Language="C#" Value="public void CallOnClosing (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CallOnClosing(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallOnConnectModeChanged">
+      <MemberSignature Language="C#" Value="public void CallOnConnectModeChanged (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CallOnConnectModeChanged(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallOnDeleting">
+      <MemberSignature Language="C#" Value="public void CallOnDeleting (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CallOnDeleting(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallOnEditModeChanged">
+      <MemberSignature Language="C#" Value="public void CallOnEditModeChanged (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CallOnEditModeChanged(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionDeleted">
+      <MemberSignature Language="C#" Value="public bool ConnectionDeleted (System.Web.UI.WebControls.WebParts.WebPartConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConnectionDeleted(class System.Web.UI.WebControls.WebParts.WebPartConnection connection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObjectFromType">
+      <MemberSignature Language="C#" Value="public object CreateObjectFromType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object CreateObjectFromType(class System.Type type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteConnection">
+      <MemberSignature Language="C#" Value="public void DeleteConnection (System.Web.UI.WebControls.WebParts.WebPartConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteConnection(class System.Web.UI.WebControls.WebParts.WebPartConnection connection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetZoneID">
+      <MemberSignature Language="C#" Value="public string GetZoneID (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetZoneID(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadConfigurationState">
+      <MemberSignature Language="C#" Value="public void LoadConfigurationState (System.Web.UI.WebControls.WebParts.WebPartTransformer transformer, object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadConfigurationState(class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer, object savedState) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transformer" Type="System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="transformer">To be added.</param>
+        <param name="savedState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveWebPart">
+      <MemberSignature Language="C#" Value="public void RemoveWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveConfigurationState">
+      <MemberSignature Language="C#" Value="public object SaveConfigurationState (System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object SaveConfigurationState(class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transformer" Type="System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+      </Parameters>
+      <Docs>
+        <param name="transformer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConnectErrorMessage">
+      <MemberSignature Language="C#" Value="public void SetConnectErrorMessage (System.Web.UI.WebControls.WebParts.WebPart webPart, string connectErrorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetConnectErrorMessage(class System.Web.UI.WebControls.WebParts.WebPart webPart, string connectErrorMessage) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="connectErrorMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="connectErrorMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHasSharedData">
+      <MemberSignature Language="C#" Value="public void SetHasSharedData (System.Web.UI.WebControls.WebParts.WebPart webPart, bool hasSharedData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHasSharedData(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool hasSharedData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="hasSharedData" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="hasSharedData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHasUserData">
+      <MemberSignature Language="C#" Value="public void SetHasUserData (System.Web.UI.WebControls.WebParts.WebPart webPart, bool hasUserData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHasUserData(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool hasUserData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="hasUserData" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="hasUserData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsClosed">
+      <MemberSignature Language="C#" Value="public void SetIsClosed (System.Web.UI.WebControls.WebParts.WebPart webPart, bool isClosed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsClosed(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool isClosed) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="isClosed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="isClosed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsShared">
+      <MemberSignature Language="C#" Value="public void SetIsShared (System.Web.UI.WebControls.WebParts.WebPart webPart, bool isShared);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsShared(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool isShared) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="isShared" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="isShared">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsShared">
+      <MemberSignature Language="C#" Value="public void SetIsShared (System.Web.UI.WebControls.WebParts.WebPartConnection connection, bool isShared);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsShared(class System.Web.UI.WebControls.WebParts.WebPartConnection connection, bool isShared) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <Parameter Name="isShared" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <param name="isShared">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsStandalone">
+      <MemberSignature Language="C#" Value="public void SetIsStandalone (System.Web.UI.WebControls.WebParts.WebPart webPart, bool isStandalone);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsStandalone(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool isStandalone) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="isStandalone" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="isStandalone">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsStatic">
+      <MemberSignature Language="C#" Value="public void SetIsStatic (System.Web.UI.WebControls.WebParts.WebPart webPart, bool isStatic);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsStatic(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool isStatic) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="isStatic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="isStatic">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsStatic">
+      <MemberSignature Language="C#" Value="public void SetIsStatic (System.Web.UI.WebControls.WebParts.WebPartConnection connection, bool isStatic);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsStatic(class System.Web.UI.WebControls.WebParts.WebPartConnection connection, bool isStatic) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <Parameter Name="isStatic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <param name="isStatic">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTransformer">
+      <MemberSignature Language="C#" Value="public void SetTransformer (System.Web.UI.WebControls.WebParts.WebPartConnection connection, System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTransformer(class System.Web.UI.WebControls.WebParts.WebPartConnection connection, class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <Parameter Name="transformer" Type="System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <param name="transformer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetZoneID">
+      <MemberSignature Language="C#" Value="public void SetZoneID (System.Web.UI.WebControls.WebParts.WebPart webPart, string zoneID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetZoneID(class System.Web.UI.WebControls.WebParts.WebPart webPart, string zoneID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="zoneID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="zoneID">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetZoneIndex">
+      <MemberSignature Language="C#" Value="public void SetZoneIndex (System.Web.UI.WebControls.WebParts.WebPart webPart, int zoneIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetZoneIndex(class System.Web.UI.WebControls.WebParts.WebPart webPart, int32 zoneIndex) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="zoneIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">To be added.</param>
+        <param name="zoneIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

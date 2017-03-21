@@ -1,0 +1,502 @@
+<Type Name="MidCodeCharts" FullName="System.Web.Security.AntiXss.MidCodeCharts">
+  <TypeSignature Language="C#" Value="public enum MidCodeCharts" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MidCodeCharts extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Arrows">
+      <MemberSignature Language="C#" Value="Arrows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Arrows = int64(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockElements">
+      <MemberSignature Language="C#" Value="BlockElements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts BlockElements = int64(16384)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BoxDrawing">
+      <MemberSignature Language="C#" Value="BoxDrawing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts BoxDrawing = int64(8192)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BraillePatterns">
+      <MemberSignature Language="C#" Value="BraillePatterns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts BraillePatterns = int64(1048576)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CombiningDiacriticalMarksForSymbols">
+      <MemberSignature Language="C#" Value="CombiningDiacriticalMarksForSymbols" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts CombiningDiacriticalMarksForSymbols = int64(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPictures">
+      <MemberSignature Language="C#" Value="ControlPictures" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts ControlPictures = int64(1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Coptic">
+      <MemberSignature Language="C#" Value="Coptic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Coptic = int64(134217728)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencySymbols">
+      <MemberSignature Language="C#" Value="CurrencySymbols" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts CurrencySymbols = int64(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dingbats">
+      <MemberSignature Language="C#" Value="Dingbats" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Dingbats = int64(131072)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnclosedAlphanumerics">
+      <MemberSignature Language="C#" Value="EnclosedAlphanumerics" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts EnclosedAlphanumerics = int64(4096)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EthiopicExtended">
+      <MemberSignature Language="C#" Value="EthiopicExtended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts EthiopicExtended = int64(16384)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeneralPunctuation">
+      <MemberSignature Language="C#" Value="GeneralPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GeneralPunctuation = int64(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometricShapes">
+      <MemberSignature Language="C#" Value="GeometricShapes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GeometricShapes = int64(32768)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeorgianSupplement">
+      <MemberSignature Language="C#" Value="GeorgianSupplement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GeorgianSupplement = int64(268435456)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Glagolitic">
+      <MemberSignature Language="C#" Value="Glagolitic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Glagolitic = int64(33554432)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreekExtended">
+      <MemberSignature Language="C#" Value="GreekExtended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts GreekExtended = int64(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedC">
+      <MemberSignature Language="C#" Value="LatinExtendedC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts LatinExtendedC = int64(67108864)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LetterlikeSymbols">
+      <MemberSignature Language="C#" Value="LetterlikeSymbols" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts LetterlikeSymbols = int64(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MathematicalOperators">
+      <MemberSignature Language="C#" Value="MathematicalOperators" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MathematicalOperators = int64(256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousMathematicalSymbolsA">
+      <MemberSignature Language="C#" Value="MiscellaneousMathematicalSymbolsA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousMathematicalSymbolsA = int64(262144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousMathematicalSymbolsB">
+      <MemberSignature Language="C#" Value="MiscellaneousMathematicalSymbolsB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousMathematicalSymbolsB = int64(4194304)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousSymbols">
+      <MemberSignature Language="C#" Value="MiscellaneousSymbols" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousSymbols = int64(65536)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousSymbolsAndArrows">
+      <MemberSignature Language="C#" Value="MiscellaneousSymbolsAndArrows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousSymbolsAndArrows = int64(16777216)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousTechnical">
+      <MemberSignature Language="C#" Value="MiscellaneousTechnical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts MiscellaneousTechnical = int64(512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts None = int64(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberForms">
+      <MemberSignature Language="C#" Value="NumberForms" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts NumberForms = int64(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OpticalCharacterRecognition">
+      <MemberSignature Language="C#" Value="OpticalCharacterRecognition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts OpticalCharacterRecognition = int64(2048)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuperscriptsAndSubscripts">
+      <MemberSignature Language="C#" Value="SuperscriptsAndSubscripts" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SuperscriptsAndSubscripts = int64(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalArrowsA">
+      <MemberSignature Language="C#" Value="SupplementalArrowsA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SupplementalArrowsA = int64(524288)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalArrowsB">
+      <MemberSignature Language="C#" Value="SupplementalArrowsB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SupplementalArrowsB = int64(2097152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalMathematicalOperators">
+      <MemberSignature Language="C#" Value="SupplementalMathematicalOperators" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts SupplementalMathematicalOperators = int64(8388608)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tifinagh">
+      <MemberSignature Language="C#" Value="Tifinagh" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.MidCodeCharts Tifinagh = int64(536870912)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.MidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,62 @@
+<Type Name="UpToDateCheckType" FullName="Microsoft.Build.Utilities.UpToDateCheckType">
+  <TypeSignature Language="C#" Value="public enum UpToDateCheckType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpToDateCheckType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InputNewerThanOutput">
+      <MemberSignature Language="C#" Value="InputNewerThanOutput" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputNewerThanOutput = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputNewerThanTracking">
+      <MemberSignature Language="C#" Value="InputNewerThanTracking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputNewerThanTracking = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputOrOutputNewerThanTracking">
+      <MemberSignature Language="C#" Value="InputOrOutputNewerThanTracking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputOrOutputNewerThanTracking = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

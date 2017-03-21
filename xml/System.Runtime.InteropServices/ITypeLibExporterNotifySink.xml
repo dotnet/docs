@@ -1,11 +1,8 @@
 <Type Name="ITypeLibExporterNotifySink" FullName="System.Runtime.InteropServices.ITypeLibExporterNotifySink">
   <TypeSignature Language="C#" Value="public interface ITypeLibExporterNotifySink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeLibExporterNotifySink" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ITypeLibExporterNotifySink" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -28,12 +25,9 @@
     <Member MemberName="ReportEvent">
       <MemberSignature Language="C#" Value="public void ReportEvent (System.Runtime.InteropServices.ExporterEventKind eventKind, int eventCode, string eventMsg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReportEvent(valuetype System.Runtime.InteropServices.ExporterEventKind eventKind, int32 eventCode, string eventMsg) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent(System.Runtime.InteropServices.ExporterEventKind,System.Int32,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,12 +49,9 @@
     <Member MemberName="ResolveRef">
       <MemberSignature Language="C#" Value="public object ResolveRef (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ResolveRef(class System.Reflection.Assembly assembly) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ResolveRef(System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

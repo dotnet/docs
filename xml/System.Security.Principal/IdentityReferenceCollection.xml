@@ -1,10 +1,12 @@
 <Type Name="IdentityReferenceCollection" FullName="System.Security.Principal.IdentityReferenceCollection">
   <TypeSignature Language="C#" Value="public class IdentityReferenceCollection : System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;, System.Collections.Generic.IEnumerable&lt;System.Security.Principal.IdentityReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityReferenceCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class System.Security.Principal.IdentityReference&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Principal.IdentityReference&gt;, class System.Collections.IEnumerable" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Principal.IdentityReferenceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -31,11 +33,13 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IdentityReferenceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -47,11 +51,13 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IdentityReferenceCollection (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -66,11 +72,13 @@
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Security.Principal.IdentityReference identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Security.Principal.IdentityReference identity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Add(System.Security.Principal.IdentityReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,11 +96,13 @@
     <Member MemberName="Clear">
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Clear" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,11 +117,13 @@
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (System.Security.Principal.IdentityReference identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Security.Principal.IdentityReference identity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Contains(System.Security.Principal.IdentityReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,11 +142,13 @@
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.Security.Principal.IdentityReference[] array, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Security.Principal.IdentityReference[] array, int32 offset) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.CopyTo(System.Security.Principal.IdentityReference[],System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,11 +168,13 @@
     <Member MemberName="Count">
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,11 +189,13 @@
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Security.Principal.IdentityReference&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Security.Principal.IdentityReference&gt; GetEnumerator() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,11 +211,9 @@
     <Member MemberName="IsReadOnly">
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,11 +228,13 @@
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReference this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IdentityReference Item(int32)" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,11 +253,13 @@
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public bool Remove (System.Security.Principal.IdentityReference identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Security.Principal.IdentityReference identity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Remove(System.Security.Principal.IdentityReference)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -255,14 +275,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,11 +317,13 @@
     <Member MemberName="Translate">
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReferenceCollection Translate (Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Principal.IdentityReferenceCollection Translate(class System.Type targetType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Translate(System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,11 +342,13 @@
     <Member MemberName="Translate">
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReferenceCollection Translate (Type targetType, bool forceSuccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Principal.IdentityReferenceCollection Translate(class System.Type targetType, bool forceSuccess) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Translate(System.Type,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

@@ -1,0 +1,155 @@
+<Type Name="Instrumentation" FullName="System.Management.Instrumentation.Instrumentation">
+  <TypeSignature Language="C#" Value="public class Instrumentation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Instrumentation extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Instrumentation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fire">
+      <MemberSignature Language="C#" Value="public static void Fire (object eventData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fire(object eventData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="eventData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAssemblyRegistered">
+      <MemberSignature Language="C#" Value="public static bool IsAssemblyRegistered (System.Reflection.Assembly assemblyToRegister);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAssemblyRegistered(class System.Reflection.Assembly assemblyToRegister) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyToRegister" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyToRegister">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Publish">
+      <MemberSignature Language="C#" Value="public static void Publish (object instanceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Publish(object instanceData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAssembly">
+      <MemberSignature Language="C#" Value="public static void RegisterAssembly (System.Reflection.Assembly assemblyToRegister);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAssembly(class System.Reflection.Assembly assemblyToRegister) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyToRegister" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyToRegister">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public static void Revoke (object instanceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Revoke(object instanceData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceData">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBatchSize">
+      <MemberSignature Language="C#" Value="public static void SetBatchSize (Type instrumentationClass, int batchSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBatchSize(class System.Type instrumentationClass, int32 batchSize) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instrumentationClass" Type="System.Type" />
+        <Parameter Name="batchSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instrumentationClass">To be added.</param>
+        <param name="batchSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

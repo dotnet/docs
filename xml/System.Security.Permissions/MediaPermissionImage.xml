@@ -1,0 +1,77 @@
+<Type Name="MediaPermissionImage" FullName="System.Security.Permissions.MediaPermissionImage">
+  <TypeSignature Language="C#" Value="public enum MediaPermissionImage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaPermissionImage extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllImage">
+      <MemberSignature Language="C#" Value="AllImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionImage AllImage = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoImage">
+      <MemberSignature Language="C#" Value="NoImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionImage NoImage = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeImage">
+      <MemberSignature Language="C#" Value="SafeImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionImage SafeImage = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteOfOriginImage">
+      <MemberSignature Language="C#" Value="SiteOfOriginImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionImage SiteOfOriginImage = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,86 @@
+<Type Name="IRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IRandomAccessIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IRandomAccessIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="distance">
+      <MemberSignature Language="C#" Value="public int distance (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 distance(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="less_than">
+      <MemberSignature Language="C#" Value="public bool less_than (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool less_than(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="move">
+      <MemberSignature Language="C#" Value="public int move (int _Offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 move(int32 _Offset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_Offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

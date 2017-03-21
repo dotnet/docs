@@ -1,0 +1,33 @@
+<Type Name="QueryForConnectionCallback" FullName="System.DirectoryServices.Protocols.QueryForConnectionCallback">
+  <TypeSignature Language="C#" Value="public delegate System.DirectoryServices.Protocols.LdapConnection QueryForConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, NetworkCredential credential, long currentUserToken);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryForConnectionCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="primaryConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="referralFromConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="newDistinguishedName" Type="System.String" />
+    <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.LdapDirectoryIdentifier" />
+    <Parameter Name="credential" Type="System.Net.NetworkCredential" />
+    <Parameter Name="currentUserToken" Type="System.Int64" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.DirectoryServices.Protocols.LdapConnection</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="primaryConnection">To be added.</param>
+    <param name="referralFromConnection">To be added.</param>
+    <param name="newDistinguishedName">To be added.</param>
+    <param name="identifier">To be added.</param>
+    <param name="credential">To be added.</param>
+    <param name="currentUserToken">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

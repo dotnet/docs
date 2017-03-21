@@ -1,0 +1,145 @@
+<Type Name="TokenColor" FullName="Microsoft.JScript.TokenColor">
+  <TypeSignature Language="C#" Value="public enum TokenColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TokenColor extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("78008402-40D4-30BF-BD91-A61D8815625E")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="COLOR_COMMENT">
+      <MemberSignature Language="C#" Value="COLOR_COMMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_COMMENT = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_CONDITIONAL_COMP">
+      <MemberSignature Language="C#" Value="COLOR_CONDITIONAL_COMP" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_CONDITIONAL_COMP = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_IDENTIFIER">
+      <MemberSignature Language="C#" Value="COLOR_IDENTIFIER" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_IDENTIFIER = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_KEYWORD">
+      <MemberSignature Language="C#" Value="COLOR_KEYWORD" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_KEYWORD = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_NUMBER">
+      <MemberSignature Language="C#" Value="COLOR_NUMBER" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_NUMBER = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_OPERATOR">
+      <MemberSignature Language="C#" Value="COLOR_OPERATOR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_OPERATOR = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_STRING">
+      <MemberSignature Language="C#" Value="COLOR_STRING" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_STRING = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="COLOR_TEXT">
+      <MemberSignature Language="C#" Value="COLOR_TEXT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.TokenColor COLOR_TEXT = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.TokenColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

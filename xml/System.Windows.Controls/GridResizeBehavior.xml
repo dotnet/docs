@@ -1,0 +1,77 @@
+<Type Name="GridResizeBehavior" FullName="System.Windows.Controls.GridResizeBehavior">
+  <TypeSignature Language="C#" Value="public enum GridResizeBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridResizeBehavior extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BasedOnAlignment">
+      <MemberSignature Language="C#" Value="BasedOnAlignment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior BasedOnAlignment = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentAndNext">
+      <MemberSignature Language="C#" Value="CurrentAndNext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior CurrentAndNext = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousAndCurrent">
+      <MemberSignature Language="C#" Value="PreviousAndCurrent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior PreviousAndCurrent = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousAndNext">
+      <MemberSignature Language="C#" Value="PreviousAndNext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridResizeBehavior PreviousAndNext = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridResizeBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

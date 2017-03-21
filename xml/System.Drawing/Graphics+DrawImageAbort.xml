@@ -1,0 +1,23 @@
+<Type Name="Graphics+DrawImageAbort" FullName="System.Drawing.Graphics+DrawImageAbort">
+  <TypeSignature Language="C#" Value="public delegate bool Graphics.DrawImageAbort(IntPtr callbackdata);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Graphics/DrawImageAbort extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="callbackdata" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="callbackdata">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

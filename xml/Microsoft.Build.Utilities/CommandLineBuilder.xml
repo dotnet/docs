@@ -1,0 +1,531 @@
+<Type Name="CommandLineBuilder" FullName="Microsoft.Build.Utilities.CommandLineBuilder">
+  <TypeSignature Language="C#" Value="public class CommandLineBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineBuilder extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineBuilder (bool quoteHyphensOnCommandLine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool quoteHyphensOnCommandLine) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="quoteHyphensOnCommandLine" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="quoteHyphensOnCommandLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendFileNameIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendFileNameIfNotNull (Microsoft.Build.Framework.ITaskItem fileItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendFileNameIfNotNull(class Microsoft.Build.Framework.ITaskItem fileItem) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileItem" Type="Microsoft.Build.Framework.ITaskItem" />
+      </Parameters>
+      <Docs>
+        <param name="fileItem">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendFileNameIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendFileNameIfNotNull (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendFileNameIfNotNull(string fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendFileNamesIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendFileNamesIfNotNull (Microsoft.Build.Framework.ITaskItem[] fileItems, string delimiter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendFileNamesIfNotNull(class Microsoft.Build.Framework.ITaskItem[] fileItems, string delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileItems" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileItems">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendFileNamesIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendFileNamesIfNotNull (string[] fileNames, string delimiter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendFileNamesIfNotNull(string[] fileNames, string delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileNames" Type="System.String[]" />
+        <Parameter Name="delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileNames">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendFileNameWithQuoting">
+      <MemberSignature Language="C#" Value="protected void AppendFileNameWithQuoting (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AppendFileNameWithQuoting(string fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendQuotedTextToBuffer">
+      <MemberSignature Language="C#" Value="protected void AppendQuotedTextToBuffer (System.Text.StringBuilder buffer, string unquotedTextToAppend);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AppendQuotedTextToBuffer(class System.Text.StringBuilder buffer, string unquotedTextToAppend) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Text.StringBuilder" />
+        <Parameter Name="unquotedTextToAppend" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="unquotedTextToAppend">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSpaceIfNotEmpty">
+      <MemberSignature Language="C#" Value="protected void AppendSpaceIfNotEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AppendSpaceIfNotEmpty() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitch">
+      <MemberSignature Language="C#" Value="public void AppendSwitch (string switchName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitch(string switchName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchIfNotNull (string switchName, Microsoft.Build.Framework.ITaskItem parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchIfNotNull(string switchName, class Microsoft.Build.Framework.ITaskItem parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameter" Type="Microsoft.Build.Framework.ITaskItem" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchIfNotNull (string switchName, string parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchIfNotNull(string switchName, string parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchIfNotNull (string switchName, Microsoft.Build.Framework.ITaskItem[] parameters, string delimiter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchIfNotNull(string switchName, class Microsoft.Build.Framework.ITaskItem[] parameters, string delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchIfNotNull (string switchName, string[] parameters, string delimiter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchIfNotNull(string switchName, string[] parameters, string delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameters" Type="System.String[]" />
+        <Parameter Name="delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchUnquotedIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchUnquotedIfNotNull (string switchName, Microsoft.Build.Framework.ITaskItem parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchUnquotedIfNotNull(string switchName, class Microsoft.Build.Framework.ITaskItem parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameter" Type="Microsoft.Build.Framework.ITaskItem" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchUnquotedIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchUnquotedIfNotNull (string switchName, string parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchUnquotedIfNotNull(string switchName, string parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchUnquotedIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchUnquotedIfNotNull (string switchName, Microsoft.Build.Framework.ITaskItem[] parameters, string delimiter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchUnquotedIfNotNull(string switchName, class Microsoft.Build.Framework.ITaskItem[] parameters, string delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameters" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSwitchUnquotedIfNotNull">
+      <MemberSignature Language="C#" Value="public void AppendSwitchUnquotedIfNotNull (string switchName, string[] parameters, string delimiter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendSwitchUnquotedIfNotNull(string switchName, string[] parameters, string delimiter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameters" Type="System.String[]" />
+        <Parameter Name="delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <param name="delimiter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendTextUnquoted">
+      <MemberSignature Language="C#" Value="public void AppendTextUnquoted (string textToAppend);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendTextUnquoted(string textToAppend) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textToAppend" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textToAppend">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendTextWithQuoting">
+      <MemberSignature Language="C#" Value="protected void AppendTextWithQuoting (string textToAppend);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AppendTextWithQuoting(string textToAppend) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textToAppend" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textToAppend">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandLine">
+      <MemberSignature Language="C#" Value="protected System.Text.StringBuilder CommandLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.StringBuilder CommandLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.StringBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsQuotingRequired">
+      <MemberSignature Language="C#" Value="protected virtual bool IsQuotingRequired (string parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsQuotingRequired(string parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyThrowNoEmbeddedDoubleQuotes">
+      <MemberSignature Language="C#" Value="protected virtual void VerifyThrowNoEmbeddedDoubleQuotes (string switchName, string parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void VerifyThrowNoEmbeddedDoubleQuotes(string switchName, string parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switchName" Type="System.String" />
+        <Parameter Name="parameter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="switchName">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

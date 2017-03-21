@@ -1,11 +1,8 @@
 <Type Name="IMembershipCondition" FullName="System.Security.Policy.IMembershipCondition">
   <TypeSignature Language="C#" Value="public interface IMembershipCondition : System.Security.ISecurityEncodable, System.Security.ISecurityPolicyEncodable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMembershipCondition implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Policy.IMembershipCondition" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -29,12 +26,9 @@
     <Member MemberName="Check">
       <MemberSignature Language="C#" Value="public bool Check (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.Check(System.Security.Policy.Evidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,12 +47,9 @@
     <Member MemberName="Copy">
       <MemberSignature Language="C#" Value="public System.Security.Policy.IMembershipCondition Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.IMembershipCondition Copy() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.Copy" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,12 +65,9 @@
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,12 +86,9 @@
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.IMembershipCondition.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

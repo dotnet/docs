@@ -1,0 +1,173 @@
+<Type Name="HostServices" FullName="Microsoft.Build.Execution.HostServices">
+  <TypeSignature Language="C#" Value="public class HostServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostServices extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("#Entries={hostObjectMap.Count}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HostServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost GetHostObject (string projectFile, string targetName, string taskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Framework.ITaskHost GetHostObject(string projectFile, string targetName, string taskName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskHost</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+        <Parameter Name="targetName" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNodeAffinity">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.NodeAffinity GetNodeAffinity (string projectFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Build.Execution.NodeAffinity GetNodeAffinity(string projectFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeAffinity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRenameProject">
+      <MemberSignature Language="C#" Value="public void OnRenameProject (string oldFullPath, string newFullPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnRenameProject(string oldFullPath, string newFullPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldFullPath" Type="System.String" />
+        <Parameter Name="newFullPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldFullPath">To be added.</param>
+        <param name="newFullPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterHostObject">
+      <MemberSignature Language="C#" Value="public void RegisterHostObject (string projectFile, string targetName, string taskName, Microsoft.Build.Framework.ITaskHost hostObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterHostObject(string projectFile, string targetName, string taskName, class Microsoft.Build.Framework.ITaskHost hostObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+        <Parameter Name="targetName" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+        <Parameter Name="hostObject" Type="Microsoft.Build.Framework.ITaskHost" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">To be added.</param>
+        <param name="targetName">To be added.</param>
+        <param name="taskName">To be added.</param>
+        <param name="hostObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNodeAffinity">
+      <MemberSignature Language="C#" Value="public void SetNodeAffinity (string projectFile, Microsoft.Build.Execution.NodeAffinity nodeAffinity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNodeAffinity(string projectFile, valuetype Microsoft.Build.Execution.NodeAffinity nodeAffinity) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+        <Parameter Name="nodeAffinity" Type="Microsoft.Build.Execution.NodeAffinity" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">To be added.</param>
+        <param name="nodeAffinity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProject">
+      <MemberSignature Language="C#" Value="public void UnregisterProject (string projectFullPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterProject(string projectFullPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFullPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFullPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

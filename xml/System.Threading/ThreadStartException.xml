@@ -1,14 +1,21 @@
 <Type Name="ThreadStartException" FullName="System.Threading.ThreadStartException">
   <TypeSignature Language="C#" Value="public sealed class ThreadStartException : SystemException" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ThreadStartException extends System.SystemException" />
-  <TypeSignature Language="DocId" Value="T:System.Threading.ThreadStartException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThreadStartException extends System.SystemException" />
   <AssemblyInfo>
-    <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.SystemException</BaseTypeName>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="E:\mdoc\binaries\dotnet\netframework-4.5">System.SystemException</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -1,0 +1,2806 @@
+<Type Name="DbSpatialServices" FullName="System.Data.Spatial.DbSpatialServices">
+  <TypeSignature Language="C#" Value="public abstract class DbSpatialServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DbSpatialServices extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DbSpatialServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsBinary">
+      <MemberSignature Language="C#" Value="public abstract byte[] AsBinary (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] AsBinary(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsBinary">
+      <MemberSignature Language="C#" Value="public abstract byte[] AsBinary (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] AsBinary(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsGml">
+      <MemberSignature Language="C#" Value="public abstract string AsGml (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AsGml(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsGml">
+      <MemberSignature Language="C#" Value="public abstract string AsGml (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AsGml(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsText">
+      <MemberSignature Language="C#" Value="public abstract string AsText (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AsText(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsText">
+      <MemberSignature Language="C#" Value="public abstract string AsText (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AsText(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsTextIncludingElevationAndMeasure">
+      <MemberSignature Language="C#" Value="public virtual string AsTextIncludingElevationAndMeasure (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AsTextIncludingElevationAndMeasure(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsTextIncludingElevationAndMeasure">
+      <MemberSignature Language="C#" Value="public virtual string AsTextIncludingElevationAndMeasure (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AsTextIncludingElevationAndMeasure(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buffer">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography Buffer (System.Data.Spatial.DbGeography geographyValue, double distance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography Buffer(class System.Data.Spatial.DbGeography geographyValue, float64 distance) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="distance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="distance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buffer">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry Buffer (System.Data.Spatial.DbGeometry geometryValue, double distance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry Buffer(class System.Data.Spatial.DbGeometry geometryValue, float64 distance) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="distance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="distance">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGeography">
+      <MemberSignature Language="C#" Value="protected static System.Data.Spatial.DbGeography CreateGeography (System.Data.Spatial.DbSpatialServices spatialServices, object providerValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Data.Spatial.DbGeography CreateGeography(class System.Data.Spatial.DbSpatialServices spatialServices, object providerValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spatialServices" Type="System.Data.Spatial.DbSpatialServices" />
+        <Parameter Name="providerValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="spatialServices">To be added.</param>
+        <param name="providerValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGeometry">
+      <MemberSignature Language="C#" Value="protected static System.Data.Spatial.DbGeometry CreateGeometry (System.Data.Spatial.DbSpatialServices spatialServices, object providerValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Data.Spatial.DbGeometry CreateGeometry(class System.Data.Spatial.DbSpatialServices spatialServices, object providerValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spatialServices" Type="System.Data.Spatial.DbSpatialServices" />
+        <Parameter Name="providerValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="spatialServices">To be added.</param>
+        <param name="providerValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProviderValue">
+      <MemberSignature Language="C#" Value="public abstract object CreateProviderValue (System.Data.Spatial.DbGeographyWellKnownValue wellKnownValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateProviderValue(class System.Data.Spatial.DbGeographyWellKnownValue wellKnownValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownValue" Type="System.Data.Spatial.DbGeographyWellKnownValue" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProviderValue">
+      <MemberSignature Language="C#" Value="public abstract object CreateProviderValue (System.Data.Spatial.DbGeometryWellKnownValue wellKnownValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateProviderValue(class System.Data.Spatial.DbGeometryWellKnownValue wellKnownValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownValue" Type="System.Data.Spatial.DbGeometryWellKnownValue" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWellKnownValue">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeographyWellKnownValue CreateWellKnownValue (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeographyWellKnownValue CreateWellKnownValue(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeographyWellKnownValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWellKnownValue">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometryWellKnownValue CreateWellKnownValue (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometryWellKnownValue CreateWellKnownValue(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometryWellKnownValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crosses">
+      <MemberSignature Language="C#" Value="public abstract bool Crosses (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Crosses(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbSpatialServices Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Data.Spatial.DbSpatialServices Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbSpatialServices</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Difference">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography Difference (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography Difference(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Difference">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry Difference (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry Difference(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disjoint">
+      <MemberSignature Language="C#" Value="public abstract bool Disjoint (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Disjoint(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disjoint">
+      <MemberSignature Language="C#" Value="public abstract bool Disjoint (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Disjoint(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distance">
+      <MemberSignature Language="C#" Value="public abstract double Distance (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 Distance(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distance">
+      <MemberSignature Language="C#" Value="public abstract double Distance (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 Distance(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAt">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography ElementAt (System.Data.Spatial.DbGeography geographyValue, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography ElementAt(class System.Data.Spatial.DbGeography geographyValue, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAt">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry ElementAt (System.Data.Spatial.DbGeometry geometryValue, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry ElementAt(class System.Data.Spatial.DbGeometry geometryValue, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyCollectionFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyCollectionFromBinary (byte[] geographyCollectionWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyCollectionFromBinary(unsigned int8[] geographyCollectionWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyCollectionWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geographyCollectionWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyCollectionFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyCollectionFromText (string geographyCollectionWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyCollectionFromText(string geographyCollectionWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyCollectionWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geographyCollectionWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromBinary (byte[] wellKnownBinary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromBinary(unsigned int8[] wellKnownBinary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownBinary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromBinary (byte[] wellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromBinary(unsigned int8[] wellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromGml">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromGml (string geographyMarkup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromGml(string geographyMarkup) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyMarkup" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="geographyMarkup">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromGml">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromGml (string geographyMarkup, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromGml(string geographyMarkup, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyMarkup" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geographyMarkup">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromProviderValue">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromProviderValue (object providerValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromProviderValue(object providerValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="providerValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromText (string wellKnownText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromText(string wellKnownText) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyFromText (string wellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyFromText(string wellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyLineFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyLineFromBinary (byte[] lineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyLineFromBinary(unsigned int8[] lineWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyLineFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyLineFromText (string lineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyLineFromText(string lineWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiLineFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyMultiLineFromBinary (byte[] multiLineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyMultiLineFromBinary(unsigned int8[] multiLineWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiLineWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiLineWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiLineFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyMultiLineFromText (string multiLineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyMultiLineFromText(string multiLineWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiLineWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiLineWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiPointFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyMultiPointFromBinary (byte[] multiPointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyMultiPointFromBinary(unsigned int8[] multiPointWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPointWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPointWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiPointFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyMultiPointFromText (string multiPointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyMultiPointFromText(string multiPointWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPointWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPointWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiPolygonFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyMultiPolygonFromBinary (byte[] multiPolygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyMultiPolygonFromBinary(unsigned int8[] multiPolygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPolygonWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPolygonWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiPolygonFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyMultiPolygonFromText (string multiPolygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyMultiPolygonFromText(string multiPolygonWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPolygonWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPolygonWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyPointFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyPointFromBinary (byte[] pointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyPointFromBinary(unsigned int8[] pointWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyPointFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyPointFromText (string pointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyPointFromText(string pointWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyPolygonFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyPolygonFromBinary (byte[] polygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyPolygonFromBinary(unsigned int8[] polygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="polygonWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="polygonWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyPolygonFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GeographyPolygonFromText (string polygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GeographyPolygonFromText(string polygonWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="polygonWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="polygonWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCollectionFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryCollectionFromBinary (byte[] geometryCollectionWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryCollectionFromBinary(unsigned int8[] geometryCollectionWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryCollectionWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryCollectionWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCollectionFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryCollectionFromText (string geometryCollectionWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryCollectionFromText(string geometryCollectionWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryCollectionWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryCollectionWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromBinary (byte[] wellKnownBinary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromBinary(unsigned int8[] wellKnownBinary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownBinary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromBinary (byte[] wellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromBinary(unsigned int8[] wellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromGml">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromGml (string geometryMarkup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromGml(string geometryMarkup) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryMarkup" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="geometryMarkup">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromGml">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromGml (string geometryMarkup, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromGml(string geometryMarkup, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryMarkup" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryMarkup">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromProviderValue">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromProviderValue (object providerValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromProviderValue(object providerValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="providerValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromText (string wellKnownText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromText(string wellKnownText) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryFromText (string wellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryFromText(string wellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryLineFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryLineFromBinary (byte[] lineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryLineFromBinary(unsigned int8[] lineWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryLineFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryLineFromText (string lineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryLineFromText(string lineWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiLineFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryMultiLineFromBinary (byte[] multiLineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryMultiLineFromBinary(unsigned int8[] multiLineWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiLineWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiLineWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiLineFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryMultiLineFromText (string multiLineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryMultiLineFromText(string multiLineWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiLineWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiLineWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiPointFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryMultiPointFromBinary (byte[] multiPointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryMultiPointFromBinary(unsigned int8[] multiPointWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPointWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPointWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiPointFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryMultiPointFromText (string multiPointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryMultiPointFromText(string multiPointWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPointWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPointWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiPolygonFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryMultiPolygonFromBinary (byte[] multiPolygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryMultiPolygonFromBinary(unsigned int8[] multiPolygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPolygonWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPolygonWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiPolygonFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryMultiPolygonFromText (string multiPolygonKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryMultiPolygonFromText(string multiPolygonKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPolygonKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPolygonKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryPointFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryPointFromBinary (byte[] pointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryPointFromBinary(unsigned int8[] pointWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryPointFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryPointFromText (string pointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryPointFromText(string pointWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryPolygonFromBinary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryPolygonFromBinary (byte[] polygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryPolygonFromBinary(unsigned int8[] polygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="polygonWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="polygonWellKnownBinary">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryPolygonFromText">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GeometryPolygonFromText (string polygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GeometryPolygonFromText(string polygonWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="polygonWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="polygonWellKnownText">To be added.</param>
+        <param name="coordinateSystemId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArea">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetArea (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetArea(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArea">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetArea (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetArea(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoundary">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetBoundary (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetBoundary(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCentroid">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetCentroid (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetCentroid(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConvexHull">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetConvexHull (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetConvexHull(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCoordinateSystemId">
+      <MemberSignature Language="C#" Value="public abstract int GetCoordinateSystemId (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCoordinateSystemId(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCoordinateSystemId">
+      <MemberSignature Language="C#" Value="public abstract int GetCoordinateSystemId (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCoordinateSystemId(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDimension">
+      <MemberSignature Language="C#" Value="public abstract int GetDimension (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDimension(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDimension">
+      <MemberSignature Language="C#" Value="public abstract int GetDimension (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDimension(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementCount">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;int&gt; GetElementCount (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;int32&gt; GetElementCount(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementCount">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;int&gt; GetElementCount (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;int32&gt; GetElementCount(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElevation">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetElevation (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetElevation(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElevation">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetElevation (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetElevation(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndPoint">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GetEndPoint (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GetEndPoint(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndPoint">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetEndPoint (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetEndPoint(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnvelope">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetEnvelope (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetEnvelope(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExteriorRing">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetExteriorRing (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetExteriorRing(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInteriorRingCount">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;int&gt; GetInteriorRingCount (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;int32&gt; GetInteriorRingCount(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsClosed">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;bool&gt; GetIsClosed (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;bool&gt; GetIsClosed(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsClosed">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;bool&gt; GetIsClosed (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;bool&gt; GetIsClosed(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsEmpty">
+      <MemberSignature Language="C#" Value="public abstract bool GetIsEmpty (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetIsEmpty(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsEmpty">
+      <MemberSignature Language="C#" Value="public abstract bool GetIsEmpty (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetIsEmpty(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsRing">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;bool&gt; GetIsRing (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;bool&gt; GetIsRing(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsSimple">
+      <MemberSignature Language="C#" Value="public abstract bool GetIsSimple (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetIsSimple(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsValid">
+      <MemberSignature Language="C#" Value="public abstract bool GetIsValid (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetIsValid(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLatitude">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetLatitude (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetLatitude(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLength">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetLength (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetLength(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLength">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetLength (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetLength(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLongitude">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetLongitude (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetLongitude(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMeasure">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetMeasure (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetMeasure(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMeasure">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetMeasure (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetMeasure(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPointCount">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;int&gt; GetPointCount (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;int32&gt; GetPointCount(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPointCount">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;int&gt; GetPointCount (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;int32&gt; GetPointCount(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPointOnSurface">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetPointOnSurface (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetPointOnSurface(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpatialTypeName">
+      <MemberSignature Language="C#" Value="public abstract string GetSpatialTypeName (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSpatialTypeName(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpatialTypeName">
+      <MemberSignature Language="C#" Value="public abstract string GetSpatialTypeName (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSpatialTypeName(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStartPoint">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GetStartPoint (System.Data.Spatial.DbGeography geographyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GetStartPoint(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStartPoint">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetStartPoint (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetStartPoint(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXCoordinate">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetXCoordinate (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetXCoordinate(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetYCoordinate">
+      <MemberSignature Language="C#" Value="public abstract Nullable&lt;double&gt; GetYCoordinate (System.Data.Spatial.DbGeometry geometryValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;float64&gt; GetYCoordinate(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InteriorRingAt">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry InteriorRingAt (System.Data.Spatial.DbGeometry geometryValue, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry InteriorRingAt(class System.Data.Spatial.DbGeometry geometryValue, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersection">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography Intersection (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography Intersection(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersection">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry Intersection (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry Intersection(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersects">
+      <MemberSignature Language="C#" Value="public abstract bool Intersects (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Intersects(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersects">
+      <MemberSignature Language="C#" Value="public abstract bool Intersects (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Intersects(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overlaps">
+      <MemberSignature Language="C#" Value="public abstract bool Overlaps (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Overlaps(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointAt">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography PointAt (System.Data.Spatial.DbGeography geographyValue, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography PointAt(class System.Data.Spatial.DbGeography geographyValue, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointAt">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry PointAt (System.Data.Spatial.DbGeometry geometryValue, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry PointAt(class System.Data.Spatial.DbGeometry geometryValue, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relate">
+      <MemberSignature Language="C#" Value="public abstract bool Relate (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry, string matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Relate(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry, string matrix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="matrix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <param name="matrix">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpatialEquals">
+      <MemberSignature Language="C#" Value="public abstract bool SpatialEquals (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SpatialEquals(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpatialEquals">
+      <MemberSignature Language="C#" Value="public abstract bool SpatialEquals (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SpatialEquals(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymmetricDifference">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography SymmetricDifference (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography SymmetricDifference(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymmetricDifference">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry SymmetricDifference (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry SymmetricDifference(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Touches">
+      <MemberSignature Language="C#" Value="public abstract bool Touches (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Touches(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography Union (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography otherGeography);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography Union(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography otherGeography) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
+        <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
+      </Parameters>
+      <Docs>
+        <param name="geographyValue">To be added.</param>
+        <param name="otherGeography">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry Union (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry Union(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Within">
+      <MemberSignature Language="C#" Value="public abstract bool Within (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry otherGeometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Within(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry otherGeometry) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryValue">To be added.</param>
+        <param name="otherGeometry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

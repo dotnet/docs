@@ -1,0 +1,335 @@
+<Type Name="CommandManager" FullName="System.Windows.Input.CommandManager">
+  <TypeSignature Language="C#" Value="public sealed class CommandManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommandManager extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCanExecuteHandler">
+      <MemberSignature Language="C#" Value="public static void AddCanExecuteHandler (System.Windows.UIElement element, System.Windows.Input.CanExecuteRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddCanExecuteHandler(class System.Windows.UIElement element, class System.Windows.Input.CanExecuteRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddExecutedHandler">
+      <MemberSignature Language="C#" Value="public static void AddExecutedHandler (System.Windows.UIElement element, System.Windows.Input.ExecutedRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddExecutedHandler(class System.Windows.UIElement element, class System.Windows.Input.ExecutedRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPreviewCanExecuteHandler">
+      <MemberSignature Language="C#" Value="public static void AddPreviewCanExecuteHandler (System.Windows.UIElement element, System.Windows.Input.CanExecuteRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPreviewCanExecuteHandler(class System.Windows.UIElement element, class System.Windows.Input.CanExecuteRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPreviewExecutedHandler">
+      <MemberSignature Language="C#" Value="public static void AddPreviewExecutedHandler (System.Windows.UIElement element, System.Windows.Input.ExecutedRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPreviewExecutedHandler(class System.Windows.UIElement element, class System.Windows.Input.ExecutedRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecuteEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent CanExecuteEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent CanExecuteEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent ExecutedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent ExecutedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateRequerySuggested">
+      <MemberSignature Language="C#" Value="public static void InvalidateRequerySuggested ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvalidateRequerySuggested() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewCanExecuteEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent PreviewCanExecuteEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent PreviewCanExecuteEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewExecutedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent PreviewExecutedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent PreviewExecutedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClassCommandBinding">
+      <MemberSignature Language="C#" Value="public static void RegisterClassCommandBinding (Type type, System.Windows.Input.CommandBinding commandBinding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassCommandBinding(class System.Type type, class System.Windows.Input.CommandBinding commandBinding) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="commandBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClassInputBinding">
+      <MemberSignature Language="C#" Value="public static void RegisterClassInputBinding (Type type, System.Windows.Input.InputBinding inputBinding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClassInputBinding(class System.Type type, class System.Windows.Input.InputBinding inputBinding) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="inputBinding" Type="System.Windows.Input.InputBinding" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="inputBinding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCanExecuteHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveCanExecuteHandler (System.Windows.UIElement element, System.Windows.Input.CanExecuteRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveCanExecuteHandler(class System.Windows.UIElement element, class System.Windows.Input.CanExecuteRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveExecutedHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveExecutedHandler (System.Windows.UIElement element, System.Windows.Input.ExecutedRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveExecutedHandler(class System.Windows.UIElement element, class System.Windows.Input.ExecutedRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePreviewCanExecuteHandler">
+      <MemberSignature Language="C#" Value="public static void RemovePreviewCanExecuteHandler (System.Windows.UIElement element, System.Windows.Input.CanExecuteRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemovePreviewCanExecuteHandler(class System.Windows.UIElement element, class System.Windows.Input.CanExecuteRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePreviewExecutedHandler">
+      <MemberSignature Language="C#" Value="public static void RemovePreviewExecutedHandler (System.Windows.UIElement element, System.Windows.Input.ExecutedRoutedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemovePreviewExecutedHandler(class System.Windows.UIElement element, class System.Windows.Input.ExecutedRoutedEventHandler handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequerySuggested">
+      <MemberSignature Language="C#" Value="public static event EventHandler RequerySuggested;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RequerySuggested" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

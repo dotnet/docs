@@ -1,0 +1,23 @@
+<Type Name="PublishServiceCallback" FullName="System.Activities.Presentation.PublishServiceCallback">
+  <TypeSignature Language="C#" Value="public delegate object PublishServiceCallback(Type serviceType);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PublishServiceCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="serviceType" Type="System.Type" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Object</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="serviceType">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,117 @@
+<Type Name="IRowsetNotify" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify">
+  <TypeSignature Language="C#" Value="public interface IRowsetNotify" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetNotify" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0c733a83-2a1c-11ce-ade5-00aa0044773d")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnFieldChange">
+      <MemberSignature Language="C#" Value="public int OnFieldChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int hRow, int cColumns, int[] rgColumns, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnFieldChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 hRow, int32 cColumns, int32[] rgColumns, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="hRow" Type="System.Int32" />
+        <Parameter Name="cColumns" Type="System.Int32" />
+        <Parameter Name="rgColumns" Type="System.Int32[]" />
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowset">To be added.</param>
+        <param name="hRow">To be added.</param>
+        <param name="cColumns">To be added.</param>
+        <param name="rgColumns">To be added.</param>
+        <param name="dbReason">To be added.</param>
+        <param name="eventPhase">To be added.</param>
+        <param name="fCantDeny">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRowChange">
+      <MemberSignature Language="C#" Value="public int OnRowChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int cRows, int[] rghRows, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 cRows, int32[] rghRows, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="cRows" Type="System.Int32" />
+        <Parameter Name="rghRows" Type="System.Int32[]" />
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowset">To be added.</param>
+        <param name="cRows">To be added.</param>
+        <param name="rghRows">To be added.</param>
+        <param name="dbReason">To be added.</param>
+        <param name="eventPhase">To be added.</param>
+        <param name="fCantDeny">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRowsetChange">
+      <MemberSignature Language="C#" Value="public int OnRowsetChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowsetChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowset">To be added.</param>
+        <param name="dbReason">To be added.</param>
+        <param name="eventPhase">To be added.</param>
+        <param name="fCantDeny">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

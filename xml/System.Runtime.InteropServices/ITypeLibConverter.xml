@@ -1,11 +1,8 @@
 <Type Name="ITypeLibConverter" FullName="System.Runtime.InteropServices.ITypeLibConverter">
   <TypeSignature Language="C#" Value="public interface ITypeLibConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeLibConverter" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ITypeLibConverter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -28,12 +25,9 @@
     <Member MemberName="ConvertAssemblyToTypeLib">
       <MemberSignature Language="C#" Value="public object ConvertAssemblyToTypeLib (System.Reflection.Assembly assembly, string typeLibName, System.Runtime.InteropServices.TypeLibExporterFlags flags, System.Runtime.InteropServices.ITypeLibExporterNotifySink notifySink);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertAssemblyToTypeLib(class System.Reflection.Assembly assembly, string typeLibName, valuetype System.Runtime.InteropServices.TypeLibExporterFlags flags, class System.Runtime.InteropServices.ITypeLibExporterNotifySink notifySink) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibConverter.ConvertAssemblyToTypeLib(System.Reflection.Assembly,System.String,System.Runtime.InteropServices.TypeLibExporterFlags,System.Runtime.InteropServices.ITypeLibExporterNotifySink)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,12 +52,9 @@
     <Member MemberName="ConvertTypeLibToAssembly">
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.AssemblyBuilder ConvertTypeLibToAssembly (object typeLib, string asmFileName, int flags, System.Runtime.InteropServices.ITypeLibImporterNotifySink notifySink, byte[] publicKey, System.Reflection.StrongNameKeyPair keyPair, bool unsafeInterfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder ConvertTypeLibToAssembly(object typeLib, string asmFileName, int32 flags, class System.Runtime.InteropServices.ITypeLibImporterNotifySink notifySink, unsigned int8[] publicKey, class System.Reflection.StrongNameKeyPair keyPair, bool unsafeInterfaces) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object,System.String,System.Int32,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,12 +85,9 @@
     <Member MemberName="ConvertTypeLibToAssembly">
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.AssemblyBuilder ConvertTypeLibToAssembly (object typeLib, string asmFileName, System.Runtime.InteropServices.TypeLibImporterFlags flags, System.Runtime.InteropServices.ITypeLibImporterNotifySink notifySink, byte[] publicKey, System.Reflection.StrongNameKeyPair keyPair, string asmNamespace, Version asmVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.AssemblyBuilder ConvertTypeLibToAssembly(object typeLib, string asmFileName, valuetype System.Runtime.InteropServices.TypeLibImporterFlags flags, class System.Runtime.InteropServices.ITypeLibImporterNotifySink notifySink, unsigned int8[] publicKey, class System.Reflection.StrongNameKeyPair keyPair, string asmNamespace, class System.Version asmVersion) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object,System.String,System.Runtime.InteropServices.TypeLibImporterFlags,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.String,System.Version)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,12 +120,9 @@
     <Member MemberName="GetPrimaryInteropAssembly">
       <MemberSignature Language="C#" Value="public bool GetPrimaryInteropAssembly (Guid g, int major, int minor, int lcid, out string asmName, out string asmCodeBase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetPrimaryInteropAssembly(valuetype System.Guid g, int32 major, int32 minor, int32 lcid, string asmName, string asmCodeBase) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

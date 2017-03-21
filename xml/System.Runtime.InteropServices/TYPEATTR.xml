@@ -1,11 +1,8 @@
 <Type Name="TYPEATTR" FullName="System.Runtime.InteropServices.TYPEATTR">
   <TypeSignature Language="C#" Value="public struct TYPEATTR" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit TYPEATTR extends System.ValueType" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TYPEATTR" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,12 +22,9 @@
     <Member MemberName="cbAlignment">
       <MemberSignature Language="C#" Value="public short cbAlignment;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cbAlignment" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.cbAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,12 +38,9 @@
     <Member MemberName="cbSizeInstance">
       <MemberSignature Language="C#" Value="public int cbSizeInstance;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 cbSizeInstance" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.cbSizeInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,12 +54,9 @@
     <Member MemberName="cbSizeVft">
       <MemberSignature Language="C#" Value="public short cbSizeVft;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cbSizeVft" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.cbSizeVft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,12 +70,9 @@
     <Member MemberName="cFuncs">
       <MemberSignature Language="C#" Value="public short cFuncs;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cFuncs" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.cFuncs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,12 +86,9 @@
     <Member MemberName="cImplTypes">
       <MemberSignature Language="C#" Value="public short cImplTypes;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cImplTypes" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.cImplTypes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,12 +102,9 @@
     <Member MemberName="cVars">
       <MemberSignature Language="C#" Value="public short cVars;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cVars" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.cVars" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,12 +118,9 @@
     <Member MemberName="dwReserved">
       <MemberSignature Language="C#" Value="public int dwReserved;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 dwReserved" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.dwReserved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,12 +134,9 @@
     <Member MemberName="guid">
       <MemberSignature Language="C#" Value="public Guid guid;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Guid guid" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,12 +150,9 @@
     <Member MemberName="idldescType">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.IDLDESC idldescType;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.IDLDESC idldescType" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.idldescType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,12 +166,9 @@
     <Member MemberName="lcid">
       <MemberSignature Language="C#" Value="public int lcid;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 lcid" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.lcid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,12 +182,9 @@
     <Member MemberName="lpstrSchema">
       <MemberSignature Language="C#" Value="public IntPtr lpstrSchema;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpstrSchema" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.lpstrSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,12 +198,9 @@
     <Member MemberName="MEMBER_ID_NIL">
       <MemberSignature Language="C#" Value="public const int MEMBER_ID_NIL = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MEMBER_ID_NIL = (-1)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.MEMBER_ID_NIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,12 +215,9 @@
     <Member MemberName="memidConstructor">
       <MemberSignature Language="C#" Value="public int memidConstructor;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 memidConstructor" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.memidConstructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,12 +231,9 @@
     <Member MemberName="memidDestructor">
       <MemberSignature Language="C#" Value="public int memidDestructor;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 memidDestructor" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.memidDestructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,12 +247,9 @@
     <Member MemberName="tdescAlias">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.TYPEDESC tdescAlias;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.TYPEDESC tdescAlias" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.tdescAlias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,12 +263,9 @@
     <Member MemberName="typekind">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.TYPEKIND typekind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.TYPEKIND typekind" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.typekind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,12 +279,9 @@
     <Member MemberName="wMajorVerNum">
       <MemberSignature Language="C#" Value="public short wMajorVerNum;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wMajorVerNum" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.wMajorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,12 +295,9 @@
     <Member MemberName="wMinorVerNum">
       <MemberSignature Language="C#" Value="public short wMinorVerNum;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wMinorVerNum" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.wMinorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,12 +311,9 @@
     <Member MemberName="wTypeFlags">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.TYPEFLAGS wTypeFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.TYPEFLAGS wTypeFlags" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEATTR.wTypeFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

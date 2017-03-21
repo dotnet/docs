@@ -1,0 +1,482 @@
+<Type Name="OleDbLiteral" FullName="System.Data.OleDb.OleDbLiteral">
+  <TypeSignature Language="C#" Value="public enum OleDbLiteral" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbLiteral extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Binary_Literal">
+      <MemberSignature Language="C#" Value="Binary_Literal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Binary_Literal = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Catalog_Name">
+      <MemberSignature Language="C#" Value="Catalog_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Catalog_Name = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Catalog_Separator">
+      <MemberSignature Language="C#" Value="Catalog_Separator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Catalog_Separator = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Char_Literal">
+      <MemberSignature Language="C#" Value="Char_Literal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Char_Literal = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Column_Alias">
+      <MemberSignature Language="C#" Value="Column_Alias" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Column_Alias = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Column_Name">
+      <MemberSignature Language="C#" Value="Column_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Column_Name = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Correlation_Name">
+      <MemberSignature Language="C#" Value="Correlation_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Correlation_Name = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cube_Name">
+      <MemberSignature Language="C#" Value="Cube_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Cube_Name = int32(21)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cursor_Name">
+      <MemberSignature Language="C#" Value="Cursor_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Cursor_Name = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dimension_Name">
+      <MemberSignature Language="C#" Value="Dimension_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Dimension_Name = int32(22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape_Percent_Prefix">
+      <MemberSignature Language="C#" Value="Escape_Percent_Prefix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Percent_Prefix = int32(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape_Percent_Suffix">
+      <MemberSignature Language="C#" Value="Escape_Percent_Suffix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Percent_Suffix = int32(29)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape_Underscore_Prefix">
+      <MemberSignature Language="C#" Value="Escape_Underscore_Prefix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Underscore_Prefix = int32(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape_Underscore_Suffix">
+      <MemberSignature Language="C#" Value="Escape_Underscore_Suffix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Escape_Underscore_Suffix = int32(30)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hierarchy_Name">
+      <MemberSignature Language="C#" Value="Hierarchy_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Hierarchy_Name = int32(23)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Index_Name">
+      <MemberSignature Language="C#" Value="Index_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Index_Name = int32(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Invalid = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Level_Name">
+      <MemberSignature Language="C#" Value="Level_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Level_Name = int32(24)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Like_Percent">
+      <MemberSignature Language="C#" Value="Like_Percent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Like_Percent = int32(12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Like_Underscore">
+      <MemberSignature Language="C#" Value="Like_Underscore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Like_Underscore = int32(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Member_Name">
+      <MemberSignature Language="C#" Value="Member_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Member_Name = int32(25)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Procedure_Name">
+      <MemberSignature Language="C#" Value="Procedure_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Procedure_Name = int32(14)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Property_Name">
+      <MemberSignature Language="C#" Value="Property_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Property_Name = int32(26)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quote_Prefix">
+      <MemberSignature Language="C#" Value="Quote_Prefix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Quote_Prefix = int32(15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quote_Suffix">
+      <MemberSignature Language="C#" Value="Quote_Suffix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Quote_Suffix = int32(28)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema_Name">
+      <MemberSignature Language="C#" Value="Schema_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Schema_Name = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema_Separator">
+      <MemberSignature Language="C#" Value="Schema_Separator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Schema_Separator = int32(27)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Table_Name">
+      <MemberSignature Language="C#" Value="Table_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Table_Name = int32(17)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text_Command">
+      <MemberSignature Language="C#" Value="Text_Command" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral Text_Command = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="User_Name">
+      <MemberSignature Language="C#" Value="User_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral User_Name = int32(19)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="View_Name">
+      <MemberSignature Language="C#" Value="View_Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OleDb.OleDbLiteral View_Name = int32(20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbLiteral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

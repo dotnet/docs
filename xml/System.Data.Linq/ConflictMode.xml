@@ -1,0 +1,47 @@
+<Type Name="ConflictMode" FullName="System.Data.Linq.ConflictMode">
+  <TypeSignature Language="C#" Value="public enum ConflictMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConflictMode extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContinueOnConflict">
+      <MemberSignature Language="C#" Value="ContinueOnConflict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.ConflictMode ContinueOnConflict = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.ConflictMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailOnFirstConflict">
+      <MemberSignature Language="C#" Value="FailOnFirstConflict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.ConflictMode FailOnFirstConflict = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.ConflictMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

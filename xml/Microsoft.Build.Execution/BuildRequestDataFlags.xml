@@ -1,0 +1,82 @@
+<Type Name="BuildRequestDataFlags" FullName="Microsoft.Build.Execution.BuildRequestDataFlags">
+  <TypeSignature Language="C#" Value="public enum BuildRequestDataFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildRequestDataFlags extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IgnoreExistingProjectState">
+      <MemberSignature Language="C#" Value="IgnoreExistingProjectState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags IgnoreExistingProjectState = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideProjectStateAfterBuild">
+      <MemberSignature Language="C#" Value="ProvideProjectStateAfterBuild" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags ProvideProjectStateAfterBuild = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceExistingProjectInstance">
+      <MemberSignature Language="C#" Value="ReplaceExistingProjectInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags ReplaceExistingProjectInstance = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,208 @@
+<Type Name="JSFunctionAttributeEnum" FullName="Microsoft.JScript.JSFunctionAttributeEnum">
+  <TypeSignature Language="C#" Value="public enum JSFunctionAttributeEnum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSFunctionAttributeEnum extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("BA5ED019-F669-3C35-93AC-3ABF776B62B3")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClassicFunction">
+      <MemberSignature Language="C#" Value="ClassicFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum ClassicFunction = int32(35)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassicNestedFunction">
+      <MemberSignature Language="C#" Value="ClassicNestedFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum ClassicNestedFunction = int32(47)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasArguments">
+      <MemberSignature Language="C#" Value="HasArguments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum HasArguments = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasEngine">
+      <MemberSignature Language="C#" Value="HasEngine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum HasEngine = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasStackFrame">
+      <MemberSignature Language="C#" Value="HasStackFrame" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum HasStackFrame = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasThisObject">
+      <MemberSignature Language="C#" Value="HasThisObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum HasThisObject = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasVarArgs">
+      <MemberSignature Language="C#" Value="HasVarArgs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum HasVarArgs = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpandoMethod">
+      <MemberSignature Language="C#" Value="IsExpandoMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum IsExpandoMethod = int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInstanceNestedClassConstructor">
+      <MemberSignature Language="C#" Value="IsInstanceNestedClassConstructor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum IsInstanceNestedClassConstructor = int32(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNested">
+      <MemberSignature Language="C#" Value="IsNested" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum IsNested = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NestedFunction">
+      <MemberSignature Language="C#" Value="NestedFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum NestedFunction = int32(44)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSFunctionAttributeEnum None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSFunctionAttributeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

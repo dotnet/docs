@@ -1,0 +1,26 @@
+<Type Name="DelegateCompletionCallback" FullName="System.Activities.DelegateCompletionCallback">
+  <TypeSignature Language="C#" Value="public delegate void DelegateCompletionCallback(NativeActivityContext context, ActivityInstance completedInstance, IDictionary&lt;string,object&gt; outArguments);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DelegateCompletionCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+    <Parameter Name="completedInstance" Type="System.Activities.ActivityInstance" />
+    <Parameter Name="outArguments" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">To be added.</param>
+    <param name="completedInstance">To be added.</param>
+    <param name="outArguments">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

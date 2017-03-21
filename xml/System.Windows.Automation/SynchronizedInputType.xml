@@ -1,0 +1,115 @@
+<Type Name="SynchronizedInputType" FullName="System.Windows.Automation.SynchronizedInputType">
+  <TypeSignature Language="C#" Value="public enum SynchronizedInputType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SynchronizedInputType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("fdc8f176-aed2-477a-8c89-5604c66f278d")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyDown">
+      <MemberSignature Language="C#" Value="KeyDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType KeyDown = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyUp">
+      <MemberSignature Language="C#" Value="KeyUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType KeyUp = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseLeftButtonDown">
+      <MemberSignature Language="C#" Value="MouseLeftButtonDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseLeftButtonDown = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseLeftButtonUp">
+      <MemberSignature Language="C#" Value="MouseLeftButtonUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseLeftButtonUp = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseRightButtonDown">
+      <MemberSignature Language="C#" Value="MouseRightButtonDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseRightButtonDown = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseRightButtonUp">
+      <MemberSignature Language="C#" Value="MouseRightButtonUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseRightButtonUp = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

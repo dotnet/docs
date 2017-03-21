@@ -1,12 +1,13 @@
 <Type Name="StreamingContextStates" FullName="System.Runtime.Serialization.StreamingContextStates">
   <TypeSignature Language="C#" Value="public enum StreamingContextStates" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StreamingContextStates extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.StreamingContextStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StreamingContextStates extends System.Enum" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -14,9 +15,6 @@
   <Attributes>
     <Attribute>
       <AttributeName>System.Flags</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,13 +25,14 @@
     <Member MemberName="All">
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates All = int32(255)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -45,13 +44,14 @@
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="Clone" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates Clone = int32(64)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Clone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -63,13 +63,14 @@
     <Member MemberName="CrossAppDomain">
       <MemberSignature Language="C#" Value="CrossAppDomain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates CrossAppDomain = int32(128)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.CrossAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -81,13 +82,14 @@
     <Member MemberName="CrossMachine">
       <MemberSignature Language="C#" Value="CrossMachine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates CrossMachine = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.CrossMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -99,13 +101,14 @@
     <Member MemberName="CrossProcess">
       <MemberSignature Language="C#" Value="CrossProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates CrossProcess = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.CrossProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -117,13 +120,14 @@
     <Member MemberName="File">
       <MemberSignature Language="C#" Value="File" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates File = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.File" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -135,13 +139,14 @@
     <Member MemberName="Other">
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates Other = int32(32)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -153,13 +158,14 @@
     <Member MemberName="Persistence">
       <MemberSignature Language="C#" Value="Persistence" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates Persistence = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Persistence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>
@@ -171,13 +177,14 @@
     <Member MemberName="Remoting">
       <MemberSignature Language="C#" Value="Remoting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Serialization.StreamingContextStates Remoting = int32(16)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.StreamingContextStates.Remoting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContextStates</ReturnType>

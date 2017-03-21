@@ -1,11 +1,8 @@
 <Type Name="UCOMIEnumConnectionPoints" FullName="System.Runtime.InteropServices.UCOMIEnumConnectionPoints">
   <TypeSignature Language="C#" Value="public interface UCOMIEnumConnectionPoints" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIEnumConnectionPoints" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIEnumConnectionPoints" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -28,12 +25,9 @@
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.UCOMIEnumConnectionPoints ppenum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone(class System.Runtime.InteropServices.UCOMIEnumConnectionPoints ppenum) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,12 +45,9 @@
     <Member MemberName="Next">
       <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.UCOMIConnectionPoint[] rgelt, out int pceltFetched);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, class System.Runtime.InteropServices.UCOMIConnectionPoint[] rgelt, int32 pceltFetched) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.UCOMIConnectionPoint[],System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,12 +70,9 @@
     <Member MemberName="Reset">
       <MemberSignature Language="C#" Value="public int Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Reset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,12 +88,9 @@
     <Member MemberName="Skip">
       <MemberSignature Language="C#" Value="public int Skip (int celt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(int32 celt) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Skip(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

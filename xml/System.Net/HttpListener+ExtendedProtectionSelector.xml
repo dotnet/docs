@@ -1,0 +1,27 @@
+<Type Name="HttpListener+ExtendedProtectionSelector" FullName="System.Net.HttpListener+ExtendedProtectionSelector">
+  <TypeSignature Language="C#" Value="public delegate System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy HttpListener.ExtendedProtectionSelector(HttpListenerRequest request);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpListener/ExtendedProtectionSelector extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="request" Type="System.Net.HttpListenerRequest" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="request">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,10 +1,17 @@
 <Type Name="Parallel" FullName="System.Threading.Tasks.Parallel">
   <TypeSignature Language="C#" Value="public static class Parallel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Parallel extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Parallel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,11 +25,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (int fromInclusive, int toExclusive, Action&lt;int,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int32 fromInclusive, int32 toExclusive, class System.Action`2&lt;int32, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Action{System.Int32,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -44,11 +58,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (int fromInclusive, int toExclusive, Action&lt;int&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int32 fromInclusive, int32 toExclusive, class System.Action`1&lt;int32&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Action{System.Int32})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -70,11 +91,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (long fromInclusive, long toExclusive, Action&lt;long,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int64 fromInclusive, int64 toExclusive, class System.Action`2&lt;int64, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Action{System.Int64,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -96,11 +124,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (long fromInclusive, long toExclusive, Action&lt;long&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int64 fromInclusive, int64 toExclusive, class System.Action`1&lt;int64&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Action{System.Int64})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -122,11 +157,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (int fromInclusive, int toExclusive, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;int,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int32 fromInclusive, int32 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;int32, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Threading.Tasks.ParallelOptions,System.Action{System.Int32,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -150,11 +192,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (int fromInclusive, int toExclusive, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;int&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int32 fromInclusive, int32 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;int32&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Threading.Tasks.ParallelOptions,System.Action{System.Int32})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -178,11 +227,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (long fromInclusive, long toExclusive, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;long,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int64 fromInclusive, int64 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;int64, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Threading.Tasks.ParallelOptions,System.Action{System.Int64,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -206,11 +262,18 @@
     <Member MemberName="For">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For (long fromInclusive, long toExclusive, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;long&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int64 fromInclusive, int64 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;int64&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Threading.Tasks.ParallelOptions,System.Action{System.Int64})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -234,11 +297,18 @@
     <Member MemberName="For&lt;TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt; (int fromInclusive, int toExclusive, Func&lt;TLocal&gt; localInit, Func&lt;int,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt;(int32 fromInclusive, int32 toExclusive, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;int32, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int32,System.Int32,System.Func{``0},System.Func{System.Int32,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -268,11 +338,18 @@
     <Member MemberName="For&lt;TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt; (long fromInclusive, long toExclusive, Func&lt;TLocal&gt; localInit, Func&lt;long,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt;(int64 fromInclusive, int64 toExclusive, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;int64, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int64,System.Int64,System.Func{``0},System.Func{System.Int64,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -302,11 +379,18 @@
     <Member MemberName="For&lt;TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt; (int fromInclusive, int toExclusive, System.Threading.Tasks.ParallelOptions parallelOptions, Func&lt;TLocal&gt; localInit, Func&lt;int,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt;(int32 fromInclusive, int32 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;int32, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int32,System.Int32,System.Threading.Tasks.ParallelOptions,System.Func{``0},System.Func{System.Int32,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -338,11 +422,18 @@
     <Member MemberName="For&lt;TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt; (long fromInclusive, long toExclusive, System.Threading.Tasks.ParallelOptions parallelOptions, Func&lt;TLocal&gt; localInit, Func&lt;long,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt;(int64 fromInclusive, int64 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;int64, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int64,System.Int64,System.Threading.Tasks.ParallelOptions,System.Func{``0},System.Func{System.Int64,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -374,11 +465,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt; source, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState,long&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.OrderablePartitioner`1&lt;!!TSource&gt; source, class System.Action`3&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.OrderablePartitioner{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -402,11 +500,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Concurrent.Partitioner&lt;TSource&gt; source, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Action`2&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -430,11 +535,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Concurrent.Partitioner&lt;TSource&gt; source, Action&lt;TSource&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Action`1&lt;!!TSource&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -458,11 +570,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState,long&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Action`3&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -486,11 +605,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Action`2&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -514,11 +640,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, Action&lt;TSource&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Action`1&lt;!!TSource&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -542,11 +675,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState,long&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.OrderablePartitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`3&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.OrderablePartitioner{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -572,11 +712,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Concurrent.Partitioner&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -602,11 +749,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Concurrent.Partitioner&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;TSource&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;!!TSource&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -632,11 +786,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState,long&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`3&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -662,11 +823,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;TSource,System.Threading.Tasks.ParallelLoopState&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -692,11 +860,18 @@
     <Member MemberName="ForEach&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Action&lt;TSource&gt; body);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;!!TSource&gt; body) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -722,11 +897,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt; source, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,long,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Concurrent.OrderablePartitioner`1&lt;!!TSource&gt; source, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`5&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.OrderablePartitioner{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -756,11 +938,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Concurrent.Partitioner&lt;TSource&gt; source, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.Partitioner{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -790,11 +979,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,long,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`5&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -824,11 +1020,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -858,11 +1061,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Concurrent.OrderablePartitioner&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,long,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Concurrent.OrderablePartitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`5&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.OrderablePartitioner{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -894,11 +1104,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Concurrent.Partitioner&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.Partitioner{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -930,11 +1147,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,long,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`5&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -966,11 +1190,18 @@
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource,TLocal&gt; (System.Collections.Generic.IEnumerable&lt;TSource&gt; source, System.Threading.Tasks.ParallelOptions parallelOptions, Func&lt;TLocal&gt; localInit, Func&lt;TSource,System.Threading.Tasks.ParallelLoopState,TLocal,TLocal&gt; body, Action&lt;TLocal&gt; localFinally);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ParallelLoopResult</ReturnType>
@@ -1002,11 +1233,18 @@
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public static void Invoke (Action[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Action[] actions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.Invoke(System.Action[])" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1029,11 +1267,18 @@
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public static void Invoke (System.Threading.Tasks.ParallelOptions parallelOptions, Action[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action[] actions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.Invoke(System.Threading.Tasks.ParallelOptions,System.Action[])" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

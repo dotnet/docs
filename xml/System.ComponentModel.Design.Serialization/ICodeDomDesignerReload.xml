@@ -1,0 +1,36 @@
+<Type Name="ICodeDomDesignerReload" FullName="System.ComponentModel.Design.Serialization.ICodeDomDesignerReload">
+  <TypeSignature Language="C#" Value="public interface ICodeDomDesignerReload" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeDomDesignerReload" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ShouldReloadDesigner">
+      <MemberSignature Language="C#" Value="public bool ShouldReloadDesigner (System.CodeDom.CodeCompileUnit newTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldReloadDesigner(class System.CodeDom.CodeCompileUnit newTree) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newTree" Type="System.CodeDom.CodeCompileUnit" />
+      </Parameters>
+      <Docs>
+        <param name="newTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

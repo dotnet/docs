@@ -1,0 +1,52 @@
+<Type Name="RequestClaimCollection" FullName="System.IdentityModel.Protocols.WSTrust.RequestClaimCollection">
+  <TypeSignature Language="C#" Value="public class RequestClaimCollection : System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.RequestClaim&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestClaimCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Protocols.WSTrust.RequestClaim&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.RequestClaim&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.IdentityModel.Protocols.WSTrust.RequestClaim</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestClaimCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dialect">
+      <MemberSignature Language="C#" Value="public string Dialect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Dialect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

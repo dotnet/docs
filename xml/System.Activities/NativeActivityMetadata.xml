@@ -1,0 +1,834 @@
+<Type Name="NativeActivityMetadata" FullName="System.Activities.NativeActivityMetadata">
+  <TypeSignature Language="C#" Value="public struct NativeActivityMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NativeActivityMetadata extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public void AddArgument (System.Activities.RuntimeArgument argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(class System.Activities.RuntimeArgument argument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.RuntimeArgument" />
+      </Parameters>
+      <Docs>
+        <param name="argument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="public void AddChild (System.Activities.Activity child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Activities.Activity child) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="public void AddChild (System.Activities.Activity child, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Activities.Activity child, object origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Activities.Activity" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="child">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDefaultExtensionProvider&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void AddDefaultExtensionProvider&lt;T&gt; (Func&lt;T&gt; extensionProvider) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDefaultExtensionProvider&lt;class T&gt;(class System.Func`1&lt;!!T&gt; extensionProvider) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="extensionProvider" Type="System.Func&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="extensionProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDelegate">
+      <MemberSignature Language="C#" Value="public void AddDelegate (System.Activities.ActivityDelegate activityDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDelegate(class System.Activities.ActivityDelegate activityDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityDelegate" Type="System.Activities.ActivityDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="activityDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDelegate">
+      <MemberSignature Language="C#" Value="public void AddDelegate (System.Activities.ActivityDelegate activityDelegate, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDelegate(class System.Activities.ActivityDelegate activityDelegate, object origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityDelegate" Type="System.Activities.ActivityDelegate" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="activityDelegate">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplementationChild">
+      <MemberSignature Language="C#" Value="public void AddImplementationChild (System.Activities.Activity implementationChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImplementationChild(class System.Activities.Activity implementationChild) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationChild" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="implementationChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplementationDelegate">
+      <MemberSignature Language="C#" Value="public void AddImplementationDelegate (System.Activities.ActivityDelegate implementationDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImplementationDelegate(class System.Activities.ActivityDelegate implementationDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationDelegate" Type="System.Activities.ActivityDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="implementationDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplementationVariable">
+      <MemberSignature Language="C#" Value="public void AddImplementationVariable (System.Activities.Variable implementationVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImplementationVariable(class System.Activities.Variable implementationVariable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationVariable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="implementationVariable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedChild">
+      <MemberSignature Language="C#" Value="public void AddImportedChild (System.Activities.Activity importedChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedChild(class System.Activities.Activity importedChild) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedChild" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="importedChild">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedChild">
+      <MemberSignature Language="C#" Value="public void AddImportedChild (System.Activities.Activity importedChild, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedChild(class System.Activities.Activity importedChild, object origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedChild" Type="System.Activities.Activity" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="importedChild">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedDelegate">
+      <MemberSignature Language="C#" Value="public void AddImportedDelegate (System.Activities.ActivityDelegate importedDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedDelegate(class System.Activities.ActivityDelegate importedDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedDelegate" Type="System.Activities.ActivityDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="importedDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedDelegate">
+      <MemberSignature Language="C#" Value="public void AddImportedDelegate (System.Activities.ActivityDelegate importedDelegate, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedDelegate(class System.Activities.ActivityDelegate importedDelegate, object origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedDelegate" Type="System.Activities.ActivityDelegate" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="importedDelegate">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddValidationError">
+      <MemberSignature Language="C#" Value="public void AddValidationError (System.Activities.Validation.ValidationError validationError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(class System.Activities.Validation.ValidationError validationError) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationError" Type="System.Activities.Validation.ValidationError" />
+      </Parameters>
+      <Docs>
+        <param name="validationError">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddValidationError">
+      <MemberSignature Language="C#" Value="public void AddValidationError (string validationErrorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(string validationErrorMessage) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationErrorMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="validationErrorMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVariable">
+      <MemberSignature Language="C#" Value="public void AddVariable (System.Activities.Variable variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddVariable(class System.Activities.Variable variable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVariable">
+      <MemberSignature Language="C#" Value="public void AddVariable (System.Activities.Variable variable, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddVariable(class System.Activities.Variable variable, object origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind">
+      <MemberSignature Language="C#" Value="public void Bind (System.Activities.Argument binding, System.Activities.RuntimeArgument argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Bind(class System.Activities.Argument binding, class System.Activities.RuntimeArgument argument) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.Activities.Argument" />
+        <Parameter Name="argument" Type="System.Activities.RuntimeArgument" />
+      </Parameters>
+      <Docs>
+        <param name="binding">To be added.</param>
+        <param name="argument">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment Environment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArgumentsWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; GetArgumentsWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.RuntimeArgument&gt; GetArgumentsWithReflection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; GetChildrenWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; GetChildrenWithReflection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDelegatesWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; GetDelegatesWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; GetDelegatesWithReflection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariablesWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; GetVariablesWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; GetVariablesWithReflection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasViolations">
+      <MemberSignature Language="C#" Value="public bool HasViolations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasViolations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.NativeActivityMetadata left, System.Activities.NativeActivityMetadata right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.NativeActivityMetadata left, valuetype System.Activities.NativeActivityMetadata right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.NativeActivityMetadata" />
+        <Parameter Name="right" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.NativeActivityMetadata left, System.Activities.NativeActivityMetadata right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.NativeActivityMetadata left, valuetype System.Activities.NativeActivityMetadata right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.NativeActivityMetadata" />
+        <Parameter Name="right" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireExtension">
+      <MemberSignature Language="C#" Value="public void RequireExtension (Type extensionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequireExtension(class System.Type extensionType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extensionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="extensionType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireExtension&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void RequireExtension&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequireExtension&lt;class T&gt;() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArgumentsCollection">
+      <MemberSignature Language="C#" Value="public void SetArgumentsCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetArgumentsCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.RuntimeArgument&gt; arguments) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arguments" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetChildrenCollection">
+      <MemberSignature Language="C#" Value="public void SetChildrenCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; children);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetChildrenCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; children) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="children" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="children">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelegatesCollection">
+      <MemberSignature Language="C#" Value="public void SetDelegatesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; delegates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDelegatesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; delegates) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delegates" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="delegates">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImplementationChildrenCollection">
+      <MemberSignature Language="C#" Value="public void SetImplementationChildrenCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; implementationChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImplementationChildrenCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; implementationChildren) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationChildren" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="implementationChildren">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImplementationDelegatesCollection">
+      <MemberSignature Language="C#" Value="public void SetImplementationDelegatesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; implementationDelegates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImplementationDelegatesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; implementationDelegates) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationDelegates" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="implementationDelegates">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImplementationVariablesCollection">
+      <MemberSignature Language="C#" Value="public void SetImplementationVariablesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; implementationVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImplementationVariablesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; implementationVariables) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationVariables" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="implementationVariables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImportedChildrenCollection">
+      <MemberSignature Language="C#" Value="public void SetImportedChildrenCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; importedChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedChildrenCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; importedChildren) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedChildren" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="importedChildren">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImportedDelegatesCollection">
+      <MemberSignature Language="C#" Value="public void SetImportedDelegatesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; importedDelegates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedDelegatesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; importedDelegates) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedDelegates" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="importedDelegates">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValidationErrorsCollection">
+      <MemberSignature Language="C#" Value="public void SetValidationErrorsCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt; validationErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValidationErrorsCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Validation.ValidationError&gt; validationErrors) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationErrors" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="validationErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVariablesCollection">
+      <MemberSignature Language="C#" Value="public void SetVariablesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetVariablesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; variables) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variables">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

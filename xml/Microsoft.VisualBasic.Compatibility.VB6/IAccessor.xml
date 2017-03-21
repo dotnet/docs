@@ -1,0 +1,126 @@
+<Type Name="IAccessor" FullName="Microsoft.VisualBasic.Compatibility.VB6.IAccessor">
+  <TypeSignature Language="C#" Value="public interface IAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0c733a8c-2a1c-11ce-ade5-00aa0044773d")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddRefAccessor">
+      <MemberSignature Language="C#" Value="public void AddRefAccessor (int hAccessor, out int cRefCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void AddRefAccessor(int32 hAccessor, int32 cRefCount) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="cRefCount" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hAccessor">To be added.</param>
+        <param name="cRefCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAccessor">
+      <MemberSignature Language="C#" Value="public void CreateAccessor (int accessorFlags, int cBindings, Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[] bindings, int cbRowSize, out int hAccessor, IntPtr pBindStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void CreateAccessor(int32 accessorFlags, int32 cBindings, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[] bindings, int32 cbRowSize, int32 hAccessor, native int pBindStatus) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accessorFlags" Type="System.Int32" />
+        <Parameter Name="cBindings" Type="System.Int32" />
+        <Parameter Name="bindings" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[]" />
+        <Parameter Name="cbRowSize" Type="System.Int32" />
+        <Parameter Name="hAccessor" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pBindStatus" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="accessorFlags">To be added.</param>
+        <param name="cBindings">To be added.</param>
+        <param name="bindings">To be added.</param>
+        <param name="cbRowSize">To be added.</param>
+        <param name="hAccessor">To be added.</param>
+        <param name="pBindStatus">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBindings">
+      <MemberSignature Language="C#" Value="public void GetBindings (int hAccessor, out int accessorFlags, out int cBindings, out IntPtr rgBindings);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBindings(int32 hAccessor, int32 accessorFlags, int32 cBindings, native int rgBindings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="accessorFlags" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cBindings" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="rgBindings" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hAccessor">To be added.</param>
+        <param name="accessorFlags">To be added.</param>
+        <param name="cBindings">To be added.</param>
+        <param name="rgBindings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseAccessor">
+      <MemberSignature Language="C#" Value="public void ReleaseAccessor (int hAccessor, out int cRefCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseAccessor(int32 hAccessor, int32 cRefCount) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="cRefCount" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hAccessor">To be added.</param>
+        <param name="cRefCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

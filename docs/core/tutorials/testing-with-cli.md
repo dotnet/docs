@@ -28,7 +28,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 |__Program.cs
 ```
 
-However, this only works well when the size of your project is relatively small. Can you imagine what will happen if 20 types were added in this way? The project definitely wouldn't be easy to navigate with that many files littering the project's root directory. When you're building a larger app with many data types and multiple layers, you should organize the project using folders, which will make the project easier to navigate and maintain.
+However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory. When you're building a larger app with many data types and multiple layers, you should organize the project using folders, which will make the project easier to navigate and maintain.
 
 To organize the project structure shown above, create a new folder under the root of the project, `/Model`, to hold the types.
 
@@ -50,13 +50,13 @@ Place the types into the `/Model` folder:
 |__NewTypes.csproj
 ```
 
-You organize type files into folders using a logical structure for the app. Consume the types across the app by using a common namespace or with different namespaces and exposing the types with `using` statements.
+You organize type files into folders using a logical structure for the app. Consume the types across the app by using a common namespace, which is less recommended, or with different namespaces and exposing the types with `using` statements, which is the preferred approach.
 
 ## Organizing and testing using the NewTypes Pets Sample
 
 ### Building the sample
 
-For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. This example creates two new types, `Dog` and `Cat`, and has them implement a common interface, `IPet`.
+For the following steps, you can either follow along using the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) or create your own files and folders. The sample contains two new types, `Dog` and `Cat`, and has them implement a common interface, `IPet`.
 
 Folder Structure:
 
@@ -104,7 +104,7 @@ Woof!
 Meow!
 ```
 
-You can add a new pet type, such as a `Bird`, extending this project. Make the bird's `TalkToOwner` property give a `Tweet!` to the owner.
+Optional exercise: You can add a new pet type, such as a `Bird`, extending this project. Make the bird's `TalkToOwner` method give a `Tweet!` to the owner. Run the app again. The output will include `Tweet!`
 
 ### Testing the sample
 
@@ -142,6 +142,8 @@ Create the project by executing `dotnet new xunit` at a command prompt in the *N
 Add an xUnit test class, *PetTests.cs*:
 
 [!code-csharp[PetTests class](../../../samples/core/console-apps/NewTypesMsBuild/test/NewTypesTests/PetTests.cs)]
+
+Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
    
 Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file. Start in the `test/NewTypesTests` directory and execute the following commands:
  

@@ -78,10 +78,19 @@ End Function
   
 2.  Create a query that, when executed, produces a collection of generic tasks. Each call to `ProcessURLAsync` returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+    ```vb  
+    ' ***Create a query that, when executed, returns a collection of tasks.  
+    Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =  
+        From url In urlList Select ProcessURLAsync(url, client, ct)  
+    ```  
+  
 3.  Call `ToArray` to execute the query and start the tasks. The application of the `WhenAny` method in the next step would execute the query and start the tasks without using `ToArray`, but other methods might not. The safest practice is to force execution of the query explicitly.  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+    ```vb  
+    ' ***Use ToArray to execute the query and start the download tasks.   
+    Dim downloadTasks As Task(Of Integer)() = downloadTasksQuery.ToArray()  
+    ```  
+  
 4.  Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.  
   
 ```vb  

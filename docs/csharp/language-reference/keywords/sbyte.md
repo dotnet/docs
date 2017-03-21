@@ -1,6 +1,6 @@
 ---
 title: "sbyte (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -32,32 +32,42 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # sbyte (C# Reference)
-The `sbyte` keyword indicates an integral type that stores values according to the size and range shown in the following table.  
+
+`sbyte` denotes an integral type that stores values according to the size and range shown in the following table.  
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
 |`sbyte`|-128 to 127|Signed 8-bit integer|<xref:System.SByte?displayProperty=fullName>|  
   
 ## Literals  
- You can declare and initialize an `sbyte` variable in this manner:  
+
+You can declare and initialize an `sbyte` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. 
+
+In the following example, integers equal to -102 that are represented as decimal, hexadecimal, and binary literals are converted from [int](../../../csharp/language-reference/keywords/int.md) to `sbyte` values.    
   
-```  
-  
-sbyte sByte1 = 127;  
-```  
-  
- In the previous declaration, the integer literal 127 is implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `sbyte`. If the integer literal exceeds the range of `sbyte`, a compilation error will occur.  
-  
+[!code-cs[SByte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#SByte)]  
+
+> [!NOTE] 
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
+
+Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+
+[!code-cs[SByteSeparator](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#SByteS)]  
+
+If the integer literal is outside the range of `sbyte` (that is, if it is less than <xref:System.SByte.MinValue?displayProperty=fullName> or greater than <xref:System.SByte.MaxValue?displayProperty=fullName>, a compilation error occurs. When an integer literal has no suffix, its type is the first of these types in which its value can be represented: [int](int.md), [uint](uint.md), [long](long.md), [ulong](ulong.md). This means that, in this example, the numeric literals `0x9A` and `0b10011010` are interpreted as 32-bit signed integers with a value of 156, which exceeds <xref:System.SByte.MaxValue?displayProperty=fullName>. Because of this, the casting operator is needed, and the assignment must occur in an [unchecked](unchecked.md) context. 
+
+## Compiler overload resolution
+
  A cast must be used when calling overloaded methods. Consider, for example, the following overloaded methods that use `sbyte` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```  
+```cs  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(sbyte b) {}  
 ```  
   
  Using the `sbyte` cast guarantees that the correct type is called, for example:  
   
-```  
+```cs 
 // Calling the method with the int parameter:  
 SampleMethod(5);  
 // Calling the method with the sbyte parameter:  
@@ -69,39 +79,34 @@ SampleMethod((sbyte)5);
   
  You cannot implicitly convert nonliteral numeric types of larger storage size to `sbyte` (see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md) for the storage sizes of integral types). Consider, for example, the following two `sbyte` variables `x` and `y`:  
   
-```  
-  
+```cs  
 sbyte x = 10, y = 20;  
 ```  
   
  The following assignment statement will produce a compilation error, because the arithmetic expression on the right side of the assignment operator evaluates to [int](../../../csharp/language-reference/keywords/int.md) by default.  
   
-```  
-  
+```cs  
 sbyte z = x + y;   // Error: conversion from int to sbyte  
 ```  
   
  To fix this problem, cast the expression as in the following example:  
   
-```  
-  
+```cs  
 sbyte z = (sbyte)(x + y);   // OK: explicit conversion  
 ```  
   
  It is possible though to use the following statements, where the destination variable has the same storage size or a larger storage size:  
   
-```  
-  
-      sbyte x = 10, y = 20;  
+```cs
+sbyte x = 10, y = 20;  
 int m = x + y;  
 long n = x + y;  
 ```  
   
  Notice also that there is no implicit conversion from floating-point types to `sbyte`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```  
-  
-      sbyte x = 3.0;         // Error: no implicit conversion from double  
+```cs  
+sbyte x = 3.0;         // Error: no implicit conversion from double  
 sbyte y = (sbyte)3.0;  // OK: explicit conversion  
 ```  
   

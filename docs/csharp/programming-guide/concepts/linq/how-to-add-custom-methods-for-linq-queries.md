@@ -66,20 +66,63 @@ public static class LINQExtension
   
  The following code example shows how to use the `Median` method for an array of type `double`.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+```cs  
+double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };  
+  
+var query1 = numbers1.Median();  
+  
+Console.WriteLine("double: Median = " + query1);  
+```  
+
+```cs  
+/*  
+ This code produces the following output:  
+  
+ Double: Median = 4.85  
+*/  
+```  
+  
 ### Overloading an Aggregate Method to Accept Various Types  
  You can overload your aggregate method so that it accepts sequences of various types. The standard approach is to create an overload for each type. Another approach is to create an overload that will take a generic type and convert it to a specific type by using a delegate. You can also combine both approaches.  
   
 #### To create an overload for each type  
  You can create a specific overload for each type that you want to support. The following code example shows an overload of the `Median` method for the `integer` type.  
   
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
+```cs  
+//int overload  
+  
+public static double Median(this IEnumerable<int> source)  
+{  
+    return (from num in source select (double)num).Median();  
+}  
+```   
  You can now call the `Median` overloads for both `integer` and `double` types, as shown in the following code:  
   
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```cs  
+double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };  
+  
+var query1 = numbers1.Median();  
+  
+Console.WriteLine("double: Median = " + query1);  
+```  
+  
+```cs  
+int[] numbers2 = { 1, 2, 3, 4, 5 };  
+  
+var query2 = numbers2.Median();  
+  
+Console.WriteLine("int: Median = " + query2);  
+```  
+  
+```cs  
+/*  
+ This code produces the following output:  
+  
+ Double: Median = 4.85  
+ Integer: Median = 3  
+*/  
+```  
+
 #### To create a generic overload  
  You can also create an overload that accepts a sequence of generic objects. This overload takes a delegate as a parameter and uses it to convert a sequence of objects of a generic type to a specific type.  
   
@@ -99,13 +142,62 @@ public static double Median<T>(this IEnumerable<T> numbers,
   
  The following example code shows how to call the `Median` method for an array of integers and an array of strings. For strings, the median for the lengths of strings in the array is calculated. The example shows how to pass the <xref:System.Func%602> delegate parameter to the `Median` method for each case.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+```cs  
+int[] numbers3 = { 1, 2, 3, 4, 5 };  
+  
+/*   
+  You can use the num=>num lambda expression as a parameter for the Median method   
+  so that the compiler will implicitly convert its value to double.  
+  If there is no implicit conversion, the compiler will display an error message.            
+*/  
+  
+var query3 = numbers3.Median(num => num);  
+  
+Console.WriteLine("int: Median = " + query3);  
+  
+string[] numbers4 = { "one", "two", "three", "four", "five" };  
+  
+// With the generic overload, you can also use numeric properties of objects.  
+  
+var query4 = numbers4.Median(str => str.Length);  
+  
+Console.WriteLine("String: Median = " + query4);  
+  
+/*  
+ This code produces the following output:  
+  
+ Integer: Median = 3  
+ String: Median = 4  
+*/  
+```   
 ## Adding a Method That Returns a Collection  
  You can extend the <xref:System.Collections.Generic.IEnumerable%601> interface with a custom query method that returns a sequence of values. In this case, the method must return a collection of type <xref:System.Collections.Generic.IEnumerable%601>. Such methods can be used to apply filters or data transforms to a sequence of values.  
   
  The following example shows how to create an extension method named `AlternateElements` that returns every other element in a collection, starting from the first element.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+```cs  
+// Extension method for the IEnumerable<T> interface.   
+// The method returns every other element of a sequence.  
+  
+public static IEnumerable<T> AlternateElements<T>(this IEnumerable<T> source)  
+{  
+    List<T> list = new List<T>();  
+  
+    int i = 0;  
+  
+    foreach (var element in source)  
+    {  
+        if (i % 2 == 0)  
+        {  
+            list.Add(element);  
+        }  
+  
+        i++;  
+    }  
+  
+    return list;  
+}  
+```  
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable%601> interface, as shown in the following code:  
   
 ```cs  

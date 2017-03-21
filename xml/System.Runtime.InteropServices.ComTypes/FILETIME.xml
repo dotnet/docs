@@ -1,0 +1,56 @@
+<Type Name="FILETIME" FullName="System.Runtime.InteropServices.ComTypes.FILETIME">
+  <TypeSignature Language="C#" Value="public struct FILETIME" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FILETIME extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.FILETIME" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="dwHighDateTime">
+      <MemberSignature Language="C#" Value="public int dwHighDateTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 dwHighDateTime" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FILETIME.dwHighDateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="dwLowDateTime">
+      <MemberSignature Language="C#" Value="public int dwLowDateTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 dwLowDateTime" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FILETIME.dwLowDateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

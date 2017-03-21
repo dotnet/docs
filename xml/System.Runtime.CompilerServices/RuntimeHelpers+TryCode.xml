@@ -1,0 +1,24 @@
+<Type Name="RuntimeHelpers+TryCode" FullName="System.Runtime.CompilerServices.RuntimeHelpers+TryCode">
+  <TypeSignature Language="C#" Value="public delegate void RuntimeHelpers.TryCode(object userData);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed RuntimeHelpers/TryCode extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeHelpers.TryCode" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="userData" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="userData">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

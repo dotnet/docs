@@ -1,0 +1,316 @@
+<Type Name="SecurityPermissionFlag" FullName="System.Security.Permissions.SecurityPermissionFlag">
+  <TypeSignature Language="C#" Value="public enum SecurityPermissionFlag" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SecurityPermissionFlag extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityPermissionFlag" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllFlags">
+      <MemberSignature Language="C#" Value="AllFlags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag AllFlags = int32(16383)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.AllFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Assertion">
+      <MemberSignature Language="C#" Value="Assertion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag Assertion = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Assertion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingRedirects">
+      <MemberSignature Language="C#" Value="BindingRedirects" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag BindingRedirects = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.BindingRedirects" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlAppDomain">
+      <MemberSignature Language="C#" Value="ControlAppDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlAppDomain = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlDomainPolicy">
+      <MemberSignature Language="C#" Value="ControlDomainPolicy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlDomainPolicy = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlDomainPolicy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlEvidence">
+      <MemberSignature Language="C#" Value="ControlEvidence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlEvidence = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPolicy">
+      <MemberSignature Language="C#" Value="ControlPolicy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlPolicy = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPrincipal">
+      <MemberSignature Language="C#" Value="ControlPrincipal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlPrincipal = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlThread">
+      <MemberSignature Language="C#" Value="ControlThread" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlThread = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Execution">
+      <MemberSignature Language="C#" Value="Execution" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag Execution = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Execution" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Infrastructure">
+      <MemberSignature Language="C#" Value="Infrastructure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag Infrastructure = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFlags">
+      <MemberSignature Language="C#" Value="NoFlags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag NoFlags = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.NoFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemotingConfiguration">
+      <MemberSignature Language="C#" Value="RemotingConfiguration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag RemotingConfiguration = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationFormatter">
+      <MemberSignature Language="C#" Value="SerializationFormatter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag SerializationFormatter = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipVerification">
+      <MemberSignature Language="C#" Value="SkipVerification" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag SkipVerification = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.SkipVerification" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnmanagedCode">
+      <MemberSignature Language="C#" Value="UnmanagedCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag UnmanagedCode = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

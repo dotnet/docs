@@ -30,7 +30,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 `TEST_FILE_NAMES`
 
-Run tests from the specified files. Separate multiple test file names by spaces.
+Run tests from the specified assemblies. Separate multiple test assembly names with spaces.
 
 ## Options
 

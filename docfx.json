@@ -1,4 +1,15 @@
 ﻿{
+  "merge": {
+    "content": [
+      {
+        "files": [
+          "api/**/*.yml"
+        ]
+      }
+    ],
+    "dest": ".",
+    "tocMetadata": "version"
+  },
   "build": {
     "content": [
       {

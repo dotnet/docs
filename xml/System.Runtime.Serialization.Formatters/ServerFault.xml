@@ -1,11 +1,8 @@
 <Type Name="ServerFault" FullName="System.Runtime.Serialization.Formatters.ServerFault">
   <TypeSignature Language="C#" Value="public sealed class ServerFault" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ServerFault extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.ServerFault" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -28,12 +25,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServerFault (string exceptionType, string message, string stackTrace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string exceptionType, string message, string stackTrace) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.ServerFault.#ctor(System.String,System.String,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,12 +46,9 @@
     <Member MemberName="ExceptionMessage">
       <MemberSignature Language="C#" Value="public string ExceptionMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExceptionMessage" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.ExceptionMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,12 +63,9 @@
     <Member MemberName="ExceptionType">
       <MemberSignature Language="C#" Value="public string ExceptionType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExceptionType" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.ExceptionType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,12 +80,9 @@
     <Member MemberName="StackTrace">
       <MemberSignature Language="C#" Value="public string StackTrace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

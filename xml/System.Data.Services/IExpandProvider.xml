@@ -1,0 +1,38 @@
+<Type Name="IExpandProvider" FullName="System.Data.Services.IExpandProvider">
+  <TypeSignature Language="C#" Value="public interface IExpandProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpandProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyExpansions">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ApplyExpansions (System.Linq.IQueryable queryable, System.Collections.Generic.ICollection&lt;System.Data.Services.ExpandSegmentCollection&gt; expandPaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable ApplyExpansions(class System.Linq.IQueryable queryable, class System.Collections.Generic.ICollection`1&lt;class System.Data.Services.ExpandSegmentCollection&gt; expandPaths) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryable" Type="System.Linq.IQueryable" />
+        <Parameter Name="expandPaths" Type="System.Collections.Generic.ICollection&lt;System.Data.Services.ExpandSegmentCollection&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="queryable">To be added.</param>
+        <param name="expandPaths">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

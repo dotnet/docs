@@ -1,0 +1,62 @@
+<Type Name="ResourceTypeKind" FullName="System.Data.Services.Providers.ResourceTypeKind">
+  <TypeSignature Language="C#" Value="public enum ResourceTypeKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResourceTypeKind extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComplexType">
+      <MemberSignature Language="C#" Value="ComplexType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourceTypeKind ComplexType = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityType">
+      <MemberSignature Language="C#" Value="EntityType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourceTypeKind EntityType = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Primitive">
+      <MemberSignature Language="C#" Value="Primitive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourceTypeKind Primitive = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

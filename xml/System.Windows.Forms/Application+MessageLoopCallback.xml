@@ -1,0 +1,25 @@
+<Type Name="Application+MessageLoopCallback" FullName="System.Windows.Forms.Application+MessageLoopCallback">
+  <TypeSignature Language="C#" Value="public delegate bool Application.MessageLoopCallback();" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Application/MessageLoopCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="InstancePersistenceEvent&lt;T&gt;" FullName="System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class InstancePersistenceEvent&lt;T&gt; : System.Runtime.DurableInstancing.InstancePersistenceEvent where T : InstancePersistenceEvent&lt;T&gt;new()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InstancePersistenceEvent`1&lt;.ctor (class System.Runtime.DurableInstancing.InstancePersistenceEvent`1&lt;!T&gt;) T&gt; extends System.Runtime.DurableInstancing.InstancePersistenceEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;T&gt;</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstancePersistenceEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InstancePersistenceEvent (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public static T Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property !T Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

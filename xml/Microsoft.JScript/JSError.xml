@@ -1,0 +1,3655 @@
+<Type Name="JSError" FullName="Microsoft.JScript.JSError">
+  <TypeSignature Language="C#" Value="public enum JSError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSError extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("268CA962-2FEF-3152-BA46-E18658B7FA4F")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbstractCannotBePrivate">
+      <MemberSignature Language="C#" Value="AbstractCannotBePrivate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AbstractCannotBePrivate = int32(1157)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AbstractCannotBeStatic">
+      <MemberSignature Language="C#" Value="AbstractCannotBeStatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AbstractCannotBeStatic = int32(1216)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AbstractWithBody">
+      <MemberSignature Language="C#" Value="AbstractWithBody" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AbstractWithBody = int32(1192)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionNotSupported">
+      <MemberSignature Language="C#" Value="ActionNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ActionNotSupported = int32(445)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AmbiguousBindingBecauseOfEval">
+      <MemberSignature Language="C#" Value="AmbiguousBindingBecauseOfEval" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AmbiguousBindingBecauseOfEval = int32(1150)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AmbiguousBindingBecauseOfWith">
+      <MemberSignature Language="C#" Value="AmbiguousBindingBecauseOfWith" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AmbiguousBindingBecauseOfWith = int32(1149)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AmbiguousConstructorCall">
+      <MemberSignature Language="C#" Value="AmbiguousConstructorCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AmbiguousConstructorCall = int32(1184)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AmbiguousMatch">
+      <MemberSignature Language="C#" Value="AmbiguousMatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AmbiguousMatch = int32(1183)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrayLengthAssignIncorrect">
+      <MemberSignature Language="C#" Value="ArrayLengthAssignIncorrect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ArrayLengthAssignIncorrect = int32(5030)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrayLengthConstructIncorrect">
+      <MemberSignature Language="C#" Value="ArrayLengthConstructIncorrect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ArrayLengthConstructIncorrect = int32(5029)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrayMayBeCopied">
+      <MemberSignature Language="C#" Value="ArrayMayBeCopied" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ArrayMayBeCopied = int32(1215)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyAttributesMustBeGlobal">
+      <MemberSignature Language="C#" Value="AssemblyAttributesMustBeGlobal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AssemblyAttributesMustBeGlobal = int32(1249)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignmentToReadOnly">
+      <MemberSignature Language="C#" Value="AssignmentToReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError AssignmentToReadOnly = int32(5040)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadBreak">
+      <MemberSignature Language="C#" Value="BadBreak" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadBreak = int32(1019)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadContinue">
+      <MemberSignature Language="C#" Value="BadContinue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadContinue = int32(1020)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadFunctionDeclaration">
+      <MemberSignature Language="C#" Value="BadFunctionDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadFunctionDeclaration = int32(1199)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadHexDigit">
+      <MemberSignature Language="C#" Value="BadHexDigit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadHexDigit = int32(1023)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadLabel">
+      <MemberSignature Language="C#" Value="BadLabel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadLabel = int32(1025)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadModifierInInterface">
+      <MemberSignature Language="C#" Value="BadModifierInInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadModifierInInterface = int32(1224)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadOctalLiteral">
+      <MemberSignature Language="C#" Value="BadOctalLiteral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadOctalLiteral = int32(1242)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadPropertyDeclaration">
+      <MemberSignature Language="C#" Value="BadPropertyDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadPropertyDeclaration = int32(1200)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadReturn">
+      <MemberSignature Language="C#" Value="BadReturn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadReturn = int32(1018)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadSwitch">
+      <MemberSignature Language="C#" Value="BadSwitch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadSwitch = int32(1103)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadThrow">
+      <MemberSignature Language="C#" Value="BadThrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadThrow = int32(1239)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadVariableDeclaration">
+      <MemberSignature Language="C#" Value="BadVariableDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadVariableDeclaration = int32(1198)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadWayToLeaveFinally">
+      <MemberSignature Language="C#" Value="BadWayToLeaveFinally" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BadWayToLeaveFinally = int32(1190)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassIsExpandoAlready">
+      <MemberSignature Language="C#" Value="BaseClassIsExpandoAlready" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BaseClassIsExpandoAlready = int32(1156)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BooleanExpected">
+      <MemberSignature Language="C#" Value="BooleanExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError BooleanExpected = int32(5010)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotAssignToFunctionResult">
+      <MemberSignature Language="C#" Value="CannotAssignToFunctionResult" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotAssignToFunctionResult = int32(5003)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotBeAbstract">
+      <MemberSignature Language="C#" Value="CannotBeAbstract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotBeAbstract = int32(1212)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotCallSecurityMethodLateBound">
+      <MemberSignature Language="C#" Value="CannotCallSecurityMethodLateBound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotCallSecurityMethodLateBound = int32(5044)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotChangeVisibility">
+      <MemberSignature Language="C#" Value="CannotChangeVisibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotChangeVisibility = int32(1171)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotInstantiateAbstractClass">
+      <MemberSignature Language="C#" Value="CannotInstantiateAbstractClass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotInstantiateAbstractClass = int32(1214)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotNestPositionDirective">
+      <MemberSignature Language="C#" Value="CannotNestPositionDirective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotNestPositionDirective = int32(1119)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotReturnValueFromVoidFunction">
+      <MemberSignature Language="C#" Value="CannotReturnValueFromVoidFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotReturnValueFromVoidFunction = int32(1182)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotUseNameOfClass">
+      <MemberSignature Language="C#" Value="CannotUseNameOfClass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotUseNameOfClass = int32(1124)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotUseStaticSecurityAttribute">
+      <MemberSignature Language="C#" Value="CannotUseStaticSecurityAttribute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CannotUseStaticSecurityAttribute = int32(5045)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CantAssignThis">
+      <MemberSignature Language="C#" Value="CantAssignThis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CantAssignThis = int32(5000)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CantCreateObject">
+      <MemberSignature Language="C#" Value="CantCreateObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CantCreateObject = int32(429)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CcInvalidElif">
+      <MemberSignature Language="C#" Value="CcInvalidElif" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CcInvalidElif = int32(1106)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CcInvalidElse">
+      <MemberSignature Language="C#" Value="CcInvalidElse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CcInvalidElse = int32(1105)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CcInvalidEnd">
+      <MemberSignature Language="C#" Value="CcInvalidEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CcInvalidEnd = int32(1104)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CcInvalidInDebugger">
+      <MemberSignature Language="C#" Value="CcInvalidInDebugger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CcInvalidInDebugger = int32(1256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CcOff">
+      <MemberSignature Language="C#" Value="CcOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CcOff = int32(1030)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CircularDefinition">
+      <MemberSignature Language="C#" Value="CircularDefinition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CircularDefinition = int32(1120)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClashWithProperty">
+      <MemberSignature Language="C#" Value="ClashWithProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ClashWithProperty = int32(1177)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassNotAllowed">
+      <MemberSignature Language="C#" Value="ClassNotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ClassNotAllowed = int32(1109)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstructorMayNotHaveReturnType">
+      <MemberSignature Language="C#" Value="ConstructorMayNotHaveReturnType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ConstructorMayNotHaveReturnType = int32(1233)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributeUsedMoreThanOnce">
+      <MemberSignature Language="C#" Value="CustomAttributeUsedMoreThanOnce" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError CustomAttributeUsedMoreThanOnce = int32(1236)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateExpected">
+      <MemberSignature Language="C#" Value="DateExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DateExpected = int32(5006)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DelegatesShouldNotBeExplicitlyConstructed">
+      <MemberSignature Language="C#" Value="DelegatesShouldNotBeExplicitlyConstructed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DelegatesShouldNotBeExplicitlyConstructed = int32(1258)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deprecated">
+      <MemberSignature Language="C#" Value="Deprecated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError Deprecated = int32(1121)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DifferentReturnTypeFromBase">
+      <MemberSignature Language="C#" Value="DifferentReturnTypeFromBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DifferentReturnTypeFromBase = int32(1176)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoesNotHaveAnAddress">
+      <MemberSignature Language="C#" Value="DoesNotHaveAnAddress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DoesNotHaveAnAddress = int32(1203)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DupDefault">
+      <MemberSignature Language="C#" Value="DupDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DupDefault = int32(1027)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateMethod">
+      <MemberSignature Language="C#" Value="DuplicateMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DuplicateMethod = int32(1251)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateName">
+      <MemberSignature Language="C#" Value="DuplicateName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DuplicateName = int32(1111)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateNamedParameter">
+      <MemberSignature Language="C#" Value="DuplicateNamedParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DuplicateNamedParameter = int32(5036)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DupVisibility">
+      <MemberSignature Language="C#" Value="DupVisibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError DupVisibility = int32(1101)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumeratorExpected">
+      <MemberSignature Language="C#" Value="EnumeratorExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError EnumeratorExpected = int32(5015)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumNotAllowed">
+      <MemberSignature Language="C#" Value="EnumNotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError EnumNotAllowed = int32(1230)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrEOF">
+      <MemberSignature Language="C#" Value="ErrEOF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ErrEOF = int32(1107)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionFromHResult">
+      <MemberSignature Language="C#" Value="ExceptionFromHResult" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExceptionFromHResult = int32(6011)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutablesCannotBeLocalized">
+      <MemberSignature Language="C#" Value="ExecutablesCannotBeLocalized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExecutablesCannotBeLocalized = int32(1254)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandoClassShouldNotImpleEnumerable">
+      <MemberSignature Language="C#" Value="ExpandoClassShouldNotImpleEnumerable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpandoClassShouldNotImpleEnumerable = int32(1162)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandoMustBePublic">
+      <MemberSignature Language="C#" Value="ExpandoMustBePublic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpandoMustBePublic = int32(1257)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandoPrecludesAbstract">
+      <MemberSignature Language="C#" Value="ExpandoPrecludesAbstract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpandoPrecludesAbstract = int32(1222)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandoPrecludesOverride">
+      <MemberSignature Language="C#" Value="ExpandoPrecludesOverride" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpandoPrecludesOverride = int32(1220)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandoPrecludesStatic">
+      <MemberSignature Language="C#" Value="ExpandoPrecludesStatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpandoPrecludesStatic = int32(1250)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpectedAssembly">
+      <MemberSignature Language="C#" Value="ExpectedAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpectedAssembly = int32(1248)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionExpected">
+      <MemberSignature Language="C#" Value="ExpressionExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ExpressionExpected = int32(1195)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileNotFound">
+      <MemberSignature Language="C#" Value="FileNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FileNotFound = int32(53)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalPrecludesAbstract">
+      <MemberSignature Language="C#" Value="FinalPrecludesAbstract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FinalPrecludesAbstract = int32(1209)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FractionOutOfRange">
+      <MemberSignature Language="C#" Value="FractionOutOfRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FractionOutOfRange = int32(5026)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalAborted">
+      <MemberSignature Language="C#" Value="FuncEvalAborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalAborted = int32(6000)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalBadLocation">
+      <MemberSignature Language="C#" Value="FuncEvalBadLocation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalBadLocation = int32(6007)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalBadThreadNotStarted">
+      <MemberSignature Language="C#" Value="FuncEvalBadThreadNotStarted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalBadThreadNotStarted = int32(6005)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalBadThreadState">
+      <MemberSignature Language="C#" Value="FuncEvalBadThreadState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalBadThreadState = int32(6004)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalThreadSleepWaitJoin">
+      <MemberSignature Language="C#" Value="FuncEvalThreadSleepWaitJoin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalThreadSleepWaitJoin = int32(6003)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalThreadSuspended">
+      <MemberSignature Language="C#" Value="FuncEvalThreadSuspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalThreadSuspended = int32(6002)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalTimedout">
+      <MemberSignature Language="C#" Value="FuncEvalTimedout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalTimedout = int32(6001)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncEvalWebMethod">
+      <MemberSignature Language="C#" Value="FuncEvalWebMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FuncEvalWebMethod = int32(6008)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionExpected">
+      <MemberSignature Language="C#" Value="FunctionExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError FunctionExpected = int32(5002)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAndSetAreInconsistent">
+      <MemberSignature Language="C#" Value="GetAndSetAreInconsistent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError GetAndSetAreInconsistent = int32(1142)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HidesAbstractInBase">
+      <MemberSignature Language="C#" Value="HidesAbstractInBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError HidesAbstractInBase = int32(1172)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HidesParentMember">
+      <MemberSignature Language="C#" Value="HidesParentMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError HidesParentMember = int32(1170)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalAssignment">
+      <MemberSignature Language="C#" Value="IllegalAssignment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalAssignment = int32(5008)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalChar">
+      <MemberSignature Language="C#" Value="IllegalChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalChar = int32(1014)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalEval">
+      <MemberSignature Language="C#" Value="IllegalEval" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalEval = int32(5033)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalParamArrayAttribute">
+      <MemberSignature Language="C#" Value="IllegalParamArrayAttribute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalParamArrayAttribute = int32(1221)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalUseOfSuper">
+      <MemberSignature Language="C#" Value="IllegalUseOfSuper" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalUseOfSuper = int32(1189)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalUseOfThis">
+      <MemberSignature Language="C#" Value="IllegalUseOfThis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalUseOfThis = int32(1122)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IllegalVisibility">
+      <MemberSignature Language="C#" Value="IllegalVisibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IllegalVisibility = int32(1102)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplicitlyReferencedAssemblyNotFound">
+      <MemberSignature Language="C#" Value="ImplicitlyReferencedAssemblyNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ImplicitlyReferencedAssemblyNotFound = int32(1259)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImpossibleConversion">
+      <MemberSignature Language="C#" Value="ImpossibleConversion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ImpossibleConversion = int32(1208)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncompatibleAssemblyReference">
+      <MemberSignature Language="C#" Value="IncompatibleAssemblyReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IncompatibleAssemblyReference = int32(1267)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncompatibleVisibility">
+      <MemberSignature Language="C#" Value="IncompatibleVisibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IncompatibleVisibility = int32(1108)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncorrectNumberOfIndices">
+      <MemberSignature Language="C#" Value="IncorrectNumberOfIndices" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError IncorrectNumberOfIndices = int32(5042)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceNotAccessibleFromStatic">
+      <MemberSignature Language="C#" Value="InstanceNotAccessibleFromStatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InstanceNotAccessibleFromStatic = int32(1243)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceIllegalInInterface">
+      <MemberSignature Language="C#" Value="InterfaceIllegalInInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InterfaceIllegalInInterface = int32(1227)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalError">
+      <MemberSignature Language="C#" Value="InternalError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InternalError = int32(51)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidAssemblyKeyFile">
+      <MemberSignature Language="C#" Value="InvalidAssemblyKeyFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidAssemblyKeyFile = int32(1268)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidBaseTypeForEnum">
+      <MemberSignature Language="C#" Value="InvalidBaseTypeForEnum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidBaseTypeForEnum = int32(1213)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCall">
+      <MemberSignature Language="C#" Value="InvalidCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidCall = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCustomAttribute">
+      <MemberSignature Language="C#" Value="InvalidCustomAttribute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidCustomAttribute = int32(1143)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCustomAttributeArgument">
+      <MemberSignature Language="C#" Value="InvalidCustomAttributeArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidCustomAttributeArgument = int32(1144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCustomAttributeClassOrCtor">
+      <MemberSignature Language="C#" Value="InvalidCustomAttributeClassOrCtor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidCustomAttributeClassOrCtor = int32(1146)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCustomAttributeTarget">
+      <MemberSignature Language="C#" Value="InvalidCustomAttributeTarget" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidCustomAttributeTarget = int32(1231)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidDebugDirective">
+      <MemberSignature Language="C#" Value="InvalidDebugDirective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidDebugDirective = int32(1235)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidElse">
+      <MemberSignature Language="C#" Value="InvalidElse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidElse = int32(1034)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidImport">
+      <MemberSignature Language="C#" Value="InvalidImport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidImport = int32(1229)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidLanguageOption">
+      <MemberSignature Language="C#" Value="InvalidLanguageOption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidLanguageOption = int32(1179)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidPositionDirective">
+      <MemberSignature Language="C#" Value="InvalidPositionDirective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidPositionDirective = int32(1114)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidPrototype">
+      <MemberSignature Language="C#" Value="InvalidPrototype" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidPrototype = int32(5023)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidResource">
+      <MemberSignature Language="C#" Value="InvalidResource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError InvalidResource = int32(1262)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNotAllowedOnExpandoClass">
+      <MemberSignature Language="C#" Value="ItemNotAllowedOnExpandoClass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ItemNotAllowedOnExpandoClass = int32(1152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeywordUsedAsIdentifier">
+      <MemberSignature Language="C#" Value="KeywordUsedAsIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError KeywordUsedAsIdentifier = int32(1137)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberInitializerCannotContainFuncExpr">
+      <MemberSignature Language="C#" Value="MemberInitializerCannotContainFuncExpr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MemberInitializerCannotContainFuncExpr = int32(1270)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberTypeCLSCompliantMismatch">
+      <MemberSignature Language="C#" Value="MemberTypeCLSCompliantMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MemberTypeCLSCompliantMismatch = int32(1265)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodClashOnExpandoSuperClass">
+      <MemberSignature Language="C#" Value="MethodClashOnExpandoSuperClass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MethodClashOnExpandoSuperClass = int32(1155)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodInBaseIsNotVirtual">
+      <MemberSignature Language="C#" Value="MethodInBaseIsNotVirtual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MethodInBaseIsNotVirtual = int32(1174)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodNotAllowedOnExpandoClass">
+      <MemberSignature Language="C#" Value="MethodNotAllowedOnExpandoClass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MethodNotAllowedOnExpandoClass = int32(1153)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingConstructForAttributes">
+      <MemberSignature Language="C#" Value="MissingConstructForAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MissingConstructForAttributes = int32(1160)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingNameParameter">
+      <MemberSignature Language="C#" Value="MissingNameParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MissingNameParameter = int32(5037)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MoreNamedParametersThanArguments">
+      <MemberSignature Language="C#" Value="MoreNamedParametersThanArguments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MoreNamedParametersThanArguments = int32(5038)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MustBeEOL">
+      <MemberSignature Language="C#" Value="MustBeEOL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MustBeEOL = int32(1115)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MustImplementMethod">
+      <MemberSignature Language="C#" Value="MustImplementMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MustImplementMethod = int32(1128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MustProvideNameForNamedParameter">
+      <MemberSignature Language="C#" Value="MustProvideNameForNamedParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError MustProvideNameForNamedParameter = int32(5035)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedArrayObject">
+      <MemberSignature Language="C#" Value="NeedArrayObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NeedArrayObject = int32(5031)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedCompileTimeConstant">
+      <MemberSignature Language="C#" Value="NeedCompileTimeConstant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NeedCompileTimeConstant = int32(1110)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedInstance">
+      <MemberSignature Language="C#" Value="NeedInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NeedInstance = int32(1210)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedInterface">
+      <MemberSignature Language="C#" Value="NeedInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NeedInterface = int32(1129)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedObject">
+      <MemberSignature Language="C#" Value="NeedObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NeedObject = int32(424)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedType">
+      <MemberSignature Language="C#" Value="NeedType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NeedType = int32(1112)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NestedInstanceTypeCannotBeExtendedByStatic">
+      <MemberSignature Language="C#" Value="NestedInstanceTypeCannotBeExtendedByStatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NestedInstanceTypeCannotBeExtendedByStatic = int32(1237)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NewNotSpecifiedInMethodDeclaration">
+      <MemberSignature Language="C#" Value="NewNotSpecifiedInMethodDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NewNotSpecifiedInMethodDeclaration = int32(1173)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAt">
+      <MemberSignature Language="C#" Value="NoAt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoAt = int32(1032)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCatch">
+      <MemberSignature Language="C#" Value="NoCatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoCatch = int32(1033)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCcEnd">
+      <MemberSignature Language="C#" Value="NoCcEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoCcEnd = int32(1029)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoColon">
+      <MemberSignature Language="C#" Value="NoColon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoColon = int32(1003)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoComma">
+      <MemberSignature Language="C#" Value="NoComma" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoComma = int32(1100)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCommaOrTypeDefinitionError">
+      <MemberSignature Language="C#" Value="NoCommaOrTypeDefinitionError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoCommaOrTypeDefinitionError = int32(1191)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCommentEnd">
+      <MemberSignature Language="C#" Value="NoCommentEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoCommentEnd = int32(1016)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoConstructor">
+      <MemberSignature Language="C#" Value="NoConstructor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoConstructor = int32(5032)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoEqual">
+      <MemberSignature Language="C#" Value="NoEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoEqual = int32(1011)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoError">
+      <MemberSignature Language="C#" Value="NoError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoError = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFuncEvalAllowed">
+      <MemberSignature Language="C#" Value="NoFuncEvalAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoFuncEvalAllowed = int32(6006)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoIdentifier">
+      <MemberSignature Language="C#" Value="NoIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoIdentifier = int32(1010)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLabel">
+      <MemberSignature Language="C#" Value="NoLabel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoLabel = int32(1026)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLeftCurly">
+      <MemberSignature Language="C#" Value="NoLeftCurly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoLeftCurly = int32(1008)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLeftParen">
+      <MemberSignature Language="C#" Value="NoLeftParen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoLeftParen = int32(1005)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMemberIdentifier">
+      <MemberSignature Language="C#" Value="NoMemberIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoMemberIdentifier = int32(1028)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMethodInBaseToNew">
+      <MemberSignature Language="C#" Value="NoMethodInBaseToNew" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoMethodInBaseToNew = int32(1175)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMethodInBaseToOverride">
+      <MemberSignature Language="C#" Value="NoMethodInBaseToOverride" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoMethodInBaseToOverride = int32(1180)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonCLSCompliantMember">
+      <MemberSignature Language="C#" Value="NonCLSCompliantMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NonCLSCompliantMember = int32(1163)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonCLSCompliantType">
+      <MemberSignature Language="C#" Value="NonCLSCompliantType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NonCLSCompliantType = int32(1264)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonClsException">
+      <MemberSignature Language="C#" Value="NonClsException" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NonClsException = int32(5046)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonStaticWithTypeName">
+      <MemberSignature Language="C#" Value="NonStaticWithTypeName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NonStaticWithTypeName = int32(1245)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonSupportedInDebugger">
+      <MemberSignature Language="C#" Value="NonSupportedInDebugger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NonSupportedInDebugger = int32(5039)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRightBracket">
+      <MemberSignature Language="C#" Value="NoRightBracket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoRightBracket = int32(1007)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRightBracketOrComma">
+      <MemberSignature Language="C#" Value="NoRightBracketOrComma" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoRightBracketOrComma = int32(1194)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRightCurly">
+      <MemberSignature Language="C#" Value="NoRightCurly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoRightCurly = int32(1009)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRightParen">
+      <MemberSignature Language="C#" Value="NoRightParen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoRightParen = int32(1006)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRightParenOrComma">
+      <MemberSignature Language="C#" Value="NoRightParenOrComma" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoRightParenOrComma = int32(1193)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSemicolon">
+      <MemberSignature Language="C#" Value="NoSemicolon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoSemicolon = int32(1004)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchMember">
+      <MemberSignature Language="C#" Value="NoSuchMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoSuchMember = int32(1151)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchStaticMember">
+      <MemberSignature Language="C#" Value="NoSuchStaticMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoSuchStaticMember = int32(1246)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchType">
+      <MemberSignature Language="C#" Value="NoSuchType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoSuchType = int32(1241)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAccessible">
+      <MemberSignature Language="C#" Value="NotAccessible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotAccessible = int32(1123)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAllowedInSuperConstructorCall">
+      <MemberSignature Language="C#" Value="NotAllowedInSuperConstructorCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotAllowedInSuperConstructorCall = int32(1140)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAnExpandoFunction">
+      <MemberSignature Language="C#" Value="NotAnExpandoFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotAnExpandoFunction = int32(1252)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotCollection">
+      <MemberSignature Language="C#" Value="NotCollection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotCollection = int32(451)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotConst">
+      <MemberSignature Language="C#" Value="NotConst" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotConst = int32(1031)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotDeletable">
+      <MemberSignature Language="C#" Value="NotDeletable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotDeletable = int32(1164)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotIndexable">
+      <MemberSignature Language="C#" Value="NotIndexable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotIndexable = int32(1158)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotInsideClass">
+      <MemberSignature Language="C#" Value="NotInsideClass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotInsideClass = int32(1113)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotMeantToBeCalledDirectly">
+      <MemberSignature Language="C#" Value="NotMeantToBeCalledDirectly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotMeantToBeCalledDirectly = int32(1141)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotOKToCallSuper">
+      <MemberSignature Language="C#" Value="NotOKToCallSuper" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotOKToCallSuper = int32(1188)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotValidForConstructor">
+      <MemberSignature Language="C#" Value="NotValidForConstructor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotValidForConstructor = int32(1181)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotValidVersionString">
+      <MemberSignature Language="C#" Value="NotValidVersionString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotValidVersionString = int32(1253)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotYetImplemented">
+      <MemberSignature Language="C#" Value="NotYetImplemented" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NotYetImplemented = int32(5034)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoVarInEnum">
+      <MemberSignature Language="C#" Value="NoVarInEnum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoVarInEnum = int32(1228)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoWhile">
+      <MemberSignature Language="C#" Value="NoWhile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NoWhile = int32(1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberExpected">
+      <MemberSignature Language="C#" Value="NumberExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError NumberExpected = int32(5001)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectExpected">
+      <MemberSignature Language="C#" Value="ObjectExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ObjectExpected = int32(5007)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OctalLiteralsAreDeprecated">
+      <MemberSignature Language="C#" Value="OctalLiteralsAreDeprecated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OctalLiteralsAreDeprecated = int32(1186)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OLENoPropOrMethod">
+      <MemberSignature Language="C#" Value="OLENoPropOrMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OLENoPropOrMethod = int32(438)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnlyClassesAllowed">
+      <MemberSignature Language="C#" Value="OnlyClassesAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OnlyClassesAllowed = int32(1161)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnlyClassesAndPackagesAllowed">
+      <MemberSignature Language="C#" Value="OnlyClassesAndPackagesAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OnlyClassesAndPackagesAllowed = int32(1234)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutOfMemory">
+      <MemberSignature Language="C#" Value="OutOfMemory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OutOfMemory = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutOfStack">
+      <MemberSignature Language="C#" Value="OutOfStack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OutOfStack = int32(28)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideAndHideUsedTogether">
+      <MemberSignature Language="C#" Value="OverrideAndHideUsedTogether" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError OverrideAndHideUsedTogether = int32(1178)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PackageExpected">
+      <MemberSignature Language="C#" Value="PackageExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError PackageExpected = int32(1165)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PackageInWrongContext">
+      <MemberSignature Language="C#" Value="PackageInWrongContext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError PackageInWrongContext = int32(1232)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParamListNotLast">
+      <MemberSignature Language="C#" Value="ParamListNotLast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ParamListNotLast = int32(1240)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PossibleBadConversion">
+      <MemberSignature Language="C#" Value="PossibleBadConversion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError PossibleBadConversion = int32(1260)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PossibleBadConversionFromString">
+      <MemberSignature Language="C#" Value="PossibleBadConversionFromString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError PossibleBadConversionFromString = int32(1261)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecisionOutOfRange">
+      <MemberSignature Language="C#" Value="PrecisionOutOfRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError PrecisionOutOfRange = int32(5027)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyLevelAttributesMustBeOnGetter">
+      <MemberSignature Language="C#" Value="PropertyLevelAttributesMustBeOnGetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError PropertyLevelAttributesMustBeOnGetter = int32(1238)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RefParamsNonSupportedInDebugger">
+      <MemberSignature Language="C#" Value="RefParamsNonSupportedInDebugger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError RefParamsNonSupportedInDebugger = int32(5043)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RegExpExpected">
+      <MemberSignature Language="C#" Value="RegExpExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError RegExpExpected = int32(5016)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RegExpSyntax">
+      <MemberSignature Language="C#" Value="RegExpSyntax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError RegExpSyntax = int32(5017)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldBeAbstract">
+      <MemberSignature Language="C#" Value="ShouldBeAbstract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError ShouldBeAbstract = int32(1223)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SideEffectsDisallowed">
+      <MemberSignature Language="C#" Value="SideEffectsDisallowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError SideEffectsDisallowed = int32(6012)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticIsAlreadyFinal">
+      <MemberSignature Language="C#" Value="StaticIsAlreadyFinal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StaticIsAlreadyFinal = int32(1217)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticMethodsCannotHide">
+      <MemberSignature Language="C#" Value="StaticMethodsCannotHide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StaticMethodsCannotHide = int32(1219)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticMethodsCannotOverride">
+      <MemberSignature Language="C#" Value="StaticMethodsCannotOverride" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StaticMethodsCannotOverride = int32(1218)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticMissingInStaticInit">
+      <MemberSignature Language="C#" Value="StaticMissingInStaticInit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StaticMissingInStaticInit = int32(1159)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticRequiresTypeName">
+      <MemberSignature Language="C#" Value="StaticRequiresTypeName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StaticRequiresTypeName = int32(1244)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticVarNotAvailable">
+      <MemberSignature Language="C#" Value="StaticVarNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StaticVarNotAvailable = int32(6009)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StringConcatIsSlow">
+      <MemberSignature Language="C#" Value="StringConcatIsSlow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StringConcatIsSlow = int32(1255)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StringExpected">
+      <MemberSignature Language="C#" Value="StringExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError StringExpected = int32(5005)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuperClassConstructorNotAccessible">
+      <MemberSignature Language="C#" Value="SuperClassConstructorNotAccessible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError SuperClassConstructorNotAccessible = int32(1185)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspectAssignment">
+      <MemberSignature Language="C#" Value="SuspectAssignment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError SuspectAssignment = int32(1206)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspectLoopCondition">
+      <MemberSignature Language="C#" Value="SuspectLoopCondition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError SuspectLoopCondition = int32(1247)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspectSemicolon">
+      <MemberSignature Language="C#" Value="SuspectSemicolon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError SuspectSemicolon = int32(1207)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SyntaxError">
+      <MemberSignature Language="C#" Value="SyntaxError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError SyntaxError = int32(1002)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TooFewParameters">
+      <MemberSignature Language="C#" Value="TooFewParameters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TooFewParameters = int32(1204)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TooManyParameters">
+      <MemberSignature Language="C#" Value="TooManyParameters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TooManyParameters = int32(1148)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TooManyTokensSkipped">
+      <MemberSignature Language="C#" Value="TooManyTokensSkipped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TooManyTokensSkipped = int32(1197)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeAssemblyCLSCompliantMismatch">
+      <MemberSignature Language="C#" Value="TypeAssemblyCLSCompliantMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TypeAssemblyCLSCompliantMismatch = int32(1266)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeCannotBeExtended">
+      <MemberSignature Language="C#" Value="TypeCannotBeExtended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TypeCannotBeExtended = int32(1134)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeMismatch">
+      <MemberSignature Language="C#" Value="TypeMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TypeMismatch = int32(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeNameTooLong">
+      <MemberSignature Language="C#" Value="TypeNameTooLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TypeNameTooLong = int32(1269)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeObjectNotAvailable">
+      <MemberSignature Language="C#" Value="TypeObjectNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError TypeObjectNotAvailable = int32(6010)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncaughtException">
+      <MemberSignature Language="C#" Value="UncaughtException" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UncaughtException = int32(5022)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UndeclaredVariable">
+      <MemberSignature Language="C#" Value="UndeclaredVariable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UndeclaredVariable = int32(1135)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UndefinedIdentifier">
+      <MemberSignature Language="C#" Value="UndefinedIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UndefinedIdentifier = int32(5009)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnexpectedSemicolon">
+      <MemberSignature Language="C#" Value="UnexpectedSemicolon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UnexpectedSemicolon = int32(1196)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnreachableCatch">
+      <MemberSignature Language="C#" Value="UnreachableCatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UnreachableCatch = int32(1133)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnterminatedString">
+      <MemberSignature Language="C#" Value="UnterminatedString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UnterminatedString = int32(1015)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URIDecodeError">
+      <MemberSignature Language="C#" Value="URIDecodeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError URIDecodeError = int32(5025)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URIEncodeError">
+      <MemberSignature Language="C#" Value="URIEncodeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError URIEncodeError = int32(5024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UselessAssignment">
+      <MemberSignature Language="C#" Value="UselessAssignment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UselessAssignment = int32(1205)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UselessExpression">
+      <MemberSignature Language="C#" Value="UselessExpression" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError UselessExpression = int32(1169)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableLeftUninitialized">
+      <MemberSignature Language="C#" Value="VariableLeftUninitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError VariableLeftUninitialized = int32(1136)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableMightBeUnitialized">
+      <MemberSignature Language="C#" Value="VariableMightBeUnitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError VariableMightBeUnitialized = int32(1187)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VarIllegalInInterface">
+      <MemberSignature Language="C#" Value="VarIllegalInInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError VarIllegalInInterface = int32(1226)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VBArrayExpected">
+      <MemberSignature Language="C#" Value="VBArrayExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError VBArrayExpected = int32(5013)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteOnlyProperty">
+      <MemberSignature Language="C#" Value="WriteOnlyProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError WriteOnlyProperty = int32(5041)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WrongDirective">
+      <MemberSignature Language="C#" Value="WrongDirective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError WrongDirective = int32(1118)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WrongUseOfAddressOf">
+      <MemberSignature Language="C#" Value="WrongUseOfAddressOf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSError WrongUseOfAddressOf = int32(1263)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

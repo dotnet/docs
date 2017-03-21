@@ -1,10 +1,8 @@
 <Type Name="RegistrationConnectionType" FullName="System.Runtime.InteropServices.RegistrationConnectionType">
   <TypeSignature Language="C#" Value="public enum RegistrationConnectionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistrationConnectionType extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RegistrationConnectionType" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,11 +21,9 @@
     <Member MemberName="MultipleUse">
       <MemberSignature Language="C#" Value="MultipleUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType MultipleUse = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.MultipleUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,11 +36,9 @@
     <Member MemberName="MultiSeparate">
       <MemberSignature Language="C#" Value="MultiSeparate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType MultiSeparate = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.MultiSeparate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,11 +51,9 @@
     <Member MemberName="SingleUse">
       <MemberSignature Language="C#" Value="SingleUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType SingleUse = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.SingleUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,11 +66,9 @@
     <Member MemberName="Surrogate">
       <MemberSignature Language="C#" Value="Surrogate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType Surrogate = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.Surrogate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,11 +81,9 @@
     <Member MemberName="Suspended">
       <MemberSignature Language="C#" Value="Suspended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType Suspended = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.Suspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

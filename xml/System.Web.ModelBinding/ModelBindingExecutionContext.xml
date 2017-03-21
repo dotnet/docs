@@ -1,0 +1,139 @@
+<Type Name="ModelBindingExecutionContext" FullName="System.Web.ModelBinding.ModelBindingExecutionContext">
+  <TypeSignature Language="C#" Value="public class ModelBindingExecutionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelBindingExecutionContext extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelBindingExecutionContext (System.Web.HttpContextBase httpContext, System.Web.ModelBinding.ModelStateDictionary modelState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContextBase httpContext, class System.Web.ModelBinding.ModelStateDictionary modelState) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
+        <Parameter Name="modelState" Type="System.Web.ModelBinding.ModelStateDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="httpContext">To be added.</param>
+        <param name="modelState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService&lt;TService&gt;">
+      <MemberSignature Language="C#" Value="public virtual TService GetService&lt;TService&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TService GetService&lt;TService&gt;() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TService</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TService" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TService">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpContext">
+      <MemberSignature Language="C#" Value="public virtual System.Web.HttpContextBase HttpContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContextBase HttpContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContextBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelState">
+      <MemberSignature Language="C#" Value="public virtual System.Web.ModelBinding.ModelStateDictionary ModelState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelStateDictionary ModelState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelStateDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishService&lt;TService&gt;">
+      <MemberSignature Language="C#" Value="public virtual void PublishService&lt;TService&gt; (TService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PublishService&lt;TService&gt;(!!TService service) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TService" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="service" Type="TService" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TService">To be added.</typeparam>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetService&lt;TService&gt;">
+      <MemberSignature Language="C#" Value="public virtual TService TryGetService&lt;TService&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TService TryGetService&lt;TService&gt;() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TService</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TService" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TService">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

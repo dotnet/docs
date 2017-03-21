@@ -1,0 +1,51 @@
+<Type Name="ParameterXPathQueryGenerator" FullName="System.ServiceModel.Description.ParameterXPathQueryGenerator">
+  <TypeSignature Language="C#" Value="public static class ParameterXPathQueryGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ParameterXPathQueryGenerator extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromDataContractSerializer">
+      <MemberSignature Language="C#" Value="public static string CreateFromDataContractSerializer (System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, Type type, System.Reflection.MemberInfo[] pathToMember, out System.Xml.XmlNamespaceManager namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, class System.Type type, class System.Reflection.MemberInfo[] pathToMember, class System.Xml.XmlNamespaceManager namespaces) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceContractName" Type="System.Xml.Linq.XName" />
+        <Parameter Name="operationName" Type="System.String" />
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="isReply" Type="System.Boolean" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="pathToMember" Type="System.Reflection.MemberInfo[]" />
+        <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="serviceContractName">To be added.</param>
+        <param name="operationName">To be added.</param>
+        <param name="parameterName">To be added.</param>
+        <param name="isReply">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="pathToMember">To be added.</param>
+        <param name="namespaces">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

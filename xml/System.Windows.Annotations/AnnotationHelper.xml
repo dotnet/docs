@@ -1,0 +1,172 @@
+<Type Name="AnnotationHelper" FullName="System.Windows.Annotations.AnnotationHelper">
+  <TypeSignature Language="C#" Value="public static class AnnotationHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AnnotationHelper extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearHighlightsForSelection">
+      <MemberSignature Language="C#" Value="public static void ClearHighlightsForSelection (System.Windows.Annotations.AnnotationService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearHighlightsForSelection(class System.Windows.Annotations.AnnotationService service) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHighlightForSelection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Annotations.Annotation CreateHighlightForSelection (System.Windows.Annotations.AnnotationService service, string author, System.Windows.Media.Brush highlightBrush);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Annotations.Annotation CreateHighlightForSelection(class System.Windows.Annotations.AnnotationService service, string author, class System.Windows.Media.Brush highlightBrush) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+        <Parameter Name="author" Type="System.String" />
+        <Parameter Name="highlightBrush" Type="System.Windows.Media.Brush" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="author">To be added.</param>
+        <param name="highlightBrush">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInkStickyNoteForSelection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Annotations.Annotation CreateInkStickyNoteForSelection (System.Windows.Annotations.AnnotationService service, string author);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Annotations.Annotation CreateInkStickyNoteForSelection(class System.Windows.Annotations.AnnotationService service, string author) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+        <Parameter Name="author" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="author">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTextStickyNoteForSelection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Annotations.Annotation CreateTextStickyNoteForSelection (System.Windows.Annotations.AnnotationService service, string author);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Annotations.Annotation CreateTextStickyNoteForSelection(class System.Windows.Annotations.AnnotationService service, string author) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+        <Parameter Name="author" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="author">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteInkStickyNotesForSelection">
+      <MemberSignature Language="C#" Value="public static void DeleteInkStickyNotesForSelection (System.Windows.Annotations.AnnotationService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteInkStickyNotesForSelection(class System.Windows.Annotations.AnnotationService service) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTextStickyNotesForSelection">
+      <MemberSignature Language="C#" Value="public static void DeleteTextStickyNotesForSelection (System.Windows.Annotations.AnnotationService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteTextStickyNotesForSelection(class System.Windows.Annotations.AnnotationService service) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAnchorInfo">
+      <MemberSignature Language="C#" Value="public static System.Windows.Annotations.IAnchorInfo GetAnchorInfo (System.Windows.Annotations.AnnotationService service, System.Windows.Annotations.Annotation annotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Annotations.IAnchorInfo GetAnchorInfo(class System.Windows.Annotations.AnnotationService service, class System.Windows.Annotations.Annotation annotation) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.IAnchorInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Windows.Annotations.AnnotationService" />
+        <Parameter Name="annotation" Type="System.Windows.Annotations.Annotation" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <param name="annotation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

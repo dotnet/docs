@@ -1,0 +1,60 @@
+<Type Name="IDataServicePagingProvider" FullName="System.Data.Services.Providers.IDataServicePagingProvider">
+  <TypeSignature Language="C#" Value="public interface IDataServicePagingProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServicePagingProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetContinuationToken">
+      <MemberSignature Language="C#" Value="public object[] GetContinuationToken (System.Collections.IEnumerator enumerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetContinuationToken(class System.Collections.IEnumerator enumerator) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumerator" Type="System.Collections.IEnumerator" />
+      </Parameters>
+      <Docs>
+        <param name="enumerator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContinuationToken">
+      <MemberSignature Language="C#" Value="public void SetContinuationToken (System.Linq.IQueryable query, System.Data.Services.Providers.ResourceType resourceType, object[] continuationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContinuationToken(class System.Linq.IQueryable query, class System.Data.Services.Providers.ResourceType resourceType, object[] continuationToken) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.Linq.IQueryable" />
+        <Parameter Name="resourceType" Type="System.Data.Services.Providers.ResourceType" />
+        <Parameter Name="continuationToken" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="query">To be added.</param>
+        <param name="resourceType">To be added.</param>
+        <param name="continuationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

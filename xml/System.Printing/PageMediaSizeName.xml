@@ -1,0 +1,2582 @@
+<Type Name="PageMediaSizeName" FullName="System.Printing.PageMediaSizeName">
+  <TypeSignature Language="C#" Value="public enum PageMediaSizeName" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageMediaSizeName extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BusinessCard">
+      <MemberSignature Language="C#" Value="BusinessCard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName BusinessCard = int32(169)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreditCard">
+      <MemberSignature Language="C#" Value="CreditCard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName CreditCard = int32(170)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA0">
+      <MemberSignature Language="C#" Value="ISOA0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA0 = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA1">
+      <MemberSignature Language="C#" Value="ISOA1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA1 = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA10">
+      <MemberSignature Language="C#" Value="ISOA10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA10 = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA2">
+      <MemberSignature Language="C#" Value="ISOA2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA2 = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA3">
+      <MemberSignature Language="C#" Value="ISOA3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA3 = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA3Extra">
+      <MemberSignature Language="C#" Value="ISOA3Extra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA3Extra = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA3Rotated">
+      <MemberSignature Language="C#" Value="ISOA3Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA3Rotated = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA4">
+      <MemberSignature Language="C#" Value="ISOA4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA4 = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA4Extra">
+      <MemberSignature Language="C#" Value="ISOA4Extra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA4Extra = int32(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA4Rotated">
+      <MemberSignature Language="C#" Value="ISOA4Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA4Rotated = int32(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA5">
+      <MemberSignature Language="C#" Value="ISOA5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA5 = int32(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA5Extra">
+      <MemberSignature Language="C#" Value="ISOA5Extra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA5Extra = int32(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA5Rotated">
+      <MemberSignature Language="C#" Value="ISOA5Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA5Rotated = int32(12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA6">
+      <MemberSignature Language="C#" Value="ISOA6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA6 = int32(14)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA6Rotated">
+      <MemberSignature Language="C#" Value="ISOA6Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA6Rotated = int32(15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA7">
+      <MemberSignature Language="C#" Value="ISOA7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA7 = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA8">
+      <MemberSignature Language="C#" Value="ISOA8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA8 = int32(17)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOA9">
+      <MemberSignature Language="C#" Value="ISOA9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOA9 = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB0">
+      <MemberSignature Language="C#" Value="ISOB0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB0 = int32(19)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB1">
+      <MemberSignature Language="C#" Value="ISOB1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB1 = int32(20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB10">
+      <MemberSignature Language="C#" Value="ISOB10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB10 = int32(21)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB2">
+      <MemberSignature Language="C#" Value="ISOB2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB2 = int32(22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB3">
+      <MemberSignature Language="C#" Value="ISOB3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB3 = int32(23)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB4">
+      <MemberSignature Language="C#" Value="ISOB4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB4 = int32(24)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB4Envelope">
+      <MemberSignature Language="C#" Value="ISOB4Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB4Envelope = int32(25)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB5Envelope">
+      <MemberSignature Language="C#" Value="ISOB5Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB5Envelope = int32(26)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB5Extra">
+      <MemberSignature Language="C#" Value="ISOB5Extra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB5Extra = int32(27)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB7">
+      <MemberSignature Language="C#" Value="ISOB7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB7 = int32(28)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB8">
+      <MemberSignature Language="C#" Value="ISOB8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB8 = int32(29)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOB9">
+      <MemberSignature Language="C#" Value="ISOB9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOB9 = int32(30)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC0">
+      <MemberSignature Language="C#" Value="ISOC0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC0 = int32(31)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC1">
+      <MemberSignature Language="C#" Value="ISOC1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC1 = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC10">
+      <MemberSignature Language="C#" Value="ISOC10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC10 = int32(33)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC2">
+      <MemberSignature Language="C#" Value="ISOC2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC2 = int32(34)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC3">
+      <MemberSignature Language="C#" Value="ISOC3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC3 = int32(35)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC3Envelope">
+      <MemberSignature Language="C#" Value="ISOC3Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC3Envelope = int32(36)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC4">
+      <MemberSignature Language="C#" Value="ISOC4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC4 = int32(37)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC4Envelope">
+      <MemberSignature Language="C#" Value="ISOC4Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC4Envelope = int32(38)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC5">
+      <MemberSignature Language="C#" Value="ISOC5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC5 = int32(39)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC5Envelope">
+      <MemberSignature Language="C#" Value="ISOC5Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC5Envelope = int32(40)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC6">
+      <MemberSignature Language="C#" Value="ISOC6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC6 = int32(41)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC6C5Envelope">
+      <MemberSignature Language="C#" Value="ISOC6C5Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC6C5Envelope = int32(43)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC6Envelope">
+      <MemberSignature Language="C#" Value="ISOC6Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC6Envelope = int32(42)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC7">
+      <MemberSignature Language="C#" Value="ISOC7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC7 = int32(44)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC8">
+      <MemberSignature Language="C#" Value="ISOC8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC8 = int32(45)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOC9">
+      <MemberSignature Language="C#" Value="ISOC9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOC9 = int32(46)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISODLEnvelope">
+      <MemberSignature Language="C#" Value="ISODLEnvelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISODLEnvelope = int32(47)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISODLEnvelopeRotated">
+      <MemberSignature Language="C#" Value="ISODLEnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISODLEnvelopeRotated = int32(48)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOSRA3">
+      <MemberSignature Language="C#" Value="ISOSRA3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName ISOSRA3 = int32(49)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Japan2LPhoto">
+      <MemberSignature Language="C#" Value="Japan2LPhoto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Japan2LPhoto = int32(156)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanChou3Envelope">
+      <MemberSignature Language="C#" Value="JapanChou3Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanChou3Envelope = int32(65)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanChou3EnvelopeRotated">
+      <MemberSignature Language="C#" Value="JapanChou3EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanChou3EnvelopeRotated = int32(66)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanChou4Envelope">
+      <MemberSignature Language="C#" Value="JapanChou4Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanChou4Envelope = int32(67)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanChou4EnvelopeRotated">
+      <MemberSignature Language="C#" Value="JapanChou4EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanChou4EnvelopeRotated = int32(68)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanDoubleHagakiPostcard">
+      <MemberSignature Language="C#" Value="JapanDoubleHagakiPostcard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanDoubleHagakiPostcard = int32(153)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanDoubleHagakiPostcardRotated">
+      <MemberSignature Language="C#" Value="JapanDoubleHagakiPostcardRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanDoubleHagakiPostcardRotated = int32(154)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanHagakiPostcard">
+      <MemberSignature Language="C#" Value="JapanHagakiPostcard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanHagakiPostcard = int32(69)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanHagakiPostcardRotated">
+      <MemberSignature Language="C#" Value="JapanHagakiPostcardRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanHagakiPostcardRotated = int32(70)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanKaku2Envelope">
+      <MemberSignature Language="C#" Value="JapanKaku2Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanKaku2Envelope = int32(71)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanKaku2EnvelopeRotated">
+      <MemberSignature Language="C#" Value="JapanKaku2EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanKaku2EnvelopeRotated = int32(72)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanKaku3Envelope">
+      <MemberSignature Language="C#" Value="JapanKaku3Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanKaku3Envelope = int32(73)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanKaku3EnvelopeRotated">
+      <MemberSignature Language="C#" Value="JapanKaku3EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanKaku3EnvelopeRotated = int32(74)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanLPhoto">
+      <MemberSignature Language="C#" Value="JapanLPhoto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanLPhoto = int32(155)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanQuadrupleHagakiPostcard">
+      <MemberSignature Language="C#" Value="JapanQuadrupleHagakiPostcard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanQuadrupleHagakiPostcard = int32(50)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou1Envelope">
+      <MemberSignature Language="C#" Value="JapanYou1Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou1Envelope = int32(157)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou2Envelope">
+      <MemberSignature Language="C#" Value="JapanYou2Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou2Envelope = int32(158)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou3Envelope">
+      <MemberSignature Language="C#" Value="JapanYou3Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou3Envelope = int32(159)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou4Envelope">
+      <MemberSignature Language="C#" Value="JapanYou4Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou4Envelope = int32(75)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou4EnvelopeRotated">
+      <MemberSignature Language="C#" Value="JapanYou4EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou4EnvelopeRotated = int32(160)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou6Envelope">
+      <MemberSignature Language="C#" Value="JapanYou6Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou6Envelope = int32(161)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JapanYou6EnvelopeRotated">
+      <MemberSignature Language="C#" Value="JapanYou6EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JapanYou6EnvelopeRotated = int32(162)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB0">
+      <MemberSignature Language="C#" Value="JISB0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB0 = int32(51)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB1">
+      <MemberSignature Language="C#" Value="JISB1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB1 = int32(52)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB10">
+      <MemberSignature Language="C#" Value="JISB10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB10 = int32(53)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB2">
+      <MemberSignature Language="C#" Value="JISB2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB2 = int32(54)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB3">
+      <MemberSignature Language="C#" Value="JISB3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB3 = int32(55)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB4">
+      <MemberSignature Language="C#" Value="JISB4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB4 = int32(56)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB4Rotated">
+      <MemberSignature Language="C#" Value="JISB4Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB4Rotated = int32(57)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB5">
+      <MemberSignature Language="C#" Value="JISB5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB5 = int32(58)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB5Rotated">
+      <MemberSignature Language="C#" Value="JISB5Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB5Rotated = int32(59)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB6">
+      <MemberSignature Language="C#" Value="JISB6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB6 = int32(60)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB6Rotated">
+      <MemberSignature Language="C#" Value="JISB6Rotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB6Rotated = int32(61)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB7">
+      <MemberSignature Language="C#" Value="JISB7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB7 = int32(62)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB8">
+      <MemberSignature Language="C#" Value="JISB8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB8 = int32(63)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JISB9">
+      <MemberSignature Language="C#" Value="JISB9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName JISB9 = int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica10x11">
+      <MemberSignature Language="C#" Value="NorthAmerica10x11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica10x11 = int32(76)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica10x12">
+      <MemberSignature Language="C#" Value="NorthAmerica10x12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica10x12 = int32(167)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica10x14">
+      <MemberSignature Language="C#" Value="NorthAmerica10x14" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica10x14 = int32(77)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica11x17">
+      <MemberSignature Language="C#" Value="NorthAmerica11x17" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica11x17 = int32(78)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica14x17">
+      <MemberSignature Language="C#" Value="NorthAmerica14x17" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica14x17 = int32(168)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica4x6">
+      <MemberSignature Language="C#" Value="NorthAmerica4x6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica4x6 = int32(163)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica4x8">
+      <MemberSignature Language="C#" Value="NorthAmerica4x8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica4x8 = int32(164)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica5x7">
+      <MemberSignature Language="C#" Value="NorthAmerica5x7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica5x7 = int32(165)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica8x10">
+      <MemberSignature Language="C#" Value="NorthAmerica8x10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica8x10 = int32(166)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmerica9x11">
+      <MemberSignature Language="C#" Value="NorthAmerica9x11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmerica9x11 = int32(79)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaArchitectureASheet">
+      <MemberSignature Language="C#" Value="NorthAmericaArchitectureASheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaArchitectureASheet = int32(80)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaArchitectureBSheet">
+      <MemberSignature Language="C#" Value="NorthAmericaArchitectureBSheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaArchitectureBSheet = int32(81)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaArchitectureCSheet">
+      <MemberSignature Language="C#" Value="NorthAmericaArchitectureCSheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaArchitectureCSheet = int32(82)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaArchitectureDSheet">
+      <MemberSignature Language="C#" Value="NorthAmericaArchitectureDSheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaArchitectureDSheet = int32(83)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaArchitectureESheet">
+      <MemberSignature Language="C#" Value="NorthAmericaArchitectureESheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaArchitectureESheet = int32(84)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaCSheet">
+      <MemberSignature Language="C#" Value="NorthAmericaCSheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaCSheet = int32(85)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaDSheet">
+      <MemberSignature Language="C#" Value="NorthAmericaDSheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaDSheet = int32(86)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaESheet">
+      <MemberSignature Language="C#" Value="NorthAmericaESheet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaESheet = int32(87)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaExecutive">
+      <MemberSignature Language="C#" Value="NorthAmericaExecutive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaExecutive = int32(88)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaGermanLegalFanfold">
+      <MemberSignature Language="C#" Value="NorthAmericaGermanLegalFanfold" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaGermanLegalFanfold = int32(89)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaGermanStandardFanfold">
+      <MemberSignature Language="C#" Value="NorthAmericaGermanStandardFanfold" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaGermanStandardFanfold = int32(90)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaLegal">
+      <MemberSignature Language="C#" Value="NorthAmericaLegal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaLegal = int32(91)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaLegalExtra">
+      <MemberSignature Language="C#" Value="NorthAmericaLegalExtra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaLegalExtra = int32(92)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaLetter">
+      <MemberSignature Language="C#" Value="NorthAmericaLetter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaLetter = int32(93)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaLetterExtra">
+      <MemberSignature Language="C#" Value="NorthAmericaLetterExtra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaLetterExtra = int32(95)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaLetterPlus">
+      <MemberSignature Language="C#" Value="NorthAmericaLetterPlus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaLetterPlus = int32(96)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaLetterRotated">
+      <MemberSignature Language="C#" Value="NorthAmericaLetterRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaLetterRotated = int32(94)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaMonarchEnvelope">
+      <MemberSignature Language="C#" Value="NorthAmericaMonarchEnvelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaMonarchEnvelope = int32(97)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNote">
+      <MemberSignature Language="C#" Value="NorthAmericaNote" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNote = int32(98)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNumber10Envelope">
+      <MemberSignature Language="C#" Value="NorthAmericaNumber10Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNumber10Envelope = int32(99)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNumber10EnvelopeRotated">
+      <MemberSignature Language="C#" Value="NorthAmericaNumber10EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNumber10EnvelopeRotated = int32(100)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNumber11Envelope">
+      <MemberSignature Language="C#" Value="NorthAmericaNumber11Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNumber11Envelope = int32(102)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNumber12Envelope">
+      <MemberSignature Language="C#" Value="NorthAmericaNumber12Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNumber12Envelope = int32(103)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNumber14Envelope">
+      <MemberSignature Language="C#" Value="NorthAmericaNumber14Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNumber14Envelope = int32(104)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaNumber9Envelope">
+      <MemberSignature Language="C#" Value="NorthAmericaNumber9Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaNumber9Envelope = int32(101)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaPersonalEnvelope">
+      <MemberSignature Language="C#" Value="NorthAmericaPersonalEnvelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaPersonalEnvelope = int32(105)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaQuarto">
+      <MemberSignature Language="C#" Value="NorthAmericaQuarto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaQuarto = int32(106)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaStatement">
+      <MemberSignature Language="C#" Value="NorthAmericaStatement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaStatement = int32(107)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaSuperA">
+      <MemberSignature Language="C#" Value="NorthAmericaSuperA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaSuperA = int32(108)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaSuperB">
+      <MemberSignature Language="C#" Value="NorthAmericaSuperB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaSuperB = int32(109)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaTabloid">
+      <MemberSignature Language="C#" Value="NorthAmericaTabloid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaTabloid = int32(110)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorthAmericaTabloidExtra">
+      <MemberSignature Language="C#" Value="NorthAmericaTabloidExtra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName NorthAmericaTabloidExtra = int32(111)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherMetricA3Plus">
+      <MemberSignature Language="C#" Value="OtherMetricA3Plus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName OtherMetricA3Plus = int32(113)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherMetricA4Plus">
+      <MemberSignature Language="C#" Value="OtherMetricA4Plus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName OtherMetricA4Plus = int32(112)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherMetricFolio">
+      <MemberSignature Language="C#" Value="OtherMetricFolio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName OtherMetricFolio = int32(114)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherMetricInviteEnvelope">
+      <MemberSignature Language="C#" Value="OtherMetricInviteEnvelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName OtherMetricInviteEnvelope = int32(115)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherMetricItalianEnvelope">
+      <MemberSignature Language="C#" Value="OtherMetricItalianEnvelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName OtherMetricItalianEnvelope = int32(116)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC10Envelope">
+      <MemberSignature Language="C#" Value="PRC10Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC10Envelope = int32(119)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC10EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC10EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC10EnvelopeRotated = int32(120)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC16K">
+      <MemberSignature Language="C#" Value="PRC16K" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC16K = int32(121)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC16KRotated">
+      <MemberSignature Language="C#" Value="PRC16KRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC16KRotated = int32(122)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC1Envelope">
+      <MemberSignature Language="C#" Value="PRC1Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC1Envelope = int32(117)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC1EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC1EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC1EnvelopeRotated = int32(118)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC2Envelope">
+      <MemberSignature Language="C#" Value="PRC2Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC2Envelope = int32(123)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC2EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC2EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC2EnvelopeRotated = int32(124)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC32K">
+      <MemberSignature Language="C#" Value="PRC32K" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC32K = int32(125)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC32KBig">
+      <MemberSignature Language="C#" Value="PRC32KBig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC32KBig = int32(127)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC32KRotated">
+      <MemberSignature Language="C#" Value="PRC32KRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC32KRotated = int32(126)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC3Envelope">
+      <MemberSignature Language="C#" Value="PRC3Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC3Envelope = int32(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC3EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC3EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC3EnvelopeRotated = int32(129)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC4Envelope">
+      <MemberSignature Language="C#" Value="PRC4Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC4Envelope = int32(130)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC4EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC4EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC4EnvelopeRotated = int32(131)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC5Envelope">
+      <MemberSignature Language="C#" Value="PRC5Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC5Envelope = int32(132)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC5EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC5EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC5EnvelopeRotated = int32(133)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC6Envelope">
+      <MemberSignature Language="C#" Value="PRC6Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC6Envelope = int32(134)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC6EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC6EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC6EnvelopeRotated = int32(135)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC7Envelope">
+      <MemberSignature Language="C#" Value="PRC7Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC7Envelope = int32(136)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC7EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC7EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC7EnvelopeRotated = int32(137)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC8Envelope">
+      <MemberSignature Language="C#" Value="PRC8Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC8Envelope = int32(138)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC8EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC8EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC8EnvelopeRotated = int32(139)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC9Envelope">
+      <MemberSignature Language="C#" Value="PRC9Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC9Envelope = int32(140)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PRC9EnvelopeRotated">
+      <MemberSignature Language="C#" Value="PRC9EnvelopeRotated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName PRC9EnvelopeRotated = int32(141)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll04Inch">
+      <MemberSignature Language="C#" Value="Roll04Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll04Inch = int32(142)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll06Inch">
+      <MemberSignature Language="C#" Value="Roll06Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll06Inch = int32(143)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll08Inch">
+      <MemberSignature Language="C#" Value="Roll08Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll08Inch = int32(144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll12Inch">
+      <MemberSignature Language="C#" Value="Roll12Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll12Inch = int32(145)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll15Inch">
+      <MemberSignature Language="C#" Value="Roll15Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll15Inch = int32(146)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll18Inch">
+      <MemberSignature Language="C#" Value="Roll18Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll18Inch = int32(147)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll22Inch">
+      <MemberSignature Language="C#" Value="Roll22Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll22Inch = int32(148)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll24Inch">
+      <MemberSignature Language="C#" Value="Roll24Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll24Inch = int32(149)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll30Inch">
+      <MemberSignature Language="C#" Value="Roll30Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll30Inch = int32(150)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll36Inch">
+      <MemberSignature Language="C#" Value="Roll36Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll36Inch = int32(151)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roll54Inch">
+      <MemberSignature Language="C#" Value="Roll54Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Roll54Inch = int32(152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageMediaSizeName Unknown = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

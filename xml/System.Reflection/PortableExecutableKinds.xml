@@ -1,11 +1,13 @@
 <Type Name="PortableExecutableKinds" FullName="System.Reflection.PortableExecutableKinds">
   <TypeSignature Language="C#" Value="public enum PortableExecutableKinds" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PortableExecutableKinds extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutableKinds" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PortableExecutableKinds extends System.Enum" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -13,9 +15,6 @@
   <Attributes>
     <Attribute>
       <AttributeName>System.Flags</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,12 +25,14 @@
     <Member MemberName="ILOnly">
       <MemberSignature Language="C#" Value="ILOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds ILOnly = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.ILOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
@@ -43,12 +44,14 @@
     <Member MemberName="NotAPortableExecutableImage">
       <MemberSignature Language="C#" Value="NotAPortableExecutableImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds NotAPortableExecutableImage = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.NotAPortableExecutableImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
@@ -60,12 +63,14 @@
     <Member MemberName="PE32Plus">
       <MemberSignature Language="C#" Value="PE32Plus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds PE32Plus = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.PE32Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
@@ -77,17 +82,15 @@
     <Member MemberName="Preferred32Bit">
       <MemberSignature Language="C#" Value="Preferred32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds Preferred32Bit = int32(16)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.Preferred32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
@@ -98,12 +101,14 @@
     <Member MemberName="Required32Bit">
       <MemberSignature Language="C#" Value="Required32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds Required32Bit = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.Required32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
@@ -115,12 +120,14 @@
     <Member MemberName="Unmanaged32Bit">
       <MemberSignature Language="C#" Value="Unmanaged32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds Unmanaged32Bit = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.Unmanaged32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>

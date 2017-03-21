@@ -1,0 +1,152 @@
+<Type Name="ICompiledExpressionRoot" FullName="System.Activities.XamlIntegration.ICompiledExpressionRoot">
+  <TypeSignature Language="C#" Value="public interface ICompiledExpressionRoot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompiledExpressionRoot" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanExecuteExpression">
+      <MemberSignature Language="C#" Value="public bool CanExecuteExpression (string expressionText, bool isReference, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, out int expressionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecuteExpression(string expressionText, bool isReference, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, int32 expressionId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionText" Type="System.String" />
+        <Parameter Name="isReference" Type="System.Boolean" />
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+        <Parameter Name="expressionId" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="expressionText">To be added.</param>
+        <param name="isReference">To be added.</param>
+        <param name="locations">To be added.</param>
+        <param name="expressionId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpressionTreeForExpression">
+      <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression GetExpressionTreeForExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locationReferences);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression GetExpressionTreeForExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locationReferences) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="locationReferences" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">To be added.</param>
+        <param name="locationReferences">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLanguage">
+      <MemberSignature Language="C#" Value="public string GetLanguage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLanguage() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequiredLocations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; GetRequiredLocations (int expressionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetRequiredLocations(int32 expressionId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeExpression">
+      <MemberSignature Language="C#" Value="public object InvokeExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.Location&gt; locations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.Location&gt; locations) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.Location&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">To be added.</param>
+        <param name="locations">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeExpression">
+      <MemberSignature Language="C#" Value="public object InvokeExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, System.Activities.ActivityContext activityContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, class System.Activities.ActivityContext activityContext) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+        <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">To be added.</param>
+        <param name="locations">To be added.</param>
+        <param name="activityContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

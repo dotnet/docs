@@ -1,0 +1,262 @@
+<Type Name="StreamGeometryContext" FullName="System.Windows.Media.StreamGeometryContext">
+  <TypeSignature Language="C#" Value="public abstract class StreamGeometryContext : System.Windows.Threading.DispatcherObject, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamGeometryContext extends System.Windows.Threading.DispatcherObject implements class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ArcTo">
+      <MemberSignature Language="C#" Value="public abstract void ArcTo (System.Windows.Point point, System.Windows.Size size, double rotationAngle, bool isLargeArc, System.Windows.Media.SweepDirection sweepDirection, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ArcTo(valuetype System.Windows.Point point, valuetype System.Windows.Size size, float64 rotationAngle, bool isLargeArc, valuetype System.Windows.Media.SweepDirection sweepDirection, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+        <Parameter Name="size" Type="System.Windows.Size" />
+        <Parameter Name="rotationAngle" Type="System.Double" />
+        <Parameter Name="isLargeArc" Type="System.Boolean" />
+        <Parameter Name="sweepDirection" Type="System.Windows.Media.SweepDirection" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="rotationAngle">To be added.</param>
+        <param name="isLargeArc">To be added.</param>
+        <param name="sweepDirection">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFigure">
+      <MemberSignature Language="C#" Value="public abstract void BeginFigure (System.Windows.Point startPoint, bool isFilled, bool isClosed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFigure(valuetype System.Windows.Point startPoint, bool isFilled, bool isClosed) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startPoint" Type="System.Windows.Point" />
+        <Parameter Name="isFilled" Type="System.Boolean" />
+        <Parameter Name="isClosed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="startPoint">To be added.</param>
+        <param name="isFilled">To be added.</param>
+        <param name="isClosed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BezierTo">
+      <MemberSignature Language="C#" Value="public abstract void BezierTo (System.Windows.Point point1, System.Windows.Point point2, System.Windows.Point point3, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BezierTo(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2, valuetype System.Windows.Point point3, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point1" Type="System.Windows.Point" />
+        <Parameter Name="point2" Type="System.Windows.Point" />
+        <Parameter Name="point3" Type="System.Windows.Point" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="point1">To be added.</param>
+        <param name="point2">To be added.</param>
+        <param name="point3">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineTo">
+      <MemberSignature Language="C#" Value="public abstract void LineTo (System.Windows.Point point, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineTo(valuetype System.Windows.Point point, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolyBezierTo">
+      <MemberSignature Language="C#" Value="public abstract void PolyBezierTo (System.Collections.Generic.IList&lt;System.Windows.Point&gt; points, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PolyBezierTo(class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; points, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="points">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolyLineTo">
+      <MemberSignature Language="C#" Value="public abstract void PolyLineTo (System.Collections.Generic.IList&lt;System.Windows.Point&gt; points, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PolyLineTo(class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; points, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="points">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolyQuadraticBezierTo">
+      <MemberSignature Language="C#" Value="public abstract void PolyQuadraticBezierTo (System.Collections.Generic.IList&lt;System.Windows.Point&gt; points, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PolyQuadraticBezierTo(class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; points, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="points">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuadraticBezierTo">
+      <MemberSignature Language="C#" Value="public abstract void QuadraticBezierTo (System.Windows.Point point1, System.Windows.Point point2, bool isStroked, bool isSmoothJoin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void QuadraticBezierTo(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2, bool isStroked, bool isSmoothJoin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point1" Type="System.Windows.Point" />
+        <Parameter Name="point2" Type="System.Windows.Point" />
+        <Parameter Name="isStroked" Type="System.Boolean" />
+        <Parameter Name="isSmoothJoin" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="point1">To be added.</param>
+        <param name="point2">To be added.</param>
+        <param name="isStroked">To be added.</param>
+        <param name="isSmoothJoin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

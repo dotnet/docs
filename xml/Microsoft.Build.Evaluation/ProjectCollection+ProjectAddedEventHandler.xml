@@ -1,0 +1,24 @@
+<Type Name="ProjectCollection+ProjectAddedEventHandler" FullName="Microsoft.Build.Evaluation.ProjectCollection+ProjectAddedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ProjectCollection.ProjectAddedEventHandler(object sender, ProjectCollection.ProjectAddedToProjectCollectionEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ProjectCollection/ProjectAddedEventHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Microsoft.Build.Evaluation.ProjectCollection+ProjectAddedToProjectCollectionEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

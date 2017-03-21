@@ -1,0 +1,28 @@
+<Type Name="CollectionSynchronizationCallback" FullName="System.Windows.Data.CollectionSynchronizationCallback">
+  <TypeSignature Language="C#" Value="public delegate void CollectionSynchronizationCallback(IEnumerable collection, object context, Action accessMethod, bool writeAccess);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CollectionSynchronizationCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+    <Parameter Name="context" Type="System.Object" />
+    <Parameter Name="accessMethod" Type="System.Action" />
+    <Parameter Name="writeAccess" Type="System.Boolean" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="collection">To be added.</param>
+    <param name="context">To be added.</param>
+    <param name="accessMethod">To be added.</param>
+    <param name="writeAccess">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

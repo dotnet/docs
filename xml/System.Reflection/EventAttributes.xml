@@ -1,12 +1,17 @@
 <Type Name="EventAttributes" FullName="System.Reflection.EventAttributes">
   <TypeSignature Language="C#" Value="public enum EventAttributes" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EventAttributes extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Reflection.EventAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventAttributes extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -14,9 +19,6 @@
   <Attributes>
     <Attribute>
       <AttributeName>System.Flags</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,13 +29,18 @@
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.EventAttributes None = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
@@ -45,13 +52,10 @@
     <Member MemberName="ReservedMask">
       <MemberSignature Language="C#" Value="ReservedMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.EventAttributes ReservedMask = int32(1024)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
@@ -63,13 +67,18 @@
     <Member MemberName="RTSpecialName">
       <MemberSignature Language="C#" Value="RTSpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.EventAttributes RTSpecialName = int32(1024)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.EventAttributes</ReturnType>
@@ -81,13 +90,18 @@
     <Member MemberName="SpecialName">
       <MemberSignature Language="C#" Value="SpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.EventAttributes SpecialName = int32(512)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.EventAttributes</ReturnType>

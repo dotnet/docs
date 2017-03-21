@@ -1,10 +1,12 @@
 <Type Name="TokenAccessLevels" FullName="System.Security.Principal.TokenAccessLevels">
   <TypeSignature Language="C#" Value="public enum TokenAccessLevels" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TokenAccessLevels extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Security.Principal.TokenAccessLevels" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,11 +28,13 @@
     <Member MemberName="AdjustDefault">
       <MemberSignature Language="C#" Value="AdjustDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels AdjustDefault = int32(128)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -43,11 +47,13 @@
     <Member MemberName="AdjustGroups">
       <MemberSignature Language="C#" Value="AdjustGroups" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels AdjustGroups = int32(64)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustGroups" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,11 +66,13 @@
     <Member MemberName="AdjustPrivileges">
       <MemberSignature Language="C#" Value="AdjustPrivileges" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels AdjustPrivileges = int32(32)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustPrivileges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,11 +85,13 @@
     <Member MemberName="AdjustSessionId">
       <MemberSignature Language="C#" Value="AdjustSessionId" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels AdjustSessionId = int32(256)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AdjustSessionId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,11 +104,13 @@
     <Member MemberName="AllAccess">
       <MemberSignature Language="C#" Value="AllAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels AllAccess = int32(983551)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,11 +123,13 @@
     <Member MemberName="AssignPrimary">
       <MemberSignature Language="C#" Value="AssignPrimary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels AssignPrimary = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.AssignPrimary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,11 +142,13 @@
     <Member MemberName="Duplicate">
       <MemberSignature Language="C#" Value="Duplicate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels Duplicate = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Duplicate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,11 +161,13 @@
     <Member MemberName="Impersonate">
       <MemberSignature Language="C#" Value="Impersonate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels Impersonate = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Impersonate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,11 +180,13 @@
     <Member MemberName="MaximumAllowed">
       <MemberSignature Language="C#" Value="MaximumAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels MaximumAllowed = int32(33554432)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.MaximumAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,11 +199,13 @@
     <Member MemberName="Query">
       <MemberSignature Language="C#" Value="Query" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels Query = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Query" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,11 +218,13 @@
     <Member MemberName="QuerySource">
       <MemberSignature Language="C#" Value="QuerySource" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels QuerySource = int32(16)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.QuerySource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,11 +237,13 @@
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels Read = int32(131080)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,11 +256,13 @@
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.TokenAccessLevels Write = int32(131296)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.Principal.TokenAccessLevels.Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

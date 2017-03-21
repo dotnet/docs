@@ -1,0 +1,172 @@
+<Type Name="RuleExpressionWalker" FullName="System.Workflow.Activities.Rules.RuleExpressionWalker">
+  <TypeSignature Language="C#" Value="public static class RuleExpressionWalker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuleExpressionWalker extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnalyzeUsage">
+      <MemberSignature Language="C#" Value="public static void AnalyzeUsage (System.Workflow.Activities.Rules.RuleAnalysis analysis, System.CodeDom.CodeExpression expression, bool isRead, bool isWritten, System.Workflow.Activities.Rules.RulePathQualifier qualifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AnalyzeUsage(class System.Workflow.Activities.Rules.RuleAnalysis analysis, class System.CodeDom.CodeExpression expression, bool isRead, bool isWritten, class System.Workflow.Activities.Rules.RulePathQualifier qualifier) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="analysis" Type="System.Workflow.Activities.Rules.RuleAnalysis" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="isRead" Type="System.Boolean" />
+        <Parameter Name="isWritten" Type="System.Boolean" />
+        <Parameter Name="qualifier" Type="System.Workflow.Activities.Rules.RulePathQualifier" />
+      </Parameters>
+      <Docs>
+        <param name="analysis">To be added.</param>
+        <param name="expression">To be added.</param>
+        <param name="isRead">To be added.</param>
+        <param name="isWritten">To be added.</param>
+        <param name="qualifier">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public static System.CodeDom.CodeExpression Clone (System.CodeDom.CodeExpression originalExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.CodeDom.CodeExpression Clone(class System.CodeDom.CodeExpression originalExpression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="originalExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decompile">
+      <MemberSignature Language="C#" Value="public static void Decompile (System.Text.StringBuilder stringBuilder, System.CodeDom.CodeExpression expression, System.CodeDom.CodeExpression parentExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Decompile(class System.Text.StringBuilder stringBuilder, class System.CodeDom.CodeExpression expression, class System.CodeDom.CodeExpression parentExpression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:AvoidTypeNamesInParameters", MessageId="0#")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringBuilder" Type="System.Text.StringBuilder" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="parentExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringBuilder">To be added.</param>
+        <param name="expression">To be added.</param>
+        <param name="parentExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public static System.Workflow.Activities.Rules.RuleExpressionResult Evaluate (System.Workflow.Activities.Rules.RuleExecution execution, System.CodeDom.CodeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.Activities.Rules.RuleExpressionResult Evaluate(class System.Workflow.Activities.Rules.RuleExecution execution, class System.CodeDom.CodeExpression expression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleExpressionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="execution" Type="System.Workflow.Activities.Rules.RuleExecution" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="execution">To be added.</param>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Match">
+      <MemberSignature Language="C#" Value="public static bool Match (System.CodeDom.CodeExpression firstExpression, System.CodeDom.CodeExpression secondExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Match(class System.CodeDom.CodeExpression firstExpression, class System.CodeDom.CodeExpression secondExpression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:ValidateArgumentsOfPublicMethods")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="firstExpression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="secondExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="firstExpression">To be added.</param>
+        <param name="secondExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static System.Workflow.Activities.Rules.RuleExpressionInfo Validate (System.Workflow.Activities.Rules.RuleValidation validation, System.CodeDom.CodeExpression expression, bool isWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.Activities.Rules.RuleExpressionInfo Validate(class System.Workflow.Activities.Rules.RuleValidation validation, class System.CodeDom.CodeExpression expression, bool isWritten) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleExpressionInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="isWritten" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="validation">To be added.</param>
+        <param name="expression">To be added.</param>
+        <param name="isWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

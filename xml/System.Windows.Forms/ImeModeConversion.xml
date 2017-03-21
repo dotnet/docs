@@ -1,0 +1,52 @@
+<Type Name="ImeModeConversion" FullName="System.Windows.Forms.ImeModeConversion">
+  <TypeSignature Language="C#" Value="public struct ImeModeConversion" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImeModeConversion extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImeModeConversionBits">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode,System.Windows.Forms.ImeModeConversion&gt; ImeModeConversionBits { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.Dictionary`2&lt;valuetype System.Windows.Forms.ImeMode, valuetype System.Windows.Forms.ImeModeConversion&gt; ImeModeConversionBits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode,System.Windows.Forms.ImeModeConversion&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCurrentConversionTableSupported">
+      <MemberSignature Language="C#" Value="public static bool IsCurrentConversionTableSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsCurrentConversionTableSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

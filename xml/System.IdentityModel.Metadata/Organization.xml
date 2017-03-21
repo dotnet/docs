@@ -1,0 +1,104 @@
+<Type Name="Organization" FullName="System.IdentityModel.Metadata.Organization">
+  <TypeSignature Language="C#" Value="public class Organization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Organization extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Organization ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Organization (System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; names, System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; displayNames, System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt; urls);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; names, class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; displayNames, class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedUri&gt; urls) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="names" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;" />
+        <Parameter Name="displayNames" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;" />
+        <Parameter Name="urls" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="names">To be added.</param>
+        <param name="displayNames">To be added.</param>
+        <param name="urls">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayNames">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; DisplayNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; DisplayNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Names">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; Names { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; Names" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Urls">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt; Urls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedUri&gt; Urls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

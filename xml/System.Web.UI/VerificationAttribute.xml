@@ -1,0 +1,282 @@
+<Type Name="VerificationAttribute" FullName="System.Web.UI.VerificationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class VerificationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VerificationAttribute extends System.Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guideline" Type="System.String" />
+        <Parameter Name="checkpoint" Type="System.String" />
+        <Parameter Name="reportLevel" Type="System.Web.UI.VerificationReportLevel" />
+        <Parameter Name="priority" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guideline">To be added.</param>
+        <param name="checkpoint">To be added.</param>
+        <param name="reportLevel">To be added.</param>
+        <param name="priority">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message, System.Web.UI.VerificationRule rule, string conditionalProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message, valuetype System.Web.UI.VerificationRule rule, string conditionalProperty) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guideline" Type="System.String" />
+        <Parameter Name="checkpoint" Type="System.String" />
+        <Parameter Name="reportLevel" Type="System.Web.UI.VerificationReportLevel" />
+        <Parameter Name="priority" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="rule" Type="System.Web.UI.VerificationRule" />
+        <Parameter Name="conditionalProperty" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guideline">To be added.</param>
+        <param name="checkpoint">To be added.</param>
+        <param name="reportLevel">To be added.</param>
+        <param name="priority">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="rule">To be added.</param>
+        <param name="conditionalProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message, System.Web.UI.VerificationRule rule, string conditionalProperty, System.Web.UI.VerificationConditionalOperator conditionalOperator, string conditionalValue, string guidelineUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message, valuetype System.Web.UI.VerificationRule rule, string conditionalProperty, valuetype System.Web.UI.VerificationConditionalOperator conditionalOperator, string conditionalValue, string guidelineUrl) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guideline" Type="System.String" />
+        <Parameter Name="checkpoint" Type="System.String" />
+        <Parameter Name="reportLevel" Type="System.Web.UI.VerificationReportLevel" />
+        <Parameter Name="priority" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="rule" Type="System.Web.UI.VerificationRule" />
+        <Parameter Name="conditionalProperty" Type="System.String" />
+        <Parameter Name="conditionalOperator" Type="System.Web.UI.VerificationConditionalOperator" />
+        <Parameter Name="conditionalValue" Type="System.String" />
+        <Parameter Name="guidelineUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guideline">To be added.</param>
+        <param name="checkpoint">To be added.</param>
+        <param name="reportLevel">To be added.</param>
+        <param name="priority">To be added.</param>
+        <param name="message">To be added.</param>
+        <param name="rule">To be added.</param>
+        <param name="conditionalProperty">To be added.</param>
+        <param name="conditionalOperator">To be added.</param>
+        <param name="conditionalValue">To be added.</param>
+        <param name="guidelineUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checkpoint">
+      <MemberSignature Language="C#" Value="public string Checkpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Checkpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalProperty">
+      <MemberSignature Language="C#" Value="public string ConditionalProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionalProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalValue">
+      <MemberSignature Language="C#" Value="public string ConditionalValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionalValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Guideline">
+      <MemberSignature Language="C#" Value="public string Guideline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Guideline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GuidelineUrl">
+      <MemberSignature Language="C#" Value="public string GuidelineUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GuidelineUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerificationConditionalOperator">
+      <MemberSignature Language="C#" Value="public System.Web.UI.VerificationConditionalOperator VerificationConditionalOperator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationConditionalOperator VerificationConditionalOperator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationConditionalOperator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerificationReportLevel">
+      <MemberSignature Language="C#" Value="public System.Web.UI.VerificationReportLevel VerificationReportLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationReportLevel VerificationReportLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerificationRule">
+      <MemberSignature Language="C#" Value="public System.Web.UI.VerificationRule VerificationRule { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationRule VerificationRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

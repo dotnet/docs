@@ -1,0 +1,86 @@
+<Type Name="ExpressionMorphHelper" FullName="System.Activities.Presentation.Expressions.ExpressionMorphHelper">
+  <TypeSignature Language="C#" Value="public abstract class ExpressionMorphHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionMorphHelper extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExpressionMorphHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryInferReturnType">
+      <MemberSignature Language="C#" Value="public virtual bool TryInferReturnType (System.Activities.ActivityWithResult expression, System.Activities.Presentation.EditingContext context, out Type returnType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryInferReturnType(class System.Activities.ActivityWithResult expression, class System.Activities.Presentation.EditingContext context, class System.Type returnType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Activities.ActivityWithResult" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="expression">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryMorphExpression">
+      <MemberSignature Language="C#" Value="public abstract bool TryMorphExpression (System.Activities.ActivityWithResult expression, bool isLocationExpression, Type newType, System.Activities.Presentation.EditingContext context, out System.Activities.ActivityWithResult newExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryMorphExpression(class System.Activities.ActivityWithResult expression, bool isLocationExpression, class System.Type newType, class System.Activities.Presentation.EditingContext context, class System.Activities.ActivityWithResult newExpression) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Activities.ActivityWithResult" />
+        <Parameter Name="isLocationExpression" Type="System.Boolean" />
+        <Parameter Name="newType" Type="System.Type" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="newExpression" Type="System.Activities.ActivityWithResult&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="expression">To be added.</param>
+        <param name="isLocationExpression">To be added.</param>
+        <param name="newType">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="newExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

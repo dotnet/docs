@@ -1,7 +1,6 @@
 <Type Name="DesignerNamespaceResolveEventArgs" FullName="System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs">
   <TypeSignature Language="C#" Value="public class DesignerNamespaceResolveEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerNamespaceResolveEventArgs extends System.EventArgs" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,7 +22,6 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerNamespaceResolveEventArgs (string namespaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string namespaceName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -41,7 +39,6 @@
     <Member MemberName="NamespaceName">
       <MemberSignature Language="C#" Value="public string NamespaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -59,7 +56,6 @@
     <Member MemberName="ResolvedAssemblyFiles">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; ResolvedAssemblyFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; ResolvedAssemblyFiles" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.ResolvedAssemblyFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

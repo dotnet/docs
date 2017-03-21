@@ -1,12 +1,13 @@
 <Type Name="Formatter" FullName="System.Runtime.Serialization.Formatter">
   <TypeSignature Language="C#" Value="public abstract class Formatter : System.Runtime.Serialization.IFormatter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Formatter extends System.Object implements class System.Runtime.Serialization.IFormatter" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Formatter extends System.Object implements class System.Runtime.Serialization.IFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,9 +21,6 @@
     <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>
@@ -32,13 +30,14 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected Formatter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,13 +48,14 @@
     <Member MemberName="Binder">
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Serialization.SerializationBinder Binder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.SerializationBinder Binder" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatter.Binder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.SerializationBinder</ReturnType>
@@ -69,13 +69,14 @@
     <Member MemberName="Context">
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Serialization.StreamingContext Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.StreamingContext Context" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatter.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.StreamingContext</ReturnType>
@@ -89,13 +90,14 @@
     <Member MemberName="Deserialize">
       <MemberSignature Language="C#" Value="public abstract object Deserialize (System.IO.Stream serializationStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Deserialize(class System.IO.Stream serializationStream) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.Deserialize(System.IO.Stream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -113,13 +115,14 @@
     <Member MemberName="GetNext">
       <MemberSignature Language="C#" Value="protected virtual object GetNext (out long objID);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetNext(int64 objID) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.GetNext(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -137,13 +140,14 @@
     <Member MemberName="m_idGenerator">
       <MemberSignature Language="C#" Value="protected System.Runtime.Serialization.ObjectIDGenerator m_idGenerator;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Runtime.Serialization.ObjectIDGenerator m_idGenerator" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatter.m_idGenerator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.ObjectIDGenerator</ReturnType>
@@ -156,13 +160,14 @@
     <Member MemberName="m_objectQueue">
       <MemberSignature Language="C#" Value="protected System.Collections.Queue m_objectQueue;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Queue m_objectQueue" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatter.m_objectQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Queue</ReturnType>
@@ -175,13 +180,14 @@
     <Member MemberName="Schedule">
       <MemberSignature Language="C#" Value="protected virtual long Schedule (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int64 Schedule(object obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.Schedule(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -199,13 +205,14 @@
     <Member MemberName="Serialize">
       <MemberSignature Language="C#" Value="public abstract void Serialize (System.IO.Stream serializationStream, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Serialize(class System.IO.Stream serializationStream, object graph) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -224,13 +231,14 @@
     <Member MemberName="SurrogateSelector">
       <MemberSignature Language="C#" Value="public abstract System.Runtime.Serialization.ISurrogateSelector SurrogateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ISurrogateSelector SurrogateSelector" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatter.SurrogateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.ISurrogateSelector</ReturnType>
@@ -244,13 +252,14 @@
     <Member MemberName="WriteArray">
       <MemberSignature Language="C#" Value="protected abstract void WriteArray (object obj, string name, Type memberType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteArray(object obj, string name, class System.Type memberType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteArray(System.Object,System.String,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -271,13 +280,14 @@
     <Member MemberName="WriteBoolean">
       <MemberSignature Language="C#" Value="protected abstract void WriteBoolean (bool val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteBoolean(bool val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteBoolean(System.Boolean,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -296,13 +306,14 @@
     <Member MemberName="WriteByte">
       <MemberSignature Language="C#" Value="protected abstract void WriteByte (byte val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteByte(unsigned int8 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteByte(System.Byte,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -321,13 +332,14 @@
     <Member MemberName="WriteChar">
       <MemberSignature Language="C#" Value="protected abstract void WriteChar (char val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteChar(char val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteChar(System.Char,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -346,13 +358,14 @@
     <Member MemberName="WriteDateTime">
       <MemberSignature Language="C#" Value="protected abstract void WriteDateTime (DateTime val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteDateTime(valuetype System.DateTime val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteDateTime(System.DateTime,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -371,13 +384,14 @@
     <Member MemberName="WriteDecimal">
       <MemberSignature Language="C#" Value="protected abstract void WriteDecimal (decimal val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteDecimal(valuetype System.Decimal val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteDecimal(System.Decimal,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -396,13 +410,14 @@
     <Member MemberName="WriteDouble">
       <MemberSignature Language="C#" Value="protected abstract void WriteDouble (double val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteDouble(float64 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteDouble(System.Double,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -421,13 +436,14 @@
     <Member MemberName="WriteInt16">
       <MemberSignature Language="C#" Value="protected abstract void WriteInt16 (short val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteInt16(int16 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteInt16(System.Int16,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -446,13 +462,14 @@
     <Member MemberName="WriteInt32">
       <MemberSignature Language="C#" Value="protected abstract void WriteInt32 (int val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteInt32(int32 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteInt32(System.Int32,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -471,13 +488,14 @@
     <Member MemberName="WriteInt64">
       <MemberSignature Language="C#" Value="protected abstract void WriteInt64 (long val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteInt64(int64 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteInt64(System.Int64,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -496,13 +514,14 @@
     <Member MemberName="WriteMember">
       <MemberSignature Language="C#" Value="protected virtual void WriteMember (string memberName, object data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteMember(string memberName, object data) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteMember(System.String,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -521,13 +540,14 @@
     <Member MemberName="WriteObjectRef">
       <MemberSignature Language="C#" Value="protected abstract void WriteObjectRef (object obj, string name, Type memberType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteObjectRef(object obj, string name, class System.Type memberType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteObjectRef(System.Object,System.String,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -548,13 +568,14 @@
     <Member MemberName="WriteSByte">
       <MemberSignature Language="C#" Value="protected abstract void WriteSByte (sbyte val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSByte(int8 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteSByte(System.SByte,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -578,13 +599,14 @@
     <Member MemberName="WriteSingle">
       <MemberSignature Language="C#" Value="protected abstract void WriteSingle (float val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSingle(float32 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteSingle(System.Single,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -603,13 +625,14 @@
     <Member MemberName="WriteTimeSpan">
       <MemberSignature Language="C#" Value="protected abstract void WriteTimeSpan (TimeSpan val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteTimeSpan(valuetype System.TimeSpan val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteTimeSpan(System.TimeSpan,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -628,13 +651,14 @@
     <Member MemberName="WriteUInt16">
       <MemberSignature Language="C#" Value="protected abstract void WriteUInt16 (ushort val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteUInt16(unsigned int16 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteUInt16(System.UInt16,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -658,13 +682,14 @@
     <Member MemberName="WriteUInt32">
       <MemberSignature Language="C#" Value="protected abstract void WriteUInt32 (uint val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteUInt32(unsigned int32 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteUInt32(System.UInt32,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -688,13 +713,14 @@
     <Member MemberName="WriteUInt64">
       <MemberSignature Language="C#" Value="protected abstract void WriteUInt64 (ulong val, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteUInt64(unsigned int64 val, string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteUInt64(System.UInt64,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -718,13 +744,14 @@
     <Member MemberName="WriteValueType">
       <MemberSignature Language="C#" Value="protected abstract void WriteValueType (object obj, string name, Type memberType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteValueType(object obj, string name, class System.Type memberType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatter.WriteValueType(System.Object,System.String,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

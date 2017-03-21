@@ -1,0 +1,50 @@
+<Type Name="_RemotableHandle" FullName="Accessibility._RemotableHandle">
+  <TypeSignature Language="C#" Value="public struct _RemotableHandle" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit _RemotableHandle extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="fContext">
+      <MemberSignature Language="C#" Value="public int fContext;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 fContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="u">
+      <MemberSignature Language="C#" Value="public Accessibility.__MIDL_IWinTypes_0009 u;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Accessibility.__MIDL_IWinTypes_0009 u" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Accessibility.__MIDL_IWinTypes_0009</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

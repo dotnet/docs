@@ -1,0 +1,632 @@
+<Type Name="GlyphRun" FullName="System.Windows.Media.GlyphRun">
+  <TypeSignature Language="C#" Value="public class GlyphRun : System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlyphRun extends System.Object implements class System.ComponentModel.ISupportInitialize" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the PixelsPerDip override", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun (float pixelsPerDip);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 pixelsPerDip) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pixelsPerDip" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="pixelsPerDip">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun (System.Windows.Media.GlyphTypeface glyphTypeface, int bidiLevel, bool isSideways, double renderingEmSize, System.Collections.Generic.IList&lt;ushort&gt; glyphIndices, System.Windows.Point baselineOrigin, System.Collections.Generic.IList&lt;double&gt; advanceWidths, System.Collections.Generic.IList&lt;System.Windows.Point&gt; glyphOffsets, System.Collections.Generic.IList&lt;char&gt; characters, string deviceFontName, System.Collections.Generic.IList&lt;ushort&gt; clusterMap, System.Collections.Generic.IList&lt;bool&gt; caretStops, System.Windows.Markup.XmlLanguage language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GlyphTypeface glyphTypeface, int32 bidiLevel, bool isSideways, float64 renderingEmSize, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; glyphIndices, valuetype System.Windows.Point baselineOrigin, class System.Collections.Generic.IList`1&lt;float64&gt; advanceWidths, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; glyphOffsets, class System.Collections.Generic.IList`1&lt;char&gt; characters, string deviceFontName, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; clusterMap, class System.Collections.Generic.IList`1&lt;bool&gt; caretStops, class System.Windows.Markup.XmlLanguage language) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the PixelsPerDip override", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface" />
+        <Parameter Name="bidiLevel" Type="System.Int32" />
+        <Parameter Name="isSideways" Type="System.Boolean" />
+        <Parameter Name="renderingEmSize" Type="System.Double" />
+        <Parameter Name="glyphIndices" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="baselineOrigin" Type="System.Windows.Point" />
+        <Parameter Name="advanceWidths" Type="System.Collections.Generic.IList&lt;System.Double&gt;" />
+        <Parameter Name="glyphOffsets" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="characters" Type="System.Collections.Generic.IList&lt;System.Char&gt;" />
+        <Parameter Name="deviceFontName" Type="System.String" />
+        <Parameter Name="clusterMap" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="caretStops" Type="System.Collections.Generic.IList&lt;System.Boolean&gt;" />
+        <Parameter Name="language" Type="System.Windows.Markup.XmlLanguage" />
+      </Parameters>
+      <Docs>
+        <param name="glyphTypeface">To be added.</param>
+        <param name="bidiLevel">To be added.</param>
+        <param name="isSideways">To be added.</param>
+        <param name="renderingEmSize">To be added.</param>
+        <param name="glyphIndices">To be added.</param>
+        <param name="baselineOrigin">To be added.</param>
+        <param name="advanceWidths">To be added.</param>
+        <param name="glyphOffsets">To be added.</param>
+        <param name="characters">To be added.</param>
+        <param name="deviceFontName">To be added.</param>
+        <param name="clusterMap">To be added.</param>
+        <param name="caretStops">To be added.</param>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun (System.Windows.Media.GlyphTypeface glyphTypeface, int bidiLevel, bool isSideways, double renderingEmSize, float pixelsPerDip, System.Collections.Generic.IList&lt;ushort&gt; glyphIndices, System.Windows.Point baselineOrigin, System.Collections.Generic.IList&lt;double&gt; advanceWidths, System.Collections.Generic.IList&lt;System.Windows.Point&gt; glyphOffsets, System.Collections.Generic.IList&lt;char&gt; characters, string deviceFontName, System.Collections.Generic.IList&lt;ushort&gt; clusterMap, System.Collections.Generic.IList&lt;bool&gt; caretStops, System.Windows.Markup.XmlLanguage language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GlyphTypeface glyphTypeface, int32 bidiLevel, bool isSideways, float64 renderingEmSize, float32 pixelsPerDip, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; glyphIndices, valuetype System.Windows.Point baselineOrigin, class System.Collections.Generic.IList`1&lt;float64&gt; advanceWidths, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; glyphOffsets, class System.Collections.Generic.IList`1&lt;char&gt; characters, string deviceFontName, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; clusterMap, class System.Collections.Generic.IList`1&lt;bool&gt; caretStops, class System.Windows.Markup.XmlLanguage language) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface" />
+        <Parameter Name="bidiLevel" Type="System.Int32" />
+        <Parameter Name="isSideways" Type="System.Boolean" />
+        <Parameter Name="renderingEmSize" Type="System.Double" />
+        <Parameter Name="pixelsPerDip" Type="System.Single" />
+        <Parameter Name="glyphIndices" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="baselineOrigin" Type="System.Windows.Point" />
+        <Parameter Name="advanceWidths" Type="System.Collections.Generic.IList&lt;System.Double&gt;" />
+        <Parameter Name="glyphOffsets" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="characters" Type="System.Collections.Generic.IList&lt;System.Char&gt;" />
+        <Parameter Name="deviceFontName" Type="System.String" />
+        <Parameter Name="clusterMap" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="caretStops" Type="System.Collections.Generic.IList&lt;System.Boolean&gt;" />
+        <Parameter Name="language" Type="System.Windows.Markup.XmlLanguage" />
+      </Parameters>
+      <Docs>
+        <param name="glyphTypeface">To be added.</param>
+        <param name="bidiLevel">To be added.</param>
+        <param name="isSideways">To be added.</param>
+        <param name="renderingEmSize">To be added.</param>
+        <param name="pixelsPerDip">To be added.</param>
+        <param name="glyphIndices">To be added.</param>
+        <param name="baselineOrigin">To be added.</param>
+        <param name="advanceWidths">To be added.</param>
+        <param name="glyphOffsets">To be added.</param>
+        <param name="characters">To be added.</param>
+        <param name="deviceFontName">To be added.</param>
+        <param name="clusterMap">To be added.</param>
+        <param name="caretStops">To be added.</param>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvanceWidths">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;double&gt; AdvanceWidths { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;float64&gt; AdvanceWidths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.DoubleIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaselineOrigin">
+      <MemberSignature Language="C#" Value="public System.Windows.Point BaselineOrigin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point BaselineOrigin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BidiLevel">
+      <MemberSignature Language="C#" Value="public int BidiLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BidiLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildGeometry">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry BuildGeometry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Geometry BuildGeometry() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaretStops">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;bool&gt; CaretStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;bool&gt; CaretStops" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.BoolIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Characters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;char&gt; Characters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;char&gt; Characters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.CharIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusterMap">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;ushort&gt; ClusterMap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;unsigned int16&gt; ClusterMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.UShortIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeAlignmentBox">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect ComputeAlignmentBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect ComputeAlignmentBox() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeInkBoundingBox">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect ComputeInkBoundingBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect ComputeInkBoundingBox() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFontName">
+      <MemberSignature Language="C#" Value="public string DeviceFontName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceFontName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontRenderingEmSize">
+      <MemberSignature Language="C#" Value="public double FontRenderingEmSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontRenderingEmSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCaretCharacterHitFromDistance">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance (double distance, out bool isInside);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance(float64 distance, bool isInside) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distance" Type="System.Double" />
+        <Parameter Name="isInside" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="distance">To be added.</param>
+        <param name="isInside">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDistanceFromCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public double GetDistanceFromCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDistanceFromCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviousCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphIndices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;ushort&gt; GlyphIndices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;unsigned int16&gt; GlyphIndices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.UShortIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphOffsets">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Point&gt; GlyphOffsets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; GlyphOffsets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.PointIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Point&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphTypeface">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphTypeface GlyphTypeface { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GlyphTypeface GlyphTypeface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GlyphTypeface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHitTestable">
+      <MemberSignature Language="C#" Value="public bool IsHitTestable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHitTestable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSideways">
+      <MemberSignature Language="C#" Value="public bool IsSideways { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSideways" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public System.Windows.Markup.XmlLanguage Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.XmlLanguage Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XmlLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerDip">
+      <MemberSignature Language="C#" Value="public float PixelsPerDip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 PixelsPerDip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

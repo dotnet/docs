@@ -1,0 +1,28 @@
+<Type Name="DataColumnChangeEventHandler" FullName="System.Data.DataColumnChangeEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataColumnChangeEventHandler(object sender, DataColumnChangeEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataColumnChangeEventHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Data.DataColumnChangeEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

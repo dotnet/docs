@@ -1,0 +1,26 @@
+<Type Name="XmlSerializationFixupCallback" FullName="System.Xml.Serialization.XmlSerializationFixupCallback">
+  <TypeSignature Language="C#" Value="public delegate void XmlSerializationFixupCallback(object fixup);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationFixupCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="fixup" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="fixup">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,92 @@
+<Type Name="CodeConstructType" FullName="System.Web.UI.CodeConstructType">
+  <TypeSignature Language="C#" Value="public enum CodeConstructType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeConstructType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CodeSnippet">
+      <MemberSignature Language="C#" Value="CodeSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType CodeSnippet = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBindingSnippet">
+      <MemberSignature Language="C#" Value="DataBindingSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType DataBindingSnippet = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedExpressionSnippet">
+      <MemberSignature Language="C#" Value="EncodedExpressionSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType EncodedExpressionSnippet = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionSnippet">
+      <MemberSignature Language="C#" Value="ExpressionSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType ExpressionSnippet = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptTag">
+      <MemberSignature Language="C#" Value="ScriptTag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType ScriptTag = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

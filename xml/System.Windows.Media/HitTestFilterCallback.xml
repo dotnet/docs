@@ -1,0 +1,23 @@
+<Type Name="HitTestFilterCallback" FullName="System.Windows.Media.HitTestFilterCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Windows.Media.HitTestFilterBehavior HitTestFilterCallback(DependencyObject potentialHitTestTarget);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestFilterCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="potentialHitTestTarget" Type="System.Windows.DependencyObject" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="potentialHitTestTarget">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

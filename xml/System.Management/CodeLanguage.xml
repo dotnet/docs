@@ -1,0 +1,92 @@
+<Type Name="CodeLanguage" FullName="System.Management.CodeLanguage">
+  <TypeSignature Language="C#" Value="public enum CodeLanguage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeLanguage extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CSharp">
+      <MemberSignature Language="C#" Value="CSharp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage CSharp = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JScript">
+      <MemberSignature Language="C#" Value="JScript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage JScript = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mcpp">
+      <MemberSignature Language="C#" Value="Mcpp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage Mcpp = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VB">
+      <MemberSignature Language="C#" Value="VB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage VB = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VJSharp">
+      <MemberSignature Language="C#" Value="VJSharp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage VJSharp = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

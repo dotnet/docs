@@ -1,0 +1,283 @@
+<Type Name="DataServiceCollection&lt;T&gt;" FullName="System.Data.Services.Client.DataServiceCollection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class DataServiceCollection&lt;T&gt; : System.Collections.ObjectModel.ObservableCollection&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataServiceCollection`1&lt;T&gt; extends System.Collections.ObjectModel.ObservableCollection`1&lt;!T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ObservableCollection&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection (System.Data.Services.Client.DataServiceContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Client.DataServiceContext context) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Data.Services.Client.DataServiceContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Data.Services.Client.TrackingMode trackingMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, valuetype System.Data.Services.Client.TrackingMode trackingMode) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="trackingMode" Type="System.Data.Services.Client.TrackingMode" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <param name="trackingMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection (System.Data.Services.Client.DataServiceContext context, string entitySetName, Func&lt;System.Data.Services.Client.EntityChangedParams,bool&gt; entityChangedCallback, Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,bool&gt; collectionChangedCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Client.DataServiceContext context, string entitySetName, class System.Func`2&lt;class System.Data.Services.Client.EntityChangedParams, bool&gt; entityChangedCallback, class System.Func`2&lt;class System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; collectionChangedCallback) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Data.Services.Client.DataServiceContext" />
+        <Parameter Name="entitySetName" Type="System.String" />
+        <Parameter Name="entityChangedCallback" Type="System.Func&lt;System.Data.Services.Client.EntityChangedParams,System.Boolean&gt;" />
+        <Parameter Name="collectionChangedCallback" Type="System.Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="entitySetName">To be added.</param>
+        <param name="entityChangedCallback">To be added.</param>
+        <param name="collectionChangedCallback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, Func&lt;System.Data.Services.Client.EntityChangedParams,bool&gt; entityChangedCallback, Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,bool&gt; collectionChangedCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, valuetype System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, class System.Func`2&lt;class System.Data.Services.Client.EntityChangedParams, bool&gt; entityChangedCallback, class System.Func`2&lt;class System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; collectionChangedCallback) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="trackingMode" Type="System.Data.Services.Client.TrackingMode" />
+        <Parameter Name="entitySetName" Type="System.String" />
+        <Parameter Name="entityChangedCallback" Type="System.Func&lt;System.Data.Services.Client.EntityChangedParams,System.Boolean&gt;" />
+        <Parameter Name="collectionChangedCallback" Type="System.Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <param name="trackingMode">To be added.</param>
+        <param name="entitySetName">To be added.</param>
+        <param name="entityChangedCallback">To be added.</param>
+        <param name="collectionChangedCallback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceCollection (System.Data.Services.Client.DataServiceContext context, System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, Func&lt;System.Data.Services.Client.EntityChangedParams,bool&gt; entityChangedCallback, Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,bool&gt; collectionChangedCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Client.DataServiceContext context, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, valuetype System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, class System.Func`2&lt;class System.Data.Services.Client.EntityChangedParams, bool&gt; entityChangedCallback, class System.Func`2&lt;class System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; collectionChangedCallback) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Data.Services.Client.DataServiceContext" />
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="trackingMode" Type="System.Data.Services.Client.TrackingMode" />
+        <Parameter Name="entitySetName" Type="System.String" />
+        <Parameter Name="entityChangedCallback" Type="System.Func&lt;System.Data.Services.Client.EntityChangedParams,System.Boolean&gt;" />
+        <Parameter Name="collectionChangedCallback" Type="System.Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="items">To be added.</param>
+        <param name="trackingMode">To be added.</param>
+        <param name="entitySetName">To be added.</param>
+        <param name="entityChangedCallback">To be added.</param>
+        <param name="collectionChangedCallback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear (bool stopTracking);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear(bool stopTracking) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stopTracking" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stopTracking">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Continuation">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt; Continuation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Client.DataServiceQueryContinuation`1&lt;!T&gt; Continuation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detach">
+      <MemberSignature Language="C#" Value="public void Detach ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Detach() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, T item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !T item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(!T item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

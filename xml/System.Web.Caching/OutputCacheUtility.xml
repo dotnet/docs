@@ -1,0 +1,126 @@
+<Type Name="OutputCacheUtility" FullName="System.Web.Caching.OutputCacheUtility">
+  <TypeSignature Language="C#" Value="public static class OutputCacheUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OutputCacheUtility extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCacheDependency">
+      <MemberSignature Language="C#" Value="public static System.Web.Caching.CacheDependency CreateCacheDependency (System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Caching.CacheDependency CreateCacheDependency(class System.Web.HttpResponse response) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContentBuffers">
+      <MemberSignature Language="C#" Value="public static System.Collections.ArrayList GetContentBuffers (System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList GetContentBuffers(class System.Web.HttpResponse response) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidationCallbacks">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Web.HttpCacheValidateHandler,object&gt;&gt; GetValidationCallbacks (System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Web.HttpCacheValidateHandler, object&gt;&gt; GetValidationCallbacks(class System.Web.HttpResponse response) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Web.HttpCacheValidateHandler,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContentBuffers">
+      <MemberSignature Language="C#" Value="public static void SetContentBuffers (System.Web.HttpResponse response, System.Collections.ArrayList buffers);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContentBuffers(class System.Web.HttpResponse response, class System.Collections.ArrayList buffers) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+        <Parameter Name="buffers" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <param name="buffers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupKernelCaching">
+      <MemberSignature Language="C#" Value="public static string SetupKernelCaching (string originalCacheUrl, System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SetupKernelCaching(string originalCacheUrl, class System.Web.HttpResponse response) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalCacheUrl" Type="System.String" />
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="originalCacheUrl">To be added.</param>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

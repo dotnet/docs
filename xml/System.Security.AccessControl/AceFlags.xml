@@ -1,10 +1,12 @@
 <Type Name="AceFlags" FullName="System.Security.AccessControl.AceFlags">
   <TypeSignature Language="C#" Value="public enum AceFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AceFlags extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AceFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,11 +25,13 @@
     <Member MemberName="AuditFlags">
       <MemberSignature Language="C#" Value="AuditFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags AuditFlags = unsigned int8(192)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.AuditFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -40,11 +44,13 @@
     <Member MemberName="ContainerInherit">
       <MemberSignature Language="C#" Value="ContainerInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags ContainerInherit = unsigned int8(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.ContainerInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,11 +63,13 @@
     <Member MemberName="FailedAccess">
       <MemberSignature Language="C#" Value="FailedAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags FailedAccess = unsigned int8(128)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.FailedAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,11 +82,13 @@
     <Member MemberName="InheritanceFlags">
       <MemberSignature Language="C#" Value="InheritanceFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags InheritanceFlags = unsigned int8(15)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.InheritanceFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,11 +101,13 @@
     <Member MemberName="Inherited">
       <MemberSignature Language="C#" Value="Inherited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags Inherited = unsigned int8(16)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,11 +120,13 @@
     <Member MemberName="InheritOnly">
       <MemberSignature Language="C#" Value="InheritOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags InheritOnly = unsigned int8(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.InheritOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,11 +139,13 @@
     <Member MemberName="None">
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags None = unsigned int8(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,11 +158,13 @@
     <Member MemberName="NoPropagateInherit">
       <MemberSignature Language="C#" Value="NoPropagateInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags NoPropagateInherit = unsigned int8(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.NoPropagateInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,11 +177,13 @@
     <Member MemberName="ObjectInherit">
       <MemberSignature Language="C#" Value="ObjectInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags ObjectInherit = unsigned int8(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.ObjectInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,11 +196,13 @@
     <Member MemberName="SuccessfulAccess">
       <MemberSignature Language="C#" Value="SuccessfulAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AceFlags SuccessfulAccess = unsigned int8(64)" />
-      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AceFlags.SuccessfulAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

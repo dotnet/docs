@@ -1,0 +1,27 @@
+<Type Name="CustomPopupPlacementCallback" FullName="System.Windows.Controls.Primitives.CustomPopupPlacementCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Windows.Controls.Primitives.CustomPopupPlacement[] CustomPopupPlacementCallback(Size popupSize, Size targetSize, Point offset);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomPopupPlacementCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="popupSize" Type="System.Windows.Size" />
+    <Parameter Name="targetSize" Type="System.Windows.Size" />
+    <Parameter Name="offset" Type="System.Windows.Point" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Windows.Controls.Primitives.CustomPopupPlacement[]</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="popupSize">To be added.</param>
+    <param name="targetSize">To be added.</param>
+    <param name="offset">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

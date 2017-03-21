@@ -1,0 +1,128 @@
+<Type Name="TtsEngineSsml" FullName="System.Speech.Synthesis.TtsEngine.TtsEngineSsml">
+  <TypeSignature Language="C#" Value="public abstract class TtsEngineSsml" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TtsEngineSsml extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TtsEngineSsml (string registryKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string registryKey) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="registryKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="registryKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLexicon">
+      <MemberSignature Language="C#" Value="public abstract void AddLexicon (Uri uri, string mediaType, System.Speech.Synthesis.TtsEngine.ITtsEngineSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLexicon(class System.Uri uri, string mediaType, class System.Speech.Synthesis.TtsEngine.ITtsEngineSite site) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="mediaType" Type="System.String" />
+        <Parameter Name="site" Type="System.Speech.Synthesis.TtsEngine.ITtsEngineSite" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <param name="mediaType">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOutputFormat">
+      <MemberSignature Language="C#" Value="public abstract IntPtr GetOutputFormat (System.Speech.Synthesis.TtsEngine.SpeakOutputFormat speakOutputFormat, IntPtr targetWaveFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetOutputFormat(valuetype System.Speech.Synthesis.TtsEngine.SpeakOutputFormat speakOutputFormat, native int targetWaveFormat) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="speakOutputFormat" Type="System.Speech.Synthesis.TtsEngine.SpeakOutputFormat" />
+        <Parameter Name="targetWaveFormat" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="speakOutputFormat">To be added.</param>
+        <param name="targetWaveFormat">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLexicon">
+      <MemberSignature Language="C#" Value="public abstract void RemoveLexicon (Uri uri, System.Speech.Synthesis.TtsEngine.ITtsEngineSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveLexicon(class System.Uri uri, class System.Speech.Synthesis.TtsEngine.ITtsEngineSite site) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="site" Type="System.Speech.Synthesis.TtsEngine.ITtsEngineSite" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public abstract void Speak (System.Speech.Synthesis.TtsEngine.TextFragment[] fragment, IntPtr waveHeader, System.Speech.Synthesis.TtsEngine.ITtsEngineSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Speak(class System.Speech.Synthesis.TtsEngine.TextFragment[] fragment, native int waveHeader, class System.Speech.Synthesis.TtsEngine.ITtsEngineSite site) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fragment" Type="System.Speech.Synthesis.TtsEngine.TextFragment[]" />
+        <Parameter Name="waveHeader" Type="System.IntPtr" />
+        <Parameter Name="site" Type="System.Speech.Synthesis.TtsEngine.ITtsEngineSite" />
+      </Parameters>
+      <Docs>
+        <param name="fragment">To be added.</param>
+        <param name="waveHeader">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

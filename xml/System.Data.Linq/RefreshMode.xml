@@ -1,0 +1,62 @@
+<Type Name="RefreshMode" FullName="System.Data.Linq.RefreshMode">
+  <TypeSignature Language="C#" Value="public enum RefreshMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshMode extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeepChanges">
+      <MemberSignature Language="C#" Value="KeepChanges" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.RefreshMode KeepChanges = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepCurrentValues">
+      <MemberSignature Language="C#" Value="KeepCurrentValues" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.RefreshMode KeepCurrentValues = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OverwriteCurrentValues">
+      <MemberSignature Language="C#" Value="OverwriteCurrentValues" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.RefreshMode OverwriteCurrentValues = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

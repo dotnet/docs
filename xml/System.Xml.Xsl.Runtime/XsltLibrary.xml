@@ -1,0 +1,340 @@
+<Type Name="XsltLibrary" FullName="System.Xml.Xsl.Runtime.XsltLibrary">
+  <TypeSignature Language="C#" Value="public sealed class XsltLibrary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XsltLibrary extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckScriptNamespace">
+      <MemberSignature Language="C#" Value="public int CheckScriptNamespace (string nsUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CheckScriptNamespace(string nsUri) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nsUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nsUri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAvailable">
+      <MemberSignature Language="C#" Value="public bool ElementAvailable (System.Xml.XmlQualifiedName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ElementAvailable(class System.Xml.XmlQualifiedName name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualityOperator">
+      <MemberSignature Language="C#" Value="public bool EqualityOperator (double opCode, System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; left, System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EqualityOperator(float64 opCode, class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; left, class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opCode" Type="System.Double" />
+        <Parameter Name="left" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+        <Parameter Name="right" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="opCode">To be added.</param>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatMessage">
+      <MemberSignature Language="C#" Value="public string FormatMessage (string res, System.Collections.Generic.IList&lt;string&gt; args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string FormatMessage(string res, class System.Collections.Generic.IList`1&lt;string&gt; args) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="res" Type="System.String" />
+        <Parameter Name="args" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="res">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatNumberDynamic">
+      <MemberSignature Language="C#" Value="public string FormatNumberDynamic (double value, string formatPicture, System.Xml.XmlQualifiedName decimalFormatName, string errorMessageName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string FormatNumberDynamic(float64 value, string formatPicture, class System.Xml.XmlQualifiedName decimalFormatName, string errorMessageName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="formatPicture" Type="System.String" />
+        <Parameter Name="decimalFormatName" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="errorMessageName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="formatPicture">To be added.</param>
+        <param name="decimalFormatName">To be added.</param>
+        <param name="errorMessageName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatNumberStatic">
+      <MemberSignature Language="C#" Value="public string FormatNumberStatic (double value, double decimalFormatterIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string FormatNumberStatic(float64 value, float64 decimalFormatterIndex) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="decimalFormatterIndex" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="decimalFormatterIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionAvailable">
+      <MemberSignature Language="C#" Value="public bool FunctionAvailable (System.Xml.XmlQualifiedName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FunctionAvailable(class System.Xml.XmlQualifiedName name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSameNodeSort">
+      <MemberSignature Language="C#" Value="public bool IsSameNodeSort (System.Xml.XPath.XPathNavigator nav1, System.Xml.XPath.XPathNavigator nav2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSameNodeSort(class System.Xml.XPath.XPathNavigator nav1, class System.Xml.XPath.XPathNavigator nav2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nav1" Type="System.Xml.XPath.XPathNavigator" />
+        <Parameter Name="nav2" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="nav1">To be added.</param>
+        <param name="nav2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LangToLcid">
+      <MemberSignature Language="C#" Value="public int LangToLcid (string lang, bool forwardCompatibility);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LangToLcid(string lang, bool forwardCompatibility) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lang" Type="System.String" />
+        <Parameter Name="forwardCompatibility" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="lang">To be added.</param>
+        <param name="forwardCompatibility">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberFormat">
+      <MemberSignature Language="C#" Value="public string NumberFormat (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; value, string formatString, double lang, string letterValue, string groupingSeparator, double groupingSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string NumberFormat(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; value, string formatString, float64 lang, string letterValue, string groupingSeparator, float64 groupingSize) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+        <Parameter Name="formatString" Type="System.String" />
+        <Parameter Name="lang" Type="System.Double" />
+        <Parameter Name="letterValue" Type="System.String" />
+        <Parameter Name="groupingSeparator" Type="System.String" />
+        <Parameter Name="groupingSize" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="formatString">To be added.</param>
+        <param name="lang">To be added.</param>
+        <param name="letterValue">To be added.</param>
+        <param name="groupingSeparator">To be added.</param>
+        <param name="groupingSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDecimalFormat">
+      <MemberSignature Language="C#" Value="public int RegisterDecimalFormat (System.Xml.XmlQualifiedName name, string infinitySymbol, string nanSymbol, string characters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 RegisterDecimalFormat(class System.Xml.XmlQualifiedName name, string infinitySymbol, string nanSymbol, string characters) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="infinitySymbol" Type="System.String" />
+        <Parameter Name="nanSymbol" Type="System.String" />
+        <Parameter Name="characters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="infinitySymbol">To be added.</param>
+        <param name="nanSymbol">To be added.</param>
+        <param name="characters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDecimalFormatter">
+      <MemberSignature Language="C#" Value="public double RegisterDecimalFormatter (string formatPicture, string infinitySymbol, string nanSymbol, string characters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 RegisterDecimalFormatter(string formatPicture, string infinitySymbol, string nanSymbol, string characters) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatPicture" Type="System.String" />
+        <Parameter Name="infinitySymbol" Type="System.String" />
+        <Parameter Name="nanSymbol" Type="System.String" />
+        <Parameter Name="characters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formatPicture">To be added.</param>
+        <param name="infinitySymbol">To be added.</param>
+        <param name="nanSymbol">To be added.</param>
+        <param name="characters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationalOperator">
+      <MemberSignature Language="C#" Value="public bool RelationalOperator (double opCode, System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; left, System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RelationalOperator(float64 opCode, class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; left, class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; right) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opCode" Type="System.Double" />
+        <Parameter Name="left" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+        <Parameter Name="right" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="opCode">To be added.</param>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,26 @@
+<Type Name="FaultCallback" FullName="System.Activities.FaultCallback">
+  <TypeSignature Language="C#" Value="public delegate void FaultCallback(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FaultCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="faultContext" Type="System.Activities.NativeActivityFaultContext" />
+    <Parameter Name="propagatedException" Type="System.Exception" />
+    <Parameter Name="propagatedFrom" Type="System.Activities.ActivityInstance" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="faultContext">To be added.</param>
+    <param name="propagatedException">To be added.</param>
+    <param name="propagatedFrom">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

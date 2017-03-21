@@ -69,7 +69,7 @@ In the above code, the calls to `Run` and `Delay` are omitted if they are not de
 |----------|-----------|
 |<code>{&#124; let binding in cexpr &#124;}</code>|<code>let binding in {&#124; cexpr &#124;}</code>|
 |<code>{&#124; let! pattern = expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun pattern -> {&#124; cexpr &#124;}))</code>|
-|<code>{&#124; do! expr in cexpr &#124;}</code>|<code>builder.Bind(expr1, (fun () -> {&#124; cexpr &#124;}))</code>|
+|<code>{&#124; do! expr in cexpr &#124;}</code>|<code>builder.Bind(expr, (fun () -> {&#124; cexpr &#124;}))</code>|
 |<code>{&#124; yield expr &#124;}</code>|`builder.Yield(expr)`|
 |<code>{&#124; yield! expr &#124;}</code>|`builder.YieldFrom(expr)`|
 |<code>{&#124; return expr &#124;}<code>|`builder.Return(expr)`|

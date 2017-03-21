@@ -13,7 +13,7 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 
 # Prerequisites for .NET Core on Windows
 
-This articles shows you what dependencies you need to deploy and run .NET Core applications on Windows machines and develop using Visual Studio.
+This article shows you what dependencies you need to deploy and run .NET Core applications on Windows machines and develop using Visual Studio.
 
 ## Supported Windows versions
 
@@ -27,7 +27,7 @@ This articles shows you what dependencies you need to deploy and run .NET Core a
 * Windows Server 2012 R2 SP1 (Full Server or Server Core)
 * Windows Server 2016 (Full Server, Server Core or Nano Server)
 
-You can see the full set of [supported operating systems](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md#rtm-platform-support) in the [.NET Core 1.0.0 Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md).
+See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the full set of supported operating systems.
 
 ## .NET Core dependencies
 

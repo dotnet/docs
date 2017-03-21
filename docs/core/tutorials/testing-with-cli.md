@@ -1,7 +1,7 @@
 ---
 title: Organizing and testing projects with the .NET Core command line | Microsoft Docs
 description: This tutorial explains how to organize and test .NET Core projects from the command line.
-keywords: .NET, .NET Core
+keywords: .NET, .NET Core, testing, CLI
 author: cartermp
 ms.author: mairaw
 ms.date: 03/20/2017
@@ -72,86 +72,23 @@ Folder Structure:
 
 *IPet.cs*:
 
-```csharp
-using System;
-
-namespace Pets
-{
-	  public interface IPet
-	  {
-		    string TalkToOwner();
-	  }
-}
-```
+[!code-csharp[IPet interface](../../../samples/core/console-apps/NewTypesMsBuild/src/NewTypes/Pets/IPet.cs)]
 
 *Dog.cs*:
 
-```csharp
-using System;
-
-namespace Pets
-{
-	  public class Dog : IPet
-	  {
-		    public string TalkToOwner() => "Woof!";
-	  }
-}
-```
+[!code-csharp[Dog class](../../../samples/core/console-apps/NewTypesMsBuild/src/NewTypes/Pets/Dog.cs)]
 
 *Cat.cs*:
 
-```csharp
-using System;
-
-namespace Pets
-{
-	  public class Cat : IPet
-	  {
-		    public string TalkToOwner() => "Meow!";
-	  }
-}
-```
+[!code-csharp[Cat class](../../../samples/core/console-apps/NewTypesMsBuild/src/NewTypes/Pets/Cat.cs)]
 
 *Program.cs*:
 
-```csharp
-using System;
-using Pets;
-using System.Collections.Generic;
-
-namespace ConsoleApplication
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            List<IPet> pets = new List<IPet>
-            {
-                new Dog(),
-                new Cat()  
-            };
-            
-            foreach (var pet in pets)
-            {
-                Console.WriteLine(pet.TalkToOwner());
-            }
-        }
-    }
-}
-```
+[!code-csharp[Main](../../../samples/core/console-apps/NewTypesMsBuild/src/NewTypes/Program.cs)]
 
 *NewTypes.csproj*:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
-  </PropertyGroup>
-
-</Project>
-```
+[!code-xml[NewTypes csproj](../../../samples/core/console-apps/NewTypesMsBuild/src/NewTypes/NewTypes.csproj)]
 
 Execute the following commands:
 
@@ -171,28 +108,7 @@ You can add a new pet type, such as a `Bird`, extending this project. Make the b
 
 ### Testing the sample
 
-You'll probably be wanting to test your projects at some point. Here's a good way to do it:
-
-1. Move any source of your existing project into a new `src` folder.
-
-   ```
-   /Project
-   |__/src
-   ```
-
-2. Create a `/test` directory, then `cd` into it.
-
-   ```
-   /Project
-   |__/src
-   |__/test
-   ```
-
-3. Initialize the directory with a `dotnet new xunit` command. This assumes xUnit, but you can also use MSTest by replacing `xunit` with `mstest`.
-
-Now that the project system is in place, you can create your test project and start writing tests! From here on out, this guide will use and extend [the sample Types project](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild). Additionally, it will use the [Xunit](https://xunit.github.io/) test framework. Feel free to follow along or create your own multi-project system with tests.
-
-The whole project structure should look like this:
+Now that the project is in place, create your test project and start writing tests with the [xUnit](https://xunit.github.io/) test framework. The complete project structure is shown below:
 
 ```
 /NewTypes
@@ -210,101 +126,43 @@ The whole project structure should look like this:
       |__NewTypesTests.csproj
 ```
 
-There are two new things to make sure you have in your test project:
+Create the *NewTypesTests.csproj* file with the following:
 
-1. A correct *NewTypesTests.csproj* file with the following:
+* A reference to `Microsoft.NET.Test.Sdk`, the .NET testing infrastructure
+* A reference to `xunit`, the xUnit testing framework
+* A reference to `xunit.runner.visualstudio`, the test runner
+* A project reference to `NewTypes`, the code to test
 
-   * A reference to `xunit`
-   * A reference to `dotnet-test-xunit`
-   * A reference to the namespace corresponding to the code under test
+Create the project by executing `dotnet new xunit` at a command prompt in the *NewTypesTests* directory, then add a project reference to the `NewTypes` project.
 
-   This can be built by typing `dotnet new xunit` at a command prompt in the *NewTypesTests* directory, then adding a project reference to the `NewTypes` project.
+*NewTypesTests.csproj*:
 
-    `NewTypesTests/NewTypesTests.csproj`:
-    ```xml
-    <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-      <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+[!code-xml[NewTypesTests csproj](../../../samples/core/console-apps/NewTypesMsBuild/test/NewTypesTests/NewTypesTests.csproj)]
 
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp1.0</TargetFramework>
-      </PropertyGroup>
+Add an xUnit test class, *PetTests.cs*:
 
-      <ItemGroup>
-        <Compile Include="**\*.cs" />
-        <EmbeddedResource Include="**\*.resx" />
-      </ItemGroup>
-
-      <ItemGroup>
-        <PackageReference Include="Microsoft.NETCore.App">
-          <Version>1.0.1</Version>
-        </PackageReference>
-        <PackageReference Include="Microsoft.NET.Sdk">
-          <Version>1.0.0-alpha-20161104-2</Version>
-          <PrivateAssets>All</PrivateAssets>
-        </PackageReference>
-        <PackageReference Include="Microsoft.NET.Test.Sdk">
-          <Version>15.0.0-preview-20161024-02</Version>
-        </PackageReference>
-        <PackageReference Include="xunit">
-          <Version>2.2.0-beta3-build3402</Version>
-        </PackageReference>
-        <PackageReference Include="xunit.runner.visualstudio">
-          <Version>2.2.0-beta4-build1188</Version>
-        </PackageReference>
-        <ProjectReference Include="../../src/NewTypes/NewTypes.csproj"/>
-      </ItemGroup>
-
-      <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-    </Project>
-    ```
-
-2. An xUnit test class.
-
-    `PetTests.cs`: 
-    ```csharp
-    using System;
-    using Xunit;
-    using Pets;
-    public class PetTests
-    {
-        [Fact]
-        public void DogTalkToOwnerTest()
-        {
-            string expected = "Woof!";
-            string actual = new Dog().TalkToOwner();
-            
-            Assert.Equal(expected, actual);
-        }
-        
-        [Fact]
-        public void CatTalkToOwnerTest()
-        {
-            string expected = "Meow!";
-            string actual = new Cat().TalkToOwner();
-            
-            Assert.Equal(expected, actual);
-        }
-    }
-    ```
+[!code-csharp[PetTests class](../../../samples/core/console-apps/NewTypesMsBuild/test/NewTypesTests/PetTests.cs)]
    
-Now you can run tests! The [`dotnet test`](../tools/dotnet-test.md) command runs the test runner you have specified in your project. Make sure you start at the top-level directory.
+Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file. Start in the `test/NewTypesTests` directory and execute the following commands:
+ 
+```console
+dotnet restore
+dotnet test
+```
+ 
+Testing passes and the console displays the following output:
  
 ```
-$ cd test/NewTypesTests
-$ dotnet restore
-$ dotnet test
-```
- 
-Output should look like this:
- 
-```
-xUnit.net .NET CLI test runner (64-bit win10-x64)
-  Discovering: NewTypesTests
-  Discovered:  NewTypesTests
-  Starting:    NewTypesTests
-  Finished:    NewTypesTests
-=== TEST EXECUTION SUMMARY ===
-   NewTypesTests  Total: 2, Errors: 0, Failed: 0, Skipped: 0, Time: 0.144s
-SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
+Microsoft (R) Test Execution Command Line Tool Version 15.0.0.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:01.3882374]   Discovering: NewTypesTests
+[xUnit.net 00:00:01.4767970]   Discovered:  NewTypesTests
+[xUnit.net 00:00:01.5157667]   Starting:    NewTypesTests
+[xUnit.net 00:00:01.6408870]   Finished:    NewTypesTests
+
+Total tests: 2. Passed: 2. Failed: 0. Skipped: 0.
+Test Run Successful.
+Test execution time: 2.9309 Seconds
 ```

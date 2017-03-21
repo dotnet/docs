@@ -1,0 +1,576 @@
+<Type Name="DateAndTime" FullName="Microsoft.VisualBasic.DateAndTime">
+  <TypeSignature Language="C#" Value="public sealed class DateAndTime" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DateAndTime extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DateAdd">
+      <MemberSignature Language="C#" Value="public static DateTime DateAdd (Microsoft.VisualBasic.DateInterval Interval, double Number, DateTime DateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime DateAdd(valuetype Microsoft.VisualBasic.DateInterval Interval, float64 Number, valuetype System.DateTime DateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" />
+        <Parameter Name="Number" Type="System.Double" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="Interval">To be added.</param>
+        <param name="Number">To be added.</param>
+        <param name="DateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateAdd">
+      <MemberSignature Language="C#" Value="public static DateTime DateAdd (string Interval, double Number, object DateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime DateAdd(string Interval, float64 Number, object DateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Interval" Type="System.String" />
+        <Parameter Name="Number" Type="System.Double" />
+        <Parameter Name="DateValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Interval">To be added.</param>
+        <param name="Number">To be added.</param>
+        <param name="DateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateDiff">
+      <MemberSignature Language="C#" Value="public static long DateDiff (Microsoft.VisualBasic.DateInterval Interval, DateTime Date1, DateTime Date2, Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 DateDiff(valuetype Microsoft.VisualBasic.DateInterval Interval, valuetype System.DateTime Date1, valuetype System.DateTime Date2, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" />
+        <Parameter Name="Date1" Type="System.DateTime" />
+        <Parameter Name="Date2" Type="System.DateTime" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
+      </Parameters>
+      <Docs>
+        <param name="Interval">To be added.</param>
+        <param name="Date1">To be added.</param>
+        <param name="Date2">To be added.</param>
+        <param name="DayOfWeek">To be added.</param>
+        <param name="WeekOfYear">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateDiff">
+      <MemberSignature Language="C#" Value="public static long DateDiff (string Interval, object Date1, object Date2, Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 DateDiff(string Interval, object Date1, object Date2, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Interval" Type="System.String" />
+        <Parameter Name="Date1" Type="System.Object" />
+        <Parameter Name="Date2" Type="System.Object" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
+      </Parameters>
+      <Docs>
+        <param name="Interval">To be added.</param>
+        <param name="Date1">To be added.</param>
+        <param name="Date2">To be added.</param>
+        <param name="DayOfWeek">To be added.</param>
+        <param name="WeekOfYear">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatePart">
+      <MemberSignature Language="C#" Value="public static int DatePart (Microsoft.VisualBasic.DateInterval Interval, DateTime DateValue, Microsoft.VisualBasic.FirstDayOfWeek FirstDayOfWeekValue = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Microsoft.VisualBasic.FirstWeekOfYear FirstWeekOfYearValue = Microsoft.VisualBasic.FirstWeekOfYear.Jan1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 DatePart(valuetype Microsoft.VisualBasic.DateInterval Interval, valuetype System.DateTime DateValue, valuetype Microsoft.VisualBasic.FirstDayOfWeek FirstDayOfWeekValue, valuetype Microsoft.VisualBasic.FirstWeekOfYear FirstWeekOfYearValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
+        <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="FirstWeekOfYearValue" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
+      </Parameters>
+      <Docs>
+        <param name="Interval">To be added.</param>
+        <param name="DateValue">To be added.</param>
+        <param name="FirstDayOfWeekValue">To be added.</param>
+        <param name="FirstWeekOfYearValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatePart">
+      <MemberSignature Language="C#" Value="public static int DatePart (string Interval, object DateValue, Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 DatePart(string Interval, object DateValue, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Interval" Type="System.String" />
+        <Parameter Name="DateValue" Type="System.Object" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
+      </Parameters>
+      <Docs>
+        <param name="Interval">To be added.</param>
+        <param name="DateValue">To be added.</param>
+        <param name="DayOfWeek">To be added.</param>
+        <param name="WeekOfYear">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateSerial">
+      <MemberSignature Language="C#" Value="public static DateTime DateSerial (int Year, int Month, int Day);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime DateSerial(int32 Year, int32 Month, int32 Day) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Year" Type="System.Int32" />
+        <Parameter Name="Month" Type="System.Int32" />
+        <Parameter Name="Day" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Year">To be added.</param>
+        <param name="Month">To be added.</param>
+        <param name="Day">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateString">
+      <MemberSignature Language="C#" Value="public static string DateString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DateString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateValue">
+      <MemberSignature Language="C#" Value="public static DateTime DateValue (string StringDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime DateValue(string StringDate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="StringDate" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="StringDate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Day">
+      <MemberSignature Language="C#" Value="public static int Day (DateTime DateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Day(valuetype System.DateTime DateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DateValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="DateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hour">
+      <MemberSignature Language="C#" Value="public static int Hour (DateTime TimeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Hour(valuetype System.DateTime TimeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TimeValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="TimeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minute">
+      <MemberSignature Language="C#" Value="public static int Minute (DateTime TimeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Minute(valuetype System.DateTime TimeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TimeValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="TimeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="public static int Month (DateTime DateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Month(valuetype System.DateTime DateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DateValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="DateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MonthName">
+      <MemberSignature Language="C#" Value="public static string MonthName (int Month, bool Abbreviate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string MonthName(int32 Month, bool Abbreviate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Month" Type="System.Int32" />
+        <Parameter Name="Abbreviate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Month">To be added.</param>
+        <param name="Abbreviate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Now">
+      <MemberSignature Language="C#" Value="public static DateTime Now { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.DateTime Now" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Second">
+      <MemberSignature Language="C#" Value="public static int Second (DateTime TimeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Second(valuetype System.DateTime TimeValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TimeValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="TimeValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeOfDay">
+      <MemberSignature Language="C#" Value="public static DateTime TimeOfDay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.DateTime TimeOfDay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timer">
+      <MemberSignature Language="C#" Value="public static double Timer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property float64 Timer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeSerial">
+      <MemberSignature Language="C#" Value="public static DateTime TimeSerial (int Hour, int Minute, int Second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime TimeSerial(int32 Hour, int32 Minute, int32 Second) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Hour" Type="System.Int32" />
+        <Parameter Name="Minute" Type="System.Int32" />
+        <Parameter Name="Second" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Hour">To be added.</param>
+        <param name="Minute">To be added.</param>
+        <param name="Second">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeString">
+      <MemberSignature Language="C#" Value="public static string TimeString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TimeString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeValue">
+      <MemberSignature Language="C#" Value="public static DateTime TimeValue (string StringTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime TimeValue(string StringTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="StringTime" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="StringTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Today">
+      <MemberSignature Language="C#" Value="public static DateTime Today { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.DateTime Today" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Weekday">
+      <MemberSignature Language="C#" Value="public static int Weekday (DateTime DateValue, Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Weekday(valuetype System.DateTime DateValue, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DateValue" Type="System.DateTime" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+      </Parameters>
+      <Docs>
+        <param name="DateValue">To be added.</param>
+        <param name="DayOfWeek">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WeekdayName">
+      <MemberSignature Language="C#" Value="public static string WeekdayName (int Weekday, bool Abbreviate = false, Microsoft.VisualBasic.FirstDayOfWeek FirstDayOfWeekValue = Microsoft.VisualBasic.FirstDayOfWeek.System);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string WeekdayName(int32 Weekday, bool Abbreviate, valuetype Microsoft.VisualBasic.FirstDayOfWeek FirstDayOfWeekValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Weekday" Type="System.Int32" />
+        <Parameter Name="Abbreviate" Type="System.Boolean" />
+        <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+      </Parameters>
+      <Docs>
+        <param name="Weekday">To be added.</param>
+        <param name="Abbreviate">To be added.</param>
+        <param name="FirstDayOfWeekValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Year">
+      <MemberSignature Language="C#" Value="public static int Year (DateTime DateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Year(valuetype System.DateTime DateValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DateValue" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="DateValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

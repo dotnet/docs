@@ -1,0 +1,219 @@
+<Type Name="AutomationInteropProvider" FullName="System.Windows.Automation.Provider.AutomationInteropProvider">
+  <TypeSignature Language="C#" Value="public static class AutomationInteropProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AutomationInteropProvider extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendRuntimeId">
+      <MemberSignature Language="C#" Value="public const int AppendRuntimeId = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 AppendRuntimeId = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientsAreListening">
+      <MemberSignature Language="C#" Value="public static bool ClientsAreListening { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool ClientsAreListening" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostProviderFromHandle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.Provider.IRawElementProviderSimple HostProviderFromHandle (IntPtr hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.Provider.IRawElementProviderSimple HostProviderFromHandle(native int hwnd) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateLimit">
+      <MemberSignature Language="C#" Value="public const int InvalidateLimit = 20;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 InvalidateLimit = (20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsInvalidateLimit">
+      <MemberSignature Language="C#" Value="public const int ItemsInvalidateLimit = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ItemsInvalidateLimit = (5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseAutomationEvent">
+      <MemberSignature Language="C#" Value="public static void RaiseAutomationEvent (System.Windows.Automation.AutomationEvent eventId, System.Windows.Automation.Provider.IRawElementProviderSimple provider, System.Windows.Automation.AutomationEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseAutomationEvent(class System.Windows.Automation.AutomationEvent eventId, class System.Windows.Automation.Provider.IRawElementProviderSimple provider, class System.Windows.Automation.AutomationEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Windows.Automation.AutomationEvent" />
+        <Parameter Name="provider" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
+        <Parameter Name="e" Type="System.Windows.Automation.AutomationEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">To be added.</param>
+        <param name="provider">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseAutomationPropertyChangedEvent">
+      <MemberSignature Language="C#" Value="public static void RaiseAutomationPropertyChangedEvent (System.Windows.Automation.Provider.IRawElementProviderSimple element, System.Windows.Automation.AutomationPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseAutomationPropertyChangedEvent(class System.Windows.Automation.Provider.IRawElementProviderSimple element, class System.Windows.Automation.AutomationPropertyChangedEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
+        <Parameter Name="e" Type="System.Windows.Automation.AutomationPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseStructureChangedEvent">
+      <MemberSignature Language="C#" Value="public static void RaiseStructureChangedEvent (System.Windows.Automation.Provider.IRawElementProviderSimple provider, System.Windows.Automation.StructureChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseStructureChangedEvent(class System.Windows.Automation.Provider.IRawElementProviderSimple provider, class System.Windows.Automation.StructureChangedEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
+        <Parameter Name="e" Type="System.Windows.Automation.StructureChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnRawElementProvider">
+      <MemberSignature Language="C#" Value="public static IntPtr ReturnRawElementProvider (IntPtr hwnd, IntPtr wParam, IntPtr lParam, System.Windows.Automation.Provider.IRawElementProviderSimple el);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReturnRawElementProvider(native int hwnd, native int wParam, native int lParam, class System.Windows.Automation.Provider.IRawElementProviderSimple el) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+        <Parameter Name="wParam" Type="System.IntPtr" />
+        <Parameter Name="lParam" Type="System.IntPtr" />
+        <Parameter Name="el" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <param name="wParam">To be added.</param>
+        <param name="lParam">To be added.</param>
+        <param name="el">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootObjectId">
+      <MemberSignature Language="C#" Value="public const int RootObjectId = -25;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RootObjectId = (-25)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-25</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

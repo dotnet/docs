@@ -1,0 +1,361 @@
+<Type Name="Automation" FullName="System.Windows.Automation.Automation">
+  <TypeSignature Language="C#" Value="public static class Automation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Automation extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddAutomationEventHandler">
+      <MemberSignature Language="C#" Value="public static void AddAutomationEventHandler (System.Windows.Automation.AutomationEvent eventId, System.Windows.Automation.AutomationElement element, System.Windows.Automation.TreeScope scope, System.Windows.Automation.AutomationEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAutomationEventHandler(class System.Windows.Automation.AutomationEvent eventId, class System.Windows.Automation.AutomationElement element, valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.AutomationEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Windows.Automation.AutomationEvent" />
+        <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="scope" Type="System.Windows.Automation.TreeScope" />
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">To be added.</param>
+        <param name="element">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAutomationFocusChangedEventHandler">
+      <MemberSignature Language="C#" Value="public static void AddAutomationFocusChangedEventHandler (System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAutomationFocusChangedEventHandler(class System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationFocusChangedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAutomationPropertyChangedEventHandler">
+      <MemberSignature Language="C#" Value="public static void AddAutomationPropertyChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.TreeScope scope, System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler, System.Windows.Automation.AutomationProperty[] properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAutomationPropertyChangedEventHandler(class System.Windows.Automation.AutomationElement element, valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler, class System.Windows.Automation.AutomationProperty[] properties) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="scope" Type="System.Windows.Automation.TreeScope" />
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationPropertyChangedEventHandler" />
+        <Parameter Name="properties" Type="System.Windows.Automation.AutomationProperty[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="eventHandler">To be added.</param>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStructureChangedEventHandler">
+      <MemberSignature Language="C#" Value="public static void AddStructureChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.TreeScope scope, System.Windows.Automation.StructureChangedEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddStructureChangedEventHandler(class System.Windows.Automation.AutomationElement element, valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.StructureChangedEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="scope" Type="System.Windows.Automation.TreeScope" />
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.StructureChangedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static bool Compare (int[] runtimeId1, int[] runtimeId2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Compare(int32[] runtimeId1, int32[] runtimeId2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runtimeId1" Type="System.Int32[]" />
+        <Parameter Name="runtimeId2" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="runtimeId1">To be added.</param>
+        <param name="runtimeId2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static bool Compare (System.Windows.Automation.AutomationElement el1, System.Windows.Automation.AutomationElement el2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Compare(class System.Windows.Automation.AutomationElement el1, class System.Windows.Automation.AutomationElement el2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="el1" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="el2" Type="System.Windows.Automation.AutomationElement" />
+      </Parameters>
+      <Docs>
+        <param name="el1">To be added.</param>
+        <param name="el2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentViewCondition">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition ContentViewCondition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition ContentViewCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Condition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlViewCondition">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition ControlViewCondition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition ControlViewCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Condition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PatternName">
+      <MemberSignature Language="C#" Value="public static string PatternName (System.Windows.Automation.AutomationPattern pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PatternName(class System.Windows.Automation.AutomationPattern pattern) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.Windows.Automation.AutomationPattern" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public static string PropertyName (System.Windows.Automation.AutomationProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PropertyName(class System.Windows.Automation.AutomationProperty property) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Windows.Automation.AutomationProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawViewCondition">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition RawViewCondition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition RawViewCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Condition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAllEventHandlers">
+      <MemberSignature Language="C#" Value="public static void RemoveAllEventHandlers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAllEventHandlers() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAutomationEventHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveAutomationEventHandler (System.Windows.Automation.AutomationEvent eventId, System.Windows.Automation.AutomationElement element, System.Windows.Automation.AutomationEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAutomationEventHandler(class System.Windows.Automation.AutomationEvent eventId, class System.Windows.Automation.AutomationElement element, class System.Windows.Automation.AutomationEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Windows.Automation.AutomationEvent" />
+        <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">To be added.</param>
+        <param name="element">To be added.</param>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAutomationFocusChangedEventHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveAutomationFocusChangedEventHandler (System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAutomationFocusChangedEventHandler(class System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationFocusChangedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAutomationPropertyChangedEventHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveAutomationPropertyChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAutomationPropertyChangedEventHandler(class System.Windows.Automation.AutomationElement element, class System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.AutomationPropertyChangedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveStructureChangedEventHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveStructureChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.StructureChangedEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveStructureChangedEventHandler(class System.Windows.Automation.AutomationElement element, class System.Windows.Automation.StructureChangedEventHandler eventHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="eventHandler" Type="System.Windows.Automation.StructureChangedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="eventHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,83 @@
+<Type Name="TaskExtensions" FullName="System.Windows.Threading.TaskExtensions">
+  <TypeSignature Language="C#" Value="public static class TaskExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TaskExtensions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DispatcherOperationWait">
+      <MemberSignature Language="C#" Value="public static System.Windows.Threading.DispatcherOperationStatus DispatcherOperationWait (this System.Threading.Tasks.Task this);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Threading.DispatcherOperationStatus DispatcherOperationWait(class System.Threading.Tasks.Task this) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this" Type="System.Threading.Tasks.Task" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="this">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatcherOperationWait">
+      <MemberSignature Language="C#" Value="public static System.Windows.Threading.DispatcherOperationStatus DispatcherOperationWait (this System.Threading.Tasks.Task this, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Threading.DispatcherOperationStatus DispatcherOperationWait(class System.Threading.Tasks.Task this, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this" Type="System.Threading.Tasks.Task" RefType="this" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="this">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDispatcherOperationTask">
+      <MemberSignature Language="C#" Value="public static bool IsDispatcherOperationTask (this System.Threading.Tasks.Task this);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDispatcherOperationTask(class System.Threading.Tasks.Task this) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="this" Type="System.Threading.Tasks.Task" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="this">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="ManagementQualifierFlavors" FullName="System.Management.Instrumentation.ManagementQualifierFlavors">
+  <TypeSignature Language="C#" Value="public enum ManagementQualifierFlavors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManagementQualifierFlavors extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management.Instrumentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Amended">
+      <MemberSignature Language="C#" Value="Amended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementQualifierFlavors Amended = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management.Instrumentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassOnly">
+      <MemberSignature Language="C#" Value="ClassOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementQualifierFlavors ClassOnly = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management.Instrumentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableOverride">
+      <MemberSignature Language="C#" Value="DisableOverride" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementQualifierFlavors DisableOverride = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management.Instrumentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThisClassOnly">
+      <MemberSignature Language="C#" Value="ThisClassOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementQualifierFlavors ThisClassOnly = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management.Instrumentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.Instrumentation.ManagementQualifierFlavors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,257 @@
+<Type Name="ApplicationShutdownReason" FullName="System.Web.ApplicationShutdownReason">
+  <TypeSignature Language="C#" Value="public enum ApplicationShutdownReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationShutdownReason extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BinDirChangeOrDirectoryRename">
+      <MemberSignature Language="C#" Value="BinDirChangeOrDirectoryRename" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason BinDirChangeOrDirectoryRename = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowsersDirChangeOrDirectoryRename">
+      <MemberSignature Language="C#" Value="BrowsersDirChangeOrDirectoryRename" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason BrowsersDirChangeOrDirectoryRename = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildManagerChange">
+      <MemberSignature Language="C#" Value="BuildManagerChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason BuildManagerChange = int32(15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeInGlobalAsax">
+      <MemberSignature Language="C#" Value="ChangeInGlobalAsax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason ChangeInGlobalAsax = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeInSecurityPolicyFile">
+      <MemberSignature Language="C#" Value="ChangeInSecurityPolicyFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason ChangeInSecurityPolicyFile = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDirChangeOrDirectoryRename">
+      <MemberSignature Language="C#" Value="CodeDirChangeOrDirectoryRename" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason CodeDirChangeOrDirectoryRename = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationChange">
+      <MemberSignature Language="C#" Value="ConfigurationChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason ConfigurationChange = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HostingEnvironment">
+      <MemberSignature Language="C#" Value="HostingEnvironment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason HostingEnvironment = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpRuntimeClose">
+      <MemberSignature Language="C#" Value="HttpRuntimeClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason HttpRuntimeClose = int32(12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdleTimeout">
+      <MemberSignature Language="C#" Value="IdleTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason IdleTimeout = int32(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializationError">
+      <MemberSignature Language="C#" Value="InitializationError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason InitializationError = int32(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxRecompilationsReached">
+      <MemberSignature Language="C#" Value="MaxRecompilationsReached" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason MaxRecompilationsReached = int32(14)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalApplicationPathChanged">
+      <MemberSignature Language="C#" Value="PhysicalApplicationPathChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason PhysicalApplicationPathChanged = int32(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourcesDirChangeOrDirectoryRename">
+      <MemberSignature Language="C#" Value="ResourcesDirChangeOrDirectoryRename" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason ResourcesDirChangeOrDirectoryRename = int32(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnloadAppDomainCalled">
+      <MemberSignature Language="C#" Value="UnloadAppDomainCalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ApplicationShutdownReason UnloadAppDomainCalled = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

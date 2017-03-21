@@ -1,19 +1,15 @@
 <Type Name="ISymbolDocument" FullName="System.Diagnostics.SymbolStore.ISymbolDocument">
   <TypeSignature Language="C#" Value="public interface ISymbolDocument" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISymbolDocument" />
-  <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolDocument" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -22,13 +18,14 @@
     <Member MemberName="CheckSumAlgorithmId">
       <MemberSignature Language="C#" Value="public Guid CheckSumAlgorithmId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CheckSumAlgorithmId" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.CheckSumAlgorithmId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -42,13 +39,14 @@
     <Member MemberName="DocumentType">
       <MemberSignature Language="C#" Value="public Guid DocumentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid DocumentType" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.DocumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -62,13 +60,14 @@
     <Member MemberName="FindClosestLine">
       <MemberSignature Language="C#" Value="public int FindClosestLine (int line);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindClosestLine(int32 line) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocument.FindClosestLine(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -86,13 +85,14 @@
     <Member MemberName="GetCheckSum">
       <MemberSignature Language="C#" Value="public byte[] GetCheckSum ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetCheckSum() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocument.GetCheckSum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -107,13 +107,14 @@
     <Member MemberName="GetSourceRange">
       <MemberSignature Language="C#" Value="public byte[] GetSourceRange (int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetSourceRange(int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocument.GetSourceRange(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -137,13 +138,14 @@
     <Member MemberName="HasEmbeddedSource">
       <MemberSignature Language="C#" Value="public bool HasEmbeddedSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasEmbeddedSource" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.HasEmbeddedSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -157,13 +159,14 @@
     <Member MemberName="Language">
       <MemberSignature Language="C#" Value="public Guid Language { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Language" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -177,13 +180,14 @@
     <Member MemberName="LanguageVendor">
       <MemberSignature Language="C#" Value="public Guid LanguageVendor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid LanguageVendor" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.LanguageVendor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -197,13 +201,14 @@
     <Member MemberName="SourceLength">
       <MemberSignature Language="C#" Value="public int SourceLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SourceLength" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.SourceLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -217,13 +222,14 @@
     <Member MemberName="URL">
       <MemberSignature Language="C#" Value="public string URL { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string URL" />
-      <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.URL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

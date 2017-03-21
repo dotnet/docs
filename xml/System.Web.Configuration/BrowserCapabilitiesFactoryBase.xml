@@ -1,0 +1,191 @@
+<Type Name="BrowserCapabilitiesFactoryBase" FullName="System.Web.Configuration.BrowserCapabilitiesFactoryBase">
+  <TypeSignature Language="C#" Value="public class BrowserCapabilitiesFactoryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BrowserCapabilitiesFactoryBase extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BrowserCapabilitiesFactoryBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserElements">
+      <MemberSignature Language="C#" Value="protected System.Collections.IDictionary BrowserElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary BrowserElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureBrowserCapabilities">
+      <MemberSignature Language="C#" Value="public virtual void ConfigureBrowserCapabilities (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConfigureBrowserCapabilities(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureCustomCapabilities">
+      <MemberSignature Language="C#" Value="public virtual void ConfigureCustomCapabilities (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConfigureCustomCapabilities(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBrowserUnknown">
+      <MemberSignature Language="C#" Value="protected bool IsBrowserUnknown (System.Web.Configuration.HttpCapabilitiesBase browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsBrowserUnknown(class System.Web.Configuration.HttpCapabilitiesBase browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="browserCaps" Type="System.Web.Configuration.HttpCapabilitiesBase" />
+      </Parameters>
+      <Docs>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchedHeaders">
+      <MemberSignature Language="C#" Value="protected System.Collections.IDictionary MatchedHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary MatchedHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateBrowserElements">
+      <MemberSignature Language="C#" Value="protected virtual void PopulateBrowserElements (System.Collections.IDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PopulateBrowserElements(class System.Collections.IDictionary dictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateMatchedHeaders">
+      <MemberSignature Language="C#" Value="protected virtual void PopulateMatchedHeaders (System.Collections.IDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PopulateMatchedHeaders(class System.Collections.IDictionary dictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

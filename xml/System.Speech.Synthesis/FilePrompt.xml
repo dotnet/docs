@@ -1,0 +1,61 @@
+<Type Name="FilePrompt" FullName="System.Speech.Synthesis.FilePrompt">
+  <TypeSignature Language="C#" Value="public class FilePrompt : System.Speech.Synthesis.Prompt" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FilePrompt extends System.Speech.Synthesis.Prompt" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Synthesis.Prompt</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{_text}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FilePrompt (string path, System.Speech.Synthesis.SynthesisMediaType media);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Speech.Synthesis.SynthesisMediaType media) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="media" Type="System.Speech.Synthesis.SynthesisMediaType" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="media">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FilePrompt (Uri promptFile, System.Speech.Synthesis.SynthesisMediaType media);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri promptFile, valuetype System.Speech.Synthesis.SynthesisMediaType media) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="promptFile" Type="System.Uri" />
+        <Parameter Name="media" Type="System.Speech.Synthesis.SynthesisMediaType" />
+      </Parameters>
+      <Docs>
+        <param name="promptFile">To be added.</param>
+        <param name="media">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

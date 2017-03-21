@@ -1,0 +1,45 @@
+<Type Name="SubordinateTransaction" FullName="System.Transactions.SubordinateTransaction">
+  <TypeSignature Language="C#" Value="public sealed class SubordinateTransaction : System.Transactions.Transaction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SubordinateTransaction extends System.Transactions.Transaction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Transactions.Transaction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SubordinateTransaction (System.Transactions.IsolationLevel isoLevel, System.Transactions.ISimpleTransactionSuperior superior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.IsolationLevel isoLevel, class System.Transactions.ISimpleTransactionSuperior superior) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isoLevel" Type="System.Transactions.IsolationLevel" />
+        <Parameter Name="superior" Type="System.Transactions.ISimpleTransactionSuperior" />
+      </Parameters>
+      <Docs>
+        <param name="isoLevel">To be added.</param>
+        <param name="superior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

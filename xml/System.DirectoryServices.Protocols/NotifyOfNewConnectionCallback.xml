@@ -1,0 +1,37 @@
+<Type Name="NotifyOfNewConnectionCallback" FullName="System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback">
+  <TypeSignature Language="C#" Value="public delegate bool NotifyOfNewConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, LdapConnection newConnection, NetworkCredential credential, long currentUserToken, int errorCodeFromBind);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyOfNewConnectionCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="primaryConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="referralFromConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="newDistinguishedName" Type="System.String" />
+    <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.LdapDirectoryIdentifier" />
+    <Parameter Name="newConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="credential" Type="System.Net.NetworkCredential" />
+    <Parameter Name="currentUserToken" Type="System.Int64" />
+    <Parameter Name="errorCodeFromBind" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="primaryConnection">To be added.</param>
+    <param name="referralFromConnection">To be added.</param>
+    <param name="newDistinguishedName">To be added.</param>
+    <param name="identifier">To be added.</param>
+    <param name="newConnection">To be added.</param>
+    <param name="credential">To be added.</param>
+    <param name="currentUserToken">To be added.</param>
+    <param name="errorCodeFromBind">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

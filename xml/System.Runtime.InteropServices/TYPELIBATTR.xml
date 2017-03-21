@@ -1,11 +1,8 @@
 <Type Name="TYPELIBATTR" FullName="System.Runtime.InteropServices.TYPELIBATTR">
   <TypeSignature Language="C#" Value="public struct TYPELIBATTR" />
   <TypeSignature Language="ILAsm" Value=".class public sequential serializable sealed beforefieldinit TYPELIBATTR extends System.ValueType" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TYPELIBATTR" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,12 +22,9 @@
     <Member MemberName="guid">
       <MemberSignature Language="C#" Value="public Guid guid;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Guid guid" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.guid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -44,12 +38,9 @@
     <Member MemberName="lcid">
       <MemberSignature Language="C#" Value="public int lcid;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 lcid" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.lcid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,12 +54,9 @@
     <Member MemberName="syskind">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.SYSKIND syskind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.SYSKIND syskind" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.syskind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,12 +70,9 @@
     <Member MemberName="wLibFlags">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.LIBFLAGS wLibFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.LIBFLAGS wLibFlags" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.wLibFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,12 +86,9 @@
     <Member MemberName="wMajorVerNum">
       <MemberSignature Language="C#" Value="public short wMajorVerNum;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wMajorVerNum" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.wMajorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,12 +102,9 @@
     <Member MemberName="wMinorVerNum">
       <MemberSignature Language="C#" Value="public short wMinorVerNum;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wMinorVerNum" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPELIBATTR.wMinorVerNum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

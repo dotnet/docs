@@ -1,0 +1,1206 @@
+<Type Name="ToolLocationHelper" FullName="Microsoft.Build.Utilities.ToolLocationHelper">
+  <TypeSignature Language="C#" Value="public static class ToolLocationHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ToolLocationHelper extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearSDKStaticCache">
+      <MemberSignature Language="C#" Value="public static void ClearSDKStaticCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearSDKStaticCache() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssemblyFoldersExInfo">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.AssemblyFoldersExInfo&gt; GetAssemblyFoldersExInfo (string registryRoot, string targetFrameworkVersion, string registryKeySuffix, string osVersion, string platform, System.Reflection.ProcessorArchitecture targetProcessorArchitecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Build.Utilities.AssemblyFoldersExInfo&gt; GetAssemblyFoldersExInfo(string registryRoot, string targetFrameworkVersion, string registryKeySuffix, string osVersion, string platform, valuetype System.Reflection.ProcessorArchitecture targetProcessorArchitecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.AssemblyFoldersExInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="registryRoot" Type="System.String" />
+        <Parameter Name="targetFrameworkVersion" Type="System.String" />
+        <Parameter Name="registryKeySuffix" Type="System.String" />
+        <Parameter Name="osVersion" Type="System.String" />
+        <Parameter Name="platform" Type="System.String" />
+        <Parameter Name="targetProcessorArchitecture" Type="System.Reflection.ProcessorArchitecture" />
+      </Parameters>
+      <Docs>
+        <param name="registryRoot">To be added.</param>
+        <param name="targetFrameworkVersion">To be added.</param>
+        <param name="registryKeySuffix">To be added.</param>
+        <param name="osVersion">To be added.</param>
+        <param name="platform">To be added.</param>
+        <param name="targetProcessorArchitecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayNameForTargetFrameworkDirectory">
+      <MemberSignature Language="C#" Value="public static string GetDisplayNameForTargetFrameworkDirectory (string targetFrameworkDirectory, System.Runtime.Versioning.FrameworkName frameworkName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDisplayNameForTargetFrameworkDirectory(string targetFrameworkDirectory, class System.Runtime.Versioning.FrameworkName frameworkName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetFrameworkDirectory" Type="System.String" />
+        <Parameter Name="frameworkName" Type="System.Runtime.Versioning.FrameworkName" />
+      </Parameters>
+      <Docs>
+        <param name="targetFrameworkDirectory">To be added.</param>
+        <param name="frameworkName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetFrameworkRootRegistryKey">
+      <MemberSignature Language="C#" Value="public static string GetDotNetFrameworkRootRegistryKey (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetFrameworkRootRegistryKey(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetFrameworkSdkInstallKeyValue">
+      <MemberSignature Language="C#" Value="public static string GetDotNetFrameworkSdkInstallKeyValue (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetFrameworkSdkInstallKeyValue(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetFrameworkSdkInstallKeyValue">
+      <MemberSignature Language="C#" Value="public static string GetDotNetFrameworkSdkInstallKeyValue (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetFrameworkSdkInstallKeyValue(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetFrameworkSdkRootRegistryKey">
+      <MemberSignature Language="C#" Value="public static string GetDotNetFrameworkSdkRootRegistryKey (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetFrameworkSdkRootRegistryKey(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetFrameworkSdkRootRegistryKey">
+      <MemberSignature Language="C#" Value="public static string GetDotNetFrameworkSdkRootRegistryKey (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetFrameworkSdkRootRegistryKey(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetFrameworkVersionFolderPrefix">
+      <MemberSignature Language="C#" Value="public static string GetDotNetFrameworkVersionFolderPrefix (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetFrameworkVersionFolderPrefix(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFramework">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFramework (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFramework(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFramework">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFramework (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFramework(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="architecture" Type="Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <param name="architecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="architecture" Type="Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="architecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkReferenceAssemblies">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkReferenceAssemblies (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkReferenceAssemblies(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkSdk">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkSdk (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkSdk(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkSdk">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkSdk (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkSdk(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkSdkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkSdkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkSdkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkSdkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkSdkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkSdkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="architecture" Type="Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="architecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkSdkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkSdkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkSdkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToDotNetFrameworkSdkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToDotNetFrameworkSdkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion, Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToDotNetFrameworkSdkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion, valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+        <Parameter Name="architecture" Type="Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <param name="architecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToReferenceAssemblies">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetPathToReferenceAssemblies (System.Runtime.Versioning.FrameworkName frameworkName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetPathToReferenceAssemblies(class System.Runtime.Versioning.FrameworkName frameworkName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frameworkName" Type="System.Runtime.Versioning.FrameworkName" />
+      </Parameters>
+      <Docs>
+        <param name="frameworkName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToReferenceAssemblies">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetPathToReferenceAssemblies (string targetFrameworkRootPath, System.Runtime.Versioning.FrameworkName frameworkName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetPathToReferenceAssemblies(string targetFrameworkRootPath, class System.Runtime.Versioning.FrameworkName frameworkName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetFrameworkRootPath" Type="System.String" />
+        <Parameter Name="frameworkName" Type="System.Runtime.Versioning.FrameworkName" />
+      </Parameters>
+      <Docs>
+        <param name="targetFrameworkRootPath">To be added.</param>
+        <param name="frameworkName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToReferenceAssemblies">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetPathToReferenceAssemblies (string targetFrameworkIdentifier, string targetFrameworkVersion, string targetFrameworkProfile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetPathToReferenceAssemblies(string targetFrameworkIdentifier, string targetFrameworkVersion, string targetFrameworkProfile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetFrameworkIdentifier" Type="System.String" />
+        <Parameter Name="targetFrameworkVersion" Type="System.String" />
+        <Parameter Name="targetFrameworkProfile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetFrameworkIdentifier">To be added.</param>
+        <param name="targetFrameworkVersion">To be added.</param>
+        <param name="targetFrameworkProfile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToStandardLibraries">
+      <MemberSignature Language="C#" Value="public static string GetPathToStandardLibraries (string targetFrameworkIdentifier, string targetFrameworkVersion, string targetFrameworkProfile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToStandardLibraries(string targetFrameworkIdentifier, string targetFrameworkVersion, string targetFrameworkProfile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetFrameworkIdentifier" Type="System.String" />
+        <Parameter Name="targetFrameworkVersion" Type="System.String" />
+        <Parameter Name="targetFrameworkProfile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetFrameworkIdentifier">To be added.</param>
+        <param name="targetFrameworkVersion">To be added.</param>
+        <param name="targetFrameworkProfile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToStandardLibraries">
+      <MemberSignature Language="C#" Value="public static string GetPathToStandardLibraries (string targetFrameworkIdentifier, string targetFrameworkVersion, string targetFrameworkProfile, string platformTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToStandardLibraries(string targetFrameworkIdentifier, string targetFrameworkVersion, string targetFrameworkProfile, string platformTarget) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetFrameworkIdentifier" Type="System.String" />
+        <Parameter Name="targetFrameworkVersion" Type="System.String" />
+        <Parameter Name="targetFrameworkProfile" Type="System.String" />
+        <Parameter Name="platformTarget" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetFrameworkIdentifier">To be added.</param>
+        <param name="targetFrameworkVersion">To be added.</param>
+        <param name="targetFrameworkProfile">To be added.</param>
+        <param name="platformTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToSystemFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToSystemFile (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToSystemFile(string fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToWindowsSdk">
+      <MemberSignature Language="C#" Value="public static string GetPathToWindowsSdk (Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToWindowsSdk(valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToWindowsSdkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToWindowsSdkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToWindowsSdkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathToWindowsSdkFile">
+      <MemberSignature Language="C#" Value="public static string GetPathToWindowsSdkFile (string fileName, Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion, Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPathToWindowsSdkFile(string fileName, valuetype Microsoft.Build.Utilities.TargetDotNetFrameworkVersion version, valuetype Microsoft.Build.Utilities.VisualStudioVersion visualStudioVersion, valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture architecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="version" Type="Microsoft.Build.Utilities.TargetDotNetFrameworkVersion" />
+        <Parameter Name="visualStudioVersion" Type="Microsoft.Build.Utilities.VisualStudioVersion" />
+        <Parameter Name="architecture" Type="Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <param name="version">To be added.</param>
+        <param name="visualStudioVersion">To be added.</param>
+        <param name="architecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformExtensionSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformExtensionSDKLocation (string sdkMoniker, string targetPlatformIdentifier, string targetPlatformVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformExtensionSDKLocation(string sdkMoniker, string targetPlatformIdentifier, string targetPlatformVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkMoniker" Type="System.String" />
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkMoniker">To be added.</param>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformExtensionSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformExtensionSDKLocation (string sdkMoniker, string targetPlatformIdentifier, Version targetPlatformVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformExtensionSDKLocation(string sdkMoniker, string targetPlatformIdentifier, class System.Version targetPlatformVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkMoniker" Type="System.String" />
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="sdkMoniker">To be added.</param>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformExtensionSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformExtensionSDKLocation (string sdkMoniker, string targetPlatformIdentifier, string targetPlatformVersion, string diskRoots, string registryRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformExtensionSDKLocation(string sdkMoniker, string targetPlatformIdentifier, string targetPlatformVersion, string diskRoots, string registryRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkMoniker" Type="System.String" />
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.String" />
+        <Parameter Name="diskRoots" Type="System.String" />
+        <Parameter Name="registryRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkMoniker">To be added.</param>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <param name="diskRoots">To be added.</param>
+        <param name="registryRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformExtensionSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformExtensionSDKLocation (string sdkMoniker, string targetPlatformIdentifier, Version targetPlatformVersion, string[] diskRoots, string registryRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformExtensionSDKLocation(string sdkMoniker, string targetPlatformIdentifier, class System.Version targetPlatformVersion, string[] diskRoots, string registryRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkMoniker" Type="System.String" />
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+        <Parameter Name="diskRoots" Type="System.String[]" />
+        <Parameter Name="registryRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkMoniker">To be added.</param>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <param name="diskRoots">To be added.</param>
+        <param name="registryRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformExtensionSDKLocations">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,string&gt; GetPlatformExtensionSDKLocations (string targetPlatformIdentifier, Version targetPlatformVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetPlatformExtensionSDKLocations(string targetPlatformIdentifier, class System.Version targetPlatformVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformExtensionSDKLocations">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,string&gt; GetPlatformExtensionSDKLocations (string[] diskRoots, string registryRoot, string targetPlatformIdentifier, Version targetPlatformVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetPlatformExtensionSDKLocations(string[] diskRoots, string registryRoot, string targetPlatformIdentifier, class System.Version targetPlatformVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="diskRoots" Type="System.String[]" />
+        <Parameter Name="registryRoot" Type="System.String" />
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="diskRoots">To be added.</param>
+        <param name="registryRoot">To be added.</param>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformSDKLocation (string targetPlatformIdentifier, string targetPlatformVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformSDKLocation(string targetPlatformIdentifier, string targetPlatformVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformSDKLocation (string targetPlatformIdentifier, Version targetPlatformVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformSDKLocation(string targetPlatformIdentifier, class System.Version targetPlatformVersion) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformSDKLocation (string targetPlatformIdentifier, string targetPlatformVersion, string diskRoots, string registryRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformSDKLocation(string targetPlatformIdentifier, string targetPlatformVersion, string diskRoots, string registryRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.String" />
+        <Parameter Name="diskRoots" Type="System.String" />
+        <Parameter Name="registryRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <param name="diskRoots">To be added.</param>
+        <param name="registryRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlatformSDKLocation">
+      <MemberSignature Language="C#" Value="public static string GetPlatformSDKLocation (string targetPlatformIdentifier, Version targetPlatformVersion, string[] diskRoots, string registryRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlatformSDKLocation(string targetPlatformIdentifier, class System.Version targetPlatformVersion, string[] diskRoots, string registryRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+        <Parameter Name="diskRoots" Type="System.String[]" />
+        <Parameter Name="registryRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetPlatformIdentifier">To be added.</param>
+        <param name="targetPlatformVersion">To be added.</param>
+        <param name="diskRoots">To be added.</param>
+        <param name="registryRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProgramFilesReferenceAssemblyRoot">
+      <MemberSignature Language="C#" Value="public static string GetProgramFilesReferenceAssemblyRoot ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetProgramFilesReferenceAssemblyRoot() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSDKDesignTimeFolders">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSDKDesignTimeFolders (string sdkRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSDKDesignTimeFolders(string sdkRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSDKDesignTimeFolders">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSDKDesignTimeFolders (string sdkRoot, string targetConfiguration, string targetArchitecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSDKDesignTimeFolders(string sdkRoot, string targetConfiguration, string targetArchitecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkRoot" Type="System.String" />
+        <Parameter Name="targetConfiguration" Type="System.String" />
+        <Parameter Name="targetArchitecture" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkRoot">To be added.</param>
+        <param name="targetConfiguration">To be added.</param>
+        <param name="targetArchitecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSDKRedistFolders">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSDKRedistFolders (string sdkRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSDKRedistFolders(string sdkRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSDKRedistFolders">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSDKRedistFolders (string sdkRoot, string targetConfiguration, string targetArchitecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSDKRedistFolders(string sdkRoot, string targetConfiguration, string targetArchitecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkRoot" Type="System.String" />
+        <Parameter Name="targetConfiguration" Type="System.String" />
+        <Parameter Name="targetArchitecture" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkRoot">To be added.</param>
+        <param name="targetConfiguration">To be added.</param>
+        <param name="targetArchitecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSDKReferenceFolders">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSDKReferenceFolders (string sdkRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSDKReferenceFolders(string sdkRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSDKReferenceFolders">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSDKReferenceFolders (string sdkRoot, string targetConfiguration, string targetArchitecture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSDKReferenceFolders(string sdkRoot, string targetConfiguration, string targetArchitecture) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdkRoot" Type="System.String" />
+        <Parameter Name="targetConfiguration" Type="System.String" />
+        <Parameter Name="targetArchitecture" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sdkRoot">To be added.</param>
+        <param name="targetConfiguration">To be added.</param>
+        <param name="targetArchitecture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedTargetFrameworks">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetSupportedTargetFrameworks ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetSupportedTargetFrameworks() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTargetPlatformSdks">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt; GetTargetPlatformSdks ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Build.Utilities.TargetPlatformSDK&gt; GetTargetPlatformSdks() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTargetPlatformSdks">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt; GetTargetPlatformSdks (string[] diskRoots, string registryRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.Build.Utilities.TargetPlatformSDK&gt; GetTargetPlatformSdks(string[] diskRoots, string registryRoot) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="diskRoots" Type="System.String[]" />
+        <Parameter Name="registryRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="diskRoots">To be added.</param>
+        <param name="registryRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HighestVersionOfTargetFrameworkIdentifier">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Versioning.FrameworkName HighestVersionOfTargetFrameworkIdentifier (string targetFrameworkRootDirectory, string frameworkIdentifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Versioning.FrameworkName HighestVersionOfTargetFrameworkIdentifier(string targetFrameworkRootDirectory, string frameworkIdentifier) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.FrameworkName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetFrameworkRootDirectory" Type="System.String" />
+        <Parameter Name="frameworkIdentifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetFrameworkRootDirectory">To be added.</param>
+        <param name="frameworkIdentifier">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathToSystem">
+      <MemberSignature Language="C#" Value="public static string PathToSystem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string PathToSystem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

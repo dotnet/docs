@@ -1,0 +1,84 @@
+<Type Name="IBuildEngine3" FullName="Microsoft.Build.Framework.IBuildEngine3">
+  <TypeSignature Language="C#" Value="public interface IBuildEngine3 : Microsoft.Build.Framework.IBuildEngine2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine3 implements class Microsoft.Build.Framework.IBuildEngine, class Microsoft.Build.Framework.IBuildEngine2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.IBuildEngine2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildProjectFilesInParallel">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.BuildEngineResult BuildProjectFilesInParallel (string[] projectFileNames, string[] targetNames, System.Collections.IDictionary[] globalProperties, System.Collections.Generic.IList&lt;string&gt;[] removeGlobalProperties, string[] toolsVersion, bool returnTargetOutputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Framework.BuildEngineResult BuildProjectFilesInParallel(string[] projectFileNames, string[] targetNames, class System.Collections.IDictionary[] globalProperties, class System.Collections.Generic.IList`1&lt;string&gt;[] removeGlobalProperties, string[] toolsVersion, bool returnTargetOutputs) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildEngineResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileNames" Type="System.String[]" />
+        <Parameter Name="targetNames" Type="System.String[]" />
+        <Parameter Name="globalProperties" Type="System.Collections.IDictionary[]" />
+        <Parameter Name="removeGlobalProperties" Type="System.Collections.Generic.IList&lt;System.String&gt;[]" />
+        <Parameter Name="toolsVersion" Type="System.String[]" />
+        <Parameter Name="returnTargetOutputs" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileNames">To be added.</param>
+        <param name="targetNames">To be added.</param>
+        <param name="globalProperties">To be added.</param>
+        <param name="removeGlobalProperties">To be added.</param>
+        <param name="toolsVersion">To be added.</param>
+        <param name="returnTargetOutputs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reacquire">
+      <MemberSignature Language="C#" Value="public void Reacquire ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reacquire() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yield">
+      <MemberSignature Language="C#" Value="public void Yield ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Yield() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

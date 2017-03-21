@@ -1,10 +1,18 @@
 <Type Name="StructuralComparisons" FullName="System.Collections.StructuralComparisons">
   <TypeSignature Language="C#" Value="public static class StructuralComparisons" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StructuralComparisons extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Collections.StructuralComparisons" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,11 +26,19 @@
     <Member MemberName="StructuralComparer">
       <MemberSignature Language="C#" Value="public static System.Collections.IComparer StructuralComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IComparer StructuralComparer" />
-      <MemberSignature Language="DocId" Value="P:System.Collections.StructuralComparisons.StructuralComparer" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IComparer</ReturnType>
@@ -36,11 +52,19 @@
     <Member MemberName="StructuralEqualityComparer">
       <MemberSignature Language="C#" Value="public static System.Collections.IEqualityComparer StructuralEqualityComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEqualityComparer StructuralEqualityComparer" />
-      <MemberSignature Language="DocId" Value="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEqualityComparer</ReturnType>

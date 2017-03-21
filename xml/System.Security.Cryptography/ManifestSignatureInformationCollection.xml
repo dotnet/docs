@@ -1,0 +1,20 @@
+<Type Name="ManifestSignatureInformationCollection" FullName="System.Security.Cryptography.ManifestSignatureInformationCollection">
+  <TypeSignature Language="C#" Value="public sealed class ManifestSignatureInformationCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.ManifestSignatureInformation&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManifestSignatureInformationCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Cryptography.ManifestSignatureInformation&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.ManifestSignatureInformation&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Security.Cryptography.ManifestSignatureInformation</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,46 @@
+<Type Name="IWorkflowChangeDiff" FullName="System.Workflow.ComponentModel.IWorkflowChangeDiff">
+  <TypeSignature Language="C#" Value="public interface IWorkflowChangeDiff" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowChangeDiff" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Diff">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff (object originalDefinition, object changedDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff(object originalDefinition, object changedDefinition) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalDefinition" Type="System.Object" />
+        <Parameter Name="changedDefinition" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="originalDefinition">To be added.</param>
+        <param name="changedDefinition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

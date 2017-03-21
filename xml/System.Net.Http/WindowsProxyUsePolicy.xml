@@ -1,0 +1,82 @@
+<Type Name="WindowsProxyUsePolicy" FullName="System.Net.Http.WindowsProxyUsePolicy">
+  <TypeSignature Language="C#" Value="public enum WindowsProxyUsePolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowsProxyUsePolicy extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DoNotUseProxy">
+      <MemberSignature Language="C#" Value="DoNotUseProxy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.WindowsProxyUsePolicy DoNotUseProxy = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCustomProxy">
+      <MemberSignature Language="C#" Value="UseCustomProxy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.WindowsProxyUsePolicy UseCustomProxy = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseWinHttpProxy">
+      <MemberSignature Language="C#" Value="UseWinHttpProxy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.WindowsProxyUsePolicy UseWinHttpProxy = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseWinInetProxy">
+      <MemberSignature Language="C#" Value="UseWinInetProxy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.WindowsProxyUsePolicy UseWinInetProxy = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.WindowsProxyUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

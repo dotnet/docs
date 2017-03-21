@@ -1,0 +1,77 @@
+<Type Name="MediaPermissionVideo" FullName="System.Security.Permissions.MediaPermissionVideo">
+  <TypeSignature Language="C#" Value="public enum MediaPermissionVideo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaPermissionVideo extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllVideo">
+      <MemberSignature Language="C#" Value="AllVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo AllVideo = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoVideo">
+      <MemberSignature Language="C#" Value="NoVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo NoVideo = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeVideo">
+      <MemberSignature Language="C#" Value="SafeVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo SafeVideo = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteOfOriginVideo">
+      <MemberSignature Language="C#" Value="SiteOfOriginVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo SiteOfOriginVideo = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

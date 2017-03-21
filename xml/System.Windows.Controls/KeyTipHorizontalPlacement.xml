@@ -1,0 +1,152 @@
+<Type Name="KeyTipHorizontalPlacement" FullName="System.Windows.Controls.KeyTipHorizontalPlacement">
+  <TypeSignature Language="C#" Value="public enum KeyTipHorizontalPlacement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyTipHorizontalPlacement extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyTipCenterAtTargetCenter">
+      <MemberSignature Language="C#" Value="KeyTipCenterAtTargetCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipCenterAtTargetCenter = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipCenterAtTargetLeft">
+      <MemberSignature Language="C#" Value="KeyTipCenterAtTargetLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipCenterAtTargetLeft = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipCenterAtTargetRight">
+      <MemberSignature Language="C#" Value="KeyTipCenterAtTargetRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipCenterAtTargetRight = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipLeftAtTargetCenter">
+      <MemberSignature Language="C#" Value="KeyTipLeftAtTargetCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipLeftAtTargetCenter = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipLeftAtTargetLeft">
+      <MemberSignature Language="C#" Value="KeyTipLeftAtTargetLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipLeftAtTargetLeft = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipLeftAtTargetRight">
+      <MemberSignature Language="C#" Value="KeyTipLeftAtTargetRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipLeftAtTargetRight = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipRightAtTargetCenter">
+      <MemberSignature Language="C#" Value="KeyTipRightAtTargetCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipRightAtTargetCenter = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipRightAtTargetLeft">
+      <MemberSignature Language="C#" Value="KeyTipRightAtTargetLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipRightAtTargetLeft = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipRightAtTargetRight">
+      <MemberSignature Language="C#" Value="KeyTipRightAtTargetRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipRightAtTargetRight = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

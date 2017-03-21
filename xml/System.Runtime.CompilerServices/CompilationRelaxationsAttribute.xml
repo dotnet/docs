@@ -1,12 +1,20 @@
 <Type Name="CompilationRelaxationsAttribute" FullName="System.Runtime.CompilerServices.CompilationRelaxationsAttribute">
   <TypeSignature Language="C#" Value="public class CompilationRelaxationsAttribute : Attribute" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompilationRelaxationsAttribute extends System.Attribute" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompilationRelaxationsAttribute extends System.Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -14,10 +22,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Module | System.AttributeTargets.Class | System.AttributeTargets.Method)</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Module)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -28,13 +33,21 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CompilationRelaxationsAttribute (int relaxations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 relaxations) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CompilationRelaxationsAttribute.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="relaxations" Type="System.Int32" />
@@ -48,12 +61,10 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CompilationRelaxationsAttribute (System.Runtime.CompilerServices.CompilationRelaxations relaxations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.CompilerServices.CompilationRelaxations relaxations) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CompilationRelaxationsAttribute.#ctor(System.Runtime.CompilerServices.CompilationRelaxations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="relaxations" Type="System.Runtime.CompilerServices.CompilationRelaxations" />
@@ -67,13 +78,21 @@
     <Member MemberName="CompilationRelaxations">
       <MemberSignature Language="C#" Value="public int CompilationRelaxations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CompilationRelaxations" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.CompilationRelaxationsAttribute.CompilationRelaxations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

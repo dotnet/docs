@@ -1,0 +1,36 @@
+<Type Name="ADODC+WillChangeRecordDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+WillChangeRecordDelegate">
+  <TypeSignature Language="C#" Value="public delegate void ADODC.WillChangeRecordDelegate(EventReasonEnum adReason, int cRecords, ref EventStatusEnum adStatus, Recordset pRecordset);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/WillChangeRecordDelegate extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="adReason" Type="ADODB.EventReasonEnum" />
+    <Parameter Name="cRecords" Type="System.Int32" />
+    <Parameter Name="adStatus" Type="ADODB.EventStatusEnum&amp;" RefType="ref" />
+    <Parameter Name="pRecordset" Type="ADODB.Recordset" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="adReason">To be added.</param>
+    <param name="cRecords">To be added.</param>
+    <param name="adStatus">To be added.</param>
+    <param name="pRecordset">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

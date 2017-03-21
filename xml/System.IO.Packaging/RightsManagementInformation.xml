@@ -1,0 +1,154 @@
+<Type Name="RightsManagementInformation" FullName="System.IO.Packaging.RightsManagementInformation">
+  <TypeSignature Language="C#" Value="public class RightsManagementInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RightsManagementInformation extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CryptoProvider">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.CryptoProvider CryptoProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.CryptoProvider CryptoProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.CryptoProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteUseLicense">
+      <MemberSignature Language="C#" Value="public void DeleteUseLicense (System.Security.RightsManagement.ContentUser userKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteUseLicense(class System.Security.RightsManagement.ContentUser userKey) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userKey" Type="System.Security.RightsManagement.ContentUser" />
+      </Parameters>
+      <Docs>
+        <param name="userKey">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmbeddedUseLicenses">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.UseLicense&gt; GetEmbeddedUseLicenses ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IDictionary`2&lt;class System.Security.RightsManagement.ContentUser, class System.Security.RightsManagement.UseLicense&gt; GetEmbeddedUseLicenses() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.UseLicense&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPublishLicense">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.PublishLicense LoadPublishLicense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.PublishLicense LoadPublishLicense() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.PublishLicense</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadUseLicense">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.UseLicense LoadUseLicense (System.Security.RightsManagement.ContentUser userKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.UseLicense LoadUseLicense(class System.Security.RightsManagement.ContentUser userKey) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.UseLicense</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userKey" Type="System.Security.RightsManagement.ContentUser" />
+      </Parameters>
+      <Docs>
+        <param name="userKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavePublishLicense">
+      <MemberSignature Language="C#" Value="public void SavePublishLicense (System.Security.RightsManagement.PublishLicense publishLicense);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SavePublishLicense(class System.Security.RightsManagement.PublishLicense publishLicense) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="publishLicense" Type="System.Security.RightsManagement.PublishLicense" />
+      </Parameters>
+      <Docs>
+        <param name="publishLicense">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveUseLicense">
+      <MemberSignature Language="C#" Value="public void SaveUseLicense (System.Security.RightsManagement.ContentUser userKey, System.Security.RightsManagement.UseLicense useLicense);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveUseLicense(class System.Security.RightsManagement.ContentUser userKey, class System.Security.RightsManagement.UseLicense useLicense) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userKey" Type="System.Security.RightsManagement.ContentUser" />
+        <Parameter Name="useLicense" Type="System.Security.RightsManagement.UseLicense" />
+      </Parameters>
+      <Docs>
+        <param name="userKey">To be added.</param>
+        <param name="useLicense">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

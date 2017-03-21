@@ -1,0 +1,179 @@
+<Type Name="TextBoxRenderer" FullName="System.Windows.Forms.TextBoxRenderer">
+  <TypeSignature Language="C#" Value="public sealed class TextBoxRenderer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextBoxRenderer extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DrawTextBox">
+      <MemberSignature Language="C#" Value="public static void DrawTextBox (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.TextBoxState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TextBoxState" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawTextBox">
+      <MemberSignature Language="C#" Value="public static void DrawTextBox (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string textBoxText, System.Drawing.Font font, System.Windows.Forms.VisualStyles.TextBoxState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="textBoxText" Type="System.String" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TextBoxState" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="textBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawTextBox">
+      <MemberSignature Language="C#" Value="public static void DrawTextBox (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string textBoxText, System.Drawing.Font font, System.Drawing.Rectangle textBounds, System.Windows.Forms.VisualStyles.TextBoxState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Drawing.Rectangle textBounds, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="textBoxText" Type="System.String" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="textBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TextBoxState" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="textBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="textBounds">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawTextBox">
+      <MemberSignature Language="C#" Value="public static void DrawTextBox (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string textBoxText, System.Drawing.Font font, System.Windows.Forms.TextFormatFlags flags, System.Windows.Forms.VisualStyles.TextBoxState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="textBoxText" Type="System.String" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TextBoxState" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="textBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawTextBox">
+      <MemberSignature Language="C#" Value="public static void DrawTextBox (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string textBoxText, System.Drawing.Font font, System.Drawing.Rectangle textBounds, System.Windows.Forms.TextFormatFlags flags, System.Windows.Forms.VisualStyles.TextBoxState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTextBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string textBoxText, class System.Drawing.Font font, valuetype System.Drawing.Rectangle textBounds, valuetype System.Windows.Forms.TextFormatFlags flags, valuetype System.Windows.Forms.VisualStyles.TextBoxState state) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="textBoxText" Type="System.String" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="textBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.TextBoxState" />
+      </Parameters>
+      <Docs>
+        <param name="g">To be added.</param>
+        <param name="bounds">To be added.</param>
+        <param name="textBoxText">To be added.</param>
+        <param name="font">To be added.</param>
+        <param name="textBounds">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

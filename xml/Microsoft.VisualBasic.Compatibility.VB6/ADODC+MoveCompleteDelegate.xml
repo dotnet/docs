@@ -1,0 +1,36 @@
+<Type Name="ADODC+MoveCompleteDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+MoveCompleteDelegate">
+  <TypeSignature Language="C#" Value="public delegate void ADODC.MoveCompleteDelegate(EventReasonEnum adReason, Error pError, ref EventStatusEnum adStatus, Recordset pRecordset);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/MoveCompleteDelegate extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="adReason" Type="ADODB.EventReasonEnum" />
+    <Parameter Name="pError" Type="ADODB.Error" />
+    <Parameter Name="adStatus" Type="ADODB.EventStatusEnum&amp;" RefType="ref" />
+    <Parameter Name="pRecordset" Type="ADODB.Recordset" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="adReason">To be added.</param>
+    <param name="pError">To be added.</param>
+    <param name="adStatus">To be added.</param>
+    <param name="pRecordset">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

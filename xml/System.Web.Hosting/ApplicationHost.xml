@@ -1,0 +1,43 @@
+<Type Name="ApplicationHost" FullName="System.Web.Hosting.ApplicationHost">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationHost extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateApplicationHost">
+      <MemberSignature Language="C#" Value="public static object CreateApplicationHost (Type hostType, string virtualDir, string physicalDir);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateApplicationHost(class System.Type hostType, string virtualDir, string physicalDir) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hostType" Type="System.Type" />
+        <Parameter Name="virtualDir" Type="System.String" />
+        <Parameter Name="physicalDir" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hostType">To be added.</param>
+        <param name="virtualDir">To be added.</param>
+        <param name="physicalDir">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

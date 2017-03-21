@@ -1,0 +1,716 @@
+<Type Name="NewLateBinding" FullName="Microsoft.VisualBasic.CompilerServices.NewLateBinding">
+  <TypeSignature Language="C#" Value="public sealed class NewLateBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NewLateBinding extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FallbackCall">
+      <MemberSignature Language="C#" Value="public static object FallbackCall (object Instance, string MemberName, object[] Arguments, string[] ArgumentNames, bool IgnoreReturn);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FallbackCall(object Instance, string MemberName, object[] Arguments, string[] ArgumentNames, bool IgnoreReturn) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="IgnoreReturn" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="IgnoreReturn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackGet">
+      <MemberSignature Language="C#" Value="public static object FallbackGet (object Instance, string MemberName, object[] Arguments, string[] ArgumentNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FallbackGet(object Instance, string MemberName, object[] Arguments, string[] ArgumentNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackIndexSet">
+      <MemberSignature Language="C#" Value="public static void FallbackIndexSet (object Instance, object[] Arguments, string[] ArgumentNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FallbackIndexSet(object Instance, object[] Arguments, string[] ArgumentNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackIndexSetComplex">
+      <MemberSignature Language="C#" Value="public static void FallbackIndexSetComplex (object Instance, object[] Arguments, string[] ArgumentNames, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FallbackIndexSetComplex(object Instance, object[] Arguments, string[] ArgumentNames, bool OptimisticSet, bool RValueBase) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="OptimisticSet">To be added.</param>
+        <param name="RValueBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackInvokeDefault1">
+      <MemberSignature Language="C#" Value="public static object FallbackInvokeDefault1 (object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FallbackInvokeDefault1(object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="ReportErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="ReportErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackInvokeDefault2">
+      <MemberSignature Language="C#" Value="public static object FallbackInvokeDefault2 (object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FallbackInvokeDefault2(object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="ReportErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="ReportErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackSet">
+      <MemberSignature Language="C#" Value="public static void FallbackSet (object Instance, string MemberName, object[] Arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FallbackSet(object Instance, string MemberName, object[] Arguments) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackSetComplex">
+      <MemberSignature Language="C#" Value="public static void FallbackSetComplex (object Instance, string MemberName, object[] Arguments, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FallbackSetComplex(object Instance, string MemberName, object[] Arguments, bool OptimisticSet, bool RValueBase) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="OptimisticSet">To be added.</param>
+        <param name="RValueBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateCall">
+      <MemberSignature Language="C#" Value="public static object LateCall (object Instance, Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, Type[] TypeArguments, bool[] CopyBack, bool IgnoreReturn);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateCall(object Instance, class System.Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, class System.Type[] TypeArguments, bool[] CopyBack, bool IgnoreReturn) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Type" Type="System.Type" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="TypeArguments" Type="System.Type[]" />
+        <Parameter Name="CopyBack" Type="System.Boolean[]" />
+        <Parameter Name="IgnoreReturn" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Type">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="TypeArguments">To be added.</param>
+        <param name="CopyBack">To be added.</param>
+        <param name="IgnoreReturn">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateCallInvokeDefault">
+      <MemberSignature Language="C#" Value="public static object LateCallInvokeDefault (object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateCallInvokeDefault(object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="ReportErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="ReportErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateCanEvaluate">
+      <MemberSignature Language="C#" Value="public static bool LateCanEvaluate (object instance, Type type, string memberName, object[] arguments, bool allowFunctionEvaluation, bool allowPropertyEvaluation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool LateCanEvaluate(object instance, class System.Type type, string memberName, object[] arguments, bool allowFunctionEvaluation, bool allowPropertyEvaluation) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Object[]" />
+        <Parameter Name="allowFunctionEvaluation" Type="System.Boolean" />
+        <Parameter Name="allowPropertyEvaluation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instance">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="memberName">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <param name="allowFunctionEvaluation">To be added.</param>
+        <param name="allowPropertyEvaluation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateGet">
+      <MemberSignature Language="C#" Value="public static object LateGet (object Instance, Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, Type[] TypeArguments, bool[] CopyBack);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateGet(object Instance, class System.Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, class System.Type[] TypeArguments, bool[] CopyBack) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Type" Type="System.Type" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="TypeArguments" Type="System.Type[]" />
+        <Parameter Name="CopyBack" Type="System.Boolean[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Type">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="TypeArguments">To be added.</param>
+        <param name="CopyBack">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateGetInvokeDefault">
+      <MemberSignature Language="C#" Value="public static object LateGetInvokeDefault (object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateGetInvokeDefault(object Instance, object[] Arguments, string[] ArgumentNames, bool ReportErrors) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="ReportErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="ReportErrors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateIndexGet">
+      <MemberSignature Language="C#" Value="public static object LateIndexGet (object Instance, object[] Arguments, string[] ArgumentNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateIndexGet(object Instance, object[] Arguments, string[] ArgumentNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateIndexSet">
+      <MemberSignature Language="C#" Value="public static void LateIndexSet (object Instance, object[] Arguments, string[] ArgumentNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateIndexSet(object Instance, object[] Arguments, string[] ArgumentNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateIndexSetComplex">
+      <MemberSignature Language="C#" Value="public static void LateIndexSetComplex (object Instance, object[] Arguments, string[] ArgumentNames, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateIndexSetComplex(object Instance, object[] Arguments, string[] ArgumentNames, bool OptimisticSet, bool RValueBase) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="OptimisticSet">To be added.</param>
+        <param name="RValueBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateSet">
+      <MemberSignature Language="C#" Value="public static void LateSet (object Instance, Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, Type[] TypeArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateSet(object Instance, class System.Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, class System.Type[] TypeArguments) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Type" Type="System.Type" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="TypeArguments" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Type">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="TypeArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateSet">
+      <MemberSignature Language="C#" Value="public static void LateSet (object Instance, Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, Type[] TypeArguments, bool OptimisticSet, bool RValueBase, Microsoft.VisualBasic.CallType CallType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateSet(object Instance, class System.Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, class System.Type[] TypeArguments, bool OptimisticSet, bool RValueBase, valuetype Microsoft.VisualBasic.CallType CallType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Type" Type="System.Type" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="TypeArguments" Type="System.Type[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+        <Parameter Name="CallType" Type="Microsoft.VisualBasic.CallType" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Type">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="TypeArguments">To be added.</param>
+        <param name="OptimisticSet">To be added.</param>
+        <param name="RValueBase">To be added.</param>
+        <param name="CallType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateSetComplex">
+      <MemberSignature Language="C#" Value="public static void LateSetComplex (object Instance, Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, Type[] TypeArguments, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateSetComplex(object Instance, class System.Type Type, string MemberName, object[] Arguments, string[] ArgumentNames, class System.Type[] TypeArguments, bool OptimisticSet, bool RValueBase) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="Type" Type="System.Type" />
+        <Parameter Name="MemberName" Type="System.String" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+        <Parameter Name="ArgumentNames" Type="System.String[]" />
+        <Parameter Name="TypeArguments" Type="System.Type[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Instance">To be added.</param>
+        <param name="Type">To be added.</param>
+        <param name="MemberName">To be added.</param>
+        <param name="Arguments">To be added.</param>
+        <param name="ArgumentNames">To be added.</param>
+        <param name="TypeArguments">To be added.</param>
+        <param name="OptimisticSet">To be added.</param>
+        <param name="RValueBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

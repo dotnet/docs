@@ -1,0 +1,105 @@
+<Type Name="CardSpaceSelector" FullName="System.IdentityModel.Selectors.CardSpaceSelector">
+  <TypeSignature Language="C#" Value="public static class CardSpaceSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CardSpaceSelector extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken (System.IdentityModel.Selectors.CardSpacePolicyElement[] policyChain, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken(class System.IdentityModel.Selectors.CardSpacePolicyElement[] policyChain, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.GenericXmlSecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyChain" Type="System.IdentityModel.Selectors.CardSpacePolicyElement[]" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="policyChain">To be added.</param>
+        <param name="tokenSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken (System.Xml.XmlElement endpoint, System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt; policy, System.Xml.XmlElement requiredRemoteTokenIssuer, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken(class System.Xml.XmlElement endpoint, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlElement&gt; policy, class System.Xml.XmlElement requiredRemoteTokenIssuer, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.GenericXmlSecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.Xml.XmlElement" />
+        <Parameter Name="policy" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt;" />
+        <Parameter Name="requiredRemoteTokenIssuer" Type="System.Xml.XmlElement" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">To be added.</param>
+        <param name="policy">To be added.</param>
+        <param name="requiredRemoteTokenIssuer">To be added.</param>
+        <param name="tokenSerializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="public static void Import (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Import(string fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manage">
+      <MemberSignature Language="C#" Value="public static void Manage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Manage() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

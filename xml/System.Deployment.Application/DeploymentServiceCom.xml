@@ -1,0 +1,187 @@
+<Type Name="DeploymentServiceCom" FullName="System.Deployment.Application.DeploymentServiceCom">
+  <TypeSignature Language="C#" Value="public class DeploymentServiceCom" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit DeploymentServiceCom extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("20FD4E26-8E0F-4F73-A0E0-F27B8C57BE6F")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeploymentServiceCom ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateApplicationExtension">
+      <MemberSignature Language="C#" Value="public void ActivateApplicationExtension (string textualSubId, string deploymentProviderUrl, string targetAssociatedFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateApplicationExtension(string textualSubId, string deploymentProviderUrl, string targetAssociatedFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textualSubId" Type="System.String" />
+        <Parameter Name="deploymentProviderUrl" Type="System.String" />
+        <Parameter Name="targetAssociatedFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textualSubId">To be added.</param>
+        <param name="deploymentProviderUrl">To be added.</param>
+        <param name="targetAssociatedFile">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateDeployment">
+      <MemberSignature Language="C#" Value="public void ActivateDeployment (string deploymentLocation, bool isShortcut);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateDeployment(string deploymentLocation, bool isShortcut) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deploymentLocation" Type="System.String" />
+        <Parameter Name="isShortcut" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="deploymentLocation">To be added.</param>
+        <param name="isShortcut">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateDeploymentEx">
+      <MemberSignature Language="C#" Value="public void ActivateDeploymentEx (string deploymentLocation, int unsignedPolicy, int signedPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateDeploymentEx(string deploymentLocation, int32 unsignedPolicy, int32 signedPolicy) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deploymentLocation" Type="System.String" />
+        <Parameter Name="unsignedPolicy" Type="System.Int32" />
+        <Parameter Name="signedPolicy" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="deploymentLocation">To be added.</param>
+        <param name="unsignedPolicy">To be added.</param>
+        <param name="signedPolicy">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForDeploymentUpdate">
+      <MemberSignature Language="C#" Value="public void CheckForDeploymentUpdate (string textualSubId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForDeploymentUpdate(string textualSubId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textualSubId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textualSubId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CleanOnlineAppCache">
+      <MemberSignature Language="C#" Value="public void CleanOnlineAppCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CleanOnlineAppCache() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndServiceRightNow">
+      <MemberSignature Language="C#" Value="public void EndServiceRightNow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndServiceRightNow() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaintainSubscription">
+      <MemberSignature Language="C#" Value="public void MaintainSubscription (string textualSubId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MaintainSubscription(string textualSubId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textualSubId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textualSubId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,70 @@
+<Type Name="FrameworkElementAdapters" FullName="System.AddIn.Pipeline.FrameworkElementAdapters">
+  <TypeSignature Language="C#" Value="public static class FrameworkElementAdapters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FrameworkElementAdapters extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContractToViewAdapter">
+      <MemberSignature Language="C#" Value="public static System.Windows.FrameworkElement ContractToViewAdapter (System.AddIn.Contract.INativeHandleContract nativeHandleContract);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.FrameworkElement ContractToViewAdapter(class System.AddIn.Contract.INativeHandleContract nativeHandleContract) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nativeHandleContract" Type="System.AddIn.Contract.INativeHandleContract" />
+      </Parameters>
+      <Docs>
+        <param name="nativeHandleContract">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewToContractAdapter">
+      <MemberSignature Language="C#" Value="public static System.AddIn.Contract.INativeHandleContract ViewToContractAdapter (System.Windows.FrameworkElement root);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Contract.INativeHandleContract ViewToContractAdapter(class System.Windows.FrameworkElement root) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.INativeHandleContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="root">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

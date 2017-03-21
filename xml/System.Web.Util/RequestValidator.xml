@@ -1,0 +1,107 @@
+<Type Name="RequestValidator" FullName="System.Web.Util.RequestValidator">
+  <TypeSignature Language="C#" Value="public class RequestValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestValidator extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Web.Util.RequestValidator Current { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Util.RequestValidator Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeIsValidRequestString">
+      <MemberSignature Language="C#" Value="public bool InvokeIsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="requestValidationSource" Type="System.Web.Util.RequestValidationSource" />
+        <Parameter Name="collectionKey" Type="System.String" />
+        <Parameter Name="validationFailureIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="requestValidationSource">To be added.</param>
+        <param name="collectionKey">To be added.</param>
+        <param name="validationFailureIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidRequestString">
+      <MemberSignature Language="C#" Value="protected virtual bool IsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="requestValidationSource" Type="System.Web.Util.RequestValidationSource" />
+        <Parameter Name="collectionKey" Type="System.String" />
+        <Parameter Name="validationFailureIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="requestValidationSource">To be added.</param>
+        <param name="collectionKey">To be added.</param>
+        <param name="validationFailureIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,43 @@
+<Type Name="TextEffectResolver" FullName="System.Windows.Documents.TextEffectResolver">
+  <TypeSignature Language="C#" Value="public static class TextEffectResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextEffectResolver extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public static System.Windows.Documents.TextEffectTarget[] Resolve (System.Windows.Documents.TextPointer startPosition, System.Windows.Documents.TextPointer endPosition, System.Windows.Media.TextEffect effect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Documents.TextEffectTarget[] Resolve(class System.Windows.Documents.TextPointer startPosition, class System.Windows.Documents.TextPointer endPosition, class System.Windows.Media.TextEffect effect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextEffectTarget[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startPosition" Type="System.Windows.Documents.TextPointer" />
+        <Parameter Name="endPosition" Type="System.Windows.Documents.TextPointer" />
+        <Parameter Name="effect" Type="System.Windows.Media.TextEffect" />
+      </Parameters>
+      <Docs>
+        <param name="startPosition">To be added.</param>
+        <param name="endPosition">To be added.</param>
+        <param name="effect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

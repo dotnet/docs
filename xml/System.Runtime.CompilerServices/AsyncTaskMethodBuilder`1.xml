@@ -1,10 +1,18 @@
 <Type Name="AsyncTaskMethodBuilder&lt;TResult&gt;" FullName="System.Runtime.CompilerServices.AsyncTaskMethodBuilder&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public struct AsyncTaskMethodBuilder&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncTaskMethodBuilder`1&lt;TResult&gt; extends System.ValueType" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -22,11 +30,19 @@
     <Member MemberName="AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt;">
       <MemberSignature Language="C#" Value="public void AwaitOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.INotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitOnCompleted&lt;(class System.Runtime.CompilerServices.INotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter awaiter, !!TStateMachine stateMachine) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AwaitOnCompleted``2(``0@,``1@)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -59,17 +75,20 @@
     <Member MemberName="AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt;">
       <MemberSignature Language="C#" Value="public void AwaitUnsafeOnCompleted&lt;TAwaiter,TStateMachine&gt; (ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AwaitUnsafeOnCompleted&lt;(class System.Runtime.CompilerServices.ICriticalNotifyCompletion) TAwaiter, (class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TAwaiter awaiter, !!TStateMachine stateMachine) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AwaitUnsafeOnCompleted``2(``0@,``1@)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -101,11 +120,19 @@
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.AsyncTaskMethodBuilder&lt;TResult&gt; Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1&lt;!TResult&gt; Create() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Create" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.AsyncTaskMethodBuilder&lt;TResult&gt;</ReturnType>
@@ -120,11 +147,19 @@
     <Member MemberName="SetException">
       <MemberSignature Language="C#" Value="public void SetException (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Exception exception) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetException(System.Exception)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -141,11 +176,19 @@
     <Member MemberName="SetResult">
       <MemberSignature Language="C#" Value="public void SetResult (TResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResult(!TResult result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(`0)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -162,11 +205,19 @@
     <Member MemberName="SetStateMachine">
       <MemberSignature Language="C#" Value="public void SetStateMachine (System.Runtime.CompilerServices.IAsyncStateMachine stateMachine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStateMachine(class System.Runtime.CompilerServices.IAsyncStateMachine stateMachine) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -183,17 +234,20 @@
     <Member MemberName="Start&lt;TStateMachine&gt;">
       <MemberSignature Language="C#" Value="public void Start&lt;TStateMachine&gt; (ref TStateMachine stateMachine) where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start&lt;(class System.Runtime.CompilerServices.IAsyncStateMachine) TStateMachine&gt;(!!TStateMachine stateMachine) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Start``1(``0@)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -217,11 +271,19 @@
     <Member MemberName="Task">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; Task" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Task" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>

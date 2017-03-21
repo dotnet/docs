@@ -1,7 +1,10 @@
 <Type Name="AccessRule&lt;T&gt;" FullName="System.Security.AccessControl.AccessRule&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class AccessRule&lt;T&gt; : System.Security.AccessControl.AccessRule where T : struct" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessRule`1&lt;struct .ctor (class System.ValueType) T&gt; extends System.Security.AccessControl.AccessRule" />
-  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessRule`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,8 +31,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AccessRule (System.Security.Principal.IdentityReference identity, T rights, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, !T rights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.AccessControlType)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,8 +56,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AccessRule (string identity, T rights, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, !T rights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.String,`0,System.Security.AccessControl.AccessControlType)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,8 +81,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AccessRule (System.Security.Principal.IdentityReference identity, T rights, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, !T rights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,8 +110,11 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AccessRule (string identity, T rights, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, !T rights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.AccessRule`1.#ctor(System.String,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -124,8 +139,11 @@
     <Member MemberName="Rights">
       <MemberSignature Language="C#" Value="public T Rights { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Rights" />
-      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.AccessRule`1.Rights" />
       <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,0 +1,23 @@
+<Type Name="DependencyFilter" FullName="Microsoft.Build.Utilities.DependencyFilter">
+  <TypeSignature Language="C#" Value="public delegate bool DependencyFilter(string fullPath);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DependencyFilter extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="fullPath" Type="System.String" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="fullPath">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,415 @@
+<Type Name="EncryptedPackageEnvelope" FullName="System.IO.Packaging.EncryptedPackageEnvelope">
+  <TypeSignature Language="C#" Value="public class EncryptedPackageEnvelope : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EncryptedPackageEnvelope extends System.Object implements class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Create (System.IO.Stream envelopeStream, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Create(class System.IO.Stream envelopeStream, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeStream" Type="System.IO.Stream" />
+        <Parameter Name="publishLicense" Type="System.Security.RightsManagement.PublishLicense" />
+        <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeStream">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Create (string envelopeFileName, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Create(string envelopeFileName, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeFileName" Type="System.String" />
+        <Parameter Name="publishLicense" Type="System.Security.RightsManagement.PublishLicense" />
+        <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromPackage">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage (System.IO.Stream envelopeStream, System.IO.Stream packageStream, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage(class System.IO.Stream envelopeStream, class System.IO.Stream packageStream, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeStream" Type="System.IO.Stream" />
+        <Parameter Name="packageStream" Type="System.IO.Stream" />
+        <Parameter Name="publishLicense" Type="System.Security.RightsManagement.PublishLicense" />
+        <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeStream">To be added.</param>
+        <param name="packageStream">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromPackage">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage (string envelopeFileName, System.IO.Stream packageStream, System.Security.RightsManagement.PublishLicense publishLicense, System.Security.RightsManagement.CryptoProvider cryptoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope CreateFromPackage(string envelopeFileName, class System.IO.Stream packageStream, class System.Security.RightsManagement.PublishLicense publishLicense, class System.Security.RightsManagement.CryptoProvider cryptoProvider) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeFileName" Type="System.String" />
+        <Parameter Name="packageStream" Type="System.IO.Stream" />
+        <Parameter Name="publishLicense" Type="System.Security.RightsManagement.PublishLicense" />
+        <Parameter Name="cryptoProvider" Type="System.Security.RightsManagement.CryptoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="packageStream">To be added.</param>
+        <param name="publishLicense">To be added.</param>
+        <param name="cryptoProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileOpenAccess">
+      <MemberSignature Language="C#" Value="public System.IO.FileAccess FileOpenAccess { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.FileAccess FileOpenAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.FileAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackage">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.Package GetPackage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.Package GetPackage() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.Package</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncryptedPackageEnvelope">
+      <MemberSignature Language="C#" Value="public static bool IsEncryptedPackageEnvelope (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEncryptedPackageEnvelope(class System.IO.Stream stream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncryptedPackageEnvelope">
+      <MemberSignature Language="C#" Value="public static bool IsEncryptedPackageEnvelope (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEncryptedPackageEnvelope(string fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (System.IO.Stream envelopeStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(class System.IO.Stream envelopeStream) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (string envelopeFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(string envelopeFileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (string envelopeFileName, System.IO.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(string envelopeFileName, valuetype System.IO.FileAccess access) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeFileName" Type="System.String" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="access">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public static System.IO.Packaging.EncryptedPackageEnvelope Open (string envelopeFileName, System.IO.FileAccess access, System.IO.FileShare sharing);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.EncryptedPackageEnvelope Open(string envelopeFileName, valuetype System.IO.FileAccess access, valuetype System.IO.FileShare sharing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptedPackageEnvelope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envelopeFileName" Type="System.String" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="sharing" Type="System.IO.FileShare" />
+      </Parameters>
+      <Docs>
+        <param name="envelopeFileName">To be added.</param>
+        <param name="access">To be added.</param>
+        <param name="sharing">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PackageProperties">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageProperties PackageProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.PackageProperties PackageProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.PackageProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightsManagementInformation">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.RightsManagementInformation RightsManagementInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.RightsManagementInformation RightsManagementInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.RightsManagementInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageInfo">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo StorageInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.StorageInfo StorageInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.StorageInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

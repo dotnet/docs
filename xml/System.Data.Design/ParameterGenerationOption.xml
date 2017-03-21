@@ -1,0 +1,62 @@
+<Type Name="ParameterGenerationOption" FullName="System.Data.Design.ParameterGenerationOption">
+  <TypeSignature Language="C#" Value="public enum ParameterGenerationOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterGenerationOption extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClrTypes">
+      <MemberSignature Language="C#" Value="ClrTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Design.ParameterGenerationOption ClrTypes = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Objects">
+      <MemberSignature Language="C#" Value="Objects" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Design.ParameterGenerationOption Objects = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlTypes">
+      <MemberSignature Language="C#" Value="SqlTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Design.ParameterGenerationOption SqlTypes = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

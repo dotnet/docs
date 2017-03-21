@@ -1,11 +1,13 @@
 <Type Name="ExceptionHandlingClauseOptions" FullName="System.Reflection.ExceptionHandlingClauseOptions">
   <TypeSignature Language="C#" Value="public enum ExceptionHandlingClauseOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExceptionHandlingClauseOptions extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Reflection.ExceptionHandlingClauseOptions" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -13,9 +15,6 @@
   <Attributes>
     <Attribute>
       <AttributeName>System.Flags</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,12 +25,14 @@
     <Member MemberName="Clause">
       <MemberSignature Language="C#" Value="Clause" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ExceptionHandlingClauseOptions Clause = int32(0)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Clause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ExceptionHandlingClauseOptions</ReturnType>
@@ -43,12 +44,14 @@
     <Member MemberName="Fault">
       <MemberSignature Language="C#" Value="Fault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ExceptionHandlingClauseOptions Fault = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Fault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ExceptionHandlingClauseOptions</ReturnType>
@@ -60,12 +63,14 @@
     <Member MemberName="Filter">
       <MemberSignature Language="C#" Value="Filter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ExceptionHandlingClauseOptions Filter = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Filter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ExceptionHandlingClauseOptions</ReturnType>
@@ -77,12 +82,14 @@
     <Member MemberName="Finally">
       <MemberSignature Language="C#" Value="Finally" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ExceptionHandlingClauseOptions Finally = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Reflection.ExceptionHandlingClauseOptions.Finally" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ExceptionHandlingClauseOptions</ReturnType>

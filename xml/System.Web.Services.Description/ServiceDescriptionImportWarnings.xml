@@ -1,0 +1,142 @@
+<Type Name="ServiceDescriptionImportWarnings" FullName="System.Web.Services.Description.ServiceDescriptionImportWarnings">
+  <TypeSignature Language="C#" Value="public enum ServiceDescriptionImportWarnings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceDescriptionImportWarnings extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NoCodeGenerated">
+      <MemberSignature Language="C#" Value="NoCodeGenerated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings NoCodeGenerated = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMethodsGenerated">
+      <MemberSignature Language="C#" Value="NoMethodsGenerated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings NoMethodsGenerated = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionalExtensionsIgnored">
+      <MemberSignature Language="C#" Value="OptionalExtensionsIgnored" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings OptionalExtensionsIgnored = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredExtensionsIgnored">
+      <MemberSignature Language="C#" Value="RequiredExtensionsIgnored" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings RequiredExtensionsIgnored = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaValidation">
+      <MemberSignature Language="C#" Value="SchemaValidation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings SchemaValidation = int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedBindingsIgnored">
+      <MemberSignature Language="C#" Value="UnsupportedBindingsIgnored" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings UnsupportedBindingsIgnored = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedOperationsIgnored">
+      <MemberSignature Language="C#" Value="UnsupportedOperationsIgnored" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings UnsupportedOperationsIgnored = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WsiConformance">
+      <MemberSignature Language="C#" Value="WsiConformance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportWarnings WsiConformance = int32(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionImportWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,28 @@
+<Type Name="PlayRecordCallback" FullName="System.Drawing.Imaging.PlayRecordCallback">
+  <TypeSignature Language="C#" Value="public delegate void PlayRecordCallback(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr recordData);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PlayRecordCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="recordType" Type="System.Drawing.Imaging.EmfPlusRecordType" />
+    <Parameter Name="flags" Type="System.Int32" />
+    <Parameter Name="dataSize" Type="System.Int32" />
+    <Parameter Name="recordData" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="recordType">To be added.</param>
+    <param name="flags">To be added.</param>
+    <param name="dataSize">To be added.</param>
+    <param name="recordData">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

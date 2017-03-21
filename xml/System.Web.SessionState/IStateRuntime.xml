@@ -1,0 +1,114 @@
+<Type Name="IStateRuntime" FullName="System.Web.SessionState.IStateRuntime">
+  <TypeSignature Language="C#" Value="public interface IStateRuntime" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStateRuntime" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("7297744b-e188-40bf-b7e9-56698d25cf44")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProcessRequest">
+      <MemberSignature Language="C#" Value="public void ProcessRequest (IntPtr tracker, int verb, string uri, int exclusive, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(native int tracker, int32 verb, string uri, int32 exclusive, int32 timeout, int32 lockCookieExists, int32 lockCookie, int32 contentLength, native int content) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tracker" Type="System.IntPtr" />
+        <Parameter Name="verb" Type="System.Int32" />
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="exclusive" Type="System.Int32" />
+        <Parameter Name="timeout" Type="System.Int32" />
+        <Parameter Name="lockCookieExists" Type="System.Int32" />
+        <Parameter Name="lockCookie" Type="System.Int32" />
+        <Parameter Name="contentLength" Type="System.Int32" />
+        <Parameter Name="content" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="tracker">To be added.</param>
+        <param name="verb">To be added.</param>
+        <param name="uri">To be added.</param>
+        <param name="exclusive">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="lockCookieExists">To be added.</param>
+        <param name="lockCookie">To be added.</param>
+        <param name="contentLength">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequest">
+      <MemberSignature Language="C#" Value="public void ProcessRequest (IntPtr tracker, int verb, string uri, int exclusive, int extraFlags, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(native int tracker, int32 verb, string uri, int32 exclusive, int32 extraFlags, int32 timeout, int32 lockCookieExists, int32 lockCookie, int32 contentLength, native int content) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tracker" Type="System.IntPtr" />
+        <Parameter Name="verb" Type="System.Int32" />
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="exclusive" Type="System.Int32" />
+        <Parameter Name="extraFlags" Type="System.Int32" />
+        <Parameter Name="timeout" Type="System.Int32" />
+        <Parameter Name="lockCookieExists" Type="System.Int32" />
+        <Parameter Name="lockCookie" Type="System.Int32" />
+        <Parameter Name="contentLength" Type="System.Int32" />
+        <Parameter Name="content" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="tracker">To be added.</param>
+        <param name="verb">To be added.</param>
+        <param name="uri">To be added.</param>
+        <param name="exclusive">To be added.</param>
+        <param name="extraFlags">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="lockCookieExists">To be added.</param>
+        <param name="lockCookie">To be added.</param>
+        <param name="contentLength">To be added.</param>
+        <param name="content">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopProcessing">
+      <MemberSignature Language="C#" Value="public void StopProcessing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopProcessing() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

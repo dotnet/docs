@@ -1,0 +1,663 @@
+<Type Name="MessageBox" FullName="System.Windows.Forms.MessageBox">
+  <TypeSignature Language="C#" Value="public class MessageBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageBox extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, bool displayHelpButton);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, bool displayHelpButton) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="displayHelpButton" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="displayHelpButton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath, string keyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath, string keyword) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+        <Parameter Name="keyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="keyword">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath, System.Windows.Forms.HelpNavigator navigator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath, valuetype System.Windows.Forms.HelpNavigator navigator) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+        <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath, System.Windows.Forms.HelpNavigator navigator, object param);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath, valuetype System.Windows.Forms.HelpNavigator navigator, object param) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+        <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
+        <Parameter Name="param" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath, string keyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath, string keyword) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+        <Parameter Name="keyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="keyword">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath, System.Windows.Forms.HelpNavigator navigator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath, valuetype System.Windows.Forms.HelpNavigator navigator) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+        <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.DialogResult Show (System.Windows.Forms.IWin32Window owner, string text, string caption, System.Windows.Forms.MessageBoxButtons buttons, System.Windows.Forms.MessageBoxIcon icon, System.Windows.Forms.MessageBoxDefaultButton defaultButton, System.Windows.Forms.MessageBoxOptions options, string helpFilePath, System.Windows.Forms.HelpNavigator navigator, object param);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.DialogResult Show(class System.Windows.Forms.IWin32Window owner, string text, string caption, valuetype System.Windows.Forms.MessageBoxButtons buttons, valuetype System.Windows.Forms.MessageBoxIcon icon, valuetype System.Windows.Forms.MessageBoxDefaultButton defaultButton, valuetype System.Windows.Forms.MessageBoxOptions options, string helpFilePath, valuetype System.Windows.Forms.HelpNavigator navigator, object param) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="buttons" Type="System.Windows.Forms.MessageBoxButtons" />
+        <Parameter Name="icon" Type="System.Windows.Forms.MessageBoxIcon" />
+        <Parameter Name="defaultButton" Type="System.Windows.Forms.MessageBoxDefaultButton" />
+        <Parameter Name="options" Type="System.Windows.Forms.MessageBoxOptions" />
+        <Parameter Name="helpFilePath" Type="System.String" />
+        <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
+        <Parameter Name="param" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="buttons">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultButton">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="helpFilePath">To be added.</param>
+        <param name="navigator">To be added.</param>
+        <param name="param">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

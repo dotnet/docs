@@ -1,0 +1,348 @@
+<Type Name="IDataFormat" FullName="Microsoft.VisualBasic.Compatibility.VB6.IDataFormat">
+  <TypeSignature Language="C#" Value="public interface IDataFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("AF08B280-90F2-11D0-9484-00A0C91110ED")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public void Clone (out Microsoft.VisualBasic.Compatibility.VB6.IDataFormat newObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone(class Microsoft.VisualBasic.Compatibility.VB6.IDataFormat newObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newObject" Type="Microsoft.VisualBasic.Compatibility.VB6.IDataFormat&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="newObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public void Convert (int cookie, object from, out object varTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Convert(int32 cookie, object from, object varTo) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.Object" />
+        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="from">To be added.</param>
+        <param name="varTo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public void Default (out bool fDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Default(bool fDefault) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fDefault" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fDefault">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBinding">
+      <MemberSignature Language="C#" Value="public void GetBinding (System.Runtime.InteropServices.VarEnum vtPropHint, int rgfDataFormat, Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, ref Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO columnInfo, out Microsoft.VisualBasic.Compatibility.VB6.DBBINDING binding, out int size, out int cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBinding(valuetype System.Runtime.InteropServices.VarEnum vtPropHint, int32 rgfDataFormat, class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO columnInfo, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING binding, int32 size, int32 cookie) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vtPropHint" Type="System.Runtime.InteropServices.VarEnum" />
+        <Parameter Name="rgfDataFormat" Type="System.Int32" />
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="columnInfo" Type="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO&amp;" RefType="ref" />
+        <Parameter Name="binding" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING&amp;" RefType="out" />
+        <Parameter Name="size" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cookie" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="vtPropHint">To be added.</param>
+        <param name="rgfDataFormat">To be added.</param>
+        <param name="rowset">To be added.</param>
+        <param name="columnInfo">To be added.</param>
+        <param name="binding">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="cookie">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public void GetData (int cookie, IntPtr from, out object varTo, out int dbStatus, object pObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData(int32 cookie, native int from, object varTo, int32 dbStatus, object pObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.IntPtr" />
+        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="dbStatus" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="from">To be added.</param>
+        <param name="varTo">To be added.</param>
+        <param name="dbStatus">To be added.</param>
+        <param name="pObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLcid">
+      <MemberSignature Language="C#" Value="public void GetLcid (out int lcid);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetLcid(int32 lcid) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lcid" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lcid">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRawData">
+      <MemberSignature Language="C#" Value="public void GetRawData (int cookie, IntPtr from, out object varTo, out int dbStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRawData(int32 cookie, native int from, object varTo, int32 dbStatus) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.IntPtr" />
+        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="dbStatus" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="from">To be added.</param>
+        <param name="varTo">To be added.</param>
+        <param name="dbStatus">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubFormatType">
+      <MemberSignature Language="C#" Value="public void GetSubFormatType (out int subFormatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetSubFormatType(int32 subFormatType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subFormatType" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="subFormatType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseBinding">
+      <MemberSignature Language="C#" Value="public void ReleaseBinding (int cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseBinding(int32 cookie) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseData">
+      <MemberSignature Language="C#" Value="public void ReleaseData (int cookie, IntPtr pv);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseData(int32 cookie, native int pv) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="pv" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="pv">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (int cookie, out object from, IntPtr pVarTo, object pObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData(int32 cookie, object from, native int pVarTo, object pObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="pVarTo" Type="System.IntPtr" />
+        <Parameter Name="pObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="from">To be added.</param>
+        <param name="pVarTo">To be added.</param>
+        <param name="pObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLcid">
+      <MemberSignature Language="C#" Value="public void SetLcid (int lcid);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetLcid(int32 lcid) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lcid" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lcid">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRawData">
+      <MemberSignature Language="C#" Value="public void SetRawData (int cookie, object from, IntPtr pVarTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRawData(int32 cookie, object from, native int pVarTo) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.Object" />
+        <Parameter Name="pVarTo" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">To be added.</param>
+        <param name="from">To be added.</param>
+        <param name="pVarTo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubFormatType">
+      <MemberSignature Language="C#" Value="public void SetSubFormatType (int subFormatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetSubFormatType(int32 subFormatType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subFormatType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="subFormatType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

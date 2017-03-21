@@ -1,0 +1,168 @@
+<Type Name="PrinterUnitConvert" FullName="System.Drawing.Printing.PrinterUnitConvert">
+  <TypeSignature Language="C#" Value="public sealed class PrinterUnitConvert" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrinterUnitConvert extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static double Convert (double value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Convert(float64 value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="fromUnit">To be added.</param>
+        <param name="toUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Point Convert (System.Drawing.Point value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Point Convert(valuetype System.Drawing.Point value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Point" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="fromUnit">To be added.</param>
+        <param name="toUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Printing.Margins Convert (System.Drawing.Printing.Margins value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Printing.Margins Convert(class System.Drawing.Printing.Margins value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.Margins</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Printing.Margins" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="fromUnit">To be added.</param>
+        <param name="toUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Convert (System.Drawing.Rectangle value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Convert(valuetype System.Drawing.Rectangle value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Rectangle" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="fromUnit">To be added.</param>
+        <param name="toUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size Convert (System.Drawing.Size value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Convert(valuetype System.Drawing.Size value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Size" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="fromUnit">To be added.</param>
+        <param name="toUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static int Convert (int value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Convert(int32 value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="fromUnit">To be added.</param>
+        <param name="toUnit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

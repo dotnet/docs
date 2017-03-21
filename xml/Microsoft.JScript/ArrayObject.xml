@@ -1,0 +1,65 @@
+<Type Name="ArrayObject" FullName="Microsoft.JScript.ArrayObject">
+  <TypeSignature Language="C#" Value="public class ArrayObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayObject extends Microsoft.JScript.JSObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="length">
+      <MemberSignature Language="C#" Value="public virtual object length { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpliceSlowly">
+      <MemberSignature Language="C#" Value="protected void SpliceSlowly (uint start, uint deleteCount, object[] args, Microsoft.JScript.ArrayObject outArray, uint oldLength, uint newLength);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SpliceSlowly(unsigned int32 start, unsigned int32 deleteCount, object[] args, class Microsoft.JScript.ArrayObject outArray, unsigned int32 oldLength, unsigned int32 newLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.UInt32" />
+        <Parameter Name="deleteCount" Type="System.UInt32" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="outArray" Type="Microsoft.JScript.ArrayObject" />
+        <Parameter Name="oldLength" Type="System.UInt32" />
+        <Parameter Name="newLength" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="deleteCount">To be added.</param>
+        <param name="args">To be added.</param>
+        <param name="outArray">To be added.</param>
+        <param name="oldLength">To be added.</param>
+        <param name="newLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,24 @@
+<Type Name="DataObjectSettingDataEventHandler" FullName="System.Windows.DataObjectSettingDataEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataObjectSettingDataEventHandler(object sender, DataObjectSettingDataEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectSettingDataEventHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.DataObjectSettingDataEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

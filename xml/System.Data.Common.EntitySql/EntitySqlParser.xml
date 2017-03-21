@@ -1,0 +1,76 @@
+<Type Name="EntitySqlParser" FullName="System.Data.Common.EntitySql.EntitySqlParser">
+  <TypeSignature Language="C#" Value="public sealed class EntitySqlParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntitySqlParser extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public System.Data.Common.EntitySql.ParseResult Parse (string query, System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.EntitySql.ParseResult Parse(string query, class System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.EntitySql.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="query">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseLambda">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbLambda ParseLambda (string query, System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.CommandTrees.DbLambda ParseLambda(string query, class System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="query">To be added.</param>
+        <param name="variables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

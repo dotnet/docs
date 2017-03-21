@@ -1,0 +1,1213 @@
+<Type Name="JSVsaError" FullName="Microsoft.JScript.Vsa.JSVsaError">
+  <TypeSignature Language="C#" Value="public enum JSVsaError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSVsaError extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("7607D148-3AA5-4CC6-AED5-D4DB0ECBD992")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomainCannotBeSet">
+      <MemberSignature Language="C#" Value="AppDomainCannotBeSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AppDomainCannotBeSet = int32(-2146226176)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainInvalid">
+      <MemberSignature Language="C#" Value="AppDomainInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AppDomainInvalid = int32(-2146226175)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationBaseCannotBeSet">
+      <MemberSignature Language="C#" Value="ApplicationBaseCannotBeSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ApplicationBaseCannotBeSet = int32(-2146226174)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationBaseInvalid">
+      <MemberSignature Language="C#" Value="ApplicationBaseInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ApplicationBaseInvalid = int32(-2146226173)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyExpected">
+      <MemberSignature Language="C#" Value="AssemblyExpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AssemblyExpected = int32(-2146226172)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyNameInvalid">
+      <MemberSignature Language="C#" Value="AssemblyNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError AssemblyNameInvalid = int32(-2146226171)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadAssembly">
+      <MemberSignature Language="C#" Value="BadAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError BadAssembly = int32(-2146226170)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserNotExist">
+      <MemberSignature Language="C#" Value="BrowserNotExist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError BrowserNotExist = int32(-2146226115)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedAssemblyInvalid">
+      <MemberSignature Language="C#" Value="CachedAssemblyInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CachedAssemblyInvalid = int32(-2146226169)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackUnexpected">
+      <MemberSignature Language="C#" Value="CallbackUnexpected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CallbackUnexpected = int32(-2146226168)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotAttachToWebServer">
+      <MemberSignature Language="C#" Value="CannotAttachToWebServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CannotAttachToWebServer = int32(-2146226100)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDOMNotAvailable">
+      <MemberSignature Language="C#" Value="CodeDOMNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CodeDOMNotAvailable = int32(-2146226167)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompiledStateNotFound">
+      <MemberSignature Language="C#" Value="CompiledStateNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError CompiledStateNotFound = int32(-2146226166)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DebuggeeNotStarted">
+      <MemberSignature Language="C#" Value="DebuggeeNotStarted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError DebuggeeNotStarted = int32(-2146226114)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugInfoNotSupported">
+      <MemberSignature Language="C#" Value="DebugInfoNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError DebugInfoNotSupported = int32(-2146226165)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementNameInvalid">
+      <MemberSignature Language="C#" Value="ElementNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ElementNameInvalid = int32(-2146226164)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementNotFound">
+      <MemberSignature Language="C#" Value="ElementNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ElementNotFound = int32(-2146226163)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineBusy">
+      <MemberSignature Language="C#" Value="EngineBusy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineBusy = int32(-2146226162)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineCannotClose">
+      <MemberSignature Language="C#" Value="EngineCannotClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineCannotClose = int32(-2146226161)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineCannotReset">
+      <MemberSignature Language="C#" Value="EngineCannotReset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineCannotReset = int32(-2146226160)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineClosed">
+      <MemberSignature Language="C#" Value="EngineClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineClosed = int32(-2146226159)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineEmpty">
+      <MemberSignature Language="C#" Value="EngineEmpty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineEmpty = int32(-2146226159)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineInitialized">
+      <MemberSignature Language="C#" Value="EngineInitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineInitialized = int32(-2146226157)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNameInUse">
+      <MemberSignature Language="C#" Value="EngineNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNameInUse = int32(-2146226156)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNameInvalid">
+      <MemberSignature Language="C#" Value="EngineNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNameInvalid = int32(-2146226113)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNameNotSet">
+      <MemberSignature Language="C#" Value="EngineNameNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNameNotSet = int32(-2146226099)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotCompiled">
+      <MemberSignature Language="C#" Value="EngineNotCompiled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotCompiled = int32(-2146226155)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotExist">
+      <MemberSignature Language="C#" Value="EngineNotExist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotExist = int32(-2146226112)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotInitialized">
+      <MemberSignature Language="C#" Value="EngineNotInitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotInitialized = int32(-2146226154)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotRunning">
+      <MemberSignature Language="C#" Value="EngineNotRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineNotRunning = int32(-2146226153)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineRunning">
+      <MemberSignature Language="C#" Value="EngineRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EngineRunning = int32(-2146226152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceInvalid">
+      <MemberSignature Language="C#" Value="EventSourceInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceInvalid = int32(-2146226151)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceNameInUse">
+      <MemberSignature Language="C#" Value="EventSourceNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceNameInUse = int32(-2146226150)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceNameInvalid">
+      <MemberSignature Language="C#" Value="EventSourceNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceNameInvalid = int32(-2146226149)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceNotFound">
+      <MemberSignature Language="C#" Value="EventSourceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceNotFound = int32(-2146226148)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceTypeInvalid">
+      <MemberSignature Language="C#" Value="EventSourceTypeInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError EventSourceTypeInvalid = int32(-2146226147)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileFormatUnsupported">
+      <MemberSignature Language="C#" Value="FileFormatUnsupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError FileFormatUnsupported = int32(-2146226111)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypeUnknown">
+      <MemberSignature Language="C#" Value="FileTypeUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError FileTypeUnknown = int32(-2146226110)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledStateFailed">
+      <MemberSignature Language="C#" Value="GetCompiledStateFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError GetCompiledStateFailed = int32(-2146226146)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalInstanceInvalid">
+      <MemberSignature Language="C#" Value="GlobalInstanceInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError GlobalInstanceInvalid = int32(-2146226145)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalInstanceTypeInvalid">
+      <MemberSignature Language="C#" Value="GlobalInstanceTypeInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError GlobalInstanceTypeInvalid = int32(-2146226144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalCompilerError">
+      <MemberSignature Language="C#" Value="InternalCompilerError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError InternalCompilerError = int32(-2146226143)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCannotBeRemoved">
+      <MemberSignature Language="C#" Value="ItemCannotBeRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemCannotBeRemoved = int32(-2146226142)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCannotBeRenamed">
+      <MemberSignature Language="C#" Value="ItemCannotBeRenamed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemCannotBeRenamed = int32(-2146226109)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemFlagNotSupported">
+      <MemberSignature Language="C#" Value="ItemFlagNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemFlagNotSupported = int32(-2146226141)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNameInUse">
+      <MemberSignature Language="C#" Value="ItemNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemNameInUse = int32(-2146226140)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNameInvalid">
+      <MemberSignature Language="C#" Value="ItemNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemNameInvalid = int32(-2146226139)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemNotFound">
+      <MemberSignature Language="C#" Value="ItemNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemNotFound = int32(-2146226138)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTypeNotSupported">
+      <MemberSignature Language="C#" Value="ItemTypeNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ItemTypeNotSupported = int32(-2146226137)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LCIDNotSupported">
+      <MemberSignature Language="C#" Value="LCIDNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError LCIDNotSupported = int32(-2146226136)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadElementFailed">
+      <MemberSignature Language="C#" Value="LoadElementFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError LoadElementFailed = int32(-2146226135)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingPdb">
+      <MemberSignature Language="C#" Value="MissingPdb" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError MissingPdb = int32(-2146226102)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingSource">
+      <MemberSignature Language="C#" Value="MissingSource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError MissingSource = int32(-2146226108)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NameTooLong">
+      <MemberSignature Language="C#" Value="NameTooLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NameTooLong = int32(-2146226106)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotClientSideAndNoUrl">
+      <MemberSignature Language="C#" Value="NotClientSideAndNoUrl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NotClientSideAndNoUrl = int32(-2146226101)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationInvalid">
+      <MemberSignature Language="C#" Value="NotificationInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NotificationInvalid = int32(-2146226134)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotInitCompleted">
+      <MemberSignature Language="C#" Value="NotInitCompleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError NotInitCompleted = int32(-2146226107)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionInvalid">
+      <MemberSignature Language="C#" Value="OptionInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError OptionInvalid = int32(-2146226133)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionNotSupported">
+      <MemberSignature Language="C#" Value="OptionNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError OptionNotSupported = int32(-2146226132)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcNameInUse">
+      <MemberSignature Language="C#" Value="ProcNameInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ProcNameInUse = int32(-2146226105)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcNameInvalid">
+      <MemberSignature Language="C#" Value="ProcNameInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError ProcNameInvalid = int32(-2146226104)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeFailed">
+      <MemberSignature Language="C#" Value="RevokeFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RevokeFailed = int32(-2146226131)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerAlreadySet">
+      <MemberSignature Language="C#" Value="RootMonikerAlreadySet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerAlreadySet = int32(-2146226130)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerInUse">
+      <MemberSignature Language="C#" Value="RootMonikerInUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerInUse = int32(-2146226129)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerInvalid">
+      <MemberSignature Language="C#" Value="RootMonikerInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerInvalid = int32(-2146226128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerNotSet">
+      <MemberSignature Language="C#" Value="RootMonikerNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerNotSet = int32(-2146226127)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerProtocolInvalid">
+      <MemberSignature Language="C#" Value="RootMonikerProtocolInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootMonikerProtocolInvalid = int32(-2146226126)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespaceInvalid">
+      <MemberSignature Language="C#" Value="RootNamespaceInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootNamespaceInvalid = int32(-2146226125)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespaceNotSet">
+      <MemberSignature Language="C#" Value="RootNamespaceNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError RootNamespaceNotSet = int32(-2146226124)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveCompiledStateFailed">
+      <MemberSignature Language="C#" Value="SaveCompiledStateFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SaveCompiledStateFailed = int32(-2146226123)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveElementFailed">
+      <MemberSignature Language="C#" Value="SaveElementFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SaveElementFailed = int32(-2146226122)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteAlreadySet">
+      <MemberSignature Language="C#" Value="SiteAlreadySet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SiteAlreadySet = int32(-2146226121)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteInvalid">
+      <MemberSignature Language="C#" Value="SiteInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SiteInvalid = int32(-2146226120)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteNotSet">
+      <MemberSignature Language="C#" Value="SiteNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SiteNotSet = int32(-2146226119)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceItemNotAvailable">
+      <MemberSignature Language="C#" Value="SourceItemNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SourceItemNotAvailable = int32(-2146226118)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceMonikerNotAvailable">
+      <MemberSignature Language="C#" Value="SourceMonikerNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError SourceMonikerNotAvailable = int32(-2146226117)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownError">
+      <MemberSignature Language="C#" Value="UnknownError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError UnknownError = int32(-2146225921)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URLInvalid">
+      <MemberSignature Language="C#" Value="URLInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError URLInvalid = int32(-2146226116)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VsaServerDown">
+      <MemberSignature Language="C#" Value="VsaServerDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaError VsaServerDown = int32(-2146226103)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1380 @@
+<Type Name="PassportIdentity" FullName="System.Web.Security.PassportIdentity">
+  <TypeSignature Language="C#" Value="public sealed class PassportIdentity : IDisposable, System.Security.Principal.IIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassportIdentity extends System.Object implements class System.IDisposable, class System.Security.Principal.IIdentity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Security.Principal.IIdentity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This type is obsolete. The Passport authentication product is no longer supported and has been superseded by Live ID.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PassportIdentity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationType">
+      <MemberSignature Language="C#" Value="public string AuthenticationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl">
+      <MemberSignature Language="C#" Value="public string AuthUrl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl">
+      <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl">
+      <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Boolean" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="bUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl">
+      <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="iForceLogin" Type="System.Int32" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="iForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl2">
+      <MemberSignature Language="C#" Value="public string AuthUrl2 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl2">
+      <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl2">
+      <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Boolean" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="bUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthUrl2">
+      <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="iForceLogin" Type="System.Int32" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="iForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compress">
+      <MemberSignature Language="C#" Value="public static string Compress (string strData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Compress(string strData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CryptIsValid">
+      <MemberSignature Language="C#" Value="public static bool CryptIsValid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CryptIsValid() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CryptPutHost">
+      <MemberSignature Language="C#" Value="public static int CryptPutHost (string strHost);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CryptPutHost(string strHost) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strHost" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strHost">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CryptPutSite">
+      <MemberSignature Language="C#" Value="public static int CryptPutSite (string strSite);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CryptPutSite(string strSite) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strSite" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strSite">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decompress">
+      <MemberSignature Language="C#" Value="public static string Decompress (string strData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decompress(string strData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public static string Decrypt (string strData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decrypt(string strData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public static string Encrypt (string strData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encrypt(string strData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public int Error { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Error" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~PassportIdentity ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentConfig">
+      <MemberSignature Language="C#" Value="public object GetCurrentConfig (string strAttribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentConfig(string strAttribute) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strAttribute" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strAttribute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDomainAttribute">
+      <MemberSignature Language="C#" Value="public string GetDomainAttribute (string strAttribute, int iLCID, string strDomain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDomainAttribute(string strAttribute, int32 iLCID, string strDomain) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strAttribute" Type="System.String" />
+        <Parameter Name="iLCID" Type="System.Int32" />
+        <Parameter Name="strDomain" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strAttribute">To be added.</param>
+        <param name="iLCID">To be added.</param>
+        <param name="strDomain">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDomainFromMemberName">
+      <MemberSignature Language="C#" Value="public string GetDomainFromMemberName (string strMemberName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDomainFromMemberName(string strMemberName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strMemberName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strMemberName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFromNetworkServer">
+      <MemberSignature Language="C#" Value="public bool GetFromNetworkServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GetFromNetworkServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsAuthenticated">
+      <MemberSignature Language="C#" Value="public bool GetIsAuthenticated (int iTimeWindow, bool bForceLogin, bool bCheckSecure);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsAuthenticated(int32 iTimeWindow, bool bForceLogin, bool bCheckSecure) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="bForceLogin" Type="System.Boolean" />
+        <Parameter Name="bCheckSecure" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="bForceLogin">To be added.</param>
+        <param name="bCheckSecure">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsAuthenticated">
+      <MemberSignature Language="C#" Value="public bool GetIsAuthenticated (int iTimeWindow, int iForceLogin, int iCheckSecure);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsAuthenticated(int32 iTimeWindow, int32 iForceLogin, int32 iCheckSecure) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="iForceLogin" Type="System.Int32" />
+        <Parameter Name="iCheckSecure" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="iForceLogin">To be added.</param>
+        <param name="iCheckSecure">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLoginChallenge">
+      <MemberSignature Language="C#" Value="public string GetLoginChallenge ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLoginChallenge">
+      <MemberSignature Language="C#" Value="public string GetLoginChallenge (string strReturnUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge(string strReturnUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLoginChallenge">
+      <MemberSignature Language="C#" Value="public string GetLoginChallenge (string szRetURL, int iTimeWindow, int fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth, object oExtraParams);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge(string szRetURL, int32 iTimeWindow, int32 fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth, object oExtraParams) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="szRetURL" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Int32" />
+        <Parameter Name="szCOBrandArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+        <Parameter Name="oExtraParams" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="szRetURL">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="szCOBrandArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <param name="oExtraParams">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOption">
+      <MemberSignature Language="C#" Value="public object GetOption (string strOpt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetOption(string strOpt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strOpt" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strOpt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfileObject">
+      <MemberSignature Language="C#" Value="public object GetProfileObject (string strProfileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetProfileObject(string strProfileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strProfileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strProfileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFlag">
+      <MemberSignature Language="C#" Value="public bool HasFlag (int iFlagMask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasFlag(int32 iFlagMask) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iFlagMask" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iFlagMask">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasProfile">
+      <MemberSignature Language="C#" Value="public bool HasProfile (string strProfile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasProfile(string strProfile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strProfile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strProfile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSavedPassword">
+      <MemberSignature Language="C#" Value="public bool HasSavedPassword { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasSavedPassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTicket">
+      <MemberSignature Language="C#" Value="public bool HasTicket { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasTicket" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HaveConsent">
+      <MemberSignature Language="C#" Value="public bool HaveConsent (bool bNeedFullConsent, bool bNeedBirthdate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HaveConsent(bool bNeedFullConsent, bool bNeedBirthdate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bNeedFullConsent" Type="System.Boolean" />
+        <Parameter Name="bNeedBirthdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bNeedFullConsent">To be added.</param>
+        <param name="bNeedBirthdate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HexPUID">
+      <MemberSignature Language="C#" Value="public string HexPUID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HexPUID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuthenticated">
+      <MemberSignature Language="C#" Value="public bool IsAuthenticated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[string strProfileName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strProfileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strProfileName">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginUser">
+      <MemberSignature Language="C#" Value="public int LoginUser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginUser">
+      <MemberSignature Language="C#" Value="public int LoginUser (string strReturnUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string strReturnUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginUser">
+      <MemberSignature Language="C#" Value="public int LoginUser (string szRetURL, int iTimeWindow, bool fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, bool fUseSecureAuth, object oExtraParams);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string szRetURL, int32 iTimeWindow, bool fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool fUseSecureAuth, object oExtraParams) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="szRetURL" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Boolean" />
+        <Parameter Name="szCOBrandArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="fUseSecureAuth" Type="System.Boolean" />
+        <Parameter Name="oExtraParams" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="szRetURL">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="szCOBrandArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="fUseSecureAuth">To be added.</param>
+        <param name="oExtraParams">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginUser">
+      <MemberSignature Language="C#" Value="public int LoginUser (string szRetURL, int iTimeWindow, int fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth, object oExtraParams);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string szRetURL, int32 iTimeWindow, int32 fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth, object oExtraParams) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="szRetURL" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Int32" />
+        <Parameter Name="szCOBrandArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+        <Parameter Name="oExtraParams" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="szRetURL">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="szCOBrandArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <param name="oExtraParams">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag">
+      <MemberSignature Language="C#" Value="public string LogoTag ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag">
+      <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag">
+      <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, bool fSecure, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, bool fSecure, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Boolean" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="fSecure" Type="System.Boolean" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="fSecure">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="bUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag">
+      <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, int iSecure, string strNameSpace, int iKPP, int iUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, int32 iSecure, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="iForceLogin" Type="System.Int32" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="iSecure" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="iForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="iSecure">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag2">
+      <MemberSignature Language="C#" Value="public string LogoTag2 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag2">
+      <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag2">
+      <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, bool fSecure, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, bool fSecure, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="fForceLogin" Type="System.Boolean" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="fSecure" Type="System.Boolean" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="bUseSecureAuth" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="fForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="fSecure">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="bUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoTag2">
+      <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, int iSecure, string strNameSpace, int iKPP, int iUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, int32 iSecure, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strReturnUrl" Type="System.String" />
+        <Parameter Name="iTimeWindow" Type="System.Int32" />
+        <Parameter Name="iForceLogin" Type="System.Int32" />
+        <Parameter Name="strCoBrandedArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="iSecure" Type="System.Int32" />
+        <Parameter Name="strNameSpace" Type="System.String" />
+        <Parameter Name="iKPP" Type="System.Int32" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="strReturnUrl">To be added.</param>
+        <param name="iTimeWindow">To be added.</param>
+        <param name="iForceLogin">To be added.</param>
+        <param name="strCoBrandedArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="iSecure">To be added.</param>
+        <param name="strNameSpace">To be added.</param>
+        <param name="iKPP">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoutURL">
+      <MemberSignature Language="C#" Value="public string LogoutURL ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoutURL() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoutURL">
+      <MemberSignature Language="C#" Value="public string LogoutURL (string szReturnURL, string szCOBrandArgs, int iLangID, string strDomain, int iUseSecureAuth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoutURL(string szReturnURL, string szCOBrandArgs, int32 iLangID, string strDomain, int32 iUseSecureAuth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="szReturnURL" Type="System.String" />
+        <Parameter Name="szCOBrandArgs" Type="System.String" />
+        <Parameter Name="iLangID" Type="System.Int32" />
+        <Parameter Name="strDomain" Type="System.String" />
+        <Parameter Name="iUseSecureAuth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="szReturnURL">To be added.</param>
+        <param name="szCOBrandArgs">To be added.</param>
+        <param name="iLangID">To be added.</param>
+        <param name="strDomain">To be added.</param>
+        <param name="iUseSecureAuth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOption">
+      <MemberSignature Language="C#" Value="public void SetOption (string strOpt, object vOpt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOption(string strOpt, object vOpt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strOpt" Type="System.String" />
+        <Parameter Name="vOpt" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="strOpt">To be added.</param>
+        <param name="vOpt">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOut">
+      <MemberSignature Language="C#" Value="public static void SignOut (string strSignOutDotGifFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignOut(string strSignOutDotGifFileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strSignOutDotGifFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strSignOutDotGifFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ticket">
+      <MemberSignature Language="C#" Value="public object Ticket (string strAttribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Ticket(string strAttribute) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strAttribute" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strAttribute">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TicketAge">
+      <MemberSignature Language="C#" Value="public int TicketAge { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TicketAge" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeSinceSignIn">
+      <MemberSignature Language="C#" Value="public int TimeSinceSignIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimeSinceSignIn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

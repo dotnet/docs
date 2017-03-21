@@ -1,0 +1,402 @@
+<Type Name="MessageBox" FullName="System.Windows.MessageBox">
+  <TypeSignature Language="C#" Value="public sealed class MessageBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageBox extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="messageBoxText">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="icon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="icon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult, System.Windows.MessageBoxOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult, valuetype System.Windows.MessageBoxOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+        <Parameter Name="options" Type="System.Windows.MessageBoxOptions" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultResult">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult, System.Windows.MessageBoxOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult, valuetype System.Windows.MessageBoxOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+        <Parameter Name="options" Type="System.Windows.MessageBoxOptions" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="messageBoxText">To be added.</param>
+        <param name="caption">To be added.</param>
+        <param name="button">To be added.</param>
+        <param name="icon">To be added.</param>
+        <param name="defaultResult">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

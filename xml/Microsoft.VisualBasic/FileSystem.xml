@@ -1,0 +1,1920 @@
+<Type Name="FileSystem" FullName="Microsoft.VisualBasic.FileSystem">
+  <TypeSignature Language="C#" Value="public sealed class FileSystem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileSystem extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChDir">
+      <MemberSignature Language="C#" Value="public static void ChDir (string Path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void ChDir(string Path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChDrive">
+      <MemberSignature Language="C#" Value="public static void ChDrive (char Drive);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void ChDrive(char Drive) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Drive" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Drive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChDrive">
+      <MemberSignature Language="C#" Value="public static void ChDrive (string Drive);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void ChDrive(string Drive) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Drive" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Drive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurDir">
+      <MemberSignature Language="C#" Value="public static string CurDir ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static string CurDir() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurDir">
+      <MemberSignature Language="C#" Value="public static string CurDir (char Drive);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string CurDir(char Drive) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Drive" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Drive">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dir">
+      <MemberSignature Language="C#" Value="public static string Dir ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Dir() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dir">
+      <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+        <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <param name="Attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EOF">
+      <MemberSignature Language="C#" Value="public static bool EOF (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool EOF(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAttr">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.OpenMode FileAttr (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.OpenMode FileAttr(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileClose">
+      <MemberSignature Language="C#" Value="public static void FileClose (int[] FileNumbers);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileClose(int32[] FileNumbers) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumbers" Type="System.Int32[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="FileNumbers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileCopy">
+      <MemberSignature Language="C#" Value="public static void FileCopy (string Source, string Destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileCopy(string Source, string Destination) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Destination" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Source">To be added.</param>
+        <param name="Destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileDateTime">
+      <MemberSignature Language="C#" Value="public static DateTime FileDateTime (string PathName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime FileDateTime(string PathName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref bool Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, bool Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref byte Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, unsigned int8 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref char Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, char Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Char&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref DateTime Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.DateTime Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.DateTime&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref decimal Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.Decimal Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Decimal&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref double Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float64 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Double&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref short Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int16 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int16&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref int Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int32 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref long Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int64 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref float Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float32 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref ValueType Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.ValueType Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.ValueType&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref string Value, long RecordNumber = -1, bool StringIsFixedLength = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, string Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+        <Parameter Name="StringIsFixedLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <param name="StringIsFixedLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref Array Value, long RecordNumber = -1, bool ArrayIsDynamic = false, bool StringIsFixedLength = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.Array Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Array&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+        <Parameter Name="ArrayIsDynamic" Type="System.Boolean" />
+        <Parameter Name="StringIsFixedLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <param name="ArrayIsDynamic">To be added.</param>
+        <param name="StringIsFixedLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGetObject">
+      <MemberSignature Language="C#" Value="public static void FileGetObject (int FileNumber, ref object Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileGetObject(int32 FileNumber, object Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileLen">
+      <MemberSignature Language="C#" Value="public static long FileLen (string PathName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 FileLen(string PathName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileOpen">
+      <MemberSignature Language="C#" Value="public static void FileOpen (int FileNumber, string FileName, Microsoft.VisualBasic.OpenMode Mode, Microsoft.VisualBasic.OpenAccess Access = Microsoft.VisualBasic.OpenAccess.Default, Microsoft.VisualBasic.OpenShare Share = Microsoft.VisualBasic.OpenShare.Default, int RecordLength = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileOpen(int32 FileNumber, string FileName, valuetype Microsoft.VisualBasic.OpenMode Mode, valuetype Microsoft.VisualBasic.OpenAccess Access, valuetype Microsoft.VisualBasic.OpenShare Share, int32 RecordLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="Mode" Type="Microsoft.VisualBasic.OpenMode" />
+        <Parameter Name="Access" Type="Microsoft.VisualBasic.OpenAccess" />
+        <Parameter Name="Share" Type="Microsoft.VisualBasic.OpenShare" />
+        <Parameter Name="RecordLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="FileName">To be added.</param>
+        <param name="Mode">To be added.</param>
+        <param name="Access">To be added.</param>
+        <param name="Share">To be added.</param>
+        <param name="RecordLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, bool Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, bool Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Boolean" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, byte Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, unsigned int8 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Byte" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, char Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, char Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Char" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, DateTime Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, valuetype System.DateTime Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.DateTime" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, decimal Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, valuetype System.Decimal Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Decimal" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, double Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, float64 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Double" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, short Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, int16 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int16" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, int Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, int32 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int32" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, long Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, int64 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int64" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, float Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, float32 Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Single" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, ValueType Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, class System.ValueType Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.ValueType" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (object FileNumber, object Value, object RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(object FileNumber, object Value, object RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This member has been deprecated. Please use FilePutObject to write Object types, or coerce FileNumber and RecordNumber to Integer for writing non-Object types. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Object" />
+        <Parameter Name="Value" Type="System.Object" />
+        <Parameter Name="RecordNumber" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, string Value, long RecordNumber = -1, bool StringIsFixedLength = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, string Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.String" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+        <Parameter Name="StringIsFixedLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <param name="StringIsFixedLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePut">
+      <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, Array Value, long RecordNumber = -1, bool ArrayIsDynamic = false, bool StringIsFixedLength = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, class System.Array Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Array" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+        <Parameter Name="ArrayIsDynamic" Type="System.Boolean" />
+        <Parameter Name="StringIsFixedLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <param name="ArrayIsDynamic">To be added.</param>
+        <param name="StringIsFixedLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePutObject">
+      <MemberSignature Language="C#" Value="public static void FilePutObject (int FileNumber, object Value, long RecordNumber = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FilePutObject(int32 FileNumber, object Value, int64 RecordNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Object" />
+        <Parameter Name="RecordNumber" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <param name="RecordNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileWidth">
+      <MemberSignature Language="C#" Value="public static void FileWidth (int FileNumber, int RecordWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void FileWidth(int32 FileNumber, int32 RecordWidth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="RecordWidth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="RecordWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeFile">
+      <MemberSignature Language="C#" Value="public static int FreeFile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FreeFile() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttr">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.FileAttribute GetAttr (string PathName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.FileAttribute GetAttr(string PathName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref bool Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, bool Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref byte Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, unsigned int8 Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Byte&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref char Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, char Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Char&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref DateTime Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.DateTime Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.DateTime&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref decimal Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.Decimal Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Decimal&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref double Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float64 Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Double&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref short Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int16 Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int16&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref int Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int32 Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref long Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int64 Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Int64&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, object Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref float Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float32 Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.Single&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, string Value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Value" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputString">
+      <MemberSignature Language="C#" Value="public static string InputString (int FileNumber, int CharCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string InputString(int32 FileNumber, int32 CharCount) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="CharCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="CharCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kill">
+      <MemberSignature Language="C#" Value="public static void Kill (string PathName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Kill(string PathName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineInput">
+      <MemberSignature Language="C#" Value="public static string LineInput (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LineInput(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Loc">
+      <MemberSignature Language="C#" Value="public static long Loc (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 Loc(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lock">
+      <MemberSignature Language="C#" Value="public static void Lock (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Lock(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lock">
+      <MemberSignature Language="C#" Value="public static void Lock (int FileNumber, long Record);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Lock(int32 FileNumber, int64 Record) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Record" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Record">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lock">
+      <MemberSignature Language="C#" Value="public static void Lock (int FileNumber, long FromRecord, long ToRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Lock(int32 FileNumber, int64 FromRecord, int64 ToRecord) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="FromRecord" Type="System.Int64" />
+        <Parameter Name="ToRecord" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="FromRecord">To be added.</param>
+        <param name="ToRecord">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LOF">
+      <MemberSignature Language="C#" Value="public static long LOF (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 LOF(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MkDir">
+      <MemberSignature Language="C#" Value="public static void MkDir (string Path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void MkDir(string Path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Print">
+      <MemberSignature Language="C#" Value="public static void Print (int FileNumber, object[] Output);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Print(int32 FileNumber, object[] Output) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Output" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintLine">
+      <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void PrintLine(int32 FileNumber, object[] Output) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Output" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rename">
+      <MemberSignature Language="C#" Value="public static void Rename (string OldPath, string NewPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Rename(string OldPath, string NewPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="OldPath" Type="System.String" />
+        <Parameter Name="NewPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="OldPath">To be added.</param>
+        <param name="NewPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public static void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Reset() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RmDir">
+      <MemberSignature Language="C#" Value="public static void RmDir (string Path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void RmDir(string Path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public static long Seek (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 Seek(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public static void Seek (int FileNumber, long Position);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Seek(int32 FileNumber, int64 Position) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Position">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAttr">
+      <MemberSignature Language="C#" Value="public static void SetAttr (string PathName, Microsoft.VisualBasic.FileAttribute Attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetAttr(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+        <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">To be added.</param>
+        <param name="Attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SPC">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.SpcInfo SPC (short Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.SpcInfo SPC(int16 Count) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.SpcInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Count" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TAB">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.TabInfo TAB ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.TabInfo TAB() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.TabInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TAB">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.TabInfo TAB (short Column);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.TabInfo TAB(int16 Column) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.TabInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Column" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Column">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlock">
+      <MemberSignature Language="C#" Value="public static void Unlock (int FileNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Unlock(int32 FileNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlock">
+      <MemberSignature Language="C#" Value="public static void Unlock (int FileNumber, long Record);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Unlock(int32 FileNumber, int64 Record) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Record" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Record">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlock">
+      <MemberSignature Language="C#" Value="public static void Unlock (int FileNumber, long FromRecord, long ToRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Unlock(int32 FileNumber, int64 FromRecord, int64 ToRecord) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="FromRecord" Type="System.Int64" />
+        <Parameter Name="ToRecord" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="FromRecord">To be added.</param>
+        <param name="ToRecord">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public static void Write (int FileNumber, object[] Output);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Write(int32 FileNumber, object[] Output) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Output" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, object[] Output);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void WriteLine(int32 FileNumber, object[] Output) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileNumber" Type="System.Int32" />
+        <Parameter Name="Output" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="FileNumber">To be added.</param>
+        <param name="Output">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

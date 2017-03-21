@@ -1,0 +1,52 @@
+<Type Name="DsmlDirectoryIdentifier" FullName="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier">
+  <TypeSignature Language="C#" Value="public class DsmlDirectoryIdentifier : System.DirectoryServices.Protocols.DirectoryIdentifier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DsmlDirectoryIdentifier extends System.DirectoryServices.Protocols.DirectoryIdentifier" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryIdentifier</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlDirectoryIdentifier (Uri serverUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri serverUri) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="serverUri">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerUri">
+      <MemberSignature Language="C#" Value="public Uri ServerUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ServerUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

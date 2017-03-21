@@ -1,22 +1,22 @@
 <Type Name="Directory" FullName="System.IO.Directory">
   <TypeSignature Language="C#" Value="public static class Directory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Directory extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.IO.Directory" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -25,19 +25,19 @@
     <Member MemberName="CreateDirectory">
       <MemberSignature Language="C#" Value="public static System.IO.DirectoryInfo CreateDirectory (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.DirectoryInfo CreateDirectory(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.CreateDirectory(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.DirectoryInfo</ReturnType>
       </ReturnValue>
@@ -46,36 +46,6 @@
       </Parameters>
       <Docs>
         <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateDirectory">
-      <MemberSignature Language="C#" Value="public static System.IO.DirectoryInfo CreateDirectory (string path, System.Security.AccessControl.DirectorySecurity directorySecurity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.DirectoryInfo CreateDirectory(string path, class System.Security.AccessControl.DirectorySecurity directorySecurity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.CreateDirectory(System.String,System.Security.AccessControl.DirectorySecurity)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.IO.DirectoryInfo</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" />
-      </Parameters>
-      <Docs>
-        <param name="path">To be added.</param>
-        <param name="directorySecurity">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -84,19 +54,19 @@
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public static void Delete (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.Delete(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -112,19 +82,19 @@
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public static void Delete (string path, bool recursive);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string path, bool recursive) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.Delete(System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -142,11 +112,18 @@
     <Member MemberName="EnumerateDirectories">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateDirectories (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateDirectories(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateDirectories(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -164,11 +141,18 @@
     <Member MemberName="EnumerateDirectories">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateDirectories (string path, string searchPattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateDirectories(string path, string searchPattern) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateDirectories(System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -188,11 +172,18 @@
     <Member MemberName="EnumerateDirectories">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateDirectories (string path, string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateDirectories(string path, string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateDirectories(System.String,System.String,System.IO.SearchOption)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -214,11 +205,18 @@
     <Member MemberName="EnumerateFiles">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateFiles (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateFiles(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateFiles(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -236,11 +234,18 @@
     <Member MemberName="EnumerateFiles">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateFiles (string path, string searchPattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateFiles(string path, string searchPattern) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateFiles(System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -260,11 +265,18 @@
     <Member MemberName="EnumerateFiles">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateFiles (string path, string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateFiles(string path, string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateFiles(System.String,System.String,System.IO.SearchOption)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -286,11 +298,18 @@
     <Member MemberName="EnumerateFileSystemEntries">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateFileSystemEntries (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateFileSystemEntries(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateFileSystemEntries(System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -308,11 +327,18 @@
     <Member MemberName="EnumerateFileSystemEntries">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateFileSystemEntries (string path, string searchPattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateFileSystemEntries(string path, string searchPattern) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateFileSystemEntries(System.String,System.String)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -332,11 +358,18 @@
     <Member MemberName="EnumerateFileSystemEntries">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; EnumerateFileSystemEntries (string path, string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumerateFileSystemEntries(string path, string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.EnumerateFileSystemEntries(System.String,System.String,System.IO.SearchOption)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -358,19 +391,19 @@
     <Member MemberName="Exists">
       <MemberSignature Language="C#" Value="public static bool Exists (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.Exists(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -384,64 +417,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAccessControl">
-      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.DirectorySecurity GetAccessControl (string path);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.DirectorySecurity GetAccessControl(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetAccessControl(System.String)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Security.AccessControl.DirectorySecurity</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="path" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAccessControl">
-      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.DirectorySecurity GetAccessControl (string path, System.Security.AccessControl.AccessControlSections includeSections);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.DirectorySecurity GetAccessControl(string path, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetAccessControl(System.String,System.Security.AccessControl.AccessControlSections)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Security.AccessControl.DirectorySecurity</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
-      </Parameters>
-      <Docs>
-        <param name="path">To be added.</param>
-        <param name="includeSections">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetCreationTime">
       <MemberSignature Language="C#" Value="public static DateTime GetCreationTime (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetCreationTime(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetCreationTime(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -459,13 +449,18 @@
     <Member MemberName="GetCreationTimeUtc">
       <MemberSignature Language="C#" Value="public static DateTime GetCreationTimeUtc (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetCreationTimeUtc(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetCreationTimeUtc(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -483,19 +478,19 @@
     <Member MemberName="GetCurrentDirectory">
       <MemberSignature Language="C#" Value="public static string GetCurrentDirectory ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCurrentDirectory() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetCurrentDirectory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -509,13 +504,18 @@
     <Member MemberName="GetDirectories">
       <MemberSignature Language="C#" Value="public static string[] GetDirectories (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetDirectories(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetDirectories(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -533,13 +533,18 @@
     <Member MemberName="GetDirectories">
       <MemberSignature Language="C#" Value="public static string[] GetDirectories (string path, string searchPattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetDirectories(string path, string searchPattern) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetDirectories(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -559,12 +564,18 @@
     <Member MemberName="GetDirectories">
       <MemberSignature Language="C#" Value="public static string[] GetDirectories (string path, string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetDirectories(string path, string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetDirectories(System.String,System.String,System.IO.SearchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -586,19 +597,19 @@
     <Member MemberName="GetDirectoryRoot">
       <MemberSignature Language="C#" Value="public static string GetDirectoryRoot (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDirectoryRoot(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetDirectoryRoot(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -615,13 +626,18 @@
     <Member MemberName="GetFiles">
       <MemberSignature Language="C#" Value="public static string[] GetFiles (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetFiles(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetFiles(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -639,13 +655,18 @@
     <Member MemberName="GetFiles">
       <MemberSignature Language="C#" Value="public static string[] GetFiles (string path, string searchPattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetFiles(string path, string searchPattern) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetFiles(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -665,12 +686,18 @@
     <Member MemberName="GetFiles">
       <MemberSignature Language="C#" Value="public static string[] GetFiles (string path, string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetFiles(string path, string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetFiles(System.String,System.String,System.IO.SearchOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -692,13 +719,18 @@
     <Member MemberName="GetFileSystemEntries">
       <MemberSignature Language="C#" Value="public static string[] GetFileSystemEntries (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetFileSystemEntries(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetFileSystemEntries(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -716,13 +748,18 @@
     <Member MemberName="GetFileSystemEntries">
       <MemberSignature Language="C#" Value="public static string[] GetFileSystemEntries (string path, string searchPattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetFileSystemEntries(string path, string searchPattern) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetFileSystemEntries(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -742,11 +779,18 @@
     <Member MemberName="GetFileSystemEntries">
       <MemberSignature Language="C#" Value="public static string[] GetFileSystemEntries (string path, string searchPattern, System.IO.SearchOption searchOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetFileSystemEntries(string path, string searchPattern, valuetype System.IO.SearchOption searchOption) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetFileSystemEntries(System.String,System.String,System.IO.SearchOption)" />
       <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -768,13 +812,18 @@
     <Member MemberName="GetLastAccessTime">
       <MemberSignature Language="C#" Value="public static DateTime GetLastAccessTime (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetLastAccessTime(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetLastAccessTime(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -792,13 +841,18 @@
     <Member MemberName="GetLastAccessTimeUtc">
       <MemberSignature Language="C#" Value="public static DateTime GetLastAccessTimeUtc (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetLastAccessTimeUtc(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetLastAccessTimeUtc(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -816,13 +870,18 @@
     <Member MemberName="GetLastWriteTime">
       <MemberSignature Language="C#" Value="public static DateTime GetLastWriteTime (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetLastWriteTime(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetLastWriteTime(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -840,13 +899,18 @@
     <Member MemberName="GetLastWriteTimeUtc">
       <MemberSignature Language="C#" Value="public static DateTime GetLastWriteTimeUtc (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetLastWriteTimeUtc(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetLastWriteTimeUtc(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -864,19 +928,15 @@
     <Member MemberName="GetLogicalDrives">
       <MemberSignature Language="C#" Value="public static string[] GetLogicalDrives ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetLogicalDrives() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetLogicalDrives" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -890,13 +950,18 @@
     <Member MemberName="GetParent">
       <MemberSignature Language="C#" Value="public static System.IO.DirectoryInfo GetParent (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.DirectoryInfo GetParent(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.GetParent(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.DirectoryInfo</ReturnType>
@@ -914,19 +979,19 @@
     <Member MemberName="Move">
       <MemberSignature Language="C#" Value="public static void Move (string sourceDirName, string destDirName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Move(string sourceDirName, string destDirName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.Move(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -941,45 +1006,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetAccessControl">
-      <MemberSignature Language="C#" Value="public static void SetAccessControl (string path, System.Security.AccessControl.DirectorySecurity directorySecurity);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(string path, class System.Security.AccessControl.DirectorySecurity directorySecurity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetAccessControl(System.String,System.Security.AccessControl.DirectorySecurity)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="path" Type="System.String" />
-        <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" />
-      </Parameters>
-      <Docs>
-        <param name="path">To be added.</param>
-        <param name="directorySecurity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SetCreationTime">
       <MemberSignature Language="C#" Value="public static void SetCreationTime (string path, DateTime creationTime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCreationTime(string path, valuetype System.DateTime creationTime) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetCreationTime(System.String,System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -998,19 +1039,19 @@
     <Member MemberName="SetCreationTimeUtc">
       <MemberSignature Language="C#" Value="public static void SetCreationTimeUtc (string path, DateTime creationTimeUtc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCreationTimeUtc(string path, valuetype System.DateTime creationTimeUtc) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetCreationTimeUtc(System.String,System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1028,19 +1069,19 @@
     <Member MemberName="SetCurrentDirectory">
       <MemberSignature Language="C#" Value="public static void SetCurrentDirectory (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentDirectory(string path) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetCurrentDirectory(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1056,13 +1097,18 @@
     <Member MemberName="SetLastAccessTime">
       <MemberSignature Language="C#" Value="public static void SetLastAccessTime (string path, DateTime lastAccessTime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLastAccessTime(string path, valuetype System.DateTime lastAccessTime) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetLastAccessTime(System.String,System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1081,19 +1127,19 @@
     <Member MemberName="SetLastAccessTimeUtc">
       <MemberSignature Language="C#" Value="public static void SetLastAccessTimeUtc (string path, DateTime lastAccessTimeUtc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLastAccessTimeUtc(string path, valuetype System.DateTime lastAccessTimeUtc) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetLastAccessTimeUtc(System.String,System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1111,13 +1157,18 @@
     <Member MemberName="SetLastWriteTime">
       <MemberSignature Language="C#" Value="public static void SetLastWriteTime (string path, DateTime lastWriteTime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLastWriteTime(string path, valuetype System.DateTime lastWriteTime) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetLastWriteTime(System.String,System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1136,19 +1187,19 @@
     <Member MemberName="SetLastWriteTimeUtc">
       <MemberSignature Language="C#" Value="public static void SetLastWriteTimeUtc (string path, DateTime lastWriteTimeUtc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLastWriteTimeUtc(string path, valuetype System.DateTime lastWriteTimeUtc) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Directory.SetLastWriteTimeUtc(System.String,System.DateTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

@@ -1,0 +1,242 @@
+<Type Name="DataAnnotationsModelValidatorProvider" FullName="System.Web.ModelBinding.DataAnnotationsModelValidatorProvider">
+  <TypeSignature Language="C#" Value="public class DataAnnotationsModelValidatorProvider : System.Web.ModelBinding.AssociatedValidatorProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataAnnotationsModelValidatorProvider extends System.Web.ModelBinding.AssociatedValidatorProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.AssociatedValidatorProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataAnnotationsModelValidatorProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplicitRequiredAttributeForValueTypes">
+      <MemberSignature Language="C#" Value="public static bool AddImplicitRequiredAttributeForValueTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool AddImplicitRequiredAttributeForValueTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidators">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt; GetValidators (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context, System.Collections.Generic.IEnumerable&lt;Attribute&gt; attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidator&gt; GetValidators(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context, class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; attributes) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAdapter">
+      <MemberSignature Language="C#" Value="public static void RegisterAdapter (Type attributeType, Type adapterType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAdapter(class System.Type attributeType, class System.Type adapterType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeType" Type="System.Type" />
+        <Parameter Name="adapterType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="attributeType">To be added.</param>
+        <param name="adapterType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAdapterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterAdapterFactory (Type attributeType, System.Web.ModelBinding.DataAnnotationsModelValidationFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAdapterFactory(class System.Type attributeType, class System.Web.ModelBinding.DataAnnotationsModelValidationFactory factory) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeType" Type="System.Type" />
+        <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />
+      </Parameters>
+      <Docs>
+        <param name="attributeType">To be added.</param>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDefaultAdapter">
+      <MemberSignature Language="C#" Value="public static void RegisterDefaultAdapter (Type adapterType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterDefaultAdapter(class System.Type adapterType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adapterType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="adapterType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDefaultAdapterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterDefaultAdapterFactory (System.Web.ModelBinding.DataAnnotationsModelValidationFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterDefaultAdapterFactory(class System.Web.ModelBinding.DataAnnotationsModelValidationFactory factory) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />
+      </Parameters>
+      <Docs>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDefaultValidatableObjectAdapter">
+      <MemberSignature Language="C#" Value="public static void RegisterDefaultValidatableObjectAdapter (Type adapterType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterDefaultValidatableObjectAdapter(class System.Type adapterType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adapterType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="adapterType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDefaultValidatableObjectAdapterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterDefaultValidatableObjectAdapterFactory (System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterDefaultValidatableObjectAdapterFactory(class System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory factory) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
+      </Parameters>
+      <Docs>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterValidatableObjectAdapter">
+      <MemberSignature Language="C#" Value="public static void RegisterValidatableObjectAdapter (Type modelType, Type adapterType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterValidatableObjectAdapter(class System.Type modelType, class System.Type adapterType) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="adapterType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">To be added.</param>
+        <param name="adapterType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterValidatableObjectAdapterFactory">
+      <MemberSignature Language="C#" Value="public static void RegisterValidatableObjectAdapterFactory (Type modelType, System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory factory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterValidatableObjectAdapterFactory(class System.Type modelType, class System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory factory) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="factory" Type="System.Web.ModelBinding.DataAnnotationsValidatableObjectAdapterFactory" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">To be added.</param>
+        <param name="factory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

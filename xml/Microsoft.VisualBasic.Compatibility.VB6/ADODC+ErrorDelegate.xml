@@ -1,0 +1,39 @@
+<Type Name="ADODC+ErrorDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+ErrorDelegate">
+  <TypeSignature Language="C#" Value="public delegate void ADODC.ErrorDelegate(int errorNumber, ref string description, int scode, string source, string helpFile, int helpContext, ref bool cancelDisplay);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/ErrorDelegate extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="errorNumber" Type="System.Int32" />
+    <Parameter Name="description" Type="System.String&amp;" RefType="ref" />
+    <Parameter Name="scode" Type="System.Int32" />
+    <Parameter Name="source" Type="System.String" />
+    <Parameter Name="helpFile" Type="System.String" />
+    <Parameter Name="helpContext" Type="System.Int32" />
+    <Parameter Name="cancelDisplay" Type="System.Boolean&amp;" RefType="ref" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="errorNumber">To be added.</param>
+    <param name="description">To be added.</param>
+    <param name="scode">To be added.</param>
+    <param name="source">To be added.</param>
+    <param name="helpFile">To be added.</param>
+    <param name="helpContext">To be added.</param>
+    <param name="cancelDisplay">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

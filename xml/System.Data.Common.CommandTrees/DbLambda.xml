@@ -1,0 +1,712 @@
+<Type Name="DbLambda" FullName="System.Data.Common.CommandTrees.DbLambda">
+  <TypeSignature Language="C#" Value="public sealed class DbLambda" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbLambda extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Body { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Common.CommandTrees.DbExpression body, System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Common.CommandTrees.DbExpression body, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt; variables) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="variables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <param name="variables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Common.CommandTrees.DbExpression body, System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Common.CommandTrees.DbExpression body, class System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <param name="variables">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Func`2&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Func`3&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Func`4&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Func`5&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Func`6&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Func`7&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Func`8&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Func`9&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Func`10&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Func`11&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, System.Data.Metadata.Edm.TypeUsage argument11Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Data.Metadata.Edm.TypeUsage argument11Type, class System.Func`12&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="argument11Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, System.Data.Metadata.Edm.TypeUsage argument11Type, System.Data.Metadata.Edm.TypeUsage argument12Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Data.Metadata.Edm.TypeUsage argument11Type, class System.Data.Metadata.Edm.TypeUsage argument12Type, class System.Func`13&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="argument11Type">To be added.</param>
+        <param name="argument12Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, System.Data.Metadata.Edm.TypeUsage argument11Type, System.Data.Metadata.Edm.TypeUsage argument12Type, System.Data.Metadata.Edm.TypeUsage argument13Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Data.Metadata.Edm.TypeUsage argument11Type, class System.Data.Metadata.Edm.TypeUsage argument12Type, class System.Data.Metadata.Edm.TypeUsage argument13Type, class System.Func`14&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="argument11Type">To be added.</param>
+        <param name="argument12Type">To be added.</param>
+        <param name="argument13Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, System.Data.Metadata.Edm.TypeUsage argument11Type, System.Data.Metadata.Edm.TypeUsage argument12Type, System.Data.Metadata.Edm.TypeUsage argument13Type, System.Data.Metadata.Edm.TypeUsage argument14Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Data.Metadata.Edm.TypeUsage argument11Type, class System.Data.Metadata.Edm.TypeUsage argument12Type, class System.Data.Metadata.Edm.TypeUsage argument13Type, class System.Data.Metadata.Edm.TypeUsage argument14Type, class System.Func`15&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="argument11Type">To be added.</param>
+        <param name="argument12Type">To be added.</param>
+        <param name="argument13Type">To be added.</param>
+        <param name="argument14Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, System.Data.Metadata.Edm.TypeUsage argument11Type, System.Data.Metadata.Edm.TypeUsage argument12Type, System.Data.Metadata.Edm.TypeUsage argument13Type, System.Data.Metadata.Edm.TypeUsage argument14Type, System.Data.Metadata.Edm.TypeUsage argument15Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Data.Metadata.Edm.TypeUsage argument11Type, class System.Data.Metadata.Edm.TypeUsage argument12Type, class System.Data.Metadata.Edm.TypeUsage argument13Type, class System.Data.Metadata.Edm.TypeUsage argument14Type, class System.Data.Metadata.Edm.TypeUsage argument15Type, class System.Func`16&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument15Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="argument11Type">To be added.</param>
+        <param name="argument12Type">To be added.</param>
+        <param name="argument13Type">To be added.</param>
+        <param name="argument14Type">To be added.</param>
+        <param name="argument15Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbLambda Create (System.Data.Metadata.Edm.TypeUsage argument1Type, System.Data.Metadata.Edm.TypeUsage argument2Type, System.Data.Metadata.Edm.TypeUsage argument3Type, System.Data.Metadata.Edm.TypeUsage argument4Type, System.Data.Metadata.Edm.TypeUsage argument5Type, System.Data.Metadata.Edm.TypeUsage argument6Type, System.Data.Metadata.Edm.TypeUsage argument7Type, System.Data.Metadata.Edm.TypeUsage argument8Type, System.Data.Metadata.Edm.TypeUsage argument9Type, System.Data.Metadata.Edm.TypeUsage argument10Type, System.Data.Metadata.Edm.TypeUsage argument11Type, System.Data.Metadata.Edm.TypeUsage argument12Type, System.Data.Metadata.Edm.TypeUsage argument13Type, System.Data.Metadata.Edm.TypeUsage argument14Type, System.Data.Metadata.Edm.TypeUsage argument15Type, System.Data.Metadata.Edm.TypeUsage argument16Type, Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbLambda Create(class System.Data.Metadata.Edm.TypeUsage argument1Type, class System.Data.Metadata.Edm.TypeUsage argument2Type, class System.Data.Metadata.Edm.TypeUsage argument3Type, class System.Data.Metadata.Edm.TypeUsage argument4Type, class System.Data.Metadata.Edm.TypeUsage argument5Type, class System.Data.Metadata.Edm.TypeUsage argument6Type, class System.Data.Metadata.Edm.TypeUsage argument7Type, class System.Data.Metadata.Edm.TypeUsage argument8Type, class System.Data.Metadata.Edm.TypeUsage argument9Type, class System.Data.Metadata.Edm.TypeUsage argument10Type, class System.Data.Metadata.Edm.TypeUsage argument11Type, class System.Data.Metadata.Edm.TypeUsage argument12Type, class System.Data.Metadata.Edm.TypeUsage argument13Type, class System.Data.Metadata.Edm.TypeUsage argument14Type, class System.Data.Metadata.Edm.TypeUsage argument15Type, class System.Data.Metadata.Edm.TypeUsage argument16Type, class System.Func`17&lt;class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression, class System.Data.Common.CommandTrees.DbExpression&gt; lambdaFunction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument1Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument2Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument3Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument4Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument5Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument6Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument7Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument8Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument9Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument10Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument11Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument12Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument13Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument14Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument15Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="argument16Type" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="lambdaFunction" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argument1Type">To be added.</param>
+        <param name="argument2Type">To be added.</param>
+        <param name="argument3Type">To be added.</param>
+        <param name="argument4Type">To be added.</param>
+        <param name="argument5Type">To be added.</param>
+        <param name="argument6Type">To be added.</param>
+        <param name="argument7Type">To be added.</param>
+        <param name="argument8Type">To be added.</param>
+        <param name="argument9Type">To be added.</param>
+        <param name="argument10Type">To be added.</param>
+        <param name="argument11Type">To be added.</param>
+        <param name="argument12Type">To be added.</param>
+        <param name="argument13Type">To be added.</param>
+        <param name="argument14Type">To be added.</param>
+        <param name="argument15Type">To be added.</param>
+        <param name="argument16Type">To be added.</param>
+        <param name="lambdaFunction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt; Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt; Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

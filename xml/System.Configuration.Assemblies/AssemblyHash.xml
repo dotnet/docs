@@ -1,11 +1,8 @@
 <Type Name="AssemblyHash" FullName="System.Configuration.Assemblies.AssemblyHash">
   <TypeSignature Language="C#" Value="public struct AssemblyHash : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit AssemblyHash extends System.ValueType implements class System.ICloneable" />
-  <TypeSignature Language="DocId" Value="T:System.Configuration.Assemblies.AssemblyHash" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,12 +29,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AssemblyHash (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.#ctor(System.Byte[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -57,12 +51,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AssemblyHash (System.Configuration.Assemblies.AssemblyHashAlgorithm algorithm, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm algorithm, unsigned int8[] value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.#ctor(System.Configuration.Assemblies.AssemblyHashAlgorithm,System.Byte[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -84,12 +75,9 @@
     <Member MemberName="Algorithm">
       <MemberSignature Language="C#" Value="public System.Configuration.Assemblies.AssemblyHashAlgorithm Algorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm Algorithm" />
-      <MemberSignature Language="DocId" Value="P:System.Configuration.Assemblies.AssemblyHash.Algorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -109,12 +97,9 @@
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -135,12 +120,9 @@
     <Member MemberName="Empty">
       <MemberSignature Language="C#" Value="public static readonly System.Configuration.Assemblies.AssemblyHash Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Configuration.Assemblies.AssemblyHash Empty" />
-      <MemberSignature Language="DocId" Value="F:System.Configuration.Assemblies.AssemblyHash.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -159,12 +141,9 @@
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="public byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetValue() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.GetValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -185,12 +164,9 @@
     <Member MemberName="SetValue">
       <MemberSignature Language="C#" Value="public void SetValue (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(unsigned int8[] value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Assemblies.AssemblyHash.SetValue(System.Byte[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

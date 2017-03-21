@@ -1,0 +1,36 @@
+<Type Name="IPostBackContainer" FullName="System.Web.UI.WebControls.IPostBackContainer">
+  <TypeSignature Language="C#" Value="public interface IPostBackContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPostBackContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPostBackOptions">
+      <MemberSignature Language="C#" Value="public System.Web.UI.PostBackOptions GetPostBackOptions (System.Web.UI.WebControls.IButtonControl buttonControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.PostBackOptions GetPostBackOptions(class System.Web.UI.WebControls.IButtonControl buttonControl) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PostBackOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buttonControl" Type="System.Web.UI.WebControls.IButtonControl" />
+      </Parameters>
+      <Docs>
+        <param name="buttonControl">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

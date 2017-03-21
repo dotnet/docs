@@ -1,0 +1,418 @@
+<Type Name="DragDropHelper" FullName="System.Activities.Presentation.DragDropHelper">
+  <TypeSignature Language="C#" Value="public static class DragDropHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed DragDropHelper extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowDrop">
+      <MemberSignature Language="C#" Value="public static bool AllowDrop (System.Windows.IDataObject draggedDataObject, System.Activities.Presentation.EditingContext context, Type[] allowedItemTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AllowDrop(class System.Windows.IDataObject draggedDataObject, class System.Activities.Presentation.EditingContext context, class System.Type[] allowedItemTypes) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="draggedDataObject" Type="System.Windows.IDataObject" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="allowedItemTypes" Type="System.Type[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="draggedDataObject">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="allowedItemTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedEffectsFormat">
+      <MemberSignature Language="C#" Value="public static readonly string CompletedEffectsFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CompletedEffectsFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompositeViewFormat">
+      <MemberSignature Language="C#" Value="public static readonly string CompositeViewFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CompositeViewFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoDragMove">
+      <MemberSignature Language="C#" Value="public static System.Windows.DragDropEffects DoDragMove (System.Activities.Presentation.WorkflowViewElement draggedViewElement, System.Windows.Point referencePoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.DragDropEffects DoDragMove(class System.Activities.Presentation.WorkflowViewElement draggedViewElement, valuetype System.Windows.Point referencePoint) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method does not support dragging multiple items. Use "public static IEnumerable&lt;WorkflowViewElement&gt; DoDragMove(IEnumerable&lt;WorkflowViewElement&gt; draggedViewElements, Point referencePoint)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropEffects</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="draggedViewElement" Type="System.Activities.Presentation.WorkflowViewElement" />
+        <Parameter Name="referencePoint" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="draggedViewElement">To be added.</param>
+        <param name="referencePoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragAnchorPointFormat">
+      <MemberSignature Language="C#" Value="public static readonly string DragAnchorPointFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DragAnchorPointFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DragSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DragSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompositeView">
+      <MemberSignature Language="C#" Value="public static System.Windows.UIElement GetCompositeView (System.Activities.Presentation.WorkflowViewElement workflowViewElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.UIElement GetCompositeView(class System.Activities.Presentation.WorkflowViewElement workflowViewElement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowViewElement" Type="System.Activities.Presentation.WorkflowViewElement" />
+      </Parameters>
+      <Docs>
+        <param name="workflowViewElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompositeView">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.ICompositeView GetCompositeView (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.ICompositeView GetCompositeView(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method does not support dragging multiple items. Use "public static UIElement GetCompositeView(WorkflowViewElement workflowViewElement)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.ICompositeView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDragDropAnchorPoint">
+      <MemberSignature Language="C#" Value="public static System.Windows.Point GetDragDropAnchorPoint (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point GetDragDropAnchorPoint(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDragDropCompletedEffects">
+      <MemberSignature Language="C#" Value="public static System.Windows.DragDropEffects GetDragDropCompletedEffects (System.Windows.DataObject data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.DragDropEffects GetDragDropCompletedEffects(class System.Windows.DataObject data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method does not support dragging multiple items. Consider using "public static IEnumerable&lt;WorkflowViewElement&gt; GetDragDropMovedViewElements(DataObject data)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropEffects</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Windows.DataObject" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDraggedModelItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.ModelItem GetDraggedModelItem (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem GetDraggedModelItem(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method does not support dragging multiple items. Use "public static IEnumerable&lt;ModelItem&gt; GetDraggedModelItems(DragEventArgs e)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDraggedModelItems">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt; GetDraggedModelItems (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; GetDraggedModelItems(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDroppedObject">
+      <MemberSignature Language="C#" Value="public static object GetDroppedObject (System.Windows.DependencyObject dropTarget, System.Windows.DragEventArgs e, System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDroppedObject(class System.Windows.DependencyObject dropTarget, class System.Windows.DragEventArgs e, class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method does not support dropping multiple items. Use "public static IEnumerable&lt;object&gt; GetDroppedObjects(DependencyObject dropTarget, DragEventArgs e, EditingContext context)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dropTarget" Type="System.Windows.DependencyObject" />
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="dropTarget">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDroppedObjects">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;object&gt; GetDroppedObjects (System.Windows.DependencyObject dropTarget, System.Windows.DragEventArgs e, System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetDroppedObjects(class System.Windows.DependencyObject dropTarget, class System.Windows.DragEventArgs e, class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dropTarget" Type="System.Windows.DependencyObject" />
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="dropTarget">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelItemDataFormat">
+      <MemberSignature Language="C#" Value="public static readonly string ModelItemDataFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ModelItemDataFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCompositeView">
+      <MemberSignature Language="C#" Value="public static void SetCompositeView (System.Activities.Presentation.WorkflowViewElement workflowViewElement, System.Windows.UIElement dragSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCompositeView(class System.Activities.Presentation.WorkflowViewElement workflowViewElement, class System.Windows.UIElement dragSource) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowViewElement" Type="System.Activities.Presentation.WorkflowViewElement" />
+        <Parameter Name="dragSource" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="workflowViewElement">To be added.</param>
+        <param name="dragSource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDragDropCompletedEffects">
+      <MemberSignature Language="C#" Value="public static void SetDragDropCompletedEffects (System.Windows.DragEventArgs e, System.Windows.DragDropEffects completedEffects);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDragDropCompletedEffects(class System.Windows.DragEventArgs e, valuetype System.Windows.DragDropEffects completedEffects) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method does not support dragging multiple items. Consider using "public static void SetDragDropMovedViewElements(DragEventArgs e, IEnumerable&lt;WorkflowViewElement&gt; movedViewElements)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+        <Parameter Name="completedEffects" Type="System.Windows.DragDropEffects" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <param name="completedEffects">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowItemTypeNameFormat">
+      <MemberSignature Language="C#" Value="public static readonly string WorkflowItemTypeNameFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string WorkflowItemTypeNameFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

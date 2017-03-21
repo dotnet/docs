@@ -1,0 +1,1428 @@
+<Type Name="Storyboard" FullName="System.Windows.Media.Animation.Storyboard">
+  <TypeSignature Language="C#" Value="public class Storyboard : System.Windows.Media.Animation.ParallelTimeline" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Storyboard extends System.Windows.Media.Animation.ParallelTimeline" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ParallelTimeline</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Storyboard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkContentElement containingObject, bool isControllable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkContentElement containingObject, bool isControllable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+        <Parameter Name="isControllable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="isControllable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkContentElement containingObject, System.Windows.Media.Animation.HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkContentElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="handoffBehavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, bool isControllable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, bool isControllable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="isControllable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="isControllable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, System.Windows.FrameworkTemplate frameworkTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="frameworkTemplate" Type="System.Windows.FrameworkTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="frameworkTemplate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, System.Windows.Media.Animation.HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="handoffBehavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkContentElement containingObject, System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkContentElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+        <Parameter Name="isControllable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="handoffBehavior">To be added.</param>
+        <param name="isControllable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, System.Windows.FrameworkTemplate frameworkTemplate, bool isControllable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate, bool isControllable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="frameworkTemplate" Type="System.Windows.FrameworkTemplate" />
+        <Parameter Name="isControllable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="frameworkTemplate">To be added.</param>
+        <param name="isControllable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, System.Windows.FrameworkTemplate frameworkTemplate, System.Windows.Media.Animation.HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="frameworkTemplate" Type="System.Windows.FrameworkTemplate" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="frameworkTemplate">To be added.</param>
+        <param name="handoffBehavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+        <Parameter Name="isControllable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="handoffBehavior">To be added.</param>
+        <param name="isControllable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public void Begin (System.Windows.FrameworkElement containingObject, System.Windows.FrameworkTemplate frameworkTemplate, System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin(class System.Windows.FrameworkElement containingObject, class System.Windows.FrameworkTemplate frameworkTemplate, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior, bool isControllable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="frameworkTemplate" Type="System.Windows.FrameworkTemplate" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+        <Parameter Name="isControllable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="frameworkTemplate">To be added.</param>
+        <param name="handoffBehavior">To be added.</param>
+        <param name="isControllable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Storyboard Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.Storyboard Clone() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.Storyboard</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentGlobalSpeed">
+      <MemberSignature Language="C#" Value="public double GetCurrentGlobalSpeed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetCurrentGlobalSpeed() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentGlobalSpeed">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; GetCurrentGlobalSpeed (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;float64&gt; GetCurrentGlobalSpeed(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentGlobalSpeed">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; GetCurrentGlobalSpeed (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;float64&gt; GetCurrentGlobalSpeed(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentIteration">
+      <MemberSignature Language="C#" Value="public int GetCurrentIteration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCurrentIteration() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentIteration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; GetCurrentIteration (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;int32&gt; GetCurrentIteration(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentIteration">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; GetCurrentIteration (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;int32&gt; GetCurrentIteration(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentProgress">
+      <MemberSignature Language="C#" Value="public double GetCurrentProgress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetCurrentProgress() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentProgress">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; GetCurrentProgress (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;float64&gt; GetCurrentProgress(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentProgress">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; GetCurrentProgress (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;float64&gt; GetCurrentProgress(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentState">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ClockState GetCurrentState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Animation.ClockState GetCurrentState() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ClockState</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentState">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ClockState GetCurrentState (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Animation.ClockState GetCurrentState(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ClockState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentState">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ClockState GetCurrentState (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Animation.ClockState GetCurrentState(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ClockState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentTime">
+      <MemberSignature Language="C#" Value="public TimeSpan GetCurrentTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetCurrentTime() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; GetCurrentTime (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; GetCurrentTime(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; GetCurrentTime (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; GetCurrentTime(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsPaused">
+      <MemberSignature Language="C#" Value="public bool GetIsPaused ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsPaused() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsPaused">
+      <MemberSignature Language="C#" Value="public bool GetIsPaused (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsPaused(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsPaused">
+      <MemberSignature Language="C#" Value="public bool GetIsPaused (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsPaused(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTarget">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetTarget (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetTarget(class System.Windows.DependencyObject element) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTargetName">
+      <MemberSignature Language="C#" Value="public static string GetTargetName (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTargetName(class System.Windows.DependencyObject element) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTargetProperty">
+      <MemberSignature Language="C#" Value="public static System.Windows.PropertyPath GetTargetProperty (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.PropertyPath GetTargetProperty(class System.Windows.DependencyObject element) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.PropertyPath</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public void Resume ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public void Resume (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public void Resume (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public void Seek (TimeSpan offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seek(valuetype System.TimeSpan offset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public void Seek (TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seek(valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public void Seek (System.Windows.FrameworkContentElement containingObject, TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seek(class System.Windows.FrameworkContentElement containingObject, valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seek">
+      <MemberSignature Language="C#" Value="public void Seek (System.Windows.FrameworkElement containingObject, TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seek(class System.Windows.FrameworkElement containingObject, valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAlignedToLastTick">
+      <MemberSignature Language="C#" Value="public void SeekAlignedToLastTick (TimeSpan offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekAlignedToLastTick(valuetype System.TimeSpan offset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAlignedToLastTick">
+      <MemberSignature Language="C#" Value="public void SeekAlignedToLastTick (TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekAlignedToLastTick(valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAlignedToLastTick">
+      <MemberSignature Language="C#" Value="public void SeekAlignedToLastTick (System.Windows.FrameworkContentElement containingObject, TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekAlignedToLastTick(class System.Windows.FrameworkContentElement containingObject, valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAlignedToLastTick">
+      <MemberSignature Language="C#" Value="public void SeekAlignedToLastTick (System.Windows.FrameworkElement containingObject, TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekAlignedToLastTick(class System.Windows.FrameworkElement containingObject, valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="offset" Type="System.TimeSpan" />
+        <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="origin">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSpeedRatio">
+      <MemberSignature Language="C#" Value="public void SetSpeedRatio (double speedRatio);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSpeedRatio(float64 speedRatio) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="speedRatio" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="speedRatio">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSpeedRatio">
+      <MemberSignature Language="C#" Value="public void SetSpeedRatio (System.Windows.FrameworkContentElement containingObject, double speedRatio);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSpeedRatio(class System.Windows.FrameworkContentElement containingObject, float64 speedRatio) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+        <Parameter Name="speedRatio" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="speedRatio">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSpeedRatio">
+      <MemberSignature Language="C#" Value="public void SetSpeedRatio (System.Windows.FrameworkElement containingObject, double speedRatio);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSpeedRatio(class System.Windows.FrameworkElement containingObject, float64 speedRatio) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+        <Parameter Name="speedRatio" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <param name="speedRatio">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTarget">
+      <MemberSignature Language="C#" Value="public static void SetTarget (System.Windows.DependencyObject element, System.Windows.DependencyObject value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTarget(class System.Windows.DependencyObject element, class System.Windows.DependencyObject value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTargetName">
+      <MemberSignature Language="C#" Value="public static void SetTargetName (System.Windows.DependencyObject element, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTargetName(class System.Windows.DependencyObject element, string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTargetProperty">
+      <MemberSignature Language="C#" Value="public static void SetTargetProperty (System.Windows.DependencyObject element, System.Windows.PropertyPath path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTargetProperty(class System.Windows.DependencyObject element, class System.Windows.PropertyPath path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="path" Type="System.Windows.PropertyPath" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToFill">
+      <MemberSignature Language="C#" Value="public void SkipToFill ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToFill() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToFill">
+      <MemberSignature Language="C#" Value="public void SkipToFill (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToFill(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToFill">
+      <MemberSignature Language="C#" Value="public void SkipToFill (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToFill(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop (System.Windows.FrameworkContentElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop(class System.Windows.FrameworkContentElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop (System.Windows.FrameworkElement containingObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop(class System.Windows.FrameworkElement containingObject) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="containingObject">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPropertyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetPropertyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetPropertyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

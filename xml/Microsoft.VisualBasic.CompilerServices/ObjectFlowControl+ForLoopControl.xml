@@ -1,0 +1,154 @@
+<Type Name="ObjectFlowControl+ForLoopControl" FullName="Microsoft.VisualBasic.CompilerServices.ObjectFlowControl+ForLoopControl">
+  <TypeSignature Language="C#" Value="public sealed class ObjectFlowControl.ForLoopControl" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ObjectFlowControl/ForLoopControl extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ForLoopInitObj">
+      <MemberSignature Language="C#" Value="public static bool ForLoopInitObj (object Counter, object Start, object Limit, object StepValue, ref object LoopForResult, ref object CounterResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForLoopInitObj(object Counter, object Start, object Limit, object StepValue, object LoopForResult, object CounterResult) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Counter" Type="System.Object" />
+        <Parameter Name="Start" Type="System.Object" />
+        <Parameter Name="Limit" Type="System.Object" />
+        <Parameter Name="StepValue" Type="System.Object" />
+        <Parameter Name="LoopForResult" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Counter">To be added.</param>
+        <param name="Start">To be added.</param>
+        <param name="Limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <param name="LoopForResult">To be added.</param>
+        <param name="CounterResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckDec">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckDec (decimal count, decimal limit, decimal StepValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckDec(valuetype System.Decimal count, valuetype System.Decimal limit, valuetype System.Decimal StepValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Decimal" />
+        <Parameter Name="limit" Type="System.Decimal" />
+        <Parameter Name="StepValue" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <param name="limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckObj">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckObj (object Counter, object LoopObj, ref object CounterResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckObj(object Counter, object LoopObj, object CounterResult) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Counter" Type="System.Object" />
+        <Parameter Name="LoopObj" Type="System.Object" />
+        <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Counter">To be added.</param>
+        <param name="LoopObj">To be added.</param>
+        <param name="CounterResult">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckR4">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckR4 (float count, float limit, float StepValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckR4(float32 count, float32 limit, float32 StepValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Single" />
+        <Parameter Name="limit" Type="System.Single" />
+        <Parameter Name="StepValue" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <param name="limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckR8">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckR8 (double count, double limit, double StepValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckR8(float64 count, float64 limit, float64 StepValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Double" />
+        <Parameter Name="limit" Type="System.Double" />
+        <Parameter Name="StepValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <param name="limit">To be added.</param>
+        <param name="StepValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1302 @@
+<Type Name="DataManipulator" FullName="System.Web.UI.DataVisualization.Charting.DataManipulator">
+  <TypeSignature Language="C#" Value="public class DataManipulator : System.Web.UI.DataVisualization.Charting.DataFormula" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataManipulator extends System.Web.UI.DataVisualization.Charting.DataFormula" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataVisualization.Charting.DataFormula</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataManipulator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportSeriesValues">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExportSeriesValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportSeriesValues">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExportSeriesValues (string seriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues(string seriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="seriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportSeriesValues">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExportSeriesValues (System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues(class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Web.UI.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Web.UI.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Web.UI.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">To be added.</param>
+        <param name="compareValue">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Web.UI.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">To be added.</param>
+        <param name="compareValue">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Web.UI.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">To be added.</param>
+        <param name="rangeElements">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Web.UI.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">To be added.</param>
+        <param name="rangeElements">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Web.UI.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Web.UI.DataVisualization.Charting.IDataPointFilter filterInterface, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Web.UI.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Web.UI.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">To be added.</param>
+        <param name="compareValue">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Web.UI.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">To be added.</param>
+        <param name="compareValue">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Web.UI.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">To be added.</param>
+        <param name="rangeElements">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Web.UI.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">To be added.</param>
+        <param name="rangeElements">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, string inputSeriesNames, string outputSeriesNames, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames, string outputSeriesNames, string usingValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Web.UI.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">To be added.</param>
+        <param name="compareValue">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <param name="usingValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Web.UI.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Web.UI.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">To be added.</param>
+        <param name="compareValue">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <param name="usingValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterMatchedPoints">
+      <MemberSignature Language="C#" Value="public bool FilterMatchedPoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterMatchedPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterSetEmptyPoints">
+      <MemberSignature Language="C#" Value="public bool FilterSetEmptyPoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterSetEmptyPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <param name="usingValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <param name="usingValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue, bool getTopValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue, bool getTopValues) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+        <Parameter Name="usingValue" Type="System.String" />
+        <Parameter Name="getTopValues" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeriesNames">To be added.</param>
+        <param name="outputSeriesNames">To be added.</param>
+        <param name="usingValue">To be added.</param>
+        <param name="getTopValues">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue, bool getTopValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries, string usingValue, bool getTopValues) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="usingValue" Type="System.String" />
+        <Parameter Name="getTopValues" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <param name="usingValue">To be added.</param>
+        <param name="getTopValues">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="inputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName, string outputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName, string outputSeriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="outputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="inputSeriesName">To be added.</param>
+        <param name="outputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="inputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName, string outputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName, string outputSeriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="outputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="inputSeriesName">To be added.</param>
+        <param name="outputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, string inputSeriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="inputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, System.Web.UI.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, class System.Web.UI.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, string inputSeriesName, string outputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, string inputSeriesName, string outputSeriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="outputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="inputSeriesName">To be added.</param>
+        <param name="outputSeriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, System.Web.UI.DataVisualization.Charting.Series inputSeries, System.Web.UI.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, class System.Web.UI.DataVisualization.Charting.Series inputSeries, class System.Web.UI.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">To be added.</param>
+        <param name="inputSeries">To be added.</param>
+        <param name="outputSeries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, string seriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="seriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, string seriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="seriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, double fromXValue, double toXValue, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, float64 fromXValue, float64 toXValue, string seriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="fromXValue" Type="System.Double" />
+        <Parameter Name="toXValue" Type="System.Double" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="fromXValue">To be added.</param>
+        <param name="toXValue">To be added.</param>
+        <param name="seriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Web.UI.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, double fromXValue, double toXValue, System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Web.UI.DataVisualization.Charting.IntervalType intervalOffsetType, float64 fromXValue, float64 toXValue, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Web.UI.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="fromXValue" Type="System.Double" />
+        <Parameter Name="toXValue" Type="System.Double" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="interval">To be added.</param>
+        <param name="intervalType">To be added.</param>
+        <param name="intervalOffset">To be added.</param>
+        <param name="intervalOffsetType">To be added.</param>
+        <param name="fromXValue">To be added.</param>
+        <param name="toXValue">To be added.</param>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(class System.Collections.Generic.IComparer`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer, string seriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">To be added.</param>
+        <param name="seriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer, System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(class System.Collections.Generic.IComparer`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">To be added.</param>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string seriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Web.UI.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">To be added.</param>
+        <param name="seriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Web.UI.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">To be added.</param>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, string seriesName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Web.UI.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="sortBy" Type="System.String" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">To be added.</param>
+        <param name="sortBy">To be added.</param>
+        <param name="seriesName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Web.UI.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="sortBy" Type="System.String" />
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">To be added.</param>
+        <param name="sortBy">To be added.</param>
+        <param name="series">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

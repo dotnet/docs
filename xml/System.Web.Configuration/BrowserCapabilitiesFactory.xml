@@ -1,0 +1,2834 @@
+<Type Name="BrowserCapabilitiesFactory" FullName="System.Web.Configuration.BrowserCapabilitiesFactory">
+  <TypeSignature Language="C#" Value="public class BrowserCapabilitiesFactory : System.Web.Configuration.BrowserCapabilitiesFactoryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BrowserCapabilitiesFactory extends System.Web.Configuration.BrowserCapabilitiesFactoryBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Configuration.BrowserCapabilitiesFactoryBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BrowserCapabilitiesFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlackberryProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void BlackberryProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BlackberryProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlackberryProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void BlackberryProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BlackberryProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChromeProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void ChromeProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ChromeProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChromeProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void ChromeProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ChromeProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureBrowserCapabilities">
+      <MemberSignature Language="C#" Value="public override void ConfigureBrowserCapabilities (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ConfigureBrowserCapabilities(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CpuProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void CpuProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CpuProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CpuProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void CpuProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CpuProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrawlerProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void CrawlerProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CrawlerProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrawlerProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void CrawlerProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CrawlerProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDefaultProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void DefaultDefaultProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefaultDefaultProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void DefaultProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefaultProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void DefaultProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefaultProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultWmlProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void DefaultWmlProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefaultWmlProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultXhtmlmpProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void DefaultXhtmlmpProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DefaultXhtmlmpProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firefox35ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Firefox35ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Firefox35ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firefox35ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Firefox35ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Firefox35ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firefox3plusProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Firefox3plusProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Firefox3plusProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firefox3plusProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Firefox3plusProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Firefox3plusProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firefox3ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Firefox3ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Firefox3ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firefox3ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Firefox3ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Firefox3ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirefoxProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void FirefoxProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FirefoxProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirefoxProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void FirefoxProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FirefoxProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericdownlevelProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void GenericdownlevelProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GenericdownlevelProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericdownlevelProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void GenericdownlevelProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GenericdownlevelProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie10plusProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Ie10plusProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie10plusProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie10plusProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Ie10plusProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie10plusProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie6plusProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Ie6plusProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie6plusProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie6plusProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Ie6plusProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie6plusProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie6to9ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Ie6to9ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie6to9ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie6to9ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Ie6to9ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie6to9ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie7ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Ie7ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie7ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie7ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Ie7ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie7ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie8ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Ie8ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie8ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie8ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Ie8ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie8ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie9ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Ie9ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie9ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ie9ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Ie9ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Ie9ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IebetaProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void IebetaProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IebetaProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IebetaProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void IebetaProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IebetaProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IemobileProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void IemobileProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IemobileProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IemobileProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void IemobileProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IemobileProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IeProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void IeProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IeProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IeProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void IeProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IeProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternetexplorerProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void InternetexplorerProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InternetexplorerProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternetexplorerProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void InternetexplorerProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InternetexplorerProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IpadProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void IpadProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IpadProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IpadProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void IpadProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IpadProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IphoneProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void IphoneProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IphoneProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IphoneProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void IphoneProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IphoneProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IpodProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void IpodProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IpodProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IpodProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void IpodProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IpodProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MonoProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void MonoProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MonoProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MonoProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void MonoProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MonoProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MozillaProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void MozillaProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MozillaProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MozillaProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void MozillaProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MozillaProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opera10ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Opera10ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Opera10ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opera10ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Opera10ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Opera10ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opera8plusProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Opera8plusProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Opera8plusProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opera8plusProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Opera8plusProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Opera8plusProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opera8to9ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Opera8to9ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Opera8to9ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opera8to9ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Opera8to9ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Opera8to9ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperaminiProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void OperaminiProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OperaminiProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperaminiProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void OperaminiProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OperaminiProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperamobileProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void OperamobileProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OperamobileProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperamobileProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void OperamobileProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OperamobileProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperaProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void OperaProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OperaProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperaProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void OperaProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OperaProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void OSProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OSProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void OSProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OSProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PixelsProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PixelsProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PixelsProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PixelsProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformmac68kProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Platformmac68kProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformmac68kProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformmac68kProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Platformmac68kProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformmac68kProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformmacppcProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformmacppcProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformmacppcProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformmacppcProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformmacppcProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformmacppcProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformunixProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformunixProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformunixProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformunixProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformunixProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformunixProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwebtvProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwebtvProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwebtvProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwebtvProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwebtvProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwebtvProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin16ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin16ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin16ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin16ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin16ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin16ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin2000aProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin2000aProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin2000aProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin2000aProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin2000aProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin2000aProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin2000bProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin2000bProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin2000bProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin2000bProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin2000bProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin2000bProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin95ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin95ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin95ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin95ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin95ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin95ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin98ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin98ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin98ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platformwin98ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Platformwin98ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Platformwin98ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwinceProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwinceProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwinceProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwinceProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwinceProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwinceProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwinntProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwinntProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwinntProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwinntProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwinntProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwinntProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwinxpProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwinxpProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwinxpProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlatformwinxpProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void PlatformwinxpProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PlatformwinxpProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateBrowserElements">
+      <MemberSignature Language="C#" Value="protected override void PopulateBrowserElements (System.Collections.IDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PopulateBrowserElements(class System.Collections.IDictionary dictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateMatchedHeaders">
+      <MemberSignature Language="C#" Value="protected override void PopulateMatchedHeaders (System.Collections.IDictionary dictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PopulateMatchedHeaders(class System.Collections.IDictionary dictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Safari3plusProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Safari3plusProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Safari3plusProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Safari3plusProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Safari3plusProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Safari3plusProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Safari3to4ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Safari3to4ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Safari3to4ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Safari3to4ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Safari3to4ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Safari3to4ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Safari4ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Safari4ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Safari4ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Safari4ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Safari4ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Safari4ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafariProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void SafariProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SafariProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafariProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void SafariProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SafariProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UcbrowserProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void UcbrowserProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UcbrowserProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UcbrowserProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void UcbrowserProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UcbrowserProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VoiceProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void VoiceProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void VoiceProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VoiceProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void VoiceProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void VoiceProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebkitmobileProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void WebkitmobileProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WebkitmobileProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebkitmobileProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void WebkitmobileProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WebkitmobileProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebkitProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void WebkitProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WebkitProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebkitProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void WebkitProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WebkitProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win16ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Win16ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Win16ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win16ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Win16ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Win16ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32ProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void Win32ProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Win32ProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32ProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void Win32ProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Win32ProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsphoneProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void WindowsphoneProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WindowsphoneProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsphoneProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void WindowsphoneProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WindowsphoneProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WinProcessBrowsers">
+      <MemberSignature Language="C#" Value="protected virtual void WinProcessBrowsers (bool ignoreApplicationBrowsers, System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WinProcessBrowsers(bool ignoreApplicationBrowsers, class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreApplicationBrowsers" Type="System.Boolean" />
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreApplicationBrowsers">To be added.</param>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WinProcessGateways">
+      <MemberSignature Language="C#" Value="protected virtual void WinProcessGateways (System.Collections.Specialized.NameValueCollection headers, System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WinProcessGateways(class System.Collections.Specialized.NameValueCollection headers, class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="headers">To be added.</param>
+        <param name="browserCaps">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

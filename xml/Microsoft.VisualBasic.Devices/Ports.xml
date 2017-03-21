@@ -1,0 +1,174 @@
+<Type Name="Ports" FullName="Microsoft.VisualBasic.Devices.Ports">
+  <TypeSignature Language="C#" Value="public class Ports" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Ports extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Ports ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSerialPort">
+      <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialPort</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="portName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="portName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSerialPort">
+      <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialPort</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="portName" Type="System.String" />
+        <Parameter Name="baudRate" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="portName">To be added.</param>
+        <param name="baudRate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSerialPort">
+      <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate, System.IO.Ports.Parity parity);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialPort</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="portName" Type="System.String" />
+        <Parameter Name="baudRate" Type="System.Int32" />
+        <Parameter Name="parity" Type="System.IO.Ports.Parity" />
+      </Parameters>
+      <Docs>
+        <param name="portName">To be added.</param>
+        <param name="baudRate">To be added.</param>
+        <param name="parity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSerialPort">
+      <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate, System.IO.Ports.Parity parity, int dataBits);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialPort</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="portName" Type="System.String" />
+        <Parameter Name="baudRate" Type="System.Int32" />
+        <Parameter Name="parity" Type="System.IO.Ports.Parity" />
+        <Parameter Name="dataBits" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="portName">To be added.</param>
+        <param name="baudRate">To be added.</param>
+        <param name="parity">To be added.</param>
+        <param name="dataBits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSerialPort">
+      <MemberSignature Language="C#" Value="public System.IO.Ports.SerialPort OpenSerialPort (string portName, int baudRate, System.IO.Ports.Parity parity, int dataBits, System.IO.Ports.StopBits stopBits);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Ports.SerialPort OpenSerialPort(string portName, int32 baudRate, valuetype System.IO.Ports.Parity parity, int32 dataBits, valuetype System.IO.Ports.StopBits stopBits) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialPort</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="portName" Type="System.String" />
+        <Parameter Name="baudRate" Type="System.Int32" />
+        <Parameter Name="parity" Type="System.IO.Ports.Parity" />
+        <Parameter Name="dataBits" Type="System.Int32" />
+        <Parameter Name="stopBits" Type="System.IO.Ports.StopBits" />
+      </Parameters>
+      <Docs>
+        <param name="portName">To be added.</param>
+        <param name="baudRate">To be added.</param>
+        <param name="parity">To be added.</param>
+        <param name="dataBits">To be added.</param>
+        <param name="stopBits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerialPortNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; SerialPortNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; SerialPortNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

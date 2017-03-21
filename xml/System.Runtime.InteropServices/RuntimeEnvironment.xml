@@ -1,22 +1,18 @@
 <Type Name="RuntimeEnvironment" FullName="System.Runtime.InteropServices.RuntimeEnvironment">
-  <TypeSignature Language="C#" Value="public class RuntimeEnvironment" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuntimeEnvironment extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RuntimeEnvironment" />
+  <TypeSignature Language="C#" Value="public static class RuntimeEnvironment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeEnvironment extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>To be added.</summary>
     <remarks>To be added.</remarks>
@@ -25,12 +21,9 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuntimeEnvironment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -47,13 +40,14 @@
     <Member MemberName="FromGlobalAccessCache">
       <MemberSignature Language="C#" Value="public static bool FromGlobalAccessCache (System.Reflection.Assembly a);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FromGlobalAccessCache(class System.Reflection.Assembly a) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -71,19 +65,15 @@
     <Member MemberName="GetRuntimeDirectory">
       <MemberSignature Language="C#" Value="public static string GetRuntimeDirectory ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRuntimeDirectory() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -97,20 +87,15 @@
     <Member MemberName="GetRuntimeInterfaceAsIntPtr">
       <MemberSignature Language="C#" Value="public static IntPtr GetRuntimeInterfaceAsIntPtr (Guid clsid, Guid riid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetRuntimeInterfaceAsIntPtr(valuetype System.Guid clsid, valuetype System.Guid riid) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -129,20 +114,15 @@
     <Member MemberName="GetRuntimeInterfaceAsObject">
       <MemberSignature Language="C#" Value="public static object GetRuntimeInterfaceAsObject (Guid clsid, Guid riid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetRuntimeInterfaceAsObject(valuetype System.Guid clsid, valuetype System.Guid riid) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -161,19 +141,15 @@
     <Member MemberName="GetSystemVersion">
       <MemberSignature Language="C#" Value="public static string GetSystemVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSystemVersion() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -187,19 +163,15 @@
     <Member MemberName="SystemConfigurationFile">
       <MemberSignature Language="C#" Value="public static string SystemConfigurationFile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string SystemConfigurationFile" />
-      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

@@ -1,0 +1,184 @@
+<Type Name="DataTableExtensions" FullName="System.Data.DataTableExtensions">
+  <TypeSignature Language="C#" Value="public static class DataTableExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataTableExtensions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsDataView">
+      <MemberSignature Language="C#" Value="public static System.Data.DataView AsDataView (this System.Data.DataTable table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataView AsDataView(class System.Data.DataTable table) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Data.DataTable" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsDataView&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.DataView AsDataView&lt;T&gt; (this System.Data.EnumerableRowCollection&lt;T&gt; source) where T : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataView AsDataView&lt;(class System.Data.DataRow) T&gt;(class System.Data.EnumerableRowCollection`1&lt;!!T&gt; source) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataView</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsEnumerable">
+      <MemberSignature Language="C#" Value="public static System.Data.EnumerableRowCollection&lt;System.Data.DataRow&gt; AsEnumerable (this System.Data.DataTable source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;class System.Data.DataRow&gt; AsEnumerable(class System.Data.DataTable source) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.EnumerableRowCollection&lt;System.Data.DataRow&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Data.DataTable" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToDataTable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Data.DataTable CopyToDataTable&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable CopyToDataTable&lt;(class System.Data.DataRow) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToDataTable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void CopyToDataTable&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source, System.Data.DataTable table, System.Data.LoadOption options) where T : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyToDataTable&lt;(class System.Data.DataRow) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source, class System.Data.DataTable table, valuetype System.Data.LoadOption options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
+        <Parameter Name="table" Type="System.Data.DataTable" />
+        <Parameter Name="options" Type="System.Data.LoadOption" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToDataTable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void CopyToDataTable&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source, System.Data.DataTable table, System.Data.LoadOption options, System.Data.FillErrorEventHandler errorHandler) where T : System.Data.DataRow;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyToDataTable&lt;(class System.Data.DataRow) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source, class System.Data.DataTable table, valuetype System.Data.LoadOption options, class System.Data.FillErrorEventHandler errorHandler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Data.DataRow</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
+        <Parameter Name="table" Type="System.Data.DataTable" />
+        <Parameter Name="options" Type="System.Data.LoadOption" />
+        <Parameter Name="errorHandler" Type="System.Data.FillErrorEventHandler" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="errorHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

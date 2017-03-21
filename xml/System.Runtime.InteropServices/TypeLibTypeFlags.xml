@@ -1,11 +1,8 @@
 <Type Name="TypeLibTypeFlags" FullName="System.Runtime.InteropServices.TypeLibTypeFlags">
   <TypeSignature Language="C#" Value="public enum TypeLibTypeFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibTypeFlags extends System.Enum" />
-  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibTypeFlags" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
-    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,12 +24,9 @@
     <Member MemberName="FAggregatable">
       <MemberSignature Language="C#" Value="FAggregatable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FAggregatable = int32(1024)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,12 +39,9 @@
     <Member MemberName="FAppObject">
       <MemberSignature Language="C#" Value="FAppObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FAppObject = int32(1)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,12 +54,9 @@
     <Member MemberName="FCanCreate">
       <MemberSignature Language="C#" Value="FCanCreate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FCanCreate = int32(2)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,12 +69,9 @@
     <Member MemberName="FControl">
       <MemberSignature Language="C#" Value="FControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FControl = int32(32)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,12 +84,9 @@
     <Member MemberName="FDispatchable">
       <MemberSignature Language="C#" Value="FDispatchable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FDispatchable = int32(4096)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,12 +99,9 @@
     <Member MemberName="FDual">
       <MemberSignature Language="C#" Value="FDual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FDual = int32(64)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,12 +114,9 @@
     <Member MemberName="FHidden">
       <MemberSignature Language="C#" Value="FHidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FHidden = int32(16)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FHidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,12 +129,9 @@
     <Member MemberName="FLicensed">
       <MemberSignature Language="C#" Value="FLicensed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FLicensed = int32(4)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,12 +144,9 @@
     <Member MemberName="FNonExtensible">
       <MemberSignature Language="C#" Value="FNonExtensible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FNonExtensible = int32(128)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,12 +159,9 @@
     <Member MemberName="FOleAutomation">
       <MemberSignature Language="C#" Value="FOleAutomation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FOleAutomation = int32(256)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,12 +174,9 @@
     <Member MemberName="FPreDeclId">
       <MemberSignature Language="C#" Value="FPreDeclId" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FPreDeclId = int32(8)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,12 +189,9 @@
     <Member MemberName="FReplaceable">
       <MemberSignature Language="C#" Value="FReplaceable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FReplaceable = int32(2048)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,12 +204,9 @@
     <Member MemberName="FRestricted">
       <MemberSignature Language="C#" Value="FRestricted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FRestricted = int32(512)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,12 +219,9 @@
     <Member MemberName="FReverseBind">
       <MemberSignature Language="C#" Value="FReverseBind" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FReverseBind = int32(8192)" />
-      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

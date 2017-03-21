@@ -1,0 +1,70 @@
+<Type Name="SourceState" FullName="Microsoft.JScript.SourceState">
+  <TypeSignature Language="C#" Value="public enum SourceState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SourceState extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("BA731F6A-3D25-39AE-BE18-C2EF646AE58B")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="STATE_COLOR_COMMENT">
+      <MemberSignature Language="C#" Value="STATE_COLOR_COMMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.SourceState STATE_COLOR_COMMENT = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.SourceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="STATE_COLOR_NORMAL">
+      <MemberSignature Language="C#" Value="STATE_COLOR_NORMAL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.SourceState STATE_COLOR_NORMAL = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.SourceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="STATE_COLOR_STRING">
+      <MemberSignature Language="C#" Value="STATE_COLOR_STRING" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.SourceState STATE_COLOR_STRING = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.SourceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

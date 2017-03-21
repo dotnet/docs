@@ -20,7 +20,7 @@ ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
 
 ## Synopsis
 
-`dotnet vstest <TEST_FILE_NAMES> [--Settings|/Settings:<Settings File>] [--Tests|/Tests:<Test Names>] [--TestAdapterPath|/TestAdapterPath] [--Platform|/Platform:<Platform type>] [--Framework|/Framework:<Framework Version>] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter:<Expression>] [--logger|/logger:<Logger Uri/FriendlyName>] [-lt|--ListTests|/lt|/ListTests:<File Name>] [--ParentProcessId|/ParentProcessId:<ParentProcessId>] [--Port|/Port:<Port>] [--Diag|/Diag:<Path to log file>] [[--] <args>...]] [-?|--Help|/?|/Help]`
+`dotnet vstest <TEST_FILE_NAMES> [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath] [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger] [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [[--] <args>...]] [-?|--Help|/?|/Help]`
 
 ## Description
 
@@ -70,21 +70,21 @@ Prints out a short help for the command.
 
 Specify a logger for test results.  
       
-  To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
+    To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
 
-  ```
-  /logger:TfsPublisher;
-      Collection=<team project collection url>;
-      BuildName=<build name>;
-      TeamProject=<team project name>
-      [;Platform=<Defaults to "Any CPU">]
-      [;Flavor=<Defaults to "Debug">]
-      [;RunTitle=<title>]
-  ```
+    ```
+    /logger:TfsPublisher;
+        Collection=<team project collection url>;
+        BuildName=<build name>;
+        TeamProject=<team project name>
+        [;Platform=<Defaults to "Any CPU">]
+        [;Flavor=<Defaults to "Debug">]
+        [;RunTitle=<title>]
+    ```
 
-  To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
+    To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
 
-  `/logger:trx [;LogFileName=<Defaults to unique file name>]` 
+    `/logger:trx [;LogFileName=<Defaults to unique file name>]` 
 
 `-lt|--ListTests|/lt|/ListTests:<File Name>`
 

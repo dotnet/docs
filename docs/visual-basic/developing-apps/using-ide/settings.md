@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "settings, Visual Basic"
 ms.assetid: 2712b3b1-18f2-430c-ae91-28468bbf5f32
-redirect_url: https://docs.microsoft.com/visualstudio/ide/reference/general-user-interface-elements-visual-studio.md
+redirect_url: https://docs.microsoft.com/en-us/visualstudio/ide/reference/general-user-interface-elements-visual-studio
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"

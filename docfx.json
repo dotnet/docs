@@ -3,15 +3,8 @@
     "content": [
       {
         "files": [
-          "api/**/*.yml"
-        ],
-        "exclude": [
-          "add/includes/**/*.md",
-          "add/metadata/**/*.md",
-          "**/obj/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
+          "api/**/*.yml",
+          "api/**/*.md"
         ]
       },
       {

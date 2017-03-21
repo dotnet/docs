@@ -14,7 +14,7 @@ dev_langs:
 helpviewer_keywords: 
   - "debugging [Visual Basic], common tasks"
 ms.assetid: 904760b8-9fe9-42a7-9d65-d93774253219
-redirect_url: https://docs.microsoft.com/visualstudio/ide/debugger-basics.md
+redirect_url: https://docs.microsoft.com/visualstudio/debugger/debugger-basics
 caps.latest.revision: 28
 author: "stevehoag"
 ms.author: "shoag"

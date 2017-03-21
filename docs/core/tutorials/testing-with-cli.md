@@ -14,7 +14,7 @@ ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 
 # Organizing and testing projects with the .NET Core command line
 
-This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md) taking you beyond the simple "Hello World!" app to pave the way for the development of advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend the [NewTypes Pets Sample](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild) using the [xUnit](https://xunit.github.io/) test framework.
+This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md) taking you beyond the creation of a simple console app to pave the way for the development of advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) test framework.
 
 ## Using folders to organize code
 

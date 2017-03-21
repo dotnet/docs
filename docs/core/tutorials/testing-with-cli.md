@@ -30,7 +30,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 
 However, this only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
-To organize the project shown above, create a new folder and name it *Models* to hold the type files. Place the type files into the `Models` folder:
+To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the `Models` folder:
 
 ```
 /MyProject
@@ -51,7 +51,7 @@ For the following steps, you can either follow along using the [NewTypes Pets Sa
 
 The sample contains two types, `Dog` and `Cat`, and has them implement a common interface, `IPet`. For the `NewTypes` project, your goal is to organize the pet-related types into a *Pets* folder. If another set of types is added later, they're placed in the *NewTypes* folder alongside the *Pets* folder. In this way as types are added, the project remains well organized. 
 
-Create the following folder structure with file content indicated below:
+Create the following folder structure with file content indicated:
 
 ```
 /NewTypes
@@ -107,13 +107,13 @@ The `NewTypes` project is in place, and you've organized it by keeping the pets-
 
 Create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This procuduces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
 
-To add a project reference to the `NewTypes` project, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```
 dotnet add reference ../../src/NewTypes/NewTypes.csproj
 ```
 
-You also have the option of manually adding the project reference with an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
+You also have the option of manually adding the project reference by adding an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
 
 ```xml
 <ItemGroup>

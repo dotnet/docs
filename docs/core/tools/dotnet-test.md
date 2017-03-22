@@ -50,7 +50,7 @@ List all of the discovered tests in the current project.
 
 `--filter <EXPRESSION>`
 
-Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For a tutorial on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 `-a|--test-adapter-path <PATH_TO_ADAPTER>`
 
@@ -128,7 +128,7 @@ Expressions can be joined with conditional operators.
 
 You can enclose expressions in paranthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
-For a tutorial on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 ## See also
 

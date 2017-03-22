@@ -62,3 +62,5 @@ The XUnit team has written a tutorial that shows
 [how to use xUnit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
 
 If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET CLI](unit-testing-with-mstest.md).
+
+For details on how to run selective unit tests, see [Running selective unit tests](core/testing/selective-unit-tests.md).

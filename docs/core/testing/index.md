@@ -63,4 +63,4 @@ The XUnit team has written a tutorial that shows
 
 If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET CLI](unit-testing-with-mstest.md).
 
-For details on how to run selective unit tests, see [Running selective unit tests](core/testing/selective-unit-tests.md).
+For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).

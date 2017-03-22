@@ -58,12 +58,12 @@ Configuration to use for building the project. The default value is `Debug`.
 
 Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
 
-`-p|--project <PATH>`
+`-p|--project <PATH/PROJECT.csproj>`
 
-Specifies the path to the project file. It can be a path to a [csproj](csproj.md) file ~or to a directory containing a [csproj](csproj.md) file~ (See NOTE). It defaults to current directory if not specified.
+Specifies the path and name of the project file. (See the NOTE.) It defaults to the current directory if not specified.
 
 > [!NOTE]
-> Use the full path to the project file with the `-p|--project` option. A regression in the CLI prevents providing a folder path at this time. For more information and to track this issue, see [dotnet run -p, can not start a project (dotnet/cli #5992)](https://github.com/dotnet/cli/issues/5992).
+> Use the path and name of the project file with the `-p|--project` option. A regression in the CLI prevents providing a folder path at this time. For more information and to track this issue, see [dotnet run -p, can not start a project (dotnet/cli #5992)](https://github.com/dotnet/cli/issues/5992).
 
 ## Examples
 

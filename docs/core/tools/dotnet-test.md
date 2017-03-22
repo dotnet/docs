@@ -50,7 +50,7 @@ List all of the discovered tests in the current project.
 
 `--filter <EXPRESSION>`
 
-Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+Filters out tests in the current project using the given expression. For option details, see the [Filter option details](#filter-option-details) section. For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 `-a|--test-adapter-path <PATH_TO_ADAPTER>`
 

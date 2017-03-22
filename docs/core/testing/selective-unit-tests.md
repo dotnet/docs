@@ -53,9 +53,9 @@ namespace MSTestNamespace
 
 | Expression | Result |
 | --- | --- |
-| `dotnet test --filter "FullyQualifiedName~UnitTestClass1\|TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
+| `dotnet test --filter "FullyQualifiedName~UnitTestClass1&#124;TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
 | `dotnet test --filter "FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "(FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA)\|Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `UnitTestClass1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+| `dotnet test --filter "(FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA)&#124;Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `UnitTestClass1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
 
 ## xUnit
 ```csharp
@@ -97,6 +97,6 @@ In the code example, the defined traits with keys `Category` and `Priority` can 
 
 | Expression | Result |
 | --- | --- |
-| `dotnet test --filter "FullyQualifiedName~TestClass1\|Category=Nightly"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **or** `Category` is `Nightly`. |
+| `dotnet test --filter "FullyQualifiedName~TestClass1&#124;Category=Nightly"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **or** `Category` is `Nightly`. |
 | `dotnet test --filter "FullyQualifiedName~TestClass1&Category=Nightly"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **and** `Category` is `Nightly`. |
-| `dotnet test --filter "(FullyQualifiedName~TestClass1&Category=Nightly)\|Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `TestClass1` **and** `Category` is `CategoryA` **or** `Priority` is 1. |
+| `dotnet test --filter "(FullyQualifiedName~TestClass1&Category=Nightly)&#124;Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `TestClass1` **and** `Category` is `CategoryA` **or** `Priority` is 1. |

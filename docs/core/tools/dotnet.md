@@ -4,7 +4,7 @@ description: Learn about the dotnet command (the generic driver for the .NET Cor
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
 
-# dotnet
+# dotnet command
 
 ## Name
 

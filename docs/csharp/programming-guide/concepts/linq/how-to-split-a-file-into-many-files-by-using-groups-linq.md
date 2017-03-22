@@ -59,7 +59,7 @@ This example shows one way to merge the contents of two files and then create a 
   
 ## Example  
   
-```cs  
+```csharp  
 class SplitWithGroups  
 {  
     static void Main()  

@@ -45,7 +45,7 @@ Here, once you find a constant node, you create a new multiplication
 node whose children are the original constant, and the constant
 `10`:
 
-```cs
+```csharp
 private static Expression ReplaceNodes(Expression original)
 {
     if (original.NodeType == ExpressionType.Constant)
@@ -67,7 +67,7 @@ By replacing the original node with the substitute, a new tree
 is formed that contains our modifications. We can verify that by
 compiling and executing the replaced tree.
 
-```cs
+```csharp
 var one = Expression.Constant(1, typeof(int));
 var two = Expression.Constant(2, typeof(int));
 var addition = Expression.Add(one, two);
@@ -103,7 +103,7 @@ that is simply the value of the constant expression. For an addition
 expression, the result is the sum of the left and right operands, once
 those trees have been traversed.
 
-```cs
+```csharp
 var one = Expression.Constant(1, typeof(int));
 var two = Expression.Constant(2, typeof(int));
 var three= Expression.Constant(3, typeof(int));
@@ -139,7 +139,7 @@ Let's make it easier to trace how the nodes are analyzed and how the sum
 is computed by travsersing the tree. Here's an updated version of the
 Aggregate method that includes quite a bit of tracing information:
 
-```cs
+```csharp
 private static int Aggregate(Expression exp)
 {
     if (exp.NodeType == ExpressionType.Constant)
@@ -202,7 +202,7 @@ through the tree and finds the sum.
 
 Now, let's look at a different run, with the expression given by `sum1`:
 
-```cs
+```csharp
 Expression<Func<int> sum1 = () => 1 + (2 + (3 + 4));
 ```
 

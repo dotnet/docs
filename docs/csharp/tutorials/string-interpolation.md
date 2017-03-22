@@ -99,7 +99,7 @@ If a variable name is not found, then a compile time error will be generated.
 
 For instance:
 
-```cs
+```csharp
 var animal = "fox";
 var localizeMe = $"The {adj} brown {animal} jumped over the lazy {otheranimal}";
 var adj = "quick";

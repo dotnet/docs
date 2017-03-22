@@ -62,7 +62,7 @@ ProductName:Baby Monitor
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement po = XElement.Load("PurchaseOrderInNamespace.xml");  
 IEnumerable<XElement> items =  

@@ -138,7 +138,7 @@ Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
   
  The following code example demonstrates how to compile an expression tree and run the resulting code.  
   
-```cs  
+```csharp  
 // Creating an expression tree.  
 Expression<Func<int, bool>> expr = num => num < 5;  
   

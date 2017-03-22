@@ -66,7 +66,7 @@ A *query* is an expression that retrieves data from a data source. Queries are u
   
  With [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)], you first create an object-relational mapping at design time either manually or by using the [LINQ to SQL Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2) in Visual Studio. You write your queries against the objects, and at run-time [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)] handles the communication with the database. In the following example, `Customers` represents a specific table in the database, and the type of the query result, <xref:System.Linq.IQueryable%601>, derives from <xref:System.Collections.Generic.IEnumerable%601>.  
   
-```cs  
+```csharp  
 Northwnd db = new Northwnd(@"c:\northwnd.mdf");  
   
 // Query for customers in London.  

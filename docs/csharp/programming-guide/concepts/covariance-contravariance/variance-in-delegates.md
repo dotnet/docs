@@ -27,7 +27,7 @@ translation.priority.mt:
   
  For example, consider the following code, which has two classes and two delegates: generic and non-generic.  
   
-```cs  
+```csharp  
 public class First { }  
 public class Second : First { }  
 public delegate First SampleDelegate(Second a);  
@@ -36,7 +36,7 @@ public delegate R SampleGenericDelegate<A, R>(A a);
   
  When you create delegates of the `SampleDelegate` or `SampleGenericDelegate<A, R>` types, you can assign any one of the following methods to those delegates.  
   
-```cs  
+```csharp  
 // Matching signature.  
 public static First ASecondRFirst(Second first)  
 { return new First(); }  
@@ -57,7 +57,7 @@ public static Second AFirstRSecond(First first)
   
  The following code example illustrates the implicit conversion between the method signature and the delegate type.  
   
-```cs  
+```csharp  
 // Assigning a method with a matching signature   
 // to a non-generic delegate. No conversion is necessary.  
 SampleDelegate dNonGeneric = ASecondRFirst;  
@@ -84,7 +84,7 @@ SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;
   
  The following code example shows how you can create a delegate that has a covariant generic type parameter.  
   
-```cs  
+```csharp  
 // Type T is declared covariant by using the out keyword.  
 public delegate T SampleGenericDelegate <out T>();  
   
@@ -102,7 +102,7 @@ public static void Test()
   
  In the following code example, `SampleGenericDelegate<String>` cannot be explicitly converted to `SampleGenericDelegate<Object>`, although `String` inherits `Object`. You can fix this problem by marking the generic parameter `T` with the `out` keyword.  
   
-```cs  
+```csharp  
 public delegate T SampleGenericDelegate<T>();  
   
 public static void Test()  
@@ -186,7 +186,7 @@ Action<string> actStr = x => Console.WriteLine("string: {0}", x);
   
  The following example demonstrates that variance in generic type parameters is not supported for value types.  
   
-```cs  
+```csharp  
 // The type T is covariant.  
 public delegate T DVariant<out T>();  
   

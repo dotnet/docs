@@ -54,7 +54,7 @@ Asynchrony proves especially valuable for applications that access the UI thread
   
  You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](http://go.microsoft.com/fwlink/?LinkID=261549).  
   
-```cs  
+```csharp  
 // Three things to note in the signature:  
 //  - The method has an async modifier.   
 //  - The return type is Task or Task<T>. (See "Return Types" section.)  
@@ -87,7 +87,7 @@ async Task<int> AccessTheWebAsync()
   
  If `AccessTheWebAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.  
   
-```cs  
+```csharp  
 string urlContents = await client.GetStringAsync();  
 ```  
   
@@ -187,7 +187,7 @@ string urlContents = await client.GetStringAsync();
   
  The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>.  
   
-```cs  
+```csharp  
 // Signature specifies Task<TResult>  
 async Task<int> TaskOfTResult_MethodAsync()  
 {  
@@ -265,7 +265,7 @@ await Task_MethodAsync();
 ##  <a name="BKMK_CompleteExample"></a> Complete Example  
  The following code is the MainWindow.xaml.cs file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](http://go.microsoft.com/fwlink/p/?LinkID=261549).  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

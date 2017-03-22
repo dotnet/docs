@@ -51,11 +51,28 @@ namespace MSTestNamespace
 
 **Using conditional operators | and &amp;**
 
-| Expression | Result |
-| --- | --- |
-| `dotnet test --filter "FullyQualifiedName~UnitTestClass1&#124;TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "(FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA)&#124;Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `UnitTestClass1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dotnet test --filter "FullyQualifiedName~UnitTestClass1|TestCategory=CategoryA"</code></td>
+<td>Runs tests which have <code>UnitTestClass1</code> in <code>FullyQualifiedName</code> <strong>or</strong> <code>TestCategory</code> is <code>CategoryA</code>.</td>
+</tr>
+<tr>
+<td><code>dotnet test --filter "FullyQualifiedName~UnitTestClass1&amp;TestCategory=CategoryA"</code></td>
+<td>Runs tests which have <code>UnitTestClass1</code> in <code>FullyQualifiedName</code> <strong>and</strong> <code>TestCategory</code> is <code>CategoryA</code>.</td>
+</tr>
+<tr>
+<td><code>dotnet test --filter "(FullyQualifiedName~UnitTestClass1&amp;TestCategory=CategoryA)|Priority=1"</code></td>
+<td>Runs tests which have either <code>FullyQualifiedName</code> containing <code>UnitTestClass1</code> <strong>and</strong> <code>TestCategory</code> is <code>CategoryA</code> <strong>or</strong> <code>Priority</code> is 1.</td>
+</tr>
+</tbody>
+</table>
 
 ## xUnit
 ```csharp
@@ -93,10 +110,27 @@ In the code example, the defined traits with keys `Category` and `Priority` can 
 | `dotnet test --filter XUnit` | Runs tests whose `FullyQualifiedName` contains `XUnit`.  Available in `vstest 15.1+`. |
 | `dotnet test --filter Category=bvt` | Runs tests which has `[Trait("Category", "bvt")]`. |
 
-**Using conditional operators | and &nbsp;**
+**Using conditional operators | and &amp;**
 
-| Expression | Result |
-| --- | --- |
-| `dotnet test --filter "FullyQualifiedName~TestClass1&#124;Category=Nightly"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **or** `Category` is `Nightly`. |
-| `dotnet test --filter "FullyQualifiedName~TestClass1&Category=Nightly"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **and** `Category` is `Nightly`. |
-| `dotnet test --filter "(FullyQualifiedName~TestClass1&Category=Nightly)&#124;Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `TestClass1` **and** `Category` is `CategoryA` **or** `Priority` is 1. |
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dotnet test --filter "FullyQualifiedName~TestClass1|Category=Nightly"</code></td>
+<td>Runs tests which has <code>TestClass1</code> in <code>FullyQualifiedName</code> <strong>or</strong> <code>Category</code> is <code>Nightly</code>.</td>
+</tr>
+<tr>
+<td><code>dotnet test --filter "FullyQualifiedName~TestClass1&amp;Category=Nightly"</code></td>
+<td>Runs tests which has <code>TestClass1</code> in <code>FullyQualifiedName</code> <strong>and</strong> <code>Category</code> is <code>Nightly</code>.</td>
+</tr>
+<tr>
+<td><code>dotnet test --filter "(FullyQualifiedName~TestClass1&amp;Category=Nightly)|Priority=1"</code></td>
+<td>Runs tests which have either <code>FullyQualifiedName</code> containing <code>TestClass1</code> <strong>and</strong> <code>Category</code> is <code>CategoryA</code> <strong>or</strong> <code>Priority</code> is 1.</td>
+</tr>
+</tbody>
+</table>

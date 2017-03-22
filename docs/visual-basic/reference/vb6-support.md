@@ -1,3 +1,33 @@
+---
+title: "Support Statement for Visual Basic 6.0 | Microsoft Docs"
+ms.date: "2017-03-23"
+ms.prod: VB
+ms.technology: 
+  - "devlang-visual-basic"
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "VB6 support"
+  - "Visual Basic 6.0 support"
+ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
+author: "paulyuk"
+ms.author: "paulyuk"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
 # Support Statement for Visual Basic 6.0 on Windows Vista, Windows Server 2008, Windows 7, Windows 8 and Windows 8.1, Windows Server 2012, Windows 10, and Windows Server 2016
 
 Update: March 2016

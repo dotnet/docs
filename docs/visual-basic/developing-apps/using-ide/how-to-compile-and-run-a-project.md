@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "compilation"
   - "Visual Basic projects, compiling"
 ms.assetid: 967f5606-5656-489b-bd14-018cf08408c4
+redirect_url: https://docs.microsoft.com/en-us/visualstudio/ide/compiling-and-building-in-visual-studio
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"

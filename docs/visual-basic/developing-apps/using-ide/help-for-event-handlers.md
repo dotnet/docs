@@ -46,6 +46,7 @@ dev_langs:
 helpviewer_keywords: 
   - "event handlers, getting F1 Help in Visual Basic code"
 ms.assetid: 2c92decf-844e-4ba4-82c7-f2fc0adc3002
+redirect_url: https://docs.microsoft.com/en-us/visualstudio/ide/using-intellisense
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"

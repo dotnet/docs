@@ -4,7 +4,7 @@ description: Developing Libraries with Cross Platform Tools
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
-ms.date: 06/20/2016
+ms.date: 03/23/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -47,29 +47,23 @@ In that article, there is a table which maps .NET Standard versions to various i
 
 Here's what this table means for the purposes of creating a library:
 
-The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.  You control the range of targetable platforms and versions by picking a version of `netstandardX.X` (Where `X.X` is a version number) and adding it to your `project.json` file.
-
-Additionally, the corresponding [NuGet package to depend on](https://www.nuget.org/packages/NETStandard.Library/) is `NETStandard.Library` version `1.6.0`.  Although there's nothing preventing you from depending on `Microsoft.NETCore.App` like with console apps, it's generally not recommended.  If you need APIs from a package not specified in `NETStandard.Library`, you can always specify that package in addition to `NETStandard.Library` in the `dependencies` section of your `project.json` file.
+The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.  You control the range of targetable platforms and versions by picking a version of `netstandardX.X` (Where `X.X` is a version number) and adding it to your project file (`.csproj` or `.fsproj`).
 
 You have three primary options when targeting the .NET Standard, depending on your needs.
 
-1. You can use the latest version of the .NET Standard - `netstandard1.6` - which is for when you want access to the most APIs and don't mind if you have less reach across implementations.
-2. You can use a lower version of the .NET Standard to target earlier .NET implementations. The cost here is not having access to some of the latest APIs.
-    
-    For example, if you wanted to have guaranteed compatibility with .NET Framework 4.6 and higher, you would pick `netstandard1.3`:
+1. You can use the default version of the .NET Standard supplied by templates - `netstandard1.4` - which gives you access to most APIs on .NET Standard while still being compatible with UWP, .NET Framework 4.6.1, and the forthcoming .NET Standard 2.0.
 
-    ```json
-    {
-        "dependencies":{
-            "NETStandard.Library":"1.6.0"
-        },
-        "frameworks":{
-            "netstandard1.3":{}
-        }
-    }
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+        <PropertyGroup>
+            <TargetFramework>netstandard1.4</TargetFramework>
+        </PropertyGroup>
+    </Project>
     ```
+
+2. You can use a lower or higher version of the .NET Standard by modifying the value in the `TargetFramework` node of your project file.
     
-    .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher.  However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones.  This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher.  Select the Standard version that has the right mix of APIs and platform support for your needs.
+    .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher.  However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones.  This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher.  Select the Standard version that has the right mix of APIs and platform support for your needs.  We recommend `netstandard1.4` for now.
     
 3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
 
@@ -339,6 +333,11 @@ For the first option, you'll need to include the following in your `project.json
 
 Here's an example `project.json` for a native `.dll` file in the root directory of the project which runs on Windows:
 
+TODO: probably this in it
+```xml
+<RuntimeIdentifiers>win10-x64;</RuntimeIdentifiers>
+```
+
 ```json
 {
     "buildOptions":{
@@ -378,73 +377,51 @@ To see an example of packaging up cross-platform native binaries, check out the 
 
 ## How to test libraries on .NET Core
 
-It's important to be able to test across platforms.  It's easiest to use [xUnit](http://xunit.github.io/), which is also the testing tool used by .NET Core projects.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that all source projects are under a top-level `/src` folder and all test projects are under a top-level `/test` folder.
+It's important to be able to test across platforms.  You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box.  Both either are perfectly suitable for unit testing your library on .NET Core.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that test and source directories live in the same top-level directory.
 
-1. Ensure you have a `global.json` file at the solution level which understands where the test projects are:
+1. Set up your solution.  You can do so with the following commands:
+
+```bash
+mkdir SolutionWithSrcAndTest
+cd SolutionWithSrcAndTest
+dotnet new sln
+dotnet new classlib -o MyProject
+dotnet new xunit -o MyProject.Test
+dotnet sln add MyProject/MyProject.csproj
+dotnet sln add MyProject.Test/MyProject.Test.csproj
+```
+
+This will create projects and link them together in a solution.  Your directory for `SolutionWithSrcAndTest` should look like this:
+
+```    
+/SolutionWithSrcAndTest
+|__SolutionWithSrcAndTest.sln
+|__MyProject/
+|__MyProject.Test/
+```
+
+2. Navigate to the test project's directory and add a reference to `MyProject.Test` from `MyProject`.
+
+```bash
+cd MyProject.Test
+dotnet add reference ../MyProject/MyProject.csproj
+```
+
+3. Restore packages and build projects:
+
+```bash
+dotnet restore
+dotnet build
+```
+
+4. Verify that xUnit runs by executing the `dotnet test` command.  If you chose to use MSTest, then the MSTest console runner should run instead.
     
-    ```json
-    {
-        "projects":[ "src", "test"]
-    }
-    ```
-    
-    Your solution folder structure should then look like this:
-    
-    ```
-    /SolutionWithSrcAndTest
-    |__global.json
-    |__/src
-    |__/test
-    ```
-    
-2. Create a new test project by creating a project folder under your `/test` folder, and a `project.json` file in the new project folder.  To create the `project.json` file you can run the `dotnet new` command and modify the `project.json` file afterwards.  The file should have the following:
-
-   * `netcoreapp1.0` listed as the only entry under `frameworks`.
-   * A reference to `Microsoft.NETCore.App` version `1.0.0`.
-   * A reference to xUnit version `2.2.0-beta2-build3300`.
-   * A reference to `dotnet-test-xunit` version `2.2.0-preview2-build1029`
-   * A project reference to the library being tested.
-   * The entry `"testRunner":"xunit"`.
-   
-   Here's an example (`LibraryUnderTest` version `1.0.0` is the library being tested):
-   
-   ```json
-   {
-        "testRunner":"xunit",
-        "dependencies":{
-            "LibraryUnderTest":{
-                "version":"1.0.0",
-                "target":"project"
-            },
-            "Microsoft.NETCore.App":{
-                "version":"1.0.0",
-                "type":"platform"
-            },
-            "xunit":"2.2.0-beta2-build3300",
-            "dotnet-test-xunit":"2.2.0-preview2-build1029",
-        },
-        "frameworks":{
-            "netcoreapp1.0":{}
-        }
-   }
-   ```
-3. Restore packages by running `dotnet restore`.  You should do this at the solution level if you haven't restored packages yet.
-
-4. Navigate to your test project and run tests with `dotnet test`:
-
-    ```
-    $ cd path-to-your-test-project
-    $ dotnet test
-    ```
-
 And that's it!  You can now test your library across all platforms using command line tools.  To continue testing now that you have everything set up, testing your library is very simple:
 
 1. Make changes to your library.
 2. Run tests from the command line, in your test directory, with `dotnet test` command.
 
 Your code will be automatically rebuilt when you invoke `dotnet test` command.
-
-Just remember to run `dotnet restore` from the command line any time you add a new dependency and you'll be good to go!
 
 ## How to use multiple projects
 
@@ -453,18 +430,28 @@ A common need for larger libraries is to place functionality in different projec
 Imagine you wished to build a library which could be consumed in idiomatic C# and F#.  That would mean that consumers of your library consume them in ways which are natural to C# or F#.  For example, in C# you might consume the library like this:
 
 ```csharp
-var convertResult = await AwesomeLibrary.ConvertAsync(data);
-var result = AwesomeLibrary.Process(convertResult);
+using AwesomeLibrary.CSharp;
+
+...
+public Task DoThings(Data data)
+{
+    var convertResult = await AwesomeLibrary.ConvertAsync(data);
+    var result = AwesomeLibrary.Process(convertResult);
+    // do something with result
+}
 ```  
 
 In F#, it might look like this:
 
 ```fsharp
-let result =
-    data
-    |> AwesomeLibrary.convertAsync 
-    |> Async.RunSynchronously 
-    |> AwesomeLibrary.process
+open AwesomeLibrary.FSharp
+
+...
+
+let doWork data = async {
+    let! result = AwesomeLibrary.AsyncConvert data
+    // do something with result
+}
 ```
 
 Consumption scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.  A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.  The rest of the section will use the following names:
@@ -473,94 +460,41 @@ Consumption scenarios like this mean that the APIs being accessed have to have a
 * **AwesomeLibrary.CSharp** - A project with public APIs intended for consumption in C#
 * **AwesomeLibrary.FSharp** - A project with public APIs intended for consumption in F#
 
+You can run the following commands in your terminal to produce the same structure as this guide:
+
+```console
+dotnet new sln
+mkdir AwesomeLibrary.Core && cd AwesomeLibrary.Core && dotnet new classlib
+cd ..
+mkdir AwesomeLibrary.CSharp && cd AwesomeLibrary.CSharp && dotnet new classlib
+cd ..
+mkdir AwesomeLibrary.FSharp && cd AwesomeLibrary.FSharp && dotnet new classlib -lang F#
+cd ..
+dotnet sln add AwesomeLibrary.Core/AwesomeLibrary.Core/csproj
+dotnet sln add AwesomeLibrary.CSharp/AwesomeLibrary.CSharp/csproj
+dotnet sln add AwesomeLibrary.FSharp/AwesomeLibrary.FSharp/csproj
+```
+
+This will add the three projects above and a solution file which links them together.  Creating the solution file and linking projects will allow you to restore and build projects from a top-level.
+
 ### Project-to-project referencing
 
-The best way to reference a project is to do the following:
+The best way to reference a project is to use the .NET CLI to add a project reference.  From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
-1. Make sure the project you wish to reference has a good name for its containing folder on disk.  This will be the name used to reference your project.
-2. Reference the name from (1) in the `project.json` file of the consuming project specifying `"target":"project"`.
-
-The `project.json` files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** now need to reference **AwesomeLibrary.Core** as a `project` target.  If you aren't multitargeting, you can use the global `dependencies` entry:
-
-```json
-{
-    "dependencies":{
-        "AwesomeLibrary.Core":{
-            "target":"project"
-        }
-    }
-}
+```console
+$ dotnet add reference ../AwesomeLibrary.Core.csproj
 ```
 
-If you are multitargeting, you may not be able to use a global `dependencies` entry and may have to reference **AwesomeLibrary.Core** in a target-level `dependencies` entry.  For example, if you were targeting `netstandard1.6`, you could do so like this:
+The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** will now reference **AwesomeLibrary.Core** as a `ProjectReference` target.  You can verify this by inspecting the project files and seeing the following in them:
 
-```json
-{
-    "frameworks":{
-        "netstandard1.6":{
-            "dependencies":{
-                "AwesomeLibrary.Core":{
-                    "target":"project"
-                }
-            }
-        }
-    }
-}
+```xml
+<ItemGroup>
+    <ProjectReference Include="..\AwesomeLibrary.Core\AwesomeLibrary.Core.csproj" />
+</ItemGroup>
 ```
+
+You can add this section to each project file manually if you prefer not to use the .NET CLI.
 
 ### Structuring a Solution
 
-Another important aspect of multi-project solutions is establishing a good overall project structure. To structure a multi-project library, you must use top-level `/src` and `/test` folders:
-
-```
-/AwesomeLibrary
-|__global.json
-|__/src
-   |__/AwesomeLibrary.Core
-      |__Source Files
-      |__project.json
-   |__/AwesomeLibrary.CSharp
-      |__Source Files
-      |__project.json
-   |__/AwesomeLibrary.FSharp
-      |__Source Files
-      |__project.json
-|__/test
-   |__/AwesomeLibrary.Core.Tests
-      |__Test Files
-      |__project.json
-   |__/AwesomeLibrary.CSharp.Tests
-      |__Test Files
-      |__project.json
-   |__/AwesomeLibrary.FSharp.Tests
-      |__Test Files
-      |__project.json
-```
-
-The `global.json` file for this solution would look like this:
-
-```json
-{
-    "projects":["src", "test"]
-}
-```
-
-This approach follows the same pattern established by project templates in the `dotnet new` command establish, where all projects are placed under a `/src` directory and all tests are placed under a `/test` directory.
-
-Here's how you could restore packages, build, and test your entire project:
-
-```
-$ dotnet restore
-$ cd src/AwesomeLibrary.FSharp
-$ dotnet build
-$ cd ../AwesomeLibrary.CSharp
-$ dotnet build
-$ cd ../../test/AwesomeLibrary.Core.Tests
-$ dotnet test
-$ cd ../AwesomeLibrary.CSharp.Tests
-$ dotnet test
-$ cd ../AwesomeLibrary.FSharp.Tests
-$ dotnet test
-```
-
-And that's it!
+Another important aspect of multi-project solutions is establishing a good overall project structure. You can organize code however you like, and as long as you link each project to your solution file with `dotnet sln add`, you will be able to run `dotnet restore` and `dotnet build` at the solution level.

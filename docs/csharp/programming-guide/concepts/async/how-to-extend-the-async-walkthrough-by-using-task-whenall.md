@@ -178,7 +178,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
 5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
     ```cs  
-    Dim total = lengths.Sum()  
+    int total = lengths.Sum();
     ```  
   
 ### To test the Task.WhenAll solutions  

@@ -10,8 +10,7 @@ namespace ClassesAndObjects
         }
         public static void OutUsage() 
         {
-            int res, rem;
-            Divide(10, 3, out res, out rem);
+            Divide(10, 3, out int res, out int rem);
             Console.WriteLine("{0} {1}", res, rem);	// Outputs "3 1"
         }
     }

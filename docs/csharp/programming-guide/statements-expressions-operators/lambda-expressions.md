@@ -149,7 +149,7 @@ public partial class Form1 : Form
 
  You can add the same event handler by using an async lambda. To add this handler, add an `async` modifier before the lambda parameter list, as the following example shows.  
   
-```c#  
+```cs  
 public partial class Form1 : Form  
 {  
     public Form1()  

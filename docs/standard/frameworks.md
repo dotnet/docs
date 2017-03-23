@@ -58,6 +58,9 @@ A framework is typically referenced by a short target framework moniker or *TFM*
 |                            |              | net46                                        |
 |                            |              | net461                                       |
 |                            |              | net462                                       |
+| .NET Core                  | netcore      | netcore [netcore45]                          |
+|                            |              | netcore45 [win, win8]                        |
+|                            |              | netcore451 [win81]                           |
 | .NET MicroFramework        | netmf        | netmf                                        |
 | Windows                    | win          | win [win8, netcore45]                        |
 |                            |              | win8 [netcore45, win]                        |

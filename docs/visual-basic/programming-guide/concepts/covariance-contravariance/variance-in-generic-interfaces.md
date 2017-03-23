@@ -41,17 +41,58 @@ translation.priority.mt:
   
  Covariance permits a method to have a more derived return type than that defined by the generic type parameter of the interface. To illustrate the covariance feature, consider these generic interfaces: `IEnumerable(Of Object)` and `IEnumerable(Of String)`. The `IEnumerable(Of String)` interface does not inherit the `IEnumerable(Of Object)` interface. However, the `String` type does inherit the `Object` type, and in some cases you may want to assign objects of these interfaces to each other. This is shown in the following code example.  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```vb  
+Dim strings As IEnumerable(Of String) = New List(Of String)  
+Dim objects As IEnumerable(Of Object) = strings  
+```  
+  
  In earlier versions of the .NET Framework, this code causes a compilation error in Visual Basic with `Option Strict On`. But now you can use `strings` instead of `objects`, as shown in the previous example, because the <xref:System.Collections.Generic.IEnumerable%601> interface is covariant.  
   
  Contravariance permits a method to have argument types that are less derived than that specified by the generic parameter of the interface. To illustrate contravariance, assume that you have created a `BaseComparer` class to compare instances of the `BaseClass` class. The `BaseComparer` class implements the `IEqualityComparer(Of BaseClass)` interface. Because the <xref:System.Collections.Generic.IEqualityComparer%601> interface is now contravariant, you can use `BaseComparer` to compare instances of classes that inherit the `BaseClass` class. This is shown in the following code example.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```vb  
+' Simple hierarchy of classes.  
+Class BaseClass  
+End Class  
+  
+Class DerivedClass  
+    Inherits BaseClass  
+End Class  
+  
+' Comparer class.  
+Class BaseComparer  
+    Implements IEqualityComparer(Of BaseClass)  
+  
+    Public Function Equals1(ByVal x As BaseClass,  
+                            ByVal y As BaseClass) As Boolean _  
+                            Implements IEqualityComparer(Of BaseClass).Equals  
+        Return (x.Equals(y))  
+    End Function  
+  
+    Public Function GetHashCode1(ByVal obj As BaseClass) As Integer _  
+        Implements IEqualityComparer(Of BaseClass).GetHashCode  
+        Return obj.GetHashCode  
+    End Function  
+End Class  
+Sub Test()  
+    Dim baseComparer As IEqualityComparer(Of BaseClass) = New BaseComparer  
+    ' Implicit conversion of IEqualityComparer(Of BaseClass) to   
+    ' IEqualityComparer(Of DerivedClass).  
+    Dim childComparer As IEqualityComparer(Of DerivedClass) = baseComparer  
+End Sub  
+```  
+  
  For more examples, see [Using Variance in Interfaces for Generic Collections (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md).  
   
  Variance in generic interfaces is supported for reference types only. Value types do not support variance. For example, `IEnumerable(Of Integer)` cannot be implicitly converted to `IEnumerable(Of Object)`, because integers are represented by a value type.  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+```vb  
+Dim integers As IEnumerable(Of Integer) = New List(Of Integer)  
+' The following statement generates a compiler error  
+' with Option Strict On, because Integer is a value type.  
+' Dim objects As IEnumerable(Of Object) = integers  
+```  
+  
  It is also important to remember that classes that implement variant interfaces are still invariant. For example, although <xref:System.Collections.Generic.List%601> implements the covariant interface <xref:System.Collections.Generic.IEnumerable%601>, you cannot implicitly convert `List(Of Object)` to `List(Of String)`. This is illustrated in the following code example.  
   
 ```vb  

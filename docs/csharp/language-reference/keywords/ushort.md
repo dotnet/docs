@@ -1,6 +1,6 @@
 ---
 title: "ushort (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -32,6 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ushort (C# Reference)
+
 The `ushort` keyword indicates an integral data type that stores values according to the size and range shown in the following table.  
   
 |Type|Range|Size|.NET Framework type|  
@@ -39,25 +40,32 @@ The `ushort` keyword indicates an integral data type that stores values accordin
 |`ushort`|0 to 65,535|Unsigned 16-bit integer|<xref:System.UInt16?displayProperty=fullName>|  
   
 ## Literals  
- You can declare and initialize a `ushort` variable such as this example:  
+
+You can declare and initialize a `ushort` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `ushort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=fullName> or greater than <xref:System.UInt16.MaxValue?displayProperty=fullName>, a compilation error occurs.
+
+In the following example, integers equal to 65,034 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `ushort` values.    
   
-```  
-  
-ushort myShort = 65535;  
-```  
-  
- In the previous declaration, the integer literal `65535` is implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `ushort`. If the integer literal exceeds the range of `ushort`, a compilation error will occur.  
+[!code-cs[UShort](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#UShort)]  
+
+> [!NOTE] 
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
+
+Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+
+[!code-cs[UShort](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#UShortS)]  
+ 
+## Compiler overload resolution
   
  A cast must be used when you call overloaded methods. Consider, for example, the following overloaded methods that use `ushort` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```  
+```cs  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(ushort s) {}  
 ```  
-  
+ 
  Using the `ushort` cast guarantees that the correct type is called, for example:  
   
-```  
+```cs  
 // Calls the method with the int parameter:  
 SampleMethod(5);  
 // Calls the method with the ushort parameter:  
@@ -69,35 +77,32 @@ SampleMethod((ushort)5);
   
  There is a predefined implicit conversion from [byte](../../../csharp/language-reference/keywords/byte.md) or [char](../../../csharp/language-reference/keywords/char.md) to `ushort`. Otherwise a cast must be used to perform an explicit conversion. Consider, for example, the following two `ushort` variables `x` and `y`:  
   
-```  
-  
+```cs 
 ushort x = 5, y = 12;  
 ```  
   
  The following assignment statement will produce a compilation error, because the arithmetic expression on the right side of the assignment operator evaluates to `int` by default.  
   
-```  
-  
+```cs  
 ushort z = x + y;   // Error: conversion from int to ushort  
 ```  
   
  To fix this problem, use a cast:  
   
-```  
-  
+```cs 
 ushort z = (ushort)(x + y);   // OK: explicit conversion   
 ```  
   
  It is possible though to use the following statements, where the destination variable has the same storage size or a larger storage size:  
   
-```  
+```cs
 int m = x + y;  
 long n = x + y;  
 ```  
   
  Notice also that there is no implicit conversion from floating-point types to `ushort`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```  
+```cs  
 // Error -- no implicit conversion from double:  
 ushort x = 3.0;   
 // OK -- explicit conversion:  

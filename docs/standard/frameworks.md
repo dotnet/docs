@@ -36,47 +36,43 @@ The following table defines the set of frameworks that you can use, how they're 
 
 A framework is typically referenced by a short target framework moniker or *TFM*. In .NET Standard, this is also generalized to *TxM* to allow a single reference to multiple frameworks. The NuGet clients support the following frameworks. Equivalents are shown within brackets (`[]`).
 
-| Name                       | Abbreviation | TFMs/TxMs      |
-| -------------------------- | ------------ | -------------- |
-| .NET Standard              | netstandard  | netstandard1.0 |
-|                            |              | netstandard1.1 |
-|                            |              | netstandard1.2 |
-|                            |              | netstandard1.3 |
-|                            |              | netstandard1.4 |
-|                            |              | netstandard1.5 |
-|                            |              | netstandard1.6 |
-| .NET Core App              | netcoreapp   | netcoreapp1.0  |
-|                            |              | netcoreapp1.1  |
-| .NET Framework             | net          | net11          |
-|                            |              | net20 |
-|                            |              | net35 |
-|                            |              | net40 |
-|                            |              | net403 |
-|                            |              | net45 |
-|                            |              | net451 |
-|                            |              | net452 |
-|                            |              | net46 |
-|                            |              | net461 |
-|                            |              | net462 |
-| .NET Core                  | netcore      | netcore [netcore45] |
-|                            |              | netcore45 [win, win8] |
-|                            |              | netcore451 [win81] |
-|                            |              | netcore50 |
-| .NET MicroFramework        | netmf        | netmf |
-| Windows                    | win          | win [win8, netcore45] |
-|                            |              | win8 [netcore45, win] |
-|                            |              | win81 [netcore451] |
+| Name                       | Abbreviation | TFMs/TxMs                                    |
+| -------------------------- | ------------ | -------------------------------------------- |
+| .NET Standard              | netstandard  | netstandard1.0                               |
+|                            |              | netstandard1.1                               |
+|                            |              | netstandard1.2                               |
+|                            |              | netstandard1.3                               |
+|                            |              | netstandard1.4                               |
+|                            |              | netstandard1.5                               |
+|                            |              | netstandard1.6                               |
+| .NET Core App              | netcoreapp   | netcoreapp1.0                                |
+|                            |              | netcoreapp1.1                                |
+| .NET Framework             | net          | net11                                        |
+|                            |              | net20                                        |
+|                            |              | net35                                        |
+|                            |              | net40                                        |
+|                            |              | net403                                       |
+|                            |              | net45                                        |
+|                            |              | net451                                       |
+|                            |              | net452                                       |
+|                            |              | net46                                        |
+|                            |              | net461                                       |
+|                            |              | net462                                       |
+| .NET MicroFramework        | netmf        | netmf                                        |
+| Windows                    | win          | win [win8, netcore45]                        |
+|                            |              | win8 [netcore45, win]                        |
+|                            |              | win81 [netcore451]                           |
 |                            |              | win10 (not supported by Windows 10 platform) |
-| Silverlight                | sl           | sl4 |
-|                            |              | sl5 |
-| Windows Phone              | wp           | wp [wp7] |
-|                            |              | wp7 |
-|                            |              | wp75 |
-|                            |              | wp8 |
-|                            |              | wp81 |
-|                            |              | wpa81 |
-| Universal Windows Platform | uap          | uap [uap10.0] |
-|                            |              | uap10.0 |
+| Silverlight                | sl           | sl4                                          |
+|                            |              | sl5                                          |
+| Windows Phone              | wp           | wp [wp7]                                     |
+|                            |              | wp7                                          |
+|                            |              | wp75                                         |
+|                            |              | wp8                                          |
+|                            |              | wp81                                         |
+|                            |              | wpa81                                        |
+| Universal Windows Platform | uap          | uap [uap10.0]                                |
+|                            |              | uap10.0                                      |
 
 ## Deprecated frameworks
 

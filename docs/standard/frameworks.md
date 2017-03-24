@@ -24,9 +24,7 @@ When you *target a framework* or target several of them, you've decided which se
 
 ## Referring to frameworks
 
-There are several ways to refer to frameworks in written form, most of which are used in this documentation. They're described below, both as a legend for interpreting the documentation but also to guide use in other documents.
-
-Using .NET Framework 4.6.2 as an example, the following forms are used:
+There are several ways to refer to frameworks, most of which are used throughout the .NET Core documentation. Using .NET Framework 4.6.2 as an example, the following formats are used:
 
 **Referring to a product**
 

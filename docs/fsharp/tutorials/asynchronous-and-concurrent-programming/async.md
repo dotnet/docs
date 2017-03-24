@@ -25,7 +25,7 @@ The key concept to understand is that an async expression’s type is `Async<'T>
 
 For example, say you wanted to download the HTML from dotnetfoundation.org without blocking the main thread. You can accomplish it like this:
 
-```fsharpharp
+```fsharp
 let fetchHtmlAsync url = async {
     let uri = new System.Uri(url)
     let webClient = new System.Net.WebClient()

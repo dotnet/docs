@@ -4,7 +4,7 @@ description: Unit Testing in .NET Core using dotnet test
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn
-ms.date: 03/14/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -147,7 +147,7 @@ Now that you've made one test pass, it's time to write more. There are a few oth
  
 Instead of creating new tests, leverage these two attributes to create a single theory that tests several values less than two, which is the lowest prime number:
 
-[!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?region=Sample_TestCode)]
+[!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
 Run `dotnet test`, and two of these tests fail. To make all of the tests pass, change the `if` clause at the beginning of the method:
 

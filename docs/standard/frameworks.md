@@ -22,11 +22,32 @@ The objects and methods of frameworks are called Application Programming Interfa
 
 When you *target a framework* or target several of them, you've decided which set(s) of APIs and which version(s) of those APIs you would like to use. Frameworks are referenced in several ways: by product name, by long- or short-form framework names, and by family.
 
-| Reference | Name                                      |
-| --------- | ----------------------------------------- |
-| Product   | .NET Framework 4.6.2 or .NET 4.6.2        |
-| Framework | `.NETFramework,Version=4.6.2` or `net462` |
-| Family    | `.NETFramework` or `net`                  |
+## Referring to frameworks
+
+There are several ways to refer to frameworks in written form, most of which are used in this documentation. They're described below, both as a legend for interpreting the documentation but also to guide use in other documents.
+
+Using .NET Framework 4.6.2 as an example, the following forms are used:
+
+**Referring to a product**
+
+You can refer to a .NET platform or runtime. Both are equally valid.
+
+* .NET Framework 4.6.2
+* .NET 4.6.2
+
+**Referring to a framework**
+
+You can refer to a framework or targeting of a framework using long- or short-forms of the TFM. Both are equally valid.
+
+* `.NETFramework,Version=4.6.2`
+* `net462`
+
+**Referring to a family of frameworks**
+
+You can refer to a family of frameworks using long- or short-forms of the framework ID. Both are equally valid.
+
+* `.NETFramework`
+* `net`
 
 ## Latest framework versions
 

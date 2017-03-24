@@ -4,7 +4,7 @@ description: Learn how to restore dependencies and project-specific tools with t
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 03/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -32,6 +32,8 @@ For dependencies, you specify where the restored packages are placed during the 
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
+The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](https://docs.microsoft.com/nuget/schema/nuget-config-file).
+
 ## Arguments
 
 `ROOT` 
@@ -52,7 +54,7 @@ Specifies a NuGet package source to use during the restore operation. This overr
 
 Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Provide multiple RIDs by specifying this option multiple times.
 
-`--packages <PACKAGES_DIRECTORY]`
+`--packages <PACKAGES_DIRECTORY>`
 
 Specifies the directory for restored packages. 
 

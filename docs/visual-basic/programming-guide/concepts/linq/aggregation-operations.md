@@ -2,7 +2,7 @@
 title: "Aggregation Operations (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,19 +15,16 @@ ms.assetid: 0f47e92c-5dd2-4007-baf4-c5fe5dc3b4a8
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Aggregation Operations (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 An aggregation operation computes a single value from a collection of values. An example of an aggregation operation is calculating the average daily temperature from a month's worth of daily temperature values.  
   
  The following illustration shows the results of two different aggregation operations on a sequence of numbers. The first operation sums the numbers. The second operation returns the maximum value in the sequence.  
   
- ![LINQ Aggregation Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_aggregation.png "LINQ_Aggregation")  
+ ![LINQ Aggregation Operations](../../../../csharp/programming-guide/concepts/linq/media/linq-aggregation.png "LINQ_Aggregation")  
   
  The standard query operator methods that perform aggregation operations are listed in the following section.  
   
@@ -46,34 +43,34 @@ An aggregation operation computes a single value from a collection of values. An
 ## Query Expression Syntax Examples  
   
 ### Average  
- The following code example uses the `Aggregate Into Average` clause in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] to calculate the average temperature in an array of numbers that represent temperatures.  
+ The following code example uses the `Aggregate Into Average` clause in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] to calculate the average temperature in an array of numbers that represent temperatures.  
   
- [!code-vb[CsLINQAggregating#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_1.vb)]  
+ [!code-vb[CsLINQAggregating#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/aggregation-operations_1.vb)]  
   
 ### Count  
- The following code example uses the `Aggregate Into Count` clause in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] to count the number of values in an array that are greater than or equal to 80.  
+ The following code example uses the `Aggregate Into Count` clause in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] to count the number of values in an array that are greater than or equal to 80.  
   
- [!code-vb[CsLINQAggregating#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_2.vb)]  
+ [!code-vb[CsLINQAggregating#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/aggregation-operations_2.vb)]  
   
 ### LongCount  
  The following code example uses the `Aggregate Into LongCount` clause to count the number of values in an array.  
   
- [!code-vb[CsLINQAggregating#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_3.vb)]  
+ [!code-vb[CsLINQAggregating#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/aggregation-operations_3.vb)]  
   
 ### Max  
  The following code example uses the `Aggregate Into Max` clause  to calculate the maximum temperature in an array of numbers that represent temperatures.  
   
- [!code-vb[CsLINQAggregating#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_4.vb)]  
+ [!code-vb[CsLINQAggregating#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/aggregation-operations_4.vb)]  
   
 ### Min  
  The following code example uses the `Aggregate Into Min` clause  to calculate the minimum temperature in an array of numbers that represent temperatures.  
   
- [!code-vb[CsLINQAggregating#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_5.vb)]  
+ [!code-vb[CsLINQAggregating#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/aggregation-operations_5.vb)]  
   
 ### Sum  
  The following code example uses the `Aggregate Into Sum` clause  to calculate the total expense amount from an array of values that represent expenses.  
   
- [!code-vb[CsLINQAggregating#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_6.vb)]  
+ [!code-vb[CsLINQAggregating#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/aggregation-operations_6.vb)]  
   
 ## See Also  
  <xref:System.Linq>   

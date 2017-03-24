@@ -2,12 +2,12 @@
 title: "How to: Modify an Office Open XML Document (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 467d489c-2b1b-453b-a757-8ac180e82a96
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Modify an Office Open XML Document (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic presents an example that opens an Office Open XML document, modifies it, and saves it.  
   
  For more information on Office Open XML, see [www.openxmldeveloper.org](http://go.microsoft.com/fwlink/?LinkID=95573).  
@@ -27,7 +29,7 @@ This topic presents an example that opens an Office Open XML document, modifies 
   
  This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```cs  
+```csharp  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  

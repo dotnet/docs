@@ -1,13 +1,13 @@
 ---
 title: "My.Settings Object | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "My.MySettingsProperty.Settings"
@@ -20,27 +20,15 @@ ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # My.Settings Object
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Provides properties and methods for accessing the application's settings.  
   
 ## Remarks  
- The `My.Settings` object provides access to the application's settings and allows you to dynamically store and retrieve property settings and other information for your application. For more information, see [Managing Application Settings (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
+ The `My.Settings` object provides access to the application's settings and allows you to dynamically store and retrieve property settings and other information for your application. For more information, see [Managing Application Settings (.NET)](/visual-studio/ide/managing-application-settings-dotnet).  
   
 ## Properties  
  The properties of the `My.Settings` object provide access to your application's settings. To add or remove settings, use the **Settings Designer**.  
@@ -57,8 +45,9 @@ Provides properties and methods for accessing the application's settings.
   
 ## Methods  
   
+|||  
+|-|-|  
 |Method|Description|  
-|---|---|  
 |`Reload`|Reloads the user settings from the last saved values.|  
 |`Save`|Saves the current user settings.|  
   
@@ -67,8 +56,9 @@ Provides properties and methods for accessing the application's settings.
 ## Tasks  
  The following table lists examples of tasks involving the `My.Settings` object.  
   
+|||  
+|-|-|  
 |To|See|  
-|---|---|  
 |Read an application setting|[How to: Read Application Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
 |Change a user setting|[How to: Change User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)|  
 |Persist user settings|[How to: Persist User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)|  
@@ -77,7 +67,7 @@ Provides properties and methods for accessing the application's settings.
 ## Example  
  This example displays the value of the `Nickname` setting.  
   
- [!code-vb[VbVbalrMyResources#14](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-settings-object_1.vb)]  
+ [!code-vb[VbVbalrMyResources#14](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#14)]  
   
  For this example to work, your application must have a `Nickname` setting, of type `String`.  
   
@@ -87,4 +77,4 @@ Provides properties and methods for accessing the application's settings.
  [How to: Change User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)   
  [How to: Persist User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)   
  [How to: Create Property Grids for User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)   
- [Managing Application Settings (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet)
+ [Managing Application Settings (.NET)](/visual-studio/ide/managing-application-settings-dotnet)

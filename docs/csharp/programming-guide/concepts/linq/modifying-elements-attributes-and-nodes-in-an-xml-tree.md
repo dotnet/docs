@@ -2,12 +2,12 @@
 title: "Modifying Elements, Attributes, and Nodes in an XML Tree3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 0ed22e4e-4c6b-4eb1-b0eb-06685efd8c33
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Modifying Elements, Attributes, and Nodes in an XML Tree
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 The following table summarizes the methods and properties that you can use to modify an element, its child elements, or its attributes.  
   
  The following methods modify an <xref:System.Xml.Linq.XElement>.  

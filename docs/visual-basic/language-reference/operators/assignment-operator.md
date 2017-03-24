@@ -1,13 +1,13 @@
 ---
 title: "= Operator (Visual Basic) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.Assign"
@@ -21,23 +21,11 @@ ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
 caps.latest.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # = Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Assigns a value to a variable or property.  
   
 ## Syntax  
@@ -66,15 +54,15 @@ variableorproperty = value
 ## Example  
  The following example demonstrates the assignment operator. The value on the right is assigned to the variable on the left.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/assignment-operator_1.vb)]  
   
 ## See Also  
  [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   
  [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   
  [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)   
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)   
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
+ [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/operator-visual-basic.md)   
+ [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/operator-visual-basic.md)   
+ [\\= Operator](../../../visual-basic/language-reference/operators/operator.md)   
  [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)   
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
  [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   

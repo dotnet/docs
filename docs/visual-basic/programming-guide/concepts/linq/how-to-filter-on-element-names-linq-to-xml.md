@@ -2,7 +2,7 @@
 title: "How to: Filter on Element Names (LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +15,11 @@ ms.assetid: b1437b4a-48aa-4546-834a-d6d3ab015fe1
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
+manager: "wpickett"
 ---
 # How to: Filter on Element Names (LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 When you call one of the methods that return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, you can filter on the element name.  
   
 ## Example  

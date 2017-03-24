@@ -2,12 +2,12 @@
 title: "How to: Debug Empty Query Results Sets (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Debug Empty Query Results Sets (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 One of the most common problems when querying XML trees is that if the XML tree has a default namespace, the developer sometimes writes the query as though the XML were not in a namespace.  
   
  The first set of examples in this topic shows a typical way that XML in a default namespace is loaded, and is queried improperly.  
@@ -29,7 +31,7 @@ One of the most common problems when querying XML trees is that if the XML tree 
 ## Example  
  This example shows creation of XML in a namespace, and a query that returns an empty result set.  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>1</Child>  
@@ -60,7 +62,7 @@ End of result set
   
  The solution is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XElement.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>1</Child>  

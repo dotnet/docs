@@ -1,9 +1,13 @@
 ---
 title: "using (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "using_CSharpKeyword"
@@ -16,30 +20,17 @@ ms.assetid: 124e1a63-2a4b-4132-b269-3b6d8d3ef72d
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # using (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 The `using` keyword has two major uses:  
   
 -   As a directive, when it is used to create an alias for a namespace or to import types defined in other namespaces. See [using Directive](../../../csharp/language-reference/keywords/using-directive.md).  
   
 -   As a statement, when it defines a scope at the end of which an object will be disposed. See [using Statement](../../../csharp/language-reference/keywords/using-statement.md).  
   
-In addition, the [using static](using-static.md) directive lets you define a type whose static members you can access without specifying a type name.
-
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

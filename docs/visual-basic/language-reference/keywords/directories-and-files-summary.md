@@ -1,13 +1,13 @@
 ---
 title: "Directories and Files Summary (Visual Basic) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,24 +19,12 @@ ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
 caps.latest.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Directories and Files Summary (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+[!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature gives you greater productivity and performance in file I/O operations than using these members. For more information, see <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   

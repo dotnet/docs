@@ -2,12 +2,12 @@
 title: "Getting Started with LINQ in C# | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -20,24 +20,11 @@ ms.assetid: b8700c1f-05c9-4380-b6eb-e34c4da38e54
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
-# Getting Started with LINQ in C#
+# Getting Started with LINQ in C# #
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This section contains basic background information that will help you understand the rest of the LINQ documentation and samples.  
   
 ## In This Section  

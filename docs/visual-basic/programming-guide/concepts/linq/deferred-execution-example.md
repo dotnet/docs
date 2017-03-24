@@ -2,7 +2,7 @@
 title: "Deferred Execution Example (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +15,11 @@ ms.assetid: 9a22bea1-c755-4aac-800a-fcd9e5107ace
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
+manager: "wpickett"
 ---
 # Deferred Execution Example (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how deferred execution and lazy evaluation affect the execution of your LINQ to XML queries.  
   
 ## Example  

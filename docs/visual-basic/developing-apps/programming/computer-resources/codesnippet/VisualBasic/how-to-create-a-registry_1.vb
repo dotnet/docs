@@ -1,0 +1,1 @@
+    My.Computer.Registry.CurrentUser.CreateSubKey("MyTestKey")

@@ -1,13 +1,13 @@
 ---
 title: "Then Statement | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -17,23 +17,11 @@ ms.assetid: 41fdb422-d222-4c10-b5b0-c421c79e9070
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Then Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Introduces a statement block to be compiled or executed if a tested condition is true.  
   
 ## Remarks  

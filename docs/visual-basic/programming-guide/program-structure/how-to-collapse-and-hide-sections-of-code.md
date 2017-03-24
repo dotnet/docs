@@ -2,12 +2,12 @@
 title: "How to: Collapse and Hide Sections of Code (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,24 +19,12 @@ ms.assetid: b770e8f5-e07d-491a-ab4b-a977980f9ba2
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # How to: Collapse and Hide Sections of Code (Visual Basic)
-The `#Region` directive enables you to collapse and hide sections of code in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] files. The `#Region` directive lets you specify a block of code that you can expand or collapse when using the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] code editor. The ability to hide code selectively makes your files more manageable and easier to read. For more information, see [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining).  
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+The `#Region` directive enables you to collapse and hide sections of code in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] files. The `#Region` directive lets you specify a block of code that you can expand or collapse when using the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] code editor. The ability to hide code selectively makes your files more manageable and easier to read. For more information, see [Outlining](/visual-studio/ide/outlining).  
   
  `#Region` directives support code block semantics such as `#If...#End If`. This means they cannot begin in one block and end in another; the start and end must be in the same block. `#Region` directives are not supported within functions.  
   
@@ -44,7 +32,7 @@ The `#Region` directive enables you to collapse and hide sections of code in [!I
   
 -   Place the section of code between the `#Region` and `#End Region` statements, as in the following example:  
   
-     [!code-vb[VbVbalrConditionalComp#6](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/how-to-collapse-and-hide-sections-of-code_1.vb)]  
+     [!code-vb[VbVbalrConditionalComp#6](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/how-to-collapse-and-hide_1.vb)]  
   
      The `#Region` block can be used multiple times in a code file; thus, users can define their own blocks of procedures and classes that can, in turn, be collapsed. `#Region` blocks can also be nested within other `#Region` blocks.  
   
@@ -55,4 +43,4 @@ The `#Region` directive enables you to collapse and hide sections of code in [!I
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
  [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)   
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining)
+ [Outlining](/visual-studio/ide/outlining)

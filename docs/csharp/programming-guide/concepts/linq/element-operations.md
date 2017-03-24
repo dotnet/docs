@@ -2,12 +2,12 @@
 title: "Element Operations (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 283206c9-3246-4c48-b01a-d9de409a7231
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Element Operations (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Element operations return a single, specific element from a sequence.  
   
  The standard query operator methods that perform element operations are listed in the following section.  

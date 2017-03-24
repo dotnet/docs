@@ -1,13 +1,13 @@
 ---
 title: "Manipulating Pointers (C# Programming Guide) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,23 +18,11 @@ ms.assetid: a5fb36ee-dd5b-4a60-b4a4-6d94b9901988
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Manipulating Pointers (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 This section includes the following pointer operations:  
   
  [Increment and Decrement](../../../csharp/programming-guide/unsafe-code-pointers/how-to-increment-and-decrement-pointers.md)  
@@ -48,4 +36,4 @@ This section includes the following pointer operations:
  [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)   
  [C# Operators](../../../csharp/language-reference/operators/index.md)   
  [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)   
- [/unsafe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)
+ [/unsafe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/unsafe-csharp-compiler-options.md)

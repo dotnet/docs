@@ -1,13 +1,13 @@
 ---
 title: "Error number must be within the range 0 and 65535 | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrMaxErrNumber"
@@ -15,27 +15,12 @@ ms.assetid: c5cb5753-516e-4568-9d63-0e9a2a4c5812
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Error number must be within the range 0 and 65535
 An error number falls outside the allowable of between 0 and 65535.  
   
-## To correct this error  
+### To correct this error  
   
 -   Ensure that the number falls within the valid range.  
   

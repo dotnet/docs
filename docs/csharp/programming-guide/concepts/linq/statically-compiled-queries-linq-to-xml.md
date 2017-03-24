@@ -2,12 +2,12 @@
 title: "Statically Compiled Queries (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 3bf558fe-0705-479d-86d4-00188f5fcf9c
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Statically Compiled Queries (LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 One of the most important performance benefits LINQ to XML, as opposed to <xref:System.Xml.XmlDocument>, is that queries in LINQ to XML are statically compiled, whereas XPath queries must be interpreted at run time. This feature is built in to LINQ to XML, so you do not have to perform extra steps to take advantage of it, but it is helpful to understand the distinction when choosing between the two technologies. This topic explains the difference.  
   
 ## Statically Compiled Queries vs. XPath  
@@ -29,7 +31,7 @@ One of the most important performance benefits LINQ to XML, as opposed to <xref:
 //Address[@Type='Shipping']  
 ```  
   
-```cs  
+```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 IEnumerable<XElement> list1 =  
@@ -43,7 +45,7 @@ foreach (XElement el in list1)
   
  The query expression in this example is re-written by the compiler to method-based query syntax. The following example, which is written in method-based query syntax, produces the same results as the previous one:  
   
-```cs  
+```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 IEnumerable<XElement> list1 =  
@@ -57,7 +59,7 @@ foreach (XElement el in list1)
   
  The <xref:System.Linq.Enumerable.Where%2A> method is an extension method. For more information, see [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md). Because <xref:System.Linq.Enumerable.Where%2A> is an extension method, the query above is compiled as though it were written as follows:  
   
-```cs  
+```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
   
 IEnumerable<XElement> list1 =  
@@ -77,7 +79,7 @@ foreach (XElement el in list1)
 ## Executing XPath Expressions with XmlDocument  
  The following example uses <xref:System.Xml.XmlDocument> to accomplish the same results as the previous examples:  
   
-```cs  
+```csharp  
 XmlReader reader = XmlReader.Create("PurchaseOrders.xml");  
 XmlDocument doc = new XmlDocument();  
 doc.Load(reader);  

@@ -2,7 +2,7 @@
 title: "How to: Find an Element with a Specific Attribute (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +15,11 @@ ms.assetid: 59fb7c19-d42f-40eb-8cf8-f1d5b9658eb7
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
+manager: "wpickett"
 ---
 # How to: Find an Element with a Specific Attribute (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 This topic shows how to find an element that has an attribute that has a specific value.  
   
 ## Example  

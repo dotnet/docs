@@ -2,12 +2,12 @@
 title: "How to: Filter on an Optional Element (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,15 +15,17 @@ ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Filter on an Optional Element (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Sometimes you want to filter for an element even though you are not sure it exists in your XML document. The search should be executed so that if the particular element does not have the child element, you do not trigger a null reference exception by filtering for it. In the following example, the `Child5` element does not have a `Type` child element, but the query still executes correctly.  
   
 ## Example  
  This example uses the <xref:System.Xml.Linq.Extensions.Elements%2A> extension method.  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(@"<Root>  
   <Child1>  
     <Text>Child One Text</Text>  
@@ -64,7 +66,7 @@ Child Four Text
 ## Example  
  The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>  
   <Child1>  
     <Text>Child One Text</Text>  

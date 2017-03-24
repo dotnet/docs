@@ -1,8 +1,8 @@
 ---
-title: "Getting Started (LINQ to XML) | Microsoft Docs"
+title: "Getting Started (LINQ to XML)1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,14 +15,11 @@ ms.assetid: c3a9062d-9d51-4a8e-bac6-071d16a7d9ea
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Getting Started (LINQ to XML)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The following topics introduce LINQ to XML.  
   
 ## In This Section  

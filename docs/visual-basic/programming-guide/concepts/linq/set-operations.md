@@ -2,7 +2,7 @@
 title: "Set Operations (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,14 +15,11 @@ ms.assetid: 2b06e822-e030-438f-9db7-ee402bd3a706
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Set Operations (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 Set operations in LINQ refer to query operations that produce a result set that is based on the presence or absence of equivalent elements within the same or separate collections (or sets).  
   
  The standard query operator methods that perform set operations are listed in the following section.  
@@ -61,7 +58,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ## Query Expression Syntax Example  
  The following example uses the `Distinct` clause in a LINQ query to return the unique numbers from a list of integers.  
   
- [!code-vb[CsLINQSetOps#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/set-operations_1.vb)]  
+ [!code-vb[CsLINQSetOps#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/set-operations_1.vb)]  
   
 ## See Also  
  <xref:System.Linq>   

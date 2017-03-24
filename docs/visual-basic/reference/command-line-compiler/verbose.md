@@ -1,13 +1,13 @@
 ---
-title: "/verbose | Microsoft Docs"
-
+title: "-verbose | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,23 +19,11 @@ ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
 caps.latest.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # /verbose
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Causes the compiler to produce verbose status and error messages.  
   
 ## Syntax  

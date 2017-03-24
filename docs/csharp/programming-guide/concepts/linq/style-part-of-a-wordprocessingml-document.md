@@ -2,12 +2,12 @@
 title: "Style Part of a WordprocessingML Document1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 5458bccf-3898-4661-904b-7d280c9239a9
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Style Part of a WordprocessingML Document
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows an example of the style part of the Office Open XML WordprocessingML document.  
   
 ## Example  

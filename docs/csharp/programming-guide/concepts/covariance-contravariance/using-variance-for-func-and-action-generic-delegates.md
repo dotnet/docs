@@ -2,12 +2,12 @@
 title: "Using Variance for Func and Action Generic Delegates (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 1826774f-2b7a-470f-b110-17cfdd6abdae
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Using Variance for Func and Action Generic Delegates (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 These examples demonstrate how to use covariance and contravariance in the `Func` and `Action` generic delegates to enable reuse of methods and provide more flexibility in your code.  
   
  For more information about covariance and contravariance, see [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md).  
@@ -30,7 +27,7 @@ These examples demonstrate how to use covariance and contravariance in the `Func
 ## Using Delegates with Covariant Type Parameters  
  The following example illustrates the benefits of covariance support in the generic `Func` delegates. The `FindByTitle` method takes a parameter of the `String` type and returns an object of the `Employee` type. However, you can assign this method to the `Func<String, Person>` delegate because `Employee` inherits `Person`.  
   
-```cs  
+```csharp  
 // Simple hierarchy of classes.  
 public class Person { }  
 public class Employee : Person { }  
@@ -64,7 +61,7 @@ class Program
 ## Using Delegates with Contravariant Type Parameters  
  The following example illustrates the benefits of contravariance support in the generic `Action` delegates. The `AddToContacts` method takes a parameter of the `Person` type. However, you can assign this method to the `Action<Employee>` delegate because `Employee` inherits `Person`.  
   
-```cs  
+```csharp  
 public class Person { }  
 public class Employee : Person { }  
 class Program  
@@ -96,4 +93,4 @@ class Program
   
 ## See Also  
  [Covariance and Contravariance (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/index.md)   
- [Generics](https://msdn.microsoft.com/library/ms172192)
+ [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)

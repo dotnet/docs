@@ -1,39 +1,24 @@
 ---
 title: "&#39;ReDim&#39; Preserve operand cannot be Nothing | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b857f313-3fc2-4262-a577-88df1718b811
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # &#39;ReDim&#39; Preserve operand cannot be Nothing
 A `ReDim` statement attempts to use the `Preserve` keyword to change a dimension of an array that is not the last dimension, but does not supply a valid value for its operand.  
   
-## To correct this error  
+### To correct this error  
   
 -   Change the `Preserve` operand to a valid value.  
   

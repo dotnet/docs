@@ -1,0 +1,1 @@
+        Dim namedCust = New Customer With {.Name = "Terry Adams"}

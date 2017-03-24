@@ -2,12 +2,12 @@
 title: "String Basics in Visual Basic | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,41 +19,29 @@ ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # String Basics in Visual Basic
-The `String` data type represents a series of characters (each representing in turn an instance of the `Char` data type). This topic introduces the basic concepts of strings in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The `String` data type represents a series of characters (each representing in turn an instance of the `Char` data type). This topic introduces the basic concepts of strings in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)].  
   
 ## String Variables  
  An instance of a string can be assigned a literal value that represents a series of characters. For example:  
   
- [!code-vb[VbVbalrStrings#63](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_1.vb)]  
+ [!code-vb[VbVbalrStrings#63](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_1.vb)]  
   
  A `String` variable can also accept any expression that evaluates to a string. Examples are shown below:  
   
- [!code-vb[VbVbalrStrings#64](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_2.vb)]  
+ [!code-vb[VbVbalrStrings#64](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_2.vb)]  
   
  Any literal that is assigned to a `String` variable must be enclosed in quotation marks (""). This means that a quotation mark within a string cannot be represented by a quotation mark. For example, the following code causes a compiler error:  
   
- [!code-vb[VbVbalrStrings#65](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_3.vb)]  
+ [!code-vb[VbVbalrStrings#65](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_3.vb)]  
   
- This code causes an error because the compiler terminates the string after the second quotation mark, and the remainder of the string is interpreted as code. To solve this problem, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] interprets two quotation marks in a string literal as one quotation mark in the string. The following example demonstrates the correct way to include a quotation mark in a string:  
+ This code causes an error because the compiler terminates the string after the second quotation mark, and the remainder of the string is interpreted as code. To solve this problem, [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] interprets two quotation marks in a string literal as one quotation mark in the string. The following example demonstrates the correct way to include a quotation mark in a string:  
   
- [!code-vb[VbVbalrStrings#66](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_4.vb)]  
+ [!code-vb[VbVbalrStrings#66](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_4.vb)]  
   
  In the preceding example, the two quotation marks preceding the word `Look` become one quotation mark in the string. The three quotation marks at the end of the line represent one quotation mark in the string and the string termination character.  
   
@@ -74,20 +62,20 @@ World]]></xml>.Value
 ```  
   
 ## Characters in Strings  
- A string can be thought of as a series of `Char` values, and the `String` type has built-in functions that allow you to perform many manipulations on a string that resemble the manipulations allowed by arrays. Like all array in [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)], these are zero-based arrays. You may refer to a specific character in a string through the `Chars` property, which provides a way to access a character by the position in which it appears in the string. For example:  
+ A string can be thought of as a series of `Char` values, and the `String` type has built-in functions that allow you to perform many manipulations on a string that resemble the manipulations allowed by arrays. Like all array in [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], these are zero-based arrays. You may refer to a specific character in a string through the `Chars` property, which provides a way to access a character by the position in which it appears in the string. For example:  
   
- [!code-vb[VbVbalrStrings#67](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_5.vb)]  
+ [!code-vb[VbVbalrStrings#67](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_5.vb)]  
   
  In the above example, the `Chars` property of the string returns the fourth character in the string, which is `D`, and assigns it to `myChar`. You can also get the length of a particular string through the `Length` property. If you need to perform multiple array-type manipulations on a string, you can convert it to an array of `Char` instances using the `ToCharArray` function of the string. For example:  
   
- [!code-vb[VbVbalrStrings#68](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_6.vb)]  
+ [!code-vb[VbVbalrStrings#68](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_6.vb)]  
   
  The variable `myArray` now contains an array of `Char` values, each representing a character from `myString`.  
   
 ## The Immutability of Strings  
  A string is *immutable*, which means its value cannot be changed once it has been created. However, this does not prevent you from assigning more than one value to a string variable. Consider the following example:  
   
- [!code-vb[VbVbalrStrings#69](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-basics_7.vb)]  
+ [!code-vb[VbVbalrStrings#69](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-basics_7.vb)]  
   
  Here, a string variable is created, given a value, and then its value is changed.  
   
@@ -99,4 +87,4 @@ World]]></xml>.Value
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
  [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)   
  [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)   
- [Basic String Operations](http://msdn.microsoft.com/library/8133d357-90b5-4b62-9927-43323d99b6b6)
+ [Basic String Operations](../Topic/Basic%20String%20Operations%20in%20the%20.NET%20Framework.md)

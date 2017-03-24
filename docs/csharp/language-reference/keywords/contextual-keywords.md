@@ -1,9 +1,13 @@
 ---
 title: "Contextual Keywords (C# Reference) | Microsoft Docs"
-ms.date: "2017-03-07"
-ms.prod: .net
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -13,22 +17,11 @@ ms.assetid: 7c76bc29-a754-4389-b0ab-f6b441018298
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Contextual Keywords (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 A contextual keyword is used to provide a specific meaning in the code, but it is not a reserved word in C#. The following contextual keywords are introduced in this section:  
   
 |Keyword|Description|  
@@ -44,7 +37,6 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 |[set](../../../csharp/language-reference/keywords/set.md)|Defines an accessor method for a property or an indexer.|  
 |[value](../../../csharp/language-reference/keywords/value.md)|Used to set accessors and to add or remove event handlers.|  
 |[var](../../../csharp/language-reference/keywords/var.md)|Enables the type of a variable declared at method scope to be determined by the compiler.|  
-|[when](when.md)|Specifies a filter condition for a `catch` block or the `case` label of a `switch` statement.|
 |[where](../../../csharp/language-reference/keywords/where-generic-type-constraint.md)|Adds constraints to a generic declaration. (See also [where](../../../csharp/language-reference/keywords/where-clause.md)).|  
 |[yield](../../../csharp/language-reference/keywords/yield.md)|Used in an iterator block to return a value to the enumerator object or to signal the end of iteration.|  
   

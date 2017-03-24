@@ -2,12 +2,12 @@
 title: "How to: Add Custom Methods for LINQ Queries (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 1a500f60-2e10-49fb-8b2a-d8d08e4817cb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Add Custom Methods for LINQ Queries (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you can create a custom aggregate method to compute a single value from a sequence of values. You can also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.  
   
  When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md).  
@@ -32,7 +29,7 @@ You can extend the set of methods that you can use for LINQ queries by adding ex
   
  The following code example shows how to create an extension method called `Median` to compute a median for a sequence of numbers of type `double`.  
   
-```cs  
+```csharp  
 public static class LINQExtension  
 {  
     public static double Median(this IEnumerable<double> source)  
@@ -66,15 +63,15 @@ public static class LINQExtension
   
  The following code example shows how to use the `Median` method for an array of type `double`.  
   
-```cs  
+```csharp  
 double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };  
   
 var query1 = numbers1.Median();  
   
 Console.WriteLine("double: Median = " + query1);  
 ```  
-
-```cs  
+  
+```csharp  
 /*  
  This code produces the following output:  
   
@@ -88,17 +85,18 @@ Console.WriteLine("double: Median = " + query1);
 #### To create an overload for each type  
  You can create a specific overload for each type that you want to support. The following code example shows an overload of the `Median` method for the `integer` type.  
   
-```cs  
+```csharp  
 //int overload  
   
 public static double Median(this IEnumerable<int> source)  
 {  
     return (from num in source select (double)num).Median();  
 }  
-```   
+```  
+  
  You can now call the `Median` overloads for both `integer` and `double` types, as shown in the following code:  
   
-```cs  
+```csharp  
 double[] numbers1 = { 1.9, 2, 8, 4, 5.7, 6, 7.2, 0 };  
   
 var query1 = numbers1.Median();  
@@ -106,7 +104,7 @@ var query1 = numbers1.Median();
 Console.WriteLine("double: Median = " + query1);  
 ```  
   
-```cs  
+```csharp  
 int[] numbers2 = { 1, 2, 3, 4, 5 };  
   
 var query2 = numbers2.Median();  
@@ -114,7 +112,7 @@ var query2 = numbers2.Median();
 Console.WriteLine("int: Median = " + query2);  
 ```  
   
-```cs  
+```csharp  
 /*  
  This code produces the following output:  
   
@@ -122,13 +120,13 @@ Console.WriteLine("int: Median = " + query2);
  Integer: Median = 3  
 */  
 ```  
-
+  
 #### To create a generic overload  
  You can also create an overload that accepts a sequence of generic objects. This overload takes a delegate as a parameter and uses it to convert a sequence of objects of a generic type to a specific type.  
   
  The following code shows an overload of the `Median` method that takes the <xref:System.Func%602> delegate as a parameter. This delegate takes an object of generic type T and returns an object of type `double`.  
   
-```cs  
+```csharp  
 // Generic overload.  
   
 public static double Median<T>(this IEnumerable<T> numbers,  
@@ -142,7 +140,7 @@ public static double Median<T>(this IEnumerable<T> numbers,
   
  The following example code shows how to call the `Median` method for an array of integers and an array of strings. For strings, the median for the lengths of strings in the array is calculated. The example shows how to pass the <xref:System.Func%602> delegate parameter to the `Median` method for each case.  
   
-```cs  
+```csharp  
 int[] numbers3 = { 1, 2, 3, 4, 5 };  
   
 /*   
@@ -169,13 +167,14 @@ Console.WriteLine("String: Median = " + query4);
  Integer: Median = 3  
  String: Median = 4  
 */  
-```   
+```  
+  
 ## Adding a Method That Returns a Collection  
  You can extend the <xref:System.Collections.Generic.IEnumerable%601> interface with a custom query method that returns a sequence of values. In this case, the method must return a collection of type <xref:System.Collections.Generic.IEnumerable%601>. Such methods can be used to apply filters or data transforms to a sequence of values.  
   
  The following example shows how to create an extension method named `AlternateElements` that returns every other element in a collection, starting from the first element.  
   
-```cs  
+```csharp  
 // Extension method for the IEnumerable<T> interface.   
 // The method returns every other element of a sequence.  
   
@@ -198,9 +197,10 @@ public static IEnumerable<T> AlternateElements<T>(this IEnumerable<T> source)
     return list;  
 }  
 ```  
+  
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable%601> interface, as shown in the following code:  
   
-```cs  
+```csharp  
 string[] strings = { "a", "b", "c", "d", "e" };  
   
 var query = strings.AlternateElements();  

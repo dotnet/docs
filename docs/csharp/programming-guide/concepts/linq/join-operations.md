@@ -2,12 +2,12 @@
 title: "Join Operations (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 5105e0da-1267-4c00-837a-f0e9602279b8
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Join Operations (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 A *join* of two data sources is the association of objects in one data source with objects that share a common attribute in another data source.  
   
  Joining is an important operation in queries that target data sources whose relationships to each other cannot be followed directly. In object-oriented programming, this could mean a correlation between objects that is not modeled, such as the backwards direction of a one-way relationship. An example of a one-way relationship is a Customer class that has a property of type City, but the City class does not have a property that is a collection of Customer objects. If you have a list of City objects and you want to find all the customers in each city, you could use a join operation to find them.  
@@ -44,7 +41,7 @@ A *join* of two data sources is the association of objects in one data source wi
  <xref:System.Linq>   
  [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
  [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)   
- [Formulate Joins and Cross-Product Queries](http://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)   
+ [Formulate Joins and Cross-Product Queries](../Topic/Formulate%20Joins%20and%20Cross-Product%20Queries.md)   
  [join clause](../../../../csharp/language-reference/keywords/join-clause.md)   
  [How to: Join by Using Composite Keys](../../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md)   
  [How to: Join Content from Dissimilar Files (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)   

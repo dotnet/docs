@@ -1,13 +1,13 @@
 ---
 title: "Conversion Functions (Visual Basic) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -25,23 +25,11 @@ ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Conversion Functions (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
   
  <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
@@ -96,4 +84,4 @@ translation.priority.ht:
   
 ## See Also  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [Converting Data Types](../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)
+ [Converting Data Types](../Topic/Converting%20Data%20Types.md)

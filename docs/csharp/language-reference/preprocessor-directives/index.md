@@ -1,9 +1,13 @@
 ---
 title: "C# Preprocessor Directives | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "cs.preprocessor"
@@ -16,22 +20,11 @@ ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # C# Preprocessor Directives
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 This section contains information about the following C# preprocessor directives.  
   
  [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)  

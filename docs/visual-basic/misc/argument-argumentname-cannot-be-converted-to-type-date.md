@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;Date&#39; | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_InvalidDateValue1"
@@ -15,27 +15,12 @@ ms.assetid: 928b8d75-f523-40c3-819a-03a1eb596ccc
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; cannot be converted to type &#39;Date&#39;
 A conversion attempted to change a variable to type `Date`, but the value is not recognized as a valid date.  
   
-## To correct this error  
+### To correct this error  
   
 -   Find a conversion that is meaningful.  
   

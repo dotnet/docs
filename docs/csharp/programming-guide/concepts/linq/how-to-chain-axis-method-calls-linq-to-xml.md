@@ -2,12 +2,12 @@
 title: "How to: Chain Axis Method Calls (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Chain Axis Method Calls (LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 A common pattern that you will use in your code is to call an axis method, then call one of the extension method axes.  
   
  There are two axes with the name of `Elements` that return a collection of elements: the <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName> method and the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName> method. You can combine these two axes to find all elements of a specified name at a given depth in the tree.  
@@ -27,7 +29,7 @@ A common pattern that you will use in your code is to call an axis method, then 
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
-```cs  
+```csharp  
 XElement purchaseOrders = XElement.Load("PurchaseOrders.xml");  
 IEnumerable<XElement> names =  
     from el in purchaseOrders  
@@ -79,7 +81,7 @@ foreach (XElement e in names)
   
  To do this, you can use the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=fullName> axis, as follows:  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("Irregular.xml");  
 IEnumerable<XElement> configParameters =   
     root.Elements("Customer").Elements("Config").  
@@ -100,7 +102,7 @@ foreach (XElement cp in configParameters)
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement purchaseOrders = XElement.Load("PurchaseOrdersInNamespace.xml");  
 IEnumerable<XElement> names =  

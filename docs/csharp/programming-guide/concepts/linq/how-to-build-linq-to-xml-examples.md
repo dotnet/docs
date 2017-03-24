@@ -2,12 +2,12 @@
 title: "How to: Build LINQ to XML Examples (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,20 +15,17 @@ ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Build LINQ to XML Examples (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 The various snippets and examples in this documentation use classes and types from a variety of namespaces. When compiling C# code, you need to supply appropriate `using` directives.  
   
 ## Example  
  The following code contains the `using` directives that the C# examples require to build and run. Not all `using` directives are required for every example.  
   
-```cs  
+```csharp  
 using System;  
 using System.Diagnostics;  
 using System.Collections;  

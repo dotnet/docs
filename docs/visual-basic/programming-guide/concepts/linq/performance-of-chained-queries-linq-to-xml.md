@@ -2,7 +2,7 @@
 title: "Performance of Chained Queries (LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +15,11 @@ ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
 caps.latest.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
-
+manager: "wpickett"
 ---
 # Performance of Chained Queries (LINQ to XML) (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 One of the most important benefits of LINQ (and LINQ to XML) is that chained queries can perform as well as a single larger, more complicated query.  
   
  A chained query is a query that uses another query as its source. For example, in the following simple code, `query2` has `query1` as its source:  

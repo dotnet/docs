@@ -2,12 +2,12 @@
 title: "How to: Sort Elements on Multiple Keys (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,17 +15,19 @@ ms.assetid: 3b2760b6-d607-4ac7-b784-5c6524e2a0e0
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Sort Elements on Multiple Keys (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to sort on multiple keys.  
   
 ## Example  
  In this example, the results are ordered first by the shipping postal code, then by the order date.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md).  
   
-```cs  
+```csharp  
 XElement co = XElement.Load("CustomersOrders.xml");  
 var sortedElements =  
     from c in co.Element("Orders").Elements("Order")  
@@ -74,7 +76,7 @@ CustomerID:LAZYK EmployeeID:8 ShipPostalCode:99362 OrderDate:5/22/1997
   
  This example uses the following XML document: [Sample XML File: Customers and Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XElement co = XElement.Load("CustomersOrdersInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 var sortedElements =  

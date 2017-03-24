@@ -2,7 +2,7 @@
 title: "Sample XML File: Test Configuration in a Namespace3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,15 +15,12 @@ ms.assetid: aff02614-30ee-45e1-bc0f-d64b193d20b8
 caps.latest.revision: 5
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sample XML File: Test Configuration in a Namespace
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation. This is a test configuration file. The XML is in a namespace.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This is a test configuration file. The XML is in a namespace.  
   
 ## TestConfigInNamespace.xml  
   

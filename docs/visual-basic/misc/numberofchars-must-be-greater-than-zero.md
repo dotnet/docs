@@ -1,13 +1,13 @@
 ---
 title: "NumberOfChars must be greater than zero | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_NumberOfCharsMustBePositive"
@@ -15,27 +15,12 @@ ms.assetid: 3eea4bbf-cd49-4d19-adfb-0e2adf087065
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # NumberOfChars must be greater than zero
 When using the `PeekChars` method of the `TextFieldParser` object, you must supply a `NumberOfChars` value that is greater than `0`.  
   
-## To correct this error  
+### To correct this error  
   
 -   Change `NumberOfChars` to a value that is greater than `0`.  
   

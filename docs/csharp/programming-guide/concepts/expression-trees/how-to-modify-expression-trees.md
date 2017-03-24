@@ -2,12 +2,12 @@
 title: "How to: Modify Expression Trees (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 9b0cd8c2-457e-4833-9e36-31e79545f442
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Modify Expression Trees (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows you how to modify an expression tree. Expression trees are immutable, which means that they cannot be modified directly. To change an expression tree, you must create a copy of an existing expression tree and when you create the copy, make the required changes. You can use the <xref:System.Linq.Expressions.ExpressionVisitor> class to traverse an existing expression tree and to copy each node that it visits.  
   
 ### To modify an expression tree  
@@ -33,7 +30,7 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 3.  Add the `AndAlsoModifier` class to your project.  
   
-    ```cs  
+    ```csharp  
     public class AndAlsoModifier : ExpressionVisitor  
     {  
         public Expression Modify(Expression expression)  
@@ -63,7 +60,7 @@ This topic shows you how to modify an expression tree. Expression trees are immu
   
 5.  Add code to the `Main` method in the Program.cs file to create an expression tree and pass it to the method that will modify it.  
   
-    ```cs  
+    ```csharp  
     Expression<Func<string, bool>> expr = name => name.Length > 10 && name.StartsWith("G");  
     Console.WriteLine(expr);  
   

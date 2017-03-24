@@ -2,12 +2,12 @@
 title: "Refactoring Using a Pure Function (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: a3416a45-9e12-4e4a-9747-897f06eef510
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Refactoring Using a Pure Function (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 The following example refactors the previous example, [Refactoring Using an Extension Method (C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-using-an-extension-method.md), to use a pure function In this example, the code to find the text of a paragraph is moved to the pure static method `ParagraphText`.  
   
 ## Example  
@@ -27,7 +29,7 @@ The following example refactors the previous example, [Refactoring Using an Exte
   
  This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```cs  
+```csharp  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  

@@ -2,12 +2,12 @@
 title: "WordprocessingML Document with Styles3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 40e35de6-ac93-4bba-88ab-a018cbe93873
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # WordprocessingML Document with Styles
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 More complicated WordprocessingML documents have paragraphs that are formatted with styles.  
   
  A few notes about the makeup of WordprocessingML documents are helpful. WordprocessingML documents are stored in packages. Packages have multiple parts (parts have an explicit meaning when used in the context of packages; essentially, parts are files that are zipped together to comprise a package). If a document contains paragraphs that are formatted with styles, there will be a document part that contains paragraphs that have styles applied to them. There will also be a style part that contains the styles that are referred to by the document.  

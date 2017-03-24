@@ -1,13 +1,13 @@
 ---
 title: "GoTo Statement | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.GoTo"
@@ -26,23 +26,11 @@ ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
 caps.latest.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # GoTo Statement
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Branches unconditionally to a specified line in a procedure.  
   
 ## Syntax  
@@ -82,7 +70,7 @@ Valid and invalid branches in Try constructions
 ## Example  
  The following example uses the `GoTo` statement to branch to line labels in a procedure.  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/goto-statement_1.vb)]  
   
 ## See Also  
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   

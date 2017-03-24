@@ -1,13 +1,13 @@
 ---
 title: "&#39;&lt;membername&gt;&#39; cannot expose type &#39;&lt;typename&gt;&#39; outside the project through &lt;containertype&gt; &#39;&lt;containertypename&gt;&#39; | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "bc30909"
@@ -20,23 +20,11 @@ ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &#39;&lt;membername&gt;&#39; cannot expose type &#39;&lt;typename&gt;&#39; outside the project through &lt;containertype&gt; &#39;&lt;containertypename&gt;&#39;
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 A variable, procedure parameter, or function return is exposed outside its container, but it is declared as a type that must not be exposed outside the container.  
   
  The following skeleton code shows a situation that generates this error.  
@@ -53,7 +41,7 @@ End Class
   
  **Error ID:** BC30909  
   
-## To correct this error  
+### To correct this error  
   
 -   Change the access level of the variable, procedure parameter, or function return to be at least as restrictive as the access level of its data type.  
   

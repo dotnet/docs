@@ -1,13 +1,13 @@
 ---
 title: "The ConnectionTimeout must be greater than 0 | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_BadConnectionTimeout"
@@ -15,27 +15,12 @@ ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
 caps.latest.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # The ConnectionTimeout must be greater than 0
 When uploading and downloading files with the [My.Computer.Network Object](../../visual-basic/language-reference/objects/my-computer-network-object.md), you must specify a `connectionTimeout` greater than `0`.  
   
-## To correct this error  
+### To correct this error  
   
 -   Supply a `connectionTimeout` that is greater than `0`.  
   

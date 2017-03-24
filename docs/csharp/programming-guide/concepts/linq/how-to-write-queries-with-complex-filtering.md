@@ -2,12 +2,12 @@
 title: "How to: Write Queries with Complex Filtering (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Write Queries with Complex Filtering (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Sometimes you want to write LINQ to XML queries with complex filters. For example, you might have to find all elements that have a child element with a particular name and value. This topic gives an example of writing a query with complex filtering.  
   
 ## Example  
@@ -27,7 +29,7 @@ Sometimes you want to write LINQ to XML queries with complex filters. For exampl
   
  For more information about the `Any` operator, see [Quantifier Operations (C#)](../../../../csharp/programming-guide/concepts/linq/quantifier-operations.md).  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("PurchaseOrders.xml");  
 IEnumerable<XElement> purchaseOrders =  
     from el in root.Elements("PurchaseOrder")  
@@ -54,7 +56,7 @@ foreach (XElement el in purchaseOrders)
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("PurchaseOrdersInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 IEnumerable<XElement> purchaseOrders =  

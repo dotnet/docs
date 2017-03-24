@@ -2,12 +2,12 @@
 title: "Sorting Data (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,19 +15,16 @@ ms.assetid: d93fa055-2f19-46d2-9898-e2aed628f1c9
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sorting Data (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
   
  The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
   
- ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq_ordering.png "LINQ_Ordering")  
+ ![LINQ Sorting Operation](../../../../csharp/programming-guide/concepts/linq/media/linq-ordering.png "LINQ_Ordering")  
   
  The standard query operator methods that sort data are listed in the following section.  
   
@@ -48,7 +45,7 @@ A sorting operation orders the elements of a sequence based on one or more attri
 #### Primary Ascending Sort  
  The following example demonstrates how to use the `orderby` clause in a LINQ query to sort the strings in an array by string length, in ascending order.  
   
-```cs  
+```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
   
 IEnumerable<string> query = from word in words  
@@ -71,7 +68,7 @@ foreach (string str in query)
 #### Primary Descending Sort  
  The next example demonstrates how to use the `orderby``descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
   
-```cs  
+```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
   
 IEnumerable<string> query = from word in words  
@@ -96,7 +93,7 @@ foreach (string str in query)
 #### Secondary Ascending Sort  
  The following example demonstrates how to use the `orderby` clause in a LINQ query to perform a primary and secondary sort of the strings in an array. The strings are sorted primarily by length and secondarily by the first letter of the string, both in ascending order.  
   
-```cs  
+```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
   
 IEnumerable<string> query = from word in words  
@@ -119,7 +116,7 @@ foreach (string str in query)
 #### Secondary Descending Sort  
  The next example demonstrates how to use the `orderby``descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
   
-```cs  
+```csharp  
 string[] words = { "the", "quick", "brown", "fox", "jumps" };  
   
 IEnumerable<string> query = from word in words  

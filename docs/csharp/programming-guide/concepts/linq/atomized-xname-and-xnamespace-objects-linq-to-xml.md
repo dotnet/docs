@@ -2,12 +2,12 @@
 title: "Atomized XName and XNamespace Objects (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: a5b21433-b49d-415c-b00e-bcbfb0d267d7
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Atomized XName and XNamespace Objects (LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 <xref:System.Xml.Linq.XName> and <xref:System.Xml.Linq.XNamespace> objects are *atomized*; that is, if they contain the same qualified name, they refer to the same object. This yields performance benefits for queries: When you compare two atomized names for equality, the underlying intermediate language only has to determine whether the two references point to the same object. The underlying code does not have to do string comparisons, which would be time consuming.  
   
 ## Atomization Semantics  
@@ -30,7 +32,7 @@ ms.author: "wiwagn"
 ## Example  
  The following code creates some <xref:System.Xml.Linq.XElement> objects and demonstrates that identical names share the same instance.  
   
-```cs  
+```csharp  
 XElement r1 = new XElement("Root", "data1");  
 XElement r2 = XElement.Parse("<Root>data2</Root>");  
   
@@ -58,7 +60,7 @@ The name of r1 and the name in 'n' refer to the same instance.
   
  The following example passes an <xref:System.Xml.Linq.XName> to the <xref:System.Xml.Linq.XContainer.Descendants%2A> method call, which then has better performance because of the atomization pattern.  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("C1", 1),  
     new XElement("Z1",  

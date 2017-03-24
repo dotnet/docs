@@ -1,12 +1,13 @@
 ---
 title: "Classes and Structs (C# Programming Guide) | Microsoft Docs"
-description: Describes the use of classes and structures (structs) in C#.
-keywords: classes (C#), structs (C#), structures (structs) (C#), reference types (C#), value types (C#)
-ms.date: "2016-01-17"
-ms.prod: .net
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -21,23 +22,11 @@ ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
 caps.latest.revision: 48
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Classes and Structs (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Classes and structs are two of the basic constructs of the common type system in the .NET Framework. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class or struct, and they include its methods, properties, and events, and so on, as listed later in this topic.  
   
  A class or struct declaration is like a blueprint that is used to create instances or objects at run time. If you define a class or struct called `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
@@ -51,9 +40,9 @@ Classes and structs are two of the basic constructs of the common type system in
  For more information, see [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md), [Objects](../../../csharp/programming-guide/classes-and-structs/objects.md), and [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md).  
   
 ## Example  
- In the following example, `CustomClass` in the `ProgrammingGuide` namespace has three members: an instance constructor, a property named `Number`, and a method named `Multiply`. The `Main` method in the `Program` class creates an instance (object) of `CustomClass`, and the object’s method and property are accessed by using dot notation.
+ In the following example, `MyCustomClass` is defined with three members at the top level of the `ProgrammingGuide` namespace. An instance (object) of `MyCustomClass` is created in the `Main` method in the `Program` class, and the object’s methods and properties are accessed by using dot notation.  
   
- [!code-cs[csProgGuideObjects#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/class1.cs#1)]  
+ [!code-cs[csProgGuideObjects#88](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
   
 ## Encapsulation  
  *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. According to the principle of encapsulation, a class or struct can specify how accessible each of its members is to code outside of the class or struct. Methods and variables that are not intended to be used from outside of the class or assembly can be hidden to limit the potential for coding errors or malicious exploits.  
@@ -119,7 +108,7 @@ Classes and structs are two of the basic constructs of the common type system in
  Within a class or struct method, you can use implicit typing to instruct the compiler to determine the correct type at compile time. For more information, see [Implicitly Typed Local Variables](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

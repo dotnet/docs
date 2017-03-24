@@ -1,13 +1,13 @@
 ---
-title: "/filealign | Microsoft Docs"
-
+title: "-filealign | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -22,23 +22,11 @@ ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
 caps.latest.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # /filealign
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Specifies where to align the sections of the output file.  
   
 ## Syntax  

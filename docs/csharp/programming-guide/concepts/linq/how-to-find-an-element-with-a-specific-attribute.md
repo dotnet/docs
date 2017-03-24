@@ -2,12 +2,12 @@
 title: "How to: Find an Element with a Specific Attribute (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,17 +15,19 @@ ms.assetid: b92591aa-3cfb-490e-99f6-da8de335e362
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find an Element with a Specific Attribute (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to find an element that has an attribute that has a specific value.  
   
 ## Example  
  The example shows how to find the `Address` element that has a `Type` attribute with a value of "Billing".  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md).  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("PurchaseOrder.xml");  
 IEnumerable<XElement> address =  
     from el in root.Elements("Address")  
@@ -53,7 +55,7 @@ foreach (XElement el in address)
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("PurchaseOrderInNamespace.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 IEnumerable<XElement> address =  

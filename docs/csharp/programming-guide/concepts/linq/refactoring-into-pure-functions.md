@@ -2,12 +2,12 @@
 title: "Refactoring Into Pure Functions (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Refactoring Into Pure Functions (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 An important aspect of pure functional transformations is learning how to refactor code using pure functions.  
   
 > [!NOTE]
@@ -39,7 +41,7 @@ An important aspect of pure functional transformations is learning how to refact
 ### Non-Pure Function that Changes a Class Member  
  In the following code, the `HypenatedConcat` function is not a pure function, because it modifies the `aMember` data member in the class:  
   
-```cs  
+```csharp  
 public class Program  
 {  
     private static string aMember = "StringOne";  
@@ -68,7 +70,7 @@ StringOne-StringTwo
 ### Non-Pure Function that Changes an Argument  
  Furthermore, the following version of this same function is not pure because it modifies the contents of its parameter, `sb`.  
   
-```cs  
+```csharp  
 public class Program  
 {  
     public static void HypenatedConcat(StringBuilder sb, String appendStr)  
@@ -93,7 +95,7 @@ public class Program
 ### Pure Function  
  This next version of the program hows how to implement the `HypenatedConcat` function as a pure function.  
   
-```cs  
+```csharp  
 class Program  
 {  
     public static string HyphenatedConcat(string s, string appendStr)  

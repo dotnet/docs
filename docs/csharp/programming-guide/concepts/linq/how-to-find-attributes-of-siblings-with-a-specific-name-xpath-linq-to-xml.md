@@ -2,12 +2,12 @@
 title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: c3133d64-523f-422d-8838-73d36b945ca0
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to find all attributes of the siblings of the context node. Only attributes with a specific name are returned in the collection.  
   
  The XPath expression is:  
@@ -29,7 +31,7 @@ This topic shows how to find all attributes of the siblings of the context node.
   
  This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
   
-```cs  
+```csharp  
 XDocument books = XDocument.Load("Books.xml");  
   
 XElement book =   

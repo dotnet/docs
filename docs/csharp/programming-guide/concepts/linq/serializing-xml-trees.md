@@ -2,12 +2,12 @@
 title: "Serializing XML Trees (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: b3937e54-4ce9-4236-ac96-14e7972aa594
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Serializing XML Trees (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Serializing an XML tree means generating XML from the XML tree. You can serialize to a file, to a concrete implementation of the <xref:System.IO.TextWriter> class, or to a concrete implementation of an <xref:System.Xml.XmlWriter>.  
   
  You can control various aspects of serialization. For example, you can control whether to indent the serialized XML, and whether to write an XML declaration.  

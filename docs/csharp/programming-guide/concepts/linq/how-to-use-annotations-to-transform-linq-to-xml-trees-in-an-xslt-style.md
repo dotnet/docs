@@ -2,12 +2,12 @@
 title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 12a95902-a6b7-4a1e-ad52-04a518db226f
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Annotations can be used to facilitate transforms of an XML tree.  
   
  Some XML documents are "document centric with mixed content." With such documents, you don't necessarily know the shape of child nodes of an element. For instance, a node that contains text may look like this:  
@@ -31,7 +28,7 @@ Annotations can be used to facilitate transforms of an XML tree.
 <text>A phrase with <b>bold</b> and <i>italic</i> text.</text>  
 ```  
   
- For any given text node, there may be any number of child `<b>` and `<i>` elements. This approach extends to a number of other situations, such as pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps. Cells in a table may contain text, drop down lists, or bitmaps. One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.  
+ For any given text node, there may be any number of child `<b>` and `<i>` elements. This approach extends to a number of other situations: i.e. pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps. Cells in a table may contain text, drop down lists, or bitmaps. One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.  
   
  If you want to transform elements in a tree where you don't necessarily know much about the children of the elements that you want to transform, then this approach that uses annotations is an effective approach.  
   
@@ -56,7 +53,7 @@ Annotations can be used to facilitate transforms of an XML tree.
 ## Transforming a Tree  
  This first example renames all `Paragraph` nodes to `para`.  
   
-```cs  
+```csharp  
 XNamespace xf = "http://www.microsoft.com/LinqToXmlTransform/2007";  
 XName at = xf + "ApplyTransforms";  
   
@@ -93,7 +90,7 @@ Console.WriteLine(newRoot);
 ## A More Complicated Transform  
  The following example queries the tree and calculates the average and sum of the `Data` elements, and adds them as new elements to the tree.  
   
-```cs  
+```csharp  
 XNamespace xf = "http://www.microsoft.com/LinqToXmlTransform/2007";  
 XName at = xf + "ApplyTransforms";  
   
@@ -192,7 +189,7 @@ If an element is not annotated
   
  Following is the implementation of this function:  
   
-```cs  
+```csharp  
 // Build a transformed XML tree per the annotations  
 static XElement XForm(XElement source)  
 {  
@@ -258,7 +255,7 @@ static XElement XForm(XElement source)
 ## Complete Example  
  The following code is a complete example that includes the `XForm` function. It includes a few of the typical uses of this type of transform:  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

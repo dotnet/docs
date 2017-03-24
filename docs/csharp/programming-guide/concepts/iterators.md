@@ -1,13 +1,13 @@
 ---
 title: "Iterators (C#) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Iterators (C#)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 An *iterator* can be used to step through collections such as lists and arrays.  
   
  An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.  
@@ -31,7 +28,7 @@ An *iterator* can be used to step through collections such as lists and arrays.
   
  In the following example, the first iteration of the `foreach` loop causes execution to proceed  in the `SomeNumbers` iterator method until the first `yield return` statement is reached. This iteration returns a value of 3, and the current location in the iterator method is retained. On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a `yield return` statement. This iteration returns a value of 5, and the current location in the iterator method is again retained. The loop completes when the end of the iterator method is reached.  
   
-```cs  
+```csharp  
 static void Main()  
 {  
     foreach (int number in SomeNumbers())  
@@ -76,7 +73,7 @@ public static System.Collections.IEnumerable SomeNumbers()
 ##  <a name="BKMK_SimpleIterator"></a> Simple Iterator  
  The following example has a single `yield return` statement that is inside a [for](../../../csharp/language-reference/keywords/for.md) loop. In `Main`, each iteration of the `foreach` statement body creates a call to the iterator function, which proceeds to the next `yield return` statement.  
   
-```cs  
+```csharp  
 static void Main()  
 {  
     foreach (int number in EvenSequence(5, 18))  
@@ -106,7 +103,7 @@ public static System.Collections.Generic.IEnumerable<int>
   
  The `GetEnumerator` method returns each string one at a time by using the `yield return` statement.  
   
-```cs  
+```csharp  
 static void Main()  
 {  
     DaysOfTheWeek days = new DaysOfTheWeek();  
@@ -138,7 +135,7 @@ public class DaysOfTheWeek : IEnumerable
   
  The `foreach` statement that refers to the class instance (`theZoo`) implicitly calls the `GetEnumerator` method. The `foreach` statements that refer to the `Birds` and `Mammals` properties use the `AnimalsForType` named iterator method.  
   
-```cs  
+```csharp  
 static void Main()  
 {  
     Zoo theZoo = new Zoo();  
@@ -239,7 +236,7 @@ public class Zoo : IEnumerable
   
  The `BottomToTop` property uses an iterator in a `get` accessor.  
   
-```cs  
+```csharp  
 static void Main()  
 {  
     Stack<int> theStack = new Stack<int>();  

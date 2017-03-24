@@ -2,7 +2,7 @@
 title: "Sample XML File: Consolidated Purchase Orders3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,15 +15,12 @@ ms.assetid: 7203da90-a514-415a-b978-6980e89f3e9c
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sample XML File: Consolidated Purchase Orders
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation. This file is a set of purchase orders with different shapes from multiple companies. Purchase orders from each company are in separate namespaces.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This file is a set of purchase orders with different shapes from multiple companies. Purchase orders from each company are in separate namespaces.  
   
 ## ConsolidatedPurchaseOrders.xml  
   

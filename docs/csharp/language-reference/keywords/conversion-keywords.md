@@ -1,9 +1,13 @@
 ---
 title: "Conversion Keywords (C# Reference) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,29 +19,18 @@ ms.assetid: 8683ff14-5289-4efe-b4f5-1e6a075918ab
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Conversion Keywords (C# Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 This section describes keywords used in type conversions:  
   
 -   [explicit](../../../csharp/language-reference/keywords/explicit.md)  
   
 -   [implicit](../../../csharp/language-reference/keywords/implicit.md)  
   
--   [operator](../../../csharp/language-reference/keywords/operator.md)  
+-   [operator](../../../csharp/language-reference/keywords/operator-csharp-reference.md)  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

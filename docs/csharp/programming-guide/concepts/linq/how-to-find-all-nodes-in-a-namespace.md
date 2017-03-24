@@ -2,12 +2,12 @@
 title: "How to: Find All Nodes in a Namespace (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,15 +15,17 @@ ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find All Nodes in a Namespace (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can filter on the namespace of each element or attribute to find all nodes in that particular namespace.  
   
 ## Example  
  The following example creates an XML tree with two namespaces. It then iterates through the tree and prints the names of all the elements and attributes in one of those namespaces.  
   
-```cs  
+```csharp  
 string markup = @"<aw:Root xmlns:aw='http://www.adventure-works.com' xmlns:fc='www.fourthcoffee.com'>  
   <fc:Child1>abc</fc:Child1>  
   <fc:Child2>def</fc:Child2>  
@@ -56,7 +58,7 @@ Nodes in the http://www.adventure-works.com namespace
   
  This example uses the following XML document: [Sample XML File: Consolidated Purchase Orders](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md).  
   
-```cs  
+```csharp  
 XDocument cpo = XDocument.Load("ConsolidatedPurchaseOrders.xml");  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement newTree = new XElement("Root",  

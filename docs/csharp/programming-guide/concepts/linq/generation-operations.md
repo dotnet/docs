@@ -2,12 +2,12 @@
 title: "Generation Operations (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 1c421b3a-5954-448c-bcac-a27798d1858f
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Generation Operations (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Generation refers to creating a new sequence of values.  
   
  The standard query operator methods that perform generation are listed in the following section.  

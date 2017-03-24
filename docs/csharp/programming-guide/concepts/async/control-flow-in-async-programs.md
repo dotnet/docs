@@ -2,12 +2,12 @@
 title: "Control Flow in Async Programs (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,20 +15,17 @@ ms.assetid: fc92b08b-fe1d-4d07-84ab-5192fafe06bb
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Control Flow in Async Programs (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 You can write and maintain asynchronous programs more easily by using the `async` and `await` keywords. However, the results might surprise you if you don't understand how your program operates. This topic traces the flow of control through a simple async program to show you when control moves from one method to another and what information is transferred each time.  
   
 > [!NOTE]
 >  The `async` and `await` keywords were introduced in Visual Studio 2012.  
   
- In general, you mark methods that contain asynchronous code with the [async (C#)](../../../../csharp/language-reference/keywords/async.md) modifier. In a method that's marked with an async modifier, you can use an [await (C#)](../../../../csharp/language-reference/keywords/await.md) operator to specify where the method pauses to wait for a called asynchronous process to complete. For more information, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
+ In general, you mark methods that contain asynchronous code with the [async (C#)](../../../../csharp/language-reference/keywords/async.md) modifier. In a method that's marked with an async modifier, you can use an [await (C#)](../../../../csharp/language-reference/keywords/await.md) operator to specify where the method pauses to wait for a called asynchronous process to complete. For more information, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
   
  The following example uses async methods to download the contents of a specified website as a string and to display the length of the string. The example contains the following two methods.  
   
@@ -40,7 +37,7 @@ You can write and maintain asynchronous programs more easily by using the `async
   
  The following code shows an outline of the program.  
   
-```cs  
+```csharp  
   
 public partial class MainWindow : Window  
 {  
@@ -144,7 +141,7 @@ Length of the downloaded string: 33946.
   
 6.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
   
-    ```cs  
+    ```csharp  
     <Window  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -167,7 +164,7 @@ Length of the downloaded string: 33946.
   
 9. In MainWindow.xaml.cs, replace the code with the following code.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  
@@ -300,7 +297,7 @@ Length of the downloaded string: 33946.
   
  The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.  
   
-```cs  
+```csharp  
 Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
 ```  
   
@@ -316,7 +313,7 @@ THREE: Back in AccessTheWebAsync.
   
  The following statement suspends progress in `AccessTheWebAsync` when `getStringTask` is awaited.  
   
-```cs  
+```csharp  
 string urlContents = await getStringTask;  
 ```  
   
@@ -336,7 +333,7 @@ string urlContents = await getStringTask;
   
  The following statement assigns this task to the `getLengthTask` variable.  
   
-```cs  
+```csharp  
 Task<int> getLengthTask = AccessTheWebAsync();  
 ```  
   
@@ -352,7 +349,7 @@ FOUR:  Back in startButton_Click.
   
  Progress in `startButton_Click` is suspended when `getLengthTask` is awaited. The following assignment statement suspends `startButton_Click` until `AccessTheWebAsync` is complete.  
   
-```cs  
+```csharp  
 int contentLength = await getLengthTask;  
 ```  
   
@@ -396,7 +393,7 @@ SIX:   Back in startButton_Click.
   
  The await expression retrieves from `getLengthTask` the integer value that’s the operand of the return statement in `AccessTheWebAsync`. The following statement assigns that value to the `contentLength` variable.  
   
-```cs  
+```csharp  
 int contentLength = await getLengthTask;  
 ```  
   
@@ -405,7 +402,7 @@ int contentLength = await getLengthTask;
  ![Step SIX](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-SIX")  
   
 ## See Also  
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
+ [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
  [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)   
  [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
  [Async Sample: Control Flow in Async Programs (C# and Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=255285)

@@ -1,13 +1,13 @@
 ---
 title: "Programming Concepts (C#) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,22 +15,19 @@ ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Programming Concepts (C#)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 This section explains programming concepts in the C# language.  
   
 ## In This Section  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Assemblies and the Global Assembly Cache (C#)](../../../csharp/programming-guide/concepts/assemblies-gac/index.md)|Describes how to create and use assemblies.|  
-|[Asynchronous Programming with async and await (C#)](../../../csharp/programming-guide/concepts/async/index.md)|Describes how to write asynchronous solutions by using the [async](../../../csharp/language-reference/keywords/async.md) and [await](../../../csharp/language-reference/keywords/await.md) keywords in C#. Includes a walkthrough.|  
+|[Assemblies and the Global Assembly Cache (C#)](../../../csharp/programming-guide/concepts/assemblies-gac/assemblies-and-the-global-assembly-cache.md)|Describes how to create and use assemblies.|  
+|[Asynchronous Programming with async and await (C#)](../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)|Describes how to write asynchronous solutions by using the [async](../../../csharp/language-reference/keywords/async.md) and [await](../../../csharp/language-reference/keywords/await.md) keywords in C#. Includes a walkthrough.|  
 |[Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md)|Discusses how to provide additional information about programming elements such as types, fields, methods, and properties by using attributes.|  
 |[Caller Information (C#)](../../../csharp/programming-guide/concepts/caller-information.md)|Describes how to obtain information about the caller of a method. This information includes the file path and the line number of the source code and the member name of the caller.|  
 |[Collections (C#)](../../../csharp/programming-guide/concepts/collections.md)|Describes some of the types of collections provided by the .NET Framework. Demonstrates how to use simple collections and collections of key/value pairs.|  
@@ -46,5 +43,5 @@ This section explains programming concepts in the C# language.
 ## Related Sections  
   
 |||  
-|---|---|  
-|[Performance Tips](https://msdn.microsoft.com/library/ms173196(VS.110).aspx) | Discusses several basic rules that may help you increase the performance of your application.|
+|-|-|  
+|[Performance Tips](../Topic/.NET%20Performance%20Tips.md)|Discusses several basic rules that may help you increase the performance of your application.|

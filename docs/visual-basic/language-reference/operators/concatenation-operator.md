@@ -1,13 +1,13 @@
 ---
 title: "&amp; Operator (Visual Basic) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.&"
@@ -23,23 +23,11 @@ ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
 caps.latest.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # &amp; Operator (Visual Basic)
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Generates a string concatenation of two expressions.  
   
 ## Syntax  
@@ -73,7 +61,7 @@ result = expression1 & expression2
 ## Example  
  This example uses the `&` operator to force string concatenation. The result is a string value representing the concatenation of the two string operands.  
   
- [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/concatenation-operator_1.vb)]  
   
 ## See Also  
  [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   

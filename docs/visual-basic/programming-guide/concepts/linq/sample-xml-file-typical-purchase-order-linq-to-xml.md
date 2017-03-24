@@ -1,8 +1,8 @@
 ---
-title: "Sample XML File: Typical Purchase Order (LINQ to XML) | Microsoft Docs"
+title: "Sample XML File: Typical Purchase Order (LINQ to XML)2 | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,15 +15,12 @@ ms.assetid: 65321b9c-1239-45e4-af40-eb86cedf7abd
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Sample XML File: Typical Purchase Order (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation. This file is a typical purchase order.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] documentation. This file is a typical purchase order.  
   
 ## PurchaseOrder.xml  
   

@@ -2,12 +2,12 @@
 title: "Tutorial: Chaining Queries Together (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 44f54444-c4c5-4c23-9d19-986b957b8eda
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Tutorial: Chaining Queries Together (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This tutorial illustrates the processing model when you chain queries together. Chaining queries together is a key part of writing functional transformations. It is important to understand exactly how chained queries work.  
   
  The queries that process Office Open XML documents use this technique extensively.  

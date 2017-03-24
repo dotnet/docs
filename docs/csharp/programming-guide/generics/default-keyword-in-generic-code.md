@@ -1,13 +1,13 @@
 ---
 title: "default Keyword in Generic Code (C# Programming Guide) | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -18,23 +18,11 @@ ms.assetid: b9daf449-4e64-496e-8592-6ed2c8875a98
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # default Keyword in Generic Code (C# Programming Guide)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 In generic classes and methods, one issue that arises is how to assign a default value to a parameterized type T when you do not know the following in advance:  
   
 -   Whether T will be a reference type or a value type.  
@@ -45,11 +33,11 @@ In generic classes and methods, one issue that arises is how to assign a default
   
  The following example from the `GenericList<T>` class shows how to use the `default` keyword. For more information, see [Generics Overview](../../../csharp/programming-guide/generics/introduction-to-generics.md).  
   
- [!code-cs[csProgGuideGenerics#41](../../../csharp/programming-guide/generics/codesnippet/CSharp/default-keyword-in-generic-code_1.cs)]  
+ [!code-cs[csProgGuideGenerics#41](../../../csharp/programming-guide/generics/codesnippet/csharp/default-keyword-in-gener_1.cs)]  
   
 ## See Also  
  <xref:System.Collections.Generic>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
  [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)   
- [Generics](https://msdn.microsoft.com/library/ms172192)
+ [Generics](../Topic/Generics%20in%20the%20.NET%20Framework.md)

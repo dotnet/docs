@@ -1,13 +1,13 @@
 ---
 title: "Connection to type library or object library for remote process has been lost | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrID442"
@@ -15,27 +15,12 @@ ms.assetid: 9e3544e2-cfc9-463a-8c0c-ed82e5e6462f
 caps.latest.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Connection to type library or object library for remote process has been lost
 You lost your connection to the remote process's object library or type library.  
   
-## To correct this error  
+### To correct this error  
   
 1.  Restart the `Application` object.  
   

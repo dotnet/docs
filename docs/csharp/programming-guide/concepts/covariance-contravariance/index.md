@@ -2,12 +2,12 @@
 title: "Covariance and Contravariance (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,19 +15,16 @@ ms.assetid: 066d9a3c-aab7-4ea6-826d-0b1a85399c74
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Covariance and Contravariance (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 In C#, covariance and contravariance enable implicit reference conversion for array types, delegate types, and generic type arguments. Covariance preserves assignment compatibility and contravariance reverses it.  
   
  The following code demonstrates the difference between assignment compatibility, covariance, and contravariance.  
   
-```cs  
+```csharp  
 // Assignment compatibility.   
 string str = "test";  
 // An object of a more derived type is assigned to an object of a less derived type.   
@@ -52,7 +49,7 @@ Action<string> actString = actObject;
   
  Covariance for arrays enables implicit conversion of an array of a more derived type to an array of a less derived type. But this operation is not type safe, as shown in the following code example.  
   
-```cs  
+```csharp  
 object[] array = new String[10];  
 // The following statement produces a run-time exception.  
 // array[0] = 10;  
@@ -62,7 +59,7 @@ object[] array = new String[10];
   
  The following code example shows covariance and contravariance support for method groups.  
   
-```cs  
+```csharp  
 static object GetObject() { return null; }  
 static void SetObject(object obj) { }  
   
@@ -85,7 +82,7 @@ static void Test()
   
  The following code example shows implicit reference conversion for generic interfaces.  
   
-```cs  
+```csharp  
 IEnumerable<String> strings = new List<String>();  
 IEnumerable<Object> objects = strings;  
 ```  

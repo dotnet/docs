@@ -2,12 +2,12 @@
 title: "Refactoring Using an Extension Method (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: c5fc123d-af10-4a2f-b8e4-db921efb2639
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Refactoring Using an Extension Method (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This example builds on the previous example, [Retrieving the Text of the Paragraphs (C#)](../../../../csharp/programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md), by refactoring the concatenation of strings using a pure function that is implemented as an extension method.  
   
  The previous example used the <xref:System.Linq.Enumerable.Aggregate%2A> standard query operator to concatenate multiple strings into one string. However, it is more convenient to write an extension method to do this, because the resulting query smaller and more simple.  
@@ -31,7 +33,7 @@ This example builds on the previous example, [Retrieving the Text of the Paragra
   
  This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```cs  
+```csharp  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  
@@ -75,7 +77,7 @@ public static class LocalExtensions
   
  The following code uses all four overloads.  
   
-```cs  
+```csharp  
 string[] numbers = { "one", "two", "three" };  
   
 Console.WriteLine("{0}", numbers.StringConcatenate());  
@@ -98,7 +100,7 @@ one:two:three:
 ## Example  
  Now, the example can be modified to take advantage of the new extension method:  
   
-```cs  
+```csharp  
 public static class LocalExtensions  
 {  
     public static string StringConcatenate(this IEnumerable<string> source)  

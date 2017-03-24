@@ -2,12 +2,12 @@
 title: "Example that Outputs Office Open XML Document Parts (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Example that Outputs Office Open XML Document Parts (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This topic shows how to open an Office Open XML document and access parts within it.  
   
 ## Example  
@@ -25,7 +27,7 @@ This topic shows how to open an Office Open XML document and access parts within
   
  This example uses classes from the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=fullName> namespace.  
   
-```cs  
+```csharp  
 const string fileName = "SampleDoc.docx";  
   
 const string documentRelationshipType =  

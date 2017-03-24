@@ -1,22 +1,26 @@
-    class LINQQueryExpressions
+class TestArraysClass
+{
+    static void Main()
     {
-        static void Main()
-        {
-            
-            // Specify the data source.
-            int[] scores = new int[] { 97, 92, 81, 60 };
+        // Declare a single-dimensional array 
+        int[] array1 = new int[5];
 
-            // Define the query expression.
-            IEnumerable<int> scoreQuery =
-                from score in scores
-                where score > 80
-                select score;
+        // Declare and set array element values
+        int[] array2 = new int[] { 1, 3, 5, 7, 9 };
 
-            // Execute the query.
-            foreach (int i in scoreQuery)
-            {
-                Console.Write(i + " ");
-            }            
-        }
+        // Alternative syntax
+        int[] array3 = { 1, 2, 3, 4, 5, 6 };
+
+        // Declare a two dimensional array
+        int[,] multiDimensionalArray1 = new int[2, 3];
+
+        // Declare and set array element values
+        int[,] multiDimensionalArray2 = { { 1, 2, 3 }, { 4, 5, 6 } };
+
+        // Declare a jagged array
+        int[][] jaggedArray = new int[6][];
+
+        // Set the values of the first array in the jagged array structure
+        jaggedArray[0] = new int[4] { 1, 2, 3, 4 };
     }
-    // Output: 97 92 81
+}

@@ -2,12 +2,12 @@
 title: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: daed00dd-923a-43be-8a90-eee406f6f574
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Sometimes you want to find all elements that have a specific attribute. You are not concerned about the contents of the attribute. Instead, you want to select based on the existence of the attribute.  
   
  The XPath expression is:  
@@ -27,7 +29,7 @@ Sometimes you want to find all elements that have a specific attribute. You are 
 ## Example  
  The following code selects just the elements that have the `Select` attribute.  
   
-```cs  
+```csharp  
 XElement doc = XElement.Parse(  
 @"<Root>  
     <Child1>1</Child1>  

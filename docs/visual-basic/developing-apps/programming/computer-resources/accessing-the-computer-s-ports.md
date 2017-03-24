@@ -2,12 +2,12 @@
 title: "Accessing the Computer&#39;s Ports (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,23 +18,11 @@ ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 caps.latest.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Accessing the Computer&#39;s Ports (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 The `My.Computer.Ports` object provides a property and a method for accessing the computer's serial ports.  
   
 ## In This Section  
@@ -51,7 +39,7 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Demonstrates how to receive a string from a computer's serial port.  
   
  [Port Operations in the .NET Framework](../../../../visual-basic/developing-apps/programming/computer-resources/port-operations-in-the-net-framework.md)  
- Describes how to use the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] when performing port operations.  
+ Describes how to use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] when performing port operations.  
   
 ## Reference  
  <xref:Microsoft.VisualBasic.Devices.Ports>  

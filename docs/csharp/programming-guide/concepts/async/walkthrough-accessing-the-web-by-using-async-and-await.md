@@ -2,12 +2,12 @@
 title: "Walkthrough: Accessing the Web by Using async and await (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
 dev_langs: 
   - "CSharp"
@@ -15,17 +15,14 @@ ms.assetid: c95d8d71-5a98-4bf0-aaf4-45fed2ebbacd
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Walkthrough: Accessing the Web by Using async and await (C#)
-You can write asynchronous programs more easily and intuitively by using features that were introduced in [!INCLUDE[vs_dev11_long](../../../../csharp/includes/vs_dev11_long_md.md)]. You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+You can write asynchronous programs more easily and intuitively by using features that were introduced in [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)]. You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.  
   
- For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
+ For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md).  
   
  This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites. The walkthrough then converts the application to an asynchronous solution by using the new features.  
   
@@ -101,7 +98,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 6.  Position the text box and the button so that both appear in the **MainWindow** window.  
   
-     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
+     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visual-studio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
   
 ##  <a name="BKMK_AddReference"></a>   
 ###  <a name="AddRef"></a> To add a reference  
@@ -127,7 +124,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  Add the following `using` directives at the top of the code file if they’re not already present.  
   
-    ```cs  
+    ```csharp  
     using System.Net.Http;  
     using System.Net;  
     using System.IO;  
@@ -140,7 +137,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  In MainWindow.xaml.cs, copy the following code into the body of `startButton_Click`:  
   
-    ```cs  
+    ```csharp  
     resultsTextBox.Clear();  
     SumPageSizes();  
     resultsTextBox.Text += "\r\nControl returned to startButton_Click.";  
@@ -160,7 +157,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      Copy the following four methods, and then paste them under the `startButton_Click` event handler in MainWindow.xaml.cs:  
   
-    ```cs  
+    ```csharp  
     private void SumPageSizes()  
     {  
         // Make a list of web addresses.  
@@ -189,14 +186,14 @@ You can write asynchronous programs more easily and intuitively by using feature
         {   
             "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
             "http://msdn.microsoft.com",  
-            "http://msdn.microsoft.com/library/hh290136.aspx",  
-            "http://msdn.microsoft.com/library/ee256749.aspx",  
-            "http://msdn.microsoft.com/library/hh290138.aspx",  
-            "http://msdn.microsoft.com/library/hh290140.aspx",  
-            "http://msdn.microsoft.com/library/dd470362.aspx",  
-            "http://msdn.microsoft.com/library/aa578028.aspx",  
-            "http://msdn.microsoft.com/library/ms404677.aspx",  
-            "http://msdn.microsoft.com/library/ff730837.aspx"  
+            "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
+            "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
+            "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+            "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+            "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+            "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+            "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+            "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
         };  
         return urls;  
     }  
@@ -278,7 +275,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      Change the method that's called in the third line of `GetURLContents` from `GetResponse` to the asynchronous, task-based <xref:System.Net.WebRequest.GetResponseAsync%2A> method.  
   
-    ```cs  
+    ```csharp  
     using (WebResponse response = webReq.GetResponseAsync())  
     ```  
   
@@ -286,7 +283,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      To retrieve the `WebResponse` value from the task, apply an [await](../../../../csharp/language-reference/keywords/await.md) operator to the call to `GetResponseAsync`, as the following code shows.  
   
-    ```cs  
+    ```csharp  
     using (WebResponse response = await webReq.GetResponseAsync())  
     ```  
   
@@ -294,7 +291,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The previous statement can be separated into the following two statements to clarify what happens.  
   
-    ```cs  
+    ```csharp  
     //Task<WebResponse> responseTask = webReq.GetResponseAsync();  
     //using (WebResponse response = await responseTask)  
     ```  
@@ -309,13 +306,13 @@ You can write asynchronous programs more easily and intuitively by using feature
   
     -   The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn’t return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.  
   
-        ```cs  
+        ```csharp  
         await responseStream.CopyToAsync(content);  
         ```  
   
          The previous statement abbreviates the following two lines of code.  
   
-        ```cs  
+        ```csharp  
         // CopyToAsync returns a Task, not a Task<T>.  
         //Task copyTask = responseStream.CopyToAsync(content);  
   
@@ -326,8 +323,9 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 4.  All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../../csharp/language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.  
   
-    ```cs  
+    ```csharp  
     private async byte[] GetURLContents(string url)  
+  
     ```  
   
 5.  The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../../csharp/language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."  
@@ -342,7 +340,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     private async Task<byte[]> GetURLContentsAsync(string url)  
     ```  
   
@@ -359,13 +357,13 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     byte[] urlContents = await GetURLContentsAsync(url);  
     ```  
   
      The previous assignment abbreviates the following two lines of code.  
   
-    ```cs  
+    ```csharp  
     // GetURLContentsAsync returns a Task<T>. At completion, the task  
     // produces a byte array.  
     //Task<byte[]> getContentsTask = GetURLContentsAsync(url);  
@@ -382,7 +380,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     private async Task SumPageSizesAsync()  
     ```  
   
@@ -399,7 +397,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      As in previous procedures, you can convert the call by using one statement or two statements. The following code shows these changes.  
   
-    ```cs  
+    ```csharp  
     // One-step async call.  
     await SumPageSizesAsync();  
   
@@ -410,14 +408,14 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 3.  To prevent accidentally reentering the operation, add the following statement at the top of `startButton_Click` to disable the **Start** button.  
   
-    ```cs  
+    ```csharp  
     // Disable the button until the operation is complete.  
     startButton.IsEnabled = false;  
     ```  
   
      You can reenable the button at the end of the event handler.  
   
-    ```cs  
+    ```csharp  
     // Reenable the button in case you want to run the operation again.  
     startButton.IsEnabled = true;  
     ```  
@@ -426,7 +424,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 4.  Finally, add the `async` modifier to the declaration so that the event handler can await `SumPagSizesAsync`.  
   
-    ```cs  
+    ```csharp  
     private async void startButton_Click(object sender, RoutedEventArgs e)  
     ```  
   
@@ -452,7 +450,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      The first step is to create an `HttpClient` object in method `SumPageSizesAsync`. Add the following declaration at the start of the method.  
   
-    ```cs  
+    ```csharp  
     // Declare an HttpClient object and increase the buffer size. The  
     // default buffer size is 65,536.  
     HttpClient client =  
@@ -461,7 +459,7 @@ You can write asynchronous programs more easily and intuitively by using feature
   
 2.  In `SumPageSizesAsync,` replace the call to your `GetURLContentsAsync` method with a call to the `HttpClient` method.  
   
-    ```cs  
+    ```  
     byte[] urlContents = await client.GetByteArrayAsync(url);  
     ```  
   
@@ -474,7 +472,7 @@ You can write asynchronous programs more easily and intuitively by using feature
 ##  <a name="BKMK_CompleteCodeExamples"></a> Example  
  The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous `GetURLContentsAsync` method that you wrote. Notice that it strongly resembles the original, synchronous solution.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -558,14 +556,14 @@ namespace AsyncExampleWPF
             {   
                 "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
             };  
             return urls;  
         }  
@@ -623,7 +621,7 @@ namespace AsyncExampleWPF
   
  The following code contains the full example of the solution that uses the `HttpClient` method, `GetByteArrayAsync`.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -712,14 +710,14 @@ namespace AsyncExampleWPF
             {   
                 "http://msdn.microsoft.com/library/windows/apps/br211380.aspx",  
                 "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/hh290136.aspx",  
-                "http://msdn.microsoft.com/library/ee256749.aspx",  
-                "http://msdn.microsoft.com/library/hh290138.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/dd470362.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "http://msdn.microsoft.com/en-us/library/hh290136.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ee256749.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290138.aspx",  
+                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",  
+                "http://msdn.microsoft.com/en-us/library/dd470362.aspx",  
+                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",  
+                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"  
             };  
             return urls;  
         }  
@@ -742,7 +740,7 @@ namespace AsyncExampleWPF
  [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](http://go.microsoft.com/fwlink/?LinkId=255191)   
  [async](../../../../csharp/language-reference/keywords/async.md)   
  [await](../../../../csharp/language-reference/keywords/await.md)   
- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)   
+ [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
  [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)   
  [Task-based Asynchronous Programming (TAP)](http://go.microsoft.com/fwlink/?LinkId=204847)   
  [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)   

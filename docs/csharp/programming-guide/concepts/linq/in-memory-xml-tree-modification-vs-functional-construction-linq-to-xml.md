@@ -2,12 +2,12 @@
 title: "In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,12 +15,14 @@ ms.assetid: b5afc31d-a325-4ec6-bf17-0ff90a20ffca
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (C#)
-Modifying an XML tree in place is a traditional approach to changing the shape of an XML document. A typical application loads a document into a data store such as DOM or [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]; uses a programming interface to insert nodes, delete nodes, or change the content of nodes; and then saves the XML to a file or transmits it over a network.  
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
+Modifying an XML tree in place is a traditional approach to changing the shape of an XML document. A typical application loads a document into a data store such as DOM or [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)]; uses a programming interface to insert nodes, delete nodes, or change the content of nodes; and then saves the XML to a file or transmits it over a network.  
   
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] enables another approach that is useful in many scenarios*: functional construction*. Functional construction treats modifying data as a problem of transformation, rather than as detailed manipulation of a data store. If you can take a representation of data and transform it efficiently from one form to another, the result is the same as if you took one data store and manipulated it in some way to take another shape. A key to the functional construction approach is to pass the results of queries to <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> constructors.  
+ [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] enables another approach that is useful in many scenarios*: functional construction*. Functional construction treats modifying data as a problem of transformation, rather than as detailed manipulation of a data store. If you can take a representation of data and transform it efficiently from one form to another, the result is the same as if you took one data store and manipulated it in some way to take another shape. A key to the functional construction approach is to pass the results of queries to <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> constructors.  
   
  In many cases you can write the transformational code in a fraction of the time that it would take to manipulate the data store, and that code is more robust and easier to maintain. In these cases, even though the transformational approach can take more processing power, it is a more effective way to modify data. If a developer is familiar with the functional approach, the resulting code in many cases is easier to understand. It is easy to find the code that modifies each part of the tree.  
   
@@ -41,7 +43,7 @@ Modifying an XML tree in place is a traditional approach to changing the shape o
 ### Modifying the XML Tree  
  You can write some procedural code to create elements from the attributes, and then delete the attributes, as follows:  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("Data.xml");  
 foreach (XAttribute att in root.Attributes()) {  
     root.Add(new XElement(att.Name, (string)att));  
@@ -63,7 +65,7 @@ Console.WriteLine(root);
 ### Functional Construction Approach  
  By contrast, a functional approach consists of code to form a new tree, picking and choosing elements and attributes from the source tree, and transforming them as appropriate as they are added to the new tree. The functional approach looks like the following:  
   
-```cs  
+```csharp  
 XElement root = XElement.Load("Data.xml");  
 XElement newTree = new XElement("Root",  
     root.Element("Child1"),  

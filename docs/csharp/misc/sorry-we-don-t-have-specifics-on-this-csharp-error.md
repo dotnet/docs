@@ -1,9 +1,13 @@
 ---
 title: "Sorry, we don&#39;t have specifics on this C# error | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: .net
+ms.custom: ""
+ms.date: "03/24/2017"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CS1583"
@@ -185,6 +189,7 @@ f1_keywords:
   - "CS0011"
   - "CS1057"
   - "CS0144"
+  - "CS0168"
   - "CS1985"
   - "CS0060"
   - "CS1643"
@@ -883,35 +888,22 @@ ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Sorry, we don&#39;t have specifics on this C# error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
   
  [Visual C# Language](http://go.microsoft.com/fwlink/?LinkId=146921)  
- Provides a forum for questions about and general discussions of the [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)] language syntax and compiler.  
+ Provides a forum for questions about and general discussions of the [!INCLUDE[csprcs](../../includes/csprcs-md.md)] language syntax and compiler.  
   
  [Visual C# IDE](http://go.microsoft.com/fwlink/?LinkId=146922)  
- Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] environment.  
+ Provides a forum for questions about how to work in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environment.  
   
  [Visual C# General](http://go.microsoft.com/fwlink/?LinkId=146920)  
- Provides a forum for questions about and issues with [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)] that are not discussed in other forums.  
+ Provides a forum for questions about and issues with [!INCLUDE[csprcs](../../includes/csprcs-md.md)] that are not discussed in other forums.  
   
  [StackOverflow](http://stackoverflow.com/questions/tagged/c%23)  
- Provides a forum for questions about and issues with [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)].  
+ Provides a forum for questions about and issues with [!INCLUDE[csprcs](../../includes/csprcs-md.md)].  
   
  Also see:  
  [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
@@ -919,5 +911,5 @@ We’re sorry, but we don’t have any specific information about this error. Yo
 ## See Also  
  [C# Programming Guide](../../csharp/programming-guide/index.md)   
  [C# Reference](../../csharp/language-reference/index.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visual-studio/ide/talk-to-us)   
+ [Talk to Us](/visual-studio/ide/talk-to-us)

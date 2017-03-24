@@ -2,12 +2,12 @@
 title: "Chaining Standard Query Operators Together (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: 66f2b0a9-2c23-4735-988e-bbc9dfb55c7b
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Chaining Standard Query Operators Together (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 This is the final topic in the [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md) tutorial.  
   
  The standard query operators can also be chained together. For example, you can interject the <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> operator, and it also operates in a lazy fashion. No intermediate results are materialized by it.  
@@ -33,7 +35,7 @@ This is the final topic in the [Tutorial: Chaining Queries Together (C#)](../../
   
  All of the examples in this section that are querying Office Open XML documents use the same principle. Deferred execution and lazy evaluation are some of the fundamental concepts that you must understand  to use LINQ (and LINQ to XML) effectively.  
   
-```cs  
+```csharp  
 public static class LocalExtensions  
 {  
     public static IEnumerable<string>  

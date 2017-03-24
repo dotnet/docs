@@ -2,12 +2,12 @@
 title: "Type Characters (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -49,29 +49,17 @@ ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
 caps.latest.revision: 22
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Type Characters (Visual Basic)
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
 In addition to specifying a data type in a declaration statement, you can force the data type of some programming elements with a *type character*. The type character must immediately follow the element, with no intervening characters of any kind.  
   
  The type character is not part of the name of the element. An element defined with a type character can be referenced without the type character.  
   
 ## Identifier Type Characters  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supplies a set of *identifier type characters*, which you can use in a declaration to specify the data type of a variable or constant. The following table shows the available identifier type characters with examples of usage.  
+ [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] supplies a set of *identifier type characters*, which you can use in a declaration to specify the data type of a variable or constant. The following table shows the available identifier type characters with examples of usage.  
   
 |Identifier type character|Data type|Example|  
 |-------------------------------|---------------|-------------|  
@@ -84,7 +72,7 @@ In addition to specifying a data type in a declaration statement, you can force 
   
  No identifier type characters exist for the `Boolean`, `Byte`, `Char`, `Date`, `Object`, `SByte`, `Short`, `UInteger`, `ULong`, or `UShort` data types, or for any composite data types such as arrays or structures.  
   
- In some cases, you can append the `$` character to a [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] function, for example `Left$` instead of `Left`, to obtain a returned value of type `String`.  
+ In some cases, you can append the `$` character to a [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] function, for example `Left$` instead of `Left`, to obtain a returned value of type `String`.  
   
  In all cases, the identifier type character must immediately follow the identifier name.  
   
@@ -103,7 +91,7 @@ In addition to specifying a data type in a declaration statement, you can force 
 |Enclosed within number signs|`Date`|`#5/17/1993 9:32 AM#`|  
   
 ### Forced Literal Types  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supplies a set of *literal type characters*, which you can use to force a literal to assume a data type other than the one its form indicates. You do this by appending the character to the end of the literal. The following table shows the available literal type characters with examples of usage.  
+ [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] supplies a set of *literal type characters*, which you can use to force a literal to assume a data type other than the one its form indicates. You do this by appending the character to the end of the literal. The following table shows the available literal type characters with examples of usage.  
   
 |Literal type character|Data type|Example|  
 |----------------------------|---------------|-------------|  

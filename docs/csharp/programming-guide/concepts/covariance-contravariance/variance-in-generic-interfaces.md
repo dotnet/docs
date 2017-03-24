@@ -2,12 +2,12 @@
 title: "Variance in Generic Interfaces (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Variance in Generic Interfaces (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 .NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces. The following interfaces are now variant:  
   
 -   <xref:System.Collections.Generic.IEnumerable%601> (T is covariant)  
@@ -41,7 +38,7 @@ translation.priority.mt:
   
  Covariance permits a method to have a more derived return type than that defined by the generic type parameter of the interface. To illustrate the covariance feature, consider these generic interfaces: `IEnumerable<Object>` and `IEnumerable<String>`. The `IEnumerable<String>` interface does not inherit the `IEnumerable<Object>` interface. However, the `String` type does inherit the `Object` type, and in some cases you may want to assign objects of these interfaces to each other. This is shown in the following code example.  
   
-```cs  
+```csharp  
 IEnumerable<String> strings = new List<String>();  
 IEnumerable<Object> objects = strings;  
 ```  
@@ -50,7 +47,7 @@ IEnumerable<Object> objects = strings;
   
  Contravariance permits a method to have argument types that are less derived than that specified by the generic parameter of the interface. To illustrate contravariance, assume that you have created a `BaseComparer` class to compare instances of the `BaseClass` class. The `BaseComparer` class implements the `IEqualityComparer<BaseClass>` interface. Because the <xref:System.Collections.Generic.IEqualityComparer%601> interface is now contravariant, you can use `BaseComparer` to compare instances of classes that inherit the `BaseClass` class. This is shown in the following code example.  
   
-```cs  
+```csharp  
 // Simple hierarchy of classes.  
 class BaseClass { }  
 class DerivedClass : BaseClass { }  
@@ -84,7 +81,7 @@ class Program
   
  Variance in generic interfaces is supported for reference types only. Value types do not support variance. For example, `IEnumerable<int>` cannot be implicitly converted to `IEnumerable<object>`, because integers are represented by a value type.  
   
-```cs  
+```csharp  
 IEnumerable<int> integers = new List<int>();  
 // The following statement generates a compiler errror,  
 // because int is a value type.  
@@ -93,7 +90,7 @@ IEnumerable<int> integers = new List<int>();
   
  It is also important to remember that classes that implement variant interfaces are still invariant. For example, although <xref:System.Collections.Generic.List%601> implements the covariant interface <xref:System.Collections.Generic.IEnumerable%601>, you cannot implicitly convert `List<Object>` to `List<String>`. This is illustrated in the following code example.  
   
-```cs  
+```csharp  
 // The following line generates a compiler error  
 // because classes are invariant.  
 // List<Object> list = new List<String>();  
@@ -105,5 +102,5 @@ IEnumerable<Object> listObjects = new List<String>();
 ## See Also  
  [Using Variance in Interfaces for Generic Collections (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)   
  [Creating Variant Generic Interfaces (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)   
- [Generic Interfaces](http://msdn.microsoft.com/library/88bf5b04-d371-4edb-ba38-01ec7cabaacf)   
+ [Generic Interfaces](../Topic/Generic%20Interfaces.md)   
  [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)

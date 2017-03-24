@@ -2,12 +2,12 @@
 title: "Parameters and Return Values for Multithreaded Procedures (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,20 +15,17 @@ ms.assetid: ba63c30c-d9f0-4962-b5c7-9d83ba851e6a
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Parameters and Return Values for Multithreaded Procedures (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Supplying and returning values in a multithreaded application is complicated because the constructor for the thread class must be passed a reference to a procedure that takes no arguments and returns no value. The following sections show some simple ways to supply parameters and return values from procedures on separate threads.  
   
 ## Supplying Parameters for Multithreaded Procedures  
  The best way to supply parameters for a multithreaded method call is to wrap the target method in a class and define fields for that class that will serve as parameters for the new thread. The advantage of this approach is that you can create a new instance of the class, with its own parameters, every time you want to start a new thread. For example, suppose you have a function that calculates the area of a triangle, as in the following code:  
   
-```cs  
+```csharp  
 double CalcArea(double Base, double Height)  
 {  
     return 0.5 * Base * Height;  
@@ -37,7 +34,7 @@ double CalcArea(double Base, double Height)
   
  You can write a class that wraps the `CalcArea` function and creates fields to store input parameters, as follows:  
   
-```cs  
+```csharp  
 class AreaClass  
 {  
     public double Base;  
@@ -53,7 +50,7 @@ class AreaClass
   
  To use the `AreaClass`, you can create an `AreaClass` object, and set the `Base` and `Height` properties as shown in the following code:  
   
-```cs  
+```csharp  
 protected void TestArea()  
 {  
     AreaClass AreaObject = new AreaClass();  
@@ -73,7 +70,7 @@ protected void TestArea()
   
  The following example returns a value by raising an event from a procedure running on a separate thread:  
   
-```cs  
+```csharp  
 class AreaClass2  
 {  
     public double Base;  
@@ -137,4 +134,4 @@ private void BackgroundWorker1_RunWorkerCompleted(
  [Events](../../../../csharp/programming-guide/events/index.md)   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [Delegates](../../../../csharp/programming-guide/delegates/index.md)   
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)
+ [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)

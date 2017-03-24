@@ -1,43 +1,30 @@
 ---
 title: "nameof (C# and Visual Basic Reference) | Microsoft Docs"
-ms.date: "2017-03-03"
-ms.prod: .net
+ms.custom: ""
+ms.date: "2015-07-20"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "nameof_CSharpKeyword"
-  - "nameof"
 dev_langs: 
   - "CSharp"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # nameof (C# and Visual Basic Reference)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
 
-Used to obtain the simple (unqualified) string name of a variable, type, or member.  
-
-When reporting errors in code, hooking up model-view-controller (MVC) links, firing property changed events, etc., you often want to capture the string name of a method.  Using `nameof` helps keep your code valid when renaming definitions.  Before, you had to use string literals to refer to definitions, which is brittle when renaming code elements because tools do not know to check these string literals.  
+Used to obtain the simple (unqualified) string name of a variable, type, or member.  When reporting errors in code, hooking up model-view-controller (MVC) links, firing property changed events, etc., you often want to capture the string name of a method.  Using `nameof` helps keep your code valid when renaming definitions.  Before you had to use string literals to refer to definitions, which is brittle when renaming code elements because tools do not know to check these string literals.  
   
  A `nameof` expression has this form:  
   
-```cs  
+```csharp  
 if (x == null) throw new ArgumentNullException(nameof(x));  
 WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”  
   
@@ -47,7 +34,7 @@ WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”
  These examples show the key use cases for `nameof`.  
   
  Validate parameters:  
- ```cs  
+ ```csharp  
 void f(string s) {  
     if (s == null) throw new ArgumentNullException(nameof(s));  
 }  
@@ -64,7 +51,7 @@ void f(string s) {
 ```  
   
  INotifyPropertyChanged:  
- ```cs  
+ ```csharp  
 int p {  
     get { return this.p; }  
     set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too  
@@ -73,13 +60,13 @@ int p {
 ```  
   
  XAML dependency property:  
- ```cs  
+ ```csharp  
 public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));  
   
 ```  
   
  Logging:  
- ```cs  
+ ```csharp  
 void f(int i) {  
     Log(nameof(f), "method entry");  
 }  
@@ -87,7 +74,7 @@ void f(int i) {
 ```  
   
  Attributes:  
- ```cs  
+ ```csharp  
 [DebuggerDisplay("={" + nameof(GetString) + "()}")]  
 class C {  
     string GetString() { }  
@@ -97,7 +84,7 @@ class C {
 ## Examples  
  Some C# examples:  
   
-```cs  
+```csharp  
 using Stuff = Some.Cool.Functionality  
 class C {  
     static int Method1 (string x, int y) {}  
@@ -151,7 +138,7 @@ NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of ins
  There is no way to get a signatures information such as "`Method1 (str, str)`".  One way to do that is to use an Expression, `Expression e = () => A.B.Method1("s1", "s2")`, and pull the MemberInfo from the resulting expression tree.  
   
 ## Language Specifications  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
  For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
   

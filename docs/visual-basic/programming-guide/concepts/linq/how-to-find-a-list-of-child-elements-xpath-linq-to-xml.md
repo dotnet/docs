@@ -2,7 +2,7 @@
 title: "How to: Find a List of Child Elements (XPath-LINQ to XML) (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +15,12 @@ ms.assetid: 2868abfd-9f7b-412a-9cb5-f643f0fed146
 caps.latest.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
-
+manager: "wpickett"
 ---
 # How to: Find a List of Child Elements (XPath-LINQ to XML) (Visual Basic)
-This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
+[!INCLUDE[vs2017banner](../../../../includes/vs2017banner.md)]
+
+This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](../../../../includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
   
  The XPath expression is: `./*`  
   

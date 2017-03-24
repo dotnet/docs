@@ -2,12 +2,12 @@
 title: "Attributes (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: f148f13f-a0d5-4f22-9c87-4b73d5dde270
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Attributes (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md).  
   
  Attributes have the following properties:  
@@ -40,7 +37,7 @@ Attributes provide a powerful method of associating metadata, or declarative inf
   
  In this example, the <xref:System.SerializableAttribute> attribute is used to apply a specific characteristic to a class:  
   
-```cs  
+```csharp  
 [System.Serializable]  
 public class SampleClass  
 {  
@@ -50,22 +47,22 @@ public class SampleClass
   
  A method with the attribute <xref:System.Runtime.InteropServices.DllImportAttribute> is declared like this:  
   
-```cs  
+```csharp  
 using System.Runtime.InteropServices;  
 ```  
   
-```cs  
+```csharp  
 [System.Runtime.InteropServices.DllImport("user32.dll")]  
 extern static void SampleMethod();  
 ```  
   
  More than one attribute can be placed on a declaration:  
   
-```cs  
+```csharp  
 using System.Runtime.InteropServices;  
 ```  
   
-```cs  
+```csharp  
 void MethodA([In][Out] ref double x) { }  
 void MethodB([Out][In] ref double x) { }  
 void MethodC([In, Out] ref double x) { }  
@@ -73,7 +70,7 @@ void MethodC([In, Out] ref double x) { }
   
  Some attributes can be specified more than once for a given entity. An example of such a multiuse attribute is <xref:System.Diagnostics.ConditionalAttribute>:  
   
-```cs  
+```csharp  
 [Conditional("DEBUG"), Conditional("TEST1")]  
 void TraceMethod()  
 {  
@@ -87,7 +84,7 @@ void TraceMethod()
 ### Attribute Parameters  
  Many attributes have parameters, which can be positional, unnamed, or named. Any positional parameters must be specified in a certain order and cannot be omitted; named parameters are optional and can be specified in any order. Positional parameters are specified first. For example, these three attributes are equivalent:  
   
-```cs  
+```csharp  
 [DllImport("user32.dll")]  
 [DllImport("user32.dll", SetLastError=false, ExactSpelling=false)]  
 [DllImport("user32.dll", ExactSpelling=false, SetLastError=false)]  
@@ -100,7 +97,7 @@ void TraceMethod()
   
  To explicitly identify an attribute target, use the following syntax:  
   
-```cs  
+```csharp  
 [target : attribute-list]  
 ```  
   
@@ -120,7 +117,7 @@ void TraceMethod()
   
  The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/common-attributes.md).  
   
-```cs  
+```csharp  
 using System;  
 using System.Reflection;  
 [assembly: AssemblyTitleAttribute("Production assembly 4")]  
@@ -129,7 +126,7 @@ using System.Reflection;
   
  The following example shows how to apply attributes to methods, method parameters, and method return values in C#.  
   
-```cs  
+```csharp  
 // default: applies to method  
 [SomeAttr]  
 int Method1() { return 0; }  
@@ -178,7 +175,7 @@ int Method3() { return 0; }
   
 -   [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)  
   
--   [How to: Create a C/C++ Union by Using Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)  
+-   [How to: Create a C/C++ Union by Using Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/how-to-create-a-c-c-union-by-using-attributes-csharp.md)  
   
 -   [Common Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/common-attributes.md)  
   
@@ -187,4 +184,4 @@ int Method3() { return 0; }
 ## See Also  
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)
+ [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md)

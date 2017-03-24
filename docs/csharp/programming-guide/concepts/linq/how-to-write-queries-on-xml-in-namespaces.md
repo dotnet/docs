@@ -2,12 +2,12 @@
 title: "How to: Write Queries on XML in Namespaces (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,14 +15,11 @@ ms.assetid: 7c54df81-15e4-4091-8c81-a87637029130
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # How to: Write Queries on XML in Namespaces (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 To write a query on XML that is in a namespace, you must use <xref:System.Xml.Linq.XName> objects that have the correct namespace.  
   
  For C#, the most common approach is to initialize an <xref:System.Xml.Linq.XNamespace> using a string that contains the URI, then use the addition operator overload to combine the namespace with the local name.  
@@ -32,7 +29,7 @@ To write a query on XML that is in a namespace, you must use <xref:System.Xml.Li
 ## Example  
  The following example creates an XML tree that is in a default namespace. It then retrieves a collection of elements.  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
@@ -63,7 +60,7 @@ foreach (XElement el in c1)
   
  The following example creates an XML tree that is in a namespace with a prefix. It then retrieves a collection of elements.  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = XElement.Parse(  
 @"<aw:Root xmlns:aw='http://www.adventure-works.com'>  

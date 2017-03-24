@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; cannot be a multidimensional array | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_RankEQOne1"
@@ -15,27 +15,12 @@ ms.assetid: 3b44521a-44e3-4cbe-9a99-1e0ac6ccf537
 caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; cannot be a multidimensional array
 The rank of an array argument is greater than 1, but it can only be a one-dimensional array.  
   
-## To correct this error  
+### To correct this error  
   
 -   Change the argument rank to 1.  
   

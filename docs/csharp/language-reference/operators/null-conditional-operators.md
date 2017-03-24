@@ -1,9 +1,13 @@
 ---
 title: "Null-conditional Operators (C# and Visual Basic) | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -11,25 +15,14 @@ ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
 # Null-conditional Operators (C# and Visual Basic)
+[!INCLUDE[csharpbanner](../../../includes/csharpbanner.md)]
+
 Used to test for null before performing a member access (`?.`) or index (`?[`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  
   
-```cs  
+```csharp  
 int? length = customers?.Length; // null if customers is null   
 Customer first = customers?[0];  // null if customers is null  
 int? count = customers?[0]?.Orders?.Count();  // null if customers, the first customer, or Orders is null  
@@ -53,7 +46,7 @@ A?.B?.C?[0] == E
   
  Another use for the null-condition member access is invoking delegates in a thread-safe way with much less code.  The old way requires code like the following:  
   
-```cs  
+```csharp  
 var handler = this.PropertyChanged;  
 if (handler != null)  
     handler(…)  
@@ -79,12 +72,11 @@ PropertyChanged?.Invoke(e)
  You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `PropertyChanged?(e)`.  There were too many ambiguous parsing situations to allow it.  
   
 ## Language Specifications  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](../../../includes/csharplangspec-md.md)]  
   
  For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
   
 ## See Also  
- [?? (null-coalescing operator)](null-conditional-operator.md)   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)   

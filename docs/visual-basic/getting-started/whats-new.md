@@ -1,13 +1,13 @@
 ---
-title: "What's new for Visual Basic | Microsoft Docs"
-
+title: "What&#39;s New for Visual Basic | Microsoft Docs"
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
@@ -21,26 +21,14 @@ ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 caps.latest.revision: 145
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+manager: "wpickett"
 ---
-# What's new for Visual Basic
+# What&#39;s New for Visual Basic
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 This page lists key feature names for each version of Visual Basic with descriptions of the new and enhanced features in the lastest version of the language.  
   
-## Previous versions  
+## Previous Versions  
  Visual Basic / Visual Studio .NET 2002  
  First release  
   
@@ -65,12 +53,12 @@ This page lists key feature names for each version of Visual Basic with descript
  Visual Basic / Visual Studio .NET 2015  
  Current version, see below  
   
-## Current version  
+## Current Version  
  [Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
  [String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
- You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
+ You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  C# creates a string by replacing the expressions with the ToString represenations of the expressions’ results.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../Topic/Composite%20Formatting.md).  
   
  [Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
  You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
@@ -134,5 +122,5 @@ End Interface
   
  Now the compiler will use normal overload resolution rules to choose the most appropriate `GetDetails` to call, and you can declare interface relationships in Visual Basic like those shown in the sample.  
   
-## See also  
- [What's New in Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/whats-new-in-visual-studio)
+## See Also  
+ [What's New in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015)

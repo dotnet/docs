@@ -2,12 +2,12 @@
 title: "Applicability of Functional Transformation (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
+ms.prod: "visual-studio-dev14"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,9 +15,11 @@ ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
+manager: "wpickett"
 ---
 # Applicability of Functional Transformation (C#)
+[!INCLUDE[csharpbanner](../../../../includes/csharpbanner.md)]
+
 Pure functional transformations are applicable in a wide variety of situations.  
   
  The functional transformation approach is ideally suited for querying and manipulating structured data; therefore it fits well with LINQ technologies. However, functional transformation has a much wider applicability than use with LINQ. Any process where the main focus is on transforming data from one form to another should probably be considered as a candidate for functional transformation.  

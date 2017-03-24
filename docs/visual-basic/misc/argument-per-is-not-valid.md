@@ -1,13 +1,13 @@
 ---
 title: "Argument &#39;Per&#39; is not valid | Microsoft Docs"
-
+ms.custom: ""
 ms.date: "2015-07-20"
-ms.prod: .net
-
-
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vbrPPMT_PerGT0AndLTNPer"
@@ -15,27 +15,12 @@ ms.assetid: 5f3fadba-d32c-4e52-b949-85a907e6c12f
 caps.latest.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+manager: "wpickett"
 ---
 # Argument &#39;Per&#39; is not valid
 An argument supplied for `Per`, which must be a `Double` specifying payment period in the range 1 through `NPer`, is not valid.  
   
-## To correct this error  
+### To correct this error  
   
 -   Ensure that the argument falls within the valid range.  
   

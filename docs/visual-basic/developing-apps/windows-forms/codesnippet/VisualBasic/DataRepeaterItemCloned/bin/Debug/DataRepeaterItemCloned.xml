@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DataRepeaterItemCloned
+</name>
+</assembly>
+<members>
+<member name="T:DataRepeaterItemCloned.northwndDataSet.EmployeesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSet.EmployeesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSet.EmployeesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSetTableAdapters.EmployeesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DataRepeaterItemCloned.northwndDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DataRepeaterItemCloned.northwndDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DataRepeaterItemCloned.northwndDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.UpdateAll(DataRepeaterItemCloned.northwndDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:DataRepeaterItemCloned.northwndDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

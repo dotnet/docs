@@ -74,7 +74,7 @@ You have three primary options when targeting the .NET Standard, depending on yo
 
 Keep in mind that some of the .NET Framework versions used here are no longer in support.  Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
 
-If you want to reach the maximum number of developers and projects, use the .NET Framework 4 as your baseline target. To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
+If you want to reach the maximum number of developers and projects, use the .NET Framework 4.0 as your baseline target. To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
 
 ```
 .NET Framework 2.0   --> net20
@@ -90,106 +90,53 @@ If you want to reach the maximum number of developers and projects, use the .NET
 .NET Framework 4.6.3 --> net463
 ```
 
-For example, here's how you would write a library which targets the .NET Framework 4:
+You then insert this TFM into the `TargetFramework` section of your project file.  For example, here's how you would write a library which targets the .NET Framework 4.0:
 
-```json
-{
-    "frameworks":{
-        "net40":{}
-    }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net40</TargetFramework>
+    </PropertyGroup>
+</Project>
 ```
 
 And that's it!  Although this compiled only for the .NET Framework 4, you can use the library on newer versions of the .NET Framework.
-
-## How to target a Portable Class Library (PCL)
-
-> [!NOTE]
-> These instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
-
-Targeting a PCL profile is a bit trickier than targeting .NET Standard or the .NET Framework.  For starters, [reference this list of PCL profiles](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview) to find the NuGet target which corresponds to the PCL profile you are targeting.
-
-Then, you need to do the following:
-
-1. Create a new entry under `frameworks` in your `project.json`, named `.NETPortable,Version=v{version},Profile=Profile{profile}`, where `{version}` and `{profile}` correspond to a PCL version number and Profile number, respectively.
-2. In this new entry, list every single assembly used for that target under a `frameworkAssemblies` entry.  This includes `mscorlib`, `System`, and `System.Core`.
-3. If you are multitargeting (see the next section), you must explicitly list dependencies for each target under their target entries.  You won't be able to use a global `dependencies` entry anymore.
-
-The following is an example targeting PCL Profile 328. Profile 328 supports: .NET Standard 1.4, .NET Framework 4, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8.1, and Silverlight 5.
-
-```json
-{
-    "frameworks":{
-        ".NETPortable,Version=v4.0,Profile=Profile328":{
-            "frameworkAssemblies":{
-                "mscorlib":"",
-                "System":"",
-                "System.Core":""
-            }
-        }
-    }
-}
-```
-
-When you build a project that includes PCL Profile 328 as a framework in the *project.json* file, it will have this subfolder in the */bin/debug* folder:
-
-```
-portable-net40+sl50+netcore45+wpa81+wp8/
-```
-
-This folder contains the `.dll` files necessary to run your library.
 
 ## How to Multitarget
 
 > [!NOTE]
 > The following instructions assume you have the .NET Framework installed on your machine.  Refer to the [Prerequisites](#prerequisites) section to learn which dependencies you need to install and where to download them from.
 
-You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core. In this scenario, if you want to use newer APIs and language constructs for the newer targets, use `#if` directives in your code. You also might need to add different packages and dependencies in your `project.json file` for each platform you're targeting to include the different APIs needed for each case.
+You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core. In this scenario, if you want to use newer APIs and language constructs for the newer targets, use `#if` directives in your code. You also might need to add different packages and dependencies for each platform you're targeting to include the different APIs needed for each case.
 
 For example, let's say you have a library that performs networking operations over HTTP. For .NET Standard and the .NET Framework versions 4.5 or higher, you can use the `HttpClient` class from the `System.Net.Http` namespace. However, earlier versions of the .NET Framework don't have the `HttpClient` class, so you could use the `WebClient` class from the `System.Net` namespace for those instead.
 
-So, the `project.json` file could look like this:
+Your project file could look like this:
 
-```json
-{
-    "frameworks":{
-        "net40":{
-            "frameworkAssemblies": {
-                "System.Net":"",
-                "System.Text.RegularExpressions":""
-            }
-        },
-        "net452":{
-            "frameworkAssemblies":{
-                "System.Net":"",
-                "System.Net.Http":"",
-                "System.Text.RegularExpressions":"",
-                "System.Threading.Tasks":""
-            }
-        },
-        "netstandard1.6":{
-            "dependencies": {
-                "NETStandard.Library":"1.6.0",
-            }
-        }
-    }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.4;net40;net45</TargetFrameworks>
+  </PropertyGroup>
+
+  <!-- Need to conditionally bring in references for the .NET Framework 4.0 target -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+    <Reference Include="System.Net" />
+  </ItemGroup>
+
+  <!-- Need to conditionally bring in references for the .NET Framework 4.5 target -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Threading.Tasks" />
+  </ItemGroup>
+</Project>
 ```
 
-Note that the .NET Framework assemblies need to be referenced explicitly in the `net40` and `net452` target, and NuGet references are also explicitly listed in the `netstandard1.6` target.  This is required in multitargeting scenarios.
+You'll notice three major changes here:
 
-Next, the `using` statements in your source file can be adjusted like this:
-
-```csharp
-#if NET40
-// This only compiles for the .NET Framework 4 targets
-using System.Net;
-#else
-// This compiles for all other targets
-using System.Net.Http;
-using System.Threading.Tasks;
-#endif
-```
+1. The `TargetFramework` node has been replaced by `TargetFrameworks`, and three TFMs are expressed inside.
+2. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework references.
+3. There is an `<ItemGroup>` node for the `net45` target pulling in two .NET Framework references.
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:
 
@@ -212,14 +159,27 @@ The build system is aware of the following preprocessor symbols used in `#if` di
 .NET Standard 1.6    --> NETSTANDARD1_6
 ```
 
-And in the middle of the source, you can use `#if` directives to use those libraries conditionally. For example:
+Here is an example making use of conditional compilation per-target:
 
 ```csharp
+using System;
+using System.Text.RegularExpressions;
+#if NET40
+// This only compiles for the .NET Framework 4 targets
+using System.Net;
+#else
+ // This compiles for all other targets
+using System.Net.Http;
+using System.Threading.Tasks;
+#endif
+
+namespace MultitargetLib
+{
     public class Library
     {
 #if NET40
-        private readonly WebClient _client = new WebClient();
-        private readonly object _locker = new object();
+         private readonly WebClient _client = new WebClient();
+         private readonly object _locker = new object();
 #else
         private readonly HttpClient _client = new HttpClient();
 #endif
@@ -229,94 +189,48 @@ And in the middle of the source, you can use `#if` directives to use those libra
         public string GetDotNetCount()
         {
             string url = "http://www.dotnetfoundation.org/";
-          
+
             var uri = new Uri(url);
-            
+
             string result = "";
-            
+
             // Lock here to provide thread-safety.
             lock(_locker)
             {
                 result = _client.DownloadString(uri);
             }
-            
+
             int dotNetCount = Regex.Matches(result, ".NET").Count;
-            
+
             return $"Dotnet Foundation mentions .NET {dotNetCount} times!";
         }
 #else
-        // .NET 4.5+ can use async/await!
-        public async Task<string> GetDotNetCountAsync()
-        {
-            string url = "http://www.dotnetfoundation.org/";
-            
-            // HttpClient is thread-safe, so no need to explicitly lock here
-            var result = await _client.GetStringAsync(url);
-            
-            int dotNetCount = Regex.Matches(result, ".NET").Count;
-            
-            return $"dotnetfoundation.orgmentions .NET {dotNetCount} times in its HTML!";
-        }
-#endif
+         // .NET 4.5+ can use async/await!
+         public async Task<string> GetDotNetCountAsync()
+         {
+             string url = "http://www.dotnetfoundation.org/";
+
+             // HttpClient is thread-safe, so no need to explicitly lock here
+             var result = await _client.GetStringAsync(url);
+
+             int dotNetCount = Regex.Matches(result, ".NET").Count;
+
+             return $"dotnetfoundation.orgmentions .NET {dotNetCount} times in its HTML!";
+         }
+ #endif
     }
+}
 ```
 
-When you build a project that includes `net40`, `net45`, and `netstandard1.6` as frameworks in the *project.json* file, it will have these subfolders in the */bin/debug* folder:
+If you build this project with `dotnet build`, you'll notice three directories under the `bin/` folder:
 
 ```
 net40/
 net45/
-netstandard1.6/
+netstandard1.4/
 ```
 
-### But What about Multitargeting with Portable Class Libraries?
-
-If you want to cross-compile with a PCL target, you must add a build definition in your `project.json` file under `buildOptions` in your PCL target.  You can then use `#if` directives in the source which use the build definition as a preprocessor symbol.
-
-For example, if you want to target [PCL profile 328](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview) (The .NET Framework 4, Windows 8, Windows Phone Silverlight 8, Windows Phone 8.1, Silverlight 5), you could to refer to it to as "PORTABLE328" when cross-compiling.  Simply add it to the `project.json` file as a `buildOptions` attribute:
-
-```json
-{
-    "frameworks":{
-        "netstandard1.6":{
-           "dependencies":{
-                "NETStandard.Library":"1.6.0",
-            }
-        },
-        ".NETPortable,Version=v4.0,Profile=Profile328":{
-            "buildOptions": {
-                "define": [ "PORTABLE328" ]
-            },
-            "frameworkAssemblies":{
-                "mscorlib":"",
-                "System":"",
-                "System.Core":"",
-                "System.Net"
-            }
-        }
-    }
-}
-
-```
-
-Now you can conditionally compile against that target:
-
-```csharp
-#if !PORTABLE328
-using System.Net.Http;
-using System.Threading.Tasks;
-// Potentially other namespaces which aren't compatible with Profile 328
-#endif
-```
-
-Because `PORTABLE328` is now recognized by the compiler, the PCL Profile 328 library generated by a compiler will not include `System.Net.Http` or `System.Threading.Tasks`.
-
-When you build a project that includes PCL Profile 328 and `netstandard1.6` as frameworks in the *project.json* file, it will have these subfolders in the */bin/debug* folder:
-
-```
-portable-net40+sl50+netcore45+wpa81+wp8/
-netstandard1.6/
-```
+Each of these contain the `.dll` files for each target.
 
 ## How to use native dependencies
 

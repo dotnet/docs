@@ -88,7 +88,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the file and replace the code with the following:
 
-   ```cs
+   ```csharp
    using Xunit;
    using TextUtils;
    using System.Diagnostics;
@@ -128,7 +128,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Testing individual return values with a `Fact` is only the beginning of what you can do with unit testing. Another powerful technique allows you to test several values at once using a `Theory`. Add the following method to your `TextUtils_GetWordCountShould` class. You have two methods in the class after you add this method:
 
-   ```cs
+   ```csharp
    [Theory]
    [InlineData(0, "Ting", "Does not appear in the string.")]
    [InlineData(1, "Ting", "Ting appears once.")]

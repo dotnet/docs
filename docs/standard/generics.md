@@ -24,7 +24,7 @@ Generics are also available at runtime, or **reified**. This means the runtime k
 
 Here is a small program that illustrates the efficiency of knowing the data structure type at runtime:
 
-```cs
+```csharp
   using System;
   using System.Collections;
   using System.Collections.Generic;

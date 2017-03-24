@@ -20,7 +20,7 @@ LINQ provides language-level querying capabilities and a [higher-order function]
 
 Language-level query syntax:
 
-```cs
+```csharp
 var linqExperts = from p in programmers
                   where p.IsNewToLINQ
                   select new LINQExpert(p);
@@ -29,7 +29,7 @@ var linqExperts = from p in programmers
 
 Same example using the `IEnumerable<T>` API:
 
-```cs
+```csharp
 var linqExperts = programmers.Where(p => IsNewToLINQ)
                              .Select(p => new LINQExpert(p));
 
@@ -41,7 +41,7 @@ Imagine you have a list of pets, but want to convert it into a dictionary where 
 
 Traditional imperative code:
 
-```cs
+```csharp
 var petLookup = new Dictionary<int, Pet>();
 
 foreach (var pet in pets)
@@ -55,7 +55,7 @@ The intention behind the code is not to create a new `Dictionary<int, Pet>` and 
 
 Equivalent LINQ expression:
 
-```cs
+```csharp
 var petLookup = pets.ToDictionary(pet => pet.RFID);
 
 ```
@@ -68,7 +68,7 @@ For a significant chunk of software out in the wild, everything revolves around 
 
 Consider the following: finding all XML elements with a specific attribute value.
 
-```cs
+```csharp
 public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement documentRoot, string elementName,
                                            string attributeName, string value)
 {
@@ -87,14 +87,14 @@ Interacting with XML isn’t the only thing you can do with LINQ Providers. [Lin
 
 This is a question which often comes up. After all, this,
 
-```cs
+```csharp
 var filteredItems = myItems.Where(item => item.Foo);
 
 ```
 
 is a lot more concise than this:
 
-```cs
+```csharp
 var filteredItems = from item in myItems
                     where item.Foo
                     select item;
@@ -127,7 +127,7 @@ The following is a quick demonstration of some of the essential pieces of LINQ. 
 
 *   The bread and butter - `Where`, `Select`, and `Aggregate`:
 
-```cs
+```csharp
 // Filtering a list
 var germanShepards = dogs.Where(dog => dog.Breed == DogBreed.GermanShepard);
 
@@ -151,7 +151,7 @@ int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 
 *   Flattening a list of lists:
 
-```cs
+```csharp
 // Transforms the list of kennels into a list of all their dogs.
 var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 
@@ -159,7 +159,7 @@ var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 
 *   Union between two sets (with custom comparator):
 
-```cs
+```csharp
 public class DogHairLengthComparer : IEqualityComparer<Dog>
 {
     public bool Equals(Dog a, Dog b)
@@ -195,7 +195,7 @@ var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthCompa
 
 *   Intersection between two sets:
 
-```cs
+```csharp
 // Gets the volunteers who spend share time with two humane societies.
 var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
                                                      new VolunteerTimeComparer());
@@ -204,7 +204,7 @@ var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
 
 *   Ordering:
 
-```cs
+```csharp
 // Get driving directions, ordering by if it's toll-free before estimated driving time.
 var results = DirectionsProcessor.GetDirections(start, end)
               .OrderBy(direction => direction.HasNoTolls)
@@ -214,7 +214,7 @@ var results = DirectionsProcessor.GetDirections(start, end)
 
 *   Finally, a more advanced sample: determining if the values of the properties of two instances of the same type are equal (Borrowed and modified from [this StackOverflow post](http://stackoverflow.com/a/844855)):
 
-```cs
+```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
 {
     if (self != null && to != null)
@@ -243,7 +243,7 @@ PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In
 
 Consider the following:
 
-```cs
+```csharp
 public static string GetAllFacebookUserLikesMessage(IEnumerable<FacebookUser> facebookUsers)
 {
     var seed = default(UInt64);

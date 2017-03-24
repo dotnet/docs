@@ -70,13 +70,13 @@ If an integer literal has no suffix, its type is the first of the following type
 ## Conversions  
  There is a predefined implicit conversion from `uint` to [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). For example:  
   
-```cs  
+```csharp  
 float myFloat = 4294967290;   // OK: implicit conversion to float  
 ```  
   
  There is a predefined implicit conversion from [byte](../../../csharp/language-reference/keywords/byte.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), or [char](../../../csharp/language-reference/keywords/char.md) to `uint`. Otherwise you must use a cast. For example, the following assignment statement will produce a compilation error without a cast:  
   
-```cs  
+```csharp  
 long aLong = 22;  
 // Error -- no implicit conversion from long:  
 uint uInt1 = aLong;   
@@ -86,7 +86,7 @@ uint uInt2 = (uint)aLong;
   
  Notice also that there is no implicit conversion from floating-point types to `uint`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 // Error -- no implicit conversion from double:  
 uint x = 3.0;  
 // OK -- explicit conversion:  

@@ -58,14 +58,14 @@ Starting with C# 7, you can also use the underscore character, `_`, as a digit s
 
  A cast must be used when calling overloaded methods. Consider, for example, the following overloaded methods that use `short` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```cs  
+```csharp  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(short s) {}  
 ```  
   
  Using the `short` cast guarantees that the correct type is called, for example:  
   
-```cs  
+```csharp  
 SampleMethod(5);         // Calling the method with the int parameter  
 SampleMethod((short)5);  // Calling the method with the short parameter  
 ```  
@@ -76,32 +76,32 @@ SampleMethod((short)5);  // Calling the method with the short parameter
   
  You cannot implicitly convert nonliteral numeric types of larger storage size to `short` (see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md) for the storage sizes of integral types). Consider, for example, the following two `short` variables `x` and `y`:  
   
-```cs  
+```csharp  
 short x = 5, y = 12;  
 ```  
   
  The following assignment statement produces a compilation error because the arithmetic expression on the right-hand side of the assignment operator evaluates to [int](../../../csharp/language-reference/keywords/int.md) by default.  
   
-```cs
+```csharp
 short z  = x + y;        // Compiler error CS0266: no conversion from int to short
 ```
 
  To fix this problem, use a cast:  
   
-```cs
+```csharp
 short z  = (short)(x + y);   // Explicit conversion
 ```
   
  It is also possible to use the following statements, where the destination variable has the same storage size or a larger storage size:  
   
-```cs  
+```csharp  
 int m = x + y;  
 long n = x + y;  
 ```  
   
  There is no implicit conversion from floating-point types to `short`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 short x = 3.0;          // Error: no implicit conversion from double  
 short y = (short)3.0;   // OK: explicit conversion  
 ```  

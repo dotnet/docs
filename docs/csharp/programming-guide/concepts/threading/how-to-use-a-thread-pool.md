@@ -31,7 +31,7 @@ translation.priority.mt:
   
 ## Example  
   
-```cs  
+```csharp  
 using System;  
 using System.Threading;  
   

@@ -94,7 +94,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
 ## Example  
  The following code compiles source file `OfficeApp.cs` and reference assemblies from `COMData1.dll` and `COMData2.dll` to produce `OfficeApp.exe`.  
   
-```cs  
+```csharp  
 csc /link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.cs  
 ```  
   

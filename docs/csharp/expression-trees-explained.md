@@ -28,7 +28,7 @@ Trees are based on a totally different set of classes and APIs than the Roslyn A
     
 Let's look at a simple example.
 Here's a line of code:
-```cs
+```csharp
 var sum = 1 + 2;
 ```
 If you were to analyze this as an expression tree, the tree contains several nodes.
@@ -58,7 +58,7 @@ each node in the tree to see the code that makes up the statement:
 
 This may look complicated, but it is very powerful. Following the same process, you can decompose
 much more complicated expressions. Consider this expression:
-```cs
+```csharp
 var finalAnswer = this.SecretSauceFuncion(
     currentState.createInterimResult(), currentState.createSecondValue(1, 2),
     decisionServer.considerFinalOptions("hello")) +

@@ -43,7 +43,7 @@ The `await` operator is applied to a task in an asynchronous method to suspend t
   
  In the following code, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> returns a `Task\<byte[]>`, `getContentsTask`. The task is a promise to produce the actual byte array when the task is complete. The `await` operator is applied to `getContentsTask` to suspend execution in `SumPageSizesAsync` until `getContentsTask` is complete. In the meantime, control is returned to the caller of `SumPageSizesAsync`. When `getContentsTask` is finished, the `await` expression evaluates to a byte array.  
   
-```cs  
+```csharp  
   
 private async Task SumPageSizesAsync()  
 {  
@@ -66,7 +66,7 @@ private async Task SumPageSizesAsync()
   
  As shown in the previous example, if `await` is applied to the result of a method call that returns a `Task<TResult>`, then the type of the `await` expression is TResult. If `await` is applied to the result of a method call that returns a `Task`, then the type of the `await` expression is void. The following example illustrates the difference.  
   
-```cs  
+```csharp  
 // Keyword await used with a method that returns a Task<TResult>.  
 TResult result = await AsyncMethodThatReturnsTaskTResult();  
   
@@ -93,7 +93,7 @@ await AsyncMethodThatReturnsTask();
 ## Example  
  The following Windows Forms example illustrates the use of `await` in an async method, `WaitAsynchronouslyAsync`. Contrast the behavior of that method with the behavior of `WaitSynchronously`. Without an `await` operator applied to a task, `WaitSynchronously` runs synchronously despite the use of the `async` modifier in its definition and a call to <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> in its body.  
   
-```cs  
+```csharp  
   
 private async void button1_Click(object sender, EventArgs e)  
 {  

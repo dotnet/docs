@@ -25,13 +25,13 @@ translation.priority.mt:
 # How to: Make Multiple Web Requests in Parallel by Using async and await (C#)
 In an async method, tasks are started when they’re created. The [await](../../../../csharp/language-reference/keywords/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
   
-```cs  
+```csharp  
 var result = await someWebAccessMethodAsync(url);  
 ```  
   
  However, you can separate creating the task from awaiting the task if your program has other work to accomplish that doesn’t depend on the completion of the task.  
   
-```cs  
+```csharp  
 // The following line creates and starts the task.  
 var myTask = someWebAccessMethodAsync(url);  
   
@@ -71,7 +71,7 @@ var result = await myTask;
   
 2.  Copy the following code, and paste it into the body of `startButton_Click` in MainWindow.xaml.cs.  
   
-    ```cs  
+    ```csharp  
     resultsTextBox.Clear();  
     await CreateMultipleTasksAsync();  
     resultsTextBox.Text += "\r\n\r\nControl returned to startButton_Click.\r\n";  
@@ -87,7 +87,7 @@ var result = await myTask;
   
      Copy the following methods, and paste them after the `startButton_Click` event handler in MainWindow.xaml.cs.  
   
-    ```cs  
+    ```csharp  
     async Task<int> ProcessURLAsync(string url, HttpClient client)  
     {  
         var byteArray = await client.GetByteArrayAsync(url);  
@@ -119,7 +119,7 @@ var result = await myTask;
   
      Copy the following method, and paste it into your solution.  
   
-    ```cs  
+    ```csharp  
     private async Task CreateMultipleTasksAsync()  
     {  
         // Declare an HttpClient object, and increase the buffer size. The  
@@ -156,7 +156,7 @@ var result = await myTask;
 ## Example  
  The following code contains the full example.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

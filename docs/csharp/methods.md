@@ -192,7 +192,7 @@ Using a local variable, in this case, `result`, to store a value is optional. It
 
 Sometimes, you want your method to return more than a single value. Starting with C# 7.0, you can do this easily by using *tuple types* and *tuple literals*. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In teh following example, `(string, string, string, int)` defines the tuple type that is returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and last name, along with the age, of a `PersonInfo` object.
 
-```cs
+```csharp
 public (string, string, string, int) GetPersonalInfo(string id)
 {
     PersonInfo per = PersonInfo.RetrieveInfoById(id);
@@ -205,7 +205,7 @@ public (string, string, string, int) GetPersonalInfo(string id)
 
 The caller can then consume the returned tuple with code like the following:
 
-```cs
+```csharp
 var person = GetPersonalInfo("111111111")
 if (person != null)
    Console.WriteLine("{person.Item1} {person.Item3}: age = {person.Item4}");
@@ -213,7 +213,7 @@ if (person != null)
 
 Names can also be assigned to the tuple elements in the tuple type definition. The following example shows an alternate version of the `GetPersonalInfo` method that uses named elements:
 
-```cs
+```csharp
 public (string FName, string MName, string LName, int Age) GetPersonalInfo(string id)
 {
     PersonInfo per = PersonInfo.RetrieveInfoById(id);
@@ -226,7 +226,7 @@ public (string FName, string MName, string LName, int Age) GetPersonalInfo(strin
 
 The previous call to the `GetPersonInfo` method can then be modified as follows:
 
-```cs
+```csharp
 var person = GetPersonalInfo("111111111");
 if (person != null)
    Console.WriteLine("{person.FName} {person.LName}: age = {person.Age}");
@@ -273,7 +273,7 @@ An async method can't declare any [ref](https://msdn.microsoft.com/library/14akc
 
 It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:
 
-```cs
+```csharp
 
 public Point Move(int dx, int dy) => new Point(x + dx, y + dy);
 public void Print() => Console.WriteLine(First + " " + Last);

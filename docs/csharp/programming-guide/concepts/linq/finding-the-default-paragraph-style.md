@@ -31,7 +31,7 @@ The first task in the Manipulating Information in a WordprocessingML Document tu
   
 ### Code  
   
-```cs  
+```csharp  
 const string fileName = "SampleDoc.docx";  
   
 const string documentRelationshipType =  

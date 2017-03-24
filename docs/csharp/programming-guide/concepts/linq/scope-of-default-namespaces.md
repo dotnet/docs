@@ -36,7 +36,7 @@ Default namespaces as represented in the XML tree are not in scope for queries. 
   
 ### Code  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>1</Child>  
@@ -70,7 +70,7 @@ End of result set
   
 ### Code  
   
-```cs  
+```csharp  
 XElement root = XElement.Parse(  
 @"<Root xmlns='http://www.adventure-works.com'>  
     <Child>1</Child>  

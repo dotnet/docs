@@ -93,7 +93,7 @@ A method is a code block that contains a series of statements. A program causes 
   
  Returning a multi-dimensional array from a method, M, that modifies the array's contents is not necessary if the calling function passed the array into M.  You may return the resulting array from M for good style or functional flow of values, but it is not necessary.  The reason you do not need to return the modified array is that C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the method M, any changes to the array's contents are observable by any code that has a reference to the array, as shown in the following example.  
   
-```cs  
+```csharp  
 static void Main(string[] args)  
         {  
             int[,] matrix = new int[2, 2];  
@@ -139,7 +139,7 @@ static void Main(string[] args)
 ## Expression Body Definitions  
  It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:  
   
-```cs  
+```csharp  
 public Point Move(int dx, int dy) => new Point(x + dx, y + dy);   
 public void Print() => Console.WriteLine(First + " " + Last);  
 // Works with operators, properties, and indexers too.  

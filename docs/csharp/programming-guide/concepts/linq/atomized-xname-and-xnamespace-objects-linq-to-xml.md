@@ -30,7 +30,7 @@ ms.author: "wiwagn"
 ## Example  
  The following code creates some <xref:System.Xml.Linq.XElement> objects and demonstrates that identical names share the same instance.  
   
-```cs  
+```csharp  
 XElement r1 = new XElement("Root", "data1");  
 XElement r2 = XElement.Parse("<Root>data2</Root>");  
   
@@ -58,7 +58,7 @@ The name of r1 and the name in 'n' refer to the same instance.
   
  The following example passes an <xref:System.Xml.Linq.XName> to the <xref:System.Xml.Linq.XContainer.Descendants%2A> method call, which then has better performance because of the atomization pattern.  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("C1", 1),  
     new XElement("Z1",  

@@ -38,7 +38,7 @@ translation.priority.ht:
 # Boxing Nullable Types (C# Programming Guide)
 Objects based on nullable types are only boxed if the object is non-null. If <xref:System.Nullable%601.HasValue%2A> is `false`, the object reference is assigned to `null` instead of boxing. For example:  
   
-```cs  
+```csharp  
 bool? b = null;  
 object o = b;  
 // Now o is null.  
@@ -46,7 +46,7 @@ object o = b;
   
  If the object is non-null -- if <xref:System.Nullable%601.HasValue%2A> is `true` -- then boxing occurs, but only the underlying type that the nullable object is based on is boxed. Boxing a non-null nullable value type boxes the value type itself, not the <xref:System.Nullable%601?displayProperty=fullName> that wraps the value type. For example:  
   
-```cs  
+```csharp  
 bool? b = false;  
 int? i = 44;  
 object bBoxed = b; // bBoxed contains a boxed bool.  
@@ -55,7 +55,7 @@ object iBoxed = i; // iBoxed contains a boxed int.
   
  The two boxed objects are identical to those created by boxing non-nullable types. And, just like non-nullable boxed types, they can be unboxed into nullable types, as in the following example:  
   
-```cs  
+```csharp  
 bool? b2 = (bool?)bBoxed;  
 int? i2 = (int?)iBoxed;  
 ```  
@@ -65,7 +65,7 @@ int? i2 = (int?)iBoxed;
   
 1.  Nullable objects and their boxed counterpart can be tested for null:  
   
-    ```cs  
+    ```csharp  
     bool? b = null;  
     object boxedB = b;  
     if (b == null)  
@@ -80,7 +80,7 @@ int? i2 = (int?)iBoxed;
   
 2.  Boxed nullable types fully support the functionality of the underlying type:  
   
-    ```cs  
+    ```csharp  
     double? d = 44.4;  
     object iBoxed = d;  
     // Access IConvertible interface implemented by double.  

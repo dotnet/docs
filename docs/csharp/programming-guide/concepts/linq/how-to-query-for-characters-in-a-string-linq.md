@@ -28,7 +28,7 @@ Because the <xref:System.String> class implements the generic <xref:System.Colle
 ## Example  
  The following example queries a string to determine the number of numeric digits it contains. Note that the query is "reused" after it is executed the first time. This is possible because the query itself does not store any actual results.  
   
-```cs  
+```csharp  
 class QueryAString  
 {  
     static void Main()  

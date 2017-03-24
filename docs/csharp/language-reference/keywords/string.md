@@ -40,7 +40,7 @@ The `string` type represents a sequence of zero or more Unicode characters. `str
   
  Although `string` is a reference type, the equality operators (`==` and `!=`) are defined to compare the values of `string` objects, not references. This makes testing for string equality more intuitive. For example:  
   
-```cs  
+```csharp  
   
       string a = "hello";  
 string b = "h";  
@@ -54,7 +54,7 @@ Console.WriteLine((object)a == (object)b);
   
  The + operator concatenates strings:  
   
-```cs  
+```csharp  
   
 string a = "good " + "morning";  
 ```  
@@ -63,7 +63,7 @@ string a = "good " + "morning";
   
  Strings are *immutable*--the contents of a string object cannot be changed after the object is created, although the syntax makes it appear as if you can do this. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to b. The string "h" is then eligible for garbage collection.  
   
-```cs  
+```csharp  
   
       string b = "h";  
 b += "ello";  
@@ -71,7 +71,7 @@ b += "ello";
   
  The [] operator can be used for readonly access to individual characters of a `string`:  
   
-```cs  
+```csharp  
   
       string str = "test";  
 char x = str[2];  // x = 's';  
@@ -79,7 +79,7 @@ char x = str[2];  // x = 's';
   
  String literals are of type `string` and can be written in two forms, quoted and @-quoted. Quoted string literals are enclosed in double quotation marks ("):  
   
-```cs  
+```csharp  
 "good morning"  // a string literal  
 ```  
   
@@ -96,19 +96,19 @@ Console.WriteLine(a);
   
  Verbatim string literals start with @ and are also enclosed in double quotation marks. For example:  
   
-```cs  
+```csharp  
 @"good morning"  // a string literal  
 ```  
   
  The advantage of verbatim strings is that escape sequences are *not* processed, which makes it easy to write, for example, a fully qualified file name:  
   
-```cs  
+```csharp  
 @"c:\Docs\Source\a.txt"  // rather than "c:\\Docs\\Source\\a.txt"  
 ```  
   
  To include a double quotation mark in an @-quoted string, double it:  
   
-```cs  
+```csharp  
 @"""Ahoy!"" cried the captain." // "Ahoy!" cried the captain.  
 ```  
   

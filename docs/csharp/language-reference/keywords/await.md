@@ -93,7 +93,7 @@ await AsyncMethodThatReturnsTask();
 ## Example  
  The following Windows Forms example illustrates the use of `await` in an async method, `WaitAsynchronouslyAsync`. Contrast the behavior of that method with the behavior of `WaitSynchronously`. Without an `await` operator applied to a task, `WaitSynchronously` runs synchronously despite the use of the `async` modifier in its definition and a call to <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> in its body.  
   
-```cs  
+```csharp  
   
 private async void button1_Click(object sender, EventArgs e)  
 {  

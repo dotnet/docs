@@ -39,7 +39,7 @@ The [IDisposable](xref:System.IDisposable) interface requires the implementation
 
 * A protected virtual (`Overridable` in Visual Basic) `Dispose` method whose signature is:
 
-  ```cs
+  ```csharp
   protected virtual void Dispose(bool disposing)
   ```
 
@@ -51,7 +51,7 @@ The [IDisposable](xref:System.IDisposable) interface requires the implementation
 
 Because the public, non-virtual (`NonInheritable` in Visual Basic), parameterless `Dispose` method is called by a consumer of the type, its purpose is to free unmanaged resources and to indicate that the finalizer, if one is present, doesn't have to run. Because of this, it has a standard implementation:
 
-```cs
+```csharp
 public void Dispose()
 {
    // Dispose of unmanaged resources.
@@ -105,7 +105,7 @@ If you implement the dispose pattern for a base class, you must provide the foll
 
 Here's the general pattern for implementing the dispose pattern for a base class that uses a safe handle. 
 
-```cs
+```csharp
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
@@ -182,7 +182,7 @@ End Class
  
 Here's the general pattern for implementing the dispose pattern for a base class that overrides [Object.Finalize](xref:System.Object.Finalize). 
 
-```cs
+```csharp
 using System;
 
 class BaseClass : IDisposable
@@ -266,7 +266,7 @@ A class derived from a class that implements the [IDisposable](xref:System.IDisp
 
 Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle: 
 
-```cs
+```csharp
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
@@ -335,7 +335,7 @@ End Class
 
 Here's the general pattern for implementing the dispose pattern for a derived class that overrides [Object.Finalize](xref:System.Object.Finalize):
 
-```cs
+```csharp
 using System;
 
 class DerivedClass : BaseClass
@@ -420,7 +420,7 @@ Classes derived from the [System.Runtime.InteropServices.SafeHandle](xref:System
 
 The following example illustrates the dispose pattern for a base class, `DisposableStreamResource`, that uses a safe handle to encapsulate unmanaged resources. It defines a `DisposableResource` class that uses a [SafeFileHandle](xref:Microsoft.Win32.SafeHandles.SafeFileHandle) to wrap a [Stream](xref:System.IO.Stream) object that represents an open file. The `DisposableResource` method also includes a single property, `Size`, that returns the total number of bytes in the file stream. 
 
-```cs
+```csharp
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.IO;
@@ -584,7 +584,7 @@ End Class
 
 The following example illustrates the dispose pattern for a derived class, `DisposableStreamResource2`, that inherits from the `DisposableStreamResource` class presented in the previous example. The class adds an additional method, `WriteFileInfo`, and uses a [SafeFileHandle](xref:Microsoft.Win32.SafeHandles.SafeFileHandle) object to wrap the handle of the writable file. 
 
-```cs
+```csharp
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.IO;

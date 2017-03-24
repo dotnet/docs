@@ -22,7 +22,7 @@ One of the most important benefits of LINQ (and LINQ to XML) is that chained que
   
  A chained query is a query that uses another query as its source. For example, in the following simple code, `query2` has `query1` as its source:  
   
-```cs  
+```csharp  
 XElement root = new XElement("Root",  
     new XElement("Child", 1),  
     new XElement("Child", 2),  

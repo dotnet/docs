@@ -33,7 +33,7 @@ Let's start by visiting each node in a very simple expression tree.
 Here's the code that creates a constant expression and then
 examines its properties:
 
-```cs
+```csharp
 var constant = Expression.Constant(24, typeof(int));
 
 Console.WriteLine($"This is a/an {constant.NodeType} expression type");
@@ -57,7 +57,7 @@ out some important properties about it. Here's that code:
 Let's start with the addition sample from the
 introduction to this section.
 
-```cs
+```csharp
 Expression<Func<int>> sum = () => 1 + 2;
 ```
 
@@ -74,7 +74,7 @@ type of the `LambdaExpression`.
 To examine each node in this expression, we'll need to recursively
 visit a number of nodes. Here's a simple first implementation:
 
-```cs
+```csharp
 Expression<Func<int, int, int>> addition = (a, b) => a + b;
 
 Console.WriteLine($"This expression is a {addition.NodeType} expression type");
@@ -120,7 +120,7 @@ Any node that has children requires us to visit those children
 and determine what that node is. Here's the cleaned up version
 that utilizes recursion to visit the addition operations:
 
-```cs
+```csharp
 // Base Visitor class:
 public abstract class Visitor
 {
@@ -258,7 +258,7 @@ can visit and process many more different types of expressions.
 Let's try a more complicated example,
 yet still limit the node types to addition only:
 
-```cs
+```csharp
 Expression<Func<int>> sum = () => 1 + 2 + 3 + 4;
 ```
 
@@ -269,7 +269,7 @@ children, representing the left and right operands. There
 are several possible ways to construct a tree that 
 could be correct:
 
-```cs
+```csharp
 Expression<Func<int>> sum1 = () => 1 + (2 + (3 + 4));
 Expression<Func<int>> sum2 = () => ((1 + 2) + 3) + 4;
 
@@ -295,7 +295,7 @@ value of `10`. The compiler performs all the addition and reduces the
 expression to its simplest form. Simply adding one variable in the expression
 is sufficient to see the original tree:
 
-```cs
+```csharp
 Expression<Func<int, int>> sum = (a) => 1 + a + 3 + 4;
 ```
 
@@ -336,7 +336,7 @@ and see what tree it represents. Here's an example of the `sum3`
 expression above (with an additional parameter to prevent the compiler from
 computing the constant):
 
-```cs
+```csharp
 Expression<Func<int, int, int>> sum3 = (a, b) => (1 + a) + (3 + b);
 ```
 
@@ -385,7 +385,7 @@ you've seen in this section only handles constant integers and the binary
 `+` operator. As a final sample, let's update the visitor to handle a more
 complicated expression. Let's make it work for this:
 
-```cs
+```csharp
 Expression<Func<int, int>> factorial = (n) =>
     n == 0 ? 
     1 : 
@@ -414,7 +414,7 @@ the node type every time you reach your `default` clause. After a few
 iterations, you'll have seen each of the potential nodes. Then, you have
 all you need. The result would be something like this:
 
-```cs
+```csharp
 public static Visitor CreateFromExpression(Expression node)
 {
     switch(node.NodeType)
@@ -442,7 +442,7 @@ public static Visitor CreateFromExpression(Expression node)
 
 The ConditionalVisitor and MethodCallVisitor process those two nodes:
 
-```cs
+```csharp
 public class ConditionalVisitor : Visitor
 {
     private readonly ConditionalExpression node;

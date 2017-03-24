@@ -85,7 +85,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
   
     3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
   
-        ```cs  
+        ```csharp  
         int length = await firstFinishedTask;  
         resultsTextBox.Text += String.Format("\r\nLength of the download:  {0}", length);  
         ```  
@@ -102,7 +102,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
   
  You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

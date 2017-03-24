@@ -29,7 +29,7 @@ translation.priority.ht:
 # Null-conditional Operators (C# and Visual Basic)
 Used to test for null before performing a member access (`?.`) or index (`?[`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  
   
-```cs  
+```csharp  
 int? length = customers?.Length; // null if customers is null   
 Customer first = customers?[0];  // null if customers is null  
 int? count = customers?[0]?.Orders?.Count();  // null if customers, the first customer, or Orders is null  
@@ -53,7 +53,7 @@ A?.B?.C?[0] == E
   
  Another use for the null-condition member access is invoking delegates in a thread-safe way with much less code.  The old way requires code like the following:  
   
-```cs  
+```csharp  
 var handler = this.PropertyChanged;  
 if (handler != null)  
     handler(…)  

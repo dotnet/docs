@@ -230,7 +230,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the SampleClass.cs file. Add the following lines of code to the SampleClass class.  
   
-    ```cs  
+    ```csharp  
     public DateTime GetDate()  
     {  
         return DateTime.Now;  

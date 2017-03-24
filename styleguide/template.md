@@ -254,7 +254,7 @@ runtime errors, you can use inline code blocks.
 
 ### Inline code blocks with language identifier
 
-Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of [Supported Languages](https://review.docs.microsoft.com/en-us/csi/msdocs/code?branch=master#supported-languages).
 
 ##### C&#9839;
 

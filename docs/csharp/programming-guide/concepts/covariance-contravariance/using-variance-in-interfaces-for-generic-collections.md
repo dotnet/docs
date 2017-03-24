@@ -32,7 +32,7 @@ A covariant interface allows its methods to return more derived types than those
 ## Converting Generic Collections  
  The following example illustrates the benefits of covariance support in the <xref:System.Collections.Generic.IEnumerable%601> interface. The `PrintFullName` method accepts a collection of the `IEnumerable<Person>` type as a parameter. However, you can reuse it for a collection of the `IEnumerable<Employee>` type because `Employee` inherits `Person`.  
   
-```cs  
+```csharp  
 // Simple hierarchy of classes.  
 public class Person  
 {  
@@ -70,7 +70,7 @@ class Program
 ## Comparing Generic Collections  
  The following example illustrates the benefits of contravariance support in the <xref:System.Collections.Generic.IComparer%601> interface. The `PersonComparer` class implements the `IComparer<Person>` interface. However, you can reuse this class to compare a sequence of objects of the `Employee` type because `Employee` inherits `Person`.  
   
-```cs  
+```csharp  
 // Simple hierarchy of classes.  
 public class Person  
 {  

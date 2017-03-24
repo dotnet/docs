@@ -33,12 +33,12 @@ Used to construct strings.  An interpolated string looks like a template string 
 
 The arguments of an interpolated string are easier to understand than a [composite format string](../../../standard/base-types/composite-format.md#composite-format-string).  For example, the interpolated string  
   
-```cs  
+```csharp  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}"); 
 ```  
 contains two interpolated expressions, '{name}' and '{hours:hh}'. The equivalent composite format string is:
 
-```cs
+```csharp
 Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);  
 ```  
 

@@ -59,7 +59,7 @@ By using a `for` loop, you can run a statement or a block of statements repeated
   
  Every `for` statement defines initializer, condition, and iterator sections. These sections usually determine how many times the loop iterates.  
   
-```cs  
+```csharp  
 for (initializer; condition; iterator)  
     body  
 ```  

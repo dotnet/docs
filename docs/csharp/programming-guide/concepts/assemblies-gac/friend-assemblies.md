@@ -35,7 +35,7 @@ A *friend assembly* is an assembly that can access another assembly's [internal]
 > [!NOTE]
 >  When you compile an assembly (assembly `AssemblyB`) that will access internal types or internal members of another assembly (assembly *A*), you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [/out (C#)](../../../../csharp/language-reference/compiler-options/out-compiler-option.md) .  
   
-```cs  
+```csharp  
 using System.Runtime.CompilerServices;  
 using System;  
   

@@ -1,6 +1,6 @@
 # Installing the .NET Framework on Windows XP
 
-> Windows XP and the .NET Framework 4.0-4.5.1 are no longer supported by Microsoft. You are recommended to upgrade to Windows 10, which is supported and supports the latest version of the .NET Framework. This document is provided solely as a helpful guide to enable you to get an app working. 
+> Windows XP is no longer supported by Microsoft. You are recommended to upgrade to Windows 10, which is supported and supports the latest version of the .NET Framework. This document is provided solely as a helpful troublshooting guide. 
 
 You may need the .NET Framework to run an application on Windows XP. You can use the following instructions to help you. The instructions depend on which version of the .NET Framework you need.
 
@@ -8,12 +8,9 @@ You may need the .NET Framework to run an application on Windows XP. You can use
 
 You cannot install the .NET Framework 4.5 or later on Windows XP. Instead, you must upgrade to a later Windows version to use a later version of the .NET Framework.
 
-- On Windows Vista, the [.NET Framework 4.5.2]() is the latest supported version.
-- On Windows 7 and later, the [.NET Framework 4.6.2]() is the latest supported version.
+The .NET Framework 4.6.2 is included with the latest version of [Windows 10](https://www.microsoft.com/software-download/windows10).
 
-The .NET Framework 4.6.2 is included with the latest version of Windows 10.
-
-You may want to contact the publisher of the app, to see if they support Windows XP with another version of their app.
+You may need to contact the publisher of the app, to see if they support Windows XP.
 
 ## .NET Framework 4.0.3
 
@@ -21,11 +18,11 @@ You can install the [.NET Framework 4.0.3](http://go.microsoft.com/fwlink/?LinkI
 
 ## .NET Framework 4
 
-You can install the [.NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=213834) on Windows XP. It is no longer supported by Microsoft.
+You can install the [.NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP. It is no longer supported by Microsoft.
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](http://go.microsoft.com/fwlink/?LinkID=213834) on Windows XP.
+You can install the [.NET Framework 3.5](http://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP.
 
 ## Help
 

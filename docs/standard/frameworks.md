@@ -1,10 +1,10 @@
 ---
 title: Target frameworks | Microsoft Docs
-description: Explains the concepts of target frameworks when writing .NET code.
+description: Information surrounding target frameworks for .NET Core applications and libraries.
 keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw
-ms.date: 03/20/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -14,7 +14,13 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Target frameworks
 
-The .NET ecosystem has a concept of *target frameworks*. Frameworks define the API that you can use to target a particular platform. For example, the .NET Framework 4.6 is a platform that you can target. Visual Studio and other IDEs and editors use frameworks to provide you with the correct set of APIs. NuGet also uses them to ensure that you produce and consume appropriate NuGet packages and underlying assets for the framework you're targeting.
+*Frameworks* define the objects, methods, and tools that you use to create apps and libraries. The .NET Framework is used to create apps and libraries primarily for execution on systems running a Windows operating system. .NET Core includes a framework that allows you to build apps and libraries that run on a variety of operating systems.
+
+The term *framework* is sometimes used interchangeably with the word *platform* causing some confusion. For example, you'll see ".NET Core" described as the ".NET Core framework" in the context of building apps and libraries and also described as the ".NET Core platform" in the context of where app and library code is executed. A *computing platform* describes *where and how* an application is run. Since .NET Core executes code with the [.NET Core Common Language Runtime (CoreCLR)](https://github.com/dotnet/coreclr), it's also a platform. The same is true of the .NET Framework, which has the [Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4(v=vs.110).aspx) to execute app and library code that was developed with the .NET Framework's framework objects, methods, and tools. You'll frequently see the term "cross-platform" in documentation; but when you see that term, you should probably think "cross-operating system and cross-architecture (x86, x64, arm)," because that's the meaning that the author usually intends to convey. Unfortunately, the term *platform* has different meanings in different contexts.
+
+The objects and methods of frameworks are called Application Programming Interfaces (APIs). Framework APIs are used in [Visual Studio](https://www.visualstudio.com/), [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/), [Visual Studio Code](https://code.visualstudio.com/), and other Integrated Development Environments (IDEs) and editors to provide you with the correct set of objects and methods for development. Frameworks are also used by [NuGet](https://www.nuget.org/) for the production and consumption of NuGet packages to ensure that you produce and use appropriate packages for the frameworks that you target in your app or library.
+
+When you *target a framework* or target several of them, you've decided which set(s) of APIs and which version(s) of those APIs you would like to use. Frameworks are referenced in several ways: by product name, by long- or short-form framework names, and by family.
 
 | Reference | Name                                      |
 | --------- | ----------------------------------------- |
@@ -45,7 +51,7 @@ A framework is typically referenced by a short target framework moniker or *TFM*
 |                            |              | netstandard1.4                               |
 |                            |              | netstandard1.5                               |
 |                            |              | netstandard1.6                               |
-| .NET Core App              | netcoreapp   | netcoreapp1.0                                |
+| .NET Core                  | netcoreapp   | netcoreapp1.0                                |
 |                            |              | netcoreapp1.1                                |
 | .NET Framework             | net          | net11                                        |
 |                            |              | net20                                        |
@@ -58,14 +64,10 @@ A framework is typically referenced by a short target framework moniker or *TFM*
 |                            |              | net46                                        |
 |                            |              | net461                                       |
 |                            |              | net462                                       |
-| .NET Core                  | netcore      | netcore [netcore45]                          |
+| Windows Store              | netcore      | netcore [netcore45]                          |
 |                            |              | netcore45 [win, win8]                        |
 |                            |              | netcore451 [win81]                           |
 | .NET MicroFramework        | netmf        | netmf                                        |
-| Windows                    | win          | win [win8, netcore45]                        |
-|                            |              | win8 [netcore45, win]                        |
-|                            |              | win81 [netcore451]                           |
-|                            |              | win10 (not supported by Windows 10 platform) |
 | Silverlight                | sl           | sl4                                          |
 |                            |              | sl5                                          |
 | Windows Phone              | wp           | wp [wp7]                                     |
@@ -75,7 +77,7 @@ A framework is typically referenced by a short target framework moniker or *TFM*
 |                            |              | wp81                                         |
 |                            |              | wpa81                                        |
 | Universal Windows Platform | uap          | uap [uap10.0]                                |
-|                            |              | uap10.0                                      |
+|                            |              | uap10.0 [win10] [netcore50]                  |
 
 ## Deprecated frameworks
 
@@ -98,7 +100,12 @@ The following frameworks are deprecated. Packages targeting these frameworks sho
 | dotnet54             |             |
 | dotnet55             |             |
 | dotnet56             |             |
-| winrt                | win         |
+| netcore50            | uap10.0     |
+| win                  | netcore45   |
+| win8                 | netcore45   |
+| win81                | netcore451  |
+| win10                | uap10.0     |
+| winrt                | netcore45   |
 
 ## Precedence
 
@@ -120,7 +127,4 @@ The [NuGet Tools Get Nearest Framework Tool](http://nugettoolsdev.azurewebsites.
 
 ## Portable Class Libraries
 
-For information on Portable Class Libraries, see the [Portable Class Libraries](https://docs.microsoft.com/nuget/schema/target-frameworks#portable-class-libraries) section of the *Target Framework* topic in the NuGet documentation.
-
-> [!Note]
-> Stephen Cleary created a tool that lists the supported PCLs. For more information, see [Framework Profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html).
+For information on Portable Class Libraries, see the [Portable Class Libraries](https://docs.microsoft.com/nuget/schema/target-frameworks#portable-class-libraries) section of the *Target Framework* topic in the NuGet documentation. Stephen Cleary created a tool that lists the supported PCLs. For more information, see [Framework Profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html).

@@ -4,7 +4,7 @@ description: This document provides the steps and workflow to create a .NET Core
 keywords: .NET, .NET Core, Mac, macOS, Visual Studio Code
 author: bleroy
 ms.author: mairaw
-ms.date: 03/22/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -13,9 +13,10 @@ ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 
 # Getting started with .NET Core on macOS
 
-This document provides the steps and workflow to create a .NET Core Solution using [Visual Studio Code](http://code.visualstudio.com). Learn how to create projects, create unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
+This document provides the steps and workflow to create a .NET Core solution for macOS. Learn how to create projects, unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
 
-This article uses Visual Studio Code on Mac OS. Where there are differences, it points out the differences for the Windows platform.
+> [!NOTE]
+> This article uses [Visual Studio Code](http://code.visualstudio.com) on macOS.
 
 ## Prerequisites
 
@@ -31,13 +32,13 @@ The source for this tutorial is available on [GitHub](https://github.com/dotnet/
 
 Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in VS Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of VS Code.
 
-In the terminal, create a *golden* directory and open the folder. This directory is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution, *golden.sln*:
+Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, create a *golden* folder and open the folder. This folder is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution, *golden.sln*:
 
 ```console
 dotnet new sln
 ```
 
-From the *golden* directory, execute the following command to create a library project, which produces two files,*library.csproj* and *Class1.cs*, in the *library* directory:
+From the *golden* folder, execute the following command to create a library project, which produces two files,*library.csproj* and *Class1.cs*, in the *library* folder:
 
 ```console
 dotnet new classlib -o library
@@ -61,7 +62,7 @@ The *library.csproj* file contains the following information:
 </Project>
 ```
 
-This library project will represent objects in JSON, so add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command adds new items to a project. To add a reference to a NuGet package, use the [`dotnet add package`](../tools/dotnet-add-package.md) command and specify the name of the package:
+Our library methods serialize and deserialize objects in JSON format. To support JSON serialization and deserialization, add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command adds new items to a project. To add a reference to a NuGet package, use the [`dotnet add package`](../tools/dotnet-add-package.md) command and specify the name of the package:
 
 ```console
 dotnet add library package Newtonsoft.Json
@@ -75,13 +76,13 @@ This adds `Newtonsoft.Json` and its dependencies to the library project. Alterna
 </ItemGroup>
 ```
 
-Execute [`dotnet restore`](../tools/dotnet-restore.md), which creates an *obj* directory inside *library* with three files in it, including a *project.assets.json* file:
+Execute [`dotnet restore`](../tools/dotnet-restore.md), which restores dependencies and creates an *obj* folder inside *library* with three files in it, including a *project.assets.json* file:
 
 ```console
 dotnet restore
 ```
 
-In the *library* directory, rename the file *Class1.cs* to *Thing.cs*. Replace the code with the following:
+In the *library* folder, rename the file *Class1.cs* to *Thing.cs*. Replace the code with the following:
 
 ```csharp
 using static Newtonsoft.Json.JsonConvert;
@@ -96,7 +97,7 @@ namespace Library
 }
 ```
 
-The `Thing` class contains one public method, `Get`, which returns the sum of two numbers but does so by converting the sum into a string and then deserializing it into an integer. This makes use of a number of modern C# features, such as static `using` directives, expression-bodied members, and interpolated strings, that you can learn about in the [Learn C#](../../csharp/index.md) section.
+The `Thing` class contains one public method, `Get`, which returns the sum of two numbers but does so by converting the sum into a string and then deserializing it into an integer. This makes use of a number of modern C# features, such as [`using static` directives](../../csharp/language-reference/keywords/using-static.md), [expression-bodied members](../../csharp/csharp-7.md#more-expression-bodied-members), and [interpolated strings](../../csharp/language-reference/keywords/interpolated-strings.md).
 
 Build the library with the [`dotnet build`](../tools/dotnet-build.md) command. This produces a *library.dll* file under *golden/library/bin/Debug/netstandard1.4*:
 
@@ -106,7 +107,7 @@ dotnet build
 
 ## Create the test project
 
-Build a test project for the library. From the *golden* directory, create a new test project:
+Build a test project for the library. From the *golden* folder, create a new test project:
 
 ```console
 dotnet new xunit -o test-library
@@ -118,7 +119,7 @@ Add the test project to the solution:
 dotnet sln add test-library/test-library.csproj
 ```
 
-Add a dependency node for the library you created in the previous section by using the [`dotnet add reference`](../tools/dotnet-add-reference.md):
+Add a project reference the library you created in the previous section so that the compiler can find and use the library project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```console
 dotnet add test-library/test-library.csproj reference library/library.csproj
@@ -131,8 +132,6 @@ Alternatively, manually edit the *test-library.csproj* file and add the followin
   <ProjectReference Include="..\library\library.csproj" />
 </ItemGroup>
 ```
-
-The `library` node specifies that this dependency should resolve to a project in the current workspace. Without explicitly specifying this, it's possible that the test project would build against a NuGet package of the same name.
 
 Now that the dependencies have been properly configured, create the tests for your library. Open *UnitTest1.cs* and replace its contents with the following code:
 
@@ -154,7 +153,7 @@ namespace TestApp
 
 Note that you assert the value 42 is not equal to 19+23 (or 42) when you first create the unit test (`Assert.NotEqual`), which will fail. An important step in building unit tests is to create the test to fail once first to confirm its logic.
 
-From the *golden* directory, execute the following commands:
+From the *golden* folder, execute the following commands:
 
 ```console
 dotnet restore
@@ -163,7 +162,7 @@ dotnet test test-library/test-library.csproj
 
 These commands will recursively find all projects to restore dependencies, build them, and activate the xUnit test runner to run the tests. The single test fails, as you expect.
 
-Edit the *UnitTest1.cs* file and change the assertion from `Assert.NotEqual` to `Assert.Equal`. Execute the following command from the *golden* directory to re-run the test, which passes this time:
+Edit the *UnitTest1.cs* file and change the assertion from `Assert.NotEqual` to `Assert.Equal`. Execute the following command from the *golden* folder to re-run the test, which passes this time:
 
 ```console
 dotnet test test-library/test-library.csproj
@@ -171,7 +170,9 @@ dotnet test test-library/test-library.csproj
 
 ## Create the console app
 
-Create a new console application from the *golden* directory:
+The console app you create over the following steps takes a dependency on the library project you created earlier and calls its library method when it runs. Using this pattern of development, you see how to create reusable libraries for multiple projects.
+
+Create a new console application from the *golden* folder:
 
 ```console
 dotnet new console -o app
@@ -183,7 +184,7 @@ Add the console app project to the solution:
 dotnet sln add app/app.csproj
 ```
 
-Your console application depends on the library that you built and tested earlier. Create the dependency on the library by running the `dotnet add reference` command again:
+Create the dependency on the library by running the `dotnet add reference` command:
 
 ```console
 dotnet add app/app.csproj reference library/library.csproj

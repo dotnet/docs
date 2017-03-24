@@ -1,0 +1,5 @@
+# [Getting Started with C#](getting-started-with-csharp.md)
+## [What's New for Visual C#](whats-new.md)
+## [Introduction to the C# Language and the .NET Framework](introduction-to-the-csharp-language-and-the-net-framework.md)
+## [Additional Resources for Visual C# Programmers](additional-resources.md)
+## [Visual C# Breaking Changes in Visual Studio 2013](breaking-changes-in-visual-studio-2013.md)

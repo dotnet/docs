@@ -1,0 +1,6 @@
+# [Events](events.md)
+## [Walkthrough: Declaring and Raising Events](walkthrough-declaring-and-raising-events.md)
+## [Walkthrough: Handling Events](walkthrough-handling-events.md)
+## [How to: Declare Custom Events To Avoid Blocking](how-to-declare-custom-events-to-avoid-blocking.md)
+## [How to: Declare Custom Events To Conserve Memory](how-to-declare-custom-events-to-conserve-memory.md)
+## [Troubleshooting Inherited Event Handlers in Visual Basic](troubleshooting-inherited-event-handlers.md)

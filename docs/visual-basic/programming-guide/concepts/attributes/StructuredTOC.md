@@ -1,0 +1,6 @@
+# [Attributes (Visual Basic)](attributes-visual-basic.md)
+## [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md)
+### [AttributeUsage (Visual Basic)](attributeusage.md)
+## [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md)
+## [How to: Create a C/C++ Union by Using Attributes (Visual Basic)](how-to-create-a-c-c-union-by-using-attributes-visual-basic.md)
+## [Common Attributes (Visual Basic)](common-attributes.md)

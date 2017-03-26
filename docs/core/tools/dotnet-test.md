@@ -24,7 +24,7 @@ ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSText, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
+The `dotnet test` command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
 
 Test projects also must specify the test runner. This is specified using an ordinary `<PackageReference>` element, as seen in the following sample project file:
 

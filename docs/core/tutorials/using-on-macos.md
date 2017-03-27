@@ -1,76 +1,56 @@
 ---
-title: Getting started with .NET Core on macOS
-description: Getting started with .NET Core on macOS, using Visual Studio Code
-keywords: .NET, .NET Core
+title: Getting started with .NET Core on macOS | Microsoft Docs
+description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
+keywords: .NET, .NET Core, Mac, macOS, Visual Studio Code
 author: bleroy
 ms.author: mairaw
-ms.date: 02/08/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 ---
 
-# Getting started with .NET Core on macOS, using Visual Studio Code
+# Getting started with .NET Core on macOS
 
-This document provides a tour of the steps and workflow to create a .NET
-Core Solution using [Visual Studio Code](http://code.visualstudio.com).
-You'll learn how to create projects, create unit tests, use the debugging
-tools, and incorporate third-party libraries via [NuGet](http://nuget.org).
+This document provides the steps and workflow to create a .NET Core solution for macOS. Learn how to create projects, unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
 
-This article uses Visual Studio Code on Mac OS. Where there are differences,
-it points out the differences for the Windows platform.
+> [!NOTE]
+> This article uses [Visual Studio Code](http://code.visualstudio.com) on macOS.
 
 ## Prerequisites
 
-Before starting, you'll need to install the [.NET Core SDK](https://www.microsoft.com/net/core). The .NET Core SDK includes the latest release
-of the .NET Core framework and runtime.
+Install the [.NET Core SDK](https://www.microsoft.com/net/core). The .NET Core SDK includes the latest release of the .NET Core framework and runtime.
 
-You'll also need to install [Visual Studio Code](http://code.visualstudio.com).
-During the course of this article, you'll also install extensions
-that will improve the .NET Core development experience.
+Install [Visual Studio Code](http://code.visualstudio.com). During the course of this article, you also install VS Code extensions that improve the .NET Core development experience.
 
-## Getting Started
+Install the VS Code C# extension by opening VS Code and pressing <kbd>F1</kbd> to open the VS Code palette. Type **ext install** to see the list of extensions. Select the C# extension. Restart VS Code to activate the extension. For more information, see the [Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
-The source for this tutorial is available on
-[GitHub](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/golden).
+## Getting started
 
-Start Visual Studio Code. Press Ctrl + '\`' (the back-quote character) to open
-an embedded terminal in VS Code. (Alternatively, you can use a separate
-terminal window, if you prefer).
+The source for this tutorial is available on [GitHub](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/golden). In this tutorial, you create three projects: a library project, tests for that library project, and a console application that makes use of the library. 
 
-By the time we're done, you'll create three projects: a library project,
-tests for that library project, and a console application that makes
-use of the library. 
+Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in VS Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of VS Code.
 
-Let's start by creating those folders. In the terminal, create a 'golden'
-directory. In VS Code, open the *golden* directory. This directory is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution:
+Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, create a *golden* folder and open the folder. This folder is the root of your solution. Run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution, *golden.sln*:
 
-```
+```console
 dotnet new sln
 ```
 
-This command creates a *golden.sln* file for the entire solution.
+From the *golden* folder, execute the following command to create a library project, which produces two files,*library.csproj* and *Class1.cs*, in the *library* folder:
 
-Your next task is to create the library. In the terminal window
-(either the embedded terminal in VS code, or another terminal),
-cd to *golden/* and type the command:
-
-```
+```console
 dotnet new classlib -o library
 ```
 
-This creates a library project, with two files: *library.csproj* and
-*Class1.cs* in the *library* directory. You want that library project
-included in your solution. Run the [`dotnet sln`](../tools/dotnet-sln.md) command to add the newly
-created *library.csproj* project to the solution:
+Execute the [`dotnet sln`](../tools/dotnet-sln.md) command to add the newly created *library.csproj* project to the solution:
 
-```
+```console
 dotnet sln add library/library.csproj
 ```
 
-Let's examine the project that you've created. The *library.csproj* file 
-contains the following information:
+The *library.csproj* file contains the following information:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -82,39 +62,27 @@ contains the following information:
 </Project>
 ```
 
-This library project will make use of JSON representation of objects, so you'll want to
-add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command
-adds new items to a project. To add a reference to a NuGet package, you use the 
-`package` command and specify the name of the package. 
+Our library methods serialize and deserialize objects in JSON format. To support JSON serialization and deserialization, add a reference to the `Newtonsoft.Json` NuGet package. The `dotnet add` command adds new items to a project. To add a reference to a NuGet package, use the [`dotnet add package`](../tools/dotnet-add-package.md) command and specify the name of the package:
 
-```
+```console
 dotnet add library package Newtonsoft.Json
 ```
 
-This adds `Newtonsoft.Json` and its dependencies to the Library
-project. Alternatively, you could manually edit the *library.csproj*
-file and add the following node:
+This adds `Newtonsoft.Json` and its dependencies to the library project. Alternatively, manually edit the *library.csproj* file and add the following node:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Newtonsoft.Json">
-    <Version>9.0.1</Version>
-  </PackageReference>
+  <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
 </ItemGroup>
 ```
 
-After you've finished adding those dependencies, you need to install those
-packages into workspace. Run the `dotnet restore` command to updates all dependencies,
-and write a *obj/project.assets.json* file under the project directory. This
-file contains the full dependency tree of all the dependencies in your
-project. You don't need to read this file, it's used by tools in the .NET
-Core SDK.
+Execute [`dotnet restore`](../tools/dotnet-restore.md), which restores dependencies and creates an *obj* folder inside *library* with three files in it, including a *project.assets.json* file:
 
-Now, let's update the C# code. Let's create a `Thing` class that contains
-one public method. This method will return the sum of two numbers,
-but will do so by converting that number to a JSON string, and then
-deserializing it. Rename the file *Class1.cs* to *Thing.cs*. Then, replace
-the existing code (for the template-generated Class1) with the following:
+```console
+dotnet restore
+```
+
+In the *library* folder, rename the file *Class1.cs* to *Thing.cs*. Replace the code with the following:
 
 ```csharp
 using static Newtonsoft.Json.JsonConvert;
@@ -129,32 +97,35 @@ namespace Library
 }
 ```
 
-This makes use of a number of modern C# features, such as 
-static usings, expression-bodied members, and interpolated strings,
-that you can learn
-about in the [Learn C#](../../csharp/index.md) section.
+The `Thing` class contains one public method, `Get`, which returns the sum of two numbers but does so by converting the sum into a string and then deserializing it into an integer. This makes use of a number of modern C# features, such as [`using static` directives](../../csharp/language-reference/keywords/using-static.md), [expression-bodied members](../../csharp/csharp-7.md#more-expression-bodied-members), and [interpolated strings](../../csharp/language-reference/keywords/interpolated-strings.md).
 
-Now that you've updated the code, you can build the library using
-`dotnet build`.
+Build the library with the [`dotnet build`](../tools/dotnet-build.md) command. This produces a *library.dll* file under *golden/library/bin/Debug/netstandard1.4*:
 
-You now have a built *library.dll* file under *golden/library/bin/Debug/netstandard1.4*.
-
-### Writing the test project
-
-Let's build a test project for this library that you've build. Change to the *golden*
-directory. Run `dotnet new xunit -o test-library` to create a new test project. 
-You'll want to add this project to the solution as well by running
-`dotnet sln add test-library/test-library.csproj`.
-
-You'll need to add a dependency node for the library you wrote in the steps
-above. The `dotnet add reference` command does that:
-
+```console
+dotnet build
 ```
+
+## Create the test project
+
+Build a test project for the library. From the *golden* folder, create a new test project:
+
+```console
+dotnet new xunit -o test-library
+```
+
+Add the test project to the solution:
+
+```console
+dotnet sln add test-library/test-library.csproj
+```
+
+Add a project reference the library you created in the previous section so that the compiler can find and use the library project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+
+```console
 dotnet add test-library/test-library.csproj reference library/library.csproj
 ```
 
-Or, you can manually edit the *test-library.csproj* file and add the
-following node:
+Alternatively, manually edit the *test-library.csproj* file and add the following node:
 
 ```xml
 <ItemGroup>
@@ -162,13 +133,7 @@ following node:
 </ItemGroup>
 ```
 
-The `library` node specifies that this dependency should resolve to a project
-in the current workspace. Without explicitly specifying this, it's possible
-that the test project would build against a NuGet package of the same name.
-
-Now that the dependencies have been properly configured, let's create
-the tests for your library. Open *UnitTest1.cs* and
-replace its contents with the following code:
+Now that the dependencies have been properly configured, create the tests for your library. Open *UnitTest1.cs* and replace its contents with the following code:
 
 ```csharp
 using Library;
@@ -180,74 +145,76 @@ namespace TestApp
     {
         [Fact]
         public void TestThing() {
-            Assert.Equal(42, new Thing().Get(19, 23));
+            Assert.NotEqual(42, new Thing().Get(19, 23));
         }
     }
 }
 ```
 
-Now, run `dotnet restore` and `dotnet build`. These commands will
-recursively find all projects to restore dependencies and build them.
-Finally, run `dotnet test test-library/test-library.csproj` to
-run the tests.
-The xUnit console test runner will run the one test, and report
-that it is passing. 
+Note that you assert the value 42 is not equal to 19+23 (or 42) when you first create the unit test (`Assert.NotEqual`), which will fail. An important step in building unit tests is to create the test to fail once first to confirm its logic.
 
-### Writing the console app
+From the *golden* folder, execute the following commands:
 
-In your terminal run `dotnet new console -o app`
-to create a new console application. This project is also
-part of the solution, so run `dotnet sln add app/app.csproj`
-to add the project to the solution.
-
-Your console application depends on the library you built and tested
-in the previous steps. You need to indicate that by running `dotnet add reference`
-again:
-
+```console
+dotnet restore
+dotnet test test-library/test-library.csproj
 ```
+
+These commands will recursively find all projects to restore dependencies, build them, and activate the xUnit test runner to run the tests. The single test fails, as you expect.
+
+Edit the *UnitTest1.cs* file and change the assertion from `Assert.NotEqual` to `Assert.Equal`. Execute the following command from the *golden* folder to re-run the test, which passes this time:
+
+```console
+dotnet test test-library/test-library.csproj
+```
+
+## Create the console app
+
+The console app you create over the following steps takes a dependency on the library project you created earlier and calls its library method when it runs. Using this pattern of development, you see how to create reusable libraries for multiple projects.
+
+Create a new console application from the *golden* folder:
+
+```console
+dotnet new console -o app
+```
+
+Add the console app project to the solution:
+
+```console
+dotnet sln add app/app.csproj
+```
+
+Create the dependency on the library by running the `dotnet add reference` command:
+
+```console
 dotnet add app/app.csproj reference library/library.csproj
 ```
 
-Run `dotnet restore` to restore all dependencies. Open *program.cs*
-and replace the contents of the `Main` method with this line:
+Run `dotnet restore` to restore the dependencies of the three projects in the solution. Open *Program.cs* and replace the contents of the `Main` method with the following line:
 
 ```csharp
 WriteLine($"The answer is {new Thing().Get(19, 23)}");
 ```
 
-You'll need to add a couple `using` directives to the top of the file:
+Add two `using` directives to the top of the *Program.cs* file:
 
 ```csharp
 using static System.Console;
 using Library;
 ```
 
-Then, run `dotnet build`. That creates the assemblies, and you
-can type `dotnet run -p app/app.csproj` to run the executable.
-The `-p` argument to `dotnet run` specifies the project for the
-main application.
+Execute the following `dotnet run` command to run the executable, where the `-p` option to `dotnet run` specifies the project for the main application. The app produces the string "The answer is 42".
 
-### Debugging your application
+```console
+dotnet run -p app/app.csproj
+```
 
-You can debug your code in VS Code using the C# extension.
-You install this extension by pressing `F1` to open the VS Code
-palette. Type `ext install` to see the list of extensions. Select the C#
-extension. (More details are available on the [Visual Studio
-Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md)
-page.)
+## Debug the application
 
-After you install the extension, VS Code will ask that you restart the application
-to load the new extension. Once the extension is installed, you can open the
-debugger tab (see figure).
+Set a breakpoint at the `WriteLine` statement in the `Main` method. Do this by either pressing the <kbd>F9</kbd> key when the cursor is over the `WriteLine` line or by clicking the mouse in the left margin on the line where you want to set the breakpoint. A red circle will appear in the margin next to the line of code. When the breakpoint is reached, code execution will stop *before* the breakpoint line is executed.
+
+Open the debugger tab by selecting the Debug icon in the VS Code toolbar, selecting **View > Debug** from the menu bar, or using the keyboard shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd>:
 
 ![VS Code Debugger](./media/using-on-macos/vscodedebugger.png)
 
-Set a breakpoint at the `WriteLine` statement in `Main`. You do this
-by pressing the `F9` key, or by clicking the mouse in the left margin
-on the line you want the breakpoint. 
-Open the debugger by pressing the debug
-icon on the left of the VS Code screen (see figure). Then,
-press the Play button to start the application under the debugger.
-
-You should hit the breakpoint. Step into the `Get` method and make sure that you
-have passed in the correct arguments. Make sure that the answer is actually 42.
+Press the Play button to start the application under the debugger. The app begins execution and runs to the breakpoint, where it stops. Step into the `Get` method and make sure that you have passed in the correct arguments. Confirm that the answer is 42.

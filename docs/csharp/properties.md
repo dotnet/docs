@@ -54,6 +54,29 @@ public class Person
 The syntax shown above is the *auto property* syntax. The compiler
 generates the storage location for the field that backs up the 
 property. The compiler also implements the body of the `get` and `set` accessors.
+
+Sometimes, you need to initialize a property to
+a value other than the default for its type.  C# enables
+that by setting a value after the closing brace for the
+property. You may prefer the initial value for the `FirstName`
+property to be the emtpy string rather than `null`. You would
+specify that as shown below:
+
+```csharp
+public class Person
+{
+    public string FirstName
+    {
+        get;
+        set;
+    } = string.Empty;
+	// remaining implementation removed from listing
+}
+```
+
+This is most useful for read-only properties, as you'll see later
+in this topic.
+
 You can also define the storage yourself, as shown below:
 
 ```csharp
@@ -144,6 +167,7 @@ public class Person
 
 Now, the `FirstName` property can be accessed from any code, but it can only be assigned
 from other code in the `Person` class.
+
 You can add any restrictive access modifier to either the set or get accessors. Any access modifier
 you place on the individual accessor must be more limited than the access modifier on the property
 definition. The above is legal because the `FirstName` property is `public`, but the set accessor is
@@ -153,6 +177,35 @@ can also be declared `protected`, `internal`, `protected internal` or even `priv
 It is also legal to place the more restrictive modifier on the `get` accessor. For example, you could
 have a `public` property, but restrict the `get` accessor to `private`. That scenario is rarely done
 in practice.
+
+You can also restrict modifications to a property so that it can only be set in a constructor
+or a field initializer. You can modify the `Person` class so as follows:
+
+```csharp
+public class Person
+{
+    public Person(string firstName)
+    {
+        this.FirstName = firstName;
+    }
+
+	public string FirstName
+	{
+		get;
+	}
+	// remaining implementation removed from listing
+}
+```
+
+This features is most commonly used for initializing collections that are exposed as 
+read-only properties:
+
+```csharp
+public class Measurements
+{
+    public ICollection<DataPoint> points { get; } = new List<DataPoint>();
+}
+```
  
 ### Computed Properties
 

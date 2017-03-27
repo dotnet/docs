@@ -56,7 +56,7 @@ string contents = await contentsTask;
  The `async` keyword is contextual in that it's a keyword only when it modifies a method, a lambda expression, or an anonymous method. In all other contexts, it's interpreted as an identifier.  
   
 ## Example  
- The following example shows the structure and flow of control between an async event handler, `StartButton_Click`, and an async method, `ExampleMethodAsync`. The result from the async method is the length of a downloaded website. The code is suitable for a Windows Presentation Foundation (WPF) app or Windows Store app that you create in [!INCLUDE[vs_dev12](../../../csharp/getting-started/includes/vs_dev12_md.md)]; see the code comments for setting up the app.  
+ The following example shows the structure and flow of control between an async event handler, `StartButton_Click`, and an async method, `ExampleMethodAsync`. The result from the async method is the length of a downloaded website. The code is suitable for a Windows Presentation Foundation (WPF) app or Windows Store app that you create in Visual Studio; see the code comments for setting up the app.  
   
 ```csharp  
 // You can run this code in Visual Studio 2013 as a WPF app or a Windows Store app.  

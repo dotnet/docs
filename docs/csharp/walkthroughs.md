@@ -43,7 +43,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
 ## In This Section  
 
  [Accessing the Web by Using Async and Await](./programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- Shows how to create an asynchronous solution by using [async](../csharp/language-reference/keywords/async.md) and [await](../csharp/language-reference/keywords/await.md), introduced in [!INCLUDE[vs_dev11_long](../csharp/includes/vs_dev11_long_md.md)].  
+ Shows how to create an asynchronous solution by using [async](../csharp/language-reference/keywords/async.md) and [await](../csharp/language-reference/keywords/await.md).  
   
  [Creating a Windows Runtime Component in C# or Visual Basic and Calling it from JavaScript](https://msdn.microsoft.com/library/windows/apps/hh779077.aspx)  
  Shows how to create a [!INCLUDE[wrt](../csharp/includes/wrt_md.md)] type, package it in a [!INCLUDE[wrt](../csharp/includes/wrt_md.md)] component, and then call the component from a [!INCLUDE[win8_appname_long](../csharp/includes/win8_appname_long_md.md)] app that's built for Windows by using JavaScript.  

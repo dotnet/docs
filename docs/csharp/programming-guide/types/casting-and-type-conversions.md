@@ -104,10 +104,7 @@ Giraffe g2 = (Giraffe) a;
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
-  
-## Featured Book Chapter  
- [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Types](../../../csharp/programming-guide/types/index.md)   

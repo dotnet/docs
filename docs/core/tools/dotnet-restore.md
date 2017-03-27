@@ -103,3 +103,18 @@ Restore the dependencies and tools for the project in the current directory usin
 Restore dependencies and tools for the project in the current directory and shows only errors in the output:
 
 `dotnet restore --verbosity Error`
+
+
+## NuGet.Config
+
+Restore obeys some values from the NuGet.Config file in the solution folder.
+
+#### Config key: globalPackagesFolder
+Usage:
+```
+  <config>
+    <add key="globalPackagesFolder" value="./packages" />
+  </config>
+```
+
+Adding the `globalPackagesFolder` config value to the solution NuGet.Config file will place the restored nuget packages in the specified folder. This is an alternative to specifying the `--packages` command line argument.

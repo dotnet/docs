@@ -13,20 +13,6 @@ helpviewer_keywords:
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: "paulyuk"
 ms.author: "paulyuk"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Support Statement for Visual Basic 6.0 on Windows Vista, Windows Server 2008, Windows 7, Windows 8 and Windows 8.1, Windows Server 2012, Windows 10, and Windows Server 2016
 
@@ -54,7 +40,7 @@ Visual Basic 6.0 is made up of these key deliverables:
 
 ## The Visual Basic 6.0 IDE
 
-The Visual Basic 6.0 IDE is no longer supported as of April 8, 2008. However, Custom Support Agreements may be available from Microsoft. Additionally, both the Windows and Visual Basic teams have tested Visual Basic 6.0 IDE on Windows Vista, Windows 7, Windows Server 2008, Windows 8  and Windows 8.1 to understand and mitigate (if appropriate) compatibility issues on 32-bit versions of Windows (see the [64-Bit Windows](#62-bit-windows) section below for further information about 64-bit systems). This announcement does not change the support policy for the IDE. This announcement does not change the support policy for the IDE.
+The Visual Basic 6.0 IDE is no longer supported as of April 8, 2008. However, Custom Support Agreements may be available from Microsoft. Additionally, both the Windows and Visual Basic teams have tested Visual Basic 6.0 IDE on Windows Vista, Windows 7, Windows Server 2008, Windows 8, and Windows 8.1 to understand and mitigate (if appropriate) compatibility issues on 32-bit versions of Windows (see the [64-Bit Windows](#62-bit-windows) section below for further information about 64-bit systems). This announcement does not change the support policy for the IDE.
 
 ## The Visual Basic 6.0 runtime
 

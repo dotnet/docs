@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Docker
 description: Using Visual Studio Tools for Docker 
-keywords: .NET, .NET Core, Docker, ASP.NET Core, Visual Studio 2015
+keywords: .NET, .NET Core, Docker, ASP.NET Core, Visual Studio
 author: spboyer
 ms.author: shboyer
 ms.date: 09/16/2016
@@ -19,8 +19,8 @@ Developing and debugging your application in a Docker container can be a ceremon
 >The current version targets Linux Docker containers, with Windows Containers coming soon.
 
 ## Prerequisites
-- [Microsoft Visual Studio 2015 Update 3](https://www.visualstudio.com/downloads/download-visual-studio-vs)
-- [.NET Core 1.0.1 - VS 2015 Tooling Preview 2](https://go.microsoft.com/fwlink/?LinkID=827546)
+- [Microsoft Visual Studio 2017](https://www.visualstudio.com/)
+- [.NET Core tools in Visual Studio 2017](https://www.microsoft.com/net/core#windowsvs2017)
 - [Docker For Windows](https://www.docker.com/products/docker#/windows) to run your Docker containers locally
 
 ## Installation and setup

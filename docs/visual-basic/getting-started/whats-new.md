@@ -65,6 +65,7 @@ Binary literals and digit group separators allow native representation of binary
 
 ## See also
 
+* [What's New in Visual Studio 2017: Overview at visualstudio.com](https://www.visualstudio.com/vs/whatsnew/)
 * [What's New in Visual Studio 2017](https://docs.microsoft.com/visualstudio/ide/whats-new-in-visual-studio)
 * [Visual Studio 2017 Release Notes](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual Basic .NET Language Design](https://github.com/dotnet/vblang)

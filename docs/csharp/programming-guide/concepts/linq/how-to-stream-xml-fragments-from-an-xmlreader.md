@@ -38,7 +38,7 @@ When you have to process large XML files, it might not be feasible to load the w
 ## Example  
  This example creates a custom axis method. You can query it by using a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
   
-```cs  
+```csharp  
 static IEnumerable<XElement> StreamRootChildDoc(StringReader stringReader)  
 {  
     using (XmlReader reader = XmlReader.Create(stringReader))  

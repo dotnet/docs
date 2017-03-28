@@ -26,7 +26,7 @@ The `using` statement in C# and the `Using` statement in Visual Basic simplify t
 
 The following example uses the `using` statement to create and release a [System.IO.StreamReader](xref:System.IO.StreamReader) object.
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -72,7 +72,7 @@ End Module
 
 Note that although the [StreamReader](xref:System.IO.StreamReader) class implements the [IDisposable](xref:System.IDisposable) interface, which indicates that it uses an unmanaged resource, the example doesn't explicitly call the [StreamReader.Dispose](xref:System.IO.StreamReader.Dispose(System.Boolean)) method. When the C# or Visual Basic compiler encounters the `using` statement, it emits intermediate language (IL) that is equivalent to the following code that explicitly contains a `try/finally` block. 
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -129,7 +129,7 @@ End Module
 
 The C# `using` statement also allows you to acquire multiple resources in a single statement, which is internally equivalent to nested using statements. The following example instantiates two [StreamReader](xref:System.IO.StreamReader) objects to read the contents of two different files. 
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -166,7 +166,7 @@ Instead of wrapping a `try/finally` block in a `using` statement, you may choose
 
 The following example is similar to the previous example, except that it uses a `try/catch/finally` block to instantiate, use, and dispose of a [StreamReader](xref:System.IO.StreamReader) object, and to handle any exceptions thrown by the [StreamReader](xref:System.IO.StreamReader) constructor and its [ReadToEnd](xref:System.IO.StreamReader.ReadToEnd) method. Note that the code in the `finally` block checks that the object that implements [IDisposable](xref:System.IDisposable) isn't `null` before it calls the [Dispose](xref:System.IDisposable.Dispose) method. Failure to do this can result in a [NullReferenceException](xref:System.NullReferenceException) exception at run time. 
 
-```cs
+```csharp
 using System;
 using System.Globalization;
 using System.IO;

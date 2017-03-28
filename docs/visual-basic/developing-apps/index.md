@@ -39,9 +39,6 @@ translation.priority.mt:
 This section covers conceptual documentation for the Visual Basic language.  
   
 ## In This Section  
- [Using the Visual Basic Development Environment](../../visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)  
- Contains Help on features of the Visual Basic editor, such as **Intellisense Code Snippets**, **Project Properties**, and creating XML documentation for Visual Basic.  
-  
  [Programming in Visual Basic](../../visual-basic/developing-apps/programming/index.md)  
  Covers a variety of programming subjects.  
   
@@ -49,10 +46,7 @@ This section covers conceptual documentation for the Visual Basic language.
  Discusses a new feature called `My`, which provides access to information and default object instances that are related to an application and its run-time environment.  
   
  [Accessing Data in Visual Basic Applications](../../visual-basic/developing-apps/accessing-data.md)  
- Contains Help on accessing data in Visual Basic.  
-  
- [Debugging Your Visual Basic Application](../../visual-basic/developing-apps/debugging.md)  
- Provides pointers to documentation for the debugging features built into Visual Studio.  
+ Contains Help on accessing data in Visual Basic.   
   
  [Creating and Using Components in Visual Basic](../../visual-basic/developing-apps/creating-and-using-components.md)  
  Defines the term *component* and discusses how and when to create components.  

@@ -129,9 +129,12 @@
 # [.NET Core Guide](core/index.md)
 ## [Getting started](core/getting-started.md)
 ## [Windows Prerequisites](core/windows-prerequisites.md)
+## [macOS Prerequisites](core/macos-prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
+### [Getting started with .NET Core on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs.md)
+### [Building a complete .NET Core solution on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs-full-solution.md)
 ### [Getting started with .NET Core using the CLI tools](core/tutorials/using-with-xplat-cli.md)
 #### [Organizing and testing projects with the .NET Core command line](core/tutorials/testing-with-cli.md)
 ### [Developing Libraries with Cross Platform Tools](core/tutorials/libraries.md)
@@ -142,9 +145,9 @@
 ## [Changes in CLI overview](core/tools/cli-msbuild-architecture.md)
 ### [Dependency management](core/tools/dependencies.md)
 ### [Additions to the csproj format](core/tools/csproj.md)
-### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ## Migration
 ### [Migration to csproj format](core/migration/index.md)
+### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
 ## [Application Deployment](core/deploying/index.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
@@ -158,7 +161,7 @@
 ### [.NET Core Support](core/versions/lts-current.md)
 ### [🔧 Servicing](core/versions/servicing.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
-## [.NET Core Tools](core/tools/index.md)
+## [.NET Core CLI Tools](core/tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)
@@ -178,6 +181,7 @@
 ### [dotnet-run](core/tools/dotnet-run.md)
 ### [dotnet-sln](core/tools/dotnet-sln.md)
 ### [dotnet-test](core/tools/dotnet-test.md)
+### [dotnet-vstest](core/tools/dotnet-vstest.md)
 ### Project modification commands
 #### References
 ##### [dotnet-add-reference](core/tools/dotnet-add-reference.md)
@@ -407,14 +411,6 @@
 
 ## [Developing Applications](visual-basic/developing-apps/index.md)
 
-### [Using the Visual Basic Development Environment](visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)
-#### [Visual Basic Settings](visual-basic/developing-apps/using-ide/settings.md)
-#### [Visual Basic IntelliSense Code Snippets](visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)
-#### [Refactoring](https://docs.microsoft.com/en-us/visualstudio/vb-ide/refactoring-vb)
-#### [Code Generation](https://docs.microsoft.com/en-us/visualstudio/vb-ide/code-generation-vb)
-#### [Help for Event Handlers in Visual Basic Code](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
-#### [How to: Compile and Run a Project in Visual Basic](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
-
 ### [Programming in Visual Basic](visual-basic/developing-apps/programming/index.md)
 #### [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
 #### [Logging Information from the Application](visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
@@ -433,7 +429,6 @@
 #### [How My Depends on Project Type](visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
 
 ### [Accessing Data](visual-basic/developing-apps/accessing-data.md)
-### [Debugging](visual-basic/developing-apps/debugging.md)
 ### [Creating and Using Components](visual-basic/developing-apps/creating-and-using-components.md)
 
 ### [Printing and Reporting](visual-basic/developing-apps/printing/printing-and-reporting.md)

@@ -47,7 +47,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
      The Strong Name tool generates a new public key every time it runs. Therefore, you must replace the public key in the following code with the public key you just generated, as shown in the following example.  
   
-    ```cs  
+    ```csharp  
     // friend_signed_A.cs  
     // Compile with:   
     // csc /target:library /keyfile:FriendAssemblies.snk friend_signed_A.cs  
@@ -66,13 +66,13 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 4.  Compile and sign friend_signed_A by using the following command.  
   
-    ```cs  
+    ```csharp  
     csc /target:library /keyfile:FriendAssemblies.snk friend_signed_A.cs  
     ```  
   
 5.  Create a C# file that is named `friend_signed_B` and contains the following code. Because friend_signed_A specifies friend_signed_B as a friend assembly, the code in friend_signed_B can access `internal` types and members from friend_signed_A. The file contains the following code.  
   
-    ```cs  
+    ```csharp  
     // friend_signed_B.cs  
     // Compile with:   
     // csc /keyfile:FriendAssemblies.snk /r:friend_signed_A.dll /out:friend_signed_B.exe friend_signed_B.cs  
@@ -88,7 +88,7 @@ This example shows how to use friend assemblies with assemblies that have strong
   
 6.  Compile and sign friend_signed_B by using the following command.  
   
-    ```cs  
+    ```csharp  
     csc /keyfile:FriendAssemblies.snk /r:friend_signed_A.dll /out:friend_signed_B.exe friend_signed_B.cs  
     ```  
   

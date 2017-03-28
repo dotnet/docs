@@ -66,7 +66,7 @@ While all other members of a base class are inherited by derived classes, whethe
 
 Derived classes can also *override* inherited members by providing an alternate implementation. In order to be able to override a member, the member in the base class must be marked with the [virtual](../language-reference/keywords/virtual.md) keyword. By default, base class members are not marked as `virtual` and cannot be overridden. Attempting to override a non-virtual member, as the following example does, generates compiler error CS0506: "<member> cannot override inherited member <member> because it is not marked virtual, abstract, or override.
 
-   ```cs
+   ```csharp
    public class A
    {
       public void Method1()
@@ -86,7 +86,7 @@ Derived classes can also *override* inherited members by providing an alternate 
 
 In some cases, a derived class *must* override the base class implementation. Base class members marked with the [abstract](../language-reference/keywords/abstract.md) keyword require that derived classes override them. Attempting to compile the following example generates compiler error CS0534, "<class> does not implement inherited abstract member <member>', because class `B` provides no implementation for `A.Method1`.
 
-   ```cs
+   ```csharp
    public abstract class A
    {
       public abstract void Method1();
@@ -103,7 +103,7 @@ In some cases, a derived class *must* override the base class implementation. Ba
 
 Inheritance applies only to classes and interfaces. Other type categories (structs, delegates, and enums) do not support inheritance. Because of this, attempting to compile code like the following produces compiler error CS0527: "Type 'ValueType' in interface list is not an interface." The error message indicates that, although you can define the interfaces that a struct implements, inheritance is not supported.
 
-   ```cs
+   ```csharp
    using System;
 
    public struct ValueStructure : ValueType       // Generates CS0527.
@@ -206,7 +206,7 @@ The following example shows the source code for the `Publication` class, as well
 
   Because the `Publication` class is `abstract`, it cannot be instantiated directly from code like the following:
 
-  ```cs
+  ```csharp
   var publication = new Publication("Tiddlywinks for Experts", "Fun and Games",
                                     PublicationType.Book);
   ```

@@ -40,7 +40,7 @@ Attributes provide a powerful method of associating metadata, or declarative inf
   
  In this example, the <xref:System.SerializableAttribute> attribute is used to apply a specific characteristic to a class:  
   
-```cs  
+```csharp  
 [System.Serializable]  
 public class SampleClass  
 {  
@@ -50,22 +50,22 @@ public class SampleClass
   
  A method with the attribute <xref:System.Runtime.InteropServices.DllImportAttribute> is declared like this:  
   
-```cs  
+```csharp  
 using System.Runtime.InteropServices;  
 ```  
   
-```cs  
+```csharp  
 [System.Runtime.InteropServices.DllImport("user32.dll")]  
 extern static void SampleMethod();  
 ```  
   
  More than one attribute can be placed on a declaration:  
   
-```cs  
+```csharp  
 using System.Runtime.InteropServices;  
 ```  
   
-```cs  
+```csharp  
 void MethodA([In][Out] ref double x) { }  
 void MethodB([Out][In] ref double x) { }  
 void MethodC([In, Out] ref double x) { }  
@@ -73,7 +73,7 @@ void MethodC([In, Out] ref double x) { }
   
  Some attributes can be specified more than once for a given entity. An example of such a multiuse attribute is <xref:System.Diagnostics.ConditionalAttribute>:  
   
-```cs  
+```csharp  
 [Conditional("DEBUG"), Conditional("TEST1")]  
 void TraceMethod()  
 {  
@@ -87,7 +87,7 @@ void TraceMethod()
 ### Attribute Parameters  
  Many attributes have parameters, which can be positional, unnamed, or named. Any positional parameters must be specified in a certain order and cannot be omitted; named parameters are optional and can be specified in any order. Positional parameters are specified first. For example, these three attributes are equivalent:  
   
-```cs  
+```csharp  
 [DllImport("user32.dll")]  
 [DllImport("user32.dll", SetLastError=false, ExactSpelling=false)]  
 [DllImport("user32.dll", ExactSpelling=false, SetLastError=false)]  
@@ -100,7 +100,7 @@ void TraceMethod()
   
  To explicitly identify an attribute target, use the following syntax:  
   
-```cs  
+```csharp  
 [target : attribute-list]  
 ```  
   
@@ -120,7 +120,7 @@ void TraceMethod()
   
  The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/common-attributes.md).  
   
-```cs  
+```csharp  
 using System;  
 using System.Reflection;  
 [assembly: AssemblyTitleAttribute("Production assembly 4")]  
@@ -129,7 +129,7 @@ using System.Reflection;
   
  The following example shows how to apply attributes to methods, method parameters, and method return values in C#.  
   
-```cs  
+```csharp  
 // default: applies to method  
 [SomeAttr]  
 int Method1() { return 0; }  

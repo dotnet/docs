@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Accessing data in Visual Basic applications
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](https://docs.microsoft.com/en-us/visualstudio/data-tools/add-new-data-sources) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
+[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
   
 ## Related sections  
  [Accessing Data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/)  
@@ -56,16 +56,16 @@ translation.priority.ht:
  [Work with datasets in n-tier applications](https://docs.microsoft.com/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
  Provides links to topics about how to create multitiered data applications.  
      
- [Add new connections](https://docs.microsoft.com/en-us/visualstudio/data-tools/add-new-connections)  
+ [Add new connections](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections)  
  Provides links to pages on connecting your application to data with design-time tools and ADO.NET connection objects, using [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
 
- [Dataset Tools in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/data-tools/dataset-tools-in-visual-studio)  
+ [Dataset Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/dataset-tools-in-visual-studio)  
  Provides links to pages describing how to load data into datasets and how to execute SQL statements and stored procedures.  
   
  [Bind controls to data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)  
  Provides links to pages that explain how to display data on Windows Forms through data-bound controls.  
   
- [Edit Data in Datasets](https://docs.microsoft.com/en-us/visualstudio/data-tools/edit-data-in-datasets)  
+ [Edit Data in Datasets](https://docs.microsoft.com/visualstudio/data-tools/edit-data-in-datasets)  
  Provides links to pages describing how to manipulate the data in the data tables of a dataset.  
   
  [Validate data in datasets](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets)  

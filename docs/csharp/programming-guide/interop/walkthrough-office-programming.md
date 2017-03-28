@@ -43,7 +43,11 @@ Both languages enable embedding of type information, which allows deployment of 
 This walkthrough demonstrates these features in the context of Office programming, but many of these features are also useful in general programming. In the walkthrough, you use an Excel Add-in application to create an Excel workbook. Next, you create a Word document that contains a link to the workbook. Finally, you see how to enable and disable the PIA dependency.  
   
 ## Prerequisites  
+<<<<<<< HEAD
 You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.  
+=======
+ You must have Microsoft Office Excel 2007 or later and Microsoft Office Word 2007 or later installed on your computer to complete this walkthrough.  
+>>>>>>> Updates
   
  If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] is installed.  
   
@@ -166,11 +170,11 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 1.  Run the application again, but do not click **Clean Solution**.  
   
-2.  On the **Start** menu, click **All Programs**. Next click **Microsoft Visual Studio 2013**, then **Visual Studio Tools**, then **Visual Studio Command Prompt (2013)**.  
+2.  Select the **Start**. Locate **Microsoft Visual Studio \<version\>** and open a developer command prompt.  
   
-3.  Type `ildasm` in the Visual Studio Command Prompt (2013) window, and then press ENTER. The IL DASM window appears.  
+3.  Type `ildasm` in the Visual Studio Command Prompt window, and then press ENTER. The IL DASM window appears.  
   
-4.  On the **File** menu in the IL DASM window, click **Open**. Double-click **Visual Studio 2013**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio 2013, the compiler imports the types you need from a referenced PIA into your assembly.  
+4.  On the **File** menu in the IL DASM window, select **File > Open**. Double-click **Visual Studio \<version\>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.  
   
      For more information, see [How to: View Assembly Contents](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709).  
   

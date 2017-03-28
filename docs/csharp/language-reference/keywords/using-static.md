@@ -31,7 +31,7 @@ translation.priority.ht:
 
 The `using static` directive designates a type whose static members you can access without specifying a type name. Its syntax is:
 
-```cs
+```csharp
 using static <fully-qualified-type-name>
 ```
 

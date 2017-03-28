@@ -19,7 +19,7 @@ This example shows how to perform join operations in which you want to use more 
 ## Example  
  The following example demonstrates how to use a composite key to join data from three tables:  
   
-```cs  
+```csharp  
 var query = from o in db.Orders  
     from p in db.Products  
     join d in db.OrderDetails   
@@ -30,7 +30,7 @@ var query = from o in db.Orders
   
  Type inference on composite keys depends on the names of the properties in the keys, and the order in which they occur. If the properties in the source sequences do not have the same names, you must assign new names in the keys. For example, if the `Orders` table and `OrderDetails` table each used different names for their columns, you could create composite keys by assigning identical names in the anonymous types:  
   
-```cs  
+```csharp  
 join...on new {Name = o.CustomerName, ID = o.CustID} equals   
     new {Name = d.CustName, ID = d.CustID }  
 ```  

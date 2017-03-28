@@ -198,7 +198,7 @@ in the code above.
 Next, you need to convert the strings to doubles. The method you'll use
 to convert the string to a double is `double.TryParse()`:
 
-```cs
+```csharp
 bool TryParse(string s, out double result);
 ```
 
@@ -243,7 +243,7 @@ the updated results.
 Your next task is to build a random weather forecast. Let's start with a data
 container that holds the values you'd want for a weather forecast:
 
-```cs
+```csharp
 public class WeatherReport
 {
     private static readonly string[] PossibleConditions = new string[]

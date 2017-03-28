@@ -36,7 +36,7 @@ Or you can pass it directly as a method argument:
 
  A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [expression trees](expression-trees.md). An expression lambda returns the result of the expression and takes the following basic form:
 
-```cs
+```csharp
 (input parameters) => expression
 ```
 
@@ -58,7 +58,7 @@ Note in the previous example that the body of an expression lambda can consist o
 
 A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:
 
-```cs
+```csharp
 (input parameters) => { statement; }
 ```
 

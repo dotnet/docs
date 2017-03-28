@@ -105,7 +105,7 @@ APIs, @System.Net.Http.HttpClient supports only async methods for its long-runni
 Start by making an async method. You'll fill in the implementation as you
 build the functionality of the application. Start by opening the `program.cs` file in your project directory and adding the following method to the `Program` class:
 
-```cs
+```csharp
 private static async Task ProcessRepositories()
 {
     
@@ -115,7 +115,7 @@ private static async Task ProcessRepositories()
 You'll need to add a `using` statement at the top of your `Main` method so
 that the C# compiler recognizes the @System.Threading.Tasks.Task type:
 
-```cs
+```csharp
 using System.Threading.Tasks;
 ```
 
@@ -131,7 +131,7 @@ Next, update the `Main` method to call this method. The
 program before that task finishes. Therefore, you must use the `Wait`
 method to block and wait for the task to finish:
 
-```cs
+```csharp
 public static void Main(string[] args)
 {
     ProcessRepositories().Wait();
@@ -141,7 +141,7 @@ public static void Main(string[] args)
 Now, you have a program that does nothing, but does it asynchronously. Let's go back to the
 `ProcessRepositories` method and fill in a first version of it:
 
-```cs
+```csharp
 private static async Task ProcessRepositories()
 {
     var client = new HttpClient();
@@ -159,7 +159,7 @@ private static async Task ProcessRepositories()
 
 You'll need to also add two new using statements at the top of the file for this to compile:
 
-```cs
+```csharp
 using System.Net.Http;
 using System.Net.Http.Headers;
 ```
@@ -192,7 +192,7 @@ The JSON Serializer converts JSON data into C# Objects. Your first task is to de
 type to contain the information you use from this response. Let's build this slowly, so start with
 a simple C# type that contains the name of the repository:
 
-```cs
+```csharp
 using System;
 
 namespace WebAPIClient
@@ -218,13 +218,13 @@ Now that you've created the type, let's deserialize it. You'll need to create a
 JSON packet it retrieves. The packet from GitHub contains a sequence of repositories, so a
 `List<repo>` is the correct type. Add the following line to your `ProcessRepositories` method:
 
-```cs
+```csharp
 var serializer = new DataContractJsonSerializer(typeof(List<repo>));
 ```
 
 You're using two new namespaces, so you'll need to add those as well:
 
-```cs
+```csharp
 using System.Collections.Generic;
 using System.Runtime.Serialization.Json;
 ```
@@ -232,7 +232,7 @@ using System.Runtime.Serialization.Json;
 Next, you'll use the serializer to convert JSON into C# objects. Replace the call to
 @System.Net.Http.HttpClient.GetStringAsync(System.String) in your `ProcessRepositories` method with the following two lines:
 
-```cs
+```csharp
 var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
 var repositories = serializer.ReadObject(await streamTask) as List<repo>;
 ```
@@ -251,14 +251,14 @@ instead of throwing an exception.
 You're almost done with this section. Now that you've converted the JSON to C# objects, let's display
 the name of each repository. Replace the lines that read:
 
-```cs
+```csharp
 var msg = await stringTask;   //**Deleted this
 Console.Write(msg);
 ```
 
 with the following:
 
-```cs
+```csharp
 foreach (var repo in repositories)
     Console.WriteLine(repo.name);
 ```
@@ -289,7 +289,7 @@ Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and ful
 `DataContract` attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:
 
-```cs
+```csharp
 [DataContract(Name="repo")]
 public class Repository
 ```
@@ -297,14 +297,14 @@ public class Repository
 The @System.Runtime.Serialization.DataContractAttribute is a member of the @System.Runtime.Serialization namespace, so you'll
 need to add the appropriate `using` statement at the top of the file:
 
-```cs
+```csharp
 using System.Runtime.Serialization;
 ```
 
 You changed the name of the `repo` class to `Repository`, so you'll need to make the same name change
 in Program.cs (some editors may support a rename refactoring that will make this change automatically:)
 
-```cs
+```csharp
 var serializer = new DataContractJsonSerializer(typeof(List<Repository>));
 
 // ...
@@ -315,14 +315,14 @@ var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
 Next, let's make the same change with the `name` field by using the @System.Runtime.Serialization.DataMemberAttribute class. Make
 the following changes to the declaration of the `name` field in repo.cs:
 
-```cs
+```csharp
 [DataMember(Name="name")]
 public string Name;
 ```
 
 This change means you need to change the code that writes the name of each repository in program.cs:
 
-```cs
+```csharp
 Console.WriteLine(repo.Name);
 ```
 
@@ -335,14 +335,14 @@ easier to add those changes later without breaking any code that uses the `Repos
 
 Remove the field definition, and replace it with an [auto-implemented property](../programming-guide/classes-and-structs/auto-implemented-properties.md):
 
-```cs
+```csharp
 public string Name { get; set; }
 ```
 
 The compiler generates the body of the `get` and `set` accessors, as well as a private field to
 store the name. It would be similar to the following code that you could type by hand:
 
-```cs
+```csharp
 public string Name 
 { 
     get { return this._name; }
@@ -358,13 +358,13 @@ and move the code that writes the information into the `Main` method.
 Change the signature of `ProcessRepositories` to return a task whose result is a list of `Repository`
 objects:
 
-```cs
+```csharp
 private static async Task<List<Repository>> ProcessRepositories()
 ```
 
 Then, just return the repositories after processing the JSON response:
 
-```cs
+```csharp
 var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
 return repositories;
 ```
@@ -373,7 +373,7 @@ The compiler generates the `Task<T>` object for the return because you've marked
 Then, let's modify the `Main` method so that it captures those results and writes each repository name
 to the console. Your `Main` method now looks like this:
 
-```cs
+```csharp
 public static void Main(string[] args)
 {
     var repositories = ProcessRepositories().Result;
@@ -396,7 +396,7 @@ features of the C# language.
 Let's start by adding a few more simple types to the `Repository` class definition. Add these properties
 to that class:
 
-```cs
+```csharp
 [DataMember(Name="description")]
 public string Description { get; set; }
 
@@ -417,7 +417,7 @@ the serialization action will throw an exception.
 
 Once you've added these, update the `Main` method to display those elements:
 
-```cs
+```csharp
 foreach (var repo in repositories)
 {
     Console.WriteLine(repo.Name);
@@ -440,7 +440,7 @@ a custom conversion method. You also probably don't want the raw string exposed 
 class. Attributes can help control that as well. First, define a `private` property that will hold the
 string representation of the date time in your `Repository` class:
 
-```cs
+```csharp
 [DataMember(Name="pushed_at")]
 private string JsonDate { get; set; }
 ```
@@ -449,7 +449,7 @@ The `DataMember` attribute informs the serializer that this should be processed,
 a public member. Next, you need to write a public read-only property that converts the string to a
 valid @System.DateTime object, and returns that @System.DateTime:
 
-```cs
+```csharp
 [IgnoreDataMember]
 public DateTime LastPush
 {
@@ -471,14 +471,14 @@ property accessor throws an exception.
 To use @System.Globalization.CultureInfo.InvariantCulture, you will need to add the @System.Globalization namespace to the `using` statements 
 in `repo.cs`:
 
-```cs
+```csharp
 using System.Globalization;
 ```
 
 Finally, add one more output statement in the console, and you're ready to build and run this app
 again:
 
-```cs
+```csharp
 Console.WriteLine(repo.LastPush);
 ```
 

@@ -36,7 +36,7 @@ By using Caller Info attributes, you can obtain information about the caller to 
 ## Example  
  The following example shows how to use Caller Info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.  
   
-```cs  
+```csharp  
 public void DoProcessing()  
 {  
     TraceMessage("Something happened.");  

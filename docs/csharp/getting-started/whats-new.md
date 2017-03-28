@@ -33,17 +33,17 @@ This page lists key feature names for each version of C# with descriptions of th
 
 ## Previous versions
 
-| C# Version | Visual Studio Release   | Features |
-| :--------: | ----------------------- | -------- |
-| 1          | Visual Studio .NET 2002 | Initial release |
-| 1.1        | Visual Studio .NET 2003 | `#line` pragma and xml doc comments |
-| 2          | Visual Studio .NET 2005 | Anonymous methods, generics, nullable types, iterators/yield, `static` classes, co/contra variance for delegates |
-| 3          | Visual Studio .NET 2008 | Object and collection initializers, lambda expressions, extension methods, anonymous types, automatic properties, Language Integrated Query (LINQ), anonymous types, local `var` type inference, LINQ |
-| 4          | Visual Studio .NET 2010 | `Dynamic`, named arguments, optional parameters, generic co/contra variance |
-| 5          | Visual Studio .NET 2012 | `Async`/`await`, caller information attributes |
-|            | Visual Studio .NET 2013 | Performance improvements and technology previews of .NET Compiler Platform ("Roslyn") |
-| 6          | Visual Studio .NET 2015 | `nameof`, string interpolation, null-conditional member access and indexing, index initializers, collection initializer and Add Extension methods, improved overload resolution, exception filters, `await` in `catch` and `finally` blocks, auto-property initializers, getter-only auto-properties, function members with expression bodies, `using static` | 
-| 7          | Visual Studio .NET 2017 | See [Current version](#current-version) section |
+| C# Version | Visual Studio Release | Features |
+| :--------: | :-------------------: | -------- |
+| 1          | 2002                  | Initial release |
+| 1.1        | 2003                  | `#line` pragma and xml doc comments |
+| 2          | 2005                  | Anonymous methods, generics, nullable types, iterators/yield, `static` classes, co/contra variance for delegates |
+| 3          | 2008                  | Object and collection initializers, lambda expressions, extension methods, anonymous types, automatic properties, Language Integrated Query (LINQ), anonymous types, local `var` type inference, LINQ |
+| 4          | 2010                  | `Dynamic`, named arguments, optional parameters, generic co/contra variance |
+| 5          | 2012                  | `Async`/`await`, caller information attributes |
+|            | 2013                  | Performance improvements and technology previews of .NET Compiler Platform ("Roslyn") |
+| 6          | 2015                  | `nameof`, string interpolation, null-conditional member access and indexing, index initializers, collection initializer and Add Extension methods, improved overload resolution, exception filters, `await` in `catch` and `finally` blocks, auto-property initializers, getter-only auto-properties, function members with expression bodies, `using static` | 
+| 7          | 2017                  | See [Current version](#current-version) section |
 
 ## Current version
 

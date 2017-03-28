@@ -44,17 +44,17 @@ This page lists key feature names for each version of Visual Basic with descript
 
 ## Previous versions
 
-| Visual Studio Release   | Features |
-| ----------------------- | -------- |
-| Visual Studio .NET 2002 | Initial release |
-| Visual Studio .NET 2003 | Bit shift operators, loop variable declaration |
-| Visual Studio .NET 2005 | `My` type and helper types (access to app, computer, files system, network |
-| Visual Studio .NET 2008 | Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types |
-| Visual Studio .NET 2010 | Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access |
-| Visual Studio .NET 2012 | `Async`/`await`, iterators, caller info attributes |
-| Visual Studio .NET 2013 | Performance improvements and technology previews of .NET Compiler Platform ("Roslyn") |
-| Visual Studio .NET 2015 | `nameof`, string interpolation, null-conditional member access and indexing, multi-line string literals, comments features, smarter fully-qualified name resolution, year-first date literals, readonly interface properties, `TypeOf` use with `IsNot`, disable and enable specific warnings, XML doc comment improvements, partial module and interface definitions, region directives inside method bodies, overrides definitions are implicitly `Overloads`, CObj allowed in attribute arguments, declaring and consuming ambiguous methods from different interfaces |
-| Visual Studio .NET 2017 | See [Current version](#current-version) section |
+| Visual Studio Release | Features |
+| :-------------------: | -------- |
+| 2002                  | Initial release |
+| 2003                  | Bit shift operators, loop variable declaration |
+| 2005                  | `My` type and helper types (access to app, computer, files system, network |
+| 2008                  | Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types |
+| 2010                  | Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access |
+| 2012                  | `Async`/`await`, iterators, caller info attributes |
+| 2013                  | Performance improvements and technology previews of .NET Compiler Platform ("Roslyn") |
+| 2015                  | `nameof`, string interpolation, null-conditional member access and indexing, multi-line string literals, comments features, smarter fully-qualified name resolution, year-first date literals, readonly interface properties, `TypeOf` use with `IsNot`, disable and enable specific warnings, XML doc comment improvements, partial module and interface definitions, region directives inside method bodies, overrides definitions are implicitly `Overloads`, CObj allowed in attribute arguments, declaring and consuming ambiguous methods from different interfaces |
+| 2017                  | See [Current version](#current-version) section |
 
 ## Current version
 

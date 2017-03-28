@@ -38,7 +38,7 @@ Expression trees represent code in a tree-like data structure, where each node i
   
  The following code examples demonstrate how to have the C# compiler create an expression tree that represents the lambda expression `num => num < 5`.  
   
-```cs  
+```csharp  
 Expression<Func<int, bool>> lambda = num => num < 5;  
 ```  
   
@@ -47,7 +47,7 @@ Expression<Func<int, bool>> lambda = num => num < 5;
   
  The following code example demonstrates how to create an expression tree that represents the lambda expression `num => num < 5` by using the API.  
   
-```cs  
+```csharp  
 // Add the following using directive to your code file:  
 // using System.Linq.Expressions;  
   
@@ -64,7 +64,7 @@ Expression<Func<int, bool>> lambda1 =
   
  In .NET Framework 4 or later, the expression trees API also supports assignments and control flow expressions such as loops, conditional blocks, and `try-catch` blocks. By using the API, you can create expression trees that are more complex than those that can be created from lambda expressions by the C# compiler. The following example demonstrates how to create an expression tree that calculates the factorial of a number.  
   
-```cs  
+```csharp  
 // Creating a parameter expression.  
 ParameterExpression value = Expression.Parameter(typeof(int), "value");  
   
@@ -109,7 +109,7 @@ Console.WriteLine(factorial);
 ## Parsing Expression Trees  
  The following code example demonstrates how the expression tree that represents the lambda expression `num => num < 5` can be decomposed into its parts.  
   
-```cs  
+```csharp  
 // Add the following using directive to your code file:  
 // using System.Linq.Expressions;  
   
@@ -138,7 +138,7 @@ Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
   
  The following code example demonstrates how to compile an expression tree and run the resulting code.  
   
-```cs  
+```csharp  
 // Creating an expression tree.  
 Expression<Func<int, bool>> expr = num => num < 5;  
   

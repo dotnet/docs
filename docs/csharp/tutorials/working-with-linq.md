@@ -70,7 +70,7 @@ thirteen values). You'll combine those source into a 52 card deck.
 
 Here's the query:
 
-```cs
+```csharp
 var startingDeck = from s in Suits()
                    from r in Ranks()
                    select new { Suit = s, Rank = r };
@@ -89,7 +89,7 @@ Next, you'll need to build the Suits() and Ranks() methods. Let's start
 with a really simple set of *iterator methods* that generate the sequence
 as an enumerable of strings:
 
-```cs
+```csharp
 static IEnumerable<string> Suits()
 {
     yield return "clubs";
@@ -132,7 +132,7 @@ Next, let's build a utility method that can perform the shuffle. The first step
 is to split the deck in two. The `Take()` and `Skip()` methods that are
 part of the LINQ APIs provide that feature for us:
 
-```cs
+```csharp
 var top = startingDeck.Take(26);
 var bottom = startingDeck.Skip(26);
 ```
@@ -144,7 +144,7 @@ steps.
 
 The signature for the method creates an *extension method*:
 
-```cs
+```csharp
 public static IEnumerable<T> InterleaveSequenceWith<T>
     (this IEnumerable<T> first, IEnumerable<T> second)
 ```
@@ -163,7 +163,7 @@ This method declaration also follows a standard idiom where the input and
 output types are `IEnumerable<T>`. That practice enables LINQ methods to
 be chained together to perform more complex queries.
 
-```cs
+```csharp
 using System.Collections.Generic;
 
 namespace LinqFaroShuffle
@@ -193,7 +193,7 @@ of building a collection and returning the collection, you'll use the
 
 Here's the implementation of that method:
 
-```cs
+```csharp
 public static IEnumerable<T> InterleaveSequenceWith<T>
     (this IEnumerable<T> first, IEnumerable<T> second)
 {
@@ -210,7 +210,7 @@ public static IEnumerable<T> InterleaveSequenceWith<T>
 Now that you've written this method, go back to the `Main` method
 and shuffle the deck once:
 
-```cs
+```csharp
 public static void Main(string[] args)
 {
     var startingDeck = from s in Suits()
@@ -243,7 +243,7 @@ element, you'll compare the matching elements of each sequence. When
 the entire sequence has been enumerated, if every element matches,
 the sequences are the same:
 
-```cs
+```csharp
 public static bool SequenceEquals<T>(this IEnumerable<T> first, IEnumerable<T> second)
 {
     var firstIter = first.GetEnumerator();
@@ -267,7 +267,7 @@ the sequence is back in its original order by applying the `SequenceEquals()`
 method. You can see it would always be the final method in any query, because it
 returns a single value instead of a sequence:
 
-```cs
+```csharp
 var times = 0;
 var shuffle = startingDeck;
 do
@@ -296,7 +296,7 @@ first card in the deck. That means the last card in the top half becomes the bot
 card. That's just a one line change. Update the call to shuffle to change the order
 of the top and bottom halves of the deck:
 
-```cs
+```csharp
 shuffle = shuffle.Skip(26).InterleaveSequenceWith(shuffle.Take(26));
 ```
 
@@ -318,7 +318,7 @@ the original deck many, many times. Let's write a log to demonstrate this behavi
 
 Here's a log method that can be appended to any query to mark that the query executed.
 
-```cs
+```csharp
 public static IEnumerable<T> LogQuery<T>(this IEnumerable<T> sequence, string tag)
 {
     using (var writer = File.AppendText("debug.log"))
@@ -331,7 +331,7 @@ public static IEnumerable<T> LogQuery<T>(this IEnumerable<T> sequence, string ta
 
 Next, instrument the definition of each query with a log message:
 
-```cs
+```csharp
 public static void Main(string[] args)
 {
 var startingDeck = (from s in Suits().LogQuery("Suit Generation")
@@ -372,7 +372,7 @@ in an array or a list, respectively. You use these methods to cache the data res
 rather than execute the source query again.  Append the queries that generate the card decks
 with a call to `ToArray()` and run the query again:
 
-```cs
+```csharp
 public static void Main(string[] args)
 {
 var startingDeck = (from s in Suits().LogQuery("Suit Generation")
@@ -447,7 +447,7 @@ values.
 
 Start with the suits. This is a perfect time to use an `enum`:
 
-```cs
+```csharp
 public enum Suit
 {
     Clubs,
@@ -459,7 +459,7 @@ public enum Suit
 
 The `Suits()` method also changes type and implementation:
 
-```cs
+```csharp
 static IEnumerable<Suit> Suits()
 {
     yield return Suit.Clubs;
@@ -471,7 +471,7 @@ static IEnumerable<Suit> Suits()
 
 Next, do the same change with the Rank of the cards:
 
-```cs
+```csharp
 public enum Rank
 {
     Two,
@@ -492,7 +492,7 @@ public enum Rank
 
 And the method that generates them:
 
-```cs
+```csharp
 static IEnumerable<Rank> Values()
 {
     yield return Rank.Two;
@@ -516,7 +516,7 @@ relying on an anonymous type. Anonymous types are great for lightweight,
 local types, but in this example, the playing card is one of the main
 concepts. It should be a concrete type.
 
-```cs
+```csharp
 public class PlayingCard
 {
     public Suit CardSuit { get; }
@@ -542,7 +542,7 @@ string output.
 
 Update the query that generates the starting deck to use the new type:
 
-```cs
+```csharp
 var startingDeck = (from s in Suits().LogQuery("Suit Generation")
                     from r in Ranks().LogQuery("Value Generation")
                     select new PlayingCard(s, r))

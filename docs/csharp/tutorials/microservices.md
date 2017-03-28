@@ -198,7 +198,7 @@ in the code above.
 Next, you need to convert the strings to doubles. The method you'll use
 to convert the string to a double is `double.TryParse()`:
 
-```cs
+```csharp
 bool TryParse(string s, out double result);
 ```
 
@@ -243,7 +243,7 @@ the updated results.
 Your next task is to build a random weather forecast. Let's start with a data
 container that holds the values you'd want for a weather forecast:
 
-```cs
+```csharp
 public class WeatherReport
 {
     private static readonly string[] PossibleConditions = new string[]
@@ -387,11 +387,6 @@ This command builds the container image based on all the information in your Doc
 argument provides a tag, or name, for this container image. In the command line above, the
 tag used for the Docker container is `weather-microservice`. When this command completes,
 you have a container ready to run your new service. 
-
-> [!Note]
-> The copy command will copy all built assets, as well as the source for your application.
-> You should remove the `obj`, `bin`, and `out` directories from your local machine
-> before building your Docker image.
 
 Run the following command to start
 the container and launch your service:

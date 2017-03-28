@@ -23,7 +23,7 @@ One excellent example for this kind of design is LINQ. The LINQ
 Query Expression Pattern relies on delegates for all of its
 features. Consider this simple example:
 
-```cs
+```csharp
 var smallNumbers = numbers.Where(n => n < 10);
 ```
 
@@ -34,7 +34,7 @@ implementation of the delegate for this specific purpose.
 
 The prototype for the Where method is:
 
-```cs
+```csharp
 public static IEnumerable<TSource> Where<in TSource> (IEnumerable<TSource> source, Func<TSource, bool> predicate);
 ```
 
@@ -85,7 +85,7 @@ Let's start small: the initial implementation will accept new messages,
 and write them using any attached delegate. You can start with one delegate
 that writes messages to the console.
 
-```cs
+```csharp
 public static class Logger
 {
     public static Action<string> WriteMessage;
@@ -101,7 +101,7 @@ The static class above is the simplest thing that can work. We need to
 write the single implementation for the method that writes messages
 to the console: 
 
-```cs
+```csharp
 public static void LogToConsole(string message)
 {
     Console.Error.WriteLine(message);
@@ -111,7 +111,7 @@ public static void LogToConsole(string message)
 Finally, you need to hook up the delegate by attaching it to
 the WriteMessage delegate declared in the logger:
 
-```cs
+```csharp
 Logger.WriteMessage += LogToConsole;
 ```
 
@@ -137,7 +137,7 @@ creating other logging mechanisms.
 Next, let's add a few arguments to the `LogMessage()` method so that
 your log class creates more structured messages:
 
-```cs
+```csharp
 // Logger implementation two
 public enum Severity
 {
@@ -164,7 +164,7 @@ public static class Logger
 Next, let's make use of that `Severity` argument to filter the messages
 that are sent to the log's output. 
 
-```cs
+```csharp
 public static class Logger
 {
     public static Action<string> WriteMessage;
@@ -205,7 +205,7 @@ each message is generated.
 
 Here is that file based logger:
 
-```cs
+```csharp
 public class FileLogger
 {
     private readonly string logPath;
@@ -238,14 +238,14 @@ public class FileLogger
 Once you've created this class, you can instantiate it and it attaches
 its LogMessage method to the Logger component:
 
-```cs
+```csharp
 var file = new FileLogger("log.txt");
 ```
 
 These two are not mutually exclusive. You could attach both log
 methods and generate messages to the console and a file:
 
-```cs
+```csharp
 var fileOutput = new FileLogger("log.txt");
 Logger.WriteMessage += LogToConsole;
 ```
@@ -253,7 +253,7 @@ Logger.WriteMessage += LogToConsole;
 Later, even in the same application, you can remove one of the
 delegates without any other issues to the system:
 
-```cs
+```csharp
 Logger.WriteMessage -= LogToConsole;
 ```
 
@@ -295,7 +295,7 @@ You may prefer a design that silently continues when no methods
 have been attached. This is easy using the null conditional operator,
 combined with the `Delegate.Invoke()` method:
 
-```cs
+```csharp
 public static void LogMessage(string msg)
 {
     WriteMessage?.Invoke(msg);

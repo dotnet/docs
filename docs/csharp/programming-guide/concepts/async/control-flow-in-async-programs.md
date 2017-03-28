@@ -40,7 +40,7 @@ You can write and maintain asynchronous programs more easily by using the `async
   
  The following code shows an outline of the program.  
   
-```cs  
+```csharp  
   
 public partial class MainWindow : Window  
 {  
@@ -144,7 +144,7 @@ Length of the downloaded string: 33946.
   
 6.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
   
-    ```cs  
+    ```csharp  
     <Window  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -167,7 +167,7 @@ Length of the downloaded string: 33946.
   
 9. In MainWindow.xaml.cs, replace the code with the following code.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  
@@ -300,7 +300,7 @@ Length of the downloaded string: 33946.
   
  The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.  
   
-```cs  
+```csharp  
 Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
 ```  
   
@@ -316,7 +316,7 @@ THREE: Back in AccessTheWebAsync.
   
  The following statement suspends progress in `AccessTheWebAsync` when `getStringTask` is awaited.  
   
-```cs  
+```csharp  
 string urlContents = await getStringTask;  
 ```  
   
@@ -336,7 +336,7 @@ string urlContents = await getStringTask;
   
  The following statement assigns this task to the `getLengthTask` variable.  
   
-```cs  
+```csharp  
 Task<int> getLengthTask = AccessTheWebAsync();  
 ```  
   
@@ -352,7 +352,7 @@ FOUR:  Back in startButton_Click.
   
  Progress in `startButton_Click` is suspended when `getLengthTask` is awaited. The following assignment statement suspends `startButton_Click` until `AccessTheWebAsync` is complete.  
   
-```cs  
+```csharp  
 int contentLength = await getLengthTask;  
 ```  
   
@@ -396,7 +396,7 @@ SIX:   Back in startButton_Click.
   
  The await expression retrieves from `getLengthTask` the integer value that’s the operand of the return statement in `AccessTheWebAsync`. The following statement assigns that value to the `contentLength` variable.  
   
-```cs  
+```csharp  
 int contentLength = await getLengthTask;  
 ```  
   

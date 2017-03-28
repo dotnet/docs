@@ -92,7 +92,7 @@ These two methods both utilize the `yield return` syntax to produce a sequence a
 
 Go ahead and run the sample you've built at this point. It will display all 52 cards in the deck. You may find it very helpful to run this sample under a debugger to observe how the `Suits()` and `Values()` methods execute. You can clearly see that each string in each sequence is generated only as it is needed.
 
-![Console window showing the app writing out 52 cards](./media/console.png)
+![Console window showing the app writing out 52 cards](./media/working-with-linq/console.png)
 
 ## Manipulating the Order
 

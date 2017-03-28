@@ -1,5 +1,6 @@
 namespace LinqFaroShuffle
 {
+    #region snippet1
     public class PlayingCard
     {
         public Suit CardSuit { get; }
@@ -16,4 +17,5 @@ namespace LinqFaroShuffle
             return $"{CardRank} of {CardSuit}";
         }
     }
+    #endregion
 }

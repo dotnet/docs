@@ -29,7 +29,7 @@ The three extensibility mechanisms outlined above are not exclusive; you can use
 depends largely on what is the goal you are trying to achieve with your extension.
 
 ## Per-project based extensibility
-Per-project tools are [framework-dependented deployments](../deploying/index.md) that are distributed as NuGet packages. Tools are 
+Per-project tools are [framework-dependent deployments](../deploying/index.md) that are distributed as NuGet packages. Tools are 
 only available in the context of the project that references them and for which they are restored; invocation outside 
 of the context of the project (for example, outside of the directory that contains the project) will fail as the command will 
 not be able to be found.

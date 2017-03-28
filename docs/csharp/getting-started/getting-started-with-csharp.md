@@ -34,12 +34,6 @@ translation.priority.mt:
 The following topics help you start developing applications by using C#. These topics will also introduce you to the many new features in Visual Studio and the C# language.  
   
 ## In This Section  
-<<<<<<< HEAD
-=======
- [Visual C# Breaking Changes in Visual Studio 2015](https://msdn.microsoft.com/en-us/library/cc714070(v=vs.140).aspx)  
- Lists breaking changes in the C# compiler since the previous version.  
-  
->>>>>>> Initial commit
  [Introduction to the C# Language and the .NET Framework](../../csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework.md)  
  Provides an overview of the C# language and the .NET platform.  
   

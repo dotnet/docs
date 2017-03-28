@@ -18,6 +18,16 @@
         "redirect_url": "/dotnet/articles/core/tools/dotnet-test"
     },
     {
+        "source_path": "docs/csharp/csharp-6.md", 
+        "redirect_url": "/dotnet/articles/csharp/whats-new/csharp-6",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "docs/csharp/csharp-7.md", 
+        "redirect_url": "/dotnet/articles/csharp/whats-new/csharp-7",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "docs/csharp/features.md", 
         "redirect_url": "/dotnet/articles/csharp/concepts"
     },
@@ -30,6 +40,15 @@
         "source_path": "docs/csharp/getting-started/library-with-visual-studio_2017.md", 
         "redirect_url": "/dotnet/articles/csharp/getting-started/library-with-visual-studio-2017"
     },
+    {
+        "source_path": "docs/csharp/whats-new.md", 
+        "redirect_url": "/dotnet/articles/csharp/whats-new/index",
+        "redirect_document_id": true
+    },   
+    {
+        "source_path": "docs/csharp/getting-started/whats-new.md", 
+        "redirect_url": "/dotnet/articles/csharp/whats-new/index"
+    }, 
     {
         "source_path": "docs/core/preview3/windows-prerequisites.md",
         "redirect_url": "/dotnet/articles/core/windows-prerequisites"

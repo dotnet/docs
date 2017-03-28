@@ -57,7 +57,7 @@ The syntax for automatically implemented properties (usually referred to as 'aut
 made it very easy to create properties
 that had simple get and set accessors:
 
-[!code-csharp[ClassicAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#ClassicAutoProperty)]
+[!code-csharp[ClassicAutoProperty](../../../samples/snippets/csharp/new-in-6/oldcode.cs#ClassicAutoProperty)]
 
 However, this simple syntax limited the kinds of designs you could support using
 auto-properties. C# 6 improves the auto-properties capabilities so that you can use
@@ -73,7 +73,7 @@ the variable storage behind an auto-property.
 immutable types. The closest you could get to immutable types
 in earlier versions of C# was to declare private setters:
 
-[!code-csharp[ClassicReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/oldcode.cs#ClassicReadOnlyAutoProperty)]
+[!code-csharp[ClassicReadOnlyAutoProperty](../../../samples/snippets/csharp/new-in-6/oldcode.cs#ClassicReadOnlyAutoProperty)]
  
 Using this syntax, the compiler doesn't ensure that the type really is immutable. It only
 enforces that the `FirstName` and `LastName` properties are not modified from any
@@ -82,11 +82,11 @@ code outside the class.
 Read-only auto-properties enable true read-only behavior. You declare the auto-property
 with only a get accessor:
 
-[!code-csharp[ReadOnlyAutoProperty](../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoProperty)]
+[!code-csharp[ReadOnlyAutoProperty](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoProperty)]
 
 The `FirstName` and `LastName` properties can be set only in the body of a constructor:
 
-[!code-csharp[ReadOnlyAutoPropertyConstructor](../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoPropertyConstructor)]
+[!code-csharp[ReadOnlyAutoPropertyConstructor](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadOnlyAutoPropertyConstructor)]
 
 Trying to set `LastName` in another method generates a `CS0200` compilation error:
 
@@ -115,7 +115,7 @@ to use that setter to initialize the data storage used by the backing
 field. Consider this class for a student that contains the name and a
 list of the student's grades:
 
-[!code-csharp[Construction](../../samples/snippets/csharp/new-in-6/oldcode.cs#Construction)]
+[!code-csharp[Construction](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Construction)]
  
 As this class grows, you may include other constructors. Each constructor
 needs to initialize this field, or you'll introduce errors.
@@ -123,7 +123,7 @@ needs to initialize this field, or you'll introduce errors.
 C# 6 enables you to assign an initial value for the storage used by an
 auto-property in the auto-property declaration:
 
-[!code-csharp[Initialization](../../samples/snippets/csharp/new-in-6/newcode.cs#Initialization)]
+[!code-csharp[Initialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#Initialization)]
 
 The `Grades` member is initialized where it is declared. That makes it
 easier to perform the initialization exactly once. The initialization
@@ -133,7 +133,7 @@ storage allocation with public interface for `Student` objects.
 Property Initializers can be used with read/write properties as well
 as read only properties, as shown here.
 
-[!code-csharp[ReadWriteInitialization](../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
+[!code-csharp[ReadWriteInitialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 
 ## Expression-bodied function members
 
@@ -143,11 +143,11 @@ writing an expression-bodied member instead. It works for methods and
 read-only properties." For example, an override of `ToString()` is often
 a great candidate:
 
-[!code-csharp[ToStringExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]
+[!code-csharp[ToStringExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#ToStringExpressionMember)]
 
 You can also use expression-bodied members in read only properties as well:
 
-[!code-csharp[FullNameExpressionMember](../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
+[!code-csharp[FullNameExpressionMember](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
 ## using static
 
@@ -162,7 +162,7 @@ Your code will be littered with @System.Math.Sin, @System.Math.Sqrt and other ca
 to different methods in the @System.Math class. The new `using static` syntax can make these
 classes much cleaner to read. You specify the class you're using:
 
-[!code-csharp[UsingStaticMath](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticMath)]
+[!code-csharp[UsingStaticMath](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticMath)]
 
 And now, you can use any static method in the @System.Math class without
 qualifying the @System.Math class. The @System.Math class is a great use case for
@@ -171,7 +171,7 @@ instance methods. You can also use `using static` to import a
 class' static methods for a class that has both static
 and instance methods. One of the most useful examples is @System.String:
 
-[!code-csharp[UsingStatic](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStatic)]
+[!code-csharp[UsingStatic](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStatic)]
 
 > [!NOTE]
 > You must use the fully qualified class name, `System.String`
@@ -181,7 +181,7 @@ and instance methods. One of the most useful examples is @System.String:
 You can now call static methods defined in the @System.String class without
 qualifying those methods as members of that class:
 
-[!code-csharp[UsingStaticString](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticString)]
+[!code-csharp[UsingStaticString](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticString)]
 
 The `static using` feature and extension methods interact in
 interesting ways, and the language design included some rules
@@ -194,14 +194,14 @@ extension method invocation syntax, not when called as a static method.
 You'll often see this in LINQ queries. You can import the LINQ pattern
 by importing @System.Linq.Enumerable. 
 
-[!code-csharp[UsingStaticLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#usingStaticLinq)]
+[!code-csharp[UsingStaticLinq](../../../samples/snippets/csharp/new-in-6/newcode.cs#usingStaticLinq)]
 
 This imports all the methods in the @System.Linq.Enumerable class.
 However, the extension methods are only in scope when called as extension
 methods. They are not in scope if they are called using the static method
 syntax:
 
-[!code-csharp[UsingStaticLinqMethod](../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticLinkMethod)]
+[!code-csharp[UsingStaticLinqMethod](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticLinkMethod)]
 
 This decision is because extension methods are typically called using
 extension method invocation expressions. In the rare case where they are
@@ -221,7 +221,7 @@ and fluid.
 
 Simply replace the member access `.` with `?.`:
 
-[!code-csharp[NullConditional](../../samples/snippets/csharp/new-in-6/program.cs#NullConditional)]
+[!code-csharp[NullConditional](../../../samples/snippets/csharp/new-in-6/program.cs#NullConditional)]
 
 In the preceding example, the variable `first` is assigned `null` if the person object
 is `null`. Otherwise, it gets assigned the value of the `FirstName` property. Most importantly,
@@ -235,14 +235,14 @@ expression.
 You can often use this construct with the *null coalescing* operator to assign
 default values when one of the properties are `null`:
 
-[!code-csharp[NullCoalescing](../../samples/snippets/csharp/new-in-6/program.cs#NullCoalescing)]
+[!code-csharp[NullCoalescing](../../../samples/snippets/csharp/new-in-6/program.cs#NullCoalescing)]
 
 The right hand side operand of the `?.` operator is not limited to properties or fields.
 You can also use it to conditionally invoke methods. The most common use of member functions
  with the null conditional operator is to safely invoke delegates
 (or event handlers) that may be `null`.  You'll do this by calling the delegate's `Invoke` method
 using the `?.` operator to access the member. You can see an example in the  
-[delegate patterns](delegates-patterns.md#handling-null-delegates) topic.
+[delegate patterns](../delegates-patterns.md#handling-null-delegates) topic.
 
 The rules of the `?.` operator ensure that the left-hand side of the operator is
 evaluated only once. This is important and enables many idioms, including the
@@ -286,7 +286,7 @@ Ensuring that the left side is evaluated only once also enables you
 to use any expression, including method calls, on the left side of the
 `?.` Even if these have side-effects, they are evaluated once, so the
 side effects occur only once. You can see an example in our content
-on [events](events-overview.md#language-support-for-events).
+on [events](../events-overview.md#language-support-for-events).
 
 ## String Interpolation
 
@@ -296,20 +296,20 @@ and expressions that can be evaluated to produce other string values.
 Traditionally, you needed to use positional parameters in a method
 like `string.Format`:
 
-[!code-csharp[stringFormat](../../samples/snippets/csharp/new-in-6/oldcode.cs#stringFormat)]
+[!code-csharp[stringFormat](../../../samples/snippets/csharp/new-in-6/oldcode.cs#stringFormat)]
 
 With C# 6, the new string interpolation feature enables you to embed
 the expressions in the format string. Simple preface the string with
 `$`:
 
-[!code-csharp[stringInterpolation](../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
+[!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
 This initial example used variable expressions for the substituted
 expressions. You can expand on this syntax to use any expression. For
 example, you could compute a student's grade point average as part of
 the interpolation:
 
-[!code-csharp[stringInterpolationExpression](../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationExpression)]
+[!code-csharp[stringInterpolationExpression](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationExpression)]
 
 Running the preceding example, you would find that the output for `Grades.Average()`
 might have more decimal places than you would like. The string interpolation
@@ -317,7 +317,7 @@ syntax supports all the format strings available using earlier formatting
 methods. You add the format strings inside the braces. Add a `:` following
 the expression to format:
 
-[!code-csharp[stringInterpolationFormat](../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationFormat)]
+[!code-csharp[stringInterpolationFormat](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationFormat)]
 
 The preceding line of code will format the value for `Grades.Average()` as
 a floating-point number with two decimal places.
@@ -336,13 +336,13 @@ of the conditional operator. In all cases where this happens, you can
 surround the expression with parentheses to force the compiler to interpret
 the expression as you intend:
 
-[!code-csharp[stringInterpolationConditional](../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationConditional)]
+[!code-csharp[stringInterpolationConditional](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationConditional)]
 
 There aren't any limitations on the expressions you can place between
 the braces. You can execute a complex LINQ query inside an interpolated
 string to perform computations and display the result:
 
-[!code-csharp[stringInterpolationLinq](../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationLinq)]
+[!code-csharp[stringInterpolationLinq](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationLinq)]
 
 You can see from this sample that you can even nest a string interpolation
 expression inside another string interpolation expression. This example
@@ -394,13 +394,13 @@ expression evaluates to `false`, then the `catch` clause is skipped.
 One use is to examine information about an exception to determine if a
 `catch` clause can process the exception:
 
-[!code-csharp[ExceptionFilter](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#ExceptionFilter)]
+[!code-csharp[ExceptionFilter](../../../samples/snippets/csharp/new-in-6/NetworkClient.cs#ExceptionFilter)]
 
 The code generated by exception filters provides better information about
 an exception that is thrown and not processed. Before exception filters
 were added to the language, you would need to create code like the following:
 
-[!code-csharp[ExceptionFilterOld](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#ExceptionFilterOld)]
+[!code-csharp[ExceptionFilterOld](../../../samples/snippets/csharp/new-in-6/NetworkClient.cs#ExceptionFilterOld)]
 
 The point where the exception is thrown changes between these two examples.
 In the previous code, where a `throw` clause is used, any stack trace
@@ -428,25 +428,25 @@ throw point is preserved when an exception filter evaluates to `false`.
 A logging method would be a method whose argument is the exception that
 unconditionally returns `false`:
 
-[!code-csharp[ExceptionFilterLogging](../../samples/snippets/csharp/new-in-6/ExceptionFilterHelpers.cs#ExceptionFilterLogging)]
+[!code-csharp[ExceptionFilterLogging](../../../samples/snippets/csharp/new-in-6/ExceptionFilterHelpers.cs#ExceptionFilterLogging)]
 
 Whenever you want to log an exception, you can add a catch clause, and
 use this method as the exception filter:
 
-[!code-csharp[LogException](../../samples/snippets/csharp/new-in-6/program.cs#LogException)]
+[!code-csharp[LogException](../../../samples/snippets/csharp/new-in-6/program.cs#LogException)]
 
 The exceptions are never caught, because the `LogException` method always
 returns `false`. That always false exception filter means that you can
 place this logging handler before any other exception handlers:
 
-[!code-csharp[LogExceptionRecovery](../../samples/snippets/csharp/new-in-6/program.cs#LogExceptionRecovery)]
+[!code-csharp[LogExceptionRecovery](../../../samples/snippets/csharp/new-in-6/program.cs#LogExceptionRecovery)]
 
 The preceding example highlights a very important facet of exception filters.
 The exception filters enable scenarios where a more general exception
 catch clause may appear before a more specific one. It's also possible
 to have the same exception type appear in multiple catch clauses:
 
-[!code-csharp[HandleNotChanged](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#HandleNotChanged)]
+[!code-csharp[HandleNotChanged](../../../samples/snippets/csharp/new-in-6/NetworkClient.cs#HandleNotChanged)]
 
 Another recommended pattern helps prevent catch clauses from processing
 exceptions when a debugger is attached. This technique enables you to
@@ -456,7 +456,7 @@ is thrown.
 In your code, add an exception filter so that any recovery code executes
 only when a debugger is not attached:
 
-[!code-csharp[LogExceptionDebugger](../../samples/snippets/csharp/new-in-6/program.cs#LogExceptionDebugger)]
+[!code-csharp[LogExceptionDebugger](../../../samples/snippets/csharp/new-in-6/program.cs#LogExceptionDebugger)]
 
 After adding this in code, you set your debugger to break on all unhandled
 exceptions. Run the program under the debugger, and the debugger breaks
@@ -473,12 +473,12 @@ a property, or a member field.
 One of the most common uses for `nameof` is to provide the name of a symbol
 that caused an exception:
 
-[!code-csharp[nameof](../../samples/snippets/csharp/new-in-6/NewCode.cs#UsingStaticString)]
+[!code-csharp[nameof](../../../samples/snippets/csharp/new-in-6/NewCode.cs#UsingStaticString)]
 
 Another use is with XAML based applications that implement the `INotifyPropertyChanged`
 interface:
 
-[!code-csharp[nameofNotify](../../samples/snippets/csharp/new-in-6/viewmodel.cs#nameofNotify)]
+[!code-csharp[nameofNotify](../../../samples/snippets/csharp/new-in-6/viewmodel.cs#nameofNotify)]
 
 The advantage of using the `nameof` operator over a constant string is
 that tools can understand the symbol. If you use refactoring tools to
@@ -490,7 +490,7 @@ The `nameof` expression produces the unqualified name of its argument
 (`LastName` in the previous examples) even if you use the fully qualified
 name for the argument:
 
-[!code-csharp[QualifiedNameofNotify](../../samples/snippets/csharp/new-in-6/viewmodel.cs#QualifiedNameofNotify)]
+[!code-csharp[QualifiedNameofNotify](../../../samples/snippets/csharp/new-in-6/viewmodel.cs#QualifiedNameofNotify)]
 
 This `nameof` expression produces `FirstName`, not `UXComponents.ViewModel.FirstName`.
 
@@ -508,7 +508,7 @@ in a finally clause.
 With C# 6, you can also await in catch expressions. This is most often
 used with logging scenarios:
 
-[!code-csharp[AwaitFinally](../../samples/snippets/csharp/new-in-6/NetworkClient.cs#AwaitFinally)]
+[!code-csharp[AwaitFinally](../../../samples/snippets/csharp/new-in-6/NetworkClient.cs#AwaitFinally)]
 
 The implementation details for adding `await` support inside `catch`
 and `finally` clauses ensures that the behavior is consistent with the
@@ -529,11 +529,11 @@ if any, is lost.
 initializers more consistent. In earlier releases of C#, you could use
 *collection initializers* only with sequence style collections:
 
-[!code-csharp[ListInitializer](../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
+[!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
 
 Now, you can also use them with @System.Collections.Generic.Dictionary collections and similar types:
 
-[!code-csharp[DictionaryInitializer](../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
+[!code-csharp[DictionaryInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
 
 This feature means that associative containers can be initialized using
 syntax similar to what's been in place for sequence containers for several
@@ -550,25 +550,25 @@ has a method with a different name to semantically add new items.
 
 For example, consider a collection of students like this:
 
-[!code-csharp[Enrollment](../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
+[!code-csharp[Enrollment](../../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
 
 The `Enroll` method adds a student. But it doesn't follow the `Add` pattern.
 In previous versions of C#, you could not use collection initializers with an
 `Enrollment` object:
 
-[!code-csharp[InitializeEnrollment](../../samples/snippets/csharp/new-in-6/classList.cs#InitializeEnrollment)]
+[!code-csharp[InitializeEnrollment](../../../samples/snippets/csharp/new-in-6/classList.cs#InitializeEnrollment)]
 
 Now you can, but only if you create an extension method that maps `Add` to
 `Enroll`:
 
-[!code-csharp[ExtensionAdd](../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAdd)]
+[!code-csharp[ExtensionAdd](../../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAdd)]
 
 What you are doing with this feature is to map whatever method adds
 items to a collection to a method named `Add` by creating an
 extension method: 
 
-[!code-csharp[Enrollment](../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
-[!code-csharp[ExtensionAddSample](../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
+[!code-csharp[Enrollment](../../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
+[!code-csharp[ExtensionAddSample](../../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
 
 ## Improved overload resolution
 
@@ -576,18 +576,18 @@ This last feature is one you probably won't notice. There were constructs
 where the previous version of the C# compiler may have found some method
 calls involving lambda expressions ambiguous. Consider this method:
 
-[!code-csharp[AsyncMethod](../../samples/snippets/csharp/new-in-6/overloads.cs#AsyncMethod)]
+[!code-csharp[AsyncMethod](../../../samples/snippets/csharp/new-in-6/overloads.cs#AsyncMethod)]
 
 In earlier versions of C#, calling that method using the method group
 syntax would fail:
 
-[!code-csharp[MethodGroup](../../samples/snippets/csharp/new-in-6/overloads.cs#MethodGroup)]
+[!code-csharp[MethodGroup](../../../samples/snippets/csharp/new-in-6/overloads.cs#MethodGroup)]
  
 The earlier compiler could not distinguish correctly between `Task.Run(Action)`
 and `Task.Run(Func<Task>())`. In previous versions, you'd need to use
 a lambda expression as an argument:
 
-[!code-csharp[Lambda](../../samples/snippets/csharp/new-in-6/overloads.cs#Lambda)]
+[!code-csharp[Lambda](../../../samples/snippets/csharp/new-in-6/overloads.cs#Lambda)]
 
 The C# 6 compiler correctly determines that `Task.Run(Func<Task>())` is
 a better choice.

@@ -92,6 +92,8 @@ These two methods both utilize the `yield return` syntax to produce a sequence a
 
 Go ahead and run the sample you've built at this point. It will display all 52 cards in the deck. You may find it very helpful to run this sample under a debugger to observe how the `Suits()` and `Values()` methods execute. You can clearly see that each string in each sequence is generated only as it is needed.
 
+![Console window showing the app writing out 52 cards](./media/console.png)
+
 ## Manipulating the Order
 
 Next, let's build a utility method that can perform the shuffle. The first step is to split the deck in two. The `Take()` and `Skip()` methods that are part of the LINQ APIs provide that feature for us:

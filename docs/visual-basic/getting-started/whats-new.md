@@ -61,7 +61,8 @@ This page lists key feature names for each version of Visual Basic with descript
 * [Value tuples](https://github.com/dotnet/roslyn/issues/11370) introduce language support for using tuples to temporarily group a set of typed values: `Dim point As (x As Integer, y As Integer) = GetOffset()`.
 
 * [ByRef return consumption](https://github.com/dotnet/roslyn/issues/11370) extend the language to support consumption of functions and properties from libraries which have ByRef returns.
-Binary literals and digit group separators allow native representation of binary numbers. This is super convenient for bitmasks and flags enumerations: `&B1001_0011`.
+
+* Binary literals and digit group separators allow native representation of binary numbers. This is super convenient for bitmasks and flags enumerations: `&B1001_0011`.
 
 ## See also
 

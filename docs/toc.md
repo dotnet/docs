@@ -212,9 +212,9 @@
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
-## [What's new in C#](csharp/whats-new.md) 
-### [What's new in C# 7](csharp/csharp-7.md)
-### [What's new in C# 6](csharp/csharp-6.md)
+## [What's new in C#](csharp/whats-new/index.md) 
+### [What's new in C# 7](csharp/whats-new/csharp-7.md)
+### [What's new in C# 6](csharp/whats-new/csharp-6.md)
 <!-- End What's New -->
 ## [🔧 C# Interactive](csharp/interactive/)
 <!-- Do this section later, once master redirects are in place -->
@@ -411,14 +411,6 @@
 
 ## [Developing Applications](visual-basic/developing-apps/index.md)
 
-### [Using the Visual Basic Development Environment](visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)
-#### [Visual Basic Settings](visual-basic/developing-apps/using-ide/settings.md)
-#### [Visual Basic IntelliSense Code Snippets](visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)
-#### [Refactoring](https://docs.microsoft.com/en-us/visualstudio/vb-ide/refactoring-vb)
-#### [Code Generation](https://docs.microsoft.com/en-us/visualstudio/vb-ide/code-generation-vb)
-#### [Help for Event Handlers in Visual Basic Code](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
-#### [How to: Compile and Run a Project in Visual Basic](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
-
 ### [Programming in Visual Basic](visual-basic/developing-apps/programming/index.md)
 #### [Accessing Computer Resources](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
 #### [Logging Information from the Application](visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
@@ -437,7 +429,6 @@
 #### [How My Depends on Project Type](visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
 
 ### [Accessing Data](visual-basic/developing-apps/accessing-data.md)
-### [Debugging](visual-basic/developing-apps/debugging.md)
 ### [Creating and Using Components](visual-basic/developing-apps/creating-and-using-components.md)
 
 ### [Printing and Reporting](visual-basic/developing-apps/printing/printing-and-reporting.md)

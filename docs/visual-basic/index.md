@@ -59,7 +59,7 @@ Visual Basic is engineered for productively building type-safe and object-orient
  Contains the Visual Basic language and compiler information.  
 
  [Developing Applications with Visual Basic](../visual-basic/developing-apps/index.md)  
- Discusses various aspects of development in Visual Basic, such as the code editor, security, exception handling, debugging, and using the [!INCLUDE[dnprdnshort](../csharp/getting-started/includes/dnprdnshort_md.md)] class library.
+ Discusses various aspects of development in Visual Basic, such as security, exception handling, and using the [!INCLUDE[dnprdnshort](../csharp/getting-started/includes/dnprdnshort_md.md)] class library.
 
  [COM Interop](../visual-basic/programming-guide/com-interop/index.md)  
  Explains the interoperability issues associated with creating and using component object model (COM) objects with Visual Basic.  

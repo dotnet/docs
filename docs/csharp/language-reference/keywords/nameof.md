@@ -37,7 +37,7 @@ When reporting errors in code, hooking up model-view-controller (MVC) links, fir
   
  A `nameof` expression has this form:  
   
-```cs  
+```csharp  
 if (x == null) throw new ArgumentNullException(nameof(x));  
 WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”  
   
@@ -47,7 +47,7 @@ WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”
  These examples show the key use cases for `nameof`.  
   
  Validate parameters:  
- ```cs  
+ ```csharp  
 void f(string s) {  
     if (s == null) throw new ArgumentNullException(nameof(s));  
 }  
@@ -64,7 +64,7 @@ void f(string s) {
 ```  
   
  INotifyPropertyChanged:  
- ```cs  
+ ```csharp  
 int p {  
     get { return this.p; }  
     set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too  
@@ -73,13 +73,13 @@ int p {
 ```  
   
  XAML dependency property:  
- ```cs  
+ ```csharp  
 public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));  
   
 ```  
   
  Logging:  
- ```cs  
+ ```csharp  
 void f(int i) {  
     Log(nameof(f), "method entry");  
 }  
@@ -87,7 +87,7 @@ void f(int i) {
 ```  
   
  Attributes:  
- ```cs  
+ ```csharp  
 [DebuggerDisplay("={" + nameof(GetString) + "()}")]  
 class C {  
     string GetString() { }  
@@ -97,7 +97,7 @@ class C {
 ## Examples  
  Some C# examples:  
   
-```cs  
+```csharp  
 using Stuff = Some.Cool.Functionality  
 class C {  
     static int Method1 (string x, int y) {}  

@@ -64,7 +64,7 @@ an extension of the syntax for delegates.
 
 To define an event you use the `event` keyword:
 
-```cs
+```csharp
 public event EventHandler<FileListArgs> Progress;
 ```
 
@@ -87,7 +87,7 @@ argument.
 When you want to raise the event, you call the event handlers using the delegate invocation
 syntax:
 
-```cs
+```csharp
 Progress?.Invoke(this, new FileListArgs(file));
 ```
 
@@ -97,7 +97,7 @@ when there are no subscribers to that event.
  
 You subscribe to an event by using the `+=` operator:
 
-```cs
+```csharp
 EventHandler<FileListArgs> onProgress = (sender, eventArgs) => 
     Console.WriteLine(eventArgs.FoundFile);
 lister.Progress += OnProgress;
@@ -108,7 +108,7 @@ by the event name, as shown above.
 
 You unsubscribe using the `-=` operator:
 
-```cs
+```csharp
 lister.Progress -= onProgress;
 ```
 

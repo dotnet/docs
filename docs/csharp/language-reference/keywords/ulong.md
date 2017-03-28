@@ -69,14 +69,14 @@ If an integer literal has no suffix, its type is the first of the following type
   
  A common use of the suffix is with calling overloaded methods. Consider, for example, the following overloaded methods that use `ulong` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```cs  
+```csharp  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(ulong l) {}  
 ```  
   
  Using a suffix with the `ulong` parameter guarantees that the correct type is called, for example:  
   
-```cs  
+```csharp  
 SampleMethod(5);    // Calling the method with the int parameter  
 SampleMethod(5UL);  // Calling the method with the ulong parameter  
 ```  
@@ -86,7 +86,7 @@ SampleMethod(5UL);  // Calling the method with the ulong parameter
   
  There is no implicit conversion from `ulong` to any integral type. For example, the following statement will produce a compilation error without an explicit cast:  
   
-```cs  
+```csharp  
 long long1 = 8UL;   // Error: no implicit conversion from ulong  
 ```  
   
@@ -94,7 +94,7 @@ long long1 = 8UL;   // Error: no implicit conversion from ulong
   
  Also, there is no implicit conversion from floating-point types to `ulong`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 // Error -- no implicit conversion from double:  
 ulong x = 3.0;  
 // OK -- explicit conversion:  

@@ -43,7 +43,7 @@ XML has been widely adopted as a way to format data in many contexts. For exampl
   
  For example, you might have a typical XML purchase order as described in [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348). By using [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], you could run the following query to obtain the part number attribute value for every item element in the purchase order:  
   
-```cs  
+```csharp  
 IEnumerable<string> partNos =  
 from item in purchaseOrder.Descendants("Item")  
 select (string) item.Attribute("PartNumber");  
@@ -51,7 +51,7 @@ select (string) item.Attribute("PartNumber");
   
  As another example, you might want a list, sorted by part number, of the items with a value greater than $100. To obtain this information, you could run the following query:  
   
-```cs  
+```csharp  
 IEnumerable<XElement> partNos =  
 from item in purchaseOrder.Descendants("Item")  
 where (int) item.Element("Quantity") *  
@@ -79,7 +79,7 @@ select item;
 ## Creating XML Trees  
  IOne of the most significant advantages of programming with [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] is that it is easy to create XML trees. For example, to create a small XML tree, you can write code as follows:  
   
-```cs  
+```csharp  
 XElement contacts =  
 new XElement("Contacts",  
     new XElement("Contact",  

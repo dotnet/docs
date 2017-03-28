@@ -36,7 +36,7 @@ When you use the `yield` keyword in a statement, you indicate that the method, o
   
  The following example shows the two forms of the `yield` statement.  
   
-```cs  
+```csharp  
 yield return <expression>;  
 yield break;  
 ```  
@@ -75,7 +75,7 @@ yield break;
 ## Technical Implementation  
  The following code returns an `IEnumerable<string>` from an iterator method and then iterates through its elements.  
   
-```cs  
+```csharp  
 IEnumerable<string> elements = MyIteratorMethod();  
 foreach (string element in elements)  
 {  

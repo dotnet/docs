@@ -60,14 +60,14 @@ If the integer literal is outside the range of `sbyte` (that is, if it is less t
 
  A cast must be used when calling overloaded methods. Consider, for example, the following overloaded methods that use `sbyte` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```cs  
+```csharp  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(sbyte b) {}  
 ```  
   
  Using the `sbyte` cast guarantees that the correct type is called, for example:  
   
-```cs 
+```csharp 
 // Calling the method with the int parameter:  
 SampleMethod(5);  
 // Calling the method with the sbyte parameter:  
@@ -79,25 +79,25 @@ SampleMethod((sbyte)5);
   
  You cannot implicitly convert nonliteral numeric types of larger storage size to `sbyte` (see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md) for the storage sizes of integral types). Consider, for example, the following two `sbyte` variables `x` and `y`:  
   
-```cs  
+```csharp  
 sbyte x = 10, y = 20;  
 ```  
   
  The following assignment statement will produce a compilation error, because the arithmetic expression on the right side of the assignment operator evaluates to [int](../../../csharp/language-reference/keywords/int.md) by default.  
   
-```cs  
+```csharp  
 sbyte z = x + y;   // Error: conversion from int to sbyte  
 ```  
   
  To fix this problem, cast the expression as in the following example:  
   
-```cs  
+```csharp  
 sbyte z = (sbyte)(x + y);   // OK: explicit conversion  
 ```  
   
  It is possible though to use the following statements, where the destination variable has the same storage size or a larger storage size:  
   
-```cs
+```csharp
 sbyte x = 10, y = 20;  
 int m = x + y;  
 long n = x + y;  
@@ -105,7 +105,7 @@ long n = x + y;
   
  Notice also that there is no implicit conversion from floating-point types to `sbyte`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 sbyte x = 3.0;         // Error: no implicit conversion from double  
 sbyte y = (sbyte)3.0;  // OK: explicit conversion  
 ```  

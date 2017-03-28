@@ -35,7 +35,7 @@ translation.priority.ht:
 # async (C# Reference)
 Use the `async` modifier to specify that a method, [lambda expression](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md), or [anonymous method](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) is asynchronous. If you use this modifier on a method or expression, it's referred to as an async method.  
   
-```cs  
+```csharp  
 public async Task<int> ExampleMethodAsync()  
 {  
     // . . . .  
@@ -58,7 +58,7 @@ string contents = await contentsTask;
 ## Example  
  The following example shows the structure and flow of control between an async event handler, `StartButton_Click`, and an async method, `ExampleMethodAsync`. The result from the async method is the length of a downloaded website. The code is suitable for a Windows Presentation Foundation (WPF) app or Windows Store app that you create in [!INCLUDE[vs_dev12](../../../csharp/getting-started/includes/vs_dev12_md.md)]; see the code comments for setting up the app.  
   
-```cs  
+```csharp  
 // You can run this code in Visual Studio 2013 as a WPF app or a Windows Store app.  
 // You need a button (StartButton) and a textbox (ResultsTextBox).  
 // Remember to set the names and handler so that you have something like this:  

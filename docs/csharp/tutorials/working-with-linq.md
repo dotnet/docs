@@ -227,8 +227,8 @@ Next, instrument the definition of each query with a log message:
 public static void Main(string[] args)
 {
     var startingDeck = (from s in Suits().LogQuery("Suit Generation")
-                    from r in Ranks().LogQuery("Rank Generation")
-                    select new { Suit = s, Rank = r }).LogQuery("Starting Deck");
+                        from r in Ranks().LogQuery("Rank Generation")
+                        select new { Suit = s, Rank = r }).LogQuery("Starting Deck");
 
     foreach (var c in startingDeck)
     {

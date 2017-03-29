@@ -20,7 +20,8 @@ The .NET Framework provides many services, including memory management, type and
 
 ## Deployment
 
-The .NET Framework comes with Windows, enabling you to run .NET Framework applications. You may need a later version of the .NET Framework than comes with your Windows version. See [Deploying the .NET Framework on Windows](./windows/index.md) to learn how to deploy the .NET Framework on Windows.
+The .NET Framework comes with Windows, enabling you to run .NET Framework applications. You may need a later version of the .NET Framework than comes with your Windows version. See [Deploying the .NET Framework on Windows](./deployment/windows/index.md) to learn how to deploy the .NET Framework on Windows.
+
+See [Repair the .NET Framework](./deployment/repair.md) to learn how to repair your .NET Framework installation if you are experiencing errors when installing the .NET Framework.
 
 The .NET Framework can be used with Docker, with [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview). See [Deploying .NET Framework applications with Docker](./docker/index.md) to learn how to run your applications in Docker containers.
-

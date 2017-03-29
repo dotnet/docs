@@ -1,3 +1,17 @@
+---
+title: Repair the .NET Framework
+description: Learn how to repair the .NET Framework
+author: rlander
+keywords: .NET Framework, Install
+
+ms.date: 03/28/2017
+ms.topic: article
+ms.prod: .net-framework-4.6
+ms.technology: vs-ide-deployment
+ms.devlang: dotnet
+ms.assetid: 87cdb1d5-c5g8-8af9-93e8-5f478de07ff7
+---
+
 # Repair the .NET Framework
 
 In some situations, your .NET Framework installation can become damaged and needs to be repaired. This might be the case if your app crashes right after you try to start it or if you cannot install newer .NET Framework versions.

@@ -100,6 +100,6 @@ Restore the dependencies and tools for the project in the current directory usin
 
 `dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages` 
 
-Restore dependencies and tools for the project in the current directory and shows only errors in the output:
+Restore dependencies and tools for the project in the current directory and shows only minimal output:
 
-`dotnet restore --verbosity Error`
+`dotnet restore --verbosity minimal`

@@ -31,6 +31,8 @@ The C# language provides
 features for both these scenarios. This article provides an overview
 of those features.
 
+This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also see the completed sample in our [GitHub repository](https://github.com/dotnet/docs/blob/master/samples/csharp/iterators).
+
 ## Iterating with foreach
 
 Enumerating a collection is simple: The `foreach` keyword enumerates

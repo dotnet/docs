@@ -16,7 +16,7 @@ ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
 
 Delegates define a type, which specify a particular method signature. A method (static or instance) that satisfies this signature can be assigned to a variable of that type, then called directly (with the appropriate arguments) or passed as an argument itself to another method and then called. The following example demonstrates delegate use.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -50,7 +50,7 @@ In order to streamline the development process, .NET includes a set of delegate 
 
 We can now take our example above and rewrite it using the `Func<>` delegate instead of a custom type. The program will continue running exactly the same.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -73,7 +73,7 @@ For this simple example, having a method defined outside of the Main() method se
 
 For an example, we are going to switch it up and use our anonymous delegate to filter out a list of only even numbers and then print them to the console.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -110,7 +110,7 @@ Lambda expressions, or just “lambdas” for short, were introduced first in C#
 
 Since a lambda expression is just another way of specifying a delegate, we should be able to rewrite the above sample to use a lambda expression instead of an anonymous delegate.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -138,7 +138,7 @@ If you take a look at the highlighted lines, you can see how a lambda expression
 
 Again, lambdas are just delegates, which means that they can be used as an event handler without any problems, as the following code snippet illustrates.
 
-```cs
+```csharp
 public MainWindow()
 {
     InitializeComponent();

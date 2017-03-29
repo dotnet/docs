@@ -27,7 +27,7 @@ when a property is accessed or assigned.
 The syntax for properties is a natural extension to
 fields. A field defines a storage location:
 
-```cs
+```csharp
 public class Person
 {
 	public string FirstName;
@@ -39,7 +39,7 @@ A property definition contains declarations for a `get` and
 `set` accessor that retrieves and assigns the value of that
 property:
 
-```cs
+```csharp
 public class Person
 {
 	public string FirstName
@@ -56,7 +56,7 @@ generates the storage location for the field that backs up the
 property. The compiler also implements the body of the `get` and `set` accessors.
 You can also define the storage yourself, as shown below:
 
-```cs
+```csharp
 public class Person
 {
 	public string FirstName
@@ -91,7 +91,7 @@ by a property are always valid. For example, suppose one rule for the `Person`
 class is that the name cannot be blank, or whitespace. You would write that as
 follows:
 
-```cs
+```csharp
 public class Person
 {
     public string FirstName
@@ -111,7 +111,7 @@ public class Person
 
 The example above enforces the rule that the first name must not be blank,
 or whitespace. If a developer writes
-```cs
+```csharp
 hero.FirstName = "";
 ```
 That assignment throws an `ArgumentException`. Because a property set accessor
@@ -130,7 +130,7 @@ accessors. Suppose that your `Person` class should only enable changing the valu
 `FirstName` property from other methods in that class. You could give the set accessor
 `private` accessibility instead of `public`:
 
-```cs
+```csharp
 public class Person
 {
 	public string FirstName
@@ -160,7 +160,7 @@ A property does not need to simply return the value of a member field. You can c
 that return a computed value. Let's expand the `Person` object to return the full name, computed
 by concatenating the first and last names:
 
-```cs
+```csharp
 public class Person
 {
     public string FirstName
@@ -191,7 +191,7 @@ the formatted string for the full name.
 You can also use *Expression-bodied Members*, which provides a more
 succinct way to create the computed `FullName` property:
 
-```cs
+```csharp
 public class Person
 {
     public string FirstName
@@ -221,7 +221,7 @@ a *lazy evaluated property*.  For example, you could update the `FullName`
 property so that the string formatting only happened the first time it
 was accessed:
 
-```cs
+```csharp
 public class Person
 {
     public string FirstName
@@ -255,7 +255,7 @@ either the `FirstName` or `LastName` property, the previously evaluated
 `FirstName` and `LastName` property so that the `fullName` field is calculated
 again:
 
-```cs
+```csharp
 public class Person
 {
     private string firstName;
@@ -311,7 +311,7 @@ to indicate the change. The data binding libraries, in turn, update display elem
 based on that change. The code below shows how you would implement `INotifyPropertyChanged`
 for the `FirstName` property of this person class.
 
-```cs
+```csharp
 public class Person : INotifyPropertyChanged
 {
     public string FirstName

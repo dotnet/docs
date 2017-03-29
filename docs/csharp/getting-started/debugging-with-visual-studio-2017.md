@@ -70,7 +70,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. In the text box that reads "e.g. x == 5", enter the following:
 
-   ```cs
+   ```csharp
    String.IsNullOrEmpty(name)
    ```
 
@@ -88,7 +88,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Note that the value of the `name` variable is "", or [String.Empty](xref:System.String.Empty). Confirm this by entering the following statement in the **Immediate window**:
 
-   ```cs
+   ```csharp
    ? name == String.Empty
    ```
 

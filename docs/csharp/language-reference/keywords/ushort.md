@@ -58,14 +58,14 @@ Starting with C# 7, you can also use the underscore character, `_`, as a digit s
   
  A cast must be used when you call overloaded methods. Consider, for example, the following overloaded methods that use `ushort` and [int](../../../csharp/language-reference/keywords/int.md) parameters:  
   
-```cs  
+```csharp  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(ushort s) {}  
 ```  
  
  Using the `ushort` cast guarantees that the correct type is called, for example:  
   
-```cs  
+```csharp  
 // Calls the method with the int parameter:  
 SampleMethod(5);  
 // Calls the method with the ushort parameter:  
@@ -77,32 +77,32 @@ SampleMethod((ushort)5);
   
  There is a predefined implicit conversion from [byte](../../../csharp/language-reference/keywords/byte.md) or [char](../../../csharp/language-reference/keywords/char.md) to `ushort`. Otherwise a cast must be used to perform an explicit conversion. Consider, for example, the following two `ushort` variables `x` and `y`:  
   
-```cs 
+```csharp 
 ushort x = 5, y = 12;  
 ```  
   
  The following assignment statement will produce a compilation error, because the arithmetic expression on the right side of the assignment operator evaluates to `int` by default.  
   
-```cs  
+```csharp  
 ushort z = x + y;   // Error: conversion from int to ushort  
 ```  
   
  To fix this problem, use a cast:  
   
-```cs 
+```csharp 
 ushort z = (ushort)(x + y);   // OK: explicit conversion   
 ```  
   
  It is possible though to use the following statements, where the destination variable has the same storage size or a larger storage size:  
   
-```cs
+```csharp
 int m = x + y;  
 long n = x + y;  
 ```  
   
  Notice also that there is no implicit conversion from floating-point types to `ushort`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 // Error -- no implicit conversion from double:  
 ushort x = 3.0;   
 // OK -- explicit conversion:  

@@ -77,7 +77,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  Open the ISampleInterface.cs file. Add the following code to the ISampleInterface class file to create the ISampleInterface interface.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Runtime.InteropServices;  
   
@@ -99,7 +99,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 9. In **Solution Explorer**, expand the **Properties** folder. Double-click the AssemblyInfo.cs file. Add the following attribute to the file.  
   
-    ```cs  
+    ```csharp  
     [assembly: ImportedFromTypeLib("")]  
     ```  
   
@@ -129,7 +129,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 8.  Add the following code to the SampleClass class file to create the SampleClass class.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  
@@ -172,7 +172,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  Add the following code to the Program.cs file to create the client program.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  
@@ -210,7 +210,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the SampleInterface.cs file. Add the following line of code to the ISampleInterface interface.  
   
-    ```cs  
+    ```csharp  
     DateTime GetDate();  
     ```  
   
@@ -230,7 +230,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the SampleClass.cs file. Add the following lines of code to the SampleClass class.  
   
-    ```cs  
+    ```csharp  
     public DateTime GetDate()  
     {  
         return DateTime.Now;  

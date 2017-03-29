@@ -32,7 +32,7 @@ With C#, you can write applications that perform multiple tasks at the same time
   
  You create a new thread by declaring a variable of type <xref:System.Threading.Thread> and calling the constructor, providing the name of the procedure or method that you want to execute on the new thread. The following code provides an example.  
   
-```cs  
+```csharp  
 System.Threading.Thread newThread =  
     new System.Threading.Thread(AMethod);  
 ```  
@@ -40,13 +40,13 @@ System.Threading.Thread newThread =
 ### Starting and Stopping Threads  
  To start the execution of a new thread, use the <xref:System.Threading.Thread.Start%2A> method, as shown in the following code.  
   
-```cs  
+```csharp  
 newThread.Start();  
 ```  
   
  To stop the execution of a thread, use the <xref:System.Threading.Thread.Abort%2A> method, as shown in the following code.  
   
-```cs  
+```csharp  
 newThread.Abort();  
 ```  
   

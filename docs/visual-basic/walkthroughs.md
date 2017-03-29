@@ -40,7 +40,7 @@ translation.priority.ht:
 Walkthroughs give step-by-step instructions for common scenarios, which makes them a good place to start learning about the product or a particular feature area.  
   
  [Writing an Async Program](./programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- Shows how to create an asynchronous solution by using [Async](../visual-basic/language-reference/modifiers/async.md) and [Await](../visual-basic/language-reference/operators/await-operator.md), which are introduced in [!INCLUDE[vs_dev11_long](../csharp/includes/vs_dev11_long_md.md)].  
+ Shows how to create an asynchronous solution by using [Async](../visual-basic/language-reference/modifiers/async.md) and [Await](../visual-basic/language-reference/operators/await-operator.md).  
   
  [Declaring and Raising Events](../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)  
  Illustrates how events are declared and raised in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  

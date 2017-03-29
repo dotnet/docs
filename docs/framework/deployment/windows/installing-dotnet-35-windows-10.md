@@ -20,7 +20,7 @@ You may need the .NET Framework 3.5 to run an application on Windows 10, Windows
 
 You may see the following configuration dialog if you try to run an application that requires the .NET Framework 3.5. Choose **Install this feature** to enable the .NET Framework 3.5. This option requires an Internet connection.
 
-![.NET Framework Installation Dialog](./media/dotnet-framework-installation-dialog.jpeg)
+![.NET Framework Installation Dialog](./media/dotnet-framework-installation-dialog.jpg)
 
 ## Enable the .NET Framework 3.5 in Control Panel
 

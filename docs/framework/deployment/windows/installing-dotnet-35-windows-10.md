@@ -1,6 +1,6 @@
-# Installation the .NET Framework 3.5 on Windows 10
+# Install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8
 
-You may need the .NET Framework 3.5 to run an application on Windows 10. You can use the following instructions to help you. You can also use these instructions for earlier Windows versions.
+You may need the .NET Framework 3.5 to run an application on Windows 10, Windows 8.1 and Windows 8. You can use the following instructions to help you. You can also use these instructions for earlier Windows versions.
 
 ## Install the .NET Framework 3.5 on Demand
 
@@ -17,4 +17,4 @@ You can enable the .NET Framework 3.5 through the Windows Control Panel. This op
 
 ![Installing .NET with the control panel](./media/dotnet-control-panel.png)
 
-You do not need to select the child items for Windows Communication Foundation (WCF) HTTP activation unless you are a developer or server administrator that requires this functionality.
+You do not need to select the child items for Windows Communication Foundation (WCF) HTTP activation unless you are a developer or server administrator who requires this functionality.

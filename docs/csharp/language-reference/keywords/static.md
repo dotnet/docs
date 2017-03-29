@@ -47,7 +47,7 @@ Use the `static` modifier to declare a static member, which belongs to the type 
   
  To refer to the static member `x`, use the fully qualified name, `MyBaseC.MyStruct.x`, unless the member is accessible from the same scope:  
   
-```cs  
+```csharp  
 Console.WriteLine(MyBaseC.MyStruct.x);  
 ```  
   

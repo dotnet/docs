@@ -43,7 +43,7 @@ A lambda expression is an [anonymous function](../../../csharp/programming-guide
   
  To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator [=>](../../../csharp/language-reference/operators/lambda-operator.md), and you put the expression or statement block on the other side. For example, the lambda expression `x => x * x` specifies a parameter that’s named `x` and returns the value of `x` squared. You can assign this expression to a delegate type, as the following example shows:  
   
-```cs  
+```csharp  
 delegate int del(int i);  
 static void Main(string[] args)  
 {  
@@ -54,7 +54,7 @@ static void Main(string[] args)
   
  To create an expression tree type:  
   
-```cs  
+```csharp  
 using System.Linq.Expressions;  
   
 namespace ConsoleApplication1  
@@ -84,25 +84,25 @@ namespace ConsoleApplication1
 ## Expression Lambdas  
  A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b). An expression lambda returns the result of the expression and takes the following basic form:  
   
-```cs
+```csharp
 (input-parameters) => expression
 ```
 
  The parentheses are optional only if the lambda has one input parameter; otherwise they are required. Two or more input parameters are separated by commas enclosed in parentheses:  
   
-```cs
+```csharp
 (x, y) => x == y
 ```
 
  Sometimes it is difficult or impossible for the compiler to infer the input types. When this occurs, you can specify the types explicitly as shown in the following example:  
   
-```cs
+```csharp
 (int x, string s) => s.Length > x
 ```
 
  Specify zero input parameters with empty parentheses:  
   
-```cs
+```csharp
 () => SomeMethod()
 ```
 
@@ -124,7 +124,7 @@ namespace ConsoleApplication1
 ## Async Lambdas  
  You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](../../../csharp/language-reference/keywords/async.md) and [await](../../../csharp/language-reference/keywords/await.md) keywords. For example, the following Windows Forms example contains an event handler that calls and awaits an async method, `ExampleMethodAsync`.  
   
-```cs
+```csharp
 public partial class Form1 : Form  
 {  
     public Form1()  
@@ -149,7 +149,7 @@ public partial class Form1 : Form
 
  You can add the same event handler by using an async lambda. To add this handler, add an `async` modifier before the lambda parameter list, as the following example shows.  
   
-```cs  
+```csharp  
 public partial class Form1 : Form  
 {  
     public Form1()  
@@ -176,13 +176,13 @@ public partial class Form1 : Form
 ## Lambdas with the Standard Query Operators  
  Many Standard query operators have an input parameter whose type is one of the <xref:System.Func%602> family of generic delegates. These delegates use type parameters to define the number and types of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the following delegate type:  
   
-```cs  
+```csharp  
 public delegate TResult Func<TArg0, TResult>(TArg0 arg0)  
 ```  
   
  The delegate can be instantiated as `Func<int,bool> myFunc` where `int` is an input parameter and `bool` is the return value. The return value is always specified in the last type parameter. `Func<int, string, bool>` defines a delegate with two input parameters, `int` and `string`, and a return type of `bool`. The following `Func` delegate, when it is invoked, will return true or false to indicate whether the input parameter is equal to 5:  
   
-```cs  
+```csharp  
 Func<int, bool> myFunc = x => x == 5;  
 bool result = myFunc(4); // returns false of course  
 ```  
@@ -191,7 +191,7 @@ bool result = myFunc(4); // returns false of course
   
  A standard query operator, the <xref:System.Linq.Enumerable.Count%2A> method, is shown here:  
   
-```cs  
+```csharp  
 int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };  
 int oddNumbers = numbers.Count(n => n % 2 == 1);  
 ```  
@@ -200,20 +200,20 @@ int oddNumbers = numbers.Count(n => n % 2 == 1);
   
  The following line of code produces a sequence that contains all elements in the `numbers` array that are to the left side of the 9 because that's the first number in the sequence that doesn't meet the condition:  
   
-```cs  
+```csharp  
 var firstNumbersLessThan6 = numbers.TakeWhile(n => n < 6);  
 ```  
   
  This example shows how to specify multiple input parameters by enclosing them in parentheses. The method returns all the elements in the numbers array until a number is encountered whose value is less than its position. Do not confuse the lambda operator (`=>`) with the greater than or equal operator (`>=`).  
   
-```cs  
+```csharp  
 var firstSmallNumbers = numbers.TakeWhile((n, index) => n >= index);  
 ```  
   
 ## Type Inference in Lambdas  
  When writing lambdas, you often do not have to specify a type for the input parameters because the compiler can infer the type based on the lambda body, the parameter’s delegate type, and other factors as described in the C# Language Specification. For most of the standard query operators, the first input is the type of the elements in the source sequence. So if you are querying an `IEnumerable<Customer>`, then the input variable is inferred to be a `Customer` object, which means you have access to its methods and properties:  
   
-```cs  
+```csharp  
 customers.Where(c => c.City == "London");  
 ```  
   
@@ -230,7 +230,7 @@ customers.Where(c => c.City == "London");
 ## Variable Scope in Lambda Expressions  
  Lambdas can refer to *outer variables* (see [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)) that are in scope in the method that defines the lambda function, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:  
   
-```cs  
+```csharp  
 delegate bool D();  
 delegate bool D2(int i);  
   

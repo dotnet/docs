@@ -56,7 +56,7 @@ Starting with C# 7, you can also use the underscore character, `_`, as a digit s
  
  Integer literals can also include a suffix that denotes the type. The suffix `L` denotes a `long`. The following example uses the `L` suffix to denote a long integer:
  
-```cs
+```csharp
 long value = 4294967296L;  
 ```  
 
@@ -67,14 +67,14 @@ long value = 4294967296L;
   
  A common use of the suffix is to call overloaded methods. For example, the following overloaded methods have parameters of type `long` and [int](../../../csharp/language-reference/keywords/int.md):  
   
-```cs
+```csharp
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(long l) {}  
 ```  
   
  The `L` suffix guarantees that the correct overload is called:  
   
-```cs  
+```csharp  
 SampleMethod(5);    // Calls the method with the int parameter  
 SampleMethod(5L);   // Calls the method with the long parameter  
 ```  
@@ -89,7 +89,7 @@ The literal 4294967296 in the previous examples is of type `long`, because it ex
   
  If you use the `long` type with other integral types in the same expression, the expression is evaluated as `long` (or [bool](../../../csharp/language-reference/keywords/bool.md) in the case of relational or Boolean expressions). For example, the following expression evaluates as `long`:  
   
-```cs  
+```csharp  
 898L + 88  
 ```  
   
@@ -98,7 +98,7 @@ The literal 4294967296 in the previous examples is of type `long`, because it ex
 ## Conversions  
  There is a predefined implicit conversion from `long` to [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). Otherwise a cast must be used. For example, the following statement will produce a compilation error without an explicit cast:  
   
-```cs  
+```csharp  
 int x = 8L;        // Error: no implicit conversion from long to int  
 int x = (int)8L;   // OK: explicit conversion to int  
 ```  
@@ -107,7 +107,7 @@ int x = (int)8L;   // OK: explicit conversion to int
   
  Notice also that there is no implicit conversion from floating-point types to `long`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 long x = 3.0;         // Error: no implicit conversion from double  
 long y = (long)3.0;   // OK: explicit conversion  
 ```  

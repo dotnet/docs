@@ -36,16 +36,14 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Office Programming (C# and Visual Basic)
-[!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/vs_dev10_long_md.md)] introduces new features in C# and Visual Basic that improve Microsoft Office programming. Each language has added features that already exist in the other language.  
+Visual Studio offers features in C# and Visual Basic that improve Microsoft Office programming. Helpful C# features include named and optional arguments and return values of type `dynamic`. In COM programming, you can omit the `ref` keyword and gain access to indexed properties. Features in Visual Basic include auto-implemented properties, statements in lambda expressions, and collection initializers.
+
+Both languages enable embedding of type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21).  
   
- The new features in C# include named and optional arguments, return values that have type `dynamic`, and, in COM programming, the ability to omit the `ref` keyword and to access indexed properties. The new features in Visual Basic include auto-implemented properties, statements in lambda expressions, and collection initializers.  
-  
- Both languages enable embedding of type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21).  
-  
- This walkthrough demonstrates the new features in the context of Office programming, but many of them are also useful in general programming. In the walkthrough, you will first use an Excel Add-in application to create an Excel workbook. You will then create a Word document that contains a link to the workbook. Finally, you will see how the PIA dependency can be turned on and off.  
+This walkthrough demonstrates these features in the context of Office programming, but many of these features are also useful in general programming. In the walkthrough, you use an Excel Add-in application to create an Excel workbook. Next, you create a Word document that contains a link to the workbook. Finally, you see how to enable and disable the PIA dependency.  
   
 ## Prerequisites  
- You must have Microsoft Office Excel 2013 (or version 2007 or later) and Microsoft Office Word 2013 (or version 2007 or later) installed on your computer to complete this walkthrough.  
+You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.  
   
  If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] is installed.  
   

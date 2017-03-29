@@ -71,7 +71,7 @@ The `group` clause returns a sequence of <xref:System.Linq.IGrouping%602> object
 ### Grouping by Composite Keys  
  Use a composite key when you want to group elements according to more than one key. You create a composite key by using an anonymous type or a named type to hold the key element. In the following example, assume that a class `Person` has been declared with members named `surname` and `city`. The `group` clause causes a separate group to be created for each set of persons with the same last name and the same city.  
   
-```cs  
+```csharp  
 group person by new {name = person.surname, city = person.city};  
 ```  
   

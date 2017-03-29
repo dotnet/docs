@@ -50,7 +50,7 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
 1.  Declare a `ToString` method with the following modifiers and return type:  
   
-    ```cs  
+    ```csharp  
     public override string ToString(){}  
     ```  
   

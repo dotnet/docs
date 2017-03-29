@@ -62,7 +62,7 @@ The simple Hello World application code is all in Program.cs. Open that
 file with your favorite text editor. We’re about to make our first changes.
 At the top of the file, see a using statement:
 
-```cs
+```csharp
 using System;
 ```
 
@@ -73,7 +73,7 @@ different. You can see that the program is enclosed in the
 `ConsoleApplication` namespace. That’s not a very descriptive name, so
 change it to `TeleprompterConsole`:
 
-```cs
+```csharp
 namespace TeleprompterConsole
 ```
 
@@ -88,7 +88,7 @@ application.
 Next, add the following method in your Program class (right below the `Main` 
 method):
 
-```cs
+```csharp
 static IEnumerable<string> ReadFrom(string file)
 {
     string line;
@@ -105,7 +105,7 @@ static IEnumerable<string> ReadFrom(string file)
 This method uses types from two new namespaces. For this to compile you’ll 
 need to add the following two lines to the top of the file:
 
-```cs
+```csharp
 using System.Collections.Generic;
 using System.IO;
 ```
@@ -145,7 +145,7 @@ a @System.IO.StreamReader object.
  
 Now, let’s fill in the code to read the file in the `Main` method: 
 
-```cs
+```csharp
 var lines = ReadFrom("sampleQuotes.txt");
 foreach (var line in lines)
 {
@@ -169,7 +169,7 @@ method to return single words instead of entire lines. That’s done with
 these modifications. Replace the `yield return line;` statement with the
 following code:
 
-```cs
+```csharp
 var words = line.Split(' ');
 foreach (var word in words)
 {
@@ -182,7 +182,7 @@ Next, you need to modify how you consume the lines of the file, and add a
 delay after writing each word. Replace the `Console.WriteLine(line)` statement
 in the `Main` method with the following block:
 
-```cs
+```csharp
 Console.Write(line);
 if (!string.IsNullOrWhiteSpace(line))
 {
@@ -197,7 +197,7 @@ if (!string.IsNullOrWhiteSpace(line))
 The `Task` class is in the `System.Threading.Tasks` namespace, so you need
 to add that `using` statement at the top of file:
 
-```cs
+```csharp
 using System.Threading.Tasks;
 ```
 
@@ -210,14 +210,14 @@ each line, and generate a new line whenever the line length reaches a
 certain threshold. Declare a local variable after the declaration of
 `words` that holds the line length:
 
-```cs
+```csharp
 var lineLength = 0;
 ```
  
 Then, add the following code after the `yield return word + " ";` statement
 (before the closing brace):
 
-```cs
+```csharp
 lineLength += word.Length + 1;
 if (lineLength > 70)
 {
@@ -240,7 +240,7 @@ represents the code you’ve created so far to read and display the file.
 Add this method to your `Program` class (it’s taken from the body of your
 `Main` method):
 
-```cs
+```csharp
 private static async Task ShowTeleprompter()
 {
     var words = ReadFrom("sampleQuotes.txt");
@@ -270,7 +270,7 @@ monitor that returned `Task` to determine when it has completed.
 
 You can call this new method in your `Main` method:
 
-```cs
+```csharp
 ShowTeleprompter().Wait();
 ```
 
@@ -284,7 +284,7 @@ Next, you need to write the second asynchronous method to read from the
 Console and watch for the ‘<’ and ‘>’ keys. Here’s the method you add for
 that task:
 
-```cs
+```csharp
 private static async Task GetInput()
 {
     var delay = 200;
@@ -320,7 +320,7 @@ It’s time to create a class that can handle the shared data between these
 two tasks. This class contains two public properties: the delay, and a
 flag to indicate that the file has been completely read:
 
-```cs
+```csharp
 namespace TeleprompterConsole
 {
     internal class TelePrompterConfig
@@ -348,7 +348,7 @@ enclosing class or namespace names. A `using static` statement imports the
 methods from one class. This is in contrast with the `using` statements used
 up to this point that have imported all classes from a namespace.
 
-```cs
+```csharp
 using static System.Math;
 ```
 
@@ -363,7 +363,7 @@ Next, you need to update the `ShowTeleprompter` and `GetInput` methods to
 use the new `config` object. Write one final `Task` returning `async` method to
 start both tasks and exit when the first task finishes:
 
-```cs
+```csharp
 private static async Task RunTeleprompter()
 {
     var config = new TelePrompterConfig();
@@ -380,7 +380,7 @@ that finishes as soon as any of the tasks in its argument list completes.
 Next, you need to update both the `ShowTeleprompter` and `GetInput` methods to
 use the `config` object for the delay:
 
-```cs
+```csharp
 private static async Task ShowTeleprompter(TelePrompterConfig config)
 {
     var words = ReadFrom("sampleQuotes.txt");
@@ -416,14 +416,14 @@ This new version of `ShowTeleprompter` calls a new method in the
 `TeleprompterConfig` class. Now, you need to update `Main` to call 
 `RunTeleprompter` instead of `ShowTeleprompter`:
 
-```cs
+```csharp
 RunTeleprompter().Wait();
 ```
 
 To finish, you'll need to add the
 `SetDone` method, and the `Done` property to the `TelePrompterConfig` class:
 
-```cs
+```csharp
 public bool Done => done;
 
 private bool done;

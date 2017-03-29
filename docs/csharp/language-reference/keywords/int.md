@@ -66,14 +66,14 @@ In these examples, the literal 90946 is of type `int`.
 ## Conversions  
  There is a predefined implicit conversion from `int` to [long](../../../csharp/language-reference/keywords/long.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). For example:  
   
-```cs  
+```csharp  
 // '123' is an int, so an implicit conversion takes place here:  
 float f = 123;  
 ```  
   
  There is a predefined implicit conversion from [sbyte](../../../csharp/language-reference/keywords/sbyte.md), [byte](../../../csharp/language-reference/keywords/byte.md), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), or [char](../../../csharp/language-reference/keywords/char.md) to `int`. For example, the following assignment statement will produce a compilation error without a cast:  
   
-```cs  
+```csharp  
 long aLong = 22;  
 int i1 = aLong;       // Error: no implicit conversion from long.  
 int i2 = (int)aLong;  // OK: explicit conversion.  
@@ -81,7 +81,7 @@ int i2 = (int)aLong;  // OK: explicit conversion.
   
  Notice also that there is no implicit conversion from floating-point types to `int`. For example, the following statement generates a compiler error unless an explicit cast is used:  
   
-```cs  
+```csharp  
 int x = 3.0;         // Error: no implicit conversion from double.  
 int y = (int)3.0;    // OK: explicit conversion.  
 ```  

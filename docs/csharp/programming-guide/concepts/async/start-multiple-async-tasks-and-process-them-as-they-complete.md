@@ -56,7 +56,7 @@ By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName>,
   
  The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.  
   
-```cs  
+```csharp  
 IEnumerable<Task<int>> downloadTasksQuery =  
     from url in urlList select ProcessURL(url, client, ct);  
 ```  
@@ -65,7 +65,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
   
 -   Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName> instead of <xref:System.Linq.Enumerable.ToArray%2A>.  
   
-    ```cs  
+    ```csharp  
     List<Task<int>> downloadTasks = downloadTasksQuery.ToList();  
     ```  
   
@@ -73,19 +73,19 @@ IEnumerable<Task<int>> downloadTasksQuery =
   
     1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.  
   
-        ```cs  
+        ```csharp  
         Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
         ```  
   
     2.  Removes that task from the collection.  
   
-        ```cs  
+        ```csharp  
         downloadTasks.Remove(firstFinishedTask);  
         ```  
   
     3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
   
-        ```cs  
+        ```csharp  
         int length = await firstFinishedTask;  
         resultsTextBox.Text += String.Format("\r\nLength of the download:  {0}", length);  
         ```  
@@ -102,7 +102,7 @@ IEnumerable<Task<int>> downloadTasksQuery =
   
  You can download the project from [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046).  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

@@ -50,7 +50,7 @@ The following code example demonstrates how a string can be parsed using the <xr
   
  String.Split can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).  
   
-```cs  
+```csharp  
 class TestStringSplit  
 {  
     static void Main()  

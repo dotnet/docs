@@ -35,7 +35,7 @@ An assembly, or a dynamic linking library (DLL), is linked to your program at ru
   
 ## Example  
   
-```cs  
+```csharp  
 // File: Add.cs   
 namespace UtilityMethods  
 {  
@@ -49,7 +49,7 @@ namespace UtilityMethods
 }  
 ```  
   
-```cs  
+```csharp  
 // File: Mult.cs  
 namespace UtilityMethods   
 {  
@@ -63,7 +63,7 @@ namespace UtilityMethods
 }  
 ```  
   
-```cs  
+```csharp  
 // File: TestCode.cs  
   
 using UtilityMethods;  
@@ -101,13 +101,13 @@ class TestCode
   
  Notice that the `using` directive at the beginning of the file enables you to use the unqualified class names to reference the DLL methods at compile time, as follows:  
   
-```cs  
+```csharp  
 MultiplyClass.Multiply(num1, num2);  
 ```  
   
  Otherwise, you have to use the fully qualified names, as follows:  
   
-```cs  
+```csharp  
 UtilityMethods.MultiplyClass.Multiply(num1, num2);  
 ```  
   
@@ -119,7 +119,7 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2);
 ## Compiling the Code  
  To build the file `MathLibrary.DLL`, compile the two files `Add` and `Mult` by using the following command line.  
   
-```cs  
+```csharp  
 csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs  
 ```  
   
@@ -127,7 +127,7 @@ csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs
   
  To build the executable file, `TestCode.exe`, use the following command line:  
   
-```cs  
+```csharp  
 csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs  
 ```  
   

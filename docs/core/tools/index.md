@@ -20,7 +20,7 @@ The .NET Core command-line interface (CLI) is a new cross-platform toolchain for
 
 Either use the native installers or use the installation shell scripts:
 
-* The native installers are primarily used on developer's machines and use each supported platform's native install mechanism, for instance, DEB packages on Ubuntu or MSI bundles on Windows. These installers install and configure the environment for immediate use by the developer but require administrative privileges on the machine. You can view the installation instructions in the [.NET Core installation guide](https://www.microsoft.com/net/core/).
+* The native installers are primarily used on developer's machines and use each supported platform's native install mechanism, for instance, DEB packages on Ubuntu or MSI bundles on Windows. These installers install and configure the environment for immediate use by the developer but require administrative privileges on the machine. You can view the installation instructions in the [.NET Core installation guide](https://aka.ms/dotnetcoregs).
 * Shell scripts are primarily used for setting up build servers or when you wish to install the tools without administrative privileges. Install scripts don't install prerequisites on the machine, which must be installed manually. For more information, see the [install script reference topic](dotnet-install-script.md). For information on how to set up CLI on your continuous integration (CI) build server, see [Using .NET Core SDK and tools in Continuous Integration (CI)](using-ci-with-cli.md).
 
 By default, the CLI installs in a side-by-side (SxS) manner, so multiple versions of the CLI tools can coexist on a single machine. Determining which version is used on a machine where multiple versions are installed is explained in more detail in the [Driver](#driver) section.
@@ -99,4 +99,4 @@ If you used Preview 2 tooling to produce *project.json*-based projects, consult 
 ## Additional resources
 
 * [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)
-* [.NET Core installation guide](https://www.microsoft.com/net/core/)
+* [.NET Core installation guide](https://aka.ms/dotnetcoregs)

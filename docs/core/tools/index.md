@@ -20,7 +20,7 @@ The .NET Core command-line interface (CLI) is a new cross-platform toolchain for
 
 Either use the native installers or use the installation shell scripts:
 
-* The native installers are primarily used on developer's machines and use each supported platform's native install mechanism, for instance, DEB packages on Ubuntu or MSI bundles on Windows. These installers install and configure the environment for immediate use by the developer but require administrative privileges on the machine. You can view the installation instructions in the [.NET Core installation guide](https://aka.ms/dotnetcoregs).
+* The native installers are primarily used on developer's machines and use each supported platform's native install mechanism, for instance, DEB packages on Ubuntu or MSI bundles on Windows. These installers install and configure the environment for immediate use by the developer but require administrative privileges on the machine. You can view the installation instructions in the [.NET Core installation guide](https://www.microsoft.com/net/).
 * Shell scripts are primarily used for setting up build servers or when you wish to install the tools without administrative privileges. Install scripts don't install prerequisites on the machine, which must be installed manually. For more information, see the [install script reference topic](dotnet-install-script.md). For information on how to set up CLI on your continuous integration (CI) build server, see [Using .NET Core SDK and tools in Continuous Integration (CI)](using-ci-with-cli.md).
 
 By default, the CLI installs in a side-by-side (SxS) manner, so multiple versions of the CLI tools can coexist on a single machine. Determining which version is used on a machine where multiple versions are installed is explained in more detail in the [Driver](#driver) section.
@@ -74,7 +74,7 @@ dotnet /build_output/my_app.dll
 
 ### Driver
 
-The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../app-types.md) or executing a command. The only time `dotnet` is used without a command is when it's used to start an application.
+The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command. The only time `dotnet` is used without a command is when it's used to start an application.
 
 To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, simply execute `dotnet my_app.dll`.
 
@@ -99,4 +99,4 @@ If you used Preview 2 tooling to produce *project.json*-based projects, consult 
 ## Additional resources
 
 * [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)
-* [.NET Core installation guide](https://aka.ms/dotnetcoregs/)
+* [.NET Core installation guide](https://www.microsoft.com/net/)

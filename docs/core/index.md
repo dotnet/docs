@@ -57,7 +57,7 @@ The [.NET Standard Library](../standard/library.md) is an API spec that describe
 
 By itself, .NET Core includes a single application model -- console apps -- which is useful for tools, local services and text-based games. Additional application models have been built on top of .NET Core to extend its functionality, such as:
 
-- [ASP.NET Core](https://asp.net)
+- [ASP.NET Core](https://asp.net/)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
 - [Xamarin.Forms](https://www.xamarin.com/forms)
 

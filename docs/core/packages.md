@@ -33,12 +33,12 @@ Some of these benefits are only used in certain circumstances. For example, NET 
 
 The following is a list of the key NuGet packages for .NET Core:
 
-- <xref:System.Runtime> - The most fundamental .NET Core package, including <xref:System.Object>, <xref:System.String>, <xref:System.Array>, <xref:System.Action> and <xref:System.Collections.Generic.IList%601>.
-- <xref:System.Collections> - A set of (primarily) generic collections, including <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>.
-- <xref:System.Net.Http> - A set of types for HTTP network communication, including <xref:System.Net.Http.HttpClient> and <xref:System.Net.Http.HttpResponseMessage>.
-- <xref:System.IO.FileSystem> - A set of types for reading and writing to local or networked disk-based storage, including <xref:System.IO.File> and <xref:System.IO.Directory>.
-- <xref:System.Linq> - A set of types for querying objects, including Enumerable and <xref:System.Linq.ILookup%602>.
-- <xref:System.Reflection> - A set of types for loading, inspecting and activating types, including <xref:System.Reflection.Assembly>, <xref:System.Reflection.TypeInfo> and <xref:System.Reflection.MethodInfo>.
+- [System.Runtime](https://www.nuget.org/packages/System.Runtime) - The most fundamental .NET Core package, including <xref:System.Object>, <xref:System.String>, <xref:System.Array>, <xref:System.Action>, and <xref:System.Collections.Generic.IList%601>.
+- [System.Collections](https://www.nuget.org/packages/System.Collections) - A set of (primarily) generic collections, including <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>.
+- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - A set of types for HTTP network communication, including <xref:System.Net.Http.HttpClient> and <xref:System.Net.Http.HttpResponseMessage>.
+- [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) - A set of types for reading and writing to local or networked disk-based storage, including <xref:System.IO.File> and <xref:System.IO.Directory>.
+- [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including `Enumerable` and <xref:System.Linq.ILookup%602>.
+- [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting, and activating types, including <xref:System.Reflection.Assembly>, <xref:System.Reflection.TypeInfo> and <xref:System.Reflection.MethodInfo>.
 
 Typically, rather than including packages in your projects on a package-by-package basis, it is far easier to include a *metapackage*, which is a set of packages that are often used together. (For more information on metapackages, see the following section.) However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
 

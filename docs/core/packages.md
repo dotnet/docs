@@ -33,12 +33,12 @@ Some of these benefits are only used in certain circumstances. For example, NET 
 
 The following is a list of the key NuGet packages for .NET Core:
 
-- [System.Runtime](https://www.nuget.org/packages/System.Runtime) - The most fundamental .NET Core package, including [Object](https://docs.microsoft.com/dotnet/core/api/System.Object), [String](https://docs.microsoft.com/dotnet/core/api/System.String), [Array](https://docs.microsoft.com/dotnet/core/api/System.Array), [Action](https://docs.microsoft.com/dotnet/core/api/System.Action) and [IList&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IList-1).
-- [System.Collections](https://www.nuget.org/packages/System.Collections) - A set of (primarily) generic collections, including [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1) and [Dictionary&lt;K,V&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2).
-- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http) - A set of types for HTTP network communication, including [HttpClient](https://docs.microsoft.com/dotnet/core/api/System.Net.Http.HttpClient) and [HttpResponseMessage](https://docs.microsoft.com/dotnet/core/api/System.Net.Http.HttpResponseMessage).
-- [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) - A set of types for reading and writing to local or networked disk-based storage, including [File](https://docs.microsoft.com/dotnet/core/api/System.IO.File) and [Directory](https://docs.microsoft.com/dotnet/core/api/System.IO.Directory).
-- [System.Linq](https://www.nuget.org/packages/System.Linq) - A set of types for querying objects, including Enumerable and [ILookup&lt;TKey, TElement&gt;](https://docs.microsoft.com/dotnet/core/api/System.Linq.ILookup-2).
-- [System.Reflection](https://www.nuget.org/packages/System.Reflection) - A set of types for loading, inspecting and activating types, including [Assembly](https://docs.microsoft.com/dotnet/core/api/System.Reflection.Assembly), [TypeInfo](https://docs.microsoft.com/dotnet/core/api/System.Reflection.TypeInfo) and [MethodInfo](https://docs.microsoft.com/dotnet/core/api/System.Reflection.MethodInfo).
+- <xref:System.Runtime> - The most fundamental .NET Core package, including <xref:System.Object>, <xref:System.String>, <xref:System.Array>, <xref:System.Action> and [IList&lt;T&gt;]<xref:System.Collections.Generic.IList-1>.
+- <xref:System.Collections> - A set of (primarily) generic collections, including <xref:System.Collections.Generic.List-1> and <xref:System.Collections.Generic.Dictionary-2>.
+- <xref:System.Net.Http> - A set of types for HTTP network communication, including <xref:System.Net.Http.HttpClient> and <xref:System.Net.Http.HttpResponseMessage>.
+- <xref:System.IO.FileSystem> - A set of types for reading and writing to local or networked disk-based storage, including <xref:System.IO.File> and <xref:System.IO.Directory>.
+- <xref:System.Linq> - A set of types for querying objects, including Enumerable and <xref:System.Linq.ILookup-2>.
+- <xref:System.Reflection> - A set of types for loading, inspecting and activating types, including <xref:System.Reflection.Assembly>, <xref:System.Reflection.TypeInfo> and <xref:System.Reflection.MethodInfo>.
 
 Typically, rather than including packages in your projects on a package-by-package basis, it is far easier to include a *metapackage*, which is a set of packages that are often used together. (For more information on metapackages, see the following section.) However, when you need a single package, you can include it as in the example below, which references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package. 
 

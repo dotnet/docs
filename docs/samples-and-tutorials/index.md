@@ -13,7 +13,7 @@ ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 
 # Samples and tutorials
 
-The .NET documentation contains a rich set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find great resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, try these [interactive tutorials](http://go.microsoft.com/fwlink/p/?LinkId=817234). For instructions on how to view and download sample code, see the [Viewing or downloading samples](#viewing-or-downloading-samples) section.
+The .NET documentation contains a rich set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find great resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, try these [interactive tutorials](http://go.microsoft.com/fwlink/p/?LinkId=817234). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
 
 ## .NET Core
 
@@ -105,7 +105,7 @@ This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Window
 
 This tutorial demonstrates how to deploy an existing console app in a Windows container. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/docs repository on GitHub.
 
-## Viewing or downloading samples
+## Viewing and downloading samples
 
 Many topics show source code and samples that are available for viewing or download from GitHub. To view a sample, follow the sample link to the sample folder at aspnet/Docs or dotnet/docs on GitHub. To download the code, follow these instructions:
 

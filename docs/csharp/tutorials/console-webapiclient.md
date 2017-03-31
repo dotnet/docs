@@ -30,7 +30,7 @@ C# objects.
 
 There are a lot of features in this tutorial. Let’s build them one by one.
 
-If you prefer to follow along with the final sample, you can [download the sample app](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-or-downloading-samples).
+If you prefer to follow along with the final sample, you can [download the sample app](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Prerequisites
 You’ll need to set up your machine to run .NET core. You can find the

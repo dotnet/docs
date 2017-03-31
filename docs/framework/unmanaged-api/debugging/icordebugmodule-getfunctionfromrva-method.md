@@ -1,0 +1,47 @@
+---
+title: "ICorDebugModule::GetFunctionFromRVA Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ICorDebugModule.GetFunctionFromRVA"
+apilocation: 
+  - "mscordbi.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ICorDebugModule::GetFunctionFromRVA"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetFunctionFromRVA method [.NET Framework debugging]"
+  - "ICorDebugModule::GetFunctionFromRVA method [.NET Framework debugging]"
+ms.assetid: f5a34517-2422-484f-be89-2ce0b4bce195
+caps.latest.revision: 11
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+# ICorDebugModule::GetFunctionFromRVA Method
+This method has not been implemented in the current version of the .NET Framework.  
+  
+## Syntax  
+  
+```  
+HRESULT GetFunctionFromRVA(  
+    [in]  CORDB_ADDRESS      rva,  
+    [out] ICorDebugFunction  **ppFunction  
+);  
+```  
+  
+## Requirements  
+ **Header:** CorDebug.idl, CorDebug.h  
+  
+## See Also  
+    
+ 

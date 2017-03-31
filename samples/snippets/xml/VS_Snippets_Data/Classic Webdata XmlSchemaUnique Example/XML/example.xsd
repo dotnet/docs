@@ -1,0 +1,27 @@
+<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="customerOrderType">
+		<xs:sequence>
+			<xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="itemID" type="xs:string"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="CustomerID" type="xs:string"/>
+	</xs:complexType>
+
+	<xs:element name="ordersByCustomer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="customerOrders" type="customerOrderType" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="oneCustomerOrdersforEachCustomerID">
+			<xs:selector xpath="customerOrders"/>
+			<xs:field xpath="@customerID"/>
+		</xs:unique>
+	</xs:element>
+</xs:schema>
+<!--</Snippet2>-->

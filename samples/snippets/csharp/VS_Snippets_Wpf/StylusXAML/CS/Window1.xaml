@@ -1,0 +1,19 @@
+﻿<Window x:Class="StylusXAML.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StylusXAML" Height="300" Width="300"
+    >
+  <DockPanel>
+    <!--<Snippet1>-->
+    <Canvas Name="canvas1" Stylus.IsFlicksEnabled="False" ></Canvas>
+    <!--</Snippet1>-->
+    
+    <!--<Snippet3>-->
+    <Slider Name="horizontalSlider1" Stylus.IsPressAndHoldEnabled="True"/>
+    <!--</Snippet3>-->
+
+    <!--<Snippet4>-->
+    <InkCanvas Name="inkCanvas1" Stylus.IsTouchFeedbackEnabled="True"/>
+    <!--</Snippet4>-->
+  </DockPanel>
+</Window>

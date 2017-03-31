@@ -1,0 +1,114 @@
+﻿<Window x:Class="ContextMenus.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ContextMenus" Height="300" Width="300"
+    >
+  <Grid Name="grid" ShowGridLines ="false" Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <DockPanel Margin="10, 10, 0, 0" Grid.Column="0" Grid.Row="1">
+      <Button Name="cmButton" Height="30" ContextMenuOpening="OnOpening" 
+            ContextMenuClosing="OnClosing">
+        Button with Context Menu
+        <Button.ContextMenu>
+          <ContextMenu Name="cm">
+            <MenuItem Header="File"/>
+            <MenuItem Header="Save"/>
+            <MenuItem Header="SaveAs"/>
+            <MenuItem Header="Recent Files">
+              <MenuItem Header="ReadMe.txt"/>
+              <MenuItem Header="Schedule.xls"/>
+            </MenuItem>
+          </ContextMenu>
+        </Button.ContextMenu>
+      </Button>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="1" FontSize="12" 
+          TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
+      Simple context menu with submenu items. Also illustrates the ContextMenuOpening
+      and ContextMenuClosing events.
+    </TextBlock>
+
+    <DockPanel Margin="10, 10, 0, 0" Grid.Column="0" Grid.Row="2">
+      <Button Height="30" Content="Disabled Button" IsEnabled="False" 
+      ContextMenuService.ShowOnDisabled="True">
+        <Button.ContextMenu>
+          <ContextMenu ContextMenuService.HorizontalOffset="50" 
+                ContextMenuService.VerticalOffset="50" 
+                ContextMenuService.HasDropShadow="false">
+            <MenuItem Header="Edit">
+              <MenuItem Header="Cut"/>
+              <MenuItem Header="Copy"/>
+              <MenuItem Header="Paste"/>
+              <Separator/>
+              <MenuItem Header="Context Menu item with ToolTip">
+                <MenuItem.ToolTip>
+                  <ToolTip>
+                    Some information.
+                  </ToolTip>
+                </MenuItem.ToolTip>
+              </MenuItem>
+            </MenuItem>
+          </ContextMenu>
+        </Button.ContextMenu>
+      </Button>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="2" FontSize="12" 
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Context menu
+      item with tooltip. The offset properties are set which causes the menu
+      to appear outside the button control.
+    </TextBlock>
+
+    <DockPanel Margin="10, 10, 0, 0" Grid.Column="0" Grid.Row="3">
+      <Button Height="30" Content="Disabled Button" IsEnabled="False" 
+           ContextMenuService.ShowOnDisabled="True">
+        <Button.ContextMenu>
+          <ContextMenu ContextMenuService.Placement="Bottom" ContextMenuService.PlacementRectangle="30,50,0,0">
+           <MenuItem Header="Animals">
+              <MenuItem>
+                <MenuItem.Header>
+                  <Image Source="data/cat.png"/>
+                </MenuItem.Header>
+              </MenuItem>
+              <MenuItem>
+                <MenuItem.Header>
+                  <Image Source="data/dog.png"/>
+                </MenuItem.Header>
+              </MenuItem>
+              <MenuItem>
+                <MenuItem.Header>
+                  <Image Source="data/fish.png"/>
+                </MenuItem.Header>
+              </MenuItem>
+            </MenuItem>
+          </ContextMenu>
+        </Button.ContextMenu>
+      </Button>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="3" FontSize="12" 
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Context menu
+      with placement properties set.
+    </TextBlock>
+
+  </Grid>
+</Window>

@@ -1,0 +1,46 @@
+﻿<Window x:Class="EasingFunctionPointKeyFrame.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <Canvas Margin="10">
+        <!-- <SnippetEasingFunctionPointKeyFrame> -->
+        <Path Fill="Blue">
+            <Path.Triggers>
+                <EventTrigger RoutedEvent="Path.MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <PointAnimationUsingKeyFrames
+                             Storyboard.TargetProperty="Center"
+                             Storyboard.TargetName="MyAnimatedEllipseGeometry">
+
+                                <!-- This key frame animates the ellipse up to the crest, 
+                                     where it slows down and stops. -->
+                                <EasingPointKeyFrame Value="50,20" KeyTime="00:00:02">
+                                    <EasingPointKeyFrame.EasingFunction>
+                                        <CubicEase EasingMode="EaseOut"/>
+                                    </EasingPointKeyFrame.EasingFunction>
+                                </EasingPointKeyFrame>
+
+                                <!-- This key frame animates the ellipse back down and makes
+                                     it bounce. -->
+                                <EasingPointKeyFrame Value="50,200" KeyTime="00:00:06">
+                                    <EasingPointKeyFrame.EasingFunction>
+                                        <BounceEase Bounces="5" EasingMode="EaseOut"/>
+                                    </EasingPointKeyFrame.EasingFunction>
+                                </EasingPointKeyFrame>
+
+                            </PointAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Path.Triggers>
+            <Path.Data>
+
+                <!-- Describes an ellipse. -->
+                <EllipseGeometry x:Name="MyAnimatedEllipseGeometry"
+                 Center="50,200" RadiusX="15" RadiusY="15" />
+            </Path.Data>
+        </Path>
+        <!-- </SnippetEasingFunctionPointKeyFrame> -->
+    </Canvas>
+</Window>

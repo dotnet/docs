@@ -1,0 +1,20 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SizeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Small" />
+      <xs:enumeration value="Medium" />
+      <xs:enumeration value="Large" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Item">
+    <xs:complexType>
+      <xs:attribute name="Size" type="SizeType" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+<!--</Snippet2>-->
+
+

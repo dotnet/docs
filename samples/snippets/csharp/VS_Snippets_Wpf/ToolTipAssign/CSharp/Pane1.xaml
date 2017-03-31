@@ -1,0 +1,81 @@
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.Pane1"
+    Loaded="OnLoad"
+>
+  <Window.Resources>
+    <Style TargetType="{x:Type TextBlock}">
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="Foreground" Value="Brown"/>
+    </Style>
+    <ToolTip x:Key="EllipseToolTip" Content="An Ellipse"/>
+    <ToolTip x:Key="RectangleToolTip" Content="A Rectangle" />
+    <TextBlock x:Key="MyToolTip" Text="The Tooltip"/>
+  </Window.Resources>
+
+  
+  <Grid ShowGridLines ="false" Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="150"/>
+      <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <DockPanel  Grid.Row="0" Grid.Column="0" >
+      <TextBlock TextWrapping="Wrap" DockPanel.Dock="Top"
+                 Margin="10">
+        The following shows examples of shapes that use tooltips
+        declared in the Resources section. Place the mouse pointer
+        over a shape to see the tooltip.
+      </TextBlock>
+      <StackPanel Orientation="Horizontal" 
+                  DockPanel.Dock="Bottom">
+      <!--<SnippetToolTipServiceToolTip>-->
+        <Ellipse Fill="Blue" 
+               ToolTipService.ToolTip="{DynamicResource EllipseToolTip}"
+               Height="25" Width="40"/>
+      <!--</SnippetToolTipServiceToolTip>-->
+        <Rectangle Fill="Gray" Height="25" Width="30"
+               ToolTipService.ToolTip="{DynamicResource RectangleToolTip}"
+               Margin="10,0,0,0"/>
+        <Ellipse Fill="Blue" Height="25" Width="20"
+               ToolTipService.ToolTip="{DynamicResource EllipseToolTip}"               
+               Margin="10,0,0,0"/>
+      </StackPanel>
+    </DockPanel>
+
+    <GridSplitter Grid.Column="0" Grid.RowSpan="2"/>
+    <StackPanel Grid.Row="0" Grid.Column="1">
+      <TextBlock>Setting a PlacementTarget</TextBlock>
+      <TextBlock TextWrapping="Wrap">
+        The Placement Target for the tooltip of the "tooltip owner" button 
+        is set to the "tooltip PlacementTarget" button. Place the mouse 
+        pointer over the tooltip owner to see the tooltip appear over 
+        the PlacementTarget.
+      </TextBlock>
+      <!--<SnippetPlacementTarget>-->
+      <Button Name="TheTarget" 
+              Content="tooltip PlacementTarget" 
+              Width="150"/>
+      <Button Margin="0,20,0,0" 
+              ToolTip="{DynamicResource MyToolTip}" 
+              Content="tooltip owner" 
+              Width="150" 
+              ToolTipService.Placement="Top" 
+              ToolTipService.PlacementTarget="{Binding ElementName=TheTarget}"/>
+      <!--</SnippetPlacementTarget>-->
+    </StackPanel>
+
+    <StackPanel Name="Stack11" Grid.Row="1" Grid.Column="1">
+      <TextBlock TextWrapping="Wrap">
+        The following is the same example as above except that it 
+        is created with code.
+      </TextBlock>
+    </StackPanel>
+
+  </Grid>
+</Window>
